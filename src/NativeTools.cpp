@@ -14,6 +14,7 @@ namespace fs = std::filesystem;
 namespace agent::core {
 namespace {
 fs::path g_workspaceRoot = fs::current_path();
+AccessLevel g_accessLevel = AccessLevel::WorkspaceWrite;
 
 bool resolveWorkspacePath(const std::string& input, fs::path& resolved, std::string& error) {
     if (input.empty()) {
@@ -26,6 +27,10 @@ bool resolveWorkspacePath(const std::string& input, fs::path& resolved, std::str
             candidate = g_workspaceRoot / candidate;
         }
         fs::path weak = fs::weakly_canonical(candidate);
+        if (g_accessLevel == AccessLevel::FullAccess) {
+            resolved = weak;
+            return true;
+        }
         fs::path root = fs::weakly_canonical(g_workspaceRoot);
 
         auto weakStr = weak.string();
@@ -60,6 +65,7 @@ std::string read_file(const nlohmann::json& args) {
 }
 
 std::string write_file(const nlohmann::json& args) {
+    if (g_accessLevel == AccessLevel::ReadOnly) return "Erro: write_file bloqueado (Access: ReadOnly).";
     std::string path = args.value("path", "");
     std::string content = args.value("content", "");
     fs::path resolved;
@@ -98,10 +104,11 @@ std::string list_dir(const nlohmann::json& args) {
 // --- SYSTEM TOOLS ---
 
 std::string run_command(const nlohmann::json& args) {
+    if (g_accessLevel == AccessLevel::ReadOnly) return "Erro: run_command bloqueado (Access: ReadOnly).";
     std::string command = args.value("command", "");
     if (command.empty()) return "Erro: Comando vazio.";
 
-    std::string cmdPrefix = "cd \"" + g_workspaceRoot.string() + "\" && ";
+    std::string cmdPrefix = (g_accessLevel == AccessLevel::FullAccess) ? "" : ("cd \"" + g_workspaceRoot.string() + "\" && ");
     std::array<char, 128> buffer;
     std::string result;
     std::unique_ptr<FILE, decltype(&pclose)> pipe(popen((cmdPrefix + command + " 2>&1").c_str(), "r"), pclose);
@@ -175,6 +182,20 @@ void registerNativeTools(const std::string& workspaceRoot) {
     reg.registerTool("list_dir", "Lista arquivos de um diretório.", {"path"}, list_dir);
     reg.registerTool("grep_search", "Busca padrão textual com ripgrep no workspace.", {"pattern", "path"}, grep_search);
     reg.registerTool("run_command", "Executa um comando no shell e retorna a saída.", {"command"}, run_command);
+}
+
+void setNativeToolAccessLevel(AccessLevel level) {
+    g_accessLevel = level;
+}
+
+AccessLevel getNativeToolAccessLevel() {
+    return g_accessLevel;
+}
+
+std::string getNativeToolAccessLevelName() {
+    if (g_accessLevel == AccessLevel::ReadOnly) return "ReadOnly";
+    if (g_accessLevel == AccessLevel::FullAccess) return "FullAccess";
+    return "WorkspaceWrite";
 }
 
 } // namespace agent::core

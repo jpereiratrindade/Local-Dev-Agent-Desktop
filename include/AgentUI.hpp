@@ -9,6 +9,7 @@
 #include <mutex>
 #include <thread>
 #include <atomic>
+#include <filesystem>
 #include "json.hpp"
 #include "Orchestrator.hpp"
 #include "NativeTools.hpp"
@@ -35,6 +36,11 @@ public:
     std::string currentProjectRoot = ".";
     std::string currentModel = "qwen2.5:14b";
     std::vector<std::string> availableModels;
+    int selectedReasoning = 1; // 0=low,1=medium,2=high
+    int selectedAccess = 1;    // 0=read-only,1=workspace-write,2=full-access
+    std::atomic<bool> llmBusy{false};
+    bool hasOpenProject = true;
+    std::string currentSessionFile = "last_session.json";
     
     // Context & Thinking State
     std::string selectedFile = "";
@@ -81,6 +87,9 @@ private:
     void drawThoughtPanel();
     void drawStatsPanel();
     void drawCodeBlock(const std::string& code, const std::string& lang);
+    std::filesystem::path sessionsDir() const;
+    bool loadSessionFromFile(const std::filesystem::path& sessionFile);
+    std::string newSessionFileName() const;
 
     agent::network::OllamaClient* ollama = nullptr;
     agent::core::Orchestrator* orchestrator = nullptr;

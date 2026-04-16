@@ -11,6 +11,8 @@
 #include <sstream>
 #include <regex>
 #include <algorithm>
+#include <chrono>
+#include <iomanip>
 
 namespace fs = std::filesystem;
 
@@ -44,6 +46,24 @@ static std::string modelHintFor(const std::string& model) {
     if (s.find("instruct") != std::string::npos || s.find("chat") != std::string::npos) return "Vocação: chat geral/instruções";
     if (s.find("qwen") != std::string::npos || s.find("llama") != std::string::npos || s.find("mistral") != std::string::npos || s.find("gemma") != std::string::npos) return "Vocação: uso geral equilibrado";
     return "Vocação: uso geral";
+}
+
+static const char* reasoningLabel(int idx) {
+    static const char* labels[] = {"low", "medium", "high"};
+    if (idx < 0 || idx > 2) return "medium";
+    return labels[idx];
+}
+
+static agent::core::AccessLevel accessFromIdx(int idx) {
+    if (idx <= 0) return agent::core::AccessLevel::ReadOnly;
+    if (idx >= 2) return agent::core::AccessLevel::FullAccess;
+    return agent::core::AccessLevel::WorkspaceWrite;
+}
+
+static const char* accessLabel(int idx) {
+    static const char* labels[] = {"Read-only", "Workspace-write", "Full-access"};
+    if (idx < 0 || idx > 2) return "Workspace-write";
+    return labels[idx];
 }
 
 struct ActionStep {
@@ -105,12 +125,20 @@ static AgentMessageSections splitAgentMessage(const std::string& text) {
 
 void AgentUI::setOllama(agent::network::OllamaClient* client) {
     ollama = client;
-    currentProjectRoot = normalizeRootPath(currentProjectRoot);
+    if (!currentProjectRoot.empty()) currentProjectRoot = normalizeRootPath(currentProjectRoot);
     if (ollama) {
-        agent::core::registerNativeTools(currentProjectRoot);
+        const std::string effectiveRoot = currentProjectRoot.empty() ? normalizeRootPath(".") : currentProjectRoot;
+        agent::core::registerNativeTools(effectiveRoot);
+        agent::core::setNativeToolAccessLevel(accessFromIdx(selectedAccess));
         if (orchestrator) delete orchestrator;
-        orchestrator = new agent::core::Orchestrator(ollama, currentProjectRoot);
-        detectProjectTech();
+        orchestrator = new agent::core::Orchestrator(ollama, effectiveRoot);
+        if (!currentProjectRoot.empty()) {
+            hasOpenProject = true;
+            detectProjectTech();
+        } else {
+            hasOpenProject = false;
+            thoughtStream = "Nenhuma pasta aberta.";
+        }
     }
 }
 
@@ -180,10 +208,24 @@ void AgentUI::drawMainMenu() {
                     setOllama(ollama);
                 }
             }
+            if (ImGui::MenuItem("Abrir Diálogo...")) {
+                fs::path sessions = sessionsDir();
+                auto files = pfd::open_file("Abrir diálogo", sessions.string(), {"Sessões JSON", "*.json"}, pfd::opt::none).result();
+                if (!files.empty()) {
+                    if (loadSessionFromFile(files[0])) {
+                        thoughtStream = "Diálogo restaurado: " + fs::path(files[0]).filename().string();
+                    } else {
+                        thoughtStream = "Falha ao carregar diálogo selecionado.";
+                    }
+                }
+            }
             if (ImGui::MenuItem("Fechar Pasta")) {
-                currentProjectRoot = normalizeRootPath(fs::current_path().string());
+                currentProjectRoot.clear();
+                selectedFile.clear();
                 projectMap = "";
-                setOllama(ollama);
+                hasOpenProject = false;
+                history.clear();
+                thoughtStream = "Pasta fechada.";
             }
             ImGui::Separator();
             if (ImGui::MenuItem("Sair", "Alt+F4")) { exitRequested = true; }
@@ -203,7 +245,7 @@ void AgentUI::drawMainMenu() {
             ImGui::EndMenu();
         }
         
-        std::string projectLabel = projectLabelFromRoot(currentProjectRoot);
+        std::string projectLabel = hasOpenProject ? projectLabelFromRoot(currentProjectRoot) : "(sem pasta)";
         std::string projectStatus = "Projeto: " + projectLabel;
         ImGui::SameLine(ImGui::GetWindowWidth() - 420);
         ImGui::TextDisabled("%s", projectStatus.c_str());
@@ -220,10 +262,10 @@ void AgentUI::drawFileExplorer() {
     ImGui::TextColored(ImVec4(0.4f, 0.7f, 1.0f, 1.0f), "EXPLORER");
     ImGui::Separator();
     
-    if (fs::exists(currentProjectRoot)) {
+    if (hasOpenProject && !currentProjectRoot.empty() && fs::exists(currentProjectRoot)) {
         renderDirectory(currentProjectRoot);
     } else {
-        ImGui::TextDisabled("Pasta nao selecionada.");
+        ImGui::TextDisabled("Nenhuma pasta aberta.");
     }
     
     ImGui::EndChild();
@@ -381,6 +423,44 @@ void AgentUI::drawChatWindow() {
     }
     ImGui::SameLine();
     ImGui::Checkbox("Autônomo (Codex)", &autonomousMode);
+    ImGui::SameLine();
+    bool busyNow = llmBusy.load() || (ollama && ollama->isStreaming());
+    if (busyNow) {
+        if (ImGui::SmallButton("Interromper")) {
+            if (orchestrator) orchestrator->stopMission();
+            if (ollama) ollama->requestStop();
+            llmBusy = false;
+            thoughtStream = "Interrupção solicitada.";
+        }
+    }
+
+    ImGui::Separator();
+
+    ImGui::TextDisabled("Modelo");
+    ImGui::SameLine();
+    if (ImGui::BeginCombo("##ModelInline", currentModel.c_str())) {
+        for (const auto& model : availableModels) {
+            bool selected = (model == currentModel);
+            std::string label = model + " [" + modelHintFor(model) + "]";
+            if (ImGui::Selectable(label.c_str(), selected)) currentModel = model;
+            if (selected) ImGui::SetItemDefaultFocus();
+        }
+        ImGui::EndCombo();
+    }
+    ImGui::SameLine();
+    ImGui::TextDisabled("Reasoning");
+    ImGui::SameLine();
+    const char* reasoningItems[] = {"low", "medium", "high"};
+    ImGui::SetNextItemWidth(110);
+    ImGui::Combo("##ReasoningInline", &selectedReasoning, reasoningItems, IM_ARRAYSIZE(reasoningItems));
+    ImGui::SameLine();
+    ImGui::TextDisabled("Acesso");
+    ImGui::SameLine();
+    const char* accessItems[] = {"Read-only", "Workspace-write", "Full-access"};
+    ImGui::SetNextItemWidth(150);
+    if (ImGui::Combo("##AccessInline", &selectedAccess, accessItems, IM_ARRAYSIZE(accessItems))) {
+        agent::core::setNativeToolAccessLevel(accessFromIdx(selectedAccess));
+    }
 
     ImGui::PushItemWidth(-70);
     bool submitted = ImGui::InputText("##Input", inputBuf, IM_ARRAYSIZE(inputBuf), ImGuiInputTextFlags_EnterReturnsTrue);
@@ -393,6 +473,8 @@ void AgentUI::drawChatWindow() {
     if (submitted || ImGui::Button("Send")) {
         if (inputBuf[0] != '\0' && ollama) {
             std::string userMsg = inputBuf;
+            const std::string reasoning = reasoningLabel(selectedReasoning);
+            const std::string access = accessLabel(selectedAccess);
             
             // Contexto V5: Injeção de Autoridade via System Prompt
             std::string systemPrompt = "VOCÊ É O AGENT. MODO ANALISTA TÉCNICO DE ELITE.\n"
@@ -401,7 +483,9 @@ void AgentUI::drawChatWindow() {
                                        "1. O mapa acima é a sua única fonte de verdade sobre a estrutura do projeto.\n"
                                        "2. Nunca diga que não conhece o projeto ou peça dados de estrutura.\n"
                                        "3. Se um arquivo estiver em <active_file>, trate-o como seu código principal.\n"
-                                       "4. Respostas cordiais e extremamente técnicas baseadas no contexto fornecido.";
+                                       "4. Respostas cordiais e extremamente técnicas baseadas no contexto fornecido.\n"
+                                       "5. Nível de reasoning atual: " + reasoning + ".\n"
+                                       "6. Nível de acesso permitido para ferramentas: " + access + ".";
 
             std::string fullMsg = "";
             if (!selectedFile.empty()) {
@@ -418,11 +502,13 @@ void AgentUI::drawChatWindow() {
                 thoughtStream = "Modo Analista de Elite: Consultando Realidade do Workspace...";
                 saveSession();
             }
+            llmBusy = true;
             inputBuf[0] = '\0';
             scrollToBottom = true;
 
             if (autonomousMode) {
-                runPythonAgent(userMsg, "AGENT");
+                std::string missionGoal = "[reasoning=" + reasoning + "][access=" + access + "] " + userMsg;
+                runPythonAgent(missionGoal, "AGENT");
             } else {
                 std::vector<agent::network::Message> threadHistory;
                 {
@@ -448,7 +534,8 @@ void AgentUI::drawChatWindow() {
                     totalPromptTokens += stats.prompt_tokens;
                     totalCompletionTokens += stats.completion_tokens;
                     tokensPerSec = (stats.total_duration_ms > 0) ? (stats.completion_tokens / (stats.total_duration_ms / 1000.0)) : 0;
-                    thoughtStream = "Transmissão concluída. (+" + std::to_string(stats.completion_tokens) + " tkn)";
+                    thoughtStream = success ? ("Transmissão concluída. (+" + std::to_string(stats.completion_tokens) + " tkn)") : "Transmissão interrompida.";
+                    llmBusy = false;
                     saveSession();
                 }, systemPrompt);
             }
@@ -527,7 +614,13 @@ void AgentUI::drawCodeBlock(const std::string& code, const std::string& lang) {
 
 
 void AgentUI::detectProjectTech() {
+    if (currentProjectRoot.empty()) {
+        detectedTech = "Desconhecida/Outra";
+        detectedDeps.clear();
+        return;
+    }
     currentProjectRoot = normalizeRootPath(currentProjectRoot);
+    hasOpenProject = true;
     detectedTech = "Desconhecida/Outra";
     detectedDeps = "";
     try {
@@ -671,8 +764,9 @@ void AgentUI::telemetryLoop() {
 }
 
 void AgentUI::saveSession() {
+    if (!hasOpenProject || currentProjectRoot.empty()) return;
     try {
-        std::string sessionDir = (fs::path(currentProjectRoot) / ".agent" / "sessions").string();
+        fs::path sessionDir = sessionsDir();
         if (!fs::exists(sessionDir)) fs::create_directories(sessionDir);
         
         nlohmann::json j;
@@ -681,29 +775,46 @@ void AgentUI::saveSession() {
             j["history"].push_back({{"role", msg.role}, {"text", msg.text}});
         }
         j["tokens"] = {{"prompt", totalPromptTokens}, {"completion", totalCompletionTokens}};
+        j["meta"] = {
+            {"project_root", currentProjectRoot},
+            {"updated_at", newSessionFileName()}
+        };
         
-        std::ofstream o(fs::path(sessionDir) / "last_session.json");
-        o << j.dump(4);
+        fs::path currentFile = sessionDir / currentSessionFile;
+        std::ofstream o(currentFile);
+        o << j.dump(2);
+
+        if (currentSessionFile != "last_session.json") {
+            std::ofstream last(sessionDir / "last_session.json");
+            last << j.dump(2);
+        }
     } catch (...) {}
 }
 
 void AgentUI::loadSession() {
+    if (!hasOpenProject || currentProjectRoot.empty()) { history.clear(); return; }
     try {
-        std::string sessionFile = (fs::path(currentProjectRoot) / ".agent" / "sessions" / "last_session.json").string();
-        if (!fs::exists(sessionFile)) { history.clear(); return; }
-
-        std::ifstream i(sessionFile);
-        nlohmann::json j; i >> j;
-        
-        history.clear();
-        for (const auto& msg : j["history"]) {
-            std::string role = msg["role"];
-            if (role == "agent") role = "assistant";
-            history.push_back({role, msg["text"]});
+        fs::path dir = sessionsDir();
+        fs::path target = dir / currentSessionFile;
+        if (!fs::exists(target)) target = dir / "last_session.json";
+        if (!fs::exists(target)) {
+            fs::file_time_type newestTs{};
+            fs::path newestFile;
+            if (fs::exists(dir)) {
+                for (const auto& e : fs::directory_iterator(dir)) {
+                    if (!e.is_regular_file() || e.path().extension() != ".json") continue;
+                    auto ts = e.last_write_time();
+                    if (newestFile.empty() || ts > newestTs) {
+                        newestTs = ts;
+                        newestFile = e.path();
+                    }
+                }
+            }
+            if (!newestFile.empty()) target = newestFile;
         }
-        totalPromptTokens = j["tokens"].value("prompt", 0);
-        totalCompletionTokens = j["tokens"].value("completion", 0);
-        scrollToBottom = true;
+
+        if (!target.empty() && fs::exists(target) && loadSessionFromFile(target)) return;
+        history.clear();
     } catch (...) {
         history.clear();
     }
@@ -714,8 +825,43 @@ void AgentUI::newDialogue() {
     totalPromptTokens = 0;
     totalCompletionTokens = 0;
     tokensPerSec = 0;
+    currentSessionFile = newSessionFileName();
     saveSession();
-    thoughtStream = "Novo diálogo iniciado. Contexto limpo.";
+    thoughtStream = "Novo diálogo iniciado. Sessão: " + currentSessionFile;
+}
+
+fs::path AgentUI::sessionsDir() const {
+    if (currentProjectRoot.empty()) return fs::path(".");
+    return fs::path(currentProjectRoot) / ".agent" / "sessions";
+}
+
+bool AgentUI::loadSessionFromFile(const fs::path& sessionFile) {
+    if (!fs::exists(sessionFile)) return false;
+    std::ifstream i(sessionFile);
+    nlohmann::json j;
+    i >> j;
+
+    history.clear();
+    for (const auto& msg : j["history"]) {
+        std::string role = msg["role"];
+        if (role == "agent") role = "assistant";
+        history.push_back({role, msg["text"]});
+    }
+    totalPromptTokens = j["tokens"].value("prompt", 0);
+    totalCompletionTokens = j["tokens"].value("completion", 0);
+    currentSessionFile = sessionFile.filename().string();
+    scrollToBottom = true;
+    return true;
+}
+
+std::string AgentUI::newSessionFileName() const {
+    auto now = std::chrono::system_clock::now();
+    auto t = std::chrono::system_clock::to_time_t(now);
+    std::tm tm{};
+    localtime_r(&t, &tm);
+    std::ostringstream oss;
+    oss << "session_" << std::put_time(&tm, "%Y%m%d_%H%M%S") << ".json";
+    return oss.str();
 }
 
 void AgentUI::runPythonAgent(const std::string& goal, const std::string& mode) {
@@ -746,7 +892,8 @@ void AgentUI::runPythonAgent(const std::string& goal, const std::string& mode) {
     };
     cb.onComplete = [this](bool success) {
         std::lock_guard<std::mutex> lock(msgMutex);
-        thoughtStream += "\n🏁 Missão Finalizada Nativamente.";
+        thoughtStream += success ? "\n🏁 Missão Finalizada Nativamente." : "\n⏹️ Missão interrompida.";
+        llmBusy = false;
         saveSession();
     };
 

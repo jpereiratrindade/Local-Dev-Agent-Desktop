@@ -3,6 +3,7 @@
 #include <string>
 #include <functional>
 #include <vector>
+#include <atomic>
 #include "json.hpp"
 
 namespace agent::network {
@@ -31,6 +32,9 @@ public:
                    std::function<void(bool, StreamStats)> onComplete,
                    const std::string& systemMsg = "");
 
+    void requestStop();
+    bool isStreaming() const { return streaming.load(); }
+
     // Listar modelos disponíveis
     std::vector<std::string> listModels();
 
@@ -40,6 +44,8 @@ public:
 private:
     std::string baseUrl;
     std::string model;
+    std::atomic<bool> cancelRequested{false};
+    std::atomic<bool> streaming{false};
 };
 
 } // namespace agent::network

@@ -37,6 +37,8 @@ void OllamaClient::chatStream(const std::vector<Message>& history,
                              std::function<void(const std::string&)> onChunk,
                              std::function<void(bool, StreamStats)> onComplete,
                              const std::string& systemMsg) {
+    cancelRequested = false;
+    streaming = true;
     
     // Rodar em thread separada para não travar a UI
     std::thread([this, history, onChunk, onComplete, systemMsg]() {
@@ -64,6 +66,7 @@ void OllamaClient::chatStream(const std::vector<Message>& history,
         httplib::Headers headers;
         auto res = cli.Post("/api/chat", headers, payload.dump(), "application/json",
             [&](const char* data, size_t data_len) {
+                if (cancelRequested.load()) return false;
                 try {
                     // Ollama envia um objeto JSON por linha no modo stream
                     std::string chunk(data, data_len);
@@ -82,8 +85,14 @@ void OllamaClient::chatStream(const std::vector<Message>& history,
                 return true;
             });
 
-        onComplete(success && res && res->status == 200, stats);
+        streaming = false;
+        bool ok = success && res && res->status == 200 && !cancelRequested.load();
+        onComplete(ok, stats);
     }).detach();
+}
+
+void OllamaClient::requestStop() {
+    cancelRequested = true;
 }
 
 std::vector<std::string> OllamaClient::listModels() {
