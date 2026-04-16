@@ -1,6 +1,8 @@
 #include <SDL2/SDL.h>
 #include <SDL2/SDL_opengl.h>
 #include <iostream>
+#include <filesystem>
+#include <vector>
 
 #include "imgui.h"
 #include "imgui_impl_sdl2.h"
@@ -8,6 +10,85 @@
 
 #include "OllamaClient.hpp"
 #include "AgentUI.hpp"
+
+namespace {
+std::string findFontPath(const std::vector<const char*>& candidates) {
+    for (const char* path : candidates) {
+        if (std::filesystem::exists(path)) return path;
+    }
+    return {};
+}
+
+bool loadFonts(ImGuiIO& io) {
+    const float baseFontSize = 16.0f;
+    bool emojiLoaded = false;
+
+#if defined(_WIN32)
+    const std::vector<const char*> baseCandidates = {
+        "assets/fonts/NotoEmoji-Regular.ttf",
+        "C:\\Windows\\Fonts\\segoeui.ttf",
+    };
+    const std::vector<const char*> emojiCandidates = {
+        "assets/fonts/NotoEmoji-Regular.ttf",
+        "C:\\Windows\\Fonts\\seguiemj.ttf",
+    };
+#elif defined(__APPLE__)
+    const std::vector<const char*> baseCandidates = {
+        "assets/fonts/NotoEmoji-Regular.ttf",
+        "/System/Library/Fonts/Supplemental/Arial.ttf",
+    };
+    const std::vector<const char*> emojiCandidates = {
+        "assets/fonts/NotoEmoji-Regular.ttf",
+        "/System/Library/Fonts/Apple Color Emoji.ttc",
+    };
+#else
+    const std::vector<const char*> baseCandidates = {
+        "assets/fonts/NotoEmoji-Regular.ttf",
+        "/usr/share/fonts/truetype/noto/NotoSans-Regular.ttf",
+        "/usr/share/fonts/TTF/NotoSans-Regular.ttf",
+        "/usr/share/fonts/truetype/dejavu/DejaVuSans.ttf",
+    };
+    const std::vector<const char*> emojiCandidates = {
+        "assets/fonts/NotoEmoji-Regular.ttf",
+        "/usr/share/fonts/google-noto-emoji-fonts/NotoEmoji-Regular.ttf",
+        "/usr/share/fonts/truetype/noto/NotoEmoji-Regular.ttf",
+        "/usr/share/fonts/TTF/NotoEmoji-Regular.ttf",
+        "/usr/share/fonts/google-noto-color-emoji-fonts/Noto-COLRv1.ttf",
+        "/usr/share/fonts/truetype/noto/NotoColorEmoji.ttf",
+    };
+#endif
+
+    std::string basePath = findFontPath(baseCandidates);
+    ImFont* baseFont = nullptr;
+    if (!basePath.empty()) baseFont = io.Fonts->AddFontFromFileTTF(basePath.c_str(), baseFontSize);
+    if (!baseFont) baseFont = io.Fonts->AddFontDefault();
+    io.FontDefault = baseFont;
+
+    std::string emojiPath = findFontPath(emojiCandidates);
+    if (!emojiPath.empty()) {
+        ImFontConfig cfg;
+        cfg.MergeMode = true;
+        cfg.PixelSnapH = true;
+
+        static const ImWchar emojiRanges[] = {
+            0x00A0, 0x00FF,
+            0x2000, 0x3000,
+            0x1F300, 0x1FAFF,
+            0
+        };
+
+        ImFontGlyphRangesBuilder builder;
+        builder.AddRanges(io.Fonts->GetGlyphRangesDefault());
+        builder.AddRanges(emojiRanges);
+        static ImVector<ImWchar> ranges;
+        ranges.clear();
+        builder.BuildRanges(&ranges);
+        ImFont* emojiFont = io.Fonts->AddFontFromFileTTF(emojiPath.c_str(), baseFontSize, &cfg, ranges.Data);
+        emojiLoaded = (emojiFont != nullptr);
+    }
+    return emojiLoaded;
+}
+} // namespace
 
 int main(int argc, char* argv[]) {
     // Detect models on startup
@@ -42,6 +123,7 @@ int main(int argc, char* argv[]) {
     ImGui::CreateContext();
     ImGuiIO& io = ImGui::GetIO(); (void)io;
     io.ConfigFlags |= ImGuiConfigFlags_NavEnableKeyboard;
+    bool emojiEnabled = loadFonts(io);
 
     // Setup Dear ImGui style
     ImGui::StyleColorsDark();
@@ -51,6 +133,7 @@ int main(int argc, char* argv[]) {
     ImGui_ImplOpenGL3_Init(glsl_version);
 
     agent::ui::AgentUI ui;
+    ui.emojiIconsEnabled = emojiEnabled;
     ui.setOllama(&ollama);
     ui.availableModels = models;
     if (!models.empty()) ui.currentModel = models[0];

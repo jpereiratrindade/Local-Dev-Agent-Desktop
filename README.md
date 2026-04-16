@@ -6,10 +6,16 @@ Aplicação desktop local em C++ (SDL2 + OpenGL + Dear ImGui) para interação c
 
 - Chat local com streaming de respostas.
 - Modo autônomo com orquestrador e tool-calls.
-- Ferramentas nativas: leitura/escrita de arquivo, listagem de diretório, busca textual e execução de comando no workspace.
-- Explorador de arquivos, painel de inspector e telemetria.
-- Persistência de sessão por projeto em `.agent/sessions/last_session.json`.
+- Interrupção manual de geração (`Interromper`) em streaming e missão autônoma.
+- Controles inline na caixa de pergunta: `Modelo`, `Reasoning`, `Acesso`.
+- Níveis de acesso de ferramentas: `Read-only`, `Workspace-write`, `Full-access`.
+- Ferramentas nativas: leitura/escrita de arquivo, listagem de diretório, busca textual e execução de comando.
+- Seletor de pasta interno (nativo da UI), com navegação, criação de pasta e fallback para seletor do sistema.
+- Histórico de diálogos por projeto com sidebar `DIALOGOS` e menu `Diálogos Recentes`.
+- Persistência de sessão por projeto em `.agent/sessions/*.json` + `last_session.json`.
 - UX com separação de resposta em abas: `Resposta`, `Ações`, `Logs`.
+- Ícones com emoji quando fonte suportada, fallback automático para ASCII.
+- Explorer de arquivos, painel de inspector e telemetria.
 
 ## Estrutura do projeto
 
@@ -22,6 +28,7 @@ Aplicação desktop local em C++ (SDL2 + OpenGL + Dear ImGui) para interação c
 │   └── vendor/
 ├── scripts/
 │   └── build.sh
+├── LICENSE
 └── .agent/
 ```
 
@@ -38,6 +45,8 @@ No Fedora:
 
 ```bash
 sudo dnf install cmake gcc-c++ SDL2-devel mesa-libGL-devel
+# opcional para seletor externo:
+sudo dnf install zenity
 ```
 
 No Ubuntu/Debian:
@@ -100,12 +109,25 @@ ollama serve
 
 A aplicação detecta modelos locais no startup e exibe sugestões de vocação no menu `Preferências`.
 
+## Uso rápido da UI
+
+- `Arquivo > Abrir Pasta...` abre o seletor interno de pastas.
+- `Arquivo > Novo Diálogo` cria nova sessão (`session_YYYYMMDD_HHMMSS.json`).
+- Clique em um item da sidebar `DIALOGOS` para restaurar conversa anterior.
+- Na barra de input, ajuste:
+  - `Modelo`
+  - `Reasoning` (`low`, `medium`, `high`)
+  - `Acesso` (`Read-only`, `Workspace-write`, `Full-access`)
+
 ## Solução de problemas
 
 - Se não abrir janela:
   - Verifique driver OpenGL e ambiente gráfico.
 - Se não listar modelos:
   - Confirme `ollama serve` ativo em `localhost:11434`.
+- Se o seletor externo não abrir:
+  - Use o seletor interno da UI (padrão).
+  - Opcionalmente instale `zenity`/`kdialog`.
 - Se sessão não carregar:
   - Confira permissões de escrita em `.agent/sessions/`.
 - Se build quebrar por cache antigo:
@@ -115,3 +137,8 @@ A aplicação detecta modelos locais no startup e exibe sugestões de vocação 
 
 - O workspace ativo impacta ferramentas e contexto.
 - O histórico é salvo por projeto, não global.
+
+## Licença
+
+Este projeto está licenciado sob **GNU GPL v3.0 only**.
+Consulte o arquivo [LICENSE](./LICENSE).

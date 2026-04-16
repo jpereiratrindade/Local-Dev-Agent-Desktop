@@ -13,6 +13,10 @@
 #include <algorithm>
 #include <chrono>
 #include <iomanip>
+#include <cstdlib>
+#include <cstdio>
+#include <cctype>
+#include <cstring>
 
 namespace fs = std::filesystem;
 
@@ -64,6 +68,45 @@ static const char* accessLabel(int idx) {
     static const char* labels[] = {"Read-only", "Workspace-write", "Full-access"};
     if (idx < 0 || idx > 2) return "Workspace-write";
     return labels[idx];
+}
+
+static std::string iconLabel(bool emojiEnabled, const std::string& withEmoji, const std::string& plain) {
+    return emojiEnabled ? withEmoji : plain;
+}
+
+static std::string pickFolderDialog(const std::string& preferredPath) {
+    pfd::settings::rescan();
+    if (!pfd::settings::available()) return "";
+
+    std::vector<std::string> candidates;
+    if (!preferredPath.empty()) candidates.push_back(preferredPath);
+    candidates.push_back(normalizeRootPath("."));
+    const char* home = std::getenv("HOME");
+    if (home && *home) candidates.push_back(std::string(home));
+
+    for (const auto& candidate : candidates) {
+        try {
+            std::string normalized = normalizeRootPath(candidate);
+            if (!normalized.empty() && fs::exists(normalized)) {
+                auto dir = pfd::select_folder("Selecionar Projeto Agent", normalized, pfd::opt::force_path).result();
+                if (!dir.empty()) return dir;
+            }
+        } catch (...) {}
+    }
+    auto dir = pfd::select_folder("Selecionar Projeto Agent").result();
+    return dir;
+}
+
+static std::string trimPathInput(std::string value) {
+    // Trim whitespace/newlines copied from terminal and surrounding quotes.
+    while (!value.empty() && std::isspace(static_cast<unsigned char>(value.front()))) value.erase(value.begin());
+    while (!value.empty() && std::isspace(static_cast<unsigned char>(value.back()))) value.pop_back();
+    if (value.size() >= 2) {
+        if ((value.front() == '"' && value.back() == '"') || (value.front() == '\'' && value.back() == '\'')) {
+            value = value.substr(1, value.size() - 2);
+        }
+    }
+    return value;
 }
 
 struct ActionStep {
@@ -149,11 +192,10 @@ void AgentUI::render() {
     ImGuiIO& io = ImGui::GetIO();
     if (io.KeyCtrl && ImGui::IsKeyPressed(ImGuiKey_O)) {
          std::string startDir = (hasOpenProject && !currentProjectRoot.empty()) ? currentProjectRoot : normalizeRootPath(".");
-         auto dir = pfd::select_folder("Selecionar Projeto Agent", startDir).result();
-         if (!dir.empty()) {
-             currentProjectRoot = normalizeRootPath(dir);
-             setOllama(ollama);
-         }
+         folderPickerCurrentDir = startDir;
+         folderPickerSelectedDir.clear();
+         std::snprintf(folderPickerPathBuf, sizeof(folderPickerPathBuf), "%s", startDir.c_str());
+         openFolderPickerRequested = true;
     }
     if (io.KeyCtrl && ImGui::IsKeyPressed(ImGuiKey_N)) {
          newDialogue();
@@ -195,6 +237,8 @@ void AgentUI::render() {
     ImGui::SetNextWindowPos(ImVec2(viewport->Pos.x, viewport->Pos.y + viewport->Size.y - statsHeight));
     ImGui::SetNextWindowSize(ImVec2(viewport->Size.x, statsHeight));
     drawStatsPanel();
+    drawOpenFolderPickerDialog();
+    drawOpenFolderFallbackDialog();
 }
 
 void AgentUI::drawMainMenu() {
@@ -204,11 +248,10 @@ void AgentUI::drawMainMenu() {
             ImGui::Separator();
             if (ImGui::MenuItem("Abrir Pasta...", "Ctrl+O")) {
                 std::string startDir = (hasOpenProject && !currentProjectRoot.empty()) ? currentProjectRoot : normalizeRootPath(".");
-                auto dir = pfd::select_folder("Selecionar Projeto Agent", startDir).result();
-                if (!dir.empty()) {
-                    currentProjectRoot = normalizeRootPath(dir);
-                    setOllama(ollama);
-                }
+                folderPickerCurrentDir = startDir;
+                folderPickerSelectedDir.clear();
+                std::snprintf(folderPickerPathBuf, sizeof(folderPickerPathBuf), "%s", startDir.c_str());
+                openFolderPickerRequested = true;
             }
             if (ImGui::MenuItem("Abrir Diálogo...")) {
                 fs::path sessions = sessionsDir();
@@ -220,6 +263,25 @@ void AgentUI::drawMainMenu() {
                         thoughtStream = "Falha ao carregar diálogo selecionado.";
                     }
                 }
+            }
+            if (ImGui::BeginMenu("Diálogos Recentes")) {
+                auto recent = listRecentSessions(15);
+                if (recent.empty()) {
+                    ImGui::TextDisabled("Sem sessões salvas.");
+                } else {
+                    for (const auto& [path, _ts] : recent) {
+                        const std::string fileName = path.filename().string();
+                        const bool isCurrent = (fileName == currentSessionFile);
+                        if (ImGui::MenuItem(fileName.c_str(), nullptr, isCurrent, true)) {
+                            if (loadSessionFromFile(path)) {
+                                thoughtStream = "Diálogo restaurado: " + fileName;
+                            } else {
+                                thoughtStream = "Falha ao carregar diálogo: " + fileName;
+                            }
+                        }
+                    }
+                }
+                ImGui::EndMenu();
             }
             if (ImGui::MenuItem("Fechar Pasta")) {
                 currentProjectRoot.clear();
@@ -261,6 +323,34 @@ void AgentUI::drawMainMenu() {
 
 void AgentUI::drawFileExplorer() {
     ImGui::BeginChild("ExplorerArea", ImVec2(0, 0), true);
+    ImGui::TextColored(ImVec4(0.4f, 0.7f, 1.0f, 1.0f), "DIALOGOS");
+    ImGui::Separator();
+
+    if (hasOpenProject && !currentProjectRoot.empty()) {
+        auto recent = listRecentSessions(20);
+        if (recent.empty()) {
+            ImGui::TextDisabled("Sem dialogos salvos.");
+        } else {
+            ImGui::BeginChild("RecentDialogsList", ImVec2(0, 140), true);
+            for (const auto& [path, _ts] : recent) {
+                const std::string fileName = path.filename().string();
+                const bool isCurrent = (fileName == currentSessionFile);
+                std::string label = (isCurrent ? "> " : "  ") + fileName;
+                if (ImGui::Selectable(label.c_str(), isCurrent)) {
+                    if (loadSessionFromFile(path)) {
+                        thoughtStream = "Diálogo restaurado: " + fileName;
+                    } else {
+                        thoughtStream = "Falha ao carregar diálogo: " + fileName;
+                    }
+                }
+            }
+            ImGui::EndChild();
+        }
+    } else {
+        ImGui::TextDisabled("Abra uma pasta para ver dialogos.");
+    }
+    
+    ImGui::Spacing();
     ImGui::TextColored(ImVec4(0.4f, 0.7f, 1.0f, 1.0f), "EXPLORER");
     ImGui::Separator();
     
@@ -280,13 +370,13 @@ void AgentUI::renderDirectory(const std::string& path) {
             std::string filename = entryPath.filename().string();
             
             if (entry.is_directory()) {
-                std::string folderLabel = "📁 " + filename;
+                std::string folderLabel = iconLabel(emojiIconsEnabled, "📁 " + filename, "[DIR] " + filename);
                 if (ImGui::TreeNode(folderLabel.c_str())) {
                     renderDirectory(entryPath.string());
                     ImGui::TreePop();
                 }
             } else {
-                std::string fileLabel = "📄 " + filename;
+                std::string fileLabel = iconLabel(emojiIconsEnabled, "📄 " + filename, "[FILE] " + filename);
                 bool isSelected = (selectedFile == entryPath.string());
                 if (ImGui::Selectable(fileLabel.c_str(), isSelected)) {
                     selectedFile = entryPath.string();
@@ -512,6 +602,7 @@ void AgentUI::drawChatWindow() {
                 std::string missionGoal = "[reasoning=" + reasoning + "][access=" + access + "] " + userMsg;
                 runPythonAgent(missionGoal, "AGENT");
             } else {
+                int promptEstimate = static_cast<int>((fullMsg.size() / 4) + 24);
                 std::vector<agent::network::Message> threadHistory;
                 {
                     std::lock_guard<std::mutex> lock(msgMutex);
@@ -531,12 +622,17 @@ void AgentUI::drawChatWindow() {
                         history.back().text += chunk;
                         scrollToBottom = true;
                     }
-                }, [this](bool success, agent::network::OllamaClient::StreamStats stats) {
+                }, [this, promptEstimate](bool success, agent::network::OllamaClient::StreamStats stats) {
                     std::lock_guard<std::mutex> lock(msgMutex);
-                    totalPromptTokens += stats.prompt_tokens;
-                    totalCompletionTokens += stats.completion_tokens;
-                    tokensPerSec = (stats.total_duration_ms > 0) ? (stats.completion_tokens / (stats.total_duration_ms / 1000.0)) : 0;
-                    thoughtStream = success ? ("Transmissão concluída. (+" + std::to_string(stats.completion_tokens) + " tkn)") : "Transmissão interrompida.";
+                    int completionTokens = stats.completion_tokens;
+                    if (completionTokens <= 0 && !history.empty() && history.back().role == "assistant") {
+                        completionTokens = std::max(1, static_cast<int>(history.back().text.size() / 4));
+                    }
+                    int promptTokens = stats.prompt_tokens > 0 ? stats.prompt_tokens : promptEstimate;
+                    totalPromptTokens += promptTokens;
+                    totalCompletionTokens += completionTokens;
+                    tokensPerSec = (stats.total_duration_ms > 0) ? (completionTokens / (stats.total_duration_ms / 1000.0)) : 0;
+                    thoughtStream = success ? ("Transmissão concluída. (+" + std::to_string(completionTokens) + " tkn)") : "Transmissão interrompida.";
                     llmBusy = false;
                     saveSession();
                 }, systemPrompt);
@@ -593,6 +689,197 @@ void AgentUI::drawStatsPanel() {
     ImGui::TextDisabled("(%s)", shortHint.c_str());
     
     ImGui::End();
+}
+
+void AgentUI::drawOpenFolderFallbackDialog() {
+    if (openFolderFallbackRequested) {
+        openFolderFallbackVisible = true;
+        openFolderFallbackError.clear();
+        ImGui::OpenPopup("Abrir Pasta (Fallback)");
+        openFolderFallbackRequested = false;
+    }
+
+    if (ImGui::BeginPopupModal("Abrir Pasta (Fallback)", &openFolderFallbackVisible, ImGuiWindowFlags_AlwaysAutoResize)) {
+        ImGui::TextWrapped("Nao foi possivel abrir o seletor de pastas do sistema. Informe o caminho manualmente:");
+        ImGui::Separator();
+        ImGui::SetNextItemWidth(520.0f);
+        ImGui::InputText("##FolderPathFallback", openFolderPathBuf, IM_ARRAYSIZE(openFolderPathBuf));
+        if (!openFolderFallbackError.empty()) {
+            ImGui::TextColored(ImVec4(1.0f, 0.45f, 0.45f, 1.0f), "%s", openFolderFallbackError.c_str());
+        }
+        ImGui::Separator();
+
+        if (ImGui::Button("Abrir", ImVec2(120, 0))) {
+            std::string candidate = normalizeRootPath(trimPathInput(openFolderPathBuf));
+            if (fs::exists(candidate) && fs::is_directory(candidate)) {
+                currentProjectRoot = candidate;
+                setOllama(ollama);
+                thoughtStream = "Pasta aberta via fallback: " + candidate;
+                openFolderFallbackVisible = false;
+                openFolderFallbackError.clear();
+                ImGui::CloseCurrentPopup();
+            } else {
+                openFolderFallbackError = "Caminho inválido ou inacessível: " + candidate;
+                thoughtStream = openFolderFallbackError;
+            }
+        }
+        ImGui::SameLine();
+        if (ImGui::Button("Cancelar", ImVec2(120, 0))) {
+            openFolderFallbackVisible = false;
+            openFolderFallbackError.clear();
+            ImGui::CloseCurrentPopup();
+        }
+        if (ImGui::IsKeyPressed(ImGuiKey_Escape)) {
+            openFolderFallbackVisible = false;
+            openFolderFallbackError.clear();
+            ImGui::CloseCurrentPopup();
+        }
+        ImGui::EndPopup();
+    }
+}
+
+void AgentUI::drawOpenFolderPickerDialog() {
+    if (openFolderPickerRequested) {
+        openFolderPickerVisible = true;
+        folderPickerStatus.clear();
+        newFolderNameBuf[0] = '\0';
+        ImGui::OpenPopup("Abrir Pasta");
+        openFolderPickerRequested = false;
+    }
+
+    if (ImGui::BeginPopupModal("Abrir Pasta", &openFolderPickerVisible, ImGuiWindowFlags_AlwaysAutoResize)) {
+        if (folderPickerCurrentDir.empty()) {
+            folderPickerCurrentDir = normalizeRootPath(".");
+            std::snprintf(folderPickerPathBuf, sizeof(folderPickerPathBuf), "%s", folderPickerCurrentDir.c_str());
+        }
+
+        ImGui::TextWrapped("Selecione a pasta do projeto.");
+        ImGui::Separator();
+
+        ImGui::SetNextItemWidth(640.0f);
+        ImGui::InputText("Caminho", folderPickerPathBuf, IM_ARRAYSIZE(folderPickerPathBuf));
+
+        if (ImGui::Button("Ir para caminho", ImVec2(130, 0))) {
+            std::string typed = normalizeRootPath(trimPathInput(folderPickerPathBuf));
+            if (fs::exists(typed) && fs::is_directory(typed)) {
+                folderPickerCurrentDir = typed;
+                folderPickerSelectedDir.clear();
+                folderPickerStatus.clear();
+            }
+        }
+        ImGui::SameLine();
+        if (ImGui::Button("Home", ImVec2(90, 0))) {
+            const char* home = std::getenv("HOME");
+            if (home && *home) folderPickerCurrentDir = normalizeRootPath(home);
+            std::snprintf(folderPickerPathBuf, sizeof(folderPickerPathBuf), "%s", folderPickerCurrentDir.c_str());
+        }
+        ImGui::SameLine();
+        if (ImGui::Button("Subir", ImVec2(90, 0))) {
+            fs::path p(folderPickerCurrentDir);
+            if (p.has_parent_path()) {
+                folderPickerCurrentDir = normalizeRootPath(p.parent_path().string());
+                std::snprintf(folderPickerPathBuf, sizeof(folderPickerPathBuf), "%s", folderPickerCurrentDir.c_str());
+                folderPickerSelectedDir.clear();
+                folderPickerStatus.clear();
+            }
+        }
+        ImGui::SameLine();
+        if (ImGui::Button("Seletor do sistema", ImVec2(170, 0))) {
+            std::string picked = pickFolderDialog(folderPickerCurrentDir);
+            if (!picked.empty()) {
+                folderPickerCurrentDir = normalizeRootPath(picked);
+                folderPickerSelectedDir.clear();
+                std::snprintf(folderPickerPathBuf, sizeof(folderPickerPathBuf), "%s", folderPickerCurrentDir.c_str());
+                folderPickerStatus.clear();
+            }
+        }
+
+        ImGui::Separator();
+        ImGui::SetNextItemWidth(280.0f);
+        ImGui::InputTextWithHint("##NewFolderName", "Nome da nova pasta", newFolderNameBuf, IM_ARRAYSIZE(newFolderNameBuf));
+        ImGui::SameLine();
+        if (ImGui::Button("Nova Pasta", ImVec2(120, 0))) {
+            std::string folderName = trimPathInput(newFolderNameBuf);
+            if (folderName.empty()) {
+                folderPickerStatus = "Informe um nome para a nova pasta.";
+            } else {
+                fs::path newDir = fs::path(folderPickerCurrentDir) / folderName;
+                try {
+                    if (fs::exists(newDir)) {
+                        folderPickerStatus = "A pasta ja existe: " + newDir.string();
+                    } else if (fs::create_directories(newDir)) {
+                        folderPickerStatus = "Pasta criada: " + newDir.string();
+                        folderPickerSelectedDir = normalizeRootPath(newDir.string());
+                        newFolderNameBuf[0] = '\0';
+                    } else {
+                        folderPickerStatus = "Nao foi possivel criar a pasta.";
+                    }
+                } catch (...) {
+                    folderPickerStatus = "Erro ao criar pasta.";
+                }
+            }
+        }
+        if (!folderPickerStatus.empty()) {
+            ImGui::SameLine();
+            ImGui::TextDisabled("%s", folderPickerStatus.c_str());
+        }
+
+        ImGui::Separator();
+        ImGui::BeginChild("FolderPickerList", ImVec2(640, 280), true);
+        try {
+            std::vector<std::string> dirs;
+            for (const auto& entry : fs::directory_iterator(folderPickerCurrentDir)) {
+                if (entry.is_directory()) dirs.push_back(entry.path().filename().string());
+            }
+            std::sort(dirs.begin(), dirs.end());
+
+            for (const auto& name : dirs) {
+                fs::path full = fs::path(folderPickerCurrentDir) / name;
+                bool selected = (folderPickerSelectedDir == full.string());
+                std::string dirItem = iconLabel(emojiIconsEnabled, "📁 " + name, "[DIR] " + name);
+                if (ImGui::Selectable(dirItem.c_str(), selected)) {
+                    folderPickerSelectedDir = full.string();
+                }
+                if (ImGui::IsItemHovered() && ImGui::IsMouseDoubleClicked(0)) {
+                    folderPickerCurrentDir = normalizeRootPath(full.string());
+                    std::snprintf(folderPickerPathBuf, sizeof(folderPickerPathBuf), "%s", folderPickerCurrentDir.c_str());
+                    folderPickerSelectedDir.clear();
+                    folderPickerStatus.clear();
+                }
+            }
+        } catch (...) {
+            ImGui::TextDisabled("Nao foi possivel listar o diretorio atual.");
+        }
+        ImGui::EndChild();
+
+        ImGui::Separator();
+        if (ImGui::Button("Abrir Pasta Atual", ImVec2(160, 0))) {
+            if (fs::exists(folderPickerCurrentDir) && fs::is_directory(folderPickerCurrentDir)) {
+                currentProjectRoot = normalizeRootPath(folderPickerCurrentDir);
+                setOllama(ollama);
+                thoughtStream = "Pasta aberta: " + currentProjectRoot;
+                openFolderPickerVisible = false;
+                ImGui::CloseCurrentPopup();
+            }
+        }
+        ImGui::SameLine();
+        if (ImGui::Button("Abrir Selecionada", ImVec2(160, 0))) {
+            if (!folderPickerSelectedDir.empty() && fs::exists(folderPickerSelectedDir) && fs::is_directory(folderPickerSelectedDir)) {
+                currentProjectRoot = normalizeRootPath(folderPickerSelectedDir);
+                setOllama(ollama);
+                thoughtStream = "Pasta aberta: " + currentProjectRoot;
+                openFolderPickerVisible = false;
+                ImGui::CloseCurrentPopup();
+            }
+        }
+        ImGui::SameLine();
+        if (ImGui::Button("Cancelar", ImVec2(120, 0)) || ImGui::IsKeyPressed(ImGuiKey_Escape)) {
+            openFolderPickerVisible = false;
+            ImGui::CloseCurrentPopup();
+        }
+
+        ImGui::EndPopup();
+    }
 }
 
 void AgentUI::drawCodeBlock(const std::string& code, const std::string& lang) {
@@ -702,7 +989,9 @@ void AgentUI::generateProjectMap() {
 
             std::string prefix = "";
             for (int i = 0; i < depth - 1; ++i) prefix += "│   ";
-            prefix += entry.is_directory() ? "├── 📁 " : "├── 📄 ";
+            prefix += entry.is_directory()
+                ? iconLabel(emojiIconsEnabled, "├── 📁 ", "├── [DIR] ")
+                : iconLabel(emojiIconsEnabled, "├── 📄 ", "├── [FILE] ");
             
             projectMap += prefix + path.filename().string() + "\n";
         }
@@ -866,21 +1155,40 @@ std::string AgentUI::newSessionFileName() const {
     return oss.str();
 }
 
+std::vector<std::pair<fs::path, fs::file_time_type>> AgentUI::listRecentSessions(std::size_t maxCount) const {
+    std::vector<std::pair<fs::path, fs::file_time_type>> out;
+    if (!hasOpenProject || currentProjectRoot.empty()) return out;
+    fs::path dir = sessionsDir();
+    if (!fs::exists(dir)) return out;
+
+    for (const auto& e : fs::directory_iterator(dir)) {
+        if (!e.is_regular_file()) continue;
+        if (e.path().extension() != ".json") continue;
+        out.push_back({e.path(), e.last_write_time()});
+    }
+
+    std::sort(out.begin(), out.end(), [](const auto& a, const auto& b) { return a.second > b.second; });
+    if (out.size() > maxCount) out.resize(maxCount);
+    return out;
+}
+
 void AgentUI::runPythonAgent(const std::string& goal, const std::string& mode) {
     if (!orchestrator) return;
+    const int promptEstimate = std::max(1, static_cast<int>(goal.size() / 4));
 
     agent::core::Orchestrator::MissionCallbacks cb;
     cb.onThought = [this](const std::string& thought) {
         std::lock_guard<std::mutex> lock(msgMutex);
-        thoughtStream = "🧠 PENSANDO:\n" + thought;
+        thoughtStream = iconLabel(emojiIconsEnabled, "🧠 PENSANDO:\n", "[THINKING]\n") + thought;
     };
     cb.onAction = [this](const std::string& action) {
         std::lock_guard<std::mutex> lock(msgMutex);
-        thoughtStream += "\n🚀 AÇÃO: " + action;
+        thoughtStream += "\n" + iconLabel(emojiIconsEnabled, "🚀 AÇÃO: ", "[ACTION] ") + action;
     };
     cb.onObservation = [this](const std::string& obs) {
         std::lock_guard<std::mutex> lock(msgMutex);
-        thoughtStream += "\n👁️ OBSERVAÇÃO: " + (obs.length() > 200 ? obs.substr(0, 200) + "..." : obs);
+        thoughtStream += "\n" + iconLabel(emojiIconsEnabled, "👁️ OBSERVAÇÃO: ", "[OBSERVATION] ") +
+                         (obs.length() > 200 ? obs.substr(0, 200) + "..." : obs);
     };
     cb.onMessageChunk = [this](const std::string& chunk) {
         std::lock_guard<std::mutex> lock(msgMutex);
@@ -890,18 +1198,23 @@ void AgentUI::runPythonAgent(const std::string& goal, const std::string& mode) {
             history.back().text += chunk;
             scrollToBottom = true;
         }
+        totalCompletionTokens += std::max(1, static_cast<int>(chunk.size() / 4));
         saveSession();
     };
     cb.onComplete = [this](bool success) {
         std::lock_guard<std::mutex> lock(msgMutex);
-        thoughtStream += success ? "\n🏁 Missão Finalizada Nativamente." : "\n⏹️ Missão interrompida.";
+        thoughtStream += success
+            ? ("\n" + iconLabel(emojiIconsEnabled, "🏁 Missão Finalizada Nativamente.", "[DONE] Missão Finalizada Nativamente."))
+            : ("\n" + iconLabel(emojiIconsEnabled, "⏹️ Missão interrompida.", "[STOPPED] Missão interrompida."));
         llmBusy = false;
         saveSession();
     };
 
     {
         std::lock_guard<std::mutex> lock(msgMutex);
-        thoughtStream = "🚀 MISSION START: Iniciando Orquestrador C++20 Nativo...";
+        thoughtStream = iconLabel(emojiIconsEnabled, "🚀 MISSION START: Iniciando Orquestrador C++20 Nativo...",
+                                  "[MISSION START] Iniciando Orquestrador C++20 Nativo...");
+        totalPromptTokens += promptEstimate;
     }
 
     orchestrator->runMission(goal, mode, 10, cb);

@@ -38,6 +38,7 @@ set(IMGUI_SOURCES
 )
 
 add_executable(AgentGUI ${SOURCES} ${IMGUI_SOURCES})
+target_compile_definitions(AgentGUI PRIVATE IMGUI_USE_WCHAR32)
 
 if (TARGET OpenGL::GL)
     set(OPENGL_TARGET OpenGL::GL)

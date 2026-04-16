@@ -2,6 +2,7 @@
 #include "httplib.h"
 #include <iostream>
 #include <thread>
+#include <sstream>
 
 using json = nlohmann::json;
 
@@ -63,25 +64,34 @@ void OllamaClient::chatStream(const std::vector<Message>& history,
 
         bool success = false;
         StreamStats stats;
+        std::string streamBuffer;
         httplib::Headers headers;
         auto res = cli.Post("/api/chat", headers, payload.dump(), "application/json",
             [&](const char* data, size_t data_len) {
                 if (cancelRequested.load()) return false;
-                try {
-                    // Ollama envia um objeto JSON por linha no modo stream
-                    std::string chunk(data, data_len);
-                    auto j_chunk = json::parse(chunk);
-                    if (j_chunk.contains("message") && j_chunk["message"].contains("content")) {
-                        onChunk(j_chunk["message"]["content"]);
+                streamBuffer.append(data, data_len);
+                size_t pos = 0;
+                while (true) {
+                    size_t newline = streamBuffer.find('\n', pos);
+                    if (newline == std::string::npos) break;
+                    std::string line = streamBuffer.substr(pos, newline - pos);
+                    pos = newline + 1;
+                    if (line.empty()) continue;
+                    try {
+                        auto j_chunk = json::parse(line);
+                        if (j_chunk.contains("message") && j_chunk["message"].contains("content")) {
+                            onChunk(j_chunk["message"]["content"]);
+                        }
+                        if (j_chunk.value("done", false)) {
+                            success = true;
+                            stats.prompt_tokens = j_chunk.value("prompt_eval_count", 0);
+                            stats.completion_tokens = j_chunk.value("eval_count", 0);
+                            stats.total_duration_ms = j_chunk.value("total_duration", 0.0) / 1000000.0; // ns -> ms
+                        }
+                    } catch (...) {
                     }
-                    if (j_chunk.value("done", false)) {
-                        success = true;
-                        stats.prompt_tokens = j_chunk.value("prompt_eval_count", 0);
-                        stats.completion_tokens = j_chunk.value("eval_count", 0);
-                        stats.total_duration_ms = j_chunk.value("total_duration", 0.0) / 1000000.0; // ns -> ms
-                    }
-                } catch (...) {
                 }
+                streamBuffer.erase(0, pos);
                 return true;
             });
 

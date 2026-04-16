@@ -10,6 +10,7 @@
 #include <thread>
 #include <atomic>
 #include <filesystem>
+#include <utility>
 #include "json.hpp"
 #include "Orchestrator.hpp"
 #include "NativeTools.hpp"
@@ -39,8 +40,20 @@ public:
     int selectedReasoning = 1; // 0=low,1=medium,2=high
     int selectedAccess = 1;    // 0=read-only,1=workspace-write,2=full-access
     std::atomic<bool> llmBusy{false};
+    bool emojiIconsEnabled = false;
     bool hasOpenProject = true;
     std::string currentSessionFile = "last_session.json";
+    bool openFolderFallbackRequested = false;
+    bool openFolderFallbackVisible = false;
+    char openFolderPathBuf[1024] = "";
+    std::string openFolderFallbackError;
+    bool openFolderPickerRequested = false;
+    bool openFolderPickerVisible = false;
+    std::string folderPickerCurrentDir;
+    std::string folderPickerSelectedDir;
+    char folderPickerPathBuf[1024] = "";
+    char newFolderNameBuf[256] = "";
+    std::string folderPickerStatus;
     
     // Context & Thinking State
     std::string selectedFile = "";
@@ -87,9 +100,12 @@ private:
     void drawThoughtPanel();
     void drawStatsPanel();
     void drawCodeBlock(const std::string& code, const std::string& lang);
+    void drawOpenFolderFallbackDialog();
+    void drawOpenFolderPickerDialog();
     std::filesystem::path sessionsDir() const;
     bool loadSessionFromFile(const std::filesystem::path& sessionFile);
     std::string newSessionFileName() const;
+    std::vector<std::pair<std::filesystem::path, std::filesystem::file_time_type>> listRecentSessions(std::size_t maxCount = 12) const;
 
     agent::network::OllamaClient* ollama = nullptr;
     agent::core::Orchestrator* orchestrator = nullptr;

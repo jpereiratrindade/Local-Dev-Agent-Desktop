@@ -27,6 +27,9 @@ require_cmd() {
 build_project() {
   build_type="$1"
   require_cmd cmake
+  # Evita cache de paths absolutos de libs (ex.: migração Debian -> Fedora).
+  rm -f "$BUILD_DIR/CMakeCache.txt"
+  rm -rf "$BUILD_DIR/CMakeFiles"
   cmake -S . -B "$BUILD_DIR" -DCMAKE_BUILD_TYPE="$build_type"
   cmake --build "$BUILD_DIR" -j
 }
