@@ -43,6 +43,7 @@ void Orchestrator::runMission(const std::string& goal, const std::string& mode,
     std::thread([this, goal, mode, maxSteps, callbacks]() {
         std::string reasoning = extractTag(goal, "reasoning");
         std::string access = extractTag(goal, "access");
+        std::string profile = extractTag(goal, "profile");
         std::string currentGoal = stripTags(goal);
         const bool highReasoning = (reasoning == "high");
         int effectiveMaxSteps = adjustStepsByReasoning(maxSteps, reasoning.empty() ? "medium" : reasoning);
@@ -51,6 +52,7 @@ void Orchestrator::runMission(const std::string& goal, const std::string& mode,
         history.push_back({"user", "META: " + currentGoal +
                                    "\n\nParâmetros: reasoning=" + (reasoning.empty() ? "medium" : reasoning) +
                                    ", access=" + (access.empty() ? "workspace-write" : access) +
+                                   ", profile=" + (profile.empty() ? "general" : profile) +
                                    "\nInicie pela menor ação verificável possível." +
                                    (highReasoning
                                        ? "\nPara reasoning=high: colete no minimo 3 evidencias concretas em arquivos/caminhos antes da conclusao."
@@ -148,10 +150,18 @@ void Orchestrator::runMission(const std::string& goal, const std::string& mode,
             "1) Máximo total de 15 bullets.\n"
             "2) Cite evidências com caminhos de arquivo sempre que possível.\n"
             "3) Não repetir texto já dito.\n"
-            "4) Sem chamar ferramentas, sem JSON de tool-call.\n";
+            "4) Sem chamar ferramentas, sem JSON de tool-call.\n"
+            "5) Se afirmar que verificou/criou/editou/executou algo, inclua evidência objetiva (comando + saída curta ou caminho exato).\n";
+        if (profile == "coding") {
+            finalPrompt += "6) Para profile=coding, inclua foco em implementacao, impacto e validacao tecnica.\n";
+        } else if (profile == "review") {
+            finalPrompt += "6) Para profile=review, priorize bugs/riscos/regressoes e lacunas de teste.\n";
+        } else if (profile == "analysis") {
+            finalPrompt += "6) Para profile=analysis, priorize síntese com evidências e trade-offs.\n";
+        }
         if (highReasoning) {
-            finalPrompt += "5) Para reasoning=high, inclua ao menos 3 evidências explícitas de código/arquivos.\n";
-            finalPrompt += "6) Se evidências insuficientes, declare a limitação de forma objetiva.\n";
+            finalPrompt += "7) Para reasoning=high, inclua ao menos 3 evidências explícitas de código/arquivos.\n";
+            finalPrompt += "8) Se evidências insuficientes, declare a limitação de forma objetiva.\n";
         }
         finalPrompt += "Contexto adicional: evidências detectadas no loop = " + std::to_string(evidenceCount) + ".";
 

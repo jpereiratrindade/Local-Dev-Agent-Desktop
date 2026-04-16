@@ -70,6 +70,12 @@ static const char* accessLabel(int idx) {
     return labels[idx];
 }
 
+static const char* profileLabel(int idx) {
+    static const char* labels[] = {"general", "coding", "analysis", "review"};
+    if (idx < 0 || idx > 3) return "general";
+    return labels[idx];
+}
+
 static std::string iconLabel(bool emojiEnabled, const std::string& withEmoji, const std::string& plain) {
     return emojiEnabled ? withEmoji : plain;
 }
@@ -238,6 +244,7 @@ void AgentUI::render() {
     ImGui::SetNextWindowSize(ImVec2(viewport->Size.x, statsHeight));
     drawStatsPanel();
     drawOpenFolderPickerDialog();
+    drawGovernedProjectDialog();
     drawOpenFolderFallbackDialog();
 }
 
@@ -252,6 +259,14 @@ void AgentUI::drawMainMenu() {
                 folderPickerSelectedDir.clear();
                 std::snprintf(folderPickerPathBuf, sizeof(folderPickerPathBuf), "%s", startDir.c_str());
                 openFolderPickerRequested = true;
+            }
+            if (ImGui::MenuItem("Novo Projeto Governado...")) {
+                std::string base = (hasOpenProject && !currentProjectRoot.empty()) ? currentProjectRoot : normalizeRootPath(".");
+                std::snprintf(governedProjectBasePathBuf, sizeof(governedProjectBasePathBuf), "%s", base.c_str());
+                governedProjectNameBuf[0] = '\0';
+                governedProjectStatus.clear();
+                governedProjectType = 0;
+                governedProjectDialogRequested = true;
             }
             if (ImGui::MenuItem("Abrir Diálogo...")) {
                 fs::path sessions = sessionsDir();
@@ -305,6 +320,10 @@ void AgentUI::drawMainMenu() {
                         currentModel = model;
                 }
                 ImGui::EndMenu();
+            }
+            if (ImGui::MenuItem("Permitir modo autônomo", nullptr, autonomousFeatureEnabled)) {
+                autonomousFeatureEnabled = !autonomousFeatureEnabled;
+                if (!autonomousFeatureEnabled) autonomousMode = false;
             }
             ImGui::EndMenu();
         }
@@ -514,7 +533,15 @@ void AgentUI::drawChatWindow() {
         if (ImGui::SmallButton("Desativar Contexto")) selectedFile = "";
     }
     ImGui::SameLine();
+    if (!autonomousFeatureEnabled) autonomousMode = false;
+    if (!autonomousFeatureEnabled) ImGui::BeginDisabled();
     ImGui::Checkbox("Autônomo (Codex)", &autonomousMode);
+    if (!autonomousFeatureEnabled) {
+        ImGui::EndDisabled();
+        if (ImGui::IsItemHovered()) {
+            ImGui::SetTooltip("Modo autônomo desativado em Preferências.");
+        }
+    }
     ImGui::SameLine();
     bool busyNow = llmBusy.load() || (ollama && ollama->isStreaming());
     if (busyNow) {
@@ -553,6 +580,12 @@ void AgentUI::drawChatWindow() {
     if (ImGui::Combo("##AccessInline", &selectedAccess, accessItems, IM_ARRAYSIZE(accessItems))) {
         agent::core::setNativeToolAccessLevel(accessFromIdx(selectedAccess));
     }
+    ImGui::SameLine();
+    ImGui::TextDisabled("Perfil");
+    ImGui::SameLine();
+    const char* profileItems[] = {"Uso geral", "Codar", "Analise", "Review"};
+    ImGui::SetNextItemWidth(130);
+    ImGui::Combo("##ProfileInline", &selectedProfile, profileItems, IM_ARRAYSIZE(profileItems));
 
     ImGui::PushItemWidth(-70);
     bool submitted = ImGui::InputText("##Input", inputBuf, IM_ARRAYSIZE(inputBuf), ImGuiInputTextFlags_EnterReturnsTrue);
@@ -567,6 +600,7 @@ void AgentUI::drawChatWindow() {
             std::string userMsg = inputBuf;
             const std::string reasoning = reasoningLabel(selectedReasoning);
             const std::string access = accessLabel(selectedAccess);
+            const std::string profile = profileLabel(selectedProfile);
             
             // Contexto V5: Injeção de Autoridade via System Prompt
             std::string systemPrompt = "VOCÊ É O AGENT. MODO ANALISTA TÉCNICO DE ELITE.\n"
@@ -577,7 +611,9 @@ void AgentUI::drawChatWindow() {
                                        "3. Se um arquivo estiver em <active_file>, trate-o como seu código principal.\n"
                                        "4. Respostas cordiais e extremamente técnicas baseadas no contexto fornecido.\n"
                                        "5. Nível de reasoning atual: " + reasoning + ".\n"
-                                       "6. Nível de acesso permitido para ferramentas: " + access + ".";
+                                       "6. Nível de acesso permitido para ferramentas: " + access + ".\n"
+                                       "7. Perfil de tarefa atual: " + profile + ".\n"
+                                       "8. Se você afirmar que verificou/criou/editou/executou algo, inclua evidência objetiva (comando + saída curta ou caminho de arquivo).";
 
             std::string fullMsg = "";
             if (!selectedFile.empty()) {
@@ -599,7 +635,7 @@ void AgentUI::drawChatWindow() {
             scrollToBottom = true;
 
             if (autonomousMode) {
-                std::string missionGoal = "[reasoning=" + reasoning + "][access=" + access + "] " + userMsg;
+                std::string missionGoal = "[reasoning=" + reasoning + "][access=" + access + "][profile=" + profile + "] " + userMsg;
                 runPythonAgent(missionGoal, "AGENT");
             } else {
                 int promptEstimate = static_cast<int>((fullMsg.size() / 4) + 24);
@@ -733,6 +769,52 @@ void AgentUI::drawOpenFolderFallbackDialog() {
             openFolderFallbackVisible = false;
             openFolderFallbackError.clear();
             ImGui::CloseCurrentPopup();
+        }
+        ImGui::EndPopup();
+    }
+}
+
+void AgentUI::drawGovernedProjectDialog() {
+    if (governedProjectDialogRequested) {
+        governedProjectDialogVisible = true;
+        ImGui::OpenPopup("Novo Projeto Governado");
+        governedProjectDialogRequested = false;
+    }
+
+    if (ImGui::BeginPopupModal("Novo Projeto Governado", &governedProjectDialogVisible, ImGuiWindowFlags_AlwaysAutoResize)) {
+        ImGui::TextWrapped("Crie um projeto com governança padronizada (DDD, DAI, ADR, ai-governance, GSDD).");
+        ImGui::Separator();
+
+        const char* types[] = {"C++", "Python", "Research", "Writing"};
+        ImGui::SetNextItemWidth(220.0f);
+        ImGui::Combo("Tipo", &governedProjectType, types, IM_ARRAYSIZE(types));
+
+        ImGui::SetNextItemWidth(520.0f);
+        ImGui::InputText("Nome", governedProjectNameBuf, IM_ARRAYSIZE(governedProjectNameBuf));
+        ImGui::SetNextItemWidth(520.0f);
+        ImGui::InputText("Pasta base", governedProjectBasePathBuf, IM_ARRAYSIZE(governedProjectBasePathBuf));
+
+        if (!governedProjectStatus.empty()) {
+            ImGui::TextWrapped("%s", governedProjectStatus.c_str());
+        }
+        ImGui::Separator();
+
+        if (ImGui::Button("Criar", ImVec2(120, 0))) {
+            std::string outPath;
+            std::string err;
+            if (createGovernedProject(governedProjectBasePathBuf, governedProjectNameBuf, governedProjectType, outPath, err)) {
+                governedProjectStatus = "Projeto criado em: " + outPath;
+                currentProjectRoot = outPath;
+                setOllama(ollama);
+                thoughtStream = "Projeto governado criado: " + outPath;
+            } else {
+                governedProjectStatus = "Erro: " + err;
+            }
+        }
+        ImGui::SameLine();
+        if (ImGui::Button("Cancelar", ImVec2(120, 0))) {
+            ImGui::CloseCurrentPopup();
+            governedProjectDialogVisible = false;
         }
         ImGui::EndPopup();
     }
@@ -913,6 +995,7 @@ void AgentUI::detectProjectTech() {
     detectedTech = "Desconhecida/Outra";
     detectedDeps = "";
     try {
+        cleanupEmptySessions();
         generateProjectMap();
         if (fs::exists(fs::path(currentProjectRoot) / "requirements.txt") || 
             fs::exists(fs::path(currentProjectRoot) / "setup.py") ||
@@ -1056,6 +1139,7 @@ void AgentUI::telemetryLoop() {
 
 void AgentUI::saveSession() {
     if (!hasOpenProject || currentProjectRoot.empty()) return;
+    if (history.empty()) return;
     try {
         fs::path sessionDir = sessionsDir();
         if (!fs::exists(sessionDir)) fs::create_directories(sessionDir);
@@ -1117,8 +1201,7 @@ void AgentUI::newDialogue() {
     totalCompletionTokens = 0;
     tokensPerSec = 0;
     currentSessionFile = newSessionFileName();
-    saveSession();
-    thoughtStream = "Novo diálogo iniciado. Sessão: " + currentSessionFile;
+    thoughtStream = "Novo diálogo iniciado. Sessão preparada: " + currentSessionFile + " (será salva ao enviar a primeira mensagem).";
 }
 
 fs::path AgentUI::sessionsDir() const {
@@ -1133,6 +1216,7 @@ bool AgentUI::loadSessionFromFile(const fs::path& sessionFile) {
     i >> j;
 
     history.clear();
+    if (!j.contains("history") || !j["history"].is_array()) return false;
     for (const auto& msg : j["history"]) {
         std::string role = msg["role"];
         if (role == "agent") role = "assistant";
@@ -1164,12 +1248,201 @@ std::vector<std::pair<fs::path, fs::file_time_type>> AgentUI::listRecentSessions
     for (const auto& e : fs::directory_iterator(dir)) {
         if (!e.is_regular_file()) continue;
         if (e.path().extension() != ".json") continue;
+        // Evita poluir a lista com sessões vazias.
+        try {
+            std::ifstream in(e.path());
+            nlohmann::json j;
+            in >> j;
+            if (!j.contains("history") || !j["history"].is_array() || j["history"].empty()) continue;
+        } catch (...) {
+            continue;
+        }
         out.push_back({e.path(), e.last_write_time()});
     }
 
     std::sort(out.begin(), out.end(), [](const auto& a, const auto& b) { return a.second > b.second; });
     if (out.size() > maxCount) out.resize(maxCount);
     return out;
+}
+
+int AgentUI::cleanupEmptySessions() {
+    if (!hasOpenProject || currentProjectRoot.empty()) return 0;
+    fs::path dir = sessionsDir();
+    if (!fs::exists(dir)) return 0;
+
+    int removed = 0;
+    for (const auto& e : fs::directory_iterator(dir)) {
+        if (!e.is_regular_file()) continue;
+        if (e.path().extension() != ".json") continue;
+        if (e.path().filename() == "last_session.json") continue;
+        try {
+            std::ifstream in(e.path());
+            nlohmann::json j;
+            in >> j;
+            bool empty = (!j.contains("history") || !j["history"].is_array() || j["history"].empty());
+            if (empty) {
+                fs::remove(e.path());
+                removed++;
+            }
+        } catch (...) {
+            // Arquivo corrompido/inválido também pode ser removido para evitar poluir a lista.
+            try {
+                fs::remove(e.path());
+                removed++;
+            } catch (...) {}
+        }
+    }
+    return removed;
+}
+
+bool AgentUI::createGovernedProject(const fs::path& basePathIn, const std::string& rawName, int type, std::string& outPath, std::string& err) {
+    try {
+        std::string name = trimPathInput(rawName);
+        if (name.empty()) {
+            err = "Nome do projeto não pode ser vazio.";
+            return false;
+        }
+
+        fs::path basePath = normalizeRootPath(basePathIn.string());
+        if (!fs::exists(basePath) || !fs::is_directory(basePath)) {
+            err = "Pasta base inválida.";
+            return false;
+        }
+
+        fs::path root = basePath / name;
+        if (fs::exists(root)) {
+            err = "A pasta do projeto já existe.";
+            return false;
+        }
+
+        fs::create_directories(root);
+        fs::create_directories(root / "DDD");
+        fs::create_directories(root / "DAI");
+        fs::create_directories(root / "ADR");
+        fs::create_directories(root / "ai-governance");
+        fs::create_directories(root / "GSDD");
+        fs::create_directories(root / "scripts");
+        fs::create_directories(root / ".agent");
+        fs::create_directories(root / ".github" / "workflows");
+        fs::create_directories(root / "ai-governance" / "policies");
+        fs::create_directories(root / "ai-governance" / "checklists");
+
+        if (type == 0) {
+            fs::create_directories(root / "src");
+            fs::create_directories(root / "include");
+            fs::create_directories(root / "tests");
+        } else if (type == 1) {
+            fs::create_directories(root / "src");
+            fs::create_directories(root / "tests");
+            fs::create_directories(root / "notebooks");
+        } else if (type == 2) {
+            fs::create_directories(root / "notes");
+            fs::create_directories(root / "references");
+            fs::create_directories(root / "drafts");
+        } else {
+            fs::create_directories(root / "chapters");
+            fs::create_directories(root / "notes");
+            fs::create_directories(root / "references");
+        }
+
+        const std::string projectType =
+            (type == 0 ? "cpp" : type == 1 ? "python" : type == 2 ? "research" : "writing");
+
+        auto write = [&](const fs::path& p, const std::string& content) {
+            std::ofstream o(p);
+            o << content;
+        };
+
+        write(root / "README.md",
+              "# " + name + "\n\n"
+              "Projeto inicializado com governança padrão.\n\n"
+              "## Tipo\n- " + projectType + "\n\n"
+              "## Estrutura de governança\n- `DDD/`\n- `DAI/`\n- `ADR/`\n- `ai-governance/`\n- `GSDD/`\n");
+        write(root / "LICENSE", "Escolha e declare aqui a licença do projeto.\n");
+        write(root / "CONTRIBUTING.md",
+              "# Contributing\n\n"
+              "## Fluxo recomendado\n"
+              "1. Abra uma issue descrevendo objetivo e critérios.\n"
+              "2. Crie branch curta e orientada a escopo.\n"
+              "3. Atualize DDD/DAI/ADR quando houver decisão relevante.\n"
+              "4. Execute validações locais antes do PR.\n\n"
+              "## Critérios de PR\n"
+              "- Mudança pequena e testável\n"
+              "- Evidências de validação anexadas\n"
+              "- Impacto e riscos descritos\n");
+        write(root / "CODEOWNERS", "* @owner\n");
+        write(root / ".github/workflows/ci.yml",
+              "name: CI\n"
+              "on: [push, pull_request]\n"
+              "jobs:\n"
+              "  build:\n"
+              "    runs-on: ubuntu-latest\n"
+              "    steps:\n"
+              "      - uses: actions/checkout@v4\n"
+              "      - name: Governance check\n"
+              "        run: ./scripts/validate_governance.sh\n");
+        write(root / "DDD/README.md", "# DDD\n\nContexto, linguagem ubíqua, agregados e fronteiras.\n");
+        write(root / "DAI/README.md", "# DAI\n\nInvariantes, critérios decisórios e hipóteses de validação.\n");
+        write(root / "ADR/README.md", "# ADR\n\nRegistre decisões arquiteturais em arquivos `ADR-XXXX.md`.\n");
+        write(root / "ADR/ADR-0001-template.md",
+              "# ADR-0001 - Título da decisão\n\n"
+              "## Contexto\nDescreva o problema e o cenário.\n\n"
+              "## Decisão\nDescreva a decisão adotada.\n\n"
+              "## Consequências\nImpactos positivos, trade-offs e riscos.\n");
+        write(root / "ai-governance/README.md", "# AI Governance\n\nPolíticas de uso de IA, rastreabilidade e validação.\n");
+        write(root / "ai-governance/policies/model-usage.md",
+              "# Model Usage Policy\n\n"
+              "- Defina modelos permitidos por tipo de tarefa.\n"
+              "- Defina níveis de acesso aceitos por ambiente.\n"
+              "- Exija evidência objetiva para afirmações de execução/verificação.\n");
+        write(root / "ai-governance/policies/evidence.md",
+              "# Evidence Policy\n\n"
+              "- Toda afirmação de execução deve ter evidência.\n"
+              "- Evidência mínima: comando + saída curta ou caminho de arquivo.\n");
+        write(root / "ai-governance/checklists/review.md",
+              "# Review Checklist\n\n"
+              "- [ ] Escopo claro\n"
+              "- [ ] Riscos mapeados\n"
+              "- [ ] Evidências anexadas\n"
+              "- [ ] ADR atualizado quando necessário\n");
+        write(root / "GSDD/README.md", "# GSDD\n\nEspecificação governada por estágios e entregáveis.\n");
+        write(root / "scripts/validate_governance.sh",
+              "#!/usr/bin/env sh\n"
+              "set -eu\n"
+              "for d in DDD DAI ADR ai-governance GSDD .github/workflows; do\n"
+              "  [ -d \"$d\" ] || { echo \"Missing $d\"; exit 1; }\n"
+              "done\n"
+              "for f in README.md CONTRIBUTING.md CODEOWNERS ADR/ADR-0001-template.md ai-governance/policies/model-usage.md ai-governance/policies/evidence.md; do\n"
+              "  [ -f \"$f\" ] || { echo \"Missing $f\"; exit 1; }\n"
+              "done\n"
+              "echo \"Governance structure OK\"\n");
+
+        if (type == 0) {
+            write(root / "CMakeLists.txt",
+                  "cmake_minimum_required(VERSION 3.20)\n"
+                  "project(" + name + " LANGUAGES CXX)\n"
+                  "set(CMAKE_CXX_STANDARD 20)\n"
+                  "add_executable(" + name + " src/main.cpp)\n");
+            write(root / "src/main.cpp", "#include <iostream>\n\nint main(){ std::cout << \"Hello " + name + "\\n\"; }\n");
+        } else if (type == 1) {
+            write(root / "pyproject.toml",
+                  "[project]\nname = \"" + name + "\"\nversion = \"0.1.0\"\nrequires-python = \">=3.10\"\n");
+            write(root / "src/main.py", "def main():\n    print(\"Hello " + name + "\")\n\nif __name__ == '__main__':\n    main()\n");
+        } else if (type == 2) {
+            write(root / "notes/00-problem-statement.md", "# Problema\n\nDescreva problema, hipótese e critérios.\n");
+        } else {
+            write(root / "chapters/00-outline.md", "# Estrutura\n\nDefina capítulos e fluxo narrativo.\n");
+        }
+
+        outPath = root.string();
+        return true;
+    } catch (const std::exception& e) {
+        err = e.what();
+        return false;
+    } catch (...) {
+        err = "Erro desconhecido ao criar projeto.";
+        return false;
+    }
 }
 
 void AgentUI::runPythonAgent(const std::string& goal, const std::string& mode) {

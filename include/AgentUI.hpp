@@ -39,6 +39,7 @@ public:
     std::vector<std::string> availableModels;
     int selectedReasoning = 1; // 0=low,1=medium,2=high
     int selectedAccess = 1;    // 0=read-only,1=workspace-write,2=full-access
+    int selectedProfile = 0;   // 0=general,1=coding,2=analysis,3=review
     std::atomic<bool> llmBusy{false};
     bool emojiIconsEnabled = false;
     bool hasOpenProject = true;
@@ -54,6 +55,12 @@ public:
     char folderPickerPathBuf[1024] = "";
     char newFolderNameBuf[256] = "";
     std::string folderPickerStatus;
+    bool governedProjectDialogRequested = false;
+    bool governedProjectDialogVisible = false;
+    int governedProjectType = 0; // 0 cpp, 1 python, 2 research, 3 writing
+    char governedProjectNameBuf[256] = "";
+    char governedProjectBasePathBuf[1024] = "";
+    std::string governedProjectStatus;
     
     // Context & Thinking State
     std::string selectedFile = "";
@@ -62,6 +69,7 @@ public:
     std::string thoughtStream = "Aguardando processamento...";
     std::string projectMap = "";
     bool autonomousMode = true;
+    bool autonomousFeatureEnabled = true;
 
     void detectProjectTech();
     void parseDependencies();
@@ -102,10 +110,13 @@ private:
     void drawCodeBlock(const std::string& code, const std::string& lang);
     void drawOpenFolderFallbackDialog();
     void drawOpenFolderPickerDialog();
+    void drawGovernedProjectDialog();
     std::filesystem::path sessionsDir() const;
     bool loadSessionFromFile(const std::filesystem::path& sessionFile);
     std::string newSessionFileName() const;
     std::vector<std::pair<std::filesystem::path, std::filesystem::file_time_type>> listRecentSessions(std::size_t maxCount = 12) const;
+    int cleanupEmptySessions();
+    bool createGovernedProject(const std::filesystem::path& basePath, const std::string& name, int type, std::string& outPath, std::string& err);
 
     agent::network::OllamaClient* ollama = nullptr;
     agent::core::Orchestrator* orchestrator = nullptr;
