@@ -39,9 +39,17 @@ set(IMGUI_SOURCES
 
 add_executable(AgentGUI ${SOURCES} ${IMGUI_SOURCES})
 
+if (TARGET OpenGL::GL)
+    set(OPENGL_TARGET OpenGL::GL)
+elseif (TARGET OpenGL::OpenGL)
+    set(OPENGL_TARGET OpenGL::OpenGL)
+else()
+    set(OPENGL_TARGET ${OPENGL_LIBRARIES})
+endif()
+
 target_link_libraries(AgentGUI
     ${SDL2_LIBRARIES}
-    ${OPENGL_LIBRARIES}
+    ${OPENGL_TARGET}
     dl
 )
 

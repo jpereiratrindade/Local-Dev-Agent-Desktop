@@ -148,7 +148,8 @@ void AgentUI::render() {
     
     ImGuiIO& io = ImGui::GetIO();
     if (io.KeyCtrl && ImGui::IsKeyPressed(ImGuiKey_O)) {
-         auto dir = pfd::select_folder("Selecionar Projeto Agent", currentProjectRoot).result();
+         std::string startDir = (hasOpenProject && !currentProjectRoot.empty()) ? currentProjectRoot : normalizeRootPath(".");
+         auto dir = pfd::select_folder("Selecionar Projeto Agent", startDir).result();
          if (!dir.empty()) {
              currentProjectRoot = normalizeRootPath(dir);
              setOllama(ollama);
@@ -202,7 +203,8 @@ void AgentUI::drawMainMenu() {
             if (ImGui::MenuItem("Novo Diálogo", "Ctrl+N")) { newDialogue(); }
             ImGui::Separator();
             if (ImGui::MenuItem("Abrir Pasta...", "Ctrl+O")) {
-                auto dir = pfd::select_folder("Selecionar Projeto Agent", currentProjectRoot).result();
+                std::string startDir = (hasOpenProject && !currentProjectRoot.empty()) ? currentProjectRoot : normalizeRootPath(".");
+                auto dir = pfd::select_folder("Selecionar Projeto Agent", startDir).result();
                 if (!dir.empty()) {
                     currentProjectRoot = normalizeRootPath(dir);
                     setOllama(ollama);
