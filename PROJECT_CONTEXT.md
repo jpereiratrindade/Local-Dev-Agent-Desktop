@@ -17,10 +17,17 @@ Prioridade atual:
 - Adicionar testes automatizados para componentes criticos
 - Refatorar gradualmente `NativeTools.cpp`
 - Melhorar continuidade de contexto entre chat assistido, historico e missoes
+- Reduzir o gap entre resposta no chat e artefato persistente no workspace
 
 Roadmap de UX (Status: Em andamento):
 - [x] Arquitetura UI Modular
 - [x] Persistencia de sessao e historico por projeto
+- [x] Chat assistido com priorizacao do arquivo ativo
 - [ ] Slash commands como `/fix`, `/test`, `/explain`
 - [ ] Visualizacao de diff antes de aplicar mudancas
 - [ ] Melhorias na gestao de modelos locais via UI
+
+Direcao operacional adicional:
+- tratar `intencao`, `planejamento`, `execucao`, `verificacao` e `iteracao` como capacidades adaptativas, nao pipeline fixo
+- privilegiar artefato persistente quando houver autorizacao e alvo suficiente
+- manter autonomia graduada e rastreavel sobre arquivos, pastas e conteudo salvo

@@ -19,6 +19,7 @@ public:
         std::function<void(const std::string&)> onAction;
         std::function<void(const std::string&)> onObservation;
         std::function<void(const std::string&)> onMessageChunk;
+        std::function<void(const agent::network::OllamaStreamStats&)> onStreamStats;
         std::function<void(bool)> onComplete;
     };
 

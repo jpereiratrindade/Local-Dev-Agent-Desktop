@@ -81,6 +81,9 @@ void AgentUI::drawFileExplorer() {
     if (hasOpenProject && !currentProjectRoot.empty()) {
         ImGui::TextWrapped("%s", fs::path(currentProjectRoot).filename().string().c_str());
         ImGui::TextDisabled("%s", currentProjectRoot.c_str());
+        if (!lastResolvedProjectRoot.empty() && lastResolvedProjectRoot != currentProjectRoot) {
+            ImGui::TextDisabled("Raiz resolvida: %s", lastResolvedProjectRoot.c_str());
+        }
         ImGui::Separator();
     }
 
@@ -109,6 +112,34 @@ void AgentUI::drawFileExplorer() {
     ImGui::Separator();
     
     if (hasOpenProject && !currentProjectRoot.empty() && fs::exists(currentProjectRoot)) {
+        if (ImGui::SmallButton("Novo Arquivo")) {
+            newEntryModeDirectory = false;
+            newEntryFormVisible = true;
+            newEntryPathBuf[0] = '\0';
+        }
+        ImGui::SameLine();
+        if (ImGui::SmallButton("Nova Pasta")) {
+            newEntryModeDirectory = true;
+            newEntryFormVisible = true;
+            newEntryPathBuf[0] = '\0';
+        }
+        if (newEntryFormVisible) {
+            ImGui::InputText(newEntryModeDirectory ? "Pasta relativa" : "Arquivo relativo", newEntryPathBuf, sizeof(newEntryPathBuf));
+            ImGui::SameLine();
+            if (ImGui::SmallButton("Criar")) {
+                if (createWorkspaceEntry(newEntryPathBuf, newEntryModeDirectory)) {
+                    thoughtStream = std::string(newEntryModeDirectory ? "Pasta criada: " : "Arquivo criado: ") + newEntryPathBuf;
+                    newEntryFormVisible = false;
+                } else {
+                    thoughtStream = "ERRO: nao foi possivel criar o caminho solicitado.";
+                }
+            }
+            ImGui::SameLine();
+            if (ImGui::SmallButton("Cancelar")) {
+                newEntryFormVisible = false;
+            }
+            ImGui::Separator();
+        }
         float editorHeight = editorFilePath.empty() ? 110.0f : 340.0f;
         ImGui::BeginChild("ExplorerTreeArea", ImVec2(0, -editorHeight), true);
         renderDirectory(currentProjectRoot);
@@ -178,6 +209,41 @@ bool AgentUI::saveEditorFile() {
         editorDirty = false;
         return true;
     } catch (...) { return false; }
+}
+
+bool AgentUI::createWorkspaceEntry(const std::string& relativePath, bool directory) {
+    if (!hasOpenProject || currentProjectRoot.empty()) return false;
+    const std::string trimmed = trimLoose(relativePath);
+    if (trimmed.empty()) return false;
+    try {
+        fs::path target = fs::path(currentProjectRoot) / fs::path(trimmed);
+        fs::path parent = target.has_parent_path() ? target.parent_path() : fs::path(currentProjectRoot);
+        fs::path normalizedParent = fs::weakly_canonical(parent);
+        fs::path normalizedRoot = fs::weakly_canonical(currentProjectRoot);
+        if (normalizedParent.string().rfind(normalizedRoot.string(), 0) != 0) return false;
+        if (directory) {
+            fs::create_directories(target);
+            selectedFile.clear();
+        } else {
+            fs::create_directories(parent);
+            std::ofstream ofs(target);
+            if (!ofs.is_open()) return false;
+            selectedFile = target.string();
+            loadFileIntoEditor(selectedFile);
+        }
+        generateProjectMap();
+        return true;
+    } catch (...) {
+        return false;
+    }
+}
+
+bool AgentUI::applyTextToActiveFile(const std::string& text, bool saveAfter) {
+    if (editorFilePath.empty()) return false;
+    if (editorUsesPlainText) editorPlainTextBuffer = text;
+    else codeEditor.SetText(text);
+    editorDirty = true;
+    return !saveAfter || saveEditorFile();
 }
 
 void AgentUI::drawFileEditor() {

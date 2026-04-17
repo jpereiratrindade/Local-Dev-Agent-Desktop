@@ -50,6 +50,22 @@ static AgentMessageSections splitAgentMessage(const std::string& text) {
     return sections;
 }
 
+namespace {
+bool containsAnyLower(const std::string& haystack, const std::vector<std::string>& needles) {
+    for (const auto& needle : needles) {
+        if (haystack.find(needle) != std::string::npos) return true;
+    }
+    return false;
+}
+
+std::string toLowerCopy(std::string value) {
+    std::transform(value.begin(), value.end(), value.begin(), [](unsigned char c) {
+        return static_cast<char>(std::tolower(c));
+    });
+    return value;
+}
+} // namespace
+
 void AgentUI::renderMarkdown(const std::string& text) {
     std::istringstream stream(text);
     std::string line;
@@ -68,6 +84,74 @@ void AgentUI::renderMarkdown(const std::string& text) {
     }
 }
 
+std::string AgentUI::buildActiveContextBlock() const {
+    std::stringstream context;
+    if (hasOpenProject && !currentProjectRoot.empty()) {
+        context << "Projeto atual: " << currentProjectRoot << "\n";
+    }
+    if (!selectedFile.empty()) {
+        context << "Arquivo ativo: " << selectedFile << "\n";
+        std::string content;
+        if (selectedFile == editorFilePath) {
+            content = editorUsesPlainText ? editorPlainTextBuffer : codeEditor.GetText();
+        } else {
+            try {
+                std::ifstream in(selectedFile);
+                if (in) {
+                    std::stringstream buffer;
+                    buffer << in.rdbuf();
+                    content = buffer.str();
+                }
+            } catch (...) {}
+        }
+        if (!content.empty()) {
+            if (content.size() > 12000) content = content.substr(0, 12000) + "\n...[conteudo truncado]...";
+            context << "Conteudo atual do arquivo ativo:\n```text\n" << content << "\n```\n";
+        }
+    }
+    if (!projectGovernance.empty()) {
+        context << "Governanca local ativa.\n";
+    }
+    return context.str();
+}
+
+std::string AgentUI::buildChatSystemPrompt() const {
+    std::stringstream prompt;
+    prompt << "Voce e um assistente local de desenvolvimento e escrita orientado a execucao.\n";
+    prompt << "Regras:\n";
+    prompt << "1. Preserve continuidade com o historico do chat.\n";
+    prompt << "2. Se houver arquivo ativo e o pedido implicar editar, continuar, revisar ou inserir conteudo, trate o arquivo ativo como alvo principal.\n";
+    prompt << "3. Para tarefas editoriais, responda como coautor e use o arquivo ativo antes de explorar o resto do projeto.\n";
+    prompt << "4. Para tarefas executivas e quando necessario, voce pode propor JSON de tool-call, mas so faca isso se realmente precisar agir no workspace.\n";
+    prompt << "5. Seja concreto. Se o pedido for de alteracao de conteudo, entregue texto pronto para inserir ou diga claramente qual alteracao faria.\n";
+    if (hasOpenProject && !currentProjectRoot.empty()) {
+        prompt << "Projeto atual: " << currentProjectRoot << "\n";
+    }
+    if (!selectedFile.empty()) {
+        prompt << "Arquivo ativo priorizado: " << selectedFile << "\n";
+    }
+    return prompt.str();
+}
+
+std::string AgentUI::extractWritableAssistantText(const std::string& text) const {
+    AgentMessageSections sections = splitAgentMessage(text);
+    std::string cleaned = trimLoose(sections.answer);
+    cleaned = std::regex_replace(cleaned, std::regex("<thought>[\\s\\S]*?</thought>"), "");
+    cleaned = std::regex_replace(cleaned, std::regex("TASK COMPLETE"), "");
+    return trimLoose(cleaned);
+}
+
+std::string AgentUI::inferTaskMode(const std::string& goal) const {
+    std::string lower = toLowerCopy(goal);
+    if (containsAnyLower(lower, {"crie arquivo", "criar arquivo", "gere projeto", "scaffold", "rodar", "executar", "corrigir build", "refator", "refactor", "renomear arquivo", "mover arquivo"})) {
+        return "MISSION";
+    }
+    if (!selectedFile.empty() && containsAnyLower(lower, {"inclua", "incluir", "continue", "continuar", "revise este texto", "reescreva", "melhore o texto", "edite", "ajuste o documento", "insira"})) {
+        return "ASSIST";
+    }
+    return "CHAT";
+}
+
 void AgentUI::runPythonAgent(const std::string& goal, const std::string& mode) {
     if (llmBusy || !orchestrator) return;
     llmBusy = true;
@@ -78,15 +162,55 @@ void AgentUI::runPythonAgent(const std::string& goal, const std::string& mode) {
             
             agent::network::OllamaOptions opts;
             opts.temperature = (reasoning == "high") ? 0.2f : 0.7f;
-            
-            // Injeção de governança se disponível
-            std::string fullGoal = goal;
-            if (!projectGovernance.empty()) {
-                fullGoal = "[GOVERNANÇA ATIVA: SIGA ESTAS REGRAS]\n" + projectGovernance + "\n\n[OBJETIVO ATUAL]\n" + goal;
-            }
 
             ollama->setModel(currentModel); // Sincroniza o modelo selecionado
 
+            const std::string resolvedMode = (mode == "AUTO") ? inferTaskMode(goal) : mode;
+            const bool useMissionLoop = (resolvedMode == "MISSION");
+
+            if (!useMissionLoop) {
+                std::vector<agent::network::Message> threadHistory;
+                threadHistory.push_back({"system", buildChatSystemPrompt()});
+                {
+                    std::lock_guard<std::mutex> lock(msgMutex);
+                    for (const auto& msg : history) {
+                        threadHistory.push_back({msg.role, msg.text});
+                    }
+                }
+                const std::string activeContext = buildActiveContextBlock();
+                if (!activeContext.empty()) {
+                    threadHistory.push_back({"system", activeContext});
+                }
+
+                ollama->chatStream(threadHistory,
+                    [this](const std::string& chunk) {
+                        std::lock_guard<std::mutex> lock(msgMutex);
+                        if (history.empty() || history.back().role != "assistant") {
+                            history.push_back({"assistant", ""});
+                        }
+                        history.back().text += chunk;
+                        scrollToBottom = true;
+                    },
+                    [this](bool ok, agent::network::OllamaStreamStats stats) {
+                        {
+                            std::lock_guard<std::mutex> lock(msgMutex);
+                            totalPromptTokens = stats.prompt_tokens;
+                            totalCompletionTokens = stats.completion_tokens;
+                            tokensPerSec = (stats.total_duration_ms > 0.0)
+                                ? static_cast<float>(stats.completion_tokens / (stats.total_duration_ms / 1000.0))
+                                : 0.0f;
+                            tokenRateMs = (stats.completion_tokens > 0)
+                                ? static_cast<float>(stats.total_duration_ms / stats.completion_tokens)
+                                : 0.0f;
+                        }
+                        llmBusy = false;
+                        thoughtStream = ok ? "Resposta concluída." : "Resposta interrompida.";
+                        saveSession();
+                    },
+                    "", opts);
+                return;
+            }
+            
             agent::core::Orchestrator::MissionCallbacks callbacks;
             callbacks.onMessageChunk = [this](const std::string& chunk) {
                 std::lock_guard<std::mutex> lock(msgMutex);
@@ -110,8 +234,28 @@ void AgentUI::runPythonAgent(const std::string& goal, const std::string& mode) {
                 thoughtStream = success ? "Missão concluída." : "Missão interrompida.";
                 saveSession();
             };
+            callbacks.onStreamStats = [this](const agent::network::OllamaStreamStats& stats) {
+                std::lock_guard<std::mutex> lock(telemetryMutex);
+                totalPromptTokens = stats.prompt_tokens;
+                totalCompletionTokens = stats.completion_tokens;
+                tokensPerSec = (stats.total_duration_ms > 0.0)
+                    ? static_cast<float>(stats.completion_tokens / (stats.total_duration_ms / 1000.0))
+                    : 0.0f;
+                tokenRateMs = (stats.completion_tokens > 0)
+                    ? static_cast<float>(stats.total_duration_ms / stats.completion_tokens)
+                    : 0.0f;
+            };
 
-            orchestrator->runMission(fullGoal, mode, 10, callbacks, opts);
+            std::string fullGoal = goal;
+            const std::string activeContext = buildActiveContextBlock();
+            if (!activeContext.empty()) {
+                fullGoal += "\n\n[CONTEXTO ATIVO]\n" + activeContext;
+            }
+            if (!projectGovernance.empty()) {
+                fullGoal = "[GOVERNANÇA ATIVA: SIGA ESTAS REGRAS]\n" + projectGovernance + "\n\n[OBJETIVO ATUAL]\n" + fullGoal;
+            }
+
+            orchestrator->runMission(fullGoal, "MISSION", 10, callbacks, opts);
         } catch (const std::exception& e) {
             std::lock_guard<std::mutex> lock(msgMutex);
             thoughtStream = "ERRO NA MISSÃO: " + std::string(e.what());
@@ -139,6 +283,12 @@ void AgentUI::drawChatWindow() {
         ImGui::EndCombo();
     }
     ImGui::Separator();
+    const std::string inferredMode = inferTaskMode(inputBuf);
+    ImGui::TextDisabled("Modo sugerido: %s", inferredMode == "MISSION" ? "Missao" : "Chat assistido");
+    if (!selectedFile.empty()) {
+        ImGui::SameLine();
+        ImGui::TextDisabled("| Arquivo alvo: %s", fs::path(selectedFile).filename().string().c_str());
+    }
 
     float footerHeight = ImGui::GetFrameHeightWithSpacing() + 55.0f;
     if (!selectedFile.empty()) footerHeight += 25.0f;
@@ -157,6 +307,26 @@ void AgentUI::drawChatWindow() {
                 
                 ImGui::PushID(static_cast<int>(i));
                 if (ImGui::SmallButton("Copiar")) ImGui::SetClipboardText(msg.text.c_str());
+                if (!editorFilePath.empty()) {
+                    ImGui::SameLine();
+                    if (ImGui::SmallButton("Aplicar")) {
+                        const std::string writable = extractWritableAssistantText(msg.text);
+                        if (applyTextToActiveFile(writable, false)) {
+                            thoughtStream = "Resposta aplicada ao arquivo ativo.";
+                        } else {
+                            thoughtStream = "ERRO: nao foi possivel aplicar ao arquivo ativo.";
+                        }
+                    }
+                    ImGui::SameLine();
+                    if (ImGui::SmallButton("Aplicar+Salvar")) {
+                        const std::string writable = extractWritableAssistantText(msg.text);
+                        if (applyTextToActiveFile(writable, true)) {
+                            thoughtStream = "Resposta aplicada e salva no arquivo ativo.";
+                        } else {
+                            thoughtStream = "ERRO: nao foi possivel aplicar e salvar.";
+                        }
+                    }
+                }
                 ImGui::PopID();
 
                 ImGui::BeginChild(("AgentMsgBlock_" + std::to_string(i)).c_str(), ImVec2(0, 300), true);
@@ -211,7 +381,7 @@ void AgentUI::drawChatWindow() {
             }
             std::memset(inputBuf, 0, sizeof(inputBuf));
             scrollToBottom = true;
-            runPythonAgent(queryText, "AGENT");
+            runPythonAgent(queryText, "AUTO");
         }
     }
     ImGui::PopItemWidth();
@@ -231,7 +401,7 @@ void AgentUI::drawChatWindow() {
                 history.push_back({"user", queryText});
                 std::memset(inputBuf, 0, sizeof(inputBuf));
                 scrollToBottom = true;
-                runPythonAgent(queryText, "AGENT");
+                runPythonAgent(queryText, "CHAT");
             }
         }
         ImGui::SameLine();

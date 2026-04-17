@@ -59,7 +59,7 @@ std::string profileInstructions(const std::string& profile) {
     if (profile == "research-project") return "PERFIL COGNITIVO: RESEARCH PROJECT. Trate a tarefa como elaboracao de projeto de pesquisa. Priorize problema, justificativa, objetivos, hipoteses, metodologia, corpus, evidencias, referencias e entregaveis. Use estrutura para orientar, sem engessar a formulacao conceitual.";
     if (profile == "writing-outline") return "PERFIL COGNITIVO: WRITING OUTLINE. Trate a tarefa como construcao de estrutura argumentativa. Nao transforme a missao em exploracao mecanica do repositorio. Procure primeiro README, outline, chapters, notes, references ou arquivos explicitamente relacionados ao texto.";
     if (profile == "writing-argument") return "PERFIL COGNITIVO: WRITING ARGUMENT. Trate a tarefa como elaboracao conceitual. Extraia tese, tensoes teoricas, definicoes e encadeamento. Evite listar diretorios repetidamente apos o primeiro panorama.";
-    if (profile == "writing-chapter") return "PERFIL COGNITIVO: WRITING CHAPTER. Gere prosa articulada, com secoes e paragrafos, nao apenas listas. Use o workspace para ancoragem, mas responda como coautor do texto.";
+    if (profile == "writing-chapter") return "PERFIL COGNITIVO: WRITING CHAPTER. Gere prosa articulada, com secoes e paragrafos, nao apenas listas. Use o workspace para ancoragem, mas responda como coautor do texto. Se houver arquivo ativo ou capitulo existente, continue e edite esse artefato antes de expandir a exploracao.";
     if (profile == "writing-review") return "PERFIL COGNITIVO: WRITING REVIEW. Avalie clareza de tese, precisao conceitual, coesao, referencias e lacunas argumentativas.";
     return "PERFIL COGNITIVO: GENERAL. Mantenha equilibrio entre utilidade, evidencias e objetividade.";
 }
@@ -68,6 +68,23 @@ bool hasCodeEvidence(const std::string& text) {
     static const std::regex evidenceRegex(
         "([A-Za-z0-9_./-]+\\.(cpp|cc|cxx|hpp|h|md|yml|yaml|txt|cmake|sh))|CMakeLists\\.txt");
     return std::regex_search(text, evidenceRegex);
+}
+
+bool shouldPrioritizeActiveFile(const std::string& goal, const std::string& profile) {
+    std::string lower = goal;
+    std::transform(lower.begin(), lower.end(), lower.begin(), [](unsigned char c) {
+        return static_cast<char>(std::tolower(c));
+    });
+    if (!(profile == "coding" || isWritingProfile(profile) || profile == "research-project")) return false;
+    return lower.find("arquivo ativo") != std::string::npos ||
+           lower.find("contexto ativo") != std::string::npos ||
+           lower.find("continue") != std::string::npos ||
+           lower.find("continuar") != std::string::npos ||
+           lower.find("inclua") != std::string::npos ||
+           lower.find("incluir") != std::string::npos ||
+           lower.find("reescreva") != std::string::npos ||
+           lower.find("revise") != std::string::npos ||
+           lower.find("edite") != std::string::npos;
 }
 
 std::string readOptionalFile(const fs::path& path) {
@@ -169,6 +186,7 @@ void Orchestrator::runMission(const std::string& goal, const std::string& mode,
         if (reasoning.empty()) reasoning = "medium";
         if (context.empty()) context = "workspace";
         std::string currentGoal = stripTags(goal);
+        const bool activeFilePriority = shouldPrioritizeActiveFile(currentGoal, profile);
         
         if (isFirstTurn) {
             std::string systemPrompt = buildSystemPrompt(mode, profile, reasoning);
@@ -184,6 +202,9 @@ void Orchestrator::runMission(const std::string& goal, const std::string& mode,
                                        "\nSe alguma skill combinar com a tarefa, use-a como guia flexivel de arranque, nao como trilho obrigatorio." +
                                        "\nPerfis definem postura cognitiva; skills sugerem fluxo; ferramentas e contexto permitem improviso responsavel." +
                                        "\nInicie pela menor ação verificável possível." +
+                                       (activeFilePriority
+                                            ? "\nPrioridade adicional: ha contexto/arquivo ativo relevante. Antes de explorar o repositorio, leia e trabalhe primeiro sobre esse artefato."
+                                            : "") +
                                        "\nRegra crítica de evidência: NÃO conclua ausência/lacuna de conteúdo sem 2 evidências diretas "
                                        "(ex.: list_dir + read_file, ou erro objetivo de acesso)." +
                                        ((reasoning == "high")
@@ -235,11 +256,12 @@ void Orchestrator::runMission(const std::string& goal, const std::string& mode,
                     }
                     if (callbacks.onMessageChunk) callbacks.onMessageChunk(chunk);
                 },
-                [&](bool ok, agent::network::OllamaStreamStats) {
+                [&](bool ok, agent::network::OllamaStreamStats stats) {
                     {
                         std::lock_guard<std::mutex> lock(streamMutex);
                         streamDone = true;
                     }
+                    if (callbacks.onStreamStats) callbacks.onStreamStats(stats);
                     cv.notify_one();
                 },
                 "", options);

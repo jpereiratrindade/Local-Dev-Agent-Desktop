@@ -73,6 +73,10 @@ private:
     std::string editorSavedText = "";
     bool editorUsesPlainText = false;
     bool editorDirty = false;
+    std::string lastResolvedProjectRoot = "";
+    bool newEntryModeDirectory = false;
+    bool newEntryFormVisible = false;
+    char newEntryPathBuf[512] = "";
 
     // UI State - Chat
     std::vector<ChatMessage> history;
@@ -140,11 +144,17 @@ private:
     void drawFileEditor();
     void loadFileIntoEditor(const std::string& path);
     bool saveEditorFile();
+    bool createWorkspaceEntry(const std::string& relativePath, bool directory);
+    bool applyTextToActiveFile(const std::string& text, bool saveAfter);
     void generateProjectMap();
     
     void drawChatWindow();
     void renderMarkdown(const std::string& text);
     void runPythonAgent(const std::string& goal, const std::string& mode = "AGENT");
+    std::string buildActiveContextBlock() const;
+    std::string buildChatSystemPrompt() const;
+    std::string inferTaskMode(const std::string& goal) const;
+    std::string extractWritableAssistantText(const std::string& text) const;
     
     void drawThoughtPanel();
     void drawStatsPanel();

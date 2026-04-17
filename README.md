@@ -173,6 +173,7 @@ Essas skills entram no prompt do orquestrador automaticamente e servem como guia
 Antes de ampliar integracoes maiores, o projeto passa a priorizar estabilizacao do nucleo.
 
 - Decisao arquitetural: [docs/ADR-0001-stabilize-core-before-expanding-integrations.md](./docs/ADR-0001-stabilize-core-before-expanding-integrations.md)
+- Execucao adaptativa e artefatos persistentes: [docs/ADR-0002-adaptive-execution-and-persistent-artifacts.md](./docs/ADR-0002-adaptive-execution-and-persistent-artifacts.md)
 - Checklist pratica: [docs/STABILIZATION_CHECKLIST.md](./docs/STABILIZATION_CHECKLIST.md)
 
 ## Roadmap de UX
