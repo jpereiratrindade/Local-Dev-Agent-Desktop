@@ -25,6 +25,15 @@ Aplicação desktop local em C++ (SDL2 + OpenGL + Dear ImGui) para interação c
 ├── CMakeLists.txt
 ├── include/
 ├── src/
+│   ├── AgentUI.cpp (Core & Layout)
+│   ├── AgentUI_Chat.cpp (Chat & Markdown)
+│   ├── AgentUI_Explorer.cpp (Explorer & Editor)
+│   ├── AgentUI_Modals.cpp (Diálogos & Model Manager)
+│   ├── AgentUI_Stats.cpp (Telemetria & RAG Sync)
+│   ├── AgentUI_Persistence.cpp (Sessões & Histórico)
+│   ├── Orchestrator.cpp
+│   ├── OllamaClient.cpp
+│   └── NativeTools.cpp
 ├── third_party/
 │   └── vendor/
 ├── scripts/

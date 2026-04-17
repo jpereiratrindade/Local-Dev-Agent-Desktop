@@ -20,6 +20,11 @@ set(SOURCES
     src/main.cpp
     src/OllamaClient.cpp
     src/AgentUI.cpp
+    src/AgentUI_Chat.cpp
+    src/AgentUI_Explorer.cpp
+    src/AgentUI_Modals.cpp
+    src/AgentUI_Stats.cpp
+    src/AgentUI_Persistence.cpp
     src/ToolRegistry.cpp
     src/Orchestrator.cpp
     src/NativeTools.cpp
@@ -32,6 +37,7 @@ set(IMGUI_SOURCES
     ${IMGUI_DIR}/imgui_widgets.cpp
     ${IMGUI_DIR}/imgui_tables.cpp
     ${IMGUI_DIR}/imgui_demo.cpp
+    ${IMGUI_DIR}/misc/cpp/imgui_stdlib.cpp
     ${IMGUI_DIR}/backends/imgui_impl_sdl2.cpp
     ${IMGUI_DIR}/backends/imgui_impl_opengl3.cpp
     third_party/vendor/TextEditor.cpp

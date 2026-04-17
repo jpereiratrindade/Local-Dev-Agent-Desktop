@@ -23,13 +23,16 @@ public:
     };
 
     void runMission(const std::string& goal, const std::string& mode, 
-                    int maxSteps, MissionCallbacks callbacks);
+                    int maxSteps, MissionCallbacks callbacks,
+                    const agent::network::OllamaOptions& options = agent::network::OllamaOptions());
 
+    void setGovernance(const std::string& gov) { projectGovernance = gov; }
     void stopMission() { stopRequested = true; }
 
 private:
     agent::network::OllamaClient* ollama;
     std::string workspaceRoot;
+    std::string projectGovernance;
     std::vector<agent::network::Message> history;
     std::atomic<bool> stopRequested{false};
 

@@ -153,11 +153,12 @@ Orchestrator::Orchestrator(agent::network::OllamaClient* client, const std::stri
     : ollama(client), workspaceRoot(workspaceRoot) {}
 
 void Orchestrator::runMission(const std::string& goal, const std::string& mode, 
-                             int maxSteps, MissionCallbacks callbacks) {
+                             int maxSteps, MissionCallbacks callbacks,
+                             const agent::network::OllamaOptions& options) {
     stopRequested = false;
     history.clear();
     
-    std::thread([this, goal, mode, maxSteps, callbacks]() {
+    std::thread([this, goal, mode, maxSteps, callbacks, options]() {
         std::string reasoning = extractTag(goal, "reasoning");
         std::string access = extractTag(goal, "access");
         std::string profile = extractTag(goal, "profile");
@@ -197,7 +198,7 @@ void Orchestrator::runMission(const std::string& goal, const std::string& mode,
             if (stopRequested) break;
 
             if (callbacks.onAction) callbacks.onAction("PASSO " + std::to_string(step + 1) + " / " + std::to_string(effectiveMaxSteps));
-            std::string response = ollama->chat(history);
+            std::string response = ollama->chat(history, options);
             if (hasCodeEvidence(response)) {
                 evidenceCount++;
                 noEvidenceSteps = 0;

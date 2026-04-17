@@ -483,6 +483,53 @@ std::vector<fs::path> listLibraryDocuments() {
 
 // --- FILESYSTEM TOOLS ---
 
+std::string apply_patch(const nlohmann::json& args) {
+    if (!args.contains("path") || !args.contains("search") || !args.contains("replace")) {
+        return "Erro: apply_patch requer 'path', 'search' e 'replace'.";
+    }
+
+    std::string pathStr = args["path"];
+    std::string search = args["search"];
+    std::string replace = args["replace"];
+
+    fs::path resolved;
+    std::string error;
+    if (!resolveWorkspacePath(pathStr, resolved, error)) return "Erro: " + error;
+
+    if (!fs::exists(resolved)) return "Erro: Arquivo não encontrado: " + pathStr;
+
+    try {
+        std::ifstream in(resolved, std::ios::binary);
+        std::string content((std::istreambuf_iterator<char>(in)), std::istreambuf_iterator<char>());
+        in.close();
+
+        if (search.empty()) {
+             // Inserção no início se search for empty? Não, melhor exigir.
+             return "Erro: 'search' não pode estar vazio.";
+        }
+
+        size_t pos = content.find(search);
+        if (pos == std::string::npos) {
+            return "Erro: Texto de busca não encontrado no arquivo. Verifique espaços e quebras de linha exatos.";
+        }
+
+        if (content.find(search, pos + search.length()) != std::string::npos) {
+            return "Erro: Texto de busca não é único no arquivo. Forneça mais contexto (linhas vizinhas).";
+        }
+
+        content.replace(pos, search.length(), replace);
+
+        std::ofstream out(resolved, std::ios::binary);
+        out << content;
+        out.close();
+
+        noteUsage("apply_patch: " + pathStr);
+        return "Sucesso: Patch aplicado em " + pathStr;
+    } catch (const std::exception& e) {
+        return "Erro ao aplicar patch: " + std::string(e.what());
+    }
+}
+
 std::string read_file(const nlohmann::json& args) {
     std::string path = args.value("path", "");
     fs::path resolved;
@@ -813,7 +860,8 @@ void registerNativeTools(const std::string& workspaceRoot) {
 
     reg.registerTool("read_file", "Lê o conteúdo de um arquivo.", {"path"}, read_file);
     reg.registerTool("read_file_slice", "Lê intervalo de linhas de um arquivo.", {"path", "from_line", "to_line"}, read_file_slice);
-    reg.registerTool("write_file", "Grava conteúdo em um arquivo.", {"path", "content"}, write_file);
+    reg.registerTool("apply_patch", "Realiza edições cirúrgicas em um arquivo existente usando busca e substituição de blocos únicos de texto. Esta é a ferramenta PREFERENCIAL para alterar arquivos grandes sem corrompê-los.", {"path", "search", "replace"}, apply_patch);
+    reg.registerTool("write_file", "Grava conteúdo total em um arquivo. Use preferencialmente para arquivos NOVOS.", {"path", "content"}, write_file);
     reg.registerTool("make_dir", "Cria um diretório e seus pais se necessário.", {"path"}, make_dir);
     reg.registerTool("move_path", "Move ou renomeia arquivo/diretório dentro do escopo permitido.", {"from", "to"}, move_path);
     reg.registerTool("delete_path", "Remove arquivo ou diretório. Para diretório não vazio, use recursive=true.", {"path", "recursive"}, delete_path);
