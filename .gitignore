@@ -31,3 +31,4 @@ imgui.ini
 # Local test artifacts
 test_rag
 test_search
+local/dev-tests/
