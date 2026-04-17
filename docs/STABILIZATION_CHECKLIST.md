@@ -4,6 +4,10 @@
 
 Consolidar o nucleo do agente antes de ampliar integracoes maiores.
 
+## Completed
+- [x] Refatoração Modular do UI (Decomposição do AgentUI.cpp)
+- [x] Sistema de Persistência de Sessões (Histórico por projeto)
+
 ## Immediate
 
 - [ ] Escolher framework de testes para C++ do projeto

@@ -13,6 +13,11 @@ Antes de perseguir aparencia de autocomplete, priorizar:
 - continuidade conversacional
 - integracao clara entre chat, editor e tools
 
+## Phase 0: Infrastructure
+
+- [x] Refatoração Modular do UI (Separação em submódulos especializados)
+- [x] Persistência de sessões por projeto
+
 ## Phase 1
 
 Foco: ganho alto com risco baixo.
