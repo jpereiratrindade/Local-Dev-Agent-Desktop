@@ -65,6 +65,11 @@ public:
     
     // Context & Thinking State
     std::string selectedFile = "";
+    std::string editorFilePath = "";
+    std::string editorPlainTextBuffer = "";
+    std::string editorSavedText = "";
+    bool editorUsesPlainText = false;
+    bool editorDirty = false;
     std::string detectedTech = "Desconhecida";
     std::string detectedDeps = "";
     std::string thoughtStream = "Aguardando processamento...";
@@ -122,10 +127,13 @@ private:
     void drawMainMenu();
     void drawFileExplorer();
     void renderDirectory(const std::string& path);
+    void drawFileEditor();
     void drawChatWindow();
     void drawThoughtPanel();
     void drawStatsPanel();
     void drawCodeBlock(const std::string& code, const std::string& lang);
+    void loadFileIntoEditor(const std::string& path);
+    bool saveEditorFile();
     void drawOpenFolderFallbackDialog();
     void drawOpenFolderPickerDialog();
     void drawGovernedProjectDialog();

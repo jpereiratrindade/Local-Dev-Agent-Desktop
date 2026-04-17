@@ -1,6 +1,7 @@
 #include "AgentUI.hpp"
 #include "imgui.h"
 #include "imgui_internal.h"
+#include "misc/cpp/imgui_stdlib.h"
 #include "OllamaClient.hpp"
 #include <filesystem>
 #include <iostream>
@@ -290,6 +291,27 @@ static std::string trimPathInput(std::string value) {
     return value;
 }
 
+static TextEditor::LanguageDefinition languageForPath(const fs::path& path) {
+    std::string ext = path.extension().string();
+    std::transform(ext.begin(), ext.end(), ext.begin(), [](unsigned char c) {
+        return static_cast<char>(std::tolower(c));
+    });
+    if (ext == ".cpp" || ext == ".cc" || ext == ".cxx" || ext == ".hpp" || ext == ".h" || ext == ".c") {
+        return TextEditor::LanguageDefinition::CPlusPlus();
+    }
+    if (ext == ".sql") return TextEditor::LanguageDefinition::SQL();
+    if (ext == ".lua") return TextEditor::LanguageDefinition::Lua();
+    return TextEditor::LanguageDefinition::C();
+}
+
+static bool shouldUsePlainTextEditor(const fs::path& path) {
+    std::string ext = path.extension().string();
+    std::transform(ext.begin(), ext.end(), ext.begin(), [](unsigned char c) {
+        return static_cast<char>(std::tolower(c));
+    });
+    return ext == ".md" || ext == ".txt" || ext == ".rst";
+}
+
 struct ActionStep {
     std::string title;
     std::string content;
@@ -382,6 +404,9 @@ void AgentUI::render() {
     }
     if (io.KeyCtrl && ImGui::IsKeyPressed(ImGuiKey_N)) {
          newDialogue();
+    }
+    if (io.KeyCtrl && ImGui::IsKeyPressed(ImGuiKey_S) && !editorFilePath.empty()) {
+         saveEditorFile();
     }
 
     ImGuiViewport* viewport = ImGui::GetMainViewport();
@@ -558,10 +583,16 @@ void AgentUI::drawFileExplorer() {
     ImGui::Separator();
     
     if (hasOpenProject && !currentProjectRoot.empty() && fs::exists(currentProjectRoot)) {
+        float editorHeight = editorFilePath.empty() ? 110.0f : 340.0f;
+        ImGui::BeginChild("ExplorerTreeArea", ImVec2(0, -editorHeight), true);
         renderDirectory(currentProjectRoot);
+        ImGui::EndChild();
     } else {
         ImGui::TextDisabled("Nenhuma pasta aberta.");
     }
+
+    ImGui::Spacing();
+    drawFileEditor();
     
     ImGui::EndChild();
 }
@@ -583,11 +614,97 @@ void AgentUI::renderDirectory(const std::string& path) {
                 bool isSelected = (selectedFile == entryPath.string());
                 if (ImGui::Selectable(fileLabel.c_str(), isSelected)) {
                     selectedFile = entryPath.string();
-                    // Carregar conteúdo do arquivo (em uma thread ou direto se for pequeno)
+                    loadFileIntoEditor(selectedFile);
                 }
             }
         }
     } catch (...) {}
+}
+
+void AgentUI::loadFileIntoEditor(const std::string& path) {
+    if (path.empty()) return;
+    try {
+        std::ifstream ifs(path);
+        if (!ifs.is_open()) {
+            thoughtStream = "Falha ao abrir arquivo no editor: " + path;
+            return;
+        }
+        std::stringstream buffer;
+        buffer << ifs.rdbuf();
+        editorUsesPlainText = shouldUsePlainTextEditor(fs::path(path));
+        editorPlainTextBuffer = buffer.str();
+        editorSavedText = editorPlainTextBuffer;
+        codeEditor.SetLanguageDefinition(languageForPath(fs::path(path)));
+        codeEditor.SetPalette(TextEditor::GetDarkPalette());
+        codeEditor.SetText(editorPlainTextBuffer);
+        codeEditor.SetReadOnly(false);
+        editorFilePath = path;
+        editorDirty = false;
+        thoughtStream = "Arquivo carregado no editor: " + fs::path(path).filename().string();
+    } catch (...) {
+        thoughtStream = "Erro ao carregar arquivo no editor.";
+    }
+}
+
+bool AgentUI::saveEditorFile() {
+    if (editorFilePath.empty()) return false;
+    try {
+        std::ofstream ofs(editorFilePath);
+        if (!ofs.is_open()) {
+            thoughtStream = "Falha ao salvar arquivo: " + editorFilePath;
+            return false;
+        }
+        const std::string content = editorUsesPlainText ? editorPlainTextBuffer : codeEditor.GetText();
+        ofs << content;
+        editorSavedText = content;
+        editorDirty = false;
+        thoughtStream = "Arquivo salvo: " + fs::path(editorFilePath).filename().string();
+        return true;
+    } catch (...) {
+        thoughtStream = "Erro ao salvar arquivo em edição.";
+        return false;
+    }
+}
+
+void AgentUI::drawFileEditor() {
+    ImGui::TextColored(ImVec4(0.4f, 0.7f, 1.0f, 1.0f), "EDITOR");
+    ImGui::Separator();
+
+    if (editorFilePath.empty()) {
+        ImGui::TextDisabled("Selecione um arquivo no explorer para abrir no editor.");
+        return;
+    }
+
+    editorDirty = editorUsesPlainText ? (editorPlainTextBuffer != editorSavedText) : (codeEditor.GetText() != editorSavedText);
+    std::string fileName = fs::path(editorFilePath).filename().string();
+    if (editorDirty) fileName += " *";
+    ImGui::TextWrapped("%s", fileName.c_str());
+
+    if (ImGui::SmallButton("Salvar")) {
+        saveEditorFile();
+    }
+    ImGui::SameLine();
+    if (ImGui::SmallButton("Usar como Contexto")) {
+        selectedFile = editorFilePath;
+        thoughtStream = "Arquivo ativo para contexto: " + fs::path(editorFilePath).filename().string();
+    }
+    ImGui::SameLine();
+    if (ImGui::SmallButton("Recarregar")) {
+        loadFileIntoEditor(editorFilePath);
+    }
+    ImGui::SameLine();
+    ImGui::TextDisabled("%s", editorDirty ? "Nao salvo" : "Salvo");
+
+    ImGui::BeginChild("InlineFileEditor", ImVec2(0, 260), true, ImGuiWindowFlags_HorizontalScrollbar);
+    if (editorUsesPlainText) {
+        ImGuiInputTextFlags flags = ImGuiInputTextFlags_AllowTabInput;
+        bool changed = ImGui::InputTextMultiline("##PlainTextEditor", &editorPlainTextBuffer, ImVec2(-1, -1), flags);
+        if (changed) editorDirty = (editorPlainTextBuffer != editorSavedText);
+    } else {
+        codeEditor.Render("ProjectFileEditor");
+        editorDirty = (codeEditor.GetText() != editorSavedText);
+    }
+    ImGui::EndChild();
 }
 
 void AgentUI::drawChatWindow() {
@@ -841,9 +958,16 @@ void AgentUI::drawChatWindow() {
 
             std::string fullMsg = "";
             if (!selectedFile.empty()) {
-                std::ifstream ifs(selectedFile);
-                std::stringstream buffer; buffer << ifs.rdbuf();
-                fullMsg += "<active_file name=\"" + fs::path(selectedFile).filename().string() + "\">\n" + buffer.str() + "\n</active_file>\n";
+                std::string activeContent;
+                if (selectedFile == editorFilePath && !editorFilePath.empty()) {
+                    activeContent = editorUsesPlainText ? editorPlainTextBuffer : codeEditor.GetText();
+                } else {
+                    std::ifstream ifs(selectedFile);
+                    std::stringstream buffer;
+                    buffer << ifs.rdbuf();
+                    activeContent = buffer.str();
+                }
+                fullMsg += "<active_file name=\"" + fs::path(selectedFile).filename().string() + "\">\n" + activeContent + "\n</active_file>\n";
             }
             fullMsg += "<user_query>\n" + userMsg + "\n</user_query>";
 
