@@ -9,6 +9,7 @@
 #include <mutex>
 #include <atomic>
 #include <filesystem>
+#include <deque>
 
 namespace agent::network {
     class OllamaClient;
@@ -26,6 +27,14 @@ namespace agent::ui {
 struct ChatMessage {
     std::string role;
     std::string text;
+};
+
+struct ChangeProposal {
+    std::string kind;
+    std::string targetPath;
+    std::string content;
+    std::string summary;
+    bool directlyApplicable = false;
 };
 
 class AgentUI {
@@ -74,6 +83,8 @@ private:
     bool editorUsesPlainText = false;
     bool editorDirty = false;
     std::string lastResolvedProjectRoot = "";
+    std::string lastChangeTargetPath = "";
+    std::deque<std::string> recentFiles;
     bool newEntryModeDirectory = false;
     bool newEntryFormVisible = false;
     char newEntryPathBuf[512] = "";
@@ -134,8 +145,12 @@ private:
     bool contextPolicyDialogVisible = false;
     char contextLibraryPathsBuf[4096] = "";
     char contextDomainsBuf[1024] = "";
+    char pendingChangeTargetBuf[1024] = "";
 
     std::string thoughtStream = "Pronto.";
+    bool changeProposalVisible = false;
+    ChangeProposal pendingChangeProposal;
+    std::string pendingChangeDiff;
 
     // Render Sub-methods
     void drawMainMenu();
@@ -146,6 +161,8 @@ private:
     bool saveEditorFile();
     bool createWorkspaceEntry(const std::string& relativePath, bool directory);
     bool applyTextToActiveFile(const std::string& text, bool saveAfter);
+    bool ensureEditorTarget(const std::string& targetPath);
+    void noteFileTouched(const std::string& path);
     void generateProjectMap();
     
     void drawChatWindow();
@@ -154,7 +171,9 @@ private:
     std::string buildActiveContextBlock() const;
     std::string buildChatSystemPrompt() const;
     std::string inferTaskMode(const std::string& goal) const;
-    std::string extractWritableAssistantText(const std::string& text) const;
+    std::string inferActiveFileForGoal(const std::string& goal) const;
+    std::string inferActiveFileAmbiguityNote(const std::string& goal) const;
+    bool buildChangeProposalFromAssistantText(const std::string& text, ChangeProposal& proposal) const;
     
     void drawThoughtPanel();
     void drawStatsPanel();
@@ -163,7 +182,9 @@ private:
     void drawOpenFolderPickerDialog();
     void drawGovernedProjectDialog();
     void drawContextPolicyDialog();
+    void drawChangeProposalDialog();
     void renderModelManagerModal();
+    std::string buildSimpleDiffPreview(const std::string& oldText, const std::string& newText) const;
 
     // Session Helpers
     void saveSession();

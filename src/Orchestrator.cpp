@@ -205,6 +205,9 @@ void Orchestrator::runMission(const std::string& goal, const std::string& mode,
                                        (activeFilePriority
                                             ? "\nPrioridade adicional: ha contexto/arquivo ativo relevante. Antes de explorar o repositorio, leia e trabalhe primeiro sobre esse artefato."
                                             : "") +
+                                       (activeFilePriority
+                                            ? "\nSe a melhor saida for uma proposta de alteracao de arquivo, prefira um bloco ```json``` com kind, target, summary e content em vez de prosa misturada."
+                                            : "") +
                                        "\nRegra crítica de evidência: NÃO conclua ausência/lacuna de conteúdo sem 2 evidências diretas "
                                        "(ex.: list_dir + read_file, ou erro objetivo de acesso)." +
                                        ((reasoning == "high")

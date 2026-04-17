@@ -126,6 +126,7 @@ void AgentUI::render() {
     drawOpenFolderPickerDialog();
     drawGovernedProjectDialog();
     drawContextPolicyDialog();
+    drawChangeProposalDialog();
     renderModelManagerModal();
 }
 

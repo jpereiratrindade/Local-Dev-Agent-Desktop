@@ -139,4 +139,81 @@ void AgentUI::drawGovernedProjectDialog() {
     }
 }
 
+void AgentUI::drawChangeProposalDialog() {
+    if (changeProposalVisible) {
+        ImGui::OpenPopup("Revisar Mudanca###ChangeProposal");
+    }
+
+    if (ImGui::BeginPopupModal("Revisar Mudanca###ChangeProposal", &changeProposalVisible, ImGuiWindowFlags_AlwaysAutoResize)) {
+        ImGui::TextWrapped("%s", pendingChangeProposal.summary.empty() ? "Mudanca proposta pelo agente." : pendingChangeProposal.summary.c_str());
+        ImGui::Separator();
+        ImGui::Text("Operacao: %s", pendingChangeProposal.kind.empty() ? "replace_file" : pendingChangeProposal.kind.c_str());
+        ImGui::InputText("Alvo", pendingChangeTargetBuf, sizeof(pendingChangeTargetBuf));
+
+        if (!pendingChangeDiff.empty()) {
+            ImGui::Spacing();
+            ImGui::TextColored(ImVec4(0.4f, 0.7f, 1.0f, 1.0f), "Diff simplificado");
+            ImGui::BeginChild("ChangeProposalDiff", ImVec2(720, 220), true, ImGuiWindowFlags_HorizontalScrollbar);
+            std::istringstream diffStream(pendingChangeDiff);
+            std::string diffLine;
+            while (std::getline(diffStream, diffLine)) {
+                if (!diffLine.empty() && diffLine[0] == '+') {
+                    ImGui::TextColored(ImVec4(0.45f, 0.9f, 0.45f, 1.0f), "%s", diffLine.c_str());
+                } else if (!diffLine.empty() && diffLine[0] == '-') {
+                    ImGui::TextColored(ImVec4(1.0f, 0.45f, 0.45f, 1.0f), "%s", diffLine.c_str());
+                } else {
+                    ImGui::TextUnformatted(diffLine.c_str());
+                }
+            }
+            ImGui::EndChild();
+        }
+
+        ImGui::Spacing();
+        ImGui::TextColored(ImVec4(0.4f, 0.7f, 1.0f, 1.0f), "Conteudo proposto");
+        ImGui::BeginChild("ChangeProposalContent", ImVec2(720, 220), true, ImGuiWindowFlags_HorizontalScrollbar);
+        ImGui::TextUnformatted(pendingChangeProposal.content.c_str());
+        ImGui::EndChild();
+
+        if (ImGui::Button("Aceitar", ImVec2(120, 0))) {
+            pendingChangeProposal.targetPath = trimLoose(pendingChangeTargetBuf);
+            if (!pendingChangeProposal.targetPath.empty() && ensureEditorTarget(pendingChangeProposal.targetPath) &&
+                applyTextToActiveFile(pendingChangeProposal.content, false)) {
+                lastChangeTargetPath = pendingChangeProposal.targetPath;
+                thoughtStream = "Mudanca aceita no editor. Revise e salve quando quiser.";
+            } else {
+                thoughtStream = "ERRO: nao foi possivel aplicar a mudanca ao editor.";
+            }
+            pendingChangeProposal = {};
+            pendingChangeDiff.clear();
+            changeProposalVisible = false;
+            ImGui::CloseCurrentPopup();
+        }
+        ImGui::SameLine();
+        if (ImGui::Button("Aceitar e salvar", ImVec2(160, 0))) {
+            pendingChangeProposal.targetPath = trimLoose(pendingChangeTargetBuf);
+            if (!pendingChangeProposal.targetPath.empty() && ensureEditorTarget(pendingChangeProposal.targetPath) &&
+                applyTextToActiveFile(pendingChangeProposal.content, true)) {
+                lastChangeTargetPath = pendingChangeProposal.targetPath;
+                thoughtStream = "Mudanca aceita e salva no arquivo ativo.";
+            } else {
+                thoughtStream = "ERRO: nao foi possivel aplicar e salvar a mudanca.";
+            }
+            pendingChangeProposal = {};
+            pendingChangeDiff.clear();
+            changeProposalVisible = false;
+            ImGui::CloseCurrentPopup();
+        }
+        ImGui::SameLine();
+        if (ImGui::Button("Cancelar", ImVec2(120, 0))) {
+            thoughtStream = "Mudanca descartada pelo usuario.";
+            pendingChangeProposal = {};
+            pendingChangeDiff.clear();
+            changeProposalVisible = false;
+            ImGui::CloseCurrentPopup();
+        }
+
+        ImGui::EndPopup();
+    }
+}
+
 } // namespace agent::ui

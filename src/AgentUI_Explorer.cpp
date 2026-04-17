@@ -8,6 +8,14 @@
 namespace agent::ui {
 
 namespace {
+static std::string lowerPathString(const fs::path& path) {
+    std::string value = path.string();
+    std::transform(value.begin(), value.end(), value.begin(), [](unsigned char c) {
+        return static_cast<char>(std::tolower(c));
+    });
+    return value;
+}
+
 static TextEditor::LanguageDefinition languageForPath(const fs::path& path) {
     std::string ext = path.extension().string();
     std::transform(ext.begin(), ext.end(), ext.begin(), [](unsigned char c) {
@@ -172,6 +180,7 @@ void AgentUI::renderDirectory(const std::string& path) {
                 if (ImGui::Selectable(fileLabel.c_str(), isSelected)) {
                     selectedFile = entryPath.string();
                     loadFileIntoEditor(selectedFile);
+                    noteFileTouched(selectedFile);
                 }
             }
         }
@@ -194,6 +203,7 @@ void AgentUI::loadFileIntoEditor(const std::string& path) {
             codeEditor.SetReadOnly(false);
             editorFilePath = path;
             editorDirty = false;
+            noteFileTouched(editorFilePath);
         }
     } catch (...) {}
 }
@@ -207,8 +217,17 @@ bool AgentUI::saveEditorFile() {
         ofs << content;
         editorSavedText = content;
         editorDirty = false;
+        noteFileTouched(editorFilePath);
         return true;
     } catch (...) { return false; }
+}
+
+void AgentUI::noteFileTouched(const std::string& path) {
+    const std::string trimmed = trimLoose(path);
+    if (trimmed.empty()) return;
+    recentFiles.erase(std::remove(recentFiles.begin(), recentFiles.end(), trimmed), recentFiles.end());
+    recentFiles.push_front(trimmed);
+    while (recentFiles.size() > 8) recentFiles.pop_back();
 }
 
 bool AgentUI::createWorkspaceEntry(const std::string& relativePath, bool directory) {
@@ -230,6 +249,7 @@ bool AgentUI::createWorkspaceEntry(const std::string& relativePath, bool directo
             if (!ofs.is_open()) return false;
             selectedFile = target.string();
             loadFileIntoEditor(selectedFile);
+            noteFileTouched(selectedFile);
         }
         generateProjectMap();
         return true;
@@ -243,7 +263,35 @@ bool AgentUI::applyTextToActiveFile(const std::string& text, bool saveAfter) {
     if (editorUsesPlainText) editorPlainTextBuffer = text;
     else codeEditor.SetText(text);
     editorDirty = true;
+    noteFileTouched(editorFilePath);
     return !saveAfter || saveEditorFile();
+}
+
+bool AgentUI::ensureEditorTarget(const std::string& targetPath) {
+    const std::string trimmed = trimLoose(targetPath);
+    if (trimmed.empty()) return false;
+
+    fs::path target(trimmed);
+    try {
+        if (!target.is_absolute()) {
+            if (!hasOpenProject || currentProjectRoot.empty()) return false;
+            target = fs::path(currentProjectRoot) / target;
+        }
+
+        fs::path parent = target.has_parent_path() ? target.parent_path() : fs::path(currentProjectRoot);
+        fs::create_directories(parent);
+        if (!fs::exists(target)) {
+            std::ofstream ofs(target);
+            if (!ofs.is_open()) return false;
+        }
+
+        selectedFile = target.string();
+        loadFileIntoEditor(selectedFile);
+        noteFileTouched(selectedFile);
+        return !editorFilePath.empty();
+    } catch (...) {
+        return false;
+    }
 }
 
 void AgentUI::drawFileEditor() {

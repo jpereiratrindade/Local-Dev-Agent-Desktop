@@ -1,6 +1,7 @@
 #include "AgentUI_Internal.hpp"
 #include "imgui.h"
 #include "Orchestrator.hpp"
+#include "json.hpp"
 #include <regex>
 #include <fstream>
 #include <sstream>
@@ -64,6 +65,33 @@ std::string toLowerCopy(std::string value) {
     });
     return value;
 }
+
+std::vector<std::string> extractCodeBlocks(const std::string& text) {
+    std::vector<std::string> blocks;
+    std::regex codeBlockRegex("```(?:[A-Za-z0-9_+#.-]+)?\\s*([\\s\\S]*?)\\s*```");
+    for (std::sregex_iterator it(text.begin(), text.end(), codeBlockRegex), end; it != end; ++it) {
+        blocks.push_back(trimLoose((*it)[1].str()));
+    }
+    return blocks;
+}
+
+std::vector<std::string> extractJsonBlocks(const std::string& text) {
+    std::vector<std::string> blocks;
+    std::regex jsonBlockRegex("```json\\s*([\\s\\S]*?)\\s*```");
+    for (std::sregex_iterator it(text.begin(), text.end(), jsonBlockRegex), end; it != end; ++it) {
+        blocks.push_back(trimLoose((*it)[1].str()));
+    }
+    return blocks;
+}
+
+bool looksLikeMixedExplanatoryResponse(const std::string& text) {
+    std::string lower = toLowerCopy(text);
+    return containsAnyLower(lower, {
+        "explicação", "explicacao", "código atualizado", "codigo atualizado",
+        "para testar", "compile", "agora você terá", "agora voce tera",
+        "vou implementar", "se precisar", "###", "1.", "2.", "3."
+    });
+}
 } // namespace
 
 void AgentUI::renderMarkdown(const std::string& text) {
@@ -84,19 +112,159 @@ void AgentUI::renderMarkdown(const std::string& text) {
     }
 }
 
+std::string AgentUI::buildSimpleDiffPreview(const std::string& oldText, const std::string& newText) const {
+    std::istringstream oldStream(oldText);
+    std::istringstream newStream(newText);
+    std::vector<std::string> oldLines;
+    std::vector<std::string> newLines;
+    std::string line;
+    while (std::getline(oldStream, line)) oldLines.push_back(line);
+    while (std::getline(newStream, line)) newLines.push_back(line);
+
+    std::stringstream out;
+    const size_t maxLines = std::max(oldLines.size(), newLines.size());
+    size_t emitted = 0;
+    for (size_t i = 0; i < maxLines; ++i) {
+        const bool hasOld = i < oldLines.size();
+        const bool hasNew = i < newLines.size();
+        const std::string oldLine = hasOld ? oldLines[i] : "";
+        const std::string newLine = hasNew ? newLines[i] : "";
+        if (hasOld && hasNew && oldLine == newLine) continue;
+        if (hasOld) out << "- " << oldLine << "\n";
+        if (hasNew) out << "+ " << newLine << "\n";
+        emitted++;
+        if (emitted >= 120) {
+            out << "...diff truncado...\n";
+            break;
+        }
+    }
+    if (emitted == 0) out << "(sem diferencas detectadas)\n";
+    return out.str();
+}
+
+std::string AgentUI::inferActiveFileForGoal(const std::string& goal) const {
+    const std::string lowerGoal = toLowerCopy(goal);
+
+    auto candidateScore = [&](const std::string& candidatePath) -> int {
+        if (candidatePath.empty()) return -1;
+        fs::path path(candidatePath);
+        const std::string filename = toLowerCopy(path.filename().string());
+        const std::string rel = hasOpenProject && !currentProjectRoot.empty()
+            ? toLowerCopy(fs::relative(path, currentProjectRoot).string())
+            : filename;
+
+        int score = 0;
+        if (!filename.empty() && lowerGoal.find(filename) != std::string::npos) score += 100;
+        if (!rel.empty() && lowerGoal.find(rel) != std::string::npos) score += 120;
+        if (!selectedFile.empty() && candidatePath == selectedFile) score += 25;
+        if (!editorFilePath.empty() && candidatePath == editorFilePath) score += 35;
+        if (!lastChangeTargetPath.empty() && candidatePath == lastChangeTargetPath) score += 30;
+
+        const auto it = std::find(recentFiles.begin(), recentFiles.end(), candidatePath);
+        if (it != recentFiles.end()) {
+            score += std::max(5, 20 - static_cast<int>(std::distance(recentFiles.begin(), it)) * 3);
+        }
+
+        if (lowerGoal.find("este arquivo") != std::string::npos || lowerGoal.find("arquivo ativo") != std::string::npos) {
+            if (!editorFilePath.empty() && candidatePath == editorFilePath) score += 60;
+            else if (!selectedFile.empty() && candidatePath == selectedFile) score += 40;
+        }
+
+        if (lowerGoal.find("esse texto") != std::string::npos || lowerGoal.find("continua") != std::string::npos ||
+            lowerGoal.find("continuar") != std::string::npos || lowerGoal.find("corrigir") != std::string::npos ||
+            lowerGoal.find("revisar") != std::string::npos || lowerGoal.find("ajustar") != std::string::npos) {
+            if (!editorFilePath.empty() && candidatePath == editorFilePath) score += 20;
+        }
+        return score;
+    };
+
+    std::string bestPath;
+    int bestScore = -1;
+    std::vector<std::string> candidates;
+    if (!editorFilePath.empty()) candidates.push_back(editorFilePath);
+    if (!selectedFile.empty() && selectedFile != editorFilePath) candidates.push_back(selectedFile);
+    if (!lastChangeTargetPath.empty() &&
+        std::find(candidates.begin(), candidates.end(), lastChangeTargetPath) == candidates.end()) {
+        candidates.push_back(lastChangeTargetPath);
+    }
+    for (const auto& recent : recentFiles) {
+        if (std::find(candidates.begin(), candidates.end(), recent) == candidates.end()) candidates.push_back(recent);
+    }
+
+    for (const auto& candidate : candidates) {
+        int score = candidateScore(candidate);
+        if (score > bestScore) {
+            bestScore = score;
+            bestPath = candidate;
+        }
+    }
+
+    if (bestScore <= 0) {
+        if (!editorFilePath.empty()) return editorFilePath;
+        if (!selectedFile.empty()) return selectedFile;
+    }
+    return bestPath;
+}
+
+std::string AgentUI::inferActiveFileAmbiguityNote(const std::string& goal) const {
+    const std::string lowerGoal = toLowerCopy(goal);
+    struct CandidateScore { std::string path; int score; };
+    std::vector<CandidateScore> scored;
+    std::vector<std::string> candidates;
+    if (!editorFilePath.empty()) candidates.push_back(editorFilePath);
+    if (!selectedFile.empty() && selectedFile != editorFilePath) candidates.push_back(selectedFile);
+    if (!lastChangeTargetPath.empty() &&
+        std::find(candidates.begin(), candidates.end(), lastChangeTargetPath) == candidates.end()) {
+        candidates.push_back(lastChangeTargetPath);
+    }
+    for (const auto& recent : recentFiles) {
+        if (std::find(candidates.begin(), candidates.end(), recent) == candidates.end()) candidates.push_back(recent);
+    }
+
+    for (const auto& candidatePath : candidates) {
+        fs::path path(candidatePath);
+        const std::string filename = toLowerCopy(path.filename().string());
+        const std::string rel = hasOpenProject && !currentProjectRoot.empty()
+            ? toLowerCopy(fs::relative(path, currentProjectRoot).string())
+            : filename;
+        int score = 0;
+        if (!filename.empty() && lowerGoal.find(filename) != std::string::npos) score += 100;
+        if (!rel.empty() && lowerGoal.find(rel) != std::string::npos) score += 120;
+        if (!selectedFile.empty() && candidatePath == selectedFile) score += 25;
+        if (!editorFilePath.empty() && candidatePath == editorFilePath) score += 35;
+        if (!lastChangeTargetPath.empty() && candidatePath == lastChangeTargetPath) score += 30;
+        const auto it = std::find(recentFiles.begin(), recentFiles.end(), candidatePath);
+        if (it != recentFiles.end()) score += std::max(5, 20 - static_cast<int>(std::distance(recentFiles.begin(), it)) * 3);
+        if (score > 0) scored.push_back({candidatePath, score});
+    }
+
+    if (scored.size() < 2) return "";
+    std::sort(scored.begin(), scored.end(), [](const auto& a, const auto& b) {
+        return a.score > b.score;
+    });
+    if (scored[0].score - scored[1].score <= 15) {
+        return "Ambiguidade de arquivo: " + fs::path(scored[0].path).filename().string() +
+               " ou " + fs::path(scored[1].path).filename().string();
+    }
+    return "";
+}
+
 std::string AgentUI::buildActiveContextBlock() const {
     std::stringstream context;
     if (hasOpenProject && !currentProjectRoot.empty()) {
         context << "Projeto atual: " << currentProjectRoot << "\n";
     }
-    if (!selectedFile.empty()) {
-        context << "Arquivo ativo: " << selectedFile << "\n";
+    const std::string activeFile = inferActiveFileForGoal(history.empty() ? "" : history.back().text);
+    if (!activeFile.empty()) {
+        context << "Arquivo ativo inferido: " << activeFile << "\n";
+        const std::string ambiguity = inferActiveFileAmbiguityNote(history.empty() ? "" : history.back().text);
+        if (!ambiguity.empty()) context << ambiguity << "\n";
         std::string content;
-        if (selectedFile == editorFilePath) {
+        if (activeFile == editorFilePath) {
             content = editorUsesPlainText ? editorPlainTextBuffer : codeEditor.GetText();
         } else {
             try {
-                std::ifstream in(selectedFile);
+                std::ifstream in(activeFile);
                 if (in) {
                     std::stringstream buffer;
                     buffer << in.rdbuf();
@@ -124,21 +292,63 @@ std::string AgentUI::buildChatSystemPrompt() const {
     prompt << "3. Para tarefas editoriais, responda como coautor e use o arquivo ativo antes de explorar o resto do projeto.\n";
     prompt << "4. Para tarefas executivas e quando necessario, voce pode propor JSON de tool-call, mas so faca isso se realmente precisar agir no workspace.\n";
     prompt << "5. Seja concreto. Se o pedido for de alteracao de conteudo, entregue texto pronto para inserir ou diga claramente qual alteracao faria.\n";
+    prompt << "6. Se estiver propondo criar ou substituir um arquivo, prefira incluir um bloco ```json``` com {\"kind\":\"replace_file|create_file\",\"target\":\"...\",\"summary\":\"...\",\"content\":\"...\"}.\n";
+    prompt << "7. Nao misture instrucoes de teste e explicacao dentro do campo content.\n";
     if (hasOpenProject && !currentProjectRoot.empty()) {
         prompt << "Projeto atual: " << currentProjectRoot << "\n";
     }
-    if (!selectedFile.empty()) {
-        prompt << "Arquivo ativo priorizado: " << selectedFile << "\n";
+    const std::string inferredFile = inferActiveFileForGoal(history.empty() ? "" : history.back().text);
+    if (!inferredFile.empty()) {
+        prompt << "Arquivo ativo inferido/priorizado: " << inferredFile << "\n";
     }
     return prompt.str();
 }
 
-std::string AgentUI::extractWritableAssistantText(const std::string& text) const {
+bool AgentUI::buildChangeProposalFromAssistantText(const std::string& text, ChangeProposal& proposal) const {
+    proposal = {};
+    proposal.kind = editorFilePath.empty() ? "create_file" : "replace_file";
+    proposal.targetPath = !editorFilePath.empty() ? editorFilePath : selectedFile;
+
+    for (const auto& block : extractJsonBlocks(text)) {
+        try {
+            auto j = nlohmann::json::parse(block);
+            if (!j.is_object()) continue;
+            if (!j.contains("content")) continue;
+            proposal.kind = j.value("kind", proposal.kind);
+            proposal.targetPath = j.value("target", proposal.targetPath);
+            proposal.summary = j.value("summary", "Proposta estruturada recebida do agente.");
+            proposal.content = j.value("content", std::string{});
+            proposal.directlyApplicable = !proposal.content.empty() &&
+                (proposal.kind == "replace_file" || proposal.kind == "create_file");
+            if (proposal.directlyApplicable) return true;
+        } catch (...) {
+        }
+    }
+
     AgentMessageSections sections = splitAgentMessage(text);
     std::string cleaned = trimLoose(sections.answer);
     cleaned = std::regex_replace(cleaned, std::regex("<thought>[\\s\\S]*?</thought>"), "");
     cleaned = std::regex_replace(cleaned, std::regex("TASK COMPLETE"), "");
-    return trimLoose(cleaned);
+    cleaned = trimLoose(cleaned);
+
+    const auto codeBlocks = extractCodeBlocks(cleaned);
+    if (codeBlocks.size() == 1) {
+        proposal.content = codeBlocks.front();
+        proposal.summary = "Bloco de codigo unico extraido da resposta do agente.";
+        proposal.directlyApplicable = !proposal.content.empty();
+        return proposal.directlyApplicable;
+    }
+
+    if (codeBlocks.empty() && !looksLikeMixedExplanatoryResponse(cleaned)) {
+        proposal.content = cleaned;
+        proposal.summary = "Resposta textual direta tratada como substituicao de arquivo.";
+        proposal.directlyApplicable = !proposal.content.empty();
+        return proposal.directlyApplicable;
+    }
+
+    proposal.summary = "Resposta ambigua: mistura explicacao e conteudo. Aplicacao automatica bloqueada.";
+    proposal.directlyApplicable = false;
+    return false;
 }
 
 std::string AgentUI::inferTaskMode(const std::string& goal) const {
@@ -146,7 +356,7 @@ std::string AgentUI::inferTaskMode(const std::string& goal) const {
     if (containsAnyLower(lower, {"crie arquivo", "criar arquivo", "gere projeto", "scaffold", "rodar", "executar", "corrigir build", "refator", "refactor", "renomear arquivo", "mover arquivo"})) {
         return "MISSION";
     }
-    if (!selectedFile.empty() && containsAnyLower(lower, {"inclua", "incluir", "continue", "continuar", "revise este texto", "reescreva", "melhore o texto", "edite", "ajuste o documento", "insira"})) {
+    if (!inferActiveFileForGoal(goal).empty() && containsAnyLower(lower, {"inclua", "incluir", "continue", "continuar", "revise este texto", "reescreva", "melhore o texto", "edite", "ajuste o documento", "insira", "corrija", "corrigir"})) {
         return "ASSIST";
     }
     return "CHAT";
@@ -284,10 +494,15 @@ void AgentUI::drawChatWindow() {
     }
     ImGui::Separator();
     const std::string inferredMode = inferTaskMode(inputBuf);
+    const std::string inferredActiveFile = inferActiveFileForGoal(inputBuf);
+    const std::string ambiguityNote = inferActiveFileAmbiguityNote(inputBuf);
     ImGui::TextDisabled("Modo sugerido: %s", inferredMode == "MISSION" ? "Missao" : "Chat assistido");
-    if (!selectedFile.empty()) {
+    if (!inferredActiveFile.empty()) {
         ImGui::SameLine();
-        ImGui::TextDisabled("| Arquivo alvo: %s", fs::path(selectedFile).filename().string().c_str());
+        ImGui::TextDisabled("| Arquivo inferido: %s", fs::path(inferredActiveFile).filename().string().c_str());
+    }
+    if (!ambiguityNote.empty()) {
+        ImGui::TextColored(ImVec4(1.0f, 0.75f, 0.2f, 1.0f), "%s", ambiguityNote.c_str());
     }
 
     float footerHeight = ImGui::GetFrameHeightWithSpacing() + 55.0f;
@@ -308,22 +523,21 @@ void AgentUI::drawChatWindow() {
                 ImGui::PushID(static_cast<int>(i));
                 if (ImGui::SmallButton("Copiar")) ImGui::SetClipboardText(msg.text.c_str());
                 if (!editorFilePath.empty()) {
+                    ChangeProposal proposal;
+                    const bool hasProposal = buildChangeProposalFromAssistantText(msg.text, proposal);
                     ImGui::SameLine();
-                    if (ImGui::SmallButton("Aplicar")) {
-                        const std::string writable = extractWritableAssistantText(msg.text);
-                        if (applyTextToActiveFile(writable, false)) {
-                            thoughtStream = "Resposta aplicada ao arquivo ativo.";
+                    if (ImGui::SmallButton("Propor Mudanca")) {
+                        if (hasProposal) {
+                            pendingChangeProposal = proposal;
+                            const std::string currentText = editorUsesPlainText ? editorPlainTextBuffer : codeEditor.GetText();
+                            pendingChangeDiff = buildSimpleDiffPreview(currentText, proposal.content);
+                            std::snprintf(pendingChangeTargetBuf, sizeof(pendingChangeTargetBuf), "%s", pendingChangeProposal.targetPath.c_str());
+                            changeProposalVisible = true;
+                            thoughtStream = "Mudanca pronta para revisao.";
                         } else {
-                            thoughtStream = "ERRO: nao foi possivel aplicar ao arquivo ativo.";
-                        }
-                    }
-                    ImGui::SameLine();
-                    if (ImGui::SmallButton("Aplicar+Salvar")) {
-                        const std::string writable = extractWritableAssistantText(msg.text);
-                        if (applyTextToActiveFile(writable, true)) {
-                            thoughtStream = "Resposta aplicada e salva no arquivo ativo.";
-                        } else {
-                            thoughtStream = "ERRO: nao foi possivel aplicar e salvar.";
+                            thoughtStream = proposal.summary.empty()
+                                ? "Resposta sem proposta de mudanca segura."
+                                : proposal.summary;
                         }
                     }
                 }
@@ -367,8 +581,8 @@ void AgentUI::drawChatWindow() {
 
     ImGui::Separator();
     
-    if (!selectedFile.empty()) {
-        ImGui::TextDisabled("Anexo: %s", fs::path(selectedFile).filename().string().c_str());
+    if (!inferredActiveFile.empty()) {
+        ImGui::TextDisabled("Arquivo em foco: %s", fs::path(inferredActiveFile).filename().string().c_str());
     }
 
     ImGui::PushItemWidth(-1);

@@ -27,6 +27,7 @@ Foco: ganho alto com risco baixo.
 - prompts baseados em selecao ativa
 - visualizacao de diff antes de aplicar mudancas
 - fluxo explicito de `aplicar patch` com confirmacao
+- substituir `Aplicar+Salvar` por revisao de mudanca estruturada
 
 ## Phase 2
 
@@ -65,3 +66,18 @@ Foco: refinamento do editor e integracoes mais profundas.
 - melhora comportamento real antes de cosmetica
 - reduz chance de parecer Copilot sem entregar confiabilidade
 - aproveita os diferenciais do projeto: skills, perfis, RAG local e governanca
+
+## Editing Flow Note
+
+O fluxo atual de `Aplicar` / `Aplicar+Salvar` deve ser tratado como transitorio.
+
+Direcao oficial:
+
+- proposta de mudanca estruturada
+- preview ou diff
+- aceitacao explicita
+- persistencia no workspace como operacao, nao como resposta textual
+
+Plano detalhado:
+
+- [docs/EDITING_FLOW_MIGRATION_PLAN.md](./EDITING_FLOW_MIGRATION_PLAN.md)
