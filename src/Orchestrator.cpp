@@ -156,9 +156,9 @@ void Orchestrator::runMission(const std::string& goal, const std::string& mode,
                              int maxSteps, MissionCallbacks callbacks,
                              const agent::network::OllamaOptions& options) {
     stopRequested = false;
-    history.clear();
     
     std::thread([this, goal, mode, maxSteps, callbacks, options]() {
+        bool isFirstTurn = history.empty();
         std::string reasoning = extractTag(goal, "reasoning");
         std::string access = extractTag(goal, "access");
         std::string profile = extractTag(goal, "profile");
@@ -167,27 +167,34 @@ void Orchestrator::runMission(const std::string& goal, const std::string& mode,
         if (reasoning.empty()) reasoning = "medium";
         if (context.empty()) context = "workspace";
         std::string currentGoal = stripTags(goal);
+        
+        if (isFirstTurn) {
+            std::string systemPrompt = buildSystemPrompt(mode, profile, reasoning);
+            std::string availableSkills = summarizeSkillNames(workspaceRoot);
+            history.push_back({"system", systemPrompt});
+            history.push_back({"user", "META: " + currentGoal +
+                                       "\n\nParâmetros: reasoning=" + reasoning +
+                                       ", access=" + (access.empty() ? "workspace-write" : access) +
+                                       ", profile=" + profile +
+                                       ", context=" + context +
+                                       "\nSkills disponíveis: " + availableSkills +
+                                       "\n" + profileInstructions(profile) +
+                                       "\nSe alguma skill combinar com a tarefa, use-a como guia flexivel de arranque, nao como trilho obrigatorio." +
+                                       "\nPerfis definem postura cognitiva; skills sugerem fluxo; ferramentas e contexto permitem improviso responsavel." +
+                                       "\nInicie pela menor ação verificável possível." +
+                                       "\nRegra crítica de evidência: NÃO conclua ausência/lacuna de conteúdo sem 2 evidências diretas "
+                                       "(ex.: list_dir + read_file, ou erro objetivo de acesso)." +
+                                       ((reasoning == "high")
+                                           ? "\nPara reasoning=high: colete no minimo 3 evidencias concretas em arquivos/caminhos antes da conclusao."
+                                           : "")});
+        } else {
+            history.push_back({"user", currentGoal});
+        }
+
         const bool highReasoning = (reasoning == "high");
         int effectiveMaxSteps = adjustStepsByReasoning(maxSteps, reasoning);
         effectiveMaxSteps = adjustStepsByProfile(effectiveMaxSteps, profile, reasoning);
-        std::string systemPrompt = buildSystemPrompt(mode, profile, reasoning);
-        std::string availableSkills = summarizeSkillNames(workspaceRoot);
-        history.push_back({"system", systemPrompt});
-        history.push_back({"user", "META: " + currentGoal +
-                                   "\n\nParâmetros: reasoning=" + reasoning +
-                                   ", access=" + (access.empty() ? "workspace-write" : access) +
-                                   ", profile=" + profile +
-                                   ", context=" + context +
-                                   "\nSkills disponíveis: " + availableSkills +
-                                   "\n" + profileInstructions(profile) +
-                                   "\nSe alguma skill combinar com a tarefa, use-a como guia flexivel de arranque, nao como trilho obrigatorio." +
-                                   "\nPerfis definem postura cognitiva; skills sugerem fluxo; ferramentas e contexto permitem improviso responsavel." +
-                                   "\nInicie pela menor ação verificável possível." +
-                                   "\nRegra crítica de evidência: NÃO conclua ausência/lacuna de conteúdo sem 2 evidências diretas "
-                                   "(ex.: list_dir + read_file, ou erro objetivo de acesso)." +
-                                   (highReasoning
-                                       ? "\nPara reasoning=high: colete no minimo 3 evidencias concretas em arquivos/caminhos antes da conclusao."
-                                       : "")});
+        
         bool completed = false;
         int stagnationCount = 0;
         std::string lastObservation;

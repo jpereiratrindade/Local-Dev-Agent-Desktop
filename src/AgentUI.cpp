@@ -164,6 +164,7 @@ void AgentUI::drawMainMenu() {
 
 void AgentUI::newDialogue() {
     history.clear();
+    if (orchestrator) orchestrator->clearHistory();
     thoughtStream = "Nova sessão iniciada.";
 }
 

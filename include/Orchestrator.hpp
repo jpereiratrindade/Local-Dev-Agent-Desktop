@@ -28,6 +28,7 @@ public:
 
     void setGovernance(const std::string& gov) { projectGovernance = gov; }
     void stopMission() { stopRequested = true; }
+    void clearHistory() { history.clear(); }
 
 private:
     agent::network::OllamaClient* ollama;

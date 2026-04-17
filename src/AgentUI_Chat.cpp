@@ -103,23 +103,20 @@ void AgentUI::runPythonAgent(const std::string& goal, const std::string& mode) {
                 thoughtStream = "Ação: " + action;
             };
             callbacks.onObservation = [this](const std::string& obs) {
-                // observations tend to be large, we just log the event
                 thoughtStream = "Observação recebida (" + std::to_string(obs.size()) + " bytes)";
             };
             callbacks.onComplete = [this](bool success) {
-                llmBusy = false;
+                llmBusy = false; // Reset ONLY when background thread completes
                 thoughtStream = success ? "Missão concluída." : "Missão interrompida.";
                 saveSession();
             };
 
             orchestrator->runMission(fullGoal, mode, 10, callbacks, opts);
-
-            thoughtStream = "Missão concluída.";
         } catch (const std::exception& e) {
+            std::lock_guard<std::mutex> lock(msgMutex);
             thoughtStream = "ERRO NA MISSÃO: " + std::string(e.what());
+            llmBusy = false;
         }
-        llmBusy = false;
-        saveSession();
     }).detach();
 }
 
@@ -208,7 +205,10 @@ void AgentUI::drawChatWindow() {
     if (ImGui::InputTextWithHint("##ChatInput", "Questione ou defina missão...", inputBuf, sizeof(inputBuf), ImGuiInputTextFlags_EnterReturnsTrue)) {
         if (std::strlen(inputBuf) > 0 && !llmBusy) {
             std::string queryText = inputBuf;
-            history.push_back({"user", queryText});
+            {
+                std::lock_guard<std::mutex> lock(msgMutex);
+                history.push_back({"user", queryText});
+            }
             std::memset(inputBuf, 0, sizeof(inputBuf));
             scrollToBottom = true;
             runPythonAgent(queryText, "AGENT");
