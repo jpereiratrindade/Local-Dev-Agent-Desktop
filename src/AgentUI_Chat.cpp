@@ -191,6 +191,27 @@ std::string AgentUI::buildSimpleDiffPreview(const std::string& oldText, const st
     return out.str();
 }
 
+std::string AgentUI::loadWorkspaceFileText(const std::string& path) const {
+    const std::string trimmed = trimLoose(path);
+    if (trimmed.empty()) return "";
+
+    try {
+        fs::path target(trimmed);
+        if (!target.is_absolute()) {
+            if (!hasOpenProject || currentProjectRoot.empty()) return "";
+            target = fs::path(currentProjectRoot) / target;
+        }
+
+        std::ifstream in(target);
+        if (!in.is_open()) return "";
+        std::stringstream buffer;
+        buffer << in.rdbuf();
+        return buffer.str();
+    } catch (...) {
+        return "";
+    }
+}
+
 std::string AgentUI::inferActiveFileForGoal(const std::string& goal) const {
     const std::string lowerGoal = toLowerCopy(goal);
 
@@ -625,10 +646,9 @@ void AgentUI::drawChatWindow() {
                     ImGui::SameLine();
                     if (ImGui::SmallButton("Propor Mudanca")) {
                         pendingChangeProposal = proposal;
-                        std::string currentText;
-                        if (!editorFilePath.empty() && proposal.targetPath == editorFilePath) {
-                            currentText = editorUsesPlainText ? editorPlainTextBuffer : codeEditor.GetText();
-                        }
+                        std::string currentText = (!editorFilePath.empty() && proposal.targetPath == editorFilePath)
+                            ? (editorUsesPlainText ? editorPlainTextBuffer : codeEditor.GetText())
+                            : loadWorkspaceFileText(proposal.targetPath);
                         pendingChangeDiff = buildSimpleDiffPreview(currentText, proposal.content);
                         std::snprintf(pendingChangeTargetBuf, sizeof(pendingChangeTargetBuf), "%s", pendingChangeProposal.targetPath.c_str());
                         changeProposalVisible = true;

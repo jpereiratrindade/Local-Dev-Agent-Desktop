@@ -176,6 +176,7 @@ private:
     std::string inferActiveFileForGoal(const std::string& goal) const;
     std::string inferActiveFileAmbiguityNote(const std::string& goal) const;
     bool buildChangeProposalFromAssistantText(const std::string& text, ChangeProposal& proposal) const;
+    std::string loadWorkspaceFileText(const std::string& path) const;
     
     void drawThoughtPanel();
     void drawStatsPanel();

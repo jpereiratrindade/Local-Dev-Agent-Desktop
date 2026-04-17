@@ -155,6 +155,9 @@ A aplicação detecta modelos locais no startup e exibe sugestões de vocação 
 - Skills são preferenciais e flexíveis: o agente pode combiná-las, adaptá-las ou ignorá-las se o contexto real indicar caminho melhor.
 - Skills não são mais despejadas integralmente no prompt base: o orquestrador injeta os nomes disponíveis e incentiva leitura progressiva via `read_file` apenas quando necessário.
 - Quando houver `memory/decisions-log.md` ou `.agent/memory/decisions-log.md`, o agente pode registrar decisões arquiteturais relevantes como memória persistente do projeto.
+- O chat agora aceita atalhos como `/fix`, `/explain`, `/test`, `/refactor` e `/doc` para acelerar pedidos recorrentes sobre o arquivo em foco.
+- A UI pode inferir o arquivo alvo pelo nome citado no prompt mesmo antes de ele estar aberto no editor.
+- A revisão de mudanças usa diff contra o conteúdo real do arquivo de destino: se o arquivo não estiver aberto no editor, a comparação é feita contra o conteúdo atual no workspace.
 
 ## Skills de exemplo
 
