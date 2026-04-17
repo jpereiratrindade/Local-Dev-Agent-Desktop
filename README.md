@@ -159,6 +159,19 @@ Este repositório já inclui skills iniciais em `.agent/skills/`:
 
 Essas skills entram no prompt do orquestrador automaticamente e servem como guia operacional para o modo agente.
 
+## Estabilizacao
+
+Antes de ampliar integracoes maiores, o projeto passa a priorizar estabilizacao do nucleo.
+
+- Decisao arquitetural: [docs/ADR-0001-stabilize-core-before-expanding-integrations.md](./docs/ADR-0001-stabilize-core-before-expanding-integrations.md)
+- Checklist pratica: [docs/STABILIZATION_CHECKLIST.md](./docs/STABILIZATION_CHECKLIST.md)
+
+## Roadmap de UX
+
+Para aproximar a experiencia do app a um fluxo mais `Codex-like`, a ordem atual de implementacao prioriza contexto e aplicacao segura antes de autocomplete visual.
+
+- Roadmap: [docs/CODEX_LIKE_UX_ROADMAP.md](./docs/CODEX_LIKE_UX_ROADMAP.md)
+
 ## Licença
 
 Este projeto está licenciado sob **GNU GPL v3.0 only**.

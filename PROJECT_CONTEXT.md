@@ -11,3 +11,14 @@ Direcao arquitetural:
 - fortalecer primeiro as tools nativas e o comportamento do orquestrador
 - consolidar skills persistentes no workspace
 - adicionar MCP depois como camada de padronizacao, nao como prerequisito inicial
+
+Prioridade atual:
+- estabilizar o nucleo antes de expandir integracoes maiores
+- adicionar testes automatizados para componentes criticos
+- refatorar gradualmente `NativeTools.cpp`
+- melhorar continuidade de contexto entre chat assistido, historico e missoes
+
+Roadmap de UX:
+- aproximar a experiencia de Codex/Copilot local sem sacrificar confiabilidade
+- priorizar contexto automatico, selecao ativa, slash commands e diff/apply patch
+- deixar ghost text e sugestoes inline para depois da consolidacao do nucleo
