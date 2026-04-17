@@ -1,0 +1,1243 @@
+             agriculture
+
+Article
+Mowing Increases Root-to-Shoot Ratio but Decreases Soil
+Organic Carbon Storage and Microbial Biomass C in a
+Semiarid Grassland of North China
+Lu Li 1,2 , Huaiqiang Liu 1               and Taogetao Baoyin 1, *
+
+                                          1   Key Laboratory of Grassland Ecology, School of Ecology and Environment, Inner Mongolia University,
+                                              Hohhot 010021, China
+                                          2   School of Life Science and Technology, Inner Mongolia University of Science & Technology,
+                                              Baotou 014010, China
+                                          *   Correspondence: bytgtnm@126.com; Tel.: 86-471-499-1436
+
+
+                                          Abstract: Quantifying the long-term effects of mowing on soil organic carbon (SOC) is of great
+                                          importance for understanding the changes in the carbon cycle of the grassland ecosystem and for
+                                          managing the grassland strategies for both production and soil nutrients. We investigated SOC
+                                          content and storage within the 0–30 cm soil layer in the grasslands following the application of
+                                          different mowing regimes—i.e., mowing once every 2 years (M1/2 ), mowing twice every 3 years
+                                          (M2/3 ), mowing once a year (M1/1 ), mowing twice a year (M2/1 ), and no mowing (CK)—in the
+                                          semiarid steppe of northern China. The results indicated that SOC storage and microbial biomass
+                                          C (MBC) decreased significantly with soil depth. Different mowing frequencies all declined SOC
+                                          storage and MBC of the grassland ecosystem; however, the root-to-shoot ratio (R:S) was increased.
+                                          The SOC storage was greatest under CK and had the following order: CK > M1/2 > M2/3 > M1/1
+                                          > M2/1 at 0–20 cm, while no significant difference existed in the five mowing frequencies at the
+Citation: Li, L.; Liu, H.; Baoyin, T.
+                                          soil 20–30 cm layers. Our findings elucidate that different mowing regimes influence soil carbon
+Mowing Increases Root-to-Shoot
+                                          storage by altering the productivity of vegetation, litter, plant community composition, soil microbial
+Ratio but Decreases Soil Organic
+Carbon Storage and Microbial
+                                          biomass, and resource allocation between aboveground plants and belowground roots, which need
+Biomass C in a Semiarid Grassland of      to be considered in the sustainable utilization of grasslands in the future. The results of this study
+North China. Agriculture 2022, 12,        support the view that mowing once every 2 years may be an effective mowing management regime
+1324. https://doi.org/10.3390/            for semiarid grasslands, as it conserves both above and belowground parts and maintains the healthy
+agriculture12091324                       development of ecosystem functions in semiarid grasslands.
+Academic Editors: Yong Ding,
+Yuqiang Tian and Qing Zhang
+                                          Keywords: different mowing regimes; soil organic carbon storage; microbial biomass C; root-to-shoot
+                                          ratio
+Received: 10 July 2022
+Accepted: 23 August 2022
+Published: 28 August 2022
+
+Publisher’s Note: MDPI stays neutral
+                                          1. Introduction
+with regard to jurisdictional claims in        Due to increasing concerns about anthropogenic climate change, actions to reduce
+published maps and institutional affil-   greenhouse gas emissions and to stabilize their concentration in the atmosphere are being
+iations.                                  taken [1]. The sequestration of soil organic carbon (SOC) by improved soil management is
+                                          a promising contribution to the mitigation of climate change [2]. In this respect, grassland
+                                          ecosystems account for 40% of terrestrial land cover and store about 34% of the terrestrial
+                                          carbon stock [3], with about 90% of their carbon stored belowground as root biomass and
+Copyright: © 2022 by the authors.
+                                          SOC, thus playing an important role in soil carbon sequestration [3,4]. However, grassland
+Licensee MDPI, Basel, Switzerland.
+                                          ecosystems have been increasingly impacted by human disturbance (e.g., overgrazing,
+This article is an open access article
+                                          unreasonable mowing, and land-use conversion to agriculture) and climate change. World-
+distributed under the terms and
+                                          wide, grasslands have undergone severe decreases in biodiversity and grassland ecosystem
+conditions of the Creative Commons
+                                          functions, leading to a reduction in SOC storage with a significant impact on soil C, N,
+Attribution (CC BY) license (https://
+creativecommons.org/licenses/by/
+                                          and P cycling [5,6]. All of these factors are actually triggered by the complex interactions
+4.0/).
+                                          between vegetation and biotic/abotic factors [7]. Empirical and experimental studies have
+
+
+
+
+Agriculture 2022, 12, 1324. https://doi.org/10.3390/agriculture12091324                                  https://www.mdpi.com/journal/agriculture
+Agriculture 2022, 12, 1324                                                                                             2 of 15
+
+
+
+
+                             shown that improving grassland management can increase SOC storage, thus mitigating
+                             carbon losses due to climate change, long-term overgrazing, unreasonable mowing, and
+                             grassland degradation [4]. Therefore, it is critical to obtain a better understanding of how
+                             these interactions influence the direction and magnitude of changes in soil C storage, which
+                             is important for predicting the effects of human initiatives on soil fertility and revealing the
+                             underlying mechanisms of biogeochemical cycling [8,9]. In particular, we need to develop
+                             appropriate management measures to achieve both ecological and economic sustainability
+                             and profitability.
+                                   The change in SOC content is an indicator of the evolution of soil health and quality
+                             in the context of land-use change, while the decrease in SOC storage is an important
+                             manifestation of the degradation of ecosystem function [10]. The impacts of SOC, total
+                             nitrogen (TN), total phosphorus (TP), and their stoichiometry on modulating ecosystem
+                             function are further modulated by ecosystem management strategies [11,12]. The impact
+                             of these management strategies on processes impacting soil biogeochemical cycling via
+                             plant–soil interactions is poorly understood. Traditionally, mowing is one of the most
+                             important methods of land-use management in arid and semiarid natural grasslands,
+                             regulating the imbalance among forage seasons, regions, and years of good harvest. It
+                             is normal practice to mow grassland year to year without any fertilizer application by
+                             local herdsmen in the semiarid region of northern China [13]. Experimentally, mowing
+                             affects plant growth by removing and destroying photosynthetic tissues directly and by
+                             affecting biologically regulated processes in the soil through its influence on soil organisms
+                             indirectly [14]. These direct and indirect pathways can have different effects on SOC levels,
+                             which can influence plant productivity and ecosystem function in turn. Recently, several
+                             studies have focused on how different management strategies influence the soil C cycle.
+                             For instance, Yang [9] showed that ecological restoration measures in the semiarid steppe of
+                             Inner Mongolia affected SOC content and C/nutrient ratios. Hou et al. [15] highlighted that
+                             moderate mowing can facilitate soil C and N concentration and further change the relative
+                             allocation of nutrients. However, the long-term effects of mowing regimes (frequency)
+                             on the distribution of SOC storage and microbial biomass C (MBC) have hardly been
+                             evaluated for the grasslands in the typical steppe region of Inner Mongolia. How different
+                             mowing management practices affect SOC storage through soil–plant interactions remains
+                             unknown. Few studies have focused on the contribution of these differences to driving
+                             changes in SOC levels in soil.
+                                   Soil microorganisms are a critical link between aboveground and underground parts
+                             of terrestrial ecosystems, which participate in many ecological processes [16]. They can
+                             transform complex organic substrates into simpler ones and significantly alter the ratio
+                             of C, N, and P in the soil [17], which is an important regulator driving the release or
+                             sequestration of soil C, N, and P nutrients [18,19]. Soil microbial biomass is the active
+                             part of soil organic matter and the key driver of ecosystem C dynamics, which is closely
+                             related to mineralization processes of soil nutrients and regulates vegetation productiv-
+                             ity [20]. Microbial biomass C, N, and P stoichiometry determines the direction of nutrient
+                             sequestration or mineralization, affecting soil nutrient availability [21]. Shifts in plant
+                             community composition or nutrient allocation between above and belowground are the
+                             main mechanisms driving the response of soil nutrient stoichiometry to grassland manage-
+                             ment practices [22,23]. Therefore, there is a lack of research results on whether changes in
+                             MBC and its stoichiometry under different mowing management affect plant community
+                             composition and the interaction of plant communities with soil elements, which in turn
+                             affects soil C storage.
+                                   A long-term mowing intensity experiment was conducted in a semiarid grassland of
+                             central Inner Mongolia to examine the effects of different mowing measures on grassland
+                             succession processes. In this present study, we summarized the direct (mainly via alteration
+                             of soil properties) and indirect (mainly via mediation of plant community composition,
+                             above- and belowground biomass) effects of four mowing regimes on SOC when compared
+                             with no mowing. We aimed to address the following three questions: (1) How do different
+Agriculture 2022, 12, 1324                                                                                          3 of 15
+
+
+
+
+                             mowing regimes affect the root-to-shoot ratio (R:S), SOC storage, and MBC in different soil
+                             layers? (2) Which mowing management regime is favorable to maintain soil SOC storage?
+                             (3) Specifically, how do plant production and microbial biomass C regulate the SOC storage
+                             in response to different mowing regimes?
+
+                             2. Materials and Methods
+                             2.1. Study Site
+                                   The study was conducted at the Baiyinxile Ranch, located in the Xilingol region of
+                             Inner Mongolia, China (43◦ 260 –44◦ 080 N, 116◦ 040 –117◦ 050 E) (Figure A1a). The region
+                             experiences a temperate semiarid climate where the growing season usually lasts from
+                             early May to late September. The annual mean precipitation is 315 mm, 80% of which
+                             falls between May and September, and the annual mean temperature is −0.5 ◦ C, with the
+                             lowest monthly mean temperature in January (−19.6 ◦ C) and the highest in July (21.8 ◦ C).
+                             The perennial plants grow from April/May to September/October, about 150 days. The
+                             natural vegetation is dominated by Stipa grandis P.A.Smirn, Leymus chinensis (Trin.) Tzvel,
+                             and Cleistogenes squarrosa (Trin. ex Ledeb.) Keng, the three species accounting for 58–82%
+                             of the total aboveground biomass of the grassland community. The soil is a sandy loam
+                             chestnut soil (or Calci-Orthic Aridisol in the US soil taxonomy classification system) with a
+                             mean pH of 8.07 in the plant root layer (0–20cm).
+
+                             2.2. Experimental Design and Different Mowing Regimes
+                                  The experimental site was established in 2001, containing grassland subjected to a
+                             long-term continuous mowing exclusion (unmown) and four intensities of mowing in a
+                             randomized block design (Figure A1b). The experiment was located on a flatland area on
+                             the side of a 1.96 ha permanent enclosure, where livestock grazing was prevented. The
+                             area was divided into 20 plots with 5 m buffers. Four replicates of each of five mowing
+                             treatments (i.e., mowing frequencies) were randomly assigned to these 20 permanent plots
+                             that were 20 m × 30 m in size. The four treatments were as follows: (1) CK, no mowing;
+                             (2) M1/2 , mowing once every 2 years; (3) M2/3 , mowing twice every 3 years; (4) M1/1 ,
+                             mowing once a year; (5) M2/1 , mowing twice a year. At the time of harvest, a small hand-
+                             pushed lawnmower was used to cut the grass to a 6 cm stubble height over the entire plot
+                             (6 cm has consistently been considered to be a reasonable height for sustainable use of
+                             the studied grassland [13]), and the cut plant material was removed. The mowing was
+                             conducted each year on 15 August (or 1–3 days later depending on the weather) for the
+                             M1/2 , M2/3 , and M1/1 treatments and on 15 June and 15 September for the M2/1 treatment.
+
+                             2.3. Plant Sampling and Analysis
+                                   We sampled plant and soil communities in the plots under the five mowing treatments
+                             in mid-August 2019. First, within each of the 20 plots (5 treatments × 4 replicates), we
+                             surveyed plant communities using three 1 m × 1 m quadrats in a diagonal line of each
+                             plot to measure the plant aboveground biomass by clipping standing plants by species and
+                             weighing them after 48 h of oven-drying at 65 ◦ C. Total plant aboveground biomass (AB)
+                             was calculated as the sum of all species biomass. We also estimated plant belowground
+                             biomass (BB) by collecting three soil cores from each of three quadrats in each plot, which
+                             were used to generate a composite sample (0–100 cm depth, 7 cm diameter). Roots within
+                             the core were rinsed using sieves (mesh size 0.25 mm) on the same day, and then dried at
+                             65 ◦ C for 48 h until constant weight using an analytical balance. The root-to-shoot ratio
+                             (R:S) was calculated as the ratio of BB to AB.
+Agriculture 2022, 12, 1324                                                                                           4 of 15
+
+
+
+
+                             2.4. Soil Sampling and Analysis
+                                   After removal of plant material in the three quadrats in each plot, the soil samples
+                             were collected from three layers (0–10 cm, 10–20 cm, and 20–30 cm) using an auger (5 cm in
+                             diameter) from the quadrats, because of significant plant–soil interaction effects occurring
+                             in the topsoil layer [24]. Three soil cores were randomly selected from each plot and
+                             combined into one composite sample for each layer. Each fresh composite soil sample was
+                             first sieved through a 2 mm mesh size to remove stones and roots, and then divided into
+                             two subsamples. One subsample was immediately frozen on dry ice for soil microbial
+                             biomass (stored at −80 ◦ C), while the other was air-dried for the physicochemical analysis.
+                                   The SOC content was analyzed using the potassium dichromate oxidation spectropho-
+                             tometric method [25].
+
+                             2.5. Soil Microbial Biomass
+                                  Microbial biomass C and N concentrations (MBC and MBN) were determined using
+                             the chloroform fumigation/extraction method [26,27]. Simply put, for each soil subsample,
+                             preincubated fresh soil (10 g weight) was used for chloroform fumigation for 24 h at 25 ◦ C
+                             and the same weight of non-fumigated soil was used for the control. Then, 50 mL of 0.5 M
+                             K2 SO4 was used for the extraction of MBC and MBN. Concentrations of extracted C and N
+                             were determined using a TOC/analyzer.
+
+                             2.6. Data Calculation and Statistical Analysis
+                                 The storage of SOC (SOCstorage , kg·m−2 ) in selected layers was calculated as fol-
+                             lows [28]:
+                                                       SOCstorage = BD × SOC × D                                 (1)
+                             where SOC represents the SOC contents (g·kg−1 ), BD is the soil bulk density (g·cm−3 ), and
+                             D is the thickness of the sampled soil layer (m).
+                                  Treatment effects on BB, R:S, SOC content, SOC storage, MBC, and MBC/MBN were
+                             analyzed using two-way ANOVA with different mowing regimes and soil depths as the
+                             main factors, along with their interactions. One-way ANOVA was employed to evaluate
+                             the changes in plant biomass (AB, BB, and R:S), content, and storage of SOC across different
+                             mowing treatments at various soil depths, followed by the Tukey’s range test at p < 0.05.
+                             Pearson correlation coefficients were determined to depict the correlations among plant
+                             biomass (AB, BB, R:S), MBC, MBC/MBN, and SOC storage for each soil depth. Statistical
+                             analyses were conducted using version 26.0 of SPSS software (IBM/SPSS, Chicago, IL,
+                             USA). A random forest analysis method was used to obtain important indicators using
+                             the randomForest R package [29] with 999 trees to explore the relative contributions of
+                             different mowing regimes, plant biomass (AB, BB, and R:S), litter MBC, and MBC/MBN to
+                             the vertical distribution of SOC storage.
+
+                             3. Results
+                             3.1. Changes in Plant Production under Different Mowing Regimes
+                                   The plant production gradually decreased with increasing mowing intensity. Mowing
+                             treatment (M2/1 , M1/1 , and M2/3 ) significantly decreased AB (p < 0.05) when compared with
+                             the no mowing control (CK), whereas M1/2 did not induce significant changes in AB when
+                             compared to CK (p > 0.05; Figure 1a). The relative biomass of Leymus chinensis was lower in
+                             the M1/2 and M2/3 treatments than in the CK (p < 0.05), and then gradually increased with
+                             increasing mowing intensity. In contrast, the light mowing disturbance according to both
+                             M1/2 and M2/3 regimes significantly increased the relative biomass of Stipa grandis (p < 0.05;
+                             Figure 1b). The relative biomass of Cleistogenes squarrosa was higher in M2/1 than in the
+                             other mowing regimes. Mowing significantly reduced the litter biomass when compared
+                             with the control group (CK), while increasing the mowing intensity gradually decreased
+                             litter biomass (p < 0.05; Figure 1c). In addition, different mowing regimes and soil layers
+                             had significant effects on BB and R:S (p < 0.05; Table 1).
+                                    BB               754.622          <0.001       9.044       <0.001         1.835              0.095
+                                    R:S              877.333          <0.001       4.598        0.003         1.212              0.314
+                                   SOC               125.953          <0.001       2.712        0.042         0.703              0.687
+                                 SOCstorage          198.937          <0.001       4.799        0.003         1.209              0.315
+                                  MBC                453.009          <0.001       56.742      <0.001          3.16              0.006
+Agriculture 2022, 12, 1324                                                                                                            5 of 15
+                                MBC/MBN               29.484          <0.001        6.1         0.001         2.337              0.034
+
+                                   BB in the M2/1 plot was higher than that in other measures across the 0–20 cm soil
+                              depth    in the whereas
+                                  BBrange,    M2/1 plotitwas    higher decreased
+                                                            gradually    than that in other
+                                                                                    with     measures
+                                                                                          increasing    across the
+                                                                                                      mowing        0–20 cm
+                                                                                                                intensity     soil
+                                                                                                                          (Figure
+                             depth
+                              1d). Moreover, R:S at the 0–20 cm depth was higher in the mowing treatments than in1d).
+                                    range,  whereas    it gradually   decreased  with increasing  mowing   intensity (Figure   CK;
+                             Moreover,   R:S atgreatest
+                              it was always      the 0–20incm
+                                                            thedepth   was higher
+                                                                M2/1 plot  (Figurein1e).
+                                                                                     theDifferent
+                                                                                         mowing treatments    than in had
+                                                                                                   mowing regimes     CK; no
+                                                                                                                           it was
+                                                                                                                               sig-
+                             always
+                              nificantgreatest
+                                        effects in
+                                                onthe
+                                                    BB M      plotin(Figure
+                                                          2/1R:S
+                                                        and                 1e).cm
+                                                                     the 20–30   Different
+                                                                                   layer (pmowing    regimes
+                                                                                            > 0.05; Figure    had no significant
+                                                                                                           1d,e).
+                             effects on BB and R:S in the 20–30 cm layer (p > 0.05; Figure 1d,e).
+
+
+
+
+                              Figure1.1.Effects
+                             Figure       Effectsofofdifferent
+                                                      differentmowing
+                                                                 mowingregimes
+                                                                           regimeson onAB
+                                                                                        AB(a),
+                                                                                           (a),relative
+                                                                                                 relativeaboveground
+                                                                                                          abovegroundbiomass
+                                                                                                                          biomassofofdominant
+                                                                                                                                      dominant
+                             plant   species(b),
+                              plantspecies    (b),litter
+                                                    litterbiomass
+                                                           biomass(c),
+                                                                     (c),BB
+                                                                          BB(d)
+                                                                              (d)and
+                                                                                  andR:S
+                                                                                       R:S(e)
+                                                                                           (e)ininaasemiarid
+                                                                                                     semiaridgrassland
+                                                                                                                grasslandof ofInner
+                                                                                                                               InnerMongolia.
+                                                                                                                                      Mongolia.
+                              Valuesare
+                             Values    aremeans
+                                            means(±(±SE)
+                                                       SE) ofoffour
+                                                                fourreplicate
+                                                                     replicateplots.
+                                                                                plots.The
+                                                                                       Thedifferent
+                                                                                            differentletters
+                                                                                                        lettersdenote
+                                                                                                                denotesignificant
+                                                                                                                        significantdifferences
+                                                                                                                                    differences
+                              between    treatments    (p < 0.05). The same   letters denote  no  significant  differences between
+                             between treatments (p < 0.05). The same letters denote no significant differences between treatments    treatments
+                              (p > 0.05). AB: plant aboveground biomass; BB: belowground biomass; R:S: root−to−shoot ratio; CK:
+                             (p > 0.05). AB: plant aboveground biomass; BB: belowground biomass; R:S: root−to−shoot ratio; CK:
+                             no mowing; M1/2 : mowing once every 2 years; M2/3 : mowing twice every 3 years; M1/1 : mowing
+                             once a year; M2/1 : mowing twice a year.
+Agriculture 2022, 12, 1324                                                                                                                              6 of 15
+
+
+
+
+                                 Table 1. Results of two-way ANOVA for the effects of different mowing treatments or soil depth and
+                                 their interaction on belowground biomass (BB), root-to-shoot ratio (R:S), content and storage of SOC
+                                 (SOCstorage ), microbial biomass C (MBC), and soil MBC to soil MBN ratio (MBC/MBN).
+
+                                                              Soil Depths                      Treatments                Soil Depths × Treatments
+                                                          F                p               F                p                   F                   p
+ Agriculture 2022, 12, x FOR PEER REVIEW                                                                                                                 6 of 15
+                                       BB          754.622       <0.001       9.044        <0.001          1.835            0.095
+                                       R:S         877.333       <0.001       4.598         0.003          1.212            0.314
+                                      SOC          125.953       <0.001       2.712         0.042          0.703            0.687
+                                   SOC
+                                  no mowing;       198.937
+                                        storage M1/2             <0.001
+                                                     : mowing once            4.799
+                                                                   every 2 years;           0.003
+                                                                                  M2/3: mowing  twice every1.209            0.315 once
+                                                                                                            3 years; M1/1: mowing
+                                     MBC
+                                  a year;          453.009
+                                           M2/1: mowing          <0.001
+                                                         twice a year.       56.742        <0.001           3.16            0.006
+                                  MBC/MBN           29.484       <0.001        6.1          0.001          2.337            0.034
+                                  3.2. Changes in Soil SOC Content and Storage with Depth and Different Mowing Regimes
+                                 3.2. Changes  in Soildifferences
+                                        Significant    SOC Contentin and
+                                                                      SOCStorage withand
+                                                                           content    Depth and Different
+                                                                                         storage          Mowing
+                                                                                                 were found      Regimes
+                                                                                                              between  samples
+                                       Significant
+                                   taken  at variousdifferences
+                                                          soil depthsin   andSOC     contenttreatments
+                                                                                 in various     and storage       were1).found
+                                                                                                              (Table                 between
+                                                                                                                            SOC content         and samples
+                                                                                                                                                       storage
+                                 taken   at various
+                                   decreased            soil depths
+                                                 significantly          andwith
+                                                                    along      in various    treatments
+                                                                                    increasing    depth (Table 1).        SOCFigure
+                                                                                                                      1 and       content     andThe
+                                                                                                                                          2a,b).      storage
+                                                                                                                                                          SOC
+                                 decreased
+                                   content insignificantly
+                                                 the high-frequencyalong with      increasing
+                                                                              mowing             depthM
+                                                                                          treatments       (Table
+                                                                                                             1/1 and 1 and
+                                                                                                                        M2/1 Figure     2a,b). The SOC
+                                                                                                                              was significantly          lower
+                                 content   in in
+                                   than that  theCK high-frequency
+                                                        in the 0–10 cmmowing layer (p treatments
+                                                                                        < 0.05), while M1/1    and M2/1 was
+                                                                                                           no significant           significantly
+                                                                                                                              difference                lower
+                                                                                                                                              was detected
+                                 than  that  in  CK   in   the  0–10   cm   layer  (p  < 0.05),  while    no  significant
+                                   in the 0–10 cm layer among M1/2, M2/3, and CK treatments (p > 0.05; Figure 2a).           difference     was    detected
+                                         0–10 storage
+                                 in the SOC     cm layerexhibited
+                                                               among M    a 1/2 , M2/3 , and
+                                                                            consistent         CKi.e.,
+                                                                                          order,   treatments
+                                                                                                         CK > M1/2  (p >>M0.05;
+                                                                                                                            2/3 > Figure
+                                                                                                                                  M1/1 > M 2a).
+                                                                                                                                              2/1, in the soil
+                                       SOC    storage       exhibited     a  consistent    order,
+                                   0–20 cm layer, while no significant difference existed across the i.e., CK    >  M       >   M
+                                                                                                                       1/2 five mowing
+                                                                                                                                   2/3  >  M         > M2/1 ,
+                                                                                                                                                frequencies
+                                                                                                                                               1/1
+                                      thesoil
+                                 ininthe   soil0–20
+                                                 20–30cmcm    layer, while
+                                                                 layer        no significant
+                                                                         (Figure                 difference
+                                                                                    2b). SOC storage         in existed
+                                                                                                                 M1/1 (2.46 across
+                                                                                                                                kg·mthe    five mowing
+                                                                                                                                       −2) and     M2/1 (2.20
+                                 frequencies     in the                                                                                     kg·m     −2 ) and
+                                   kg·m−2) plots    wassoil      20–30 cm layer
+                                                             significantly    lower(Figure
+                                                                                       than that2b).inSOC    storage
+                                                                                                        CK (2.79     kg·in
+                                                                                                                         m−2M),1/1   (2.46was
+                                                                                                                                 which            consistent
+                                                      −  2
+                                               kg·mcontent                                                                               − 2
+                                 Mwith
+                                    2/1 (2.20
+                                         the SOC           ) plots(pwas    significantly
+                                                                      < 0.05;   Figure 2b). lower  than that
+                                                                                               However,              CK (2.79 kg
+                                                                                                             theindifference      is ·that
+                                                                                                                                       m the ), which
+                                                                                                                                                  storage wasin
+                                 consistent    with   the
+                                   M2/3 (2.61 kg·m ) was significantly lower than that in CK (p < 0.05). Compared with M
+                                                       −2     SOC   content     (p <  0.05;  Figure    2b). However,       the   difference      is  that  the
+                                                                                                                                                             1/2,
+                                 storage   in M       (2.61    kg · m −2 ) was significantly lower than that in CK (p < 0.05). Compared
+                                   M2/1 significantly
+                                                 2/3        decreased the SOC content in the 10–20 cm layer, while it decreased the
+                                   SOCM
+                                 with     1/2 , M2/1
+                                         storage         significantly
+                                                    at 10–20     cm depth   decreased     the SOCwith
+                                                                                when compared          content
+                                                                                                             CK in (p the  10–20
+                                                                                                                      < 0.05;   Figure    layer, while it
+                                                                                                                                      cm 2b).
+                                 decreased the SOC storage at 10–20 cm depth when compared with CK (p < 0.05; Figure 2b).
+
+
+
+
+                                  Figure2.2. Vertical
+                                 Figure       Vertical distribution of  of SOC
+                                                                            SOCcontent
+                                                                                  content(a) (a)and
+                                                                                                  and  SOC
+                                                                                                      SOC    storage
+                                                                                                           storage  (b)(b)      0−30 −
+                                                                                                                            in the
+                                                                                                                        in the       cm   cmlayer
+                                                                                                                                       30soil  soil layer
+                                                                                                                                                    under
+                                  different
+                                 under       mowing
+                                        different  mowingregimes   in a semiarid
+                                                              regimes                grassland
+                                                                          in a semiarid            of North
+                                                                                           grassland          China.
+                                                                                                        of North           different
+                                                                                                                      TheThe
+                                                                                                                  China.              letters
+                                                                                                                                different     denote
+                                                                                                                                          letters      sig-
+                                                                                                                                                  denote
+                                  nificant differences
+                                 significant  differencesbetween
+                                                            betweentreatments
+                                                                       treatments (p(p << 0.05).
+                                                                                          0.05). The
+                                                                                                  The same   letters denote
+                                                                                                       same letters  denote nonosignificant
+                                                                                                                                  significantdifferences
+                                                                                                                                              differences
+                                  betweentreatments
+                                 between     treatments(p  (p>> 0.05).
+                                                                0.05). CK:
+                                                                        CK: nono mowing;
+                                                                                 mowing;M     M1/2 : mowing once every 2 years; M2/3: mowing twice
+                                                                                                 1/2 : mowing once every 2 years; M2/3 : mowing
+                                  every  3 years;   M 1/1: mowing once a year; M2/1: mowing twice a year.
+                                 twice every 3 years; M : mowing once a year; M : mowing twice a year.
+                                                              1/1                               2/1
+
+                                  3.3.Changes
+                                 3.3.  ChangesininMBC
+                                                  MBCand
+                                                      andMBC/MBN
+                                                          MBC/MBNwith
+                                                                  withDepth
+                                                                       Depthand
+                                                                             andDifferent
+                                                                                 DifferentMowing
+                                                                                           MowingRegimes
+                                                                                                  Regimes
+                                       Alongwith
+                                      Along    withincreasing
+                                                     increasingdepth,
+                                                                    depth,microbial
+                                                                            microbial  biomass
+                                                                                         biomass C (MBC)
+                                                                                                    C (MBC)declined  andand
+                                                                                                              declined     showed   signif-
+                                                                                                                               showed   sig-
+                                 icant differences
+                                  nificant         at various
+                                           differences           soil depths
+                                                        at various              among
+                                                                       soil depths        treatments
+                                                                                      among           (p < 0.05;
+                                                                                               treatments        TableTable
+                                                                                                           (p < 0.05;    1 and1 Figure 3a).
+                                                                                                                                and Figure
+                                 With  increasing
+                                  3a). With        mowing
+                                             increasing  mowingfrequencies,      the the
+                                                                      frequencies,    MBC MBCdecreased   sequentially
+                                                                                                 decreased  sequentially at at 0–10cm
+                                                                                                                            0–10    cmand
+                                                                                                                                        and
+                                  20–30cm
+                                 20–30   cmdepths.
+                                              depths.MM2/3 ,
+                                                         2/3 ,MM1/1
+                                                                 1/1, and
+                                                                      and  M
+                                                                           M 2/1
+                                                                              2/1  treatments
+                                                                                  treatments    significantly reduced
+                                                                                                              reduced    MBC
+                                                                                                                          MBC   at
+                                                                                                                                 atvarious
+                                                                                                                                    various
+                                 depths
+                                  depthswhen
+                                           whencompared
+                                                 comparedwith  withCK  CK(p(p< <0.05;
+                                                                                  0.05;Figure
+                                                                                        Figure3a).
+                                                                                                 3a).MBC
+                                                                                                      MBCininthe
+                                                                                                               theMM
+                                                                                                                   1/21/2plot
+                                                                                                                          plotwas
+                                                                                                                                wassignifi-
+                                                                                                                                    signifi-
+                                  cantly lower than CK at 10–20 cm (p < 0.05), while no significant difference was detected
+                                  at the 0–10 cm and 20–30 cm layers (Figure 3a).
+Agriculture 2022, 12, 1324                                                                                                                7 of 15
+
+
+
+
+                                   cantly lower than CK at 10–20 cm (p < 0.05), while no significant difference was detected at
+                                   the 0–10 cm and 20–30 cm layers (Figure 3a).
+                                        Significant differences in the soil microbial biomass MBC/MBN ratio were observed
+                                   at various depths among treatments (Table 1 and Figure 3b). The MBC/MBN ratio at
+                                   layers other than 10–20 cm of soil depth declined with increasing mowing frequencies.
+ Agriculture 2022, 12, x FOR PEER REVIEW
+                                   The MBC/MBN ratio in M2/1 was significantly lower than that in CK in the 0–10 cm 7and    of 15
+                                   20–30 layers (p < 0.05), while no significant difference was detected among CK, M1/2 , and
+                                   M2/3 at the same depths (p > 0.05; Figure 3b).
+
+
+
+
+                                 Figure3.3.Vertical
+                               Figure       Vertical distribution
+                                                     distribution of MBCMBC(a)(a)and
+                                                                                  andMBC/MBN
+                                                                                      MBC/MBN      storage  (b)(b)
+                                                                                                      storage           0−300−
+                                                                                                                    in the
+                                                                                                                in the       cm30soil
+                                                                                                                                  cmlayer
+                                                                                                                                       soil layer
+                                                                                                                                             under
+                               under   different
+                                 different       mowing
+                                            mowing         regimes
+                                                      regimes         in a semiarid
+                                                                in a semiarid       grassland
+                                                                                grassland       of North
+                                                                                           of North        China.
+                                                                                                      China.   TheThe   different
+                                                                                                                    different     letters
+                                                                                                                              letters     denote
+                                                                                                                                      denote   sig-
+                                 nificant differences
+                               significant  differencesbetween
+                                                        betweentreatments
+                                                                   treatments (p < 0.05). The same letters
+                                                                                                      letters denote
+                                                                                                              denotenonosignificant
+                                                                                                                          significantdifferences
+                                                                                                                                       differences
+                                 betweentreatments
+                               between     treatments (p(p > 0.05).
+                                                         > 0.05).    CK:
+                                                                   CK:  nono mowing;
+                                                                            mowing;  M1M1   /2: mowing once every two years; M2/3: mowing
+                                                                                        /2 : mowing once very two years; M2/3 : mowing
+                                 twice  every  three years;  M 1/1: mowing once a year; M2/1: mowing twice a year.
+                               twice every three years; M : mowing once a year; M : mowing twice a year.
+                                                             1/1                             2/1
+
+                               3.4. Driving      Factors
+                                       Significant         of Soil C Storage
+                                                        differences    in the Change
+                                                                                soil microbial biomass MBC/MBN ratio were observed
+                                 at various    depths
+                                      The results      of among
+                                                           Pearson treatments
+                                                                      correlation  (Table 1 andindicated
+                                                                                      analysis    Figure 3b).  The
+                                                                                                            that   MBC/MBN
+                                                                                                                 the SOC storage   ratio at layers
+                                                                                                                                        was  neg-
+                                 other than
+                               atively            10–20with
+                                         correlated        cm of    soil depthsquarrosa
+                                                                 Cleistogenes       declinedbiomass
+                                                                                              with increasing     mowing
+                                                                                                        and R:S but           frequencies.
+                                                                                                                       positively              The
+                                                                                                                                      correlated
+                                 MBC/MBN
+                               with   AB, BB, ratio
+                                                  Stipa in   M2/1 was
+                                                          grandis       significantly
+                                                                   biomass,              lower
+                                                                                litter, MBC,  andthan
+                                                                                                    MBC/MBN             in 0–10
+                                                                                                                   in the
+                                                                                                       that in CKratio            cm and
+                                                                                                                            the 0–10         20–30
+                                                                                                                                        cm layer
+                                   < 0.05;(pFigure
+                               (players       < 0.05),4),while
+                                                           whilenoSOCsignificant    differencecorrelated
+                                                                         storage positively     was detectedwithamong
+                                                                                                                  AB, BB,CK,         , and
+                                                                                                                               M 1/2and
+                                                                                                                           litter,         M2/3inat
+                                                                                                                                         MBC
+                                 the  same    depths     (p >  0.05; Figure    3b).
+                               the 10–20 cm layer (p < 0.05; Figure A2a), but not in the 20–30 cm layer (Figure A2b). The
+                               relative contributions of litter, Cleistogenes squarrosa biomass, MBC, and AB to SOC storage
+                                 3.4.were
+                               rate   Driving     Factors
+                                             greater   thanofthose
+                                                               Soil CofStorage
+                                                                        the other Change
+                                                                                     factors in the topsoil layer (0–10 cm; Figure 5a). For
+                               the 10–20     cm   layer,  the  relative  contributions
+                                       The results of Pearson correlation analysis        of MBC/MBN,        MBC,
+                                                                                                indicated that     BB,
+                                                                                                                 the          Leymuswas
+                                                                                                                        andstorage
+                                                                                                                      SOC               chinensis
+                                                                                                                                             nega-
+                                 tively correlated with Cleistogenes squarrosa biomass and R:S but positively correlated 5b).
+                               biomass      to  the  SOC     storage   rate  were    greater than    those of the other  factors    (Figure   with
+                                 AB,relative
+                               The     BB, Stipa contributions     of three
+                                                    grandis biomass,          dominant
+                                                                           litter,  MBC, plant    species to SOC
+                                                                                          and MBC/MBN         ratiostorage   rate were
+                                                                                                                    in the 0–10          greater
+                                                                                                                                    cm layer   (p <
+                               than
+                                 0.05;those
+                                        Figure of the  other factors
+                                                   4), while             across positively
+                                                                SOC storage        the 20–30 cm    topsoil layer
+                                                                                              correlated         (Figure
+                                                                                                           with AB,    BB, 5c).
+                                                                                                                           litter, and MBC in
+                                 the 10–20 cm layer (p < 0.05; Figure A2a), but not in the 20–30 cm layer (Figure A2b). The
+                                 relative contributions of litter, Cleistogenes squarrosa biomass, MBC, and AB to SOC storage
+                                 rate were greater than those of the other factors in the topsoil layer (0–10 cm; Figure 5a).
+                                 For the 10–20 cm layer, the relative contributions of MBC/MBN, MBC, BB, and Leymus
+                                 chinensis biomass to the SOC storage rate were greater than those of the other factors (Fig-
+                                 ure 5b). The relative contributions of three dominant plant species to SOC storage rate
+                                 were greater than those of the other factors across the 20–30 cm topsoil layer (Figure 5c).
+Agriculture 2022,
+Agriculture 2022, 12,
+                  12, 1324
+                      x FOR PEER REVIEW                                                                                                            8 of 15
+Agriculture 2022, 12, x FOR PEER REVIEW                                                                                                            8 of 15
+
+
+
+
+                                 Figure 4. Pearson
+                                            Pearson correlation coefficients     between the
+                                                                   coefficients between       the plants
+                                                                                                    plants and
+                                                                                                             and soil
+                                                                                                                  soil properties
+                                                                                                                       properties in
+                                                                                                                                   in the   −10cm
+                                                                                                                                       the 0−10  cmlayer.
+                                                                                                                                                     layer.
+                                 Figure 4.correlations
+                                 Positive   Pearson correlation    coefficients
+                                                               labeled
+                                                         are labeled    as       between
+                                                                            “+”, and
+                                                                        as “+”,  and negative the plants
+                                                                                         negative      correlations    properties
+                                                                                                             and soilare
+                                                                                                      correlations    are labeledas
+                                                                                                                         labeled        −”.0−10
+                                                                                                                                    as“the
+                                                                                                                                   in   “−”.    cm layer.
+                                                                                                                                             Significance
+                                                                                                                                             Significance
+                                 Positive
+                                 levels arecorrelations  are labeled    as “+”, and      negative      correlations   are labeled   as “−”.BB:
+                                                                                                                                             Significance
+                                 levels      denoted as
+                                        are denoted   as follows:
+                                                           follows: ****pp<<0.01,
+                                                                              0.01,* p* p< <
+                                                                                           0.05.
+                                                                                             0.05. AB:AB:plant  aboveground
+                                                                                                             plant aboveground biomass;
+                                                                                                                                    biomass; BB:plant  be-
+                                                                                                                                                    plant
+                                 levels are
+                                 lowground   denoted
+                                              biomass;as  follows:
+                                                        R:S:        **  p <
+                                                               root−to−shoot0.01, *  p
+                                                                                ratio;   < 0.05.
+                                                                                         SOC       AB:   plant  aboveground    biomass;     BB: plant be-
+                                                                                               storage: soil organic carbon storage; MBC: microbial
+                                 belowground biomass; R:S: root−to−shoot ratio; SOCstorage : soil organic carbon storage; MBC:
+                                 lowground
+                                 biomass      biomass; R:S:soil
+                                           C; MBC/MBN:         root−to−shoot
+                                                                  MBC to soilratio;
+                                                                                 MBNSOC        storage: soil organic carbon storage; MBC: microbial
+                                                                                           ratio;  relative aboveground biomass of Stipa grandis,
+                                 microbial
+                                 biomass    biomass
+                                           C;        C; MBC/MBN:
+                                              MBC/MBN:       soil MBC    soil
+                                                                         to   MBC
+                                                                            soil MBN  to soil  MBN
+                                                                                           ratio;                            biomass biomass
+                                                                                                               relative aboveground
+                                                                                                        ratio;aboveground
+                                                                                                   relative                                       of Stipa
+                                                                                                                                         of Stipa grandis,
+                                 leymus chinensis, and Cleistogenes squarrosa.
+                                 grandis, leymus chinensis,   and  Cleistogenes
+                                 leymus chinensis, and Cleistogenes squarrosa.   squarrosa.
+
+
+
+
+                                 Figure 5. Relative contribution of changes in plant aboveground biomass (AB), belowground bio-
+                                 Figure  5.
+                                 mass (BB),  Relative
+                                          5. Relative    contributionofratio
+                                                        contribution
+                                               litter, root−to−shoot   ofchanges
+                                                                           changes   in plant
+                                                                                      plant
+                                                                             (R:S),inmicrobial  aboveground
+                                                                                             aboveground
+                                                                                                 biomass Cbiomass    soil(AB),
+                                                                                                                biomass
+                                                                                                              (MBC), (AB),       belowground
+                                                                                                                            belowground
+                                                                                                                           MBC    to soil MBN     bio-
+                                                                                                                                             biomass
+                                                                                                                                                 ratio
+                                 mass
+                                 (BB), (BB),
+                                       litter, litter,
+                                                root − root−to−shoot
+                                                        to − shoot     ratio
+                                                                   ratio     (R:S),
+                                                                          (R:S),     microbial
+                                                                                 microbial       biomass
+                                                                                              biomass   C  C  (MBC),
+                                                                                                            (MBC),   soil
+                                                                                                                    soil   MBC
+                                                                                                                         MBC    to
+                                 (MBC/MBN), and relative aboveground biomass of Stipa grandis, leymus chinensis, and Cleistogenes to soil
+                                                                                                                                    soil  MBN
+                                                                                                                                          MBN    ratio
+                                                                                                                                                 ratio
+                                 (MBC/MBN),
+                                 squarrosa
+                                 (MBC/MBN),        and
+                                             on soiland  relative
+                                                       SOC        aboveground
+                                                             storage
+                                                         relative    in the 0−10 biomass
+                                                                  aboveground     cm
+                                                                                  biomass          cm grandis,
+                                                                                              of Stipa
+                                                                                             of
+                                                                                       (a), 10−20Stipa grandis, leymus  chinensis,
+                                                                                                                 20−30 cm
+                                                                                                       (b), and leymus     (c) layers.
+                                                                                                                       chinensis,   and Cleistogenes
+                                                                                                                                    and   Cleistogenes
+                                 squarrosa on soil SOC storage in the 0−10 cm (a), 10−20 cm (b), and 20−30 cm (c) layers.
+                                 squarrosa on soil SOC storage in the 0−10 cm (a), 10−20 cm (b), and 20−30 cm (c) layers.
+Agriculture 2022, 12, 1324                                                                                            9 of 15
+
+
+
+
+                             4. Discussion
+                             4.1. Effects of Mowing Regimes on Plant Communities
+                                   As one of the most important grassland ecosystems in the typical grassland area of
+                             Inner Mongolia, the Stipa grandis steppe is a main site of mowing activity. Appropriate
+                             mowing management represents one effective way to utilize grassland resources, which
+                             helps to maintain plant productivity and soil quality [30]. Research has shown that the
+                             aboveground biomass and litter decreased with increasing mowing intensity according
+                             to M1/2 , M2/3 , M1/1 , and M2/1 measures compared to CK (Figure 1a,c). These results
+                             are in line with the findings of Yankai Zhong et al. [31], who reported that light mowing
+                             disturbances are conducive to the improvement of vegetation production and proportion
+                             of fine herbage compared to high-intensity mowing disturbances. The experiment on the
+                             underground biomass of the community in different mowing regimes showed that mowing
+                             twice a year and mowing once a year exerted a negative impact on BB in the surface soil
+                             layer (0–20 cm), consistent with earlier reports [32]. The reason for this is most probably
+                             that high-frequency mowing treatment led to a continuous reduction in standing litter
+                             and litter in the grassland plant community. In addition, without the input of live storage
+                             excreta, it is impossible to return materials to the grassland ecosystem, which will cause
+                             reduced soil organic matter input and soil nutrients to become increasingly barren. These
+                             results show that high-frequency mowing has a negative effect on plant root growth, which
+                             would affect the return of belowground C resources to the soil. However, too much litter
+                             was accumulated on the surface over 19 years without mowing, which had an interception
+                             effect on the rainwater, inevitably affecting its leakage to the deep soil and, thus, affecting
+                             the water absorption of roots. This effect is more pronounced when precipitation is low.
+                             In addition, when the ground is covered with thick litter, sunlight cannot directly reach
+                             the soil surface, resulting in a slow increase in soil temperature during early spring and
+                             a negative impact on the growth and development of plants, as well as the growth of
+                             roots. In contrast, light mowing reduced the ground cover, playing a role in promoting
+                             root growth with no adverse effect. Therefore, it is speculated that moderate mowing
+                             regimes can promote root growth. Moreover, we also found that mowing increased the R:S
+                             at 0–20 cm depth, with no direct effects in deeper layers. The main reason may be that the
+                             belowground biomass was also reduced by mowing (in terms of net plant productivity),
+                             while the aboveground biomass was affected by mowing to a greater extent. This result
+                             is consistent with previous findings with respect to the distribution of biomass between
+                             belowground and aboveground under different mowing intensities in the typical steppe
+                             grasslands of Inner Mongolia [33]. This also indirectly explains that soil carbon reduction is
+                             affected by the reduced contribution of plant roots by mowing. Therefore, we recommend
+                             that plant communities regulate R:S by adapting to different mowing regimes, consequently
+                             affecting C inputs and cycling.
+                                   Different mowing regimes affected plant productivity by altering plant community
+                             composition. After the 19-year mowing experiment, we discovered a sharp decline in
+                             Leymus chinensis biomass when mowing once every 2 years, whereas mowing treatments
+                             twice every 3 years led to an increase in Stipa grandis biomass. These increases were mainly
+                             attributed to the compensation effects of plant functional groups [34]. These changes
+                             compensated for the biomass loss caused by the decline in Leymus chinensis when mowing
+                             once every 2 years and mowing twice every 3 years; however, with the increase in mowing
+                             intensity, the plant community undergoes retrogressive succession, whereby the propor-
+                             tions of the dominant plant species in the original community, Stipa grandis and Leymus
+                             chinensis, decreased gradually, while the proportion of short grass, Cleistogenes squarrosa,
+                             increased. Ultimately, this led to a significant decrease in aboveground community biomass
+                             due to Cleistogenes squarrosa having a much lower biomass compared to Stipa grandis and
+                             Leymus chinensis. We also speculate that changes in plant community composition might
+                             drive the biomass allocation between shallow and deep layers, resulting in the biomass
+                             being more distributed in the 0–10 cm root layer. Due to the growth and decline in plant
+                             populations caused by mowing, the proportion of Cleistogenes squarrosa with a shallow
+Agriculture 2022, 12, 1324                                                                                           10 of 15
+
+
+
+
+                             root distribution in the community increased; accordingly, the distribution range of plant
+                             roots also naturally became shallower. Our observations in this regard are in line with
+                             results from previous studies [35], but additional research is needed to more precisely
+                             determine how different mowing regimes affect plant community composition, as well as
+                             their contribution to allocation between AB and BB or between shallow and deep layers.
+
+                             4.2. Effects of Different Mowing Gradients on SOC
+                                  The results of this study showed that light mowing maintained SOC storage, while
+                             moderate- and high-frequency mowing significantly decreased SOC storage in the topsoil
+                             layer (0–10 cm) compared to enclosure control. With increasing depth, only mowing twice
+                             a year significantly decreased the SOC storage in the 10–20 cm soil layer with no significant
+                             effects on SOC storage across different mowing treatments in the deeper layer (20–30 cm).
+                             This indicates that soil C storage is less active in the deep soil layer than in the topsoil
+                             layer. Our findings also showed that soil C storage is strongly influenced by AB, BB, litter,
+                             and R:S in the surface soil. Liang et al. [36] investigated the grazing effects on soil organic
+                             carbon in Qinghai–Tibetan Plateau grasslands and revealed the significant negative effects
+                             of grazing on AB, litter, SOC, and TN, which compares well with our study. It is noteworthy
+                             that our findings are consistent with a recent study showing that, with increased mowing
+                             frequency, the SOC and TN content showed a decreasing trend in the topsoil. There are
+                             multiple potential reasons for mowing decelerating soil C storage in the surface soil. Firstly,
+                             mowing leads to a reduction in surface litter, which in turn reduces the carbon input to the
+                             soil while also reducing the ability to conserve the topsoil with high soil organic carbon.
+                             Secondly, the decrease in AB reduces the potential of grassland to capture atmospheric
+                             CO2 via plant photosynthesis, thereby decreasing the source of SOC input in the soil [37].
+                             Thirdly, mowing accelerates the release of C from soil to the atmosphere by promoting soil
+                             respiration [38].
+                                  From the results, we found that the different mowing gradients indirectly influenced
+                             SOC storage by altering plant community composition, which is highly consistent with
+                             the grazing influence on soil C pools through selective foraging by causing changes in
+                             plant community composition, as presented by Liang et al. [36]. Mowing can regulate
+                             plant community composition and lead to the interaction of stress-tolerant and competing
+                             species, thereby affecting AB, BB, R:S, and C input and cycling.
+
+                             4.3. Effects of Mowing Regimes on MBC and MBC/MBN
+                                  This study demonstrated that the soil MBC significantly decreased under moderate-
+                             and high-frequency mowing compared to CK according to soil depth, indicating that long-
+                             term mowing is deleterious for microbial growth. This result is in agreement with studies
+                             conducted in semiarid grassland, which indicated that grazing remarkably suppressed
+                             soil MBC [39]. In our study, MBC in the 0–20 cm topsoil was positively and significantly
+                             correlated with SOC storage (Figures 4 and A2a). These patterns indicate that soil C and
+                             nutrient contents may determine the distribution of microbial biomass C. Both above-
+                             ground and belowground factors, such as photosynthetic C supply, litter quantity [40],
+                             root exudates [41], and soil microbial community structure, can affect microbial biomass.
+                             Firstly, the demand for C of soil microbes is met by the available C originating from the
+                             translocation of photosynthates to the rhizosphere [42]. However, by cutting off plant
+                             photosynthesis C supply and removing a large number of nutrients through leaf tissue
+                             damage, mowing may also directly lead to microbial substrate limitation [43], reducing
+                             the consequent microbial biomass under moderate- to high-frequency mowing. Secondly,
+                             the decrease in soil water content after mowing may have negative effects on soil MBC by
+                             inhibiting root growth and exudation (especially fine roots) [44]. Thirdly, our results show
+                             that the soil MBC/MBN decreased under mowing disturbance at 0–10 cm and 20–30 cm
+                             depths, indicating an alteration of the soil microbial community structure, e.g., a decrease
+                             in fungi [45]. Fungi are the key drivers of recalcitrant SOC decomposition, with a greater
+Agriculture 2022, 12, 1324                                                                                                11 of 15
+
+
+
+
+                             carbon use efficiency than bacteria [4]; hence, their decrease may contribute to soil microbial
+                             C limitation and microbial biomass decline [46].
+
+                             4.4. Implications for Typical Steppe Sustainable Management in Inner Mongolia
+                                   The 19-year experiment with different mowing regimes had different impacts on
+                             SOC stock in the semiarid grassland of North China. This could be attributed to the dif-
+                             ferent types of nutrient resources in the grassland ecosystem [12]. Soil C storage in the
+                             high-frequency mowing plot was more affected compared to the low-frequency mowing
+                             plot. High-frequency mowing reduced plant photosynthetic capacity and led to lower AB
+                             and litter biomass. This, in turn, affected the supply of nutrients to the root system, indi-
+                             rectly leading to microbial substrate limitation. The low-frequency mowing plot allowed
+                             more soil water and nutrient resources to be obtained for root growth compared with the
+                             high-frequency mowing plot, which in turn led to higher BB allocation, increasing SOC
+                             accumulation. On the other hand, high-frequency mowing caused a sharp decline in Stipa
+                             grandis biomass and led to retrogressive succession in the plant community. Compared
+                             to high-frequency mowing, low-frequency mowing maintained a stable plant community
+                             composition and higher plant biomass, thereby supporting soil SOC storage [47]. However,
+                             such ecosystem processes will eventually limit plant productivity when the mowing man-
+                             agement time is extended. Therefore, it is considered that low-frequency mowing M1/2 ,
+                             followed by M2/3 , might be the appropriate sustainable mowing management regime for
+                             the semiarid grassland evaluated in this study, which may lead to considerable positive
+                             feedback on plant production mediated by soil nutrient cycling.
+
+                             5. Conclusions
+                                   In the present work, the effects of five grassland mowing regimes (no mowing, mowing
+                             once every 2 years, mowing twice every 3 years, mowing once a year, and mowing twice a
+                             year) on SOC storage in the 0–30 cm soil depth range were compared in a semiarid grassland
+                             of North China. The pattern of variation in soil SOC storage in the 0–20 cm layer was
+                             consistent across different mowing regimes, always remaining greatest in CK, with the order
+                             CK > M1/2 > M2/3 > M1/1 > M2/1 ; no significant difference existed in the soil 20–30 cm layer.
+                             At the same time, all treatments led to a significant decrease in SOC storage with depth.
+                             Mowing management regulated SOC storage in the 0–20 cm layer through the interaction of
+                             several interrelated mechanisms (plant community composition, productivity of vegetation,
+                             litter biomass, soil microbial biomass, and resource allocation between aboveground plants
+                             and belowground roots), while the plant community composition regulated SOC storage
+                             in the 20–30 cm layer. We, therefore, consider that, from the perspective of maintaining
+                             C storage in grassland ecosystems and economic sustainability and profitability, mowing
+                             once every 2 years is likely the optimal mowing management strategy. In addition, mowing
+                             should be combined with proper N fertilization management, which helps to promote
+                             plant recovery, increase nutrient content in the soil, promote nitrogen fixation, and maintain
+                             a dynamic balance of nutrients. Research in the future will be required to understand
+                             the effects of different mowing regimes on the vertical distribution of soil C, N, and P, as
+                             well as their sequestration at lower soil depths, thus increasing existing knowledge of the
+                             grassland ecosystem stability mechanism.
+
+                             Author Contributions: Conceptualization and study design, T.B.; field experiment and manuscript
+                             writing, L.L.; data analysis, L.L and H.L. The manuscript was approved by all authors. All authors
+                             have read and agreed to the published version of the manuscript.
+                             Funding: This study was supported in part by the Science and Technology Major Project [2011BAC07B01]
+                             and the Research Special Fund for the Public Welfare Industry of Agriculture [201303060].
+                             Data Availability Statement: Not applicable.
+                             Acknowledgments: We are grateful to Lingling Chen, Hongbin Xu, Tianyu Zhang, Huimin Bai,
+                             Chao Wen, and other team members for their help with the field experiments.
+Agriculture 2022, 12, 1324                                                                                                             12 of 15
+
+Agriculture 2022, 12, x FOR PEER REVIEW                                                                                               12 of 15
+
+                                  Conflicts of Interest: The authors declare no conflict of interest.
+
+                                 Appendix
+                                  AppendixAA
+
+
+
+
+                                                                                    (a)
+
+
+
+
+                                                                                   (b)
+
+                                  FigureA1.
+                                 Figure  A1. (a).
+                                              (a). Location  map of
+                                                   Location map   ofthe
+                                                                      thestudy
+                                                                          studyarea
+                                                                                 area and
+                                                                                    and    sampling
+                                                                                         sampling  site.site.
+                                                                                                          (b).(b). Layout
+                                                                                                               Layout      of mowing
+                                                                                                                      of mowing         experi-
+                                                                                                                                   experimental
+                                 mental  plots on   Stipa grandis grassland.  The  four  replicate plots   for  each of the four  mowing
+                                  plots on Stipa grandis grassland. The four replicate plots for each of the four mowing frequencies       fre-
+                                 quencies (cuts per year) were randomly assigned to 24 permanent plots that were 20 m × 30 m in
+                                  (cuts per year) were randomly assigned to 24 permanent plots that were 20 m × 30 m in size. M1/2 :
+                                 size. M1/2: mowing once every 2 years (mowing on 16 August); M2/3: mowing twice every 3 years
+                                  mowing once every 2 years (mowing on 16 August); M2/3 : mowing twice every 3 years (mowing on
+                                 (mowing on 16 August); M1/1: mowing once a year (mowing             on 16 August); M2/1: mowing twice a
+                                  16
+                                 yearAugust);
+                                       (mowing Mon   : mowing
+                                                  1/125        once
+                                                        June and  12 aSeptember).
+                                                                        year (mowing
+                                                                                   Theon  16 August);
+                                                                                        control                            CK a.a year (mowing
+                                                                                                               : mowingattwice
+                                                                                                         M2/1sampled
+                                                                                                plots were
+                                  on 25 June and 12 September). The control plots were sampled at CKa .
+Agriculture
+ Agriculture2022,
+             2022,12,
+                   12,x1324
+                        FOR PEER REVIEW                                                                                                            1313ofof1515
+
+
+
+
+                                                                                 (a)
+
+
+
+
+                                                                                 (b)
+                                 Figure
+                                   FigureA2.
+                                           A2.(a).
+                                                (a).Pearson
+                                                     Pearsoncorrelation
+                                                               correlationcoefficients
+                                                                            coefficientsbetween
+                                                                                          betweenplantplantand
+                                                                                                             andsoil
+                                                                                                                   soilproperties
+                                                                                                                        propertiesin    in the
+                                                                                                                                            the 10−20
+                                                                                                                                                 10−20cm   cm
+                                 layer.
+                                   layer. Positive correlations are labeled as “+”, and negative correlations are labeled as “Signifi-
+                                         Positive  correlations  are labeled  as “+”,  and   negative   correlations    are  labeled     as   “−”. −”. Sig-
+                                 cance levels are as follows: ** p < 0.01, * p < 0.05. AB: plant aboveground biomass; BB: plant below-
+                                   nificance levels are as follows: ** p < 0.01, * p < 0.05. AB: plant aboveground biomass; BB: plant
+                                 ground biomass; R:S: root−to−shoot ratio; SOCstorage: soil organic carbon storage; MBC: microbial
+                                   belowground biomass; R:S: root−to−shoot ratio; SOCstorage : soil organic carbon storage; MBC:
+                                 biomass C; MBC/MBN: soil MBC to soil MBN ratio; relative                aboveground biomass of Stipa grandis,
+                                   microbial
+                                 Leymus       biomass
+                                          chinensis,    C; Cleistogenes
+                                                      and  MBC/MBN:squarrosa.
+                                                                         soil MBC(b).to soil MBN correlation
+                                                                                         Pearson    ratio; relative  aboveground
+                                                                                                                  coefficients    betweenbiomassplant   Stipa
+                                                                                                                                                     of and
+                                   grandis, Leymus    chinensis, and  Cleistogenes  squarrosa.   (b).  Pearson    correlation    coefficients
+                                 soil properties in the 20−30 cm layer. Positive correlations are labeled as “+”, and negative correla-            between
+                                   plantare
+                                 tions   andlabeled
+                                              soil properties  in the 20−30levels
+                                                      as “−”. Significance    cm layer.  Positive
+                                                                                    are as          correlations
+                                                                                             follows:   ** p < 0.01,     p < 0.05.asAB:
+                                                                                                                   are* labeled               and negative
+                                                                                                                                      “+”,plant     above-
+                                 ground    biomass;
+                                   correlations       BB: plant
+                                                 are labeled      “−”. Significance
+                                                               as belowground     biomass;          as follows: ** pratio;
+                                                                                               are root−to−shoot
+                                                                                       levelsR:S:                             SOC
+                                                                                                                        < 0.01,  * pstorage : soilAB:
+                                                                                                                                       < 0.05.     organic
+                                                                                                                                                       plant
+                                 carbon   storage;biomass;
+                                   aboveground      MBC: microbial    biomass
+                                                              BB: plant         C; MBC/MBN:
+                                                                         belowground      biomass;soilR:S:
+                                                                                                        MBC    to−soil
+                                                                                                            root   to−MBNshootratio;
+                                                                                                                                ratio;relative
+                                                                                                                                         SOCstorage above-
+                                                                                                                                                        : soil
+                                 ground    biomass   of Stipa grandis, Leymus  chinensis,  and   Cleistogenes   squarrosa.
+                                   organic carbon storage; MBC: microbial biomass C; MBC/MBN: soil MBC to soil MBN ratio; relative
+                                   aboveground biomass of Stipa grandis, Leymus chinensis, and Cleistogenes squarrosa.
+Agriculture 2022, 12, 1324                                                                                                               14 of 15
+
+
+
+
+References
+1.    Konieczna, A.; Roman, K.; Borek, K.; Grzegorzewska, E. GHG and NH3 Emissions vs. Energy Efficiency of Maize Production
+      Technology: Evidence from Polish Farms; a Further Study. Energies 2021, 14, 5574. [CrossRef]
+2.    Wiesmeier, M.; Munro, S.; Barthold, F. Carbon storage capacity of semi-arid grassland soils and sequestration potentials in
+      northern China. Glob. Chang. Biol. 2015, 21, 3836–3845. [CrossRef] [PubMed]
+3.    White, R.P.; Murray, S.; Rohweder, M.; White, R.P.; Murray, S.; Rohweder, M. Pilot Analysis of Global Ecosystems: Grassland
+      Ecosystems; World Resources Institute: Washington, DC, USA, 2000; Volume 4, p. 275.
+4.    Bai, Y.F.; Cotrufo, M.F. Grassland soil carbon sequestration: Current understanding, challenges, and solutions. Science 2022, 377,
+      603–608. [CrossRef] [PubMed]
+5.    Whitehead, D.; Schipper, L.A.; Pronger, J.; Moinet, G.Y.; Mudge, P.L.; Pereira, R.C.; Kirschbaum, M.U.; McNally, S.R.; Beare, M.H.;
+      Camps-Arbestain, M. Management practices to reduce losses or increase soil carbon stocks in temperate grazed grasslands: New
+      Zealand as a case study. Agric. Ecosyst. Environ. 2018, 265, 432–443. [CrossRef]
+6.    Wang, S.; Wilkes, A.; Zhang, Z.; Chang, X.; Lang, R.; Wang, Y.; Niu, H. Management and land use change effects on soil carbon in
+      northern China’s grasslands: A synthesis. Agric. Ecosyst. Environ. 2011, 142, 329–340. [CrossRef]
+7.    Briske, D.D. Rangeland systems: Foundation for a conceptual framework. In Rangeland Systems; Briske, D., Ed.; Springer: Cham,
+      Switzerland, 2017; pp. 131–168.
+8.    Tian, H.; Chen, G.; Zhang, C.; Melillo, J.M.; Hall, C.A. Pattern and variation of C:N:P ratios in China’s soils: A synthesis of
+      observational data. Biogeochemistry 2010, 98, 139–151. [CrossRef]
+9.    Yang, Z.; Bao, Y.T.; Li, F.Y. Long-term effects of restoration measures on soil C and C: Nutrient ratios in a semiarid steppe. Ecol.
+      Eng. 2020, 153, 105913. [CrossRef]
+10.   Gregorich, E.G.; Monreal, C.M.; Carter, M.R.; Angers, D.A.; Ellert, B. Towards a minimum data set to assess soil or-ganic matter
+      quality in agricultural soils. Can. J. Soil Sci. 1994, 74, 367–385. [CrossRef]
+11.   Bai, Y.; Wu, J.; Clark, C.M.; Pan, Q.; Zhang, L.; Chen, S.; Wang, Q.; Han, X.; Wisley, B. Grazing alters ecosystem functioning and
+      C:N: P stoichiometry of grasslands along a regional precipitation gradient. J. Appl. Ecol. 2012, 49, 1204–1215. [CrossRef]
+12.   Chen, L.L.; Wang, K.X.; Bao, Y.T. Effects of grazing and mowing on vertical distribution of soil nutrients and their stoichiometry
+      (C:N:P) in a semi-arid grassland of North China. Catena 2021, 206, 105507. [CrossRef]
+13.   Bao, Y.T.; Li, F.Y.; Bao, Q.; Minggagud, H.; Zhong, Y. Effects of mowing regimes and climate variability on hay production of
+      Leymus chinensis (Trin.) Tzvelev grassland in northern China. Rangeland J. 2014, 36, 593–600.
+14.   Wilson, C.H.; Strickland, M.S.; Hutchings, J.A.; Bianchi, T.S.; Flory, S.L. Grazing enhances belowground carbon allocation,
+      microbial biomass, and soil carbon in a subtropical grassland. Glob. Chang. Biol. 2018, 24, 2997–3009. [CrossRef] [PubMed]
+15.   Hou, S.L.; Yin, J.X.; Sistla, S.; Yang, J.J.; Sun, Y.; Li, Y.Y.; Lü, X.T.; Han, X.G. Long term mowing did not alter the impacts of nitrogen
+      deposition on litter quality in a temperate steppe. Ecol. Eng. 2017, 102, 404–410. [CrossRef]
+16.   Su, N.; Jarvie, S.; Yan, Y.Z.; Gong, X.Q.; Li, F.S.; Han, P.; Zhang, Q. Landscape context determines soil fungal diversity in a
+      fragmented habitat. Catena 2022, 213, 106163. [CrossRef]
+17.   Falkowski, P.G.; Fenchel, T.; Delong, E.F. The microbial engines that drive earth’s biogeochemical cycles. Science 2008, 320,
+      1034–1040. [CrossRef]
+18.   Hall, E.K.; Maixner, F.; Franklin, O.; Daims, H.; Richter, A.; Battin, T. Linking microbial and ecosystem ecology using ecological
+      stoichiometry: A synthesis of conceptual and empirical approaches. Ecosystems 2011, 14, 261–273. [CrossRef]
+19.   Buchkowski, R.W.; Schmitz, O.J.; Bradford, M.A. Microbial stoichiometry overrides biomass as a regulator of soil carbon and
+      nitrogen cycling. Ecology 2015, 96, 1139–1149. [CrossRef]
+20.   Buckley, D.H.; Schmidt, T. Diversity and dynamics of microbial communities in soils from agro-ecosystems. Environ. Microbiol.
+      2003, 5, 441–452. [CrossRef]
+21.   Zechmeister-Boltenstern, S.; Keiblinger, K.M.; Mooshammer, M.; Peñuelas, J.; Richter, A.; Sardans, J.; Wanek, W. The application
+      of ecological stoichiometry to plant-microbial-soil organic matter transformations. Ecol. Monogr. 2015, 85, 133–155. [CrossRef]
+22.   Yang, X.; Dong, Q.; Chu, H.; Ding, C.; Yu, Y.; Zhang, C.; Zhang, Y.; Yang, Z. Different responses of soil element contents and their
+      stoichiometry (C:N:P) to yak grazing and Tibetan sheep grazing in an alpine grassland on the eastern Qinghai-Tibetan Plateau.
+      Agric. Ecosyst. Environ. 2019, 285, 106628. [CrossRef]
+23.   Zheng, S.X.; Ren, H.Y.; Li, W.H.; Lan, Z.C. Scale-dependent effects of grazing on plant C: N: P stoichiometry and linkages to
+      ecosystem functioning in the Inner Mongolia grassland. PLoS ONE 2012, 7, e51750. [CrossRef] [PubMed]
+24.   Yao, X.D.; Zhang, N.L.; Zeng, H.; Wang, W. Effects of soil depth and plant–soil interaction on microbial community in temperate
+      grasslands of northern China. Sci. Total Environ. 2018, 630, 96–102. [CrossRef] [PubMed]
+25.   Nelson, D.W.; Sommers, L.E. Total carbon, organic carbon and organic matter. In Methods of Soil Analysis; Miller, R.H., Keeney,
+      D.R., Eds.; American Society of Agronomy: Madison, WI, USA, 1982; Part 2, pp. 539–579.
+26.   Vance, E.D.; Brookes, P.C.; Jenkinson, D.S. An extraction method for measuring soil microbial biomass C. Soil Biol. Biochem. 1987,
+      19, 703–707. [CrossRef]
+27.   Brookes, P.C.; Landman, A.; Pruden, G.; Jenkinson, D.S. Chloroform fumigation and the release of soil nitrogen: A rapid direct
+      extraction method for measuring microbial biomass nitrogen in soil. Soil Biol. Biochem. 1985, 17, 837–842. [CrossRef]
+28.   Guo, L.B.; Gifford, R.M. Soil carbon stocks and land use change: A meta analysis. Glob. Chang. Biol. 2002, 8, 345–360. [CrossRef]
+Agriculture 2022, 12, 1324                                                                                                             15 of 15
+
+
+
+
+29.   An, J.; Liu, C.; Wang, Q.; Yao, M.; Rui, J.; Zhang, S.; Li, X. Soil bacterial community structure in Chinese wetlands. Geoderma 2019,
+      337, 290–299. [CrossRef]
+30.   Chen, L.L.; Bao, Y.T.; Xia, F.S. Grassland management strategies influence soil C, N, and P sequestration through shifting plant
+      community composition in a semi-arid grasslands of northern China. Ecol. Indic. 2022, 134, 108470. [CrossRef]
+31.   Zhong, Y.K.; Bao, Q.H.; Sun, W. A study on reasonable mowing system of natural mowing steppe in Baiyinxile farm in Inner
+      Mongolia. Acta Ecol. Sin. 1991, 11, 8.
+32.   Shao, Y.Q.; Zhao, J.; Liu, Z.L.; Zhang, H.J.; Baoyin, T. Effects of mowing frequency on soil microbial quantity and plant
+      underground biomass in Leymus chinensis steppe. Chin. J. Ecol. 2006, 25, 1191–1195. (In Chinese with English Abstract)
+33.   Zhang, F.; Chen, D.L.; Zhao, M.L.; Zheng, J.H.; Yang, Y.; Qiao, J.R.; Jia, L.X.; Zhao, T.Q. Effects of stubble height on biomass of
+      stipa grandis steppe community. Chin. J. Grassl. 2019, 41, 73–79. (In Chinese with English Abstract)
+34.   Chai, Q.L.; Ma, Z.Y.; Chang, X.F.; Wu, G.L.; Zheng, J.Y.; Li, Z.W.; Wang, G.J. Optimizing management to conserve plant diversity
+      and soil carbon stock of semi- arid grasslands on the Loess Plateau. Catena 2019, 172, 781–788. [CrossRef]
+35.   Bao, Y.J.; Li, Z.H.; Zhong, Y.K.; Yang, C. The effects of different frequency mowing on energy fixation and allocation of Leymus
+      chinensis steppe community in Xilingol region of Inner Mongolia. Acta Agrestia Sin. 2004, 13, 46–52. (In Chinese with English
+      Abstract)
+36.   Yan, L.; Li, Y.; Wang, L.; Zhang, X.D.; Wang, J.Z.; Wu, H.D.; Yan, Z.Q.; Zhang, K.R.; Kang, X.M. Grazing significantly increases
+      root shoot ratio but decreases soil organic carbon in Qinghai-Tibetan Plateau grasslands: A hierarchical meta-analysis. Land
+      Degrad. Dev. 2020, 31, 2369–2378. [CrossRef]
+37.   Reid, R.S.; Thornton, P.K.; McCrabb, G.J.; Kruska, R.L.; Atieno, F.; Jones, P.G. Is it possible to mitigate greenhouse gas emissions in
+      pastoral ecosystems of the tropics. Environ. Dev. Sustain. 2004, 6, 91–109. [CrossRef]
+38.   Wang, Y.; Li, F.Y.; Song, X.; Wang, X.; Suri, G.; Baoyin, T. Changes in litter decomposition rate of dominant plants in a semi-arid
+      steppe across different land-use types: Soil moisture, not home-field advantage, plays a dominant role. Agric. Ecosyst. Environ.
+      2020, 303, 107119. [CrossRef]
+39.   Yang, J.; Kang, Y.; Sakurai, K.; Ohnishi, K.; Siriguleng. Change of Soil Microbial Biomass C, N between Longtime Free Grazing
+      and Exclosure Pasture in Semiarid Grassland Ecosystem in Tongliao and Chifeng of Inner Mongolia. J. Bioremed. Biodegrad. 2016,
+      7, 347. [CrossRef]
+40.   Fisk, M.C.; Fahey, T.J. Microbial biomass and nitrogen cycling responses to fertilization and litter removal in young northern
+      hardwood forests. Biogeochemistry 2001, 53, 201–223. [CrossRef]
+41.   Smith, W.H. Character and significance of forest tree root exudates. Ecology 1976, 57, 324–331. [CrossRef]
+42.   Drigo, B.; Pijl, A.S.; Duyts, H.; Kielak, A.M.; Gamper, H.A.; Houtekamer, M.J.; Boschker, H.T.; Bodelier, P.L.; Whiteley, A.S.; Veen,
+      J.A.; et al. Shifting carbon fow from roots into associated microbial communities in response to elevated atmospheric CO2 . Proc.
+      Natl. Acad. Sci. USA 2010, 107, 10938–10942. [CrossRef]
+43.   Socher, S.A.; Prati, D.; Boch, S.; Müller, J.; Klaus, V.H.; Hölzel, N.; Fischer, M.; Wilson, S. Direct and productivity-mediated indirect
+      effects of fertilization, mowing and grazing on grassland species richness. J. Ecol. 2012, 100, 1391–1399. [CrossRef]
+44.   Luo, Y.; Wang, X.; Cui, M.; Wang, J.; Gao, Y. Mowing increases fine root production and root turnover in an artificially restored
+      Songnen grassland. Plant Soil. 2021, 465, 549–561. [CrossRef]
+45.   Wang, C.; Zhu, F.; Xiang, Z.; Kuanhu, D. The effects of N and P additions on microbial N transformations and biomass on
+      saline-alkaline grassland of loess plateau of northern China. Geoderma 2014, 213, 419–425.
+46.   Liu, W.X.; Jiang, L.; Hu, S.J.; Li, L.H.; Liu, L.L.; Wan, S.Q. Decoupling of soil microbes and plants with increasing anthropogenic
+      nitrogen inputs in a temperate steppe. Soil Biol. Biochem. 2014, 72, 116–122. [CrossRef]
+47.   Gilmullina, A.; Rumpel, C.; Blagodatskaya, E.; Chabbi, A. Management of grasslands by mowing versus grazing impacts on soil
+      organic matter quality and microbial functioning. Appl. Soil Ecol. 2020, 156, 103701. [CrossRef]

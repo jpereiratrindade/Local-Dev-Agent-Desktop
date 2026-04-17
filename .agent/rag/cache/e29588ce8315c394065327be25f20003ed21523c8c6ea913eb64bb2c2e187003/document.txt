@@ -1,0 +1,995 @@
+                                                                                                     ISSN 1982-5382
+Foto: Leandro B. da S. Volk
+                       Foto: Gabriel Rezende de Farias
+
+
+
+
+                                                         COMUNICADO
+                                                         TÉCNICO       Princípios técnicos de
+                                                         104           manejo de sistemas
+                                                                       pecuários para maior
+                                                         Bagé, RS
+                                                                       disponibilidade de água
+                                                         Junho, 2020
+                                                                       no solo
+                                                                       Leandro Bochi da Silva Volk
+                                                                       José Pedro Pereira Trindade
+2
+
+
+
+
+Princípios técnicos de manejo de
+sistemas pecuários para maior
+disponibilidade de água no solo1
+1
+    Leandro Bochi da Silva Volk, engenheiro agrônomo, doutor, pesquisador da Embrapa Pecuária Sul, Bagé,
+    RS. José Pedro Pereira Trindade, engenheiro agrônomo, doutor, pesquisador da Embrapa Pecuária Sul,
+    Bagé, RS.
+
+
+                                                       leiteira estão sobre solos rasos. Essa
+Introdução                                             realidade acarreta em impactos negati-
+    Para os pecuaristas do Rio Grande                  vos mais severos devido às limitações
+do Sul, o convívio com eventos de seca                 impostas pelo solo no armazenamento
+ou estiagem é quase rotina. Estes even-                de água (Trindade et al., 2018b). Mas,
+tos de seca, principalmente na metade                  independentemente do tipo de limitação,
+sul do Estado, estão mais comuns na                    é possível minimizar estes impactos.
+última década e possivelmente agrava-                      Os manejos de solo, de vegetação
+dos por mudanças no regime hídrico,                    ou de animais (via manejo do pastejo)
+evidenciando uma crise hídrica (Pessoa,                interferem na qualidade do solo e no
+2011, 2015). É normal para a região da                 estado dos serviços ecossistêmicos
+Campanha do Rio Grande do Sul, nos                     que ele entrega. É possível, portanto,
+meses de novembro, dezembro, janeiro                   intencionalmente melhorar a qualidade
+e fevereiro, a evapotranspiração poten-                de um solo e conduzir para a melhoria
+cial ficar em valores acima de 150 mm/                 da entrega de seus serviços (Seybold et
+mês e por vezes ultrapassar o valor de                 al., 1997; Karlen et al., 2001, Prado et
+200 mm/mês (Silveira; Trentin, 2019).                  al., 2016).
+São valores de evapotranspiração nor-                     O desejável é que, por meio de
+malmente acima da média mensal de                      manejos adequados, essas oscilações
+chuva neste mesmo período.                             naturais e inerentes sejam menores e
+    No levantamento de uso da terra feito              que o solo possa manter e melhorar sua
+pela Embrapa Pecuária Sul (Trindade                    qualidade. O pecuarista, consciente do
+et al., 2018a), percebe-se que a gran-                 papel do solo no seu sistema produtivo,
+de maioria das áreas com algum uso                     deve tomar sua decisão de manejo le-
+pecuário está sobre solos com algum                    vando em consideração o impacto que
+tipo de limitação. Mais da metade das                  ela terá nos processos naturais pelos
+                                                       quais o solo é responsável.
+áreas remanescentes de campo nativo
+(vegetação natural campestre) e das                       Alguns dos processos naturais pelos
+áreas de pastagens para a pecuária                     quais o solo é responsável incluem a
+                                                                                   3
+
+
+
+infiltração, retenção e disponibilização   Todos concordamos da sua importância
+de água às plantas e animais. Tais pro-    e seu valor intrínseco, mas não existe
+cessos naturais regulam o ciclo hidro-     metodologia eficiente em quantificar o
+lógico e essa é uma função importante      valor monetário de um litro de água po-
+do solo, permitindo ao solo seu uso em     tável disponível na natureza.
+sistemas agrícolas. Quando o pecuarista
+                                               A água doce disponível para o con-
+se apropria desse conhecimento – (re)
+                                           sumo dos seres humanos, bem como
+conhece – e passa a considerá-lo em
+                                           para a produção de alimentos, teve sua
+suas decisões de manejo – controla, ele
+                                           dinâmica bastante alterada nas últimas
+passa a transformar essas funções em
+                                           décadas. Em escala regional, pela
+serviços e benefícios para seu sistema
+                                           alteração das paisagens naturais por
+produtivo.
+                                           atividades antrópicas, pelo aumento do
+    Esse documento, que contribui          consumo e pela poluição, e, em escala
+com os Objetivos de Desenvolvimento        global, pelas alterações climáticas.
+Sustentável 15 (ODS 15), pretende              Com o intuito de chamar a atenção
+recuperar alguns dos mecanismos que        para o desperdício e o mau uso da
+regem o padrão de funcionamento de         água pela sociedade, principalmente em
+processos que envolvem a água no solo      regiões onde a água doce é escassa,
+em sistemas pecuários, considerando        surgiram os conceitos de água verde
+algum aprofundamento de suas com-          (água naturalmente armazenada no
+plexidades inerentes e, por fim, elenca    solo), água azul (água armazenada em
+princípios técnicos para as práticas de    superfície – lagos, rios e barragens, e no
+manejo a serem adotadas pelos pecu-        subsolo – aquíferos) e água cinza (água
+aristas. O entendimento do funciona-       de reuso ou poluída). Também nesse
+mento dos processos nos permite con-       contexto surgiu a ideia de água virtual
+trolá-los e transformá-los em benefícios   ou pegada hídrica (Hoekstra; Hung,
+(Anand, 1994).                             2002; Allan, 2003; Hoekstra; Mekonnen,
+                                           2012). O conceito de água virtual se
+                                           refere ao total de água utilizada e consu-
+Funcionamento do                           mida para a produção de uma commodi-
+                                           ty, enquanto pegada hídrica se refere a
+solo e seu impacto na                      uma medida de consumo e degradação
+
+água                                       de água fresca associado com todos os
+                                           benefícios e serviços consumidos por
+    A existência de vida em nosso plane-   uma pessoa ou por toda a população de
+ta depende dos recursos naturais essen-    um país (International..., 2003).
+ciais. A água é um dos recursos naturais      Nessa lógica, é fácil entender e
+renováveis. É, ao mesmo tempo, vital à     visualizar que, quanto maior o grau de
+nossa existência e de difícil valoração.   industrialização de um produto, maior é
+                                           sua água virtual ou pegada hídrica.
+4
+
+
+
+   Nessa lógica, é fácil entender e            De modo complementar, no conceito
+visualizar que, quanto maior o grau de      de serviços ecossistêmicos apresentado
+industrialização de um produto, maior é     por Ecosystems... (2005), o solo tem pa-
+sua água virtual ou pegada hídrica. Se      pel fundamental na entrega de benesses
+levássemos em consideração os pa-           pela natureza ao ser humano. Tal abor-
+drões de consumo e o tempo médio de
+                                            dagem ganha mais importância a partir
+vida do ser humano, sem dúvida alguma,
+                                            da compreensão que é possível interferir
+ele seria o ser vivo com a maior pegada
+                                            nesses processos naturais (e, portanto,
+hídrica do planeta. Mas, não existe vida
+sem o consumo de água. Não é possível       nas funções ecológicas e nos serviços
+“zerar” essa pegada hídrica. Entretanto,    ecossistêmicos) via manejo.
+é possível diminuí-la.                          A dinâmica da água no solo, do ponto
+    É importante ter consciência dessa      de vista da relação solo-planta, pode ser
+realidade que já afeta a todos, mesmo       arbitrariamente separada em processos
+que em diferentes graus. Conservar          distintos, como a infiltração, o armaze-
+e usar a água com responsabilidade é        namento/retenção e a disponibilização
+dever de toda a sociedade. A pecuária       (ou acesso pelas plantas).
+é dependente do bom funcionamento
+do solo (Volk; Trindade, 2017). Ainda           Esses processos fazem parte de
+que esse documento seja direcionado         ciclo hidrológico. De maneira resumida,
+a sistemas pecuários a pasto (tanto         quando a água da chuva cai no solo,
+em sistema de monocultivo, quanto em        parte dela infiltra, parte evapora e, o que
+sistemas integrados), usos agrícolas        não infiltra ou evapora, acaba escoando
+mais intensivos também dependem do          pela superfície. A água que infiltra é
+bom funcionamento do solo. Ele mede         distribuída no perfil do solo em profun-
+processos naturais e cumpre funções         didade que pode ser acessada pelas
+ecológicas importantes que garantem o       plantas por meio de processos físicos,
+bom funcionamento dos sistemas agrí-
+                                            químicos e biológicos, enquanto outra
+colas (Karlen et al., 2001). Um solo que
+                                            parte é percolada em maior profundida-
+“funciona bem”, ou seja, que tem sua
+máxima qualidade, media incontáveis         de, alimentando o lençol freático e redes
+processos naturais através de suas pro-     de drenagem subsuperficiais.
+priedades físicas, químicas e biológicas.      De modo lúdico, podemos fazer a
+   Essa linha de raciocínio vem ao          comparação da infiltração como sendo
+encontro do conceito de qualidade do        um cano que abastece uma grande
+solo discutido por Vezzani e Mielniczuk     caixa de água (que representa o arma-
+(2009).                                     zenamento/retenção) e o acesso pelas
+                                            plantas como um cano de saída de água
+                                            dessa caixa (Figura 1).
+                                                                                                                            5
+
+
+
+
+                                                                                  Ilustração: Leandro Bochi da Silva Volk
+Figura 1. Representação lúdica dos processos de infiltração, armazenamento e aproveitamento
+da água no solo.
+
+
+    Seguindo a lógica da ilustração da
+Figura 1, as recomendações propostas
+                                                Infiltração da água no
+nesse documento pretendem que o pe-             solo
+cuarista tenha controle e possa aumen-
+                                                    A infiltração da água no solo é um
+tar o “cano” que representa a infiltração,
+                                                processo natural, definido como a en-
+aumentar a “caixa de água” da retenção
+                                                trada da água no solo através de sua
+e armazenamento e aumentar o “cano”
+                                                superfície (Brandão et al., 2003). Na
+do aproveitamento da água do solo pe-
+                                                Figura 1, a infiltração é representada
+las plantas.
+                                                por um “cano” que abastece a “caixa de
+    Apresenta-se, a seguir, o ponto de          água”. Pergunta: seria possível aumen-
+vista dos autores sobre essas funções           tar o diâmetro desse “cano”?
+ecológicas do solo, com o objetivo de
+fazer proposições de manejos que
+melhorem tais funções, buscando a
+conservação do solo e da água na pecu-
+ária, associada à melhoria do potencial
+produtivo.
+6
+
+
+
+     Se for considerado que todo o sistema       Características intrínsecas do solo
+agrícola é dependente de água, e que a        que afetam a infiltração, como textura e
+maior parte dessa água vem da chuva, o        mineralogia, são as mesmas que deter-
+processo de infiltração ganha muito em        minam a sua porosidade. A porosidade
+importância. Em 2016, dos 268 mil km2         é o somatório de espaços vazios por
+de sua área superficial, o Rio Grande do      onde a água irá entrar e se distribuir no
+Sul cultivou cerca de 8 milhões de ha (80     solo. Os poros maiores são chamados
+mil km²). Destes, cerca de 6,8 milhões        de macroporos e os poros menores de
+de ha (68 mil km²) recebem água ex-           microporos. Como regra geral, a maior
+clusivamente via infiltração da água da       porosidade (notadamente os poros
+chuva, ou seja, apenas 1,2 milhões de         maiores) permite maior infiltração. A
+ha dependem da infiltração de água de         Figura 2 apresenta uma representação
+irrigação.                                    simplificada da relação entre a porosida-
+                                              de, a textura, a infiltração e a retenção
+     Ainda que a totalidade das áreas
+                                              de água no solo.
+utilizadas com pecuária, principalmente
+as áreas de campo (áreas de vegetação             Solos com textura arenosa (normal-
+natural campestre), podem não constar         mente constituído por cristais de quartzo
+nessa estatística, é fácil entender que       e minerais primários) possuem maior
+todas as áreas produtivas (agrícolas e        macroporosidade, o que permite maior
+pecuárias) são dependentes do proces-         condutividade hidráulica e, portanto,
+so de infiltração. É essa água que vai        maior velocidade de infiltração. No outro
+abastecer os sistemas hidrológicos de         extremo temos os solos com textura
+subsuperfície e subterrâneos.                 argilosa, cuja mineralogia pode variar
+                                              muito (desde óxidos de ferro e alumínio
+    A infiltração é fortemente influenciada
+                                              – hematita e gibbsita – até filossilicatos
+por características intrínsecas do solo
+                                              2:1 expansivos – vermiculita e esmectita,
+(mineralogia, textura e rocha de origem,
+                                              por exemplo), e possuem menor macro-
+por exemplo – as quais normalmente
+                                              porosidade, o que determina menor con-
+não sofrem interferência do ser humano)
+                                              dutividade hidráulica e menor velocidade
+e por outras características extrínsecas,
+                                              de infiltração. Salienta-se que a questão
+ligadas ao uso da terra e ao manejo e
+                                              não é qual solo é melhor ou pior, mas
+que podem ser modificadas pelo ser hu-
+                                              sim entender como suas características
+mano (Horton, 1940; Hillel, 1980).
+                                              interferem no processo de infiltração.
+                                                                                         7
+
+
+
+
+                                                                                             Fotos: Leandro Bochi da Silva Volk
+Figura 2. Relação da textura do solo com a infiltração e retenção de água.
+
+    Quanto às características extrínse-               As perdas de solo e água por erosão
+cas ou as características ligadas ao uso         somente são reduzidas a zero com a
+da terra e ao manejo, temos aquelas              taxa de cobertura do solo em 100%,
+ligadas às condições da superfície do            como demonstrado na Figura 4. Essa
+solo e de sua estrutura como presença            redução da erosão ocorre por que a
+de cobertura superficial do solo, o tipo         cobertura evita a desagregação do solo
+de vegetação (prostrada, cespitosa ou            pela chuva, assim como maximiza a
+florestal) e a estruturação do solo (dada        infiltração da água (Volk; Cogo, 2008;
+pela atividade das raízes das plantas,           Reichert et al., 2011; Weil; Brady, 2016;
+dos microrganismos e matéria orgânica            Volk; Trindade, 2017). Assim, a cobertu-
+– Figura 3). Dentre essas características,       ra do solo é importante para a elevada
+a cobertura superficial do solo merece           atividade biológica e melhoria da estru-
+destaque. Ela é composta pela vegeta-            turação, e leva, portanto, à melhor con-
+ção, palha, mantilho ou serrapilheira e          dição para a infiltração da água (Figura
+visa à proteção do solo contra elementos         5). Em outras palavras, quanto maior
+climáticos que podem degradá-lo, como            for a cobertura do solo por mantilho ou
+chuva, vento, insolação direta, além de          por vegetação, melhor será a condição
+ser a principal forma de aporte de resí-         da superfície para a entrada de água da
+duo vegetal à superfície do solo.                chuva no solo, que é essencial para o
+                                                 bom desenvolvimento das plantas.
+   A máxima cobertura superficial do
+solo é condição primordial de qualquer
+prática de manejo que visa a conserva-
+ção do solo (Wischmeier; Smith, 1978).
+8
+
+
+
+    Apesar do consenso sobre esse                   Essa decisão de manejo resulta em
+princípio, na pecuária um dilema se es-         menor cobertura e menor aporte de
+tabelece, pois o mantilho ou a palhada          material vegetal ao solo, o que se traduz
+é encarado por muitos como um “des-             em menor infiltração e menor disponibi-
+perdício” de forragem, uma vez que ela          lidade de água no solo, risco de degra-
+“sobra” por não ter sido consumida pelos        dação por erosão e, por fim, queda de
+animais. Para evitar tal desperdício, for-      produção da forrageira no médio e longo
+çam os animais a consumir todas as fo-          prazo.
+lhas, inclusive as folhas já senescentes.
+O pecuarista, então, equivocadamente
+maneja seus animais para que o con-
+sumo de forragem seja o máximo possí-
+vel,de modo que todas as folhas sejam
+consumidas e que não sobre material
+para formar o mantilho.
+
+
+
+
+                                                                           Foto: Adaptado de Volk; Trindade (2017).
+        (A)                              (B)
+
+
+
+
+        (C)                              (D)
+
+
+
+
+Figura 3. Anelídeos (A), fungos (B), afídeos (C) e colêmbulos (D) são exemplos de organismos
+do solo que afetam o desenvolvimento das plantas e influem na estruturação e porosidade, bem
+como na ciclagem de nutrientes, fixação biológica de nitrogênio e mineralização da matéria
+orgânica.
+                                                                                                                                 9
+
+
+
+
+       Ilustração: Adaptado de Wischmeier; Smith (1978).
+
+
+
+
+Figura 4. Relação entre taxa de cobertura superficial do solo e o fator de redução da erosão
+hídrica do solo.
+
+
+
+
+                                                                                Ilustração: Adaptado de Volk; Trindade (2017).
+
+
+
+
+Figura 5. Representação gráfica da importância da vegetação na infiltração de água. As folhas
+garantem a cobertura do solo e evitam o selamento superficial, enquanto as raízes e a fauna do
+solo garantem a estruturação e a maior macroporosidade, permitindo maior infiltração de água.
+10
+
+
+
+    A estrutura do solo também é forte-       As plantas tendem a manter uma ra-
+mente influenciada pelo bom desenvol-      zão estável entre o desenvolvimento de
+vimento da vegetação, principalmente       sua parte aérea ou dossel (folhas, caules
+pelo desenvolvimento de suas raízes        e colmos) e de suas raízes (Taiz; Zeiger,
+(Tisdall; Oades, 1982), o que se reflete   2013). A relação entre dossel e raízes
+na quantidade e qualidade da macro-        será gerenciado pela parte da planta
+porosidade do solo, características que    que tem seu desenvolvimento limitado.
+são atribuídas à melhoria da estrutu-      Em outras palavras, se as raízes esti-
+ração e à criação de bioporos. Os bio-     verem passando por alguma limitação
+poros resultam da atividade biológica,     química (acidez ativa do solo ou falta de
+principalmente da movimentação da          nutrientes), física (compactação, pouca
+macrobiota e do espaço deixado pela        profundidade, má drenagem ou baixa
+morte de raízes (Figura 6). Eles mere-     permeabilidade) ou biológica (ausência
+cem nossa atenção, pois se refletem na     de organismos que fazem simbiose ou
+qualidade da macroporosidade, devido       presença de fungos e insetos danosos
+ao aspecto de continuidade. Os macro-      às plantas) o desenvolvimento do dossel
+poros normalmente ocorrem de modo          também será comprometido. O mesmo
+aleatório, enquanto os bioporos ocorrem    raciocínio vale para o inverso. Se o de-
+com continuidade, funcionando como         senvolvimento das plantas for limitado
+“canos” com elevada eficiência para a      pela remoção de suas folhas (objetivo
+passagem da água (Allaire et al., 2002).   primeiro do processo de pastejo), tam-
+Nesse sentido, fica fácil o entendimento   bém será limitado o desenvolvimento
+da importância do correto manejo das       das raízes.
+pastagens para, além de beneficiar
+plantas e animais, aumentar a atividade
+da fauna do solo e o desenvolvimento de
+suas raízes.
+                                                                                                                11
+
+
+
+
+                                                                                  Foto: Leandro Bochi da Silva Volk
+Figura 6. Exemplo de bioporo com continuidade formado pela morte e decomposição de uma
+raiz.
+
+
+
+    A Figura 7 apresenta o desenvol-             Pastagens monoespecíficas apre-
+vimento de raízes de grama forquilha         sentam, obviamente, monoespecificida-
+(Paspalum notatum) em dois manejos           de de morfologia de raízes. Pastagens
+distintos: um mais intenso, com cortes       de uma só gramínea (Poaceas-
+a cada 5 dias e resíduo de 5 cm de al-       monocotiledôneas)     vão     apresentar
+tura, e outro menos intenso, com cortes      apenas raízes fasciculadas com a mor-
+a cada 15 dias e resíduo de 15 cm. É         fologia específica daquela gramínea. O
+visível que a massa de raízes diminui à      mesmo raciocínio serve para uma pasta-
+medida que o pastejo (remoção de fo-         gem de uma leguminosa (Fabaceaes –
+lhas) se intensifica.                        dicotiledôneas), que apresentará raízes
+                                             pivotantes com a morfologia específica
+    A estrutura do solo está associada
+                                             inerente. Em complemento, as relações
+à sua textura, mineralogia e evolução,
+                                             que se estabelecem na rizosfera de
+mas também à atividade da fauna e mi-
+                                             cada raiz, também serão restritas ou
+crobiota edáfica (como os que aparecem
+                                             específicas (Bodner et al., 2014).
+na Figura 3). Daí a vantagem do serviço
+prestado pela diversidade de espécies
+forrageiras.
+12
+
+
+
+    Nesse sentido, pastagens pluriespe-          Como resultado, a infiltração é maior
+cíficas apresentam algumas vantagens          em pastagens com maior diversidade de
+(Weigelt et al., 2009). A diversidade de      espécies, como apresentado na Tabela
+raízes com morfologias distintas (fas-        1.
+ciculadas e pivotantes, mais grossas
+                                                 Da associação e aplicação destes
+e mais finas, mais curtas e mais com-
+                                              conhecimentos em práticas de manejo
+pridas, elevada ou baixa relação C:N e
+                                              adequadas, pode-se chegar a um incre-
+com distintas associações microbianas
+                                              mento muito importante da infiltração
+na rizosfera) auxiliam muito, tanto na es-
+                                              de água da chuva, como o exemplo da
+truturação do solo, quanto na atividade
+                                              Figura 8.
+de uma maior diversidade de organis-
+mos edáficos (Baretta et al., 2011).
+
+
+
+
+                                                                                            Foto: Adaptado de Jaskulski et al. (2013).
+
+
+
+
+Figura 7. Diferença no desenvolvimento de raízes de grama forquilha (Paspalum notatum) em
+função de diferentes intensidades e frequências de remoção das folhas.
+                                                                                                                                              13
+
+
+Tabela 1. Taxa de infiltração básica medida com cilindro único em Luvissolo Háplico órtico típico
+(Embrapa Pecuária Sul – Bagé/RS) sob dois sistemas pecuários distinto.
+
+                                       Número de             Taxa de            Teor de                                             Taxa de
+                                      espécies em           cobertura           matéria                                            infiltração
+                                        0,25 m2              do solo             seca(3)                                             básica
+                                                                               kg.MS/ha                                              mm/h
+ Campo nativo diferido    (1)
+                                           18                     100%           1.800                                                  138
+ Pastagem de azevém
+                                             1                     80%           1.100                                                   21
+ diferido(2)
+
+ Campo nativo com 30 dias de diferimento e manejado sob pastejo rotativo com 375 graus-dia de descanso; (2)Azevém
+(1)
+
+em área de integração lavoura-pecuária com 30 dias de diferimento antes da dessecação para semeadura da soja em
+semeadura direta; (3)Teor de matéria seca estimada visualmente.
+
+
+
+
+                                                                                               Foto: Leandro Bochi da Silva Volk
+
+
+
+
+Figura 8. Área de vegetação campestre (campo nativo) do Rio Grande do Sul (município de
+Encruzilhada do Sul) mostrando a diferença de umidade do solo após uma chuva de 20 mm em
+duas condições de manejo.
+14
+
+
+
+    É importante ressaltar que essas são      extrínsecas ligadas ao uso da terra e ao
+características cuja modificação (ou sua      manejo (as quais podem ser modifica-
+construção) estão ao alcance do mane-         das pelo ser humano).
+jador. Então, respondendo à pergunta
+                                                  Contudo, diferentemente da infiltra-
+feita no início desse item: sim, é possível
+                                              ção, o armazenamento e retenção têm
+aumentar o diâmetro do “cano”.
+                                              maior relação com a microporosidade do
+                                              solo (Silva et al., 2005). É nos espaços
+                                              vazios de menor diâmetro que a água
+  Armazenamento e                             fica armazenada ou retida.
+
+retenção de água no                                Os solos com textura arenosa, ape-
+                                              sar de propiciarem maior velocidade de
+solo                                          infiltração, possuem menor microporo-
+                                              sidade e retêm menos água. No outro
+                                              extremo, os solos com textura argilosa,
+    Como já foi apresentado na Figura 1,      cuja velocidade de infiltração é menor,
+se a infiltração é como o “cano” por onde     possuem maior microporosidade, o que
+a água entra no solo, o armazenamento         determina maior armazenamento e re-
+(junto com a retenção) pode ser imagi-        tenção de água.
+nado como a “caixa de água” que esse
+                                                 A retenção e o armazenamento da
+cano abastece. Pergunta: seria possível
+                                              água no solo são funções ecológicas
+aumentar o tamanho dessa “caixa de
+                                              muito importantes. A retenção se refere
+água”?
+                                              ao somatório das diferenças das ener-
+     O armazenamento, portanto, repre-        gias (potencial) entre a água no solo e
+senta a quantidade de água estocada           um estado padrão (Reichardt; Timm,
+no solo e que pode ser disponibilizada        2004). Então, quanto maior é essa dife-
+nos sistemas agrícolas, dentre eles, os       rença de energia (maior potencial), maior
+sistemas pecuários. Em termos de im-          é a retenção da água no solo. Em solo
+portância, podemos colocar a retenção         não saturado e próximo à superfície, o
+e o armazenamento no mesmo grau da            potencial que mais retém a água no solo
+infiltração, contudo, o armazenamento e       é o potencial matricial. Este potencial é
+retenção só ocorrem após a infiltração.       o resultado da interação da água com a
+Assim, é importante o planejamento de         matriz sólida do solo (principalmente a
+manejo do solo visando todas as fun-          matéria orgânica e a argila).
+ções ecológicas.
+                                                 O armazenamento se refere à quanti-
+   O armazenamento e retenção de              dade de água retida no solo. A retenção
+água, assim como a infiltração, depen-        da água é fortemente relacionada com
+dem de características intrínsecas ao         área superficial específica (ASE) das
+solo (mineralogia, textura e rocha de ori-    partículas sólidas do solo, sendo a argila
+gem, por exemplo) e de características        e a matéria orgânica as que possuem
+                                              maior ASE.
+                                                                                                                                  15
+
+
+
+                                             O resultado interessante desse pro-             Considerando o que foi apresentado
+                                          cesso é que a matéria orgânica pode            e discutido em relação à Figura 6, po-
+                                          aumentar muito a retenção de água em           de-se inferir que o sistema radicular das
+                                          solos arenosos e pode manter ou dimi-          plantas forrageiras e não-forrageiras
+                                          nuir um pouco, em solos muito argilosos        merece atenção. Pastagens cujo mane-
+                                          (Grohmann; Camargo, 1973). Ou seja, é          jo permite o maior desenvolvimento do
+                                          possível modificar (para melhor, obvia-        seu sistema radicular, também permitem
+                                          mente) o armazenamento de água no              maior retenção e armazenamento de
+                                          solo por meio de ações de manejo, por          água a ser disponibilizada para as plan-
+                                          exemplo com práticas que aumentam a            tas. Um exemplo disso é apresentado na
+                                          matéria orgânica no solo.                      Figura 9. Percebe-se que, num período
+                                                                                         de 300 dias, a área mais pastejada (li-
+                                             Seguindo a mesma lógica da infiltra-
+                                                                                         nha azul) apresentou 46 dias de solo
+                                          ção, o armazenamento e retenção de
+                                                                                         seco entre o verão e outono (período de
+                                          água têm forte influência da estrutura do
+                                                                                         maior evapotranspiração e maior reten-
+                                          solo e, portanto, da vegetação e do seu
+                                                                                         ção), enquanto a área menos pastejada
+                                          manejo.
+                                                                                         (linha vermelha) apresentou apenas 4
+                                                                                         dias de solo seco.
+Ilustração: Adaptado de Volk et al. (2017).
+
+
+
+
+                                         Figura 9. Saturação de água no solo a 10 cm de profundidade em área de Saccharum
+                                         angustifolium – macega estaladeira (vegetação pouco pastejada e com sistema radicular mais
+                                         volumoso – E.superior) e em área com predominância de Axonopus affinis – grama tapete
+                                         (vegetação muito pastejada e com sistema radicular menos volumoso – E.inferior), em Bagé/RS
+                                         entre agosto de 2014 e junho de 2015.
+ 16
+
+
+
+    Essa figura ilustra que o pecuarista             Para tal, existem distintas ferramen-
+ que deseja aumentar o armazenamento             tas à disposição, como o ajuste de oferta
+ de água em seu solo e diminuir o risco          de forragem, régua para altura, ajuste de
+ de perdas com um período de estiagem            carga, cujos usos variam em função do
+ pode manejar o pastejo dos animais              tipo de pastagem. O mesmo princípio é
+ para permitir a ocorrência tanto de áreas       válido para pastagens pluriespecíficas
+ pastejadas (preferidas pelos animais),          e para as pastagens naturais (como o
+ quanto de áreas pouco pastejadas (áre-          campo nativo).
+ as menos preferidas pelos animais ou
+                                                     No caso de pastagens naturais, esse
+ de exclusão de pastejo).
+                                                 tipo de manejo fica ainda mais fácil, pois
+                                                 naturalmente existem plantas que não
+                                                 são pastejadas pelos animais, como
+                                                 exemplificado na Figura 10.
+Ilustração: Adaptado de Cougo et al. (2015).
+
+
+
+
+ Figura 10. Teor de água do solo (de 0 a 10 cm) sob campo nativo em transecta com diferentes
+ estruturas de vegetação (1, 2 e 5 = estrato inferior pastejado; 3 e 4 = estrato inferior não
+ pastejado; 6 e 7 = estrato superior não pastejado).
+                                                                                    17
+
+
+
+    A Figura 10 mostra que os pontos            As plantas forrageiras absorvem água
+3, 4, 6 e 7 armazenam mais água que         e nutrientes do solo por meio das raízes.
+os pontos 1, 2 e 5. Então, mesmo que        Assim, para uma planta crescer, se de-
+não sejam pastejados (e para um olhar       senvolver e produzir, ela necessita que
+desavisado seja uma zona de desperdí-       o seu sistema radicular também tenha
+cio de forragem), essa vegetação ajuda      boas condições para seu crescimento e
+no armazenamento de água no solo a          desenvolvimento. Essa condição permi-
+ser disponibilizada para as áreas pas-      tirá que as raízes se aprofundem no solo
+tejadas, aumentando a reserva de água       e tenham acesso à água e nutrientes.
+do potreiro como um todo. Então, em
+                                                Como já apresentado (Figura 7), as
+resposta à pergunta feita no início desse
+                                            plantas mantêm uma proporção estável
+item: sim, é possível aumentar a “caixa
+                                            entre seu sistema radicular e seu dossel
+de água”.
+                                            ou parte aérea, sendo um deles regulado
+   Por fim, uma vez armazenada a água       pelo acesso a recursos do outro (Taiz;
+no solo, é nossa vontade que ela seja       Zeiger, 2013). Ou seja, se o sistema
+disponibilizada e acessada pelas plan-      radicular não tiver acesso à água, ar e
+tas, e não ser perdida por evaporação. É    nutrientes do solo, ele irá reduzir o cres-
+desejável que a água saia do solo pelo      cimento do caule e das folhas da planta.
+processo de transpiração, ou seja, pas-     Do mesmo modo, se as folhas da planta
+sando pela planta. É como colocar uma       não tiverem acesso à luz e ar, isso irá
+“tampa” na “caixa de água”.                 limitar o crescimento das raízes.
+                                                O excesso de pastejo limitará o de-
+                                            senvolvimento do dossel das plantas,
+Disponibilização e                          portanto, limitará o desenvolvimento das
+aproveitamento da                           raízes também (Figura 11). Vários au-
+                                            tores já exemplificaram esse comporta-
+água do solo pelas                          mento fisiológico em distintas forrageiras
+                                            e, essencialmente, quanto mais intenso
+plantas                                     o pastejo, menor é o desenvolvimento
+                                            das raízes (Stanton, 1988; Rodrigues;
+                                            Cadima-Zevallos, 1991; Ryser; Lambers,
+   A água que infiltrou e está armazena-
+                                            1995; Thornton; Millard, 1996; Giacomini
+da no solo não garante o acesso pelas
+                                            et al., 2005). O princípio, portanto, é que
+plantas. É necessário ainda permitir que
+                                            o manejo adotado permita, tanto o bom
+as plantas tenham acesso a ela. Na
+                                            desenvolvimento do dossel da planta
+Figura 1, este processo é representado
+                                            (afinal é dele que os animais dependem
+pelo cano por onde a água sai da caixa
+                                            para sua alimentação), quanto o bom
+de água. Pergunta: é possível aumentar
+                                            desenvolvimento das raízes. É o cresci-
+o diâmetro desse “cano”?
+                                            mento das raízes que permite o acesso
+                                            à água armazenada no solo.
+18
+
+
+
+
+                                                                                           Ilustração: Adaptado de Trindade et al. (2018b)
+Figura 11. Efeito do pastejo na desfolha e consequente diminuição das raízes.
+
+    Utilizando as informações da Figura              O entendimento desse processo é
+10, tendo por base uma umidade do                chave para o manejo adequado das pas-
+solo de 0,20 gramas de água para cada            tagens cultivadas ou naturais, permitin-
+1 grama de solo (e densidade de 1,4 g            do a máxima eficiência de uso da água
+dm-3), se for permitido que as plantas           no solo. Então, respondendo à pergunta
+forrageiras aprofundem em 10 cm seu              feita no início desse item: sim, é possível
+sistema radicular, é o mesmo que dis-            aumentar o “cano” por onde a água sai
+ponibilizar 28 litros de água por m2, ou         da caixa de armazenamento.
+ainda como se fosse aplicada uma irriga-
+ção com uma lâmina de 28 mm ha-1. No
+mesmo exemplo, se a umidade do solo
+for de 0,25 g g-1 (umidade embaixo das
+plantas sem pastejo), o aprofundamento
+das raízes em 10 cm acessará mais 35
+litros de água por m2 (equivalente a
+uma irrigação de 35 mm ha-1).
+                                                                                       19
+
+
+
+Impacto do manejo                                  Nesta relação com o solo, o cresci-
+                                                mento das raízes das plantas ganha
+dos animais no solo e                           importância. Já a produção de folhas, ao
+                                                mesmo tempo que interfere no cresci-
+na água                                         mento das raízes, ajuda na proteção do
+                                                solo ao excesso de insolação e ao im-
+                                                pacto da chuva, refletindo na infiltração,
+    Na pecuária se estabelecem relações         no armazenamento e disponibilização
+complexas, de forma direta e indireta,          da água.
+entre os animais, as plantas e o solo
+(Figura 12). Algumas dessas relações                Na ideia de entender os processos
+diretas são óbvias, onde os animais her-        para controlá-los e transformar a realida-
+bívoros se alimentam das plantas, têm o         de, o pecuarista tem papel fundamental.
+solo como seu piso e ciclam nutrientes          Pelo manejo do pastejo, o pecuarista im-
+via esterco e urina; e organismos e plan-       põe uma influência muito forte na vege-
+tas retiram nutrientes e água para seu          tação (Thornton; Millard, 1996; Carvalho
+crescimento e devolvem matéria orgâ-            et al., 2009; Trindade et al., 2011). É do
+nica, usufruindo e interferindo no solo e       entendimento do impacto do pastejo no
+nas suas funções.                               desenvolvimento das plantas e de suas
+                                                raízes que vem as premissas do correto
+                                                manejo das pastagens visando à melho-
+                                                ria do uso da água.
+
+
+
+
+                                                                                         Ilustração: Adaptado de Trindade et al. (2018b)
+
+
+
+
+Figura 12. Relação solo-planta-animal e o manejo.
+20
+
+
+
+Princípios técnicos de                           a) Manter a cobertura do solo
+                                             tem o sentido de manter o solo prote-
+manejos para o uso                           gido e a pastagem pronta para receber
+                                             o rebanho, seu pastejo e pisoteio o ano
+da água no solo em                           inteiro. A completa cobertura (seja por
+sistemas pecuários                           resíduos ou palhada, seja pelas plantas
+                                             forrageiras – Figura 13) evita que o solo
+                                             fique exposto ao aumento excessivo de
+    Na relação solo-planta-animal, o solo    temperatura, ao impacto negativo da
+tem papel fundamental na mediação            chuva e danos causados pelo pisoteio
+de inúmeros processos naturais como          dos animais. A temperatura adequada
+suporte para animais e plantas; decom-       maximiza a atividade de organismos
+posição e mineralização de nutrientes;       (atividade de decompositores, minerali-
+fixação biológica de nitrogênio e disponi-   zação e fixação biológica de N, e biodis-
+bilização de fósforo orgânico; infiltração   ponibilização de P por fungos micorrízi-
+e armazenamento de água; troca de            cos), além de manter mais água no solo
+gases; entre outros. Consciente disso, é     (evita a perda de água por evaporação).
+possível interferir positivamente no solo    A chuva, quando atinge o solo coberto e
+com práticas de manejo que aumentem          protegido por palha ou pelas folhas das
+sua qualidade e melhorem o funciona-         plantas chega sem velocidade (menor
+mento desses processos. O estado das         energia) ao solo e pode infiltrar, sem
+funções ecológicas do solo melhora com       ocorrer o selamento superficial, a forma-
+a adoção dessas práticas, garantindo,        ção de crosta (que limita a germinação
+não só a prestação de serviços ecossis-      e emergência de plântulas), além da
+têmicos importantes, como também as          perda de solo e nutrientes por erosão.
+condições para incrementos produtivos.
+    Os princípios envolvidos na relação
+da pecuária com a água do solo são: a)
+manter a cobertura do solo o ano todo;
+b) manter e melhorar a estrutura do
+solo; c) aumentar a biodiversidade do
+solo pela maior diversidade de plantas
+forrageiras; d) maximizar a presença
+de raízes vivas no solo; e e) assumir o
+manejo do pastejo dos animais.
+                                                                                   21
+
+
+
+
+                                                                                         Fotos: Leandro Bochi da Silva Volk
+                    (A)                                           (B)
+Figura 13. Cobertura do solo em área de campo nativo (A) e em pastagem de azevém sobre
+palhada de capim sudão (B).
+
+
+
+    b) Manter ou melhorar a estrutu-              A boa estruturação é um indicativo
+rar o solo indica conservar ou melhorar      do seu estado de saúde e conservação.
+sua estrutura pela formação de agrega-       Bem estruturado, o solo permite maior
+dos (Figura 14). A formação de agrega-       infiltração e disponibilização de água
+dos é favorecida pelo desenvolvimento        para as plantas e resiste mais ao piso-
+das plantas e dos organismos que ocor-       teio dos animais, proporcionando melhor
+rem no solo e na sua rizosfera. Passa        “piso”. O preparo mecanizado do solo e
+a ser desejável a elevada produção de        o excesso de pisoteio são as principais
+raízes e seu maior aprofundamento,           causas de perda de cobertura e de de-
+associada com a maior atividade dos          sestruturação. Minimizar a desestrutura-
+organismos.                                  ção do solo é muito importante para não
+                                             degradar as funções associadas à sua
+                                             estrutura.
+22
+
+
+
+
+                                                               Foto: Leandro Bochi da Silva Volk
+Figura 14. Exemplo de solo bem estruturado por raízes vivas.
+
+
+    c) Aumentar a biodiversidade do                 d) Maximizar a presença de
+solo pelo aumento da diversidade de             raízes vivas no solo o tempo todo é o
+plantas forrageiras traz consigo vários         grande diferencial que a pecuária pode
+benefícios, entre eles o melhor aprovei-        ter na conservação do solo. As raízes
+tamento da fertilidade do solo, menor           vivas mantêm os organismos de solo
+estacionalidade da produção forrageira          ativos e são eficientes na estruturação,
+e maior resiliência a eventos climáticos        principalmente pelo enredamento dos
+extremos (falta ou excesso de chuva e           agregados (Figura 15), e na ciclagem
+geada, por exemplo). As plantas pos-            de água e nutrientes. São fortemente
+suem raízes com estrutura e fisiologia          associadas ao manejo do pastejo, pois
+diferentes e com isso acessam nichos            plantas com mais folhas, possuem
+distintos do solo, associam-se a diferen-       raízes em maior quantidade e mais
+tes organismos edáficos (Figura 3), libe-       profundas (buscando água e nutrientes
+ram diferentes exsudatos e absorvem             de maneira mais eficiente). As raízes
+água e nutrientes de modos diferentes.          mortas vão fornecer matéria orgânica ao
+A maior diversidade pode ser promovida          solo (que também é importante), mas as
+via semeadura (ou por consórcio, ou por         raízes vivas efetivamente ajudam no seu
+sucessão/rotação), no caso de pasta-            funcionamento.
+gens cultivadas, e pode ser induzida via
+manejo, no caso de pastagens naturais
+(campo nativo).
+                                                                                                         23
+
+
+
+
+                                                                                  Foto: Leandro Bochi da Silva Volk
+Figura 15. Enredamento dos agregados promovido por raízes vivas.
+
+
+    e) Assumir o manejo do pas-
+tejo dos animais é a chave para que
+                                              Recomendações
+os outros princípios funcionem, como          finais
+representado na Figura 11. O grande
+desafio na pecuária é equilibrar entre o         A intenção é que todos os princípios
+que o gado deve comer e o que a planta        elencados sejam considerados toda vez
+necessita para se desenvolver. O paste-       que uma prática de manejo for adotada.
+jo é um distúrbio nas plantas e cabe ao       O atendimento desses princípios levará
+manejador decidir qual o nível de impac-      à melhoria da qualidade do solo, princi-
+to desse distúrbio. O desenvolvimento         palmente aquela relacionada à água no
+de novas folhas depende de quantas            solo.
+sobraram. É nesse momento que as
+ferramentas de manejo (ajuste de carga
+ou de oferta de forragem, diferimento,
+pastejo rotativo, roçada, suplementação
+mineral dos animais) ganham em impor-
+tância na conservação da água e do solo
+na pecuária.
+24
+
+
+
+Referências                                            GIACOMINI, A. A.; MATTOS, W. T.; MATTOS, H.
+                                                       B.; WERNER, J. C.; CUNHA, E. A.; CARVALHO,
+                                                       D. D. Crescimento de raízes dos capins aruana e
+ALLAIRE, S. E.; GUPTA, S. C.; NIEBER, J.;              tanzânia submetidos a duas doses de nitrogênio.
+MONCRIEF, J. F. Role of macropore continuity           Revista Brasileira de Zootecnia, v. 34, n. 4, p.
+and tortuosity on solute transport in soils. Journal   1109-1120, ago. 2005.
+of Contaminant Hydrology, v. 58, n. 3-4, p.
+299-321, Oct. 2002.                                    GROHMANN, F.; CAMARGO, O. A. Influência dos
+                                                       óxidos de ferro livres e da matéria orgânica na
+ALLAN, J. A. Virtual water – the water, food,          adsorção da água pelo solo. Bragantia, v. 32, p.
+and trade nexus useful conceptor misleading            203-222, 1973.
+metaphor? Water International, v. 28, n. 1, mar.
+2003.                                                  HILLEL, D. General physical characteristics
+                                                       of soils. In: HILLEL, D. Fundamentals of soil
+ANAND, M. Pattern, process and mechanism               physics. San Diego: Academic Press, 1980. p.
+- the fundamentals of scientific inquiry applied       6-20.
+to vegetation science. Coenoses, v. 9, n. 2, p.
+81-92, 1994.                                           HOEKSTRA, A. Y.; HUNG, P. Q. Virtual water
+                                                       trade: a quantification of virtual water flows
+BARETTA, D.; SANTOS, J. C. P.; SEGAT, J.               between nations in relation to international crop
+C.; GEREMIA, E. V.; OLIVEIRA FILHO, L. C.              trade. Delft: IHE, 2002. 66 p. (Value of water
+I.; ALVES, M. V. Fauna edáfica e qualidade do          research report series, n. 11).
+solo. In: KLAUBERG FILHO, O.; MAFRA, A. L.;
+GATIBONI, L. C. (org.). Tópicos em ciência             HOEKSTRA, A. Y.; MEKONNEN, M. M. The
+do solo. Viçosa, MG: Sociedade Brasileira de           water footprint of humanity. Proceedings of the
+Ciência do Solo, 2011. v. 7, p. 119-170.               National Academy of Sciences, v. 109, n. 9, p.
+                                                       3232, 28 Fev. 2012.
+BODNER, G.; LEITNER, D.; KAUL, H. P. Coarse
+and fine root plants affect pore size distributions    HORTON, R. E. An approach toward a physical
+differently. Plant and Soil, v. 380, n. 1-2, p.        interpretation of infiltration-capacity. Soil Science
+133-151, Mar. 2014.                                    Society of America Proceedings, v. 5, p. 399-
+                                                       417, 1940.
+BRANDÃO, V. S.; CECÍLIO, R. A.; PRUSKI, F. F.;
+SILVA, D. D. Infiltração da água no solo. Viçosa,      INTERNATIONAL EXPERT MEETING ON
+MG, Universidade Federal de Viçosa, 2003. 98 p.        VIRTUAL WATER TRADE, 2002, Delft. Virtual
+                                                       water trade: proceedings. Delft: IHE, 2003. 239
+CARVALHO, P. C. F.; TRINDADE, J. K.;                   p. Editado por A.Y. Hoekstra. (Value of water
+MEZZALIRA, J. C.; POLI, C. H. E. C.;                   research report series, n. 12).
+NABINGER, C.; GENRO, T. C. M.; GONDA,
+H. L. Do bocado ao pastoreio de precisão:              JASKULSKI, G. F.; DUTRA, J. G.; SOARES, T. R.;
+compreendendo a interface planta-animal para           VOLK, L. B. da S.; TRENTIN, G.; TRINDADE, J.
+explorar a multi-funcionalidade das pastagens.         P. P.; PINHEIRO, C. L. Massa seca de raízes de
+Revista Brasileira de Zootecnia, v. 38, p. 109-        Paspalum notatum e Axonopus argentinus com
+122, jul. 2009. Suplemento especial.                   três manejos distintos. In: SALÃO DE INICIAÇÃO
+                                                       CIENTÍFICA DA EMBRAPA PECUÁRIA SUL,
+COUGO, D. da C.; VOLK, L. B. da S.; TRINDADE,          3., 2013, Bagé. Resumos... Bagé: Embrapa
+J. P. P. Teor de água no solo em função da             Pecuária Sul, 2013. p. 14.
+estrutura de vegetação de campo nativo. In:
+SIMPÓSIO DE INICIAÇÃO CIENTÍFICA DA                    KARLEN, D. L.; ANDREW S, S. S.; DORAN,
+EMBRAPA PECUÁRIA SUL, 5., 2015, Bagé.                  J. W. Soil quality: current concepts and
+Resumos dos trabalhos... Bagé: Embrapa                 applications. Advances in Agronomy, v. 74, p.
+Pecuária Sul, 2015. p. 35.                             1-40, 2001.
+
+ECOSYSTEMS and human well-being: synthesis.            PESSOA, M. L. Ocorrência de eventos climáticos
+Washington: Island Press, 2005. 155 p.                 extremos no Rio Grande do Sul. Carta de
+(Millennium Ecosystem Assessment series).              Conjuntura FEE, v. 20, n. 8, p. 8, ago. 2011.
+                                                                                                        25
+
+
+PESSOA, M. L. O Rio Grande do Sul corre o             STANTON, N. L. The underground in grasslands.
+risco de enfrentar uma crise hídrica? Carta de        Annual Review os Ecology and Systematics, v.
+Conjuntura FEE, v. 24, n. 3, p. 1, mar. 2015.         19, p. 573-589, 1988.
+PRADO, R. B.; FIDALGO, E. C. C.; MONTEIRO,            TAIZ, L.; ZEIGER, E. Fisiologia vegetal. 5. ed.
+J. M.; SCHULER, A. E.; VEZZANI, F. M.;                Porto Alegre: Artmed, 2013. 954 p.
+GARCIA, J. R.; OLIVEIRA, A. P.; VIANA, J. H.
+M.; PEDREIRA, B. C. C. G.; MENDES, I. C.;             THORNTON, B.; MILLARD, P. Effects os severity
+BRAGA, A. R. S.; PARRON, L. M.; CLEMENTE,             of defoliation on root functioning in grasses.
+E. P.; DONAGEMMA, G. K.; TURETTA, A. P.               Journal of Range Management, v. 49, n. 5, p.
+D.; SIMÕES, M. Current overview and potential         443-447, Sept. 1996.
+applications of the soil ecosystem services           TISDALL, J. M.; OADES, J. M. Organic matter
+approach in Brazil. Pesquisa Agropecuária             and water-stable aggregates in soils. Journal of
+Brasileira, v. 51, n. 9, p. 1021-1038, set. 2016.     Soil Science, v. 33, p. 141-163, 1982.
+REICHARDT, K.; TIMM, L. C. Solo, planta e             TRINDADE, J. P. P.; BORBA, M. F. S.; VOLK, L.
+atmosfera: conceitos, processos e aplicações.         B. da S. Pastejo e a estabilidade de pastagens
+São Paulo: Manole, 2004. 478 p.                       naturais. Bagé: Embrapa Pecuária Sul, 2011. 17
+REICHERT, J. M.; ALBUQUERQUE, J. A.;                  p. (Embrapa Pecuária Sul. Documentos, 125).
+GUBIANI, P. I.; KAISER, D. R.; MINELLA, J. P. G.;     TRINDADE, J. P. P.; ROCHA, D. S. da; VOLK,
+REINERT, D. J. Hidrologia do solo, disponibilidade    L. B. da S. Uso da terra no Rio Grande do
+de água às plantas e zoneamento agroclimático.        Sul: ano de 2017. Bagé: Embrapa Pecuária Sul,
+In: KLAUBERG FILHO, O.; MAFRA, A. L.;                 2018a. 18 p.
+GATIBONI, L. C. (org.). Tópicos em ciência
+do solo. Viçosa, MG: Sociedade Brasileira de          TRINDADE, J. P. P.; VOLK, L. B. da S.; ROCHA,
+Ciência do Solo, 2011. v. 7, p. 1-54.                 D. S. da; COELHO, A. Preservar para produzir:
+                                                      recomendações de manejo para os campos da
+RODRIGUES, A. C. G.; CADIMA-ZEVALLOS, A.              Campanha, Fronteira Oeste e Missões do Rio
+Efeito da intensidade de pastejo sobre o sistema      Grande do Sul. Bagé: Embrapa Pecuária Sul,
+radicular de pastagem. Pesquisa Agropecuária          2018b. 29 p. (Embrapa Pecuária Sul. Circular
+Brasileira, v. 26, n. 3, p. 439-445, mar. 1991.       técnica, 50).
+RYSER, P.; LAMBERS, H. Root and leaf attibutes        VEZZANI, F. M.; MIELNICZUK, J. Uma visão
+accounting for the performance of fast and slow-      sobre qualidade do solo. Revista Brasileira de
+growing grasses at different nutrient supply. Plant   Ciência do Solo, v. 33, n. 4, p. 743-755, ago.
+and Soil, v. 170, p. 251-265, 1995.                   2009.
+SEYBOLD, C. A.; MAUSBACH, M. J.; KARLEN,              VOLK, L. B. da S.; COGO, N. P. Inter-relação
+D. L.; ROGERS, H. H. Quantification of soil           biomassa vegetal subterrânea-estabilidade de
+quality. In: LAL, R.; KIMBLE, J. M.; FOLLETT, R.      agregados-erosão hídrica em solo submetido a
+F.; STEWART, B. A. (ed.). Soil processes and          diferentes formas de manejo. Revista Brasileira
+the carbon cycle. Boca Raton: CRC Press, 1997.        de Ciência do Solo, v. 32, n. 4, p. 1713-1722,
+p. 387-404.                                           ago. 2008.
+SILVA, M. A. S.; MAFRA, A. L.; ALBUQUERQUE,           VOLK, L. B. da S.; TRINDADE, J. P. P. A
+J. A.; BAYER, C. B.; MIELNICZUK, J. Atributos         pecuária e a conservação do solo. Bagé:
+físicos do solo relacionados ao armazenamento         Embrapa Pecuária Sul, 2017. 16 p. (Abc
+de água em um Argissolo Vermelho sob diferentes       agricultura baixa emissão de carbono).
+sistemas de preparo. Ciência Rural, v. 35, n. 3, p.
+544-552, jun. 2005.
+SILVEIRA, M. C. T.; TRENTIN, G. Manejo
+para pastagens irrigadas: fundamentos e
+recomendações práticas. Bagé: Embrapa
+Pecuária Sul, 2019. 44 p. (Embrapa Pecuária Sul.
+Documentos, 163).
+          26
+
+
+           VOLK, L. B. da S.; TRINDADE, J. P. P.; COELHO,
+           A. A.; QUADROS, F. L. F. Funções ecossistêmicas
+           em vegetação campestre de dupla estrutura
+           acentuada. In: REUNIÓN DEL GRUPO TÉCNICO
+           EN FORRAJERAS DEL CONO SUR, 24., 2017,
+           Tacuarembó. Bioma Campos: retomando un
+           camino de oportunidades para una producción
+           ganadera sustentable: memorias. [Tacuarembó]:
+           Inia: Udelar, 2017. p. 106-108.
+           WEIGELT, A.; WEISSER, W. W.; BUCHMANN,
+           N.; SCHERER-LORENZEN, M. Biodiversity for
+           multifunctional grasslands: equal productivity
+           in high-diversity low-input and low-diversity
+           high-input systems. Biogeosciences, v. 6, p.
+           1695-1706, 2009.
+           WEIL, R. R.; BRADY, N. C. The nature and
+           properties of soils. 15th ed. Columbus: Pearson
+           Prentice Hall, 2016. 1104 p.
+           WISCHMEIER, W. H.; SMITH, D. D. Predicting
+           rainfall erosin losses: a guide to conservation
+           planning. Washington: USDA, 1978. 58 p.
+           (Handbook, 537).
+
+
+
+
+                Exemplares desta edição                      Comitê Local de Publicações
+                podem ser adquiridos na:                        da Unidade Responsável
+
+                Embrapa Pecuária Sul                                          Presidente
+Rodovia BR-153, Km 632,9 Vila Industrial,                       Fernando Flores Cardoso
+           Zona Rural, Caixa Postal 242
+             CEP 96401-970, Bagé, RS                                 Secretária-Executiva
+              Fone: +55 (53) 3240-4650                 Márcia Cristina Teixeira da Silveira
+               Fax: +55 (53) 3240-4651                                            Membros
+                       www.embrapa.br             Elisa Köhler Osmari, Gustavo Martins da
+       www.embrapa.br/fale-conosco/sac      Silva, Fabiane Pinto Lamego, Graciela Olivella
+                                                Oliveira, Jorge Luiz Sant’Anna dos Santos,
+                                1ª edição             Lisiane Brisolara, Robert Domingues,
+           Publicação digitalizada (2020)                        Sérgio de Oliveira Jüchem
+                                                                       Supervisão editorial
+                                                                 Lisiane Bassols Brisolara
+                                                                         Revisão de texto
+                                                                             Felipe Rosa
+                                                               Normalização bibliográfica
+                                                          Graciela Oliveira (CRB 10/1434)
+                                                               Projeto gráfico da coleção
+                                                          Carlos Eduardo Felice Barbeiro
+                                                                                              CGPE 16031
+
+
+
+
+                                                                    Editoração eletrônica
+                                                                  Daniela Garcia Collares
+                                                                            Foto da capa
+                                                              Leandro Bochi da Silva Volk

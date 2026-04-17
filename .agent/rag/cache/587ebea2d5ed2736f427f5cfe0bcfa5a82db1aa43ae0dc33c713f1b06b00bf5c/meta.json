@@ -1,0 +1,9 @@
+{
+  "chunk_count": 88,
+  "extractor": "pdftotext",
+  "kind": "pdf",
+  "path": "/run/media/jpereiratrindade/labeco10T/labeco02/Revisao/Machine-learning-algorithms-in-proactive-decision-making_2023_Egyptian-Infor.pdf",
+  "sha256": "587ebea2d5ed2736f427f5cfe0bcfa5a82db1aa43ae0dc33c713f1b06b00bf5c",
+  "text_size": 83822,
+  "used_ocr": false
+}

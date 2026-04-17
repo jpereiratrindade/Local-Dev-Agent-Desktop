@@ -1,0 +1,9 @@
+{
+  "chunk_count": 49,
+  "extractor": "pdftotext",
+  "kind": "pdf",
+  "path": "/run/media/jpereiratrindade/labeco10T/labeco02/Revisao/sahrMMT11us.pdf",
+  "sha256": "d4a48eb7109dccd9f34d09576065ab182b7417924ca92873b254fac3b21d93bb",
+  "text_size": 47392,
+  "used_ocr": false
+}

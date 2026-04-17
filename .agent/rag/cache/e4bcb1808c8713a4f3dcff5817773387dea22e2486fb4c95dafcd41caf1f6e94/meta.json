@@ -1,0 +1,9 @@
+{
+  "chunk_count": 35,
+  "extractor": "pdftotext",
+  "kind": "pdf",
+  "path": "/run/media/jpereiratrindade/labeco10T/labeco02/Revisao/Birth_Death_and_Resurrection_of_the_Issu.pdf",
+  "sha256": "e4bcb1808c8713a4f3dcff5817773387dea22e2486fb4c95dafcd41caf1f6e94",
+  "text_size": 33965,
+  "used_ocr": false
+}

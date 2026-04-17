@@ -1,0 +1,515 @@
+Agronomy 2013, 3, 508-523; doi:10.3390/agronomy3030508
+                                                                                        OPEN ACCESS
+
+
+                                                                           agronomy
+                                                                                   ISSN 2073-4395
+                                                                     www.mdpi.com/journal/agronomy
+Article
+
+Root Characteristics of Perennial Warm-Season Grasslands
+Managed for Grazing and Biomass Production
+Catherine Bonin 1,†,*, Joao Flores 2, Rattan Lal 1 and Benjamin Tracy 2
+1
+    Carbon Management and Sequestration Center, The Ohio State University, 210 Kottman Hall,
+    2021 Coffey Rd, Columbus, OH 43210, USA; E-Mail: lal.1@osu.edu
+2
+    Crop and Soil Environmental Science, Virginia Tech, 330 Smyth Hall (0404), Blacksburg,
+    VA 24061, USA; E-Mails: joaof09@vt.edu (J.F.); bftracy@vt.edu (B.T.)
+†
+    Current address: Department of Agronomy, Iowa State University, 2104 Agronomy Hall, Ames,
+    IA 50011, USA.
+
+* Author to whom correspondence should be addressed; E-Mail: cbonin@iastate.edu;
+  Tel.: +1-608-335-6750; Fax: +1-515-294-3163.
+
+Received: 22 May 2013; in revised form: 25 June 2013 / Accepted: 25 June 2013 /
+Published: 8 July 2013
+
+
+      Abstract: Minirhizotrons were used to study root growth characteristics in recently
+      established fields dominated by perennial C4-grasses that were managed either for cattle
+      grazing or biomass production for bioenergy in Virginia, USA. Measurements over a
+      13-month period showed that grazing resulted in smaller total root volumes and root
+      diameters. Under biomass management, root volume was 40% higher (49 vs. 35 mm3) and
+      diameters were 20% larger (0.29 vs. 0.24 mm) compared to grazing. While total root length
+      did not differ between grazed and biomass treatments, root distribution was shallower
+      under grazed areas, with 50% of total root length in the top 7 cm of soil, compared to 41%
+      in ungrazed exclosures. These changes (i.e., longer roots and greater root volume in the top
+      10 cm of soil under grazing but the reverse at 17–28 cm soil depths) were likely caused by
+      a shift in plant species composition as grazing reduced C4 grass biomass and allowed
+      invasion of annual unsown species. The data suggest that management of perennial C4
+      grasslands for either grazing or biomass production can affect root growth in different
+      ways and this, in turn, may have implications for the subsequent carbon sequestration
+      potential of these grasslands.
+Agronomy 2013, 3                                                                                    509
+
+     Keywords: prairie plants; minirhizotron; roots; grazing; biofuels
+
+
+
+1. Introduction
+
+    Forage and grazinglands in much of the humid eastern United States are dominated by cool-season
+(C3-photosynthesis) species. Perennial warm-season (C4-photosynthesis) grasses are rarely used
+intentionally for agricultural purposes in this region, but this may change in coming years. In
+particular, perennial warm-season grasses (e.g., switchgrass (Panicum virgatum L.), big bluestem
+(Andropogon gerardii Vitman), etc.) that once dominated the native tall grass prairie in the central US
+may be especially well suited to provide biomass for biofuel or forage for grazing to complement
+cool-season species in eastern forage systems. Perennial C4 grasses can be highly productive while
+sequestering carbon (C), and these species are under increasing scrutiny for their potential to produce
+renewable bioenergy as well reducing greenhouse gas (GHG) emissions to mitigate global warming.
+Perennial C4 grasses have deep and extensive root systems with an estimated root biomass of
+14 Mg ha−1 [1], which contributes to the generation of a soil C pool as large as 191 Mg C ha −1 in the
+top 3-m of grassland soils [2]. Life cycle assessments, which measure the energy and GHG balances of
+bioenergy production, suggest that perennial species (i.e., cellulosic biomass) have a higher net energy
+ratio and greater reductions in GHG emissions than corn grain used for bioethanol [3]. A large part of
+the reductions in GHGs comes from greater soil organic carbon (SOC) storage under perennial grasses
+such as switchgrass than under annual cropland: Switchgrass may store more than 15 Mg C ha−1 more
+than annual cropland, nearly a 9% increase in SOC [4].
+    In temperate systems, C4 grasses also have great potential to supply ample quantity and adequate
+quality herbage during the summer, especially during years of drought [5,6]. These grasses are well
+adapted for growth during the hottest part of the year and are tolerant of drought and low nutrient
+conditions, and can complement cool-season pastures during the summer. Although C3 grasses are
+generally of higher nutritive value than warm-season grasses, cattle performance may be adequate on
+C4 pastures, and warm-season pastures can produce over 60% more plant biomass in July and
+August [5]. Given the multiple use potential of C4 grasslands, it is important to understand how
+managing for grazing or biomass for bioenergy affects warm-season species root characteristics and
+their associated ecosystem services such as C storage and soil quality.
+    Compared with aboveground plant variables, relatively few studies have examined the belowground
+impacts of grazing. Following grazing or clipping, the majority of the carbon (C) is allocated to new
+leaf production. For example, defoliated blue grama (Bouteloua gracilis (Willd. ex Kunth) Lag. ex
+Griffiths) may have 53% of new growth in leaves and only 18% in roots, compared to 33% and 29%,
+respectively, in control plants [7]. While it is traditionally hypothesized that grazing reduces root
+growth [8,9], other studies suggest that root growth may remain the same or even increase [10–12],
+sometimes after a several-week lag period [13]. Grazing can also affect C, N, and P pools and nutrient
+cycling by causing changes in grassland composition and animal activities that can increase the
+breakdown and incorporation of plant litter into soil [14,15].
+    Rooting distributions may shift under grazing, with root penetration depth and lateral spread
+decreasing in grazed areas [9]. In native tall grass prairies, mowing can increase root biomass in the
+Agronomy 2013, 3                                                                                         510
+
+top 10 cm of soil by 36%, although there may be no significant differences in total root biomass due to
+the mowing treatment [16]. Grazing can increase the production of roots <0.5 mm in diameter by
+nearly 75%, compared to ungrazed pastures [17]. Likewise, root dynamics may be altered under
+grazing, with root mortality increasing by as much as 22% in soils under grazing [12]. This increase in
+root mortality may be partially explained by reductions in root diameter in soils under grazing as roots
+with larger diameters have increased longevity [18]. It may also be due to changes in species
+composition: Root longevity of warm-season grasses is nearly five times greater than the longevity of
+forbs and legume roots, while longevity of cool-season grasses is also less than that of warm-season
+species [19]. The objective of this study was to examine how seasonal root morphology and rooting
+distributions were affected in grasslands managed for either grazing or biomass production. Using
+minirhizotrons, root images were collected for thirteen months under grazed areas and within grazing
+exclosures managed for biomass production for bioenergy. We tested the hypothesis that grazing
+would stimulate root growth and shift rooting distributions to shallower depths.
+
+2. Materials and Methods
+
+    The experiment was conducted at the Virginia Tech College Farm near Blacksburg in Montgomery
+County, VA (37°12′0″N latitude and 80°34′40″W longitude, elevation of ~540 m). Soils were
+moderately- to well-drained Unison and Braddock cobbly soils (fine, mixed, semiactive, mesic Typic
+Hapludults and fine, mixed, semiactive, mesic Typic Hapludults), Unison and Braddock soils, and
+Guernsey silt loam (fine, mixed, superactive, mesic Aquic Hapludalfs), with slopes ranging from
+relatively flat to moderately steep, 2% to 25% slopes [20]. Soil properties (particle size analysis, pH, soil
+bulk density) are displayed in Table 1. Soil texture analysis using the hydrometer method describes soils
+as loams until 30 cm soil depth, where clay loams are present. Soil pH gradually rises from 6.1 to 6.5 and
+soil bulk density increases from 1.0 g·cm−3 to 1.5 g·cm−3 as soil depth increases to 40 cm.
+
+      Table 1. Soil pH, particle size analysis, soil texture, and bulk density (SBD) in the
+      established warm-season native grasslands from 0–40 cm soil depth. The SBD is recorded
+      for both grazed areas and exclosures.
+   Depth (cm)      pH       Sand      Silt     Clay      Texture       SBD, Grazed       SBD, Exclosure
+      0–5          6.08     51.2      31.1     17.8       Loam            1.00                1.01
+     5–10          6.10     46.7      34.9     18.5       Loam            1.38                1.48
+     10–20         6.31     47.2      32.9     20.0       Loam            1.34                1.37
+     20–30         6.50     41.2      35.6     23.3       Loam            1.48                1.51
+     30–40         6.52     38.7      34.4     27.0     Clay Loam         1.51                1.42
+
+2.1. Vegetation
+
+   Minirhizotrons were placed within four 0.3 ha fields that were sown with a mixture of native prairie
+grasses in June 2008. Four native grass species were sown: Switchgrass (Panicum virgatum L.),
+indiangrass (Sorghastrum nutans (L.) Nash), big bluestem (Andropogon geradii Vitman) and Virginia
+wildrye (Elymus virginicus L.). All fields were originally in endophyte-free tall fescue
+(Festuca arundinacea Schreb.), each between 1 and 1.1 ha. Seeds were planted into killed sod using a
+Agronomy 2013, 3                                                                                     511
+
+Haybuster® notill seed drill (Jamestown, ND, USA) at a seeding density of 12.4 pure live seed kg ha−1;
+by weight, 20% was switchgrass, 40% was big bluestem, 30% was indiangrass, and 10% was Virginia
+wildrye. By 2011, Virginia wildrye was rare within plots (found in only 3 plots during the August
+2011 sampling), so plots were largely sown with warm-season species. Weeds and tall fescue were
+initially controlled by a glyphosate application at 2.3 L ha−1 one month prior to seeding, followed by
+an herbicide application in early June 2008 using Journey® (BASF, Research Triangle Park, NC,
+USA), a mixture of imazapic (8.13%) and glyphosate (21.94%), applied at 0.88 L ha−1 as a pre-emergent
+treatment to control weeds. In 2009, Journey® was also used for spot-spraying to control emerging
+patches of thistles. No fertilizers were applied during the entire experiment.
+    In each pasture, a 50 m2 grazing exclosure was fenced off in May 2009 and managed mimic
+grassland used for biomass for bioenergy. These biomass for bioenergy exclosures will be referred to
+as “exclosures” in this paper. Cows grazed the pastures in 2009 in early June for a length of two weeks
+and then again at the start of August for one month. In 2010, cows grazed the plots starting at the end
+of May for 16 days and the beginning of August for three weeks. In 2011 and 2012, cows began
+grazing in early June, with the second graze periods beginning in late August. Pastures were stocked at
+three cows ha−1 with a stocking density of about 1630 kg live weight ha−1. Grazing began when forage
+height reached a minimum of 60 cm and continued until canopy height was reduced to 16 cm.
+Warm-season pastures were mowed between graze periods to a maximum of 30 cm canopy height.
+Mowing was performed to even out the heights of grazed swards and remove any inflorescences that
+may have begun to emerge. The exclosures were allowed to grow all season and then harvested in
+late October.
+    Herbage mass was measured within grazed areas and exclosures just prior to each grazing period in
+early June 2011 and 2012. Species relative cover was analyzed by visually estimating the ground cover
+of each species within a 0.5 m2 quadrat. Six or three randomly placed 0.5 m2 quadrats in each grazing
+area and exclosure, respectively, were used to estimate relative cover. After visual estimation, standing
+biomass was clipped from one-half of each quadrat (0.25 m2 sample area). The cut biomass was
+hand-sorted to sown species or unsown “weeds”, then dried and weighed. It should be noted that some
+“weeds” may actually be species with significant forage value such as Kentucky bluegrass
+(Poa pratensis L.) or clovers (Trifolium spp.), but as these were not originally sown, they are in this
+case termed “weeds”.
+
+2.2. Minirhizotron Installation and Image Capture
+
+   While many root studies involve plants in pots or destructive field measurements, minirhizotrons
+provide an in situ, nondestructive, and continuous method to analyze fine root responses. Although
+minirhizotrons pose several advantages over other techniques such as soil coring and in-growth cores,
+difficulties with tube installation and time-consuming image analysis are two drawbacks for this
+technique [21]. Directly studying roots can allow calculations of root production and root turnover of
+individual roots across seasons or years.
+   The minirhizotrons were installed in early November 2010 to a 50 cm depth. Three minirhizotron
+tubes (inner and outer diameters of 5.0 cm and 5.6 cm, respectively) were installed at a 45°angle
+inside and outside each of the four exclosures (Figure 1). Root images were captured by a BTC I-CAP
+Agronomy 2013, 3                                                                                   512
+
+Image Capture System (Bartz Technology Corporation, Carpinteria, CA, USA) (Figure 2). Images
+were collected every 30 days from May 2011 to May 2012. No data were collected in August 2011.
+Soil-root images (2.5 cm2 in size) were taken at 5 cm intervals along the minirhizotron tube
+(3.5 cm intervals of vertical soil depth) beginning at ~1 cm soil depth, and extending to 45 cm in the
+tube, or 32 cm vertical soil depth. The images were analyzed using the software WinRHIZO Tron
+(Regent Instruments Inc., Quebec City, Quebec, Canada). Roots were manually traced to estimate
+individual root length and diameter for determination of root length, surface area, volume, and average
+root diameter in each image. Results were reported based on measurements within each 2.5 cm2 image
+and at the 5 cm minirhizotron tube length markers (i.e., reports at 5 and 10 cm tube depths are 3.5 and
+7 cm vertical soil depths, respectively). No attempts were made to separate live roots from dead roots,
+and as such, root turnover could not be estimated.
+
+     Figure 1. Set-up of minirhizotrons in the field. A hole was dug in the soil and three
+     minirhizotron tubes were inserted at 45°angles into the ground. The hole was then capped
+     to prevent light and moisture from entering. To collect photographs, an imaging system
+     was slid into each hole, collecting pictures at marked locations every 5 cm along the tube.
+Agronomy 2013, 3                                                                                   513
+
+     Figure 2. Images collected from the minirhizotron. One set was collected at the 25 cm
+     minirhizotron tube depth (17 cm vertical soil depth) in (a) May 2011 and (c) June 2011.
+     The second set was collected from the 5 cm minirhizotron tube depth (3.5 cm vertical soil
+     depth) in (b) December 2011 and (d) January 2011. Roots boxed by dashed lines indicate
+     newly appearing roots based on the previous month’s image.
+
+
+
+
+2.3. Data Analysis
+
+   Data were analyzed with SAS software 9.3 (SAS Institute Inc., Cary, NC, USA) using repeated
+measures ANOVA, with treatment (grazed or managed for biomass) and date (twelve months of
+images) as variables. The three tubes within each pasture and treatment were treated as subsamples,
+and the results from each set of three tubes were averaged. When all ten depths were tested, each depth
+was analyzed separately. The Fisher’s Least Significant Difference (LSD) test was used to separate
+means where either treatment or date was statistically significant at p < 0.05. Since no interaction
+terms (treatment × date) were significant, only the main effects of date and treatment are discussed in
+the Results section.
+
+3. Results
+
+3.1. Weather
+
+   Historic records from a nearby weather station show that the temperature from April through
+September (the primary period of growth for C4 species) averages 17.9 °C in this area, while total
+precipitation during this time averages 52.1 cm (Table 2). The years 2010 through 2012 were warmer
+than average by 1.2 to 1.7 °C. The 2010 growing season was particularly dry, with only about 70% of
+the historic average precipitation. In 2010, the June through August temperatures averaged 23 °C,
+compared to the historic average of 20.9 °C, and early season (April–June) precipitation was very low,
+at only 48% of historic averages. In 2011 and 2012, precipitation was closer to seasonal averages.
+Agronomy 2013, 3                                                                                                                         514
+
+      Table 2. Historic and monthly average temperatures and total precipitation for March
+      through September 2008 through 2012 in the Kentland Farm region.
+                 Historic Averages            2008                 2009                 2010                 2011                2012
+                          †
+                 Temp         Precip   Temp      Precip     Temp      Precip     Temp      Precip     Temp     Precip     Temp      Precip
+  Month
+                   (°C)       (cm)     (°C)      (cm)       (°C)          (cm)   (°C)      (cm)       (°C)      (cm)      (°C)          (cm)
+  March            5.7         8.5     6.7           5.1     6.2          8.6     6.5          6.5    6.3       11.7      10.7          7.2
+   April           10.6        7.8     11.6          9.7    11.5          6.8    12.8          3.4    13.1      12.8      11.9          7.8
+   May             15.6        10.2    15.0          5.3    16.4          18.9   17.6          6.3    16.5      16.1      18.1          8.7
+   June            19.7        10.0    20.9          5.6    20.9          9.2    22.6          3.7    21.5          2.7   20.1          5.4
+   July            21.9        9.4     21.2          14.1   20.2          9.4    23.6          6.1    23.5      11.2      23.5          9.9
+  August           21.2        7.2     19.7          7.1    21.4          7.4    22.9          8.8    22.0          4.4   21.3          7.2
+ September         17.7        7.9     18.0          3.4    17.4          6.9    18.5          8.3    17.9      10.3      17.3          7.3
+Aver Temp          16.1         --     16.2           --    16.3           --    17.8           --    17.3          --    17.6           --
+Total Precip        --         61.0     --           50.3    --           67.2    --           43.1    --       69.2       --           53.5
+      †
+           Abbreviations are as follows: Temp: temperature; Precip: precipitation; Avg Temp: the average temperature from
+      March through September; Total Precip: the total precipitation from March through September.
+
+
+3.2. Vegetation
+
+   Although total biomass did not differ between grazed and exclosure treatments in June 2011, the
+biomass plots tended to contain more sown grass biomass by dry weight (2025 kg ha −1 vs. 1520 kg ha−1)
+and less weedy biomass (850 kg ha−1 vs. 1140 kg ha−1). Results were similar for June 2012, although
+sown herbage mass increased to 2745 kg ha−1 for grazed areas and 4435 kg ha−1 for biomass plots. In
+June 2012, weed biomass was nearly 3.5 times greater in grazed areas than biomass plots. From 2011
+to 2012, sown grass species cover in exclosures increased from 50% to 76%, while in grazed areas
+sown species cover remained at 47%, with unsown species comprising the remaining cover.
+
+3.3. Roots
+
+   The effect of month was significant for total root length, surface area, and volume within
+minirhizotron images when summed across all ten depths (p < 0.0001 for length and surface area, and
+p = 0.005 for volume). Most root growth occurred during the spring and fall periods sampled during
+this experiment. With the exception of root diameter, root variables also tended to decrease with
+increasing soil depth (Figure 3). When variables were analyzed by soil depth, sampling date was more
+often significant at minirhizotron tube depths ≥30 cm (21 cm vertical soil depth) than those depths
+nearer the surface. Few differences in root characteristics were noted immediately following the June
+and August grazing periods.
+Agronomy 2013, 3                                                                                    515
+
+     Figure 3. Thirteen-month averages by minirhizotron tube length (5 cm tube length = 3.5 cm
+     vertical soil depth) for (a) total root length; (b) average root diameter; (c) total surface
+     area; and (d) total root volume in soils under established native pastures managed for
+     grazing (GR) and biomass crop exclosures (BIOM).
+
+
+
+
+   Total root length was the longest in the top 15 cm (i.e., 10.6 cm vertical soil depth) and was the
+smallest at the deepest depth (Figure 3a). In exclosures, the largest root lengths occurred at the 5 cm
+depth. The largest root length under grazed grasses was at 10 cm. Grazing increased root length in the
+top 15 cm, and was 55% larger in the top 1 cm (p = 0.035) and 110% larger in the 10 cm depth
+Agronomy 2013, 3                                                                                    516
+
+(p = 0.014) than those under exclosures (Figure 4). Over 50% of total root length measured was
+present in the top 10 cm in grazed areas, while 41% of the total root length occurred at the same depths
+in exclosures. As depth increased, root length did not differ between grazing or exclosure treatments.
+However, at the 40 cm depth, grazing exclosures had a greater root length (p = 0.007) than grazed
+areas. In the two deepest increments, root length was 230% larger in exclosures compared with grazed
+areas. The summed root length across all ten soil depths was not different (p = 0.093), but total root
+length under grazed areas tended to be longer, particularly in spring 2012, due largely to increases in
+root length in the top 15 cm along the minirhizotron tube.
+
+     Figure 4. Average total root length by month and by minirhizotron tube length (5 cm tube
+     length = 3.5 cm vertical soil depth) in soils under established native pastures managed for
+     grazing (GR) and biomass crop exclosures (BIOM). Asterisks after the minirhizotron
+     length represent depths where root length is different in soils under grazing and biomass
+     production (p < 0.05).
+Agronomy 2013, 3                                                                                   517
+
+   Most roots identified in this experiment were <2 mm in diameter, defined as fine roots [22]. The
+average root diameter was similar in soils under management for grazing or biomass in the top 20 cm
+of minirhizotron depths, peaking at about 0.32 mm and 0.36 mm in diameter at the 15 cm depth for
+biomass and grazing areas, respectively (Figure 3c). The five largest root diameter averages all
+occurred under exclosures, with a largest average root diameter for an individual soil-root image of
+1.5 mm. Between the 25–40 cm depths (17–28 cm vertical soil depths), the root diameter under
+exclosures was larger (p < 0.035 for all four depths) than those under grazed areas (Figure 5).
+
+     Figure 5. Average root diameter by month and by minirhizotron tube length (5 cm tube
+     length = 3.5 cm vertical soil depth) in soils under established native pastures managed for
+     grazing (GR) and biomass crop exclosures (BIOM). Asterisks after the minirhizotron
+     length represent depths where root diameter is different in soils under grazing and biomass
+     production (p < 0.05).
+Agronomy 2013, 3                                                                                     518
+
+   Total root surface area was highest under grazing near the soil surface, particularly at minirhizotron
+depths of 5–15 cm, while surface areas in exclosures only reached similar levels at the 5 cm depth
+(Figure 3b). Below the 15 cm depth, root surface area under grazing declined by 25% compared with
+peak values at the 15 cm depth. As a result, root surface area under biomass management tended to be
+larger than those under grazing at minirhizotron depths ≥25 cm (Figure 6). Summed across all ten soil
+depths, root surface area did not differ under grazing or exclosures (p = 0.094).
+
+     Figure 6. Average total root surface area by month and by minirhizotron tube length (5 cm
+     tube length = 3.5 cm vertical soil depth) in soils under established native pastures managed
+     for grazing (GR) and biomass crop exclosures (BIOM). Asterisks after the minirhizotron
+     length represent depths where the root surface area is different in soils under grazing and
+     biomass production (p < 0.05).
+Agronomy 2013, 3                                                                                   519
+
+   The root volume peaked at two soil depths under grazed areas and exclosures: The 5 and 15 cm
+depths (Figure 3d). Excluding grazing significantly increased root volume at 6 depths: The 1 cm depth
+(p = 0.035), and the minirhizotron depths of 25–45 cm (p ≤ 0.03 for all five depths, Figure 7). The
+average total root volume summed from all ten depths under exclosures was nearly 40% larger than
+those under grazing (49 vs. 35 mm3, respectively). Over 67% of the total root volume under grazed
+areas occurred in the top 15 cm minirhizotron tube depths (10.6 cm vertical soil depth), compared to
+only 54% in exclosures. Likewise, almost 11% of total root volume under exclosures occurred in the
+40–45 cm minirhizotron depths (28–32 cm vertical soil depths), compared to only 5% in soils under
+grazed areas.
+
+     Figure 7. Average total root volume by month and by minirhizotron tube length (5 cm tube
+     length = 3.5 cm vertical soil depth) in soils under established native pastures managed for
+     grazing (GR) and biomass crop exclosures (BIOM). Asterisks after the minirhizotron
+     length represent depths where root volume is different in soils under grazing and biomass
+     production (p < 0.05).
+Agronomy 2013, 3                                                                                    520
+
+   In summary, averaged across all depths and dates, root length was larger under grazed areas than
+under exclosures (1.27 cm·   cm−2 photo image area vs. 1.09 cm·cm−2 for grazed and ungrazed roots,
+respectively, p = 0.0016). Even though root length was greater under grazed areas, exclosures had a
+larger average root diameter (0.29 mm vs. 0.24 mm, p < 0.0001), and a greater root volume (49 mm3
+vs. 35 mm3, p < 0.0001) compared to those under grazed areas. Surface area was the only variable that
+did not differ between the two management practices (0.3 cm2 per image, p > 0.10).
+
+4. Discussion
+
+   Grazing is often associated with species composition and cause a shift from deep-rooted, spreading
+root systems to shallower and less branching systems with smaller root diameters [9,23]. The data
+obtained in this study on root measurements are in agreement with these results of more shallowly
+distributed root systems with narrower root diameters.
+   The shift to a shallower rooting system with less total volume may be due to several changes caused
+by grazing, such as increased allocation of resources to shoots and changes in species composition.
+The plots were grazed twice each growing season and this defoliation may have shifted biomass
+production from root to shoot biomass and reduced root relative growth rates, resulting in a lower
+seasonal root biomass [24]. In the current experiment, the proportion of sown prairie grass biomass
+differed in grazed plots and exclosures. In June 2011, prior to beginning a third year of grazing,
+grasses accounted for 70% of the herbage mass in exclosures, compared with 57% in grazed areas. The
+difference widened in June 2012, where almost 90% of the herbage mass in exclosures was contributed
+by sown grasses, compared to almost 60% in grazed areas. The unsown species commonly present
+included clovers (red, white, hop; Trifolium spp.), Kentucky bluegrass (Poa pratensis L.), sweet
+vernalgrass (Anthoxanthum odoratum L.), and other annual and short-lived perennial weedy species.
+The decrease in sown native grasses in grazed areas suggests that grazing may reduce the
+competitiveness of native grasses, allowing cool-season species and annuals to become more abundant.
+   The shifts in species composition from native prairie species to non-native species due to our
+grazing management may have corresponding changes to rooting distributions. Nearly 70% of red and
+white clover biomass may occur in the top 20 cm of soil [25], and as much as 92% of Kentucky
+bluegrass may be in the top 33 cm [26]. In contrast, almost half of switchgrass root biomass may be
+present in the top 30 cm of soil [27]. Big bluestem, a relatively shallow rooting prairie grass species,
+may have 18% of its root mass in the 18 to 56 cm soil depth [26]. A similar change in root depth is
+evident in this study as non-native, shallow rooting species increased in abundance in grazed areas. It
+is also possible that the increased abundance of native perennial grasses in the exclosures increased
+competition for resources and resulted in deeper root growth. As the pastures were not irrigated or
+fertilized, it is possible that the plants experienced resource limitation. Skinner and Comas [28] found
+that in response to drought and N stress, grasses allocated more energy to deep roots while legumes
+and forbs did not. The data suggest that grasses are better able to tap deeper soil resources during
+periods of stress.
+   Total root volume summed across the entire 45 cm minirhizotron tube length (32 cm vertical depth)
+was greater in exclosures and resulted from larger root diameters rather than any difference in total
+root length. Other studies also demonstrate that grazing management may cause changes in root
+Agronomy 2013, 3                                                                                       521
+
+volume by impacting root diameter [29]. Root diameter may affect a species’ growth and resource
+acquisition by affecting root area available to take up resources. While thinner roots are more able to
+uptake water and nutrients, thicker roots can withstand less favorable soil conditions, penetrate more
+compacted soils, and have increased longevity [30]. Root diameter is generally affected by species
+type, with taller species having larger root diameters than shorter species [31]. In the current study, the
+replacement of tall native grass species by shorter cool-season species and invasive weeds in grazed
+areas may help explain the observed smaller root diameters measured in these plots.
+    Furthermore, larger amounts of root length and volume in grazing exclosures were found in deeper
+soils compared with grazed plots, suggesting that ungrazed grasses may be able to tap water from deep
+in the soil profile to better withstand moderate drought. The shift in rooting depth distribution may also
+impact C sequestration, as deep roots can increase C storage at deeper depths [4]. The overall larger
+root volume within biomass plots suggests that C4 grasslands managed for bioenergy production could
+have the potential to store more C than if they are managed for grazing.
+
+5. Conclusions
+
+    Research on the effects that grazing or biomass for bioenergy production may have on belowground
+properties is needed to aid in making future recommendations for grassland management, since studies
+on root properties and dynamics in grasslands are relatively few when compared to aboveground
+measurements. Even though studies suggest that grazing may stimulate the growth of aboveground
+tissue and infrequently roots [10,32], in the current study grazing generally reduced root volume and
+root diameter. Although grazing increased root length near the soil surface, total root length and
+surface area through 45 cm minirhizotron tube length (32 cm vertical soil depth) were not significantly
+different under grazed areas and exclosures. In contrast, summed root volume was larger in soils in
+ungrazed plots managed for biomass. These changes in root characteristics and rooting distribution
+under grazed and biomass plots were likely caused by changes in plant species composition and
+reduced energy allocation to root biomass. These observed differences in root characteristics may have
+implications with respect to nutrient cycling and C sequestration, and more research is needed to
+understand better how management may impact belowground processes in these ecosystems.
+
+Acknowledgements
+
+   Joe Paling and Rich Zobel, formerly with the USDA-ARS Appalachian Farming Systems Research
+Center in Beaver, WV, USA, provided valuable assistance with minirhizotron tube installation.
+Funding for the research was provided by the Virginia Tech College of Agriculture and Life Sciences
+and Department of Crop and Soil Environmental Sciences.
+
+Conflict of Interest
+
+   The authors declare no conflict of interest.
+Agronomy 2013, 3                                                                                 522
+
+References
+
+1.  Jackson, R.; Canadell, J.; Ehleringer, J.; Mooney, H.; Sala, O.; Schulze, E. A global analysis of
+    root distributions for terrestrial biomes. Oecologia 1996, 108, 389–411.
+2. Jobbágy, E.G.; Jackson, R.B. The vertical distribution of soil organic carbon and its relation to
+    climate and vegetation. Ecol. Appl. 2000, 10, 423–436.
+3. Davis, S.C.; Anderson-Teixeira, K.J.; DeLucia, E.H. Life-cycle analysis and the ecology of
+    biofuels. Trends Plant Sci. 2009, 14, 140–146.
+4. Liebig, M.A.; Johnson, H.A.; Hanson, J.D.; Frank, A.B. Soil carbon under switchgrass stands and
+    cultivated cropland. Biomass Bioenergy 2005, 28, 347–354.
+5. Tracy, B.F.; Maughan, M.; Post, N.; Faulkner, D.B. Integrating annual and perennial
+    warm-season grasses in a temperate grazing system. Crop Sci. 2010, 50, 2171–2177.
+6. Reid, R.L.; Jung, G.A.; Allinson, D. Nutritive Quality of Warm Season Grasses in the Northeast;
+    West Virginia University, Agricultural and Forestry Experiment Station: Morgantown, WV,
+    USA, 1988.
+7. Detling, J.K.; Dyer, M.I.; Winn, D.T. Net photosynthesis, root respiration, and regrowth of
+    Bouteloua gracilis following simulated grazing. Oecologia 1979, 41, 127–134.
+8. Crider, F.J. Root-Growth Stoppage Resulting from Defoliation of Grass; USDA Technical
+    Bulletin No. 1102; USDA: Washington, WA, USA, 1955.
+9. Schuster, J.L. Root development of native plants under three grazing intensities. Ecology 1964,
+    45, 63–70.
+10. Milchunas, D.G.; Lauenroth, W.K. Quantitative effects of grazing on vegetation and soils over a
+    global range of environments. Ecol. Monogr. 1993, 63, 327–366.
+11. McNaughton, S.; Banyikwa, F.; McNaughton, M. Root biomass and productivity in a grazing
+    ecosystem: The Serengeti. Ecology 1998, 79, 587–592.
+12. Frank, D.; Kuns, M.; Guido, D. Consumer control of grassland plant production. Ecology 2002,
+    83, 602–606.
+13. Dunn, J.H.; Engel, R.E. Effect of defoliation and root-pruning on early root growth from Merion
+    Kentucky bluegrass sods and seedlings. Agron. J. 1971, 63, 659–663.
+14. Schuman, G.E.; Reeder, J.D.; Manley, J.T.; Hart, R.H.; Manley, W.A. Impact of grazing
+    management on the carbon and nitrogen balance of a mixed-grass rangeland. Ecol. Appl. 1999, 9,
+    65–71.
+15. Bai, Y.; Wu, J.; Clark, C.M.; Pan, Q.; Zhang, L.; Chen, S.; Wang, Q.; Han, X. Grazing alters
+    ecosystem functioning and C:N:P stoichiometry of grasslands along a regional precipitation
+    gradient. J. Appl. Ecol. 2012, 49, 1204–1215.
+16. Kitchen, D.J.; Blair, J.M.; Callaham, M.A., Jr. Annual fire and mowing alter biomass, depth
+    distribution, and C and N content of roots and soil in tallgrass prairie. Plant Soil 2009, 323,
+    235–247.
+17. Pucheta, E.; Bonamici, I.; Cabido, M.; Diaz, S. Below-ground biomass and productivity of a
+    grazed site and a neighbouring ungrazed exclosure in a grassland in central Argentina. Austral
+    Ecol. 2004, 29, 201–208.
+Agronomy 2013, 3                                                                                    523
+
+18. Gill, R.; Burke, I.; Lauenroth, W.; Milchunas, D. Longevity and turnover of roots in the shortgrass
+    steppe: Influence of diameter and depth. Plant Ecol. 2002, 159, 241–251.
+19. Tjoelker, M.G.; Craine, J.M.; Wedin, D.; Reich, P.B.; Tilman, D. Linking leaf and root trait
+    syndromes among 39 grassland and savannah species. New Phytol. 2005, 167, 493–508.
+20. Soil Survey Staff, United States Department of Agriculture. Official soil series descriptions.
+    Available online: http://soils.usda.gov/technical/classification/osd/index.html (accessed on 17
+    December 2012).
+21. Johnson, M.G.; Tingey, D.T.; Phillips, D.L.; Storm, M.J. Advancing fine root research with
+    minirhizotrons. Environ. Exp. Bot. 2001, 45, 263–289.
+22. Jackson, R.B.; Mooney, H.A.; Schulze, E. A global budget for fine root biomass, surface area, and
+    nutrient contents. Proc. Natl. Acad. Sci. USA 1997, 94, 7362–7366.
+23. Greenwood, K.L.; Hutchinson, K.J. Root characteristics of temperate pasture in New South Wales
+    after grazing at three stocking rates for 30 years. Grass Forage Sci. 1998, 53, 120–128.
+24. Oesterheld, M. Effect of defoliation intensity on aboveground and belowground relative growth
+    rates. Oecologia 1992, 92, 313–316.
+25. Høgh-Jensen, H.; Schjoerring, J.K. Rhizodeposition of nitrogen by red clover, white clover and
+    ryegrass leys. Soil Biol. Biochem. 2001, 33, 439–448.
+26. Weaver, J.E.; Darland, R.W. Soil-root relationships of certain native grasses in various soil types.
+    Ecol. Monogr. 1949, 19, 303–338.
+27. Frank, A.; Berdahl, J.; Hanson, J.; Liebig, M.; Johnson, H. Biomass and carbon partitioning in
+    switchgrass. Crop Sci. 2004, 44, 1391–1396.
+28. Skinner, R.H.; Comas, L.H. Root distribution of temperate forage species subjected to water and
+    nitrogen stress. Crop Sci. 2010, 50, 2178–2185.
+29. Mousel, E.M.; Schacht, W.H.; Zanner, C.W.; Moser, L.E. Effects of summer grazing strategies on
+    organic reserves and root characteristics of big bluestem. Crop Sci. 2005, 45, 2008–2014.
+30. Eissenstat, D.M. Costs and benefits of constructing roots of small diameter. J. Plant Nutr. 1992,
+    15, 763–782.
+31. Picon-Cochard, C.; Pilon, R.; Tarroux, E.; Pagès, L.; Robertson, J.; Dawson, L. Effect of species,
+    root branching order and season on the root traits of 13 perennial grass species. Plant Soil 2012,
+    353, 47–57.
+32. McNaughton, S. Compensatory plant growth as a response to herbivory. Oikos 1983, 40,
+    329–336.
+
+© 2013 by the authors; licensee MDPI, Basel, Switzerland. This article is an open access article
+distributed under the terms and conditions of the Creative Commons Attribution license
+(http://creativecommons.org/licenses/by/3.0/).

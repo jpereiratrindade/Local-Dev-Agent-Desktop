@@ -1,0 +1,9 @@
+{
+  "chunk_count": 973,
+  "extractor": "pdftotext",
+  "kind": "pdf",
+  "path": "/run/media/jpereiratrindade/labeco10T/labeco02/Revisao/Build_a_Large_Language_Model_(From_Scrat.pdf",
+  "sha256": "b1d60474950d948233fed77a5925388f84beed03900a1b5d9f696a6d00efe353",
+  "text_size": 953663,
+  "used_ocr": false
+}

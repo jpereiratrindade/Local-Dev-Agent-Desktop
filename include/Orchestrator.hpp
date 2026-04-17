@@ -6,6 +6,7 @@
 #include <atomic>
 #include "OllamaClient.hpp"
 #include "ToolRegistry.hpp"
+#include "NativeTools.hpp"
 
 namespace agent::core {
 
@@ -32,8 +33,8 @@ private:
     std::vector<agent::network::Message> history;
     std::atomic<bool> stopRequested{false};
 
-    std::string buildSystemPrompt(const std::string& mode);
-    std::string getModeInstructions(const std::string& mode);
+    std::string buildSystemPrompt(const std::string& mode, const std::string& profile, const std::string& reasoning);
+    std::string getModeInstructions(const std::string& mode, const std::string& profile);
 };
 
 } // namespace agent::core

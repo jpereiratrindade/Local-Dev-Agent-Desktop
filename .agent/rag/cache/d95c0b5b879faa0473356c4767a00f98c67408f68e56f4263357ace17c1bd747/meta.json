@@ -1,0 +1,9 @@
+{
+  "chunk_count": 20,
+  "extractor": "pdftotext",
+  "kind": "pdf",
+  "path": "/run/media/jpereiratrindade/labeco10T/labeco02/Revisao/2Texto-Discussao-49-ed-01-2020.pdf",
+  "sha256": "d95c0b5b879faa0473356c4767a00f98c67408f68e56f4263357ace17c1bd747",
+  "text_size": 19820,
+  "used_ocr": false
+}

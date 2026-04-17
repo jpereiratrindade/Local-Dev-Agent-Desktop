@@ -1,0 +1,9 @@
+{
+  "chunk_count": 13,
+  "extractor": "pdftotext",
+  "kind": "pdf",
+  "path": "/run/media/jpereiratrindade/labeco10T/labeco02/Revisao/Volkcic.pdf",
+  "sha256": "57729697dc21e27bfdee2cf553e4312517ac3776081f9780453df03bf84147c7",
+  "text_size": 12811,
+  "used_ocr": false
+}

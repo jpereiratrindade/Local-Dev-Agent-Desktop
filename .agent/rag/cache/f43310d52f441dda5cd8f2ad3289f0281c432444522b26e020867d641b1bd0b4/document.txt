@@ -1,0 +1,160 @@
+                                                                                                                                        Entomological Communications, 7, 2025: ec07026
+                                                                                                                                                      doi: 10.37486/2675-1305.ec07026
+                                                                                                                                                                                    e-ISSN: 2675-1305
+                                                                                                                                                                        Open Access Full Text Article
+
+
+                                                                    Protocol & Techniques
+Armadilha atrativa padronizada e de baixo custo para coleta de Diptera
+(Insecta) atraídos por substratos proteicos
+Alex S. B. de Souza1,2 , Nelson L. M. Fernandes2
+Instituto Federal do Paraná, Umuarama, PR, Brasil. 2Universidade Federal do Paraná, Palotina, PR, Brasil.
+1
+
+Corresponding author: alex.desouza@ifpr.edu.br
+Edited by: Danilo P. Cordeiro
+Received: April 13, 2025. Accepted: September 08, 2025. Published: September 22, 2025.
+
+
+Standardized and low-cost baited trap for sampling Diptera (Insecta) attracted to protein-based substrates
+Abstract. The use of baited traps is essential for sampling necrophagous Diptera Linnaeus, 1758 in both ecological and forensic studies. Ferreira's
+trap is a widely used model in Brazil; however, traditional versions can present logistical challenges under field conditions. This study proposes a
+simple, cost-effective modification to the original design, using standard plastic honey jars as the new apparatus. The modified trap is characterized
+by its portability, ease of assembly, and the ability to allow rapid specimen retrieval. The effectiveness of the modified trap was successfully
+demonstrated during field collections. The system is designed for use by a single researcher and has proven to enable efficient specimen capture
+comparable to that achieved with classical traps. This design is especially recommended for sampling blowflies and other Diptera attracted to
+decomposing organic matter.
+Keywords: blowflies, baited trap, field protocol, necrophagous Diptera, sampling method.
+
+
+     Armadilhas atrativas com substratos proteicos são amplamente                                           do substrato sem necessidade de limpeza da estrutura. A parte superior
+utilizadas para a coleta de dípteros necrófagos em estudos ecológicos,                                      do pote recebe pequenos furos para passagem de linha de pesca, que
+forenses e sanitários, permitindo o monitoramento padronizado da                                            serve para suspensão em galhos ou suportes no campo. Essa linha é
+diversidade, abundância e sazonalidade de espécies (Moura et al. 1997;                                      leve, resistente e de fácil transporte. Para maior estabilidade, pode-
+Mello et al. 2007; Souza et al. 2020). No Brasil, a armadilha descrita por                                  se utilizar um contrapeso simples na base da armadilha. A inovação
+Ferreira (1978) é uma das mais amplamente utilizadas. Originalmente                                         dessa proposta está em dois pontos: 1) Na padronização das roscas dos
+desenvolvida com latas pretas e sacos plásticos, diversas modificações                                      potes, onde a parte superior pode ser rapidamente desrosqueada e
+desse modelo vêm sendo propostas ao longo dos anos, como a de Mello                                         substituída em campo por outra limpa, reduzindo o tempo de coleta; 2)
+et al. (2007), que empregou tubos de PVC como corpo da armadilha.                                           No uso de sacos plásticos (sacos plásticos translúcidos medindo 30 cm
+Embora eficiente, tubos de PVC podem apresentar dificuldades de                                             x 21 cm) no interior para otimizar o tempo de coleta facilitando ainda
+desmontagem em campo, o que compromete a logística de coletas                                               mais a remoção dos espécimes. A armadilha foi testada (Fig. 1 A-F)
+com muitas réplicas ou feitas por apenas um pesquisador. Com base                                           em estudo de campo durante o doutorado do autor principal, sendo
+nessa limitação, desenvolvemos uma modificação alternativa da                                               aplicada em três ambientes contrastantes no município de Umuarama,
+armadilha de Ferreira (1978), com foco em leveza, padronização e                                            Paraná: área urbana, rural e fragmento florestal da APA do Rio Piava.
+facilidade de uso. A estrutura (Fig. 1A-F) é composta por dois potes                                        Em cada campanha sazonal (verão, outono, inverno e primavera),
+plásticos translúcidos com tampa rosqueável (modelo padrão para                                             foram instaladas três armadilhas por ambiente (nove armadilhas ao
+produtores de mel), unidos por três braçadeiras plásticas, o furo entre                                     todo). As armadilhas permaneceram ativas por cinco dias consecutivos
+as tampas para a inserção do adaptador foi realizado com uma serra                                          em cada campanha, com verificação e substituição das iscas após 72
+do tipo copo dentado para padronizar o tamanho de entrada em                                                h. Esse delineamento permitiu testar a eficiência da armadilha em
+todas as armadilhas. Cada pote possui 11,9 cm de altura e 9,7 cm de                                         diferentes condições ambientais e ao longo do tempo (Tab. 1). Embora
+diâmetro na base, com capacidade aproximada de 700 mL (embora                                               não tenha sido conduzido um experimento comparativo simultâneo
+comercializados como potes de 1 kg). A altura total da armadilha                                            com armadilhas tradicionais, o número de espécies de Calliphoridae
+montada é de 24,1 cm. Entre os potes é inserido um adaptador para                                           obtidos foram compatíveis com os relatados na literatura (Ferreira
+garrafa térmica em plástico resistente (modelo 104), com dimensões                                          1978; D'Almeida & Lima 1994; Mello et al. 2007; Azevedo & Krüger
+de 62 mm de altura e 79 mm de largura na boca - este adaptador foi                                          2013), com vantagens adicionais de logística e economia, tornando-a
+escolhido por apresentar uma abertura de saída mais larga, o que                                            apropriada para coletas em campo com recursos limitados ou em áreas
+facilita a entrada dos insetos e evita retenção no gargalo. O adaptador                                     de difícil acesso. Estudos anteriores realizados em florestas tropicais
+foi fixado na tampa com o auxílio de braçadeiras de plástico (Fig. 1D). O                                   fragmentadas (Leandro & D'Almeida 2005) e ambientes urbanos e
+pote inferior, que funciona como câmara de atração, é escurecido com                                        silvestres (Souza et al. 2020) corroboram a eficiência de armadilhas
+fita isolante preta, para reforçar o contraste visual interno e explorar a                                  baseadas em substratos proteicos, especialmente na coleta de espécies
+fototaxia positiva de califorídeos e outros dípteros necrófagos (Vianna                                     sinantrópicas. Em regiões com climas subtropicais, como no sul do
+et al. 1998). Orifícios de entrada padronizados são feitos com brocas                                       Brasil, a sazonalidade também exerce papel significativo na composição
+de 10 mm (ou maior de acordo com o foco da pesquisa), permitindo                                            da fauna associada a substratos em decomposição (Moura et al.
+consistência entre armadilhas. No interior do pote inferior, recomenda-                                     1997), e a versatilidade da armadilha proposta permite sua aplicação
+se inserir um recipiente descartável com o atrativo (como sardinha,                                         ao longo de todo o ano, visto que evidências reforçam a importância
+fígado bovino ou substrato de preferência), facilitando a substituição                                      de armadilhas padronizadas para monitoramento da entomofauna
+
+© The Author(s) 2025. Published by Sociedade Entomológica do Brasil.
+This article is published by Sociedade Entomológica do Brasil and licensed under Creative Commons Licence 4.0, CC-BY. Share — copy and redistribute the material in any medium or
+format. Adapt — remix, transform, and build upon the material for any purpose, even commercially.
+                                                                                                               Entomological Communications, 7, 2025: ec07026
+
+
+
+          A                                                                          B
+
+
+
+
+          C                                                                         D
+
+
+
+
+          E                                                                          F
+
+
+
+
+Figura 1. Armadilha atrativa modificada (A), pote inferior escurecido com fita isolante (B), partes desmontadas (C), vista interna da tampa e entrada do adaptador
+(D), parte superior com espécimes em saco plástico interno (E) e armadilha em campo (F).
+
+
+                                                                                                                                                                     2
+                                                                                                                                     Souza & Fernandes 2025
+Tabela 1. Número total de indivíduos de Calliphoridae (Diptera) coletadas por local de coleta, durante as quatro campanhas do estudo em Umuarana, Paraná,
+Brasil. Em cada local de coleta foram instaladas 3 armadilhas, por cinco dias consecutivos (aproximadamente 120 h para cada armadilha), em cada uma das quatro
+campanhas.
+ Espécie                                                                    Urbana                          Rural                        Florestal
+ Chrysomya albiceps (Wiedemann, 1819)                                          208                            47                             9
+ Chrysomya megacephala (Fabricius, 1794)                                       53                            105                             2
+ Chrysomya putoria (Wiedemann, 1818)                                           6                              2                              0
+ Cochliomyia macellaria (Fabricius, 1775)                                      0                              0                              1
+ Hemilucilia semidiaphana (Rondani, 1850)                                      3                              8                              76
+ Lucilia eximia (Wiedemann, 1819)                                              8                              8                              41
+                                                          Total                278                           170                            129
+
+necrófaga frente a variações ambientais (Azevedo & Krüger 2013).                     Grande do Sul State, Brazil. Revista Brasileira de Parasitologia
+Portanto esta modificação representa uma alternativa funcional e                     Veterinária, 7(2): 141-147.
+de baixo custo para estudos entomológicos com dípteros, sendo
+especialmente recomendada para situações com restrições de pessoal,
+orçamento ou acesso. O uso de materiais leves e intercambiáveis
+permite a replicação em larga escala e o uso em ambientes urbanos ou
+silvestres, com potencial aplicação em pesquisas forenses, ecológicas
+e de saúde pública.
+
+Informações de Financiamento
+    Nenhum financiamento recebido.
+
+Contribuições dos Autores
+    ASBS: Conceitualização, Metodologia, Investigação, Escrita - esboço
+original; LMF: Supervisão, Validação, Escrita - revisão e edição.
+
+Declaração de Conflito de Interesses
+    Os autores declaram não haver conflito de interesses.
+
+Referências
+Azevedo, R. R.; Krüger, R. F. (2013) The influence of temperature and
+    humidity on abundance and richness of Calliphoridae (Diptera).
+    Iheringia, Série Zoologia, 103(2): 145-152. doi: 10.1590/S0073-
+    47212013000200010
+D' Almeida, J. M.; Lima, S. F. (1994) Atratividade de diferentes iscas e sua
+    relação com as fases de desenvolvimento ovariano em Calliphoridae
+    e Sarcophagidae (Insecta, Diptera). Revista Brasileira de Zoologia,
+    11(2): 177-186. doi: 10.1590/S0101-81751994000200001
+Ferreira, M. J. M. (1978) Sinantropia de dípteros muscóides de Curitiba,
+    Paraná. I. Calliphoridae. Revista Brasileira de Biologia, 38(2): 445-
+    454.
+Leandro, M. J. F.; D'Almeida, J. M. (2005) Levantamento de Calliphoridae,
+    Fanniidae, Muscidae e Sarcophagidae em um fragmento de mata na
+    Ilha do Governador, Rio de Janeiro, Brasil. Iheringia, Série Zoologia,
+    95(4): 377-381. doi: 10.1590/S0073-47212005000400006
+Mello, R. S.; Queiroz, M. M. C.; Aguiar-Coelho, V. M. (2007) Population
+    fluctuations of calliphorid species (Diptera, Calliphoridae) in
+    the Biological Reserve of Tinguá, state of Rio de Janeiro, Brazil.
+    Iheringia, Série Zoologia, 97(4): 481-485. doi: 10.1590/S0073-
+    47212007000400019
+Moura, M. O.; Carvalho, C. J. B.; Monteiro-Filho, E. L. A. (1997) A
+    preliminary analysis of insects of medico-legal importance in
+    Curitiba, State of Paraná. Memórias do Instituto Oswaldo Cruz,
+    92(2): 269-274. doi: 10.1590/S0074-02761997000200023
+Souza, C. M.; Madeira-Ott, T.; Masiero, F. S.; Bunde, P. R. S.; Ribeiro,
+    G. A.; Thyssen, P. J. (2020) Synanthropy of Sarcophaginae (Diptera:
+    Sarcophagidae) from southern Brazil and its sanitary implications.
+    Journal of Medical Entomology, 57(3): 1-8. doi: 10.1093/jme/
+    tjaa243
+Vianna, E. S.; Brum, J. G. W.; Ribeiro, P. B.; Berne, M. E. A.; Silveira,
+    P. (1998) Synanthropy of Calliphoridae (Diptera) in Pelotas, Rio
+
+
+                                                                                                                                                                 3

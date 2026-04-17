@@ -1,0 +1,9 @@
+{
+  "chunk_count": 53,
+  "extractor": "pdftotext",
+  "kind": "pdf",
+  "path": "/run/media/jpereiratrindade/labeco10T/labeco02/Revisao/Amplitude_no_fosforo_microbiano_em_um_Ar-1.pdf",
+  "sha256": "52f89baea6fbe42b8632231fd65955ac56c82e230977498f36c92ddc4a1a97dd",
+  "text_size": 50265,
+  "used_ocr": false
+}

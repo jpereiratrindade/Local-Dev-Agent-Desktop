@@ -1,0 +1,791 @@
+Multimedia Tools and Applications (2025) 84:34285–34301
+https://doi.org/10.1007/s11042-025-20604-9
+
+
+
+
+Two stream CNN for muzzle print recognition using gabor
+filters
+
+Newlin Shebiah Russel1            · Arivazhagan Selvaraj1
+
+Received: 5 October 2023 / Revised: 7 August 2024 / Accepted: 2 January 2025 /
+Published online: 20 January 2025
+© The Author(s), under exclusive licence to Springer Science+Business Media, LLC, part of Springer Nature 2025
+
+
+Abstract
+Muzzle print recognition, an essential aspect of biometric identification for animals, has
+gained significant attention in recent years. This study introduces a novel method for
+enhancing the precision and robustness of muzzle print identification through the utiliza-
+tion of a Two-Stream Convolutional Neural Network (CNN) integrated with Gabor Filters.
+The proposed Two-Stream CNN architecture comprises of two distinct streams, the Spatial
+Stream, which processes raw muzzle images, and the Texture Stream, dedicated for extract-
+ing texture features through Gabor Filters. By integrating feature maps from both streams,
+the model effectively utilizes the synergistic advantages of spatial and texture information,
+thereby augmenting the discriminative capabilities of the recognition system. The Gabor
+Filters applied in the Texture Stream enable the extraction of intricate texture details, mak-
+ing the model highly sensitive to variations in muzzle patterns. By conducting training and
+fine-tuning procedures on animal muzzle prints in the Beef Cattle Muzzle/Nose print data-
+base for individual identification, a recognition accuracy of 98.99% was achieved. Addi-
+tional performance metrics include a recall of 98.36%, precision of 98.39%, specificity of
+100% and F1-Score of 98.18%. The ability of the proposed model to accurately differenti-
+ate intricate variations in muzzle prints presents significant prospects for diverse fields of
+application, such as wildlife preservation, animal monitoring, and security measures.
+
+Keywords Muzzle Print Recognition · Two-Stream CNN · Gabor Filters · Biometric
+Identification · Animal Conservation
+
+
+1 Introduction
+
+In today’s dynamic farming landscape, the success of any agricultural venture depends
+on the art of effective livestock management. The trinity of efficiency, affordability, and
+scalability has emerged as the cornerstone of livestock management solutions within the
+
+
+* Newlin Shebiah Russel
+  newlinshebiah@mepcoeng.ac.in
+1
+    Centre for Image Processing and Pattern Recognition, Department of Electronics
+    and Communication Engineering, Mepco Schlenk Engineering College, Sivakasi, Tamilnadu,
+    India
+
+
+                                                                                         Vol.:(0123456789)
+34286                                         Multimedia Tools and Applications (2025) 84:34285–34301
+
+
+realm of modern farmsteads. The surge in this domain is attributed to its wide array of
+applications, such as cattle identification, monitoring the natural habitat of livestock, track-
+ing animal herds, analyzing the health trajectory of cattle, and optimizing food production
+management.
+   The conventional methods employed for herd management are characterized by a high
+demand for manual work and intrusive procedures that carry the risk of inducing discom-
+fort and illness in livestock. Various methods have been employed to monitor and distin-
+guish individual animals within herds, encompassing ear tagging, ear tattooing, hot iron-
+ing, freeze branding, ID collars, microchipping, and visual markers like paint [1]. Both
+metallic and plastic ear tags have been found to potentially cause harm [2] and significant
+discomfort to livestock [3]. The process of ear tattooing necessitates the careful manipula-
+tion and control of livestock, while its visibility is limited to close proximity [4]. Research
+has shown that both hot iron and freeze branding methods have been found to induce suf-
+fering in cattle [5]. Additionally, the use of collar straps still necessitates manual handling
+of livestock and presents potential risks such as collar loss or entanglement [6]. Achiev-
+ing minimum harm during horse monitoring necessitated meticulous design and strategic
+placement of VHF/GPS collars [7]. It is reasonable to anticipate that comparable chal-
+lenges would arise in the context of cattle monitoring. The utilization of electronic identity
+tags and collars, exemplified by the National Livestock identity Tags, necessitates meticu-
+lous record-keeping and management practices, which inevitably result in a certain per-
+centage of tag failures [8]. Additional electronic methodologies, such as microchipping,
+necessitate the administration of subcutaneous injections [9] or the insertion of alternative
+electronic transponders or sensors into anatomical regions such as the scutulum [10, 11].
+   The utilization of animal biometrics in cattle recognition systems introduces effective
+approaches for registering livestock animals based on their distinct biometric attributes.
+This innovative system not only enhances the process of livestock registration but also
+provides superior techniques for monitoring and ensuring traceability of individual cattle
+within farm environments [2, 4]. These characteristics include a range of attributes per-
+taining to the animal’s physical attributes, including its muzzle pattern, face features, horn
+structure, coat markings, as well as body size and proportions. Biometric muzzle prints
+relate to a distinct pattern or image obtained from the muzzle region, which corresponds
+to the anterior portion of an animal’s face. These prints are commonly employed for the
+purpose of identification. The muzzle pattern, which exhibits a correlation with human fin-
+gerprints, has been recognized as a potential biometric identifier for cattle for identification
+purposes. This methodology involves the utilization of specific technological tools, such
+as cameras or sensors, to collect and analyze the distinctive patterns exhibited by animal
+muzzles.
+   A substantial amount of prior research has been dedicated to the examination of com-
+puter-assisted techniques for the identification of cattle based on their muzzle prints. Vari-
+ous models have been employed for this task, such as deep learning [12], support vector
+machines [13–15], group sparse representation [16], fuzzy-k-nearest neighbor [17], Fisher
+locality projections [13], decision trees [18], AdaBoost classifiers [19], SIFT matching,
+bag-of-visual words [20], and classifier fusion for the purpose of identifying individual
+cattle.
+   The deep learning approach is currently gaining prominence in the field of computer
+vision as a means of detecting and representing the phenotypic appearances and visual
+biometric features of species and individual animals. In recent years, there has been an
+increased focus on deep learning as one of the most effective methods for extracting and
+representing features of various species or individual animals [21–23]. Deep learning-based
+Multimedia Tools and Applications (2025) 84:34285–34301                                   34287
+
+
+learning frameworks are employed to acquire effective learning capacity for feature repre-
+sentations. These frameworks are utilized to extract sets of biometric features of species
+for the purpose of representation and identification [24, 25]. The deep learning architecture
+encompasses various layers that are employed to effectively model and depict intricate dif-
+ferences in data for the purpose of animal recognition [26–29].
+   The muzzle point image pattern consists of rich and dense texture features. These dis-
+tinctive ridges and furrows emerge due to differences in skin texture, the distribution of fur,
+and other inherent physical traits. The proposed cattle recognition system recognizes the
+cattle based on texture feature of muzzle point image. The system uses deep learning based
+recognition frameworks.
+   The contributions of this work encompass several key aspects:
+
+1. This research introduces a novel Two-Stream Convolutional Neural Network (CNN)
+   architecture that effectively combines spatial and texture-based features for muzzle print
+   recognition. This innovative design enhances the model’s ability to capture and discrimi-
+   nate intricate patterns on animal muzzles.
+2. By incorporating Gabor Filters into the Texture Stream of the CNN, a valuable texture
+   analysis technique that significantly improves the model’s sensitivity to subtle variations
+   in muzzle prints, leading to more accurate recognition results.
+3. By multiplying feature maps, the network can amplify features that are deemed dis-
+   criminative for a particular task. This improves the network’s ability to make accurate
+   predictions or classifications based on these enhanced features.
+
+
+
+2 Literature survey
+
+Kaur et al. [30] conducted a study focusing on livestock identification using the Shi-Tomasi
+corner detector. This research involves feature extraction using prominent feature descrip-
+tors, Scale Invariant Feature Transform (SIFT) and Speed up Robust Features (SURF). To
+expedite computational efficiency, they employed a linear dimensionality reduction tech-
+nique. In the realm of classification, the study explored three distinct strategies: Multi-layer
+Perceptron (MLP), Random Forest, and Decision Tree classifiers. Hadad et al. [31] intro-
+duced two distinct classification models for bovines, leveraging Artificial Neural Network
+(ANN) and K-Nearest Neighbour Classifier (KNN) techniques. To extract muzzle features,
+the ANN model utilizes Segmentation-based Fractal Texture Analysis (SFTA). On the
+other hand, the K-Nearest Neighbours (KNN) model consists of two phases: the Expecta-
+tion Maximization (EM) picture segmentation phase and the classification phase.
+   Edwin and George [32] used Eigen Muzzle as a dimensionality reduction technique.
+The projected feature space is constructed using fuzzy membership functions. Bello et al.
+[33] used of stacked denoising auto-encoders and deep belief networks for enhancing deep
+learning in cow nose image texture extraction. Experimental results across various identifi-
+cation scenarios indicate that deep belief networks outperform other approaches, achieving
+an accuracy rate of approximately 98.99%. Girish et al. [34] proposed a comprehensive
+approach for Muzzle Detection, alignment, feature extraction and classification.
+   Kumar et al. [35] employs texture feature descriptors (SURF and LBP) at different
+Gaussian smoothing levels, achieving impressive 93.87% identification accuracy on a 500-
+cow image database. Awad et al. [36] utilizes Scale Invariant Feature Transform (SIFT)
+algorithm to identify distinctive points for image matching. To further improve resilience,
+34288                                       Multimedia Tools and Applications (2025) 84:34285–34301
+
+
+the Random Sample Consensus (RANSAC) algorithm is integrated with the SIFT out-
+put to eliminate outlier points, enhancing overall robustness. Shojaeipour et al. [37] used
+YOLOv3-ResNet50 for detecting and extracting cattle muzzle regions in images. Subse-
+quently, this algorithm employs deep transfer learning techniques for biometric identifi-
+cation. Li et al. [38] compiled and shared a high-quality dataset containing 4923 muzzle
+images from 268 US feedlot finishing cattle, with each animal having more than 12 images
+captured using a mirrorless digital camera, and evaluated and compare the effectiveness of
+various deep learning models in accurately identifying individual beef calves. The com-
+prehensive assessment involved 59 deep learning image classification models, achieving
+the highest accuracy of 98.7% in identifying the 268 animals. Awad and Hassaballah [39]
+investigated the effectiveness of the Bag-of-Visual-Words (BoVW) method for cattle iden-
+tification using local invariant features extracted from a database of muzzle print images.
+The BoVW model employs two local invariant feature detectors, namely speeded-up
+robust features (SURF) and maximally stable extremal regions (MSER), to extract relevant
+features.
+    Jayakumar et al. [40] begins with a training procedure to construct a model for local-
+izing cow faces, utilizing a Haar feature-based cascade classifier. Subsequently, the water-
+shed algorithm is employed to perform segmentation on a specific area of interest (ROI)
+– the cattle’s muzzle region – within the identified face region. Enhancement techniques
+are applied to the muzzle ROI to emphasize ridge lines. The final step involves using two
+methods to derive a primary feature descriptor, which combines a bag of histograms of
+oriented gradients (BoHoG) and a histogram of local binary patterns (LBP). Alaa Tharwat
+[41] relies on the Local Binary Pattern (LBP) technique to extract local invariant features
+from muzzle print images. For livestock identification, a range of classifiers, including
+Nearest Neighbor, Naive Bayes, Support Vector Machine (SVM), and K-Nearest Neighbor
+(KNN) is employed.
+    Ketmaneechairat et al. [42] used the Scale Invariant Feature Transform (SIFT) for
+detecting salient points and the Random Sample Consensus (RANSAC) method for remov-
+ing outlier points, thereby bolstering image matching robustness. Kumar & Singh [43]
+introduced a hybrid feature extraction methodology for the automated identification and
+categorization of cow breeds. The proposed strategy uses extraction of a set of prominent
+features, and the application of various classification models, including K-nearest neighbor
+(K-NN), Fuzzy-KNN, Decision Tree (DT), Gaussian Mixture Model (GMM), Probabilistic
+Neural Network (PNN), Multilayer Perceptron (MLP), and Naive Bayes for classification.
+Sian et al. [44] combines textural information derived from the Weber Local Descriptor
+(WLD) and Local Binary Pattern (LBP) to represent individual cattle. The WLD algorithm
+was enhanced in several ways to improve its performance. Ultimately, a Support Vector
+Machine (SVM) was employed to differentiate cattle based on the fusion of these features.
+The approach presented in this study achieved an impressive identification accuracy of
+96.5%.
+
+
+
+3 Proposed methodology
+
+The fundamental task of cattle muzzle print recognition lies in the extraction of attributes
+such as texture, contour, and ridge characteristics. Convolutional Neural Networks (CNNs)
+have become increasingly popular as a feature learning tool due to their exceptional per-
+formance, as evidenced by a review of the existing literature. This accomplishment with
+Multimedia Tools and Applications (2025) 84:34285–34301                                  34289
+
+
+CNNs is a compelling reason to use them for the extraction of distinguishing features in
+cattle muzzle prints. A novel deep learning framework that is specifically designed for the
+recognition of cattle muzzle prints is illustrated in Fig. 1. The integration of two paral-
+lel sources within this proposed architecture enables the fusion of feature maps that are
+derived from both spatial and texture information.
+    In the field of image processing, Gabor filters [45] are frequently employed for the pur-
+pose of texture analysis and feature extraction. These filters can be incorporated into a
+CNN architecture in order to accomplish the Muzzle Print Recognition System. Gabor fil-
+ters are applied to the input images to extract texture features, as these bandpass filters are
+adept at capturing texture information across various scales and orientations. A two-stream
+CNN architecture with separate branches is proposed: the Spatial Stream processes the raw
+input images through a series of convolutional layers to learn spatial features, followed by
+pooling layers to downsample the feature maps and reduce spatial dimensions, while the
+Texture Stream processes the Gabor-filtered images. The outputs from both streams are
+then fused by multiplication.
+    The first stream in our proposed network is designed to process muzzle images that are
+128 × 128 pixels in size and have three color channels (RGB) as input. To extract intricate
+features fixed convolutional kernel sizes of 3 × 3 and max-pooling layers with 2 × 2 kernel
+sizes are used.
+    In more detail, the Conv_1 layer and Conv_G_1 takes input images of size 128 × 128 × 3
+and employs 46, 3 × 3 kernels, resulting in a feature map of size 128 × 128 × 46. The
+computation involves 1,288 learnable parameters, which are calculated as follows:
+(3 × 3 × 3 × 46) + 46. Conv_G_1 employs 46 Gabor filters with varying scales and orienta-
+tions. Gabor filters are known for their optimal localization properties in both spatial and
+frequency domains, enabling them to extract a maximal amount of information from local
+regions within the image. Additionally, Gabor features exhibit invariance to translation,
+
+
+
+
+Fig. 1  Two Stream Architecture for Muzzle Print Recognition
+34290                                               Multimedia Tools and Applications (2025) 84:34285–34301
+
+
+rotation, and scale transformations. On the other hand, Conv_C_1 utilizes learnable filters
+whose weights adapt during the training process based on the provided training data. These
+filters are versatile and flexible, allowing the network to learn and adjust its parameters to
+the specific features and patterns present in the cattle muzzle images encountered during
+training. This adaptability enhances the network’s ability to discriminate between different
+muzzle prints effectively.
+    A Gabor filter is a spatial linear filter that employs a Gaussian kernel that is modulated
+by a sinusoidal plane wave. This filter is designed to capture specific patterns and textures
+within an image. One distinctive feature of the Gabor filter is its ability to represent ori-
+entation information, and to achieve this, it utilizes both real and imaginary components.
+These real and imaginary components can be combined into a single complex number, as
+described by Eq. 1 Fig. 2.
+                                              ( �2
+                                                  x + 𝛾 2 y�2
+                                                              )
+                                                                       x�
+                  g(x, y;𝜆, 𝜃, 𝜓, 𝜎, 𝛾) = 𝑒𝑥𝑝 −         2
+                                                               exp(i(2𝜋 + 𝜓)               (1)
+                                                     2𝜎                𝜆
+
+x and y are the spatial coordinates of the image and x′ and y′ are the coordinates in the
+rotated frame, defined as: x� = xcos𝜃 + ysin𝜃 and y� = −xsin𝜃 + ycos𝜃.
+    In the Eq. (1), parameters play key roles in defining the characteristics of the Gabor
+filter is as follows:
+
+– λ represents the wavelength of the sinusoidal component, determining the spacing of
+  the filter’s wave-like pattern.
+– Ө denotes the orientation of the Gabor filter, indicating the direction of the wave-like
+  pattern in the filter.
+– Ψ represents the phase offset, indicating the starting phase of the sinusoidal wave.
+– σ is the standard deviation of the Gaussian envelope, determining the spread or width
+  of the Gaussian component.
+– ɣ is the spatial aspect ratio, which controls the elongation of the filter in a particular
+  direction.
+
+   For experimentation purposes, a total of 46 Gabor filters were created. These filters cov-
+ered a range of orientations from −45 degrees to + 45 degrees, with increments of 2 degrees
+between each orientation. This range of orientations allows the filters to capture various
+
+
+
+
+Fig. 2  Gabor Filters used as Customized Filters for Feature Extraction
+Multimedia Tools and Applications (2025) 84:34285–34301                                    34291
+
+
+directional information present in the input images, helping to extract important features
+related to texture, contour, and ridge patterns.
+    In the network architecture, the Conv_2 and Conv_G_2 layers are essential for enhanc-
+ing and expanding feature representations. The Conv_2 layer applies 64 convolutional filters
+to the feature maps obtained from the Conv_1 layer in the spatial stream, thereby capturing
+more complex and abstract features with increased depth. This expansion allows the network
+to detect intricate patterns and details not fully captured by Conv_1. Similarly, the Conv_G_2
+layer processes the Gabor-filtered images from Conv_G_1 in the texture stream, using 64 fil-
+ters to extract detailed texture-specific features. Following this, the Conv_3 layer builds upon
+the features extracted by Conv_2 by applying 128 convolutional filters. This increase in filter
+depth enables the Conv_3 layer to capture even more complex and nuanced patterns, enhanc-
+ing the network’s ability to discriminate between different classes. Together, these layers dem-
+onstrate a progressive deepening of feature extraction, where each successive layer increases
+in filter depth to capture increasingly sophisticated and detailed representations of the input
+data.
+    After the feature extraction process, the network may utilize multiplication operations to
+enhance and integrate features effectively. Specifically, element-wise multiplication of feature
+maps can be employed to combine features from different sources or layers, allowing the net-
+work to refine and unify its feature representations. In some cases, this multiplication is inte-
+gral to attention mechanisms, where it is used to weigh and prioritize different feature maps or
+layers. By focusing on more relevant features, attention mechanisms leverage these multiplica-
+tion operations to improve the network’s performance in distinguishing important patterns and
+details, thereby enhancing the overall feature extraction and representation process.
+    After the multiplication operations, the network proceeds with a convolutional layer of
+depth 256. This layer further refines and consolidates the features by applying a larger number
+of filters, allowing for the capture of even more complex patterns and relationships within the
+data. Following this, the network includes one or more fully connected layers, which integrate
+the high-level features extracted by the convolutional layers. The final layer is a softmax clas-
+sification layer, which transforms the network’s output into probability distributions over the
+possible classes, enabling the classification of the input data based on the learned features.
+This sequence of operations—convolution, feature integration, and classification—ensures a
+comprehensive approach to feature extraction and decision-making.
+    The proposed hybrid CNN architecture integrates both handcrafted features and deep fea-
+tures obtained from learnable filters to effectively classify input images into their respective
+categories. This approach capitalizes on the feature learning capabilities for which CNNs are
+renowned, and it enhances this process by incorporating manually crafted features. In this
+hybrid architecture, two parallel CNNs are trained from scratch. These CNNs are designed
+with a specific number of convolutional and pooling layers engineered to yield feature
+maps of the same size for subsequent fusion. Following this, fully connected layers lead to
+the final softmax layer, which produces probability scores for each class, facilitating image
+classification.
+
+
+4 Results and discussion
+
+This section, the empirical findings of the proposed two-stream CNN model’s performance
+in cattle muzzle print recognition is elaborated.
+34292                                            Multimedia Tools and Applications (2025) 84:34285–34301
+
+
+4.1 Beef cattle muzzle/noseprint database for individual identification
+
+Beef Cattle Muzzle/Noseprint database for individual identification dataset comprises
+images of beef cattle muzzles and noseprints. The dataset was gathered between March
+and July 2021 in the Midwest US, encompassing a total of 4,923 muzzle images captured
+from 268 feedyard yearlings. Additionally, 4,531 raw images were collected from 400 US
+mixed-breed cattle, including Angus, Angus × Hereford, and Continental × British cross-
+breeds, with a specific focus on the muzzle area. Individual identification of the cattle was
+ensured by recording their ear tag information. These images were captured in natural
+outdoor feedlot conditions, resulting in variations in angles and lighting. To enhance the
+dataset’s utility for classification purposes, efforts were made to eliminate unnecessary ana-
+tomical parts, such as the face, eyes, and body, by rotating the cattle’s face area to align
+the muzzle horizontally. Subsequently, the muzzle area was manually cropped to isolate
+it. Images that were excessively blurry, incomplete, or obscured by feed were excluded to
+maintain dataset quality. Despite potential similarities in colors and textures among indi-
+viduals, the distinct patterns of beads, grooves, and ridges provided valuable visual distinc-
+tions for individual identification. Figure 3 shows some sample images from Beef Cattle
+Muzzle/Noseprint database.
+
+4.2 Visualizing feature maps produced by spatial and texture streams
+
+Convolutional Neural Networks (CNNs) are specifically designed for processing image
+data, and they provide us with valuable feature maps generated by their filters. Visualizing
+these feature maps and the filters themselves offers a profound insight into the characteris-
+tics that these filters have learned. From Fig. 4, it is observed that the activations produced
+
+
+
+
+Fig. 3  Sample images from Beef Cattle Muzzle/Noseprint database
+Multimedia Tools and Applications (2025) 84:34285–34301                                    34293
+
+
+by the initial convolution layers in two parallel streams. In Fig. 4 (a i), the activations stem-
+ming from the Convolution Layer 1 of the spatial stream is visualized. These activations
+reveal that this layer has learned to identify smooth regions and emphasize the distinguish-
+ing features exhibited by the muzzle print. In Fig. 4 (a ii), it is observed the input muzzle
+image alongside the feature map, highlighting the highest activations among the 46 feature
+maps. In Fig. 4(b), we encounter the activations originating from the Convolution Layer 1
+of the texture stream, which utilizes Gabor filters. The filtered output from these custom-
+ized filters, also known as Gabor Masks, clearly exposes the patterns, making evident the
+distinct changes such as edges and spots. Figure 4 (b ii) reveals the input muzzle image in
+conjunction with the feature map, emphasizing the most prominent activations among the
+46 feature maps within the texture stream.
+    Figure 5 displays the activations originating from Convolution Layer 2 within both the
+spatial and texture streams. As visualized in Fig. 5, these learnable filters have the capa-
+bility to capture both coarse information about the overall characteristics of the muzzle
+print and distinct features of the muzzle, such as unique patterns or marks. The learnable
+filters after Gabor feature maps are successful in discerning and emphasizing these impor-
+tant attributes, making them more prominent in the generated feature maps as visualized in
+Fig. 5 (b ii). This demonstrates the adaptability and effectiveness of the neural network in
+learning and representing features during the training process. Figure 5 (b i) and Fig. 5 (b
+ii) depict activation maps with the highest values to ensure good visualization.
+    As we progress through the layers of the neural network, including subsequent lay-
+ers beyond Convolution Layer 2, the network’s learning process continues to unfold with
+increasing complexity and abstraction. Convolution Layer 2 contains its own set of filters,
+also known as learnable filters, which have undergone training to specialize in recogniz-
+ing more intricate patterns and finer details within the muzzle print. These filters may be
+designed to identify specific characteristics such as fur texture, subtle markings, or unique
+contours. Figure 6 (a i) and Fig. 6 (a ii) exhibit the activations stemming from the third
+convolutional layers, while their maximum values are presented in Fig. 6 (b i) and Fig. 6 (b
+ii) correspondingly.
+
+
+
+
+Fig. 4  Activations from Ist Layer
+34294                                       Multimedia Tools and Applications (2025) 84:34285–34301
+
+
+
+
+Fig. 5  Activations from 2nd Layer
+
+
+
+   When the feature maps from two different streams in a neural network, such as in a
+multi-stream architecture, are multiplied together, it results in a form of feature fusion or
+interaction between the information encoded in those feature maps. Multiplying feature
+maps effectively captures the element-wise interaction or correlation between the features
+extracted by the two streams. If two feature maps have high activations at the same spatial
+locations, their product will have a higher value, highlighting regions where both streams
+agree on important features. Multiplication blends information from both streams, creating
+a fused representation that incorporates aspects from each stream. This fusion can be use-
+ful for capturing complementary information or enhancing the saliency of shared features.
+Multiplication can act as a form of attention mechanism. If one stream has learned to focus
+on certain features or regions while the other emphasizes different aspects, multiplication
+can selectively boost the importance of features that are deemed relevant by both streams
+as shown in Fig. 7.
+
+
+4.3 Training process
+
+To train this network, stochastic gradient descent with momentum optimizers is employed.
+The primary objective of this optimization method is to minimize the loss function by
+iteratively updating the network parameters. This is achieved by taking small steps in the
+direction of the negative gradient of the loss function, helping the network converge to a
+better set of parameters over time. During the training process, mini-batches of size 28 are
+Multimedia Tools and Applications (2025) 84:34285–34301                              34295
+
+
+
+
+Fig. 6  Activations from 3rd Layer
+
+
+
+
+Fig. 7  Note this data is mandatory. Please provide
+
+
+
+used, meaning that a subset of 28 training samples is processed together in each iteration.
+This mini-batch approach helps to stabilize training and provides computational efficiency.
+   The training process begins with an initial learning rate of 0.001, which dictates the
+size of the steps taken during gradient descent. A momentum value of 0.9 is applied to
+further aid convergence. This momentum term allows the optimizer to continue moving
+34296                                        Multimedia Tools and Applications (2025) 84:34285–34301
+
+
+in the direction of previously determined gradients, which can help smooth the conver-
+gence path and escape local minima during training.
+
+4.4 Performance measure of cattle muzzle print recognition
+
+The performance measure for cattle muzzle print recognition serves as a critical evaluation
+of the effectiveness of a system or model designed to identify and authenticate cattle based
+on the unique patterns present in their muzzle prints.
+
+Accuracy Accuracy measures the proportion of correctly recognized cattle based on their
+muzzle prints. It is a fundamental indicator of the system’s overall performance.
+                                               TP + TN
+                             Accuracy =                                                         (2)
+                                          FN + TN + TP + FP
+   TP (True Positives) represents the number of correctly predicted positive instances, TN
+(True Negatives) represents the number of correctly predicted negative instances. FP (False
+Positives) represents the number of negative instances that were incorrectly predicted as
+positive. FN (False Negatives) represents the number of positive instances that were incor-
+rectly predicted as negative.
+
+Precision and Recall Precision evaluates the proportion of correctly identified cattle
+among those identified by the system, focusing on minimizing false positives. Recall, on
+the other hand, assesses the proportion of correctly identified cattle among all the cattle
+that should have been identified, emphasizing minimizing false negatives.
+                                                   TP
+                                   Precision =                                                  (3)
+                                                 TP + FP
+
+                                                  TP
+                                     Recall =                                                   (4)
+                                                TP + FN
+F1 Score The F1 score combines precision and recall into a single metric, providing a bal-
+anced measure of recognition performance. It is particularly useful when there is an imbal-
+ance between positive and negative cases.
+                                                 2TP
+                                F1score =                                                       (5)
+                                            2TP + FN + FP
+The Matthews Correlation Coefficient (MCC) MCC is a useful metric because it consid-
+ers both sensitivity (recall) and specificity while being robust to imbalanced datasets. It is
+often used in situations where the class distribution is unequal, and the consequences of
+false positives and false negatives are different.
+                                  TN × TP − FP × FN
+                   MCC = √                                                                      (6)
+                          (TN + FN)(FP + TP)(TN + FP)(FN + TP)
+
+   In the context of cattle muzzle print recognition, the presented table of performance
+measures serves as a comprehensive analytical tool for evaluating the efficacy of the sys-
+tem under various configurations. These configurations encompass differing numbers of
+layers and distinct filter types, specifically learnable filters and Gabor Filters.
+Multimedia Tools and Applications (2025) 84:34285–34301                              34297
+
+
+4.4.1 Configuration 1: Two Streams with one block (Conv_1 / Conv_G_1 + Batch
+       Normalization + ReLu) at each stream
+
+In Configuration 1, the model employs two parallel streams, each containing a single
+block composed of a convolution layer (Conv_1 for both streams), batch normalization,
+and a ReLU activation function. The convolution layer applies a set of learnable fil-
+ters to the input data, extracting essential features, while the batch normalization layer
+normalizes the outputs to speed up training and provide regularization. This configura-
+tion achieves an accuracy of 97.46% and a Matthews Correlation Coefficient (MCC) of
+94.94%, indicating a strong balance between true positives and true negatives. Despite
+its simplicity, this single-block-per-stream architecture demonstrates robust perfor-
+mance and serves as a solid foundation for further experimentation and enhancement in
+cattle muzzle print recognition.
+    Transitioning to a one-layer architecture with one stream using learnable filters in
+Conv_1 and the other stream using Gabor filters (Conv_G_1), a marginal reduction in
+accuracy to 95.23% is observed. However, this configuration excels in specificity, reg-
+istering an impressive value of 99.98%. This suggests a heightened ability to correctly
+identify negative instances while maintaining an acceptable level of sensitivity. Due
+to the absence of learnable parameters in a single-layer architecture employing Gabor
+filters, the model’s accuracy experiences a decrease of approximately 2.23 percentage
+points, shifting from 97.46% to 95.23%.
+
+
+4.4.2 Configuration 2: Two Streams with Two blocks (Conv_1 / Conv_G_1 + Batch
+       Normalization + ReLu) at each stream
+
+With a progression to two layers and Learnable filters, the system demonstrates an ele-
+vated accuracy of 97.77%. Here, precision emerges as a noteworthy metric, reaching
+96.84%, underscoring the system’s precision in correctly classifying positive instances.
+The pinnacle of performance manifests in the two-layer setup with Gabor Filters, where
+an accuracy of 98.38% is attained. This configuration excels in recall, achieving 97.39%,
+signifying its adeptness in recognizing positive instances. Furthermore, the precision
+of 97.58% underscores its precision in correctly classifying positive instances. It is dis-
+cernible that the selection of layers and filter types profoundly impacts the system’s per-
+formance characteristics, offering flexibility and adaptability in tailoring the system to
+meet specific recognition requirements in the domain of cattle muzzle print recognition.
+
+
+4.4.3 Configuration 3: Two Streams with Three blocks (Conv_1 / Conv_G_1 + Batch
+       Normalization + ReLu) at each stream
+
+As we advance to three layer architecture with learnable filters, the system’s accu-
+racy notably improves to 98.17%. The highest level of performance is observed in the
+three -layer setup featuring Gabor Filters, where an impressive accuracy of 98.58% is
+achieved. Upon transitioning to a four-layer architecture, we observe a slight decline in
+performance metrics. However, when employing Gabor filters, the performance metrics
+remain consistent with those achieved in the three-layer configuration. Consequently,
+we conclude that a three-layer architecture is the preferred choice for our further analy-
+sis, as it provides a balance between performance and complexity Table 1.
+34298                                             Multimedia Tools and Applications (2025) 84:34285–34301
+
+
+Table 1  Performance Measure of Muzzle Print Recognition by varying number of Blocks
+Performance Measures         Configuration 1: Configuration 2: Configuration 3: Configuration 4:
+                             Two Streams with Two Streams with Two Streams with Two Streams with
+                             one block        Two blocks       Three blocks     Four blocks
+                             *Case a *Case b *Case a *Case b *Case a *Case b *Case a *Case b
+
+Accuracy                     0.9746    0.9523   0.9777     0.9838    0.9817   0.9858   0.9797    0.9858
+Error                        0.0254    0.0477   0.0223     0.0162    0.0183   0.0142   0.0203    0.0142
+Recall                       0.9528    0.9305   0.9667     0.9739    0.9707   0.9809   0.9697    0.9809
+Specificity                  0.9999    0.9998   0.9999     0.9999    0.9999   0.9999   0.9999    0.9999
+Precision                    0.9490    0.9319   0.9684     0.9758    0.9693   0.9837   0.9671    0.9837
+False Positive Rate          0.0001    0.0002   0.0001     0.0001    0.0001   0.0001   0.0001    0.0001
+F1_score                     0.9481    0.9240   0.9639     0.9727    0.9673   0.9796   0.9662    0.9796
+Matthews Correlation         0.9494    0.9273   0.9656     0.9737    0.9686   0.9809   0.9672    0.9809
+  Coefficient
+
+*Case a: Learnable filters in both Streams
+*Case b: Learnable filters in One Stream (Conv_1) and Gabor Filter (Conv_G_1) in other Stream
+
+
+
+Table 2  Performance Measure of Muzzle Print Recognition by Two Stream Feature Fusion
+Performance Measures                  Feature Map Fusion    Feature Map Fusion     Resnet like architec-
+                                      by Multiplication     by Concatenation       ture with Gabor filters
+
+Accuracy                              0.9899                0.9817                 0.9858
+Error                                 0.0101                0.0183                 0.0142
+Recall                                0.9836                0.9716                 0.9758
+Specificity                           1.0000                0.9999                 0.9999
+Precision                             0.9839                0.9759                 0.9801
+FalsePositiveRate                     0.0000                0.0001                 0.0001
+F1_score                              0.9818                0.9706                 0.9739
+Matthews Correlation Coefficient      0.9827                0.9721                 0.9758
+
+
+
+   The performance metrics for two distinct methods of feature map fusion, namely
+Feature Map Fusion by Multiplication and Feature Map Fusion by Concatenation, are
+presented in the Table 2. Notably, the multiplication approach yields a higher accuracy
+rate of 98.99%, demonstrating its superior classification capabilities compared to the
+concatenation approach, which achieves a slightly lower accuracy rate of 98.17%. In
+terms of error rates, the multiplication method boasts a lower error rate of 1.01%, while
+the concatenation approach exhibits a somewhat higher error rate of 1.83%.
+   The architectural configuration comprises a single convolutional layer with Gabor fil-
+ters, batch normalization, ReLU activation, and three subsequent max-pooling layers
+within one stream. Simultaneously, the other stream incorporates three sets of convolu-
+tional layers, each followed by batch normalization, ReLU activation, and max-pooling.
+The fusion of feature maps through multiplication in this architecture yields an impressive
+accuracy rate of 98.58%. This outcome underscores the substantial improvement in learn-
+ing achieved through the incorporation of Gabor filters within the network. It highlights the
+significance of Gabor filters as a valuable tool for enhancing the model’s ability to capture
+Multimedia Tools and Applications (2025) 84:34285–34301                                         34299
+
+
+Table 3  Comparison of Performance Measure with State of the Art Work for Muzzle Print Recognition
+Model                          Accuracy (%)               Model                         Accuracy (%)
+
+AlexNet [38]                   96.5                       ResNet101 [38]                94.2
+DenseNet201 [38]               94.6                       SqueezeNet_1.1 [38]           95.9
+EfficientNet_b7 [38]           54.1                       VGG19_BN [38]                 98.1
+GoogleNet [38]                 59.4                       Wide_ResNet50_2 [38]          89.6
+InceptionV3 [38]               81.7                       Wide_ResNet101_2 [38]         90.4
+Xception [38]                  58.3                       MobileNetV3_Large [38]        95.9
+Proposed Method                98.99
+
+
+
+
+intricate patterns and features, ultimately contributing to superior recognition performance
+in the context of cattle muzzle print recognition.
+    The Table 3 presents a comparative snapshot of the performance of various deep learn-
+ing models in terms of accuracy (%). Each row corresponds to a different deep learning
+architecture, and the associated accuracy score (%) reflects the model’s proficiency in that
+task. Notable highlights include the high accuracy achieved by VGG19_BN at 98.1%,
+exemplifying its effectiveness in image classification. In contrast, EfficientNet_b7 achieved
+a relatively lower accuracy of 54.1. Meanwhile, SqueezeNet_1.1 and MobileNetV3_Large
+demonstrated competitive accuracy levels at 95.9%, underlining their suitability for
+resource-constrained environments. Wide_ResNet50_2 and Wide_ResNet101_2 show-
+cased respectable accuracies at 89.6% and 90.4%, respectively, owing to their wider archi-
+tecture. InceptionV3 demonstrated a balanced performance with an accuracy of 81.7%.
+These accuracy scores serve as valuable benchmarks for selecting the most appropriate
+model architecture based on the specific requirements of a given task, whether prioritizing
+accuracy, efficiency, or a balance between the two.
+
+
+5 Conclusion
+
+In conclusion, this study addresses the critical domain of muzzle print recognition, a piv-
+otal facet of biometric identification for animals, which has garnered considerable atten-
+tion in recent times. Our innovative approach introduces a Two-Stream Convolutional Neu-
+ral Network (CNN) integrated with Gabor Filters to significantly enhance precision and
+robustness in muzzle print identification. The Two-Stream CNN architecture, consisting
+of the Spatial Stream and the Texture Stream, synergizes spatial and texture information,
+harnessing the collective strengths of both modalities. Leveraging Gabor Filters within
+the Texture Stream enables the extraction of intricate texture details, rendering the model
+highly sensitive to even subtle variations in muzzle patterns. Through meticulous training
+and fine-tuning on a comprehensive dataset, specifically the Beef Cattle Muzzle/Nose print
+database for individual identification, we achieved an exceptional recognition accuracy of
+98.99%. The model’s capacity to accurately discern subtle nuances in muzzle prints holds
+promise across a spectrum of applications, including wildlife preservation, animal moni-
+toring, and heightened security measures, ushering in a new era of biometric identification
+for animals.
+34300                                                  Multimedia Tools and Applications (2025) 84:34285–34301
+
+
+Data availability Data available on request from the authors.
+
+Declarations
+Conflict of interest The authors declare that there is no conflict of interest.
+
+
+References
+ 1. Petrovska-Delacretaz D, Edwards A, Chiassoli J, Chollet G, Pilliod DS (2014) A reference system for animal
+    biometrics: Application to the northern leopard frog. In: 2014 1st International Conference on Advanced
+    Technologies for Signal and Image Processing (ATSIP), IEEE, pp 295–300. https://​doi.​org/​10.​1109/​atsip.​
+    2014.​68346​23
+ 2. Johnston AM, Edwards DS (1996) Welfare implications of identification of cattle by ear tags. Vet Rec
+    138:612–614
+ 3. Chen J, Wen Q, Qu W, Mete M (2012) Panda facial region detection based on topology modelling. In: 2012
+    5th International Congress on Image and Signal Processing, IEEE, pp 911–915. https://​doi.​org/​10.​1109/​
+    cisp.​2012.​64696​68
+ 4. Kumar S, Singh SK, Dutta T, Gupta HP (2016) A fast cattle recognition system using smart devices. In: Pro-
+    ceedings of the 24th ACM international conference on Multimedia, MM ’16: ACM Multimedia Confer-
+    ence, ACM, pp 742–743. https://​doi.​org/​10.​1145/​29642​84.​29738​29
+ 5. Lay DJ, Friend T, Randel R, Bowers C, Grissom K, Jenkins O (1992) Behavioral and physiological effects of
+    freeze or hot-iron branding on crossbred cattle. J Anim Sci 70:330–336
+ 6. Schwartzkopf-Genswein KS, Stookey JM, Welford R (1997) Behavior of cattle during hot-iron and freeze
+    branding and the effects on subsequent handling ease. J Anim Sci 75:2064–2072
+ 7. Collins GH, Petersen SL, Carr CA, Pielstick L (2014) Testing VHF/GPS collar design and safety in the study
+    of free-roaming horses. PLoS ONE 9:e103189
+ 8. Dairy-Australia (2016) Precision dairy technology electronic cow identification
+ 9. Løken T, Vatn G, Kummen E (2011) Subcutaneous electronic identification in cattle: A field study. Vet Rec
+    169:250
+10. Klindtworth M, Wendl G, Klindtworth K, Pirkelmann H (1999) Electronic identification of cattle with
+    injectable transponders. Comput Electron Agric 24:65–79
+11. Jovani R, Pérez-Rodríguez L, Mougeot F (2013) Fractal geometry for animal biometrics: A response to
+    Kühl and Burghardt. Trends Ecol Evol 28:499–500
+12. Kumar S, Pandey A, Sai K, Kumar S, Singh SK, Singh AK, Mohan A (2018) Deep learning framework
+    for recognition of cattle using muzzle point image pattern. Measurement 116:1–17
+13. Kumar S, Singh SK, Singh RS, Singh AK, Tiwari S (2016) Real-time recognition of cattle using animal
+    biometrics. J Real-Time Image Process 13:505–526
+14. Mahmoud HA, Hadad HMRE (2015) Automatic cattle muzzle print classification system using multiclass
+    support vector machine. Int J Image Min 1:126–140
+15. Tharwat A, Gaber T, Hassanien AE (2014) Cattle Identification Based on Muzzle Images Using Gabor
+    Features and SVM Classifier. Springer International Publishing, Cham, Switzerland
+16. Kumar S, Singh SK, Abidi AI, Datta D, Sangaiah AK (2017) Group sparse representation approach for
+    recognition of cattle on muzzle point images. Int J Parallel Program 46:812–837
+17. Kumar S, Singh SK (2017) Automatic identification of cattle using muzzle point pattern: A hybrid feature
+    extraction and classification paradigm. Multimed Tools Appl 76:26551–26580
+18. El-Henawy I, El Bakry HM, El Hadad HM (2017) A new muzzle classification model using decision tree
+    classifier. Int J Electron Inf Eng 6:12–24
+19. Gaber T, Tharwat A, Hassanien AE, Vaclav S (2016) Biometric cattle identification approach based on
+    Weber’s Local Descriptor and AdaBoost classifier. Comput Electron Agric 122:55–66
+20. Noviyanto A, Arymurthy AM (2013) Beef cattle identification based on muzzle pattern using a matching
+    refinement technique in the SIFT method. Comput Electron Agric 99:77–84
+21. Awad AI, Hassaballah M (2019) Bag-of-Visual-Words for Cattle Identification from Muzzle Print Images.
+    Appl Sci 9:4914
+22. Kumar S, Singh SK (2016) Visual animal biometrics: survey. IET. Biometrics 6:139–156
+23. Kumar S, Singh SK, Datta T, Gupta HP (2016) A fast cattle recognition system using smart devices. In:
+    Proceedings of the 2016 ACM Conference on Multimedia. Amsterdam, The Netherlands, pp 742–743
+24. Petersen WE (1922) The identification of the bovine by means of nose-prints. J Dairy Sci 5(3):249–258.
+    https://​doi.​org/​10.​3168/​jds.​s0022-​0302(22)​94150-5
+Multimedia Tools and Applications (2025) 84:34285–34301                                                  34301
+
+
+25. Barron UG, Butler F, McDonnell K, Ward S (2009) The end of the identity crisis? Advances in biometric
+    markers for animal identification. Ir Vet J 62:204–208
+26. Zaiqiong W, Zetian F, Wei C, Jinyou H (2010) A RFID-based traceability system for cattle breeding in
+    China. In 2010 International Conference on Computer Application and System Modeling (ICCASM
+    2010), IEEE, pp V2-567-V2-571. https://​doi.​org/​10.​1109/​iccasm.​2010.​56206​75
+27. Krizhevsky A, Sutskever I, Hinton G (2012) ImageNet classification with deep convolutional neural net-
+    works. Advances in Neural Information Processing Systems. Curran & Associates Inc., Red Hook, NY,
+    USA, pp 1097–1105
+28. Farabet C, Couprie C, Najman L, LeCun Y (2013) Learning hierarchical features for scene labeling. IEEE
+    Trans Pattern Anal Mach Intell 35:1915–1929
+29. Sun Y, Wang X, Tang X (2013) Deep convolutional network cascade for facial point detection. In: 2013
+    IEEE Conference on Computer Vision and Pattern Recognition (CVPR), IEEE. https://​doi.​org/​10.​1109/​
+    cvpr.​2013.​446
+30. Kaur A, Kumar M, Jindal MK (2022) Shi-Tomasi corner detector for cattle identification from muzzle
+    print image pattern. Ecol Inform 68:101549. https://​doi.​org/​10.​1016/j.​ecoinf.​2021.​101549
+31. Hadad HME, Mahmoud HA, Mousa FA (2015) Bovines muzzle classification based on machine learning
+    techniques. Procedia Comput Sci 65:864–871. https://​doi.​org/​10.​1016/j.​procs.​2015.​09.​044
+32. Edwin A, George M (2017) A fuzzy mathematical approach to eigen muzzle print recognition interna-
+    tional. J of Math Sci & Engg Appls (IJMSEA) 11(1):57–65
+33. Bello RW, Talıb AZH, Mohamed ASAB (2020) Deep learning-based architectures for recognition of cow
+    using cow nose image pattern. Gazi University J Sci 33(3):831–844. https://​doi.​org/​10.​35378/​gujs.​605631
+34. Girish PS, Santhosh K, Kartikeya K, Palekar P, Harikrishna CH, Rathod S (2020) Artificial intelligence
+    based muzzle recognition technology for individual identification of animals. Indian J Anim Sci 90:1070–
+    1073. https://​doi.​org/​10.​56093/​ijans.​v90i7.​106684
+35. Kumar S, Singh SK, Singh AK (2017) Muzzle point pattern based techniques for individual cattle identifi-
+    cation. IET Image Process 11:805–814. https://​doi.​org/​10.​1049/​iet-​ipr.​2016.​0799
+36. Awad AI, Hassanien AE, Zawbaa HM (2013) A Cattle identification approach using live captured muzzle
+    print images. Commun Comput Inf Sci 381:143–152. https://​doi.​org/​10.​1007/​978-3-​642-​40597-6_​12
+37. Shojaeipour A, Falzon G, Kwan P, Hadavi N, Cowley FC, Paul D (2021) Automated muzzle detection and
+    biometric identification via few-shot deep transfer learning of mixed breed cattle. Agronomy 11. https://​
+    doi.​org/​10.​3390/​agron​omy11​112365
+38. Li G, Erickson GE, Xiong Y (2022) Individual beef cattle identification using muzzle images and deep
+    learning techniques. Animals 12. https://​doi.​org/​10.​3390/​ani12​111453
+39. Awad AI, Hassaballah M (2019) Bag-of-visual-words for cattle identification from muzzle print images.
+    Appl Sci 9. https://​doi.​org/​10.​3390/​app92​24914
+40. Jayakumar N, Nithish Kumar R, Ruthrakumar A, Saikavya K (2023) Biometric muzzle pattern recogni-
+    tion for cattle identification using deep learning. 2023 Int Conf Inven Comput Technol 34–40. https://​doi.​
+    org/​10.​1109/​icict​57646.​2023.​10134​082
+41. Tharwat A, Gaber T, Hassanien AE, Hassanien HA, Tolba MF (2014) cattle identification using muzzle
+    print images based on texture features approach. Adv Intell Syst Comput 303:217–227. https://​doi.​org/​10.​
+    1007/​978-3-​319-​08156-4_​22
+42. Ketmaneechairat H, Maliyaem M, Intarat C (2021) Kamphaeng Saen beef cattle identification approach
+    using muzzle print image. Adv Sci Technol Eng Syst J 6:110–122. https://​doi.​org/​10.​25046/​aj060​413
+43. Kumar S, Singh SK (2017) Automatic identification of cattle using muzzle point pattern: a hybrid feature
+    extraction and classification paradigm. Multimed Tools Appl 76:26551–26580. https://​doi.​org/​10.​1007/​
+    s11042-​016-​4181-9
+44. Sian C, Jiye W, Ru Z, Lizhi Z (2020) Cattle identification using muzzle print images based on feature
+    fusion. IOP Conf Ser Mater Sci Eng 853. https://​doi.​org/​10.​1088/​1757-​899X/​853/1/​012051
+45 Mehrotra R, Namuduri KR, Ranganathan N (1992) Gabor filter-based edge detection. Pattern Recognit
+    25:1479–1494. https://​doi.​org/​10.​1016/​0031-​3203(92)​90121-X
+
+Publisher’s Note Springer Nature remains neutral with regard to jurisdictional claims in published maps and
+institutional affiliations.
+
+Springer Nature or its licensor (e.g. a society or other partner) holds exclusive rights to this article under
+a publishing agreement with the author(s) or other rightsholder(s); author self-archiving of the accepted
+manuscript version of this article is solely governed by the terms of such publishing agreement and applicable
+law.

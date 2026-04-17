@@ -1,0 +1,9 @@
+{
+  "chunk_count": 69,
+  "extractor": "pdftotext",
+  "kind": "pdf",
+  "path": "/run/media/jpereiratrindade/labeco10T/labeco02/Revisao/CC nativo.pdf",
+  "sha256": "ebc3e6e91d918fd9c40bbdf9f1b3c31e6eb6edf5dede3d3ff01913849e6f4924",
+  "text_size": 67358,
+  "used_ocr": false
+}

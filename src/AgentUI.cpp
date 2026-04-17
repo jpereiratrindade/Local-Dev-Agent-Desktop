@@ -31,6 +31,61 @@ static std::string normalizeRootPath(const std::string& raw) {
     }
 }
 
+static bool hasProjectMarkers(const fs::path& root) {
+    return fs::exists(root / ".agent") ||
+           fs::exists(root / "AGENT.md") ||
+           fs::exists(root / "PROJECT_CONTEXT.md") ||
+           fs::exists(root / "CMakeLists.txt") ||
+           fs::exists(root / "package.json") ||
+           fs::exists(root / "pyproject.toml") ||
+           fs::exists(root / "requirements.txt") ||
+           fs::exists(root / "README.md") ||
+           fs::exists(root / "ai-governance");
+}
+
+static int projectRootScore(const fs::path& root) {
+    int score = 0;
+    if (fs::exists(root / ".agent" / "sessions" / "last_session.json")) score += 10;
+    if (fs::exists(root / ".agent" / "rag")) score += 8;
+    if (fs::exists(root / ".agent" / "context_policy.json")) score += 5;
+    if (fs::exists(root / "ai-governance")) score += 5;
+    if (fs::exists(root / "AGENT.md")) score += 4;
+    if (fs::exists(root / "PROJECT_CONTEXT.md")) score += 3;
+    if (fs::exists(root / "CMakeLists.txt")) score += 3;
+    if (fs::exists(root / "pyproject.toml")) score += 3;
+    if (fs::exists(root / "package.json")) score += 3;
+    if (fs::exists(root / "README.md")) score += 1;
+    return score;
+}
+
+static std::string resolveProjectRoot(const std::string& rawRoot) {
+    fs::path base;
+    try {
+        base = fs::weakly_canonical(fs::path(rawRoot.empty() ? "." : rawRoot));
+    } catch (...) {
+        return normalizeRootPath(rawRoot);
+    }
+
+    fs::path best = base;
+    int bestScore = projectRootScore(base);
+
+    try {
+        for (const auto& entry : fs::directory_iterator(base)) {
+            if (!entry.is_directory()) continue;
+            const fs::path child = entry.path();
+            if (!hasProjectMarkers(child)) continue;
+            int score = projectRootScore(child);
+            if (score > bestScore) {
+                best = child;
+                bestScore = score;
+            }
+        }
+    } catch (...) {
+    }
+
+    return normalizeRootPath(best.string());
+}
+
 static std::string projectLabelFromRoot(const std::string& root) {
     try {
         fs::path p(root);
@@ -71,9 +126,129 @@ static const char* accessLabel(int idx) {
 }
 
 static const char* profileLabel(int idx) {
-    static const char* labels[] = {"general", "coding", "analysis", "review"};
-    if (idx < 0 || idx > 3) return "general";
+    static const char* labels[] = {
+        "general", "coding", "analysis", "review",
+        "writing-outline", "writing-argument", "writing-chapter", "writing-review",
+        "research", "research-project"
+    };
+    if (idx < 0 || idx > 9) return "general";
     return labels[idx];
+}
+
+static const char* profileUiLabel(int idx) {
+    static const char* labels[] = {
+        "Uso geral",
+        "Codar",
+        "Analise",
+        "Review",
+        "Writing Outline",
+        "Writing Argumento",
+        "Writing Capitulo",
+        "Writing Review",
+        "Pesquisa",
+        "Projeto Pesquisa"
+    };
+    if (idx < 0 || idx > 9) return "Uso geral";
+    return labels[idx];
+}
+
+static std::string profileHintFor(const std::string& profile) {
+    if (profile == "coding") return "Implementar, editar, validar, corrigir build e testar";
+    if (profile == "analysis") return "Sintetizar com evidencias";
+    if (profile == "review") return "Apontar bugs e riscos";
+    if (profile == "writing-outline") return "Estruturar tese e secoes";
+    if (profile == "writing-argument") return "Articular conceitos e tensoes";
+    if (profile == "writing-chapter") return "Redigir prosa de capitulo";
+    if (profile == "writing-review") return "Revisar tese, coesao e rigor";
+    if (profile == "research") return "Mapear referencias e hipoteses";
+    if (profile == "research-project") return "Desenhar problema, objetivos, metodo, corpus e entregaveis";
+    return "Equilibrio geral";
+}
+
+static bool profilePrefersAutonomous(const std::string& profile) {
+    return profile == "coding" || profile == "review" || profile == "analysis";
+}
+
+static bool profileDiscouragesAutonomous(const std::string& profile) {
+    return profile == "writing-outline" ||
+           profile == "writing-argument" ||
+           profile == "writing-chapter" ||
+           profile == "writing-review" ||
+           profile == "research" ||
+           profile == "research-project";
+}
+
+static const char* contextSourceLabel(int idx) {
+    static const char* labels[] = {
+        "workspace",
+        "workspace+library",
+        "workspace+library+web"
+    };
+    if (idx < 0 || idx > 2) return "workspace";
+    return labels[idx];
+}
+
+static agent::core::ContextSourceMode contextSourceModeFromIdx(int idx) {
+    if (idx <= 0) return agent::core::ContextSourceMode::WorkspaceOnly;
+    if (idx == 1) return agent::core::ContextSourceMode::WorkspaceAndLibrary;
+    return agent::core::ContextSourceMode::WorkspaceLibraryAndWeb;
+}
+
+static std::string contextSourceHintFor(int idx) {
+    if (idx == 1) return "Workspace + biblioteca local aprovada";
+    if (idx == 2) return "Workspace + biblioteca local + web aprovada";
+    return "Somente arquivos do projeto";
+}
+
+static std::string trimLoose(std::string value) {
+    while (!value.empty() && std::isspace(static_cast<unsigned char>(value.front()))) value.erase(value.begin());
+    while (!value.empty() && std::isspace(static_cast<unsigned char>(value.back()))) value.pop_back();
+    if (value.size() >= 2) {
+        if ((value.front() == '"' && value.back() == '"') || (value.front() == '\'' && value.back() == '\'')) {
+            value = value.substr(1, value.size() - 2);
+        }
+    }
+    return value;
+}
+
+static std::vector<std::string> splitCsvList(const std::string& raw) {
+    std::vector<std::string> out;
+    std::stringstream ss(raw);
+    std::string item;
+    while (std::getline(ss, item, ',')) {
+        item = trimLoose(item);
+        if (!item.empty()) out.push_back(item);
+    }
+    return out;
+}
+
+static std::string joinLines(const std::vector<std::string>& values) {
+    std::string out;
+    for (size_t i = 0; i < values.size(); ++i) {
+        if (i > 0) out += "\n";
+        out += values[i];
+    }
+    return out;
+}
+
+static std::string joinCommaList(const std::vector<std::string>& values) {
+    std::string out;
+    for (size_t i = 0; i < values.size(); ++i) {
+        if (i > 0) out += ", ";
+        out += values[i];
+    }
+    return out;
+}
+
+static std::vector<std::string> splitLineList(const std::string& raw) {
+    std::vector<std::string> out;
+    std::stringstream ss(raw);
+    std::string line;
+    while (std::getline(ss, line)) {
+        line = trimLoose(line);
+        if (!line.empty()) out.push_back(normalizeRootPath(line));
+    }
+    return out;
 }
 
 static std::string iconLabel(bool emojiEnabled, const std::string& withEmoji, const std::string& plain) {
@@ -174,11 +349,13 @@ static AgentMessageSections splitAgentMessage(const std::string& text) {
 
 void AgentUI::setOllama(agent::network::OllamaClient* client) {
     ollama = client;
-    if (!currentProjectRoot.empty()) currentProjectRoot = normalizeRootPath(currentProjectRoot);
+    if (!currentProjectRoot.empty()) currentProjectRoot = resolveProjectRoot(currentProjectRoot);
     if (ollama) {
         const std::string effectiveRoot = currentProjectRoot.empty() ? normalizeRootPath(".") : currentProjectRoot;
         agent::core::registerNativeTools(effectiveRoot);
         agent::core::setNativeToolAccessLevel(accessFromIdx(selectedAccess));
+        loadContextPolicy();
+        applyContextPolicy();
         if (orchestrator) delete orchestrator;
         orchestrator = new agent::core::Orchestrator(ollama, effectiveRoot);
         if (!currentProjectRoot.empty()) {
@@ -246,6 +423,7 @@ void AgentUI::render() {
     drawOpenFolderPickerDialog();
     drawGovernedProjectDialog();
     drawOpenFolderFallbackDialog();
+    drawContextPolicyDialog();
 }
 
 void AgentUI::drawMainMenu() {
@@ -324,6 +502,12 @@ void AgentUI::drawMainMenu() {
             if (ImGui::MenuItem("Permitir modo autônomo", nullptr, autonomousFeatureEnabled)) {
                 autonomousFeatureEnabled = !autonomousFeatureEnabled;
                 if (!autonomousFeatureEnabled) autonomousMode = false;
+            }
+            if (ImGui::MenuItem("Fontes de Contexto...")) {
+                std::snprintf(contextLibraryPathsBuf, sizeof(contextLibraryPathsBuf), "%s", joinLines(approvedLibraryPaths).c_str());
+                std::snprintf(contextDomainsBuf, sizeof(contextDomainsBuf), "%s", approvedDomainsCsv.c_str());
+                contextPolicyStatus.clear();
+                contextPolicyDialogRequested = true;
             }
             ImGui::EndMenu();
         }
@@ -533,15 +717,24 @@ void AgentUI::drawChatWindow() {
         if (ImGui::SmallButton("Desativar Contexto")) selectedFile = "";
     }
     ImGui::SameLine();
+    const std::string activeProfile = profileLabel(selectedProfile);
     if (!autonomousFeatureEnabled) autonomousMode = false;
+    if (profileDiscouragesAutonomous(activeProfile)) autonomousMode = false;
     if (!autonomousFeatureEnabled) ImGui::BeginDisabled();
-    ImGui::Checkbox("Autônomo (Codex)", &autonomousMode);
+    ImGui::Checkbox("Modo Autônomo", &autonomousMode);
     if (!autonomousFeatureEnabled) {
         ImGui::EndDisabled();
         if (ImGui::IsItemHovered()) {
             ImGui::SetTooltip("Modo autônomo desativado em Preferências.");
         }
+    } else if (profileDiscouragesAutonomous(activeProfile)) {
+        if (autonomousMode) autonomousMode = false;
+        if (ImGui::IsItemHovered()) {
+            ImGui::SetTooltip("Perfis de escrita e pesquisa usam Chat Assistido por padrão para preservar continuidade e reduzir exploração mecânica.");
+        }
     }
+    ImGui::SameLine();
+    ImGui::TextDisabled("%s", autonomousMode ? "Autônomo" : "Chat Assistido");
     ImGui::SameLine();
     bool busyNow = llmBusy.load() || (ollama && ollama->isStreaming());
     if (busyNow) {
@@ -581,11 +774,32 @@ void AgentUI::drawChatWindow() {
         agent::core::setNativeToolAccessLevel(accessFromIdx(selectedAccess));
     }
     ImGui::SameLine();
+    ImGui::TextDisabled("Contexto");
+    ImGui::SameLine();
+    const char* contextItems[] = {"Workspace", "Workspace + Biblioteca", "Workspace + Biblioteca + Web"};
+    ImGui::SetNextItemWidth(220);
+    if (ImGui::Combo("##ContextSourceInline", &selectedContextSource, contextItems, IM_ARRAYSIZE(contextItems))) {
+        applyContextPolicy();
+        saveContextPolicy();
+    }
+    ImGui::SameLine();
     ImGui::TextDisabled("Perfil");
     ImGui::SameLine();
-    const char* profileItems[] = {"Uso geral", "Codar", "Analise", "Review"};
-    ImGui::SetNextItemWidth(130);
-    ImGui::Combo("##ProfileInline", &selectedProfile, profileItems, IM_ARRAYSIZE(profileItems));
+    const char* profileItems[] = {
+        "Uso geral", "Codar", "Analise", "Review",
+        "Writing Outline", "Writing Argumento", "Writing Capitulo", "Writing Review",
+        "Pesquisa", "Projeto Pesquisa"
+    };
+    ImGui::SetNextItemWidth(170);
+    int previousProfile = selectedProfile;
+    if (ImGui::Combo("##ProfileInline", &selectedProfile, profileItems, IM_ARRAYSIZE(profileItems))) {
+        const std::string newProfile = profileLabel(selectedProfile);
+        if (profileDiscouragesAutonomous(newProfile)) {
+            autonomousMode = false;
+        } else if (profilePrefersAutonomous(newProfile) && !profileDiscouragesAutonomous(profileLabel(previousProfile))) {
+            autonomousMode = true;
+        }
+    }
 
     ImGui::PushItemWidth(-70);
     bool submitted = ImGui::InputText("##Input", inputBuf, IM_ARRAYSIZE(inputBuf), ImGuiInputTextFlags_EnterReturnsTrue);
@@ -601,6 +815,9 @@ void AgentUI::drawChatWindow() {
             const std::string reasoning = reasoningLabel(selectedReasoning);
             const std::string access = accessLabel(selectedAccess);
             const std::string profile = profileLabel(selectedProfile);
+            const std::string profileHint = profileHintFor(profile);
+            const std::string contextSource = contextSourceLabel(selectedContextSource);
+            const std::string librarySummary = approvedLibraryPaths.empty() ? std::string("(nenhuma)") : joinCommaList(approvedLibraryPaths);
             
             // Contexto V5: Injeção de Autoridade via System Prompt
             std::string systemPrompt = "VOCÊ É O AGENT. MODO ANALISTA TÉCNICO DE ELITE.\n"
@@ -612,8 +829,15 @@ void AgentUI::drawChatWindow() {
                                        "4. Respostas cordiais e extremamente técnicas baseadas no contexto fornecido.\n"
                                        "5. Nível de reasoning atual: " + reasoning + ".\n"
                                        "6. Nível de acesso permitido para ferramentas: " + access + ".\n"
-                                       "7. Perfil de tarefa atual: " + profile + ".\n"
-                                       "8. Se você afirmar que verificou/criou/editou/executou algo, inclua evidência objetiva (comando + saída curta ou caminho de arquivo).";
+                                       "7. Perfil de tarefa atual: " + profile + ". Objetivo cognitivo: " + profileHint + ".\n"
+                                       "8. Política de contexto atual: " + contextSource + ".\n"
+                                       "9. Bibliotecas locais aprovadas: " + librarySummary + ".\n"
+                                       "10. Domínios aprovados: " + (approvedDomainsCsv.empty() ? std::string("(nenhum)") : approvedDomainsCsv) + ".\n"
+                                       "11. Ao usar contexto externo, separe mentalmente base local, base externa e inferência.\n"
+                                       "12. Se a política for workspace only, não tente usar conteúdo fora do projeto.\n"
+                                       "8. Se você afirmar que verificou/criou/editou/executou algo, inclua evidência objetiva (comando + saída curta ou caminho de arquivo).\n"
+                                       "9. Se o perfil for de writing, pesquisa ou análise, não transforme a resposta em inspeção mecânica do repositório; use o mínimo de exploração necessário e sintetize cedo.\n"
+                                       "10. Se o perfil for writing-chapter, responda em prosa estruturada. Se for writing-outline, entregue estrutura. Se for writing-review, entregue crítica editorial/conceitual.";
 
             std::string fullMsg = "";
             if (!selectedFile.empty()) {
@@ -627,6 +851,8 @@ void AgentUI::drawChatWindow() {
                 std::lock_guard<std::mutex> lock(msgMutex);
                 history.push_back({"user", userMsg});
                 history.push_back({"assistant", "..."});
+                agent::core::clearNativeToolUsageSummary();
+                contextUsageStatus.clear();
                 thoughtStream = "Modo Analista de Elite: Consultando Realidade do Workspace...";
                 saveSession();
             }
@@ -634,8 +860,8 @@ void AgentUI::drawChatWindow() {
             inputBuf[0] = '\0';
             scrollToBottom = true;
 
-            if (autonomousMode) {
-                std::string missionGoal = "[reasoning=" + reasoning + "][access=" + access + "][profile=" + profile + "] " + userMsg;
+            if (autonomousMode && profilePrefersAutonomous(profile)) {
+                std::string missionGoal = "[reasoning=" + reasoning + "][access=" + access + "][profile=" + profile + "][context=" + contextSource + "] " + userMsg;
                 runPythonAgent(missionGoal, "AGENT");
             } else {
                 int promptEstimate = static_cast<int>((fullMsg.size() / 4) + 24);
@@ -684,6 +910,22 @@ void AgentUI::drawThoughtPanel() {
     ImGui::Separator();
     ImGui::Text("Projeto: %s", projectLabelFromRoot(currentProjectRoot).c_str());
     ImGui::TextDisabled("%s", currentProjectRoot.c_str());
+    ImGui::TextColored(ImVec4(0.75f, 0.82f, 0.55f, 1.0f), "Contexto: %s", contextSourceHintFor(selectedContextSource).c_str());
+    if (!approvedLibraryPaths.empty()) {
+        ImGui::TextWrapped("Bibliotecas locais: %s", joinCommaList(approvedLibraryPaths).c_str());
+    }
+    if (selectedContextSource == 2 && !approvedDomainsCsv.empty()) {
+        ImGui::TextWrapped("Domínios aprovados: %s", approvedDomainsCsv.c_str());
+    }
+    if (!contextPolicyStatus.empty()) {
+        ImGui::TextWrapped("%s", contextPolicyStatus.c_str());
+    }
+    contextUsageStatus = agent::core::getNativeToolUsageSummary();
+    if (!contextUsageStatus.empty()) {
+        ImGui::Separator();
+        ImGui::TextColored(ImVec4(0.85f, 0.72f, 0.4f, 1.0f), "Uso efetivo de bases:");
+        ImGui::TextWrapped("%s", contextUsageStatus.c_str());
+    }
     ImGui::Separator();
     
     // Automação: Exibir dependências detectadas
@@ -696,6 +938,37 @@ void AgentUI::drawThoughtPanel() {
     ImGui::BeginChild("ThoughtScroll");
     ImGui::TextWrapped("%s", thoughtStream.c_str());
     ImGui::EndChild();
+
+    // --- SEÇÃO RAG MONITOR ---
+    ImGui::Separator();
+    ImGui::TextColored(ImVec4(0.4f, 0.7f, 1.0f, 1.0f), "RAG MONITOR");
+    
+    // Atualizar stats periodicamente
+    static auto lastRagUpdate = std::chrono::steady_clock::now();
+    if (std::chrono::steady_clock::now() - lastRagUpdate > std::chrono::seconds(2)) {
+        ragStats = agent::core::getNativeToolRagStats();
+        lastRagUpdate = std::chrono::steady_clock::now();
+    }
+
+    ImGui::Text("Documentos Indexados: %d", ragStats.docCount);
+    float sizeMb = static_cast<float>(ragStats.cacheSizeBytes) / (1024.0f * 1024.0f);
+    ImGui::Text("Tamanho do Cache: %.2f MB", sizeMb);
+
+    if (ragIndexingBusy) {
+        ImGui::BeginDisabled();
+        ImGui::Button("Sincronizando...", ImVec2(-1, 0));
+        ImGui::EndDisabled();
+        ImGui::ProgressBar(ragIndexingProgress, ImVec2(-1, 0));
+        ImGui::TextDisabled("%s", ragIndexingStatusMsg.c_str());
+    } else {
+        if (ImGui::Button("Sincronizar Bibliotecas Agora", ImVec2(-1, 0))) {
+            triggerRagSync();
+        }
+        if (ImGui::IsItemHovered()) {
+            ImGui::SetTooltip("Inicia a varredura e indexação de todos os arquivos nas pastas de referência.");
+        }
+    }
+    
     ImGui::EndChild();
 }
 
@@ -717,12 +990,19 @@ void AgentUI::drawStatsPanel() {
 
     std::string modelBadge = "Modelo: " + (currentModel.empty() ? std::string("N/D") : currentModel);
     std::string hint = modelHintFor(currentModel);
+    std::string profile = profileLabel(selectedProfile);
+    std::string profileBadge = "Perfil: " + profile + " (" + profileHintFor(profile) + ")";
+    std::string contextBadge = "Contexto: " + std::string(contextSourceLabel(selectedContextSource));
     std::string shortHint = hint;
     const std::string prefix = "Vocação: ";
     if (shortHint.rfind(prefix, 0) == 0) shortHint = shortHint.substr(prefix.size());
     ImGui::TextColored(ImVec4(0.85f, 0.8f, 0.45f, 1.0f), "%s", modelBadge.c_str());
     ImGui::SameLine();
     ImGui::TextDisabled("(%s)", shortHint.c_str());
+    ImGui::SameLine();
+    ImGui::TextColored(ImVec4(0.55f, 0.85f, 0.75f, 1.0f), "%s", profileBadge.c_str());
+    ImGui::SameLine();
+    ImGui::TextColored(ImVec4(0.75f, 0.7f, 0.95f, 1.0f), "%s", contextBadge.c_str());
     
     ImGui::End();
 }
@@ -815,6 +1095,63 @@ void AgentUI::drawGovernedProjectDialog() {
         if (ImGui::Button("Cancelar", ImVec2(120, 0))) {
             ImGui::CloseCurrentPopup();
             governedProjectDialogVisible = false;
+        }
+        ImGui::EndPopup();
+    }
+}
+
+void AgentUI::drawContextPolicyDialog() {
+    if (contextPolicyDialogRequested) {
+        contextPolicyDialogVisible = true;
+        ImGui::OpenPopup("Fontes de Contexto");
+        contextPolicyDialogRequested = false;
+    }
+
+    if (ImGui::BeginPopupModal("Fontes de Contexto", &contextPolicyDialogVisible, ImGuiWindowFlags_AlwaysAutoResize)) {
+        ImGui::TextWrapped("Configure fontes aprovadas para ampliar o contexto do agente por projeto.");
+        ImGui::Separator();
+
+        const char* contextItems[] = {"Workspace", "Workspace + Biblioteca", "Workspace + Biblioteca + Web"};
+        ImGui::SetNextItemWidth(320.0f);
+        ImGui::Combo("Modo", &selectedContextSource, contextItems, IM_ARRAYSIZE(contextItems));
+
+        ImGui::TextDisabled("Bibliotecas locais aprovadas (uma por linha)");
+        ImGui::InputTextMultiline("##BibliotecasLocais", contextLibraryPathsBuf, IM_ARRAYSIZE(contextLibraryPathsBuf), ImVec2(640.0f, 110.0f));
+        if (ImGui::Button("Adicionar pasta...", ImVec2(140, 0))) {
+            std::string preferred = approvedLibraryPaths.empty() ? currentProjectRoot : approvedLibraryPaths.back();
+            std::string picked = pickFolderDialog(preferred);
+            if (!picked.empty()) {
+                std::string current = contextLibraryPathsBuf;
+                if (!current.empty() && current.back() != '\n') current += "\n";
+                current += normalizeRootPath(picked);
+                std::snprintf(contextLibraryPathsBuf, sizeof(contextLibraryPathsBuf), "%s", current.c_str());
+            }
+        }
+        ImGui::SameLine();
+        if (ImGui::Button("Limpar lista", ImVec2(120, 0))) {
+            contextLibraryPathsBuf[0] = '\0';
+        }
+
+        ImGui::SetNextItemWidth(640.0f);
+        ImGui::InputText("Domínios aprovados (CSV)", contextDomainsBuf, IM_ARRAYSIZE(contextDomainsBuf));
+        ImGui::TextDisabled("Ex.: embrapa.br, scielo.br, gov.br");
+
+        if (!contextPolicyStatus.empty()) {
+            ImGui::TextWrapped("%s", contextPolicyStatus.c_str());
+        }
+        ImGui::Separator();
+
+        if (ImGui::Button("Aplicar", ImVec2(120, 0))) {
+            approvedLibraryPaths = splitLineList(contextLibraryPathsBuf);
+            approvedDomainsCsv = trimPathInput(contextDomainsBuf);
+            applyContextPolicy();
+            saveContextPolicy();
+            contextPolicyStatus = "Política de contexto aplicada ao projeto.";
+        }
+        ImGui::SameLine();
+        if (ImGui::Button("Cancelar", ImVec2(120, 0))) {
+            contextPolicyDialogVisible = false;
+            ImGui::CloseCurrentPopup();
         }
         ImGui::EndPopup();
     }
@@ -997,6 +1334,8 @@ void AgentUI::detectProjectTech() {
     try {
         cleanupEmptySessions();
         generateProjectMap();
+        loadContextPolicy();
+        applyContextPolicy();
         if (fs::exists(fs::path(currentProjectRoot) / "requirements.txt") || 
             fs::exists(fs::path(currentProjectRoot) / "setup.py") ||
             fs::exists(fs::path(currentProjectRoot) / "main.py")) {
@@ -1209,6 +1548,11 @@ fs::path AgentUI::sessionsDir() const {
     return fs::path(currentProjectRoot) / ".agent" / "sessions";
 }
 
+fs::path AgentUI::contextPolicyFile() const {
+    if (currentProjectRoot.empty()) return fs::path(".agent/context_policy.json");
+    return fs::path(currentProjectRoot) / ".agent" / "context_policy.json";
+}
+
 bool AgentUI::loadSessionFromFile(const fs::path& sessionFile) {
     if (!fs::exists(sessionFile)) return false;
     std::ifstream i(sessionFile);
@@ -1293,6 +1637,69 @@ int AgentUI::cleanupEmptySessions() {
         }
     }
     return removed;
+}
+
+void AgentUI::applyContextPolicy() {
+    agent::core::setNativeToolContextSourceMode(contextSourceModeFromIdx(selectedContextSource));
+    agent::core::setNativeToolApprovedRoots(approvedLibraryPaths);
+    agent::core::setNativeToolApprovedDomains(splitCsvList(approvedDomainsCsv));
+
+    std::string modeText = contextSourceHintFor(selectedContextSource);
+    contextPolicyStatus = "Contexto ativo: " + modeText;
+    if (!approvedLibraryPaths.empty()) contextPolicyStatus += "\nBibliotecas locais aprovadas: " + joinCommaList(approvedLibraryPaths);
+    if (selectedContextSource == 2 && !approvedDomainsCsv.empty()) contextPolicyStatus += "\nDomínios aprovados: " + approvedDomainsCsv;
+}
+
+void AgentUI::loadContextPolicy() {
+    if (!hasOpenProject || currentProjectRoot.empty()) return;
+    try {
+        fs::path file = contextPolicyFile();
+        if (!fs::exists(file)) {
+            approvedLibraryPaths.clear();
+            approvedDomainsCsv = "embrapa.br";
+            selectedContextSource = 0;
+            contextUsageStatus.clear();
+            return;
+        }
+        std::ifstream in(file);
+        nlohmann::json j;
+        in >> j;
+        std::string mode = j.value("context_source", std::string("workspace"));
+        if (mode == "workspace+library+web") selectedContextSource = 2;
+        else if (mode == "workspace+library") selectedContextSource = 1;
+        else selectedContextSource = 0;
+        approvedLibraryPaths.clear();
+        if (j.contains("approved_library_paths") && j["approved_library_paths"].is_array()) {
+            for (const auto& item : j["approved_library_paths"]) {
+                if (item.is_string()) approvedLibraryPaths.push_back(item.get<std::string>());
+            }
+        } else {
+            std::string legacyPath = j.value("approved_library_path", std::string());
+            if (!legacyPath.empty()) approvedLibraryPaths.push_back(legacyPath);
+        }
+        approvedDomainsCsv = j.value("approved_domains_csv", std::string("embrapa.br"));
+        contextUsageStatus.clear();
+    } catch (...) {
+        approvedLibraryPaths.clear();
+        approvedDomainsCsv = "embrapa.br";
+        selectedContextSource = 0;
+        contextUsageStatus.clear();
+    }
+}
+
+void AgentUI::saveContextPolicy() {
+    if (!hasOpenProject || currentProjectRoot.empty()) return;
+    try {
+        fs::path file = contextPolicyFile();
+        if (!fs::exists(file.parent_path())) fs::create_directories(file.parent_path());
+        nlohmann::json j;
+        j["context_source"] = contextSourceLabel(selectedContextSource);
+        j["approved_library_paths"] = approvedLibraryPaths;
+        j["approved_domains_csv"] = approvedDomainsCsv;
+        std::ofstream out(file);
+        out << j.dump(2);
+    } catch (...) {
+    }
 }
 
 bool AgentUI::createGovernedProject(const fs::path& basePathIn, const std::string& rawName, int type, std::string& outPath, std::string& err) {
@@ -1399,6 +1806,11 @@ bool AgentUI::createGovernedProject(const fs::path& basePathIn, const std::strin
               "# Evidence Policy\n\n"
               "- Toda afirmação de execução deve ter evidência.\n"
               "- Evidência mínima: comando + saída curta ou caminho de arquivo.\n");
+        write(root / "ai-governance/policies/context-sources.md",
+              "# Context Sources Policy\n\n"
+              "- Defina bibliotecas locais aprovadas por projeto.\n"
+              "- Defina domínios web aprovados para consulta.\n"
+              "- Separe sempre evidência local, evidência externa e inferência do agente.\n");
         write(root / "ai-governance/checklists/review.md",
               "# Review Checklist\n\n"
               "- [ ] Escopo claro\n"
@@ -1416,6 +1828,12 @@ bool AgentUI::createGovernedProject(const fs::path& basePathIn, const std::strin
               "  [ -f \"$f\" ] || { echo \"Missing $f\"; exit 1; }\n"
               "done\n"
               "echo \"Governance structure OK\"\n");
+        write(root / ".agent/context_policy.json",
+              "{\n"
+              "  \"context_source\": \"workspace\",\n"
+              "  \"approved_library_paths\": [],\n"
+              "  \"approved_domains_csv\": \"embrapa.br\"\n"
+              "}\n");
 
         if (type == 0) {
             write(root / "CMakeLists.txt",
@@ -1491,6 +1909,85 @@ void AgentUI::runPythonAgent(const std::string& goal, const std::string& mode) {
     }
 
     orchestrator->runMission(goal, mode, 10, cb);
+}
+
+void AgentUI::triggerRagSync() {
+    if (ragIndexingBusy) return;
+    ragIndexingBusy = true;
+    ragIndexingProgress = 0.0f;
+    ragIndexingStatusMsg = "Iniciando varredura...";
+
+    std::thread([this]() {
+        try {
+            std::vector<std::string> roots = agent::core::getNativeToolApprovedRoots();
+            std::vector<std::filesystem::path> allFiles;
+            
+            std::vector<std::string> missingRoots;
+            
+            for (const auto& rootStr : roots) {
+                try {
+                    std::filesystem::path root(rootStr);
+                    if (!std::filesystem::exists(root)) {
+                        missingRoots.push_back(rootStr);
+                        continue;
+                    }
+                    // Adicionando opcoes para pular erros de permissao e nao abortar a varredura
+                    for (const auto& entry : std::filesystem::recursive_directory_iterator(root, std::filesystem::directory_options::skip_permission_denied)) {
+                        if (entry.is_regular_file()) {
+                            std::string ext = entry.path().extension().string();
+                            std::transform(ext.begin(), ext.end(), ext.begin(), [](unsigned char c){ return std::tolower(c); });
+                            if (ext == ".pdf" || ext == ".txt" || ext == ".md" || ext == ".rst") {
+                                allFiles.push_back(entry.path());
+                            }
+                        }
+                    }
+                } catch (const std::exception& e) {
+                    // Logar erro de varredura mas continuar para as outras roots
+                    missingRoots.push_back(rootStr + " (Erro: " + e.what() + ")");
+                }
+            }
+
+            if (!missingRoots.empty()) {
+                ragIndexingStatusMsg = "Aviso: Algumas pastas falharam.";
+                std::this_thread::sleep_for(std::chrono::seconds(2));
+            }
+
+            if (allFiles.empty()) {
+                ragIndexingStatusMsg = "Nenhum arquivo encontrado nas pastas validas.";
+                std::this_thread::sleep_for(std::chrono::seconds(3));
+                ragIndexingBusy = false;
+                return;
+            }
+
+            int successCount = 0;
+            int errorCount = 0;
+            for (size_t i = 0; i < allFiles.size(); ++i) {
+                try {
+                    ragIndexingStatusMsg = "Ingerindo [" + std::to_string(i+1) + "/" + std::to_string(allFiles.size()) + "]: " + allFiles[i].filename().string();
+                    std::string res = agent::core::ingest_file_direct(allFiles[i].string());
+                    if (res.rfind("Erro", 0) == 0) {
+                        errorCount++;
+                    } else {
+                        successCount++;
+                    }
+                } catch (...) {
+                    errorCount++;
+                }
+                ragIndexingProgress = static_cast<float>(i + 1) / static_cast<float>(allFiles.size());
+                
+                // Atualizar status parcial a cada 5 arquivos para dar feedback visual de progresso
+                if (i % 5 == 0) ragStats = agent::core::getNativeToolRagStats();
+            }
+
+            ragIndexingStatusMsg = "Concluido! Sucesso: " + std::to_string(successCount) + " | Erros: " + std::to_string(errorCount);
+            ragStats = agent::core::getNativeToolRagStats();
+            std::this_thread::sleep_for(std::chrono::seconds(5));
+        } catch (const std::exception& e) {
+            ragIndexingStatusMsg = "Erro no sync: " + std::string(e.what());
+            std::this_thread::sleep_for(std::chrono::seconds(3));
+        }
+        ragIndexingBusy = false;
+    }).detach();
 }
 
 } // namespace agent::ui

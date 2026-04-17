@@ -1,0 +1,460 @@
+Copyright © 2004 by the author(s). Published here under licence by The Resilience Alliance.
+Walker, B., C. S. Holling, S. R. Carpenter, and A. Kinzig. 2004. Resilience, adaptability and
+transformability in social–ecological systems. Ecology and Society 9(2): 5. [online] URL:
+http://www.ecologyandsociety.org/vol9/iss2/art5
+
+
+
+Perspective
+Resilience, Adaptability and Transformability in Social–
+ecological Systems
+Brian Walker1, C. S. Holling, Stephen R. Carpenter2, and Ann Kinzig3
+
+
+
+ABSTRACT. The concept of resilience has evolved considerably since Holling’s (1973) seminal paper. Different
+interpretations of what is meant by resilience, however, cause confusion. Resilience of a system needs to be
+considered in terms of the attributes that govern the system’s dynamics. Three related attributes of social–
+ecological systems (SESs) determine their future trajectories: resilience, adaptability, and transformability.
+Resilience (the capacity of a system to absorb disturbance and reorganize while undergoing change so as to still
+retain essentially the same function, structure, identity, and feedbacks) has four components—latitude, resistance,
+precariousness, and panarchy—most readily portrayed using the metaphor of a stability landscape. Adaptability is
+the capacity of actors in the system to influence resilience (in a SES, essentially to manage it). There are four
+general ways in which this can be done, corresponding to the four aspects of resilience. Transformability is the
+capacity to create a fundamentally new system when ecological, economic, or social structures make the existing
+system untenable.
+
+The implications of this interpretation of SES dynamics for sustainability science include changing the focus from
+seeking optimal states and the determinants of maximum sustainable yield (the MSY paradigm), to resilience
+analysis, adaptive resource management, and adaptive governance.
+
+
+
+INTRODUCTION                                                                     An inherent difficulty in the application of these
+                                                                                 concepts is that, by their nature, they are rather
+We need a better scientific basis for sustainable                                imprecise. They fall into the same sort of category as
+development than is generally applied (e.g., a new                               “justice” or “wellbeing,” and it can be
+“sustainability science”). The “Consortium for                                   counterproductive to seek definitions that are too
+Sustainable Development” (of the International Council                           narrow. Because different groups adopt different
+for Science, the Initiative on Science and Technology for                        interpretations to fit their understanding and purpose,
+Sustainability, and the Third World Academy of                                   however, there is confusion in their use. The confusion
+Science), the US National Research Council (1999,                                then extends to how a resilience approach (Holling
+2002), and the Millennium Ecosystem Assessment                                   1973, Gunderson and Holling 2002) can contribute to
+(2003), have all focused increasing attention on such                            the goals of sustainable development. In what follows,
+notions as robustness, vulnerability, and risk. There is                         we provide an interpretation and an explanation of
+good reason for this, as it is these characteristics of                          how these concepts are reflected in the adaptive cycles
+social–ecological systems (SESs) that will determine                             of complex, multi-scalar SESs.
+their ability to adapt to and benefit from change. In
+particular, the stability dynamics of all linked systems of                      There is little fundamentally new theory in this paper.
+humans and nature emerge from three complementary                                What is new is that it uses established theory of non-
+attributes: resilience, adaptability, and transformability.                      linear stability (Levin 1999, Scheffer et al. 2001,
+The purpose of this paper is to examine these three                              Gunderson and Holling 2002, Berkes et al. 2003) to
+attributes; what they mean, how they interact, and their                         clarify, explain, and diagnose known examples of
+implications for our future well-being.                                          regional development, regional poverty, and regional
+
+1
+    CSIRO Sustainable Ecosystems; 2University of Wisconsin-Madison; 3Arizona State University
+                                                                                                 Ecology and Society 9(2): 5.
+                                                                               http://www.ecologyandsociety.org/vol9/iss2/art5
+
+sustainability. These include, among others, the           phase (Ω) that rapidly gives way to a phase of
+Everglades and the Wisconsin Northern Highlands            reorganization (α), which may be rapid or slow, and
+Lake District in the USA, rangelands and an                during which, innovation and new opportunities are
+agricultural catchment in southeastern Australia, the      possible. The Ω and α phases together comprise an
+semi-arid savanna in southeastern Zimbabwe, the            unpredictable backloop. The α phase leads into a
+Kristianstad “Water Kingdom” in southern Sweden,           subsequent r phase, which may resemble the previous r
+and the Mae Ping valley in northern Thailand. These        phase or be significantly different.
+regions provide examples of both successes and
+failures of development. Some from rich countries          This metaphor of the adaptive cycle is based on
+have generated several pulses of solutions over a span     observed system changes, and does not imply fixed,
+of a hundred years and have generated huge costs of        regular cycling. Systems can move back from K
+recovery (the Everglades). Some from poor countries        toward r, or from r directly into Ω, or back from α to
+have emerged in a transformed way but then, in some        Ω. Finally (and importantly), the cycles occur at a
+cases, have been dragged back by higher-level              number of scales and SESs exist as “panarchies”—
+autocratic regimes (Zimbabwe). Some began as local-        adaptive cycles interacting across multiple scales.
+scale solutions and then developed as transformations      These cross-scale effects are of great significance in
+across scales from local to regional (Kristianstad and     the dynamics of SESs.
+northern Wisconsin). In all of them, the outcomes
+were determined by the interplay of their resilience,      Resilience
+adaptability, and transformability.
+                                                           Resilience is the capacity of a system to absorb
+There is a major distinction between resilience and        disturbance and reorganize while undergoing change
+adaptability, on the one hand, and transformability on     so as to still retain essentially the same function,
+the other. Resilience and adaptability have to do with     structure, identity, and feedbacks. As amplified below,
+the dynamics of a particular system, or a closely          the focus is on the dynamics of the system when it is
+related set of systems. Transformability refers to         disturbed far from its modal state. The notion of speed
+fundamentally altering the nature of a system. As with     of return to equilibrium (Pimm 1991) leads to what has
+many terms under the resilience rubric, the dividing       been termed “engineering resilience” (Holling 1996)
+line between “closely related” and “fundamentally          and, although related to one aspect of “ecological
+altered” can be fuzzy, and subject to interpretation. So   resilience,” cannot be considered as the measure of
+we begin by first offering the most general, qualitative   resilience. Because of the possibility of multiple stable
+set of definitions, without reference to conceptual        states, when considering the extent to which a system
+frameworks, that can be used to describe these terms.      can be changed, return time doesn’t measure all of the
+We then use some examples and the literature on            ways in which a system may fail—permanently or
+“basins of attraction” and “stability landscapes” to       temporarily—to retain essential functions. It is also
+further refine our definitions. Before giving the          important to bear in mind that “systems” consist of
+definitions, however, we need to briefly introduce the     nested dynamics operating at particular organizational
+concept of adaptive cycles.                                scales—“sub-systems,” as it were, of households to
+                                                           villages to nations, trees to patches to landscapes.
+Adaptive Cycles and Cross-scale Effects
+                                                           There are four crucial aspects of resilience. The first
+The dynamics of SESs can be usefully described and         three can apply both to a whole system or the sub-
+analyzed in terms of a cycle, known as an adaptive         systems that make it up.
+cycle, that passes through four phases. Two of them—
+a growth and exploitation phase (r) merging into a             1. Latitude: the maximum amount a system can
+conservation phase (K)—comprise a slow, cumulative                be changed before losing its ability to recover
+forward loop of the cycle, during which the dynamics              (before crossing a threshold which, if
+of the system are reasonably predictable. As the K                breached, makes recovery difficult or
+phase continues, resources become increasingly locked             impossible).
+up and the system becomes progressively less flexible          2. Resistance: the ease or difficulty of changing
+and responsive to external shocks. It is eventually,              the system; how “resistant” it is to being
+inevitably, followed by a chaotic collapse and release            changed.
+                                                                                                Ecology and Society 9(2): 5.
+                                                                              http://www.ecologyandsociety.org/vol9/iss2/art5
+
+    3. Precariousness: how close the current state of     EXPLANATION
+       the system is to a limit or “threshold.”
+    4. Panarchy: because of cross-scale interactions,     Resilience: States, Attractors, and Stability
+       the resilience of a system at a particular focal   Landscapes
+       scale will depend on the influences from states
+       and dynamics at scales above and below. For        The “state space” of a system is defined by the (state)
+       example,     external oppressive politics,         variables that constitute the system. If, for example,
+       invasions, market shifts, or global climate        we define a rangeland system by the amount of grass,
+       change can trigger local surprises and regime      shrubs,and livestock, then the state space is the three-
+       shifts.                                            dimensional space of all possible combinations of the
+                                                          amounts of these three variables. The state of the
+Adaptability                                              system at any time is defined by their current values.
+
+Adaptability is the capacity of actors in a system to     A “basin of attraction” is a region in state space in
+influence resilience. In a SES, this amounts to the       which the system tends to remain. For systems that
+capacity of humans to manage resilience. A                tend toward an equilibrium, the equilibrium state is
+characteristic feature of complex adaptive systems is     defined as an “attractor,” and the basin of attraction
+self-organization without intent (Levin 1998), and        constitutes all initial conditions that will tend toward
+although the dynamics of SESs are dominated by            that equilibrium state. All real-world SESs are,
+individual human actors who do exhibit intent, the        however, continuously buffeted by disturbances,
+system as a whole does not (as in the case of a           stochasticity, and decisions of actors that tend to move
+market). Nevertheless, because human actions              the system off the attractor. Therefore, we think of
+dominate in SESs, adaptability of the system is mainly    SESs as moving about within a particular basin of
+a function of the social component—the individuals        attraction, rather than tending directly toward an
+and groups acting to manage the system. Their actions     attractor. There may be more than one such basin of
+influence     resilience,   either     intentionally or   attraction for any given system (for example, two or
+unintentionally. Their collective capacity to manage      more combinations of amounts of grass, shrubs, and
+resilience, intentionally, determines whether they can    livestock toward which a rangeland might tend,
+successfully avoid crossing into an undesirable system    depending on the starting point). The various basins
+regime, or succeed in crossing back into a desirable      that a system may occupy, and the boundaries that
+one. There are four ways to do this, corresponding to     separate them, are known as a “stability landscape.”
+the four aspects of resilience. Actors can move           Fig. 1a depicts the first three components of resilience
+thresholds away from or closer to the current state of    for a basin in a stability landscape of two state
+the system (by altering (1) above), move the current      variables. A good review and summary of stability
+state of the system away from or closer to the            landscape dynamics in ecology is given in Beisner et
+threshold (altering 3), or make the threshold more        al. (2003).
+difficult or easier to reach (altering 2). In addition,
+actors can manage cross-scale interactions to avoid or    Both exogenous drivers (rainfall, exchange rates) and
+generate loss of resilience at the largest and most       endogenous processes (plant succession, predator–prey
+socially catastrophic scales (altering 4).                cycles, management practices) can lead to changes in
+                                                          the stability landscape, such as: changes in the number
+Transformability                                          of basins of attraction, changes in the positions of the
+                                                          basins within the state space, changes in the positions
+The capacity to create a fundamentally new system         of the thresholds (edges) between basins (latitude—L
+when ecological, economic, or social (including           in Fig. 1a), or changes in the “depths” of basins, a
+political) conditions make the existing system            measure of how difficult it is to move the system
+untenable.                                                around within the basin—steep sides imply greater
+                                                          perturbations or management efforts are needed to
+                                                          change the state of the system, i.e., its position within
+                                                          the basin (resistance—R in Fig. 1a). Moving the
+                                                          system around changes its position within a basin
+                                                          relative to the edge (precariousness—Pr in Fig. 1a), or
+                                                                                                      Ecology and Society 9(2): 5.
+                                                                                    http://www.ecologyandsociety.org/vol9/iss2/art5
+
+moves it into a new basin (e.g., Fig. 1b, where, without       In evolved systems that have been subjected to strong
+the state of the system itself changing, the system finds      selection pressures, the three aspects of resilience have
+itself in a new basin of attraction, owing to changes in       co-developed and are often strongly inter-related. For
+the stability landscape). The people in this system            example, one dimension (axis) of the stability
+might consider some basins to be desirable (lots of            landscape for individual human health is temperature.
+grass, few shrubs, plentiful livestock) and the objective      (One could imagine three basins of attraction in this
+might be to prevent the system from moving into an             landscape—healthy, sick, or dead). For good
+alternate, undesirable basin (little grass, many shrubs,       physiological reasons, the optimal temperature for the
+few livestock) from which it may be difficult or               body is very close to the threshold between life and
+impossible to recover.                                         death (very precarious). A hundred million years of
+                                                               homeotherm natural selection has ensured that there
+                                                               are strong negative feedbacks—temperature regulation
+                                                               mechanisms—making it very unlikely and difficult for
+Fig. 1a. Three-dimensional stability landscape with two        the body to move across the critical temperature
+basins of attraction showing, in one basin, the current        threshold. In other words, being precariously close to
+position of the system and three aspects of resilience, L =    such a threshold has meant the evolution of strong
+latitude, R = resistance, Pr = precariousness.                 resistance. Evolving toward the edge of chaos
+                                                               (corresponding, in this case, to the edge of a basin of
+                                                               attraction) is a seemingly common consequence of
+                                                               selection (Kaufmann 2000) for maximum efficiency.
+                                                               Recently developed SESs (managed fisheries and
+                                                               virtually all agro-ecosystems, for example) have short
+                                                               co-evolutionary histories. Therefore, we cannot rely on
+                                                               such selected relationships with appropriate feedback
+                                                               controls, and the likelihood of crossing thresholds is
+                                                               much higher (as evidenced by the many examples of
+                                                               collapsed fisheries and salinized or otherwise degraded
+                                                               agricultural regions).
+
+                                                               No SES can be understood by examining it at only one
+                                                               scale. The social component of a SES consists of
+                                                               groups of people organized at multiple levels with
+Fig. 1b. Changes in the stability landscape have resulted in   differing views as to whether some basins are
+a contraction of the basin the system was in and an            desirable and others undesirable. At any particular
+expansion of the alternate basin. Without itself changing,     scale, the system is actually a sub-system of the whole
+the system has changed basins.
+                                                               panarchy, and the first three aspects of resilience are
+                                                               influenced by what is happening in the panarchy at
+                                                               scales above and below the scale of interest. Panarchy,
+                                                               the cross-scale effects, is the fourth aspect of resilience
+                                                               that needs to be considered (Pa in Fig. 2). For
+                                                               example, many lakes occupy a stability landscape with
+                                                               essentially two basins of attraction: one that is initially
+                                                               wide and cavernous, characterized by clear water, and
+                                                               a smaller one characterized by turbid water (Carpenter
+                                                               2003). Agricultural practices within the larger SES,
+                                                               through application of fertilizers and manure, have
+                                                               gradually increased the phosphorus content of soils in
+                                                               some watersheds. This cross-scale effect has changed
+                                                               the stability landscapes of the lakes in several ways.
+                                                               As lake basins fill with sediment, a third basin of
+                                                               attraction has appeared, one in which the lake is
+                                                               dominated by rooted vegetation. The first basin—clear
+                                                                                                    Ecology and Society 9(2): 5.
+                                                                                  http://www.ecologyandsociety.org/vol9/iss2/art5
+
+water and sparse vegetation—shrinks and nearly                (see Berkes et al. 2003, for a good account). The
+disappears from the stability landscape. The second           ability to either control the trajectory of the system
+basin—turbid water and frequent blooms of toxic               (change precariousness), change the topology of the
+algae—moves from being small to being wider and               stability landscape (latitude and resistance), or change
+more cavernous.                                               the processes in response to dynamics at other scales
+                                                              (panarchy response), is a measure of adaptability.
+                                                              Consider both strategies in the case of the lake that has
+                                                              fallen into a turbid basin. Managers could attempt to
+Fig. 2. The fourth aspect of resilience in relation to a      move the ecosystem to another basin without changing
+stability landscape—Panarchy (Pa); the influence of the       the stability landscape by chemically immobilizing the
+states of the system (including where they are in their       phosphate in the lake. If the land-use practices of the
+adaptive cycles) at scales above and below the focal scale,   SES change in ways that reduce phosphorus levels in
+which affects the other three aspects (Fig. 1) by impacting
+                                                              soils, in contrast, the stability landscape changes, the
+the system directly (from the finer scale) or changing the
+stability landscape (from the coarser scale).                 turbid basin shrinks, and the clear water basin
+                                                              expands. Both purposeful movements between basins,
+                                                              and purposeful reshaping of the stability landscape,
+                                                              demonstrate adaptability. SESs can move from one
+                                                              basin of attraction to another either by the system
+                                                              crossing a threshold, or by a threshold moving across
+                                                              the system.
+
+                                                              Transformability
+
+                                                              At times societies or groups may find themselves
+                                                              trapped in an undesirable basin that is becoming so
+                                                              wide, and so deep, that movement to a new basin or
+                                                              sufficient reconfiguration of the existing basin
+                                                              becomes extremely difficult. At some point, it may
+                                                              prove necessary to configure an entirely new stability
+                                                              landscape—one defined by new state variables, or the
+Some loss of resilience, at some scales, is an inevitable     old state variables supplemented by new ones. For
+feature of the cross-scale dynamics in complex                instance, in the rangeland case—defined originally by
+adaptive systems. Losses, however, can be managed so          the amount of grass, shrubs, and cattle—a new
+as to be confined to smaller organizational scales, with      stability landscape could be created by introducing
+less consequent social and environmental dislocation.         new ways for earning a living, such as ecotourism,
+All else being equal, a system that loses resilience at       based on wildlife and rivers. This is what occurred in
+small, and more societally manageable, scales of              southeastern Zimbabwe (Cumming 1999) where, after
+organization (e.g., patches) will be more resilient than      many decades of cattle ranching, the rangeland
+one where these losses occur at larger scales (e.g.,          ecosystem had changed undesirably for livestock and
+landscapes). Note, however, that resilience is not            terms of trade had declined. A severe drought in the
+always a good thing. Sometimes change is desirable,           early 1980s triggered a transformation from many
+generally at larger scales, and then effective                individual cattle ranches to a few wildlife
+management requires overcoming the resilience in the          “conservancies” with all livestock and fences removed
+system to precipitate changes at these scales.                and managed collectively for tourism and hunting. The
+                                                              capacity to create such a new stability landscape is
+Components of Adaptability                                    known as transformability—the capacity to create
+                                                              untried beginnings from which to evolve a new way of
+As explained in the initial definition, because the           living when existing ecological, economic, or social
+dynamics and direction of change in a SES are                 structures become untenable. New variables are
+dominated by human actions, we consider adaptability          introduced or allowed to emerge. The changes cascade
+to be mainly a function of the social component—the           through and may transform the whole panarchy with
+individuals and groups acting to manage the system            all its constituent adaptive cycles. There are many
+                                                                                                 Ecology and Society 9(2): 5.
+                                                                               http://www.ecologyandsociety.org/vol9/iss2/art5
+
+examples of SESs becoming locked in and unable to          (and some unknown) shocks, and simultaneously
+transform until it is too late (salinized agricultural     building a capacity for transformability, should it be
+systems; dams, floodplains and flood control; forest       needed. How can we foster or maintain the flexibility
+fire suppression at ever larger scales). How can society   that will be required to cope with unforeseen
+develop transformability and avoid such lock-ins?          challenges? It is nevertheless likely that there is
+                                                           overlap in the attributes that promote adaptability and
+Examples of globally new phenomena at large                transformability. In addition to such common
+time/space scales are the dramatic jump that saw the       attributes (e.g., diverse and high levels of natural and
+replacement of dominance by reptiles with dominance        built capital), we speculate that attributes required for
+by mammals (the transformational success of                transformability will emphasize novelty, diversity, and
+homeothermy in the course of biological evolution),        organization in human capital—diversity of functional
+and, at scales in the course of human civilization, the    types (kinds of education, expertise, and occupations);
+agrarian revolution, the emergence of cities, and the      trust, strengths, and variety in institutions; speeds and
+industrial revolution, all examples of transformative      kinds of cross-scale communication, both within the
+changes. But consider more local or regional               panarchy and between other systems elsewhere. Such
+situations, as in the following example.                   attributes are implicit (although not specifically
+                                                           identified) in Stiglitz”s (2002) comparison of “good”
+Scenario planning is a process of envisioning plausible    and       “bad”     outcomes      of      socio-economic
+transformations and bringing them into social decision     transformations following the fall of communism in
+processes (Peterson et al. 2003). As part of a project     Russia and the Southeast Asian economic crisis. He
+on resilience analysis and governance in the Northern      highlights the role played by sequencing of
+Highlands of Wisconsin, USA, a diverse group of            institutional development and economic rules—
+local people and scientists evaluated possible futures     attributes that fall within the crucial area (for
+of the region and envisioned four plausible                resilience) of adaptive governance, a good account of
+transformations        (http://lakefutures.wisc.edu):  a   which is given in Dietz et al. (2003). We return to it
+tourism-based theme park region (“Annaheim North”);        later.
+a region with an environmentally induced drop in
+population followed by gradual reorganization around       A RETURN TO THE DEFINITIONS
+tribal initiatives (“Walleye Commons”); an expanded
+and diversified population leading to resource conflicts   Using the concepts of basins of attraction and stability
+being resolved by allocating recreational lands and        landscapes, we can now offer more precise definitions
+lakes for certain specified uses (“Northwoods Quilts”);    of resilience, adaptability, and transformability:
+and a region in which terrorism in Chicago leads to
+population growth, as well as more governmental            Resilience
+control of resource use (“Refugee Revolution”). The
+scenarios, widely covered in local media, evoked           Resilience is the capacity of a system to absorb
+spirited debate about change in the region, and            disturbance and reorganize while undergoing change
+whether and how the local people can or should             so as to still retain essentially the same function,
+manipulate change. They helped overcome a                  structure, identity, and feedbacks—in other words,
+fundamental problem in thinking about transformation       stay in the same basin of attraction. Resilience has
+in a coherent way. With so many changes happening          multiple attributes, but four aspects are critical for
+simultaneously, the very complexity of the situation       these definitions:
+became a barrier to understanding and action. The
+scenarios organized information about transformation           •   Latitude: the maximum amount the system can
+in a comprehensible way that facilitated discussion and            be changed before losing its ability to recover;
+action. Knowing if, when, and how to initiate                      basically the width of the basin of attraction.
+transformative change, before it is too late to escape a           Wide basins mean a greater number of system
+seriously undesirable and deepening basin of                       states can be experienced without crossing a
+attraction, is at the heart of SES transformability.               threshold (L, Fig. 1).
+                                                               •   Resistance: the ease or difficulty of changing
+A tension will exist between maintaining the resilience            the system; related to the topology of the
+of a desired current configuration in the face of known            basin—deep basins of attraction (R, or more
+                                                                                                 Ecology and Society 9(2): 5.
+                                                                               http://www.ecologyandsociety.org/vol9/iss2/art5
+
+        accurately, higher ratios of R:L) indicate that    the SES. Putting this definition in the context of
+        greater forces or perturbations are required to    stability landscapes, adaptability can take many forms,
+        change the current state of the system away        including: (i) making desirable basins of attraction
+        from the attractor.                                wider and/or deeper, and shrinking undesirable basins;
+    •   Precariousness: the current trajectory of the      (ii) creating new desirable basins, or eliminating
+        system, and how close it currently is to a limit   undesirable ones; and (iii) changing the current state of
+        or “threshold” which, if breached, makes           the system so as to move either deeper into a desirable
+        recovery difficult or impossible (Pr).             basin, or closer to the edge of an undesirable one.
+    •   Panarchy: how the above three attributes are
+        influenced by the states and dynamics of the       Transformability
+        (sub)systems at scales above and below the
+        scale of interest (Pa).                            The capacity to create a fundamentally new system
+                                                           when ecological, economic, or social (including
+Throughout this paper, we use stability landscapes as a    political) conditions make the existing system
+metaphor for our measures of resilience—latitude,          untenable. Transformability means defining and
+resistance, and precariousness. But not all systems can    creating new stability landscapes by introducing new
+be adequately described by a stability landscape,          components and ways of making a living, thereby
+particularly when one must grapple with both social        changing the state variables, and often the scale, that
+and ecological components playing out over several         define the system.
+scales of space, time, and organization. Even fewer
+lend themselves to the formal representation of such       CLOSING COMMENTS
+landscapes required to accurately measure P, L, and R.
+In some cases, the change in regime is not from one        Strategies for sustainability must take many forms.
+point attractor to another. Stable limit cycles might      There is no “one size fits all” approach to the future.
+represent very similar management challenges as do         Sometimes SESs are already in desirable basins of
+thresholds between basins (managers would try to           attraction, and the challenge is to ensure that the basin
+maximize the time spent in the desirable portion of the    does not get smaller, or the system doesn’t move too
+limit cycle and minimize the time spent in the             close to a threshold. At other times, they are in
+undesirable part). Nonetheless, the general concepts       undesirable basins and the challenge is to reduce their
+would still apply. Social–ecological systems can be        resilience and to move toward or enlarge more
+close to, or far away from, important thresholds (Pr).     desirable basins. (Note, from the earlier discussion on
+They can be easy or hard to change (R). The range of       regime shifts other than between basins of attraction,
+dynamics that can be accommodated while still              whatever metaphor is used, the notion of resilience
+retaining basically the same system can be large, or       holds.) Strategies will be context dependent, and will
+small (L). Different management interventions would        themselves have to change over time because of the
+be required to enhance resilience for each of these.       inevitable changes inherent in complex, coupled SESs.
+Although we do not believe in or advocate their
+separate measurement (especially because of their
+                                                           The need to know the details of the local and regional
+inter-dependencies), we do believe that substantive
+                                                           context—the particular attributes of the systems that
+qualitative assessments can be made of each of these
+                                                           determine the four aspects of resilience and
+components of resilience. And considering these
+                                                           adaptability—means a different approach to resource
+assessments collectively enables a more complete and
+                                                           governance than currently applied will be required for
+better focused assessment of resilience, and what to do
+                                                           a sustainable future. It changes the focus from seeking
+about it, than would be achieved without them.
+                                                           desirable states and the determinants of maximum
+                                                           sustainable yield, in its many guises (the MSY
+Adaptability                                               paradigm), to resilience analysis, with a simultaneous
+                                                           focus on adaptive resource management and adaptive
+In a SES, adaptability is the collective capacity of the   governance. Adaptive governance is a process of
+human actors in the system to manage resilience.           creating adaptability and transformability in SESs.
+Although the system as a whole self-organizes without      Adaptive management (Walters 1986), widely and
+intent, the capacities and intent of the human actors      deservedly promoted as a necessary basis for
+strongly influence the resilience and the trajectory of    sustainable development, has frequently failed
+                                                                                                      Ecology and Society 9(2): 5.
+                                                                                    http://www.ecologyandsociety.org/vol9/iss2/art5
+
+(Walters 1997) because the existing governance                 to govern the commons. Science 302:1907–1912.
+structures have not allowed it to function effectively.
+Because the stability landscape is constantly changing,        Gunderson, L. H., and C. S.Holling, editors. 2002.
+the “adaptive” part of both governance and                     Panarchy: understanding transformations in human and
+management is required in all phases of the adaptive           natural systems. Island Press, Washington, D.C., USA
+cycle. But, because it has received the least attention,
+we emphasize especially the importance of the back             Holling, C. S. 1973. Resilience and stability of ecological
+loop, and in particular the flexible management needed         systems. Annual Review of Ecological Systems 4:1–23.
+to retain critical ecological resources (adaptive
+management), and the evolution of rules that influence         Holling, C. S. 1996. Engineering resilience versus
+resilience    during      self-organization   (adaptive        ecological resilience. In P. C. Schulze, editor. Engineering
+governance).                                                   within ecological constraints. National Academy Press,
+                                                               Washington, D.C., USA.
+Responses to this article can be read online at: http://www.
+ecologyandsociety.org/vol9/iss2/art5/responses/index.html      Kaufmann, S. 2000. Investigations. Oxford University
+                                                               Press, New York, New York, USA.
+
+                                                               Levin, S. A. 1998. Ecosystems and the biosphere as
+Acknowledgments:                                               complex adaptive systems. Ecosystems 1:431–436.
+
+This paper results from many discussions in meetings of the    Levin, S. A. 1999. Fragile dominion. Perseus Books Group,
+Resilience Alliance. We acknowledge all our colleagues         Cambridge, Massachussetts, USA.
+who have contributed to the development of these concepts.
+We thank Don Ludwig and Elinor Ostrom for helpful              Millennium Ecosystem Assessment. 2003. Ecosystems and
+comments on an early draft, Art Langston for the               human well-being. Island Press, Washington, D.C., USA.
+construction of Fig. 1, and the comments of an unknown
+referee. The work leading to the paper has been supported      National Research Council. 1999. Our common journey.
+by a grant to two of us (BW and SC) by the James S.            National Academy Press, Washington, D.C., USA.
+MacDonnell Foundation.
+                                                               National Research Council. 2002. The drama of the
+                                                               commons. National Academy Press, Washington, D.C.,
+                                                               USA.
+LITERATURE CITED
+                                                               Peterson, G. D., C. R. Allen, and C. S. Holling. 1998.
+Beisner, B. E., D. T. Haydon, and K. Cuddington. 2003.         Ecological resilience, biodiversity, and scale. Ecosystems
+Alternative stable states in ecology. Frontiers in Ecology     1:6–18.
+and the Environment 1:376–82.
+                                                               Peterson, G. D., G. S. Cumming, and S. R. Carpenter.
+Berkes, F., J. Colding, and C. Folke, editors. 2003.           2003. Scenario planning: a tool for conservation in an
+Navigating social–ecological systems: building resilience      uncertain world. Conservation Biology 17:358–366.
+for complexity and change. Cambridge University Press,
+Cambridge, UK.                                                 Pimm, S. L. 1991. The balance of nature? University of
+                                                               Chicago Press, Chicago, Illinois, USA.
+Carpenter, S. R. 2003. Regime shifts in lake ecosystems.
+Ecology Institute, Oldendorf/Luhe, Germany.                    Scheffer, M., S. R. Carpenter, J. A. Foley, C. Folke, and
+                                                               B. Walker. 2001. Catastrophic shifts in ecosystems. Nature
+Cumming, D. H. M. 1999. Living off “biodiversity”:             413:591–596.
+whose land, whose resources and where? Environment and
+Development Economics 4:220–226.                               Stiglitz, J. 2002. Globalization and its discontents. W. W.
+                                                               Norton and Company, New York, New York, USA.
+Dietz, T., E. Ostrom, and P. C.Stern. 2003. The struggle
+                                                                              Ecology and Society 9(2): 5.
+                                                            http://www.ecologyandsociety.org/vol9/iss2/art5
+
+Walters, C. J. 1986. Adaptive management of renewable
+resources. Collier Macmillan, New York, New York, USA.
+
+Walters, C. J. 1997. Challenges in adaptive management of
+riparian and coastal ecosystems. Conservation Ecology
+1(2):1.                  (Online.)                 URL:
+http://www.consecol.org/vol1/iss2/art1.

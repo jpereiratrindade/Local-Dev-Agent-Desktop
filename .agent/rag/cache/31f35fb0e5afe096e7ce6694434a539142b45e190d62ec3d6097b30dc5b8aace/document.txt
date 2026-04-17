@@ -1,0 +1,483 @@
+See discussions, stats, and author profiles for this publication at: https://www.researchgate.net/publication/266575537
+
+
+
+Grassmann’s Vision
+
+Article · January 1996
+DOI: 10.1007/978-94-015-8753-2_20
+
+
+
+
+CITATIONS                                                                                                 READS
+22                                                                                                        995
+
+
+1 author:
+
+            David Hestenes
+            Arizona State University
+            119 PUBLICATIONS 17,105 CITATIONS
+
+                SEE PROFILE
+
+
+
+
+ All content following this page was uploaded by David Hestenes on 03 April 2015.
+
+ The user has requested enhancement of the downloaded file.
+In: Hermann Gunther Grasmann (1809-1877): Visionary Mathematician, Scientist and Neohumanist
+   Scholar, 1996 (Gert Schubring, Ed.), Kluwer Academic Publishers, Dordrecht/Boston 191–201.
+
+
+
+
+                          GRASSMANN’S VISION
+
+                                        David Hestenes
+
+
+         Abstract. Hermann Grassmann is cast as a pivotal figure in the historical
+         development of a universal geometric calculus for mathematics and physics
+         which continues to this day. He formulated most of the basic ideas and,
+         to a remarkable extent, anticipates later developments. His influence is far
+         more potent and pervasive than generally recognized.
+
+
+
+
+ After nearly a century on the brink of obscurity, Hermann Grassmann is widely recognized
+ as the originator of Grassmann algebra, an indispensable tool in modern mathematics.
+ Still, in conception and applications, conventional renditions of his exterior algebra fall far
+ short of Grassmann’s original vision. A fuller realization of his vision is found in other
+ mathematical developments to which his name is not ordinarily attached. This Sesquicen-
+ tennial Celebration of Grassmann’s great book, Die Lineale Ausdehnungslehre [1], provides
+ the opportunity for a renewed articulation and assessment of Grassmann’s vision.
+    Grassmann is a pivotal figure in the historical evolution of a mathematical language
+ to characterize human understanding of the physical world. Since quantitative concepts
+ of space and time are fundamental to that understanding, the language is fundamentally
+ geometrical and can best be described as a geometric calculus. For the most part the evo-
+ lution of geometric calculus has been tacit and piecemeal, with many individuals achieving
+ isolated results in response to isolated problems. Grassmann is pivotal in this historical
+ process because he made it explicit and programmatic. In no uncertain terms, he declared
+ the goal of his research on extension theory [1] as no less than the creation of a universal
+ instrument for geometric research. Leibniz had clearly articulated that goal long before and
+ blessed it with the name “geometric calculus.” However, Grassmann was the first to see
+ clearly how the goal can be reached, and he devoted the whole of his mathematical life to
+ the journey. When Möbius created the opportunity for Grassmann to align his own vision
+ with Leibniz’s, Grassmann responded eagerly with an elaboration of his extension theory to
+ show how their common vision can be realized [2]. Unfortunately, this seminal work failed
+ to attract the recognition and attention he deserved, so Grassmann had to continue his
+ mathematical journey alone, with only an occasional mathematician — Möbius, Hankel,
+ Clebsch — joining him for a few steps along the way.
+
+                                               1
+   Most of Grassmann’s mathematical discoveries were duplicated independently by others
+as isolated results. It is fair to say, for example, that Grassmann laid the foundation for
+linear algebra by himself [3]. Yet the standard linear algebra of today grew up without
+his contribution. The frequent duplication of Grassmann’s discoveries is not a mark of
+limited originality but rather a sign that Grassmann was keenly attuned to a powerful
+thematic force driving mathematical development, namely, the subtle interplay between
+geometry and algebra. What sets Grassmann ahead of other creative mathematicians is
+his systemic vision of a universal geometric calculus. This vision marks him as one of the
+great conceptual synthesizers of all time. Accordingly, the chief presentation of that vision,
+Die Lineale Ausdehnungslehre, deserves a place alongside Euclid’s Elements and Descartes’
+Geometrié in the library of immortal mathematical masterworks.
+   Considering the immense power and fertility of Grassmann’s vision, we are bound to ask
+why due recognition has been so long in coming. Several answers have been suggested by
+commentators and historians. First, it is averred that the original Ausdehnungslehre was
+written in an impenetrable philosophical style. But Grassmann confined his philosophical
+musings to the first chapter so they could be skipped by those who want to get directly
+to business. Second, it is suggested that Grassmann was ahead of his time. He was
+certainly the first person to deal with abstract, multidimensional algebra. But if that
+was a barrier to understanding during his lifetime, it should have been lesser in subsequent
+generations. Third, it is noted that Grassmann’s unsystematic presentation mixes basic
+ideas with applications and so places a heavy burden on the reader to disentangle them.
+But Grassmann’s synopsis of the Ausdehnungslehre [4], written at the behest of a befuddled
+admirer, did not help much to ease the burden. Moreover, more systematic presentations
+of Grassmann’s calculus by distinguished mathematicians, most notably Peano in 1888 and
+Whitehead in 1898, also failed to inspire the mathematical community at large.
+   Grassmann himself identified a more critical condition for comprehending his vision,
+namely immersion in his conceptual system. That system is, after all, a rich mathematical
+language, so it takes years to develop the proficiency that opens up mathematical insights.
+Having acquired such proficiency, the superiority of his system in applications throughout
+geometry and physics was obvious to Grassmann, so it was a great frustration to him that
+others, even distinguished mathematicians, were unable to recognize this. It was easy for
+experts to dismiss Grassmann’s work as “old wine in new bottles” when he was unable
+to show them applications that could not be handled with techniques they already knew.
+Grassmann thus suffered from a credibility gap that prevented experts from investing the
+time necessary to acquire his perspective.
+   There is another, more profound reason for the muted impact of Grassmann’s extension
+theory. Something critical was missing. As Grassmann admitted in the preface to his
+Ausdehnungslehre of 1862 [6]. “I am aware that the form which I have given the science
+is imperfect.” And he went on to say “there will come a time when these ideas, perhaps in
+a new form, will arise anew and will enter into a living communication with contemporary
+developments.”
+   The purpose of this paper is to point out that the missing ingredient in Grassmann’s
+theory has been found and put in place to create a geometric calculus that fully realizes
+his vision. Indeed, the seeds for this advance were already present in Grassmann’s work.
+Moreover, Grassmann’s bold prophecy is in the process of fulfillment even today, as his
+insights are revived to enrich modern mathematics and physics.
+
+
+                                              2
+I. Completing the Vision
+  In the Foreword to his Ausdehnungslehre of 1844, Grassmann outlined some ideas to be
+incorporated in a second volume to “complete the work.” This included the invention of a
+new kind of product, the essentials of which can be described as follows. He defined the
+quotient a/b = ab−1 of vectors a and b by writing
+
+                                          (a/b)b = a.                                       (1)
+
+He noted that, if a and b have the same magnitude, then (1) implies that a/b is an operator
+which rotates b into a. He expressed this with the exponential form
+
+                                           6
+                                          e ab = a/b,                                       (2)
+
+where 6 ab denotes the angle between a and b. It follows then that (a/b)2 is a rotation
+through twice the angle. In particular, if a/b is a right angle rotation, then (a/b)2 b = −b,
+so (a/b)2 = −1 and
+                                              q
+                                       a/b = − 1 .                                         (3)
+                                   q
+If we write 6 ab = ix, where i =       − 1 and x is the radian measure of the angle, then
+
+                                       eix = cos x + i sin x                                (4)
+
+has a purely geometrical significance denoting the rotation through an arbitrary angle.
+   Grassmann concludes: “From this all imaginary expressions now acquire a purely ge-
+ometric meaning, and can be described by geometric constructions.. . . it is likewise now
+evident how, according to the meaning of the imaginaries thus discovered, one can derive
+the laws of analysis in the plane; however it is not possible to derive the laws for space as
+well by means of imaginaries. In addition there are general difficulties in considering the
+angle in space, for the solution of which I have not yet had sufficient leisure.”
+   That is the last we hear about this interpretation of the imaginary unit from Grassmann.
+He never revived and completed the argument to handle general rotations in space and
+develop his new product into a complete algebraic system. However, a brilliant young En-
+glish mathematician, William Kingdom Clifford, did just that. The resulting new algebraic
+system is known as Clifford algebra in mathematical circles today.
+   Ironically, Clifford is seldom mentioned in accounts of Grassmann’s influence on other
+mathematicians, though it may be through Clifford algebra that Grassmann’s ideas exert
+their most profound influence today. We have no direct knowledge that Clifford was in-
+fluenced by Grassmann’s little argument above, but it could hardly be otherwise, because
+the argument appeared right at the beginning and nothing else in Grassmann’s corpus is
+so obviously pertinent. Indeed, Clifford made no great claim to originality, referring to his
+algebra as a mere application of Grassmann’s extensive algebra [7]. Unfortunately, his life
+was too brief for him to communicate the dimensions of his debt to Grassmann.
+   Clifford was surely assisted in his adaptation of Grassmann’s ideas by his mastery of
+Hamilton’s quaternions. Ironically again, Grassmann was led along the same path in the
+
+                                                3
+last years of his life by his endeavor to fit quaternions into extension theory [8]. He was
+induced to define the central product ab of vectors a and b by writing
+
+                                   ab = λ[a|b] + µ[ab],                                  (5)
+
+where [a|b] is the inner product, [ab] is the outer product, and λ, µ are arbitrary nonzero
+constants. With λ = µ = 1, we have the alternative notation
+
+                                    ab = a · b + a ∧ b.                                  (6)
+
+This is essentially the basic product of Clifford algebra, and it was published before Clif-
+ford’s paper [7]. Thus, Grassmann could be credited with the invention of Clifford algebra.
+However, he failed to investigate the central product with the verve that he bestowed on the
+inner and outer products in bygone years. Had he done so, he would have been pleasantly
+surprised to find that quaternions drop out without resorting to the deformation of the
+central product (5) that he employed in his paper [8].
+  Grassmann also failed to notice that the product in (6) can be identified with the quotient
+in (2). Then, for a2 = b2 = 1, we can write (2) in the form
+
+                                         ab = eix .                                      (7)
+
+Using (2) and (6) to expand the right and left sides of (7), we infer that a · b = cos x and,
+more important,
+                                     a ∧ b = i sin x.                                     (8)
+This tells us immediately that the unit imaginary i must be interpreted as the unit bivector
+for the plane containing a and b, something that Grassmann never realized.
+   There is another easy inference that would have pleased Grassmann mightily, because it
+reveals a hidden unity and simplicity in his system which he had not anticipated. Using
+the symmetry of the inner product and the skew symmetry of the outer product, we infer
+from (6) that
+                                     ba = a · b − a ∧ b.                                 (9)
+Then, from (6) and (9) we can deduce
+
+                                    a · b = 12 (ab + ba)                                (10)
+
+and
+                                   a ∧ b = 12 (ab − ba).                                (11)
+This shows that the inner and outer products can be defined in terms of the central product,
+thus reducing three products to one. Full details of this reduction and simplification of
+extension theory are given in [9].
+   The insight that all multiplicative aspects of extension theory can be reduced to the sin-
+gle central product leads to the conclusion that Clifford algebra is the proper completion of
+Grassmann’s vision for a universal geometric calculus. Ample justification for this conclu-
+sion comes from the manifold applications of Clifford algebra mentioned below. Recognizing
+the geometric origin of his algebra, Clifford called it geometric algebra. Considering the
+universality of this algebra and the fact that so many others besides Grassmann and Clifford
+
+                                             4
+have contributed to its development as a mathematical language, it should be regarded as
+common intellectual property of the mathematical community, so it should not be tagged
+with the name of a single individual. As no other mathematical system deserves the title
+more, Clifford’s choice should be adopted and, on occasion, expanded to universal geometric
+algebra for emphasis. For the same reasons, the name geometric product is to be preferred
+in place of Grassmann’s “central product.”
+  As counterpoint to these unifying developments, we note a final irony in Grassmann’s
+treatment of quaternions in his dismissal of Hamilton’s ideas without due credit, just as his
+own ideas had been summarily dismissed by other mathematicians before. It is likely that
+Grassmann did not have the opportunity to study Hamilton’s work first hand, so he learned
+about it from secondary sources. That only deepens the irony in his refusal to admit that
+Hamilton has something to teach him. He could, at least, have graciously acknowledged
+that the crucial idea of adding a scalar to a bivector in (5) came from Hamilton, for he
+himself had never taken this step before. Indeed, he had explicitly warned against such
+mixing of quantities of different kind.
+
+
+II. Source of the Vision
+   The incredible power and versatility of Grassmann’s approach derives from the fact that
+he systematically incorporated geometric interpretations into the design of his algebraic
+syntax; then he abstracted the algebraic structure from the geometric interpretation for
+analysis as a formal algebraic system.
+   Grassmann introduced two complementary geometric interpretations for vectors and their
+outer products. Let us refer to them as the direct and the projective interpretations to
+keep them distinct. One difficulty in understanding Grassmann’s work is the informal
+fluency with which he moves from one interpretation to the other. His synopsis [4] is
+helpful by bringing the two interpretations together and comparing them. Recently, it has
+been realized that geometric algebra provides a surprising formal connection between the
+interpretations [10, 11, 12] and thus clarifies their complementary roles. To see that we
+need to review Grassmann’s perspective.
+   We begin with the modern concept of a vector as an abstract element of a vector space.
+The concept of a vector space had not been formalized in Grassmann’s time, though it was
+certainly implicit in his work. To coordinate the two geometric interpretations, we assign
+them to vectors in different spaces which are distinguished by using boldface to denote
+vectors with the direct interpretation and italics for vectors with a projective interpretation.
+   Under the direct interpretation each vector a represents a directed line segment, and the
+outer product a ∧ b represents a directed plane segment. This interpretation is thoroughly
+discussed and applied to classical mechanics in ref. [9] using the full geometric algebra.
+   Under the projective interpretation each vector a represents a geometric point. The outer
+product a ∧ b represents a directed line segment determined by points a and b, while a ∧ b ∧ c
+represents a directed plane segment determined by three points. This interpretation is
+thoroughly discussed and applied to projective geometry in ref. [10]. which also explains
+the advantages of the full geometric algebra in this domain.
+   The two different interpretations correspond to two different representations of geometric
+concepts. The relation between the two is elegantly characterized by a projective split in
+geometric algebra, as explained in ref. [11] and also in [12], which is a synopsis of [10] and
+
+                                               5
+[11]. The projective split relates each vector a in an n-dimensional vector space Vn to a
+vector a in an (n + 1)-dimensional vector space Vn+1 by the equation
+
+                             ae0 = a · e0 + a ∧ e0 = a0 (1 + a) ,                        (12a)
+
+where e0 is a distinguished vector in Vn+1 , and
+
+                                         a0 = a · e0 ,                                   (12b)
+
+                                              a ∧ e0
+                                         a=          .                                   (12c)
+                                              a · e0
+According to (12c), vectors in Vn correspond to bivectors of Vn+1 with a common factor e0 .
+This is a projective relation, because (12c) shows that a is unaffected if a is replaced by a
+nonzero scalar multiple of a. The projective split amounts to a mechanism for introducing
+homogeneous coordinates. It is more powerful than the conventional approach to homoge-
+neous coordinates, however, because it prepares the way for drawing on the computational
+and conceptual advantages of geometric algebra. Since there is insufficient space here to
+demonstrate those advantages, the reader is left to consult the references.
+   Grassmann made much ado about separating extension theory from space theory, in
+other words, separating formal algebraic structures from geometric interpretation. He was
+ahead of his time in regarding geometry (space theory) as an empirical discipline derived
+from human perception and therefore limited to spaces of no more than three dimensions.
+Extension theory formalizes space theory, and Grassmann emphasized that geometric in-
+terpretation is essential to its applications in physics and geometry. On the other hand,
+he argues that separation from space theory enables the cultivation of extension theory as
+an abstract science and admits generalization to higher dimensions. He could as well have
+added that geometric interpretations can also be generalized to give insight to algebraic
+structures in higher dimension.
+   One clear benefit of separating geometric algebra from geometric interpretation is that
+a single algebraic entity can be assigned many different geometric interpretations. We
+have already seen, for example, that vectors can be assigned either direct or projective
+interpretations, and this does not exhaust the possibilities. However, abstraction has its
+dangers, as the following important historical example serves to show.
+   After Clifford algebra was invented by Clifford, it was cultivated as an abstract discipline
+for the better part of a century without reference to its geometrical roots. Clifford algebra
+thus became a minor mathematical subspecialty — just one more example of an algebra
+among many others. In regard to applications, it was almost sterile, with representations
+of the orthogonal group as the only example of much interest.
+   The situation has changed drastically since 1966 when, for the purpose of application
+to physics, Grassmann’s direct interpretation was incorporated into Clifford algebra and a
+variant of the projective split (now called the spacetime split) was found to simplify and
+clarify relativistic physics [13]. This has reinvigorated Clifford algebra and fueled a growing
+realization that it provides the structural basis for a truly universal geometric algebra.
+
+
+
+
+                                              6
+III. Realizing the Vision
+   Realizing Grassmann’s vision of a universal geometric calculus to serve as a unified lan-
+guage for mathematics and physics is necessarily a community enterprise. Though Grass-
+mann and Clifford have supplied the language with a suitable syntax, enrichment of the
+language with a broad spectrum of applications is a vast undertaking drawing on the intel-
+lectual resources of the entire scientific community. Grassmann understood this perfectly,
+so he devoted considerable effort to developing applications in geometry and physics, pri-
+marily mechanics and electrodynamics.
+   The main concern of Grassmann’s scientific papers is the mathematical form of physi-
+cal equations. Much of his work on mechanics is standard fare in textbooks today, with
+only minor differences in notation, though direct influence of Grassmann on textbooks is
+unlikely. The only mechanics problem of any complexity that Grassmann addressed is the
+“theory of the tides.” While that work has no special scientific importance, a reformu-
+lation of its vectorial perturbation approach to tidal theory in modern terms may have
+pedagogical value. The main deficiency in Grassmann’s approach to tidal theory and the
+rest of mechanics was in his mathematical treatment of rotations and rotational dynamics.
+Though Grassmann attacked this problem with great ingenuity, the ideal solution escaped
+him, because it required the geometric product. Grassmann’s grand vision for mechanics
+has recently been utterly fulfilled with a complete reformulation of the subject in terms of
+geometric algebra [9]. As Grassmann desired, the treatment is completely coordinate-free,
+it employs his direct geometric interpretation, and it incorporates all of his keen algebraic
+devices.
+   At this point I must confess my personal interest and apologize for the extensive self-
+citations in a tribute to someone else. The fact is that most of my professional life has
+been devoted to the same grand theme as Grassmann’s, though I came to realize this only
+recently. My work could fairly be described as restoring Grassmann’s original insights to
+Clifford algebra and systematically developing it into a universal language through exten-
+sive applications in mathematics and physics. I was guided by Grassmann’s ideas from
+the beginning and referred to them frequently in my published work. However, everything
+I knew about Grassmann came from secondary sources, so it suffered from the limita-
+tions and distortions of such filtering. It was only in the last few years that I learned
+about the incredible confluence of my own vision with Grassmann’s from the translation of
+Grassmann’s work by Lloyd Kannenberg. I was amused to note that I had independently
+rederived practically every algebraic identity in Grassmann’s work (especially in [14]). This
+illustrates how a shared vision can stimulate parallel discoveries. That occurs frequently
+in mathematics, and, as I have emphasized before [15], it is especially significant in the
+history of geometric algebra because of its universal importance.
+   In my own work on geometric calculus, I have enjoyed the huge advantage over Grass-
+mann of more than a century of developments in mathematics and physics. Even so, I find
+little in Grassmann’s mathematical work that is outdated, and I am confident in asserting
+that Grassmann’s optimistic vision of the future for geometric calculus has been fully vindi-
+cated. The references cited herein demonstrate in detail that geometric calculus embraces
+a greater range of mathematics than any other mathematical system, including linear and
+multilinear algebra, projective geometry, distance geometry [16], calculus on manifolds [17],
+hypercomplex function theory, differential geometry, Lie groups and Lie algebras [18].
+   Geometric calculus has also fulfilled Grassmann’s vision of a universal language for
+
+                                             7
+physics. Besides integrating the mathematical formulations of mechanics [9, 19], relativity
+and electrodynamics [13], it has revealed a geometric basis for complex numbers in quantum
+mechanics [20, 21, 22].
+  Leading into the twentieth century, Grassmann’s algebra was often cast as a competitor
+with quaternions and vector calculus for the role of a language for physics. Vector calcu-
+lus was victorious, owing principally to Oliver Heaviside’s slick formulation of Maxwell’s
+equations with applications to electromagnetic wave propagation. The victory was only
+temporary, however. With the completion of Grassmann’s vision by geometric calculus, we
+can now see Heaviside’s vectorial equations and Hamilton’s quaternions as components of
+a single, more powerful system. Indeed, the geometric calculus reduces the four Maxwell
+equations of Heaviside to the single equation [13, 15]
+
+                                          ∂F = J,                                        (13)
+
+where J is the spacetime charge current density, F is the complete electromagnetic field
+(without separation into electric and magnetic parts), and ∂ is the vector derivative with
+respect to a spacetime point. With the choice of an inertial reference frame, (13) can be
+split into the four equations of Heaviside [13]. However, in many applications it is simpler
+and more informative to solve (13) directly. Equation (13) is typical of the simplifications
+that geometric calculus brings to every branch of physics. This justifies its claim to be a
+universal language for physics.
+   The fusion of Grassmann algebra with Clifford algebra has been the subject of some
+debate [23]. The chief point of contention has been the concept of duality. Dieudonné
+summarizes the dominant “modern view” in [5] and declares it superior to Grassmann’s.
+In fact, they are just different, and Grassmann’s has distinct advantages which are made
+more evident by using the full geometric algebra [10]. On the other hand, the modern
+view has unnecessary limitations which can be eliminated with geometric algebra. It works
+with a “dual pair” of vector spaces, each with its own exterior algebra. As shown in [18],
+a far more powerful algebraic structure is created at no cost by joining the dual pair into
+a single vector space with twice the dimension of each and then incorporating the duality
+relations into the geometric algebra of that space. The remarkable result is that every
+linear transformation on the base space can be represented in this algebra as a monomial
+product of vectors. This promises to open a new chapter in linear algebra.
+
+
+IV. Recognizing the Vision
+   An adequate history of geometric calculus remains to be written. It calls for a historian
+steeped in Grassmann’s vision who can recognize how the vision is played out in the various
+branches of mathematics and physics. We have seen how easy it is to misconstrue or
+overlook important historical threads. Even the central theme — one of the great themes
+of cultural history — has been consistently overlooked by mathematicians and historians.
+The time is ripe for a historian with the insight and dedication to flesh out the whole story.
+
+
+
+
+                                              8
+                                  REFERENCES
+
+[1] H. Grassmann, Linear Extension Theory (Die Lineale Ausdehnungslehre), translated
+     by L. C. Kannenberg in The ”Ausdehnungslehre” of 1844 and Other Works,
+     Open Court Publ. (in press, 1994).
+[2] H. Grassmann, Geometric Analysis, translated by L. C. Kannenberg in The “Aus-
+     dehnungslehre” of 1844 and Other Works, Open Court Publ. (in press, 1994).
+[3] D. Fearnley-Sander, Hermann Grassmann and the Creation of Linear Algebra, Ameri-
+     can Mathematical Monthly, 809–817 (Dec. 1979).
+[4] H. Grassmann, Survey of the Essentials of Extension Theory, translated by L. C.
+     Kannenberg in The “Ausdehnungslehre” of 1844 and Other Works, Open Court
+     Publ. (in press, 1994).
+[5] J. Dieudonné, The Tragedy of Grassmann, Linear and Multilinear Algebra 8, 1–14
+     (1979).
+[6] Translation by M. Crowe in A History of Vector Analysis, Notre Dame (1967).
+[7] W. K. Clifford, Applications of Grassmann’s Extensive Algebra, Am. J. Math. 1,
+     350–358 (1878).
+[8] H. Grassmann, The Position of Hamiltonian Quaternions in Extension Theory, H.
+     Grassmann, Survey of the Essentials of Extension Theory, translated by L. C. Kannen-
+     berg in The “Ausdehnungslehre” of 1844 and Other Works, Open Court Publ.
+     (in press, 1994).
+[9] D. Hestenes, New Foundations for Classical Mechanics, G. Reidel Publ. Co.,
+     Dordrecht/Boston (1985), paperback (1987). Third printing 1993.
+[10] D. Hestenes and R. Ziegler, Projective Geometry with Clifford Algebra, Acta Appli-
+     candae Mathematicae 23, 25–63 (1991).
+[11] D. Hestenes, The Design of Linear Algebra and Geometry, Acta Applicandae Mathe-
+     maticae 23, 65–93 (1991).
+[12] D. Hestenes, Universal Geometric Algebra, Simon Stevin 62, 253–274 (1988).
+[13] D. Hestenes, Space-Time Algebra, Gordon & Breach, New York, (1966).
+[14] D. Hestenes and G. Sobczyk, CLIFFORD ALGEBRA to GEOMETRIC CAL-
+     CULUS, A Unified Language for Mathematics and Physics, G. Reidel Publ.
+     Co., Dordrecht/Boston (1984), paperback (1985). Third printing 1992.
+[15] D. Hestenes, A Unified Language for Mathematics and Physics. In J.S.R. Chisholm/A.K.
+     Common (eds.), Clifford Algebras and their Applications in Mathematical
+     Physics. Reidel, Dordrecht/Boston (1986), p. 1–23.
+[16] A. Dress & T. Havel, Distance Geometry and Geometric Algebra, Foundations of
+     Physics 23, 1357–1374.
+[17] D. Hestenes, Differential Forms in Geometric Calculus. In F. Brackx et al (eds.),
+     Clifford Algebras and their Applications in Mathematical Physics, Kluwer:
+     Dordrecht/Boston (1993), p. 269–285.
+[18] C. Doran, D. Hestenes, F. Sommen & N. Van Acker, Lie Groups as Spin Groups,
+     Journal of Mathematical Physics 34, 3642–3669 (1993).
+
+
+
+                                           9
+                         [19] D. Hestenes, Hamiltonian Mechanics with Geometric Calculus. In Z. Oziewicz, A. Boro-
+                              wiec & B. Jancewicz (eds.), Spinors, Twistors and Clifford Algebras. Kluwer:
+                              Dordrecht/Boston (1993), p. 203–214.
+                         [20] D. Hestenes, Clifford Algebra and the Interpretation of Quantum Mechanics. In J.S.R.
+                              Chisholm/A.K. Common (eds.), Clifford Algebras and their Applications in
+                              Mathematical Physics. Reidel, Dordrecht/Boston (1986), p. 321–346.
+                         [21] D. Hestenes, The Kinematic Origin of Complex Wave Functions. In W. T. Grandy &
+                              P. W. Milloni (eds.), Physics and Probability: Essays in Honor of Edwin T.
+                              Jaynes, Cambridge U. Press, Cambridge (1993), p. 153–160.
+                         [22] S. Gull, A. Lasenby & C. Doran, Imaginary Numbers are not Real – The Geometric
+                              Algebra of Spacetime, Foundations of Physics 23, 1175–1201.
+                         [23] D. Hestenes, Mathematical Viruses. In A. Micali, R. Boudet, J. Helmstetter (eds.),
+                              Clifford Algebras and their Applications in Mathematical Physics. Kluwer,
+                              Dordrecht/Boston (1991), p. 3–16.
+
+
+
+
+                                                                    10
+
+
+
+
+View publication stats

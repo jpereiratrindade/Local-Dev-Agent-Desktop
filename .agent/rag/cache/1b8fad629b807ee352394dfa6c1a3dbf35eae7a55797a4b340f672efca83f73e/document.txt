@@ -1,0 +1,876 @@
+                                                                      Agricultural Systems 195 (2022) 103285
+
+
+                                                                     Contents lists available at ScienceDirect
+
+
+                                                                       Agricultural Systems
+                                                            journal homepage: www.elsevier.com/locate/agsy
+
+
+Research Paper
+
+Crop-livestock integration provides opportunities to mitigate
+environmental trade-offs in transitioning smallholder agricultural systems
+of the Greater Mekong Subregion
+B.K. Paul a, *, C.A. Epper a, b, c, D.J. Tschopp b, C.T.M. Long d, V. Tungani a, D. Burra e, h, L. Hok f,
+P. Phengsavanh g, S. Douxchamps h
+a
+  International Center for Tropical Agriculture (CIAT), Tropical Forages Program, Nairobi, Kenya
+b
+  ETH Zurich, Group of Plant Nutrition, Eschikon, Lindau, Switzerland
+c
+  Agroscope, Research Division Agroecology and Environment, Zurich, Switzerland
+d
+  Western Highlands Agriculture & Forestry Science Institute (WASI), Buon Ma Thuot, Viet Nam
+e
+  Yara International ASA, Bengaluru, India
+f
+  Royal University of Agriculture (RUA), Phnom Penh, Cambodia
+g
+  National Agriculture and Forestry Research Institute (NAFRI), Vientiane, Laos
+h
+  International Center for Tropical Agriculture (CIAT), Tropical Forages Program, Hanoi, Viet Nam
+
+
+
+
+H I G H L I G H T S                                        G R A P H I C A L A B S T R A C T
+
+• The Greater Mekong Subregion is un­
+  dergoing rapid agricultural trans­
+  formation, accompanied by negative
+  environmental impacts
+• This study explores the potential of
+  crop-livestock integration to mitigate
+  such agro-environmental trade-offs
+• Nitrogen balances and greenhouse gas
+  emissions were partly determined by
+  transition stage, but not agricultural
+  diversity
+• Crop-livestock integration resulted in
+  larger ‘solution spaces’ to mitigate
+  trade-offs than business as usual
+• Investment in research and extension is
+  needed to develop and scale context-
+  specific    crop-livestock    integration
+  practices
+
+
+
+
+A R T I C L E I N F O                                      A B S T R A C T
+
+Editor: Dr Val Snow                                        CONTEXT: The Greater Mekong Subregion has been undergoing rapid agricultural transformation over the last
+                                                           decades, as traditional diverse subsistence-oriented agriculture is evolving towards intensified commercial
+Keywords:                                                  production systems. Negative environmental impacts often include deforestation, nutrient pollution, and
+Agricultural diversity                                     greenhouse gas (GHG) emissions.
+Greenhouse gas emissions
+Multi-objective optimization
+
+
+
+    * Corresponding author.
+      E-mail address: birthe.paul@giz.de (B.K. Paul).
+
+https://doi.org/10.1016/j.agsy.2021.103285
+Received 30 October 2020; Received in revised form 24 September 2021; Accepted 25 September 2021
+Available online 23 October 2021
+0308-521X/© 2021 The Author(s).             Published by Elsevier Ltd.        This is an open access                   article   under   the   CC   BY-NC-ND   license
+(http://creativecommons.org/licenses/by-nc-nd/4.0/).
+B.K. Paul et al.                                                                                                               Agricultural Systems 195 (2022) 103285
+
+Nutrient balances
+                                                OBJECTIVE: This study aims to explore the potential of crop-livestock integration to mitigate trade-offs between
+Sustainability
+Farming systems modeling                        economic and environmental impacts of smallholder farming systems at different stages of agricultural transition
+                                                and degrees of agricultural diversity across the Greater Mekong Subregion.
+                                                METHODS: We chose a ‘middle ground’ between detailed modeling of few, representative farming systems and
+                                                modeling of large household populations. 24 low and high diversity farms were selected in Laos (Xieng Khouang
+                                                province), Cambodia (Ratanakiri province) and Vietnam (Central Highlands) from a survey dataset of 1300
+                                                households. These farming systems were simulated with the whole-farm bio-economic and multi-objective
+                                                optimization model FarmDESIGN, calculating operating profit, GHG emissions and nitrogen (N) balance. Two
+                                                optimizations (‘business as usual’ vs. ‘crop-livestock integration’) were performed, generating ‘solution spaces’ or
+                                                alternative configurations aiming to maximize profitability, keep farm N balanced and minimize GHG emissions.
+                                                RESULTS AND CONCLUSIONS: Agricultural systems across the sites differed in their production orientation and
+                                                management practices, representing various stages of agricultural transition. Nitrogen balances varied between
+                                                sites, being negative in Ratanakiri (average − 20.5 kg N ha− 1 y− 1) and Xieng Khouang (− 36.5 kg N ha− 1 y− 1) and
+                                                positive in the Central Highlands (73 kg N ha− 1 y− 1). Negative balances point to unsustainable mining of nu­
+                                                trients due to sale of cash crops without sufficient inputs, and positive balances to the risk of environmental
+                                                contamination. Total GHG emissions ranged from 0.52–8.12 t CO2e ha− 1 and were not significantly impacted by
+                                                stage of agricultural transformation or agricultural diversity. GHG sources in Ratanakiri and Xieng Khouang were
+                                                determined by crop residue burning while in Central Highlands fertilizer and livestock were main emitters. High
+                                                diversity farms obtained higher operating profits (10,379 USD y− 1) than low diversity farms (4584 USD y− 1).
+                                                Crop-livestock integration, a combination of measures including introduction of improved forages grasses,
+                                                manure recycling and residue feeding, and reduction of residue burning, resulted in larger ‘solution spaces’, thus
+                                                providing farmers with more options to mitigate agro-environmental trade-offs.
+                                                SIGNIFICANCE: These findings underline the potential of crop-livestock integration to support sustainable
+                                                intensification pathways in the Greater Mekong region. Public and private investment in further research and
+                                                extension is needed to develop and scale context-specific crop-livestock integration practices.
+
+
+
+
+1. Introduction                                                                   fuels. Critics have been arguing that despite the economic development
+                                                                                  that the Green Revolution spurred in South-East Asia, its high reliance
+    The Greater Mekong Subregion, comprising the countries along the              on external inputs such as fossil fuels and agrochemicals led to decreased
+Mekong River Basin in Southeast Asia, has been undergoing stark and               environmental health, and more variable farm productivity and incomes
+rapid agricultural and socio-economic transformation over the last de­            (Ramankutty et al., 2018).
+cades. Traditional diverse and subsistence-oriented agriculture is                    Sustainable intensification has been proposed by science and policy
+evolving towards intensified commercial production. Population is                 to address the challenge of feeding a growing global population from the
+growing quickly, leading to an increased demand for crop and animal               same area of land while reducing environmental impacts (Godfray et al.,
+products (Quirke et al., 2003). Vietnam has shifted from a centralized to         2010). However, despite the concept being endorsed and employed by
+a market-oriented economy over the last 30 years. The Gross Domestic              various organizations including United States Agency for International
+Product (GDP) per capita increased by 2.7 times between 2002 and                  Development (USAID) and the United Nations, sustainable intensifica­
+2018, and population increased from 60 million in 1986 to 96.5 million            tion has remained poorly defined and understood. Concerns include the
+in 2019 (World Bank, 2021). In Cambodia, the population has increased             vague understanding of what ‘sustainable’ means, and whether it is a
+from 14.7 million in 2013 to 15.3 in 2019 (NIS, 2019). The country                significant departure from business as usual (Peterson and Snapp, 2015).
+reached lower middle-income status in 2015 and its economy was one of             System redesign is considered to be essential to deliver optimum eco­
+the fastest growing in the world during 1999–2018, with an average                nomic and ecological outcomes, going beyond increased efficiency and
+growth rate of 8% per annum (Asian Development Bank, 2019). In the                substitution (Pretty et al., 2018). Sustainable agricultural intensification
+Lao People’s Democratic Republic (Laos), subsistence farming house­               aims to mitigate trade-offs between environmental protection and
+holds have decreased from 94% to 80% (FAO, 2019), either by tran­                 profitability (Peterson and Snapp, 2015; Tilman et al., 2011). The
+sitioning out of agriculture or intensifying towards market-oriented              integration of crops and livestock is often seen as one ingredient for
+agriculture (Bouahom et al., 2004). The economic and population                   sustainable intensification as it offers multiple management and sus­
+growth, combined with infrastructure development, improved market                 tainability benefits including provision of nutrients for crop production
+access and government policies, has resulted in different profound and            through manure, provision of draft power and crop residues and forage
+multi-faceted transition pathways. These pathways vary in their                   that serve as animal feed (Herrero et al., 2007). Commercialization,
+geographic distribution, characteristics and rate of change across Viet­          specialization and industrialization of agriculture has often led to a
+nam, Cambodia and Laos, and represent different stages of agricultural            separation of crop and livestock sub-systems thus recoupling is seen as
+transition (Johnston et al., 2009; Ritzema et al., 2019). They are driven         an important step to sustainable management in agriculture (Ram­
+by complex land use decision processes, and have generated a diverse              ankutty et al., 2018). The potential impact of crop-livestock integration
+landscape mosaic across the region (Burra et al., 2021). Rapid agricul­           practices like feeding of crop residues, cultivation of improved forages
+tural intensification and commercialization have often been accompa­              and the increased use of animal manure for crop fertilization have been
+nied by negative environmental impacts and increased pressure on                  assessed. However, little explicit exploration into environmental im­
+natural resources, including loss of biodiversity, deforestation, nutrient        pacts in the Greater Mekong has been conducted to date (Birnholz et al.,
+pollution, declining forest covers, soil degradation, and greenhouse              2017; Castella, 2012; Castella et al., 2018; Epper et al., 2020; Stür et al.,
+gases (GHG) emissions (Baird, 2017; Baird and Fox, 2015; Hor et al.,              2013). It is important to note that there is no one-size fits all solution,
+2014; Lin, 2011). The Green Revolution was driven by a package deal of            and both the nature and the magnitude of impacts of crop-livestock
+improved seeds (breeding advances leading to high-yielding varieties of           integration practices varies by farming system (e.g. Douxchamps
+wheat, maize and rice), new inputs fueled by the development of the               et al., 2016; Giller et al., 2011). Agricultural diversity has been identi­
+Haber-Bosch process (method of directly synthesizing ammonia from                 fied as a key driver of variation in the Greater Mekong (Epper et al.,
+hydrogen and nitrogen), and availabiltiy of cheap energy from fossil              2020; Ritzema et al., 2019), but is also an important adaptation strategy
+
+
+                                                                              2
+B.K. Paul et al.                                                                                                                     Agricultural Systems 195 (2022) 103285
+
+
+for food under continued population increase, dietary shifts and climate           Table 1
+change. Indeed, agricultural diversity spreads risk among different crop           Main topographic, climatic and agricultural practices characteristics of the three
+and livestock types, ensures varied income sources, and balances be­               study regions Xieng Khouang, Ratanakiri and Central Highlands.
+tween market orientation and self-sufficiency (Waha et al., 2018).                                                 Cambodia             Laos                 Vietnam
+    The range of profitable management options that a farmer can                    Province           Unit        Ratanakiri           Xieng Khouang        Dak Lak and
+choose from without compromising future productivity and environ­                                                                                            Dak Nongi
+ment protection can be called a solution space (Martin et al., 2013). The           Capital city of                Banlung              Phonsavan            Buôn Ma
+delimitation of these solution spaces for smallholder farming systems is              province                                                               Thuột and
+                                                                                                                                                             Gia Nghĩa
+therefore critical for the sustainable agricultural intensification of the
+                                                                                    Latitude/                      13◦ 44′ 48′′ N,      19◦ 27′ 36′′ N,      Dak Lak 12◦
+Greater Mekong, and is the first step of a system redesign process (Prost             longitude of                 107◦ 0′ 16′′ E       103◦ 10′ 48′′ E      40′ 0′′ N,
+et al., 2018). A multitude of agro-environmental indicators exist that are            provincial                                                             108◦ 3′ 0′′ E
+helpful instruments to assess farming systems, their sustainability and               capital city                                                           Dak Nong
+trade-offs (Langeveld et al., 2007; Smith et al., 2017). Performance can                                                                                     11◦ 59′ 0′′ N,
+                                                                                                                                                             107◦ 42′ 0′′ E
+be compared considering various objectives and resource balances                    Topographyii                   Mostly flat          Upland               Flat plateau
+(Groot et al., 2012). Whole-farm bio-economic models, especially with               Elevationii        m.a.s.l     200-400              1200                 400–900
+multi-objective optimization functions, have been highlighted by the                Average            mm y-iii    2,318iii             1590                 Dak Lak:
+agricultural systems research community to be particularly helpful to                 precipitation                                                          1,630iv
+                                                                                      rateii                                                                 Dak Nong:
+explore trade-offs and solution spaces, and their differential interplay in
+                                                                                                                                                             2019
+various farming systems and agro-ecosystems (Jones et al., 2017; Kanter             Average            ◦
+                                                                                                           C       26.2                 19.6                 Dak Lak:
+et al., 2018; Klapwijk et al., 2014; Paul et al., 2020a). In multi-objective         temperature                                                             24.2iv
+optimization, the model can generate alternative farm configurations                                                                                         Dak Nong:
+that represent the solution space that the farming system can navigate                                                                                       23.4
+                                                                                    Common soil                    Acrisols             Acrisolsv            Basaltic
+and that visualizes potential trade-offs and synergies between different
+                                                                                      type                                                                   soiliv
+agricultural production, environmental and economic objectives (Groot               Main                           Low-inputs,          Mostly               Mostly
+and Rossing, 2011; Groot et al., 2012). Such detailed modeling offers                 agricultural                 mixed                subsistence          market-
+insights into dynamics and allows for participatory feedback cycles, but              system                       subsistence                               oriented,
+                                                                                                                   and markets                               high inputs
+often relies on selecting few, representative farming systems which risks
+                                                                                    Main crops                     Rice, cassava,       Rice (paddy and      Paddy rice,
+omitting within-type variability. Multi-disciplinary studies remain                  producedii                    cashew,              upland), maize       coffee,
+necessary to explore impacts and trade-offs of crop-livestock intensifi­                                           soybeans,            for feed, cassava,   pepper,
+cation and other sustainable intensification practises to inform policies                                          rubber               chili, banana,       cashew,
+and technology dissemination in South-East Asia (Burra et al., 2021).                                                                   vegetables for       maize,
+                                                                                                                                        household, tea,      cassava,
+    This study aims to explore the potential of crop-livestock integration
+                                                                                                                                        forages              forages
+to mitigate trade-offs between economic and environmental impacts of                Main livestock                 Poultry              Cattle, pigs and     Cattle, pigs
+transitioning smallholder farming systems across the Greater Mekong                   keptii                                            poultry              and poultry
+Subregion. More specifically, we i) analyze economic and environmental              Population         Persons/    19vi                 16                   94–143
+                                                                                      densityii        km2
+performance and trade-offs of smallholder farming systems at different
+stages of agricultural transition and degrees of agricultural diversity; ii)         i
+                                                                                         The study farms in the Central Highlands of Vietnam span across two prov­
+and explore solution spaces to mitigate these economic-environmental               inces, Dak Lak and Dak Nong. Farms were located close to the border with Dak
+trade-offs through crop-livestock integration practices. We hypothesize            Lak.
+                                                                                     ii
+that a) stage of agricultural transition and degree of agricultural di­                  Information retrieved from Ritzema et al., 2019 if not indicated otherwise.
+                                                                                     iii
+versity impact environmental performance, and that b) crop-livestock                      The rainy season in the Cambodian study region accounts for about 99% of
+                                                                                   the total yearly precipitation.
+integration can improve immediate profits while reducing negative                    iv
+                                                                                          Dak Lak Statistics Office (2019); Dak Nong Statistics Office (2019).
+environmental impacts in smallholder farming systems, with high di­                  v
+                                                                                         Information retrieved from Epper et al., 2020
+versity systems having a wider range of applicable options.                          vi
+                                                                                          NIS, 2019
+
+2. Materials and methods
+                                                                                   (Brachiaria ruziziensis, Pennisetum purpureum). Although cattle fattening
+                                                                                   was starting to emerge, livestock was generally kept for household
+2.1. Study sites
+                                                                                   consumption or as asset in case of sudden cash need. In Ratanakiri,
+                                                                                   smallholder farmers have started to cultivate more cash crops, due to
+    Three sites were selected to represent different stages of agricultural
+                                                                                   improved road infrastructure with Vietnam, increasing attraction of
+transition from subsistence orientation to commercial production,
+                                                                                   external investors, and conversion of forest and pasture into rubber,
+following previous characterization in Ritzema et al. (2019) and Burra
+                                                                                   cashew and cassava plantations. Similar to Laos, poultry and pigs were
+et al. (2021). Ratanakiri province in Cambodia, Xieng Khouang province
+                                                                                   raised for home consumption, and few ruminants were kept as asset. The
+in Laos, and the Central Highlands in Vietnam are characterized by
+                                                                                   situation in the Central Highlands was much more intensive, with high
+specific farming practices, climatic and topographic conditions
+                                                                                   use of chemical inputs and focus on coffee, pepper, cashew and sugar­
+(Table 1).
+                                                                                   cane for sale. The region has undergone a clear transition from subsis­
+    Smallholder farming was dominant in all three sites, although pro­
+                                                                                   tence to market orientation in the last three decades, particularly after
+duction orientation and management practices differed. In Xieng
+                                                                                   the prohibition of the shifting cultivation practice in 1981 (Salemink,
+Khouang province, smallholder crop-livestock farms were mainly
+                                                                                   2003). Rice and vegetables were mostly produced for household con­
+subsistence-oriented, based on rice (Oryza sativa L.) and vegetables
+                                                                                   sumption. The local government has supported meat production and
+(different varieties in home gardens), with few cash crops (tea, maize,
+                                                                                   most farmers have intensified from extensive grazing to specialized,
+banana and chili). Slash-and-burn practices remained common, while
+                                                                                   crossbred cattle species fattening practices and the production of
+mineral or organic fertilizers were not widely used. Poultry and pigs
+                                                                                   improved cut-and-carry forage.
+were left free during the day and additionally fed with maize grains
+bought at the local market. Cattle were mainly left grazing on the own
+pasture land and additionally fed with local or improved forages
+
+                                                                               3
+B.K. Paul et al.                                                                                                                      Agricultural Systems 195 (2022) 103285
+
+
+2.2. Household survey and selection                                                 parameterization of degradation, nutrient losses and organic matter
+                                                                                    (OM) breakdown (Groot et al., 2012). The inputs required for the model
+    Two broad approaches to whole farm modeling and trade-off anal­                 can be grouped into: (i) biophysical environment (e.g. soils, climate); (ii)
+ysis can be distinguished: detailed modeling of few farming systems,                socio-economics (e.g. input costs, labour price); (iii) crops and crop
+types or classes that are considered representative, or quick calculations          products yield, composition and use; (iv) livestock and livestock prod­
+across a population of households. In this study, we decided for ‘middle            ucts yield, composition and use; (v) manure types and degradation, and
+ground’, aiming to combine the strengths of both approaches through                 mineral fertilizer use; (vi) household members and labour availability.
+not omitting variability within types while at the same time being able to              In this study, farm performance was evaluated in terms of farm ni­
+gain insights into detailed dynamics. We therefore relied on a large                trogen (N) balance, greenhouse gas (GHG) emissions and operating
+survey dataset of more than 1300 households from where we derived a                 profit using the same system boundaries as in Epper et al. (2020). The
+farming systems classification based on agricultural diversity. Then, we            indicators for the 24 farms were calculated as follows:
+proceeded to in-depth understanding of the farming system types by                                   (              )
+                                                                                    Nitrogen balance kg N ha− 1 y− 1 (input–output)
+modeling a larger-than-usual set of 24 households to have replicates per
+farming system. The procedure and methods are described in the
+                                                                                    = (f 1 + f 2 + f 3 + f 4 + f 5) − (f 6 + f 7 + f 8 + f 9 + f 10 + f 11 + f 12 + f 13)
+following.
+    A baseline survey dataset was used for classification and farm se­                                                                                                      (1)
+lection, which was carried out among 632 households selected randomly
+                                                                                    where f1: Feed import; f2: Import manure; f3: Biological N fixation; f4:
+in Ratanakiri, 366 in Xieng Khouang, and 310 in the Central Highlands
+                                                                                    N-deposition; f5: Import mineral or organic fertilizers; f6: Animal
+between December 2015 and March 2016 (Ritzema et al., 2019), using
+                                                                                    products for household; f7: Export animal products; f8: Export animal
+the Rural Household Multi-Indicator Survey (RHoMIS) tool (Hammond
+                                                                                    manure; f9: Manure volatilization; f10: Crop products for household;
+et al., 2017). Focus group meetings and discussions with local experts,
+                                                                                    f11: Export crop products; f12: Export crop residues; f13: N volatiliza­
+conducted in February and March 2017, allowed identifying agricultural
+                                                                                    tion of crop residues burned.
+diversity as one of the main factors behind the observed variation be­
+                                                                                                    (         )
+tween the sites.                                                                    Operating profit USD y− 1
+    Agricultural diversity is defined in this study as the sum of crop and
+livestock diversity, with one count per one crop or one livestock species.          = Gross margin crops + gross margin livestock − fixed costs − variable costs
+Home gardens are also counted as one, although we acknowledge that                                                                                                          (2)
+those can harbour various different crops that are important for nutri­
+tional diversity. The diversity score was calculated for each household,            where gross margin crops and gross margin livestock: the products that
+and households were then categorized into two distinct farm types: Low              the farmers produce on their farm and that could potentially be sold;
+diversity (LD) and high diversity (HD). The threshold between low and               fixed costs: land rent, equipment and building costs – on our study
+high diversity was site-specific, based on frequencies of each diversity            assumed to be zero in this study as farmers mainly cultivate on their own
+score across the entire RHoMIS dataset (see Supplementary Material                  land and use minimal equipment; variable costs: refer to expenses for
+SM1), and validated by local experts. Low diversity was defined as <6               fertilizer, crop protecion, green manure, feed and hired casual labour.
+for Xieng Khouang, and <5 for Ratanakiri and Central Highlands, while               Exchange rates of 4085 Cambodian Riel (KHR), 8692 Lao kip (LAK),
+high diversity was set to be >7 for Xieng Khouang and >6 for both                   23,208 Vietnamese Dong (VDN) to the US Dollar were applied (ex­
+Ratanakiri and Central Highlands. Farms falling into the middle range               change rates from October 2019).
+values, or “buffer zone”, were excluded. RHoMIS survey villages with                    The GHG emission module of FarmDESIGN is described in detail in
+important representation of each type were selected for visits in each              Paul et al. (2019), relying on a combination of IPCC Tier 1 and 2
+site, during which farms were randomly selected, subject to accessibility           methods. In brief, it includes the following GHG sources: (i) methane
+and availability of the farmers, for a total of four farms per type and site,       (CH4) from livestock enteric fermentation, (ii) CH4 and direct and in­
+or 24 farms. Fig. 1 indicates the locations (Fig. 1a) and the diversity             direct nitrous oxide (N2O) from manure storage and application, (iii)
+scores of the modeling farms (red lines) against the entire household               N2O from mineral fertilizer application; (iv) direct and indirect N2O
+dataset (Fig. 1b).                                                                  from soils through N input from crop residue retention, N fixation and
+    The same data collection process described in Epper et al. (2020) was           atmospheric deposition, (v) CO, CO2, N2O, NOx and CH4 from burning
+used to interview the 24 case study farms. In brief, all farmers were               of organic material. Input data on livestock numbers, manure produc­
+interviewed between March – June 2017 using the IMPACTlite survey                   tion, crop residue use, and fertilizer and manure application were
+(Rufino et al., 2009) to collect quantitative data on assets, farm pro­             multiplied with IPCC Tier 1 emission factors. N manure excretion rate
+duction and management. Additional data on environmental charac­                    was calculated by the model taking into account protein intake by
+teristics and nutrient contents was found in literature (see                        livestock and protein digestibility of the feed basket, so that manure
+Supplementary Material SM2 for complete list of parameters used for the             related N2O emissions can be considered an IPCC Tier 2 method.
+study).                                                                             Calculated N2O and CH4 emissions were converted into CO2 equivalents
+                                                                                    (CO2e) by multiplying by their respective global warming potentials –
+2.3. Agro-environmental indicators                                                  21 for CH4 and 310 for N2O. Off-farm GHG emissions, for example for
+                                                                                    fertilizer or feed production, are not taken into account.
+    The 24 case study farms were simulated using the whole-farm bio-                    Farm characteristics and agro-environmental indicators were
+economic optimization model FarmDESIGN (Groot et al., 2012), which                  compared using a combination of farm type (LD referring to Low Di­
+calculates the impacts of various farm configurations on a large set of             versity and HD referring to High Diversity) and study region (Ratanakiri,
+agro-environmental and socio-economic performance indicators. Ap­                   Xieng Khouang and Central Highlands). Since the sample size within
+plications globally have suggested the model is robust enough to                    each farm type and region was low (i.e. n = 4), and the residuals of the
+accommodate various agro-environments and farming systems, and its                  response variables, i.e. agro-environmental and economic characteris­
+functionality has been illustrated in South-East Asia in various recent             tics (Nitrogen Balance, GHG emissions/ha and Operating profit) did not
+studies (Birnholz et al., 2017; Epper et al., 2020; Ditzler et al., 2019;           exhibit normal distribution, we employed non-parametric tests to test
+Estrada-Carmona et al., 2020; Timler et al., 2020). FarmDESIGN has                  for significant differences in agro-environmental and economic vari­
+been evaluated in terms of design-, output- and end-user validity.                  ables, between regions, between farm types and between farm types
+However, uncertainty lies in the quality of input data, as well as                  within each region. Therefore, we first performed an analysis that
+
+                                                                                4
+B.K. Paul et al.       Agricultural Systems 195 (2022) 103285
+
+
+
+
+                                     (caption on next page)
+                   5
+B.K. Paul et al.                                                                                                                      Agricultural Systems 195 (2022) 103285
+
+Fig. 1. Location of case study farms for bio-economic modeling in Xieng Khouang, Ratanakiri and Central Highlands, mapped on elevation in meters above sea level
+(from https://www.worldclim.org/), administrative boundaries (from https://gadm.org) and the world terrain reference map from ESRI (a) and box plot of case
+study farms in Xieng Khouang, Ratanakiri and Central Highlands (red lines – thicker lines indicating two farms at the same level) scored against all approximately
+1300 RHoMIS households (b). (For interpretation of the references to colour in this figure legend, the reader is referred to the web version of this article.)
+
+
+assessed, if there were significant differences in agro-environmental and                    organic matter balance, and minimize (Central Highlands) and maxi­
+economic characteristics between the three study regions independent                         mize (Ratanakiri, Xieng Khouang) farm N balance. In the first optimi­
+of farm types, using a Kruskal-Wallis Chi Squared test. We further fol­                      zation (business as usual), the model was provided with various decision
+lowed this analysis, by investigating if there were significant differences                  variables to select the best outcomes. The farms could only produce the
+in agro-environmental and economic characteristics between LD and HD                         same crops and livestock they had before, but could increase area used
+farm types, independent of regions, using a Wilcoxon rank sum test                           for the production of the cash crop and could increase their livestock
+procedure. Additionally, we used the Wilcoxon rank sum test procedure,                       holdings. Farms could also increase their inputs, refering to fertilizer
+to further investigate differences between LD and HD farms within each                       application and feed imports. For the second optimization (crop-live­
+region separately. In the case of Kruskal-Wallis Chi-squared test, the                       stock integration), we gave the model the option to increase diversity of
+obtained p-values were adjusted using the Benjamini-Hochberg                                 crops by introducing new cash and forage crops including legumes. The
+approach. Both the Kruskal-Wallis Chi Squared test and Wilcoxon rank                         model also had the option to change crop management practices such as
+sum test procedure were performed using using BaseR functions (R Core                        residue retention and burning, and manure recycling for crop fertiliza­
+Team, 2020).                                                                                 tion. Livestock production could be intensified through increasing feed
+                                                                                             import and increased livestock numbers and body weight. In both op­
+2.4. Multi-objective optimization                                                            timizations, land area could not be increased more than 5% than the
+                                                                                             currently managed area, and the livestock feed at maintenance must be
+   FarmDESIGN contains a multi-objective Pareto-based optimization                           guaranteed. The crop-livestock intensification scenario represents an
+algorithm that can evaluate and minimize trade-offs between several                          alternative development pathway that has been encouraged by policies
+production objectives. The model generates clouds of alternative farm                        and programs throughout the region. In Cambodia, one of the strategic
+configurations, based on available resources and provided with a limited                     focuses of the government is to push the investment in research devel­
+room and decision variables to reallocate these (Groot et al., 2012).                        opment of high value-added crops, livestock and aquaculture to improve
+   Two optimization runs were applied to the 24 farms (Table 2). The                         agricultural productivity, quality and diversification (Royal Govern­
+aim of both multi-objective optimizations in this study was set to                           ment of Cambodia, 2018). The Agricultural Development Strategic Plan
+maximize the operating profit, minimize GHG emissions, maximize                              2019–2023 aims to modernize farming practices and to build more
+                                                                                             infrastructure to become more competitive and resilient to climate
+                                                                                             change, thus enhancing productivity, diversifying potential crops and
+Table 2
+                                                                                             commercialization (MAFF, 2019). In the Central Highlands of Vietnam,
+Objectives, decision variables and main constraints for two optimization runs for
+24 farms in FarmDESIGN: business as usual vs. crop-livestock integration.
+                                                                                             local government advocates for development of the beef value chains to
+                                                                                             meet the high domestic demand and create economic opportunities for
+  Optimizations    Business as usual                 Crop-livestock integration
+                                                                                             smallholder farmers (Stür et al., 2013). Dak Lak and Dak Nong’s Pro­
+  Objectives       • Minimize GHG emissions                                                  vincial People Committee explicitly encourages crop diversification in
+                   • Maximize operating profit
+                                                                                             its provincial restructuring agricultural plans, and envisions the devel­
+                   • Maximize organic matter balance
+                   • Minimize (Central Highlands) or maximize (Ratanakiri, Xieng
+                                                                                             opment of the livestock sector towards incentive systems by 2020
+                     Khouang) the farm N balance                                             (MARD, 2009; Dak Lak PPC, 2016; Dak Nong PPC, 2018).
+  Decision         • Increase the production of      • Increase the diversity of crops
+   variables         the crop that is most             produced on the farm by               3. Results
+                     profitable on the current         addition of cash crops and
+                     market (commercial cash           legumes as well as
+                     crop)                             Stylosanthes guianensis and           3.1. Characterization of low and high diversity farming systems across an
+                                                       Pennisetum purpureum as               agricultural transition gradient
+                                                       improved forages for feeding
+                                                       additional cattle                         Household size was similar for all sites though slightly higher for HD
+                   • No changes in crop and          • Decrease the crop
+                     livestock management              management practices that
+                                                                                             farms (Table 3). The cropping area in Ratanakiri was higher than in the
+                     practices (e.g. crop residues     have a negative                       Central Highlands for both LD and HD. In all sites, HD farms had larger
+                     burning, manure recycling)        environmental impact (e.g.            cropping areas than LD farms with the difference being least pronounced
+                                                       crop residue burning)                 in Central Highlands (1.6 ha HD, 1.1 ha LD) and more pronounced in
+                   • Increase the production of      • Increase the production of the
+                                                                                             Ratanakiri (6.7 ha HD, 3.9 ha LD) and Xieng Khouang (3.5 ha HD, 1.1 ha
+                     the livestock holdings and        livestock holdings and body
+                     body weight production, if        weight production, and add            LD). Farmers in Xieng Khouang used about half of their production for
+                     the farm is already               cattle where farmers are not          household consumption (45% LD, 53% HD), while in the Central
+                     managing livestock                keeping any                           Highlands (24% LD, 20% HD) and Ratanakiri (20% LD, 7.5% HD) this
+                   • Increase the feed import        • Increase the feed import and          percentage was much lower. Median Tropical Livestock Units (TLU)
+                     amount                            production amount
+                   • Add mineral fertilizers as      • Increase the recycling of
+                                                                                             tended to be higher in HD than LD farms across all sites, with the largest
+                     possible external input           livestock manure and add              differences in Central Highlands (0.3 LD, 2.0 HD) and Xieng Khouang
+                                                       mineral fertilizer as possible        (0.2 LD, 4.5 HD) and smallest livestock holdings in Ratanakiri (0.2 LD,
+                                                       external input                        0.3 HD) (Table 3).
+                                                     • Increase the amount of crop
+                                                                                                 In Ratanakiri, farmers could exploit larger farm sizes (3.5–10.5 ha)
+                                                       residues that are either fed to
+                                                       own livestock or used as              for rubber, cashew, and cassava for markets in Vietnam and China
+                                                       green manure                          (Fig. 2a). The Central Highlands had intensified production systems on
+  Main             Total cropped area cannot be increased by more than 5% of current         relatively small farms (0.5–3 ha), focusing on major cash crops such as
+   constraints     managed area.                                                             cassava, cashew, coffee, and pepper (Fig. 2a) under external mineral
+                   Livestock maintenance must be guaranteed in respect to feeding
+                   dry matter, energy and protein intake.
+                                                                                             fertilizer inputs of more than 100 kg N ha-1 in six out of eight farms
+
+
+                                                                                         6
+B.K. Paul et al.                                                                                                                  Agricultural Systems 195 (2022) 103285
+
+
+Table 3
+Median, minimum and maximum values of key characteristics of the 24 study farms (four per type and site) in the three study regions Ratanakiri (Cambodia), Xieng
+Khouang (Laos) and Central Highlands (Vietnam).
+                                                                     Ratanakiri                          Xieng Khouang                   Central Highlands
+
+  Farm type                                                   Unit   median           min      max       median      min       max       median        min       max
+
+  LD               Diversity score                            –      4.5              4        5         5           5         6         3             2         4
+                   Household members                          #      5                4        6         4.5         4         5         4             3         6
+                   Cropping area                              ha     3.9              3.3      10        1.1         0.2       4.8       1.1           0.5       2.8
+                   Share of production for home consumption   %      20               9        87        45.5        2         107       24            2         79
+                   Livestock units                            TLU    0.2              0        1.2       0.2         0.2       2.7       0.3           0         1.5
+                   Share of ruminants in TLU                  %      0                0        0         0           0         78        0             0         87
+  HD               Diversity score                            –      8                6        9         8           6         9         7             6         8
+                   Household members                          #      6.5              5        9         5.5         4         7         4.5           4         5
+                   Cropping area                              ha     6.7              4.2      10.5      3.5         1.2       7         1.6           1.3       1.9
+                   Share of production for home consumption   %      7.5              1        40        53.5        20        73        20            5         92
+                   Livestock units                            TLU    0.3              0.2      4.3       4.5         1.9       9.8       2.0           1.2       2.5
+                   Share of ruminants in TLU                  %      0                0        98        72          38        88        67.5          0         92
+
+
+
+(Fig. 4a). Xieng Khouang farms on the contrary produced more crops for                biological fixation due to substantial soybean cultivation, balancing
+home consumption than in the other two sites. While tea production has                some of the nutrient export through cash crops. HD farms in Ratanakiri
+been a source of income for many decades, maize has started to be                     produced rubber and cashew nuts which need less nutrient supply than
+produced on the hillsides. Extensive grazing on pasture was also com­                 other annual cash crops. In the Central Highlands, farmers tended to
+mon practice for Xieng Khouang, and the production of forages as feed                 over-compensate the export of N with high input quantities of mineral
+for cattle fattening practice was increasing as well (Fig. 2a).                       fertilizer particularly for coffee production, resulting in strongly positive
+    The TLU distribution reflected the livestock systems of the three                 N balances for almost all farms. Significant nutrient export through cash
+study regions (Fig. 2b). LD farms tended to keep a smaller number of                  crops in Xieng Khouang was only found in two farms producing maize
+livestock, particularly poultry, in all three provinces (Table 3). Usually            for the international market. Main N imports in this site were feed
+farmers produced feed from their own farms, and only imported small                   (maize grain for poultry) and in one case manure from neighbors. In
+quantities. Farms in Ratanakiri kept fewest livestock of which mostly                 Xieng Khouang, both LD and HD managed wild tea or tea plantations,
+poultry for household consumption, and only one farm held ruminants                   which provided the opportunity to earn income, but did not influence
+as asset and for ceremonies. Xieng Khouang farmers owned the largest                  the final N-balance as much as maize monoculture (Fig. 4a).
+TLU and ruminant numbers which were mostly local breeds (calves and                       The main source of GHG emissions in Ratanakiri and Xieng Khouang
+cows), while some kept improved breeds that were fattened and sold on                 was burning of organic material, dominated by cassava residues (Rata­
+the international market (three out of eight farms). HD farms in Xieng                nakiri) and maize stalks (Ratanakiri and Xieng Khouang) (Fig. 4b).
+Khouang all kept at least one cow, and sometimes also a small herd                    Paddy rice production resulted in considerable GHG emissions from
+which stays on the own pasture or grazes freely during the day. Farms in              most farms. GHG emissions from ruminants reflected the higher live­
+Central Highland had the most intensified livestock keeping systems,                  stock holdings in Xieng Khouang and Central Highlands. Central High­
+relying on cattle fattening and improved breeds fed under cut-and-carry,              lands farms were the only ones applying mineral fertilizers at high rates,
+often with improved varieties of Napier grass (P. purpureum) and then                 but compared to other GHG sources these GHG emissions were consid­
+sold to the market. Pigs were common in both Xieng Khouang and                        erably smaller (Fig. 4b).
+Central highland farms and sold to the market as regular source of
+income.
+                                                                                      3.3. Exploring solution spaces for crop-livestock integration vs. business as
+                                                                                      usual
+3.2. Economic and environmental performance of farming systems
+                                                                                          The size of the ‘solution space’ or performance of alternative farm
+    Mean nitrogen (N) balances across both HD and LD farms were                       configurations that the model generates provides indication for the
+negative for Ratanakiri (average − 20.5 kg N ha− 1 y− 1) and Xieng                    number of options these farms have to navigate agro-environmental
+Khouang farmers (− 36.5 kg N ha− 1 y− 1), and significantly differed from             trade-offs (Fig. 5). In both scenarios, business as usual (5b) and crop-
+those of Central Highlands (73 kg N ha− 1 y− 1; Kruskal-Wallis chi-                   livestock integration (5d), a trade-off was apparent between profit­
+squared = 10.573, df = 2, BH adjusted p-value <0.05 between Rata­                     ability and GHG emissions, though higher profitability could be ach­
+nakiri and Central Highlands, BH adjusted p-value <0.05 between Xieng                 ieved with crop-livestock intensification under similar GHG emission
+Khouang and Central Highlands). Highest N balance was found in the                    increases. The relationship between profitability and N balance was
+Central Highlands (192 kg N ha− 1 y− 1), and lowest in Xieng Khouang                  more diverse (Fig. 5a and c). In general, HD farms had larger solution
+(− 96 ha− 1 y− 1) (Fig. 3a). Total GHG emissions ranged from 0.52–8.12 t              spaces than LD farms. Slopes, incremental changes per unit profit, were
+CO2e/ha. No significant differences in GHG emissions were observed,                   lower for HD farms than for LD farms, almost everywhere, showing that
+either between regions, or between farm types, and even between farm                  the negative effects (increased GHG emissions or disbalanced N) were
+types within each region (Fig. 3b). However, in the case of operational               less dramatic in HD farms for each increase in profit. Farms in Central
+profits, HD farm types obtained higher (10,379 USD y− 1), and margin­                 Highlands had smaller solution spaces (often rather linear than scattered
+ally significant operating profits in comparison to LD farm types (4584               spaces) than the farms in Ratanakiri and Xieng Khouang related to the
+USD y− 1; Wilcoxon rank sum test, p-value <0.05; Fig. 3C). However, the               small available cropping areas in the Central Highlands which limits
+same was not observed when comparing between LD and HD farm types                     their opportunities. In the ‘crop-livestock integration’ optimization
+within each region. Neither did operating profits differ significantly                (Fig. 5c, d), the solution spaces and thus options to mitigate trade-offs
+between the three regions (Fig. 3c).                                                  for all farms for both N balance and GHG emissions increased when
+    In Ratanakiri the high N outputs caused by the export of cash crops               compared to ‘business as usual’. Farms in Ratanakiri had more options to
+were not compensated by adequate nutrient provision, resulting in                     reduce agro-environmental trade-offs than farmers in the other sites
+nutrient mining (Fig. 4a). External N inputs were only provided through               (Fig. 5).
+
+                                                                                  7
+B.K. Paul et al.                                                                                                                        Agricultural Systems 195 (2022) 103285
+
+
+
+
+Fig. 2. Cropping areas (a) and total livestock units (TLUs) (b) for 24 study farms in Ratanakiri (Cambodia), Xieng Khouang (Laos) and Central Highlands (Vietnam).
+Crops and livestock in blue are mainly produced and kept for household consumption, while red colors indicate produce for the local or international market. Maize,
+bananas and cassava are represented twice as they are often either used for home consumption or sold to the markets. The numbers above the stacked barplots
+indicate total cropping area (ha) (a) and total TLUs (b). (For interpretation of the references to colour in this figure legend, the reader is referred to the web version of
+this article.)
+
+
+
+
+                                                                                      8
+B.K. Paul et al.                                                                                                             Agricultural Systems 195 (2022) 103285
+
+
+
+
+Fig. 3. Boxplots representing differences in (a) Nitrogen balance (b) GHG emissions and (c) operating profits between High Diversity (HD) and Low Diversity (LD)
+farms located in Ratanakiri (Cambodia), Xieng Khouang (Laos) and Central Highlands (Vietnam).
+
+
+4. Discussion                                                                      practice of cassava and maize residue burning. The prohibition of slash-
+                                                                                   and-burn practices in the Central Highlands showed its effects, while the
+4.1. Environmental performance under current agricultural practices                practice is still common in Ratanakiri and Xieng Khouang (Burra et al.,
+                                                                                   2021). Total GHG emissions from the studied farms ranged from
+    Agricultural systems in Ratanakiri, Xieng Khouang and Central                  0.52–8.12 t CO2e/ha, and were lower than for example in smallholder
+Highlands differed in their production orientation and practices, rep­             crop-livestock systems in Central Kenya where average emissions ranged
+resenting various stages of agricultural transition. In the Central High­          from 4.5 to 12.5 t CO2e/ha with highest emissions from farms with high
+lands, farms have developed towards market-oriented systems, with                  livestock density and high input use (Ortiz-Gonzalo et al., 2017). See­
+large input use and livestock produced for sale. Xieng Khouang in Laos             bauer (2014) found whole-farm emissions from Western Kenya ranging
+and Ratanakiri in Cambodia display more convergent traits of transition,           from 5.9–10.1 t CO2e/ha, while Paul et al. (2018) calculated annual
+having access to larger cropping areas and producing cash crops to a               GHG emissions of 0.4–1.5 t CO2e per household in Rwanda (Paul et al.,
+varying degree, with dominance of home consumption in Xieng                        2018) and 2.9–16.2 t CO2e per household in Northern Tanzania (Paul
+Khouang. Ratanakiri had hardly any livestock holdings except poultry               et al., 2019). Agricultural diversity did not consistently impact envi­
+while livestock keeping in Xieng Khouang was mainly extensive and for              ronmental outcomes. This trend parallels with Ritzema et al. (2019) who
+home consumption. Environmental impacts of agricultural production                 found dietary diversity not being determined by single consistent factors
+per unit area could only be partly related to the stage of agricultural            across all sites, but influenced by different determinants in each site.
+transition. Farmers in the Central Highlands had significantly higher N            Burra et al. (2021) also found various, context-specific drivers for
+balances than in the other two regions. This is linked to processes of             complex land-use change in the Greater Mekong region. Impacts of
+commercialization and small landholdings, and farmers have intensified             transition on dietary diversity, land use change and environmental
+using large amounts of available and affordable mineral fertilizers.               impact appear site-specific and therefore require contextualized policies
+Positive nutrient balances between 80 and 100 kg N ha− 1 have been                 and approaches.
+found in other studies from Vietnam as well (Phong et al., 2010).
+Although target values for N management and balances depend on
+specific contexts, Quemada et al. (2020) suggest 80 kg N ha− 1 as an               4.2. Potential of crop-livestock integration to mitigate economic-
+upper boundary beyond which environmental contamination is ex­                     environmental trade-offs
+pected. N balances were mostly negative for Ratanakiri and Xieng
+Khouang farmers, pointing to ongoing nutrient mining due to low input                  Crop-livestock integration referred to a package of options to the
+use despite sale of cash crop products. In Ratanakiri, cropping land was           farms including more productive livestock herds, higher crop diversity
+increased by relatively recent forest clearing so that nutrient replen­            including forage legumes and grasses, decrease of crop residue burning,
+ishment has not yet become urgent. Legacy soil fertility, relatively large         more manure application to crops and residue feeding to livestock. This
+cropping land sizes and wide-spread soybean cultivation still provide              was contrasted with a business as usual scenario that focused on
+sufficient nutrients to sustain productivity in the meantime. Findings for         increasing cash crop production (Table 2). Crop-livestock integration
+Xieng Khouang farmers are in line with Epper et al. (2020), who have               resulted in larger ‘solution spaces’, thus providing farmers with more
+reported that the traditional soil fertility management technique, fal­            options to mitigate economic-environmental trade-offs. HD farms ten­
+lows of 5–10 years, are not possible anymore but that the new, more                ded to have larger solution spaces than LD farms, and farms in Rata­
+intensified cropping systems without nutrient replenishment is unsus­              nakiri had more options available while farmers in the Central
+tainable. GHG emissions did not differ significantly between regions,              Highlands the least. These solution spaces can also be seen as wiggle
+though the GHG sources varied. Main source in the Central Highlands                room, giving farms the space to maneuver and making them more
+was fertilizer use, and in Ratanakiri and Xieng Khouang the common                 resilient. The more diverse a system, the more integrated it has the
+                                                                                   potential to be, the greater the resilience through complementarity
+
+                                                                               9
+B.K. Paul et al.                                                                                                                  Agricultural Systems 195 (2022) 103285
+
+
+
+
+Fig. 4. (a) N balance (kg N ha− 1 y− 1) across farm types and study sites in Ratanakiri (Cambodia), Xieng Khouang (Laos) and Central Highlands Vietnam. The
+numbers above the stacked barplots represent the total N balance per farm. Fertilizer imp. refers to both animal manure and mineral fertilizers (a). GHG emissions (kg
+CO2e ha− 1 y− 1) per year across farm types and study sites. The numbers above the stacked barplots represent the total GHG emission per farm and hectare (b).
+
+
+mechanisms (Gil et al., 2017). Livestock, when well-managed and                       discussion and investment (Paul et al., 2020b). However, despite the
+closely integrated with crop production, could potentially play an                    technical potential of such solutions that this and other modeling studies
+important role to mitigate economic-environmental trade-offs by con­                  can illustrate, adoption at farm level is determined by additional,
+verting residues into animal-source food and manure for fertilization                 practical factors. In the case of improved livestock feeding and forages,
+while reducing the polluting practice of residue burning. A previous                  such factors include lack of awareness and knowledge, low support, and
+study demonstrated that forage-based livestock fattening can increase                 lack of available and accessible inputs, labor and market linkages. More
+operating profits by 35%, while maintaining soil organic matter and                   systemic issues around land tenure, challenging transitions of entire
+decreasing GHG intensities (Birnholz et al., 2017). Timler et al. (2020)              production systems and differences in production objectives can also
+demonstrated the potential for crop diversification options to satisfy                inhibit adoption of closer crop-livestock integration (Paul et al., 2020a).
+household dietary needs and generate income gains in Vietnam, while
+Estrada-Carmona et al. (2020) also point to trade-offs between achieving              4.3. Methodological reflections on whole farm modeling and optimization
+both nutritional and economic objectives. This study underlined that
+realizing the potential of livestock’s positive contribution to sustainable              In terms of methods, this study aimed to take the middle way be­
+intensification will require a shift of perception towards a more nuanced             tween two basic contrasting approaches to whole-farm modeling of
+
+                                                                                 10
+B.K. Paul et al.                                                                                                                 Agricultural Systems 195 (2022) 103285
+
+
+
+
+Fig. 5. ‘Solution spaces’ or performance of alternative farm configurations for 24 farms to achieve higher farm profitability, balanced N balance and lower GHG
+emissions ‘business as usual’ (a and b) and ‘crop-livestock integration’ (c, d) across the three study sites Ratanakiri (Cambodia), Xieng Khouang (Laos) and Central
+Highlands (Vietnam). For optimization settings and assumptions, see Table 2. The original farm configurations are given in black (OR), the possible solutions for low
+diversity (LD) and high diversity (HD) farms are indicated in red and blue respectively.
+
+
+smallholder systems: i) Detailed modeling of few farming system types                 approach, results are often presented in strata following the particular
+or classes that are considered representative (typically <10), or ii) quick           research question. Strata could be based on research questions (Shikuku
+calculations and modeling of a population of households (typically 30 -               et al., 2017), classes identified in the outcome variables such as food
+>10,000). We relied on a large survey dataset of more than 1300                       availability or greenhouse gas emissions (e.g. Frelat et al., 2016; Paul
+households from where we derived a farming systems classification                     et al., 2018; Ritzema et al., 2017), or types identified through multi­
+based on agricultural diversity. Then, we proceeded to in-depth under­                variate statistics (Douxchamps et al., 2016; Falconnier et al., 2015;
+standing of the farming systems types by modeling a larger-than-usual                 Lopez-Ridaura et al., 2018).
+set of 24 households to have replicates per farming system. Table 5 il­                   The selection of our mixed methods aimed to combine the strengths
+lustrates the two contrasting approaches with selected studies and their              of both approaches. Modeling of real and existing households allowed
+geographic scope and number of farming systems/households modeled.                    for the modeling to be conducted in a participatory manner, fostering
+Methods for selecting farms can be classified as ‘real’ versus ‘con­                  the dialogue with farmers between ‘actual’ and ‘desirable’ systems
+structed’. By ‘real’, we refer to an actually existing farm that is consid­           (Prost et al., 2018). We could also verify and validate data used for
+ered representative for the farming system type, which can be identified              model parameterization and calibration, and obtain a more in-depth
+in various ways. It can be selected from a household dataset through                  understanding of dynamics and complexities. Having replicates for
+multivariate statistics (e.g. Alary et al., 2016; Cortez-Arriola et al., 2014;        each farming system type enabled us to not omit variability within types,
+Paul et al., 2019; Rigolot et al., 2017; Waithaka et al., 2006), or through           and we could perform statistical analysis on results that is often not
+participatory Focus Group Discussions (Michalscheck et al., 2018). A                  possible when modeling of single households per type.
+farm can also be purposively selected to test and illustrate functionalities              This study aimed to explore the potential of crop-livestock integra­
+of a new model or modules (Ditzler et al., 2019; Parsons et al., 2011).               tion to mitigate trade-offs between economic and environmental per­
+Generic or constructed farming systems, thus not corresponding to                     formance. Farming systems research is mainly seen here as a problem-
+existing households, have been defined for large geographic areas using               solving process, where emphasis is placed on the computational explo­
+various data sources including literature, policy documents, census data              ration of solution spaces (Martin et al., 2013). Drawing the boundaries
+and expert knowledge (Mayberry et al., 2017, 2018) or from mean                       of these spaces is essential but we acknowledge that it is just the first step
+values of household survey data for each particular type (Descheemaker                in a necessary further process to identify which practical solutions
+et al., 2018). The second approach is modeling entire household pop­                  within these spaces are most appropriate and practically feasible. This
+ulations. Relatively simple indicators, such as land productivity, food               step will have to be embedded in a participatory process, involving
+availability and self-sufficiency, greenhouse gas emissions (IPCC Tier 1),            stakeholder with different backgrounds and skills, and working at
+household income, or dietary diversity score can be calculated for all                different scales, to offer a more balanced view of issues and potential
+households of a household survey. Although not necessary in this                      solutions. Far from linear, this is an iterative process of co-learning and
+
+
+                                                                                 11
+B.K. Paul et al.                                                                                                                             Agricultural Systems 195 (2022) 103285
+
+
+Table 5                                                                                   to mitigate agro-environmental trade-offs.
+Selected studies illustrating two contrasting approaches to whole-farm modeling               The results of this study illustrate the potential of crop-livestock
+of smallholder systems, including geographic scope and number of farms/                   integration to support much-needed sustainable intensification path­
+households modeled.                                                                       ways in the Greater Mekong, where rapid commercialization is leading
+                                 Geographic         Number of    Reference                to environmental trade-offs. Livestock, when well-managed and closely
+                                 scope              farming                               integrated with crop production, can convert residues and roughages
+                                                    systems/
+                                                                                          into animal-source food and manure for fertilization while reducing the
+                                                    households
+                                                                                          polluting practice of residue burning. However, the global public dis­
+  i) Modeling      Constructed   India, Ethiopia    4            Mayberry et al.,         cussion has long focused on livestock’s negative health and environ­
+     of                                                          2018
+     farming                     India, Ethiopia    5            Mayberry et al.,
+                                                                                          mental impacts, resulting in under-investment in research and
+     system                                                      2017                     development programs on livestock in low- and middle-income coun­
+     types                       Mexico:            1            Parsons et al.,          tries. Realizing the potential of livestock’s positive contribution to sus­
+                                 Yucatan                         2011                     tainable intensification will require a shift of perception towards a more
+                                 Zimbabwe:          6            Descheemaker
+                                                                                          nuanced global discussion (Paul et al., 2020b). This study therefore
+                                 Nkayi                           et al., 2018
+                   Real          Tanzania:          4            Paul et al., 2019        underlines the need for public and private investments in research and
+                                 Babati                                                   extension to develop and scale context-specific crop-livestock integra­
+                                 Burkina Faso:      2            Rigolot et al.,          tion practices in support of sustainable intensification pathways in the
+                                 Yatenga                         2017                     Greater Mekong.
+                                 China: Gansu       3            Komarek et al.,
+                                                                 2012
+                                 Kenya: Vihiga      9            Waithaka et al.,         Declaration of competing interest
+                                                                 2006
+                                 Mexico:            6            Cortez-Arriola               The authors have no conflict of interest to report.
+                                 Michoacan                       et al., 2014
+                                 Ghana: three       9            Michalscheck
+                                 regions                         et al., 2018             Acknowledgements
+                                 Vietnam: Son       2            Ditzler et al.,
+                                 La                              2019                         This work received financial support from the German Federal
+                                 Brazil: Cerrados   6            Alary et al.,
+                                                                                          Ministry for Economic Cooperation and Development (BMZ) commis­
+                                                                 2016
+  ii) Modeling of household      Mali: Koutiala     30           Falconnier               sioned and administered through the Deutsche Gesellschaft für Inter­
+     population                                                  et al., 2015             nationale Zusammenarbeit (GIZ) Fund for International Agricultural
+                                 India:             42           Ditzler et al.           Research (FIA), grant number: 81180342 (‘Hands and Minds connected
+                                 Uttarakhand                     2018
+                                                                                          to boost eco-efficiency of smallholder livestock-crop systems’).
+                                 Tanzania:          164          Shikuku et al.,
+                                 Lushoto district                2017                         The research was undertaken as part of the CGIAR Research Program
+                                 India: Bihar       269          Lopez-Ridaura            on Livestock, which is supported by contributors to the CGIAR Trust
+                                                                 et al., 2018             Fund. CGIAR is a global research partnership for a food-secure future. Its
+                                 Burkina Faso,      600          Douxchamps               science is carried out by 15 research centers in close collaboration with
+                                 Ghana, Senegal                  et al., 2016
+                                                                                          hundreds of partners across the globe. ETH Zurich, Group of Plant
+                                 Rwanda:            884          Paul et al., 2018
+                                 different                                                Nutrition, supported the MSc field work. We thank the participating
+                                 districts                                                farmers for their time and collaboration.
+                                 Kenya,             1019         Henderson
+                                 Tanzania,                       et al. 2016
+                                                                                          Appendix A. Supplementary data
+                                 Uganda,
+                                 Ethiopia,
+                                 Senegal,                                                    Supplementary data to this article can be found online at https://doi.
+                                 Burkina Faso                                             org/10.1016/j.agsy.2021.103285.
+                                 East and West      1800         Ritzema et al.,
+                                 Africa: 7                       2017
+                                 countries
+                                                                                          References
+                                 Sub-Saharan        13,000       Frelat et al.,
+                                 Africa                          2016                     Alary, V., Corbeels, M., Affholder, F., Alvarez, S., Soria, A., Valadares Xavier, J.H., da
+                                                                                              Silva, F.A.M., Scopel, E., 2016. Economic assessment of conservation agriculture
+                                                                                              options in mixed crop-livestock systems in Brazil using farm modeling. Agric. Syst.
+                                                                                              144, 33–45.
+negotiation (Klerkx et al., 2010; Martin et al., 2013). These changes will                Asian Development Bank (ADB), 2019. Cambodia, 2019–2023. Inclusive Pathways to a
+need to be supported by private and public investments, as well as                            Competitive Economy. ADB Country Partnership Strategy. https://www.adb.org/sit
+appropriate policies, to develop and scale context-specific crop-livestock                    es/default/files/institutional-document/534691/cps-cam-2019-2023.pdf.
+                                                                                          Baird, I., 2017. Resistance and contingent contestations to large-scale land concessions in
+integration practices.                                                                        Southern Laos and Northeastern Cambodia. Land 6 (1), 16.
+                                                                                          Baird, I., Fox, J., 2015. How land concessions affect places elsewhere: Telecoupling,
+                                                                                              political ecology, and large-scale plantations in Southern Laos and Northeastern
+5. Conclusions                                                                                Cambodia. Land 4 (2), 436–453.
+                                                                                          Birnholz, C., Bolliger, A., Tan Khanh, T., Groot, J., Paul, B.K., 2017. Bio-economic
+    This study aimed to explore the potential of crop-livestock integra­                      evaluation and optimization of livestock intensification options in the Central
+                                                                                              Highlands of Vietnam. In: Working Paper No. 433, 31. International Center for
+tion to mitigate trade-offs between economic and environmental im­                            Tropical Agriculture (CIAT), Nairobi, Kenya.
+pacts of transitioning smallholder farming systems across the Greater                     Bouahom, B., Douangsavanh, L., Rigg, J., 2004. Building sustainable livelihoods in Laos:
+Mekong Subregion. Agricultural systems in Ratanakiri, Xieng Khouang                           untangling farm from non-farm, progress from distress. Geoforum 35 (5), 607–619.
+                                                                                          Burra, D.D., Parker, L., Than, N.T., Phengsavanh, P., Long, C.T.M., Ritzema, R.,
+and Central Highlands differed in their production orientation and
+                                                                                              Sagemueller, F., Douxchamps, S., 2021. Drivers of land use complexity along an
+practices, representing different stages of agricultural transition. Envi­                    agricultural transition gradient in Southeast Asia. Ecol. Indic. 124, 107402.
+ronmental impacts in terms of N balances and GHG emissions were only                      Castella, J.-C., 2012. Agrarian transition and farming system dynamics in the uplands of
+partly determined by agricultural transition, while agricultural diversity                    south-east Asia. In: Hauswirth, D., Pham Thi, S., Nicetic, O., Le Quoc, D., Kirchof, G.,
+                                                                                              Boulakia, S., Chabierski, S., Husson, O., Chabanne, A., Boyer, J., Auffray, P.,
+did not affect environmental impacts. Crop-livestock integration resul­                       Lienhard, P., Legoupil, J.C., Stevens, M.L. (Eds.), 3rd International Conference on
+ted in larger ‘solution spaces’, thus providing farmers with more options                     Conservation Agriculture in Southeast Asia. Conservation Agriculture and
+
+
+                                                                                     12
+B.K. Paul et al.                                                                                                                                        Agricultural Systems 195 (2022) 103285
+
+     Sustainable Upland livelihoods. Innovations for, With and by Farmers to ADAPT to                    Meet Food Needs, Enhance Ecosystem Services and Cope With Climate Change,
+     Local and Global Changes, Hanoi (Vietnam).                                                          p. 26. Colombo, Sri Lanka.
+Castella, J.-C., Sysanhouth, K., Saphangthong, T., Victor, M., Ingalls, M., Lienhard, P.,           Jones, J.W., Antle, J.M., Basso, B., Boote, K.J., Conant, R.T., Foster, I., Godfray, H.C.J.,
+     Bartlett, A., Sonethavixay, S., Namvong, S., Vagneron, I., Ferrand, P., 2018. Adding                Herrero, M., Howitt, R.E., Janssen, S., Keating, B.A., Munoz-Carpena, R., Porter, C.
+     Values to Agriculture: A Vision and Roadmap for Sustainable Development in the                      H., Rosenzweig, C., Wheeler, T.R., 2017. Toward a new generation of agricultural
+     Lao Uplands. Lao Uplands Initiative.                                                                system data, models, and knowledge products: state of agricultural systems science.
+Cortez-Arriola, J., Groot, J.C.J., Améndola Massiotti, R.D., Scholberg, J.M.S., Valentina               Agric. Syst. 155, 269–288.
+     Mariscal Aguayo, D., Tittonell, P., Rossing, W.A.H., 2014. Resource use efficiency             Kanter, D.R., Musumba, M., Wood, S.L.R., Palm, C., Antle, J., Bavanera, P., Dale, V.H.,
+     and farm productivity gaps of smallholder dairy farming in North-west Michoacán,                   Havlik, P., Kline, K.L., Scholes, R.J., Thornton, P., Tittonell, P., Andelman, S., 2018.
+     Mexico. Agric. Syst. 126, 15–24.                                                                    Evaluating agricultural trade-offs in the age of sustainable development. Agric. Syst.
+Dak Lak Provincial People’’s Committee (PPC), 2016. Decision No.2325/QD-UBND,                            163, 73–88.
+     Dated August 10th, 2016.                                                                       Klapwijk, C.J., van Wijk, M.T., Rosenstock, T.S., van Asten, P.J.A., Thornton, P.K.,
+Dak Lak Statistics Office, 2019. Statistical Yearbook of Daklak 2018. Statistical                        Giller, K.E., 2014. Analysis of trade-offs in agricultural systems: current status and
+     Publishing House.                                                                                   way forward. Curr. Opin. Environ. Sustain. 6, 110–115.
+Dak Nong Provincial People’’s Committee (PPC), 2018. Decision No. 390/QD-UBND                       Klerkx, L., Aarts, N., Leeuwis, C., 2010. Adaptive management in agricultural innovation
+     Dated September 6th, 2018.                                                                          systems: the interactions between innovation networks and their environment.
+Dak Nong Statistics Office, 2019. Statistical Yearbook of Daknong 2018. Ho Chi Minh                      Agric. Syst. 103, 390–400.
+     City General Publishing House.                                                                 Komarek, A.M., McDonald, C.K., Bell, L.W., Whish, J.P.M., Robertson, M.J., MacLeod, N.
+Descheemaker, K., Zilstra, M., Masikati, P., Crespo, O., Homann-Kee Tui, S., 2018. Effects               D., Bellotti, W.D., 2012. Whole-farm effects of livestock intensification in
+     of climate change and adaptation on the livestock component of mixed farming                        smallholder systems in Gansu, China. Agric. Syst. 109, 16–24.
+     systems: a modeling study from semi-arid Zimbabwe. Agric. Syst. 159, 282–295.                  Langeveld, J.W.A., Verhagen, A., Neeteson, J.J., Van Keulen, H., Conijn, J.G., Schils, R.L.
+Ditzler, L., Komarek, A.M., Chiang, T.W., Alvarez, S., Chatterjee, S.A., Timler, C.,                     M., Oenema, J., 2007. Evaluating farm performance using agri-environmental
+     Raneri, J.E., Estrada Carmona, N., Kennedy, G., Groot, J.G.J., 2019. A model to                     indicators: recent experiences for nitrogen management in The Netherlands.
+     examine farm household trade-offs and synergies with an application to smallholders                 J. Environ. Manag. 82 (3), 363–376.
+     in Vietnam. Agricultural Systems 173, 49–63.                                                   Lin, B., 2011. Resilience in agriculture through crop diversification: adaptive
+Ditzler, L., Komarek, A.M., Chiang, T.W., Alvarez, S., Chatterjee, S.A., Timler, C.,                     management for environmental change. BioScience 61 (3), 183–193.
+     Raneri, J.E., Estrada-Carmona, N., Kennedy, G., Groot, J.C.J., 2019. A model to                Lopez-Ridaura, S., Frelat, R., van Wijk, M.T., Valbuena, D., Krupnik, T.J., Jat, M.L., 2018.
+     examine farm household trade-offs and synergies with an application to smallholders                 Climate smart agriculture, farm household typologies and food security. An ex ante
+     in Vietnam. Agric. Syst. 173, 49–63.                                                                assessment from Eastern India. Agric. Syst. 159, 57–68.
+Douxchamps, S., van Wijk, M.T., Silvestri, S., Moussa, A.S., Quiros, C., Ndour, N.Y.B.,             MAFF (Ministry of Agriculture, Forestry and Fisheries), 2019. Agricultural Development
+     Buah, S., Some, L., Herrero, M., Kristjanson, P., Ouedraogo, M., Thornton, P.K., van                Strategic Plan 2019–2023. MAFF, Cambodia.
+     Asten, P., Zougmore, R., Rufino, M.C., 2016. Linking agricultural adaptation                   MARD (Ministry of Agriculture and Rural Development), 2009. Development of
+     strategies, food security and vulnerability: evidence from West Africa. Reg. Environ.               Livestock Sector Toward Intensive Systems in 2020. Document No 149/BNN-CN,
+     Chang. 16, 1305–1317.                                                                               Dated 20/01/2009, Vietnam.
+Epper, C., Paul, B., Burra, D., Phengsavanh, P., Ritzema, R., Syfongxay, C., Groot, J.C.J.,         Martin, G., Martin-Clouaire, R., Duru, M., 2013. Farming system design to feed a
+     Six, J., Frossard, E., Oberson, A., Douxchamps, S., 2020. Nutrient flows and                        changing world. A review. Agron. Sustain. Dev. 33, 131–149.
+     intensification options for smallholder farmers of the Lao uplands. Agric. Syst. 177,          Mayberry, D., Ash, A., Prestwidge, D., Godde, C.M., Henderson, B., Duncan, A.,
+     102694.                                                                                             Blummel, M., Reddy, Y.R., Herrero, M., 2017. Yield gap analyses to estimate
+Estrada-Carmona, N., Raneri, J.E., Alvarez, S., Timler, C., Chatterjee, S.A., Ditzler, E.,               attainable bovine milk yields and evaluate options to increase production in Ethiopia
+     Kennedy, G., Remans, R., Brouwer, I., Borgonjen-van den Berg, K., Talsma, E.F.,                     and India. Agric. Syst. 155, 43–51.
+     Groot, J.C.J., 2020. A model-based exploration of farm-household livelihood and                Mayberry, D., Ash, A., Prestwidge, D., Herrero, M., 2018. Closing yield gaps in
+     nutrition indicators to guide nutrition-sensitive agriculture interventions. Food                   smallholder goat production systems in Ethiopia and India. Livest. Sci. 214,
+     Secur. 12, 59–81.                                                                                   238–244.
+Falconnier, G.N., Descheemaeker, K., van Mourik, T.A., Sanogo, O.M., Giller, K.E., 2015.            Michalscheck, M., Groot, J.G.J., Kotu, B., Hoeschle-Zeledon, I., Kuivanen, K.,
+     Understanding farm trajectories and development pathways: two decades of change                     Descheemaeker, K., Tittonell, P., 2018. Model results versus farmer realities.
+     in southern Mali. Agric. Syst. 139, 210–222.                                                        Operationalizing diversity within and among smallholder farm systems for a
+FAO, 2019. Laos at a Glance. http://www.fao.org/laos/fao-in-laos/laos-at-a-glance/en.                    nuanced impact assessment of technology packages. Agric. Syst. 162, 164–178.
+Frelat, R., Lopez-Ridaura, S., Giller, K.E., Herrero, M., Douxchamps, S., Djurfeldt, A.A.,          NIS (National Institute of Statistics), 2019. General Population Census of the Kingdom of
+     Erenstein, O., Henderson, B., Kassie, M., Paul, B.K., Rigolot, C., Ritzema, R.S.,                   Cambodia 2019. NIS, Ministry of Planning, Kingdom of Cambodia. https://www.nis.
+     Rodriguez, D., Van Asten, P.J.A., van Wijk, M.T., 2016. What drives household food                  gov.kh/nis/Census2019/Provisional%20Population%20Census%202019_English_
+     availability in sub-Saharan Africa? Evidence using big data from small farms. Proc.                 FINAL.pdf.
+     Natl. Acad. Sci. 113 (2), 458–463.                                                             Ortiz-Gonzalo, Vaast, Oelofse, M., de Neergaard, A., Albrecht, A., Rosenstock, T.S., 2017.
+Gil, J.D.B., Cohn, A.S., Duncan, J., Newton, P., Vermeulen, S., 2017. The resilience of                  Farm-scale greenhouse gas balances, hotspots and uncertainties in smallholder crop-
+     integrated agricultural systems to climate change. WIREs Climate Change 8 (4)                       livestock systems in Central Kenya. Agric. Ecosyst. Environ. 248, 58–70.
+     https://doi.org/10.1002/wcc.461.                                                               Parsons, D., Nicholson, C.F., Blake, R.W., Ketterings, Q.M., Ramirez-Aviles, L., Fox, D.G.,
+Giller, K.E., Tittonell, P., Rufino, M.C., van Wijk, M.T., Zongore, S., Mapfumo, P.,                     Tedeschi, L.O., Cherney, J.H., 2011. Development and evaluation of an integrated
+     Vanlauwe, B., 2011. Communicating complexity: integrated assessment of trade-offs                   simulation model for assessing smallholder crop-livestock production in Yucatan,
+     concerning soil fertility management within African farming systems to support                      Mexico. Agric. Syst. 104, 1–12.
+     innovation and development. Agric. Syst. 104 (2), 191–203.                                     Paul, B.K., Frelat, R., Birnholz, C., Ebong, C., Gahigi, A., Groot, J.C.J., Herrero, M.,
+Godfray, H.C.J., Beddington, J.R., Crute, I.R., Haddad, L., Lawrence, D., Muir, J.F.,                    Kagabo, D.M., Notenbaert, A., Vanlauwe, B., van Wijk, M.T., 2018. Agricultural
+     Pretty, J., Robinson, S., Thomas, S.M., Toulmin, C., 2010. Food security: the                       intensification scenarios, household food availability and greenhouse gas emissions
+     challenge of feeding 9 billion people. Science 327, 812.                                            in Rwanda: ex-ante impacts and trade-offs. Agric. Syst. 163, 16–26.
+Groot, J.C.J., Rossing, W.A.H., 2011. Model-aided learning for adaptive management of               Paul, B.K., Groot, J.C.J., Birnholz, C.A., Nzogela, B., Notenbaert, A., Woyessa, K.,
+     natural resources: an evolutionary design perspective. Methods Ecol. Evol. 2,                       Sommer, R., Nijbroek, R., Tittonell, P., 2019. Reducing agro-environmental trade-
+     643–650.                                                                                            offs through sustainable livestock intensification across smallholder systems in
+Groot, J.C.J., Oomen, G.J.M., Rossing, W.A.H., 2012. Multi-objective optimization and                    Northern Tanzania. Int. J. Agricult. Sustain. https://doi.org/10.1080/
+     design of farming systems. Agric. Syst. 119, 63–77.                                                 14735903.2019.1695348.
+Hammond, J., Fraval, S., van Etten, J., Suchini, J.G., Mercado, L., Pagella, T., Frelat, R.,        Paul, B.K., Groot, J.C.J., Maass, B.L., Notenbaert, A.M.O., Herrero, M., Tittonell, P.A.,
+     Lannerstad, M., Douxchamps, S., Teufel, N., Valbuena, D., van Wijk, M.T., 2017. The                 2020a. Improved feeding and forages at a crossroads: farming systems approaches
+     Rural Household Multi-Indicator Survey (RHoMIS) for rapid characterisation of                       for sustainable livestock development in East Africa. Outlook Agricult. 1–8.
+     households to inform Climate Smart Agriculture interventions: description and                  Paul, B.K., Butterbach-Bahl, K., Notenbaert, A., Nderi, A.N., Ericksen, P., 2020b.
+     applications in East Africa and Central America. Agric. Syst. 151, 225–233.                         Sustainable livestock development in low and middle income countries – shedding
+Henderson, B., Godde, C., Medina-Hidalgo, D., van Wijk, M., Silvestri, S.,                               light on evidence-based solutions. Environ. Res. Lett. 16 (1). https://iopscience.iop.
+     Douxchamps, S., Stephenson, M., Power, B., Rigolot, C., Cacho, O., Herrero, M.,                     org/article/10.1088/1748-9326/abc278.
+     2016. Closing system-wide yield gaps to increase food production and mitigate GHGs             Peterson, B., Snapp, S., 2015. What is sustainable intensification? Views from experts.
+     among mixed crop – livestock smallholders in Sub-Saharan Africa. Agricultural                       Land Use Policy 46, 1–10.
+     Systems 143, 106–113.                                                                          Phong, L.T., Stoorvogel, J.J., Mensvoort, M.E.F., Udo, H.M.J., 2010. Modeling the soil
+Herrero, M., Gonzalez-Estrada, E., Thornton, P., Quiros, C., Waithaka, M., Ruiz, R.,                     nutrient balance of integrated agriculture-aquaculature systems in the Mekong
+     Hoogenboom, G., 2007. IMPACT: generic household-level databases and diagnostics                     Delta, Vietnam. Nutr. Cycl. Agroecosyst. 90, 33–49.
+     tools for integrated crop-livestock system analysis. Agric. Syst. 92, 240–265.                 Pretty, J., Benton, T.G., Bharucha, Z.P., Dicks, L.V., Dicks, L.V., Flora, C.B., Godfray, H.C.
+Hor, S., Saizen, I., Tsutsumida, N., Watanabe, T., Kobayashi, S., 2014. The Impact of                    J., Goulson, D., Hartley, S., Lampkin, N., Morris, C., Pierzynski, G., Prasad, P.V.V.,
+     agricultural expansion on forest cover in Ratanakiri Province, Cambodia. J. Agric.                  Reganold, J., Rockstrom, J., Smith, P., Thorne, P., Wratten, S., 2018. Global
+     Sci. 6 (9), 46–59.                                                                                  assessment of agricultural system redesign for sustainable intensification. Nat.
+Johnston, R.M., Hoanh, C.T., Lacombe, G., Noble, A.N., Smakhtin, V., Suhardiman, D.,                     Sustain. 1, 441–446.
+     Kam, S.P., Choo, P.S., 2009. In: International Water Management Institute (IWMI)
+     (Ed.), Rethinking Agriculture in the Greater Mekong Subregion: How to Sustainably
+
+
+                                                                                               13
+B.K. Paul et al.                                                                                                                                        Agricultural Systems 195 (2022) 103285
+
+Prost, L., Reau, R., Paravano, L., Cerf, M., Jeuffroy, M.H., 2018. Designing agricultural             Rufino, M.C., Tittonell, P., Reidsma, P., Lopez-Ridaura, S., Hengsdijk, H., Giller, K.E.,
+    systems from invention to implementation : the contribution of agronomy. Lessons                      Verhagen, A., 2009. Network analysis of N flows and food self-sufficiency-a
+    from a case study. Agric. Syst. 164, 122–132.                                                         comparative study of crop-livestock systems of the highlands of east and southern
+Quemada, M., Lassaletta, L., Jensen, L.S., Godinot, O., Brentrup, F., Buckley, C.,                        Africa. Nutr. Cycl. Agroecosyst. 85 (2), 169–186.
+    Foray, S., Hvid, S.K., Oenema, J., Richards, K.G., Oenema, O., 2020. Exploring                    Salemink, O., 2003. The Ethnography of Vietnam’s Central Highlanders: A Historical
+    nitrogen indicators of farm performance among farm types across several European                      Contextualization, 1850–1990. University of Hawaii Press.
+    case studies. Agric. Syst. 177, 102689.                                                           Seebauer, 2014. Whole farm quantification of GHG emissions within smallholder farms
+Quirke, D., Harding, M., Vincent, D., Garrett, D., 2003. Effects of Globalisation and                     in developing countries. Environ. Res. Lett. 9, 35006.
+    Economic Development on the Asian Livestock Sector. ACIAR, Canberra.                              Shikuku, K.M., Valdivia, R.O., Paul, B.K., Mwongera, C., Winowiecki, L., Läderach, P.,
+R Core Team, 2020. R: A Language and Environment for Statistical Computing. R                             Herrero, M., Silvestri, S., 2017. Prioritizing climate-smart livestock technologies in
+    Foundation for Statistical Computing, Vienna, Austria. URL. https://www.R-project.                    rural Tanzania: A minimum data approach. Agric. Syst. 151, 204–2016.
+    org/.                                                                                             Smith, A., Snapp, S., Chikowo, R., Thorne, P., Bekunda, M., Gover, J., 2017. Measuring
+Ramankutty, N., Mehrabi, Z., Waha, K., Jarvis, L., Kremen, C., Herrero, M., Rieseberg, L.                 sustainable intensification in smallholder agroecosystems: a review. Glob. Food
+    H., 2018. Trends in global agricultural land use: implications for environmental                      Secur. 12, 127–138.
+    health and food security. Annu. Rev. Plant Biol. 69 (1), 789–815.                                 Stür, W., Khanh, T., Duncan, A., 2013. Transformation of smallholder beef cattle
+Rigolot, C., de Voil, P., Douxchamps, S., Prestwidge, D., van Wijk, M., Thornton, P.,                     production in Vietnam. Int. J. Agric. Sustain. 11 (4), 363–381.
+    Rodriguez, D., Henderson, B., Medina, D., Herrero, M., 2017. Interactions between                 Tilman, D., Balzer, C., Hill, J., Befort, B.L., 2011. Global food demand and sustainable
+    intervention packages, climatic risk, climate change and food security in mixed crop-                 intensification of agriculture. Proc. Nat. Acad. Sci. U. S. A. 108, 20260–20264.
+    livestock systems in Burkina Faso. Agric. Syst. 151, 217–224.                                     Timler, C., Alvarez, S., DeClerck, F., Remans, R., Raneri, J., Estrada-Carmona, N.,
+Ritzema, R., Frelat, R., Douxchamps, S., Silvestri, S., Rufino, M.C., Herrero, M., Giller, K.,            Mashingaidze, N., Chatterjee, S.A., Chiang, T.W., Termote, C., Yang, R.Y.,
+    Lopez-Ridaura, S., Teufel, N., Paul, B.K., van Wijk, M., 2017. Is production                          Descheemaeker, K., Brouwer, I.D., Kennedy, G., Tittonell, P.A., Groot, J.C.J., 2020.
+    intensification likely to make farm households food-adequate? A simple food                           Exploring solution spaces for nutrition-sensitive agriculture in Kenya and Vietnam.
+    availability analysis across smallholder farming systems from East and West Africa.                   Agric. Syst. 180, 102774.
+    Food Secur. 9 (1), 115–131.                                                                       Waha, K., van Wijk, M.T., Fritz, S., See, L., Thornton, P.K., Wichern, J., Herrero, M.,
+Ritzema, R.S., Douxchamps, S., Fraval, S., Bolliger, A., Hok, L., Phengsavanh, P., Long, C.               2018. Agricultural diversification as an important strategy for achieving food
+    T.M., Hammond, J., van Wijk, M.T., 2019. Household-level drivers of dietary                           security in Africa. Glob. Chang. Biol. 1–11.
+    diversity in transitioning agricultural systems: evidence form the Greater Mekong                 Waithaka, M.M., Thornton, P.K., Herrero, M., Shepherd, K.D., 2006. Bio-economic
+    subregion. Agric. Syst. 176, 102657.                                                                  evaluation of farmers’ perceptions of viable farms in western Kenya. Agric. Syst. 90,
+Royal Government of Cambodia, 2018. Rectangular Strategy Phase IV. http://cnv.org.                        243–271.
+    kh/wp-content/uploads/2012/10/Rectangular-Strategy-Phase-IV-of-the-Royal-Gove                     World Bank, 2021. The World Bank in Vietnam. Overview. https://www.worldbank.
+    rnment-of-Cambodia-of-the-Sixth-Legislature-of-the-National-Assembly-2018-2023.                       org/en/country/vietnam/overview#1.
+    pdf.
+
+
+
+
+                                                                                                 14

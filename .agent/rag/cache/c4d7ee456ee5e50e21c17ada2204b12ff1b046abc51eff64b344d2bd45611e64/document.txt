@@ -1,0 +1,1207 @@
+Chapter 8
+Grassland Plant Community Composition
+and Dynamics: Disturbance
+as Determinants of Grassland Diversity
+
+Bianca Ott Andrade, Luciana da Silva Menezes, Ilsi Iob Boldrini,
+Valério D. Pillar, and Gerhard Ernst Overbeck
+
+
+
+
+8.1 Disturbance and Grassy Ecosystems
+
+Disturbances, defined as events that remove plant biomass (Grime 2006), are the
+principal factors responsible for shaping the physiognomies and composition of
+grassy vegetation in environments where neither climate nor soil imposes limita-
+tions on tree growth (Bond and Keeley 2005; He et al. 2019; Bernardi et al. 2016).
+Due to the long evolutionary history of grasses in ecosystems with grazing animals
+and fire, plant communities in grass-dominated ecosystems harbor species that are
+adapted to various intensities and frequencies of these disturbances, either alone or
+
+
+B. O. Andrade (*)
+Escola Superior de Agricultura Luiz de Queiroz (ESALQ), Universidade de São Paulo (USP),
+Piracicaba, SP, Brazil
+Laboratório de Estudos em Vegetação Campestre, Programa de Pós-Graduação em Botânica,
+Instituto de Biociências, Universidade Federal do Rio Grande do Sul (UFRGS),
+Porto Alegre, RS, Brazil
+L. da. S. Menezes · I. I. Boldrini
+Laboratório de Estudos em Vegetação Campestre, Programa de Pós-Graduação em Botânica,
+Instituto de Biociências, Universidade Federal do Rio Grande do Sul (UFRGS),
+Porto Alegre, RS, Brazil
+V. D. Pillar
+Departamento de Ecologia, Instituto de Biociências, Universidade Federal do Rio Grande do
+Sul, Universidade do Rio Grande do Sul (UFRGS), Porto Alegre, Brazil
+G. E. Overbeck
+Laboratório de Estudos em Vegetação Campestre, Programa de Pós-Graduação em Botânica,
+Instituto de Biociências, Universidade Federal do Rio Grande do Sul (UFRGS),
+Porto Alegre, RS, Brazil
+Laboratório de Estudos em Vegetação Campestre, Departamento de Botânica, Instituto de
+Biociências, Universidade Federal do Rio Grande do Sul (UFRGS), Porto Alegre, RS, Brazil
+
+© The Author(s), under exclusive license to Springer Nature Switzerland AG 2024             177
+G. E. Overbeck et al. (eds.), South Brazilian Grasslands,
+https://doi.org/10.1007/978-3-031-42580-6_8
+178                                                                 B. O. Andrade et al.
+
+
+in combination. We refer to these ecosystems as disturbance-dependent. When dis-
+turbances are intentionally excluded, the typical dynamics of these ecosystems will
+be disrupted. This often leads to biomass accumulation (Lezama et al. 2014), expan-
+sion of shrubs and trees (Müller et al. 2007, see also Müller et al. 2023, Chap. 16,
+this volume), and reduced productivity and diversity in the ecosystems (Westoby
+et al. 1989; Laycock 1991).
+    The responses of grassy vegetation to disturbances are diverse and multifaceted.
+At the species level, these responses depend on morphological and physiological
+characteristics that enable species to either avoid (e.g., by reducing the probability
+and intensity of defoliation) or tolerate (e.g., mechanisms facilitating plant regrowth
+following defoliation) a disturbance event (Díaz et al. 2006; Fischer et al. 2019). At
+the community level, the response to disturbances is expected to be influenced by
+primary productivity and dominance, as well as the role of disturbances over evolu-
+tionary periods (Milchunas et al. 1988; Cingolani et al. 2005; Koerner et al. 2018).
+In highly productive plant communities, disturbances typically reduce the domi-
+nance of a few competitive species, thereby promoting the formation of spatial het-
+erogeneity and enabling more species to coexist (Lezama et al. 2014; Yuan
+et al. 2016).
+    In Brazil, disturbance-prone grassy ecosystems, such as grasslands and savan-
+nas, originally extend over 27% of the territory (Overbeck et al. 2022). Even though
+46% of these ecosystems have already been converted to other uses, this clearly
+demonstrates that, when it comes to natural ecosystems and biodiversity, Brazil has
+more than just forests, although this fact is not widely recognized by the public.
+Different savanna physiognomies, which are prevalent in the Cerrado region but
+also found in the Amazon, Caatinga, and Atlantic Forest regions, constitute the main
+part of these open ecosystems (Ribeiro and Walter 2008). Disturbances, especially
+fire, play a key role in shaping the physiognomies, species composition, and dynam-
+ics of these savannas (Furley 1999; Rodrigues et al. 2021). Grasslands and other
+communities dominated by low-growing plants can also be found in higher parts of
+the coastal mountain range in eastern Brazil, as well as on mountaintops within the
+Cerrado and other regions (see Overbeck et al. 2022 for a synthesis). The South
+Brazilian grasslands, known as Campos Sulinos (see Box 8.1; Pillar et al. 2009;
+Pillar and Lange 2015; Overbeck et al. 2018; Hasenack et al. 2023), are true grass-
+lands, where grasses are the most abundant group of species. They do not contain
+tall woody plant component typical of tropical savannas. These grasslands occupy
+large portions of the Brazilian Pampa (IBGE 2019), located in the southern half of
+Rio Grande do Sul state. They also form mosaics with forests in the highlands of the
+southern part of the Atlantic Forest region, which encompasses northern Rio Grande
+do Sul state and the states of Paraná and Santa Catarina. This extensive region of
+grasslands is home to an enormous biodiversity. For the Pampa region alone, there
+are 3,642 species of vascular plants, with 2,105 of them relying on grasslands as
+their primary or sole habitat (Andrade et al. 2023). Although an exact number is
+unavailable for the Campos Sulinos region as a whole, we can reasonably expect
+around 4,100 grassland plant species (I. Boldrini, unpublished data).
+8   Grassland Plant Community Composition and Dynamics: Disturbance…                 179
+
+
+
+    Box 8.1: Disentangling a Bestiary of Names for the Campos Sulinos
+    The term Campos Sulinos refers to the grasslands found in two phytogeo-
+    graphic regions, namely the Atlantic Forest and Pampa biomes, as classified
+    by IBGE (2019) in the Brazilian biome classification. Similarly, Morrone
+    (2001) classifies vegetation into two different provinces and subregions (in
+    parentheses): Pampa (Chaqueña) and Bosque de Araucaria angustifolia
+    (Paranaense). The grasslands within the Atlantic Forest region (also known as
+    Campos do Planalto das Araucárias in Portuguese; 22.5°S–30°S,
+    48.5°W–54.5°W) have different regional names. The northeast part of Rio
+    Grande do Sul (RS) is commonly referred to as highland grasslands (Campos
+    de Cima da Serra) due to their altitudinal range of 600–1,200 m a.s.l. In
+    Paraná state, in the extreme north of the region and in transition with savanna
+    ecosystems, grasslands are known as Campos Gerais (Overbeck et al. 2022).
+        The Pampa grasslands are part of a continuous region that covers vast
+    plains, with only low mountain ranges, in central-eastern Argentina, Uruguay,
+    and the southern part of Brazil (27.5°S–39°S, 50°W–67°W), known as Río de
+    la Plata grasslands (RPG) (Soriano et al. 1992; Andrade et al. 2018). Soriano
+    et al. (1992) identify two sub-regions within the RPG based on floristic simi-
+    larities: the Campos (Southern Rio Grande do Sul and Uruguay), further
+    divided into northern and southern Campos (Campos del Norte and Campos
+    del Sur in Spanish, with the Brazilian portion being part of ‘Campos del
+    Norte’), and the Pampa (part of provinces of the eastern part of Argentina;
+    subdivided into Rolling Pampa, Inland Pampa, Southern Pampa, Flooding
+    Pampa, and Mesopotamic Pampa).
+        In its description of the dominant ecosystems in the region, the Brazilian
+    Institute of Geography and Statistics (IBGE 2019) does not use the term
+    grassland (campo in Portuguese), but instead refers to the grassland ecosys-
+    tems in southern Brazil as “steppe” (estepe in Portuguese). However, this term
+    seems inappropriate as it usually refers to semi-arid grasslands (with rainfall
+    of 250–500 mm) under temperate climates (Overbeck et al. 2007), which is
+    clearly not the case in southern Brazil. A small part of the region, located in
+    the extreme west of Rio Grande do Sul state and regionally known as
+    Espinilho, characterized by the presence of a disjunct tree layer of Prosopis
+    affinis (Marchiori and da Silva 2011), is referred to by IBGE (2019) as
+    “steppe-savanna” (savana estépica in Portuguese). However, we also discour-
+    age the use of this term as the climate in the region is neither that of a savanna
+    nor a steppe, even though, in physiognomic terms, the vegetation could be
+    called ‘savanna-like’ (savanoide in Portuguese).
+        The term “Pampas”, ending in s, is commonly used in music, art, and
+    poetry, but it often lacks a defined geographic region and can refer to part or
+    all of the RPG. In Uruguay and Argentina, the Spanish term “Pastizales” is
+    used for grassland ecosystems (e.g., Morrone 2001).
+180                                                                           B. O. Andrade et al.
+
+
+
+
+Fig. 8.1 Cultural landscapes of the Campos Sulinos region, including heritage sites and traditional
+livestock management practices with domestic animals. São Miguel das Missões, RS, Brazil and
+its surroundings. (Photographs courtesy of Bianca Ott Andrade)
+
+   Since the European colonization of the region, the Campos Sulinos grasslands
+have been used for extensive cattle grazing. As a result, they can now be considered
+a cultural landscape (Fig. 8.1), even though this term is not widely used in Brazil.
+Livestock production in the region continues to rely largely on natural grasslands
+and traditional production systems (Modernel et al. 2016). In addition to providing
+meat, wool, leather, and other animal products, these grasslands offer various eco-
+system services of local and global importance. These services include soil stabili-
+zation, water filtering, carbon storage, habitat protection for biodiversity, watershed
+regulation, food and fiber production, cultural services, and improved living
+8   Grassland Plant Community Composition and Dynamics: Disturbance…                181
+
+
+conditions for grazing animals (Tittonell 2021). The provision of these services
+depends – as grasslands in general – on disturbance regimes. Therefore, understand-
+ing how disturbances in grasslands impact plant diversity and ecosystem function-
+ing is crucial for preserving, managing, and restoring these grasslands in a changing
+world. In this chapter, we discuss the main disturbances that influence vegetation
+composition, structure, and functioning of Campos Sulinos grasslands. We begin
+with an overview of the ecological context of these grasslands and the main grass-
+land types found in the region. Subsequently, we explore the different types of dis-
+turbance and their spatial and temporal effects. We also discuss the nuanced
+boundary between disturbance and degradation, as well as practical applications at
+various ecological scales.
+
+
+
+8.2 
+    Campos Sulinos Grasslands
+
+8.2.1 Climatic Setting and Disturbance History
+
+In southern Brazil, tree growth is not limited by general soil or climatic constraints,
+although drier periods can occur, especially in summer. The absence of trees in large
+parts of the landscape, known as the “Pampa problem” (Troll 1968), had puzzled
+researchers until recently. Presently, researchers working in the region acknowledge
+the prominent role of disturbances in maintaining open grasslands, as demonstrated
+by integrated modeling of rainfall, grazing, and fire (Bernardi et al. 2016). Grasslands
+and forest coexist in the landscape in varying proportions. The Campos Sulinos
+grasslands span a precipitation gradient from 1,200 to 2,700 mm and an average
+temperature gradient from 13 to 22 °C (Fig. 8.2; Alvares et al. 2013). Grasslands
+dominate the landscape below 1,660 mm of precipitation, to the south and south-
+west, while forests prevail above 1,800 mm, toward the north. Between 1,660 and
+1,800 mm, both ecosystem types occur in more equal proportions (Fig. 8.2).
+However, the precipitation levels across the entire region allow for tree growth and
+forest development. Here, we propose a conceptual model, in which disturbance
+plays a key role in explaining the grassland-forest gradient observed in southern
+Brazil, particularly the co-occurrence of both vegetation types in the central portion.
+We interpret the x-axis as a disturbance spectrum, explained by the recurrence of
+disturbance, light competition, and topographic heterogeneity (Fig. 8.2; see also
+Burke et al. 1998). The frequency of disturbance is a crucial factor in determining
+the vegetation composition of the landscape, with grasslands, grassland-forest
+mosaics, and forests occurring in a sequence of higher to lower disturbance recur-
+rence (Blanco et al. 2014). According to Engel et al. (2023), grassland ecosystems
+under higher temperature and precipitation levels support greater productivity,
+where tall and acquisitive species (i.e., those with greater specific leaf area) are
+favored due to their superior ability to use the available resources. Similar results
+are observed along a forest and grassland-forest gradient (Del Grosso et al. 2008).
+182                                                                          B. O. Andrade et al.
+
+
+
+
+Fig. 8.2 Conceptual model depicting the relative importance of grazing and fire disturbance on
+the occurrence of grassland and forest ecosystems along a precipitation and temperature gradient
+in southern Brazil. We interpret the x-axis as a disturbance spectrum, which is explained by the
+recurrence of disturbance, light competition, and topographic heterogeneity. To build this figure,
+we randomly selected a thousand random points from known vegetation types in southern Brazil,
+with 500 points representing each grassland and forest vegetation. (MapBiomas v.7, Souza et al.
+2020). Temperature and precipitation data for these points were obtained from WorldClim. (Fick
+and Hijmans 2017)
+
+Additionally, as demonstrated by Blanco et al. (2014), topographic heterogeneity is
+an important factor contributing for the long-term coexistence of forest and grass-
+land in the landscape. It results in increased local spatiotemporal variability, impact-
+ing seed dispersal, fire spread, and microclimatic variations.
+   Fire and grazing have been present in the Campos Sulinos long before the arrival
+of human populations in the region (Baggio et al. 2021; Pivello et al. 2021; Paruelo
+et al. 2022). The effects of these disturbances on the plant community will be dis-
+cussed in detail in Sect. 8.3. However, when considering the role of past distur-
+bances, it is important to acknowledge that the frequency and intensity of these
+8   Grassland Plant Community Composition and Dynamics: Disturbance…               183
+
+
+disturbances were likely different compared to the current regimes, which are heav-
+ily influenced by human land use. Palaeoecological studies analyzing pollen com-
+position in peat bogs provide information on the fire regimes over the past millennia.
+Fires were relatively rare during glacial periods, but an increase in the concentration
+of carbonized particles is observed in the South Brazilian highland region between
+11,500 and 7,400 cal yr. BP, likely associated with the arrival of human populations
+(Behling and Pillar 2007; see also Behling et al. 2023, Chap. 4, this volume). These
+changes may also reflect climatic changes and altered grassland productivity, which
+was lower during periods of lower temperature and precipitation levels. On the other
+hand, evidence of grazing by megafauna that inhabited the grassy ecosystems of
+South America extends much further back in time, as indicated by the fossil record.
+Grazing by this megafauna persisted until the end of the Pleistocene, when their
+extinction coincided with climatic shifts and the arrival of human populations
+(Barnosky et al. 2016; Croft et al. 2020; Prates and Perez 2021). While it is impos-
+sible to quantify the effects of past disturbances, the legacy of these disturbances is
+evident in the adaptations of plants and animals to fire and grazing (Archibald et al.
+2019; Pivello et al. 2021), indicating that both processes have acted as evolution-
+ary forces.
+
+
+
+8.2.2 Current Classification of Campos Sulinos Grasslands
+
+Early naturalists and researchers primarily classified grasslands in southern Brazil
+based on their physiognomy. Even today terms such as campo limpo (meaning
+“clean grassland”) and campo sujo (literally translating to “dirty grassland,” indicat-
+ing the presence of shrubs) are commonly used. Until recently, there was no clas-
+sification based on vegetation composition, as studies were often limited to single
+or a few locations and did not provide a comprehensive coverage of the entire
+region. However, a recent study by Andrade et al. (2019) addressed this gap by
+examining a large sample of sites spanning the entire Campos Sulinos region. They
+identified three main grassland types, namely Pampa grassland, South Brazilian
+highland grassland, and South Brazilian coastal grassland (Fig. 8.3). Additionally,
+they distinguished ten grassland subtypes within this classification, which were pri-
+marily based on plant composition and reflected the underlying geological, geomor-
+phological and pedological aspects of the region.
+
+
+8.2.2.1 South Brazilian Highland Grasslands
+
+The South Brazilian highland grasslands are located in the southernmost portion of
+the Atlantic Forest, in the states of Santa Catarina and Paraná as well as north-­
+eastern Rio Grande do Sul (Fig. 8.3). Within this region, the grasslands form mosa-
+ics with forest ecosystems, particularly Araucaria forests, and they transition to the
+Cerrado biome in the north. The climate in the region is characterized as oceanic,
+184                                                                       B. O. Andrade et al.
+
+
+
+
+Fig. 8.3 Geographical location of the Campos Sulinos in Brazil along with the three main types
+of grassland vegetation types found in the region: Pampa grasslands, South Brazilian highland
+grasslands, and Coastal grassy ecosystems
+
+with temperate summers and no distinct dry season (classified as Köppen’s Cfb
+climate). The mean annual temperature ranges from 12 to 16 °C, and average annual
+precipitation varies from 1,300 to 2,200 mm (Alvares et al. 2013). Meteorological
+frost events occur from 10 to more than 27 days per year (Alvares et al. 2018). The
+soils in the region originate from volcanic rocks such as basalt, rhyolite, and rhyo-
+dacite. The combination of low temperatures and high rainfall contributes to greater
+accumulation of organic matter in the soil. Furthermore, the complexation with
+8   Grassland Plant Community Composition and Dynamics: Disturbance…               185
+
+
+ionic aluminum enhances the stability of organic matter (Silva et al. 2008). For
+further information on climate and soils, see also Hasenack et al. (2023, Chap. 6,
+this volume). The vegetation in the South Brazilian highland grasslands is charac-
+terized by the predominance of tussock grasses with C4 photosynthetic pathways.
+Indicator species for these grasslands as a whole include Schizachyrium tenerum
+(C4 grass), Dichanthelium sabulorum (C3 grass), Baccharis crispa, Chaetogastra
+gracilis (Andrade et al. 2019). Other typical species found in this region include
+Andropogon lateralis (C4 grass), Aristida flaccida (C4 grass), Calea phyllolepis,
+Eragrostis polytricha (C4 grass), Paspalum maculosum (C4 grass), Paspalum pli-
+catulum (C4 grass), Paspalum polyphyllum (C4 grass), and Piptochaetium montevi-
+dense (C3 grass) (Andrade et al. 2019).
+    The patches of grasslands intermingled with forests in the highland grassland
+region are remnants of drier and cooler climates (Arruda and Schaefer 2020;
+Asevedo et al. 2020). The current humid climate developed only at 1.5 ka BP
+(Bauermann and Fett Junior 2014). During glacial periods, the grasslands expanded,
+and during interglacial periods they contracted, allowing for their replacement by
+forest ecosystems. For example, during the dry and cold last glacial maximum
+(LGM; approximately 29–11.7 ka BP), the highland grasslands expanded approxi-
+mately 250 km to the north, occupying areas that were formerly covered by decidu-
+ous forest (Arruda et al. 2018; Maksic et al. 2022). These vegetation shifts during
+glacial and interglacial periods had an impact on species gene flow, which could
+have been repeatedly interrupted and then re-established. The high species richness
+(Boldrini 2009a) and high levels of endemism (Külkamp et al. 2018) are results of
+these processes.
+    Under the current climate, characterized by cold winters with frost events, the
+highland grasslands have a low carrying capacity of grazing animals during the
+winter when C4 grasses produce minimal biomass. As a result, they have tradition-
+ally been managed with low stocking rates throughout the year, allowing for the
+accumulation of standing dead biomass during the more productive summer.
+Consequently, mild surface fires, occurring annually or biennially (Silva and
+Andrades-Filho 2021), are commonly used in the region to remove dead biomass
+and promote the regrowth of grasses and palatable herbaceous forage biomass. This
+practice likely originated with the occupation of indigenous communities (Behling
+and Pillar 2007). When fire or grazing is excluded, tall tussock grasses become
+dominant (e.g., Sorghastrum sp., Andrade et al. 2016), and shrub encroachment and
+forest expansion may take place (see Müller et al. 2023, Chap. 16, this volume).
+
+
+8.2.2.2 Pampa Grasslands
+
+The Pampa grasslands, located in the southern half of Rio Grande do Sul state (Box
+8.1, Fig. 8.3), covered an area of 8.4 Mha in Rio Grande do Sul state in 2001. However,
+24% of this area has been lost in the past 20 years (Baeza et al. 2022). While the
+Pampa grasslands share a large number of species with the South Brazilian high-
+land grasslands, their plant communities differ in terms of floristic composition
+186                                                                B. O. Andrade et al.
+
+
+(Andrade et al. 2019). Indicator species include rhizomatous/stoloniferous C4 grasses
+such as Paspalum notatum and Axonopus affinis, the caespitose Setaria parviflora
+(C4 grass) and Steinchisma hians (C3 grass), and forbs like Gamochaeta americana
+(Andrade et al. 2019). Other common species in the Pampa include Dichondra seri-
+cea, Eragrostis neesii (C4 grass), Evolvulus sericeus, Piptochaetium montevidense
+(C3 grass), Richardia humistrataI, Richardia stellaris, Nassella spp. (C3 grass), and
+Adesmia spp. (Andrade et al. 2019). The Brazilian Pampa harbors the largest number
+of endemic species known in the Río de la Plata grasslands, with 309 endemic spe-
+cies out of a flora composed of 3,642 vascular plant taxa (Andrade et al. 2023).
+    Compared to the South Brazilian highland grasslands, the soils in the Pampa
+grasslands – originated from igneous plutonic, metamorphic, and sedimentary sub-
+strates – are more diverse (Streck et al. 2008). Also, precipitation levels in the
+Pampa are lower, ranging from 800 to 1200 mm. While there is no pronounced dry
+season, some regions may experience annual hydric deficits with summer droughts.
+The climate is of a Cfa type according to Koppen’s classification (Alvares et al.
+2013). Meteorological frost events range from 1 to 18 days per year in the region
+(Alvares et al. 2018). Additionally, extreme climatic events during La Niña phases
+of the ENSO cycle can prolong and intensify the drought period (Matzenauer et al.
+2017), potentially limiting forest expansion in the Pampa. Nonetheless, the preva-
+lence of grasslands is considered to be primarily a result of current land use and
+disturbance regimes rather than climate (Bernardi et al. 2016).
+    Grazing has historically shaped the physiognomy of the Pampa grasslands.
+During the Pleistocene, large grazers or mixed-diet animals, such as horses (Equus
+neogeus) and mastodonts (Notiomastodon platensis) (França et al. 2015; Lopes
+et al. 2022), lived in the Pampa. With a diet composed mostly of C4 species, horses,
+for example, inhabited grass-rich open landscapes in the region (França et al. 2015).
+
+
+8.2.2.3 Coastal Grassland
+
+Coastal grasslands have developed on recent sedimentary soils (Fig. 8.2). The sub-
+strate in the coastal region of southern Brazil, primarily in Rio Grande do Sul, was
+formed by progressive/regressive movements of the coastline during the Late
+Quaternary, approximately 400 kyr BP (Dillenburg et al. 2009). Local variations in
+soil types and humidity are important factors shaping the grassland plant communi-
+ties (Boldrini et al. 2008; Menezes et al. 2016). Lagoonal and riverine depositional
+processes have formed soils rich in clay and organic matter, classified as Histosol,
+Gleysol, and Planossol soil types (Santos et al. 2018). These soils have poor drain-
+age conditions and allow for the growth of species adapted to intermittent flooding.
+Indicator species for the coastal grassland region as a whole include Steinchisma
+hians (C3 grass) and Lobelia hederacea (Andrade et al. 2019). On a regional scale,
+different types of grassland communities can be recognized and classified based on
+humidity levels. Marsh vegetation is characterized by high levels of soil organic
+matter content and groundwater level close to the surface, while well-drained open
+and shrub grasslands vary based on soil characteristics, vegetation height, and bare
+8   Grassland Plant Community Composition and Dynamics: Disturbance…                 187
+
+
+soil coverage (Silveira et al. 2022). On slightly higher relief, the soils in the coastal
+grasslands have predominantly developed on former dunes. These grasslands expe-
+rience drier soil conditions, and the main soil types are Plinthosols, Podzols, and
+Leptosols (Santos et al. 2018). The drier coastal grasslands are characterized by the
+abundance of prostate and rhizomatous C4 grasses, such as Axonopus aff. affinis
+and Stenotaphrum secundatum. Common species with high palatability and nutri-
+tional value for livestock include Ischaemum minus (C4 grass, Boldrini 2011) and
+Fabaceae species like Desmodium barbatum and Indigofera sabulicola (Boldrini
+2009b). Insectivorous species such as Drosera spp. and Utricularia spp. indicate
+nutrient-poor conditions.
+   Similar to the other ecological units of the Campos Sulinos, cattle raising is an
+important economic activity in the coastal grasslands. While these grasslands har-
+bor species of good forage quality, overgrazing appears to be a problem in the
+region, indicated by high levels of bare soil observed in grazed areas (around 15%
+according to Menezes et al. 2016), which is considered a sign of degradation
+(Boldrini et al. 2008). However, cattle are not the only herbivores in the coastal
+grasslands. Burrowing rodents, known as tuco-tucos, dig furrows to hide and feed
+on plant roots (Galiano et al. 2014). In the process, tuco-tucos can cause significant
+local impacts, uprooting plants and leaving up to 61% of the soil uncovered (Galiano
+et al. 2014). The extent to which bare ground in coastal grasslands is due to over-
+grazing or is an intrinsic characteristic of unstable soils remains an open question.
+
+
+
+8.3 Complexity of Disturbances: Legacies, Modulating
+     Factors, Spatial and Temporal Mosaics
+
+Vegetation disturbances (Fig. 8.4) are complex events. Distinct disturbance regimes,
+which encompass the type, frequency, seasonality, intensity, and extent of distur-
+bances, have specific effects on plant community structure and composition (Foster
+et al. 1998). Legacies of past events can take the form of physical and biological
+items or substances left behind after the disturbance event (e.g., ashes from a burn
+or cattle droppings after grazing) or as filtered information within the community
+(e.g., species selection with traits to overcome the disturbance) (Johnstone et al.
+2016). Legacies from one disturbance may promote or prevent the occurrence of
+subsequent events (Foster et al. 1998), such as the resprouting of fresh biomass that
+attracts grazers after a fire event. Conversely, grazers consume plant biomass, pre-
+venting the accumulation of dry fuel material and thus reducing the occurrence
+of fire.
+    The outcomes of disturbances are influenced by their frequency and intensity.
+Frequency refers to the return interval of a disturbance event (Jentsch and White
+2019) and can vary greatly depending on the disturbance type. For instance, in the
+Campos Sulinos grasslands (Overbeck et al. 2007), burning typically occurs at inter-
+vals of 2–5 years, whereas grazing occurs year-round in the region, primary as con-
+tinuous grazing, although there is occasional rotational grazing (Boavista et al.
+188                                                                         B. O. Andrade et al.
+
+
+
+
+Fig. 8.4 Disturbances that influence biodiversity in the Campos Sulinos: (a) grazing by livestock
+in Aceguá, RS; (b) prescribed fire in Saint-Hilaire Municipal Park, Viamão, RS; grazing by wild
+fauna, such as (c) the brown brocket deer (veado-catingueiro, Mazama gouazoubira) in São
+Joaquim National Park, Santa Bárbara, SC, or (d) greater rhea (Rhea americana) in Santana do
+Livramento, RS; bioturbation caused by (e) armadillo (in Santiago, RS) and (f) arthropods (in São
+Francisco de Assis, RS) when burrowing nests or galleries. (The photographs are courtesy of
+Valério Pillar (a), Juliana Schaefer (b), Martin Grings (c, d) and Fernando Furquim (e, f))
+
+2019; Paruelo et al. 2022). Fire intensity is defined as the amount of energy released
+during burning (Keeley 2009), while grazing intensity is typically represented by
+the ratio between the total animal living weight and the area of grazing management
+(measured by stocking rate or density) over a specific period of time (Allen 2011).
+However, grazing intensity can be more adequately measured by considering the
+forage allowance, which is the ratio between the total available forage and the total
+animal living weight in the area of grazing management (Sollenberger et al. 2005).
+In addition to the temporal scale, the spatial scale matters and influences plant com-
+munity composition at the landscape scale. In the following sections, we delve into
+8   Grassland Plant Community Composition and Dynamics: Disturbance…               189
+
+
+the effects of the main disturbance drivers in the plant communities of the Campos
+Sulinos, namely grazing and fire. We discuss not only their effects on vegetation and
+the distribution of different plant functional types but also the implications for
+grassland management.
+
+
+
+8.3.1 Grazing by Domestic Animals
+
+As mentioned earlier, megafauna and other herbivores were important components
+of the Campos Sulinos grasslands in the past. However, today, most of the grass-
+lands in the region are grazed by domestic animals, primarily cattle but also sheep
+and horses. These domestic animals have taken over the ecological niches left
+vacant by the extinction of large herbivores. Different plant species exhibit varying
+levels of resistance to grazing, which is determined by their ability to evade grazing
+(avoidance; Fig. 8.5a–c) and regenerate after defoliation (tolerance; Fig. 8.5d–f).
+Grazing encompasses defoliation, trampling, and nutrient deposition through feces
+and urine (Lezama and Paruelo 2016). Defoliation and trampling are the main pro-
+cesses influencing vegetation composition and dynamics, which we will discuss
+further below. Nutrient deposition has a localized impact on the plant community,
+as droppings and urine are mostly concentrated around animal trails and watering
+areas (Schrama et al. 2013). However, there are additional effects, including seed
+dormancy being overcome by passage through the intestinal tract, and seed disper-
+sal facilitated by animals (Minervini-Silva and Overbeck 2021; Azevedo et al.
+2023). The effects of grazing vary among herbivore species (Carvalho and Moraes
+2005), and domestic grazers certainly influence the plant community differently
+than extinct large herbivores. It is worth noting that grazing by horses is an excep-
+tion, as the modern horse is closely related to the native Equidae that once roamed
+the Campos Sulinos region (Croft et al. 2020). In fact, DNA evidence (Orlando et al.
+2008) has shown that Equus neogeus and the domesticated horse (Equus caballus)
+should be recognized as conspecific.
+   The response of plant communities to different grazing intensities has been
+extensively studied in the Campos Sulinos, particularly in a long-term experiment
+conducted at the UFRGS Agronomic Experimental station in Eldorado do Sul,
+RS. This experiment has been managing different paddocks with varying forage
+allowances for over 35 years (Carvalho et al. 2019). Additionally, several sites of the
+Long-Term Ecological Research (LTER) Campos Sulinos have contributed to the
+understanding of grassland responses to grazing (see Box 8.2; Ferreira et al. 2020).
+Forage allowance is a key factor in modulating the impacts of grazing on vegetation.
+Under high forage allowance (low grazing intensity), cattle tend to selectively graze
+more palatable plants and ignore less attractive ones. Consequently, less palatable
+species dominate the plant community. These are typically slow-growing species,
+including many hard-leaved and tall-growing bunchgrasses and perennial herbs
+with a resource-conservative strategy (Díaz et al. 2006; Fischer et al. 2019; Ferreira
+et al. 2020), such as Andropogon lateralis, Aristida sp., and Sporobolus indicus,
+190                                                                             B. O. Andrade et al.
+
+
+
+
+Fig. 8.5 Plant traits that contribute to avoidance and resistance to disturbance effects. In (a), the
+deposition of lignin in the bark of Prosopis affinis enables grazing and fire avoidance. Mechanical
+deterrents, such as thorns in Eryngium horridum (b) and Opuntia elata (c), prevent grazing ani-
+mals from consuming these species. Moving on to (d–g), different strategies adopted by herba-
+ceous plants in relation to bud protection are observed, which facilitate rapid regrowth after a
+disturbance event. Tussock grasses such as Saccharum angustifolium (d) and Andropogon selloa-
+nus (e) have buds protected from fire at the base of the plant. Additionally, tussock grasses often
+have leaves of low palatability, leading grazing animals to avoid them, thus creating the typical
+two-layer structure of grasslands (e). Rhizomatous grasses like Panicum racemosum (f), com-
+monly found in harsh conditions of mobile coastal dunes, and Paspalum notatum (g) also have the
+ability to resprout after biomass loss. However, in the case of P. notatum, buds located at the soil
+surface are vulnerable to fire. (Photographs by Bianca Ott Andrade)
+Box 8.2: Campos Sulinos Long-Term Ecological Research (LTER)
+In 2010, the Campos Sulinos LTER experiment was established in response to
+a conservation policy that promoted fire suppression and grazing exclusion in
+grassland protected areas in Brazil. The purpose of the study was to assess the
+effects of reducing or excluding grazing on plant and animal diversity over
+space and time. The experiment used a randomized block design with three
+treatments: (i) continuous traditional grazing [control], (ii) grazing exclusion,
+and (iii) deferred grazing, which represented an intermediate approach
+between the first two treatments. Here, we present the results from the first
+4 years of the experiment (for more details, refer to Ferreira et al. 2020).
+   Both exclusion and deferred treatments resulted in an increase in vegeta-
+tion height, vegetation biomass, and standing dead biomass over time com-
+pared to the control treatment. The reduction in grazing intensity affected the
+functional composition and diversity of plants over time. Exclusion and
+deferred treatments led to a decrease in the dominance of prostrate species,
+followed by a rapid homogenization of vegetation structure toward the domi-
+nance of taller species. Regarding diversity, there was an initial increase in
+plant taxonomic diversity at all spatial levels (1 m2 plot for alpha, and 70 m2
+plot for gamma diversity) in the first year. This positive effect lasted longer,
+particularly for beta and gamma diversity, in the deferred grazing. However, it
+became non-significant and negative in the following years for the grazing
+exclusion treatment.
+   The effects of both deferred grazing and grazing exclusion treatments cas-
+caded through the animal communities inhabiting the grassland vegetation,
+resulting in an overall increase in the richness of arthropod high-taxa and the
+abundance of individuals from different trophic levels. These included herbi-
+vores such as true bugs (Hemiptera) and flies (Diptera), as well as predators
+such as spiders (Araneae). The presence of arthropods in the vegetation was
+favored by the increase in biomass, which provided food resources, shelter,
+and breeding sites. However, soil arthropod richness and abundance were not
+significantly affected by the treatments.
+   As practical implications of this study, Ferreira et al. (2020) suggest that
+conservation of grasslands in Campos Sulinos should maintain patches of
+both intensive and alleviated levels of grazing management (as well as other
+disturbances such as fire), rather than completely excluding grazing.
+192                                                                  B. O. Andrade et al.
+
+
+which accumulate senescent material (Cruz et al. 2010). Additionally, shrubs that
+are sensitive to trampling can establish at very high forage allowance, including
+species from the Asteraceae family like Baccharis dracunculifolia. These shrubs
+possess characteristics leading to grazing avoidance, such as hard leaves and woody
+biomass (Streit et al. 2022). Conversely, at low forage allowance (high grazing
+intensity), tall grasses and shrubs cease to exist or experience a drastic reduction in
+cover within the plant community, unless they are so unattractive and rejected by
+grazing animals (e.g., very spiny plants, toxic plants). However, even in such cases,
+they may suffer from trampling at high intensities. High levels of grazing will select
+for more grazing tolerant plants due to their ability to grow quickly (Fischer et al.
+2019). These species are characterized by their resource acquisition strategy (Díaz
+et al. 2006) since they can rapidly mobilize resources and invest in the growth of
+aboveground biomass, reproductive structures, and/or reserve structures. Examples
+in the Campos Sulinos include broadly distributed prostrated grasses such as
+Paspalum notatum, Paspalum paucifolium, and Axonopus affinis (Cruz et al. 2010;
+Streit et al. 2022).
+   Thus, grazing selects plant traits to tolerate disturbances at intraspecific and
+community level (Díaz and Cabido 2001). This selection seems to be more related
+to a negative selection (exclusion) of species that perform poorly under grazing
+disturbance. In a simulated grazing experiment, tussock grasses (resource conserva-
+tive species) reduced their abundances under higher clipping intensities, while other
+plant life forms did not change their abundances regardless of clipping intensities
+(Jorge et al. 2022). Resource acquisitive species further benefit indirectly from graz-
+ing, as they take advantage of the reduction of biomass from dominant species and
+canopy opening. Interestingly, the plant traits that confer grazing tolerance are the
+same that characterize plants as more palatable (Díaz and Cabido 2001). For exam-
+ple, tender leaves grow faster (Poorter et al. 2009), and low fiber leaves are preferred
+by grazers due to better digestibility (Queiroz et al. 2000). Rapid growth is consid-
+ered a characteristic of grazing tolerance due to an overlap between plant traits
+related to plant community response to grazing (response traits) and traits that influ-
+ence forage selection by grazers (effect traits) (Blanco et al. 2007). In other words,
+the resulting plant community after grazing is more palatable and attractive to graz-
+ing compared to the surrounding ungrazed patches, creating positive feedback cycles.
+   Under intermediate stocking rates, grazing is not homogenous, as herbivores
+preferentially graze on more palatable plants and create patches of ungrazed sites
+(Ferreira et al. 2020). For example, plants with mechanical deterrents (e.g., thorns
+in Eryngium horridum (Fig. 8.5b), inflorescence awns in Aristida laevis, prickles in
+Smilax campestris) and biochemical compounds that make them less palatable (e.g.,
+Baccharis coridifolia; Rissi et al. 2005) or even toxic to cattle (e.g., ragworts
+Senecio sp.; Antoniassi et al. 2011) will be avoided by grazers. Other species tend
+to be more tolerant to grazing, such as prostate species such as Axonopus affinis or
+Paspalum notatum (Fig. 8.5f–g), because they are able to keep their potential sites
+of regrowth (buds or meristems) close to the soil, inaccessible to animals, compared
+to bunchgrasses (e.g., Andropogon lateralis, Sorghastrum pellitum) (Fig. 8.5d–e).
+Across larger areas, the result of intermediate stocking rates will be the formation of
+8   Grassland Plant Community Composition and Dynamics: Disturbance…                193
+
+
+grazed/ungrazed patches, promoting biodiversity of plants and associated taxa in
+grasslands in a typical two-layer structure with low grazing lawns, formed by pros-
+trate species, and taller clumps of tussocks and other less palatable species in
+between (Fischer et al. 2019; Ferreira et al. 2020).
+    Understanding vegetation responses to different grazing regimes has important
+implications for rangeland management, conservation, and restoration. Changes in
+frequency and intensity of grazing may promote species recovery and ex situ con-
+servation, habitat conservation, restoration and rehabilitation, climate mitigation,
+among other outcomes commonly listed by land managers and ranchers. An exam-
+ple is the implementation of rotational grazing instead of the traditional continuous
+grazing in large areas. Under rotational grazing, the pasture is divided into smaller
+paddocks and animals are transferred between them, allowing greater control of
+grazing time and amount of forage offered to the animals. The grazing intensity will
+be momentarily higher, in a short time interval, and after that the vegetation will be
+able to recover during a period without grazing. Boavista et al. (2019), who ana-
+lyzed changes in composition, diversity, and biomass production after implement-
+ing rotational grazing management in grassland communities that were formerly
+under continuous grazing management, observed an increase in species richness
+and more uniform species growth over a period of 6 years due to reduced selective
+grazing. Longer periods of exclusion from grazing can be especially beneficial for
+restoring overgrazed sites, where the plant community has been intensively grazed
+for an extended period without sufficient recovery periods (Mysterud 2006). In the
+Campos Sulinos region, overgrazing is a common problem that often results in plant
+communities characterized by very short grazing lawns, low productivity, high
+dominance of prostrate grasses, and the presence of ruderal species. Fedrigo et al.
+(2017) presented encouraging results showing that short periods of grazing exclu-
+sion throughout the year can positively affect plant species composition and produc-
+tivity, leading to the restoration of long-term overgrazed sites.
+    As mentioned above, most of the remnants of Campos Sulinos grasslands are
+located on private properties and subject to grazing. In protected areas, the general
+policy is to remove livestock from their boundaries. Until now, grazing animals
+have not been used exclusively for conservation management purposes, despite the
+clear evidence of the benefits of grazing in other regions of the world (e.g., Tallowin
+et al. 2005; Tälle et al. 2016) and in Campos Sulinos grasslands (Baggio et al. 2021),
+especially at intermediate or low stocking rates (Boavista et al. 2019; Ferreira et al.
+2020). In addition to its positive effect on biological communities, incorporating
+grazing into conservation initiatives is also interesting because it allows the integra-
+tion of efforts by landowners and stakeholders toward the conservation of biodiver-
+sity, which is fundamental for the long-term sustainability of local resources.
+    Complete exclusion from grazing for extended periods of time leads to a decrease
+in overall plant community diversity. This exclusion favors a few tall grasses (e.g.,
+Sorghastrum spp., Saccharum spp.) and shrubs (e.g., Baccharis spp., Vernonanthura
+spp.), while negatively impacting species-rich groups that are less effective in com-
+peting for light (Overbeck et al. 2005; Ferreira et al. 2020), such as geophytes (e.g.,
+Oxalis spp. and Herbertia spp.), herbaceous forbs (e.g., Facelis retusa, Wahlenbergia
+194                                                                  B. O. Andrade et al.
+
+
+linarioides), prostrates (including grasses like Axonopus affinis and herbs like
+Hydrocotyle spp.), rosettes (such as several Asteraceae species like Chaptalia spp.,
+Hypochaeris spp., Conyza primulifolia), and annual plants (e.g., Vulpia australis).
+If exclusion persists over a prolonged period of time, it can result in shrub or wood
+encroachment (Sühs et al. 2020), gradually replacing species-rich grasslands with a
+few shrub or tree species.
+
+
+
+8.3.2 Grazing by Wild Fauna
+
+Current wild animals in the Campos Sulinos are not as large as the extinct Pleistocene
+fauna, nor as large as animals living in grassland ecosystems in other continents
+such as North America or South Africa. The region has experienced intermediate
+levels of defaunation over the last hundreds of years (Bogoni et al. 2020). The larg-
+est current herbivores in Campos Sulinos include Pampa deer (Ozotoceros bezoar-
+ticus), marsh deer (Blastocerus dichotomus), brown brocket (Mazama gouazoubira;
+Fig. 8.4c), greater rhea (Rhea americana; Fig. 8.4f), and capybara (Hydrochoerus
+hydrochaeris). Capybaras can form large populations and inhabit a wide variety of
+habitats, including forests, shrubby and herbaceous swamps, wet grasslands, and
+sandy grasslands, always in proximity with water (Tomazzoni et al. 2005). Greater
+rheas prefer open areas with vegetation lower than 50 cm and primarily consume
+wild dicots (Sales 2006). The marsh deer is an endangered species with only three
+small populations known in the Campos Sulinos region (González et al. 2010).
+Unlike the smaller Pampa deer, the marsh deer feeds mostly on aquatic plants. A
+study conducted in Argentina, indicates that the presence of cattle and the use of fire
+can alter the behavior of herbivorous mammals such as capybara, gray brocket, and
+march deer, potentially leading to more nocturnal behavior (Di Bitetti et al. 2020).
+There is a lack of studies evaluating the diet and food preferences of these animals
+specifically in the Campos Sulinos region. Studies from neighboring Argentina and
+other vegetation types suggest that these animals are mixed feeders, consuming
+both grasses and dicot plants (Jackson and Giulietti 1988; Sales 2006; Desbiez et al.
+2011). The impacts of these species on vegetation dynamics are largely unclear;
+their role today is much smaller than that of domestic grazers, but they could poten-
+tially play some management role in protected areas, albeit on a local scale.
+    In addition to grazing and trampling, other wildlife species may contribute to
+small-scale patchiness by disturbing the soil and the vegetation through nest-­
+building activities, both above and below the soil level. Animals such as armadillos,
+burrowing owls, boars, and rodents dig burrows, which can lead to local increases
+in nutrient availability and burial of surrounding plants (Fig. 8.4e–f; Galiano et al.
+2014). Ants and mites are considered ecosystem engineers as they cut and process
+fresh plant parts (e.g., leaves, flowers, fruits) and build nest and galleries, which can
+indirectly have a positive impact on soil porosity, nutrient enrichment, and decom-
+position processes (Folgarait 1998; Del Toro et al. 2012). However, the effects of
+8   Grassland Plant Community Composition and Dynamics: Disturbance…                195
+
+
+these disturbances are usually localized, allowing for the establishment of more
+ruderal plants at the disturbed points. In some cases, such as with subterraneous
+tuco-tuco rodents of the genus Ctenomys, considerable areas can be affected.
+Although there have been more studies on the effects of the fauna on vegetation in
+recent years (e.g., tuco-tucos; Galiano et al. 2014 or leaf-cutting ants; Giesel et al.
+2020), overall, the effects of fauna on vegetation have been less studied than
+responses of fauna to grassland management or land use change (e.g., Fontana et al.
+2016; Staude et al. 2018; Ferreira et al. 2020).
+
+
+
+8.3.3 Fire
+
+In the South Brazilian highland grasslands, fire has been a decisive force in the
+forest-grassland dynamics and plays a crucial role in maintaining sharp local bor-
+ders between forest and grassland (Overbeck et al. 2007; Müller et al. 2023, Chap.
+16, this volume). Although we have limited data on natural fire regimes, it can be
+assumed that past burns were triggered by natural events, such as lightning, or set
+intentionally by indigenous people for activities like hunting. However, in recent
+times, fires have primarily been ignited by human activities, specifically by farmers
+who use fire as a management practice to renew pastures for the growing season
+(Pivello et al. 2021; Paruelo et al. 2022). These controlled fires, known locally as
+“sapecadas,” are mild and typically set at the end of winter (Buffon et al. 2018). In
+the Pampa region, where grazing intensity is in general higher than in the highland
+grasslands, burning is rarely employed by ranchers due to the lower accumulation
+of plant biomass (Pivello et al. 2021). However, prolonged droughts can cause fires
+to spread, as observed during the January 2022 drought, which resulted in over
+28,000 ha of burnt area in the Pampa (MapBiomas 2023). In protected areas, fire has
+recently been used as a management tool, such as in Aparados da Serra National
+Park. However, the use of fire for conservation purposes remains controversial
+(Pillar and Vélez 2010), despite evidence of its historical role in these ecosystems.
+A unique case is the region of granitic hills in the city of Porto Alegre, capital of Rio
+Grande do Sul state, where the extremely species-rich grasslands undergo burning,
+usually in the hot summer, primarily initiated by the local population. Since the
+grassland in this area is ungrazed, the regular fire regime prevents shrub encroach-
+ment and forest expansion (Blanco et al. 2014). Although this situation is not typical
+for the region, where grasslands are usually grazed, the proximity to universities
+and research institutes has resulted in numerous studies that investigated vegetation
+dynamics under the influence of these fires, considering both grassland and forest-­
+grassland interfaces (e.g., Overbeck et al. 2005; Müller et al. 2007; see also Müller
+et al. 2023, Chap. 16, this volume).
+    Several studies have reported positive effects of fire on the plant community
+in the Campos Sulinos. Fire immediately increases plant species richness, diver-
+sity, and evenness (Overbeck et al. 2005). Functional alpha and beta diversities
+196                                                                B. O. Andrade et al.
+
+
+also increase after burning, along with the cover of forbs (Joner et al. 2021).
+Additionally, fire accelerates certain ecosystem processes, such as litter decay,
+by exposing the ground to direct sunlight, which enhances photodegradation
+(Podgaiski et al. 2014). Fire also promotes short-term nutrient availability
+through the input of ashes into the soil. However, as grassland fires are typically
+low-intensity fires, their effects are temporary, and approximately 12 months
+after a fire, plant community and ecosystems processes return to their pre-fire
+stages (Overbeck et al. 2005). The ability of the Campos Sulinos grasslands to
+recover within one year after burning and restore pre-disturbance levels of diver-
+sity and ecosystem processes suggests that the plant community has informa-
+tional legacy to cope with fire. Many plants have developed characteristics that
+confer resistance or dormancy to escape from fire (Pausas 2019). The fire resis-
+tance strategy involves having thick barks, or dense structures that retain mois-
+ture, preventing complete burning of the plants (Pausas 2019). For example,
+tussock grasses protect their gems with closely packed tillers, forming a dense,
+more-or-less round structure of green and dry leaves that accumulate humidity
+and protect internal buds from burning. In grasslands with regular fires, these
+tussock species (such as Andropogon lateralis, Trachypogon spicatus,
+Sorghastrum pelitum, or Aristida sp.) can become dominant (Overbeck et al.
+2005). Rapid bud activation or germination from seeds after fire events is consid-
+ered dormancy strategies (Pausas 2019). Geophytes that resprout from buds,
+such as Sisyrinchium spp. and Oxalis spp., are common in Campos Sulinos grass-
+lands, although they do not represent a large portion of the biomass. Seeds from
+Andropogon lateralis, Chascholytrum subaristatum, Schizachyrium micro-
+stachyum, and Eryngium horridum, which are all abundant species in the Campos
+Sulinos, are capable of germinating after exposure to 110 °C heat (Overbeck
+et al. 2006). Notably, fire-triggered seed germination is less common in Campos
+Sulinos compared to the flora of the tropical Cerrado savannas (Overbeck et al.
+2006; Silveira and Overbeck 2013).
+   Given the widespread use of fire in the highland region, particularly in the con-
+text of grazing systems, the lack of studies on its effects is surprising, especially
+considering its potential impact on productivity in grazed grasslands. More studies
+seem important, both from a basic and an applied research perspective. Basic
+research is needed, for example, to understand the effect of fire season on vegeta-
+tion. Currently, fire is usually applied at the end of Southern Hemisphere winter to
+stimulate resprouting and promote biomass growth for cattle during a period of low
+fodder availability. Since the Campos Sulinos grass flora is a combination of C3/C4
+species, different outcomes can be expected from burning in different seasons
+(Fidelis et al. 2022). For instance, winter burns could have negative effects, espe-
+cially on the C3 grasses that are physiologically active during this period, but also
+constitute an important part of forage mass for cattle when the more voluminous C4
+grasses are still in a latent phase.
+8   Grassland Plant Community Composition and Dynamics: Disturbance…               197
+
+
+8.4 The Subtle Boundary Between Disturbance
+     and Degradation
+
+Inadequate frequency or intensity of disturbance, whether below or above the opti-
+mum level, can lead to degradation: the complete absence of grazing and fire leads
+to biodiversity losses, while too high grazing intensity leads to overgrazing which
+also results in biodiversity losses and a decrease in productivity. Finding the balance
+between disturbance levels that maximize animal production while still maintaining
+grassland biodiversity and services is a challenge for land managers throughout the
+Campos Sulinos (Andrade et al. 2015). The response to disturbance at the commu-
+nity level depends on community attributes such as resistance (the ability to with-
+stand disturbance) and resilience (the ability to recover after being impacted by
+disturbance), which are ultimately driven by plant functional diversity and redun-
+dancy (Pillar et al. 2013; Joner et al. 2021). The more resistant the plant community
+is, the better it can maintain regular levels of a given function and service, even
+under persistent low-intensity or intermittent high-intensity disturbance (Nimmo
+et al. 2015). Grazing and fire at intermediate levels of frequency and intensity pre-
+vent a single or a few species from dominating the community, ensuring the coexis-
+tence of species that perform different functions in the ecosystem (Coppedge et al.
+2008). Resistance and resilience are the basis of a community’s stability (Harrison
+1979). When community stability is compromised, changes in the regulation of eco-
+logical processes can be expected, subsequently leading to changes in the provision
+of ecosystem services (Díaz et al. 2018).
+    Drastic changes in plant community composition can be observed under severe
+changes in management, such as the total exclusion of grazing (Ferreira et al. 2020).
+In the Campos Sulinos, a highly productive region with high precipitation levels, a
+change in plant composition can occur within a short period of time (1–2 years;
+Ferreira et al. 2020), resulting in severe impacts on the stability of ecosystem func-
+tions and the provision of ecosystem services. The dominance of woody plants and
+trade-offs among ecosystem services in relation to management practices can also
+be observed in the medium term. Therefore, adjusting disturbance to the local char-
+acteristics is key for the conservation of grasslands (see also Overbeck et al. 2023,
+Chap. 17, this volume).
+    Grazing management has also been identified as part of the solution when explor-
+ing adaptations to climate change (Lal et al. 2011). In southern Brazil, severe
+droughts and reduced productivity in grasslands have been observed in recent years.
+Additionally, the number of fire events and the affected area have increased. Future
+research should focus on the potential effects of these processes on plant communi-
+ties and ecosystems. Areas excluded from disturbance or subjected to low levels of
+disturbance, where dead plant biomass (grass and shrubs) can accumulate, may
+become susceptible to wildfires in the Campos Sulinos, as seen in the Cerrado and
+Pantanal ecosystems (Pivello et al. 2021). Research on disturbance and its role in
+maintaining the biodiversity of grassland ecosystems is essential to ensure the main-
+tenance of biodiversity and quantify its importance for human well-being. Inspired
+198                                                                         B. O. Andrade et al.
+
+
+by the enormous complexity of biotic and abiotic relationships in this fascinating
+ecosystem, science can provide innovative solutions that support diverse plant com-
+munities (taxonomic and functional) to be productive and deliver economic pros-
+perity without losing function.
+
+
+
+References
+
+Allen VG, Batello C, Berretta EJ et al (2011) An international terminology for grazing lands and
+   grazing animals. Grass Forage Sci 66:2–29
+Alvares CA, Stape JL, Sentelhas PC et al (2013) Köppen’s climate classification map for Brazil.
+   Meteorol Z 22:711–728. https://doi.org/10.1127/0941-­2948/2013/0507
+Alvares CA, Sentelhas PC, Stape JL (2018) Modeling monthly meteorological and agronomic
+   frost days, based on minimum air temperature, in Center-Southern Brazil. Theor Appl Climatol
+   134. https://doi.org/10.1007/s00704-­017-­2267-­6
+Andrade BO, Koch C, Boldrini II et al (2015) Grassland degradation and restoration: a conceptual
+   framework of stages and thresholds illustrated by southern Brazilian grasslands. Nat Conserv
+   13:95–104. https://doi.org/10.1016/j.ncon.2015.08.002
+Andrade BO, Bonilha CL, de Abreu Ferreira PM, Boldrini II, Overbeck GE (2016) Highland
+   grasslands at the southern tip of the Atlantic Forest biome: management options and conserva-
+   tion challenges. Oecol Aust 20:37–61. https://doi.org/10.4257/oeco.2016.2002.04
+Andrade BO, Marchesi E, Burkhart S (2018) Vascular plant species richness and distribu-
+   tion in the Río de la Plata grasslands. Bot J Linn Soc 188:250–256. https://doi.org/10.1093/
+   botlinnean/boy063
+Andrade BO, Bonilha CL, Overbeck GE et al (2019) Classification of South Brazilian grasslands:
+   implications for conservation. Appl Veg Sci 22:168–184. https://doi.org/10.1111/avsc.12413
+Andrade B, Dröse W, Aguiar CA et al (2023) 12,500+ and counting: biodiversity of the Brazilian
+   Pampa. Front Biogeogr 15:e95288. https://doi.org/10.21425/F5FBG59288
+Antoniassi NAB, Raymundo DL, Boabaid FM et al (2011) Poisonous plants affecting ruminants
+   in Southern Brazil. In: Poisoning by plants, mycotoxins and related toxins. CABI, Wallingford,
+   pp 87–90
+Archibald S, Hempson GP, Lehmann C (2019) A unified framework for plant life-history strategies
+   shaped by fire and herbivory. New Phytol 224:1490–1503. https://doi.org/10.1111/nph.15986
+Arruda DM, Schaefer CEGR (2020) Dinâmica climática e biogeográfica do Brasil no último
+   máximo glacial: O estado da arte. Estudos Avançados 34:187–198. https://doi.org/10.1590/
+   S0103-­4014.2020.3498.012
+Arruda DM, Schaefer CEGR, Fonseca RS et al (2018) Vegetation cover of Brazil in the last 21 ka:
+   new insights into the Amazonian refugia and Pleistocenic arc hypotheses. Glob Ecol Biogeogr
+   27:47–56. https://doi.org/10.1111/geb.12646
+Asevedo L, D’Apolito C, Misumi SY et al (2020) Palynological analysis of dental calculus from
+   Pleistocene proboscideans of southern Brazil: a new approach for paleodiet and paleoenvi-
+   ronmental reconstructions. Palaeogeogr Palaeoclimatol Palaeoecol 540:109523. https://doi.
+   org/10.1016/j.palaeo.2019.109523
+Azevedo EB, Pagel R, Maggio LP, Chiapinotto DM et al (2023) Germination, overcoming seed
+   dormancy and endozoochory dispersal by cattle of native species from natural grassland.
+   Austral Ecol (in press). https://doi.org/10.1111/aec.13303
+Baeza S, Vélez-Martin E, de Abelleyra D et al (2022) Two decades of land cover mapping in
+   the Río de la Plata grassland region: the MapBiomas Pampa initiative. Remote Sens Appl
+   28:100834. https://doi.org/10.1016/j.rsase.2022.100834
+8   Grassland Plant Community Composition and Dynamics: Disturbance…                          199
+
+Baggio R, Overbeck GE, Durigan G et al (2021) To graze or not to graze: a core question for
+   conservation and sustainable use of grassy ecosystems in Brazil. Perspect Ecol Conserv
+   19:256–266. https://doi.org/10.1016/j.pecon.2021.06.002
+Barnosky AD, Lindsey EL, Villavicencio NA et al (2016) Variable impact of late-Quaternary
+   megafaunal extinction in causing ecological state shifts in North and South America. Proc Natl
+   Acad Sci U S A 113:856–861. https://doi.org/10.1073/pnas.1505295112
+Bauermann S, Fett Junior N (2014) Paleoclimas Pleistocênicos e Holocênicos no domínio do
+   bioma Pampa, estado do Rio Grande do Sul. In: Carvalho I, Garcia M, Lana C, Strohschoen O
+   Jr (eds) Paleontologia: Cenários de Vida – Paleoclimas – Volume 5. Interciencia, pp 491–500
+Behling H, Pillar VD (2007) Late Quaternary vegetation, biodiversity and fire dynamics on the
+   southern Brazilian highland and their implication for conservation and management of modern
+   Araucaria forest and grassland ecosystems. Philos Trans R Soc B 362:243–251. https://doi.
+   org/10.1098/rstb.2006.1984
+Behling H, Overbeck GE, Pillar VD (2023) Dynamics of South Brazilian grasslands during the
+   Late Quaternary. In: Overbeck GE, Pillar VDP, Müller SC, Bencke GA (eds) South Brazilian
+   grasslands: ecology and conservation of the Campos Sulinos. Springer, Cham
+Bernardi RE, Holmgren M, Arim M et al (2016) Why are forests so scarce in subtropical South
+   America? The shaping roles of climate, fire and livestock. For Ecol Manag 363:212–217.
+   https://doi.org/10.1016/j.foreco.2015.12.032
+Blanco CC, Sosinski EE, Santos BR et al (2007) On the overlap between effect and response
+   plant functional types linked to grazing. Community Ecol 8:57–65. https://doi.org/10.1556/
+   comec.8.2007.1.8
+Blanco CC, Scheiter S, Sosinski E et al (2014) Feedbacks between vegetation and disturbance pro-
+   cesses promote long-term persistence of forest–grassland mosaics in south Brazil. Ecol Model
+   291:224–232. https://doi.org/10.1016/j.ecolmodel.2014.07.024
+Boavista L d R, Trindade JPP, Overbeck GE et al (2019) Effects of grazing regimes on the tem-
+   poral dynamics of grassland communities. Appl Veg Sci 22:326–335. https://doi.org/10.1111/
+   avsc.12432
+Bogoni JA, Peres CA, Ferraz KMPMB (2020) Extent, intensity and drivers of mammal defau-
+   nation: a continental-scale analysis across the Neotropics. Sci Rep 10:14750. https://doi.
+   org/10.1038/s41598-­020-­72010-­w
+Boldrini II (2009a) Biodiversidade dos campos do planalto das araucárias, Série Biodiversidade,
+   vol 30. MMA, Brasília, 240 pp
+Boldrini II (2009b) A flora dos campos do Rio Grande do Sul. In: Pillar VD, Müller SC, Castilhos
+   ZMS, Jacques AVA (eds) Campos Sulinos: Conservação e Uso Sustentável Da Biodiversidade.
+   MMA, Brasília, pp 63–77
+Boldrini II (2011) Espécies forrageiras nativas da região Sul – Forrageiras – Poaceae. In: Coradin
+   L, Siminski A, Reis A (eds) Espécies nativas da flora brasileira de valor econômico atual ou
+   potencial: plantas para o futuro – Região Sul. MMA, Brasília, pp 293–353
+Boldrini II, Trevisan R, Schneider AA (2008) Estudo florístico e fitossociológico de uma área
+   às margens da lagoa Armazém, Osório, Rio Grande do Sul, Brasil. Rev Bras Biociências
+   6:355–367
+Bond WJ, Keeley JE (2005) Fire as a global “herbivore”: the ecology and evolution of flammable
+   ecosystems. Trends Ecol Evol 20:387–394. https://doi.org/10.1016/j.tree.2005.04.025
+Buffon I, Printes RC, Andrades-Filho CO (2018) Sensoriamento remoto e geoprocessamento
+   como ferramentas para viabilizar o licenciamento ambiental do tradicional uso do fogo visando
+   à renovação de pastagens em São Francisco de Paula, Rio Grande do Sul, Brasil. RevUERGS
+   4:447–469. https://doi.org/10.21674/2448-­0479.43.447-­469
+Burke IC, Lauenroth WK, Vinton MA et al (1998) Plant-soil interactions in temperate grasslands.
+   In: Plant-induced soil changes: processes and feedbacks. Springer, Dordrecht, pp 121–143
+Carvalho PCF, Moraes A (2005) Comportamento ingestivo de Ruminantes: bases para o manejo
+   sustentável do pasto. In: Ulysses Cecato, Clóves Cabreira Jobim (Org.) Manejo Sustentável em
+   Pastagem. UEM, Maringá, pp 1–20
+Carvalho PCF, Wallau MO, Bremm C et al (2019) Nativão: 30 anos de pesquisa em campo nativo.
+   Via Pampa, Porto Alegre
+200                                                                             B. O. Andrade et al.
+
+Cingolani AM, Noy-Meir I, Díaz S (2005) Grazing effects on rangeland diversity: a synthesis of
+   contemporary models. Ecol Appl 15:757–773. https://doi.org/10.1890/03-­5272
+Coppedge BR, Fuhlendorf SD, Harrell WC et al (2008) Avian community response to veg-
+   etation and structural features in grasslands managed with fire and grazing. Biol Conserv
+   141:1196–1203. https://doi.org/10.1016/j.biocon.2008.02.015
+Croft DA, Gelfo JN, López GM (2020) Splendid innovation: the extinct South American
+   native ungulates. Annu Rev Earth Planet Sci 48:259–290. https://doi.org/10.1146/
+   annurev-­earth-­072619-­060126
+Cruz P, De Quadros FL, Theau JP, Frizzo A, Jouany C, Duru M, Carvalho PC (2010) Leaf traits as
+   functional descriptors of the intensity of continuous grazing in native grasslands in the south of
+   Brazil. Rangel Ecol Manag 63(3):350–358. https://doi.org/10.2111/08-­016.1
+Del Grosso S, Parton W, Stohlgren T et al (2008) Global potential net primary production pre-
+   dicted from vegetation class, precipitation, and temperature. Ecology 89:2117–2126. https://
+   doi.org/10.1890/07-­0850.1
+Del Toro I, Ribbons RR, Pelini SL (2012) The little things that run the world revisited: a review
+   of ant-mediated ecosystem services and disservices (Hymenoptera: Formicidae). Myrmecol
+   News 17:133–146
+Desbiez ALJ, Santos SA, Alvarez JM et al (2011) Forage use in domestic cattle (Bos indicus),
+   capybara (Hydrochoerus hydrochaeris) and pampas deer (Ozotoceros bezoarticus) in a seasonal
+   Neotropical wetland. Mamm Biol 76:351–357. https://doi.org/10.1016/j.mambio.2010.10.008
+Di Bitetti MS, Iezzi ME, Cruz P et al (2020) Effects of cattle on habitat use and diel activity of
+   large native herbivores in a South American rangeland. J Nat Conserv 58:125900. https://doi.
+   org/10.1016/j.jnc.2020.125900
+Díaz S, Cabido M (2001) Vive la différence: plant functional diversity matters to ecosystem pro-
+   cesses. Trends Ecol Evol 16:646–655. https://doi.org/10.1016/S0169-­5347(01)02283-­2
+Díaz S, Fargione J, Chapin FS III et al (2006) Biodiversity loss threatens human well-being. PLoS
+   Biol 4:e277. https://doi.org/10.1371/journal.pbio.0040277
+Díaz S, Pascual U, Stenseke M et al (2018) Assessing nature’s contributions to people. Science
+   359:270–272. https://doi.org/10.1126/science.aap8826
+Dillenburg S, Barboza E, Tomazelli L et al (2009) The Holocene Coastal Barriers of Rio
+   Grande do Sul. In: Lecture notes in Earth sciences. Springer, Berlin, pp 53–91. https://doi.
+   org/10.1007/978-­3-­540-­44771-­9_3
+Engel T, Bruelheide H, Hoss D et al (2023) Traits of dominant plant species drive normalized dif-
+   ference vegetation index in grasslands globally. Glob Ecol Biogeogr 23:695–706. https://doi.
+   org/10.1111/geb.13644
+Fedrigo JK, Ataide PF, Filho JA et al (2017) Temporary grazing exclusion promotes rapid recovery
+   of species richness and productivity in a long-term overgrazed Campos grassland. Restor Ecol
+   26:677–685. https://doi.org/10.1111/rec.12635
+Ferreira PM, Andrade BO, Podgaiski LR et al (2020) Long-term ecological research in southern
+   Brazil grasslands: effects of grazing exclusion and deferred grazing on plant and arthropod
+   communities. PLoS One 15:1–23. https://doi.org/10.1371/journal.pone.0227706
+Fick SE, Hijmans RJ (2017) WorldClim 2: new 1-km spatial resolution climate surfaces for global
+   land areas. Int J Climatol 37:4302–4315. https://doi.org/10.1002/joc.5086
+Fidelis A, Schmidt IB, Furquim FF, Overbeck GE (2022) Burning in the Pampa and Cerrado in
+   Brazil. In: Global application of prescribed fire. CSIRO Publishing/CRC Press, Clayton South/
+   Boca Raton, p 38
+Fischer FM, Bonnet OJ, Cezimbra IM, Pillar VD (2019) Long-term effects of grazing intensity on
+   strategies and spatial components of functional diversity in subtropical grassland. Appl Veg Sci
+   22:39–47. https://doi.org/10.1111/avsc.12402
+Folgarait PJ (1998) Ant biodiversity and its relationship to ecosystem functioning: a review.
+   Biodivers Conserv 7:1221–1244. https://doi.org/10.1023/A:1008891901953
+Fontana CS, Dotta G, Marques CK, Repenning M, Agne CE, dos Santos RJ (2016) Conservation
+   of grassland birds in South Brazil: a land management perspective. Nat Conserv 14(2):83–87
+Foster DR, Knight DH, Franklin JF (1998) Landscape patterns and legacies resulting from large,
+   infrequent forest disturbances. Ecosystems 1:497–510. https://doi.org/10.1007/s100219900046
+8   Grassland Plant Community Composition and Dynamics: Disturbance…                            201
+
+França L d M, de Asevedo L, Dantas MA, Bocchiglieri A, dos Santos Avilla L, Lopes RP, da Silva
+   JL (2015) Review of feeding ecology data of Late Pleistocene mammalian herbivores from
+   South America and discussions on niche differentiation. Earth Sci Rev 140:158–165
+Furley PA (1999) The nature and diversity of neotropical savanna vegetation with particu-
+   lar reference to the Brazilian cerrados. Glob Ecol Biogeogr 8(3–4):223–241. https://doi.
+   org/10.1046/j.1466-­822X.1999.00142.x
+Galiano D, Kubiak BB, Overbeck GE et al (2014) Effects of rodents on plant cover, soil hardness,
+   and soil nutrient content: a case study on tuco-tucos (Ctenomys minutus). Acta Theriol (Warsz)
+   59:583–587. https://doi.org/10.1007/s13364-­014-­0193-­x
+Giesel A, Boff P, Boff MIC, Fernandes P (2020) Occurrence of the leaf-cutters ants in the high-­
+   altitude grasslands in the south Brazil. Res Soc Dev 9:e839986365
+González S, Cosse M, Braga FG et al (2010) Pampas deer Ozotoceros bezoarticus (Linnaeus
+   1758). In: Duarte JMB, González S (eds) Neotropical cervidology: biology and medicine of
+   Latin American deer. Jaboticabal, Brazil: Funep and Gland, Switzerland: IUCN. pp 119–132
+Grime JP (2006) Plant strategies, vegetation processes, and ecosystem properties, 2nd edn.
+   Chichester (United Kingdom) and New York, Wiley
+Harrison GW (1979) Stability under environmental stress: resistance, resilience, persistence, and
+   variability. Am Nat 113:659–669. https://doi.org/10.1086/283424
+Hasenack H, Hofmann GS, Weber EJ et al (2023) Climate and soil conditions across the south
+   Brazilian grasslands. In: Overbeck GE, Pillar VDP, Müller SC, Bencke GA (eds) South
+   Brazilian grasslands: ecology and conservation of the Campos Sulinos. Springer, Cham
+Hasenack H, Weber EJ, Boldrini II, Trevisan R, Flores CA, Dewes H. (2023) Biophysical delin-
+   eation of grassland ecological systems in the State of Rio Grande do Sul, Southern Brazil.
+   Iheringia Ser Bot 78:e2023001
+He T, Lamont BB, Pausas JG (2019) Fire as a key driver of Earth’s biodiversity. Biol Rev
+   94:1983–2010. https://doi.org/10.1111/brv.12544
+IBGE (2019) Biomas e sistema costeiro-marinho do Brasil: compatível com a escala 1:250 000.
+   Relatórios metodológicos, vol 45. Rio de Janeiro
+Jackson JE, Giulietti JD (1988) The food habits of Pampas deer Ozotoceros bezoarticus celer in
+   relation to its conservation in a relict natural grassland in Argentina. Biol Conserv 45:1–10.
+   https://doi.org/10.1016/0006-­3207(88)90048-­1
+Jentsch A, White P (2019) A theory of pulse dynamics and disturbance in ecology. Ecology
+   100:e02734. https://doi.org/10.1002/ecy.2734
+Johnstone JF, Allen CD, Franklin JF et al (2016) Changing disturbance regimes, ecological mem-
+   ory, and forest resilience. Front Ecol Environ 14:369–378. https://doi.org/10.1002/fee.1311
+Joner F, Giehl ELH, Pillar VD (2021) Functional and taxonomic alpha and beta diversity responses
+   to burning grasslands in southern Brazil. J Veg Sci 32:e13060. https://doi.org/10.1111/jvs.13060
+Jorge BCS, Fischer FM, Debastiani VJ, Hoss D, Pillar VD, Winck B (2022) Effects of defolia-
+   tion frequencies on above- and belowground biodiversity and ecosystem processes in sub-
+   tropical grasslands of southern Brazil. Pedobiologia 90:150786. https://doi.org/10.1016/j.
+   pedobi.2021.150786
+Keeley JE (2009) Fire intensity, fire severity and burn severity: a brief review and suggested usage.
+   Int J Wildland Fire 18:116–126. https://doi.org/10.1071/WF07049
+Koerner SE, Smith MD, Burkepile DE et al (2018) Change in dominance determines herbi-
+   vore effects on plant biodiversity. Nat Ecol Evol 2:1925–1932. https://doi.org/10.1038/
+   s41559-­018-­0696-­y
+Külkamp J, Heiden G, Iganci JRV (2018) Endemic plants from the Southern Brazilian Highland
+   Grasslands. Rodriguesia 69:429–440. https://doi.org/10.1590/2175-­7860201869214
+Lal R, Delgado JA, Groffman PM et al (2011) Management to mitigate and adapt to climate
+   change. J Soil Water Conserv 66:276–285
+Laycock WA (1991) Stable states and thresholds of range condition on North American range-
+   lands: a viewpoint. J Range Manag 44:427–433
+Lezama F, Paruelo JM (2016) Disentangling grazing effects: trampling, defoliation and urine
+   deposition. Appl Veg Sci 19:557–566. https://doi.org/10.1111/avsc.12250
+202                                                                           B. O. Andrade et al.
+
+Lezama F, Baeza S, Altesor A et al (2014) Variation of grazing-induced vegetation changes across
+   a large-scale productivity gradient. J Veg Sci 25:8–21. https://doi.org/10.1111/jvs.12053
+Lopes RP, Pereira JC, Sial AN, Dillenburg SR (2022) Isotopic evidence for a diet shift in a
+   Pleistocene sub-adult mastodon from the Brazilian Pampa. Hist Biol 35:388–402. https://doi.
+   org/10.1080/08912963.2022.2043293
+Maksic J, Venancio IM, Shimizu MH et al (2022) Brazilian biomes distribution: past and future.
+   Palaeogeogr Palaeoclimatol Palaeoecol 585. https://doi.org/10.1016/j.palaeo.2021.110717
+MapBiomas (2023) MapBiomas Project- Monitor do Fogo. Accessed on 31 Mar 2023 through the
+   link: https://plataforma.brasil.mapbiomas.org/monitor-­do-­fogo
+Marchiori JN, da Silva AF (2011) O inhanduvá (Prosopis affinis Spreng.) no Rio Grande do Sul.
+   8–Aspectos fitogeográficos. Balduinia 29:13–20
+Matzenauer R, Radin B, Maluf JRT (2017) O fenômeno ENOS e o regime de chuvas no Rio
+   Grande do Sul. Agrometeoros 25. https://doi.org/10.31062/agrom.v25i2.25510
+Menezes L d S, Müller SC, Overbeck GE (2016) Scale-specific processes shape plant commu-
+   nity patterns in subtropical coastal grasslands. Austral Ecol 41:65–73. https://doi.org/10.1111/
+   aec.12299
+Milchunas DG, Sala OE, Lauenroth WK (1988) A generalized model of the effects of graz-
+   ing by large herbivores on grassland community structure. Am Nat 132:87–106. https://doi.
+   org/10.1086/284839
+Minervini-Silva GH, Overbeck GE (2021) Seasonal patterns of endozoochory by cattle in sub-
+   tropical grassland in southern Brazil. Austral Ecol 46:1266–1276. https://doi.org/10.1111/
+   aec.13054
+Modernel P, Rossing WAH, Corbeels M et al (2016) Land use change and ecosystem service
+   provision in Pampas and Campos grasslands of southern South America. Environ Res Lett
+   11:113002. https://doi.org/10.1088/1748-­9326/11/11/113002
+Morrone JJ (2001) Biogeografia de América Latina y el Caribe, MyT-Manuales y Tesis
+   SEA. Sociedad Entomológica Aragonesa, Zaragoza
+Müller SC, Overbeck GE, Pfadenhauer J et al (2007) Plant functional types of woody species
+   related to fire disturbance in forest–grassland ecotones. Plant Ecol 189:1–4
+Müller SC, Bergamin RS, Duarte LS et al (2023) Mechanisms and processes shaping patterns of
+   forest-grassland mosaics in southern Brazil. In: Overbeck GE, Pillar VDP, Müller SC, Bencke
+   GA (eds) South Brazilian grasslands: ecology and conservation of the Campos Sulinos.
+   Springer, Cham
+Mysterud A (2006) The concept of overgrazing and its role in management of large herbi-
+   vores. Wildlife Biol 12:129–141. https://doi.org/10.2981/0909-­6396(2006)12[129:TCOOA
+   I]2.0.CO;2
+Nimmo DG, Mac Nally R, Cunningham SC et al (2015) Vive la résistance: reviving resistance
+   for 21st century conservation. Trends Ecol Evol 30:516–523. https://doi.org/10.1016/j.
+   tree.2015.07.008
+Orlando L, Male D, Alberdi MT, Prado JL, Prieto A, Cooper A, Hänni C (2008) Ancient DNA
+   clarifies the evolutionary history of American late Pleistocene equids. J Mol Evol 66:533–538
+Overbeck GE, Müller SC, Pillar VD, Pfadenhauer J (2005) Fine-scale post-fire dynamics in south-
+   ern Brazilian subtropical grassland. J Veg Sci 16:655–664
+Overbeck GE, Müller SC, Pillar VD, Pfadenhauer J (2006) No heat-stimulated germination found
+   in herbaceous species from burned subtropical grassland. Plant Ecol 184:237–243. https://doi.
+   org/10.1007/s11258-­005-­9068-­1
+Overbeck GE, Müller SC, Fidelis A (2007) Brazil’s neglected biome: the South Brazilian Campos.
+   Perspect Plant Ecol Evol Syst 9:101–116. https://doi.org/10.1016/j.ppees.2007.07.005
+Overbeck GE, Scasta JD, Furquim FF et al (2018) The South Brazilian grasslands – a South
+   American tallgrass prairie? Parallels and implications of fire dependency. Perspect Ecol
+   Conserv 16:24–30. https://doi.org/10.1016/j.pecon.2017.11.002
+8   Grassland Plant Community Composition and Dynamics: Disturbance…                             203
+
+Overbeck GE, Vélez-Martin E, Menezes L d S et al (2022) Placing Brazil’s grasslands and savan-
+    nas on the map of science and conservation. Perspect Plant Ecol Evol Syst 56:125687. https://
+    doi.org/10.1016/j.ppees.2022.125687
+Overbeck GE, Andrade BO, Vélez-Martin E, Pillar VD (2023) Beyond protected areas: conserva-
+    tion of south Brazilian grasslands. In: Overbeck GE, Pillar VDP, Müller SC, Bencke GA (eds)
+    South Brazilian grasslands: ecology and conservation of the Campos Sulinos. Springer, Cham
+Paruelo JM, Oesterheld M, Altesor A et al (2022) Grazers and fires: their role in shaping the struc-
+    ture and functioning of the Río de la Plata Grasslands. Ecol Austral 32:784–805
+Pausas JG (2019) Generalized fire response strategies in plants and animals. Oikos 128:147–153
+Pillar VD, Lange O (2015) Os Campos do Sul. Rede Campos Sulinos. UFRGS, Porto Alegre
+Pillar VD, Vélez E (2010) Extinção dos Campos Sulinos em unidades de conservação: um fenô-
+    meno natural ou um problema ético. Nat Conserv 8:84–86
+Pillar VD, Müller SC, Castilhos Z, Jacques AVA (2009) Campos Sulinos – conservação e uso sus-
+    tentável da biodiversidade, MMA. ed. Brasília
+Pillar VD, Blanco CC, Müller SC et al (2013) Functional redundancy and stability in plant com-
+    munities. J Veg Sci 24:963–974. https://doi.org/10.1111/jvs.12047
+Pivello VR, Vieira I, Christianini AV et al (2021) Understanding Brazil’s catastrophic fires: causes,
+    consequences and policy needed to prevent future tragedies. Perspect Ecol Conserv 19:233–255
+Podgaiski LR, da Silva GC, Ferrando CP et al (2014) Burning effects on detritivory and litter decay
+    in Campos grasslands. Austral Ecol 39:686–695. https://doi.org/10.1111/aec.12132
+Poorter H, Niinemets Ü, Poorter L et al (2009) Causes and consequences of variation
+    in leaf mass per area (LMA): a meta-analysis. New Phytol 182:565–588. https://doi.
+    org/10.1111/j.1469-­8137.2009.02830.x
+Prates L, Perez SI (2021) Late Pleistocene South American megafaunal extinctions associated with
+    rise of Fishtail points and human population. Nat Commun 12:2175. https://doi.org/10.1038/
+    s41467-­021-­22506-­4
+Queiroz DS, Gomide JA, Maria J (2000) Avaliação da Folha e do Colmo de Topo e Base de
+    Perfilhos de Três Gramíneas Forrageiras. 1. Digestibilidade in vitro e Composição Química. R
+    Bras Zootec 29. https://doi.org/10.1590/s1516-­35982000000100008
+Ribeiro JF, Walter BMT (2008) As principais fitofisionomias do Bioma Cerrado. In: Sano SM,
+    Almeida SP, Ribeiro JF (eds) Ecologia e Flora. Planaltina, pp 151–212
+Rissi DR, Rech RR, Fighera RA et al (2005) Intoxicação espontânea por Baccharis coridi-
+    folia em bovinos. Pesquisa Veterinária Brasileira 25:111–114. https://doi.org/10.1590/
+    s0100-­736x2005000200008
+Rodrigues CA, Zirondi HL, Fidelis A (2021) Fire frequency affects fire behavior in open savannas
+    of the Cerrado. For Ecol Manag 482:118850
+Sales J (2006) The rhea, a ratite native to South America. Avian Poult Biol Rev 17:105–124.
+    https://doi.org/10.3184/147020606783438759
+Santos HG d, Jacomine PKT, Anjos LHC d et al (2018) Sistema Brasileiro de Classificação de
+    Solos, 5th edn. EMBRAPA, Brasília
+Schrama M, Veen GFC, Bakker ESL, Ruifrok JL, Bakker JP, Olff H (2013) An integrated perspec-
+    tive to explain nitrogen mineralization in grazed ecosystems. Perspect Plant Ecol Evol Syst
+    15:32–44. https://doi.org/10.1016/j.ppees.2012.12.001
+Silva DS d, Andrades-Filho C d O (2021) Uso do fogo nos Campos de Altitude do sul do Brasil:
+    análise do licenciamento ambiental a partir de geotecnologias. Revista Brasileira de Meio
+    Ambiente 9:146–164
+Silva LB, Dick DP, Inda Junior AV (2008) Solos subtropicais de altitude: atributos químicos, teor
+    de matéria orgânica e resistência à oxidação química. Ciênc Rural 38:1167–1171
+Silveira FS, Overbeck GE (2013) Effect of high temperature on germination of four legumes from
+    a forest-grassland mosaic in Southern Brazil. Biota Neotrop 13:331–335
+Silveira FF, da Silva ML, Porto AB, Overbeck GE (2022) Environmental drivers and diversity of
+    open plant communities in grassland and wetland mosaics in coastal southern Brazil. Folia
+    Geobot 57(1):1–20
+Sollenberger LE, Moore JE, Allen VG, Pedreira CG (2005) Reporting forage allowance in grazing
+    experiments. Crop Sci 45(3):896–900
+204                                                                             B. O. Andrade et al.
+
+Soriano A, León RJC, Sala OE, Lavado RS, Deregibus VA, Cauhépé MA, Scaglia OA, Velázquez
+    CA, Lemcoff JH (1992) Río de la Plata grasslands. In: Coupland RT (ed) Ecosystems of the
+    world 8A. Natural grasslands. Introduction and Western Hemisphere. pp 367–407
+Souza CM, Shimbo JZ, Rosa MR et al (2020) Reconstructing three decades of land use and
+    land cover changes in Brazilian biomes with landsat archive and earth engine. Remote Sens
+    12:2735. https://doi.org/10.3390/RS12172735
+Staude IR, Vélez-Martin E, Andrade BO et al (2018) Local biodiversity erosion in south Brazilian
+    grasslands under moderate levels of landscape habitat loss. J Appl Ecol 55:1241–1251. https://
+    doi.org/10.1111/1365-­2664.13067
+Streck EV, Kämpf N, Dalmolin RS et al (2008) Solos do Rio Grande do Sul. UFRGS/EMATER/
+    RS-ASCAR, Porto Alegre
+Streit H, Menezes LS, Pillar VD, Overbeck GE (2022) Intraspecific trait variation of grassland
+    species in response to grazing depends on resource acquisition strategy. J Veg Sci 33:e13129.
+    https://doi.org/10.1111/jvs.13129
+Sühs RB, Giehl ELH, Peroni N (2020) Preventing traditional management can cause grassland loss
+    within 30 years in southern Brazil. Sci Rep 10:783. https://doi.org/10.1038/s41598-­020-­57564-­z
+Tälle M, Deák B, Poschlod P, Valkó O, Westerberg L, Milberg P (2016) Grazing vs. mowing:
+    a meta-analysis of biodiversity benefits for grassland management. Agric Ecosyst Environ
+    222:200–212
+Tallowin JR, Rook AJ, Rutter SM (2005) Impact of grazing management on biodiversity of grass-
+    lands. Anim Sci 81(2):193–198
+Tittonell P (2021) Beyond CO2: multiple ecosystem services from ecologically intensive graz-
+    ing landscapes of South America. Front Sustain Food Syst 5:664103. https://doi.org/10.3389/
+    fsufs.2021.664103
+Tomazzoni AC, Pedó E, Hartz SM (2005) Feeding associations between capybaras Hydrochoerus
+    hydrochaeris (Linnaeus) (Mammalia, Hydrochaeridae) and birds in the Lami Biological
+    Reserve, Porto Alegre, Rio Grande do Sul, Brazil. Rev Bras Zool 22:712–716. https://doi.
+    org/10.1590/s0101-­81752005000300031
+Troll C (1968) Das Pampaproblem in landschaftsökologischer Sicht. Erdkunde 22:152–155
+Westoby M, Walker B, Noy-Meir I (1989) Opportunistic management for rangelands not at equi-
+    librium. J Range Manag 42:266–274. https://doi.org/10.2307/3899492
+Yuan ZY, Jiao F, Li YH, Kallenbach RL (2016) Anthropogenic disturbances are key to maintaining
+    the biodiversity of grasslands. Sci Rep 6:1–8

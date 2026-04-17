@@ -1,0 +1,9 @@
+{
+  "chunk_count": 45,
+  "extractor": "pdftotext",
+  "kind": "pdf",
+  "path": "/run/media/jpereiratrindade/labeco10T/labeco02/Revisao/Paul_etal_2020_OutlookonAg.pdf",
+  "sha256": "4438985914bbba90b670ccdb65c70002607db6bf4b30d985685c920381fdd009",
+  "text_size": 43685,
+  "used_ocr": false
+}

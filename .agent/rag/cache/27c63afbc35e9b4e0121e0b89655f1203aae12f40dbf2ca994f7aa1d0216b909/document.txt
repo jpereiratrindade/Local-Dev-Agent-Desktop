@@ -1,0 +1,593 @@
+See discussions, stats, and author profiles for this publication at: https://www.researchgate.net/publication/221346037
+
+
+
+Grassmann Discriminant Analysis: a Unifying View on Subspace-Based Learning
+
+Conference Paper · July 2008
+DOI: 10.1145/1390156.1390204 · Source: DBLP
+
+
+
+
+CITATIONS                                                                                                 READS
+645                                                                                                       826
+
+
+2 authors, including:
+
+            Daniel D. Lee
+            University of Pennsylvania
+            239 PUBLICATIONS 33,859 CITATIONS
+
+                SEE PROFILE
+
+
+
+
+ All content following this page was uploaded by Daniel D. Lee on 21 May 2014.
+
+ The user has requested enhancement of the downloaded file.
+                         Grassmann Discriminant Analysis:
+                    a Unifying View on Subspace-Based Learning
+
+
+Jihun Hamm                                                                                jhham@seas.upenn.edu
+Daniel D. Lee                                                                             ddlee@seas.upenn.edu
+GRASP Laboratory, University of Pennsylvania, Philadelphia, PA 19104 USA
+
+
+
+                      Abstract                                the similarity between image vectors (Shakhnarovich
+                                                              et al., 2002; Kondor & Jebara, 2003; Zhou & Chel-
+    In this paper we propose a discriminant
+                                                              lappa, 2006).
+    learning framework for problems in which
+    data consist of linear subspaces instead of               In this paper, we specifically focus on those data that
+    vectors. By treating subspaces as basic el-               can be modeled as a collection of linear subspaces. In
+    ements, we can make learning algorithms                   the example above, let’s assume that the set of images
+    adapt naturally to the problems with lin-                 of a single person is well approximated by a low di-
+    ear invariant structures. We propose a uni-               mensional subspace (Turk & Pentland, 1991), and the
+    fying view on the subspace-based learning                 whole data is the collection of such subspaces. The
+    method by formulating the problems on the                 benefits of using subspaces are two-fold: 1) compar-
+    Grassmann manifold, which is the set of                   ing two subspaces is cheaper than comparing two sets
+    fixed-dimensional linear subspaces of a Eu-               directly when those sets are very large, and 2) it is
+    clidean space. Previous methods on the prob-              more robust to missing data since the subspace can
+    lem typically adopt an inconsistent strategy:             ‘fill-in’ the missing pictures. However the advantages
+    feature extraction is performed in the Eu-                come with the challenge of representing and handling
+    clidean space while non-Euclidean distances               the subspaces appropriately.
+    are used. In our approach, we treat each sub-
+                                                              We approach the subspace-based learning problems by
+    space as a point in the Grassmann space, and
+                                                              formulating the problems on the Grassmann manifold,
+    perform feature extraction and classification
+                                                              the set of fixed-dimensional linear subspaces of a Eu-
+    in the same space. We show feasibility of
+                                                              clidean space. With this unifying framework we can
+    the approach by using the Grassmann kernel
+                                                              make analytic comparisons of the various distances of
+    functions such as the Projection kernel and
+                                                              subspaces. In particular, we single out those distances
+    the Binet-Cauchy kernel. Experiments with
+                                                              that are induced from the Grassmann kernels, which
+    real image databases show that the proposed
+                                                              are positive definite kernel functions on the Grassmann
+    method performs well compared with state-
+                                                              space. The Grassmann kernels allow us to use the
+    of-the-art algorithms.
+                                                              usual kernel-based algorithms on this unconventional
+                                                              space and to avoid ad hoc approaches to the problem.
+
+1. Introduction                                               We demonstrate the proposed framework by using the
+                                                              Projection metric and the Binet-Cauchy metric and by
+We often encounter learning problems in which the ba-         applying kernel Linear Discriminant Analysis to clas-
+sic elements of the data are sets of vectors instead of       sification problems with real image databases.
+vectors. Suppose we want to recognize a person from
+multiple pictures of the individual, taken from differ-       1.1. Contributions of the Paper
+ent angles, under different illumination or at different
+places. When comparing such sets of image vectors, we         Although the Projection metric and the Binet-Cauchy
+are free to define the similarity between sets based on       metric were previously used (Chang et al., 2006; Wolf
+                                                              & Shashua, 2003), their potential for subspace-based
+Appearing in Proceedings of the 25 th International Confer-   learning has not been fully explored. In this work, we
+ence on Machine Learning, Helsinki, Finland, 2008. Copy-      provide an analytic exposition of the two metrics as
+right 2008 by the author(s)/owner(s).                         examples of the Grassmann kernels, and contrast the
+                                                   Grassmann Discriminant Analysis
+
+
+                 RD                                                                     G(m, D )
+                        span( Yi )
+                                                span( Yj )                                           Yj
+                            u1                                                     Yi
+                                                                                              θ 2
+                                            v1
+
+                                 θ1 , ..., θm
+
+
+
+
+Figure 1. Principal angles and Grassmann distances. Let span(Yi ) and span(Yj ) be two subspaces in the Euclidean space
+RD on the left. The distance between two subspaces span(Yi ) and span(Yj ) can be measured by the principal angles
+θ = [θ1 , ... , θm ]0 using the usual innerproduct of vectors. In the Grassmann manifold viewpoint, the subspaces span(Yi )
+and span(Yj ) are considered as two points on the manifold G(m, D), whose Riemannian distance is related to the principal
+angles by d(Yi , Yj ) = kθk2 . Various distances can be defined based on the principal angles.
+
+
+two metrics with other metrics used in the literature.              represented by an orthonormal matrix Y of size D by
+                                                                    m such that Y 0 Y = Im , where Im is the m by m iden-
+Several subspace-based classification methods have
+                                                                    tity matrix. For example, Y can be the m basis vectors
+been previously proposed (Yamaguchi et al., 1998;
+                                                                    of a set of pictures in RD . However, the matrix rep-
+Sakano, 2000; Fukui & Yamaguchi, 2003; Kim et al.,
+                                                                    resentation of a point in G(m, D) is not unique: two
+2007). However, these methods adopt an inconsistent
+                                                                    matrices Y1 and Y2 are considered the same if and only
+strategy: feature extraction is performed in the Eu-
+                                                                    if span(Y1 ) = span(Y2 ), where span(Y ) denotes the
+clidean space when non-Euclidean distances are used.
+                                                                    subspace spanned by the column vectors of Y . Equiva-
+This inconsistency can result in complications and
+                                                                    lently, span(Y1 ) = span(Y2 ) if and only if Y1 R1 = Y2 R2
+weak guarantees. In our approach, the feature ex-
+                                                                    for some R1 , R2 ∈ O(m). With this understanding, we
+traction and the distance measurement are integrated
+                                                                    will often use the notation Y when we actually mean
+around the Grassmann kernel, resulting in a simpler
+                                                                    its equivalence class span(Y ), and use Y1 = Y2 when
+and better-understood formulation.
+                                                                    we mean span(Y1 ) = span(Y2 ), for simplicity.
+The rest of the paper is organized as follows. In Sec. 2
+                                                                    Formally, the Riemannian distance between two sub-
+and 3 we introduce the Grassmann manifolds and de-
+                                                                    spaces is the length of the shortest geodesic connecting
+rive various distances on the space. In Sec. 4 we
+                                                                    the two points on the Grassmann manifold. However,
+present a kernel view of the problem and emphasize the
+                                                                    there is a more intuitive and computationally efficient
+advantages of using positive definite metrics. In Sec. 5
+                                                                    way of defining the distances using the principal angles
+we propose the Grassmann Discriminant Analysis and
+                                                                    (Golub & Loan, 1996).
+compare it with other subspace-based discrimination
+methods. In Sec. 6 we test the proposed algorithm for               Definition 2 Let Y1 and Y2 be two orthonormal
+face recognition and object categorization tasks. We                matrices of size D by m.           The principal an-
+conclude in Sec. 7 with a discussion.                               gles 0 ≤ θ1 ≤ · · · ≤ θm ≤ π/2 between two subspaces
+                                                                    span(Y1 ) and span(Y2 ), are defined recursively by
+2. Grassmann Manifold and Principal
+                                                                     cos θk =       max           max       uk 0 vk ,   subject to
+   Angles                                                                       uk ∈span(Y1 ) vk ∈span(Y2 )
+In this section we briefly review the Grassmann man-                                    uk 0 uk = 1, vk 0 vk = 1,
+ifold and the principal angles.
+                                                                           uk 0 ui = 0, vk 0 vi = 0, (i = 1, ..., k − 1).
+Definition 1 The Grassmann manifold G(m, D) is
+the set of m-dimensional linear subspaces of the RD .               In other words, the first principal angle θ1 is the small-
+                                                                    est angle between all pairs of unit vectors in the first
+The G(m, D) is a m(D − m)-dimensional compact Rie-                  and the second subspaces. The rest of the principal
+mannian manifold.1 An element of G(m, D) can be
+                                                                    O(m) is the group of m by m orthonormal matrices. We
+   1
+    G(m, D) can be derived as a quotient space of orthog-           refer the readers to (Wong, 1967; Absil et al., 2004) for
+onal groups G(m, D) = O(D)/O(m) × O(D − m), where                   details on the Riemannian geometry of the space.
+                                                  Grassmann Discriminant Analysis
+
+angles are similarly defined. It is known (Wong, 1967;                              The Projection metric is the 2-norm of the sine
+Edelman et al., 1999) that the principal angles are
+                                                  P re-                             of principal angles (Edelman et al., 1999; Wang
+lated to the geodesic distance by d2G (Y1 , Y2 ) = i θi2                            et al., 2006).
+(refer to Fig. 1.)
+                                                                                  2. Binet-Cauchy metric
+The principal angles can be computed from the Singu-                                                                                !1/2
+lar Value Decomposition (SVD) of Y10 Y2 ,                                                                             Y
+                                                                                                                              2
+                                                                                            dBC (Y1 , Y2 ) =   1−         cos θi           .       (3)
+                    Y10 Y2 = U (cos Θ)V 0 ,                      (1)                                                  i
+
+where U = [u1 ... um ], V = [v1 ... vm ], and cos Θ                                 The Binet-Cauchy metric is defined with the
+is the diagonal matrix cos Θ = diag(cos θ1 ... cos θm ).                            product of canonical correlations (Wolf &
+The cosines of the principal angles cos θ1 , ... , cos θm                           Shashua, 2003; Vishwanathan & Smola, 2004).
+are also known as canonical correlations.
+                                                                          As the names hint, these two distances are in fact valid
+Although the definition can be extended to the cases                      metrics satisfying Def. 3. The proofs are deferred until
+where Y1 and Y2 have different number of columns,                         Sec. 4.
+we will assume Y1 and Y2 have the same size D by m
+throughout this paper. Also, we will occasionally use
+                                                                          3.2. Other Distances in the Literature
+G instead of G(m, D) for simplicity.
+                                                                          We describe a few other distances used in the liter-
+3. Distances for Subspaces                                                ature. The principal angles are the keys that relate
+                                                                          these distances.
+In this paper we use the term distance as any assign-
+ment of nonnegative values for each pair of points in                             1. Max Correlation
+a space X . A valid metric is, however, a distance that                                                                   1/2
+satisfies the additional axioms:                                                       dMax (Y1 , Y2 ) = 1 − cos2 θ1              = sin θ1 .       (4)
+
+Definition 3 A real-valued function d : X × X → R                                   The max correlation is a distance based on only
+is called a metric if                                                               the largest canonical correlation cos θ1 (or the
+                                                                                    smallest principal angle θ1 ). This max correla-
+ 1. d(x1 , x2 ) ≥ 0,                                                                tion was used in previous works (Yamaguchi et al.,
+                                                                                    1998; Sakano, 2000; Fukui & Yamaguchi, 2003).
+ 2. d(x1 , x2 ) = 0 if and only if x1 = x2 ,
+                                                                                  2. Min Correlation
+ 3. d(x1 , x2 ) = d(x2 , x1 ),                                                                                            1/2
+                                                                                       dMin (Y1 , Y2 ) = 1 − cos2 θm              = sin θm .       (5)
+ 4. d(x1 , x2 ) + d(x2 , x3 ) ≤ d(x1 , x3 ),
+                                                                                    The min correlation is defined similarly to the
+for all x1 , x2 , x3 ∈ X .                                                          max correlation. However, the min correlation
+                                                                                    is more closely related to the Projection metric:
+A distance (or a metric) between subspaces d(Y1 , Y2 )                              we can rewrite the Projection metric as dP =
+has to be invariant under different representations                                 2−1/2 kY1 Y10 − Y2 Y20 kF and the min correlation
+d(Y1 , Y2 ) = d(Y1 R1 , Y2 R2 ), ∀R1 , R2 ∈ O(m).                                   as dMin = kY1 Y10 − Y2 Y20 k2 .
+In this section we introduce various distances for sub-                           3. Procrustes metric
+spaces derivable from the principal angles.                                                                                          !1/2
+                                                                                                                m
+                                                                                                                X
+                                                                                                                          2
+3.1. Projection Metric and Binet-Cauchy                                                   dCF (Y1 , Y2 ) = 2          sin (θi /2)              .   (6)
+                                                                                                                i=1
+     Metric
+                                                                                    The Procrustes metric is the minimum distance
+We first underline two main distances of this paper.
+                                                                                    between different representations of two subspaces
+                                                                                    span(Y1 ) and span(Y2 ): (Chikuse, 2003)
+  1. Projection metric
+                       m
+                                       !1/2             m
+                                                                       !1/2         dCF =       min        kY1 R1 −Y2 R2 kF = kY1 U −Y2 V kF ,
+                       X                                X                                   R1 ,R2 ∈O(m)
+                                 2                              2
+     dP (Y1 , Y2 ) =          sin θi          =    m−         cos θi          .
+                        i=1                             i=1                         where U and V are from (1). By definition,
+                                                                 (2)                the distance is invariant of the choice of the
+                                          Grassmann Discriminant Analysis
+
+     bases of span(Y1 ) and span(Y2 ). The Procrustes          set, and k : X × X → R be a symmetric real-valued
+     metric is also called chordal distance (Edelman           function k(xi , xj ) = k(xj , xi ) for all xi , xj ∈ X .
+     et al., 1999). We can similarly define the mini-
+     mum distance using other matrix norms such as             Definition 4 A real symmetric function is a (resp.
+     dC2 (Y1 , Y2 ) = kY1 U − Y2 V k2 = 2 sin(θm /2).          conditionally)
+                                                               P                      positive definite kernel function, if
+                                                                       c
+                                                                   i,j i jc  k(xi , xj ) ≥ 0, for all x1 , ..., xn (xi ∈ X ) and
+                                                               c1 , ..., cn (ci ∈ R) for anyPn ∈ N. (resp. for all
+3.3. Which Distance to Use?                                                                         n
+                                                               c1 , ..., cn (ci ∈ R) such that i=1 ci = 0.)
+The choice of the best distance for a classification task
+                                                               In this paper we are interested in the kernel functions
+depends on a few factors. The first factor is the dis-
+                                                               on the Grassmann space.
+tribution of data. Since the distances are defined with
+particular combinations of the principal angles, the
+                                                               Definition 5 A Grassmann kernel function is a pos-
+best distance depends highly on the probability dis-
+                                                               itive definite kernel function on G.
+tribution of the principal angles of the given data.
+For example, dMax uses the smallest principal angle θ1         In the following we show that the Projection metric
+only, and may be robust when the data are noisy. On            and the Binet-Cauchy are induced from the Grass-
+the other hand, when all subspaces are sharply concen-         mann kernels.
+trated on one point, dMax will be close to zero for most
+of the data. In this case, dMin may be more discrimi-
+                                                               4.1. Projection Metric
+native. The Projection metric dP , which uses all the
+principal angles, will show intermediate characteristics       The Projection metric can be understood by associ-
+between the two distances. Similar arguments can be            ating a point span(Y ) ∈ G with its projection matrix
+made for the Procrustes metrics dCF and dC2 , which            Y Y 0 by an embedding:
+use all angles and the largest angle only, respectively.
+                                                                   ΨP : G(m, D) → RD×D ,                    span(Y ) 7→ Y Y 0 .        (7)
+The second criterion for choosing the distance, is the
+degree of structure in the distance. Without any struc-
+ture a distance can be used only with a simple K-              The image ΨP (G(m, D)) is the set of rank-m or-
+Nearest Neighbor (K-NN) algorithm for classification.          thogonal projection matrices. This map is in fact
+When a distance have an extra structure such as tri-           an isometric embedding (Chikuse, 2003) and the
+angle inequality, for example, we can speed up the             projection metric is simply a Euclidean distance in
+nearest neighbor searches by estimating lower and up-          RD×D . The corresponding innerproduct of the space
+per limits of unknown distances (Faragó et al., 1993).        is tr [(Y1 Y10 )(Y2 Y20 )] = kY10 Y2 k2F , and therefore
+From this point of view, the max correlation is not a
+metric and may not be used with more sophisticated             Proposition 1 The Projection kernel
+algorithms. On the other hand, the Min Correlation
+and the Procrustes metrics are valid metrics2 .                                      kP (Y1 , Y2 ) = kY10 Y2 k2F                       (8)
+
+The most structured metrics are those which are in-            is a Grassmann kernel.
+duced from a positive definite kernel. Among the met-
+rics mentioned so far, only the Projection metric and          Proof The kernel is well-defined because kP (Y1 , Y2 ) =
+the Binet-Cauchy metric belong to this class. The              kP (Y1 R1 , Y2 R2 ) for any R1 , R2 ∈ O(m). The positive
+proof and the consequences of positive definiteness are        definiteness follows from the properties of the Frobe-
+the main topics of the next section.                           nius norm. For all Y1 , ..., Yn (Yi ∈ G) and c1 , ..., cn (ci ∈
+                                                               R) for any n ∈ N, we have
+4. Kernel Functions for Subspaces                                   X                              X
+                                                                          ci cj kYi0 Yj k2F    =            ci cj tr(Yi Yi0 Yj Yj0 )
+We have defined a valid metric on Grassmann mani-                    ij                            ij
+folds. The next question is whether we can define a                        X                         X
+kernel function compatible with the metric. For this               = tr(        ci Yi Yi0 )2   = k            ci Yi Yi0 k2F ≥ 0.
+purpose let’s recall a few definitions. Let X be any                        i                           i
+
+   2
+     The metric properties follow from the properties of
+matrix 2-norm and F-norm. To check the conditions in           We can generate a family of kernels from the Projec-
+Def. 3 for Procrustes we use the equality minR1 ,R2 kY1 R1 −   tion kernel. For example, the square-root kYi0 Yj kF is
+Y2 R2 k2,F = minR3 kY1 − Y2 R3 k2,F for R1 , R2 , R3 ∈ O(m).   also a positive definite kernel.
+                                                   Grassmann Discriminant Analysis
+
+4.2. Binet-Cauchy Metric                                                      the kernel-based algorithms for Hilbert spaces are at
+                                                                              our disposal. In contrast, other metrics in the previ-
+The Binet-Cauchy metric can also be understood from
+                                                                              ous sections are not associated with any Grassmann
+an embedding. Let s be a subset of {1, ..., D} with
+                                                                              kernel. To show this we can use the following result
+m elements s = {r1 , ..., rm }, and Y (s) be the m × m
+                                                                              (Schoenberg, 1938; Hein et al., 2005):
+matrix whose rows are the r1 , ... , rm -th rows of Y . If
+s1 , s2 , ..., sn are all such choices of the subset s ordered                Proposition 3 A metric d is induced from a positive
+lexicographically, then the Binet-Cauchy embedding is                         definite kernel if and only if
+defined as
+                                                                                 k̂(x1 , x2 ) = −d2 (x1 , x2 )/2,   x1 , x2 ∈ X   (11)
+ΨBC : G(m, D) → Rn , Y 7→ det Y (s1 ) , ..., det Y (sn ) ,
+                                                                              is conditionally positive definite.
+                                                (9)
+where n = D Cm is the number of choosing m rows out                           The proposition allows us to show a metric’s non-
+of D rows. The natural innerproduct in this case is                           positive definiteness by constructing an indefinite ker-
+Pn           (si )       (s )
+   r=1 det Y1      det Y2 i .                                                 nel matrix from (11) as a counterexample.
+
+Proposition 2 The Binet-Cauchy kernel                                         There have been efforts to use indefinite kernels for
+                                                                              learning (Ong et al., 2004; Haasdonk, 2005), and sev-
+          kBC (Y1 , Y2 ) = (det Y10 Y2 )2 = det Y10 Y2 Y20 Y1          (10)   eral heuristics have been proposed to make an in-
+                                                                              definite kernel matrix to a positive definite matrix
+is a Grassmann kernel.                                                        (Pekalska et al., 2002). However, we do not advocate
+                                                                              the use of the heuristics since they change the geome-
+Proof First, the kernel is well-defined because
+                                                                              try of the original data.
+kBC (Y1 , Y2 ) = kBC (Y1 R1 , Y2 R2 ) for any R1 , R2 ∈
+O(m). To show that kBC is positive definite it suffices
+to show that k(Y1 , Y2 ) = det Y10 Y2 is positive definite.                   5. Grassmann Discriminant Analysis
+From the Binet-Cauchy identity, we have
+                                                                              In this section we give an example of the Discriminant
+                                   (s)     (s)
+                         X
+            det Y10 Y2 =    det Y1 det Y2 .                                   Analysis on Grassmann space by using kernel LDA
+                                 s                                            with the Grassmann kernels.
+Therefore, for all Y1 , ..., Yn (Yi ∈ G) and c1 , ..., cn (ci ∈
+                                                                              5.1. Linear Discriminant Analysis
+R) for any n ∈ N, we have
+X                         X          X       (s)        (s)                   The Linear Discriminant Analysis (LDA) (Fukunaga,
+    ci cj det Yi0 Yj =         ci cj   det Yi det Yj                          1990), followed by a K-NN classifier, has been success-
+ ij                              ij         s
+                                                           !2                 fully used for classification.
+                                                     (s)                      Let {x1 , ..., xN } be the data vectors and {y1 , ..., yN }
+                                X X
+                           =                ci det Yi           ≥ 0.
+                                  s     i
+                                                                              be the class labels yi ∈ {1, ..., C}. Without loss of
+                                                                              generality we assume the data are ordered according
+We can also generate another family of kernels                                to the class labels: 1 = y1 ≤ y2 ≤ ... ≤ yN = C. Each
+from the Binet-Cauchy kernel. Note that although                              class c has Nc number of samples.
+det Y10 Y2 is a Grassmann kernel we prefer using                                               P
+                                                                              Let µc = 1/Nc {i|yi =c} xi be the mean of class c, and
+kBC (Y1 , Y2 ) = det(Y10 Y2 )2 , since it Q
+                                          is directly related                             P
+                               0    2                                         µ = 1/N i xi be the overall mean. LDA searches
+to principal angles    det(Y  1 2Y )  =     cos2 θi , whereas
+      0
+               Q                       3                                      for the discriminant direction w which maximizes the
+det Y1 Y2 6=      cos θi in general.        Another variant
+                                                                              Rayleigh quotient L(w) = w0 Sb w/w0 Sw w where Sb
+arcsin kBC (Y1 , Y2 ) is also a positive definite kernel4
+                                                        1/2                   and Sw are the between-class and within-class covari-
+and its induced metric d = (arccos(det Y10 Y2 ))            is                ance matrices respectively:
+a conditionally positive definite metric.
+                                                                                                   C
+                                                                                               1 X
+                                                                                    Sb   =           Nc (µc − µ)(µc − µ)0
+4.3. Indefinite Kernels from Other Metrics                                                     N c=1
+Since the Projection metric and the Binet-Cauchy                                                  C
+                                                                                               1 X X
+metric are derived from positive definite kernels, all                              Sw   =           (xi − µc )(xi − µc )0
+                                                                                               N c=1
+                                                                                                       {i|yi =c}
+      det Y10 Y2 can be negative whereas cos θi , the product
+      3                                 Q
+of singular values, is nonnegative by definition.                             The optimal w is obtained from the largest eigenvec-
+    4                                                                                 −1             −1
+      Theorem 4.18 and 4.19 (Schölkopf & Smola, 2001).                       tor of Sw  Sb . Since Sw  Sb has rank C − 1, there are
+                                        Grassmann Discriminant Analysis
+
+C − 1-number of local optima W = {w1 , ..., wC−1 }.         of computation and storage resources when D is large.
+By projecting data onto the space spanned by W , we
+achieve dimensionality reduction and feature extrac-        5.3. Other Subspace-Based Algorithms
+tion of data onto the most discriminant subspace.
+                                                            5.3.1. Mutual Subspace Method (MSM)
+5.2. Kernel LDA with Grassmann Kernels                      The original MSM (Yamaguchi et al., 1998) performs
+                                                            simple 1-NN classification with dMax with no feature
+Kernel LDA can be formulated by using the kernel
+                                                            extraction. The method can be extended to any dis-
+trick as follows. Let φ : G → H be the feature map,
+                                                            tance described in the paper. There are attempts to
+and Φ = [φ1 ...φN ] be the feature matrix of the train-
+                                                            use kernels for MSM (Sakano, 2000). However, the
+ing points. Assuming w is a linear combination of the
+                                                            kernel is used only to represent data in the original
+those feature vectors, w = Φα, we can rewrite the
+                                                            space, and the algorithm is still a 1-NN classification.
+Rayleigh quotient in terms of α as
+
+           α0 Φ0 SB Φα       α0 K(V − 1N 10N /N )Kα         5.3.2. Constrained MSM
+ L(α) =                 =                              ,
+           α0 Φ0 SW Φα     α0 (K(IN − V )K + σ 2 IN )α      Constrained MSM (Fukui & Yamaguchi, 2003) is a
+                                                     (12)   technique that applies dimensionality reduction to
+where K is the kernel matrix, 1N is a uniform vector        bases Pof the subspaces in the original space. Let
+[1 ... 1]0 of length N , V is a block-diagonal matrix       G = i Yi Yi0 be the sum of the projection matrices
+whose c-th block is the uniform matrix 1Nc 10Nc /Nc ,       and {v1 , ..., vD } be the eigenvectors corresponding to
+and σ 2 IN is a regularizer for making the computation      the eigenvalues {λ1 ≤ ... ≤ λD } of G. The authors
+stable. Similarly to LDA, the set of optimal α’s are        claim that the first few eigenvectors v1 , ..., vd of G are
+computed from the eigenvectors.                             more discriminative than the later eigenvectors, and
+The procedures for using kernel LDA with the Grass-         they suggest projecting the basis vectors of each sub-
+mann kernels are summarized below:                          space Y1 onto the span(v1 , ..., vl ), followed by normal-
+                                                            ization and orthonormalization. However these proce-
+Assume the D by m orthonormal bases {Yi } are               dure lack justifications, as well as a clear criterion for
+already computed from the SVD of sets in the data.          choosing the dimension d, on which the result crucially
+                                                            depends from our experience.
+Training:
+                                                            5.3.3. Discriminant Analysis of Canonical
+  1. Compute the matrix [Ktrain ]ij = kP (Yi , Yj ) or             Correlations (DCC)
+     kBC (Yi , Yj ) for all Yi , Yj in the training set.
+                                                            DCC (Kim et al., 2007) can be understood as a non-
+  2. Solve maxα L(α) by eigen-decomposition.                parametric version of linear discrimination analysis us-
+                                                            ing the Procrustes metric (6). The algorithm finds the
+  3. Compute the (C − 1)-dimensional coefficients           discriminating direction w which maximize the ratio
+     Ftrain = α0 Ktrain .                                   L(w) = w0 SB w/w0 Sw w, where Sb and Sw are the
+                                                            nonparametric between-class and within-class ‘covari-
+Testing:
+                                                            ance’ matrices:
+  1. Compute the matrix [Ktest ]ij = kP (Yi , Yj ) or                     XX
+     kBC (Yi , Yj ) for all Yi in training set and Yj in          Sb =             (Yi U − Yj V )(Yi U − Yj V )0
+                                                                            i   j∈Bi
+     the test set.                                                         X X
+                                                                 Sw    =               (Yi U − Yj V )(Yi U − Yj V )0 ,
+  2. Compute the (C − 1)-dim coefficients Ftest =
+                                                                            i   j∈Wi
+     α0 Ktest .
+                                                            where U and V are from (1). Recall that tr(Yi U −
+  3. Perform 1-NN classification from the Eu-
+                                                            Yj V )(Yi U − Yj V )0 = kYi U − Yj V k2F is the squared
+     clidean distance between Ftrain and Ftest .
+                                                            Procrustes metric. However, unlike our method, Sb
+Another way of applying LDA to subspaces is to use          and Sw do not admit a geometric interpretation as
+the Projection embedding ΨP (7) or the Binet-Cauchy         true covariance matrices, and cannot be kernelized ei-
+embedding ΨBC (9) directly. A subspace is repre-            ther. A main disadvantage of the DCC is that the
+sented by a D by D matrix in the former, or by a            algorithm iterates the two stages of 1) maximizing the
+vector of length n = D Cm in the latter. However, us-       ratio L(w) and of 2) computing Sb and Sw , which
+ing these embeddings to compute Sb or Sw is a waste         results in computational overheads and more parame-
+                                        Grassmann Discriminant Analysis
+
+ters to be determined. This reflects the complication        tors from the data already have enough information
+of treating the problem in a Euclidean space with a          and the smaller eigenvectors are spurious for discrim-
+non-Euclidean distance.                                      inating the subjects.
+
+6. Experiments                                               6.3. Testing Pose-Invariance with ETH-80
+                                                                  Database
+In this section we test the Grassmann Discriminant
+Analysis for 1) a face recognition task and 2) an object     The ETH-80 (Leibe & Schiele, 2003) database con-
+categorization task with real image databases.               sists of pictures of 8 object categories (‘apple’, ‘pear’,
+                                                             ‘tomato’, ‘cow’, ‘dog’, ‘horse’, ‘cup’, ‘car’). Each cat-
+                                                             egory has 10 objects that belong to the category, and
+6.1. Algorithms
+                                                             each object is recorded under 41 different poses. Im-
+We use the following six methods for feature extraction      ages were resized to 32 × 32 pixels (D = 1024) and
+together with an 1-NN classifier.                            normalized to have the same variance. For each cate-
+                                                             gory and each object, we model the pose variations by
+1) GDA1 (with Projection kernel), 2) GDA2 (with
+                                                             a subspace of the size m = 1, ..., 5, spanned by the 1
+Binet-Cauchy kernel), 3) Min dist , 4) MSM, 5) cMSM,
+                                                             to 5 largest eigenvectors from SVD. We evaluate the
+and 6) DCC.
+                                                             classification rate of the categories with ten-fold cross
+For GDA1 and GDA2, the optimal values of σ                   validation, holding out one object instance of each cat-
+are found by scanning through a range of val-                egory from the training set and using it for test.
+ues. The results do not seem to vary much as
+                                                             The recognition rates are also summarized in Fig. 2.
+long as σ is small enough.               The Min dist is
+                                                             The GDA1 also outperforms the other methods most
+a simple pairwise distance which is not subspace-
+                                                             of the time, but the cMSM performs better than GDA2
+based. If Yi and Yj are two sets of basis vectors:
+                                                             as m increases. The rates seem to peak around m =
+Yi = {yi1 , ..., yimi } and Yj = {yj1 , ..., yjmj }, then
+                                                             4 and then decrease as m increases. This results is
+dMindist (Yi , Yj ) = mink,l kyik − yjl k2 . For cMSM and
+                                                             consistent with the observation that the eigenvalues
+DCC, the optimal dimension l is found by exhaus-
+                                                             from this database decrease more gradually than the
+tive searching. For DCC, we have used two nearest-
+                                                             eigenvalues from the Yale face database.
+neighbors for Bi and Wi in Sec. 5.3.3. Since the Sw
+and Sb are likely to be rank deficient, we first reduced
+the dimension of the data to N − C using PCA as              7. Conclusion
+recommended. Each optimization is iterated 5 times.
+                                                             In this paper we have proposed a Grassmann frame-
+                                                             work for problem in which data consist of subspaces.
+6.2. Testing Illumination-Invariance with Yale               By using the Projection metric and the Binet-Cauchy
+     Face Database                                           metric, which are derived from the Grassmann ker-
+The Yale face database and the Extended Yale face            nels, we were able to apply kernel methods such as
+database (Georghiades et al., 2001) together consist of      kernel LDA to subspace data. In addition to having
+pictures of 38 subjects with 9 different poses and 45 dif-   theoretically sound grounds, the proposed method also
+ferent lighting conditions. Face regions were cropped        outperformed state-of-the-art methods in two experi-
+from the original pictures, resized to 24 × 21 pixels        ments with real data. As a future work, we are pur-
+(D = 504), and normalized to have the same variance.         suing a better understanding of probabilistic distribu-
+For each subject and each pose, we model the illumi-         tions on the Grassmann manifold.
+nation variations by a subspace of the size m = 1, ..., 5,
+spanned by the 1 to 5 largest eigenvectors from SVD.         References
+We evaluate the recognition rate of subjects with nine-
+                                                             Absil, P., Mahony, R., & Sepulchre, R. (2004). Riemannian
+fold cross validation, holding out one pose of all sub-        geometry of Grassmann manifolds with a view on algo-
+jects from the training set and using it for test.             rithmic computation. Acta Appl. Math., 80, 199–220.
+The recognition rates are shown in Fig. 2. The GDA1          Chang, J.-M., Beveridge, J. R., Draper, B. A., Kirby, M.,
+outperforms the other methods consistently. The                Kley, H., & Peterson, C. (2006). Illumination face spaces
+GDA2 also performs well for small m, but performs              are idiosyncratic. IPCV (pp. 390–396).
+worse as m becomes large. The rates of the others            Chikuse, Y. (2003). Statistics on special manifolds, lecture
+also seem to decrease as m increases. An interpreta-           notes in statistics, vol. 174. New York: Springer.
+tion of the observation is that the first few eigenvec-
+                                                             Edelman, A., Arias, T. A., & Smith, S. T. (1999). The
+                                             Grassmann Discriminant Analysis
+
+
+
+
+   Figure 2. Recognition rates of subjects from Yale face database (Left), and classification rates of categories in ETH-80
+   database (Right). The bars represent the rates of six algorithms (GDA1, GDA2, Min Dist, MSM, cMSM, DCC) evaluated
+   for m = 1, ...., 5 where m is the number of basis vectors for subspaces. The GDA1 achieves the best rates consistently,
+   and the GDA2 also performs competitively for small m.
+
+
+        geometry of algorithms with orthogonality constraints.   Pekalska, E., Paclik, P., & Duin, R. P. W. (2002). A gener-
+        SIAM J. Matrix Anal. Appl., 20, 303–353.                   alized kernel approach to dissimilarity-based classifica-
+                                                                   tion. J. Mach. Learn. Res., 2, 175–211.
+   Faragó, A., Linder, T., & Lugosi, G. (1993). Fast nearest-
+     neighbor search in dissimilarity spaces. IEEE Trans.        Sakano, H.; Mukawa, N. (2000). Kernel mutual subspace
+     Pattern Anal. Mach. Intell., 15, 957–962.                     method for robust facial image recognition. Proc. of Int.
+                                                                   Conf. on Knowledge-Based Intell. Eng. Sys. and App.
+   Fukui, K., & Yamaguchi, O. (2003). Face recognition using       Tech. (pp. 245–248).
+     multi-viewpoint patterns for robot vision. Int. Symp. of
+     Robotics Res. (pp. 192–201).                                Schoenberg, I. J. (1938). Metric spaces and positive definite
+                                                                   functions. Trans. Amer. Math. Soc., 44, 522–536.
+   Fukunaga, K. (1990). Introduction to statistical pattern
+     recognition (2nd ed.). San Diego, CA, USA: Academic         Schölkopf, B., & Smola, A. J. (2001). Learning with ker-
+     Press Professional, Inc.                                      nels: Support vector machines, regularization, optimiza-
+                                                                   tion, and beyond. Cambridge, MA, USA: MIT Press.
+   Georghiades, A. S., Belhumeur, P. N., & Kriegman, D. J.
+     (2001). From few to many: Illumination cone models for      Shakhnarovich, G., John W. Fisher, I., & Darrell, T.
+     face recognition under variable lighting and pose. IEEE       (2002). Face recognition from long-term observations.
+     Trans. Pattern Anal. Mach. Intell., 23, 643–660.              Proc. of the 7th Euro. Conf. on Computer Vision (pp.
+                                                                   851–868). London, UK.
+   Golub, G. H., & Loan, C. F. V. (1996). Matrix compu-
+     tations (3rd ed.). Baltimore, MD, USA: Johns Hopkins        Turk, M., & Pentland, A. P. (1991). Eigenfaces for recog-
+     University Press.                                             nition. J. Cog. Neurosc., 3, 71–86.
+   Haasdonk, B. (2005). Feature space interpretation of svms     Vishwanathan, S., & Smola, A. J. (2004). Binet-cauchy
+     with indefinite kernels. IEEE Trans. Pattern Anal.            kernels. Proc. of Neural Info. Proc. Sys..
+     Mach. Intell., 27, 482–492.
+                                                                 Wang, L., Wang, X., & Feng, J. (2006). Subspace distance
+   Hein, M., Bousquet, O., & Schölkopf, B. (2005). Maximal       analysis with application to adaptive bayesian algorithm
+     margin classification for metric spaces. J. Comput. Syst.    for face recognition. Pattern Recogn., 39, 456–464.
+     Sci., 71, 333–359.
+                                                                 Wolf, L., & Shashua, A. (2003). Learning over sets using
+   Kim, T.-K., Kittler, J., & Cipolla, R. (2007). Discrimi-       kernel principal angles. J. Mach. Learn. Res., 4, 913–
+     native learning and recognition of image set classes us-     931.
+     ing canonical correlations. IEEE Trans. Pattern Anal.
+     Mach. Intell., 29, 1005–1018.                               Wong, Y.-C. (1967). Differential geometry of Grassmann
+                                                                  manifolds. Proc. of the Nat. Acad. of Sci., Vol. 57, 589–
+   Kondor, R. I., & Jebara, T. (2003). A kernel between sets      594.
+     of vectors. Proc. of the 20th Int. Conf. on Mach. Learn.
+     (pp. 361–368).                                              Yamaguchi, O., Fukui, K., & Maeda, K. (1998). Face
+                                                                   recognition using temporal image sequence. Proc. of the
+   Leibe, B., & Schiele, B. (2003). Analyzing appearance and       3rd. Int. Conf. on Face & Gesture Recognition (p. 318).
+     contour based methods for object categorization. CVPR,        Washington, DC, USA: IEEE Computer Society.
+     02, 409.
+                                                                 Zhou, S. K., & Chellappa, R. (2006). From sample similar-
+   Ong, C. S., Mary, X., Canu, S., & Smola, A. J. (2004).          ity to ensemble similarity: Probabilistic distance mea-
+     Learning with non-positive kernels. Proc. of 21st Int.        sures in reproducing kernel hilbert space. IEEE Trans.
+     Conf. on Mach. Learn. (p. 81). New York, NY, USA:             Pattern Anal. Mach. Intell., 28, 917–929.
+     ACM.
+
+
+
+
+View publication stats

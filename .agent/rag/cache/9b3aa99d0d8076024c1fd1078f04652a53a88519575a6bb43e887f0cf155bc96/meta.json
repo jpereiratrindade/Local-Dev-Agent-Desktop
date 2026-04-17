@@ -1,0 +1,9 @@
+{
+  "chunk_count": 66,
+  "extractor": "pdftotext",
+  "kind": "pdf",
+  "path": "/run/media/jpereiratrindade/labeco10T/labeco02/Revisao/Berkes-2003.pdf",
+  "sha256": "9b3aa99d0d8076024c1fd1078f04652a53a88519575a6bb43e887f0cf155bc96",
+  "text_size": 63925,
+  "used_ocr": false
+}

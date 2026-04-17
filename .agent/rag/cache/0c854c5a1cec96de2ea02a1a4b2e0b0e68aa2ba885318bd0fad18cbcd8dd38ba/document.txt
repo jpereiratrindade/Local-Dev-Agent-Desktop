@@ -1,0 +1,1139 @@
+Perspectivas Rurales. Nueva época, Año 12, N° 24, ISSN: 1409-3251
+
+
+
+        A agricultura familiar entre o setorial e o territorial?
+       Novos referenciais para as políticas de desenvolvimento
+                           rural no Brasil
+
+
+  The family farming between the sectorial and the territorial?
+  New referentials for the rural development policies in Brazil
+
+
+                                            Paulo André Niederle
+                                   Universidade Federal do Rio Grande do Sul
+                                             pauloniederle@gmail.com
+
+
+
+                                                       Resumo
+
+              O artigo discute a coexistência de diferentes referenciais de
+              desenvolvimento nas políticas para a agricultura familiar no Brasil.
+              Para tanto, propõe uma análise de dois programas, tomados aqui como
+              exemplares de duas vias de desenvolvimento rural concorrentes e
+              complementares. Inicialmente, analisa a trajetória do Programa Nacional
+              de Fortalecimento da Agricultura Familiar (PRONAF) e seu
+              enfoque predominantemente setorial e agrícola. Em seguida, centraliza
+              a atenção sobre o Programa de Apoio ao Desenvolvimento Sustentável
+              de Territórios Rurais (PRONAT) que, de outro modo, traz à tona um
+              referencial territorial centrado na redução das desigualdades e da
+              pobreza rural. Finalmente, o artigo discute brevemente as implicações
+              da coexistência destes referenciais para a criação de um sistema nacional
+              de desenvolvimento rural.
+
+              Palavras chave: agricultura                       familiar,   políticas   públicas,
+              desenvolvimento rural
+
+
+                                                       Abstract
+
+              The paper discusses the coexistence of different referentials in the
+              public policies for family farming in Brazil. For that, it proposes an
+              analysis of two governmental programs, taken here as examples of
+              both competing and complementary models of rural development.
+              Initially, the paper analyzes the trajectory of the Programa Nacional de
+
+
+
+Fecha de recepción: 2 de junio de 2014.
+Fecha de aprobación: 26 de junio de 2014.                  11
+                                                                                                          Paulo André NIEDERLE
+   A agricultura familiar entre o setorial e o territorial? Novos referenciais para as políticas de desenvolvimento rural no Brasil
+
+
+              Fortalecimento da Agricultura Familiar (PRONAF) and its predominantly
+              agricultural and sectorial referential. Subsequently, it focuses on the
+              Programa de Apoio ao Desenvolvimento Sustentável de Territórios
+              Rurais (PRONAT), which, on the other hand, brings up a territorial
+              reference centered in reducing inequality and rural poverty. Finally,
+              the paper discusses the implications of the coexistence of these
+              referentials for the creation of a national system of rural development.
+
+              Keywords: family agriculture, public policies, rural development
+
+
+
+
+Introdução
+
+
+A trajetória recente das políticas para a agricultura familiar revela rupturas e
+continuidades em face dos referenciais de desenvolvimento rural que, desde
+meados dos anos 1990, tornaram-se predominantes tanto no campo
+acadêmico quanto no meio político-institucional brasileiros. Agora, em 2014,
+no bojo das discussões em torno do Ano Internacional da Agricultura Familiar,
+essa trajetória tem sido objeto de novas reflexões analíticas e políticas1. Com
+efeito, inúmeros temas que povoaram os debates agrários nos últimos vinte
+anos estão sendo retomados e colocados à prova de novas elaborações teóricas,
+que emergem neste momento de comemoração e debate sobre o passado, o
+presente e o futuro da agricultura familiar e do mundo rural.
+
+Os debates em curso não apenas avaliam a magnitude das mudanças
+socioeconômicas que a agricultura familiar experimentou desde seu
+reconhecimento institucional pelo Estado, em meados dos anos 1990, mas,
+e de modo ainda mais radical, a própria pertinência da noção “agricultura
+familiar” para dar conta da diversidade de categorias sociais que habitam o
+meio rural de um país com expressiva heterogeneidade territorial. Ao longo
+desta última década uma das principais novidades no cenário agrário
+brasileiro foi a expansão das lutas por reconhecimento e direitos
+empreendidas por uma miríade de populações e comunidades tradicionais
+que, integrando o segmento da agricultura familiar, reivindicam, ao mesmo
+
+
+
+1        Ademais, neste ano contribui para isto a disputa eleitoral envolvendo a eleição presidencial,
+que opõe projetos distintos para a agricultura e o meio rural brasileiros
+
+
+                                                              12
+Perspectivas Rurales. Nueva época, Año 12, N° 24, ISSN: 1409-3251
+
+
+tempo, um olhar específico do Estado e da Sociedade em relação às suas
+especificidades socioculturais2.
+
+Na academia, este momento tem se mostrado propício ao surgimento de
+novas sínteses teóricas. De modo geral, predomina um entendimento acerca
+dos avanços que o meio rural experimentou em decorrência do reconhecimento
+da agricultura familiar, o que o legitimou a criação de políticas públicas que
+permitiram ao país reverter, ao menos parcialmente, o cenário de expulsão
+acelerada das famílias rurais, fruto do esgotamento do modelo de
+modernização conservadora da agricultura. Em outro sentido, contudo,
+renascem interpretações teóricas que, enfatizando as tendências mais
+globais do desenvolvimento agrícola (preeminência de um modelo que
+privilegia o agronegócio de exportação), questiona a capacidade de resiliência da
+pequena produção agrícola. Neste caso, assiste-se ao renascimento de uma
+convergência entre o referencial neoclássico da modernização e as teorias
+marxistas sobre o fim dos camponeses, que ressuscita um questionamento
+sobre a situação subordinada da pequena agricultura, fadada a manter-se na
+periferia das grandes transformações em curso no campo.
+
+As teses que sustentam essa leitura associam-se a uma tentativa de demonstrar
+os limites da pequena agricultura familiar, sobretudo no que tange à composição
+do montante da produção agropecuária nacional (Buainain et al., 2013).
+Associa-se a esse enfoque setorial e produtivista um questionamento sobre
+a “insistência” do Estado brasileiro em direcionar políticas (aparentemente)
+equivocadas para agricultores com baixa capacidade produtiva (Alves
+e Rocha, 2010). A partir de uma análise dos resultados produzidos pelas
+políticas agrícolas mais tradicionais, essas teses sustentam argumentos não
+tão associados às dificuldades do Estado em readequar sua ação às condições
+sociais dos segmentos mais empobrecidos, do que à incapacidade dos mesmos
+em se tornarem “verdadeiros agricultores”, co-responsáveis pelo dinamismo
+da agropecuária brasileira. A “vocação produtiva” da agricultura nacional
+estaria confinada a uma pequena parcela de agricultores capitalizados,
+restando aos demais somente o acesso a um conjunto de políticas sociais que
+
+
+
+2          À título de exemplo, um novo elemento desta discussão é o recrudescimento de conflitos
+agrários envolvendo grupos que estavam quase indistintamente abrigados pela noção guarda-chuva da
+“agricultura familiar”. Este é o caso das recentes disputas pela posse da terra entre comunidades indígenas/
+tradicionais e pequenos agricultores familiares, estes tendo colonizado terras que atualmente são
+novamente reconhecidas como patrimônio de suas comunidades originárias.
+
+
+                                                           13
+                                                                                                          Paulo André NIEDERLE
+   A agricultura familiar entre o setorial e o territorial? Novos referenciais para as políticas de desenvolvimento rural no Brasil
+
+
+os manteria fora das estatísticas de pobreza, mas não os permitiria progredir
+economicamente3.
+
+De outro modo, neste artigo analisamos alguns aspectos acerca das
+transformações que afetam a agricultura familiar e o meio rural brasileiro
+conjugando um olhar diferenciado sobre os parâmetros de “sucesso” e “fracasso”
+da intervenção do Estado. O objetivo não é contrapor as conclusões mais
+pessimistas acerca do futuro da agricultura familiar, mas, antes, trazer à tona
+alguns elementos que complexificam a análise das implicações da ação
+pública. Nosso argumento sugere que, para além do referencial setorial ainda
+predominante nas leituras predominantes entre acadêmicos e policy makers,
+a agricultura familiar, em virtude do tipo de conformação social que
+representa, deve necessariamente ser encarada pelo seu forte enraizamento
+territorial, de modo que, mesmo os efeitos das políticas com um viés
+fortemente setorial – como o crédito agrícola – somente serão apreendidos se
+tivermos condições de compreender os efeitos de transbordamento que elas
+produzem no território, como consequência do modo como os agricultores
+familiares apropriam-se das políticas públicas e readequam-nas às suas
+estratégias de reprodução social (Cavalcanti, Wanderley e Niederle, 2014).
+
+Para orientar esta análise, o artigo propõe uma distinção já recorrente em
+outros estudos entre dois tipos de referenciais de desenvolvimento rural:
+setorial e territorial. Por “referencial” estamos definindo um conjunto coerente
+de representações coletivas que os atores constroem para compreender e agir
+sobre o mundo real (Jobert e Muller, 1987). Esses referenciais atuam como
+guias para a ação, orientando os atores sociais na construção das políticas
+públicas (Grisa, 2010). Por sua vez, um referencial de política pública
+sugere a existência de uma forma de ver o mundo e conceber respostas para
+problemas públicos. Nestes termos, um “referencial setorial” é a expressão
+de um conjunto de representações sobre o papel estritamente agrícola que
+a agricultura familiar cumpre para o desenvolvimento, que é pautado pela
+sua função como produtora de alimentos, fibras e matérias primas, onde
+sobressai a imagem de estabelecimentos rurais tecnificados, capitalizados
+e produtivos. De outro modo, um “referencial territorial” acentua as diversas
+conexões de uma agricultura familiar multifuncional, integrada a um leque
+de segmentos sociais e atividades econômicas, onde os diferentes estilos de
+
+3         Para os adeptos dessa perspectiva, trata-se, fundamentalmente, de uma discussão acerca das
+possibilidades de “ganhar tempo” até que essas famílias mais empobrecidas sejam atraídas para as
+cidades em decorrência da expansão do mercado de trabalho urbano-industrial (Alves e Rocha, 2010).
+
+
+                                                              14
+Perspectivas Rurales. Nueva época, Año 12, N° 24, ISSN: 1409-3251
+
+
+agricultura familiar, inclusive aquelas unidades mais vulneráveis
+e marginalizadas, reencontram seu lugar em uma estratégia mais ampla de
+desenvolvimento sustentável.
+
+Para ser breve, sem perder a devida profundidade que o tema merece nos
+limites de um artigo, dentre um vasto leque de políticas direcionadas à
+agricultura familiar, o artigo focaliza apenas duas, hipoteticamente tomadas
+como expressão da coexistência de referenciais antagônicos. Inicialmente, a
+atenção volta-se para o Programa Nacional de Fortalecimento da Agricultura
+Familiar (PRONAF), principal política de crédito rural direcionada
+especificamente para os agricultores enquadrados nos parâmetros da Lei da
+Agricultura Familiar. O PRONAF é expressão de uma política pública que,
+apesar de diferenciada no que tange ao seu público, manteve um viés
+fortemente setorial, sendo criticado por inúmeros autores em virtude da
+predominância de um “caráter produtivista”. Em seguida, o artigo discute a
+emergência de um novo referencial a partir da criação do Programa de Apoio
+ao Desenvolvimento Sustentável de Territórios Rurais (PRONAT), o qual se
+constitui como uma experiência diferenciada de crédito para investimentos
+produtivos e serviços territorializados. O artigo encerra analisando os desafios
+atuais no que diz respeito ao diálogo entre os referenciais (e as políticas)
+setorial e territorial, focalizando prioritariamente as discussões em torno da
+construção de um Sistema Nacional de Desenvolvimento Rural
+Sustentável e Solidário.
+
+A constituição do PRONAF
+
+Instituído em 1995 pela Resolução n° 2.191 do Conselho Monetário Nacional
+(CMN), e regulamentado no ano seguinte pelo Decreto n° 1.946 da
+Presidência da República, a criação do Programa Nacional de Fortalecimento da
+Agricultura Familiar (PRONAF) constituiu uma resposta às reivindicações
+de organizações sociais rurais representativas de uma importante parcela de
+agricultores brasileiros que estavam alijados do acesso ao crédito rural
+oficial. Desde então, o programa tornou-se a face mais evidente de um
+poliedro de políticas de desenvolvimento rural voltadas especificamente
+à agricultura familiar.
+
+Em vista da inexistência prévia de políticas nacionais voltadas a este
+segmento social, o PRONAF constituiu uma das principais conquistas no
+processo de reconhecimento institucional do potencial socioeconômico
+
+
+                                                           15
+                                                                                                         Paulo André NIEDERLE
+  A agricultura familiar entre o setorial e o territorial? Novos referenciais para as políticas de desenvolvimento rural no Brasil
+
+
+(geração de empregos, produção de alimentos, contenção do êxodo rural,
+preservação do patrimônio, etc.) de um conjunto de unidades de produção
+que, outrora, estavam condenadas a sucumbir em face dos referenciais que
+imperavam na intelligentsia política e acadêmica brasileira. Segundo Mielits
+Neto (2011), “[...] a idéia-força que sustentou a criação do PRONAF na
+esfera governamental foi o reconhecimento da capacidade da agricultura
+familiar em absorver mão-de-obra, o que a transformou em opção privilegiada
+para combater parte dos problemas sociais urbanos provocados pelo
+desemprego rural”.
+
+O PRONAF foi formulado no interior do Ministério da Agricultura, do
+Abastecimento e da Reforma Agrária (MAARA). Em 1999, com a criação
+do Ministério do Desenvolvimento Agrário (MDA), o programa passou a
+ser responsabilidade da Secretaria da Agricultura Familiar (SAF) no interior
+do novo ministério. Desde então, a gestão do PRONAF é responsabilidade
+desta secretaria, mas sua implantação depende da aprovação das normas de
+financiamento pelo CMN. Essas normas são definidas tomando por base as
+regulamentações do sistema financeiro, as quais ajustam o programa à lógica
+do mercado creditício. Mas, o arranjo regulatório também é fortemente
+influenciado pelas deliberações do Conselho Nacional de Desenvolvimento
+Rural Sustentável (CONDRAF), fórum estabelecido em caráter consultivo
+que discute as demandas dos movimentos sociais e sindicais rurais e elabora
+sugestões para aprimoramento não apenas do crédito rural, mas do conjunto
+das políticas públicas voltadas para a agricultura familiar (Grisa, 2012).
+
+O CONDRAF foi constituído em 1999 com o objetivo de propor diretrizes
+para a formulação e a implementação de políticas públicas. No início do
+Governo Lula, em 2003, o Conselho presenciou uma reformulação
+institucional que envolveu desde a modificação da sua nomenclatura que
+passa a fazer referência ao Desenvolvimento Rural, à Reforma Agrária e
+à Agricultura Familiar, até as suas atribuições, a saber: subsidiar a
+formulação de políticas públicas com o objetivo de superar a pobreza
+e reduzir todos os tipos de desigualdade (sociais, regionais, de gênero,
+geração e etnia); estimular a participação e o controle social das políticas
+públicas; promover a geração e a apropriação de conhecimentos científicos;
+estimular a diversificação das atividades econômicas nos territórios rurais;
+promover parcerias entre organismos governamentais e não governamentais;
+e propor atualizações da legislação (Mattei, 2010, p. 99).
+
+
+
+                                                             16
+Perspectivas Rurales. Nueva época, Año 12, N° 24, ISSN: 1409-3251
+
+
+Nota-se, portanto, que a institucionalidade produzida pelo CONDRAF
+converge com um enfoque territorial de desenvolvimento, focado
+principalmente no estimulo à participação social e no combate à pobreza e à
+desigualdade. Conforme o Decreto nº 4.854/2003 que dispõe sobre a composição,
+estruturação, competências e funcionamento do CONDRAF, compete ao
+Conselho, dentre outras coisas, “considerar o território rural como foco do
+planejamento e da gestão de programas de desenvolvimento rural
+sustentável, a partir das inter-relações, articulações e complementaridades
+entre os espaços rurais e urbanos” (Artigo 2º, § II). Ademais, também faz
+parte do leque de ações do CONDRAF, “propor a adequação de políticas
+públicas federais às demandas da sociedade e às necessidades do desenvolvimento
+sustentável dos territórios rurais, incorporando experiências, considerando
+a necessidade da articulação de uma economia territorial e a importância de
+suas externalidades [...]” (Artigo 2º, § IV).
+
+Obviamente, as diretrizes de ação do CONDRAF não se refletem diretamente
+na estrutura de cada política pública isoladamente. Assim, enquanto algumas
+atendem a um referencial territorial de desenvolvimento (com foco prioritário
+nos pobres rurais), outras possuem um viés setorial (e são mais facilmente
+acessadas por agricultores familiares dos estratos superiores de renda). No
+caso do PRONAF, recente relatório derivado de uma pesquisa do IPEA/
+PGDR/UFRGS sugere precisamente a dificuldade do programa para chegar
+até os agricultores “periféricos”4, isto é, aqueles que compõem um universo
+de unidades de produção vulneráveis socioeconomicamente (Aquino et al., 2014)
+
+Inicialmente as ações do PRONAF estiveram concentradas em quatros grandes
+linhas: financiamento da produção; financiamento de infraestruturas e de
+serviços básicos municipais; capacitação e profissionalização; e negociação
+com os órgãos setoriais para “promover o ajustamento de políticas públicas
+à realidade dos agricultores familiares” (Brasil, MAPA, 1996, p.14). Neste
+sentido, como nota Grisa (2012), para além de uma política estrita de crédito
+rural, o Programa nasceu com um escopo mais amplo, abarcando ainda
+recursos voltados à promoção de infraestruturas e serviços básicos, bem
+como capacitação e profissionalização de gestores das políticas. É a partir de
+
+
+4         O termo advém de uma classificação estabelecida pelo Relatório FAO/INCRA (1996), no
+qual um conjunto de estudiosos propõe classificar a agricultura familiar em três grupos: consolidados,
+em transição e periféricos. Ao mesmo tempo, o Relatório sugere que o foco das políticas governamentais
+deveria ser a categoria intermediária visando torná-la consolidada, enquanto que para os periféricos
+deveriam ser elaboradas políticas agrárias e sociais (Grisa, 2012).
+
+
+                                                           17
+                                                                                                         Paulo André NIEDERLE
+  A agricultura familiar entre o setorial e o territorial? Novos referenciais para as políticas de desenvolvimento rural no Brasil
+
+
+2003 que ocorre uma reformulação que leva ao desmembramento de algumas
+políticas (em particular a extinção do PRONAF Infraestrutura e Serviços e a
+criação do PRONAT), tornando-o basicamente uma política de crédito rural
+de custeio e investimento (Cazzela, Mattei e Delgado, 2002).
+
+Antes disso, contudo, algumas mudanças importantes já haviam sido
+processadas. Em 1997, como decorrência das mobilizações realizadas no ano
+anterior no Rio Grande do Sul, em decorrência da estiagem que assolava o
+estado (Picolotto, 2011), lideradas pelo recém constituído Movimento dos
+Pequenos Agricultores (MPA), foi criado o PRONAF especial de custeio
+(“Pronafinho”), direcionado aos agricultores menos capitalizados. Um ano
+depois, em 1998, é criada uma linha especial para incentivo ao beneficia
+mento e agregação de valor aos produtos agropecuários. O PRONAF
+Agroindústria apresenta-se como uma nova opção para um problema crônico
+dos agricultores familiares que se viam impossibilitados de processar
+e comercializar seus produtos.
+
+Outra mudança particularmente importante para a operacionalização do
+PRONAF ocorreu com a publicação das Resoluções do CMN nº 2.629 de
+1999, nº 3.097 de 2003 e nº 3.206 de 2004, a partir das quais o programa
+passa a classificar os agricultores em grupos de acordo com a renda, condição
+socioeconômica e se beneficiários da reforma agrária (A, B, A/C, C, D e
+E). A partir dessa classificação, os agricultores passaram a dispor de valores
+financiados, taxas de juros, prazos e condições de pagamento diferenciadas.
+Para Delgado, Leite e Wesz Jr. (2010), essa classificação reconhecia
+a diversidade no interior da agricultura familiar, tornando a política mais
+adaptada a este público. A criação dos grupos D e E, a partir da resolução de
+2004, também evidenciou uma preocupação dos gestores em atender
+agricultores familiares que se encontravam em estágios de capitalização
+superiores, favorecendo a participação de agricultores familiares
+“consolidados”, os quais efetivamente passaram a acessar uma parcela
+crescente e predominante dos recursos do Programa.
+
+Neste mesmo período também é criada uma série de novas linhas de
+financiamento: PRONAF Floresta (2002), PRONAF Alimentos (2003),
+PRONAF Agroecologia (2003), PRONAF Turismo Rural (2003), PRONAF
+Mulher (2003), PRONAF Jovem Rural (2003), PRONAF Semi-Árido (2003)
+e PRONAF Máquinas e Equipamentos (2003). Trata-se igualmente de uma
+tentativa de adequar o programa à diversidade social e produtiva da
+
+
+                                                             18
+Perspectivas Rurales. Nueva época, Año 12, N° 24, ISSN: 1409-3251
+
+
+agricultura familiar, incentivando determinados grupos sociais que
+encontravam dificuldades para acessar o crédito, se relacionar com os bancos
+e exercer suas próprias escolhas produtivas no seio da unidade familiar de
+produção (mulheres e jovens); de regiões (semi-árido) que necessitavam de
+condições especiais de crédito em face da presença de condições
+socioambientais particulares; ou de atividades econômicas específicas
+(turismo, florestas, agroecologia) que se visavam incentivar novas fontes de
+renda ou sistemas produtivos sustentáveis.
+
+Em 2006, a promulgação da Lei da Agricultura Familiar consolida uma
+definição de agricultura familiar muito próxima àquela que o PRONAF
+já vinha adotando como parâmetro para a concessão do crédito.
+
+                  Para os efeitos desta Lei, considera-se agricultor familiar e
+                  empreendedor familiar rural aquele que pratica atividades no
+                  meio rural, atendendo,          simultaneamente, aos seguintes
+                  requisitos: I - não detenha, a qualquer título, área maior do que 4
+                  (quatro) módulos fiscais; II - utilize predominantemente
+                  mão-de-obra da própria família nas atividades econômicas do
+                  seu estabelecimento ou empreendimento; III - tenha renda
+                  familiar predominantemente originada de atividades econômicas
+                  vinculadas ao próprio estabelecimento ou empreendimento;
+                  IV - dirija seu estabelecimento ou empreendimento com sua
+                  família” (Lei nº 11.326, de 24 de julho de 2006, Art. 3).
+
+Com efeito, a promulgação da lei não acarretou mudanças significativas na
+operacionalização do PRONAF e das políticas públicas a ele relacionadas.
+No entanto, ela foi fundamental para reconhecer institucionalmente esta
+categoria social. Assim, por um lado, os desdobramentos dessa regulamentação
+foram particularmente importantes para consolidar a participação da
+agricultura familiar em um conjunto de políticas públicas, seja aquelas onde
+ela compõe o público exclusivo (PAA, SEAF, PGPAF)5, seja aquelas onde
+ela passa a usufruir de uma condição especial para acesso a parcela dos
+recursos que lhe são exclusivamente destinados (PNAE, PGPM)6. Por outro
+lado, o estreito vínculo entre a regulamentação aprovada e as próprias regras
+em vigência para o PRONAF fizeram com que a lei reafirmasse um
+determinado referencial “setorial” de agricultura familiar (já manifesto no
+PRONAF), sem questionar a possibilidade de definições alternativas.
+5         Respectivamente, Programa de Aquisição de Alimentos, Seguro da Agricultura Familiar
+e Programa de Garantia de Preços da Agricultura Familiar.
+6         Respectivamente, Programa Nacional de Alimentação Escolar e Política de Garantia
+de Preços Mínimos e Comercialização.
+
+
+                                                           19
+                                                                                                         Paulo André NIEDERLE
+  A agricultura familiar entre o setorial e o territorial? Novos referenciais para as políticas de desenvolvimento rural no Brasil
+
+
+Entre 2007 e 2009 mais um conjunto importante de mudanças ocorreram no
+PRONAF. Por um lado, foram estabelecidas novas linhas de financiamento
+atendendo reivindicações específicas de apoio a sistemas sustentáveis
+(PRONAF Eco, 2007), modernização da base técnica (Mais Alimentos, 2008)
+e alteração da lógica do crédito, que reproduzia o modelo de especialização
+agrícola (PRONAF Sustentável, 2009). Por outro lado, em 2008, os grupos
+C, D e E foram reclassificados em uma única categoria genérica nomeada
+“agricultores familiares” (Categoria “V”), os quais podem acessar diferentes
+valores com taxas de juros anuais diferenciadas em decorrência do próprio
+montante de recursos financiado. Essa mudança decorre fundamentalmente
+das dificuldades operacionais e da enorme confusão no enquadramento dos
+agricultores, o que se mostrava particularmente problemático para as
+categorias C, D e E, cujas normas de acesso eram muito similares, variando
+fundamentalmente em função dos limites de renda, um critério de difícil
+aferição na agricultura e de ampla variação entre diferentes safras.
+
+Dentre as novas linhas criadas, aquelas que suscitaram maior interesse foram
+o PRONAF Sustentável (também chamado de “PRONAF Sistêmico”) e o
+PRONAF Mais Alimentos. Este último se tornou a linha de investimento
+do PRONAF, financiando a modernização da infraestrutura produtiva nos
+estabelecimentos e áreas comunitárias rurais. Por sua vez, o PRONAF
+Sustentável consistiu em uma tentativa de romper com a lógica setorializada
+que sempre predominou no crédito rural. Para tanto, propunha articular
+crédito, assistência técnica, conservação e recuperação ambiental
+e desenvolvimento dos estabelecimentos familiares a partir de projetos que
+integrassem sistemicamente diferentes atividades produtivas (nas demais
+linhas, o financiamento focaliza “o cultivo” e não “a unidade de produção
+como um todo integrado de forma sistêmica”).
+
+Para tanto, o PRONAF Sustentável articulava a assistência técnica ao crédito
+rural. Por meio de chamadas públicas de ATER contratavam-se grupos de
+técnicos para atuar em uma região específica. Estes deveriam realizar
+diagnósticos e coordenar planejamentos comunitários participativos com
+vistas a definir projetos mais adequados às condições produtivas, sociais,
+econômicas, culturais e ambientais dos estabelecimentos rurais. Contudo,
+face à complexidade dos projetos, falta de capacitação técnica dos
+extensionistas e dificuldade de adequação do próprio sistema de crédito, o
+PRONAF Sustentável beneficiou poucas unidades familiares e, via de regra,
+esteve associado a experiências bastante pontuais. Assim, os gestores
+
+
+                                                             20
+Perspectivas Rurales. Nueva época, Año 12, N° 24, ISSN: 1409-3251
+
+
+consideraram adequado não dar prosseguimento às ações desta linha tal qual
+inicialmente planejado. Nos últimos dois anos o PRONAF Sustentável não
+foi sequer referido nos Planos Safras da Agricultura Familiar (BRASIL,
+MDA, 2012; 2013). A alteração da lógica produtiva do crédito rural parece
+mais difícil de ser alterada do que inicialmente se supunha.
+
+Ao longo desta trajetória brevemente resumida acima, o PRONAF ainda
+revelou: (a) considerável ampliação dos recursos disponibilizados (R$ 24
+bilhões para a safra 2014/2015 face aos R$ 4,2 bilhões na safra 2002/2003);
+(b) redução substancial das taxas de juro (dos 16% a.a. em 1995, na sua
+criação, para, no máximo, 3,5% a.a. em 2014, sendo que várias linhas
+possuem taxas entre 1 e 2% a.a.); (c) aumento dos limites de financiamento
+por estabelecimento e grupos (de R$ 130 mil para R$ 150 mil por contrato,
+havendo ainda diferenciais no caso de determinadas atividades produtivas);
+(d) ampliação do limite da renda bruta dos agricultores para fins de
+enquadramento (de R$ 230 mil para R$ 360 mil anuais); e (e) expansão para
+todo o território nacional, cobrindo mais 5.454 municípios brasileiros
+(dentre um total de 5.570).
+
+Inúmeras análises sobre a trajetória do PRONAF têm apontado para alguns
+efeitos importantes da política de crédito diferenciado. Por um lado, cita se
+a contribuição do programa para a melhoria das condições de produção e
+de vida da população rural; para injeção de liquidez nas economias locais e
+para a modernização das estruturas produtivas nos estabelecimentos rurais.
+Por outro lado, dentre as críticas mais recorrentes cita-se: (a) a dificuldade
+em romper com algumas características que historicamente definiram
+a organização do crédito rural oficial, em particular o incentivo à especialização
+em cultivos comerciais de commodities agrícolas e, associado à isso,
+a concentração dos recursos em determinadas regiões (sul e sudeste) e grupos
+de produtores (familiares dos estratos mais capitalizados); (b) a fraca cobertura
+aos grupos A (assentados) e B (microcrédito) em termos de volume de recursos;
+(c) a dificuldade de execução das diferentes linhas de financiamento que
+foram criadas, mantendo-se a concentração dos recursos nas linhas mais
+tradicionais de custeio e investimento; (d) a dificuldade de integração dos
+projetos de crédito com a ação da extensão rural, aumentando o risco de
+fracasso dos projetos; (e) associado a isso, a elevação dos níveis de
+endividamento de alguns grupos de agricultores; (f) a exclusão de determinados
+segmentos mais empobrecidos do acesso ao crédito, em particular das
+comunidades tradicionais, seja em virtude da burocracia para o acesso, das
+
+
+                                                           21
+                                                                                                         Paulo André NIEDERLE
+  A agricultura familiar entre o setorial e o territorial? Novos referenciais para as políticas de desenvolvimento rural no Brasil
+
+
+exigências do programa (eg. regularização fundiária) ou da inadequação dos
+projetos ao perfil sociocultural e produtivo desses grupos. (Aquino
+e Schneider, 2011; Bittencourt, 2003; Guanziroli, 2007; Grisa, 2012).
+
+Para Magalhães e Abramovay (2006), dentre os impactos do PRONAF,
+“o mais importante, porém – que são os impactos que dele se pode esperar
+no combate durável à pobreza e na geração de renda que é sua pré-condição
+– ainda não foi alcançado” (p. 20). Esta conclusão dos autores coloca uma
+questão-chave: afinal, qual a capacidade do PRONAF em estabelecer-se
+como uma política de enfrentamento da pobreza rural e/ou favorecer a ação
+de outras políticas que atuam neste sentido? Para responder esta questão,
+cabe inicialmente sublinhar que este objetivo jamais constituiu uma prioridade da
+política de crédito rural, inclusive do PRONAF se considerarmos suas
+principais linhas de financiamento. Documento do próprio MAPA evidencia
+que, quando da criação do PRONAF, ainda no âmbito deste ministério,
+o mesmo não detinha este intento:
+
+                Seria ilusório imaginar que o PRONAF pudesse atingir o conjunto
+                daquilo que o Censo Agropecuário define como estabelecimentos
+                agropecuários, e que têm menos de quatro módulos fiscais. Em
+                muitas regiões do País, a maioria desses estabelecimentos não
+                reúne as condições mais elementares para se credenciar ao
+                recebimento do crédito rural em condições economicamente
+                sustentáveis. O crédito só pode ser destinado a agricultores que
+                tenham condições de obter, com a sua utilização, uma renda
+                capaz de garantir, ao menos, a manutenção da família e o
+                reembolso do empréstimo. O PRONAF crédito não é um
+                programa de assistência social, mas um conjunto de mecanismos
+                destinados a remover os obstáculos que impedem o acesso dos
+                agricultores familiares ao mercado. Ele supõe um mínimo de
+                condições produtivas, sem as quais os recursos por
+                ele mobilizados não poderiam ser potencializados.
+                (Brasil, MAPA, 1998, p.40).
+
+
+
+A análise apresentada por Grisa (2010) acerca do referencial do PRONAF
+enquanto política pública ratifica esta compreensão. A rigor, diversos estudos
+já sinalizaram para a reprodução de um referencial produtivista no PRONAF,
+alegando que o mesmo mantém a lógica do crédito tradicional, beneficiando
+agricultores familiares mais capitalizados, localizados sobretudo no Sul do
+Brasil e produzindo commodities agrícolas com elevada utilização de
+
+
+                                                             22
+Perspectivas Rurales. Nueva época, Año 12, N° 24, ISSN: 1409-3251
+
+
+insumos externos (Sabourin, 2009; Toledo, 2009; Mattei, 2006; Kageyama,
+2003). Mesmo a transferência do programa para o MDA não foi capaz de
+provocar alterações profundas nesse sentido. Isso se deve à vários fatores,
+incluindo o fato desse referencial ser predominante não apenas entre os
+gestores da política (seja nos ministérios especificamente voltados ao rural,
+seja nos órgãos que regulamentam o sistema financeiro), mas também dentro
+do próprio universo acadêmico e dos movimentos sociais e sindicais
+vinculados à agricultura familiar.
+
+Esta conclusão é válida para uma leitura do PRONAF enquanto política
+unificada, considerando o amplo predomínio dos recursos destinados aos
+projetos tradicionais de custeio e financiamento. Contudo, como também
+evidenciado por Grisa (2010; 2012), a proliferação das linhas do Programa,
+muitas das quais criadas em resposta às críticas que lhe foram dirigidas,
+revelam a emergência de referenciais alternativos de desenvolvimento no seu
+interior. Este é o caso, por exemplo, do PRONAF Agroecologia, Semiárido,
+Eco, Sustentável, Mulher e Agroindústria, os quais incentivam atividades,
+projetos e públicos com perfis distintos. Mas, até o momento, essas linhas
+têm recebido um aporte menos significativo de recursos e, o que é mais
+grave, sequer esses recursos são efetivamente acessados pelos agricultores,
+mesmo dentre aqueles que desenvolvem atividades com viés claramente
+adequado às condições diferenciadas oferecidas por essas modalidades. Isso
+se deve a inúmeros fatores que envolvem o desconhecimento dos agricultores
+em relação às possibilidades de financiamento; o despreparo dos agentes
+financeiros para operar as novas linhas; a incapacidade dos técnicos para
+elaborar projetos adequados às exigências de financiamento; a preferência
+dos técnicos e agentes financeiros em atuar com linhas tradicionais cujo
+funcionamento é de amplo conhecimento; a burocracia para comprovação
+das exigências e execução das ações.
+
+Finalmente, no que tange especificamente à questão do combate à desigualdade
+e à pobreza rural, cabe mencionar o papel do Microcrédito Rural, também
+chamado de “PRONAF B” em virtude desta linha dirigir-se especificamente
+para este grupo de agricultores familiares com menor renda. De acordo com
+as tabulações especiais do Censo Agropecuário 2006 apresentadas por
+Aquino et al. (2014), o público potencial do PRONAF B é formado por
+2.416.127 estabelecimentos, o que representa 46,68% de todos os
+estabelecimentos agropecuários do Brasil. No entanto, segundo os autores,
+esse grupo revela “baixa participação nas políticas criadas para apoiar
+
+
+                                                           23
+                                                                                                         Paulo André NIEDERLE
+  A agricultura familiar entre o setorial e o territorial? Novos referenciais para as políticas de desenvolvimento rural no Brasil
+
+
+a agricultura familiar” (p. 27), tendo recebido apenas 7,72% dos recursos
+totais do PRONAF no Brasil, ao passo que os grupos D e E, que representam
+parcela minoritária do público potencial do PRONAF (7,04% e 1,54%,
+respectivamente), acessaram 56,05% do recurso. Assim, concluem os
+autores, “[...] o PRONAF, em vez de diminuir as desigualdades sociais, pode
+estar levando a um acirramento destas no âmbito do universo de agricultores
+familiares brasileiros” (p. 27). Ao mesmo tempo, o estudo alerta para
+a necessidade de repensar a estratégia de combate à pobreza por
+meio da articulação do PRONAF a outras políticas estruturantes de
+desenvolvimento rural.
+
+Em suma, dentre os principais desafios colocados ao PRONAF está sua
+dificuldade em ampliar a participação dos agricultores menos capitalizados
+e, sobretudo, fazer isso de modo integrado a outras políticas públicas. Os
+últimos quarenta anos demonstraram o equívoco das políticas de crédito
+voltadas à inserção produtiva dos agricultores mais pobres em um modelo
+no qual eles não possuem condições de suportar o crescente squeeze da
+agricultura moderna (Schneider e Niederle, 2010). O resultado desta inserção
+subordinada aos “impérios alimentares” (Ploeg, 2008) acaba revertendo-se
+na incapacidade de pagamento dos financiamentos e no comprometimento
+da autonomia do agricultor, quando não da sua permanência na unidade
+de produção.
+
+Rupturas e continuidades: do PRONAF ao PRONAT
+
+O PRONAF comportou ainda outra linha de financiamento que esteve, de
+certo modo, mais diretamente associada a estratégias de combate à pobreza
+rural. Trata-se do PRONAF Infraestrutura e Serviços, instituído em 1997,
+logo após a criação do programa. Esta linha foi criada com o objetivo de
+melhorar as condições de produção e de infraestrutura nos municípios rurais
+através do financiamento a projetos municipais de desenvolvimento. Para
+tanto, pressupunha o envolvimento das comunidades rurais na concepção,
+gestão e fiscalização das políticas públicas, o que levou o governo a estimular
+formas de gestão descentralizadas e participativas dos recursos e projetos.
+Na origem desta ideia estava a constatação de que um dos principais problemas
+encontrados nas estratégias de combate à pobreza e desigualdade era
+a insuficiência de capital social nas regiões rurais (Abramovay, 2003).
+
+
+
+
+                                                             24
+Perspectivas Rurales. Nueva época, Año 12, N° 24, ISSN: 1409-3251
+
+
+Deste modo, para os municípios acessarem os recursos do Programa foi
+estabelecida uma metodologia de elaboração de projetos que previa a
+participação de sindicatos, ONGs, associações de produtores e prefeituras.
+Isso levou à constituição de um espaço público de negociação cuja atribuição
+era coordenar as ações e estimular a formulação de estratégias inovadoras de
+desenvolvimento. Assim, os Conselhos Municipais de Desenvolvimento
+Rural (CMDR) se consolidaram associados ao PRONAF, buscando
+constituir-se como espaço de articulação entre Estado e Sociedade Civil.
+Como revelam Schneider, Mattei e Cazella (2004), a importância dos
+CMDRs foi então reforçada pela Resolução nº 28, de 28 de fevereiro de
+2002, a qual definiu esses espaços como instâncias de planejamento,
+coordenação e fiscalização do PRONAF.
+
+Não obstante, a linha Infraestrutura e Serviços claramente destoava das
+demais no que tange ao seu mecanismo de gestão, o que levou a sua exclusão
+do PRONAF. Mas ela se tornou o embrião do Programa de Apoio ao
+Desenvolvimento Sustentável de Territórios Rurais - PRONAT, criado em
+2003, com objetivos similares, mas com uma abrangência não mais municipal,
+mas territorial. Ao mesmo tempo, a estrutura dos CMDR serviu de modelo
+para a estruturação de Colegiados Territoriais, também reunindo atores da
+sociedade civil e do Estado em composição paritária. Deste modo, pode-se
+afirmar que o PRONAF, e mais especificamente esta linha, esteve intimamente
+relacionada à formulação de uma política territorial que, ao longo da última
+década, se tornou objeto privilegiado das discussões em torno de uma
+estratégia de desenvolvimento para o meio rural.
+
+Atualmente, se o PRONAT reproduz algumas virtudes e limites dos
+mecanismos tradicionais do crédito rural, sobretudo no que diz respeito ao
+tipo de projeto financiado (muitas vezes centrados em atividades agropecuárias
+tradicionais com baixo nível de inovação), isso deve-se parcialmente à esta
+“dependência de caminho” da política pública. De fato, a organização do
+PRONAT é herdeira dos erros e acertos do PRONAF Infraestrutura e Serviços.
+Esta linha voltava-se a municípios com estrutura relativamente precária, aos
+quais destinava cerca de R$ 150 mil anuais durante quatro anos, direcionados
+a ações definidas pelos Planos Municipais de Desenvolvimento Rural (PMDRs),
+discutidos no âmbito dos CMDRs. A existência desses conselhos, compostos
+de modo paritário entre atores governamentais e entidades representativas
+dos agricultores familiares, tornou-se obrigatória para o recebimento dos
+recursos. Assim, a criação de uma instância colegiada constituiu-se em uma
+
+
+                                                           25
+                                                                                                          Paulo André NIEDERLE
+   A agricultura familiar entre o setorial e o territorial? Novos referenciais para as políticas de desenvolvimento rural no Brasil
+
+
+importante inovação institucional que buscava romper com a exclusividade
+das prefeituras na implementação das políticas (Leite e Wesz Jr., 2011).
+
+Quando da criação do PRONAT, as modalidades “Infraestrutura e Serviços
+Municipais” e “Capacitação dos Agricultores Familiares” foram retiradas
+do PRONAF, o qual foi restringido simplesmente ao crédito rural. Por sua
+vez, ao PRONAT foram ainda agregadas duas outras modalidades:
+“Assistência Financeira Mediante Emendas Parlamentares” (AFEM)
+e “Projeto Dom Helder Câmara (PDHC) de Desenvolvimento Sustentável
+para os Assentamentos da Reforma Agrária no Semiárido do Nordeste”.
+Além disso, em 2007, instituiu-se a ação “Fomento aos Empreendimentos
+Associativos e Cooperativos da Agricultura Familiar e Assentamentos da
+Reforma Agrária” e, em 2008, criou-se uma linha voltada à conservação e
+manejo sustentável da agrobiodiversidade7.
+
+A Secretária de Desenvolvimento Territorial do MDA é responsável por
+definir as normas para construção dos projetos, uso dos recursos e prazos.
+As Delegacias Estaduais do MDA intermediam a organização dos projetos
+junto aos Colegiados Territoriais. Os Colegiados aprovam os projetos, os
+quais (com exceção de alguns recursos de custeio recebidos por organizações
+não governamentais) são geralmente encaminhados pelas prefeituras
+municipais8. Finalmente, os projetos aprovados no Colegiado Territorial são
+necessariamente encaminhados à Câmara Técnica do CEDRAF responsável
+por analisá-los e encaminhá-los à aprovação do CONDRAF. Somente a partir
+desse momento o projeto é repassado para análise técnica da SDT/MDA em,
+caso aprovado, esta autoriza a Caixa Econômica Federal a repassar os recursos
+para execução do mesmo.
+
+Para que um território seja incorporado ao programa, é necessário atender a
+alguns critérios: os municípios devem possui no máximo 80 habitantes por
+Km², não ultrapassando um total de 50 mil pessoas por município; ter uma
+
+7         Atualmente, o PRONAT conta com nove modalidades ou linhas de ação: (1) Monitoramento,
+gestão e administração do programa; (2) Elaboração dos Planos Territoriais de Desenvolvimento Rural
+Sustentável - PTDRS; (3) Apoio à gestão dos PTDRS; (4) Capacitação de agentes de desenvolvimento;
+(5) Cooperativismo; (6) Desenvolvimento sustentável para os assentamentos da reforma agrária no
+semiárido do Nordeste (PDHC); (7) Fortalecimento e valorização de iniciativas territoriais de manejo e
+uso sustentável da agrobiodiversidade; (8) Infraestrutura e serviços em territórios rurais; (9) Assistência
+financeira mediante emendas parlamentares.
+8         Isto gera um primeiro entrave na operacionalização da política tendo em vista a desarticulação
+entre a administração municipal e as entidades da sociedade civil na construção e implementação dos
+projetos.
+
+
+                                                              26
+Perspectivas Rurales. Nueva época, Año 12, N° 24, ISSN: 1409-3251
+
+
+representação consolidada da sociedade civil e do poder público; e o Estado deve
+possuir um conselho estadual de desenvolvimento rural sustentável
+(CEDRS), responsável por analisar os projetos territoriais antes de submetê-los
+ao CONDRAF. Acrescenta-se ainda mais um critério relativo a presença da
+agricultura familiar. Se um território possuir um percentual superior a 50%
+de estabelecimentos classificados nos termos da Lei da Agricultura Familiar,
+ele pode ser incorporado ao Programa, mesmo que não cumpra a norma relativa
+a densidade populacional acima descrita. A partir de 2013, com o reconhecimento
+de 74 novos territórios, o país passou a contar com 239 territórios rurais,
+o que abarca um total de 1.072 municípios e 65 milhões de pessoas9.
+
+A criação do PRONAT trouxe indubitavelmente novidades, particularmente
+no que se refere ao reconhecimento de que as estratégias de desenvolvimento
+rural deveriam romper com os limites impostos pela tradicional dicotomia
+rural-urbano e pelas fronteiras municipais. Assim, ao longo da última década, o
+referencial do desenvolvimento territorial adentrou aos discursos dos atores
+locais e dos gestores públicos, mas portando significados bastante
+heterogêneos. Em alguns casos, a criação do “território”, como uma escala
+intermediária entre o município e o estado, é compreendida apenas como
+uma nova regionalização da ação pública, com o agravante de diferentes
+órgãos ou níveis de governo trabalharem com recortes territoriais distintos,
+o que dificulta a articulação das políticas pelo simples descompasso espacial
+das políticas.
+
+Dentre os principais obstáculos a ampliação desta nova abordagem, nota-se
+o peso da estrutura federativa brasileira e a inexistência de um marco jurídico
+adequado à gestão territorial, o que dificulta imensamente a criação de
+mecanismos de governança para tornar o território um espaço efetivo de
+planejamento e execução de políticas. Dez anos após a criação do PRONAT,
+ainda hoje as experiências de integração administrativa intermunicipal
+mostram-se bastante limitadas. A solução para a inexistência formal do
+território (como ente federado capaz de gerir recursos públicos) está centrada,
+principalmente, na experiência de consórcios públicos intermunicipais – uma
+estrutura jurídica criada por lei com a finalidade de executar a gestão associada
+
+9          Destes, 120 também são reconhecidos como Territórios da Cidadania em virtude de sua
+inclusão em um programa homólogo criado em 2008, e cujo objetivo central é a promoção da articulação
+de políticas públicas de diversos ministérios e órgãos de Estado com foco na redução da pobreza e das
+desigualdades. Ambos os Programas (PRONAT e PTC) possuem organização e execução intimamente
+conectados, aspecto que não poderá ser discutido neste artigo. Neste sentido, veja: Cavalcanti, Wanderley
+e Niederle (2014), Favaretto (2010) e Leite (2013).
+
+
+                                                           27
+                                                                                                         Paulo André NIEDERLE
+  A agricultura familiar entre o setorial e o territorial? Novos referenciais para as políticas de desenvolvimento rural no Brasil
+
+
+de serviços públicos onde os entes consorciados são os municípios –, mas os
+mesmos ainda revelam inúmeros problemas, sobretudo em virtude das
+fragilidades operacionais que fazem com que existam apenas formalmente,
+sem capacidade efetiva de gestão.
+
+Ao mesmo tempo, as articulações entre os níveis territorial e municipal ainda
+são frágeis. Formados a partir do final dos anos 1990, os CMDRs aglutinaram
+as entidades governamentais e da sociedade civil ligadas à agricultura e ao
+rural. Essa articulação potencializou o trabalho de construção do território,
+uma vez que as bases do diálogo entre os atores do Estado e da Sociedade
+Civil estavam sendo igualmente assentadas no âmbito dos municípios. Por
+sua vez, a criação do PRONAT contribuiu para dar vida aos CMDR, que, em
+muitos casos, possuíam um papel meramente legitimador das ações do poder
+executivo municipal. Assim, quando o PRONAT passou a financiar projetos
+diferenciados de desenvolvimento rural, os CMDR serviram como meio de
+articulação para criar a estrutura organizacional necessária à proposição e
+implementação dos projetos. No entanto, para além disso, há uma agenda em
+aberto no que diz respeito conexão entre os projetos locais e territoriais, bem
+como entre a dinâmica dos conselhos municipais e aquela que se estabelece
+nos Colegiados Territoriais. De modo geral, enquanto estes priorizam uma
+abordagem territorial focada, sobretudo, em políticas voltadas a um segmento
+mais vulnerável da população rural, grande parte dos CMDRs mantém sua
+atuação fortemente associada à operacionalização do PRONAF e políticas a
+ele associadas (incluindo o uso da infraestrutura pública), sendo menos
+evidentes as discussões acerca da construção de estratégias intermunicipais
+de desenvolvimento.
+
+De modo mais problemático, contudo, nota-se que, em ambos casos, no
+município e no território, muitos projetos e investimentos continuam voltados
+para a reprodução de estratégias pouco inovadoras (Zimmermann et al.,
+2014; Favaretto, 2010). Muitos territórios reproduzem a alternativa já
+criticada do “más de lo mismo” (Schejtman e Berdegué, 2003), que, em nome
+de um novo modelo de desenvolvimento, acabam por reforçar atividades
+tradicionais com foco no crescimento da produção agropecuária – não raro
+a partir do investimento nas cadeias de commodities agrícolas –, os quais já
+revelaram seus limites no que tange à potencialização de uma estratégia de
+“desenvolvimento territorial endógeno” (Schneider, 2004). Neste caso,
+nota-se que os limites de uma abordagem territorial não residem apenas
+na inexistência de uma institucionalidade que regulamente a existência de
+
+
+                                                             28
+Perspectivas Rurales. Nueva época, Año 12, N° 24, ISSN: 1409-3251
+
+
+uma escala espacial intermediária (papel outrora atribuído às microrregiões
+geográficas), mas, sobretudo, à dificuldade de incorporar um referencial de
+desenvolvimento territorial que efetivamente confira um novo significado ao
+rural e aos atores que o habitam, que, de lugar de produção transforma-se em
+espaço de vida (Wanderley, 2009).
+
+Neste sentido, cabe notar ainda uma conexão frágil entre as políticas de
+transferência de renda que visam os “pobres rurais” (em particular o Programa
+Bolsa Família) e os projetos levados à cabo nos territórios, especialmente
+aqueles com foco na agregação de valor aos produtos agropecuários10.
+Enquanto alguns investimentos produtivos revelam-se distantes das necessidades
+dos grupos mais empobrecidos, as políticas de transferência de renda
+convivem com o crônico desafio da inclusão socioeconômica. Essa situação
+acaba reforçando o referencial modernizante citado à introdução que aponta
+para uma segregação entre os segmentos sociais aptos a “produzir
+o desenvolvimento”, e aqueles aos quais são conferidos apenas os meios
+básicos de reprodução social.
+
+Mesmo assim, avanços importantes foram processados não apenas no que
+tange à articulação entre Sociedade Civil e Estado, mas, e talvez de modo
+ainda mais significativo, no interior de cada um deles. Nos territórios onde
+o processo foi capitaneado pelos atores do Estado, a política territorial
+contribuiu ao menos para um processo de aprendizagem técnica e institucional,
+capacitando os gestores tanto no monitoramento do uso adequado dos
+recursos quanto na administração de aspectos operacionais que facilitam a
+formulação e a execução dos projetos. Por sua vez, nos territórios onde as
+organizações da Sociedade Civil assumiram uma posição hegemônica nos
+colegiados, visualiza-se um importante processo de articulação e aprendizado
+de organizações que outrora estavam desconectadas e com potencial reduzido
+
+
+
+10         Como afirmam Zimmermann et al. (2014, p. 568), “Em relação ao PRONAT, observou-se
+que certos municípios – não raro, aqueles onde a pobreza não é tão expressiva vis-à-vis os demais –
+concentram os projetos apoiados pelo programa e estes destinam-se às populações rurais (dentre a
+agricultura familiar) mais organizadas e estruturadas economicamente. [...] Ademais, há certa
+reprodução de projetos “convencionais” relacionados à produção agrícola, carecendo de ações que
+contribuam para mudanças estruturais na condição de vida da população local e que sejam inovadores
+no sentido de promover a diversificação das atividades econômicas e a valorização de distintos modos
+de vida. A redução da pobreza rural dos territórios geralmente não consiste em um objetivo explícito
+e prioritário dos projetos territoriais, ainda que os resultados destes e seus efeitos sinérgicos possam
+colaborar neste sentido.”
+
+
+                                                           29
+                                                                                                          Paulo André NIEDERLE
+   A agricultura familiar entre o setorial e o territorial? Novos referenciais para as políticas de desenvolvimento rural no Brasil
+
+
+de intervenção social. Um efeito importante desse processo é a constituição
+de uma pauta propositiva por parte dos movimentos sociais, superando seu
+viés estritamente reivindicatório.
+
+Destaca-se ainda o modo como o território estabelece novas arenas sociais
+(em particular os Colegiados) para as lutas por reconhecimento e cidadania
+capitaneadas por inúmeros grupos do meio rural. Essas lutas dizem respeito
+à legitimação de valores e práticas culturais que são a expressão da
+singularidade da organização socioprodutiva e da identidade social de
+diferentes comunidades tradicionais11, sobretudo daquelas cuja presença foi
+invisibilizada pela bruma modernizante que ocupou todos os espaços do
+discurso do desenvolvimento nas últimas cinco décadas. Mesmo naqueles
+territórios em que os representantes dessas comunidades ainda encontram-se
+distantes do centro de decisão acerca dos projetos territoriais, nota-se que a
+exclusão dos mesmos não ocorre sem um tensionamento entre as escolhas
+locais e os objetivos da ação pública, institucionalizados nos princípios que
+orientam a política territorial (Cavalcanti, Wanderley e Niederle, 2014).
+
+Considerações finais
+
+Esta breve análise da sociogênese da política territorial sugere que suas
+principais fragilidades não advêm do equívoco de uma abordagem territorial
+do desenvolvimento que concebe a contribuição da agricultura familiar para
+além da produção agropecuária, e que abre espaço para a reinserção econômica
+de agricultores e comunidades mais pobres. De outro modo, as dificuldades
+de operacionalização desta abordagem estão primeiramente associadas
+à premência de outro modelo, setorial e produtivista, no seio do quadro
+institucional e das estruturas de governança e gestão dos territórios, o que se
+reflete no próprio perfil dos projetos territoriais implementados.
+
+Neste sentido, pode-se questionar em que medida se sustentam as teses que
+advogam uma suposta incapacidade da agricultura familiar em responder aos
+anseios do desenvolvimento, vis-à-vis a prevalência de um referencial de
+desenvolvimento que tem se traduzido em projetos inadequados ao contexto
+
+11         De acordo com o Decreto n. 6.040/2007 que institui a Política Nacional de Desenvolvimento
+Sustentável dos Povos e Comunidades Tradicionais, povos e comunidades tradicionais são grupos
+culturalmente diferenciados e que se reconhecem como tais, que possuem formas próprias de organização
+social, que ocupam e usam territórios e recursos naturais como condição para sua reprodução cultural,
+social, religiosa, ancestral e econômica, utilizando conhecimentos, inovações e práticas gerados
+e transmitidos pela tradição.
+
+
+                                                              30
+Perspectivas Rurales. Nueva época, Año 12, N° 24, ISSN: 1409-3251
+
+
+sociocultural das populações rurais mais vulneráveis. Ao mesmo tempo,
+trata-se de um posicionamento que, diferentemente daquele produzido por
+muitos autores na década de 1990 em torno do mote de um novo mundo
+rural brasileiro (Silva, 1996) – que reconheciam a pluriatividade da agricultura
+familiar como uma alternativa à crise de reprodução social da pequena
+produção agrícola –, alude para as possibilidades de inclusão produtiva
+desses estabelecimentos como uma opção estratégica em face de um novo
+referencial, que reconheça o território e sua multifuncionalidade como eixos
+articuladores de uma nova trajetória de desenvolvimento rural
+sustentável e solidário.
+
+Embora não sejam exatamente originais, essas discussões são objeto de um
+esforço renovado de trabalho no Brasil contemporâneo. No final de 2013,
+o CONDRAF inaugurou o debate sobre a construção de um Sistema
+Nacional de Desenvolvimento Rural Sustentável e Solidário (SNDRSS). Em
+discussão nos mais diversos fóruns que compõem as instâncias de
+governança do desenvolvimento rural no Brasil, a criação desse sistema tem
+como escopo prioritário a formulação de um marco legal para a gestão social
+das políticas públicas nos territórios rurais, os quais se tornariam uma
+unidade fundamental de planejamento e execução das ações previstas no
+Plano Nacional de Desenvolvimento Rural Sustentável e Solidário (PNDRSS),
+este igualmente em construção. Ainda embrionária, a criação do Sistema e
+do Plano anima as discussões sobre a necessidade de uma nova geração de
+políticas para a agricultura familiar, que respondam a um referencial de
+desenvolvimento territorial, integrando as políticas setoriais a partir de novas
+diretrizes e objetivos, agora voltadas para o reconhecimento, a inclusão e a
+participação cidadã da diversidade de atores sociais que povoam o meio
+rural brasileiro. Mais duas décadas serão necessárias para que uma análise
+seja produzida sobre a efetividade dessas mudanças.
+
+
+Referências
+
+ABRAMOVAY, R. (2003). O futuro das regiões rurais. Porto Alegre: UFRGS.
+
+ALVES, E.; ROCHA, D.P. (2010). Ganhar tempo é possível? In: GASQUES,
+     J.G.; VIEIRA FILHO, J.E.R.; NAVARRO, Z. A agricultura brasileira:
+     desempenho recente, desafios e perspectivas. Brasília: IPEA/MAPA, p.275-289.
+
+
+
+                                                           31
+                                                                                                         Paulo André NIEDERLE
+  A agricultura familiar entre o setorial e o territorial? Novos referenciais para as políticas de desenvolvimento rural no Brasil
+
+
+AQUINO, J. R.; SCHNEIDER, S. (2011). 12 Anos da política de crédito do
+     PRONAF no Brasil (1996-2008): uma reflexão crítica. Revista de
+     Extensão e Estudos Rurais, v. 1, p. 309-347.
+
+AQUINO, J. R.; RADOMSKY, G. F. W. ; SPOHR, G.; PAREDES, A.; RA
+     DOMSKY, C. W. (2014). Dimensão e características do público
+     potencial do Grupo B do PRONAF na região Nordeste e no estado de
+     Minas Gerais. In: SCHNEIDER, S.; FERREIRA, B.; ALVES, F (Org.).
+     Aspectos multidimensionais da agricultura brasileira: diferentes
+     visões do censo agropecuário 2006. Brasília: IPEA. pp. 77-105.
+
+BIANCHINI, V. (2012). As políticas de financiamento e apoio à produção e
+     comercialização e a sua contribuição para a inserção socioeconômica.
+     In: MIRANDA, C., TIBURCIO, B. (Org.). Estratégias de inclusão
+     socioprodutiva. Brasília: IICA, pp. 79-84.
+
+BRASIL, MINISTÉRIO DA AGRICULTURA E DO ABASTECIMENTO.
+      (1996). PRONAF: Programa Nacional de Fortalecimento da
+      Agricultura Familiar. Brasília: MAPA.
+
+BUAINAIN, A. M.; ALVES, E.; SILVEIRA, J.M.F.J.; NAVARRO, Z. (2013).
+     Sete teses sobre o mundo rural brasileiro. Revista de Politica
+     Agrícola, v. 22, p. 105-121.
+
+BITTENCOURT, G. A. (2003). Abrindo a caixa-preta: o financiamento da
+     agricultura familiar no Brasil. Dissertação. (Mestrado em Desenvolvimento
+     Econômico, Espaço e Meio Ambiente). Campinas: Unicamp.
+CAVALCANTI, J.S.; WANDERLEY, M.N.B. NIEDERLE, P.A. (Orgs.). (2014).
+     Participação, território e cidadania. Recife: UFPE.
+
+CAZELLA, A.; MATTEI, L.; DELGADO, N. (2002). A gestão do PRONAF
+     infraestrutura e serviços pelos Conselhos Municipais de Desenvolvimento
+     Rural: evidências sobre o estado de Santa Catarina. In: CONGRESSO
+     BRASILEIRO DE ECONOMIA E SOCIOLOGIA RURAL, 2002.
+     Anais... Passo Fundo, SOBER.
+
+DELGADO, N. G.; LEITE, S.; WESZ JUNIOR, V. (2010). Nota técnica:
+     produção agrícola. Rio de Janeiro: CPDA.
+
+
+
+                                                             32
+Perspectivas Rurales. Nueva época, Año 12, N° 24, ISSN: 1409-3251
+
+
+FAVARETO, A. (2010). A abordagem territorial do desenvolvimento rural:
+     mudança institucional ou inovação por adição? Estudos
+     Avançados, v. 24, p. 299-319.
+
+GRISA, C. (2010). As políticas públicas para a agricultura familiar no Brasil:
+      um ensaio a partir da abordagem cognitiva. Desenvolvimento
+      em Debate, v. 1, p. 83-109.
+
+GUANZIROLI, C. E. (2007). PRONAF dez anos depois: resultados e
+    perspectivas para o desenvolvimento rural. Revista de Economia
+    e Sociologia Rural, v. 45, n. 2, p. 301-328.
+
+JOBERT, B.; MULLER, P. (1987). L’état en action. Paris: PUF.
+
+KAGEYAMA, A. (2003). Produtividade e renda na agricultura familiar:
+     efeitos do Pronaf-crédito. Agricultura em São Paulo, v. 50, n.2, p. 1-13.
+
+LEITE, S.P. (Org.) (2013). Políticas de desenvolvimento territorial
+      e enfrentamento da pobreza rural no Brasil. Brasília: IICA .
+
+LEITE, S. P. e WESZ JUNIOR, V. J. (2011). O financiamento da política de
+      desenvolvimento territorial: uma análise do PRONAT e do PTC.
+      In: LEITE, S.; DELGADO, N. (Org.). Políticas públicas, atores sociais
+      e desenvolvimento territorial no Brasil. Brasília: IICA, p. 169-196.
+
+MAGALHAES, R. S.; ABRAMOVAY, R. (2006). Acesso, uso e sustentabilidade
+    do PRONAF B. São Paulo, MDA/FIPE. Mimeografado.
+MATTEI, L. (2006). Pronaf 10 anos: mapa da produção acadêmica.
+    Brasília, MDA/NEAD.
+
+MATTEI, L. (2010). Institucionalidade e protagonismo político; os 10 anos
+    do Condraf. 2ª ed. Brasília: MDA/Condraf.
+
+MIELITZ NETTO, C. G. (2011). A política agrícola brasileira, sua adequação
+      e sua funcionalidade nos vários momentos do desenvolvimento
+      nacional. In: BONNAL, P.; LEITE, S. P. (orgs.) Análise Comparada de
+      Políticas Agrícolas. Rio de Janeiro: Mauad X.
+
+PICOLOTTO, E. L. (2011). As mãos que alimentam a nação: agricultura
+
+
+                                                           33
+                                                                                                         Paulo André NIEDERLE
+  A agricultura familiar entre o setorial e o territorial? Novos referenciais para as políticas de desenvolvimento rural no Brasil
+
+
+          familiar, sindicalismo e política. Tese (Doutorado de Ciências Sociais
+          em Desenvolvimento, Agricultura e Sociedade), Rio de Janeiro: UFRRJ.
+
+PLOEG, J.D. van der. (2008). Camponeses e impérios alimentares: lutas por
+     autonomia e sustentabilidade na era da globalização. Porto Alegre: UFRGS.
+
+SABOURIN, E. (2009). Camponeses do Brasil, entre troca mercantil
+     e reciprocidade. Rio de Janeiro: Garamond.
+
+SANTOS, F. P. (2011) Coalizões de interesses e a configuração política da
+     agricultura familiar no Brasil. Tese (Doutorado em Administração
+     Pública e Governo). São Paulo: FGV.
+
+SCHEJTMAN, A.; BERDEGUÉ, J. (2003). Desarollo territorial rural.
+     Santiago: RIMISP.
+
+SCHNEIDER, S. (2004). A abordagem territorial do desenvolvimento rural
+     e suas articulações externas. Sociologias, v. 11, p. 88-125.
+
+SCHNEIDER, S.; NIEDERLE, P. A. (2010). Resistance strategies and
+     diversification of rural livelihoods: the construction of autonomy
+     among Brazilian family farmers. Journal of Peasant Studies, vol. 37, p. 379-405.
+
+SCHNEIDER, S.; MATTEI, L.; CAZELLA, A. (2004). Histórico,
+     caracterização e dinâmica recente do Pronaf. In: SCHNEIDER, S.;
+     SILVA, M.; MARQUES, P. (Orgs.). Políticas Públicas e Participação
+     Social no Brasil Rural. Porto Alegre: UFRGS. pp. 21-50.
+SCHNEIDER, S.; SILVA, M. K.; MARQUES, P. E. M. (Orgs.). (2004). Políticas
+     Públicas e Participação Social no Brasil Rural. Porto Alegre, UFRGS.
+
+SILVA, J. F. G. (1996). O rural paulista muito além do agrícola e do agrário.
+       São Paulo em Perspectiva, v. 10, n.2, p. 60-72.
+
+TOLEDO, E. (2009). O PRONAF em Salvador das Missões: contradições
+     de uma política de crédito. Dissertação (Mestrado em
+     Desenvolvimento Rural). Porto Alegre: UFRGS.
+
+
+
+
+                                                             34
+Perspectivas Rurales. Nueva época, Año 12, N° 24, ISSN: 1409-3251
+
+
+
+
+WANDERLEY, M. N. B. (2009). O mundo rural como um espaço de vida:
+    reflexões sobre a propriedade da terra, agricultura familiar e ruralidade.
+    Porto Alegre: UFRGS.
+
+ZIMMERMANN, S.; GRISA, C.; TECCHIO, A.; LEITE, S.; BONNAL, P.;
+    CAZELLA, A. A.; DELGADO, N.; MALUF, R.; MATTEI, L. (2014).
+    Desenvolvimento territorial e políticas de enfrentamento da pobreza
+    rural no Brasil. Campo - Território, v. 9, p. 540-573.
+
+
+
+
+                                                           35

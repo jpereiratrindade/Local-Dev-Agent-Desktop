@@ -1,0 +1,9 @@
+{
+  "chunk_count": 41,
+  "extractor": "pdftotext",
+  "kind": "pdf",
+  "path": "/run/media/jpereiratrindade/labeco10T/labeco02/Revisao/agronomy-03-00508.pdf",
+  "sha256": "65983d7c7692c3bdc174d4cd5bc21b71258d1c01bcf0471d56268a8ace7f733d",
+  "text_size": 39751,
+  "used_ocr": false
+}

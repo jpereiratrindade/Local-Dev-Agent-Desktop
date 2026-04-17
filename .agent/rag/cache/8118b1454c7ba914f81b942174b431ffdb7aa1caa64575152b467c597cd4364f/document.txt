@@ -1,0 +1,573 @@
+                 Research, Society and Development, v. 10, n. 6, e10910615665, 2021
+             (CC BY 4.0) | ISSN 2525-3409 | DOI: http://dx.doi.org/10.33448/rsd-v10i6.15665
+
+
+Dialética, totalidade e a gênese do pensamento moriniano: Uma breve análise
+Dialectics, totality and the genesis of morinian thought: A brief analysis
+Dialectica, totalidad y la genesis del pensamiento moriniano: Un breve analisis
+
+
+                                                     Recebido: 01/05/2021 | Revisado: 07/05/2021 | Aceito: 08/05/2021 | Publicado: 22/05/2021
+
+
+                                                                                                         Marcos Fábio Teixeira Lopes
+                                                                                                 ORCID: https://orcid.org/0000-0003-2939-4317
+                                                                            Instituto Federal de Educação, Ciência e Tecnologia do Ceará, Brasil
+                                                                                                            E-mail: marcos.fabio21@gmail.com
+                                                                                                                Jefferson Queiroz Lima
+                                                                                                 ORCID: https://orcid.org/0000-0002-3250-1411
+                                                                            Instituto Federal de Educação, Ciência e Tecnologia do Ceará, Brasil
+                                                                                                              E-mail: jeffersonlima@ifce.edu.br
+                                                                                                              Pedro Bruno Silva Lemos
+                                                                                                ORCID: https://orcid.org/0000-0001-7235-9846
+                                                                   Universidade da Integração Internacional da Lusofonia Afro-Brasileira, Brasil
+                                                                                                     E-mail: pedrobruno_lemos@yahoo.com.br
+
+
+       Resumo
+       No prefácio do livro “Introdução ao Pensamento Complexo”, escrito em 1990, Edgar Morin aborda as principais
+       ilusões que afastam os espíritos da problemática do pensamento complexo. Nesse sentido, o presente artigo discute a
+       relação teórica existente entre a dialética, tanto hegeliana como marxista, visualizando a noção de totalidade e a teoria
+       da complexidade desenvolvida por Edgar Morin. O trabalho foi realizado por meio de pesquisa bibliográfica em
+       artigos científicos, livros e demais documentos que abordam o tema. Traz em seu bojo, pensamento de autores como
+       Konder (1984), Loureiro (2012), Lukács (1989) e o próprio Morin (2005), dentre outros. Conclui-se o trabalho
+       comprovando que a complexidade suplanta a noção de totalidade por meio da presença da dialógica no pensamento
+       moriniano. Diferentemente da dialética marxiana e da hegeliana, constatou-se que a dialética para Morin não é
+       concebida como um método que pretende explicar fenômenos, mas discute o pensamento complexo demonstrando um
+       continuo diálogo com as incertezas do mundo.
+       Palavras-chave: Dialética; Totalidade; Edgar Morin; Teoria da complexidade.
+
+       Abstract
+       In the preface to the book "Introduction to Complex Thinking", written in 1990, Edgar Morin addresses the main
+       illusions that keep spirits away from the problem of complex thinking. In this sense, this article discusses the
+       theoretical relationship between dialectic, both Hegelian and Marxist, visualizing the notion of totality and the theory
+       of complexity developed by Edgar Morin. The work was carried out through bibliographic research in scientific
+       articles, books and other documents that address the theme. It brings with it the thoughts of authors such as Konder
+       (1984), Loureiro (2012), Lukács (1989) and Morin (2005), among others. The work is concluded by proving that
+       complexity supersedes the notion of totality through the presence of dialogic in Morinian thought. Unlike Marxian
+       and Hegelian dialectics, it was found that the dialectic for Morin is not conceived as a method that aims to explain
+       phenomena, but discusses complex thinking by demonstrating a continuous dialogue with the uncertainties of the
+       world.
+       Keywords: Dialectic; Totality; Edgar Morin; Theory of complexity.
+
+       Resumen
+       En el prefacio del libro “Introducción al pensamiento complejo”, escrito en 1990, Edgar Morin aborda las principales
+       ilusiones que mantienen a los espíritus alejados del problema del pensamiento complejo. En este sentido, este artículo
+       discute la relación teórica entre la dialéctica, tanto hegeliana como marxista, visualizando la noción de totalidad y la
+       teoría de la complejidad desarrollada por Edgar Morin. El trabajo se realizó a través de la investigación bibliográfica
+       en artículos científicos, libros y otros documentos que abordan el tema. Trae consigo el pensamiento de autores como
+       Konder (1984), Loureiro (2012), Lukács (1989) y Morin (2005), entre otros. El trabajo se concluye demostrando que
+       la complejidad reemplaza la noción de totalidad a través de la presencia de dialógico en el pensamiento moriniano. A
+       diferencia de la dialéctica marxista y hegeliana, se encontró que la dialéctica de Morin no se concibe como un método
+       que pretende explicar fenómenos, sino que discute el pensamiento complejo demostrando un diálogo continuo con las
+       incertidumbres del mundo.
+       Palabras clave: Dialéctica; Totalidad; Edgar Morin; Teoría de la complejidad.
+
+
+                                                               1
+                     Research, Society and Development, v. 10, n. 6, e10910615665, 2021
+                 (CC BY 4.0) | ISSN 2525-3409 | DOI: http://dx.doi.org/10.33448/rsd-v10i6.15665
+
+1. Introdução
+          A etimologia da palavra dialética origina-se do grego dialektiké, onde o prefixo "dia", expressa a ideia de dualismo,
+troca, e "lektikós", apto à palavra. Compartilha, portanto o mesmo radical de "logos", que é palavra, razão, com isso
+assemelha-se ao conceito de diálogo.
+          Epistemologicamente, a dialética como conhecemos, é uma redução de um conceito mais amplo, o método dialético,
+este se dá como uma maneira de estabelecer as argumentações do discurso, comumente entre dois ou mais sujeitos, que
+possuem pontos de vistas distintos a respeito de um mesmo assunto. Contudo, ambos os sujeitos buscam estabelecer, o que de
+fato é a verdade, mediante a fundamentação de seus argumentos, com isso, não há a intenção de estabelecer vencedores para
+esse debate ou persuadir o opositor. Embora o ato em si seja fundamental na formação da filosofia, o termo foi popularizado
+apenas com o advento dos diálogos socráticos de Platão.
+          Diante desse contexto, apresenta-se nesse estudo o pensamento dialético em sua gênese, quase que simultaneamente
+com a gênese da filosofia, a partir do estudo dos gregos, na antiguidade clássica, sendo sufocada no período medieval,
+ressurgindo com o Renascimento, perpassando pelo Iluminismo e atingindo seu ápice no mundo pós-moderno com Revolução
+Francesa, primeiro, com Hegel e, em seguida, com Marx.
+          Vale saliente que este trabalho analisa o pensamento de Morin baseado em diversos autores, marxistas ou não, que
+desenvolveram estudos por meio do método dialético. A perspectiva da dialética marxista, entretanto, tem como principal
+característica o reconhecimento do conhecimento totalizante, porém nunca definitivo e acabado. Como em Hegel, Marx
+entende que o conhecimento é tido como inacabado e não totalizante, nesse sentido, verificou-se que a teoria da complexidade
+pressupõe o reconhecimento da incompletude e da incerteza de qualquer explicação ou interpretação da realidade. Por isso,
+verificou-se, no estudo, que a visão marxiana da dialética influenciando diversos autores e correntes teóricas, pois, a partir
+desta, tornou-se possível compreender a realidade como algo mais rico e complexo relacionado ao conhecimento produzido.
+          Diante do exposto, o artigo discute, a partir de uma análise bibliográfica, a relação teórica existente entre a dialética,
+tanto hegeliana com marxista, visualizando a noção de totalidade e a teoria da complexidade desenvolvida por Edgar Morin,
+observando, de acordo com Konder (1984), que a dialética marxista pressupõe que a totalidade não é apenas a somas das
+partes.
+
+
+2. Metodologia
+          Segundo Minayo (2002, p.44) a metodologia do trabalho científico, é definida:
+
+
+          (...) como a discussão epistemológica sobre o “caminho do pensamento” que o tema ou o objeto de investigação
+          requer; b) como a apresentação adequada e justificada dos métodos, técnicas e dos instrumentos operativos que devem
+          ser utilizados para as buscas relativas às indagações da investigação; c) e como a “criatividade do pesquisador”, ou
+          seja, a sua marca pessoal e específica na forma de articular teoria, métodos, achados experimentais, observacionais ou
+          de qualquer outro tipo específico de resposta às indagações específicas.
+
+          Nesse sentido, o presente trabalho é classificado metodologicamente como uma pesquisa bibliográfica pautada em
+uma abordagem de cunho qualitativo. Segundo Gil (2008), na pesquisa bibliográfica a análise é desenvolvida em obras que
+receberam tratamento analítico durante sua feitura, ou seja, artigos científicos, livros, teses e dissertações.
+          Considerando que o presente artigo possui o objetivo analisar a importância da dialética e da noção de totalidade no
+pensamento moriniano, essa pesquisa bibliográfica foi pautada na análise de artigos científicos e nas obras de alguns autores,
+além de Edgar Morin, que discute a temática analisada.
+
+
+
+                                                                  2
+                    Research, Society and Development, v. 10, n. 6, e10910615665, 2021
+                (CC BY 4.0) | ISSN 2525-3409 | DOI: http://dx.doi.org/10.33448/rsd-v10i6.15665
+
+         Outro fator também abordado neste trabalho trata-se do entendimento da epistemologia da dialética, compreendendo o
+estudo como uma obra científica que trabalha o todo, articulando diversos fatores, que dão unidade de sentido. Neste caso, o
+sentido se produz através de condições históricas e sociais que além de determinar fatos, caracterizam como única e como
+parte o processo maior de produção do conhecimento humano (Gamboa, 2012, p.56).
+         É importante mencionar que a escolha pela abordagem qualitativa justificou-se pela falta de aprofundar os “aspectos
+da realidade que não podem ser quantificados, centrando-se na compreensão e explicação da dinâmica das relações sociais”
+(Silveira & Cordova, 2009, p. 32). Ademais, este tipo de abordagem “trabalha universo de significados, motivos, aspirações,
+crenças, valores e atitudes, o que corresponde a um espaço mais profundo das relações, dos processos e dos fenômenos que não
+podem ser reduzidos à operacionalização de variáveis” (Minayo, 2002, p. 21-22).
+
+
+3. Resultados e Discussão
+3.1 A história da dialética e a relação com a totalidade
+         Ao historicizarmos as concepções da dialética filosófica, temos que, segundo Konder, o fundador do Liceu,
+Aristóteles (384 - 322 a.C.), atribuía a Zênon de Eleia (490-430 a.C.) a criação da dialética. No entanto, outros pensadores
+consideram que Sócrates (469-399 a.C) foi o fundador desta maneira interpretativa. Provavelmente, o fato de Sócrates liderar
+os principais debates sobre a função da filosofia, dar-se pelo fato de Sócrates provocar os generais Lachés (475 – 418 a.C) e
+Nícias (470 a.C. — 413 a.C.) para que estes definissem os conceitos de bravura e inquiriu o sofista Caliclés (483- 484a.C) a
+definição do que era a política e a justiça.
+         O intuito de Sócrates era demonstrar que somente a filosofia, por intermédio da dialética, poderia proporcionar-lhes os
+argumentos imprescindíveis para que entendessem ontologicamente a natureza daquilo que eles faziam, bem como
+compreender as atividades profissionais a que se dedicavam.
+         Todavia, Konder (1984) argumenta que, na compreensão moderna vigente, a [...] dialética significa outra coisa: é o
+modo de pensarmos as contradições da realidade, o modo de compreendermos a realidade como essencialmente contraditória e
+em permanente transformação (Konder, 1984, p. 7 - 8).
+         Mais uma vez recorre-se a Konder (1984) para que se possa compreender que no sentido moderno da palavra
+dialética, o dialético mais radical da Grécia antiga foi, indubitavelmente, Heráclito de Efeso (540-480 a.C.). Heráclito deixou
+alguns escritos de maneira fragmentada, porém é possível interpretar de seus manuscritos a ideia de que tudo que existe está
+em permanente transformação, que o conflito é o cerne de todas as coisas. O fragmento mais famoso atribuído a Heráclito é
+aquele em se lê que um homem não toma banho duas vezes no mesmo rio, pois da segunda vez não será o mesmo homem e
+nem estará se banhando nas águas do mesmo rio, ambos terão mudado.
+         Os contemporâneos de Heráclito consideraram-no obscuro em suas explicações, e encontraram em Parmênides (530
+a.C. — 460 a.C.), a contraposição ideal, pois para Parmênides, o âmago do ser é imutável, assim como, afirmava que que o
+movimento de mudança era um fenômeno de superfície. Essa corrente de pensamento deu início à chamada metafísica, sendo
+que esta prevaleceu sobre a dialética de Heráclito.
+         A Idade Média marca o apogeu do pensamento metafísico. Por quase um milénio, a ideologia dominante foi a teologia
+cristã, fato este que dificultou o progresso da dialética, uma vez que, interessava à Igreja, que os fiéis acreditassem em ideais
+estáticas, consolidadas, irretocáveis. Nesse período temos as bulas papais que determinavam os dogmas a serem seguidos, a
+santa inquisição que garantia que dissidentes não proliferassem ideias contrárias ao preestabelecido pela Santa Sé. Tal
+conjuntura propiciou o desenvolvimento da filosofia patrística e da escolástica, e ambas prescindiram do método dialético.
+         Na Europa, aproximadamente entre meados do século XIV e o fim do século XVI, o movimento Renascentista
+provocou mudanças culturais, intelectuais e artísticas literalmente, o pensamento nasceu novamente. Os renascentistas ao
+                                                               3
+                   Research, Society and Development, v. 10, n. 6, e10910615665, 2021
+               (CC BY 4.0) | ISSN 2525-3409 | DOI: http://dx.doi.org/10.33448/rsd-v10i6.15665
+
+analisarem a dinâmica, da instabilidade e da contradição da natureza humana, colocaram em xeque as concepções metafísicas,
+dando novo fôlego ao pensamento dialético. Nesse sentido, Konder (1984) explica que:
+
+
+        Com o Renascimento, a dialética pôde sair dos subterrâneos em que tinha sido obrigada a viver durante vários
+        séculos: deixou o seu refúgio e veio à luz do dia. Conquistou posições que conseguiu manter nos séculos seguintes.
+        (Konder, 1984, p. 13).
+
+        Percebe-se que a contraposição entre a dialética e a metafísica, privilegiou esta última, pois as elites dominantes
+buscavam a manutenção do status quo, o que era fundamental para a manutenção de sistemas sociais estratificados. Tais
+sistemas perpassaram desde Ágora grega até os movimentos revolucionários do século XVIII. Sobre tal questão, Konder
+(1984) ressalta que:
+
+
+        De maneira geral, independentemente das intenções dos filósofos, a concepção metafísica prevaleceu, ao longo da
+        história, porque correspondia, nas sociedades divididas em classes, aos interesses das classes dominantes, sempre
+        preocupadas em organizar duradouramente o que já está funcionando, sempre interessadas em “amarrar” bem tanto os
+        valores e conceitos como as instituições existentes, para impedir que os homens cedam à tentação de querer mudar o
+        regime social vigente. (Konder, 1984, p. 9).
+
+        Durante o século XVIII, a disputa entre a metafísica e a dialética, ganhou novos contornos. Um dos maiores
+pensadores metafísicos modernos foi alemão Immanuel Kant (1724-1804). Kant percebeu na consciência humana, que esta não
+se limitava apenas ao mero registro passivo das impressões oriundas do mundo exterior, assim ela é sempre a consciência de
+um ser que interfere ativamente sobre a realidade. Ao observar isso, Kant, que era um metódico conhecido, percebeu que essa
+circunstância, complicava os processos do conhecimento humano. Coube a ele sustentar que todas as filosofias até aquela
+época, ou vinham sofrendo por sua ingenuidade ou estavam eivadas pelos dogmatismos, uma vez que, estas se propunham a
+interpretar o que era a realidade, antes mesmo de ter definido o que é o conhecimento. Acerca dos estudos kantianos sobre a
+consciência humana, Konder (1984) aponta que:
+
+
+        O Centro da filosofia, para Kant, não podia deixar de ser a reflexão sobre a questão do conhecimento, a questão da
+        exata natureza e dos limites do conhecimento humano. Fixando sua atenção naquilo que ele chamou de “razão pura”,
+        o filósofo se convenceu, então, de que na própria “razão pura” (anterior à experiência) existiam certas contradições -
+        as “antinomias” - que nunca poderiam ser expulsas do pensamento humano por nenhuma lógica. (Konder, 1984, p.
+        20).
+
+        A hegemonia da metafísica, além de limitar a concepção dialética, a relegou posições secundárias, contudo esta não
+desapareceria. Para coexistir, a dialética precisou conciliar-se com a metafísica, abrindo mão de parte de seu radicalismo,
+entretanto, esse passo foi fundamental para que ainda se mantivessem abertos alguns espaços significativos nas ideias de
+diversos filósofos relevantes, tais como alemão Georg Wilhelm Friedrich Hegel (1770 - 1831).
+        Hegel sustentava que a questão central da filosofia deveria ser a questão do ser e não a do conhecimento, e aqui temos
+a contraposição de Kant e Hegel. Konder (1984) explica que Hegel fundamenta seus argumentos contra os de Kant,
+sintetizados na célebre frase “Se eu pergunto o que é o conhecimento, já na palavra é está em jogo certa concepção de ser; a
+questão do conhecimento, daquilo que o conhecimento é só pode ser concretamente discutida a partir da questão do ser”.
+        Apesar das discordâncias entre Hegel e Kant, ambos concordavam com um ponto fundamental: os dois reconheciam
+que o humano é essencialmente ativo e está sempre interferindo e interagindo com a realidade.
+        Durante a Revolução Francesa de 1789, o jovem Hegel, vendo a tomada da Bastilha pelas mãos da plebe, a derrubada
+de instituições que até então pareciam imperecíveis, chegou a demonstrar seu entusiasmo com os movimentos de mudança, ao
+
+                                                              4
+                    Research, Society and Development, v. 10, n. 6, e10910615665, 2021
+                (CC BY 4.0) | ISSN 2525-3409 | DOI: http://dx.doi.org/10.33448/rsd-v10i6.15665
+
+plantar uma árvore na cidade onde morava, em homenagem à França, sendo esta conhecida como a árvore da liberdade. Tanto
+Kant, quanto Hegel viram que aquele momento era marcado pela ratificação do poder humano, em detrimento das instituições
+seculares, tais como a monarquia absolutista.
+         Entre 1792 a 1794, Hegel se decepcionaria com aquela Revolução, após os jacobinos começarem o massacre de
+monarquistas, e a guilhotina ser usada como instrumento da justiça para os plebeus. Segundo Konder (1984) “Hegel descobriu,
+então, com amargura, que o homem transforma ativamente a realidade, mas quem impõe o ritmo e as condições dessa
+transformação ao sujeito é, em última análise, a realidade objetiva”.
+         Na obra Ciência da Lógica, Hegel estabelece que a dialética se desenvolve e se estrutura como pensamento de uma
+maneira objetiva. Com isso, a fundamentação da dialética toma caminhos diferenciados junto ao materialismo, o assim
+chamado, “materialismo dialético”. O francês Jean Paul Sartre expõe em sua obra Crítica da Razão Dialética, sua concordância
+com a interpretação da dialética como elemento substancial da realidade histórica, corroborando esta não só como mera
+renovação da dialética materialista, pois tratar-se de novas formulações a crítica ao idealismo Hegeliano.
+         O processo de desencantamento de Hegel dá ênfase ao desenvolvimento de uma concepção de superação da dialética.
+Para ele, um idealista, os movimentos da realidade material estavam subordinados à lógica de um princípio que ele chamava de
+Ideia Absoluta. Conceitualmente, a Ideia Absoluta era um princípio inexoravelmente nebuloso, turvo, opaco, onde os
+movimentos da realidade material eram descritos pelo filósofo de maneira bastante vaga. Esse idealismo, e as visões sobre o
+trabalho com elemento primordial, abriu caminho para outro pensador alemão que influenciaria sobremaneira a concepção
+contemporânea de dialética, Karl Marx (1818 - 1883).
+
+
+         Hegel percebe que o trabalho é a mola que impulsiona o desenvolvimento humano; é no trabalho que o homem se
+         produz a si mesmo; o trabalho é o núcleo a partir do qual podem ser compreendidas as formas complicadas da
+         atividade criadora do sujeito humano. No trabalho se encontra tanto a resistência do objeto (que nunca pode ser
+         ignorada) como o poder do sujeito, a capacidade que o sujeito tem de encaminhar, com habilidade e persistência, uma
+         superação dessa resistência. (Konder, 1984, p. 24).
+
+         A seara aberta por Hegel foi ocupada por Marx, e o idealismo hegeliano deu lugar ao pensamento materialista. Há
+para muitos pensadores a superação, dialeticamente, de Marx sobre Hegel. Coube a Marx, escrever que em Hegel a dialética
+estava de cabeça para baixo, invertida. Enquanto Hegel era um notório intelectual enclausurado em bibliotecas, o jovem Marx,
+logo cedo se vinculou ao movimento operário e socialista, posicionando-se politicamente junto aos trabalhadores, sendo
+exilado na Inglaterra, em 1849, onde pode ver de perto as consequências da Revolução Industrial. Essas experiências em
+realidades tão distintas seriam determinantes para os novos rumos da dialética.
+         Assim como ocorreu com Kant, agora Hegel era desconstruído pelas ideias de Marx. No entanto, Marx concordou
+integralmente com a observação de Hegel de que o trabalho era a mola que impulsionava o desenvolvimento humano, porém
+criticou a forma unilateral da concepção hegeliana de trabalho, a qual dava importância demais ao trabalho intelectual e não
+enxergava a significação, relevância social ao trabalho físico, braçal, material.
+
+
+         “O único trabalho que Hegel conhece e reconhece” - observou Marx em 1844 - “é o trabalho abstrato do espírito.”
+         Essa concepção abstrata do trabalho levava Hegel a fixar sua atenção exclusivamente na criatividade do trabalho,
+         ignorando o lado negativo dele, as deformações a que ele era submetido em sua realização material, social. Por isso
+         Hegel não foi capaz de analisar seriamente os problemas ligados à alienação do trabalho nas sociedades divididas em
+         classes sociais (especialmente na sociedade capitalista). (Konder, 1984, p. 27).
+
+         Marx, afirma que o trabalho é a atividade pela qual o homem domina as forças naturais, humaniza a natureza, é a
+atividade pela qual o homem se cria a si mesmo. Com isso ele questiona como, o trabalho, de condição natural para a
+
+                                                                 5
+                   Research, Society and Development, v. 10, n. 6, e10910615665, 2021
+               (CC BY 4.0) | ISSN 2525-3409 | DOI: http://dx.doi.org/10.33448/rsd-v10i6.15665
+
+realização do homem, chegou ao ponto de tornar-se algoz dos homens? Chegou a se transformar em “uma atividade que é
+sofrimento, uma força que é impotência, uma procriação que é castração”. As respostas às perguntas de Marx, são por ele
+elucidadas, ao afirmar como causas: a divisão social do trabalho, a apropriação privada das fontes de produção e o
+aparecimento das classes sociais. No ideário marxista, alguns poucos homens passaram a dispor de meios para explorar o
+trabalho dos outros, passando com isso, a impor aos trabalhadores condições de trabalho que não eram livremente assumidas
+por estes até então. Foi introduzido, assim, um novo tipo de contradição no interior da sociedade e, por conseguinte, no interior
+do gênero humano. Com isso, Marx estabelece um novo marco, o materialismo histórico-dialético.
+         Na perspectiva da dialética marxista, o conhecimento é totalizante, assim como a atividade humana, de modo geral,
+dá-se de forma a integrar-se a esse processo de totalização, que nunca alcança uma etapa definitiva e acabada. Hegel já havia
+dito que “A verdade é o todo”. Ao não enxergarmos o todo, podemos atribuir um valor desproporcional a uma verdade
+limitada, com isso maculando-a, transformando-a em mentira, prejudicando assim, a nossa compreensão de uma verdade mais
+ampla:
+
+
+         Qualquer objeto que o homem possa perceber ou criar é parte de um todo. Em cada ação empreendida, o ser humano
+         se defronta, inevitavelmente, com problemas interligados. Por isso, para encaminhar uma solução para os problemas,
+         o ser humano precisa ter uma certa visão de conjunto deles: é a partir da visão do conjunto que podemos avaliar a
+         dimensão de cada elemento do quadro. (Konder, 1984, p. 35).
+
+         Dentro da visão marxista, a realidade é sempre mais rica do que o conhecimento que temos dela. Temos que ter em
+mente que existirá sempre algo que escapa às nossas conclusões, isso, porém, não nos dispensa do esforço de elaborar novas
+sínteses, se realmente quisermos entender melhor essa realidade. De certo modo, a síntese é uma visão de todo conjunto, o que
+permite ao sujeito (re) descobrir a estrutura e os significados da realidade com que se defronta. A essa estrutura significativa,
+que é a visão do conjunto, dá-se o nome de totalidade, isto é:
+
+
+         A totalidade é mais do que a soma das partes que a constituem. No trabalho, por exemplo, dez pessoas bem entrosadas
+         produzem mais do que a soma das produções individuais de cada uma delas, isoladamente considerada. Na maneira de
+         se articularem e de constituírem uma totalidade, os elementos individuais assumem características que não teriam,
+         caso permanecessem fora do conjunto. (Konder, 1984, p. 36).
+
+         A totalidade pode ser dividida em mais abrangentes ou menos abrangentes. As menos abrangentes, por conseguinte,
+fazem parte das outras. Tem-se que a maior ou menor abrangência de uma totalidade depende do nível de generalização do
+pensamento dos objetivos concretos dos homens em cada situação dada. Pensar a realidade social do país requer um
+pensamento complexo, mas menos abrangente do que pensar a situação social do continente como um todo, por exemplo:
+
+
+         Para trabalhar dialeticamente com o conceito de totalidade, é muito importante sabermos qual é o nível de totalização
+         exigido pelo conjunto de problemas com que estamos nos defrontando; e é muito importante, também, nunca
+         esquecermos que a totalidade é apenas um momento de um processo de totalização (que, conforme já advertimos,
+         nunca alcança uma etapa definitiva e acabada). Afinal, a dialética - maneira de pensar elaborada em função da
+         necessidade de reconhecermos a constante emergência do novo na realidade humana — negar-se-ia a si mesma, caso
+         cristalizasse ou coagulasse suas sínteses, recusando-se a revê-las, mesmo em face de situações modificadas. (Konder,
+         1984, p. 38).
+
+         Após Marx, outros pensadores deram suas contribuições ao estudo da dialética, destaca-se Georg Lukács (1885-1971),
+pensador marxista húngaro, que em sua obra História e Consciência de Classe, tentou edificar duas teorias: a teoria do
+desenvolvimento da consciência da classe trabalhadora como classe revolucionária. Bem como, buscou reconstruir na dialética
+marxista a relação desta com o idealismo alemão e como superação das “antinomias do pensamento burguês”, estabelecendo
+uma ideia de “ortodoxia” marxista, centrada na questão do método.
+                                                                 6
+                   Research, Society and Development, v. 10, n. 6, e10910615665, 2021
+               (CC BY 4.0) | ISSN 2525-3409 | DOI: http://dx.doi.org/10.33448/rsd-v10i6.15665
+
+        Acerca da importância da categoria de totalidade no pensamento marxista, Lukács (1989) aponta que:
+
+
+        Não é o predomínio de motivos econômicos na explicação da história que distingue de maneira decisiva o marxismo
+        da ciência burguesa, mas o ponto de vista da totalidade. A categoria da totalidade, o domínio do universal e
+        determinante do todo sobre as partes constituem a essência do método que Marx recebeu de Hegel e transformou de
+        maneira original no fundamento de uma ciência inteiramente nova. […] A ciência proletária é revolucionária não
+        somente pelo fato de contrapor à sociedade burguesa conteúdos revolucionários, mas, em primeiro lugar, devido à
+        essência revolucionária de seu método. O domínio da categoria da totalidade é o portador do princípio revolucionário
+        da ciência (Lukács, 1989).
+
+        Portanto, Lukács (1989) ressalta que a categoria da totalidade assume um papel central no desenvolvimento da ciência
+proletária, pois proporciona o entendimento de como os aspectos universais determinam e condicionam as partes, ideia
+fundamental para o desenvolvimento do método que Marx recebeu de Hegel, isto é, o método dialético.
+
+
+3.2 Entendendo a dialética e totalidade em Edgar Morin
+        A Teoria da Complexidade foi criada e sistematizada por Edgar Morin, pensador com relevante atuação em diferentes
+campos de conhecimento, nos primeiros anos da década de 1970 (Pires & Rigue, 2020). A proposta teórica moriniana
+pressupõe o reconhecimento da complexidade dos fenômenos e ressalta a limitação resultante de qualquer proposta de
+simplificação da realidade. Cabe mencionar que a Teoria da Complexidade proporcionou e proporciona profícuos debates em
+diversas áreas de conhecimento, especialmente, nas áreas de Epistemologia e Educação (Arruda; Soave & Rosa, 2020; Lemos,
+Aquino, Silva, Jucá, Medeiros da Silva & Freitas, 2019; Pires & Rocha Veiga, 2020; Rodrigues & Boer, 2019).
+        Edgar Morin relata duas principais ilusões que afastam os espíritos da problemática do pensamento complexo. A
+primeira grande ilusão é entender a complexidade como destruição da simplicidade. Acerca de tal questão, Morin (2001)
+esclarece que a complexidade procura a integração dos modos simplificadores de pensar, porém recusando todas as
+consequências reducionistas do processo de simplificação da realidade. Nas palavras do autor:
+
+
+        A complexidade aparece certamente onde o pensamento simplificador falha, mas integra nela tudo o que põe ordem,
+        clareza, distinção, precisão no conhecimento. Enquanto o pensamento simplificador desintegra a complexidade do
+        real, o pensamento complexo integra o mais possível os modos simplificadores de pensar, mas recusa as
+        consequências mutiladoras, redutoras, unidimensionais e, finalmente, ilusórias de uma simplificação que se toma pelo
+        reflexo do que há de real na realidade. (Morin, 2001, p. 9)
+
+        A segunda ilusão apontada por Morin refere-se à compreensão da complexidade como sinônimo de completude. O
+autor ressalta que o pensamento complexo ambiciona compreender as articulações existentes entre os campos de conhecimento
+que foram dissolvidas pelo pensamento simplificador, porém esta ambição não deve ser confundida como uma busca pela
+onisciência. O pensamento complexo, dessa forma, “[…] sabe desde o começo que o conhecimento completo é impossível: um
+dos axiomas da complexidade é a impossibilidade, mesmo em teoria, de uma onisciência” (Morin, 2001, p. 9).
+        Ao citar Theodor W. Adorno, para quem qualquer forma de totalidade deve ser compreendida como uma não verdade,
+Morin (2001) explica que a teoria da complexidade desde sua gênese pressupõe o reconhecimento da incompletude e da
+incerteza do conhecimento. Entretanto, o autor também frisa que o pensamento complexo “tem em seu princípio o
+reconhecimento dos laços entre as entidades que nosso pensamento deve necessariamente distinguir, mas não isolar umas das
+outras” (Morin, 2001, p. 9).
+        Em termos epistemológicos, Lemos et at (2019) salienta que o pensamento complexo é desenvolvido a partir de uma
+contínua tensão entre a busca por um saber não fragmentado, sem compartimentalização, sem reduções da realidade, e a
+
+
+
+                                                              7
+                    Research, Society and Development, v. 10, n. 6, e10910615665, 2021
+                (CC BY 4.0) | ISSN 2525-3409 | DOI: http://dx.doi.org/10.33448/rsd-v10i6.15665
+
+compreensão do inacabamento e da incompletude de todo conhecimento. Conforme aponta Edgar Morin na obra “Ciência com
+Consciência”:
+
+
+        Acontece que o problema da complexidade não é o da completude, mas o da incompletude do conhecimento. Num
+        sentido, o pensamento complexo tenta dar conta daquilo que os tipos de pensamento mutilante se desfaz, excluindo o
+        que eu chamo de simplificadores e por isso ele luta, não contra a incompletude, mas contra a mutilação (Morin, 2005,
+        p. 176).
+
+        A inserção da compreensão do inacabamento e da incompletude de toda forma conhecimento no pensamento
+moriniano está intrinsecamente relacionada à influência da dialética marxista e hegeliana na gênese da teoria da complexidade,
+o que fica evidente pela utilização e significação do conceito de totalidade na obra do mencionado autor (Corrêa, & Castro
+2013; Piqueira, 2018; Santos & Hammerschmidt, 2012).
+        Loureiro e Viégas (2007; 2012), Piva (2005) e Pena-Veja, Almeida e Petraglia (2003) apontam que o pensamento de
+Edgar Morin pode ser classificado em três fases com distintas características. A primeira fase, que vai do início da década de
+1940 até o início da década de 1970, é caracterizada pela forte influência e inserção de conceitos e categorias marxistas no
+pensamento moriniano.
+        A segunda fase tem como principal característica o desenvolvimento do método do autor. É no período entre o início
+dos anos de 1970 e o final da década de 1980 que ocorre a incorporação da teoria dos sistemas, da cibernética, da teoria da
+informação e das discussões oriundas da termodinâmica na obra do autor. Também ocorre um maior afastamento da dialética
+marxista e a aproximação de autores que discutem a dialógica (Loureiro & Viégas, 2007).
+        A terceira fase que tem seu início nos primeiros anos da década de 1990 é caracterizada pela consolidação da teoria da
+complexidade com um maior privilégio à dialógica, bem como ao acentuado debate acerca da educação e uma maior
+publicização do pensamento moriniano por meio de textos com caráter mais didático.
+        Na obra "Meus demônios", sua autobiografia intelectual, Edgar Morin (1997) detalha a importância de Hegel para o
+desenvolvimento do seu pensamento. Para o autor, a dialética hegeliana possibilitou a compreensão de que a totalidade está
+sempre inacabada, isto é, a verdade encontra-se sempre em um processo de “reconstrução”.
+
+
+        Hegel me revela uma visão da verdade que respondia a minha necessidade: era falsa toda idéia fechada, cristalizada,
+        abstrata, separada da totalidade de que faz parte; mas toda idéia falsa era verdadeira, na medida em que exprimia uma
+        parcela da totalidade. A verdade era a totalidade, mas como a totalidade estava sempre em movimento, sempre
+        inacabada, a verdade estava em marcha ininterrupta, fazendo-se e desfazendo-se. (Morin, 1997, pp. 56 e 57).
+
+        Ao discutir a importância de Hegel na gênese do pensamento complexo, Albuquerque, Medeiros, Luna, Almeida &
+Felisberto (2012, p. 504) ressaltam que a dialética hegeliana permitiu a Edgar Morin descobrir que “a contradição estava no
+fundamento do ser”. O próprio Morin (1997) coloca que a leitura de Hegel permitiu-lhe ter acesso a um núcleo de ideais
+fundamentais, bem como extrair os aspectos essenciais da dialética marxiana.
+        Loureiro e Viégas (2007) afirmam que, durante as duas primeiras fases do pensamento moriniano, a compreensão da
+totalidade da realidade aproxima Morin de Marx, porém nestas fases há também duras críticas às apropriações de Marx
+comuns ao cenário intelectual francês na segunda metade do século XX, o que pode ser observado quando mesmo afirma que:
+
+
+        O que caracterizou o método de Marx foi um espírito crítico radical ilimitado, um pensamento dialético sempre em
+        movimento, foi privilegiar o movimento em oposição à essência enrijecida ou reificação. Em todo o sistema marxista
+        vê-se aparecer uma tendência à estruturação, à imobilização, que pode conduzir à esclerose, à petrificação e, em casos
+        extremos, mas freqüentes, à fetichização em dogmas religiosos. (Morin, 2002, p. 74).
+
+
+                                                              8
+                    Research, Society and Development, v. 10, n. 6, e10910615665, 2021
+                (CC BY 4.0) | ISSN 2525-3409 | DOI: http://dx.doi.org/10.33448/rsd-v10i6.15665
+
+         No decorrer da sua autobiografia, Morin aponta a importância da influência hegeliana e marxista no seu pensamento,
+destacando a retoma do conceito de totalidade na gênese do seu pensamento complexo. Todavia, o autor coloca que a
+complexidade suplanta a totalidade, pois:
+
+
+         [...] a presença da dialógica da ordem e da desordem mostra que o conhecimento deve tentar negociar com a incerteza.
+         Isso significa ao mesmo tempo que o objetivo do conhecimento não é descobrir o segredo do mundo ou a equação-
+         chave, mas dialogar com o mundo”. (Morin, 2005, p. 205).
+
+         Portanto, segundo Loureiro & Viégas (2007, p. 21), “Morin não nega a dialética marxiana, mas a incorpora na ideia
+da dialógica, que traz, em seu bojo, a abertura para a autorreflexão do conhecimento humano”. O pensamento complexo, dessa
+forma, busca:
+
+
+         […] reconhecer os traços singulares, originais, históricos do fenômeno em vez de ligá-los pura e simplesmente a
+         determinações ou leis gerais, a conceber a unidade-multiplicidade de toda a entidade em vez de a heterogeneizar em
+         categorias separadas ou de homogeneizar numa totalidade indistinta. Incita a dar conta dos caracteres
+         multidimensionais de toda a realidade estudada” (Morin, 2005 p. 334).
+
+         Para o pensamento moriniano, a unidade e heterogeneidade não devem ser compreendidas como características
+excludentes de explicação da realidade, pois “[…] é a dialética, a dialógica entre essas duas características que, também nesse
+caso, faz a vitalidade de uma atividade científica” (Morin, 2005 p. 53).
+         Nesse contexto, a análise crítica e bibliográfica realizada no presente artigo, evidenciou a importância da dialética
+hegeliana e marxista na gênese do pensamento moriniano. Entretanto, concluiu-se que a complexidade suplanta a noção de
+totalidade por meio da presença da dialógica no pensamento moriniano, ou seja, diferente da dialética marxiana e da hegeliana,
+Morin não pretende explicar fenômenos, pelo contrário, o pensamento complexo busca um continuo diálogo com a incerteza
+do mundo.
+
+
+4. Considerações Finais
+         De acordo com os aspectos abordados nesse estudo, percebe-se que o pensamento complexo, baseado em Edgar
+Morin, não se opõe ao pensamento simplificado, mas o incorpora, e o paradigma da complexidade apresenta-se de modo tão
+simples, que se equipara a própria simplicidade, pois enquanto o pensamento simples impõe separar e reduzir, a complexidade
+preconiza reunir, ainda que se possa distinguir.
+         Percebe-se, no estudo, que fatores como ordem e desordem, articulam princípios de união e separação, muitas vezes
+até de dependência e autonomia, e podem se tornar complementares, concorrentes e antagônicos, ou seja, vislumbrou-se que o
+pensamento complexo é essencialmente um pensamento que incorpora a incerteza e é capaz de conceber a organização.
+         Verificamos, também, que Morin (2007, p.76) aborda que o pensamento complexo “é capaz de contextualizar e
+globalizar, e pode, ao mesmo tempo, reconhecer o que é singular e concreto”, tornando-se momentos contínuos de incertezas, o
+que possibilita verificar o elementar e o geral, vinculando o concreto das partes à totalidade. "Não se trata de abandonar os
+princípios da ciência clássica, mas de integrá-los de um modo mais amplo e rico” (Morin, 2007, p. 62).
+         Portanto, nessa pesquisa bibliográfica, a leitura dos textos, permitiu acompanhar o raciocínio de Morin, analisando
+questões que não seria possível em outro contexto, pois seria, inclusive, considerado inimaginável, devido o autor evidenciar a
+importância da composição de saberes, de acordo com a relação do próprio contexto visualizando um mundo onde o todo é a
+soma das partes.
+
+
+
+                                                                9
+                       Research, Society and Development, v. 10, n. 6, e10910615665, 2021
+                   (CC BY 4.0) | ISSN 2525-3409 | DOI: http://dx.doi.org/10.33448/rsd-v10i6.15665
+
+           Concluímos esse estudo, evidenciando que devemos sempre buscar o conhecimento através do próprio conhecimento,
+pois “o pensamento complexo não termina com o assombro”, mas possibilita para os pesquisadores realizarem uma descoberta
+sobre a teoria complexa, analisando a abordagem sistêmica, como verdadeira realidade sobre a sistematicidade do todo,
+tornando as partes manifestações de algo mais complexo.
+           Dessa forma, Morin nos mostra que a complexidade pressupõe uma permanente relação dialógica entre aspectos tidos
+como antagônicos, em outras palavras, “a complexidade é uma noção lógica, que une o uno e multiplica-o em unitas multiplex
+do complexus, complementar e antagonista na unidade dialógica, ou, como querem alguns, na dialética”. Nesse interim,
+finalizando esse trabalho, o pensamento de Morin (2005 p. 55) coloca que “[…] todo desenvolvimento verdadeiramente
+humano significa o desenvolvimento conjunto das autonomias individuais, das participações comunitárias e do sentimento de
+pertencer à espécie humana”.
+           Como proposta para futuros estudos, indica-se a necessidade de pesquisas acerca da noção de dialética nas obras mais
+recentes de Edgar Morin. Ademais, salienta-se a importância de trabalhos que discutam as possíveis semelhanças e diferenças
+epistemológicas existentes entre a Teoria da Complexidade e as noções de dialética presentes nas teorias hegelianas, a
+marxistas e a neohegelianas.
+
+
+Referências
+Albuquerque, M. D. S. V. D., Medeiros, K. R. D., Luna, K., Almeida, S. R. D., & Felisberto, E. (2007). The expression of the demons of Morin. Revista
+Brasileira de Saúde Materno Infantil, 7(4), 503-506.
+
+Arruda, M. P., Soave, C., & Rosa, G. A. (2020). Auto-ética: um saber para ressignificar a docência. Research, Society and Development, 9(12),
+e20091211007-e20091211007.
+
+Corrêa, G. R., & Castro, M. L. A. (2013). O pensamento complexo de Edgar Morin e o design. Estudos em Design, 21(1).
+
+Gamboa, Sílvio Sánchez Pesquisa em educação: métodos e epistemologias. (2a ed.), Argos.
+
+Gil, A. C. (2008). Métodos e técnicas de pesquisa social. (6a ed.), Editora Atlas SA.
+
+Hegel, G. W. F. (2016). Ciência da Lógica: 1. A Doutrina do Ser. Traduzido por Christian G. Iber, Marloren L. Miranda e Federico Orsini. Petrópolis, RJ:
+Vozes; Ed. Universitária São Francisco.
+
+Konder, L. (1984). O que é dialética? (9a ed.) Brasiliense.
+
+Lemos, P. B. S., de Aquino, F. J. A., da Silva, S. A., Jucá, S. C. S., da Silva, F. E. M., & de Freitas, S. R. (2019). O conceito de paradigma em Thomas Kunh e
+Edgar Morin: similitudes e diferenças. Research, Society and Development, 8(10), e078101321-e078101321.
+
+Loureiro, C. F. B., & Viégas, A. (2012). Algumas considerações sobre as influências do marxismo na teoria da complexidade de Edgar Morin: aportes para a
+pesquisa em educação ambiental. AMBIENTE & EDUCAÇÃO-Revista de Educação Ambiental, 17(2), 13-24.
+
+Lukács, G. (1989). História e consciência de classe: estudos de dialética marxista. Trad. Telma Costa; Revisão Manuel A. Resende e Carlos Cruz – 2° Edição,
+Rio de Janeiro: Elfos Ed.; Porto, Portugal, Publicações Escorpião.
+
+Minayo, M. C. S. (2002). Ciência, Técnica e Arte: o desafio da pesquisa social. In: Minayo, M.C.S. (ORG.). Pesquisa Social: Teoria, Método e criatividade.
+Petrópolis, RJ: Vozes, 09-29.
+
+Morin, E. (1997). Meus demônios. Bertrand Brasil.
+
+Morin, E. (2002). Em busca dos fundamentos perdidos – textos sobre o marxismo. Sulina.
+
+Morin, E. (2005). Ciência com Consciência. (8a ed.), Bertrand Brasil.
+
+Morin, E. (2007). Introdução ao pensamento complexo. (3a ed.), Sulina.
+
+Pena-Veja, A., Almeida, C. R S., & Petraglia, I. (2003). Edgar Morin: ética, cultura e educação. Cortez.
+
+Petraglia, I. (2001). Olhar sobre o olhar que olha: complexidade, holística e educação. Vozes.
+
+Pires, C. S., & Rigue, F. M. (2020). Complexidade e escolarização: tramando tensionamentos. Research, Society and Development, 9(10), e6909109163-
+e6909109163.
+
+
+
+                                                                              10
+                       Research, Society and Development, v. 10, n. 6, e10910615665, 2021
+                   (CC BY 4.0) | ISSN 2525-3409 | DOI: http://dx.doi.org/10.33448/rsd-v10i6.15665
+
+Pires, C. S., & Rocha Veiga, A. M. (2020). Costurando possibilidades na complexidade da docência: a bricolagem na trajetória auto (trans)
+formativa. Research, Society and Development, 9(9), e20996496-e20996496.
+
+Piqueira, J. R. C. (2018). Engenharia da Complexidade em Edgar Morin. Estudos Avançados, 32(94), 363-370.
+
+Piva, A. (2005). A apropriação do pensamento de Edgar Morin na pesquisa em educação ambiental no Brasil. Dissertação de Mestrado, Mestrado em
+Educação, Faculdade de Educação da UFMG.
+
+Rodrigues, J. D. S. M., & Boer, N. (2019). Da epistemologia à prática docente na educação infantil: relato de uma sequência didática. Research, Society and
+Development, 8(6), e186969-e186969.
+
+Santos, S. S. C., & Hammerschmidt, K. S. D. A. (2012). A complexidade e a religação de saberes interdisciplinares: contribuição do pensamento de Edgar
+Morin. Revista Brasileira de Enfermagem, 65(4), 561-565.
+
+Sartre, Jean-Paul (2002). Crítica da razão dialética: precedido por questões de método. Tradução de Ghilherme João de Freitas Teixeira; apresentação da
+edição brasileira, Gerd Bornheim. DP&A, 2002.
+
+Silveira, D. T., & Córdova, F. P. (2009). Unidade 2 – A pesquisa científica. In: Métodos de pesquisa, 1.
+
+
+
+
+                                                                              11

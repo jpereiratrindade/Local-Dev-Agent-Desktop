@@ -1,0 +1,1054 @@
+Austral Ecology
+
+
+
+
+   RESEARCH ARTICLE
+
+
+
+Day-­Night Dynamics in the Organisation of Ant–Plant
+Interaction Networks in a Brazilian Amazon Rainforest
+Patrícia Nakayama Miranda1    | Maiara de Souza Bento1                       | Ítalo Miranda Armes1            | Izaias Brasil da Silva2   |
+Ricardo Eduardo Vicente3   | Fabrício Beggiato Baccaro3,4                      | Wesley Dáttilo5
+1Campus Rio Branco, Instituto Federal do Acre, Rio Branco, Acre, Brasil| 2Laboratório de Botânica e Ecologia Vegetal, Universidade Federal do Acre,
+Rio Branco, Acre, Brasil | 3Departamento de Biologia, Universidade Federal do Amazonas, Manaus, Amazonas, Brasil | 4Coordenação de Tecnologia
+e Inovação, Instituto Nacional de Pesquisas da Amazônia, Manaus, Amazonas, Brasil | 5Red de Ecoetología, Instituto de Ecología, A.C, Xalapa,
+Veracruz, México
+
+
+Correspondence: Patrícia Nakayama Miranda (patricia.miranda@ifac.edu.br)
+
+Received: 21 August 2025 | Revised: 16 February 2026 | Accepted: 10 March 2026
+
+Keywords: beta diversity of interactions | complex networks | extrafloral nectaries | Formicidae | tropical forest
+
+Palavras-chave: diversidade beta de interações | nectários extraflorais | Formicidae | redes complexas | floresta tropical
+
+
+  ABSTRACT
+  Interactions between ants and plants bearing extrafloral nectaries (EFN-­bearing plants) represent a classic plant defence strategy
+  that involves a high diversity of species in tropical forests. Several studies have investigated the structuring processes of these
+  ant–plant interactions across spatial and temporal scales. However, surprisingly little is known about how these interactions vary
+  throughout the day. In this study, we investigated daily variations in ant–plant interactions mediated by extrafloral nectaries
+  in a Brazilian tropical forest, using a complex network approach and beta-­diversity analysis of interactions. We sampled these
+  ant–plant interactions in nine 150 × 10 m plots over three periods of the day (morning, afternoon and night). We organised the
+  data from each period into quantitative matrices and combined data from two and three periods to investigate possible increases
+  in network descriptors. We calculated the total beta diversity of interactions, as well as its additive components (species turno-
+  ver and interaction rewiring), across different pairs of periods. We found that network specialisation and nestedness remained
+  constant throughout the day. However, at night, the networks exhibited reductions in network size, the number of interactions
+  and diversity of interactions. Networks combining data from three periods showed pronounced increases in network size and
+  the number of interactions compared with two-­and single-­period networks, suggesting temporal niche partitioning associated
+  with extrafloral nectaries. Compositional changes were also detected through the beta diversity of interactions. Greater species
+  turnover and interaction rewiring occurred between the nocturnal period and both diurnal periods. Our results underscore the
+  critical role of the daily temporal scale in structuring these mutualistic networks and reveal how distinct ant foraging strategies
+  partition the resource in time, cautioning against ecological interpretations derived solely from diurnal sampling.
+
+  RESUMO
+  Interações entre formigas e plantas portadoras de nectários extraflorais representam uma clássica estratégia de defesa de plan-
+  tas, que envolve uma elevada diversidade de espécies em florestas tropicais. Diversos estudos têm investigado sobre os processos
+  estruturadores destas interações no espaço e no tempo. No entanto, sabemos relativamente pouco sobre como essas interações
+  mudam ao longo do dia. Neste estudo, investigamos variações diárias nas interações formiga-­planta mediadas por nectários ex-
+  traflorais em uma floresta tropical brasileira, usando uma abordagem de redes complexas e análises de diversidade beta de inter-
+  ações. Amostramos essas interações em nove parcelas de 150 × 10 m em três períodos do dia (manhã, tarde e noite). Organizamos
+
+
+
+© 2026 Ecological Society of Australia.
+
+
+
+Austral Ecology, 2026; 51:e70206                                                                                                                 1 of 15
+https://doi.org/10.1111/aec.70206
+                                                                                                                                                  14429993, 2026, 3, Downloaded from https://onlinelibrary.wiley.com/doi/10.1111/aec.70206 by William Magnusson - INPA - Instituto Nacional de Pesquisas da Amazonia , Wiley Online Library on [24/03/2026]. See the Terms and Conditions (https://onlinelibrary.wiley.com/terms-and-conditions) on Wiley Online Library for rules of use; OA articles are governed by the applicable Creative Commons License
+  os dados de cada período em matrizes quantitativas e combinamos dados de dois e três períodos para investigar possíveis aumen-
+  tos nos descritores de rede. Calculamos a diversidade beta total de interações, bem como seus componentes aditivos (substituição
+  de espécies e reconfiguração de interações) entre diferentes pares de períodos. Constatamos que a especialização e o aninha-
+  mento das redes permaneceram constantes ao longo do dia. Contudo, à noite, as redes exibiram reduções no tamanho, número
+  de interações e diversidade de interações. Redes com dados combinados de três períodos mostraram aumentos acentuados no
+  tamanho e no número de interações em comparação com redes de dois períodos e de período único, sugerindo uma partição tem-
+  poral de nicho associada a nectários extraflorais. Mudanças composicionais também foram detectadas por meio da diversidade
+  beta de interações. Uma maior substituição de espécies e religação de interações ocorreu entre o período noturno e ambos os
+  períodos diurnos. Nossos resultados destacam o papel crucial da escala temporal diária na estruturação dessas redes mutualísti-
+  cas e revelam como diferentes estratégias de forrageamento das formigas dividem o recurso ao longo do tempo, alertando contra
+  interpretações ecológicas derivadas exclusivamente de amostragem diurna.
+
+
+1   |   Introduction                                                     In highly seasonal environments, daily fluctuations in the volume
+                                                                         and concentration of extrafloral nectar have been documented for
+Tropical forests are known for their high biodiversity, especially       several plant species (Anjos et al. 2016; Lange et al. 2017). Under
+of arthropod species (Basset et al. 2015; De Aquino et al. 2022).        stronger daytime water stress, nectar tends to be more concen-
+Among insects, ants represent a highly diverse group (Andrade-­          trated in sugars, potentially altering the attractiveness of these
+Silva et al. 2022), whose species interact with plants in different      resources to different consumers throughout the day (Chavarro-­
+ways, playing important structuring roles (Del-­Claro and Torezan-­      Rodríguez et al. 2013). Despite this evidence from seasonal sys-
+Silingardi 2009; Del-­Claro et al. 2018; Moura and Del-­Claro 2023).     tems, no studies have yet investigated daily variation in ant–plant
+Ants, for example, play a role in seed dispersal (Fontenele and          interactions mediated by extrafloral nectaries in tropical forests.
+Schmidt 2021), plant defence against herbivory (Pereira et al. 2020)     Nevertheless, a turnover of ant species exploiting these glands
+and pollination (Delnevo et al. 2020). Among these, ant–plant in-        over the daily cycle is likely to occur, as many tropical ant spe-
+teractions mediated by extrafloral nectaries exemplify a classic         cies exhibit marked diel variation in foraging activity (General
+plant defence strategy. In these interactions, ants feed on nectar       et al. 2020), with some being strongly associated with nocturnal
+produced by glands known as extrafloral nectaries, while protect-        periods (Houadria et al. 2015; General et al. 2020). In this context,
+ing their host plants from herbivorous insects (Calixto et al. 2021).    investigating the dynamics of ant–plant interactions on a daily
+In general, these are facultative associations, characterised by         timescale in tropical forests represents a valuable opportunity to
+low fidelity between the interacting partners (Dáttilo, Marquitti,       improve our understanding of the mechanisms underlying the ex-
+et al. 2014). However, they can reduce herbivory on host plants          ceptionally high diversity of these systems. Moreover, such infor-
+(Pereira et al. 2020) and positively affect the survival, growth and     mation can inform the definition of appropriate sampling periods
+reproduction of ants (Calixto et al. 2021).                              in studies of ant–plant interactions across different environmental
+                                                                         contexts, helping to ensure that both interacting communities are
+In tropical ecosystems, extrafloral nectaries constitute an abun-        adequately represented.
+dant and widespread food resource, exploited by a large number
+of ant species (Dáttilo, Marquitti, et al. 2014; Nogueira et al. 2020;   To assess the daily dynamics of these ant–plant interactions at
+Miranda et al. 2025) and produced by many plant species (Aguirre         the community level, two analytical approaches can be recom-
+et al. 2013; Marazzi et al. 2013; Miranda et al. 2024). This asso-       mended: complex ecological networks (Bascompte et al. 2003;
+ciation is particularly prominent in Leguminosae, a plant family         Bascompte and Jordano 2007) and beta diversity of interactions
+rich in species bearing extrafloral nectaries (Marazzi et al. 2019).     (Poisot et al. 2012; Ratoni et al. 2025). Complex networks have
+Despite the high number of ant species often sharing the same nec-       been widely used in studies on ants and plants bearing extra-
+tar sources, coexistence may be facilitated by stabilising mecha-        floral nectaries (EFN-­bearing plants) in different temporal and
+nisms in interspecific competition. In this context, the facultative     spatial gradients (Luna et al. 2018; Dáttilo and Vasconcelos 2019;
+nature of ant–plant interactions (Dáttilo, Marquitti, et al. 2014),      Juárez-­Juárez et al. 2023; Miranda et al. 2025). These ecologi-
+together with the wide availability of alternative food resources in     cal networks are mathematical representations of interactions,
+tropical environments, likely plays a key role. An additional mech-      in which different ant and plant species are depicted as nodes
+anism that may contribute to coexistence is temporal niche parti-        and their interactions as links (Dáttilo, Marquitti, et al. 2014).
+tioning (Chesson 2000; Chase and Leibold 2003). For instance, in         This approach allows the acquisition of relevant information
+tropical savannas, ants and spiders that feed on extrafloral nec-        about the structural organisation of the interacting communities
+taries are able to coexist through temporal niche specialisation, in     (Vázquez et al. 2009). In general, these associations mediated by
+which ants feed on these glands mainly during the rainy months           extrafloral nectaries exhibit a low degree of specialisation and a
+and spiders during the dry months (Lange et al. 2000). Moreover,         nested pattern, in which species with few links tend to associ-
+pronounced shifts in the identity of highly interactive ant species      ate with highly interactive species and rarely with poorly inter-
+associated with extrafloral nectaries between day and night have         active partner species (Dáttilo, Marquitti, et al. 2014; Miranda
+been documented in more arid environments (Dáttilo, Fagundes,            et al. 2022). The interesting aspect of the second approach, the
+et al. 2014; Schramm et al. 2023).                                       beta diversity of interactions, is that it allows capturing the
+
+
+
+
+2 of 15                                                                                                                   Austral Ecology, 2026
+                                                                                                                                           14429993, 2026, 3, Downloaded from https://onlinelibrary.wiley.com/doi/10.1111/aec.70206 by William Magnusson - INPA - Instituto Nacional de Pesquisas da Amazonia , Wiley Online Library on [24/03/2026]. See the Terms and Conditions (https://onlinelibrary.wiley.com/terms-and-conditions) on Wiley Online Library for rules of use; OA articles are governed by the applicable Creative Commons License
+turnover of interacting species along temporal and spatial gra-       accessible to the collector (ranging from 0.5 to 3 m) that were
+dients, as well as the rewiring of the interactions along such        interacting with ants (Dáttilo and Dyer 2014). Interactions were
+gradients (Poisot et al. 2012). Luna et al. (2018), in a study on     confirmed when ants kept their mouthparts in contact with
+ant–plant interactions conducted in two desert environments,          the extrafloral nectaries of a plant for several minutes (Dáttilo,
+recorded a substantial turnover of species and interaction rewir-     Marquitti, et al. 2014). We also searched for plants with appar-
+ing between day and night periods.                                    ently active extrafloral nectaries on young branches, but that
+                                                                      were not interacting with ants in the morning. All these selected
+In this study, we aimed to understand the temporal dynamics           EFN-­bearing plants were marked and sequentially coded. For
+of ant–plant interactions in tropical forests on a daily timescale,   interacting plants, ants were collected with entomological twee-
+through structural changes in complex networks and varia-             zers, and to record individuals that dropped from the plant at
+tions in interaction beta diversity. Based on daily variation in      the slightest sign of disturbance, an entomological umbrella
+extrafloral nectar production in more arid environments (Lange        was positioned under the branches before collection (Dáttilo,
+et al. 2017) and in the foraging activity of different ant species    Marquitti, et al. 2014). We assigned the same plant code to each
+in tropical forests (General et al. 2020), we expect to find dif-     ant, enabling tracking of this interaction. Observations on each
+ferences in the number of interactions, network size, diversity       marked plant (with or without ant association) lasted an average
+of interactions, network specialisation and nestedness among          of 3 min. We took care to maintain a distance of at least 10 m
+the three periods of the day. We also combined data from two          between EFN-­bearing plants sampled, to minimise the possibil-
+consecutive periods to simulate commonly adopted sampling             ity of collecting individuals from the same ant colony foraging
+practices in ecological field studies, which typically focus on       on different plants (Dáttilo and Dyer 2014). All plants marked
+diurnal activity or consecutive shifts. We expect that networks       in the morning were revisited once in the afternoon (between
+with accumulated data from three periods will show substantial        1 PM and 5 PM) and once at night (between 7 PM and 11 PM).
+increases in some network descriptors compared to networks            Therefore, the same number of EFN-­bearing plants was ob-
+with accumulated data from two or a single period, thereby evi-       served in the three periods. Whenever we detected ants feeding
+dencing a temporal turnover of interactions throughout the day.       on the extrafloral nectaries of a marked plant, we followed the
+We also postulate that the central core of highly interactive ant     same procedure to collect vouchers of the interacting ants. To
+species in the network changes throughout the day, mainly due         facilitate locating the marked plants at night, in the morning,
+to nocturnal ant activity. Consequently, we expect the beta di-       we tied a fluorescent-­coloured tape to a plant near each marked
+versity of interactions to be higher between the afternoon and        plant. At night, these fluorescent-­coloured tapes were easily
+night, and between the night and morning, than between the            found with long-­range flashlights and headlamps. Finally, after
+morning and afternoon.                                                the night samplings, we collected one sample from each marked
+                                                                      plant for further identification.
+
+2   |   Methods                                                       Considering the phenological variation of EFN-­bearing plants
+                                                                      (Falcão et al. 2016; Nogueira et al. 2020; Miranda et al. 2025),
+2.1   |   Study Area                                                  we performed two samplings per plot, each including observa-
+                                                                      tions in the morning, afternoon and night. The first sampling
+Fieldwork was carried out in a forest fragment within the             occurred during the rainy season, from January to March 2024,
+Catuaba Experimental Farm (10°04′ S, 67°37′ W), located in the        and the second during the dry season, from June to August 2024.
+municipality of Senador Guiomard, state of Acre, in the south-        All observations were conducted by the same three trained ob-
+western Brazilian Amazon. This forest fragment has an area            servers, experienced in detecting interactions between ants and
+of 1166 ha and the vegetation type is open rainforest with palm       EFN-­bearing plants in tropical forests, across all plots. During
+trees and dense rainforest with bamboo (Silveira et al. 2020).        the dry season, samplings of each plot were carried out in the
+The canopy height ranges from 20 to 40 m, with emergent trees         morning, afternoon and night on the same day (one plot per
+reaching up to 45 m (Silveira et al. 2020). This region has a         day). During the rainy season, when it rained between sampling
+monsoon climate (Am), with an average annual precipitation            periods, the observations were cancelled but resumed the fol-
+of 1900–2200 mm, and two seasons (Alvares et al. 2014). The           lowing day immediately as an attempt to control for more pro-
+dry season, with reduced average monthly precipitation, occurs        nounced climatic variations.
+from June to August, and the rainy season from September to
+May (Alvares et al. 2014). The average annual temperature is          We identified the ants to species or morphospecies using
+24.5°C, with a daily variation of ±7.5°C (Silveira et al. 2020).      identification keys (Mackay and Mackay 2010; Ortiz and
+                                                                      Fernández 2011; Baccaro et al. 2015; Feitosa and Prada-­
+                                                                      Achiardi 2019; Mackay and Mackay 2019; Pedraza and
+2.2   |   Ant-­Plant Interaction Collection                           Fernández 2019; Ward 2019; Camacho et al. 2020; Oliveira
+and Processing                                                        et al. 2021; Feitosa and Dias 2024; França et al. 2024) and by
+                                                                      comparison with voucher photos in Antweb (AntWeb 2026)
+We sampled ant–plant interactions mediated by extrafloral             and specimens deposited at the Community Ecology Lab of the
+nectaries in nine 150 × 10 m (1500 m2) plots. These plots were        Universidade Federal do Amazonas, where the voucher speci-
+established every 500 m along a 5 km east–west trail, following       mens were deposited.
+the RAPELD sampling design (Magnusson et al. 2013). In the
+morning (between 7 AM and 11 AM), we slowly walked through            We identified EFN-­  bearing plants to the genus level using
+a sampling plot, searching for EFN-­bearing plants at heights         standard identification guides (Ribeiro et al. 1999; Pennington
+
+Austral Ecology, 2026                                                                                                            3 of 15
+                                                                                                                                              14429993, 2026, 3, Downloaded from https://onlinelibrary.wiley.com/doi/10.1111/aec.70206 by William Magnusson - INPA - Instituto Nacional de Pesquisas da Amazonia , Wiley Online Library on [24/03/2026]. See the Terms and Conditions (https://onlinelibrary.wiley.com/terms-and-conditions) on Wiley Online Library for rules of use; OA articles are governed by the applicable Creative Commons License
+et al. 2004), complemented by comparisons with voucher spec-          Fagundes, et al. 2014). To calculate the network size, we multi-
+imens deposited in the herbarium of the ParqueZoobotanico             plied the number of EFN-­bearing plant species by the number of
+of the Universidade Federal do Acre. These vouchers origi-            ant species in each matrix. We calculate the diversity of interac-
+nate from a previous study on the morphology of extrafloral           tions using the H′ index, which is based on Shannon's diversity
+nectaries conducted in the same forest fragment and nearby            index and ranges from zero to infinity (Bersier et al. 2002). We
+areas (Miranda et al. 2024) and were used as reference mate-          estimated specialisation using the H2′ index, which describes
+rial to define species and morphospecies in the present study.        how species restrict their interactions relative to those expected
+Species delimitation was based on leaf and stem characteristics,      by chance given a partner's availability (Blüthgen et al. 2006).
+as well as on the morphology and position of extrafloral nec-         In this index, values close to zero indicate a low level of spe-
+taries on the plant body (Table S2). Identification to the species    cialisation in an ecological network, whereas H2′ = 1 represents
+level was possible for only a few taxa due to the limited avail-      complete specialisation.
+ability of flowering material. The accession numbers of the ref-
+erence EFN-­bearing plant specimens are provided in Table S2.         We used the NODF-­metric (Nestedness Based on Overlap and
+The voucher specimens from our work are deposited in the              Decreasing Fill) (Almeida-­Neto et al. 2008) to estimate the de-
+Laboratório de Botânica e Ecologia Vegetal of the Universidade        gree of nestedness in our networks with binary data, and the
+Federal do Acre.                                                      WNODF-­metric (Weighted Nestedness Metric Based on Overlap
+                                                                      and Decreasing Fill) (Almeida-­Neto and Ulrich 2011) to estimate
+                                                                      quantitative nestedness. In binary nestedness, all interactions
+2.3   |   Data Analysis                                               are considered ecologically equivalent, and differences among
+                                                                      them are ignored (Almeida-­Neto and Ulrich 2011). Conversely,
+We used an interaction network approach to investigate poten-         in quantitative nestedness, the weight of interactions is based
+tial daily changes in the structural organisation of ant–plant        on the abundances of the interacting partners (Almeida-­Neto
+interactions mediated by extrafloral nectaries. For this pur-         and Ulrich 2011). The values of both nestedness indices ranged
+pose, we organised the sampled data into quantitative matri-          from 0 (non-­nested) to 100 (perfectly nested). We calculated the
+ces, in which the elements (aij) represented the frequency (i.e.,     NODF-­metric with the ANINHADO software (Guimarães and
+the number of times) with which plant species i interacted with       Guimarães 2006), and we estimated the NODF significance
+ant species j within the plot (Bascompte et al. 2003). For each       using p values based on Null Model II (1000 randomisations),
+of the nine plots, we built a matrix of ant–plant interaction         for which the probability of an interaction occurring is propor-
+data sampled in the morning (M networks), another with data           tional to the observed number of interactions of both plant and
+sampled in the afternoon (A networks), and a third with data          ant species (Bascompte et al. 2003). We estimated WNODF sig-
+sampled at night (N networks), for a total of 27 matrices, each       nificance using p values based on a null model (1000 randomis-
+representing a single-­period network. To organise these matri-       ations), generated using the r2dtable algorithm (Patefield 1981),
+ces, we combined data from samplings conducted during both            which holds the marginal totals constant (i.e., observed row
+the rainy and dry seasons. We also built matrices for each plot,      and column totals) whilst allowing connectance to vary. We
+containing accumulated data from two consecutive periods of           calculated diversity of interactions, network specialisation and
+the day (two-­period networks): morning and afternoon (M + A          WNODF using the ‘bipartite’ package (Dormann et al. 2025) in
+networks), afternoon and night (A + N networks), and night and        R software, version 4.4.1 (R Core Team 2024).
+morning (N + M networks). In these matrices, we also combined
+data collected during both the rainy and dry seasons, treating        We used generalised linear mixed models (GLMMs) (Bolker
+the presence of the same ant species on a plant across two con-       et al. 2009) and linear mixed-­         effects models (LMMs)
+secutive periods as a single interaction, yielding an additional 27   (Crawley 2012) to test whether the ant–plant network descrip-
+matrices. This combination of consecutive periods aimed to sim-       tors differed among the three periods of the day. We considered
+ulate typical field sampling protocols that often focus on diurnal    each network descriptor (network size, number of interactions,
+activity (morning + afternoon) or consecutive shifts, thereby         diversity of interactions, network specialisation and nestedness)
+providing a more realistic basis for comparison. Finally, for each    calculated from the single-­period networks (M, A and N net-
+plot, we also constructed a matrix that accumulated data from         works) as a response variable, and the three periods of the day
+all three periods of the day (M + A + N networks) and from both       (M, A and N) as an explanatory variable. We also included the
+rainy and dry seasons, resulting in nine matrices with compre-        identity of each plot as random effects in the models to account
+hensive data. In these matrices, we also considered the presence      for repeated measures within plots and to control for temporal
+of the same ant species on a plant during three periods as a sin-     pseudoreplication. We tested the models' significance via analy-
+gle interaction.                                                      sis of variance between the evaluated model and the null model
+                                                                      (intercept and random effect only). Subsequently, we performed
+In total, we built 63 quantitative matrices (i.e., 63 ant–plant       contrast tests to verify pairwise differences among the three pe-
+networks), and for each of them, we calculated five network de-       riods of the day. We also performed residual analysis and tests
+scriptors to characterise ant–plant interactions at different time    for overdispersion (Crawley 2012) to verify the adequacy of the
+intervals: number of interactions, network size, diversity of in-     models' predictions. We examined the network size and num-
+teractions, network specialisation and nestedness (using both         ber of interactions through a GLMM with Poisson error distri-
+quantitative and binary data). The number of interactions rep-        bution, and the diversity of interactions, network specialisation
+resents the total number of interactions observed in the network,     and nestedness (NODF and WNODF) through a LMM with
+including all ant and plant species in a given matrix (Dáttilo,       Gaussian error distribution.
+
+
+
+4 of 15                                                                                                               Austral Ecology, 2026
+                                                                                                                                                14429993, 2026, 3, Downloaded from https://onlinelibrary.wiley.com/doi/10.1111/aec.70206 by William Magnusson - INPA - Instituto Nacional de Pesquisas da Amazonia , Wiley Online Library on [24/03/2026]. See the Terms and Conditions (https://onlinelibrary.wiley.com/terms-and-conditions) on Wiley Online Library for rules of use; OA articles are governed by the applicable Creative Commons License
+We employed a similar analytical scheme to investigate whether             interactions (βWN), species turnover (βST) and interaction rewir-
+network descriptors varied across longer time intervals. For               ing (βOS) as response variables, and the different pairwise com-
+these models, we considered each network descriptor calculated             binations of periods of the day (M and A, A and N, and N and
+from the two-­period networks as a response variable and the               M) as the explanatory variables. We also included the identity of
+different time intervals (M + A, A + N and N + M) as explana-              each plot as random effects in the models to account for variance
+tory variables. Finally, we calculated the increase or decrease            associated with random site effects. Subsequently, we performed
+in network descriptor values from the three-­period networks               contrast tests to verify pairwise differences between the βWN, βST
+(M + A + N) relative to those calculated from the single-­period           and βOS values calculated from different pairwise combinations
+and two-­period networks. We chose not to include the different            of periods of the day. We also performed residual analysis and
+time intervals (M, A, N, M + A, A + N, N + M and M + A + N) in             tests for overdispersion (Crawley 2012) to verify the adequacy of
+the same model, as their respective matrices were based on dif-            the models' predictions.
+ferent sampling efforts.
+                                                                           We created GLMMs and LMMs using the ‘lme4’ package (Bates
+We also evaluated the constancy of the central core of highly              et al. 2025), conducted analysis of variance between each
+interacting species among different periods of the day (M, A               model and the null model with the ‘vegan’ package (Oksanen
+and N). For this, we categorised ant and plant species accord-             et al. 2025), ran contrast tests using the ‘emmeans’ package
+ing to Dáttilo et al. (2013): G c = (k i − k mean)/σk , where k i = mean   (Lenth et al. 2025) and assessed residuals of the GLMMs and
+number of links for a given plant/ant species, k mean = mean               LMMs with the ‘DHARMa’ package (Florian et al. 2025) in R
+number of links for all plant/ant species in the network, and              version 4.4.1 (R Core Team 2024).
+σk = standard deviation of the number of links for plant/ant
+species. Species with G c ≥ 1 belong to the generalist core of
+highly interacting species within the network, as they exhibit             3   |   Results
+a higher number of interactions compared to other species at
+the same trophic level. In contrast, species with G c < 1 are lo-          In total, we recorded 86 ant species across 22 genera and 6 sub-
+cated at the periphery of the network, as they exhibit a lower             families (Table S1). Of these, 30 morphospecies could not be
+number of interactions compared to other species at the same               identified to the species level and were assigned to a unique mor-
+trophic level.                                                             phospecies code. We recorded 87 EFN-­bearing plant species,
+                                                                           distributed in 25 genera and 18 families (Table S2). Of these, 76
+To assess total beta diversity of interactions (βWN) across                morphospecies could not be identified to the species level (67 to
+different periods of the day, we applied the framework pro-                the genus level, seven to the family level and two with their fam-
+posed by Poisot et al. (2012). This index is derived from                  ilies undetermined). As with ant species, we assigned a unique
+Whittaker's (1960) beta diversity index (βW ), which consid-               code to each plant morphospecies.
+ers the number of shared species and the number of unique
+species between two communities, and ranges from zero to                   We recorded 65 ant species and 80 EFN-­bearing plant species in
+one, where zero indicates that the two communities have                    the morning, 66 ant species and 81 EFN-­bearing plant species
+completely similar species and one indicates that they have                in the afternoon, and 55 ant species and 70 EFN-­bearing plant
+completely different species. The total beta diversity of inter-           species at night (Tables S1 and S2). Six ant species (Dolichoderus
+actions (βWN), in turn, expresses the dissimilarity of interac-            rugosus Smith, 1858, Dolichoderus septemspinosus Emery, 1894,
+tions and can be partitioned into two additive components:                 Pseudomyrmex gracilis Fabricius, 1804, Pseudomyrmex sp.3,
+species turnover (βST) and interaction rewiring (β OS). The                Pseudomyrmex sp.9 and Pseudomyrmex sp.12) and two EFN-­
+species turnover (βST) reflects changes in the identity of in-             bearing plant morphospecies (Gurania sp.1 and Bauhinia sp.3)
+teractions due to spatial or temporal changes in species com-              were observed interacting exclusively in the morning (Tables S1
+position and interaction rewiring (β OS) reflects changes in the           and S2). Nine ant species (Linepithema sp.1, Camponotus crassus
+identity of interactions generated by the reassembly of interac-           Mayr, 1862, Camponotus sp.16, Cephalotes clypeatus Fabricius,
+tions between the same species in different sites or sampling              1804, Crematogaster curvispinosa Mayr, 1862, Cyphomyrmex
+periods (Luna et al. 2018; Dáttilo and Vasconcelos 2019). The              sp.1, Solenopsis sp.3, Pseudomyrmex sp.5 and Pseudomyrmex
+contribution of each component (βST and β OS) to the dissimi-              sp.10) and four EFN-­bearing plant morphospecies (Anonacea
+larity of interactions can be expressed by stating its relative            sp.1, Fridericia sp.17, Inga sp.15 and Solanum sp.1) were ob-
+impact on the composition of total beta diversity of interac-              served interacting exclusively in the afternoon (Tables S1 and
+tions (βWN), through standardising the calculated values:                  S2). Finally, nine ant species (Dolichoderus imitator Emery,
+βST/βWN and β OS/βWN (Luna et al. 2018). Therefore, higher val-            1894, Camponotus atriceps Smith, 1858, Camponotus balz-
+ues of βST indicate greater interaction turnover generated by              ani Emery, 1894, Camponotus Tanaemyrmex testaceus Emery,
+the loss or gain of species, while higher values of β OS indicate          1894, Camponotus sp.12, Camponotus sp.18, Cephalotes pallidus
+greater changes in who is interacting with whom (i.e., interac-            De Andrade, 1999, Cephalotes aff. foliaceus Emery, 1906 and
+tions are reassembled).                                                    Wasmannia sp.1) were observed interacting exclusively at night.
+                                                                           However, no EFN-­bearing plant species were observed interact-
+For each plot, we calculated the values of βWN, βST and βOS be-            ing only at this period (Tables S1 and S2).
+tween morning and afternoon, afternoon and night, and night
+and morning. We used linear mixed-­effects models (LMMs)                   We detected significant differences in the number of interac-
+(Crawley 2012) to test whether these indices varied across the             tions among ant–plant networks sampled at different periods of
+different periods of the day. We considered total beta diversity of        the day (p < 0.001). The N networks exhibited a lower number
+
+Austral Ecology, 2026                                                                                                                 5 of 15
+                                                                                                                                                           14429993, 2026, 3, Downloaded from https://onlinelibrary.wiley.com/doi/10.1111/aec.70206 by William Magnusson - INPA - Instituto Nacional de Pesquisas da Amazonia , Wiley Online Library on [24/03/2026]. See the Terms and Conditions (https://onlinelibrary.wiley.com/terms-and-conditions) on Wiley Online Library for rules of use; OA articles are governed by the applicable Creative Commons License
+FIGURE 1    |    Boxplot of ant–plant network descriptors calculated using data from a single period of the day: Morning (M), Afternoon (A) and Night
+(N), two periods of the day (M + A, A + N and N + M), and all three periods of the day (M + A + N), in nine plots of a tropical forest fragment located
+in the state of Acre, Brazilian Amazon. The lines represent the minimum and maximum values, the box represents the first and third quartiles, and
+the line within the box represents the median. The letters in the graphs correspond to the results of the pairwise comparisons. Identical letters within
+the same analysis indicate no significant difference for the respective network descriptor among the periods or time intervals. In contrast, different
+letters indicate statistically significant differences in pairwise comparisons. Lowercase and uppercase letters represent outcomes from different sta-
+tistical tests.
+
+
+
+of interactions (mean ± SD) (61.11 ± 17.48) compared to M net-                than the M networks (3.93 ± 0.13) and A networks (3.95 ± 0.26),
+works (76.22 ± 15.68) and A networks (74.78 ± 30.65), which did               which were not significantly different from each other (Figure 1,
+not differ from each other (Figure 1, Tables S3 and S4). Network              Tables S3 and S4). We did not detect significant differences in
+size also varied significantly among the different periods of the             network specialisation among the different periods of the day
+day (p < 0.001). The N networks had smaller sizes (mean ± SD)                 (p = 0.271). None of the M networks and only 11% of the A and
+(364.00 ± 111.68) than both M networks (478.56 ± 110.66) and                  N networks showed significant weighted nestedness (Table S3).
+A networks (516.22 ± 109.01), which also differed from each                   Additionally, we did not detect significant differences in these
+other (Figure 1, Tables S3 and S4). We further detected differ-               values among the different periods of the day (p = 0.306). A total
+ences in diversity of interactions among ant–plant networks                   of 78%, 89% and 67% of the M, A and N networks based on binary
+sampled at different times of day (p < 0.001). The N networks                 data, respectively, showed significant nestedness (Table S3).
+showed lower diversity of interactions (Mean ± SD) (3.71 ± 0.17)              Similar to the results for weighted nestedness, we did not detect
+
+6 of 15                                                                                                                            Austral Ecology, 2026
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                   14429993, 2026, 3, Downloaded from https://onlinelibrary.wiley.com/doi/10.1111/aec.70206 by William Magnusson - INPA - Instituto Nacional de Pesquisas da Amazonia , Wiley Online Library on [24/03/2026]. See the Terms and Conditions (https://onlinelibrary.wiley.com/terms-and-conditions) on Wiley Online Library for rules of use; OA articles are governed by the applicable Creative Commons License
+any differences in binary nestedness among the different peri-
+
+
+
+
+                                                                        TABLE 1    |    Mean (mean ± SD) of the network descriptors calculated from matrices with data sampled at different time intervals (single period, two periods, and three periods of the day), and the increase
+ods of the day (p = 0.257).
+
+
+
+
+                                                                                                                                                                                                                                                                                                              Total networks − two
+                                                                                                                                                                                                                                                                                                                period networks
+
+
+
+
+                                                                                                                                                                                                                                                                                                                                                                                           0.17 ± 0.02 (3.85%)
+                                                                                                                                                                                                                                                                                                                                                                         136.96 (16.26%)
+For networks built with accumulated data from two consecu-
+
+
+
+
+                                                                                                                                                                                                                                                                                                                                                 22.85 (17.53%)
+
+
+
+
+                                                                                                                                                                                                                                                                                                                                                                                                                                               0.31 (2.57%)
+                                                                                                                                                                                                                                                                                                                                                                                                                      0.01 (8.45%)
+
+
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                     1.10 (3.45%)
+tive periods, we did not detect significant differences among the
+different time intervals (M + A, A + N and N + M) for number of
+interactions (p = 0.098), diversity of interactions (p = 0.305), net-
+work specialisation (p = 0.470), weighted nestedness (p = 0.128)
+
+
+
+
+                                                                                                                                                                                                                                                                                          Average increment
+and binary nestedness (p = 0.708) (Figure 1 and Table S3). We
+detected significant differences only for network size (p < 0.001)
+(Figure 1 and Table S3). The N + M networks exhibited smaller
+sizes than M + A networks and A + N networks, which did not
+
+
+
+
+                                                                                                                                                                                                                                                                                                              Total networks − single
+differ from each other (Figure 1, Tables S3 and S4). For almost all
+evaluated network descriptors, especially the number of interac-
+
+
+
+
+                                                                                                                                                                                                                                                                                                                 period networks
+                                                                        or reduction of the descriptors calculated from matrices with data from three periods relative to those with data from a single period and two periods of the day.
+
+
+
+
+                                                                                                                                                                                                                                                                                                                                                                         364.29 (43.25%)
+                                                                                                                                                                                                                                                                                                                                                 55.40 (42.51%)
+tions and network size, the three-­period networks (M + A + N
+
+
+
+
+                                                                                                                                                                                                                                                                                                                                                                                           0.50 (11.34%)
+
+
+
+
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                     3.54 (10.52%)
+                                                                                                                                                                                                                                                                                                                                                                                                                      0.01 (8.45%)
+                                                                                                                                                                                                                                                                                                                                                                                                                                               1.12 (9.28%)
+networks) showed increases compared to the two-­period and
+single-­period networks (Figure 1 and Table 1). For network
+specialisation, we did not detect any increases (Figure 1 and
+Table 1).
+
+A total of 12, 11 and 13 ant species constituted the central
+core of the M, A and N networks, respectively. Among these,
+Dolichoderus diversus Emery, 1894 and Crematogaster nigropi-
+
+
+
+
+                                                                                                                                                                                                                                                                                                                        Total networks
+losa Mayr, 1870 were part of the central core only in N networks
+
+
+
+
+                                                                                                                                                                                                                                                                                                                                                                         842.33 ± 190.28
+                                                                                                                                                                                                                                                                                                                                                 130.33 ± 24.34
+
+
+
+
+                                                                                                                                                                                                                                                                                                                                                                                                                                               12.07 ± 4.92
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                     31.85 ± 5.27
+(Figure 2). No ant species was exclusive to the central core of
+
+
+
+
+                                                                                                                                                                                                                                                                                                                                                                                           4.41 ± 0.22
+                                                                                                                                                                                                                                                                                                                                                                                                                      0.13 ± 0.03
+the M and A networks. A total of eight, nine and seven EFN-­
+bearing plant species constituted the central core of the M, A
+and N networks, respectively. Among these, Senegalia sp.23
+and Malpighiaceae sp.5 were part of the central core only in
+M networks, Inga sp.8 only in A networks and Malpighiaceae
+sp.4 only in N networks (Figure 2). We observed that in all
+
+                                                                                                                                                                                                                                                                                                                        Two period networks
+plots, at least one ant species and one EFN-­bearing plant spe-
+cies remained in the central core of the networks during all
+
+
+
+                                                                                                                                                                                                                                                                                                                                                                         705.37 ± 148.65
+                                                                                                                                                                                                                                                                                                                                                 107.48 ± 20.72
+
+
+
+
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                     30.75 ± 6.51
+                                                                                                                                                                                                                                                                                                                                                                                                                                               11.76 ± 6.32
+three periods of the day (M, A and N) (Figure 2). However, in
+
+
+
+                                                                                                                                                                                                                                                                                                                                                                                           4.24 ± 0.20
+                                                                                                                                                                                                                                                                                                                                                                                                                      0.14 ± 0.04
+seven plots (77.8%), we observed changes in the central core
+                                                                                                                                                                                                                                                                                          Mean ± SD
+
+
+
+
+involving at least one ant species between morning and af-
+ternoon, and between afternoon and night, and in five plots
+(55.6%), we observed changes in the central core involving at
+least one ant species between night and morning (Figure 2).
+We observed changes in the central core involving at least
+one EFN-­bearing plant species in eight plots (88.9%) between
+morning and afternoon, afternoon and night, and night and
+                                                                                                                                                                                                                                                                                                                        Single period networks
+
+
+
+
+morning (Figure 2).
+                                                                                                                                                                                                                                                                                                                                                                         478.04 ± 132.81
+                                                                                                                                                                                                                                                                                                                                                 74.93 ± 18.21
+
+
+
+
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                     28.50 ± 8.43
+                                                                                                                                                                                                                                                                                                                                                                                                                                               10.95 ± 0.83
+                                                                                                                                                                                                                                                                                                                                                                                           3.91 ± 0.22
+                                                                                                                                                                                                                                                                                                                                                                                                                      0.14 ± 0.05
+
+
+
+
+We found that, for all pairwise combinations of periods of the
+day, the interaction rewiring (β OS) contributed more to the
+additive partitioning of the total beta diversity of interactions
+(βWN) than species turnover (βST) (Figure 3). We detected sig-
+nificant differences in the total beta diversity of interactions
+(βWN) among different pairwise combinations of periods of the
+day (p < 0.001) (Figure 4). The total beta diversity of interac-
+tions (βWN) was lower between M and A networks (0.32 ± 0.07)
+than between A and N networks (0.46 ± 0.07) and N and M
+                                                                                                                                                                                                                                                                                                                                                                                           Diversity of interaction
+                                                                                                                                                                                                                                                                                                                                                                                                                      Network specialisation
+                                                                                                                                                                                                                                                                                                                                                 Number of interaction
+
+
+
+
+networks (0.46 ± 0.12) (Figure 4 and Table S4). However, we
+                                                                                                                                                                                                                                                                                                                        Network descriptor
+
+
+
+
+                                                                                                                                                                                                                                                                                                                                                                                                                                               Weighted nestedness
+
+
+
+
+did not detect significant differences between the indices cal-
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                     Binary nestedness
+
+
+
+
+culated for the A and N networks and for the N and M net-
+works (Figure 4 and Table S4). We also detected significant
+                                                                                                                                                                                                                                                                                                                                                                         Network size
+
+
+
+
+differences in species turnover (βST) among different pair-
+wise combinations of periods of the day (p < 0.001) (Figure 4).
+Species turnover (βST) was lower between M and A networks
+(0.11 ± 0.03) than between A and N networks (0.19 ± 0.07) and
+
+Austral Ecology, 2026                                                                                                                                                                                                                                                                                                                                                                                                                                                                    7 of 15
+                                                                                                                                                          14429993, 2026, 3, Downloaded from https://onlinelibrary.wiley.com/doi/10.1111/aec.70206 by William Magnusson - INPA - Instituto Nacional de Pesquisas da Amazonia , Wiley Online Library on [24/03/2026]. See the Terms and Conditions (https://onlinelibrary.wiley.com/terms-and-conditions) on Wiley Online Library for rules of use; OA articles are governed by the applicable Creative Commons License
+FIGURE 2    |    Ant–plant networks sampled at different periods of the day (morning, afternoon and night) in nine plots of a tropical forest fragment
+located in the state of Acre, Brazilian Amazon. EFN-­bearing plant species belonging to the generalist core are highlighted in green, and ant species
+are highlighted in red. The codes for the ant and plant species are in Tables S1 and S2, respectively.
+
+
+
+N and M networks (0.17 ± 0.05) (Figure 4 and Table S4). We did               day (Table S5). Of the 87 EFN-­bearing plant species and 86 ant
+not detect significant differences in species turnover (βST) be-             species recorded in this study, 17 and 30, respectively, were not
+tween A and N networks and N and M networks (Figure 4 and                    observed interacting at night (Tables S1 and S2). Ants are ec-
+Table S4). Interaction rewiring (β OS) also differs among pair-              tothermic organisms whose behaviour, distribution and physi-
+wise combinations of periods of the day (p = 0.028) (Figure 4).              ology are regulated by temperature (Roeder et al. 2021). In the
+β OS was higher between N and M networks (0.29 ± 0.11)                       tropics, although species generally have high thermal tolerance
+than between M and A networks (0.21 ± 0.05) (Figure 4 and                    (Kaspari et al. 2015; Kaspari et al. 2016), they exhibit a narrower
+Table S4). We did not detect differences in β OS between M                   tolerance range and tend to be thermal specialists (Janzen 1967;
+and A networks and A and N networks (0.27 ± 0.08), nor be-                   Stevens 1989; Gaston et al. 2009). Thus, the greater ant richness
+tween N and M networks and A and N networks (Figure 4 and                    feeding on extrafloral nectar during the day may be related to
+Table S4).                                                                   the adequate and relatively constant temperatures throughout
+                                                                             the morning and afternoon, provided by the dense vegetation
+                                                                             cover (Kaspari and Weiser 2000; Houadria et al. 2015; General
+4   |   Discussion                                                           et al. 2020; Schornobay-­Bochenski et al. 2025). The lower ant
+                                                                             richness in these glands at night may reflect the internal circa-
+Structurally, the interactions between ants and EFN-­bearing                 dian rhythms of several diurnal species (Sudd 1967), as well as
+plants varied significantly throughout the day in terms of net-              ecophysiological constraints on nocturnal species, which, even
+work size, number of interactions and diversity of interactions,             in tropical environments, may exhibit lower thermal tolerance
+with higher values observed in the morning and afternoon.                    (Garcia-­Robledo et al. 2017). We cannot disregard possible varia-
+However, network specialisation and nestedness remained sta-                 tions in volume and concentration of extrafloral nectar secreted
+ble. The beta diversity of interactions also varied throughout the           by different plant species throughout the day (Anjos et al. 2016;
+day, especially during the nocturnal period. These results sug-              Lange et al. 2017). In highly seasonal environments, some plant
+gest that the apparent structural stability contrasts with marked            species may secrete extrafloral nectar with a higher sugar con-
+compositional changes in species and interactions throughout                 centration during the day (Anjos et al. 2016; Lange et al. 2017),
+the day. Thus, while global network properties such as special-              whereas others may secrete larger volumes at night (Lange
+isation and nestedness remain invariant, the identity of inter-              et al. 2017). In our study, variations in nectar volume and con-
+acting species and the configuration of their links are dynamic,             centration throughout the day may also result in greater ant at-
+revealing that stable network architecture can coexist with sub-             traction to these plants during diurnal periods. This is because
+stantial temporal turnover in interaction composition.                       we observed not only more ant species in the extrafloral nec-
+                                                                             taries in the morning and afternoon, but also a greater number
+Although the same number of EFN-­bearing plants in each sam-                 of interactions. Regarding the plants, we acknowledge limita-
+ple plot was observed in all three periods, the diurnal networks             tions in morphospecies determination, since identifications
+showed larger network sizes and greater diversity of interac-                were mainly based on vegetative structures. However, since
+tions than the nocturnal networks, due to the greater richness               we assigned the same morphospecies to each plant individual
+of plants and especially of ants observed interacting during the             in the morning, afternoon and night, we believe that any errors
+
+8 of 15                                                                                                                           Austral Ecology, 2026
+                                                                                                                                                           14429993, 2026, 3, Downloaded from https://onlinelibrary.wiley.com/doi/10.1111/aec.70206 by William Magnusson - INPA - Instituto Nacional de Pesquisas da Amazonia , Wiley Online Library on [24/03/2026]. See the Terms and Conditions (https://onlinelibrary.wiley.com/terms-and-conditions) on Wiley Online Library for rules of use; OA articles are governed by the applicable Creative Commons License
+FIGURE 3    |    Proportion of additive partition of total beta diversity of interactions (βWN) recorded in three periods of the day (morning, afternoon
+and night), in nine plots of a tropical forest fragment located in the state of Acre, Brazilian Amazon. Each bar represents the standardised value of
+interaction turnover. In black, the species turnover generated by changes in species composition (βST); in grey, the interaction rewiring (βOS). The
+values of the additive partition were determined by dividing each calculated value of βST and βOS by βWN. Graph ‘A’ is relative to the beta diversity of
+interactions between morning and afternoon, ‘B’ between afternoon and night and ‘C’ between night and morning.
+
+
+
+occurring at similar rates across the three periods should not                tropical hurricanes (Sánchez-­Galván et al. 2012) and forest frag-
+affect the detection of daily variations in network size and diver-           mentation (Miranda et al. 2022). These networks also include
+sity of interactions.                                                         less frequent species, which vary much more along spatial gra-
+                                                                              dients but contribute very little to the overall structure of these
+Although the number of interacting species recorded in noctur-                networks (Dáttilo et al. 2013; Dáttilo et al. 2019). In our study, the
+nal networks was lower, network specialisation and nestedness                 ant species Crematogaster brasiliensis Mayr, 1878, Wasmannia
+remained stable throughout the three periods. Similar nested-                 auropunctata Roger, 1863 and Ectatomma tuberculatum Olivier,
+ness stability throughout the day for these ant–plant interactions            1792, and the plant species Bauhinia sp.1, Triplaris sp.1 and
+has been recorded in other environments, such as the Brazilian                Senegalia sp.3 were the most dominant in all sampled plots and
+Cerrado and the desert (Dáttilo, Fagundes, et al. 2014; Luna                  in all three periods. In addition to these, other ant species such
+et al. 2018; Schramm et al. 2023). In these interactions, some                as Azteca sp.2, Brachymyrmex sp.4, Camponotus latangulus
+generalist ant and plant species, generally widely distributed                Roger, 1863, Ochetomyrmex semipolitus Mayr, 1878, Pheidole bi-
+on a small scale (Dáttilo et al. 2019), provide substantial stabil-           constricta Mayr, 1870 and Solenopsis sp.1 were also frequently
+ity to the nested structure of these networks (Díaz-­Castelazo                recorded in all three periods. Except for E. tuberculatum, all
+et al. 2010), even after disturbances caused, for example, by                 other ant species mentioned showed numerical competitive
+
+Austral Ecology, 2026                                                                                                                           9 of 15
+                                                                                                                                                           14429993, 2026, 3, Downloaded from https://onlinelibrary.wiley.com/doi/10.1111/aec.70206 by William Magnusson - INPA - Instituto Nacional de Pesquisas da Amazonia , Wiley Online Library on [24/03/2026]. See the Terms and Conditions (https://onlinelibrary.wiley.com/terms-and-conditions) on Wiley Online Library for rules of use; OA articles are governed by the applicable Creative Commons License
+FIGURE 4    |    Boxplot of beta diversity of interactions (βWN), species turnover (βST) and interaction rewiring (βOS) between different pairs periods
+of the day (M and A, A and N, and N and M), in nine plots of a tropical forest fragment located in the state of Acre, Brazilian Amazon. The lines rep-
+resent the minimum and maximum values, the box represents the first and third quartiles, and the line within the box represents the median. The
+letters in the graphs correspond to the results of the pairwise comparisons. Identical letters in the same graph indicate no significant difference for
+the respective index among the periods. In contrast, different letters indicate statistically significant differences in pairwise comparisons.
+
+
+
+dominance (Rico-­Gray and Oliveira 2007). For them, it was                    Approximately 70% of the networks showed daily changes in the
+common to find a dozen or more individuals on the same branch                 composition of their central cores involving at least one highly
+with active glands (personal observations). This is a common                  interactive ant species. Dolichoderus diversus and Crematogaster
+competitive strategy among ant species that feed on extraflo-                 nigropilosa, for example, were species belonging exclusively to
+ral nectaries (Rico-­Gray and Oliveira 2007; Dáttilo, Marquitti,              the nocturnal network cores. However, across all networks, at
+et al. 2014) and, in the present study, appears to play an import-            least one highly interactive ant species remained in the central
+ant role in the daily stability of the nested structure of these              core throughout all three periods. In the Brazilian Cerrado, more
+networks.                                                                     pronounced changes in highly interactive ant species in the cen-
+                                                                              tral cores between day and night have been detected, possibly
+We detected substantial increases in network size and the num-                due to the greater daily temperature range of these ecosystems
+ber of interactions in networks with accumulated data across                  (Dáttilo, Fagundes, et al. 2014). Regarding the EFN-­bearing
+three periods, compared to networks with two or a single period,              plants, only six (7%) of the 87 species recorded were exclusive
+revealing turnover of species throughout the day. Thus, ecolog-               to a single period. All networks showed one to two highly inter-
+ical conclusions based on diurnal field activities or on consecu-             active plant species that remained in their central cores across
+tive periods should be drawn with caution. Of the 86 ant species              the three periods, yet they also exhibited daily changes in com-
+recorded, 24 (28%) were recorded exclusively in a single period               position involving at least one species. For EFN-­bearing plants,
+and 20 (23%) in only two periods, most of them being species                  however, interpretations of compositional change should be
+with low frequency in the networks. Changes between highly                    made cautiously, given that uncertainties in morphospecies de-
+interactive ant species throughout the day were also detected.                limitation may partly influence the detected patterns.
+
+10 of 15                                                                                                                           Austral Ecology, 2026
+                                                                                                                                             14429993, 2026, 3, Downloaded from https://onlinelibrary.wiley.com/doi/10.1111/aec.70206 by William Magnusson - INPA - Instituto Nacional de Pesquisas da Amazonia , Wiley Online Library on [24/03/2026]. See the Terms and Conditions (https://onlinelibrary.wiley.com/terms-and-conditions) on Wiley Online Library for rules of use; OA articles are governed by the applicable Creative Commons License
+These changes in interacting species throughout the day were          plots. The additive component represented the largest con-
+also captured by the analyses of beta diversity of interactions.      tribution to total interaction beta diversity (βWN), a pattern
+Higher values of total beta diversity of interactions (βWN) were      also reported for arboreal ant communities in desert environ-
+observed between the afternoon and night networks and be-             ments (Luna et al. 2018). Our results indicate that these in-
+tween the night and morning networks. We observed similar             teractions change throughout the day in tropical forests, even
+results for both additive components. Species turnover (βST)          when the same interacting species are involved. This rewiring
+between the morning and afternoon was almost half of the spe-         of interactions between periods, especially with the noctur-
+cies turnover (βST) recorded between the nocturnal and both           nal period, indicates that ants displace between EFN-­bearing
+diurnal periods. Nine ant species were collected exclusively at       plants throughout the day, in accordance with the facultative
+night, five of which belong to the genus Camponotus, known for        nature of these associations (Dáttilo, Marquitti, et al. 2014).
+the nocturnal behaviour of several species (Menzi 1987; Klotz         These displacements may be related, for instance, to varia-
+and Reid 1993; Sharma et al. 2004). These species exhibit ad-         tions in the quantity or quality of extrafloral nectar secreted
+aptations that allow them to forage at night, such as larger eyes     throughout the day by different species (Anjos et al. 2016;
+and a greater number of ommatidia (Menzi 1987), and they re-          Lange et al. 2017; Alencar et al. 2023). Considering the effects
+spond to visual and tactile cues, including moonlight and land-       of leaf damage caused by herbivorous insects on the increased
+marks within the tree canopy (Klotz and Reid 1993). In addition,      productivity of extrafloral nectaries (Ness 2003), daily varia-
+other species such as Dolichoderus superaculus Lattke, 1987,          tions in the activity of these herbivores may also favour the
+Dolichoderus diversus, Camponotus (Tanaemyrmex) sp.1 and              interaction rewiring in these networks throughout the day.
+Paraponera clavata Fabricius, 1775 were much more frequent at         Finally, we acknowledge that this additive component is the
+night. P. clavata is a nocturnal neotropical species that nests on    most likely to be impacted by potential errors in plant mor-
+the ground at the base of EFN-­bearing trees (Dejean et al. 2007).    phospecies determination. Therefore, we will be cautious in
+They feed on the extrafloral nectaries of these trees at night, re-   discussing the results. However, one fact about these plants
+maining in their nests during the day, while other ant species        is that, in all periods, most sampled species and morphospe-
+can exploit this resource (Hölldobler and Wilson 1990). In con-       cies exhibited either elevated or flattened extrafloral nectar-
+trast, species of the genus Pseudomyrmex were recorded mainly         ies. In tropical forests located in the southwestern Brazilian
+during the diurnal periods. Of the 11 Pseudomyrmex species            Amazon, elevated and flattened extrafloral nectaries are ob-
+sampled, only Pseudomyrmex concolor Smith 1860 was recorded           served mainly in species of the Fabaceae and Bignoniaceae
+in extrafloral nectaries at night. These results provide evidence     families (Miranda et al. 2024). Both extrafloral nectary mor-
+of niche temporal partitioning on a daily timescale.                  photypes offer advantages in attracting ants. Elevated extra-
+                                                                      floral nectaries tend to secrete high volumes of nectar due to
+Temporal niche partitioning tends to stabilise interspecific          their larger sizes (Díaz-­C astelazo et al. 2005), and flattened
+competition and favour the coexistence of species that use            extrafloral nectaries can be advantageous because they gen-
+the same resource (Chesson 2000; Chase and Leibold 2003).             erally occur in greater numbers in the same location, which
+Among ants, this pattern on a daily timescale has been observed       ensures the secretory activity of the branch even after damage
+across different ecosystems, including pastures (Albrecht and         to some of these glands (Elias and Gelband 1976). Thus, the
+Gotelli 2001), tropical forests (Houadria et al. 2015) and des-       high frequency of these two advantageous morphotypes of ex-
+erts (Luna et al. 2018). In the Brazilian Cerrado, it has been        trafloral nectaries in our samples suggests the effectiveness of
+documented even among ant species that feed on extrafloral            the ant defence system against herbivory in this forest.
+nectar (Dáttilo, Fagundes, et al. 2014; Lange et al. 2017), in-
+dicating strong interspecific competition over this resource.         We describe some aspects of the daily dynamics of ant–plant in-
+As discussed above, in our study, some numerically dominant           teractions mediated by extrafloral nectaries in a tropical forest of
+ant species remained in the central cores of the networks             the Brazilian Amazon. The nested pattern of these interactions
+throughout all three periods, exerting continuous competi-            remained stable throughout the day, possibly due to the per-
+tive pressure on the other species. Among the peripheral ant          sistence of some dominant ant species on different EFN-­bearing
+species, more restricted to one or two periods, some genera           plants during all three periods. The network size and diversity
+such as Camponotus, Pseudomyrmex and Paraponera have                  of interactions were greater in the morning and afternoon, indi-
+aggressive species that tend to compete by the displacement           cating a higher number of species interacting during the diurnal
+of competitors (Hölldobler and Wilson 1990; Breed et al. 1991;        periods. Different factors may be triggering this pattern, such
+Espírito Santo et al. 2011; Barnett et al. 2014). Therefore, the      as the low daily temperature range caused by dense vegetation,
+turnover of these ant species throughout the day, especially          temperature tolerance restrictions in some nocturnal ant spe-
+at night, may reduce interspecific competition in plants not          cies, and variations in the volume and concentration of extra-
+numerically dominated by the highly interactive ant species           floral nectar throughout the day among different plant species.
+in network cores, favouring their coexistence. Together, these        We also detected an increase in network size and the number
+patterns suggest that the nocturnal period acts as a stronger         of interactions when combining data across three periods, in-
+ecological filter on the network, restricting participation to        dicating species turnover throughout the day, especially among
+a smaller set of ant species while amplifying the relative in-        ants. Temporal niche partitioning at the daily scale may be a
+fluence of competitively dominant and behaviourally special-          key mechanism by which ant communities reduce direct com-
+ised taxa.                                                            petition while maintaining high levels of species coexistence in
+                                                                      systems mediated by extrafloral nectaries. Our results indicate
+In addition to the turnover of interacting species, the inter-        that daily temporal dynamics are important for the organisation
+action rewiring (β OS) also varied throughout the day in all          and maintenance of ant–plant networks mediated by extrafloral
+
+Austral Ecology, 2026                                                                                                            11 of 15
+                                                                                                                                                                  14429993, 2026, 3, Downloaded from https://onlinelibrary.wiley.com/doi/10.1111/aec.70206 by William Magnusson - INPA - Instituto Nacional de Pesquisas da Amazonia , Wiley Online Library on [24/03/2026]. See the Terms and Conditions (https://onlinelibrary.wiley.com/terms-and-conditions) on Wiley Online Library for rules of use; OA articles are governed by the applicable Creative Commons License
+nectaries in tropical forests, and that sampling across multiple                Ecological Systems: Reconciling Concept and Measurement.” Oikos 117:
+daily periods provides a more comprehensive understanding of                    1227–1239. https://​doi.​org/​10.​1111/j.​0 030-­​1299.​2 008.​16644.​x.
+these interactions.                                                             Almeida-­  Neto, M., and W. Ulrich. 2011. “A Straight Forward
+                                                                                Computational Approach for Measuring Nestedness Using Quantitative
+                                                                                Matrices.” Environmental Modelling & Software 26, no. 2: 173–178.
+                                                                                https://​doi.​org/​10.​1016/j.​envso​ft.​2 010.​08.​0 03.
+Author Contributions
+                                                                                Alvares, V. C. A., J. L. Stape, P. C. Sentelhas, J. L. Gonçalves, and G.
+Patrícia Nakayama Miranda: conceptualization, data curation,                    Sparovek. 2014. “Köppen's Climate Classification Map for Brazil.”
+methodology, investigation, formal analysis, project administration,            Meteorologische Zeitschrift 22, no. 6: 711–728. https://​doi.​org/​10.​1127/​
+writing – original draft, writing – review and editing. Maiara de Souza         0941-­​2948/​2 013/​0507.
+Bento: data curation, investigation, writing – review and editing. Ítalo
+Miranda Armes: data curation, investigation, writing – review and               Andrade-­Silva, J., F. B. Baccaro, L. P. Prado, et al. 2022. “A Large-­
+editing. Izaias Brasil da Silva: data curation, writing – review and ed-        Scale Assessment of Ant Diversity Across the Brazilian Amazon Basin:
+iting. Ricardo Eduardo Vicente: writing – review and editing, data              Integrating Geographic, Ecological and Morphological Drivers of
+curation. Fabrício Beggiato Baccaro: data curation, formal analysis,            Sampling Bias.” Ecography 2022, no. 9: e06295. https://​doi.​org/​10.​1111/​
+writing – review and editing. Wesley Dáttilo: formal analysis, writing          ecog.​0 6295​.
+– review and editing, conceptualization, methodology.                           Anjos, D. V., B. Caserio, F. Rezende, S. P. Ribeiro, K. Del-­ Claro,
+                                                                                and R. Fagundes. 2016. “Extrafloral-­     Nectaries and Interspecific
+Acknowledgements                                                                Aggressiveness Regulate Day/Night Turnover of Ant Species Foraging
+                                                                                for Nectar on Bionia Coriácea.” Austral Ecology 42, no. 3: 317–328.
+The authors thank the Instituto Federal do Acre for funding the field           https://​doi.​org/​10.​1111/​aec.​12446​.
+activities, and IMA also thanks the same institution for the undergrad-
+uate research scholarship received. The authors thank the Brazilian             AntWeb. 2026. AntWeb. Version 8.114. California Academy of Sciences.
+Biodiversity Research Program (PPBio) for providing the infrastruc-             Accessed January 5, 2026. https://​w ww.​antweb.​org.
+ture for fieldwork, including access trails and sampling plots, and             Baccaro, F. B., R. M. Feitosa, F. Fernandez, et al. 2015. Guia Para os
+Elder Ferreira Morato, coordinator of the Laboratório de Ecologia de            Gêneros de Formigas do Brasil. Editora INPA.
+insetos at the Universidade Federal do Acre, for providing the neces-
+sary infrastructure for processing the ant specimens analysed in this           Barnett, A. A., T. Almeida, R. Andrade, et al. 2014. “Ants in Their Plants:
+study. R.E.V. thanks Conselho Nacional de Desenvolvimento Científico            Pseudomyrmex Ants Reduce Primate, Parrot and Squirrel Predation
+e Tecnológico—CNPq (PDJ—150826/2024-­        9) and the Programa de             on Macrolobium acaciifolium (Fabaceae) Seeds in Amazonian Brazil.”
+Pós Graduação em Zoologia da Universidade Federal do Amazonas                   Biological Journal of the Linnean Society 114, no. 2: 260–273. https://​doi.​
+(POSGRAD/FAPEAM e PROAP/CAPES). F.B.B. is continuously sup-                     org/​10.​1111/​bij.​12425​.
+ported by CNPq grant #312878/2023-­0.                                           Bascompte, J., and P. Jordano. 2007. “Plant-­     A nimal Mutualistic
+                                                                                Networks: The Architecture of Biodiversity.” Annual Review of Ecology,
+Funding                                                                         Evolution, and Systematics 38, no. 1: 567–593. https://​doi.​org/​10.​1146/​
+                                                                                annur​ev.​ecols​ys.​38.​0 91206.​0 95818.
+This work was supported by Conselho Nacional de Desenvolvimento
+Científico e Tecnológico (PDJ—150826/2024-­      9, 312878/2023-­ 0),           Bascompte, J., P. Jordano, C. J. Melián, and J. M. Olesen. 2003. “The
+Instituto Federal do Acre and Programa de Pesquisa em Biodiversidade            Nested Assembly of Plant-­A nimal Mutualistic Networks.” Proceedings
+(PPBio).                                                                        of the National Academy of Sciences of the United States of America 100,
+                                                                                no. 16: 938309387. https://​doi.​org/​10.​1073/​pnas.​16335​76100​.
+
+Conflicts of Interest                                                           Basset, Y., L. Cizek, P. Cuénound, et al. 2015. “Arthropod Distribution
+                                                                                in a Tropical Rainforest: Tackling a Four Dimensional Puzzle.”
+The authors declare no conflicts of interest.                                   PLoS One 10, no. 12: e0144110. https://​doi.​org/​10.​1371/​journ​al.​pone.​
+                                                                                0144110.
+Data Availability Statement                                                     Bates, D., M. Maechler, B. Bolker, et al. 2025. “lme4: Linear Mixed-­
+The data that support the findings of this study are available from the         Effects Models Using ‘Eigen’ and S4.” R Package Version. https://​cran.​
+corresponding author upon reasonable request.                                   r-­​proje​ct.​org/​web/​packa​ges/​lme4/​lme4.​pdf.
+                                                                                Bersier, L. F., C. Banasek-­R ichter, and M. F. Cattin. 2002. “Quantitative
+                                                                                Descriptors of Food-­     Web Matrices.” Ecology 83, no. 9: 2394–2407.
+References                                                                      https://​doi.​org/​10.​1890/​0 012-­​9658(2002)​083[2394:​QDOFWM]​2 .0.​CO;​2 .
+Aguirre, A., R. Coates, G. Cumplido-­Barragán, A. Campos-­Villanueva,           Blüthgen, N., F. Menzel, and N. Blüthgen. 2006. “Measuring
+and C. Díaz-­   Castelazo. 2013. “Morphological Characterization of             Specialization in Species Interaction Networks.” BMC Ecology 6: 9.
+Extrafloral Nectaries and Associated Ants in Tropical Vegetation of Los         https://​doi.​org/​10.​1186/​1472-­​6785-­​6 -­​9.
+Tuxtlas, Mexico.” Flora 208: 147–156. https://​doi.​org/​10.​1016/j.​f lora.​
+2013.​02.​0 08.                                                                 Bolker, M. B., M. E. Brooks, C. J. Clarck, et al. 2009. “Generalized Linear
+                                                                                Mixed Models: A Practical Guide for Ecology and Evolution.” Trends in
+Albrecht, m., and N. J. Gotelli. 2001. “Spatial and Temporal Niche              Ecology & Evolution 24, no. 3: 127–135. https://​doi.​org/​10.​1016/j.​tree.​
+Partitioning in Grassland Ants.” Oecologia 126: 134–141. https://​doi.​         2008.​10.​0 08.
+org/​10.​1007/​s 0044​2 0000494.
+                                                                                Breed, M. D., T. M. Stiller, J. H. Fewell, and J. M. Harrison. 1991.
+Alencar, C. L. D. S., A. Nogueira, R. E. Vicente, and I. A. C. Coutinho.        “Intercolonial Interactions and Nestmate Discrimination in the Giant
+2023. “Plant Species With Larger Extrafloral Nectaries Produce Better           Tropical Ant, Paraponera clavata.” Biotropica 23, no. 3: 301–306. https://​
+Quality Nectar When Needed and Interact With the Best Ant Partners.”            doi.​org/​10.​2307/​2388208.
+Journal of Experimental Botany 74, no. 15: 4613–4627. https://​doi.​org/​
+10.​1093/​jxb/​erad160.                                                         Calixto, E. S., D. Lange, and K. Del-­Claro. 2021. “Net Benefits of a
+                                                                                Mutualism: Influence of the Quality of Extrafloral Nectar on the Colony
+Almeida-­Neto, M., P. Guimarães, P. R. Guimarães, R. D. Loyola, and             Fitness of a Mutualistic Ant.” Biotropica 53, no. 3: 846–856. https://​doi.​
+W. Ulrich. 2008. “A Consistent Metric for Nestedness Analysis in                org/​10.​1111/​btp.​12925​.
+
+
+12 of 15                                                                                                                                 Austral Ecology, 2026
+                                                                                                                                                                        14429993, 2026, 3, Downloaded from https://onlinelibrary.wiley.com/doi/10.1111/aec.70206 by William Magnusson - INPA - Instituto Nacional de Pesquisas da Amazonia , Wiley Online Library on [24/03/2026]. See the Terms and Conditions (https://onlinelibrary.wiley.com/terms-and-conditions) on Wiley Online Library for rules of use; OA articles are governed by the applicable Creative Commons License
+Camacho, G. P., W. Franco, and R. M. Feitosa. 2020. “Additions to                    Díaz-­Castelazo, C., V. Rico-­Gray, F. Ortega, and G. Ángeles. 2005.
+the Taxonomy of Gnamptogenys Roger (Hymenoptera: Formicidae:                         “Morphological and Secretory Characterization of Extrafloral Nectaries
+Ectatomminae) With an Updated Key to the New World Species.”                         in Plants of Coastal Veracruz, Mexico.” Annals of Botany 96: 1175–1189.
+Zootaxa 4747, no. 3: 450–476. https://​doi.​org/​10.​11646/​​zoota​xa.​4747.3.​2 .   https://​doi.​org/​10.​1093/​aob/​mci270.
+Chase, J. M., and M. A. Leibold. 2003. Ecological Niches: Linking                    Dormann, C. F., J. Fruend, B. Gruber, et al. 2025. “Bipartite: Visualizing
+Classical and Contemporary Approaches. Vol. 219. University of                       Bipartite Networks and Calculating Some (Ecological) Indices.” R
+Chicago Press.                                                                       Package Version. https://​cran.​r-­​proje​ct.​org/​web/​packa​ges/​bipar​tite/​
+                                                                                     bipar​tite.​pdf.
+Chavarro-­Rodríguez, N., C. Díaz-­Castelazo, and V. Rico-­Gray. 2013.
+“Characterization and Functional Ecology of the Extrafloral Nectar                   Elias, T. S., and H. Gelband. 1976. “Morphology and Anatomy of Floral
+of Cedrela odorata in Contrasting Growth Environments in Central                     and Extrafloral Nectaries in Campsis (Bignoniaceae).” American
+Veracruz, Mexico.” Botany 91, no. 10: 695–701. https://​doi.​org/​10.​1139/​         Journal of Botany 63, no. 10: 1349–1353. https://​doi.​org/​10.​1002/j.​1537-­​
+cjb-­​2 012-­​0289.                                                                  2197.​1976.​tb132​2 0.​x.
+Chesson, P. 2000. “Mechanisms of Maintenance of Species Diversity.”                  Espírito Santo, N. B., S. P. Ribeiro, and J. F. S. Lopes. 2011. “Evidence of
+Annual Review of Ecology, Evolution, and Systematics 31: 343–366.                    Competition Between Two Canopy Ant Species: Is Aggressive Behavior
+https://​doi.​org/​10.​1146/​annur​ev.​ecols​ys.​31.1.​3 43.                         Innate or Shaped by a Competitive Environment?” Psyche 2012: 609106.
+                                                                                     https://​doi.​org/​10.​1155/​2 012/​6 09106.
+Crawley, M. J. 2012. The R Book. John Wiley.
+                                                                                     Falcão, J. C. F., W. Dáttilo, and V. Rico-­Gray. 2016. “Sampling Effort
+Dáttilo, W., and L. Dyer. 2014. “Canopy Openness Enhances Diversity of
+                                                                                     Differences Can Lead to Biased Conclusions on the Architecture of Ant-­
+Ant Plant Interactions in the Brazilian Amazon Rainforest.” Biotropica
+                                                                                     Plant Interaction Networks.” Ecological Complexity 25: 44–52. https://​
+46: 712–719. https://​doi.​org/​10.​1111/​btp.​12157​.
+                                                                                     doi.​org/​10.​1016/j.​ecocom.​2 016.​01.​0 01.
+Dáttilo, W., R. Fagundes, C. A. Q. Gurka, et al. 2014. “Individual Based
+                                                                                     Feitosa, R. M., and A. M. Dias. 2024. “An Illustrated Guide for
+Ant-­Plant Networks: Diurnal-­Nocturnal Structure and Species Area
+                                                                                     the Identification of Ant Subfamilies and Genera in Brazil.” Insect
+Relationship.” PLoS One 9, no. 6: e99838. https://​doi.​org/​10.​1371/​journ​
+                                                                                     Systematics & Evolution 2024: 1–121. https://​doi.​org/​10.​1163/​18763​
+al.​pone.​0 099838.
+                                                                                     12X-­​bja10062.
+Dáttilo, W., P. R. Guimarães Jr., and T. J. Izzo. 2013. “Spatial Structure of
+                                                                                     Feitosa, R. M., and F. C. Prada-­      Achiardi. 2019. “Subfamilia
+Ant-­Plant Mutualistic Networks.” Oikos 122, no. 11: 1643–1648. https://​
+                                                                                     Ectatomminae.” In Hormigas de Colombia, edited by F. Fernández, R. J.
+doi.​org/​10.​1111/j.​1600-­​0706.​2 013.​0 0562.​x.
+                                                                                     Guerrero, and T. Delsinne, 659–680. Universidad Nacional de Colombia.
+Dáttilo, W., F. M. D. Marquitti, P. R. Guimarães Jr., and T. J. Izzo.
+                                                                                     Florian, H., L. Lohse, and M. S. Leite. 2025. “Package Dharma: Residual
+2014. “The Structure of Ant-­Plant Ecological Networks: Is Abundance
+                                                                                     Diagnostics for Hierarchical (Multi-­L evel/Mixed) Regression Models.”
+Enough?” Ecology 95, no. 2: 475–485. https://​doi.​org/​10.​1890/​12-­​1647.​1.
+                                                                                     R Package Version. https://​cran.​r-­​proje​ct.​org/​web/​packa​ges/​DHARMa/​
+Dáttilo, W., and H. L. Vasconcelos. 2019. “Macroecological Patterns and              DHARMa.​pdf.
+Correlates of Ant-­Tree Interaction Networks in Neotropical Savannas.”
+                                                                                     Fontenele, L. K., and F. A. Schmidt. 2021. “Forest-­Pasture Shifting
+Global Ecology and Biogeography 28, no. 9: 1283–1294. https://​doi.​org/​
+                                                                                     Alters the Assemblages of Seed-­               Removing Ants in Southwestern
+10.​1111/​geb.​12932​.
+                                                                                     Brazilian Amazon.” Journal of Insect Conservation 25: 213–220. https://​
+Dáttilo, W., J. Vizentin-­Bugoni, V. J. Debastiani, P. Jordano, and T. J.            doi.​org/​10.​1007/​s1084​1-­​021-­​0 0295​-­​x.
+Izzo. 2019. “The Influence of Spatial Sampling Scales on Ant-­Plant
+                                                                                     França, E. C. B., I. O. Fernandes, and J. E. L. Bravo. 2024. “Looking at
+Interaction Network Architecture.” Journal of Animal Ecology 88, no. 6:
+                                                                                     Upside-­Down Ants: Taxonomic Revision of the Neotropical Species of
+903–914. https://​doi.​org/​10.​1111/​1365-­​2656.​12978​.
+                                                                                     Odontomachus Latreille, 1804 (Hymenoptera: Formicidae: Ponerinae).”
+De Aquino, K. K., F. B. Baccaro, G. Apple, A. L. Henriques, P. E. D.                 Zootaxa 5502, no. 1: 1–166. https://​doi.​org/​10.​11646/​​zoota​xa.​5502.1.​1.
+Bobrowiec, and S. H. Borges. 2022. “Forest Fragments, Primary
+                                                                                     Garcia-­Robledo, C., H. Chuquillanqui, E. Kuprewicz, and F. Escobar-­
+and Secondary Forests Harbour Similar Arthropod Assemblages
+                                                                                     Sarria. 2017. “Lower Thermal Tolerance in Nocturnal Than in Diurnal
+After 40 Years of Landscape Regeneration in the Central Amazon.”
+                                                                                     Ants: A Challenge for Nocturnal Ectotherms Facing Global Warming.”
+Agricultural and Forest Entomology 24, no. 2: 178–188. https://​doi.​org/​
+                                                                                     Ecological Entomology 43, no. 2: 162–167. https://​doi.​org/​10.​1111/​een.​
+10.​1111/​afe.​12481​.
+                                                                                     12481​.
+Dejean, A., B. Corbara, J. Orivel, and M. Leponce. 2007. “Rainforest
+                                                                                     Gaston, K. J., S. L. Chown, P. Calosi, et al. 2009. “Macrophysiology: A
+Canopy Ants: The Implications of Territoriality and Predatory
+                                                                                     Conceptual Reunification.” American Naturalist 174, no. 5: 595–612.
+Behavior.” Functional Ecosystems and Communities 1: 105–120.
+                                                                                     https://​doi.​org/​10.​1086/​6 05982.
+Del-­Claro, K., D. Lange, H. M. Torezan-­Silingardi, et al. 2018. “The
+                                                                                     General, D. E. M., P. A. C. Buenavente, and L. J. V. Rodriguez. 2020. “A
+Complex Ant-­Plant Relationship Within Tropical Ecological Networks.”
+                                                                                     Preliminary Survey of Nocturnal Ants, With Novel Modifications for
+In Ecological Networks in the Tropics, edited by W. Dáttilo and V. Rico-­
+                                                                                     Collecting Nocturnal Arboreal Ants.” Halteres 11: 1–12.
+Gray. Springer. https://​doi.​org/​10.​1007/​978-­​3 -­​319-­​68228​- ­​0 _​5.
+                                                                                     Guimarães, P. R., and P. Guimarães. 2006. “Improving the Analyses
+Del-­Claro, K., and H. M. Torezan-­         Silingardi. 2009. “Insect-­ Plant
+                                                                                     of Nestedness for Large Sets of Matrices.” Environmental Modelling &
+Interactions: New Pathways to a Better Comprehension of Ecological
+                                                                                     Software 21, no. 10: 1512–1513. https://​doi.​org/​10.​1016/j.​envso​ft.​2 006.​
+Communities in Neotropical Savannas.” Neotropical Entomology 38, no.
+                                                                                     04.​0 02.
+2: 159–164. https://​doi.​org/​10.​1590/​S1519​-­​566X2​0 0900​0200001.
+                                                                                     Hölldobler, B., and E. O. Wilson. 1990. “Host Tree Selection by the
+Delnevo, N., E. Van Etten, N. Clemente, et al. 2020. “Pollen Adaptation
+                                                                                     Neotropical Ant Paraponera clavata (Hymenoptera: Formicidae).”
+to Ant Pollination: A Case Study From the Proteaceae.” Annals of
+                                                                                     Biotropica 22, no. 2: 213–214. https://​doi.​org/​10.​2307/​2388416.
+Botany 126, no. 3: 377–386. https://​doi.​org/​10.​1093/​aob/​mcaa058.
+                                                                                     Houadria, M., A. Salas-­L opez, J. Orivel, N. Blüthgen, and F. Menzel.
+Díaz-­Castelazo, C., P. R. Guimarães Jr., P. Jordano, J. N. Thompson, R.
+                                                                                     2015. “Dietary and Temporal Niche Differentiation in Tropical Ants-­
+J. Marques, and V. Rico-­Gray. 2010. “Changes of a Mutualistic Network
+                                                                                     Can They Explain Local Ant Coexistence?” Biotropica 47, no. 2: 208–
+Over Time: Reanalysis Over a 10-­Year Period.” Ecology 91, no. 3: 793–
+                                                                                     217. https://​doi.​org/​10.​1111/​btp.​12184​.
+801. https://​doi.​org/​10.​1890/​08-­​1883.​1.
+
+
+
+Austral Ecology, 2026                                                                                                                                      13 of 15
+                                                                                                                                                                   14429993, 2026, 3, Downloaded from https://onlinelibrary.wiley.com/doi/10.1111/aec.70206 by William Magnusson - INPA - Instituto Nacional de Pesquisas da Amazonia , Wiley Online Library on [24/03/2026]. See the Terms and Conditions (https://onlinelibrary.wiley.com/terms-and-conditions) on Wiley Online Library for rules of use; OA articles are governed by the applicable Creative Commons License
+Janzen, D. H. 1967. “Why Mountain Passes Are Higher in the Tropics.”              in Brazilian Amazonian Plant Species.” Acta Botanica Mexicana 131:
+American Naturalist 101, no. 919: 233–249. https://​doi.​org/​10.​1086/​          e2241. https://​doi.​org/​10.​21829/​​abm131.​2 024.​2241.
+282487.
+                                                                                  Miranda, P. N., J. E. L. S. Ribeiro, I. Brasil, J. H. C. Delabie, J. Lopes,
+Juárez-­Juárez, B., W. Dáttilo, and C. E. Moreno. 2023. “Synthesis and            and W. Dáttilo. 2025. “The Rainfall Seasonality of Brazilian Amazon
+Perspectives on the Study of Ant-­Plant Interaction Networks: A Global            Tropical Rainforests Influences on the Organization of Ant-­          Plant
+Overview.” Ecological Entomology 48, no. 3: 269–283. https://​doi.​org/​10.​      Interaction Networks.” Tropical Ecology 66: 168–179. https://​doi.​org/​10.​
+1111/​een.​13227​.                                                                1007/​s 4296​5 -­​025-­​0 0371​-­​2 .
+Kaspari, M., N. A. Clay, J. Lucas, S. Revzen, A. Kay, and S. P.                   Miranda, P. N., J. E. L. S. Ribeiro, E. J. Corro, I. Brasil, J. H. C. Delabie,
+Yanoviak. 2016. “Thermal Adaptation and Phosphorus Shape Thermal                  and W. Dáttilo. 2022. “Structural Stability of Ant-­Plant Mutualistic
+Performance in an Assemblage of Rainforest Ants.” Ecology 97, no. 4:              Networks Mediated by Extrafloral Nectaries: Looking at the Effects of
+1038–1047. https://​doi.​org/​10.​1890/​15-­​1225.​1.                             Forest Fragmentation in the Brazilian Amazon.” Sociobiology 69, no. 3:
+                                                                                  e8261. https://​doi.​org/​10.​13102/​​socio​biolo​g y.​v69i3.​8261.
+Kaspari, M., N. A. Clay, J. Lucas, S. P. Yanoviak, and A. Kay. 2015.
+“Thermal Adaptation Generates a Diversity of Thermal Limits in a                  Moura, R. F., and K. Del-­Claro. 2023. “Plants With Extrafloral Nectaries
+Rainforest Ant Community.” Global Change Biology 21, no. 3: 1092–                 Share Indirect Characterizes and Shape the Local Arboreal Ant
+1102. https://​doi.​org/​10.​1111/​gcb.​12750​.                                   Community.” Oecologia 201: 73–82. https://​doi.​org/​10.​1007/​s 0044​2-­​
+                                                                                  022-­​05286​-­​6.
+Kaspari, M., and M. D. Weiser. 2000. “Ant Activity Along Moisture
+Gradients in a Neotropical Forest.” Biotropica 32, no. 4a: 703–711.               Ness, J. 2003. “Catalpa bignonioides Alters Extrafloral Nectar
+https://​doi.​org/​10.​1111/j.​1744-­​7429.​2 000.​tb005​18.​x.                   Production After Herbivory and Attracts Ant Bodyguards.” Oecologia
+Klotz, J. H., and B. L. Reid. 1993. “Nocturnal Orientation in the Black           134: 210–218. https://​doi.​org/​10.​1007/​s 0044​2-­​0 02-­​1110-­​6.
+Carpenter Ant Camponotus pennsylvanicus (Degeer) (Hymenoptera:                    Nogueira, A., F. B. Baccaro, L. C. Leal, P. J. Rey, L. G. Lohmann, and J. L.
+Formicidae).” Insectes Sociaux 40: 95–106. https://​doi.​org/​10.​1007/​          Bronstein. 2020. “Variation in the Production of Plant Tissues Bearing
+BF013​38835​.                                                                     Extrafloral Nectaries Explains Temporal Patterns of Ant Attendance in
+Lange, D., E. S. Calixto, and K. Del-­Claro. 2017. “Variation in Extrafloral      Amazonian Understorey Plants.” Journal of Ecology 108, no. 4: 1578–
+Nectary Productivity Influences the Ant Foraging.” PLoS One 12:                   1591. https://​doi.​org/​10.​1111/​1365-­​2745.​13340​.
+e0169492. https://​doi.​org/​10.​1371/​journ​al.​pone.​0169492.                   Oksanen, J., F. G. Blanchet, and M. Friendly. 2025. “Package Vegan:
+Lange, D., E. S. Calixto, K. Del-­       Claro, and V. Stefani. 2000.             Community Ecology Package.” R Package Version. https://​cran.​r-­​proje​
+“Spatiotemporal Niche-­       Based Mechanisms Support a Stable                   ct.​org/​web/​packa​ges/​vegan/​​vegan.​pdf.
+Coexistence of Ants and Spiders in an Extraflora Nectary-­Bearing Plant           Oliveira, A. M., S. Powell, and R. M. Feitosa. 2021. “A Taxonomic Study
+Community.” Journal of Animal Ecology 90, no. 6: 1570–1582. https://​             of the Brazilian Turtle Ants (Formicidae: Myrmicinae: Cephalotes).”
+doi.​org/​10.​1111/​1365-­​2656.​13477​.                                          Revista Brasileira de Entomologia 65: e20210028. https://​doi.​org/​10.​
+Lenth, R. V., B. B. Banfai, B. Bolker, et al. 2025. “Package Emmeans:             1590/​1806-­​9665-­​R BENT​-­​2 021- ­​0 028.
+Estimated Marginal Means, Aka Least-­Squares Means.” R Package                    Ortiz, C. M., and F. Fernández. 2011. Hormigas Del Género Dolichoderus
+Version.     https://​cran.​r-­​proje​ct.​org/​web/​packa​ges/​emmea​ns/​emmea​   Lund (Formicidae: Dolichoderinae) en Colombia. Universidad Nacional
+ns.​pdf.                                                                          de Colombia.
+Luna, P., Y. Peñaloza-­A rellanesa, A. L. Castillo-­Mezaa, J. H. García-­         Patefield, W. M. 1981. “Algorithm AS159. An Efficient Method of
+Cháveza, and W. Dáttilo. 2018. “Beta Diversity of Ant-­Plant Interactions         Generating R × C Tables With Given Row and Column Totals.”
+Over Day-­   Night Periods and Plant Physiognomies in a Semiarid                  Journal of Applied Statistics 30, no. 1: 91–97. https://​doi.​org/​10.​2307/​
+Environment.” Journal of Arid Environments 156: 69–76. https://​doi.​             2346669.
+org/​10.​1016/j.​jarid​env.​2 018.​0 4.​0 03.
+                                                                                  Pedraza, L., and F. Fernández. 2019. “Género Crematogaster.” In
+Mackay, W. P., and E. Mackay. 2019. “Género Camponotus.” In Hormigas              Hormigas de Colombia, edited by F. Fernández, R. J. Guerrero, and T.
+de Colombia, edited by F. Fernández, R. J. Guerrero, and T. Delsinne,             Delsinne, 889–898. Universidad Nacional de Colombia.
+743–790. Universidad Nacional de Colombia.
+                                                                                  Pennington, T. D., C. Reynel, and A. Daza. 2004. Illustrated Guide to the
+Mackay, W. P., and E. E. Mackay. 2010. The Systematics and Biology of the         Trees of Peru. David Hunt.
+New World Ants of the Genus Pachycondyla (Hymenoptera: Formicidae).
+Edwin Mellen Press.                                                               Pereira, C. C., M. G. Boaventura, G. C. Castro, and T. Cornelissen. 2020.
+                                                                                  “Are Extrafloral Nectaries Efficient Against Herbivores? Herbivory
+Magnusson, W., R. Braga-­Neto, F. Pezzini, et al. 2013. Biodiversity and          and Plant Defences in Contrasting Tropical Species.” Journal of Plant
+Integrated Environmental Monitoring. Átema Editorial.                             Ecology 13, no. 4: 423–430. https://​doi.​org/​10.​1093/​jpe/​rtaa029.
+Marazzi, B., E. Conti, M. J. Sanderson, M. M. McMahon, and J. L.                  Poisot, T., E. Canard, D. Mouillot, N. Mouquet, and D. Gravel. 2012.
+Bronstein. 2013. “Diversity and Evolution of a Trait Mediating Ant-­              “The Dissimilarity of Species Interaction Networks.” Ecology Letters 15,
+Plant Interactions: Insights From Extrafloral Nectaries in Senna                  no. 12: 1353–1361. https://​doi.​org/​10.​1111/​ele.​12002​.
+(Leguminosae).” Annals of Botany 111, no. 6: 1263–1275. https://​doi.​org/​
+10.​1093/​aob/​mcs226.                                                            R Core Team. 2024. R: A Language and Environment for Statistical
+                                                                                  Computing. R Foundation for Statistical Computing. https://​w ww.​r-­​
+Marazzi, B., A. M. Gonzales, A. Delgado-­     Salinas, M. A. Luckow,
+                                                                                  proje​ct.​org/​.
+J. J. Ringelberg, and C. E. Hughes. 2019. “Extrafloral Nectaries in
+Leguminosae: Phylogenetic Distribution, Morphological Diversity and               Ratoni, B., C. P. Cruz, S. Novais, et al. 2025. “Temporal Decay of
+Evolution.” Australian Systematic Botany 32, no. 6: 409–458. https://​doi.​       Similarity in Bee-­Plant Relationships Throughout the Day.” Oecologia
+org/​10.​1071/​SB19012.                                                           207: 2. https://​doi.​org/​10.​1007/​s 00442-​024-​05637-​5.
+Menzi, U. 1987. “Visual Adaptation in Nocturnal and Diurnal Ants.”                Ribeiro, J. E. L. S., M. J. G. Hopkins, A. Vicentini, et al. 1999. Flora da
+Journal of Comparative Physiology A 160: 11–21. https://​doi.​org/​10.​           Reserva Ducke: Guia de Identificacão Das Plantas Vasculares de Uma
+1007/​BF006​13437​.                                                               Floresta de Terra-­Firme na Amazônia Central. INPA.
+Miranda, P. N., J. E. L. S. Ribeiro, A. Aguirre-­Jaimes, I. Brasil, and W.        Rico-­Gray, V., and P. S. Oliveira. 2007. The Ecology and Evolution of Ant-­
+Dáttilo. 2024. “Morphological Characterization of Extrafloral Nectaries           Plant Interactions. University of Chicago Press.
+
+
+14 of 15                                                                                                                                  Austral Ecology, 2026
+                                                                                                                                                               14429993, 2026, 3, Downloaded from https://onlinelibrary.wiley.com/doi/10.1111/aec.70206 by William Magnusson - INPA - Instituto Nacional de Pesquisas da Amazonia , Wiley Online Library on [24/03/2026]. See the Terms and Conditions (https://onlinelibrary.wiley.com/terms-and-conditions) on Wiley Online Library for rules of use; OA articles are governed by the applicable Creative Commons License
+Roeder, K. A., D. V. Roeder, and J. Bujan. 2021. “Ant Thermal Tolerance:           and EFN-­bearing plant species interacting during each of the three pe-
+A Review of Methods, Hypotheses, and Sources of Variation.” Annals                 riods of the day (morning, afternoon and night) in nine plots of a tropi-
+of the Entomological Society of America 114, no. 4: 459–469. https://​doi.​        cal forest fragment located in the state of Acre, Brazilian Amazon.
+org/​10.​1093/​aesa/​saab018.
+Sánchez-­  Galván, I. R., C. Díaz-­      Castelazo, and V. Rico-­
+                                                                Gray. 2012.
+“Effect of Hurricane Karl on a Plant–Ant Network Occurring in Coastal
+Veracruz, Mexico.” Journal of Tropical Ecology 28, no. 6: 603–609.
+https://​doi.​org/​10.​1017/​S 0266​4 6741​2 000582.
+Schornobay-­Bochenski, W. S., R. E. Vicente, T. R. Bishop, and T. J. Izzo.
+2025. “Ant Brightness and Size Influence the Seasonal Vegetation Use
+by Ground-­D welling Ants (Hymenoptera: Formicidae) in an Amazonia-­
+Cerrado Transition Zone.” Ecological Entomology 50, no. 6: 1082–1095.
+https://​doi.​org/​10.​1111/​een.​70000​.
+Schramm, J. E., G. S. Oliveira, T. B. Santos, and G. M. M. Santos. 2023.
+“Ants Sleep, Plants Do Not: The Variation in Species' Activity Influences
+the Topology of Interaction Networks.” Sociobiology 70, no. 4: e9283.
+https://​doi.​org/​10.​13102/​​socio​biolo​g y.​v 70i4.​9283.
+Sharma, V. K., S. R. Lone, D. Mathew, and M. K. Chandrashekaran.
+2004. “Possible Evidence for Shift Work Schedules in the Media
+Workers of the Ant Species Camponotus compressus.” Chronobiology
+International 21, no. 2: 297–308. https://​doi.​org/​10.​1081/​CBI-­​12003​7817.
+Silveira, M., E. Guilherme, and L. J. S. Vieira. 2020. Fazenda
+Experimental Catuaba: o Seringal Que Virou Laboratório Vivo em Uma
+Paisagem Fragmentada do Acre. Stricto Sensu.
+Stevens, G. C. 1989. “The Latitudinal Gradient in Geographical Range:
+How So Many Species Coexist in the Tropics.” American Naturalist 133,
+no. 2: 240–256. https://​doi.​org/​10.​1086/​284913.
+Sudd, J. H. 1967. Introduction to the Behavior of Ants. St. Martin's Press.
+Vázquez, D. P., N. Blüuthgen, L. Cagnolo, and N. P. Chacoff. 2009.
+“Uniting Pattern and Process in Plant-­A nimal Mutualistic Networks:
+A Review.” Annals of Botany 103, no. 9: 1445–1457. https://​doi.​org/​10.​
+1093/​aob/​mcp057.
+Ward, P. S. 2019. “Subfamilia Pseudomyrmecinae.” In Hormigas de
+Colombia, edited by F. Fernández, R. J. Guerrero, and T. Delsinne,
+1089–1114. Universidad Nacional de Colombia.
+Whittaker, R. H. 1960. “Vegetation of the Siskiyou Mountains, Oregon
+and California.” Ecological Monographs 30, no. 3: 280–338. https://​doi.​
+org/​10.​2307/​1943563.
+
+
+Supporting Information
+Additional supporting information can be found online in the Supporting
+Information section. Table S1: List of ant species present in the ant–
+plant networks sampled in three different periods of the day in nine
+plots of a tropical forest fragment located in the state of Acre, Brazilian
+Amazon. The codes refer to the ant species that belong to the generalist
+core of the networks. M = morning; A = afternoon; N = night. Table S2:
+List of EFN-­bearing plant species in the ant–plant networks sampled in
+three different periods of the day in nine plots of a tropical forest frag-
+ment located in the state of Acre, Brazilian Amazon. The codes refer to
+the EFN-­bearing plant species that belong to the generalist core of the
+networks. M = morning; A = afternoon; N = night. Table S3: Network
+size, number of interactions, network specialisation, diversity of inter-
+action and nestedness (WNODF and NODF) of the ant–plant networks
+sampled in different time intervals in nine plots of a tropical forest frag-
+ment located in the state of Acre, Brazilian Amazon. M = morning net-
+works, A = afternoon networks, N = night networks, M + A = networks
+with accumulated morning and afternoon data, A + N = networks with
+accumulated afternoon and night data, N + M = networks with accumu-
+lated night and morning data, M + A + N = networks with accumulated
+morning, afternoon and night data. Table S4: Network size, number of
+interactions, network specialisation, diversity of interaction and nested-
+ness (WNODF and NODF) of the ant–plant networks sampled in differ-
+ent time intervals in nine plots of a tropical forest fragment located in
+the state of Acre, Brazilian Amazon. Table S5: Richness of ant species
+
+
+Austral Ecology, 2026                                                                                                                              15 of 15

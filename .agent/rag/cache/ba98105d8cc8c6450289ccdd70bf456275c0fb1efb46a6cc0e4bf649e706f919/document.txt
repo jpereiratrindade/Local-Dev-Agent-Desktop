@@ -1,0 +1,769 @@
+                                                       DOI: 10.55905/cuadv15n5-033
+
+                                                Recebimento dos originais: 13/06/2023
+                                                Aceitação para publicação: 12/07/2023
+
+
+
+
+A transição da dialética para a dialógica, na trajetória de vida e
+                 pensamento de Edgar Morin
+
+    The transition from dialectics to dialogics, in the life and
+                thought trajectory of Edgar Morin
+Ademar Alves dos Santos
+Doutor em Educação
+Instituição: Universidade Federal de Uberlândia (UFU)
+Endereço: Avenida João Naves de Ávila, 2121, Santa Mônica, Uberlândia – MG,
+CEP: 38408-100
+E-mail: ademar.santos@ufu.br
+
+Jefferson Florencio Rozendo
+Doutorando em Educação
+Instituição: Absoulute Christian University (ACU)
+Endereço: 1600 Campus Ct, Abilene, TX 79601, Estados Unidos
+E-mail: jeffersonrozendo@yahoo.com.br
+
+Tiago Fernando Hansel
+Pós-Doutor em Administração
+Instituição: Universidade Federal do Paraná (UFPR)
+Endereço: Rua XV de Novembro, 1299, Centro, Curitiba – PR, CEP: 80060-000
+E-mail: tiagohansel@hotmail.com
+
+Luciano Gomes Soares
+Doutorando em Ensino
+Instituição: Universidade Estadual da Paraíba (UEPB)
+Endereço: Rua Baraúnas, 351, Universitário, Campina Grande – PB,
+CEP: 58429-500
+E-mail: lgedumat@gmail.com
+
+Reginaldo Leandro Placido
+Doutor em Educação
+Instituição: Instituto Federal Catarinense (IFC)
+Endereço: Rua das Missões, 100, Ponta Aguda, Blumenau – SC,
+CEP: 89051-000
+E-mail: profereginaldo@gmail.com
+
+Ivonete Telles Medeiros Placido
+Doutora em Administração
+Instituição: Universidade Regional de Blumenau (FURB)
+Endereço: Rua Antônio da Veiga, 140, Itoupava Seca, Blumenau – SC,
+CEP: 89030-903
+E-mail: net.telles@gmail.com
+
+
+
+
+  CUADERNOS DE EDUCACIÓN Y DESARROLLO, v.15, n.5, p. 4501-4519, 2023               4501
+Rhadson Rezende Monteiro
+Doutorando em Direito
+Instituição: Universidade Federal de Santa Catarina (UFSC)
+Endereço: Campus Universitário Reitor João David Ferreira Lima, S/N,
+Trindade – SC, CEP: 88040-900
+E-mail: advrmonteiro@gmail.com
+
+Helberty Vinicios Coelho
+Graduado em Direito
+Instituição: Universidade Vale do Rio Doce (Univale)
+Endereço: Rua Israel Pinheiro, 2000, Universitário, Governador Valadares – MG,
+CEP: 35020-220
+E-mail: razao.br@gmail.com
+
+José Antonio da Silva
+Doutor em Educação
+Instituição: Florida University USA (FUUSA)
+Endereço: 9825 Marina Blvd #100a, Boca Raton, FL 33428, EUA
+E-mail: janthonous@uol
+
+Isidro José Bezerra Maciel Fortaleza do Nascimento
+Doutor em Educação
+Instituição: Universidade de São Paulo (USP)
+Endereço: Rua do Lago, 717, Butantã, São Paulo – SP, CEP: 05508-080
+E-mail: isidrofortaleza@hotmail.com
+
+Gabriel Antonio Ogaya Joerke
+Doutor em Literatura
+Instituição: Instituto Federal de Educação, Ciência e Tecnologia de Mato Grosso
+(IFMT) – Campus São Vicente
+Endereço: Rodovia BR-364, Km 329, S/N, São Vicente da Serra, Campo
+Verde – MT, CEP: 78106-000
+E-mail: gabriel.joerke@gmail.com
+
+Darlon Alves de Almeida
+Doutor em Educação nas Ciências
+Instituição: Universidade Regional do Noroeste do Estado do Rio Grande do Sul
+(UNIJUÍ)
+Endereço: Rua do Comércio, 3000, Universitário, Ijuí – RS, CEP: 98700-000
+E-mail: darlon.almeida@iffarroupilha.edu.br
+
+RESUMO
+O presente artigo visa apresentara transição da dialética para a dialógica, na
+trajetória de vida e pensamento de Edgar Morin, sob a ótica da educação. Este
+artigo se utiliza da metodologia de pesquisa interpretativa, de cunho qualitativo,
+para analisar a trajetória de vida e pensamento de Edgar Morin e sua transição
+da dialética para a dialógica. O referencial teórico para a discussão pretendida
+
+
+ CUADERNOS DE EDUCACIÓN Y DESARROLLO, Portugal, v.15, n.5, p. 4501-4519, 2023        4502
+considera a interlocução entre a epistemologia da complexidade de Morin (1996,
+2000, 2002, 2004, 2005, 2011) e os estudos sobre o ato pedagógico em Santos
+(2018), pensadores esses como fonte primária. Sua relevância se concretiza
+pela aproximação do pensador francês e seus pressupostos a uma nova
+compreensão de conhecimento pertinente e transdisciplinar. Além disso,
+enfatiza-se como a abordagem dialógica pode promover o diálogo e a
+colaboração entre diferentes áreas do conhecimento e setores da sociedade, na
+busca por soluções sustentáveis e inclusivas. O destaque inicial trata da
+trajetória de vida e da transição entre dialética e dialógica. Em seguida, enuncia-
+se sua abordagem sobre o pensamento complexo, a fragmentação dos saberes
+e a transdisciplinaridade. Finalmente, discute-se a complexidade e a educação,
+em tempos de hoje.
+
+Palavras-chave: dialética, dialógica, pensamento complexo, Edgar Morin,
+trajetória de vida.
+
+ABSTRACT
+This article aims to present the transition from dialectics to dialogics in the life
+and thought trajectory of Edgar Morin, from the perspective of Education. This
+article uses interpretive research methodology, of a qualitative nature, to analyze
+the life and thought trajectory of Edgar Morin and his transition from dialectics to
+dialogics. The theoretical framework for the intended discussion takes into
+account the interlocution between the epistemology of complexity of Morin (1996,
+2000, 2002, 2004, 2005, 2011) and studies on the pedagogical act in Santos
+(2018), these thinkers as primary sources. Its relevance is realized by bringing
+the French thinker and his assumptions closer to a new understanding of
+pertinent and transdisciplinary knowledge. In addition, it emphasizes how the
+dialogical approach can promote dialogue and collaboration between different
+areas of knowledge and sectors of society in the search for sustainable and
+inclusive solutions. The initial highlight is the life trajectory and the transition
+between dialectics and dialogics. Then, his approach to complex thinking,
+fragmentation of knowledge and transdisciplinarity is enunciated. Finally,
+complexity and education are discussed in today’s times.
+
+Keywords: dialectics, dialogics, complex thinking, Edgar Morin, life trajectory.
+
+
+
+1 INTRODUÇÃO
+      O presente artigo tem como objetivo fulcral apresentar um itinerário do
+percurso de vida e das ideias de Edgar Morin, sua transição entre dialética e
+dialógica e sua abordagem sobre o pensamento complexo, a fragmentação dos
+saberes e a transdisciplinaridade, a partir da dimensão da educação.
+
+
+
+
+ CUADERNOS DE EDUCACIÓN Y DESARROLLO, Portugal, v.15, n.5, p. 4501-4519, 2023          4503
+        Morin é considerado, por alguns pesquisadores da complexidade, “um
+contrabandista dos saberes”1, pois suas obras transitam por várias áreas das
+ciências, em um verdadeiro diálogo entre elas; um pensamento muito estudado,
+inclusive no Brasil.
+        Morin é um pensador francês que se destacou por sua abordagem
+transdisciplinar e complexa da realidade. Ele é autor de cerca de 70 livros, sendo
+mais conhecido por sua obra O Método, que propõe uma abordagem
+transdisciplinar para o conhecimento humano. A escrita dessa obra é resultado
+de um processo longo de aprendizado, de idas e vindas às suas ideias mais
+profundas sobre a vida e a natureza. Um verdadeiro percurso epistemológico, de
+reflexão, de construção e reconstrução do seu ser.
+        No entanto, Morin se identifica como um eterno aprendente, sujeito do
+mundo, planetário, marginal. Ou seja, suas várias identidades — pensador,
+educador, sociólogo, antropólogo, filósofo ou escritor — são apenas substantivos
+carinhosos recebidos ao longo de sua trajetória de vida. Morin, portanto, é aquele
+que desejamos que ele seja.
+        Seu pensamento complexo teve impacto significativo em vários campos,
+especificamente em educação, filosofia, sociologia, mídia, ecologia, ciência
+política, antropologia e estudos de sistemas biológicos complexos. Atualmente,
+com seus quase 102 anos, Morin é festejado como humanista, que articula
+saberes, e defensor da complexidade.
+        Ao apresentar o livro Meus Demônios, Morin declara que ele contém
+necessariamente elementos de autobiografia, “[…] porque a sua vida intelectual
+é inseparável da sua vida” (MORIN, 2002, p. 9). Essa passagem demonstra a
+importância que o pensador francês atribui à interconexão entre experiências
+pessoais e reflexões intelectuais, em um movimento de devir constante e
+pertinente.
+        É nesse movimento, de um contínuo aprendizado, que o itinerário de
+Morin, da dialética à dialógica, é marcado por uma transição que acompanha os
+
+1 PETRAGLIA; Izabel Cristina. Complexidade e Autoética. EccoS Rev. Cient., UNINOVE, São
+
+Paulo: (v.2, n.1), 2000, p. 9-17. Disponível no link: Sem título-6 (uninove.br) / Acesso em: 15 dez.
+2022.
+
+
+
+  CUADERNOS DE EDUCACIÓN Y DESARROLLO, Portugal, v.15, n.5, p. 4501-4519, 2023                         4504
+passos de sua trajetória de vida. Sua vida é um profundo diálogo existencial,
+entre os fatos que marcaram a sua personalidade, e, ao mesmo tempo, a sua
+participação, a sua inserção nos grandes acontecimentos sociais e políticos das
+várias épocas da sua história.
+      Na produção do artigo, os aportes teóricos que o fundamentam são o
+pensamento complexo em Morin (1996, 2000, 2002, 2004, 2005, 2011) e os
+estudos sobre o ato pedagógico em Santos (2018). Sua relevância consiste em
+apresentar uma reflexão, um diálogo transdisciplinar sobre o itinerário de vida e
+pensamento de um dos maiores pensadores do século XXI, Edgar Morin, sob a
+dimensão de uma educação complexa, planetária e emancipadora.
+      Por fim, o artigo foi desenvolvido em quatro seções complementares,
+buscando apresentar, de forma bem didática, a trajetória de vida de Morin, sua
+transição entre dialética e dialógica e sua abordagem sobre o pensamento
+complexo, a fragmentação dos saberes e a transdisciplinaridade.
+
+
+2 NA ORIGEM DAS CONTRADIÇÕES E DA DIALÉTICA
+      Sua existência começa marcada pela tragédia. Nasceu morto e só
+começou a respirar após meia hora de palmadas para soltar o primeiro choro
+(MORIN, 2002).
+      Aos nove anos se dá o fato que marcou toda a sua vida, a morte da
+mãe, em 26 de junho de 1931, que só lhe fora revelada dois dias depois. Assim
+expressa Morin (2002, p. 48):
+
+                     Então, esta morte me invadiu totalmente e a escondi totalmente. Ao
+                     mesmo tempo, minha mãe continuou totalmente viva em mim ao longo
+                     de toda minha vida. Essa morte marcou minha vida ininterruptamente.
+                     Nunca falei sobre isto até os dezenove anos. O que soube mais tarde,
+                     e que talvez tenha igualmente me marcado, mas na mais completa
+                     inconsciência, é que antes mesmo de nascer, mas já como um feto, eu
+                     fora condenado à morte para que minha mãe vivesse, ela própria
+                     condenada à morte pelo meu nascimento.
+
+
+      Morin se refere ao fato de que sua mãe, devido a uma doença grave, fora
+proibida de engravidar, sob risco de morte. Mesmo assim, engravidou, abortou
+
+
+
+
+ CUADERNOS DE EDUCACIÓN Y DESARROLLO, Portugal, v.15, n.5, p. 4501-4519, 2023               4505
+uma primeira vez, mas não conseguiu abortar na gravidez de Morin. Daí sua
+“condenação à morte”. Um sentimento de culpa que o consumiu por muito tempo.
+       Em 1932, Morin contrai uma febre aftosa, própria dos bovinos, e
+passou vários dias com 41 graus de febre, entre a vida e a morte, até que a vida
+venceu (MORIN, 2002, p.. 49).
+       Por isso, Morin (2002, p. 48) constata: “[…] vivi mais radicalmente que os
+outros a experiência dialética da morte-nascimento”.
+       Desta forma, Morin afirma que desde a infância viveu as contradições
+dialéticas.
+
+                     O combate entre a desesperança e a esperança. Esse combate,
+                     oriundo de uma contradição entre a consciência de que a morte de
+                     minha mãe era irreversível e a esperança irreprimível de sua volta (ela
+                     nunca deixou de voltar em meus sonhos), deslocou-se no mundo de
+                     minhas ideias e em minhas ideias do mundo, e tornou-se o combate
+                     entre um ceticismo irremediavelmente e uma esperança sempre
+                     renovada (MORIN, 2002, p. 49).
+
+
+       Na sequência, Morin anuncia o que desenvolverá mais adiante, como
+essas contradições, essa profunda dialética existencial, vão suscitar uma
+dialógica.
+
+                     Deste buraco negro de uma densidade infinita, de um vazio infinito,
+                     vêm, de um lado, desespero e ceticismo e, de outro, a esperança e fé,
+                     e isto suscitou, gerou uma dialógica: nenhum dos dois termos
+                     antagonistas foi jamais totalmente vencido nem vencedor, eles não se
+                     enfraqueceram nem se anularam mutuamente; começaram a dialogar
+                     ao se combaterem, a tornarem-se produtivos, isto é, a produzir o que
+                     penso, o que sou (MORIN, 2002, p. 50).
+
+
+       Percebemos sua constante vivência no âmago das contradições ou da
+dialética, seu anseio de redenção e superação, porém a constatação de que as
+contradições nunca se suprimem.
+       Essa posição o leva a privilegiar leituras que alimentavam esse constante
+embate nunca definitivamente superado. Morin, sempre sofrido, vivia a
+contradição entre fé e dúvida.
+       É nesse contexto que se alimenta a dúvida fundamental entre o ceticismo
+e as verdades do coração. “Assim, começa e prossegue minha dialógica interior
+
+
+
+ CUADERNOS DE EDUCACIÓN Y DESARROLLO, Portugal, v.15, n.5, p. 4501-4519, 2023                  4506
+entre esperança/desesperança, dúvida/fé, e, sob um outro ângulo, entre
+verdades do coração e verdades da razão” (MORIN, 2002, p. 51, grifo do autor).
+       Morin, portanto, sempre compreendeu a complexidade da realidade
+humana, integrando diferentes perspectivas e abordagens em seu trabalho. Sua
+obra reflete essa busca constante por uma compreensão mais ampla e profunda
+do mundo do conhecimento, que se faz pertinente em todos os tempos e
+momentos.
+       Na obra Os setes saberes necessários à educação do futuro, Morin (2000,
+p. 95) reitera:
+
+                     A compreensão não desculpa nem acusa: pede que se evite a
+                     condenação peremptória, irremediável, como se nós mesmos nunca
+                     tivéssemos conhecido a fraqueza nem cometido erros. Se soubermos
+                     compreender antes de condenar, estaremos no caminho da
+                     humanização das relações humanas.
+
+
+       Essa dimensão sociológica do pensamento moriniano retoma as
+contradições vividas, sentidas e percebidas na dinâmica social, em um
+emaranhado de fios que são tecidos juntos, o que, na prática, podemos entender
+como a verdadeira condição humana, resultado das interações entre sujeitos e
+sujeitos-meio.
+       A compreensão humana exige um movimento de constante devir, que não
+se isole ou se feche em si, que transcenda a uma visão reducionista e
+fragmentada de indivíduo, que vá além de suas limitações, de suas ideias
+preconcebidas, de seus erros, de suas marcas. É convergente, como nos aponta
+Santos (2018), que a compreensão é fonte da própria humanização das relações
+humanas.
+
+
+3 DAS CONTRADIÇÕES EXISTENCIAIS ÀS CONTRADIÇÕES POLÍTICAS
+       Nos idos da adolescência, os fatos políticos estão presentes
+marcantementeem sua formação. Destacam-se as crises capitalistas das
+democracias, a ascensão de Hitler ao poder e, com maior evidência, o
+rearmamento da Alemanha.
+
+
+
+
+ CUADERNOS DE EDUCACIÓN Y DESARROLLO, Portugal, v.15, n.5, p. 4501-4519, 2023           4507
+      Suas atuações, ainda tímidas nas ideias políticas, acontecem nesse
+contexto de contradições, que parecem naturais para Morin. Com certeza, essa
+efervescência de início de século XX é determinante para a construção do senso
+de contradição que Morin vem apresentando desde então.
+      Nesse movimento discursivo, de idas e vindas na vida de Morin, há
+momentos em que o medo de conflito armado e a crítica revolucionária das
+guerras imperialistas levam-no em direção ao pacifismo. Sua atitude mística é
+diminuída, mas não liquidada.
+      As contradições políticas e as de seus vinte anos o impulsionaram para
+uma astúcia da razão, que foram determinantes para buscar sempre a
+esperança. Esperança essa que transitava no realismo radical e nas ideias
+revolucionárias.
+
+                    A ideia hegeliana da astúcia da razão, que eu acabara de aprender,
+                    confirmava-me, a partir de então, não apenas minha esperança, mas
+                    o que eu acreditava ser meu realismo. Eu era, dali em diante, ao
+                    mesmo tempo, realista e revolucionário, aceitava ir em direção ao
+                    futuro de emancipação através da lama e do sangue (MORIN, 2002, p.
+                    55).
+
+
+      A imersão na dialética hegeliana e na utopia de superar as contradições
+permitiam a Morin um deslumbramento, pois toda contradição estava implícita
+no fundamento do ser. Morin compreendia, então, que a verdade que atendia às
+suas necessidades existenciais era a verdade que não era fechada em si.
+
+                    A verdade era a totalidade, mas como a totalidade estava sempre em
+                    movimento, sempre inacabada, a verdade estava em marcha
+                    ininterrupta, fazendo-se e se desfazendo. A dialética era o esforço para
+                    aderir a este movimento próprio da totalidade, enfrentando e
+                    assumindo as ideias contrárias, fazendo explodir suas gangas, entre
+                    fecundando-as para que brote uma síntese que as exceda, ao mesmo
+                    tempo que as integre (MORIN, 2002, p. 56, grifo do autor).
+
+
+      De 1948 a 1950, Morin fora acometido por contradições que sua
+própria mente hegelianizada não podia superar. A necessidade de aceitação de
+uma ética mínima e a aceitação do imundo em que estava inserido tornava-se
+cada vez mais uma doença para Morin. As dúvidas o impregnavam e, num
+constante devir, corrompiam sua fé.
+
+
+ CUADERNOS DE EDUCACIÓN Y DESARROLLO, Portugal, v.15, n.5, p. 4501-4519, 2023                  4508
+                     Ao mesmo tempo, eu voltava às contradições da adolescência […]; eu
+                     renunciava à ideia de possuir a verdade numa alma e num corpo, a
+                     partir de então, acreditava ser necessário manter as aspirações
+                     antagônicas da adolescência (MORIN, 2002, p. 58, grifo do autor).
+
+
+      É nesse período que Morin percebe não haver uma totalidade acabada e
+estática, mas sim um todo em constante devir, fazendo-se e refazendo-se e que
+ninguém poderia pretender deter a verdade do todo numa síntese finalizadora.
+      Reconhece, finalmente, que essa totalidade está sempre inacabada ou
+incompleta, porém sempre trabalhou com a concepção de um pensamento
+multidimensional.
+
+                     Todo esse trabalho de decomposição e recomposição se operou
+                     durante o período de revisão fecunda de Arguments e antecedeu à
+                     elaboração da minha concepção da complexidade. O que estava
+                     abandonado para sempre era a síntese eufórica (MORIN, 2002, p. 59,
+                     grifo do autor).
+
+
+      A “síntese eufórica”, ou seja, a síntese que é a palavra final do movimento
+da história. A Morin, isso não parecia plausível, pois um de seus pontos de
+partida ou princípio era a do movimento constante do real que entrelaça, sem
+parar, inúmeras variáveis, produzindo, sim, sínteses, mas nunca sínteses finais,
+e sim provisórias, pois, a partir delas, o movimento sempre recomeça, pelo fato
+de que qualquer síntese faz gerar novos contrários a ela.
+      Assim lhe parece o movimento do diálogo, quando as ideias estão em
+contraposições, gerando um movimento necessário de elucidações nunca
+definitivas. Sempre provisórias, acompanhando o movimento do real e da
+história. Esse movimento nos afasta de uma visão fragmentada de mundo, de
+sujeito, de educação. Visão essa, alicerce do paradigma da simplificação
+(MORIN, 2005).
+      Daí a necessidade de uma mente capaz de enfrentar as contradições,
+sabendo-as constantes, necessárias para a sustentação do próprio movimento,
+gerando incertezas, mas também certezas provisórias que geram a
+continuidade do movimento de buscas.
+
+
+
+
+ CUADERNOS DE EDUCACIÓN Y DESARROLLO, Portugal, v.15, n.5, p. 4501-4519, 2023             4509
+4 O ENFRENTAMENTO DAS CONTRADIÇÕES EM MORIN
+      Nas leituras de textos de Niels Bohr, Morin começa a compreender que
+suas contradições são, ao mesmo tempo, complementares e antagônicas, que
+o pensamento encontra contradições, não as anulando, e sim assumindo-as
+como partes de um diálogo constante entre elas.
+      A esta luta constante e contínua de contrários presentes, tanto na
+realidade como nos discursos que a pronunciam, Morin preferiu denominar não
+de dialética, mas de dialogia.
+      Ele diz isso em A inteligência da complexidade (2000), livro escrito em
+conjunto com Jean-Louis Le Moigne: “A ideia de dialógica me parece
+interessante; existe uma diferença em relação a Hegel” (MORIN; LE MOIGNE,
+2000, p. 85).
+      Morin, portanto, visa mostrar esta diferença, apontando para o fato de
+Hegel presumir momentos de superação definitivos, que levariam a algum
+momento final de encontro dos contrários numa síntese finalmente superadora.
+      É a síntese eufórica, como diz. Morin não vê esta possibilidade de
+sínteses definitivas e sim a dura realidade da convivência dos contrários como
+que a sustentar o movimento da vida, o movimento da história e o movimento
+do pensamento. Movimento, de certa forma, inacabável. Diz ele:
+
+                     Creio que a propriedade de muitas coisas vivas, organizadas, é que
+                     elas vivem de contradições sem poder ultrapassá-las; o viver é, de
+                     alguma maneira, superá-las, mas sem que aí haja o além (do outro
+                     lado) da contradição (MORIN; LE MOIGNE, 2000, p. 86).
+
+
+      Ainda sobre as contradições vividas por Morin, percebem-se suas
+influências na base da epistemologia complexa, o pensador das correntes e
+contracorrentes   filosóficas,   buscando    diálogos    possíveis,    aceitando     o
+antagonismo, em um movimento de complementariedade. “Sou o que sou
+porque me alimentei em mil fontes” (MORIN, 2011, p. 254). “Ainda hoje, procuro
+no dia-a-dia abraçar o mundo em sua multiplicidade e seu devir, leio revistas e
+os mais diversos livros. […] continuo a lançar minhas redes para pescar o
+oceano” (MORIN, 2011, p. 256).
+
+
+
+
+ CUADERNOS DE EDUCACIÓN Y DESARROLLO, Portugal, v.15, n.5, p. 4501-4519, 2023             4510
+      Após algumas considerações e exemplificações, ele afirma que, com a
+nossa maneira de pensar, ocorre o mesmo, ou seja, pensamos sempre
+vivenciando, no interior de nossa mente, as contradições que não são nunca
+superadas definitivamente.
+
+                     Essa ideia de viver as contradições vale para o pensamento que “vive
+                     a uma temperatura de sua própria destruição” e corre o risco de ser
+                     sempre devorado pela contradição; não existe uma sobrelógica que
+                     seria o nosso protetor e o nosso guia. Existem contradições que não
+                     podem ser ultrapassadas, talvez provisoriamente. Um certo tipo de
+                     perplexidade surge do real como as grandes aporias que Kant havia
+                     formulado e que não podem ser ultrapassadas; talvez um dia, mas eu
+                     não sei nada (MORIN, 2002, p. 87).
+
+
+      Isso ocorre, por exemplo, na manutenção da vida: ela só é possível com
+a morte, quer de outros seres vivos (plantas e animais), quer da morte das
+células no próprio organismo vivo.
+      Se isso não ocorrer, a vida se acaba. Vive-se de morte, morre-se de vida,
+como dizia Heráclito, lembrado por Morin. Assim também ocorre com o
+pensamento que vive e sobrevive numa luta contínua de ideias contrárias entre
+si, produzindo sínteses provisórias. Seu movimento contínuo é o do diálogo. O
+diálogo alimenta a vida das ideias e suas expressões.
+      Foi uma importante elaboração está de Morin, criando a noção de
+dialógica, que ele prefere, ao invés da dialética. Elabora e define a dialógica
+como associação de instâncias, ao mesmo tempo, complementares e
+antagônicas, considerando a multidimensionalidade existente no mundo físico,
+no mundo vivo e no mundo humano.
+      A dialógica, aqui, abraça e reforça a necessidade de intercâmbios entre
+pensamentos,    ideias,   culturas,    manifestações        culturais,   artísticas    e
+educacionais.
+      A relação entre a trindade complexa que constitui o ser humano, isto é,
+entre o indivíduo, a espécie e a sociedade, é, acima de tudo, uma relação
+dialógica e complexa. Morin, em seus estudos e reflexões, concebe e apresenta,
+portanto, a trindade complexa (MORIN, 2005).
+
+
+
+
+ CUADERNOS DE EDUCACIÓN Y DESARROLLO, Portugal, v.15, n.5, p. 4501-4519, 2023               4511
+       A interligação desses três elementos (indivíduo-espécie-sociedade), ou
+seja, a conectividade entre eles, de fato, constitui-se no próprio sujeito, na lógica
+de Morin. Isso significa, ainda, que essa trindade complexa está em constante
+interação, influenciando reciprocamente, de formas complexas.
+       A relação dialógica entre esses elementos, constituintes da trindade
+complexa, sugere que eles se comunicam e se influenciam mutuamente,
+construindo juntos o sentido de suas experiências e da condição humana.
+Experiências que retomam, em Morin, questionamentos basilares, como a
+gênese do conhecimento pertinente, a crise, o pensamento, o complexo, a
+reforma, a certeza provisória, a incerteza, a contradição e os princípios sistêmico,
+recursivo, dialógico e hologramático, bases do pensamento complexo ou
+epistemologia da complexidade.
+       Somos resultados de uma sociedade que também é gerada por nós
+mesmos, de contribuições de nossas individualidades, que conflitam com o
+conjunto das exigências sociais, e do conteúdo genético de nossa espécie, que
+ganha contornos próprios a cada indivíduo. Esta é uma relação, é auto-eco
+organizadora e dialógica. Isso significa, ainda, que a trindade complexa,
+concebida por Morin, é dinâmica e está em constante evolução.
+       O percurso existencial de Morin, como já apresentado, leva-o a pensar e
+elaborar a noção de dialogia, reconhecendo a dialógica da realidade e, por
+consequência, do conhecimento dela, percebendo-a, constituída de elementos
+e aspectos antagônicos e complementares, que se dão num processo contínuo
+e concomitante, sem que haja um final à vista desse processo. A dialogia
+constitui-se num dos princípios basilares da complexidade para Morin.
+       A assunção da presença inevitável da contradição, tanto na realidade
+quanto na nossa maneira de pensar esta mesma realidade, é forte em Morin e
+dá o tom da contribuiçãopara o entendimento da importância de uma vida
+dialógica, a qual inclui, por certo, o dialógico de Freire.
+       De acordo com Morin, a contradição é inerente à complexidade da
+realidade e de nosso pensamento sobre ela. Em vez de tentar eliminar ou ignorar
+as contradições, devemos aceitá-las e incorporá-las em nosso pensamento e em
+
+
+
+ CUADERNOS DE EDUCACIÓN Y DESARROLLO, Portugal, v.15, n.5, p. 4501-4519, 2023           4512
+nossa vida. Isso nos permite viver de maneira dialógica, estabelecendo relações
+mais ricas e significativas com os outros e com o mundo ao nosso redor.
+      Na primeira obra citada neste artigo, Morin reitera sua afirmação de que
+o pensamento humano somente sobrevive no movimento das contrariedades
+entre as ideias, repetindo até afirmações presentes na segunda obra aqui
+citada:
+
+                      Hoje, fecho o círculo, volto às contradições umbilicais; elas estimulam
+                      permanentemente minha maneira de pensar. Para mim, o pensamento
+                      que vive é aquele que se mantém à temperatura de sua própria
+                      destruição. É quase instintivamente que, diante de qualquer ideia,
+                      procuro seu contrário. Vivo sem trégua, assaltado pelas verdades
+                      contrárias, pelos imperativos contrários. Às vezes, posso
+                      ultrapassar/deslocar a contradição encontrando um meta terreno ou
+                      meta ponto de vista (MORIN, 2002, p. 65).
+
+
+      Às vezes, diz ele, pode-se ultrapassar ou deslocar as contradições. Mas
+elas são inerentes à sua história de vida, à sua visão de mundo, aos seus
+sentimentos e pensamentos. As respostas às suas contradições encontram eco
+nas incertezas e nos desafios constantes de um mundo em constante
+transformação. Morin (2011, p. 86) afirma: “Creio que a propriedade de muitas
+coisas vivas, organizadas, é que elas vivem de contradições sem poder
+ultrapassá-las; o viver é, de alguma maneira, superá-las, mas sem que aí haja o
+além (do outro lado) da contradição”.
+      Essa dialogia se manifesta na experiência do êxtase, da poesia e da
+música; concentrando-se no amor. “Assim, mais que nunca e plenamente vivo,
+submeto-me e me alimento da dialógica permanente entre fé e o ceticismo,
+misticismo e racionalidade. O trabalho das contradições continua” (MORIN,
+2011, p. 68).
+      É a evidência de como é importante o conhecimento pertinente, aquele
+que está sempre aberto às discussões dos opostos, que aceita e valoriza as
+contradições    no   processo     de    construção      de    novos     saberes,      como
+complementares e indissociáveis, rechaçando o pensamento reducionista,
+disjuntivo, fragmentado e descontextualizado.
+
+
+
+
+ CUADERNOS DE EDUCACIÓN Y DESARROLLO, Portugal, v.15, n.5, p. 4501-4519, 2023                   4513
+      Morin, acrescenta-se, é um eterno aprendiz das ideias filosóficas
+universais, especialmente daquelas aprendidas com Heráclito, Montaigne e
+Marx. Fontes de reflexão e de aprendizado que corroboraram significativamente
+para a compreensão de sua epistemologia complexa, distanciando-se, portanto,
+da concepção de um pensamento disjuntivo, newtoniano-cartesiano e
+fragmentado, como ressaltado anteriormente.
+
+
+5 QUESTÕES INICIAIS EM PENSAMENTO, COMPLEXO E EDUCAÇÃO
+      Sem dúvidas, é muito importante trazer para o debate a epistemologia do
+pensamento complexo, enquanto abordagem proposta pelo filósofo francês
+Edgar Morin, que tem em vista repensar a realidade e a educação de uma
+maneira mais integrada e holística.
+      Em vez de seguir um padrão de pensamento cartesiano, que leva à
+fragmentação do conhecimento, o pensamento complexo visa entender as
+relações entre os diferentes conhecimentos e como eles se relacionam para
+formar um todo significativo.
+      Um dos principais elementos da complexidade é a ideia de que a realidade
+é caótica, fractal, catastrófica e difusa. Isso significa que a realidade não pode
+ser compreendida apenas quantitativamente, mas também qualitativa. A
+realidade é inacabada e está em constante fluxo, e devemos reconhecer sua
+incompletude e incerteza.
+      É pertinente, nesse sentido, considerar que a complexidade não se
+resume a uma palavra de difícil entendimento, ou seja, comum e erroneamente
+ligada às tarefas penosas, sinônimo para muitos de dificuldade. Morin (1996, p.
+274) destaca que “[…] não estamos dando uma explicação, mas sim assinalando
+uma dificuldade para explicar. Designamos algo que, não podendo realmente
+explicar, vamos chamar de ‘complexo’”.
+      Outro elemento importante da complexidade é a interdependência entre
+os diferentes componentes da realidade, ou seja, cada componente está
+relacionado sendo afetado pelas ações e ideias de todos os outros componentes.
+Torna-se, ainda, uma perspectiva da contemporaneidade, como nos ensina
+
+
+
+ CUADERNOS DE EDUCACIÓN Y DESARROLLO, Portugal, v.15, n.5, p. 4501-4519, 2023        4514
+Morin (1996), pensar aberto, pensar em sistemas, de certa forma, algum tipo de
+organização.
+      Nesta seara, o papel da escola passa a ser fundamental para um novo
+pensar. Exige um posicionamento frente ao que se ensina e ao que é ensinado,
+isso porque a condição humana, como já nos ensinou Morin, é um dos saberes
+necessários à educação do futuro. Em sua fala, o pensador francês destaca que
+cabe à escola ensinar a condição humana. (MORIN, 2000).
+      A complexidade ensina que não se deve examinar cada componente de
+maneira isolada, porque não faz sentido; caso contrário, corremos o risco de uma
+visão reducionista do objeto de aprendizagem, da construção de conhecimentos.
+Devemos, então, examinar os relacionamentos entre os componentes, para
+entender melhor a realidade. Ainda em Morin (1996), o pensamento complexo
+vem se tornando uma emergência planetária, necessário, justamente, porque
+necessitamos de novas referências, de novas lupas, de novos olhares. Continua
+Morin (1996, p. 274):
+
+                        Por isso é que, se existe um pensamento complexo, este não será um
+                        pensamento capaz de abrir todas as portas, mas um pensamento onde
+                        sempre estará presente a dificuldade. No fundo, gostaríamos de evitar
+                        a complexidade, gostaríamos de ter ideias simples, fórmulas simples…
+                        Para compreender e explicar o que ocorre ao nosso redor e em nós.
+                        Mas, como essas fórmulas simples são cada vez mais insuficientes,
+                        estamos confrontados com o desafio da complexidade. Um desafio ao
+                        qual é necessário responder, em primeiro lugar, tratando de assinalar
+                        o que quer dizer “complexidade”. E isto já nos expõe um problema:
+                        “existe uma complexidade?”.
+
+
+      Na educação, o pensamento complexo pode ser aplicado de várias
+maneiras. Uma delas é através da transdisciplinaridade, que integrará diferentes
+disciplinas e áreas do conhecimento, para criar uma compreensão mais
+completa e profunda de um determinado assunto. Isso pode ser feito, por
+exemplo, por meio de projetos interdisciplinares, onde os alunos trabalham em
+conjunto para resolver problemas complexos que requerem conhecimentos de
+várias áreas.
+      Morin     (2000),    em    relação     à   transdisciplinaridade,     defende      um
+posicionamento contrário à redução de saberes, de conhecimentos e olhares,
+
+
+
+ CUADERNOS DE EDUCACIÓN Y DESARROLLO, Portugal, v.15, n.5, p. 4501-4519, 2023                   4515
+isso porque, ainda em Morin, pensar a partir de uma ótica reducionista, é
+mutilante, desconsiderando o complexo, o transdisciplinar, as partes, mas não
+rechaçando o todo. Entretanto, o mesmo pensador pede cautela, pois a
+transdisciplinaridade não subjaz, não suplanta e não anula o trabalho com
+disciplinas. Sobre essa questão, defende o pensador: “Não se pode demolir o
+que as disciplinas criaram; não se pode romper todo o fechamento; há o
+problema da disciplina, o problema da ciência, bem como o problema da vida; é
+preciso que uma disciplina seja, ao mesmo tempo, aberta e fechada”. (MORIN,
+2004, p. 115).
+       Além disso, o pensamento complexo também pode auxiliar na forma como
+os alunos são ensinados a pensar. Em vez de apenas memorizar fatos e
+informações, os alunos são incentivados a desenvolver habilidades de
+pensamento crítico e criativo, para analisar e resolver problemas de maneira
+mais eficaz.
+       Edgar Morin, em sua obra Ensinar a viver: manifesto para mudar a
+educação, revisita seus pensamentos, amplia discussões e propõe novos
+olhares para velhas questões. Chama a atenção para uma preocupação terrena
+e planetária. Planetária, enquanto civilização, e terrena, como lar. Alerta o
+pensador, referindo-se à nossa era: “[…] era simultaneamente antropocena, do
+ponto de vista da história da Terra, e planetária, do ponto de vista da história das
+sociedades humanas” (MORIN, 2015, p. 10).
+       Questões urgentes precisam ser repensadas, e o paradigma da
+transdisciplinaridade permite esse olhar complexo para o nosso mundo, para os
+problemas que afetam a todos, que maltratam a sociedade e nosso planeta. Uma
+urgência na forma de pensar, de ensinar e tratar a nossa casa: Terra. Sobre esse
+ponto, Morin (2013, p. 174) se posiciona: “[…] percebemos que estamos
+perdidos em uma história repleta de ruídos e de horrores, expostos ao futuro
+incerto da humanidade. O planeta mundializado não produziu a ‘sociedade,
+mundo’, solidária e fraternal”.
+       O educar para o respeito à condição humana e para a valorização das
+culturas, de acordo com Morin, torna-se imprescindível, em um contexto
+
+
+
+ CUADERNOS DE EDUCACIÓN Y DESARROLLO, Portugal, v.15, n.5, p. 4501-4519, 2023          4516
+planetário, especificamente para a construção de uma nova identidade
+planetária, com base na valorização de uma consciência antropológica e
+ecológica, especificamente.
+      Morin (2000, p. 64, grifo do autor) se posiciona frente a essa urgência:
+
+                     O planeta exige um pensamento policêntrico capaz de apontar o
+                     universalismo, não abstrato, mas consciente da unidade/diversidade
+                     da condição humana; um pensamento policêntrico nutrido das culturas
+                     do mundo. Educar para este pensamento é a finalidade da educação
+                     do futuro, que deve trabalhar na era planetária, para a identidade e a
+                     consciência terrenas.
+
+
+      Há uma emergência, assim como apontam Morin (2002) e Santos (2018),
+na perspectiva de uma educação transdisciplinar e complexa, em que o ato
+pedagógico, enquanto essência da prática docente, requer, verdadeiramente,
+um compromisso com um ensino projetado para formar sujeitos terrenos e
+planetários conectados com a Terra.
+      Processo educativo esse que, de fato, envolva os sujeitos dessa ação, em
+um compromisso coletivo e colaborativo, cuja visão de futuro seja a valorização
+da consciência crítica, alicerçada no constante diálogo (SANTOS, 2018) e
+“mediatizados pelo mundo” (FREIRE, 2005, p. 39). É o pensamento complexo
+como possibilidade epistemológica de reformar e ressignificar velhos
+paradigmas educacionais, rumo a uma identidade terrena, necessária às
+demandas do século XXI.
+
+
+6 CONSIDERAÇÕES FINAIS
+      Apresentar um artigo que tenha como objetivo central apresentar um
+itinerário do percurso de vida e das ideias de Edgar Morin, sua transição entre
+dialética e dialógica e sua abordagem sobre o pensamento complexo, a
+fragmentação dos saberes e a transdisciplinaridade, a partir da dimensão da
+educação, é um exercício sísifo, frente à complexidade desse pensador.
+      Isso porque o itinerário do percurso de vida e pensamento de Morin não
+se encerra em questões temporais, e nem mesmo em seus demônios, que o
+ressignificam constantemente como sujeito antropológico, que o alimentam a
+
+
+
+ CUADERNOS DE EDUCACIÓN Y DESARROLLO, Portugal, v.15, n.5, p. 4501-4519, 2023                 4517
+partir de suas interações humanas, que o fortalecem em constante diálogo com
+o mundo e com sujeitos conectados, em um mundo em devir frenético e
+necessário.
+      À guisa de conclusão, a trajetória desse grande pensador, especialmente
+o contexto da construção de sua identidade, permite pensar a necessidade
+urgente de um novo modelo de ensino, que tenha o sujeito antropológico como
+um de seus alicerces para a superação do antagonismo e da fragmentação, em
+um diálogo constante com o conhecimento pertinente, com a religação dos
+saberes e com a reforma do pensamento.
+
+
+
+
+ CUADERNOS DE EDUCACIÓN Y DESARROLLO, Portugal, v.15, n.5, p. 4501-4519, 2023   4518
+                               REFERÊNCIAS
+
+FREIRE, Paulo. Pedagogia do oprimido. Rio de Janeiro: Paz e Terra, 2005.
+
+MORIN, Edgar. A cabeça bem-feita: repensar a reforma, reformar o
+pensamento. Tradução de Eloá Jacobina. 9. ed. Rio de Janeiro: Bertrand Brasil,
+2004.
+
+MORIN, Edgar. Ciência com consciência. Tradução de Maria D. Alexandre e
+Maria Alice Sampaio Dória. 8. ed. Rio de Janeiro: Bertrand Brasil, 2005.
+
+MORIN, Edgar. Ensinar a viver: manifesto para mudar a educação. Tradução
+de Edgard de Assis Carvalho e Mariza Perassi Bosco. Porto Alegre: Sulina, 2015.
+
+MORIN, Edgar. Epistemologia da complexidade. In: SCHNITMAN, Dora Fried
+(org.). Novos paradigmas, cultura e subjetividade. Porto Alegre: Artes
+Médicas, 1996. p. 274.
+
+MORIN, Edgar. Introdução ao pensamento complexo. Tradução de Eliane
+Lisboa. 4. ed. Porto Alegre: Sulina, 2011.
+
+MORIN, Edgar. Meus Demônios. Tradução de Leneide Duarte e Clarisse
+Meireles. Rio de Janeiro: Bertrand Brasil, 2002.
+
+MORIN, Edgar. Meus filósofos. Tradução de Edgard de Assis Carvalho e
+Mariza Perassi Bosco. Porto Alegre: Sulina, 2013.
+
+MORIN, Edgar. Os sete saberes necessários à educação do futuro. Tradução
+de Catarina Eleonora F. da Silva e Jeanne Sawaya. São Paulo: Cortez, 2000.
+
+MORIN, Edgar; LE MOIGNE, Jean-Louis. A inteligência da complexidade.
+Tradução de Nurimar Maria Falci. São Paulo: Petrópolis, 2000.
+
+PETRAGLIA; Izabel Cristina. Complexidade e autoética. EccoS Rev. Cient.,
+UNINOVE, São Paulo: (v.2, n.1), 2000, p. 9-17. Disponível no link: Sem título-6
+(uninove.br) / Acesso em: 15 dez. 2022.
+
+SANTOS, Ademar Alves dos. Paulo Freire e sua trajetória rumo à concepção do
+ato pedagógico como ação dialógica. In: LIRA, Kátia Lígia Vieira (org.). As
+diferentes faces e interfaces de uma educação para o século XXI: diálogos
+fronteiriços com Paulo Freire, Edgar Morin, Fernando Hernández, Pierre Lévy e
+Rudolf Steiner. Curitiba: Appris, 2018.
+
+
+
+
+ CUADERNOS DE EDUCACIÓN Y DESARROLLO, Portugal, v.15, n.5, p. 4501-4519, 2023     4519

@@ -1,0 +1,101 @@
+ Cattle Identification Using Muzzle Print Images
+      Based on Texture Features Approach
+
+              Alaa Tharwat1,6, Tarek Gaber2,6 , Aboul Ella Hassanien3,6 ,
+                  Hasssan A. Hassanien4,6 , and Mohamed F. Tolba5
+                 1
+                    Faculty of Eng, Suez Canal University, Ismailia, Egypt
+    2
+        Faculty of Computers and Informatics, Suez Canal University, Ismailia, Egypt
+             3
+                Faculty of Computers and Information, Cairo University, Egypt
+              4
+                 Faculty of Veterinary Medicine Cairo University, Cairo, Egypt
+          5
+            Faculty of Computers and Information, Ain Shams University, Egypt
+                6
+                   Scientiﬁc Research Group in Egypt (SRGE), Cairo, Egypt
+                               http://www.egyptscience.net
+
+
+
+
+          Abstract. The increasing growth of the world trade and growing con-
+          cerns of food safety by consumers need a cutting-edge animal identi-
+          ﬁcation and traceability systems as the simple recording and reading
+          of tags-based systems are only eﬀective in eradication programs of na-
+          tional disease. Animal biometric-based solutions, e.g. muzzle imaging
+          system, oﬀer an eﬀective and secure, and rapid method of addressing
+          the requirements of animal identiﬁcation and traceability systems. In
+          this paper, we propose a robust and fast cattle identiﬁcation approach.
+          This approach makes use of Local Binary Pattern (LBP) to extract local
+          invariant features from muzzle print images. We also applied diﬀerent
+          classiﬁers including Nearest Neighbor, Naive Bayes, SVM and KNN for
+          cattle identiﬁcation. The experimental results showed that our approach
+          is superior than existed works as ours achieves 99,5% identiﬁcation accu-
+          racy. In addition, the results proved that our proposed method achieved
+          this high accuracy even if the testing images are rotated in various angels
+          or occluded with diﬀerent parts of their sizes.
+
+
+
+1       Introduction
+Cattle identiﬁcation and traceability is currently considered a crucial phase in
+controlling safety policies of animals, management of food production, and de-
+mands of consumers [1]. The idea of developing a reliable animal identiﬁcation
+was arisen after the crisis of Spongiform Encephalopathy (BSE) taken place in
+1996. As a results of this crisis, beef consumption in Europe was reduced. The
+EU Commission then decided to use the Beef Labelling Regulation 1760/2000.
+This regulation aims to improve consumers’ conﬁdence in beef products [2]. This
+labeling process is introduced to inform the consumers with the origin of the beef
+products (i.e. providing a kind of traceability of the beef cattle) [3].
+
+
+P. Krömer et al. (eds.), Proceedings of the Fifth Intern. Conf. on Innov. in               217
+Bio-Inspired Comput. and Appl. IBICA 2014, Advances in Intelligent Systems and Computing 303,
+DOI: 10.1007/978-3-319-08156-4_22,   c Springer International Publishing Switzerland 2014
+218     A. Tharwat et al.
+
+   As reported in [4], traceability is deﬁned as the "ability to maintain a credible
+custody of the animal or animal products through all stages within the food
+chain". The process of identifying cattle is very important to enable the trace-
+ability process which is required to control the animals in the case of infectious
+diseases. Animal identiﬁcation systems are useful for all entities involved in the
+food chain including consumers and food industry. Such systems contribute not
+only to food safety but also to quality assurance. They help to (a) control the
+spread of animal disease, (b) reduce losses of livestock producers due to disease
+presence, (c) minimize expected trade loss, and (d) decrease the government cost
+of control, intervention and eradication of the outbreak diseases [5].
+   Individual animal identiﬁcation could be achieved either by mechanical, elec-
+tronic, or biometric methods [5]. The mechanical methods (e.g. using ear notch-
+ing, ear tags, branding, and tattoos) are invasive method and not good enough
+for traceability purposes. Electronic-based methods mainly use external tags,
+Radio Frequency Identiﬁcation (RFID) tags, to recognize animal [6,5]. How-
+ever, the use of these tags (e.g. neck chains or ear tags) are subject to lose,
+removal, or damage. Biometric-based methods (iris scanning, retinal images, or
+DNA analysis) are also used for animal identiﬁcation [7]. Generally speaking, the
+aforementioned biometric methods could give high identiﬁcation rates, but they
+are intrusive for the animals and not cost-eﬀective compared to other approaches
+(image-processing methods) [8].
+   Corkery et al [9] have set a number of criteria to achieve cattle identiﬁcation
+method. The method need to be easy to acquire, inexpensive, fraud-proof, a ro-
+bust biometric marker, accurate, and humane. Since 1921, breeds muzzle pattern
+or nose print has been investigated and in [10], Baranov et al have proved that
+muzzle dermatoglyphics (i.e., ridges, granule and vibrissae) of diﬀerent breeds
+are mostly diﬀerent. It is then concluded that muzzle print is similar to the hu-
+man’s ﬁngerprint. There are two ways to capture a muzzle pattern into digital
+format: lifting the muzzle data on paper and taking a photo for the muzzle [11].
+   In this paper, we will use the muzzle photos as input data for cattle identiﬁca-
+tion. This is because the collection of image lifted on papers is time-consuming
+process, requires special skills (e.g controlling the animal and getting the pattern
+on a paper) and does not give a good quality of the images. We will then ap-
+ply the Local Binary Patterns (LBP) technique to extract images’ local features
+(color, texture, and pixel intensity). In addition, the local features are invariant
+to image rotation and scale because they are computed at diﬀerent points in the
+image. Furthermore, they save computational time as they do not require image
+pre-processing or segmentation [12].
+   The reminder of this paper is organized as follows. Section (2) gives an
+overview of the Local Binary Patterns and Linear Discriminant Analysis used
+in our proposed approach which is presented in Section (3). The implementa-
+tion phase, experiment scenarios, and results discussion are given in Section (4).
+Conclusions and future work are reported in Section (5).

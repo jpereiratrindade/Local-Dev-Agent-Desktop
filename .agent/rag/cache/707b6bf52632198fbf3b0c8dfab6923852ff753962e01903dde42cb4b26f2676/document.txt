@@ -1,0 +1,1026 @@
+               Sistemas agroalimentares locais:
+             possibilidades de novas conexões de
+             mercados para a agricultura familiar
+
+                                             Amanda Borges de Souza I
+                                               Armando Fornazier II
+                                             Mauro Eduardo Delgrossi III
+
+
+
+I
+ Universidade de Brasília - UnB,      Resumo: Nos últimos anos, o conceito de sistemas agroalimentares lo-
+Brasília, DF, Brasil.
+                                      cais passou a ser visualizado como uma nova possibilidade na criação
+                                      de mercados para a agricultura familiar. Estes sistemas são baseados em
+II
+   Universidade de Brasília - UnB,
+Brasília, DF, Brasil.                 estruturas locais de produção e consumo, com enfoque principal em
+                                      sustentabilidade, localidade e proximidade. É essencial compreender a
+III
+    Universidade de Brasília - UnB,   dinâmica destes sistemas e seu impacto no contexto dos agricultores
+Brasília, DF, Brasil.                 familiares. Assim, o presente artigo busca identificar na literatura as
+                                      principais teorias e conceitos utilizados na análise sobre os “sistemas
+                                      agroalimentares locais”, verificando o estado da arte dos seus elementos
+                                      teóricos relacionados ao conceito de “agricultura familiar” na academia
+                                      brasileira e internacional. O procedimento metodológico empregado foi
+                                      a revisão sistemática da literatura seguindo o protocolo Methodi Or-
+                                      dinatio, abrangendo 30 artigos indexados no portal de buscas Periódi-
+                                      cos - Capes e na base de dados ProQuest. São apresentados de forma
+                                      sintetizada as principais abordagens inseridas nesta temática, bem como
+                                      identificadas as lacunas de pesquisa na área. Os resultados apontam
+                                      que estes conceitos envolvem temas como desenvolvimento rural local,
+                                      politização do consumo, sustentabilidade, nichos de mercado, agroeco-
+                                      logia, valorização de territórios, e programas institucionais.
+
+                                      Palavras-chave: Comida local; sistemas agroalimentares locais; circui-
+                                      tos curtos de comercialização; agricultura familiar.
+
+                                      São Paulo. Vol. 23, 2020
+                                      Artigo Original
+
+
+                                      DOI: http://dx.doi.org/10.1590/1809-4422asoc20180248r2vu2020L5AO
+
+
+
+                      Todo o conteúdo deste periódico, exceto onde está identificado, está licenciado sob uma Licença Creative Commons.
+                                                                          SOUZA, FORNAZIER e DELGROSSI
+
+
+          Introdução
+        A discussão a respeito dos sistemas agroalimentares locais tem sido bastante fo-
+mentada nos últimos anos, sobretudo a partir da década de 1990 (MARTINEZ et al.,
+2010; AZEVEDO, 2015). Uma das primeiras revisões dentro desta temática foi realizada
+por Feenstra (1997) nos Estados Unidos, onde buscou avaliar as estratégias e iniciativas
+no campo teórico e prático para promoção e desenvolvimento de sistemas baseados em
+estruturas locais de produção e consumo. De acordo com a autora, umas das maneiras de
+revitalizar uma comunidade ou região é por meio do desenvolvimento de uma economia
+alimentar local.
+        Com enfoque um pouco diferente, mas ainda dentro da perspectiva de sistemas
+agroalimentares locais, Brown (2002) apresenta uma revisão da literatura sobre os mer-
+cados de varejo e marketing direto na América do Norte, tendo como um dos objetivos
+avaliar o impacto econômico e social dos mercados de agricultores locais, pautando-se no
+argumento de que a discussão acadêmica sobre esta temática era escassa. Brown (2002)
+revisou trabalhos publicados desde 1940 até o ano 2000. Nesta revisão identificou-se que
+a literatura sugeria questões em torno do impacto econômico na renda dos agricultores
+locais, padrões de produção agrícola, uso da terra, mudança na atitude dos consumidores
+e padrões de consumo e impacto sociais.
+        Em 2008 Brown e Miller publicaram um estudo de revisão da literatura focado
+nos impactos que as CSAs (Comunidade que Sustentam a Agricultura) e os mercados
+de agricultores tinham sobre os consumidores, aos próprios produtores e à comunidade.
+Brown e Miller (2008) concluíram que o mercado de agricultores incentiva uma produção
+mais diversificada e sazonal dos alimentos em sistemas localizados, atraindo um número
+cada vez maior de compradores, o que pode potencialmente fortalecer a economia local.
+Identificou-se também que as interações econômicas que ocorrem nestes mercados são
+combinadas com uma variedade de interações sociais ligadas ao contexto local, socio-
+cultural e a comunidade.
+        Posteriormente, autores como Martinez et al. (2010) e Kneafsey et al. (2013) tam-
+bém realizaram trabalhos cujo principal objetivo residiu em sintetizar a teoria sobre os
+sistemas agroalimentares locais. Neste mesmo sentido, este artigo busca apresentar o atual
+debate à luz deste tema, a partir de uma revisão sistemática da literatura, cujo objetivo
+principal é compreender como a categoria social da agricultura familiar tem se inserido na
+pesquisa sobre sistemas agroalimentares locais. Como a discussão da agricultura familiar
+tem sido recorrente no mundo, é interessante verificar como essa categoria de agricultores
+pode dialogar com a proposta de inserção nas cadeias agroalimentares curtas e circuitos
+locais de comercialização. Para atingir o objetivo proposto, utilizou-se o procedimento
+metodológico de revisão sistemática da literatura, empregando o protocolo denominado
+Methodi Ordinatio (M.O), proposto por Pagani, Kovaleski e Resende (2015).
+
+
+
+
+2 de 20                                       Ambiente & Sociedade n São Paulo. Vol. 23, 2020 n Artigo Original
+Sistemas agroalimentares locais: possibilidades de novas conexões de mercados para a agricultura familiar
+
+
+         Sistemas agroalimentares locais
+       De acordo com Kneafsey et al. (2013), um sistema agroalimentar local consiste em
+uma estrutura onde os alimentos são produzidos, processados e comercializados dentro de
+uma área geográfica definida. Segundo Martinez et al. (2010), estes sistemas envolvem
+os mercados de agricultores locais, produtos heterogêneos e cadeias agroalimentares
+curtas, nas quais os agricultores além de produzir, também podem desempenhar funções
+de marketing, incluindo, armazenamento, embalagem, transporte e distribuição.
+       Para Martinez et al. (2010), a compreensão de comida ou alimento local pode
+ser entendida em parte, como um conceito geográfico que está relacionado à distância
+(geográfica) entre consumidores e produtores de alimentos. E também pode relacionar-se
+com a noção de laços de proximidade, onde o conceito de comida local também pode se
+estender a quem produziu o alimento, incorporando preocupações com a ética e o modo
+de vida do agricultor, considerando-se fatores como o enraizamento social (embeddedness),
+cultura e as conexões sociais, traduzidas para o consumidor por meio informações que os
+produtos carregam (MARSDEN; BANKS; BRISTOW, 2000; MARTINEZ et al., 2010).
+       Os sistemas agroalimentares locais emergem para preencher as lacunas deixadas
+pelo modelo convencional de produção e buscam descomoditizar os alimentos e conectar
+produtores e consumidores, por meio da lógica de proximidade e localidade (FORNA-
+ZIER; BELIK, 2013). Estes sistemas buscam promover e fortalecer as economias locais,
+por meio de relações de comércio mais justas e éticas, e principalmente, se apresentam
+como uma alternativa às cadeias de suprimentos industriais globais, com produtos que
+refletem as características de local, natural, saudável e confiável (AGUIAR; DEL GROSSI;
+THOMÉ, 2018, p. 1).
+       Nos sistemas agroalimentares locais uma das formas de aproximar produtores e
+consumidores é por meio das cadeias agroalimentares curtas ou short food supply chains
+(SFSCs) que de acordo com Marsden, Banks e Bristow (2000) buscam redefinir a relação
+produtor-consumidor, com mais transparência sobre a origem e manipulação dos produtos
+alimentícios produzidos, se contrapondo à lógica das cadeias industriais longas e complexas
+(MARSDEN; BANKS; BRISTOW, 2000).
+       Segundo Darolt et al. (2016, p. 1), as características centrais das cadeias curtas
+ou circuitos curtos de comercialização envolvem fatores como cooperação social entre
+produtores e consumidores; reconexão entre a esfera da produção e consumo sob o en-
+foque da sustentabilidade; dinamização de mercados locais com identidade territorial; e
+processos de qualificação.
+       Ao analisar a cadeias agroalimentares curtas, Marsden, Banks e Bristow (2000),
+identificaram três tipos de SFSC, a saber: 1) face a face: o consumidor compra diretamente
+do agricultor em uma dinâmica face a face (comercialização dentro da propriedade; venda
+à beira da estrada, etc.); 2) proximidade espacial: os produtos são produzidos na região
+específica (ou local) de produção e os consumidores são informados sobre a natureza local
+do produto no ponto de venda (feiras agroecológicas e da agricultura familiar; marcas
+regionais, etc.) e 3) espacialmente estendida: neste caso, as informações e significados
+sobre o local de produção dos alimentos e daqueles que o produzem são traduzidas para
+Ambiente & Sociedade n São Paulo. Vol. 23, 2020 n Artigo Original                                           3 de 20
+                                                                           SOUZA, FORNAZIER e DELGROSSI
+
+
+os consumidores que estão fora da região de produção, e que podem não ter nenhuma
+experiência pessoal da região (rótulos de certificação e efeitos de reputação).
+       De acordo com Kneafsey et al. (2013), as SFSCs ou sistemas agroalimentares
+locais podem gerar ganhos econômicos para produtores, consumidores e comunidades.
+Sob a perspectiva da agricultura familiar, as SFSCs oferecem aos agricultores um meio
+de diversificar sua produção, agregar valor aos produtos e garantir rendas mais estáveis
+(AGUIAR; DEL GROSSI; THOMÉ, 2018). O trecho a seguir demonstra o potencial e
+as possibilidades que estes sistemas podem refletir na realidade de agricultores familiares.
+
+
+          Agricultura familiar: novas possibilidades de mercado
+       De acordo com Wanderley (1999), a agricultura familiar pode ser entendida como
+aquela em que a família, ao mesmo tempo em que é proprietária dos meios de produção,
+assume o trabalho no estabelecimento produtivo. Segundo Abramovay (2010) a agricul-
+tura familiar é aquela onde a propriedade, a gestão e a maior parte do trabalho vêm de
+indivíduos que mantêm entre si vínculos de sangue ou de casamento.
+       Os agricultores familiares se caracterizam por uma forma social específica de traba-
+lho e produção, situada em um espaço geográfico definido e que consiste na interação de
+um grupo familiar, ligado por laços de parentesco, com a terra e com os meios de produção
+(SCHNEIDER, 2016, p.95).
+         A agricultura familiar também é referência em relação à empregabilidade no
+campo, geração de renda, abastecimento do mercado interno, à preservação ambiental e
+a capacidade de produzir culturas diversificadas e produtos heterogêneos (DELGROSSI;
+MARQUES, 2010). De acordo com o Censo Agropecuário de 2017, 77% dos estabele-
+cimentos agropecuários no Brasil estão classificados dentro do segmento da Agricultura
+Familiar, empregando mais de 10 milhões de indivíduos, o que representa 67% do total
+de pessoas ocupadas no campo (IBGE, 2017). Segundo o relatório The State of Food and
+Agriculture (SOFA), de 2014, existem no mundo aproximadamente 500 milhões de agri-
+cultores familiares que produzem 80% dos alimentos do mundo, revelando um papel de
+destaque na promoção da diversidade produtiva e garantia de segurança alimentar (FAO,
+2014; GRAEUB et al., 2016).
+       Refletindo sobre a importância da agricultura familiar é essencial que sejam cria-
+das estratégias de manutenção e reprodução deste grupo social, dirigindo-se na direção
+do desenvolvimento rural sustentável. Em Abramovay (1998) o desenvolvimento rural
+deve ser compreendido em um quadro territorial, onde o maior desafio não seja integrar
+o agricultor à indústria, mas sim criar condições para que uma população valorize certo
+território em um conjunto muito variado de atividades e de mercados. Assim, os sistemas
+agroalimentares locais se tornam ferramentas com potencial de fomento à ascensão e
+desenvolvimento de agricultores familiares.
+
+
+
+
+4 de 20                                        Ambiente & Sociedade n São Paulo. Vol. 23, 2020 n Artigo Original
+Sistemas agroalimentares locais: possibilidades de novas conexões de mercados para a agricultura familiar
+
+
+         Procedimento metodológico
+        Para atingir o objetivo proposto neste estudo que é identificar os principais elemen-
+tos teóricos utilizados na discussão sobre os “sistemas agroalimentares locais” relacionados
+ao conceito de “agricultura familiar” na academia brasileira e internacional, utilizou-se o
+procedimento metodológico de revisão sistemática da literatura (RSL).
+       De acordo com Cordeiro, Oliveira e Rentería (2007), a RSL é um tipo de investiga-
+ção científica que tem por objetivo reunir, avaliar criticamente e conduzir uma síntese dos
+resultados de múltiplos estudos primários. Nesta pesquisa, utilizou-se o protocolo de RSL
+denominado Methodi Ordinatio (M.O), proposto por Pagani, Kovaleski e Resende (2015).
+
+        Methodi Ordinatio (M.O)
+        Methodi Ordinatio (M.O.) é um protocolo de RSL multicritério de tomada de
+decisão na seleção de artigos científicos para a composição de um portfólio bibliográfico
+(PAGANI; KOVALESKI; RESENDE, 2015). De acordo com Campos et al. (2018)
+alguns métodos de RSL não consideram nenhum critério relativo às qualificações dos
+estudos investigados, considerando exclusivamente a subjetividade do avaliador. A fim
+de preencher esta lacuna, o protocolo M.O. utiliza três fatores mais relevantes a serem
+considerados na escolha de um trabalho: (a) número de citações, que demonstra o reco-
+nhecimento da comunidade científica em relação a determinada pesquisa; (b) fator de
+impacto (métrica), que revela a importância do periódico onde o artigo foi publicado;
+e, (c) o ano de publicação, que revela a atualidade do artigo (PAGANI; KOVALESKI;
+RESENDE, 2015).
+         De acordo com Pagani, Kovaleski e Resende (2015), o protocolo M.O. é composto
+por nove etapas que serão descritas a seguir. Nas etapas são detalhados os termos, bases
+consultadas e procedimentos utilizados na pesquisa:
+        Etapa 1 - Estabelecimento da intenção de pesquisa: verificar o estado da arte
+sobre as pesquisas que relacionam os conceitos e fundamentos teóricos sobre os temas:
+“sistemas agroalimentares locais” e “agricultura familiar”.
+        Etapa 2 - Pesquisa preliminar exploratória nas bases de dados bibliográficos:
+foram testadas em diferentes bases de dados combinações com as palavras-chave: local
+food; local food system*; family farm, small farm; smallholder; sistemas agroalimentares locais;
+comida local, circuitos locais de comercialização.
+        Etapa 3 - Definição das palavras-chave e bases de dados: Dentre as bases testa-
+das, as selecionadas para esta pesquisa foram a Pro Quest e o portal de busca Periódicos
+Capes (Coordenação de Aperfeiçoamento de Pessoal de Nível Superior), por apresentarem
+maior abrangência nos resultados com as palavras-chave utilizadas e por se tratar de uma
+revisão que busca estudos nacionais e internacionais, as referidas bases também foram
+escolhidas por apresentarem resultados nos idiomas português e inglês.
+        Foram buscados artigos com as seguintes combinações: (a) (local food system* OR
+local food AND family farm); (b) (local food system* OR local food AND small farm*); (c)
+(sistemas agroalimentares locais OR local food AND agricultura familiar); (d) (mercados
+Ambiente & Sociedade n São Paulo. Vol. 23, 2020 n Artigo Original                                           5 de 20
+                                                                           SOUZA, FORNAZIER e DELGROSSI
+
+
+locais) AND (agricultura familiar). Optou-se pela realização da busca por artigos publica-
+dos no período de 01/01/2000 a 31/12/2017. Após o estabelecimento das palavras-chave
+e delimitação temporal, foram feitos testes finais de busca nas bases para assegurar a
+consistência e qualidade das buscas.
+       Etapa 4 - Busca definitiva nas bases de dados: utilizando as combinações testadas
+na etapa 3ª. Obteve-se o total de 470 artigos. No momento da busca optou-se apenas
+por artigos de periódicos revisados por pares (conforme proposto pelo protocolo M.O),
+excluindo da busca teses, dissertações, anais de eventos, capítulos de livros, entre outros.
+       Etapa 5 - Procedimento de filtragem: nesta etapa foram eliminados textos em
+duplicata (exclusão de 84 textos); artigos cujos título, abstract ou palavras-chave (key-
+-words) não estivessem relacionados ao tema pesquisado ou não tivesse como foco principal
+os temas “agricultura familiar” e “sistemas agroalimentares locais” ou que abordassem
+somente um dos dois temas sem fazer nenhum tipo de conexão entre as duas temáticas
+(exclusão de 241 textos); e artigos que após a leitura da introdução e da conclusão não
+apresentaram relevância ou aderência suficiente para compor o portfólio bibliográfico,
+de acordo com o tema proposto (exclusão de 94 textos). Esta filtragem resultou em um
+total de 51 artigos para compor o portfólio desta pesquisa.
+       Etapa 6 - Identificação do fator de impacto, do ano e número de citações:
+esta etapa foi realizada simultaneamente com a etapa 8. Foi possível localizar o formato
+integral de todos os artigos, ou seja, nesta fase nenhum artigo foi excluído. Os artigos
+foram organizados em uma planilha, onde os dados seguiram a seguinte ordem: título do
+artigo; fator de impacto (Scientific Journal Rankings - SJR ou Journal Impact Factor - JCR
+do último ano); número de citações; e ano.
+       Etapa 7 - Ordenação dos artigos por meio do In Ordinatio: Adotou-se a equação
+denominada InOrdinatio (PAGANI; KOVALESKI; RESENDE, 2015) para classificar
+os artigos. Utilizou-se o valor de 10 para α, que se refere ao grau de importância para o
+critério ano atribuído para o pesquisador, podendo variar de 1 a 10.
+
+          In Ordinatio =(fi/1000)+α* (10 – (ano da pesquisa – ano de publicação) + (Σ CI)
+          (Fórmula 1)
+
+       É importante que na RSL o pesquisador utilize uma delimitação temporal ampla
+(CAMPOS et al. 2018), entretanto, nesta revisão não aparecem alguns autores consi-
+derados “clássicos” que foram citados no referencial teórico. Este fato se justifica porque
+neste trabalho os pesquisadores optaram em atribuir o valor 10 para alfa (α), ou seja, ao
+optar em atribuir este valor, os artigos mais recentes se apresentam no portifólio como
+os estudos mais relevantes. Considerando a atualidade do tema é essencial avaliar se os
+artigos mais recentes conseguiram chegar a uma teoria consistente sobre a temática, bem
+como perceber se conseguiram preencher as lacunas de pesquisas propostas pelos autores
+clássicos como Brown (2002) e Feenstra (1997), citados anteriormente, e identificar as
+atuais lacunas de pesquisa neste campo teórico.
+
+6 de 20                                        Ambiente & Sociedade n São Paulo. Vol. 23, 2020 n Artigo Original
+Sistemas agroalimentares locais: possibilidades de novas conexões de mercados para a agricultura familiar
+
+
+       Etapa 8- Localização dos artigos em formato integral: esta etapa foi realizada
+simultaneamente com a 6ª etapa. Todos os artigos selecionados foram localizados em
+formato integral.
+       Etapa 9 - Leitura e análise sistemática dos artigos: a leitura sistêmica foi realizada
+com os 30 artigos melhores classificados pelo cálculo do In Ordinatio (ver etapa 7), ou
+seja, aqueles com maior impacto dentre os 51 estudos contidos no portifólio bibliográfico.
+
+
+      Resultados: estado da arte relacionando sistemas agroalimentares locais e
+agricultura familiar
+       A seguir serão apresentados os resultados obtidos por meio da leitura sistemática
+dos artigos selecionados para esta revisão. O Quadro 1 identifica os artigos classificados
+pelo In Ordinatio, sendo apresentados pela ordem do ano de publicação.
+
+                       Quadro 1 – Estado da arte da pesquisa sobre sistemas agro-
+                               alimentares locais e agricultura familiar.
+
+                                       Título do artigo                                              Autores
+   1    Working Toward a Just, Equitable, and Local Food System: The Social               Macias (2008);
+        Impact of Community-Based Agriculture
+
+   2    The impacts of local markets: A review of research on farmers markets and         Brown e Miller (2008);
+        community supported agriculture (CSA)
+
+   3    Farm to school programs: Exploring the role of regionally-based food distribu-    Izumi, Wright e Hamm (2010);
+        tors in alternative agrifood networks
+
+   4    A alimentação no contexto contemporâneo: consumo, ação política e sustent-        Portilho e Castaneda (2011);
+        abilidade
+
+   5    Consumer preferences for local production and other value-added label             Hu et al. (2011);
+        claims for a processed food product
+
+   6    Farm to Institution: Creating Access to Healthy Local and Regional Foods          Harris et al. (2012);
+
+
+   7    Growing local food: Scale and local food systems governance                       Mount (2012);
+
+
+   8    Linking Local Food Systems and the Social Economy? Future Roles for               Wittman, Beckie e Hergeshei-
+        Farmers’ Market in Alberia and British Columbia                                   mer (2012);
+
+   9    Indicações geográficas e o desenvolvimento territorial: um diálogo entre a        Anjos, Caldas e Criado (2013)
+        realidade europeia e brasileira
+
+
+  10    Role of Gastronomic externality and feasibility attributes in consumer demand     Jensen et al. (2013) (2013);
+        for organic and local food: the case of honey and apples
+
+  11    Substitutes or complements? Consumer preference for local and organic food        Meas et al. (2014);
+        attributes
+  12    Análise sócio produtiva dos assentamentos em Cáceres, Mato Grosso: Políticas      Scheuer, Botti e Neves (2015);
+        Públicas para o desenvolvimento territorial
+
+
+Ambiente & Sociedade n São Paulo. Vol. 23, 2020 n Artigo Original                                                   7 de 20
+                                                                                          SOUZA, FORNAZIER e DELGROSSI
+
+
+
+                                   Título do artigo                                                  Autores
+ 13   O ativismo alimentar na perspectiva do Locavorismo                                 Azevedo (2015);
+
+
+ 14   Valorização de produtos alimentares tradicionais: os usos das indicações           Santos e Menasche (2015);
+      geográficas no contexto brasileiro
+
+ 15   Beekeeping and Agroecological Systems for Endougenous Sustenable Develop-          Wolff e Gomes (2015);
+      ment
+ 16   Potencialidades e dificuldades para o abastecimento da alimentação escolar         Soares et al. (2015);
+      mediante a aquisição de alimentos da agricultura familiar em um município
+      brasileiro
+ 17   Competitiveness of small farms and innovative food supply chains: The role of      Berti e Mulligan (2016);
+      food hubs in creating sustainable regional and local food systems
+ 18   Rebuilding local foods in Appalachia: Variables affecting distribution methods     Farmer e Betz (2016);
+      of West Virginia farms
+ 19   Alternative Food Networks and New Producer-Consumer Relations in France            Darolt et al. (2016);
+      and in Brazil
+ 20   Coordenação na Agricultura Familiar e o Desenvolvimento Territorial: o caso        Pereira (2016);
+      das indicações geográficas para o café
+ 21   Mercados Imersos: uma perspectiva de análise institucional e relacional das        Cassol, Salvate e Schneider
+      trocas econômicas e do intercâmbio mercantil                                       (2016);
+ 22   Ecologização na Agricultura Familiar, feiras e produtos artesanais na região       Picolotto e Bremm (2016);
+      Central do Rio Grande do Sul
+ 23   Agricultura Familiar, sistemas agroalimentares localizados - Sials e as dinâmi-    Moraes (2016);
+      cas de desenvolvimento dos territórios rurais
+ 24   Farm Fresh Foods for Healthy Kids (F3HK): An innovative community sup-             Seguin et al. (2017);
+      ported agriculture intervention to prevent childhood obesity in low-income
+      families and strengthen local agricultural economies
+ 25   Scaling-up short food supply chains? A survey study on the drivers behind the      Aggestam; Fleib e Posch (2017);
+      intention of food producers
+ 26   Local beef production: What Rio Grande do Sul is waiting for?                      Oliveira e Freitas (2017);
+ 27   Farmer cooperation as a means for creating local food systems-Potentials and       Lutz, Smetschka e Grima
+      challenges                                                                         (2017);
+ 28   Relações sociais e território: estudo no arranjo produtivo local (APL) da          Justen e Souza (2017);
+      castanha da amazônia
+
+
+ 29   Using local family farm products for school feeding programmes: effect on          Soares (2017);
+      school menus
+ 30   State Support in Brazil for a Local Turn to Food                                   Matei (2017);
+Fonte: Elaborado pelos autores, 2018.
+
+
+       Cabe salientar que o trabalho de Brown (2002), intitulado “Farmers’ Market re-
+search” e o artigo “Realizing justice in social local food systems” de Allen (2010), foram os
+mais citados no contexto da academia internacional. Na academia brasileira, Schneider
+e Niederle foram os mais citados, porém as citações não se concentraram em um trabalho
+específico destes autores, sendo referenciados diferentes estudos dos autores.
+
+
+8 de 20                                                       Ambiente & Sociedade n São Paulo. Vol. 23, 2020 n Artigo Original
+Sistemas agroalimentares locais: possibilidades de novas conexões de mercados para a agricultura familiar
+
+
+       O gráfico 1 apresenta a distribuição dos artigos por ano de publicação, evidenciando
+que a maior parcela dos artigos analisados se concentra nos anos de 2015 a 2017. Tal fe-
+nômeno ocorre por dois motivos: o primeiro diz respeito ao valor 10 que foi atribuído para
+alfa (α) na equação InOrdinatio, o que de certa forma privilegia os estudos mais recentes;
+e o segundo pelo fato do tema ter um difusão maior nos últimos anos, por exemplo, em
+2014 a Organização das Nações Unidas (ONU) declarou como o Ano Internacional da
+Agricultura Familiar.
+
+                                    Gráfico 1 – Média de publicações por ano
+
+
+
+
+Fonte: Elaborado pelos autores, 2018.
+
+
+       O Quadro 2 apresenta em quais periódicos os artigos desta revisão foram publica-
+dos. Percebe-se que os estudos se enquadram em escopo de pesquisa que se referem à:
+políticas públicas, sociologia rural, geografia, economia, nutrição e saúde, sustentabilidade
+e consumo.
+
+                           Quadro 2 – Quantidade de publicações por periódico
+
+                           Periódico                                       Quantidade artigos publicados
+
+                  Advances in Nutrition                                                       1
+                          Agriculture                                                         1
+            Agriculture and Human Values                                                      2
+    Agroecology and Sustainable Food Systems                                                  1
+
+Ambiente & Sociedade n São Paulo. Vol. 23, 2020 n Artigo Original                                           9 de 20
+                                                                               SOUZA, FORNAZIER e DELGROSSI
+
+
+
+
+                     Periódico                                 Quantidade artigos publicados
+
+               Ambiente & Sociedade                                               2
+  American Journal of Agricultural Economics                                      2
+                 BMC public health                                                1
+                British Food Journal                                              1
+             Ciência & Saúde Coletiva                                             2
+             Ciências da Administração                                            1
+           Cuadernos de Desarrollo Rural                                          1
+       Dados, Revista de Ciências Sociais                                         1
+  European Review of Agricultural Economics                                       1
+   International Journal of Consumer Studies                                      1
+               Journal of rural studies                                           2
+                Política & Sociedade                                              3
+                       Redes                                                      1
+   Revista em Agronegócio e Meio Ambiente                                         1
+            Revista Geografia Academica                                           1
+                  Rural Sociology                                                 1
+              Social Science Quarterly                                            1
+                   Sustainability                                                 2
+Fonte: Elaborado pelos autores, 2018.
+
+
+       Por se tratar de um tema multidisciplinar, conforme é possível observar no Quadro
+2, que apresenta a variedade de periódicos em que os artigos que compõe o portifólio de
+análise foram publicados, fez-se necessário primeiramente verificar o tema central de cada
+artigo e, em seguida, dividi-los em grupos de acordo com a temática abordada. O Quadro
+3 apresenta os principais temas e subtemas que foram abordados nos estudos analisados.
+Cada um destes tópicos será abordado neste trabalho de forma sucinta com o objetivo de
+descrever as principais discussões referentes a esta revisão sistemática.
+
+                    Quadro 3 – Temas e Subtemas identificados na literatura
+
+           Estado da arte relacionando sistemas locais e agricultura familiar
+                    Temas centrais                                           Referências
+ Criação de valor por meio dos sistemas agroali-        Berti e Mulligan (2016); Meas et al.
+ mentares locais                                        (2014); Anjos, Caldas e Criado (2013);
+                                                        Mount (2012); Hu et al. (2011)
+
+
+
+
+10 de 20                                           Ambiente & Sociedade n São Paulo. Vol. 23, 2020 n Artigo Original
+Sistemas agroalimentares locais: possibilidades de novas conexões de mercados para a agricultura familiar
+
+
+
+ Análise da relação entre produtores e consumido- Darolt et al. (2016); Farmer e Betz
+ res envolvidos nos sistemas agroalimentares locais (2016); Azevedo (2015); Tveit (2013);
+                                                    Portilho e Castaneda (2011)
+ Impactos sociais, econômicos e ambientais                           Aggestam; Fleib e Posch (2017); Se-
+                                                                     guin et al. (2017); Wittman, Beckie e
+                                                                     Hergesheimer (2012); Brown e Miller
+                                                                     (2008); Macias (2008)
+            Subtemas apontados pela literatura                                              Referências
+ Viabilidade de criação de sistemas agroalimenta-                    Oliveira e Freitas (2017)
+ res locais
+ Organização e cooperação nos sistemas agroali-                      Lutz, Smetschka e Grima (2017); Pereira
+ mentares locais                                                     et al. (2016); Santos e Menasche (2015)
+ Características de sistemas produtivos locais espe- Justen e Souza (2017); Cassol, Salvate
+ cíficos                                             e Schneider (2016); Moraes (2016); Pi-
+                                                     colotto e Bremm (2016); Wolff e Gomes
+                                                     (2015);
+ Políticas Públicas e Programas Institucionais                       Matei (2017); Soares (2017); Scheu-
+                                                                     er, Botti e Neves (2015); Soares et al.
+                                                                     (2015); Harris et al. (2012); Izumi,
+                                                                     Wright e Hamm (2010);
+Fonte: Elaborado pelos autores, 2018.
+
+
+
+         Criação de valor por meio dos sistemas agroalimentares locais
+       Segundo Hu et al. (2011), o interesse dos consumidores em alimentos cultivados
+localmente tem crescido na última década. Para atender esta demanda, um número cres-
+cente de agricultores é atraído pelo potencial dos alimentos locais, como uma alternativa
+de valor agregado em detrimento da baixa lucratividade e às perspectivas cada vez menores
+da produção convencional de commodities (MOUNT, 2012).
+       Meas et al. (2014) observaram em suas pesquisas que os consumidores estão dis-
+postos a pagar mais por alimentos produzidos localmente, devido a noção de que estão
+apoiando pequenos produtores, desde de que o produto seja claramente rotulado como
+um produto de agricultores familiares locais, ou seja, percebe-se uma busca da esfera do
+consumo e se aproximar dos produtores. Assim, selos da agricultura familiar e rótulos de
+Indicações Geográficas (IGs), como sugere Anjos, Caldas e Criado (2013), podem ser
+estratégias de agregar valor aos produtos locais produzidos por agricultores familiares,
+além da possibilidade de atribuir preços premium aos alimentos.
+
+      Viabilidade de criação de sistemas agroalimentares locais
+      Oliveira e Freitas (2017) buscam demonstrar o potencial do investimento na produ-
+ção de carne local no Rio Grande do Sul, nos municípios de Alegrete, Dom Pedrito, Bagé,
+
+Ambiente & Sociedade n São Paulo. Vol. 23, 2020 n Artigo Original                                           11 de 20
+                                                                           SOUZA, FORNAZIER e DELGROSSI
+
+
+Santa Maria e Pelotas. Segundo os autores, a criação de mercados locais deste produto
+se justifica pelo fato destes municípios apresentarem clima e solo propícios para a criação
+de gado, alta qualidade genética de raças, tradição em relação ao manejo e culinária e
+consumidores com renda relativamente alta.
+        De acordo com Oliveira e Freitas (2017), o Rio Grande do Sul tem potencial para
+desenvolver cadeias curtas em relação ao mercado de carne, diminuir os intermediários e
+captar os lucros da comercialização deste produto na região. Além de fornecer produtos
+diferenciados e com alto valor agregado, a comercialização de carne em mercados locais,
+contribuiria para o desenvolvimento de agricultores familiares e preservação ambiental
+no Rio Grande do Sul.
+        Este exemplo relatado anteriormente pelos autores demonstra que para que sejam
+criados mercados ou estruturas de cadeias de suprimentos baseados na localidade é neces-
+sário que se leve em consideração questões como potencial produtivo da região, análise
+do mercado do consumidor, tradição e cultura da região, fatores mercadológicos e sociais.
+
+       Relação entre Produtores e Consumidores envolvidos nos sistemas agroali-
+mentares locais
+       A relação entre produtores e consumidores é construída por laços de confiança
+e proximidade, principalmente, construídos em uma dinâmica face-a-face (AZEVEDO,
+2015). Motivados pela desconfiança em relação ao setor agroalimentar, os consumidores
+têm a necessidade de estarem cada vez mais perto do ponto de produção e acompanhar
+os processos produtivos e de manipulação dos alimentos, conforme sugere a teoria das
+cadeias agroalimentares curtas (AZEVEDO, 2015).
+       Os consumidores e produtores nos sistemas agroalimentares locais são envoltos
+por relações que envolvem valorização de produtos e saberes locais, confiança, ligada
+a práticas produtivas sustentáveis, e promoção da justiça social, por meio de apoio aos
+mercados de agricultores familiares (FARMER; BETZ, 2016; AZEVEDO, 2015; DA-
+ROLT et al., 2016). Estes atores passam a perceber o ato de cultivar e se alimentar como
+um ato político, que se posiciona contra as práticas adotadas no sistema convencional
+(PORTILHO; CASTANEDA, 2011).
+
+       Organização e cooperação nos sistemas agroalimentares locais
+       Os agricultores inseridos em sistemas agroalimentares locais também estão susce-
+tíveis a enfrentar desafios como aqueles relacionados a escala de produção, aos custos,
+problemas logísticos, dificuldades de acesso ao crédito, acesso limitado a tecnologia, baixo
+poder de barganha e dificuldades de acesso a determinados mercados (SANTOS; ME-
+NASCHE, 2015; LUTZ; SMETSCHKA; GRIMA, 2017). Para Lutz, Smetschka e Grima
+(2017), uma das formas de enfrentar estes obstáculos é pela organização e cooperação
+entre os agricultores, consumidores e instituições públicas.
+       A cooperação não se resume apenas em reduzir os custos de produção, mas também é
+uma forma pela qual os agricultores podem organizar determinados mercados. Um exemplo
+
+12 de 20                                       Ambiente & Sociedade n São Paulo. Vol. 23, 2020 n Artigo Original
+Sistemas agroalimentares locais: possibilidades de novas conexões de mercados para a agricultura familiar
+
+
+claro, pode ser a utilização de registros de Indicações Geográficas (IG’s). De acordo com
+Santos e Menasche (2015) um dos requisitos para o processo de construção de uma IG é
+a necessidade de constituir um grupo formal, como uma associação ou cooperativa. Para
+Pereira et al. (2016), a cooperação pode ser considerada um meio eficiente para alavancar
+territórios e fazer com que produtos locais sejam reconhecidos e escoados para diferentes
+mercados, inserindo agricultores familiares em mercados diferenciados.
+
+        Características de sistemas produtivos locais específicos
+        Justen e Souza (2017) avaliaram o arranjo produtivo local da Castanha-da-Ama-
+zônia do Estado do Acre. Cassol, Salvate e Schneider (2016), analisaram o processo de
+construção e dinâmicas de mercado, como o caso da Feira do Pequeno Produtor de Passo
+Fundo/RS. Moraes (2016), focou sua pesquisa em sistemas agroalimentares localizados na
+região do Vale do Caí. Picolotto e Bremm (2016) refletem sobre o processo de transição
+para agricultura agroecológica entre os agricultores familiares e assentados da reforma
+agrária na região Central do Rio Grande do Sul e sobre a experiência das feiras como
+espaço de trocas sociais e signos culturais entre produtores e consumidores. Por fim, Wolff
+e Gomes (2015), focam seu trabalho na atividade de apicultura realizada por agricultores
+familiares no Sul do Brasil.
+        Os sistemas agroalimentares locais devem compor atores (produtores, consumidores,
+setor público e privado) engajados socialmente, para fortalecer as atividades produtivas
+locais, estabelecer relações sólidas entre consumo e produção e, consequentemente,
+melhorar condições de vida dos agricultores (WOLFF; GOMES, 2015).
+        Também tem o potencial para fortalecer outros arranjos produtivos locais, como
+o caso do turismo rural ou turismo gastronômico (CASSOL; SALVATE; SCHNEIDER,
+2016). Assim, criar espaços sociais onde seja possível não só a venda direta de produtos,
+mas também proporcionar a troca de informações e signos culturais é uma das caracte-
+rísticas fundamentais destes sistemas.
+
+        Políticas Públicas e Programas Institucionais
+        Apesar dos benefícios sociais que são atribuídos aos sistemas agroalimentares locais,
+alguns produtores e consumidores não conseguem acessar mercados locais, principal-
+mente por motivos relacionados à baixa renda dos consumidores e agricultores (IZUMI;
+WRIGTH; HAMM, 2010). Desta forma, programas institucionais e políticas públicas
+de fomento à produção local são extremamente importantes para promover a justiça e
+equidade social entre os indivíduos e no fortalecimento do tecido social local (HARRIS
+et al., 2012).
+        No tema dos mercados institucionais, a maioria dos autores (5) concentraram suas
+pesquisas nos programas Farm-to-School, no caso dos Estados Unidos, PAA (Programa
+de Aquisição de Alimentos) e PNAE (Programa Nacional de Alimentação Escolar) em
+muitos estudos referentes ao Brasil. Existe concordância entre estes autores que os pro-
+gramas de compras da agricultura familiar conseguem promover alimentação saudável e
+
+Ambiente & Sociedade n São Paulo. Vol. 23, 2020 n Artigo Original                                           13 de 20
+                                                                                  SOUZA, FORNAZIER e DELGROSSI
+
+
+diversificada para os consumidores institucionais, contribuem para a democratização do
+alimento e para a segurança alimentar e nutricional (SAN), reduzem a pobreza entre os
+agricultores familiares e contribuem para o desenvolvimento local (SCHEUER; BOTTI;
+NEVES, 2015; SOARES, 2017; HARRIS et al., 2012; IZUMI; WRIGHT; HAMM, 2010).
+
+      Lacunas de pesquisa
+      Através da pesquisa, além de verificar as principais discussões na temática de siste-
+mas agroalimentares locais e agricultura familiar também foi possível verificar as lacunas
+de pesquisa, ou seja, temas que poderiam ser mais pesquisados enriquecendo a temática de
+estudo. O Quadro 4 apresenta as principais lacunas de pesquisa identificadas nesta RSL.
+
+                                  Quadro 4 – Lacunas de pesquisa
+       Temas                                                 Lacunas
+                          (a) falta de pesquisas que avaliem se a produção em larga escala faz com que
+ Criação de valor por     os sistemas agroalimentares locais percam sua identidade (MOUNT, 2012);
+ meio dos sistemas        (b) necessidade de trabalhos que explorem as percepções dos consumidores,
+ agroalimentares locais   sobre as várias designações de local (MEAS et al., 2015); e (c) pesquisas que
+                          explorem o ponto de vista dos agricultores sobre a criação de valor ao longo da
+                          cadeia produtiva (BERTI; MULLIGAN, 2016).
+
+ Análise da relação       (a) estudos que investiguem os fatores que influenciam a tomada de decisão
+ entre produtores e       dos produtores sobre comercializar em sistemas locais (PORTILHO; CASTA-
+ consumidores envol-      NEDA, 2011); e (b) estudos que investiguem a politização do consumo como
+ vidos nos sistemas       tendência nas sociedades contemporâneas, bem como as especificidades desse
+ agroalimentares locais   fenômeno no contexto brasileiro (PORTILHO; CASTANEDA, 2011).
+
+ Impactos sociais, eco-   (a) estudos que examinem as relações de comercialização em sistemas locais
+ nômicos e ambientais     e seus impactos gerados ao meio ambiente (BROWN; MILLER, 2008); e (b)
+                          estudos que investiguem a relação entre o modelo de produção local e a equi-
+                          dade da distribuição e comercialização de alimentos locais (MACIAS, 2008).
+
+ Organização e coo-       (a) falta de estudos sobre as formas de cooperação existentes nos sistemas
+ peração nos sistemas     agroalimentares locais (LUTZ; SMETSCHKA; GRIMA, 2017); e (b) necessi-
+ agroalimentares locais   dade de estudos mais amplos sobre as Indicações Geográficas (IG’s) utilizadas
+                          por agricultores familiares e sobre as formas de organização dos atores produti-
+                          vos nos sistemas agroalimentares locais (PEREIRA et al., 2016).
+
+ Características de       (a) trabalhos que analisem a coexistência de mercados alternativos com
+ sistemas produtivos      mercados convencionais e formas híbridas de mercado (CASSOL; SALVATE;
+ locais específicos       SCHNEIDER, 2016).
+
+ Políticas Públicas e     (a)refere-se à ausência de estudos que descrevam e analisem programas de
+ Programas institucio-    forma individual, visando compreender se eles realmente contribuem para o
+ nais                     desenvolvimento de cadeias curtas e sistemas locais mais sustentáveis.
+
+Fonte: elaborado pelos autores, 2020.
+
+
+
+14 de 20                                              Ambiente & Sociedade n São Paulo. Vol. 23, 2020 n Artigo Original
+Sistemas agroalimentares locais: possibilidades de novas conexões de mercados para a agricultura familiar
+
+
+         Conclusões
+       Os sistemas agroalimentares locais abrangem conceitos que estão bastante rela-
+cionados ao desenvolvimento rural local, a sustentabilidade, aos mercados institucionais,
+aos arranjos produtivos locais, a produção de qualidade e orgânica, impactos econômicos
+em comunidades locais e mudanças no padrão de consumo.
+         Este trabalho contribuiu para identificar, principalmente, como os estudos mais
+recentes dentro desta temática estão sendo conduzidos e qual têm sido as principais
+discussões e lacunas de pesquisa identificadas neste campo teórico. Os estudos neste
+campo estão se expandindo nos últimos anos e se inserem no escopo de diversos campos
+de pesquisa, como na geografia, sociologia, políticas públicas, agronomia, nutrição, entre
+outros.
+       Conclui-se que o objetivo desta pesquisa foi atingido em verificar o estado da
+arte sobre os estudos que relacionam os conceitos de “sistemas agroalimentares locais” e
+“agricultura familiar”, trazer os principais temas que estão sendo discutidos, bem como
+evidenciar as lacunas de pesquisa na literatura. Sugerimos que futuras pesquisas se con-
+centrem nas lacunas aqui identificadas.
+       Algumas limitações da revisão sistemática aqui adotada é que esta identifica re-
+ferências com maior impacto e as mais recentes, e é limitada as línguas inglesa e por-
+tuguesa, o que acaba excluindo pesquisas em outros idiomas. Também os critérios de
+inclusão e/ou exclusão dos artigos podem ser diferentes de acordo com a leitura do/a
+pesquisador/a e seu nível de conhecimento teórico sobre a temática. Além disso, tam-
+bém não aprecia estudos técnicos como relatórios, anais de eventos e livros. No entan-
+to, como relatam Gomes e Caminha (2014, p. 397) “revisões bem estruturadas podem
+auxiliar na atualização e construção de novas diretrizes para atuação profissional ou ida
+a campo em busca de soluções para artigos originais”. Ou seja, é uma metodologia que
+possui sua utilidade e pode auxiliar outras metodologias de pesquisa, por exemplo, para
+pesquisas de campo. Porém, mesmo com essas limitações, o método permite trazer de
+forma sistematizada temas que estão sendo publicados em revistas de maior impacto,
+contribuindo assim para ver o estado da arte sobre a temática, as lacunas e ajuda na
+compreensão do tema e sugestões de pesquisas.
+
+
+
+Agradecimentos
+O presente trabalho foi realizado com o apoio da Coordenação de Aperfeiçoamento de
+Pessoal de Nível Superior – Brasil (CAPES) – Código de Financiamento 001.
+
+
+
+Referências
+
+ABRAMOVAY, R. Para juntar economia e ética, sociedade e natureza. 2010. Disponível em:
+<http://ricardoabramovay.com/entrevistas-agricultura-familiar/>. Acesso em: 25/07/2018.
+
+Ambiente & Sociedade n São Paulo. Vol. 23, 2020 n Artigo Original                                           15 de 20
+                                                                             SOUZA, FORNAZIER e DELGROSSI
+
+
+ABRAMOVAY, R. Agricultura familiar e desenvolvimento territorial. Reforma agrária, v. 28,
+n. 1, p. 2, 1998.
+
+AGUIAR, L. C.; DELGROSSI, M. E.; THOMÉ, K. M. Short food supply chain: characteristics
+of a family farm. Ciência Rural, v. 48, n. 5, 2018.
+
+ANJOS, F. S.; AGUILAR CRIADO, E.; CALDAS, N. V. Indicações geográficas e desenvolvi-
+mento territorial: um diálogo entre a realidade europeia e brasileira. Dados, Revista de Ciências
+Sociais, 56 (1), 207-236., 2013.
+
+ANJOS, F. S.; CALDAS, N. V. A dinâmica dos canais curtos de comercialização: o caso do Pro-
+jeto Campagna Amica na Itália. Sociedade e Estado, v. 32, n. 3, p. 771-792, 2017.
+
+AZEVEDO, E. O Ativismo Alimentar na perspectiva do Locavorismo. Ambiente & Sociedade,
+v. 18, n. 3, p. 81-98, 2015.
+
+BROWN, A. Farmers’ market research 1940–2000: An inventory and review. American journal
+of alternative agriculture, v. 17, n. 4, p. 167-176, 2002.
+
+BROWN, C.; MILLER, S. The impacts of local markets: a review of research on farmers markets
+and community supported agriculture (CSA). American Journal of Agricultural Economics, v.
+90, n. 5, p. 1298-1302, 2008.
+
+BELIK, W.; FORNAZIER, A. Políticas Públicas e a construção de novos mercados para a agri-
+cultura familiar: analisando o caso da alimentação escolar no município de São Paulo. Raízes. v.
+36, n. 2, p. 70-81, jul-dez.2016.
+
+BERTI, G.; MULLIGAN, C. Competitiveness of small farms and innovative food supply chains:
+The role of food hubs in creating sustainable regional and local food systems. Sustainability, v.
+8, n. 7, p. 616, 2016.
+
+CASSOL, A; SALVATE, N.; SCHNEIDER, S. Mercados Imersos: uma perspectiva de análise
+institucional e relacional das trocas econômicas e do intercâmbio mercantil. Política & Socieda-
+de, v. 15, n. 33, p. 314, 2016.
+
+CORDEIRO, A. M. et al. Systematic review: a narrative review. Revista do Colégio Brasileiro
+de Cirurgiões, v. 34, n. 6, p. 428-431, 2007.
+
+CHIFFOLEAU, Y.; PREVOST, B. Les circuits courts, des innovations sociales pour une alimen-
+tation durable dans les territoires. Norois. Environnement, aménagement, société, n. 224, p.
+7-20, 2012.
+
+DAROLT, M. R. et al. Alternative food networks and new producer-consumer relations in France
+and in Brazil. Ambiente & Sociedade, v. 19, n. 2, p. 1-22, 2016.
+
+DE CAMPOS, E. A. R. et al. Construction and qualitative assessment of a bibliographic portfolio
+using the methodology Methodi Ordinatio. Scientometrics, v. 116, n. 2, p. 815-842, 2018.
+
+
+16 de 20                                         Ambiente & Sociedade n São Paulo. Vol. 23, 2020 n Artigo Original
+Sistemas agroalimentares locais: possibilidades de novas conexões de mercados para a agricultura familiar
+
+
+DE GODOI PEREIRA, M. E. B. et al. Coordenação na Agricultura Familiar e o Desenvolvimen-
+to Territorial: o caso das indicações geográficas para o café. Política & Sociedade, v. 15, p. 131,
+2016.
+
+DE MORAES, J. L. A. Agricultura Familiar, Sistemas Agroalimentares Localizados (SIALs) e
+as Dinâmicas de Desenvolvimento dos Territórios Rurais. Redes, v. 21, n. 3, p. 238-256, 2016.
+
+DEL GROSSI, M. E.; DE AZEVEDO MARQUES, V. PM. Agricultura familiar no censo agrope-
+cuário 2006: o marco legal e as opções para sua identificação. Estudos Sociedade e Agricultura,
+2010.
+
+DE OLIVEIRA, T. E.; FREITAS, D. S. Local beef production: what Rio Grande do Sul is waiting
+for? Revista em Agronegócio e Meio Ambiente, v. 10, n. 2, p. 321, 2017.
+
+FAO. Programa para el Censo Agropecuario Mundial. SOFA-2014. Disponível em: <http://
+www.fao.org/world-census-agriculture/es/>. Acesso em: 29/07/2018.
+
+FARMER, J. R.; BETZ, M. E. Rebuilding local foods in Appalachia: Variables affecting distribu-
+tion methods of West Virginia farms. Journal of rural studies, v. 45, p. 34-42, 2016.
+
+FEENSTRA, G. W. Local food systems and sustainable communities. American journal of alter-
+native agriculture, v. 12, n. 1, p. 28-36, 1997.
+
+FORNAZIER, A.; BELIK, W. Produção e consumo local de alimentos: novas abordagens e pers-
+pectivas para as políticas públicas. Segurança Nutricional e Alimentar, v. 20, n. 2, p. 204-218,
+2013.
+
+GOMES, I. S.; CAMINHA, I. O. Guia para estudos de revisão sistemática: uma opção meto-
+dológica para as Ciências do Movimento Humano. Movimento, Porto Alegre, v. 20, n. 01, p.
+395-411, jan/mar de 2014.
+
+GRAEUB, B. E. et al. The state of family farms in the world. World development, v. 87, p. 1-15,
+2016.
+
+HARRIS, D. et al. Farm to institution: Creating access to healthy local and regional foods. Ad-
+vances in Nutrition, v. 3, n. 3, p. 343-349, 2012.
+
+HU, W. et al. Consumer preferences for local production and other value-added label claims for
+a processed food product. European Review of Agricultural Economics, v. 39, n. 3, p. 489-510,
+2011.
+
+IBGE. Censo Agropecuário 2017: resultados definitivos. Brasil, 2017. Disponível em: https://
+sidra.ibge.gov.br/pesquisa/censo-agropecuario/censo-agropecuario-2017. Acesso em 31 Jan.
+2020.
+
+ IZUMI, B.T.; WRIGHT, D. W.; HAMM, M. W. Farm to school programs: Exploring the role
+of regionally-based food distributors in alternative agrifood networks. Agriculture and Human
+Values, v. 27, n. 3, p. 335-350, 2010.
+
+Ambiente & Sociedade n São Paulo. Vol. 23, 2020 n Artigo Original                                           17 de 20
+                                                                             SOUZA, FORNAZIER e DELGROSSI
+
+
+KENEAFSEY, M. et al. Short Food Supply Chains and Local Food Systems in the UE. A State of
+Play of their Socio-Economic Characteristics. JRC SCIENTIFIC AND POLICY REPORTS.
+União Europeia. 2013. Disponível em: <http://publications.jrc.ec.europa.eu/repository/bitstre-
+am/JRC80420/final%20ipts%20jrc%2080420%20(online).pdf>. Acesso em 01/05/2018.
+
+LUTZ, J.; SMETSCHKA, B.; GRIMA, N. Farmer Cooperation as a Means for Creating Local
+Food Systems—Potentials and Challenges. Sustainability, v. 9, n. 6, p. 925, 2017.
+
+MACIAS, T. Working toward a just, equitable, and local food system: The social impact of Com-
+munity‐Based agriculture. Social science quarterly, v. 89, n. 5, p. 1086-1101, 2008.
+
+MARTINEZ, S. et al. Local food systems: Concepts, impacts, and issues, ERR 97. US Depart-
+ment of Agriculture, Economic Research Service, v. 5, 2010.
+
+MARSDEN, T.; BANKS, J.; BRISTOW, G. Food supply chain approaches: exploring their role in
+rural development. Sociologia ruralis, v. 40, n. 4, p. 424-438, 2000.
+
+MATEI, A. P. et al. State Support in Brazil for a Local Turn to Food. Agriculture, v. 7, n. 1, p.
+5, 2017.
+
+MEAS, T. et al. Substitutes or complements? Consumer preference for local and organic food at-
+tributes. American Journal of Agricultural Economics, v. 97, n. 4, p. 1044-1071, 2014.
+
+MOUNT, P. Growing local food: scale and local food systems governance. Agriculture and Hu-
+man Values, v. 29, n. 1, p. 107-121, 2012.
+
+PICOLOTTO, E. L.; BREMM, C. Ecologização na Agricultura Familiar, feiras e produtos artesa-
+nais na região Central do Rio Grande do Sul 1. Política & Sociedade, v. 15, p. 104, 2016.
+
+PORTILHO, F.; CASTAÑEDA, M.; CASTRO, Inês Rugani Ribeiro de. A alimentação no con-
+texto contemporâneo: consumo, ação política e sustentabilidade. Ciência & Saúde Coletiva, v.
+16, p. 99-106, 2011.
+
+SANTOS, J. S.; MENASCHE, R. Valorização de produtos alimentares tradicionais: os usos das
+indicações geográficas no contexto brasileiro. Cuadernos de Desarrollo Rural= International
+Journal of Rural Development, v. 12, n. 75, p. 21, 2015.
+
+SCHEUER, J. M.; BOTTI, N. S.; DA SILVA NEVES, S. M. A. Socio-productive an alysis of
+settlements in Caceres, Mato Grosso: public policies for territorial development/Análisis socio-
+-productivos de los asentamientos en Caceres, Mato Grosso. Revista Geográfica Acadêmica, v.
+9, n. 2, p. 141-153, 2015.
+
+SCHNEIDER, S. Mercados e agricultura familiar. Construção de Mercados e Agricultura Fa-
+miliar: desafios para o desenvolvimento rural. Porto Alegre: Editora da UFRGS, p. 93-140,
+2016.
+
+SEGUIN, R. A. et al. Farm Fresh Foods for Healthy Kids (F3HK): An innovative community
+supported agriculture intervention to prevent childhood obesity in low-income families and
+
+18 de 20                                         Ambiente & Sociedade n São Paulo. Vol. 23, 2020 n Artigo Original
+Sistemas agroalimentares locais: possibilidades de novas conexões de mercados para a agricultura familiar
+
+
+strengthen local agricultural economies. BMC public health, v. 17, n. 1, p. 306, 2017.
+
+SOARES, P. et al. Potencialidades e dificuldades para o abastecimento da alimentação escolar
+mediante a aquisição de alimentos da agricultura familiar em um município brasileiro. Ciência &
+Saúde Coletiva, v. 20, p. 1891-1900, 2015.
+
+SOARES, P. et al. Using local family farm products for school feeding programmes: effect on
+school menus. British Food Journal, v. 119, n. 6, p. 1289-1300, 2017.
+
+STARR, A. et al. Sustaining local agriculture barriers and opportunities to direct marketing
+between farms and restaurants in Colorado. Agriculture and Human Values, v. 20, n. 3, p. 301-
+321, 2003.
+
+SIMÃO JUSTEN, G.; PAES-DE-SOUZA, M. Relações Sociais e Território: estudo no Arranjo
+Produtivo Local (APL) da castanha-da-Amazônia. Revista de Ciências da Administração, v.
+19, n. 47, 2017.
+
+USDA – United States Department of Agriculture. Local Food Systems: Concepts, Impacts, and
+Issues. Martinez S. et al. Economic Research Service, Economic Research Report 97; 2010.
+
+WANDERLEY, M. N. B. Raízes históricas do campesinato brasileiro. Agricultura familiar: rea-
+lidades e perspectivas, v. 3, p. 21-55, 1999.
+
+WOLFF, L. F; GOMES, J. C. C. Beekeeping and Agroecological Systems for Endogenous Sustai-
+nable Development. Agroecology and Sustainable Food Systems, v. 39, n. 4, p. 416-435, 2015.
+
+
+
+
+Ambiente & Sociedade n São Paulo. Vol. 23, 2020 n Artigo Original                                           19 de 20
+                                                                           SOUZA, FORNAZIER e DELGROSSI
+
+
+Amanda Borges de Souza                                                  Submetido em: 16/10/2018
+
+✉ borgessouza.amanda@gmail.com                                                Aceito em: 18/06/2020
+
+ORCiD: https://orcid.org/0000-0002-4474-1412                                           2020;23:e02482
+
+
+Armando Fornazier
+
+✉ armandouenf@yahoo.com.br
+ORCiD: https://orcid.org/0000-0002-6707-9601
+
+
+
+Mauro Eduardo Delgrossi
+
+✉ delgrossi@unb.br
+ORCiD: https://orcid.org/0000-0003-0091-0701
+
+
+
+
+Como citar: SOUZA, A. B.; FORNAZIER, A.; DELGROSSI, M. E. Sistemas Agro-
+alimentares Locais: possibilidades de novas conexões de mercados para a agricultura
+familiar. Ambiente & Sociedade. São Paulo, v. 23, p. 1-20, 2020.
+
+
+
+
+20 de 20                                       Ambiente & Sociedade n São Paulo. Vol. 23, 2020 n Artigo Original
+        Sistemas agroalimentarios locales:
+      posibilidades de nuevas conexiones de
+       mercado para la agricultura familiar
+
+                                      Amanda Borges de Souza
+                                        Armando Fornazier
+                                      Mauro Eduardo Delgrossi
+
+
+São Paulo. Vol. 23, 2020     Resumen: En los últimos años, el concepto de sistemas agroalimenta-
+Artículo original            rios locales se ha visto como una nueva posibilidad en la creación de
+                             mercados para la agricultura familiar. Estos sistemas se basan en estruc-
+                             turas locales de producción y consumo, con un enfoque principal en la
+                             sostenibilidad, la localidad y la proximidad. Es esencial comprender la
+                             dinámica de estos sistemas y su impacto en el contexto de los agricul-
+                             tores familiares. Así, este artículo busca identificar en la literatura las
+                             principales teorías y conceptos utilizados en el análisis de los “sistemas
+                             agroalimentarios locales”, verificando el estado del arte de sus elemen-
+                             tos teóricos relacionados con el concepto de “agricultura familiar” en
+                             la academia brasileña e internacional. El procedimiento metodológi-
+                             co empleado fue una revisión sistemática de la literatura siguiendo el
+                             protocolo Methodi Ordinatio, que abarca 30 artículos indexados en el
+                             portal de búsqueda Periódicos - Capes y en la base de datos ProQuest.
+                             Los principales enfoques incluidos en este tema se presentan en forma
+                             de resumen, así como se identifican los problemas de investigación en
+                             el área. Los resultados muestran que estos conceptos involucran temas
+                             como el desarrollo rural local, la politización del consumo, la sostenibi-
+                             lidad, los nichos de mercado, la agroecología, la valorización territorial
+                             y los programas institucionales.
+
+                             Palabras-clave: Comida local; sistemas alimentarios locales; cadenas
+                             cortas de alimentos; agricultura familiar.
+
+
+                             Como citar: SOUZA, A. B; FORNAZIER, A.; DELGROSSI, M. E.
+                             Sistemas agroalimentarios locales: posibilidades de nuevas conexiones
+                             de mercado para la agricultura familiar. Ambiente & Sociedade. São
+                             Paulo, v. 23, p. 1-20, 2020.
+
+
+                             DOI: http://dx.doi.org/10.1590/1809-4422asoc20180248r2vu2020L5AO
+
+                     Todo el contenido de esta revista, excepto dónde está identificado, está bajo una Licencia Creative Commons.
+       Local food systems: potential for new
+       market connections for family farming
+
+
+                                         Amanda Borges de Souza
+                                           Armando Fornazier
+                                         Mauro Eduardo Delgrossi
+
+
+
+São Paulo. Vol. 23, 2020        Abstract: In recent years, local food systems have come to be seen as a
+Original Article                new possibility in creating markets for family farming. These systems are
+                                based on local production and consumption structures, with a primary
+                                focus on sustainability, locality and proximity. It is essential to unders-
+                                tand the dynamics of these systems and their impact in the context of
+                                family farmers. Thus, this article seeks to identify in the literature the
+                                main theories and concepts used in the analysis of “local food systems”,
+                                verifying the state of the art of its theoretical elements related to the
+                                concept of “family farming” in Brazilian and international academia.
+                                The methodological procedure employed was a systematic literature
+                                review following the Methodi Ordinatio protocol, covering 30 articles
+                                indexed in the search portal Periódicos - Capes and in the database
+                                ProQuest. The main approaches included in this theme are presented
+                                in a summarized form, as well as the research gaps in the area are identi-
+                                fied. The results show that these concepts involve themes such as local
+                                rural development, politicization of consumption, sustainability, market
+                                niches, agroecology, territorial valorization, and institutional programs.
+
+                                Keywords: Local food; local food systems; short food supply chains; fa-
+                                mily farming.
+
+
+                                How to cite: SOUZA, A. B.; FORNAZIER, A.; DELGROSSI, M. E.
+                                Local Food Systems: potential for new market connections for family
+                                farming. Ambiente & Sociedade. São Paulo, v. 23, p. 1-20, 2020.
+
+
+                                DOI: http://dx.doi.org/10.1590/1809-4422asoc20180248r2vu2020L5AO
+
+
+
+
+            All the contents of this journal, except where otherwise noted, is licensed under a Creative Commons Atribution License.

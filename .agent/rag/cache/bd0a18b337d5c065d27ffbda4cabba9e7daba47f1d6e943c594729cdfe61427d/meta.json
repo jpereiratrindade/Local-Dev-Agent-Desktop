@@ -1,0 +1,9 @@
+{
+  "chunk_count": 60,
+  "extractor": "pdftotext",
+  "kind": "pdf",
+  "path": "/run/media/jpereiratrindade/labeco10T/labeco02/Revisao/CartilhaCOBIT2019verso1.pdf",
+  "sha256": "bd0a18b337d5c065d27ffbda4cabba9e7daba47f1d6e943c594729cdfe61427d",
+  "text_size": 58728,
+  "used_ocr": false
+}

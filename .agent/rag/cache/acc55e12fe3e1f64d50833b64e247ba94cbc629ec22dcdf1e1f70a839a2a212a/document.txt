@@ -1,0 +1,697 @@
+                                                                                                                        TYPE Original Research
+                                                                                                                        PUBLISHED 12 February 2024
+                                                                                                                        DOI 10.3389/fenvs.2024.1348220
+
+
+
+
+                                                     Grazing led to an increase in the
+OPEN ACCESS                                          root: shoot ratio and a shallow
+EDITED BY
+Chong Jiang,
+Guangdong Academy of Science (CAS), China
+                                                     root system in an alpine meadow
+REVIEWED BY
+Emmanuel Serrano Ferron,
+                                                     of the Tibetan plateau
+Autonomous University of Barcelona, Spain
+Wanyu Wen,
+Chinese Academy of Forestry, China
+                                                     Duobin Wang 1* and Wenqiang Ding 2*
+Yixin Wang,                                          1
+                                                       Teaching and Research Department of Social and Ecological Civilization, Party School Gansu
+Hohai University, China
+                                                     Committee of C.P.C, Lanzhou, Gansu, China, 2Teaching and Research Department of Public
+*CORRESPONDENCE                                      Administration, Party School of Ningxia Committee of C.P.C, Yinchuan, Ningxia, China
+Duobin Wang,
+ gswdb@126.com
+Wenqiang Ding,
+ dwqjz@126.com
+                                                     Grazing is a main land use of natural grasslands in the world, which has both
+RECEIVED 02 December 2023
+ACCEPTED 23 January 2024
+                                                     positive and negative impact on plant community structure and ecosystem
+PUBLISHED 12 February 2024                           functioning. However, the effects of long-term grazing management on the
+CITATION                                             plant–soil system, in particular above- and belowground community
+Wang D and Ding W (2024), Grazing led to an          characteristics, are still not well understood in alpine meadow community. In
+increase in the root: shoot ratio and a shallow
+                                                     this study, we investigated the vegetation, roots, and soil properties under three
+root system in an alpine meadow of the
+Tibetan plateau.                                     management types (16 years of fencing since 2004-2020, moderate grazing and
+Front. Environ. Sci. 12:1348220.                     heavy grazing managements) in an alpine meadow on the Tibetan Plateau. The
+doi: 10.3389/fenvs.2024.1348220
+                                                     results showed that, compared with moderate grazing meadows, long-term
+COPYRIGHT                                            fencing increased plant community cover, above- and belowground biomass,
+© 2024 Wang and Ding. This is an open-access
+                                                     proportion of grass and litter but reduced forbs and soil bulk density, which
+article distributed under the terms of the
+Creative Commons Attribution License (CC BY).        caused the increases in soil organic carbon, total nitrogen and water content and
+The use, distribution or reproduction in other       the decreases in soil pH. However, heavy grazing led to opposite changes in
+forums is permitted, provided the original
+                                                     proportion of grass, community biomass and soil physicochemical properties.
+author(s) and the copyright owner(s) are
+credited and that the original publication in this   The maximum of species richness and plant density appeared in moderate
+journal is cited, in accordance with accepted        grazing meadows, supporting the intermediate disturbance hypothesis, and it
+academic practice. No use, distribution or
+                                                     can maintain above- and belowground biomass and soil physicochemical
+reproduction is permitted which does not
+comply with these terms.                             properties at medium level. Grazing increased the root: shoot ratio and
+                                                     caused root system shallow, which is consistent with the optimal partitioning
+                                                     hypothesis. Overall, our study suggested that moderate grazing is a more
+                                                     reasonable grazing management for sustainable development in alpine
+                                                     meadows of Tibetan Plateau, fencing could be an effective management
+                                                     strategy for vegetation restoration as well as for nutrient sequestration in
+                                                     degraded grasslands, but long-term fencing dose not beneﬁt for biodiversity
+                                                     maintenance.
+
+                                                     KEYWORDS
+
+                                                     grazing management, species richness, plant density, above-and belowground biomass,
+                                                     soil physicochemical properties grazing management, soil physicochemical properties
+
+
+                                                     1 Introduction
+                                                         Grasslands occupy about 40% of the world’s land surface, exclusive of Antarctica and
+                                                     Greenland, supporting the livelihoods and food security of almost a billion people (Kemp
+                                                     et al., 2013; Dlamini et al., 2016). However, many of these grasslands suffer degradation
+                                                     because of overused and mismanaged, especially in developing countries (Suttie et al., 2005;
+                                                     Schönbach et al., 2011; Han et al., 2018). Grassland degradation has become a major global
+
+
+
+Frontiers in Environmental Science                                        01                                                              frontiersin.org
+Wang and Ding                                                                                                                10.3389/fenvs.2024.1348220
+
+
+
+
+concern in recent decades, which would affect not only livestock                and Wesche, 2016). Others, however, species richness reduced with
+production and herders’ livelihood, but also vital environmental                a grazing gradient in meadow and steppe, or grazing has no
+services, such as biodiversity conservation, soil carbon sequestration          signiﬁcant effects on species richness in desert grassland
+and hydrology (Lal et al., 2015). Up to now, about 90% of the                   (Gamoun, 2014). The effects of grazing on the root system
+grasslands are deemed to be degenerated state in Tibetan Plateau                mainly through altering the biomass and community structure of
+(Harris, 2010). Widespread grassland ecosystems are in urgent need              aboveground to further affect the growth of the belowground root
+of integrated conservation approaches to combat the land                        system (Gao et al., 2008), belowground biomass showed complex
+degradation in Tibetan Plateau. In order to prevent grassland                   responses (Frank et al., 2002). Soil is closely correlated with
+deterioration, the Chinese government has implemented a series                  grassland productivity, soil responses to grazing disturbance and
+national key ecological protection engineering in the region during             environmental changes are slower than plants (Wang and Wesche,
+the last decades, such as “Retire Livestock and Restore Grassland”              2016). And soil is hard to recover once degraded (Langmaack et al.,
+and “Herbage-livestock Balance,” which means that fencing to                    2002). Grazing affects soil physicochemical properties through
+prevent grazing and moderate grazing management.                                biomass removal and trampling (Dlamini et al., 2016).
+    Grazing exclusion by fencing is regarded as the most economical             Reasonable grazing can improve accumulation quantity of plant
+and feasible management to increase community coverage,                         litter and nutrient cycling (Bardgett et al., 1998). Unreasonable
+biodiversity and productivity (Gonzales and Clements, 2010;                     grazing would increase soil bulk density, reduce permeability and
+Armitage et al., 2012; Keesstra et al., 2016). Generally, fencing               aeration, thereby affecting grassland nutrient cycles, causing
+could obviously promote vegetation recovery (Holland and                        grassland degradation and losses of soil organic carbon (Dlamini
+Detling, 1990; Su et al., 2005). However, fencing has different                 et al., 2016; Yang et al., 2018). These results suggest that the effects of
+effects due to vegetation types, soil structure, stocking rate,                 grazing pressure on aboveground and belowground ecosystems are
+temperature and rainfall (Hafner et al., 2012). For instance,                   more complex than imagination (Zolda, 2006). Thus, more and
+Altesor et al. (2005) found that the above-ground net primary                   more studies have focused on the responses of both aboveground
+production of moderately grazing was higher than fenced                         and belowground ecosystems to grazing in order to seek rational
+grassland. Squires et al. (2010) also found fencing has negative                management strategies for grasslands (Conant et al., 2001; Bardgett
+impacts on biomass and species richness of various grasslands.                  and Wardle, 2003).
+Fencing cannot restore vegetation in some severely degraded                          The alpine meadows of Tibetan Plateau represent the largest high-
+regions because energy ﬂow and material cycle of the ecosystem                  altitude pasture on the earth (Hafner et al., 2012; Li et al., 2017), which
+had been destroyed (Snyman, 2003). For soil nutrients, some                     have not only nourished local people in the past hundreds of years but
+research found that grazing exclusion promoted vegetation                       also have served as water ﬁlters and regulators for downstream
+recovery, improved productivity and thereby increased soil nutrients            residents (Dong et al., 2010). Because of the characteristics of high
+in degenerated grasslands (Mekuria et al., 2007; Keesstra et al., 2016).        and cold, alpine meadow is more sensitive than other terrestrial
+However, others reported was unchanged (Pucheta et al., 2004) and               ecosystems to management strategy (Klein et al., 2004; Zhao, 2011).
+even decrease in soil nutrients of grassland (Frank et al., 2002; Hafner        In this study, we investigated aboveground and belowground
+et al., 2012). Although grazing exclusion by fencing has been widely            ecological characters in response to 16 years fencing, moderate
+adopting in Tibetan Plateau, more factors are needs to consider in order        grazing and heavy grazing in alpine meadows of Tibetan Plateau.
+to protect the grassland and to maintain sustainable development, such          Our objective was to assess the effects of the different long-term grazing
+as exclusion period (Wang et al., 2011). Some studies found that in             management strategies in alpine meadow, and help the government to
+degraded grassland of Ethiopia, herbage biomass declines or no longer           generate a more reasonable grazing management regime for
+increases after more than 8 years of enclosure, the period of grazing           sustainable development in Tibetan Plateau. Specially, the following
+exclusion by fencing should be carefully determined (Yayneshet et al.,          three questions were addressed: 1) How does grazing management
+2009). And long-term fencing did not signiﬁcantly improve the                   affect alpine meadow community structure and function? 2) How does
+productivity of semi-arid desert grassland (Yang et al., 2005).                 grazing management affect soil physicochemical characteristics?
+However, we are still not very clear about the effect of long-term              3) How does grazing management affect the relationships between
+fencing on alpine meadow in Tibetan Plateau.                                    above- and belowground ecological characteristics?
+    Livestock grazing is one of the most common utilization pattern                  Before this research, we propose the following hypothesis: 1)
+of land in natural grasslands that inﬂuences plant community                    Fencing has signiﬁcant impacts on aboveground and belowground
+structure (Klein et al., 2007; Álvarez-Martínez et al., 2016; Su                ecological characters; 2) The highest diversity appeared in the
+et al., 2017; Tarhouniet al., 2017) and soil physicochemical                    meadows of intermediate grazing disturbance (Connell, 1978); 3)
+properties (Wan et al., 2011; Xie et al., 2014; Li et al., 2016).               The grazing pressure led to an increase in root: shoot ratio (Chapin
+Meanwhile, livestock grazing was considered as one of the key                   et al., 1987; Yang et al., 2010).
+disturbance factors in grassland degradation (Oesterheld and
+Sala, 1990). Grazing commonly can cause the replacement of
+palatable plants by unpalatable plants or tall-grasses by short-                2 Materials and methods
+grasses, and reduce community cover and aboveground biomass
+(Schönbach et al., 2011). But, on the contrary, grazing improved                2.1 Study area
+aboveground biomass in Uruguay grasslands (Altesor et al., 2005).
+Typically, the response of plant species richness to a grazing gradient             This study was conducted in alpine meadows at 3,000 m a.s.l. in
+showed a hump-shaped variation (Huston and Huston, 1994; Wang                   the northeast margin of the Tibetan Plateau at Zhuaxixiulong
+
+
+
+Frontiers in Environmental Science                                         02                                                               frontiersin.org
+Wang and Ding                                                                                                                          10.3389/fenvs.2024.1348220
+
+
+
+
+   FIGURE 1
+   The description of the study area. The location of the study area and sampling blocks of the fenced meadows (F), moderate grazing meadows (M)
+   and heavy grazing meadows (H) in Zhuaxixiulong alpine pasture, Tianzhu, Gansu, China. DEM denote Digital Elevation Model (m).
+
+
+
+
+TABLE 1 Description of experimental study design. Characteristics of three grazing management’s meadows in this study. Fenced meadows (F), moderate
+grazing meadows (M) and heavy grazing meadows (H).
+
+ Management types            Cover          Dominant                Description
+                             (%)            species
+    Fenced meadows (F)       96.67 ± 2.12   Elymus nutans           In Autumn 2004, the blocks were enclosed and used as pasture, with no grazing during the
+                                                                    growing season from April to October, and sometimes with only light grazing by livestock (e.g.,
+                                            Poacrymophila           yak and Tibetan sheep) in the winter after harvest. The blocks are dominated by grasses that were
+                                                                    taller than the grazing meadows
+                                            Koeleriacristata
+
+                                            Medicago archiducis-
+                                            nicolai
+
+      Moderate grazing       74.33 ± 4.53   Kobresiahumips          Livestock, such as yaks and Tibetan sheep, exhibited low grazing intensity in the blocks, with a
+       meadows (M)                                                  livestock density of roughly 1.8 yaks per hectare resulting in a forage utilization rate of 55%. Some
+                                            Kobresiacapillifolia    areas of the vegetation were slightly degraded, but forb species were more prevalent than grass
+                                                                    when compared to fenced pasture
+                                            Elymus nutans
+
+                                            Artemisia mongolica
+
+                                            Anaphalissinica
+
+                                            Polygonum viviparum
+
+ Heavy grazing meadows(H)    47.05 ± 6.48   Polygonum viviparum     The blocks have a long history of heavy grazing by livestock (e.g., yak and Tibetan sheep), the
+                                                                    livestock density was about 3.2 heads of yak per ha, resulting in a forage utilization of 75%. The
+                                            Kobresiahumips          vegetation is dominated by sparse forb species. In some places it was degraded to black soil type
+                                                                    grassland
+                                            Kobresiapygmaea
+
+                                            Stipapurpurea
+
+                                            Anaphalissinica
+
+                                            Oxytropiskansuensis
+
+
+
+pasture (37°12′N, 102°43′E) in Gansu Province, P. R. China                      and September. The region has a typical continental plateau climate
+(Figure 1). The average daily air temperature is −0.1°C, ranging                characterized with long and cold winter, short and mild summer,
+from −18.3°C in January to 12.7°C in July. The mean annual                      and no frost-free period. Plant growth period is 120-140d. The main
+accumulated temperature is 1380°C. Total mean annual                            soil type is alpine meadow soil. Vegetation is dominated by Kobresia
+precipitation is 416 mm, which is concentrated in July, August,                 humilis, Elymus nutans, Polygonum viviparum, Stipa breviﬂora,
+
+
+
+Frontiers in Environmental Science                                         03                                                                            frontiersin.org
+Wang and Ding                                                                                                         10.3389/fenvs.2024.1348220
+
+
+
+
+Artemisia     smithii,      Medicago     archiducis-nicolai     and         analysis of variance (AVOVA) was performed to test differences
+Anaphalis lacteal.                                                          in plant community characteristics (species richness, community
+                                                                            coverage and density, above- and belowground biomass, litter), and
+                                                                            soil proportion (root - shoot ratio, soil bulk density, soil water
+2.2 Experimental design, sampling and                                       content, soil organic carbon, total nitrogen, carbon-nitrogen ratio
+measurement                                                                 and pH) across each soil depths (0–10 cm, 10–20 cm, and
+                                                                            20–30 cm)) between the fenced, moderate grazing and heavy
+    In this study, we compared three types of long-term                     grazing meadows. All data were expressed as mean ± standard
+management meadows: fenced meadows (F), moderate grazing                    error of mean in 15 plots. Post-hoc comparisons between grazing
+meadows (M) and heavy grazing meadows (H), and all meadows                  management types were made using the least signiﬁcant difference
+were uniformly before the implementation of managements                     test (LSD) (at p < 0.05). The change in each functional group
+(Figure 1; Table 1). Each management type had three replicate               (grasses, sedges, legumes and forbs) biomass were also analyzed,
+blocks that was about 1 ha. The distance between the blocks is about        separately.
+1–2 km. We randomly selected ﬁve 1 m × 1 m plots in every block,                Moreover, we tested the correlations between the vegetation
+thus, each management type of meadow had ﬁfteen replicate plots.            (community coverage, species richness, density, aboveground
+In total, we surveyed 45 plots in this experiment.                          biomass, belowground biomass, root-shoot ratio and litter) and
+    Aboveground plant community were surveyed in Mid-August of              soil properties (soil bulk density, soil water content, soil organic
+2020. Using a 1 m × 1 m plot, we counted the number of species at           carbon, total nitrogen, carbon-nitrogen ratio and pH) using
+the peak of the growing season (deﬁned as species richness). The            Pearson correlation tests. All statistical tests and analyses were
+point-intercept method was used to measure species cover (%). We            performed by SPSS 22.0 software (SPSS Inc., Chicago, IL,
+then measured aboveground parts of all plant individuals and                United States).
+surface litter in the same quadrat size and classiﬁed all species               In addition, redundancy analysis (RDA) was used to explore the
+into four functional groups: grasses, sedges, forbs, and legumes,           relationship between soil physical and chemical properties and plant
+based on their functional forms (Niu et al., 2016). Meanwhile, a            community characteristics under three grazing managements. We
+10 cm diameter root auger was used to collect soil samples at               used CANOCO 5.0 to perform RDA (University of South Bohemia,
+different depth of 0–10 cm, 10–20 cm, and 20–30 cm for the                  Ceske Budejovice, Czech Republic).
+belowground biomass measurement, and each layer had three
+repetitions in each plot. The layered soils from each plot were
+packed into a 2 mm nylon net bag and washed to separate roots               3 Results
+and soil (Gao et al., 2008). Aboveground and belowground biomass
+was oven-dried at 75°C for 72 h and weighed.                                3.1 Species richness and density of
+    We collected soil samples with a 5 cm diameter auger at                 plant community
+different depths of 0–10 cm, 10–20 cm, and 20–30 cm were used
+to analyze soil properties, and each layer had three replications in             In total, the plant communities in the three grazing
+each plot. All soil samples were air-dried and passed through a             managements of 49 species, belonging to 17 families, of which
+5 mm mesh sieve to remove large roots and plant residues, then              18.37% were annuals and 81.63% were perennials
+passed through a 0.15 mm mesh sieve. Soil pH was determined by a            (Supplementary Table S1). Compared with the moderate grazing
+method of soil-water volume ratio of 1:5 (PHS-3C pH acidometer,             meadow, species richness (F = 41.12, p < 0.001) and plant density
+China). Soil water content before air drying was obtained by the            (F = 9.73, p < 0.01) signiﬁcant lower in fenced meadows, and
+oven-drying method (Soil Science Society of China, Agriculture              signiﬁcant lower (F = 65.99, p < 0.001; F = 33.77, p < 0.001) in
+Chemistry Council, 1983). Soil bulk density at different layers was         heavy grazing meadows, however, plant community cover increased
+measured using the soil cores (100 cm3) by cylinders (volumetric            in fenced plots (F = 179.56, p < 0.001) and decreased in high grazing
+ring method). The Kjeldahl method was used to determine soil                plots (F = 107.58, p < 0.001) signiﬁcantly (Table1; Figure 2). The
+total nitrogen (Bao, 2000). The percentage of soil organic carbon in        highest of species richness and plant density appeared in moderate
+the soil samples was measured by the Walkley–Black acid digestion           grazing meadows was about 28.89 number m-2 and
+method as described by Nelson and Sommers (1996). In brief, 0.5 g           949.44 individuals m−2. On average, species richness and plant
+of soil was digested with 5 mL of 1 N K2Cr2O7 and 10 mL of                  density in fenced meadow decreased by 17.31% and 20.57%, and
+concentrated sulfuric acid at 185°C for 5 min, followed by titration        by 22.71%, 31.73% in heavy grazing meadow. Additionally,
+of the digests with standardized FeSO4. All soil sample                     community coverage increased by 30.06% in fenced meadow and
+measurements were replicated three times and operated at the                decreased by 36.77% in heavy grazing meadow compared to
+Soil Testing Center at the State Key Laboratory of Grassland Agro-          moderate grazing meadow (Table 1; Figure 2).
+ecosystems, Lanzhou University, China.
+
+                                                                            3.2 Above- and belowground biomass
+2.3 Data analysis                                                           and litter
+
+   To assess the effects of different long-term grazing managements             Aboveground biomass differed signiﬁcantly among three
+on above-vegetation and below-ground soil properties, one-way               grazing managements (F = 624.19, p < 0.001). The total
+
+
+
+Frontiers in Environmental Science                                     04                                                          frontiersin.org
+Wang and Ding                                                                                                           10.3389/fenvs.2024.1348220
+
+
+
+
+   FIGURE 2
+   Change in species richness and density under grazing management. Variation in (A) species richness and (B) plant density among three grazing
+   managements (F: fenced meadow; M: moderate grazing meadow; H: heavy grazing meadow). Error bars express standard error of the mean (n = 15),
+   different letters indicate signiﬁcant differences at p < 0.05.
+
+
+
+
+aboveground biomass of the long-term fenced meadow, moderate                  3.3 Soil physicochemical properties
+grazing meadow and heavy grazing meadow were 698.21 ±
+44.44 g m−2, 481.46 ± 33.37 g m−2 and 120.63 ± 24.37 g m−2,                       Overall, long-term grazing management had signiﬁcant
+respectively (Figure 3A). Compared with moderate grazing areas,               impact on soil bulk density, water content, organic carbon,
+fencing signiﬁcantly increased biomass of grass (F = 273.86, p <              total nitrogen and pH of 0–10 cm (F = 52.95, p < 0.001; F =
+0.001) and sedge (F = 43.59, p < 0.001), but the differences of               30.79, p < 0.001; F = 48.94, p < 0.001; F = 22.06, p < 0.001; F =
+legumes (F = 0.85, p > 0.05) and forbs (F = 1.67, p > 0.05) biomass           16.20, p < 0.001) and 10–20 cm (F = 20.57, p < 0.001; F = 21.96,
+were not signiﬁcant, heavy grazing signiﬁcantly decreased grasses             p < 0.001; F = 31.65, p < 0.001; F = 24.92, p < 0.001; F = 20.41, p <
+(F = 287.11, p < 0.001), sedges (F = 198.81, p < 0.001), legumes (F =         0.001) soil layers, and no signiﬁcant impact on soil
+58.28, p < 0.001) and forbs (F = 394.30, p < 0.001) biomass. Fencing          physicochemical properties of 20–30 cm soil layer (F = 0.06,
+increased grass, but decreased forbs, for grazing this was                    p > 0.05; F = 1.73, p > 0.05; F = 0.44, p > 0.05; F = 2.39, p >
+reversed (Figure 3A).                                                         0.05) except pH (F = 22.25, p < 0.001) (Figure 4). Soil organic
+    Long-term grazing management has a signiﬁcant effect on                   carbon and total nitrogen decrease with the depth of the soil
+belowground biomass in 0–30 cm soil proﬁle (F = 3,565.14, p <                 increase. However, the differences of carbon-nitrogen ratios were
+0.001). The highest belowground biomass was found in fenced                   not signiﬁcant in each soil layer (F = 3.05, p > 0.05; F = 2.01, p >
+meadow (5170.44 ± 94.06 g m−2 ), and then in moderate                         0.05; F = 0.001, p > 0.05) (Figure 4). Compared with the moderate
+(4326.03 ± 136.39 g m-2), and in heavy grazing (1260.70 ±                     grazing plots, long-term fencing grazing signiﬁcantly reduced soil
+67.87 g m−2), respectively (Figure 3B). Compared with                         bulk density by 30.18% and 20.0% in 0–10 cm and 10–20 cm
+moderate grazing meadow, fencing meadow signiﬁcantly                          layers, respectively, pH by 6.37% and 3.79%, while signiﬁcantly
+increased belowground biomass both in 0–10 cm (F = 169.06,                    increased soil water content by 31.37% and 12.16%, organic
+p < 0.001) and 10–20 cm (F = 763.35, p < 0.001), however, the                 carbon by 16.51% and 30.67%, total nitrogen by 13.26% and
+differences of 20–30 cm soil proﬁle were not signiﬁcant (F =                  15.24%. Conversely, heavy grazing signiﬁcantly increased soil
+2.36, p > 0.05), and heavy grazing signiﬁcantly decreased                     bulk density by 5.66% and 3.64%, increased soil pH by 5.34% and
+belowground biomass of 0–10 cm (F = 3,517.32, p < 0.001),                     6.11%, while signiﬁcantly decreased soil water content by 7.22%
+10–20 cm (F = 4590.31, p < 0.001) and 20–30 cm (F = 2184.33,                  and 14.38%, organic carbon by 14.36% and 15.96%, total nitrogen
+p < 0.01) soil proﬁle (Figure 3B). Belowground biomass of                     by 7.18% and 9.87%, in soil layers of 0–10 cm and 10–20 cm,
+the 0–10 cm soil proﬁle accounted for about 69.87%, 71.48%,                   respectively (Figure 4).
+and 74.15% of total belowground biomass of the 0–30 cm in
+fenced, moderate grazing and heavy grazing meadows,
+respectively.                                                                 3.4 Relationships between plant community
+    In addition, fencing signiﬁcantly decreased the root: shoot ratios        characteristics and soil properties
+by 17.61% (F = 22.37, p < 0.05) and increased litter by 171.07% (F =
+234.64, p < 0.001) compared to moderate grazing. In contrast, heavy               Axes 1 and Axes 2 in the results of redundancy analysis
+grazing signiﬁcantly increased the root: shoot ratios by 19.82% (F =          (RDA) explained 70.85% and 3.10% of the total variations,
+7.07, p < 0.05) and decreased litter by 31.86% (F = 19.41, p < 0.01)          respectively (Figure 5). In term of Pearson correlation
+(Figures 3C, D).                                                              analysis, the results showed that community coverage, above-
+
+
+
+Frontiers in Environmental Science                                       05                                                          frontiersin.org
+Wang and Ding                                                                                                              10.3389/fenvs.2024.1348220
+
+
+
+
+   FIGURE 3
+   Change in biomass, root:shoot and litter under grazing management. (A) Aboveground biomass (four functional groups: grasses, sedges, legumes,
+   forbs, and total aboveground biomass), (B) belowground biomass (in three soil layers: 0–10 cm, 10–20 cm and 20–30 cm, and total belowground
+   biomass in the top 30 cm of soil), (C) root: shoot ratios and (D) litter among three grazing managements (F: fenced meadows; M: moderate grazing
+   meadows; H: heavy grazing meadows). Error bars express standard error of the mean (n = 15), different letters indicate signiﬁcant differences at p
+   < 0.05.
+
+
+
+
+and belowground biomass, and litter of alpine meadows were                     4 Discussion
+signiﬁcant positively related to soil organic carbon, total
+nitrogen and water content, and signiﬁcant negatively related                  4.1 Change in plant community under
+to soil pH and bulk density. There were signiﬁcant positive                    grazing management
+correlations among soil organic carbon, total nitrogen and water
+content. The soil pH and bulk density showed the negative                          It has been well demonstrated that grazing is a major factor
+correlations with the soil organic carbon, total nitrogen and                  inﬂuencing plant community composition and ecosystem
+water content. Additionally, there were signiﬁcantly positive                  functioning in grasslands, such as reduces in plant community
+correlations among plant community coverage, above- and                        cover, above- and belowground biomass (Diaz et al., 2007; Liu
+belowground biomass and litter, but, plant community                           et al., 2017). However, there were also other research suggested
+coverage were not signiﬁcant related to species richness and                   that the highest community biomass at intermediate grazing
+plant density. Overall, fencing was positively associated with                 condition because of compensatory growth, the interrelation of
+soil organic carbon, total nitrogen, vegetation coverage, soil                 biomass and grazing intensity is hump-shaped (Patton et al.,
+water content, above- and belowground biomass; moderate                        2007; Dangal et al., 2016). In this study, long-term fencing
+grazing had positive correlation to species richness and plant                 caused species composition shifts at community level,
+density; and heavy grazing had positive relationship with soil                 increased taller plants with stronger and denser root system
+pH, bulk density and root: shoot ratios (Figure 5;                             (e.g., Elymus dahuricus and Carex capillifolia), which resulted in
+Supplementary Table S2).                                                       the highest above- and belowground biomass production.
+
+
+
+Frontiers in Environmental Science                                        06                                                              frontiersin.org
+Wang and Ding                                                                                                                       10.3389/fenvs.2024.1348220
+
+
+
+
+   FIGURE 4
+   Change in soil properties across soil depths. Soil physicochemical properties in three soil layers (0–10 cm, 10–20 cm and 20–30 cm) at the three
+   grazing management types (F: fenced meadows; M: moderate grazing meadows; H; heavy grazing meadows). (A) Soil carbon content (SOC), (B) total
+   nitrogen (TN), (C) carbon: nitrogen ratios (C: N), (D) soil pH, (E) bulk density (BD), (F) soil water content (SWC). Error bars express standard error of the
+   mean (n = 15), different letters indicate signiﬁcant differences at p < 0.05, ns means no signiﬁcant difference.
+
+
+
+
+However, we detected a hump-shaped curve for species                                 (Niedrist et al., 2009; Metera et al., 2010; Niu et al., 2016). These
+richness and plant density along the grazing intensity gradient                      ﬁndings ﬁtted well with the hypothesis of intermediate
+(Figure 2), which was consistent with most previous studies on                       disturbance, which assumes that the highest species
+grazing, generally, low-intensity grazing increases, while high-                     diversity occurs at an intermediate level of disturbance
+intensity grazing decreases species richness and plant density                       (Connell, 1978).
+
+
+
+Frontiers in Environmental Science                                              07                                                                  frontiersin.org
+Wang and Ding                                                                                                              10.3389/fenvs.2024.1348220
+
+
+
+
+   FIGURE 5
+   The RDA relationship between plant community and soil properties. Redundancy analysis (RDA) of plant community characteristics and soil
+   environmental properties (0–10 cm) in three grazing managements. AGB, aboveground biomass; BGB, belowground biomass; R: S, root: shoot ratios;
+   SOC, soil carbon content; TN, total nitrogen content; C: N, carbon: nitrogen ratios; BD, bulk density; SWC, soil water content. Different numbers
+   represent the different plots in each meadow/treatment. F: fenced meadows; M: moderate grazing meadows; H: heavy grazing meadows.
+
+
+
+
+     We found an increasing of root: shoot ratios from fenced                  4.2 Change in soil properties under grazing
+towards heavily grazed grassland, which is consistent with the                 management
+previous studies (Pucheta et al., 2004). According to the optimal
+partitioning hypothesis, plants respond to environmental factors                    Soil properties respond more slowly than plant community
+changes by allocating biomass among all organs to acquire water,               properties (cover, diversity, density) and above- and belowground
+nutrients and light to achieve the maximum relative growth rate                biomass to grazing, thus are usually considered as credible indicators
+(Chapin et al., 1987; Yang et al., 2010). Generally, plants                    of grazing management (Wang and Wesche, 2016). Our results
+distribute more biomass to roots in low-nutrient or low-                       showed that 16 years of grazing exclusion by fencing positively
+moisture habitats and shift more biomass to shoots in high-                    improved soil organic carbon, total nitrogen and water content,
+nutrient or high-moisture habitats, more belowground biomass                   reduced soil pH and bulk density at the 0–10 cm and 10–20 cm soil
+will contribute to assimilate nutrient or water at humid sites and             layer, compared with the moderate grazing, and the results of
+dry sites (Yang et al., 2010). Thus, the decreasing of nutrient and            continuous heavy grazing were opposite. This is because fencing
+moisture induced an increasing of root: shoot ratios from fenced               promoted the growth and development of perennial and annual
+towards heavily grazed meadow in the study. Moreover, the                      grasses with stronger and denser root systems, which input more
+aboveground biomass should be returned to the soils to avoid                   carbon into soil and accumulate them, while grazing has decreased
+soil degradation caused by grazing pressure is another reason                  this process (Reedera and Schumanb, 2002; Li et al., 2013). Similarly,
+(Baudron et al., 2014). In addition, we found that long-term                   some researches indicated that fencing can result in a decrease in
+heavily intensiﬁed grazing increased the proportion of shallow                 pH value by accumulating humic acid while the effect of grazing was
+root, which is because the root standing crop is decided by the                opposite (Abakumov et al., 2013). And long-term fencing can
+balance of production and mortality (Phillips et al., 2006; Bai                decrease the outﬂow of nutrient and energy from soil to plant to
+et al., 2015). The impacts of grazing on root biomass could by                 livestock, which would lock the abundant nutrients within plants
+its effects on root production and mortality, thus, the proportion             tissues (Harris et al., 2007). Moreover, we found that long-term
+of shallow root under grazing was higher than that in                          fencing signiﬁcantly increased litter layer, which could be another
+fenced meadows.                                                                reason to increase soil nutrients. Most litter produced by grasses and
+
+
+
+Frontiers in Environmental Science                                        08                                                             frontiersin.org
+Wang and Ding                                                                                                          10.3389/fenvs.2024.1348220
+
+
+
+
+accompanied by faster litter decomposition rates in the moister,             enrichment may be caused by accumulated plant litter
+less dense and more acidic soil of enclosed meadow (Geissen and              (Foster and Gross, 1998). Moreover, besides taller and denser
+Guzman, 2006; Pintaldi et al., 2016). In the study, we found that            grasss provide shade to forbs and restricts the competition of
+fencing has limited trampling by livestock resulting in obvious              forbs to light, the thick plant litter was another reason for
+decrease in soil bulk density and interception of surface water,             reduced species richness by inhibiting the establishment of
+however, the effect of heavy grazing exactly contrariwise. Previous          forb seedlings in fenced meadows (Loydi et al., 2013; Borer
+studies reported that trampling is a direct effect of livestock              et al., 2014).
+grazing on grassland ecosystem, which can cause changes of
+soil physicochemical properties (Bai et al., 2015). Particularly,
+heavy intensity grazing led to soil bulk density and sands to                5 Conclusion
+increase, and soil nutrients and water contents to reduce (Holt,
+1997; Bilotta et al., 2007). Our results also revealed that,                      In summary, compared with moderate grazing, we conclude
+soil properties variation in 20–30 cm soil layer were almost                 that long-term grazing exclusion had a positive effect on
+insigniﬁcant, which maybe because the root distribution was                  vegetation restoration as well as nutrient sequestration and
+not signiﬁcant in the soil layer, and most root system was                   grass but had a negative effect on species richness and forb
+distributed in shallow soil layer which cannot allocate or ingest            functional group proportion in alpine meadow ecosystem.
+nutrients in deeper soil (Harris et al., 2007; Bai et al., 2015).            However, long-term heavy grazing not only decreased
+                                                                             community cover, above- and belowground biomass, grass,
+                                                                             litter, soil organic carbon and total nitrogen, but also
+4.3 Mechanistic links between plant                                          increased the root-shoot ratio and caused root system move to
+community and soil properties under                                          soil shallow layer. Moderate grazing beneﬁt biodiversity
+grazing management                                                           conservation and can maintain biomass and soil
+                                                                             physicochemical properties at medium level. Therefore, our
+     Soil is a foundation for the grassland ecosystem. In this study,        study indicated that, regardless of long-term fencing or heavy
+we found that plant community cover had signiﬁcantly positive                grazing, both of management types have a negative impact on
+correlation with soil nutrients under grazing management,                    plant-soil system in alpine meadows. In contrast, moderate
+because the decrease in vegetation cover may speed up soil                   grazing should be advocated by government agencies and the
+erosion and increase soil nutrients losses (Wang et al., 2003).              restoration ecologists. In the future, we hope that our work
+Meanwhile, above- and belowground biomass was both                           will provide an instructive advice for the implementation of
+signiﬁcantly positive correlated to soil organic carbon, total               local government policies in the alpine region of the
+nitrogen and water content, and negative correlated with soil                Tibetan Plateau.
+pH and bulk density in the study. Fencing can decrease the output
+of nutrient and energy from soil-vegetation systems to livestock,
+and which were locked in plant shoot (Harris et al., 2007), then             Data availability statement
+returned to the plant roots (Bardgett and Wardle, 2003; Baudron
+et al., 2014). Plant root system plays the primary role in regulating           The raw data supporting the conclusion of this article will be
+the carbon- and nutrient-cycling in the soil. Grazing                        made available by the authors, without undue reservation.
+management changed the aboveground productivity and
+community compositions to further affect the roots growth
+(Gao et al., 2008), afterwards, plant root input abundant                    Author contributions
+organic carbon into soil (McCormack et al., 2014), as
+demonstrated by the positive relation between soil organic                       DW: Conceptualization, Formal Analysis, Funding acquisition,
+carbon and belowground biomass. And the decrease of soil                     Investigation, Methodology, Writing–original draft. WD:
+total nitrogen could be due to grazing management, livestock                 Conceptualization, Formal Analysis, Writing–review and editing.
+got nutrients across grasslands but release most them in camps
+(Holst et al., 2007). The reduction of livestock trampling and the
+increases of underground roots both resulted in improvements of              Funding
+soil texture and bulk density, and increased soil moisture
+inﬁltration rate (Bai et al., 2015). Increased bulk density might                The author(s) declare ﬁnancial support was received for the
+lead to further loss of nutrients, as shown, the negative                    research, authorship, and/or publication of this article. Soft Science
+correlations between soil bulk density and both soil organic                 Special Fund of Gansu Province, China, Grant/Award Number:
+carbon and total nitrogen, especially in humid areas (Bai et al.,            21CX6ZA052.
+2015). The response of soil pH to grazing pressure was positively
+in most cases, which could be caused by urine deposition
+(Milchunas and Lauenroth, 1993). In addition, Angers and                     Acknowledgments
+Caron (1998) indicated that plant roots can improve then on
+capillary porosity of the soil and promote the formation of                      We thank all the ﬁeld investigators; and Dr. Zhengwei Ren for
+water-stable. The study showed that the effects of nitrogen                  their constructive suggestions.
+
+
+
+Frontiers in Environmental Science                                      09                                                           frontiersin.org
+Wang and Ding                                                                                                                                                 10.3389/fenvs.2024.1348220
+
+
+
+
+Conﬂict of interest                                                                                 organizations, or those of the publisher, the editors and the
+                                                                                                    reviewers. Any product that may be evaluated in this article, or
+    The authors declare that the research was conducted in the                                      claim that may be made by its manufacturer, is not guaranteed or
+absence of any commercial or ﬁnancial relationships that could be                                   endorsed by the publisher.
+construed as a potential conﬂict of interest.
+
+                                                                                                    Supplementary material
+Publisher’s note
+                                                                                                         The Supplementary Material for this article can be found online
+   All claims expressed in this article are solely those of the authors                             at: https://www.frontiersin.org/articles/10.3389/fenvs.2024.1348220/
+and do not necessarily represent those of their afﬁliated                                           full#supplementary-material
+
+
+
+References
+  Abakumov, E. V., Cajthaml, T., Brus, J., and Frouz, J. (2013). Humus accumulation,                headwater areas of the Qinghai-Tibetan Plateau. Afr. J. Agric. Res. 5 (25), 3542–3552.
+humiﬁcation, and humic acid composition in soils of two post-mining chronosequences                 doi:10.5897/AJAR10.005
+after coal mining. J. Soils Sediments 13 (3), 491–500. doi:10.1007/s11368-012-0579-9
+                                                                                                       Foster, B. L., and Gross, K. L. (1998). Species richness in a successional grassland:
+  Altesor, A., Oesterheld, M., Leoni, E., Lezama, F., and Rodríguez, C. (2005). Effect of           effects of nitrogen enrichment and plant litter. Ecology 79 (8), 2593–2602. doi:10.1890/
+grazing on community structure and productivity of a Uruguayan grassland. Plant Ecol.               0012-9658(1998)079[2593:sriasg]2.0.co;2
+179 (1), 83–91. doi:10.1007/s11258-004-5800-5
+                                                                                                      Frank, D. A., Kuns, M. M., and Guido, D. R. (2002). Consumer control of grassland
+  Álvarez-Martínez, J., Gómez-Villar, A., and Lasanta, T. (2016). The use of goats                  plant production. Ecology 83, 602–606. doi:10.1890/0012-9658(2002)083[0602:ccogpp]
+grazing to restore pastures invaded by shrubs and avoid desertiﬁcation: a preliminary               2.0.co;2
+case study in the Spanish Cantabrian Mountains. Land Degrad. Dev. 27, 3–13. doi:10.
+                                                                                                      Gamoun, M. (2014). Grazing intensity effects on the vegetation in desert rangelands
+1002/ldr.2230
+                                                                                                    of Southern Tunisia. J. Arid Land 6, 324–333. doi:10.1007/s40333-013-0202-y
+  Angers, D. A., and Caron, J. (1998). Plant-induced changes in soil structure: processes
+                                                                                                      Gao, Y. Z., Giese, M., Lin, S., Sattelmacher, B., Zhao, Y., and Brueck, H. (2008).
+and feedbacks. Biogeochemistry 42 (1-2), 55–72. doi:10.1023/a:1005944025343
+                                                                                                    Belowground net primary productivity and biomass allocation of a grassland in Inner
+  Armitage, H. F., Britton, A. J., van der Wal, R., and Woodin, S. J. (2012). Grazing               Mongolia is affected by grazing intensity. Plant Soil 307 (1-2), 41–50. doi:10.1007/
+exclusion and phosphorus addition as potential local management options for the                     s11104-008-9579-3
+restoration of alpine moss-sedge heath. Biol. Conserv. 153, 17–24. doi:10.1016/j.biocon.
+                                                                                                      Geissen, V., and Guzman, G. M. (2006). Fertility of tropical soils under different land
+2012.04.025
+                                                                                                    use systems—a case study of soils in Tabasco, Mexico. Appl. Soil Ecol. 31 (1-2), 169–178.
+  Bai, W., Fang, Y., Zhou, M., Xie, T., Li, L., and Zhang, W. H. (2015). Heavily                    doi:10.1016/j.apsoil.2005.02.012
+intensiﬁed grazing reduces root production in an Inner Mongolia temperate steppe.
+                                                                                                      Gonzales, E. K., and Clements, D. R. (2010). Plant community biomass shifts in
+Agric. Ecosyst. Environ. 200, 143–150. doi:10.1016/j.agee.2014.11.015
+                                                                                                    response to mowing and fencing in invaded oak meadows with non-native grasses and
+  Bao, S. D. (2000). Agricultural chemical analysis of soil. Beijing: China Agriculture             abundant ungulates. Restor. Ecol. 18 (5), 753–761. doi:10.1111/j.1526-100x.2009.
+Press, 70–89.                                                                                       00535.x
+  Bardgett, R. D., and Wardle, D. A. (2003). Herbivore-mediated linkages between                      Hafner, S., Unteregelsbacher, S., Seeber, E., Lena, B., Xu, X., Li, X., et al. (2012). Effect
+aboveground and belowground communities. Ecology 84 (9), 2258–2268. doi:10.1890/                    of grazing on carbon stocks and assimilate partitioning in a T ibetan montane pasture
+02-0274                                                                                             revealed by 13 CO2 pulse labeling. Glob. Change Biol. 18 (2), 528–538. doi:10.1111/j.
+                                                                                                    1365-2486.2011.02557.x
+  Bardgett, R. D., Wardle, D. A., and Yeates, G. W. (1998). Linking above-ground and
+below-ground interactions: how plant responses to foliar herbivory inﬂuence soil                      Han, D., Wang, G., Xue, B., Liu, T., Yinglan, A., and Xu, X. (2018). Evaluation of
+organisms. Soil Biol. Biochem. 30 (14), 1867–1878. doi:10.1016/s0038-0717(98)                       semiarid grassland degradation in North China from multiple perspectives. Ecol. Eng.
+00069-8                                                                                             112, 41–50. doi:10.1016/j.ecoleng.2017.12.011
+  Baudron, F., Jaleta, M., Okitoi, O., and Tegegn, A. (2014). Conservation agriculture in             Harris, R. B. (2010). Rangeland degradation on the Qinghai-Tibetan plateau: a review
+African mixed crop-livestock systems: expanding the niche. Agric. Ecosyst. Environ. 187             of the evidence of its magnitude and causes. J. Arid Environ. 74, 1–12. doi:10.1016/j.
+(1), 171–182. doi:10.1016/j.agee.2013.08.020                                                        jaridenv.2009.06.014
+  Bilotta, G. S., Brazier, R. E., and Haygarth, P. M. (2007). The impacts of grazing                  Harris, W. N., Moretto, A. S., Distel, R. A., Boutton, T. W., and Boo, R. M. (2007). Fire
+animals on the quality of soils, vegetation, and surface waters in intensively managed              and grazing in grasslands of the Argentine Caldenal: effects on plant and soil carbon and
+grasslands. Adv. Agron. 94, 237–280. doi:10.1016/s0065-2113(06)94006-1                              nitrogen. acta Oecol. 32 (2), 207–214. doi:10.1016/j.actao.2007.05.001
+  Borer, E. T., Seabloom, E. W., Gruner, D. S., Harpole, W. S., Hillebrand, H., Lind, E.              Holland, E. A., and Detling, J. K. (1990). Plant response to herbivory and
+M., et al. (2014). Herbivores and nutrients control grassland plant diversity via light             belowground nitrogen cycling. Ecology 71 (3), 1040–1049. doi:10.2307/1937372
+limitation. Nature 508 (7497), 517–520. doi:10.1038/nature13144
+                                                                                                      Holst, J., Liu, C., Yao, Z., Brüggemann, N., Zheng, X., Han, X., et al. (2007).
+ Chapin, F. S., Bloom, A. J., Field, C. B., and Waring, R. H. (1987). Plant responses to            Importance of point sources on regional nitrous oxide ﬂuxes in semi-arid steppe of
+multiple environmental factors. Bioscience 37 (1), 49–57. doi:10.2307/1310177                       Inner Mongolia, China. Plant soil 296 (1-2), 209–226. doi:10.1007/s11104-007-9311-8
+  Conant, R. T., Paustian, K., and Elliott, E. T. (2001). Grassland management and                    Holt, J. A. (1997). Grazing pressure and soil carbon, microbial biomass and enzyme
+conversion into grassland: effects on soil carbon. Ecol. Appl. 11 (2), 343–355. doi:10.             activities in semi-arid northeastern Australia. Appl. Soil Ecol. 5 (2), 143–149. doi:10.
+1890/1051-0761(2001)011[0343:gmacig]2.0.co;2                                                        1016/s0929-1393(96)00145-x
+  Connell, J. H. (1978). Diversity in tropical rain forests and coral reefs. Science 199              Huston, M. A., and Huston, M. A. (1994). Biological diversity: the coexistence of
+(4335), 1302–1310. doi:10.1126/science.199.4335.1302                                                species. United Kingdom: Cambridge University Press.
+   Dangal, S. R., Tian, H., Lu, C., Pan, S., Pederson, N., and Hessl, A. (2016). Synergistic          Keesstra, S., Pereira, P., Novara, A., Brevik, E. C., Azorin-Molina, C., Parras-
+effects of climate change and grazing on net primary production of Mongolian                        Alcántara, L., et al. (2016). Effects of soil management techniques on soil water
+grasslands. Ecosphere 7 (5), e01274. doi:10.1002/ecs2.1274                                          erosion in apricot orchards. Sci. Total Environ. 551, 357–366. doi:10.1016/j.
+                                                                                                    scitotenv.2016.01.182
+  Diaz, S., Lavorel, S., McIntyre, S. U. E., Falczuk, V., Casanoves, F., Milchunas, D. G.,
+et al. (2007). Plant trait responses to grazing–a global synthesis. Glob. Change Biol. 13              Kemp, D. R., Guodong, H., Xiangyang, H., Michalk, D. L., Fujiang, H., Jianping, W.,
+(2), 313–341. doi:10.1111/j.1365-2486.2006.01288.x                                                  et al. (2013). Innovative grassland management systems for environmental and
+                                                                                                    livelihood beneﬁts. Proc. Natl. Acad. Sci. 110 (21), 8369–8374. doi:10.1073/pnas.
+  Dlamini, P., Chivenge, P., and Chaplot, V. (2016). Overgrazing decreases soil organic
+                                                                                                    1208063110
+carbon stocks the most under dry climates and low soil pH: a meta-analysis shows.
+Agric. Ecosyst. Environ. 221, 258–269. doi:10.1016/j.agee.2016.01.026                                 Klein, J. A., Harte, J., and Zhao, X. Q. (2004). Experimental warming causes large and
+                                                                                                    rapid species loss, dampened by simulated grazing, on the Tibetan Plateau. Ecol. Lett. 7
+ Dong, S. K., Li, J. P., Li, X. Y., Wen, L., Zhu, L., Li, Y. Y., and Wang, Y. L. (2010).
+                                                                                                    (12), 1170–1179. doi:10.1111/j.1461-0248.2004.00677.x
+Application of design theory for restoring the black beach degraded rangeland at the
+
+
+
+
+Frontiers in Environmental Science                                                             10                                                                               frontiersin.org
+Wang and Ding                                                                                                                                                     10.3389/fenvs.2024.1348220
+
+
+
+
+  Klein, J. A., Harte, J., and Zhao, X. Q. (2007). Experimental warming, not grazing,                     Reeder, J. D., and Schuman, G. E. (2002). Inﬂuence of livestock grazing on C
+decreases rangeland quality on the Tibetan plateau. Ecol. Appl. 17, 541–557. doi:10.                    sequestration in semi-arid mixed-grass and short-grass rangelands. Environ. Pollut.
+1890/05-0685                                                                                            116 (3), 457–463. doi:10.1016/s0269-7491(01)00223-8
+  Lal, R., Negassa, W., and Lorenz, K. (2015). Carbon sequestration in soil. Curr. Opin.                  Schönbach, P., Wan, H., Gierus, M., Bai, Y., Müller, K., Lin, L., et al. (2011). Grassland
+Environ. Sustain. 15, 79–86. doi:10.1016/j.cosust.2015.09.002                                           responses to grazing: effects of grazing intensity and management system in an Inner
+                                                                                                        Mongolian steppe ecosystem. Plant Soil 340 (1-2), 103–115. doi:10.1007/s11104-010-
+   Langmaack, M., Schrader, S., Rapp-Bernhardt, U., and Kotzke, K. (2002). Soil
+                                                                                                        0366-6
+structure rehabilitation of arable soil degraded by compaction. Geoderma 105 (1-2),
+141–152. doi:10.1016/s0016-7061(01)00097-0                                                                Snyman, H. A. (2003). Revegetation of bare patches in a semi-arid rangeland of South
+                                                                                                        Africa: an evaluation of various techniques. J. Arid Environ. 55 (3), 417–432. doi:10.
+  Li, W., Xu, F., Zheng, S., Taube, F., and Bai, Y. (2017). Patterns and thresholds of
+                                                                                                        1016/s0140-1963(02)00286-0
+grazing-induced changes in community structure and ecosystem functioning: species-
+level responses and the critical role of species traits. J. Appl. Ecol. 54 (3), 963–975. doi:10.         Soil Science Society of China, Agriculture Chemistry Council (1983). General analysis
+1111/1365-2664.12806                                                                                    methods of soil agriculture chemistry. Beijing: Science Press.
+  Li, W., Zhao, J., Epstein, H. E., Jing, G., Cheng, J., and Du, G. (2016). Community-level               Squires, V., Hua, L., Zhang, D., and Li, G. (2010). Towards sustainable use of
+trait responses and intra-speciﬁc trait variability play important roles in driving                     rangelands in North-West China. New York, NY: Springer.
+community productivity in an alpine meadow on the Tibetan Plateau. J. Plant Ecol.
+                                                                                                          Su, R., Cheng, J., Chen, D., Bai, Y., Jin, H., Chao, L., et al. (2017). Effects of grazing on
+10 (4), 592–600. doi:10.1093/jpe/rtw069
+                                                                                                        spatiotemporal variations in community structure and ecosystem function on the
+   Li, Y., Dong, S., Wen, L., Wang, X., and Wu, Y. (2013). The effects of fencing on                    grasslands of Inner Mongolia, China. Sci. Rep. 7 (1), 40. doi:10.1038/s41598-017-
+carbon stocks in the degraded alpine grasslands of the Qinghai-Tibetan Plateau.                         00105-y
+J. Environ. Manag. 128, 393–399. doi:10.1016/j.jenvman.2013.05.058
+                                                                                                          Su, Y. Z., Li, Y. L., Cui, J. Y., and Zhao, W. Z. (2005). Inﬂuences of continuous grazing
+  Liu, J., Wu, J., Su, H., Gao, Z., and Wu, Z. (2017). Effects of grazing exclusion in Xilin            and livestock exclusion on soil properties in a degraded sandy grassland, Inner
+Gol grassland differ between regions. Ecol. Eng. 99, 271–281. doi:10.1016/j.ecoleng.                    Mongolia, northern China. Catena 59 (3), 267–278. doi:10.1016/j.catena.2004.09.001
+2016.11.041
+                                                                                                         Suttie, J. M., Reynolds, S. G., and Batello, C. (2005). Grasslands of the world. No. 34.
+  Loydi, A., Eckstein, R. L., Otte, A., and Donath, T. W. (2013). Effects of litter on                  Rome, Italy: Food and Agriculture Organisation of the United Nations.
+seedling establishment in natural and semi-natural grasslands: a meta-analysis. J. Ecol.
+                                                                                                          Tarhouni, M., Ben Hmida, W., and Neffati, M. (2017). Long-term changes in plant life
+101 (2), 454–464. doi:10.1111/1365-2745.12033
+                                                                                                        forms as a consequence of grazing exclusion under arid climatic conditions. Land
+  Mccormack, M. L., Adams, T. S., Smithwick, E. A., and Eissenstat, D. M. (2014).                       Degrad. Dev. 28 (4), 1199–1211. doi:10.1002/ldr.2407
+Variability in root production, phenology, and turnover rate among 12 temperate tree
+                                                                                                          Wan, H., Bai, Y., Schönbach, P., Gierus, M., and Taube, F. (2011). Effects of grazing
+species. Ecology 95 (8), 2224–2235. doi:10.1890/13-1942.1
+                                                                                                        management system on plant community structure and functioning in a semiarid
+   Mekuria, W., Veldkamp, E., Haile, M., Nyssen, J., Muys, B., and Gebrehiwot, K.                       steppe: scaling from species to community. Plant Soil 340 (1-2), 215–226. doi:10.1007/
+(2007). Effectiveness of exclosures to restore degraded soils as a result of overgrazing in             s11104-010-0661-2
+tigray, Ethiopia. J. Arid Environ. 69 (2), 270–284. doi:10.1016/j.jaridenv.2006.10.009
+                                                                                                          Wang, G., Cheng, G., Shen, Y., and Qian, J. (2003). Inﬂuence of land cover changes on
+  Metera, E., Sakowski, T., Słoniewski, K., and Romanowicz, B. (2010). Grazing as a tool                the physical and chemical properties of alpine meadow soil. Chin. Sci. Bull. 48 (2),
+to maintain biodiversity of grassland-a review. Animal Sci. Pap. Rep. 28 (4), 315–334.                  118–124. doi:10.1007/bf03037014
+  Milchunas, D. G., and Lauenroth, W. K. (1993). Quantitative effects of grazing on                       Wang, S., Wilkes, A., Zhang, Z., Chang, X., Lang, R., Wang, Y., et al. (2011).
+vegetation and soils over a global range of environments: ecological archives m063-001.                 Management and land use change effects on soil carbon in northern China’s
+Ecol. Monogr. 63 (4), 327–366. doi:10.2307/2937150                                                      grasslands: a synthesis. Agric. Ecosyst. Environ. 142 (3-4), 329–340. doi:10.1016/j.
+                                                                                                        agee.2011.06.002
+  Nelson, D. W., and Sommers, L. E. (1996). Total carbon, organic carbon, and organic
+matter. Methods soil analysis part 3-chemical methods 1996, 961–1010. doi:10.2136/                        Wang, Y., and Wesche, K. (2016). Vegetation and soil responses to livestock grazing
+sssabookser5.3.c34                                                                                      in Central Asian grasslands: a review of Chinese literature. Biodivers. Conservation 25
+                                                                                                        (12), 2401–2420. doi:10.1007/s10531-015-1034-1
+  Niedrist, G., Tasser, E., Lüth, C., Dalla Via, J., and Tappeiner, U. (2009). Plant
+diversity declines with recent land use changes in European Alps. Plant Ecol. 202 (2),                    Xie, Z., Le Roux, X., Wang, C., Gu, Z., An, M., Nan, H., et al. (2014). Identifying
+195–210. doi:10.1007/s11258-008-9487-x                                                                  response groups of soil nitriﬁers and denitriﬁers to grazing and associated soil
+                                                                                                        environmental drivers in Tibetan alpine meadows. Soil Biol. Biochem. 77, 89–99.
+   Niu, K., He, J. S., Zhang, S., and Lechowicz, M. J. (2016). Grazing increases functional
+                                                                                                        doi:10.1016/j.soilbio.2014.06.024
+richness but not functional divergence in Tibetan alpine meadow plant communities.
+Biodivers. Conservation 25 (12), 2441–2452. doi:10.1007/s10531-015-0960-2                                 Yang, X. H., Zhang, K. B., and Hou, R. P. (2005). Impacts of exclusion on vegetative
+                                                                                                        features and aboveground biomass in semi-arid degraded rangeland. Ecol. Environ. 14,
+  Oesterheld, M., and Sala, O. E. (1990). Effects of grazing on seedling establishment:
+                                                                                                        730–734. doi:10.16258/j.cnki.1674-5906.2005.05.024
+the role of seed and safe-site availability. J. Veg. Sci. 1 (3), 353–358. doi:10.2307/3235711
+                                                                                                          Yang, Y., Fang, J., Ma, W., Guo, D., and Mohammat, A. (2010). Large-scale pattern of
+  Patton, B. D., Dong, X., Nyren, P. E., and Nyren, A. (2007). Effects of grazing intensity,
+                                                                                                        biomass partitioning across China’s grasslands. Glob. Ecol. Biogeogr. 19 (2), 268–277.
+precipitation, and temperature on forage production. Rangel. Ecol. Manag. 60 (6),
+                                                                                                        doi:10.1111/j.1466-8238.2009.00502.x
+656–665. doi:10.2111/07-008r2.1
+                                                                                                          Yang, Z., Zhu, Q., Zhan, W., Xu, Y., Zhu, E., Gao, Y., et al. (2018). The linkage between
+  Phillips, D. L., Johnson, M. G., Tingey, D. T., Storm, M. J., Ball, J. T., and Johnson, D.
+                                                                                                        vegetation and soil nutrients and their variation under different grazing intensities in an
+W. (2006). CO2 and N-fertilization effects on ﬁne-root length, production, and
+                                                                                                        alpine meadow on the eastern Qinghai-Tibetan Plateau. Ecol. Eng. 110, 128–136. doi:10.
+mortality: a 4-year ponderosa pine study. Oecologia 148 (3), 517–525. doi:10.1007/
+                                                                                                        1016/j.ecoleng.2017.11.001
+s00442-006-0392-5
+                                                                                                          Yayneshet, T., Eik, L. O., and Moe, S. R. (2009). The effects of exclosures in restoring
+  Pintaldi, E., D’Amico, M. E., Siniscalco, C., Cremonese, E., Celi, L., Filippa, G., et al.
+                                                                                                        degraded semi-arid vegetation in communal grazing lands in northern Ethiopia. J. Arid
+(2016). Hummocks affect soil properties and soil-vegetation relationships in a subalpine
+                                                                                                        Environ. 73 (4-5), 542–549. doi:10.1016/j.jaridenv.2008.12.002
+grassland (North-Western Italian Alps). Catena 145, 214–226. doi:10.1016/j.catena.
+2016.06.014                                                                                              Zhao, X. Q. (2011). Restoration of degraded grassland ecosystem and sustainable
+                                                                                                        management in sanjiangyuan regions. Beijing, China: Science Press, 1–43.
+  Pucheta, E., Bonamici, I., Cabido, M., and Diaz, S. (2004). Below-ground biomass and
+productivity of a grazed site and a neighbouring ungrazed exclosure in a grassland in                     Zolda, P. (2006). Nematode communities of grazed and ungrazed semi-natural steppe
+central Argentina. Austral Ecol. 29 (2), 201–208. doi:10.1111/j.1442-9993.2004.01337.x                  grasslands in eastern Austria. Pedobiologia 50 (1), 11–22. doi:10.1016/j.pedobi.2005.08.002
+
+
+
+
+Frontiers in Environmental Science                                                                 11                                                                               frontiersin.org

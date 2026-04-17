@@ -1,0 +1,62 @@
+                                   Egyptian Informatics Journal
+                          Faculty of Computers and Artificial Intelligence,
+                                         Cairo University
+Editor-in-Chief                                                  Executive Editor
+Iman Aly Saroit Ismail                                           Mahmoud Ahmed Ismail Shoman
+Dean of Faculty of Computers and Artificial Intelligence,        Vice Dean for Higher Education and Research,
+Cairo University, Egypt                                          Faculty of Computers and Artificial Intelligence,
+E-mail: EIJ_EIC@fci-cu.edu.eg                                    Cairo University, Egypt
+                                                                 E-mail: EIJ_EE@fci-cu.edu.eg
+
+                                                       Associate Editors
+Hisham M. Abdelsalam                                             Nouh Sabri Elmitwally
+Department of Operations Research and Decision Support,          Department of Computer Science,
+Faculty of Computers and Artificial Intelligence,                Faculty of Computers and Artificial Intelligence,
+Cairo University, Egypt                                          Cairo University, Egypt
+E-mail: EIJ_DS@fci-cu.edu.eg                                     E-mail: EIJ_CS@fci-cu.edu.eg
+
+Mohamed Ahmed Wahby
+Department of Information Technology,
+Faculty of Computers and Artificial Intelligence,
+Cairo University, Egypt
+E-mail: EIJ_IT@fci-cu.edu.eg
+
+                                                        Editorial Board
+Hoda Mohamed Onsi Ali                      Ihab Ilyas                                 Amr El-Abbadi
+Department of Information Technology,      Cheriton School of Computer Science,       Department of Computer Science,
+Faculty of Computers and Artificial        University of Waterloo, Canada             University of California,
+Intelligence, Cairo University, Egypt      E-mail: ilyas@uwaterloo.ca                 Santa Barbara, USA
+E-mail: h.onsi@fci-cu.edu.eg                                                          E-mail: amr@cs.ucsb.edu
+Reda Abdul-Wahab Ahmed                     Amer Youssef
+                                           Computer Science Department,               Hossam S. Hassanien
+Department of Information Technology,
+                                           Concordia University, Canada               School of Computing and Department
+Faculty of Computers and Artificial
+                                           E-mail: youssef@ciise.concordia.ca         of Electrical and Computer Engineering,
+Intelligence, Cairo University, Egypt
+                                                                                      Queens University,
+E-mail: r.abdelwahab@fci-cu.edu.eg
+                                                                                      Kingston, Ontario, Canada
+Seif Haridi                                Reem Mohamed Reda Bahgat                   E-mail: hossam@cs.queensu.ca
+School of Information and                  Department of Computer Science,
+Communication Technology,                  Faculty of Computers and Artificial        Khairy A.H. Kobbacy
+KTH Royal Institute of Technology,         Intelligence, Cairo University,            School of Built Environment,
+Sweden                                     Egypt                                      University of Saltford, UK
+E-mail: seif@imit.kth.se                   Email: r.bahgat@fci-cu.edu.eg              E-mail: kobbacyk@gmail.com
+
+
+                                                    Administrative Secretary
+Mrs. Karima Abd El-Azim Aly Kassab
+5 Ahmed Zewail St., Orman, Giza, Egypt
+Tel.: +(202) 33381687; Fax: +(202) 33350109
+E-mail: EIJ@fci-cu.edu.eg
+
+For Subscription and Contributions:
+Prof. Mahmoud Ahmed Ismail Shoman
+Faculty of Computers and Artificial Intelligence,
+Cairo University, Egypt
+5 Ahmed Zewail St., Orman, Giza,
+P.O. Box 12613, Egypt
+Tel.: +(202) 33381687; Fax: +(202) 33350109
+E-mail: EIJ@fci-cu.edu.eg
+Faculty Home Page: www.fci.cu.edu.eg

@@ -1,0 +1,932 @@
+Biodiversity and Conservation (2025) 34:3889–3907
+https://doi.org/10.1007/s10531-025-03137-3
+
+    ORIGINAL RESEARCH
+
+
+
+Prioritizing tree species conservation in a megadiverse South
+American region: integrating taxonomic and phylogenetic
+metrics
+
+Ivan Justino de Farias1,2 · Vanessa Pontara2 · Vanessa Leite Rezende3                       ·
+João Augusto Alves Meira-Neto4 · Marcelo Leandro Bueno1,2
+
+Received: 18 March 2025 / Revised: 1 August 2025 / Accepted: 14 August 2025 /
+Published online: 19 September 2025
+© The Author(s), under exclusive licence to Springer Nature B.V. 2025
+
+
+Abstract
+Plant biodiversity is under increasing threat due to habitat loss, land-use change, and
+climate pressures, particularly in megadiverse regions such as the La Plata Basin (LPB).
+Here, we present a spatially explicit analysis integrating taxonomic and phylogenetic diver-
+sity metrics to identify biodiversity hotspots and conservation gaps for tree species across
+the LPB. Using occurrence data for tree species and metrics including species richness
+(SR), phylogenetic diversity (PD), standardized effect size of PD (ses.PD), evolutionary
+distinctiveness (ED), and biogeographically weighted ED (BED), we mapped patterns of
+evolutionary value and evaluated their alignment with existing protected areas. Our results
+reveal marked geographic disparities among the metrics, with eastern LPB regions highly
+impacted by agriculture and urbanization still retaining significant evolutionary heritage.
+Additionally, the Andes, Cerrado, and Pantanal also emerged as key areas for phylogenetic
+conservation. However, current protected areas fail to adequately represent these hotspots,
+highlighting urgent conservation gaps. We emphasize the need for targeted spatial strate-
+gies that integrate evolutionary history and land-use planning to enhance the effectiveness
+of conservation networks. This approach provides a comprehensive framework to guide
+biodiversity protection in tropical landscapes under rapid anthropogenic change.
+
+
+
+
+Communicated by Daniel Sanchez Mata.
+
+      Marcelo Leandro Bueno
+      marcelo.bueno@uems.br
+1
+      Graduate Program in Plant Biology, Federal University of Mato Grosso do Sul (UFMS),
+      Campo Grande, Brazil
+2
+      State University of Mato Grosso do Sul (UEMS), Laboratory of Macroecology and Evolution
+      (LAMEV), Mundo Novo, Brazil
+3
+      State University of Minas Gerais (UEMG), Passos, Brazil
+4
+      Laboratory of Ecology and Evolution of Plants (LEEP), Federal University of Viçosa (UFV),
+      Viçosa, Brazil
+
+
+                                                                                                13
+3890                                               Biodiversity and Conservation (2025) 34:3889–3907
+
+Keywords Andes, Atlantic Forest · Cerrado · Chaco · La Plata Basin · Pampa ·
+Pantanal · Phylogenetic Diversity · Richness species · Savannas
+
+
+
+Introduction
+
+Plant biodiversity, particularly in tropical regions, is undergoing rapid and unprecedented
+decline due to a combination of land-use change, habitat fragmentation, and climate change
+(Butchart et al. 2010; Barnosky et al. 2011; Deikumah et al. 2014; Potapov et al. 2017; Tau-
+bert et al. 2018; Joly et al. 2019; Habel et al. 2019; Díaz et al. 2019; FAO and UNEP 2020;
+Fischer et al. 2021). The ongoing conversion of natural ecosystems to agricultural, urban,
+and industrial landscapes poses severe threats to global biodiversity (Barnosky et al. 2011;
+Joly et al. 2019; Díaz et al. 2019), particularly in regions of high endemism and evolution-
+ary uniqueness. It is estimated that nearly 40% of vascular plant species are currently at risk
+of extinction, a figure that far exceeds natural background rates (Lughadha et al. 2020). In
+response, international frameworks such as the Aichi Biodiversity Targets and the post-2020
+Global Biodiversity Framework have emphasized the need to protect not only species but
+also the ecological and evolutionary processes that sustain biodiversity (Pörtner et al. 2021).
+    However, progress toward these goals remains uneven. While protected areas (PAs) have
+expanded globally, many fail to encompass key regions of biological and evolutionary sig-
+nificance (Watson et al. 2014; Visconti et al. 2019). Protected area networks often prioritize
+areas of political or economic convenience over ecological necessity, leading to systematic
+gaps in conservation coverage (Joppa and Pfaff 2009; Watson et al. 2014). Moreover, tra-
+ditional conservation planning has relied heavily on taxonomic measures such as species
+richness (SR). Species richness alone can obscure important biodiversity patterns, as it fails
+to capture the full complexity of ecosystems (Tallents et al. 2005), and may be unable to
+clarify for the evolutionary diversity within communities (Forest et al. 2007; Li et al. 2015;
+Qian and Deng 2021).
+    To address these limitations and better capture the evolutionary dimension of biodiver-
+sity in conservation strategies, there has been growing recognition of the need to integrate
+phylogenetic diversity into conservation planning (Cadotte and Davies 2010; Tucker et
+al. 2019). Phylogenetic diversity (PD), often calculated as the sum of branch lengths in a
+phylogenetic tree spanning a set of species (Faith’s PD), represents a crucial dimension of
+biodiversity by capturing feature diversity and option values for conservation (Faith 1992;
+Carstensen et al. 2013). Increasingly recognized as an essential component of global biodi-
+versity (Pollock et al. 2015, 2017), PD has been linked to enhanced ecosystem productivity
+(Cadotte 2013; Coelho De Souza et al. 2019) and human well-being.
+    Several complementary metrics have been developed to capture distinct dimensions of
+phylogenetic diversity trees (Redding 2003; Pavoine et al. 2005, 2017; Redding and Moo-
+ers 2006; Isaac et al. 2007; Redding et al. 2008). Among them, evolutionary distinctiveness
+(ED) quantifies how evolutionarily isolated a species is on a phylogenetic tree, capturing
+rare or unique features that may contribute significantly to ecosystem functions (Redding
+et al. 2010). These species are often irreplaceable and of high conservation priority due to
+their limited genetic redundancy and contribution to ecosystem resilience (Morelli 2018).
+To capture the full scope of biodiversity, methods integrating evolutionary history and geo-
+graphical rarity have been developed (Rosauer et al. 2009; Cadotte and Davies 2010). The
+
+
+13
+Biodiversity and Conservation (2025) 34:3889–3907                                         3891
+
+
+biogeographically weighted evolutionary distinctiveness (BED) scales ED values by spe-
+cies’ range sizes, assigning higher importance to geographically restricted species, which
+face more risk of extinction than widely distributed counterparts (Gaston 2003; Jones et al.
+2003).
+    By considering the evolutionary history embedded within ecosystems, this approach not
+only preserves species diversity but also safeguards the unique genetic and functional traits
+that have evolved over time (Forest et al. 2007; Safi et al. 2011; Pavoine et al. 2013; Zupan
+et al. 2014; Schweizer et al. 2014; Tucker et al. 2019; Molina-Venegas et al. 2021; Molina-
+Venegas 2021; Ge et al. 2022; Cardillo 2023). The conservation of phylogenetic diversity
+(PD) is crucial because extinction is not random within the tree of life; closely related spe-
+cies often face similar levels of threat (Purvis et al. 2000; Safi et al. 2011). Maintaining PD
+helps ensure ecosystem resilience and adaptability to environmental changes, providing a
+comprehensive framework for effective biodiversity conservation.
+    Incorporating phylogenetic information into spatial planning can substantially improve
+the effectiveness of conservation networks by highlighting areas of irreplaceable evolu-
+tionary value that are often overlooked by traditional taxonomic approaches (Pollock et
+al. 2017; Mouillot et al. 2013; Molina-Venegas et al. 2021). This is especially relevant in
+heterogeneous and megadiverse landscapes, where complex biogeographic histories and
+environmental gradients have shaped diverse evolutionary trajectories.
+    The La Plata Basin (LPB), one of the most megadiverse regions in South America, exem-
+plifies such complexity. Spanning five countries, Argentina, Bolivia, Brazil, Paraguay, and
+Uruguay, it encompasses a mosaic of ecosystems including tropical forests, wetlands, savan-
+nas, and montane habitats. This region harbors a high number of endemic and threatened
+plant species and plays a crucial role in the provision of ecosystem services and the mainte-
+nance of evolutionary heritage (Clavijo et al. 2024). The basin is densely populated by more
+than 110 million people, including São Paulo (Brazil), the largest city in South America,
+as well as large cities such as Buenos Aires, Brasília, Asunción and Montevideo (WWAP
+- UNESCO 2007). However, rapid agricultural expansion, infrastructure development, and
+the construction of large hydroelectric reservoirs have intensified land-use change in the
+region (Zarfl et al. 2015; Schlindwein et al. 2021), placing mounting pressure on native
+vegetation and evolutionary lineages. Despite its ecological and evolutionary importance,
+the LPB remains underrepresented in global conservation efforts. Many of its most criti-
+cal areas for biodiversity conservation are still poorly studied and inadequately protected.
+This highlights the urgent need for spatially explicit approaches that integrate phylogenetic
+diversity into conservation planning to better inform policy and guide resource allocation.
+    Assessments of biodiversity hotspots (areas of high diversity and/or endemism) and gap
+analyses are essential to increase the efficiency of the nature reserve network and provide
+information to improve its management. To this end, we applied spatial analyses to analy-
+ses to elucidate biodiversity distribution patterns and identify conservation hotspots, using
+distribution data for tree species within the LPB. By employing well-established metrics
+such as phylogenetic diversity (PD), standardized effect size of PD (ses.PD), evolutionary
+distinctiveness (ED), and biogeographically weighted evolutionary distinctiveness (BED),
+we aim to capture the evolutionary dimensions of biodiversity. Additionally, we identi-
+fied species categorized as threatened according to the IUCN Red List. These biodiversity
+hotspots were subsequently compared with the network of existing protected areas (PAs) to
+detect potential conservation gaps, guiding where conservation efforts should be prioritized.
+
+
+                                                                                   13
+3892                                                        Biodiversity and Conservation (2025) 34:3889–3907
+
+
+Such assessments are vital in predicting species extinction risks, identifying key knowledge
+gaps, and evaluating the efficacy of PAs in preserving biodiversity. By focusing on whether
+centers of endemism and evolutionary significance align with protected areas, we can bet-
+ter understand the conservation status of species with restricted distributions, particularly
+endemics, which are often more susceptible to environmental changes. Thus, we aimed (1)
+to map the primary hotspots of plant diversity within the La Plata Basin; (2) to assess the
+current effectiveness of the PA network; and (3) to identify and address conservation gaps,
+ensuring the long-term preservation of the basin’s unique and threatened biodiversity.
+
+
+Material and methods
+
+Study area
+
+La Plata Basin, located in the south-central portion of South America, is the fifth-largest
+basin in the world and the second in the continent covering 3,286,875 km2. This vast area
+encompasses five countries, Argentina, Bolivia, Brazil, Paraguay, and Uruguay—with over
+100 million inhabitants (Fig. 1 and Fig. S1). This basin includes tropical and subtropical
+climates (ranging 14° 30′ S to 36° 30′ S latitude) from sea level up to 3,600 m.a.m.s.l. and
+some of the largest rivers in the world such as Paraná, Paraguay, and Uruguay. The basin
+also includes the largest wetlands in South America (Pantanal and Iberá), one of the most
+productive grasslands in the world (Pampa), a semi-arid region (Chaco), rainforests (Atlan-
+tic and Paranaense Forest) as well as mountain regions rich in minerals and the second-
+world-largest aquifer (Guarani aquifer) (CIC - Intergovernmental Coordinating Committee
+of the Countries of Cuenca del Plata 2017).
+
+
+
+
+Fig. 1 Distribution of 529 sampling points from the NeoTropTree database across the La Plata basin. Each
+green dot represents a floristic checklist (assemblage) of tree species compiled for a single vegetation type
+within a 10 km diameter area
+
+
+13
+Biodiversity and Conservation (2025) 34:3889–3907                                         3893
+
+
+    The LPB region is one of the richest in terms of biodiversity and ecosystem variety in the
+world, comparable to the Amazon River system m (Organization of American States (OAS)
+(2005); Flinker 2012; CIC - Intergovernmental Coordinating Committee of the Countries
+of Cuenca del Plata 2017), due to its geographic location and the diversity of ecoregions,
+ranging from arid and semi-arid areas to humid forests (Pontes et al. 2015), Seasonally Dry
+Tropical Forests (Atlantic Forest of Alto-Paraná, Chiquitano Dry Forest, Montane Dry For-
+est of Bolivia), Savannas (Cerrado), Chaco (Humid and Dry Chaco), Pantanal, and Pampa
+(Olson et al. 2001). In most of the basin, annual average temperatures exceed 20 °C, rang-
+ing from approximately 15 °C in the South to more than 25 °C in the Northwest (Barros et
+al. 2006; WWAP – UNESCO 2007; Sola 2014; Food and Agriculture Organization of the
+United Nations (FAO), 2016). The LPB experiences a wide range of climates, from the
+hot and dry Chaco region to the humid southern areas of Brazil and southeastern Paraguay
+(CIC - Intergovernmental Coordinating Committee of the Countries of Cuenca del Plata
+2017). The basin’s average annual precipitation is around 1,100 mm, but there are signifi-
+cant regional differences (Mechoso et al. 2001). In the northern parts of the basin, rainfall
+can surpass 1,500 mm per year, whereas in the southernmost areas, it drops to below 900
+mm annually (Cerón et al. 2021). This climatic heterogeneity contributes to the region’s
+environmental complexity and rich biodiversity.
+
+
+Database
+
+Floristic data were obtained from the NeoTropTree database (Oliveira-Filho 2017), a com-
+pilation of tree species Lists and occurrence records collected from the Literature and her-
+barium specimens. The final dataset included 146,395 occurrence records and 3,102 tree
+species (Fig. 1). We divided the entire extent of the La Plata Basin into regular grid cells of
+50 × 50 km and overlaid the NeoTropTree assemblages onto this grid. Only cells contain-
+ing at least one floristic checklist were retained; empty cells were excluded due to the lack
+of data for biodiversity metrics. For each grid cell, we aggregated all species records from
+the checklists falling within its boundaries. Thus, each cell represents the combined species
+pool from one or more assemblages, which was then used to compute species richness,
+endemism, and phylogenetic metrics. As found by Cantidio and Souza (2019), abundance
+data can provide more ecological information than presence–absence data. However, large-
+scale abundance datasets covering the entire region are not publicly available (but see De
+Lima et al. 2015 for one of the most comprehensive efforts to date). Ferns and gymnosperms
+were excluded from our analyses due to their rarity in most parts of the Atlantic Forest and
+their disproportionate influence on phylogenetic metrics (Honorio-Coronado et al. 2015;
+Pontara et al. 2018, 2025; Rezende et al. 2021).
+
+
+Phylogenetic diversity analysis
+
+We generated a phylogenetic tree including a pooling of all species using a mega-tree
+approach in the R package V.PhyloMaker2 (Jin and Qian 2022). This mega-tree contains
+74,533 vascular plant species, based on the APG IV phylogenetic system of angiosperm
+classification, and includes all plant families (Jin and Qian 2022). We opted to use the sce-
+
+
+                                                                                   13
+3894                                                      Biodiversity and Conservation (2025) 34:3889–3907
+
+
+nario 3, where the tips of a new genus or specie not included in the mega-tree were bind to
+the half point of the family or genus branch, representing the branch between the family and
+genus root node and the basal node (see Jin and Qian 2019 for further details).
+    To examine the distribution of diversity of plants in the LPB we calculated for each
+grid cell measures of (i) species richness, (SR), used as a measure of taxonomic diversity,
+representing the total number of species present within each grid; (ii) Faith’s phylogenetic
+diversity (PD) (Faith 1992), which is the total sum of branch lengths in a phylogeny that
+includes species from the community and measures total evolutionary history; (iii) ses.PD, a
+standardized version of PD accounting for species richness (Webb 2000; Webb et al. 2002).
+The standardization process involved randomly selecting the same number of species from
+the phylogeny as present in the community, with 999 repetitions. The difference between
+the observed PD and the mean PD of the randomizations was then divided by the standard
+deviation of the randomized PD values to generate a standardized effect size. To describe the
+singularity of the species, we extracted the scores of (iv) evolutionary distinctiveness (ED)
+from the phylogenies, following Isaac et al. 2007. Species with small range sizes compared
+with those that are widely distributed are probably much more vulnerable because their
+habitats may vanish under global climate change (Cadotte and Davies 2010). To calculate
+the BED of a species, one can partition phylogenetic branch lengths by descendant species’
+abundances or by the number of populations or in our case, the number of occupied grid
+cells. The metric BED is then the summation of BED values of all species in a site; thus,
+sites with species that are narrowly distributed will have higher BED than sites with widely
+distributed species (Tucker et al. 2012).
+    Our analyses were performed in two distinct stages, considering the presence and absence
+of species. In the first stage, we included all grid cells, totaling 1181 grids, regardless of
+the presence of species. This approach allowed a comprehensive assessment of diversity,
+considering the potential distribution of species, even in cells where some of them were
+not observed. In the second stage, we excluded cells that presented species gaps, resulting
+in a total of 626 analyzed cells. This selection focused only on areas where all considered
+species were effectively present, allowing a more precise analysis of the observed diversity.
+    To map tree diversity in the LPB, we used ArcGIS v.10 software (ESRI - Environmental
+Systems Research Institute 2011) to create 50 km x 50 km grids. Each grid represents a
+sample of the set of tree species in the LPB, i.e., a community. This method allows for the
+analysis of spatial variation in diversity at the regional scale. We performed all analyses in
+the statistical environment R 4.1.1 (R Development Core Team 2021), available in ​h​t​t​p​:​/​/​w​
+w​w​.​r​-​p​r​o​j​e​c​t​.​o​r​g​/​​​​) using the ‘picante’ packages (Kembel et al. 2015), ‘vegan’ (Oksanen et
+al. 2016), and diversity pattern maps were created using the ArcGIS Pro 3.3.1 (ESRI - Envi-
+ronmental Systems Research Institut 2024).
+
+
+Identification of biodiversity hotspots
+
+Maps were compared using seven metrics to identify areas with high diversity (SR, PD,
+ses.PD, average ED, ED proportion >5; ED proportion < 5 and BED). Any 50 km × 50 km
+grid cell was marked as a hotspot if its value for a given index was within the top 10% of
+its range. To visualize areas with multimetrics data, we Generated overlap maps of the top
+10% hotspots. We then assessed whether these biodiversity hotspots were located within
+
+
+13
+Biodiversity and Conservation (2025) 34:3889–3907                                           3895
+
+
+protected areas and evaluated the protection status of threatened species, as listed by the
+IUCN and MMA, within these conservation units.
+   Protected areas in the LPB were obtained from the World Database on Protected Areas
+(WDPA), the most comprehensive global database of terrestrial and marine protected areas
+(Fig S2). This study exclusively considers Strictly Protected Conservation Units, whose pri-
+mary objective is nature preservation, allowing only indirect use of their natural resources
+(Matarazzo and Serva 2021). Sustainable Use Units were excluded, as these areas balance
+environmental conservation with the sustainable use of some natural resources (Brazil -
+National System of Nature Conservation Units 2000), providing a broader management
+approach. Additionally, the existing impacts in these areas represent an additional factor for
+their exclusion (Françoso et al. 2015; Heringer et al. 2020).
+   For each index, this study follows a widely used method for identifying conservation
+priority areas, defining them as the top 5% of grid cells (Daru et al. 2016; Elliott et al. 2018;
+Xue et al. 2021). Equal weights were assigned to each layer to determine conservation pri-
+ority areas, and the conservation network was subsequently overlaid to assess conservation
+effectiveness (Zhang et al. 2024).
+
+
+Results
+
+We assembled a phylogeny of tree species in the LPB, comprising 3,102 species across 644
+Genera and 119 families. Six families account for 44% of the species: Fabaceae (412 spp.),
+Myrtaceae (369 spp.), Rubiaceae (167 spp.), Melastomataceae (165 spp.), Lauraceae (135
+spp.), and Asteraceae (111 spp.). The most diverse genera were Eugenia (128 spp.), Myrcia
+(93 spp.), Miconia (92 spp.), Ocotea (67 spp.), and Solanum (60 spp.). Overall, our results
+revealed that the diversity and endemism of tree species showed uneven distribution in LPB.
+
+
+Spatial patterns of diversity metrics
+
+Overall, there were differences in the geographic locations of the hotspots identified by
+each index (Fig. 2). As expected, phylogenetic diversity was highly correlated with species
+richness (Fig. S3). Specifically, phylogenetic and taxonomic diversity were high in the east
+portion of the LPB, particularly in the mountainous ranges, where the core of the Atlantic
+Forest occurs (stricto sensu) (Fig. 2a, b).
+   Considering that species richness (SR) is positively correlated with phylogenetic diver-
+sity (PD) in this study (Fig. S3) as well as in numerous other published studies (Fritz and
+Rahbek 2012; Voskamp et al. 2017; Pontara et al. 2018, 2025), we also calculated the stan-
+dardized effect size of phylogenetic diversity (ses.PD). This approach was used to account
+for and mitigate the confounding influence of SR on PD measurements (Procheş et al. 2006).
+The grids with high SES-PD values indicate that they maintain high phylogenetic diversity
+after excluding the effect of taxonomic richness. That suggests that these regions harbor a
+higher proportion of distantly related taxa with ancient divergence. The results revealed that
+the grids with highest values to SES-PD scores are widely distributed, and were primarily
+located in the Cerrado, Pampa, and Andes ecoregions, highlighting these regions as refuges
+for ancestral lineages (Fig. 2c).
+
+
+                                                                                     13
+3896                                                        Biodiversity and Conservation (2025) 34:3889–3907
+
+
+
+
+Fig. 2 Spatial distribution of tree flora diversity hotspots in the La Plata Basin for: (a) species richness
+(SR); (b) phylogenetic diversity (PD); (c) standardized effect size of PD (ses.PD); (d) average evolution-
+ary distinctiveness (ED); (e) evolutionary distinction (ED) proportion >5; (f) evolutionary distinction
+(ED) proportion < 5; (g) biogeographically weighted evolutionary distinction (BED)
+
+
+
+
+13
+Biodiversity and Conservation (2025) 34:3889–3907                                        3897
+
+
+   When analyzing the geographic patterns of grid-cell average species ED, the Andes
+ecoregions in Argentina and Bolivia stand out (Fig. 2d). However, when examining the
+proportion of grids with the top 5% and bottom 5% ED values, the grids with the highest
+hotspot values differ, being primarily concentrated in the Atlantic Forest (Fig. 2e, f). There
+is a General trend for areas with higher species richness to contain also more 5% top ED
+species (Fig. S). Regions with high BED were also predominantly located in the eastern
+portion of the LPB, with a strong concentration in the Atlantic Forest.
+
+
+Diversity hotspots and conservation status
+
+According to the results for the 5% hotspots, 59 grids were identified (Fig. 3g) as hotspots
+for at least one diversity index, totaling 147,500 km2 (Fig. 3). No overlap was found among
+the hotspots identified for the six evaluated metrics, indicating that these metrics capture
+different aspects of biodiversity. We identified 25 overlapping grids among four metrics,
+located mainly in the eastern region of the La Plata Basin, as well as some grids in the
+northeastern and northern regions of the LPB. Areas with three or two diversity hotspots
+exhibited a more dispersed pattern.
+    Therefore, most of the hotspots identified in our analyses within the LPB are not well
+protected. The protection level in the La Plata Basin has been uneven, with varying cover-
+age degrees across different diversity metrics. It was observed that only 44.06% of the SR
+and PD hotspots are located within protected areas, while the majority (55.93%) remain
+unprotected. This lack of protection is even more pronounced for ED (evolutionary distinc-
+tiveness), with only 20.33% of hotspots protected, and ses.PD (standardized phylogenetic
+diversity), with a mere 15.25% under protection. BED hotspots demonstrated slightly better
+protection, with 45.76% located in protected areas; however, over half of these hotspots are
+still outside conservation zones.
+    Regarding the overlap of the proportion of top 5% and proportion of bottom 5% ED
+values, only 35.59% and 44.06%, respectively, are protected, highlighting significant con-
+servation gaps. Conservation gaps were also observed for hotspots identified by four and
+three diversity metrics. The intersections between hotspots identified by all four metrics
+are particularly critical for biodiversity conservation because the highest index values were
+found in these areas. Alarmingly, we observed that 53.48% of the intersections between
+three and four metrics occur outside protected areas. When comparing protected areas under
+the IUCN and MMA systems, the degree of protection of the MMA is notably higher. Pro-
+tected areas classified under the IUCN system cover 66.53% of the hotspots, while those
+under the MMA system 68.87%, demonstrating greater effectiveness than other metrics
+(Fig. 4). However, this level of protection remains insufficient to encompass all biodiversity
+hotspots.
+
+
+Discussion
+
+Our study proposed an approach based on phylogenetic diversity metrics to identify bio-
+diversity hotspots and guide the prioritization of conservation areas in the La Plata Basin
+(LPB), incorporating the evolutionary value of plant communities. By identifying biodi-
+
+
+                                                                                  13
+3898                                                        Biodiversity and Conservation (2025) 34:3889–3907
+
+
+
+
+Fig. 3 Spatial distribution of arboreal flora diversity hotspots in the Prata Basin, represented by the grid
+cells containing the highest 5% values for:
+                                        ​​ (a) phylogenetic diversity (PD); (b) standardized phylogenetic
+diversity (ses.PD); (c) evolutionary distinction (ED); (d) evolutionary distinction (ED) proportion >5;
+(e) evolutionary distinction (ED) proportion < 5; (f) biogeographically weighted evolutionary distinction
+(BED); (g) Overlap of all metrics
+
+
+
+
+13
+Biodiversity and Conservation (2025) 34:3889–3907                                                    3899
+
+
+
+
+Fig. 4 Proportion of protection for each hotspot: species richness (SR); phylogenetic diversity (PD);
+standardized effect size of PD (ses.PD); biogeographically weighted evolutionary distinctiveness (BED);
+average evolutionary distinctiveness (ED); evolutionary distinction (ED) proportion >5; evolutionary
+distinction (ED) proportion < 5; hotspot; IUCN and MMA species inside and outside of protected areas
+
+
+versity hotspots, we highlight regions that not only harbor significant species richness but
+also support unique evolutionary lineages, crucial for maintaining ecosystem resilience and
+adaptive potential in the face of environmental changes. These findings provide a valuable
+framework for prioritizing conservation efforts in one of South America’s most biodiverse
+regions. Our results highlight a high conservation value in densely populated areas with
+a significant proportion of urbanized and agricultural lands in the eastern regions of the
+basin, particularly in southern Minas Gerais and nearby regions in São Paulo, where rem-
+nant Atlantic Forest fragments still maintain significant biodiversity value. These areas rep-
+resent key biodiversity hotspots that require targeted conservation actions, given the intense
+anthropogenic pressures they face and the significant transformation caused by agricultural
+expansion, with large areas converted for temporary crops and livestock production (Vas-
+concelos et al. 2014; Schlindwein et al. 2021). Despite these pressures, these regions con-
+tinue to harbor evolutionary distinct lineages, reinforcing the importance of prioritizing
+conservation efforts.
+   The hotspots identified by the evaluated metrics exhibited geographic distinctions,
+except for PD and SR, which showed a strong positive correlation. These findings indicate
+that evolutionary distinctiveness and conservation value, when assessed through different
+indices, result in important spatial discrepancies that reflect the unique ecological and evo-
+lutionary information captured by each metric. This reinforces the need for multi-metric
+approaches to effectively delineate conservation priorities. The contrasting patterns among
+metrics enabled the identification of spatially distinct target areas, offering critical guidance
+for conservation planning in the LPB.
+   Notably, SR and PD hotspots displayed distinct patterns between the eastern and western
+regions of the basin, with a clear gradient of increasing richness and phylogenetic diversity
+towards lower longitudes, especially in the Atlantic Forest region, in southeastern Brazil.
+
+
+                                                                                             13
+3900                                              Biodiversity and Conservation (2025) 34:3889–3907
+
+
+As one of the world’s most prominent biodiversity hotspots, the Atlantic Forest is shaped
+by a complex evolutionary and environmental history influenced by tectonic activity, paleo-
+geographic reconfigurations, and climatic fluctuations since the Neogene (Rull 2011). These
+historical processes promoted the formation of forest refugia, enabling species persistence
+and diversification (Carnaval et al. 2009; Batalha-Filho et al. 2019). Regions such as Serra
+do Mar and Serra da Mantiqueira, characterized by sharp altitudinal gradients and high
+environmental heterogeneity, offer favorable conditions for species establishment and niche
+expansion. This heterogeneity facilitates species coexistence and diversification via vicari-
+ance, reinforcing the high levels of richness, endemism, and phylogenetic diversity recorded
+in the region (Stein and Kreft 2015; Ferreira et al. 2024).
+    Beyond species richness and PD, our analysis highlights the importance of complemen-
+tary metrics such as the standardized effect size of phylogenetic diversity (ses.PD), which
+captures distinct ecological and evolutionary processes not directly linked to species counts.
+ses.PD showed no significant correlation with species richness, suggesting that it provides
+additional insight into evolutionary structure (Fan et al. 2023). High ses.PD values were
+more spatially scattered across the basin, with notable concentrations in the Andes and the
+Cerrado. In the Cerrado, elevated ses.PD values occur particularly in areas like Chapada dos
+Veadeiros National Park and Chapada dos Guimarães. The Cerrado, a vegetational complex
+with diverse physiognomies and extreme floristic heterogeneity, is the second-largest biome
+in Brazil (Ribeiro and Walter 1998, 2008) and is recognized as a biodiversity hotspot (Myers
+1990; Myers et al. 2000; Mendonça et al. 2008; Strassburg et al. 2016). These high ses.PD
+values suggest that these regions harbor ancestral and phylogenetically distant lineages,
+indicating areas with greater evolutionary diversity after accounting for the effect of taxo-
+nomic richness (Fan et al. 2023). These findings underscore that regions with lower taxo-
+nomic richness may still possess substantial evolutionary depth and must be considered in
+conservation planning. By incorporating ses.PD, we emphasize the relevance of preserving
+both common and phylogenetically distinct assemblages, particularly in a basin as diverse
+as the LPB (Kareiva and Marvier 2003).
+    We also identified hotspots using evolutionary distinctiveness (ED) and biogeographi-
+cally weighted evolutionary distinctiveness (BED), both of which offer complementary
+insights for phylogenetic conservation planning. Grids predominantly covering the Andes
+exhibited the highest mean ED values, suggesting a concentration of phylogenetically iso-
+lated lineages that reflect the region’s distinct evolutionary history (Segovia et al. 2020).
+The premise is that evolutionarily distinct species represent uniquely divergent genomes
+(Redding and Mooers 2006) and hence putatively unique feature diversity to preserve for
+the future (Molina-Venegas 2021). The grids with the highest mean ED values located in the
+Andes reflect the evolutionary importance of this region for the biological diversity of the
+La Plata Basin. The premise is that evolutionarily distinct species represent uniquely diver-
+gent genomes (Redding and Mooers 2006) and hence putatively unique feature diversity to
+preserve for the future (Molina-Venegas et al. 2021; Molina-Venegas 2021). The grids with
+the highest mean ED values located in the Andes reflect the evolutionary importance of this
+region for the biological diversity of the La Plata Basin. Species such as Bocconia integrifo-
+lia and Alnus acuminata, common in high-altitude areas, illustrate the unique evolutionary
+trajectories preserved in these environments.
+    We also observed that both the proportion of species with the highest ED values (top 5%)
+and the proportion with the lowest ED values (bottom 5%) are concentrated in grids located
+
+
+13
+Biodiversity and Conservation (2025) 34:3889–3907                                            3901
+
+
+in the Atlantic Forest. Areas with a high prevalence of species with high ED values tend to
+act as"museums"of ancient lineages, harboring species that have arisen or persisted under
+conditions of climatic stability and environmental heterogeneity over time (Jetz et al. 2014).
+These findings highlight the importance of the Atlantic Forest as a"cradle"of diversification,
+where recent speciation processes may have generated lineages with low ED. These results
+suggest that the conservation of these areas should balance the protection of relictual spe-
+cies and species associated with recent diversification processes. Another relevant aspect
+observed is the overlap between high species richness and ED hotspots in the Atlantic For-
+est, supporting the hypothesis that regions with greater climatic stability accumulate diver-
+sity over time. On the other hand, as evidenced in other studies, the relationship between
+ED and species richness is complex and depends on the spatial scale and historical context
+of each region (Cadotte and Davies 2010; Jetz et al. 2014).
+    The biogeographically weighted evolutionary distinctiveness (BED) metric further con-
+tributes to identifying conservation priorities by integrating evolutionary distinctiveness of
+a species with the extent of its geographic distribution (Cadotte and Davies 2010). This
+metric assigns greater weight to evolutionarily distinct species with restricted distribu-
+tions, which are often more susceptible to extinction risks (Rosauer et al. 2009; Cadotte and
+Davies 2010, Isaac et al. 2007; Gaston 2003; Jones et al. 2003), being highly relevant for
+conservation strategies (Delić et al. 2017). These species are also critical for maintaining
+ecosystem functionality, as they tend to concentrate unique functional traits that contribute
+to ecosystem resilience (Mouillot et al. 2013). In our study, grids with high BED values
+were distributed across key areas of the basin, particularly in the Pantanal, Andes, Cerrado,
+and Atlantic Forest. Notable species with high BED scores included Turpina occidentalis,
+Cantua bicolor, Atomostigma mattogrossense, and Apurimacia dolichocarpa, highlighting
+their conservation relevance. Given limited conservation resources, BED offers a valuable
+tool for identifying irreplaceable components of biodiversity and informing spatial priori-
+tization efforts (Delic et al. 2017; Veron et al. 2016; Veron et al. 2019; Cadotte and Davies
+2010; Huang et al. 2012).
+    Despite the ecological and evolutionary importance of these areas, our findings reveal
+that the current protected area network in the La Plata Basin performs poorly in safeguard-
+ing species richness, phylogenetic diversity, and threatened taxa. Many of the most relevant
+biodiversity areas identified through ED, BED, and ses.PD remain unprotected, highlighting
+critical conservation gaps. This reinforces the urgent need for more targeted and systematic
+conservation strategies focused on evolutionary metrics. Integrating multiple biodiversity
+dimensions can help guide the expansion of protected areas toward regions of irreplaceable
+evolutionary value. Furthermore, conservation planning should prioritize areas where mul-
+tiple metrics converge, as these represent core conservation opportunities. Strategies may
+include the expansion of strictly protected reserves, the creation of ecological corridors, and
+the implementation of adaptive management approaches that balance biodiversity preserva-
+tion with sustainable land-use practices (Watson et al. 2014; Margules and Pressey 2000).
+    Our study contributes valuable insights into the spatial distribution of evolutionary and
+taxonomic diversity across the La Plata Basin and highlights priority regions for conserva-
+tion action. In doing so, it also brings attention to a critical issue in large-scale biodiversity
+assessments: the uneven spatial distribution of floristic data. Some remote or less accessible
+regions remain under-sampled, which may lead to localized underestimations of species
+richness and phylogenetic metrics. However, recognizing these gaps is itself an important
+
+
+                                                                                      13
+3902                                                             Biodiversity and Conservation (2025) 34:3889–3907
+
+
+outcome of our analysis. By identifying areas with limited sampling, we provide a frame-
+work for guiding future botanical inventories and for improving the completeness and preci-
+sion of conservation planning in the basin.
+
+
+Conclusion
+
+Protected areas play a fundamental role in safeguarding rare and threatened species while
+maximizing the protection of ecological and evolutionary processes. In this study, we applied
+a phylogenetically informed approach to identify biodiversity hotspots in the La Plata Basin
+(LPB), integrating multiple metrics to capture complementary dimensions of diversity. Our
+results demonstrate that hotspots differ substantially depending on the metric used, high-
+lighting the need for a multi-dimensional approach to conservation planning. In particular,
+we show that regions with high evolutionary distinctiveness, phylogenetic diversity, and
+high overlap of metrics should be prioritized, as they represent irreplaceable components of
+biodiversity. The current protected area network in the LPB does not effectively encompass
+these key regions, emphasizing the importance of expanding and optimizing conservation
+efforts. Given the rapid pace of land conversion, strategies must integrate land-use planning
+with biodiversity conservation, ensuring that protected areas are strategically located and
+ecologically effective. By incorporating evolutionary history and diversification processes,
+our findings provide a solid foundation for a more comprehensive and resilient conservation
+agenda in one of South America’s most diverse and threatened landscapes.
+Supplementary Information The online version contains supplementary material available at ​h​t​t​p​s​:​/​/​d​o​i​.​o​r​g​
+/​1​0​.​1​0​0​7​/​s​1​0​5​3​1​-​0​2​5​-​0​3​1​3​7​-​3​​​.​ ​​
+
+Acknowledgments The authors are grateful to the Fundação de Apoio ao Desenvolvimento do Ensino,
+Ciência e Tecnologia do Estado de Mato Grosso do Sul (FUNDECT) (grant no. 71/050.384/2022 and
+71/032.376/2022) for financial support. M.L.B. is supported by a research productivity fellowship from the
+Conselho Nacional de Desenvolvimento Científico e Tecnológico (CNPq) (grant no. 313179/2022-0). Ivan
+Justino de Farias acknowledges support from the Coordenação de Aperfeiçoamento de Pessoal de Nível
+Superior (CAPES) through a scholarship (grant no. 88887.808061/2023-00).
+
+Author contributions All authors contributed substantially to the conception and design of the study. The ini-
+tial idea was conducted by Marcelo Leandro Bueno and Vanessa Pontara. The data compilation and analyti-
+cal procedures were primarily conducted by Ivan Justino de Farias, Vanessa Pontara, and Marcelo Leandro
+Bueno. All authors contributed to the interpretation of the results, provided critical revisions, and approved
+the final version of the manuscript for submission.
+
+Funding This work was supported by the Conselho Nacional de Desenvolvimento Científico e Tecnológico
+(CNPq) (grant no. 313179/2022-0), Coordenação de Aperfeiçoamento de Pessoal de Nível Superior (CAPES)
+(grant no. 88887.808061/2023-00) and Fundação de Apoio ao Desenvolvimento do Ensino, Ciência e Tec-
+nologia do Estado de Mato Grosso do Sul (FUNDECT) (grant no. 71/050.384/2022 and 71/032.376/2022).
+
+Data Availability No datasets were generated or analysed during the current study.
+
+Declarations
+
+Competing interests The authors declare no competing interests.
+
+Consent for publication The authors hereby grant all rights of publication of the manuscript to the publisher.
+
+
+
+13
+Biodiversity and Conservation (2025) 34:3889–3907                                                                            3903
+
+
+References
+Barnosky AD, Matzke N, Tomiya S et al (2011) Has the Earth’s sixth mass extinction already arrived? Nature
+      471:51–57. https://doi.org/10.1038/nature09678
+Barros V, Clarke R, Días PS (2006) The climate change in Cuenca del Plata, 1® edição. National Council for
+      Scientific and Technical Research - CONICET, Buenos Aires
+Batalha-Filho H, Maldonado-Coelho M, Miyaki CY (2019) Historical climate changes and hybridization
+      shaped the evolution of Atlantic Forest spinetails (Aves: Furnariidae). Heredity 123:675–693. ​h​t​t​p​s​:​/​/​d​
+      o​i​.​o​r​g​/​1​0​.​1​0​3​8​/​s​4​1​4​3​7​-​0​1​9​-​0​2​3​4​-​y​​​​
+Brazil - National System of Nature Conservation Units (2000) Law n.° 9,985, of July 18, 2000. Establishes
+      the National System of Nature Conservation Units (SNUC) and provides other measures.
+Butchart SHM, Walpole M, Collen B et al (2010) Global biodiversity: indicators of recent declines. Science
+      328:1164–1168. https://doi.org/10.1126/science.1187512
+Cadotte MW (2013) Experimental evidence that evolutionarily diverse assemblages result in higher produc-
+      tivity. Proc Natl Acad Sci 110:8996–9000. https://doi.org/10.1073/pnas.1301685110
+Cadotte MW, Davies TJ (2010) Rarest of the rare: advances in combining evolutionary distinctiveness and
+      scarcity to inform conservation at biogeographical scales. Divers Distrib 16:376–385. ​h​t​t​p​s​:​​/​/​d​o​i​​.​o​r​g​/​1​​
+      0​.​1​1​​1​1​/​j​.​​1​4​7​2​-​​4​6​4​2​.​2​​0​1​0​.​​0​0​6​5​0​.​x
+Cadotte MW, Davies TJ (2016) Phylogenies in ecology: A guide to concepts and methods. Princeton Univer-
+      sity Press, Princeton (N.J.) Oxford (GB)
+Cantidio LS, Souza AF (2019) Aridity, soil and biome stability influence plant ecoregions in the Atlantic
+      Forest, a biodiversity hotspot in South America. Ecography 42:1887–1898. ​h​t​t​p​s​:​/​/​d​o​i​.​o​r​g​/​1​0​.​1​1​1​1​/​e​c​
+      o​g​.​0​4​5​6​4​​​​
+Cardillo M (2023) Phylogenetic diversity in conservation: a brief history, critical overview, and challenges to
+      progress. Camb Prisms Extinction 1:e11. https://doi.org/10.1017/ext.2023.8
+Carnaval AC, Hickerson MJ, Haddad CFB et al (2009) Stability predicts genetic diversity in the Brazilian
+      Atlantic Forest hotspot. Science 323:785–789. https://doi.org/10.1126/science.1166955
+Carstensen DW, Lessard J, Holt BG et al (2013) Introducing the biogeographic species pool. Ecography
+      36:1310–1318. ​h​t​t​p​s​:​​/​/​d​o​i​​.​o​r​g​/​1​​0​.​1​1​​1​1​/​j​.​​1​6​0​0​-​​0​5​8​7​.​2​​0​1​3​.​​0​0​3​2​9​.​x
+Cerón WL, Andreoli RV, Kayano MT et al (2021) Comparison of spatial interpolation methods for annual and
+      seasonal rainfall in two hotspots of biodiversity in South America. An Acad Bras Cienc 93:e20190674.​
+      h​t​t​p​s​:​​/​/​d​o​i​​.​o​r​g​/​1​​0​.​1​5​​9​0​/​0​0​​0​1​-​3​7​​6​5​2​0​2​1​​2​0​1​9​​0​6​7​4
+CIC - Intergovernmental Coordinating Committee of the Countries of Cuenca del Plata (2017) Transbound-
+      ary Diagnostic Analysis (ADT) and Strategic Action Program (PAE) of the La Plata Basin: executive
+      summary, 1a edição. Intergovernmental Coordinating Committee of the Countries of the Cuenca del
+      Plata - CIC; United States: Organization of American States - OAS, Autonomous City of Buenos Aires
+Clavijo C, Miyahira IC, Bassó A (2024) The freshwaters bivalves of La Plata Basin in the Anthropocene.
+      Hydrobiologia. https://doi.org/10.1007/s10750-024-05679-z
+Coelho De Souza F, Dexter KG, Phillips OL et al (2019) Evolutionary diversity is associated with wood pro-
+      ductivity in Amazonian forests. Nat Ecol Evol 3:1754–1761. https://doi.org/10.1038/s41559-019-1007-y
+Daru BH, van der Bank M, Maurin O et al (2016) A novel phylogenetic regionalization of phytogeographical
+      zones of southern Africa reveals their hidden evolutionary affinities. J Biogeogr 43:155–166. ​h​t​t​p​s​:​/​/​d​
+      o​i​.​o​r​g​/​1​0​.​1​1​1​1​/​j​b​i​.​1​2​6​1​9​​​​
+De Lima RAF, Mori DP, Pitta G et al (2015) How much do we know about the endangered Atlantic Forest?
+      Reviewing nearly 70 years of information on tree community surveys. Biodivers Conserv 24:2135–
+      2148. https://doi.org/10.1007/s10531-015-0953-1
+Deikumah JP, Mcalpine CA, Maron M (2014) Biogeographical and taxonomic biases in tropical forest frag-
+      mentation research. Conserv Biol 28:1522–1531. https://doi.org/10.1111/cobi.12348
+Delić T, Trontelj P, Rendoš M, Fišer C (2017) The importance of naming cryptic species and the conserva-
+      tion of endemic subterranean amphipods. Sci Rep 7:3391. https://doi.org/10.1038/s41598-017-02938-z
+Díaz S, Settele J, Brondízio ES et al (2019) Pervasive human-driven decline of life on earth points to the need
+      for transformative change. Science 366:eaax3100. https://doi.org/10.1126/science.aax3100
+Elliott MJ, Knerr NJ, Schmidt-Lebuhn AN (2018) Choice between phylogram and chronogram can have a
+      dramatic impact on the location of phylogenetic diversity hotspots. J Biogeogr 45:2190–2201. ​h​t​t​p​s​:​/​/​
+      d​o​i​.​o​r​g​/​1​0​.​1​1​1​1​/​j​b​i​.​1​3​3​9​9​​​​
+ESRI - Environmental Systems Research Institute (2011) ArcGIS Desktop: Release 10
+ESRI - Environmental Systems Research Institute (2024) ArcGIS Pro 3.3.1
+Faith DP (1992) Conservation evaluation and phylogenetic diversity. Biol Conserv 61:1–10. ​h​t​t​p​s​:​/​/​d​o​i​.​o​r​g​/​
+      1​0​.​1​0​1​6​/​0​0​0​6​-​3​2​0​7​(​9​2​)​9​1​2​0​1​-​3​​​​
+
+
+
+                                                                                                                   13
+3904                                                                     Biodiversity and Conservation (2025) 34:3889–3907
+
+Fan H, Huang M, Chen Y et al (2023) Conservation priorities for global marine biodiversity across multiple
+      dimensions. Natl Sci Rev 10:nwac241. https://doi.org/10.1093/nsr/nwac241
+FAO, UNEP (2020) The State of the World’s Forests 2020: Forests, Biodiversity and People. FAO and UNEP,
+      Rome
+Ferreira GMD, Leme EMC, Aona LYS et al (2024) Microendemism, high diversity and taxonomic novelties
+      in Bromeliaceae: studies from an Atlantic Forest hotspot in Bahia, Brazil. J Nat Conserv 79:126599.
+      https://doi.org/10.1016/j.jnc.2024.126599
+Fischer R, Taubert F, Müller MS et al (2021) Accelerated forest fragmentation leads to critical increase in
+      tropical forest edge area. Sci Adv 7:eabg7012. https://doi.org/10.1126/sciadv.abg7012
+Flinker R (2012) La Plata River Basin. 4
+Food and Agriculture Organization of the United Nations (FAO) (2016) AQUASTAT Transboundary River
+      Basin Overview – La Plata. FAO, Rome, Italy
+Forest F, Grenyer R, Rouget M et al (2007) Preserving the evolutionary potential of floras in biodiversity
+      hotspots. Nature 445:757–760. https://doi.org/10.1038/nature05587
+Françoso RD, Brandão R, Nogueira CC et al (2015) Habitat loss and the effectiveness of protected areas in the
+      Cerrado biodiversity hotspot. Natureza Conserv 13:35–40. https://doi.org/10.1016/j.ncon.2015.04.001
+Fritz SA, Rahbek C (2012) Global patterns of amphibian phylogenetic diversity. J Biogeogr 39:1373–1382.​
+      h​t​t​p​s​:​​/​/​d​o​i​​.​o​r​g​/​1​​0​.​1​1​​1​1​/​j​.​​1​3​6​5​-​​2​6​9​9​.​2​​0​1​2​.​​0​2​7​5​7​.​x
+Gaston KJ (2003) The Structure and Dynamics of Geographic Ranges. Oxford University Press
+Ge Y, Liu Z, García-Girón J et al (2022) Human-induced loss of functional and phylogenetic diversity is
+      mediated by concomitant deterministic processes in subtropical aquatic insect communities. Ecol Indic
+      136:108600. ​h​t​t​p​s​:​​/​/​d​o​i​​.​o​r​g​/​1​​0​.​1​0​​1​6​/​j​.​​e​c​o​l​i​​n​d​.​2​0​2​​2​.​1​0​​8​6​0​0
+Habel JC, Rasche L, Schneider UA et al (2019) Final countdown for biodiversity hotspots. Conserv Lett
+      12:e12668. https://doi.org/10.1111/conl.12668
+Heringer G, Almeida TE, Dittrich VADO, Salino A (2020) Assessing the effectiveness of protected areas
+      for the conservation of ferns and lycophytes in the Brazilian state of Minas Gerais. J Nat Conserv
+      53:125775. https://doi.org/10.1016/j.jnc.2019.125775
+Honorio-Coronado EN, Dexter KG, Pennington RT et al (2015) Phylogenetic diversity of Amazonian tree
+      communities. Divers Distrib 21:1295–1307. https://doi.org/10.1111/ddi.12357
+Huang J, Chen B, Liu C et al (2012) Identifying hotspots of endemic woody seed plant diversity in China.
+      Divers Distrib 18:673–688. ​h​t​t​p​s​:​​/​/​d​o​i​​.​o​r​g​/​1​​0​.​1​1​​1​1​/​j​.​​1​4​7​2​-​​4​6​4​2​.​2​​0​1​1​.​​0​0​8​4​5​.​x
+Isaac NJB, Turvey ST, Collen B et al (2007) Mammals on the EDGE: conservation priorities based on threat
+      and phylogeny. PLoS ONE 2:e296. https://doi.org/10.1371/journal.pone.0000296
+Jetz W, Thomas GH, Joy JB et al (2014) Global distribution and conservation of evolutionary distinctness in
+      birds. Curr Biol 24:919–930. https://doi.org/10.1016/j.cub.2014.03.011
+Jin Y, Qian H (2019) V.phylomaker: an R package that can generate very large phylogenies for vascular
+      plants. Ecography 42:1353–1359. https://doi.org/10.1111/ecog.04434
+Jin Y, Qian H (2022) V.phylomaker2: an updated and enlarged R package that can generate very large phylog-
+      enies for vascular plants. Plant Divers 44:335–339. https://doi.org/10.1016/j.pld.2022.05.005
+Joly CA, Scarano FR, Seixas CS (2019) 1st Brazilian Diagnosis of Biodiversity and Ecosystem Services.
+      Editora Cubo, São Carlos
+Jones KE, Purvis A, Gittleman JL (2003) Biological correlates of extinction risk in bats. Am Nat 161:601–
+      614. https://doi.org/10.1086/368289
+Joppa LN, Pfaff A (2009) High and far: biases in the location of protected areas. PLoS ONE 4:e8273. ​h​t​t​p​s​:​/​
+      /​d​o​i​.​o​r​g​/​1​0​.​1​3​7​1​/​j​o​u​r​n​a​l​.​p​o​n​e​.​0​0​0​8​2​7​3​​​​
+Kareiva P, Marvier M (2003) Conserving biodiversity coldspots: recent calls to direct conservation funding to
+      the world’s biodiversity hotspots may be bad investment advice. Am Sci 91:344–351
+Kembel SW, Ackerly DD, Blomberg SP, et al (2015) Package “picante”. R tools for integrating phylogenies
+      and ecology
+Li R, Kraft NJB, Yang J, Wang Y (2015) A phylogenetically informed delineation of floristic regions within a
+      biodiversity hotspot in Yunnan, China. Sci Rep 5:9396. https://doi.org/10.1038/srep09396
+Lughadha EN, Bachman SP, Leão TCC et al (2020) Extinction risk and threats to plants and fungi. PLANTS
+      PEOPLE PLANET 2:389–408. https://doi.org/10.1002/ppp3.10146
+Margules CR, Pressey RL (2000) Systematic conservation planning. Nature 405:243–253. ​h​t​t​p​s​:​/​/​d​o​i​.​o​r​g​/​1​
+      0​.​1​0​3​8​/​3​5​0​1​2​2​5​1​​​​
+Matarazzo G, Serva M (2021) Environmental conservation units – a pragmatist analysis of the organizational
+      management and modes of existence of an ecological station. Organ Soc 28:607–626. ​h​t​t​p​s​:​​/​/​d​o​i​​.​o​r​g​/​1​​
+      0​.​1​5​​9​0​/​1​9​​8​4​-​9​2​​3​0​2​0​2​1​​v​2​8​n​​9​8​0​6​e​n
+Mechoso CR, Dias PS, Baethgen W, et al (2001) Climatology and Hydrology of the Plata Basin. In: Inter-
+      national CLIVAR Project Office (ed) VAMOS – Variability of the American Monsoon Systems. ICPO
+      Publication Series, Southampton.
+
+
+13
+Biodiversity and Conservation (2025) 34:3889–3907                                                                                                   3905
+
+Mendonça RC de, Felfili JM, Walter BMT, et al (2008) Vascular flora of the Cerrado biome: Checklist with
+     12,356 species. In: Sano SM, Almeida SPD, Ribeiro JF (eds) Cerrado: Ecology and Flora. Embrapa,
+     Brasilia, DF, pp 421–1279
+Molina-Venegas R (2021) Conserving evolutionarily distinct species is critical to safeguard human well-
+     being. Sci Rep 11:24187. https://doi.org/10.1038/s41598-021-03616-x
+Molina-Venegas R, Rodríguez MÁ, Pardo-de-Santayana M et al (2021) Maximum levels of global phyloge-
+     netic diversity efficiently capture plant services for humankind. Nat Ecol Evol 5:583–588. ​h​t​t​p​s​:​/​/​d​o​i​.​o​
+     r​g​/​1​0​.​1​0​3​8​/​s​4​1​5​5​9​-​0​2​1​-​0​1​4​1​4​-​2​​​​
+Morelli F (2018) High nature value farmland increases taxonomic diversity, functional richness and evolu-
+     tionary uniqueness of bird communities. Ecol Indic 90:540–546. ​h​t​t​p​s​:​​/​/​d​o​i​​.​o​r​g​/​1​​0​.​1​0​​1​6​/​j​.​​e​c​o​l​i​​n​d​.​2​0​1​​
+     8​.​0​3​​.​0​3​5
+Mouillot D, Bellwood DR, Baraloto C et al (2013) Rare species support vulnerable functions in high-diver-
+     sity ecosystems. PLoS Biol 11:e1001569. https://doi.org/10.1371/journal.pbio.1001569
+Myers N (1990) The biodiversity challenge: expanded hot-spots analysis. Environ 10:243–256. ​h​t​t​p​s​:​/​/​d​o​i​.​o​
+     r​g​/​1​0​.​1​0​0​7​/​B​F​0​2​2​3​9​7​2​0​​​​
+Myers N, Mittermeier RA, Mittermeier CG et al (2000) Biodiversity hotspots for conservation priorities.
+     Nature 403:853–858. https://doi.org/10.1038/35002501
+Oksanen J, Blanchet FG, Kindt R, et al (2016) vegan: Community Ecology Package
+Olson DM, Dinerstein ED, Wikramanayake ED, Burgess NO, Powell GVN, Underwood EJA, Itoua I, Strand
+     HE, Morrison JC, Loucks CJ, Allnutt TF, Ricketts TH, Kura Y, Lamoreux JF, Wettengel WW, Hedao
+     P, Kassem KR (2001) Terrestrial ecoregions of the world: a new map of life on earth. BioScience
+     51:933–938
+Oliveira-Filho AT (2017) NeoTropTree, Arboreal Flora of the Neotropical Region: A Database Involving
+     Biogeography, Diversity, and Conservation
+Organization of American States (OAS) (2005) La Plata River Basin: A Framework for the Sustainable Man-
+     agement of Its Water Resources with Respect to the Hydrological Effects of Climatic Variability and
+     Change. Office for Sustainable Development & Environment, Washington, D.C.
+Pavoine S, Bonsall MB, Dupaix A et al (2017) From phylogenetic to functional originality: guide through
+     indices and new developments. Ecol Indic 82:196–205. ​h​t​t​p​s​:​​/​/​d​o​i​​.​o​r​g​/​1​​0​.​1​0​​1​6​/​j​.​​e​c​o​l​i​​n​d​.​2​0​1​​7​.​0​6​​.​0​5​6
+Pavoine S, Gasc A, Bonsall MB, Mason NWH (2013) Correlations between phylogenetic and functional
+     diversity: mathematical artefacts or true ecological and evolutionary processes? J Veg Sci 24:781–793.
+     https://doi.org/10.1111/jvs.12051
+Pavoine S, Ollier S, Dufour A (2005) Is the originality of a species measurable? Ecol Lett 8:579–586. ​h​t​t​p​s​:​​/​
+     /​d​o​i​​.​o​r​g​/​1​​0​.​1​1​​1​1​/​j​.​​1​4​6​1​-​​0​2​4​8​.​2​​0​0​5​.​​0​0​7​5​2​.​x
+Pollock LJ, Rosauer DF, Thornhill AH et al (2015) Phylogenetic diversity meets conservation policy: small
+     areas are key to preserving eucalypt lineages. Philos Trans R Soc Lond B Biol Sci 370:20140007.
+     https://doi.org/10.1098/rstb.2014.0007
+Pollock LJ, Thuiller W, Jetz W (2017) Large conservation gains possible for global biodiversity facets.
+     Nature 546:141–144. https://doi.org/10.1038/nature22368
+Pontara V, Bueno ML, Rezende VL et al (2018) Evolutionary history of campo rupestre: an approach for
+     conservation of woody plant communities. Biodivers Conserv 27:2877–2896. ​h​t​t​p​s​:​/​/​d​o​i​.​o​r​g​/​1​0​.​1​0​0​7​/​
+     s​1​0​5​3​1​-​0​1​8​-​1​5​7​4​-​2​​​​
+Pontara V, Dexter KG, Rezende VL et al (2025) Disentangling the evolutionary history of the woody spe-
+     cies in Earth’s most diverse tropical savanna. J Biogeogr 52:e15160. https://doi.org/10.1111/jbi.15160
+Pontes PRM, Fan FM, Bravo JM, Collischonn W (2015) Initial Issues on the Hydrology of the La Plata
+     River Basin Associated to Climate Changes Using MGB-IPH and ETA-CPTEC. XXI Braz Symp Water
+     Resour
+Pörtner H-O, Scholes RJ, Agard J, et al (2021) IPBES-IPCC co-sponsored workshop report on biodiversity
+     and climate change. Zenodo. URL https://zenodo.org/record/4782538
+Potapov P, Hansen MC, Laestadius L et al (2017) The last frontiers of wilderness: tracking loss of intact forest
+     landscapes from 2000 to 2013. Sci Adv 3:e1600821. https://doi.org/10.1126/sciadv.1600821
+Procheş Ş, Wilson JRU, Cowling RM (2006) How much evolutionary history in a 10×10 m plot? Proc R Soc
+     Lond B Biol Sci 273:1143–1148. https://doi.org/10.1098/rspb.2005.3427
+Purvis A, Agapow P-M, Gittleman JL, Mace GM (2000) Nonrandom extinction and the loss of evolutionary
+     history. Science 288:328–330. https://doi.org/10.1126/science.288.5464.328
+Qian H, Deng T (2021) Geographic patterns and climate correlates of the deviation between phylogenetic
+     and taxonomic diversity for angiosperms in China. Biol Conserv 262:109291. ​h​t​t​p​s​:​/​/​d​o​i​.​o​r​g​/​1​0​.​1​0​1​6​/​
+     j​.​b​i​o​c​o​n​.​2​0​2​1​.​1​0​9​2​9​1​​​​
+R Development Core Team (2021) R: A Language and Environment for Statistical Computing
+Redding DW (2003) Incorporating Genetic Distinctness and Reserve Occupancy into a Conservation Priori-
+     tisation Approach. Univ East Angl
+
+
+                                                                                                                                         13
+3906                                                                                Biodiversity and Conservation (2025) 34:3889–3907
+
+Redding DW, DeWolff CV, Mooers AØ (2010) Evolutionary distinctiveness, threat status, and ecological
+     oddity in primates. Conserv Biol 24:1052–1058. ​h​t​t​p​s​:​​/​/​d​o​i​​.​o​r​g​/​1​​0​.​1​1​​1​1​/​j​.​​1​5​2​3​-​​1​7​3​9​.​2​​0​1​0​.​​0​1​5​3​2​.​x
+Redding DW, Hartmann K, Mimoto A et al (2008) Evolutionarily distinctive species often capture more phy-
+     logenetic diversity than expected. J Theor Biol 251:606–615. https://doi.org/10.1016/j.jtbi.2007.12.006
+Redding DW, Mooers AØ (2006) Incorporating evolutionary measures into conservation prioritization. Con-
+     serv Biol 20:1670–1678. ​h​t​t​p​s​:​​/​/​d​o​i​​.​o​r​g​/​1​​0​.​1​1​​1​1​/​j​.​​1​5​2​3​-​​1​7​3​9​.​2​​0​0​6​.​​0​0​5​5​5​.​x
+Rezende VL, Pontara V, Bueno ML et al (2021) Phylogenetic regionalization of tree assemblages reveals
+     novel patterns of evolutionary affinities in the Atlantic Forest. J Biogeogr 48:798–810. ​h​t​t​p​s​:​/​/​d​o​i​.​o​r​g​/​
+     1​0​.​1​1​1​1​/​j​b​i​.​1​4​0​3​8​​​​
+Ribeiro JF, Walter BMT (1998) Phytophytophysiognomy of the Cerrado Biome. In: Sano SM, Almeida SPD
+     (eds) Cerrado: environment and flora. Embrapa, Brasilia, pp 89–166
+Ribeiro JF, Walter BMT (2008) The main phytophysiognomies of the Cerrado biome. In: Sano SM, Almeida
+     SPD, Ribeiro JF (eds) Cerrado: ecology and flora. Embrapa, pp 151–222
+Rosauer D, Laffan SW, Crisp MD et al (2009) Phylogenetic endemism: a new approach for identifying geo-
+     graphical concentrations of evolutionary history. Mol Ecol 18:4061–4072. ​h​t​t​p​s​:​​/​/​d​o​i​​.​o​r​g​/​1​​0​.​1​1​​1​1​/​j​.​​1​3​
+     6​5​-​​2​9​4​X​.​2​​0​0​9​.​​0​4​3​1​1​.​x
+Rull V (2011) Neotropical biodiversity: timing and potential drivers. Trends Ecol Evol 26:508–513. ​h​t​t​p​s​:​/​/​
+     d​o​i​.​o​r​g​/​1​0​.​1​0​1​6​/​j​.​t​r​e​e​.​2​0​1​1​.​0​5​.​0​1​1​​​​
+Safi K, Cianciaruso MV, Loyola RD et al (2011) Understanding global patterns of mammalian functional
+     and phylogenetic diversity. Philos Trans R Soc Lond B Biol Sci 366:2536–2544. ​h​t​t​p​s​:​/​/​d​o​i​.​o​r​g​/​1​0​.​1​0​
+     9​8​/​r​s​t​b​.​2​0​1​1​.​0​0​2​4​​​​
+Schlindwein SL, Feitosa De Vasconcelos AC, Bonatti M et al (2021) Agricultural land use dynamics in the
+     Brazilian part of La Plata Basin: From driving forces to societal responses. Land Use Policy 107:105519.​
+     h​t​t​p​s​:​​/​/​d​o​i​​.​o​r​g​/​1​​0​.​1​0​​1​6​/​j​.​​l​a​n​d​u​​s​e​p​o​l​.​​2​0​2​1​​.​1​0​5​5​1​9
+Schweizer M, Ayé R, Kashkarov R, Roth T (2014) Conservation action based on threatened species capture
+     taxonomic and phylogenetic richness in breeding and wintering populations of Central Asian birds.
+     PLoS ONE 9:e110511. https://doi.org/10.1371/journal.pone.0110511
+Segovia RA, Pennington RT, Baker TR, de Coelho Souza F, Neves DM, Davis CC, Armesto JJ, Olivera-
+     Filho AT, Dexter KG (2020) Freezing and water availability structure the evolutionary diversity of trees
+     across the Americas. Sci Adv 6(19):eaaz5373. https://doi.org/10.1126/sciadv.aaz5373
+Sola F (2014) International environmental law of the La Plata Basin, 1st edn. Gedai - Ufpr
+Stein A, Kreft H (2015) Terminology and quantification of environmental heterogeneity in species-richness
+     research. Biol Rev 90:815–836. https://doi.org/10.1111/brv.12135
+Strassburg BBN, Latawiec A, Balmford A (2016) Urgent action on Cerrado extinctions. Nature 540:199–199.
+     https://doi.org/10.1038/540199a
+Tallents LA, Lovett JC, Hall JB, Hamilton AC (2005) Phylogenetic diversity of forest trees in the Usambara
+     mountains of Tanzania: correlations with altitude. Bot J Linn Soc 149:217–228. ​h​t​t​p​s​:​​/​/​d​o​i​​.​o​r​g​/​1​​0​.​1​1​​1​
+     1​/​j​.​​1​0​9​5​-​​8​3​3​9​.​2​​0​0​5​.​​0​0​4​3​1​.​x
+Taubert F, Fischer R, Groeneveld J et al (2018) Global patterns of tropical forest fragmentation. Nature
+     554:519–522. https://doi.org/10.1038/nature25508
+Tucker CM, Aze T, Cadotte MW et al (2019) Assessing the utility of conserving evolutionary history. Biol
+     Rev 94:1740–1760. https://doi.org/10.1111/brv.12526
+Tucker CM, Cadotte MW, Davies TJ, Rebelo TG (2012) Incorporating geographical and evolutionary rarity
+     into conservation prioritization. Conserv Biol 26:593–601. ​h​t​t​p​s​:​​/​/​d​o​i​​.​o​r​g​/​1​​0​.​1​1​​1​1​/​j​.​​1​5​2​3​-​​1​7​3​9​.​2​​0​1​2​.​​0​
+     1​8​4​5​.​x
+Vasconcelos ACFD, Schlindwein SL, Lana MA et al (2014) Land use dynamics in Brazilian La Plata Basin and
+     anthropogenic climate change. Clim Change 127:73–81. https://doi.org/10.1007/s10584-014-1081-8
+Veron S, Penone C, Clergeau P et al (2016) Integrating data-deficient species in analyses of evolutionary his-
+     tory loss. Ecol Evol 6:8502–8514. https://doi.org/10.1002/ece3.2390
+Veron S, Saito V, Padilla-García N et al (2019) The use of phylogenetic diversity in conservation biology
+     and community ecology: A common base but different approaches. Q Rev Biol 94:123–148. ​h​t​t​p​s​:​/​/​d​o​
+     i​.​o​r​g​/​1​0​.​1​0​8​6​/​7​0​3​5​8​0​​​​
+Visconti P, Butchart SHM, Brooks TM et al (2019) Protected area targets post-2020: Outcome-based targets
+     are needed to achieve biodiversity goals. Science 364:239–241. ​h​t​t​p​s​:​/​/​d​o​i​.​o​r​g​/​1​0​.​1​1​2​6​/​s​c​i​e​n​c​e​.​a​a​v​6​8​
+     8​6​​​
+Voskamp A, Baker DJ, Stephens PA et al (2017) Global patterns in the divergence between phylogenetic
+     diversity and species richness in terrestrial birds. J Biogeogr 44:709–721. ​h​t​t​p​s​:​/​/​d​o​i​.​o​r​g​/​1​0​.​1​1​1​1​/​j​b​i​.​
+     1​2​9​1​6​​​​
+Watson JEM, Dudley N, Segan DB, Hockings M (2014) The performance and potential of protected areas.
+     Nature 515:67–73
+
+
+
+13
+Biodiversity and Conservation (2025) 34:3889–3907                                                                                                   3907
+
+Webb CO (2000) Exploring the phylogenetic structure of ecological communities: an example for rain forest
+      trees. Am Nat 156:145–155. https://doi.org/10.1086/303378
+Webb CO, Ackerly DD, McPeek MA, Donoghue MJ (2002) Phylogenies and community ecology. Annu Rev
+      Ecol Syst 33:475–505. ​h​t​t​p​s​:​​​/​​/​d​o​​i​.​o​r​​g​/​​1​0​.​​1​1​​4​6​/​​a​n​n​u​​r​​e​v​.​e​c​​o​l​​s​y​​​s​.​3​3​.​0​1​​0​8​0​2​.​1​5​0​4​4​8
+WWAP – UNESCO (2007) La Plata Basin case study: final report. World Water Assessment Programme,
+      United Nations Educational, Scientific and Cultural Organization
+Xue T, Gadagkar SR, Albright TP et al (2021) Prioritizing conservation of biodiversity in an alpine region:
+      distribution pattern and conservation status of seed plants in the Qinghai-Tibetan Plateau. Glob Ecol
+      Conserv 32:e01885. https://doi.org/10.1016/j.gecco.2021.e01885
+Zarfl C, Lumsdon AE, Berlekamp J et al (2015) A global boom in hydropower dam construction. Aquat Sci
+      77:161–170. https://doi.org/10.1007/s00027-014-0377-0
+Zhang H, Qiu D, Zhu Y et al (2024) Evolutionary distinctiveness and conservation priorities for vascular
+      endemic plants on the Qinghai-Tibet Plateau. Glob Ecol Conserv 54:e03125. ​h​t​t​p​s​:​/​/​d​o​i​.​o​r​g​/​1​0​.​1​0​1​6​/​j​
+      .​g​e​c​c​o​.​2​0​2​4​.​e​0​3​1​2​5​​​​
+Zupan L, Cabeza M, Maiorano L et al (2014) Spatial mismatch of phylogenetic diversity across three ver-
+      tebrate groups and protected areas in Europe. Divers Distrib 20:674–685. ​h​t​t​p​s​:​/​/​d​o​i​.​o​r​g​/​1​0​.​1​1​1​1​/​d​d​i​.​
+      1​2​1​8​6​​​​
+
+Publisher's Note Springer Nature remains neutral with regard to jurisdictional claims in published maps and
+institutional affiliations.
+
+Springer Nature or its licensor (e.g. a society or other partner) holds exclusive rights to this article under a
+publishing agreement with the author(s) or other rightsholder(s); author self-archiving of the accepted manu-
+script version of this article is solely governed by the terms of such publishing agreement and applicable law.
+
+
+
+
+                                                                                                                                         13

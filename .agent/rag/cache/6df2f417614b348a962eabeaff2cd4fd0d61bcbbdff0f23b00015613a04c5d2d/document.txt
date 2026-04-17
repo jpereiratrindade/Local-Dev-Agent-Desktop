@@ -1,0 +1,957 @@
+                                                                 Egyptian Informatics Journal 24 (2023) 100390
+
+
+                                                                    Contents lists available at ScienceDirect
+
+
+                                                            Egyptian Informatics Journal
+                                                               journal homepage: www.sciencedirect.com
+
+
+
+
+AI-Driven livestock identification and insurance management system
+Munir Ahmad a, Sagheer Abbas a, Areej Fatima b, Taher M. Ghazal c, d, Meshal Alharbi e,
+Muhammad Adnan Khan f, *, Nouh Sabri Elmitwally g, h
+a
+  School of Computer Science, National College of Business Administration & Economics, Lahore 54000, Pakistan
+b
+  Department of Computer Science, Lahore Garrison University, Lahore 54000, Pakistan
+c
+  School of Information Technology, Skyline University College, University City Sharjah, Sharjah 1797, UAE
+d
+  Applied Science Research Center, Applied Science Private University, Amman 11931, Jordan
+e
+  Department of Computer Science, College of Computer Engineering and Sciences, Prince Sattam Bin Abdulaziz University, Alkharj 11942, Saudia Arabia
+f
+  Department of Software, Faculty of Artificial Intelligence and Software, Gahcon University, Seongnam 13120, Republic of Korea
+g
+  School of Computing and Digital Technology, Birmingham City University, Birmingham B4 7XG, UK
+h
+  Department of Computer Science, Faculty of Computers and Artificial Intelligence, Cairo University, Giza 12613, Egypt
+
+
+
+
+A R T I C L E I N F O                                     A B S T R A C T
+
+Keywords:                                                 Cattle identification is pivotal for many reasons. Animal health management, traceability, bread classification,
+Machine Learning                                          and verification of insurance claims are largely depended on the accurate identification of the animals.
+Transfer Learning                                         Conventionally, animals have been identified by various means such as ear tags, tattoos, rumen implants, and hot
+Deep Learning
+                                                          brands. Being non-scientific approaches, these controls can be easily circumvented. The emerging technologies of
+Artificial Intelligence
+                                                          biometric identification are extensively applied for Human recognition via thumb impression, face features, or
+                                                          eye retina patterns. The application of biometric recognition technology has now moved towards animals. Cattle
+                                                          identification with the help of muzzle patterns has shown tremendous results. For precise identification, nature
+                                                          has awarded a unique Muzzle pattern that can be utilized as a primary biometric feature. Muzzle pattern image
+                                                          scanning for biometric identification has now been extensively applied for identification. Animal recognition via
+                                                          Muzzle pattern image for different applications has been proliferating gradually. One of those applications in­
+                                                          cludes the identification of fake insurance claims under livestock insurance. Fraudulent animal owners tend to
+                                                          lodge fake claims against livestock insurance with proxy animals. In this paper, we proposed the solution to avoid
+                                                          and/or discard fraudulent claims of livestock insurance by intelligently identifying the proxy animals. Data
+                                                          collection of animal muzzle patterns remained challenging. Key aspects of the proposed system include: (1) the
+                                                          Animal face will be detected through visual using YOLO v7 object detector. (2) After face detection, the same
+                                                          procedures will apply to detect muzzle point (3) the muzzle pattern is extracted and then stored in the database.
+                                                          The System has a mean average precision of 100% for the face and 99.43% for the nose/muzzle point of the
+                                                          animal. Once the animal is registered in the database, the identification process is initiated by extracting unique
+                                                          nose pattern features with ORB and/or SIFT. Then it is matched using the pattern matchers like BFMatcher and/
+                                                          or FLANNMatcher for animal identification. The proposed model is more efficient and accurate as compared to
+                                                          concurrent approaches. The results extracted from this research study show 100% accurate identification.
+
+
+
+
+1. Introduction                                                                                accurate identification is of utmost importance. Cattle identification can
+                                                                                               broadly be categorized into two types namely contact and non-contact
+   Nature provided human beings with countless blessings and animals                           methods [2]. Under the contact method, various techniques have been
+are one of those. They are beneficial in many ways as a source of                              used manually to recognize animals such as hot iron branding, freeze
+nurtured food like meat, dairy products, and clothing such as woolen                           branding, ear tags, rumen implants, tattoos, etc. [3]. Though conven­
+and leather [1].                                                                               tional methods served the purpose to some extent but with a major
+   To protect the Cattle effectively from multiple hazards, their                              pitfall of easy circumvention [4]. Contact methods inherent major
+
+
+ * Corresponding author.
+    E-mail addresses: munir@ncbae.edu.pk (M. Ahmad), dr.sgaheer@ncbae.edu.pk (S. Abbas), areejfatima@lgu.edu.pk (A. Fatima), taher.ghazal@skylineuniversity.
+ac.ae (T.M. Ghazal), mg.alharbi@psau.edu.sa (M. Alharbi), adnan@gachon.ac.kr (M.A. Khan), Nouh.elmitwally@bcu.ac.uk (N.S. Elmitwally).
+
+https://doi.org/10.1016/j.eij.2023.100390
+Received 29 March 2023; Received in revised form 12 May 2023; Accepted 10 July 2023
+Available online 16 July 2023
+1110-8665/© 2023 THE AUTHORS. Published by Elsevier BV on behalf of Faculty of Computers and Artificial Intelligence, Cairo University. This is an open access
+article under the CC BY-NC-ND license (http://creativecommons.org/licenses/by-nc-nd/4.0/).
+M. Ahmad et al.                                                                                                       Egyptian Informatics Journal 24 (2023) 100390
+
+
+drawback of Animal stress due to the painful procedure involved to mark           labeling/ notation of images and then splitting data into train and test
+identity. However, these are invasive for the cattle and non-cost-                data.
+efficient as compared to other more effective processes [5]. Non-                     The proposed system will intelligently detect the face and muzzle
+contact methods include AI-based technologies using biometric identi­             point of the cattle, and identify/recognize the cattle using muzzle pat­
+fication and other machine learning models.                                       terns in real-time.
+    Cattle identification is equally important for Livestock Risk coverage.           The system will not only be helpful for the detection of false insur­
+Insurers are highly concerned about the exact recognition of insurable            ance claims but it can also be utilized on farms for monitoring the cattle,
+animals; not only to provide adequate cover but also to establish a firm          for their health, safety, and management. The traditional approaches to
+basis for subsequent verification. Cattle identification using conven­            recognizing cattle except for the naked eye are tagging the animal using
+tional approaches remain a significant issue for livestock insurers and           ear tags, and implanting microchips in the animal [13]. While micro­
+veterinarian for registration and health monitoring activities.                   chips like NFC, RFID, etc. are better than ear tags, they can be expensive,
+    Manual processing of cattle identification is considered highly               and hurtful to the cattle as they will be needed to be implanted inside the
+vulnerable to fake insurance claims that can’t be detected accurately             cattle and there will be a need for an expert who can safely execute the
+[4].                                                                              said procedure, which can be expensive. On the other hand, using ear
+    During the last couple of decades, with the evolvement of AI tech­            tags is not very efficient as these tags can be forged or switched from one
+nologies such as machine learning / deep learning, human recognition              animal to other pretty easily.
+using human biometrics features of the face, iris, fingerprint, etc. It has           The proposed system offers wide range of potential applications,
+become quite easy to recognize human beings with greater accuracy [6].            including the accurate and efficient tracking of individual cattle for
+The recognition using biometrics is not limited to humans anymore and             breeding or medical purposes, as well as monitoring their behavior and
+now animal recognition has also become a vital segment of this                    movement within feedlots, and identifying lost or stolen animals. This
+emerging technology [7].                                                          novel approach has the potential to revolutionize cattle management
+    The cattle identification system could be used to fulfill a variety           and tracking, resulting in increased productivity and efficiency within
+claims, animal traceability, registration, monitoring, and.                       the agricultural sector. By utilizing advanced computer vision tech­
+    Animal Registration through a Biometric system, based on scientific           niques, the proposed system provides a rapid and precise method for
+techniques is widely used for Cattle identification and traceability [8]. A       identifying specific cattle based on their unique biometric characteris­
+highly transparent process of cattle registration would mitigate the risk         tics, offering significant advantages over traditional identification
+of manipulation, fraudulent verification, and cattle swapping. The Cattle         methods.
+Registration process comprises a standard framework-based system [9]                  Section 2 demonstrates the literature review. Section 3 explains the
+for verification of bogus insurance claims of registered cattle. Not only         Research Methodology to intelligently identify cattle in real-time. It
+for Insurance Claims verification, but it’s also equally important for the        includes description of all the adopted tools and technologies for
+implementation of animal safety policies [10].                                    achievement of our research objectives. Section 4 elucidates the per­
+    Biometric identification of cattle provides fundamental information           formance of proposed model and experimental results. Section 5 con­
+for numerous applications. One of the prominent applications is to                cludes the research work and recommend some new avenues for future
+manage fake livestock Insurance claims [11]. Farm owners who have                 researches.
+insured their cattle, unfortunately, tend to make false claims because a
+non-technical layman who did not stay around the cattle so much,                  2. Literature review
+cannot easily recognize the cattle. Only those who stay for a longer
+period and are appropriately familiar with the cattle can identify which              During the last couple of decades, numerous research studies have
+one had been insured. Hence, these fraudulent farm owners successfully            been conducted on biometric features based on Animal identity [8]. The
+deceive Insurers and obtain claim money for the cattle that were not              emergence of Precision Livestock Farming (PLF) played an important
+even registered. To overcome this issue of bogus Insurance claims                 role in the fourth Industrial Revolution [14]. Owners of big cattle farms
+lodged by farm owners, an Automated Intelligent Cattle Identification             are induced to adopt new identification techniques because traditional
+and Insurance Claim Management System is proposed to overcome the                 methods are more expensive, cumbersome to implement, and sometimes
+most critical issue faced by the insurers which are fake claims. Just like        inefficient to manage a larger number of animals. Moreover, Artificial
+human fingerprints, cattle muzzle print comprises two unique features             Intelligence (AI) has made the task much easier to identify any cattle
+recognized as ridge bifurcation and ridge termination which can be used           with greater accuracy, minimal effort, and shorter time [15]. Since
+to track accurate Identity by matching relevant information with pre­             ancient times, various techniques have been employed for accurate
+served datasets.                                                                  identifications of cattle. Conventional systems of cattle recognition
+    The input parameters of the proposed system comprise three layers             include Hot or cold branding, ear tagging, ear tattoos, and ear notches
+namely Data Acquisition, Pre-processing, and Data Preparation. The                [16]. Though these are comparatively cheaper the process is very
+Data Acquisition Layer represents the source from which the data is               paining for cattle which often causes severe health issues for the animals
+firstly pooled in the system. In this segment, two activities will have           [16].
+been performed namely collection of raw images of animals and then                    Alternatively, the Biometric system uses visual features to identify an
+storing cluster datasets into the database management system. We also             individual animal. Biometric features may include iris patterns, muzzle
+use a video dataset to enhance accuracy. The Number of frames in the              images, and eye retina. These methods though introduce computerized
+video sequence impacts the identification results.                                systems but they also involve some critical challenges, such as accuracy
+    Pre-processing is an essential layer applied to extract image features        based on extracted features and time required for process completion.
+and subsequent matching procedures for object recognition [12]. The               Anders Herlin et al. [17] highlighted the usage of digital technologies
+prime objectives to be achieved in the pre-processing segment are to              such as GPS collars, E-tagging, and Chips used for RFID and its impli­
+minimize though not eliminate the noises and other particles muzzle               cations for the management and monitoring of cattle farms.
+images. Next to data collection, data will be purified by applying certain            The recent work in cattle face recognition has brought forth multiple
+processes. Major activities In Preprocessing segment include to Remove            techniques to recognize cattle faces. In earlier days of research on cattle
+Blurry and noisy images, Cropping and Resizing of images. Data Prep­              biometrics features, Scale Invariant Feature Transform (SIFT) technique
+aration is the final stage of Data input for the biometric system of Cattle       had been used to extract muzzle patterns features from image print [18].
+identification. Purified data received from preprocessing layer will              The implanted RFID chips are also used for tracking and identification of
+finally tag in the Data preparation layer. Activities performed include           cattle. However, it is challenging for large herds to implement RFID
+
+                                                                              2
+M. Ahmad et al.                                                                                                                     Egyptian Informatics Journal 24 (2023) 100390
+
+
+effectively [4]. Researchers used texture fusion techniques for the                       recognition approach using LBP and SURF feature extractors with
+extraction of muzzle features. Worapan Kusakunniran et al. [19] pro­                      Gaussian Pyramid [22] levels 1 through 4. This technique might not
+posed a fusion of Transition Local Binary Pattern with Gabor feature.                     work properly with images in different lighting conditions. Also, they
+Convolution Neural Network was proposed for greater accuracy of                           are using full face images of cattle which is not very efficient in recog­
+image recognition. The CNN technology is applied on basis of system                       nizing cattle as mostly the cattle have similar facial features. Zin et al.
+training instead of a hardcoded algorithm; resultantly a large number of                  [23] proposed a method of cow detection using ear tags, they used you
+images can be identified [20]. Kumar et al. [21] proposed cattle face                     only look once (YOLO) [24] object detection to detect cow head in real-
+
+
+Table 1
+Related Work Comparison with Proposed Solution.
+  Paper/Author         Title                         Method Used                    Accuracy       Limitation                              Our Solution
+
+  Kumar, Santosh &     Face Recognition for Cattle   LBP and SURF Feature           92.75%         The Data they have used is the          We are recognizing cattle by using
+    Singh, Sanjay.                                   Extraction along with                         photos of cattle faces. The cattle      cattle biometrics that is their nose
+    (2015).                                          Gaussian Pyramid                              have very similar faces and hence       pattern, as each animal has a unique
+                                                     Smoothing. The Algorithms                     should not be used for                  nose pattern.
+                                                     that are used are:                            identification.
+                                                     Principle Component
+                                                     Analysis
+                                                     Linear Discriminant Analysis
+                                                     Independent Component
+                                                     Analysis
+                                                     ICA_LibSVM
+  Kumar, Singh         Automatic identification of   They extracted muzzle point    96.74% with    They have used muzzle point             Considering the issue of animals
+    Sanjay. (2016).    cattle using muzzle point     texture features using:        Fuzzy-KNN      recognition and the system requires     running away, our system lets the
+                       pattern: a hybrid feature     Haralick texture features                     capturing muzzle point images of        laymen point the camera towards
+                       extraction and                techniques                                    cattle which is not an easy thing to    the animal and it will automatically
+                       classification paradigm       morphology based features,                    do as animals tend to run away.         capture images, and not just muzzle
+                                                     shape based features                                                                  point, but the animal, its face and
+                                                     Histogram of Oriented                                                                 muzzle, which can be used for even
+                                                     Gradient (HOG)                                                                        better recognition/identification of
+                                                     Wavelet                                                                               the animal.
+                                                     Colour features
+                                                     Tamuras
+                                                     Laws Texture Energy (LTE)
+                                                     Local Binary Pattern texture
+                                                     Fuzzy-Local Binary Pattern
+                                                     The Algorithm they used for
+                                                     classification:
+                                                     KNN
+                                                     Fuzzy KNN
+                                                     Radial Basis Function
+                                                     Decision Tree
+                                                     Gaussian Mixture Model
+                                                     Probabilistic Neural Network
+                                                     MLP Classifier
+                                                     Naïve Bayes Classifier
+  Kusakunniran         Biometric for Cattle          contrast limited adaptive      95.13%         They have used watershed                This issue is also dealt with in our
+    et al., (2020)     Identification using Muzzle   histogram equalization                        algorithm and estimated the             system as with our system all it is
+                       Patterns                      (CLAHE) technique to                          position of the muzzle point at the     needed to keep the camera pointed
+                                                     enhance muzzle image                          center of the image which will not      at the animal and it will
+                                                     extracted from cattle face.                   be true in real-time and cannot         automatically capture images, and
+                                                     Then BoHoG and LBP                            always keep the animal have its         not just muzzle point, but the
+                                                     histogram are used for                        muzzle point in the center.             animal, its face and muzzle, which
+                                                     recognition                                                                           can be used for even better
+                                                                                                                                           recognition/identification of the
+                                                                                                                                           animal.
+  Wang, Qin, Hou       Cattle Face Recognition       VGGNet Deep Convolutional      70%            They are using face images and no       We are recognizing cattle by using
+   and Gong,           Method Based on               Neural Network.                               animal biometrics are involved.         cattle biometrics that is their nose
+   (2020)              Parameter                     Pre-trained and fine-tuned                                                            pattern, as each animal has a unique
+                       Transfer and Deep Learning    ImageNet                                                                              nose pattern.
+  Thi Thi Zin et al.   Cow Identification System     You Only Look Once (YOLO)      96% Cow        They are using ear tags to recognize    Our system has 100% mAP for cattle
+    (2020)             Using Ear Tag Recognition     base cow Head detection.       Head           the cows, which is not an efficient     head/face detection, and our
+                                                     Images Segmentation for Ear    Detection      approach as the tags can be forged      approach is based on animal
+                                                     Tag recognition.               84% Cow        and switched.                           biometrics.
+                                                                                    recognition
+  Yongliang Qiao       Automated Individual          CNN                            93.3%          Accuracy based on video frame           We use VOLOv7 model for object
+    et al.(2021)       Cattle Identification Using   BiLSTM.                                       length may not improve or even          detection which is the most efficient
+                       Video Data: A Unified Deep    Inception-V3 CNN for visual                   decrease after a certain frame length   in speed and accuracy.
+                       Learning Architecture         feature extraction
+                       Approach
+  Ali Shojaeipour      Automated Muzzle              YOLO-ResNet-50                 99.11%         They have used a smaller dataset of     In the proposed model we use 8,020
+                       Detection and Biometric                                                     563 images. Further studies are         images which is reasonable sample
+                       Identification via                                                          required to verify the accuracy.        size for generic prediction.
+                       Few-Shot Deep Transfer
+                       Learning of Mixed Breed
+                       Cattle.
+
+
+                                                                                      3
+M. Ahmad et al.                                                                                                        Egyptian Informatics Journal 24 (2023) 100390
+
+
+time, and from there, they recognize ear tags using image segmentation              • Data Acquisition
+techniques. The problem with this technique is the ear tags that can be             • Data Preprocessing
+altered and forged. Hongyu Wang et al. [25] proposed a parametric                   • Data Augmentation
+transfer approach with VGGFace dataset and VGG-16 deep convolu­                     • Data Preparation
+tional neural network. Pre-trained VGG-16 network is then fed with
+their cattle face dataset. Their dataset contains images of cattle faces,
+which again is not a very efficient way to recognize cattle, especially            3.1. Data Acquisition
+buffalos, as in low-lit environments, their facial features cannot be
+differentiated. Santosh Kumar et al. [26] proposed a system to recognize               Raw images of cattle were taken using different smartphones with
+cattle in real-time. The proposed system recognizes cattle using the               different camera capabilities. The environments in which the images
+muzzle point or nose pattern of the cattle. It involves: (1) the cattle is         were taken were different too, to add diversity to image data. These
+captured through a video camera in real-time, (2) the frames are then              include indoor, outdoor, sunny, and cloudy weather conditions. The
+cropped into nose/muzzle point images (3) which are then preprocessed              cattle include domestic buffalos, cows, calves, and bulls. Taking pictures
+further to remove any noise or blurry images and converted into gray­              of these animals was the most difficult part of data acquisition as it
+scale images, (4) then their features are extracted using appearance-              required a lot of hard work and running after the animals. This struggle
+based feature extractor algorithms, (5) which are then stored into the             resulted in a lot of useless images, a few of which can be seen in Fig. 1.
+database. In their testing phase, they take the nose image as a query              The difficulty in taking the pictures of cattle was that the animals would
+image and then extract features using FLLP extractor. At this point, the           get scared the moment a person goes near to grab their picture, as it is
+features are matched with the features in the database, where a                    required for the dataset that the images of cattle should be clear and
+threshold value is returned, which is compared with a predefined                   have their head/face in it. Another problem that occurred was that,
+threshold value to determine the decision of cattle recognition. The               because some of the cattle were eating/grazing, their nose/muzzle point
+problem with this method is that nose images are cropped from sur­                 was covered in grass straws, hence taking such images would be of no
+veillance video frames. Santosh Kumar et al. [27] presented a compre­              use. Even though it was the priority to collect clear and concise images of
+hensive review of cattle identification along with problems/drawbacks              cattle, a lot of useless images were still captured along with the required
+involve in various methods, they emphasized on development of a                    images. Images of animals including, cows, buffalos, bulls, and calves
+framework for cattle identification via muzzle point. Table 1 has the              along with images other than these were collected, which included
+comparison of proposed solution with related work by other researchers.            humans, dogs, sheep, horses, and donkeys, etc. A dataset of 300 animals
+                                                                                   from Shojaeipour, Ali et al. [28] was also added in the dataset which
+3. Research methodology                                                            totaled in 5875 images, which were not much, as the dataset still
+                                                                                   required some cleansing.
+     The proposed system to intelligently identify cattle in real-time or in
+still images or videos requires an image dataset of cattle to be trained so        3.2. Data Preprocessing
+that it can detect the face/head and nose of cattle. The process of col­
+lecting image datasets for training and testing consists of the following              Once the data was collected, the images were then filtered out. Some
+steps, which include:                                                              irrelevant visuals which are considered noise in the data can be seen in
+                                                                                   Fig. 1, had to be deleted, some images needed cropping, and some
+
+
+
+
+                                                                    Fig. 1. Noise in Data.
+
+                                                                               4
+M. Ahmad et al.                                                                                                           Egyptian Informatics Journal 24 (2023) 100390
+
+
+images needed to be resized. This step was necessary to have images that            Table 2
+are required to properly train the system.                                          Data Distribution and Class Labels.
+                                                                                     Class           Train                  Validation             Test
+3.3. Data augmentation                                                                               Image      Label       Image      Label       Image       Label
+
+                                                                                     All             8820       14,463      480         786        100         167
+    Data augmentation is a technique where, when required, more data                 Face            8820       4945        480         269        100         56
+is generated from existing data if the existing data is not enough. That is          Nose            8820       3342        480         181        100         39
+                                                                                     Nose-Dirty      8820       2878        480         178        100         38
+the case with our dataset and thus in order to increase the data set a bit,
+                                                                                     Not-Cow         8820       3298        480         158        100         34
+data augmentation was used. The augmentation steps include: hori­
+zontal flip, − 10 degrees to 10 degrees rotation, crop, grayscale, hue,
+brightness, exposure, noise and saturation. Doing this substantially                as cow/buffalo faces, and in some case, they even detect human faces so
+increased the amount of the dataset.                                                Not-Cow class is used as shown in Table 2 to make sure the model un­
+                                                                                    derstands the difference, and to make sure the subject which is a Cow/
+3.4. Data Preparation                                                               Buffalo is in the scene and its face is being captured to get its nose
+                                                                                    pattern.
+    Now when the data is preprocessed, and augmented the next step                      Class label balance can be seen in the following analysis of training
+was to prepare it for training and testing. Our purpose is to detect the            data, Fig. 3. Total annotated dataset comprises on 15,416 class labels
+face/head, nose of cattle, dirty nose, and faces other than cows/buffalos.          representing all the four classes.
+So, for detection in images, image data has to be annotated to be trained
+for object detection. A total of 9400 images were annotated using the               3.5. Training
+open source image Labeling Tool [29]. Once annotated, it had to be split
+into training ~ 94%, validation ~ 5%, and testing 1 %, Fig. 2.                         Now that we have our dataset annotated and prepared as shown in
+    We have used five classes namely: Face, Nose, Nose-Dirty, and Not-              Fig. 4, the dataset is now ready to be trained.
+cow, Table 2.
+
+                                                                                    3.6. Detecto
+ • Face:
+
+                                                                                        We used a pre-trained Fast R-CNN ResNet-50 FPN model-based py­
+   The class represents cattle face. It is necessary to detect cattle face to
+                                                                                    thon package Detecto [30]. It is a python package based on PyTorch and
+locate muzzle point, and to make sure a cow or buffalo is present in the
+                                                                                    can be used for the training of object detection. However, it did not
+scene.
+                                                                                    prove to be efficient for our problem even though above 80% accuracy
+                                                                                    was achieved Fig. 5 shows training loss. But when the model was tested
+ • Nose:
+                                                                                    it would detect the face with above 90% accuracy.
+                                                                                        It seemed to mostly leave the nose part out, which would be a
+  Detection of Nose/Muzzle Point is the ultimate objective to extract
+                                                                                    problem as our main goal is to detect the nose once the face was
+muzzle pattern for biometric identification of the cattle, thus Nose class.
+                                                                                    detected, Fig. 6. Detecto model does not properly predict the bounding
+                                                                                    box. The bounding box predicted by the model is way off the required
+ • Nose-Dirty:
+                                                                                    subject which in our case is the cattle head/face, its nose, either dirty or
+                                                                                    not, and faces other than cattle, including humans.
+    In case the muzzle point of the animal has something on it which can
+cause the muzzle pattern or the lower lip of the animal to not be visible,
+in that case, it would be useless to extract muzzle pattern and the                 3.7. Yolov4
+identification process can be flawed, thus this class is necessary to avoid
+any dirty muzzle pattern to be captured, and the system will be able to                 We have also trained on yolov4 for object detection, which shows
+alert about the dirty muzzle of the animal.                                         considerably good mAP and no overfitting, following Fig. 7 shows the
+                                                                                    training loss and mAP gain.
+ • Not-cow:
+
+    Some object detection models are likely to detect other animal faces
+
+
+
+
+                          Fig. 2. Data Preparation.                                                          Fig. 3. Class Labels Analysis.
+
+                                                                                5
+M. Ahmad et al.                                                                                                    Egyptian Informatics Journal 24 (2023) 100390
+
+
+
+
+                                                         Fig. 4. A Sample from Annotated Data.
+
+
+                                                                                cardinality of new features has been achieved by using collective
+                                                                                convolution while the gradient-oriented routing does not change as
+                                                                                shown in Fig. 8.
+                                                                                    The process can increase learned features with the help of feature
+                                                                                mapping, shuffling, and merging in a cardinality manner. Consequently,
+                                                                                improve calculation and parameter usage. YOLOv7 is the most appro­
+                                                                                priate object detector for the aggregate scaling approach. It can be
+                                                                                applied to interlinked model architecture to compute modifications in
+                                                                                the output width of the computational block. It is recommended to scale
+                                                                                only depth in computational blocks. This approach can maintain the
+                                                                                initial model design and structure properties. Re-parameterization
+                                                                                techniques involve averaging a set of model weights to create a model
+                                                                                that is more robust to the general patterns that it is trying to model. In
+                                                                                research, there has been a recent focus on module-level re-
+                                                                                parameterization where the piece of the network has its re-
+                                                                                parameterization strategies. The YOLOv7 authors use gradient flow
+                                                                                propagation paths to see which modules in the network should use re-
+                                                                                parameterization strategies and which should not.
+                                                                                    A state-of-the-art Yolov7 object detection model is the latest intro­
+                                                                                duction to YOLO family. It has a few variants. Some of which we used for
+                       Fig. 5. Detecto Loss Curve.
+                                                                                training our data are:
+
+    Even though yolov4 showed promising results with mAP of 100% yet             • Yolov7-tiny (training from scratch)
+it was not considered final model for detection as its inference time was        • Yolov7x or Yolox (training using transfer learning)
+high.                                                                            • Yolov7 (training from scratch)
+                                                                                   a. Yolov7-tiny
+
+3.8. Yolov7 - network Architecture
+                                                                                    We performed training using transfer learning of pre-trained yolov7
+                                                                                tiny model and it can be seen in the following Fig. 9, the overall mAP
+    YOLOv7 presents the latest technology to support the multiple object
+                                                                                achieved by yolov7-tiny on our dataset is 0.9946 or 99.46%. The loss
+tracking (MOT) framework [31]. Yolov7 performs extremely well when
+                                                                                curve is seen in the Fig. 10.
+it comes to object detection. It detects objects more accurately and
+                                                                                    There is no overfitting of the model as can be seen in the figures
+swiftly than the previous versions. In this architecture enhanced
+
+                                                                            6
+M. Ahmad et al.                                                                                                  Egyptian Informatics Journal 24 (2023) 100390
+
+
+
+
+                                                     Fig. 6. Cattle Face Detection using Detecto.
+
+
+
+
+                                                             Fig. 7. Yolov4 mAP – Loss.
+
+
+above and test results are present in Fig. 11.                                variant was able achieved 83% mean average precision after being
+                                                                              trained from scratch.
+b. Yolov7x                                                                        The YOLOv7 model is trained using a deep neural network that is
+                                                                              specifically designed for object detection tasks. It comprises on three
+   We also trained yolov7x model on our dataset and the training was          main segments: the backbone network, the neck network, and the
+done from scratch, following figures: Fig. 12 & Fig. 13 show the ach­         detection head. The backbone network extracts high-level features from
+ieved overall mAP and loss curve respectively. Yolov7x mAP is around          the input image, which are important in identifying objects. The neck
+78% and the loss curve shows over fitting.                                    network refines the extracted features and integrates data from different
+                                                                              scales and resolutions, which improves the model’s accuracy. Ulti­
+c. Yolov7                                                                     mately, the detection head produces the final predictions, generating
+                                                                              bounding box predictions and class probabilities for identified objects
+    The Fig. 14 show how yolov7 model trained on our data and this yolo       using the improved features. These components are optimized using
+
+
+                                                                          7
+M. Ahmad et al.                                                                                                  Egyptian Informatics Journal 24 (2023) 100390
+
+
+
+
+                                                          Fig. 8. Yolov7 Model Architecture.
+
+
+cutting-edge methods and convolutional layers to ensure optimal per­           all these, other yolov7 models can also be fine-tuned to achieve better
+formance in object detection.                                                  results. The final model which is yolov7-tiny, is deployed on the cloud.
+    Overfitting is visible in Fig. 15, loss curve of yolov7 shows slight           We trained several object detection models from YOLO object
+overfitting of the model.                                                      detection family and Detecto, Yolo family include Yolov4, Yolov7,
+    Once the training was completed Fig. 16, comparing results of all          Yolov7x, and Yolov7-tiny. The training was done on NVidia GTX 1050 Ti
+trained models Table 3 showed that yolov7-tiny model was best among            4 GB GPU and Google Colab [32]. The training results were then
+
+                                                                           8
+M. Ahmad et al.                                                                                                    Egyptian Informatics Journal 24 (2023) 100390
+
+
+
+
+                                                       Fig. 9. YOLOv7-tiny mean Average Precision.
+
+
+                                                                                described as follows and these confusion matrices defines and summa­
+                                                                                rizes the detection model performance [33]. These confusion matrices
+                                                                                show performance of the model on training set, validation set, and test
+                                                                                set.
+
+                                                                                 • Face Class
+
+                                                                                    Face class represents dataset of 4945 images for training, 269 for
+                                                                                validation, and 56 test instances. Our model correctly classifies all im­
+                                                                                ages as shown in Table 4. Predicted results are same as actual.
+
+                                                                                 • Nose Class
+
+                                                                                    Nose class distributed as 3342 images for training, 181images for
+                                                                                validation, and 39 for testing. Table 5 shows 99% training accuracy
+                                                                                because of 34 images have been wrongly classified. While validation and
+                                                                                testing accuracy is also 99%.
+
+                                                                                 • Nose-Dirty Class
+                    Fig. 10. YOLOv7-tiny Loss Curve.
+                                                                                    Nose-Dirty class has been inserted to enhance model performance.
+compared and we found that yolov7 has better overall performance even           2878 images allocated for training while 178 images for validation, and
+though yolov4 had a mAP of 100% yet its inference time was highest              38 images were allocated for testing. Table 6 shows 99% accurate
+among all of the models.                                                        training because of 33 images have been wrongly classified. Validation
+    Table. 3 shows the comparison of different detection models that we         and testing accuracy is 99% and 100% respectively.
+used, without transformation to ONNX.
+    The yolov7 model is then transformed to ONNX (Open Neural                    • Not-Cow Class
+Network Exchange) and is simplified which further improved inference
+time and the ONNX model has inference time of 0.04 s and that too on                Not-Cow class added to prevent object selection other than Cow. It
+CPU (Intel(R) Xeon(R) Gold 5122 CPU @ 3.60 GHz 3.59 GHz).                       consists of 3298 images for training while 158 images for validation.
+    Based on comparison results and multiple test runs, we decided to           Table 7 shows 100% accuracy for training and validation, and 99% for
+deploy yolov7-tiny object detection model on cloud as our default model         testing.
+for detecting earlier defined classes, then use them to extract muzzle
+pattern features, identify the animal, and finally decide whether the           e. Cattle Identification Process
+claim for livestock insurance was fraudulent or not based on identifi­
+cation results.                                                                    In our proposed model, the cattle Identification process comprises
+                                                                                two stages. First to register the animal Table 8 & Fig. 17 with specified
+d. Confusion matrices                                                           details such as identity tag and muzzle point feature images and sec­
+                                                                                ondly how the system will process pattern matching for subsequent
+    The individual class confusion matrices of yolov7-tiny model are            recognition of the same Animal. These processes are elaborated as
+
+
+                                                                            9
+M. Ahmad et al.                                                                                                      Egyptian Informatics Journal 24 (2023) 100390
+
+
+
+
+                                                 Fig. 11. Yolov7-tiny Predicting Bounding Boxes on Test Set.
+
+
+
+
+                  Fig. 12. Yolov7-x mean Average Precision.                                        Fig. 14. Yolov7 mean Average Precision.
+
+
+
+
+                        Fig. 13. Yolov7-x Loss Curve.                                                    Fig. 15. Yolov7 Loss Curve.
+
+
+
+
+                                                                             10
+M. Ahmad et al.                                                                                                                   Egyptian Informatics Journal 24 (2023) 100390
+
+
+
+
+                                                                   Fig. 16. Model Training and Comparison.
+
+
+                                                                                                  Animal tagging is the First step of the Pseudocode statement. Unique
+Table 3
+                                                                                              Identification string to be created for each animal. The Registration Tag
+Model Comparison.
+                                                                                              provides a referential key to be mapped with the visual for subsequent
+  Models                  mAP                  Inference time        FPS                      retrieval of identity information.
+  Yolov7 Tiny             0.9946               0.06 s                35 (On Average)
+  Yolov7x                 0.7833               0.18 s                29 (On Average)          b. Video stream or Images
+  Yolov7                  0.8347               0.21 s                19 (On Average)
+  Yolov4                  1.0                  6.00 s                4 (On Average)
+  Detecto                 0.94                 4.24 s                6 (On Average)
+                                                                                                 Animal image is an essential parameter to be entered into the data­
+                                                                                              base. The system will extract biometric features from the images. it can
+                                                                                              be either a frame from a video or a single image.
+follows:
+                                                                                              c. Tag Validation
+3.8.1. Animal registration
+                                                                                                  Before starting up the animal registration process, the system vali­
+a. Insertion for Animal Registration Tag                                                      dates the tag. Duplicate, unspecified, and the substandard tag will be
+                                                                                              rejected.
+
+
+Table 4
+Confusion Matrix - Class = Face.
+  No. of Samples = 4945            True                           No. of Samples = 269         True                       No. of Samples = 56         True
+  (Train)                          (Train)                        (Val)                        (Val)                      (Test)                      (Test)
+
+  Predicted                        TP = 4945            FP = 0    Predicted                    TP = 269       FP = 0      Predicted                   TP = 56         FP = 0
+    (Train)                                                       (Val)                                                   (Test)
+                                   FN = 0               TN = 0                                 FN = 0         TN = 0      FN = 0                      TN = 0
+
+
+
+
+Table 5
+Confusion Matrix - Class = Nose.
+  No. of Samples = 3342         True (Train)                      No. of Samples = 181        True (Train)               No. of Samples = 39       True (Test)
+  (Train)                                                         (Val)                                                  (Test)
+
+  Predicted (Train)             TP = 3323               FP = 19   Predicted (Val)             TP = 180        FP = 1     Predicted                 TP = 38           FP = 1
+                                                                                                                         (Test)
+                                FN = 0                  TN = 0                                FN = 0          TN = 0                               FN = 0            TN = 0
+
+
+
+
+Table 6
+Confusion Matrix - Class = Nose-Dirty.
+  No. of Samples = 2878            True                           No. of Samples = 178        True                      No. of Samples = 38        True (Test)
+  (Train)                          (Train)                        (Val)                       (Val)                     (Test)
+
+  Predicted                        TP = 2849            FP = 29   Predicted (Val)             TP = 177       FP = 1     Predicted (Test)           TP = 38           FP = 0
+    (Train)
+                                   FN = 0               TN = 0                                FN = 0         TN = 0                                FN = 0            TN = 0
+
+
+                                                                                         11
+M. Ahmad et al.                                                                                                         Egyptian Informatics Journal 24 (2023) 100390
+
+
+Table 7
+Confusion Matrix - Class = Not-Cow.
+  No. of Samples = 3298        True                      No. of Samples = 158         True                       No. of Samples = 34       True
+  (Train)                      (Train)                   (Val)                        (Val)                      (Test)                    (Test)
+
+  Predicted                    TP = 3298        FP = 0   Predicted                    TP = 158       FP = 0      Predicted                 TP = 33         FP = 0
+    (Train)                                              (Val)                                                   (Test)
+                               FN = 0           TN = 0                                FN = 0         TN = 0                                FN = 0          TN = 1
+
+
+
+                                                                                     swiftly and accurately.
+Table 8
+Algorithm for Animal Registration.
+                                                                                      f. Detect nose within face area and mark as a nose.
+  Algorithm 1 (Animal Registration):
+
+  Input:                                                                                Next to marking the face area, system detect Nose on the animal’s
+    TAG = Animal TAG;                                                                face. The same procedure is applied as used for face detection.
+    stream = Video Stream of Animal / image of animal
+  Output:
+    image = Extracted muzzle point of Animal                                         g. Extract muzzle pattern from detect nose
+    stored in database with TAG
+    while stream do:validate                                                            At this stage, the system successfully detected the Nose area. Now
+    (TAG)                                                                            extract the muzzle pattern as the required biometric identifier.
+    frame ← stream.frame
+    frame ← frame.reshape
+    face ← Detect(frame, “Face”)                                                     h. Update database with muzzle pattern and Tag ID.
+    nose ← Detect(face, “Nose”)
+    nose ← ExtractFeature(nose)                                                         Finally, extracted muzzle pattern mapped Tag ID of the same cattle
+    image = WriteDB(nose, TAG)display
+                                                                                     and store the information in the designated database management sys­
+    (image)
+    end                                                                              tem. Show cattle image after a successful registration.
+
+                                                                                     3.8.2. Recognizing the animal
+d. Image reshapes as per defined standard parameters                                    Once the nose gets detected, the scale invariant feature transform
+                                                                                     algorithm (SIFT) is used to get key points and descriptors of muzzle point
+   Image resizing process perform after tag validation, Animal image to              image, i.e., query image, and it also finds key points and descriptors of
+be optimized to make to compatible for feature extraction procedures.                the images of nose/muzzle points of different animals stored, Table 9 &
+                                                                                     Fig. 18.
+e. Detect face area and mark as a face.
+                                                                                     3.8.3. Scale-Invariant feature Transform (SIFT)
+   Animal face recognition is essential to detect face and then proceed                 It is commonly used to extract distinguishing features from photos,
+to identify muzzle point. We use Yolov7 to perform face detection                    which enables accurate object detection and image matching. In order to
+
+
+
+
+                                                          Fig. 17. Animal Registration Algorithm.
+
+                                                                                12
+M. Ahmad et al.                                                                                                              Egyptian Informatics Journal 24 (2023) 100390
+
+
+Table 9                                                                           DoG pictures.
+Algorithm for Animal Recognition.                                                     The programme employs additional criteria to precisely localise the
+  Algorithm 2 (Animal Recognition):                                               critical points. This includes eliminating extrema or low contrast key
+                                                                                  points, as well as key-point localization triggered by rejecting files and
+  Input:
+    stream = Video Stream of Animal / image of animal                             edges. According to the equation, files and edges in the context of SIFT
+  Output:                                                                         correspond to particular properties that must be disregarded during key-
+    image, TAG = Recognized Animal with TAG                                       point localization:
+    while stream do:
+    frame ← stream.frame                                                          |D(̂x )〈0.03                                                                        (2)
+    frame ← frame.reshape
+    face ← Detect(frame, “Face”)                                                      Furthermore, edges and unstable key points are rejected by
+    nose ← Detect(face, “Nose”)                                                   analyzing the eigenvalues of the Hessian matrix H. Letting α be the
+    nose ← ExtractFeature(nose)                                                   larger eigenvalue and β be the smaller eigenvalue, the trace and deter­
+    image, TAG = Recognize(nose)display
+                                                                                  minant of H are calculated as:
+    (image, TAG)
+    end                                                                           Tr(H) = Dxx + Dyy = α + β                                                           (3)
+                                                                                                       (         )2
+find key points—areas of the image that are unaffected by adjustments             Det(H) = Dxx Dyy −       Dxy        = αβ                                            (4)
+to scale, rotation, and illumination—SIFT examines image features.                   Let r = α/β.
+                                                                                     So, α = rβ
+a) Focus Localization                                                               ( )
+                                                                                  Tr H 2     (α + β)2   (rβ + β)2   (r + 1)2
+                                                                                          =           =           =                                                   (5)
+   To precisely locate the key points in the image, the SIFT algorithm’s          Det(H)        αβ         rβ 2
+                                                                                                                        r
+key-point localization is used. It is performed by examining the image’s
+                                                                                      The algorithm checks to see if the ratio r is smaller than 10 before
+scale-space representation, which is created by applying a number of
+                                                                                  computing it as r=/. Key points are disregarded if this requirement is not
+scale-space transformations. The image is scaled to several octaves, each
+                                                                                  met when the eigenvalues are almost equal, which denotes a flat region.
+of which is half the size of the preceding octave, in order to locate the
+                                                                                      The next step in the SIFT method is orientation assignment after each
+potential feature sites. Within each octave, a scale-space pyramid is
+                                                                                  key point’s scale, location, and orientation have been established. The
+constructed by convolving the images with Gaussian blur filters. The
+                                                                                  algorithm now makes sure that the extracted characteristics are
+blurred images are represented as:
+                                                                                  rotation-invariant as well as scale-invariant. To achieve this invariance,
+L(x, y, σ) = G(x, y, σ)*l(x, y)                                       (1)         an orientation is allocated to each key point.
+                                                                                      Each key point is given an orientation by SIFT after it has examined
+    Where x,y are the variable coordinates and σ is the “scale” param­
+                                                                                  the local image region around it. The algorithm computes gradient
+eter, G(x,y,σ) is the Gaussian function, and I(x,y) is the original image.
+                                                                                  magnitudes and orientations of the image pixels within this region. The
+    Next, the adjacent blurred images inside each octave are subtracted
+                                                                                  dominant orientation in the region is then identified, and the key point is
+to create the Difference of Gaussians (DoG) images. The local scale-space
+                                                                                  assigned that orientation. This step ensures that the subsequent com­
+extrema, which correlate to possible key locations, are shown by the
+                                                                                  putations are rotationally invariant.
+
+
+
+
+                                                         Fig. 18. Animal Recognition Algorithm.
+
+                                                                             13
+M. Ahmad et al.                                                                                                       Egyptian Informatics Journal 24 (2023) 100390
+
+
+b) Computational Cost                                                                  Procedures are applied to detect the face and nose area to get the
+                                                                                   latest muzzle pattern. The system will look up the muzzle pattern with
+    The scale-space pyramid construction, DoG computation, and                     the stored information in the database. In case the pattern is matched,
+eigenvalue analysis used in the SIFT algorithm’s key-point localization            the system will get the concerned Tag ID.
+step add significant processing cost. However, this cost is required to
+guarantee the reliability and exactness of the essential points that are           3.8.4. Parameter settings
+discovered.                                                                            A comprehensive account of the parameter settings employed
+    It is pertinent to remember that the computational cost of key-point           throughout our methodology.
+localization is influenced by the size and complexity of the input image               For YOLOv7, the following parameters were utilized:
+as well as the desired degree of scale-space representation. More octaves              Input image size: 640x640.
+and scales are needed for huge photos, which increases computing cost.                 Learning rate: 0.0001.
+SIFT is now computationally practical for a variety of real-world ap­                  Batch size: 16.
+plications thanks to developments in technology and optimization                       Number of epochs: 300.
+approaches.                                                                            Optimizer: Adam.
+                                                                                       Loss function: Cross-entropy.
+c) Orientation Assignment and Key-point Descriptor                                     Regarding the SIFT algorithm, the following parameters were
+                                                                                   utilized:
+    The SIFT algorithm assigns an orientation to each key point after key-             Number of octaves: 4.
+point localization, making each key point rotation invariant. The algo­                Step size: 1.
+rithm’s ability to match important spots in various orientations is                    Contrast threshold: 0.03 (Kept to default).
+improved by this orientation assignment.                                               Edge threshold: 10.
+    The SIFT algorithm then computes a descriptor for each key point                   RANSAC threshold: 3.
+after determining the scale, location, and orientation of each key point.              For FLANN (Fast Library for Approximate Nearest Neighbors), the
+The key point’s immediate surroundings are captured by the descriptor,             following parameters were used:
+which results in a highly distinctive depiction that is resistant to varia­            K: 7.
+tions in scale, rotation, and illumination.                                            Tree type: K-D tree.
+    A region surrounding each key point is specified, often in the form of             Number of trees: 6.
+a square or circular neighborhood, in order to calculate the key-point                 Distance metric: Euclidean distance.
+descriptor. A histogram of the gradient orientations is produced                       We recognize the importance of reporting all parameter configura­
+within each of the smaller sub regions or bins that make up this region.           tions to ensure transparency and reproducibility of our methodology. By
+The gradient orientations reveal details about the boundaries and                  providing these details, we aim to enhance the comprehensiveness and
+texture of the local image structure.                                              accuracy of our paper.
+    Each pixel within the sub regions has its gradient magnitudes and
+orientations calculated, and these values are weighted by a Gaussian               4. Results ad discussion
+function centered at the critical point. This weighting prioritizes the
+gradients nearer the focal point, obtaining the most pertinent local data.             The best options and combinations of the strategies have been
+    The weighted gradient magnitudes are then added together into                  carefully evaluated for the proposed plan. The requirement for an
+orientation bins to create the histogram of gradient orientations. The             automated and non-intrusive method to capture the muzzle point of the
+key-point descriptor is formed from this histogram and is often displayed          cattle served as the driving force for the choice of YOLOv7 as the object
+as a high-dimensional feature vector. The number of bins utilized in the           identification framework. Other conventional techniques, including
+orientation histogram and other factors set during the descriptor                  personally photographing animals up close or employing restraints, can
+computation determine how dimensional the descriptor is.                           be time-consuming, labor-intensive, and possibly upsetting to the ani­
+    The resulting key-point descriptors are strong and distinctive,                mals. We were able to record the animals from a safe distance while
+allowing for quick matching and scene identification. To determine                 minimizing disruption to their natural behavior by utilizing YOLOv7 to
+which critical points in distinct photos match up best, they can be                automate the procedure of finding the muzzle point.
+compared using a variety of distance measures, such as Euclidean dis­                  Additionally, the difficulties with other well-known techniques like
+tance or cosine similarity.                                                        CNN, RCNN, RESNET, and VGG16 that did not deliver adequate out­
+                                                                                   comes in terms of muzzle pattern identification led to the choice to use
+d) FLANN Based Matcher                                                             Scale-Invariant Feature Transform (SIFT) for muzzle pattern feature
+                                                                                   extraction. For extracting distinguishing features from photos, particu­
+   FLANN-based matcher or Brute Force matcher is then used to match                larly when there are variations in scale, rotation, and viewpoint, SIFT is
+the key points and descriptors of the query image with the images in the           a well-known and reliable technique. We deployed SIFT to the muzzle
+data, and if it matches with the image of the animal in the data, it will          region in an effort to record distinctive patterns that could be used for
+return the tag associated with that matched image in data, thus,                   precise animal identification and recognition.
+recognizing/identifying the animal.                                                    Our system can detect face and muzzle point of cow/buffalo with
+                                                                                   mAP of 99%, not only that but this system has the capability to differ­
+ i. Video stream or Images                                                         entiate cows/buffalos from other cattle as well as humans. The inference
+                                                                                   time is also remarkable as we have used the state of the art yolov7 object
+    On the spot image/video capture to identify registered cattle.                 detection model. As far as recognition is concerned, the feature match­
+                                                                                   ing algorithm FLANN is used for muzzle point pattern recognition. The
+ii. Reshape as per defined standard parameters                                     system was able to recognize the animal with 100% accuracy. The
+                                                                                   testing was done by registering the animal in the system using an image
+   Same procedures have been applied to the captured image as already              and then tested with different images in different environments. Images
+performed during the registration process.                                         of a total of 500 animals were used to evaluate recognition algorithm
+                                                                                   and it recognized all the animals with 100% accuracy beating the
+   iii. Match image with stored muzzle pattern and Tag ID.                         humans because at one point we were not able to recognize the animal
+
+                                                                              14
+M. Ahmad et al.                                                                                                         Egyptian Informatics Journal 24 (2023) 100390
+
+
+by just looking at the picture but the system successfully recognized the
+animal.
+
+4.1. Proposed model
+
+    The Fig. 19 represents our proposed model for the purpose of tack­
+ling livestock insurance fraud by biometrically identifying cattle
+through their muzzle point patterns.
+
+4.2. Confusion Matrix
+
+    In this research study, though our prime objective is to present a most
+efficient and effective model for cattle.
+    Identification it would be helpful for biometric identification of other
+Animals having muzzle pattern. Fig. 20 is the confusion matrix showing
+the performance of the system in identification of the animal.
+    Following is the Table 10, enlisting animals that have unique
+distinguishable features:                                                                         Fig. 20. Cattle Identification Confusion Matrix.
+    Our proposed model takes cattle images/videos in real-time and yolo
+object detection model extracts muzzle point in two steps, first is to              registration. In case of recognition, the extracted features are then
+extract the head/face of the animal in order to make sure that only cow,            transferred to the matcher algorithm which matches the muzzle point
+buffalo, bull, and/or a calf is present in the scene, next once the muzzle          features with already stored muzzle features in database and in case of a
+point is taken out, its features are extracted and stores in case of animal
+
+
+
+
+                                                                  Fig. 19. Proposed Model.
+
+                                                                               15
+M. Ahmad et al.                                                                                                                Egyptian Informatics Journal 24 (2023) 100390
+
+
+Table 10                                                                                    5. Conclusion
+Animal Unique Features.
+  Sr. No                         Animal                          Unique Feature                 Accurate identification of cattle is very critical and remains chal­
+                                                                                            lenging for veterinarian and livestock Insurer. They have been facing
+  1                              Cows                            Muzzle/Nose Pattern
+  2                              Bulls                           Muzzle/Nose Pattern        problems for registration and subsequent accurate recognition of regis­
+  3                              Calves                          Muzzle/Nose Pattern        tered animals. Livestock insurance frauds not only entail financial losses
+  4                              Buffalos                        Muzzle/Nose Pattern        to the insurers but they also limit the capacity of livestock Insurers to
+  5                              Horses                          Muzzle/Nose Pattern        provide services to the potential clients.
+  6                              Goats                           Muzzle/Nose Pattern
+  7                              Sheep                           Muzzle/Nose Patter
+                                                                                                In this paper, we introduced a unique approach based on Yolov7
+  8                              Cats                            Nose Pattern               techniques of object detection. It detects objects more accurately and
+  9                              Dogs                            Nose Pattern               swiftly than the previous versions. Our dataset includes 9400 images.
+  10                             Lions                           Whisker Holes              Total annotated dataset comprises 15,416 class labels representing all
+                                                                                            the four classes face, nose, dirty nose and not cow. Then had to be split
+                                                                                            into training ~ 94%, validation ~ 5%, and testing 1%.
+hit, it returns the tag of the animal which can assure genuineness of the
+                                                                                                Images of a total of 500 animals were used to evaluate the recogni­
+insurance claim, but if the matcher does not recognize, then that would
+                                                                                            tion algorithm and it recognized all the animals with 100% accuracy as
+mean that the animal was not registered in the system which subse­
+                                                                                            we have kept the threshold of recognition by considering the sensitivity
+quently tells that the claim for livestock insurance was fraudulent.
+                                                                                            of the risk involved Animal is considered as recognized if the recognition
+    The algorithms for cattle identification systems are compared in
+                                                                                            algorithm matches at most 10 key points and descriptors. But this can be
+Table 11, along with the detection and identification accuracy rates. The
+                                                                                            changed which can change the accuracy of animal identification.
+first system uses the Fuzzy-KNN algorithm in combination with the
+                                                                                                The proposed model may be applied to resolve cattle identification
+Hybrid Feature Extraction and Classification approach to achieve an
+                                                                                            current issues, and also lead to exploring other identification technolo­
+accuracy rate of 96.74% with a loss rate of 3.26%. However, as animals
+                                                                                            gies to protect livestock from serious diseases and avoid financial loss.
+tend to flee, collecting muzzle point photographs of cattle for this
+                                                                                            Likewise, it may be helpful for Livestock Insurers to substantiate valid
+technique can be difficult.
+                                                                                            claims by accurate identification of the exactly insured animal. We are
+    The second system achieves a 95.13% accuracy rate with a 4.87%
+                                                                                            confident that this research work will provide a firm basis for future
+loss rate using the BoHoG and LBP Histogram algorithms. However, they
+                                                                                            studies on the identification of other animals having muzzle patterns as
+use the watershed approach to estimate the location of the muzzle point
+                                                                                            listed in Table 10. The application of more advanced methodologies
+in the image’s center, which might not be precise in real-time scenarios.
+                                                                                            with an extended system for a huge dataset is highly recommended as a
+    With the help of the VGGNet-DCNN algorithm and the Cattle Face
+                                                                                            research area for future work. Researchers should focus on techniques to
+Recognition Method, the third system achieves an identification accu­
+                                                                                            provide more accurate robust identification irrespective of the muzzle
+racy rate of 70.00%. The YOLO algorithm, which is used by the fourth
+                                                                                            pattern quality.
+system, has a detection accuracy rate of 96.00%. However, because they
+                                                                                                Funding statement
+can be switched or faked, ear tags are not a reliable method for identi­
+                                                                                                This research program is partially funded by the United Insurance
+fying cows.
+                                                                                            Company of Pakistan Ltd. in collaboration with United Software and
+    The fifth system achieves a 93.30% identification accuracy rate with
+                                                                                            Technologies International (Pvt) Ltd. under Grant No.UICL-06–2022/
+a 6.70% loss rate by utilizing a Unified Deep Learning Architecture
+                                                                                            USTI-RND-006/11/2022.
+method with BiLSTM and Inception-V3 CNN algorithms. However, after
+a certain frame length, the accuracy based on video frame length may
+not improve or even decline.                                                                CRediT authorship contribution statement
+    The sixth system uses YOLO and Few-Shot Deep Transfer Learning
+algorithms for Automated Muzzle Detection and Biometric Identifica­                             Munir Ahmad: Resources, Formal analysis, Writing – original draft.
+tion, achieving a 99.11% detection accuracy rate with a 0.99% loss rate.                    Sagheer Abbas: Resources, Supervision. Areej Fatima: Resources,
+    Our proposed algorithm, which uses YOLOV7 and Muzzle Pattern                            Writing – original draft. Taher M. Ghazal: Formal analysis, Writing –
+Feature Matching algorithms, achieved exceptional results. It achieved a                    original draft, Writing – review & editing. Meshal Alharbi: Writing –
+detection accuracy rate of 99.50% with a 0.50% loss rate and a perfect                      original draft, Writing – review & editing. Muhammad Adnan Khan:
+identification accuracy rate of 100.00% with 0.00% loss rate. The pro­                      Formal analysis, Supervision. Nouh Sabri Elmitwally: .
+posed deep learning-based systems using YOLO algorithm demonstrated
+superior performance in terms of detection and identification accuracy                      Declaration of Competing Interest
+rates.
+                                                                                                 The authors declare that they have no known competing financial
+
+Table 11
+Comparing Proposed Model with Different Research Approaches.
+  Sr.      Title                                                  Algorithms                Detection        Detection Loss   Identification          Identification Loss
+  No                                                                                        Accuracy Rate    Rate (%)         Accuracy Rate (%)       Rate (%)
+                                                                                            (%)
+
+  1        Hybrid Feature Extraction and Classification           Fuzzy-KNN                  –                –               96.74                    3.26
+  2        Biometric for Cattle Identification using Muzzle       BoHoG and LBP              –                –               95.13                    4.87
+           Patterns                                               Histogram
+  3        Cattle Face Recognition Method Based on Parameter      VGGNet-DCNN                –                –               70.00                   30.00
+           Transfer and Deep Learning
+  4        Cow Identification System Using Ear Tag Recognition    YOLO                      96.00            4.00              –                       –
+  5        Automated Individual Cattle Identification Using       BiLSTM.                    –               –                93.30                    6.70
+           Video Data: A Unified Deep Learning Architecture       Inception-V3 CNN
+           Approach
+  6        Automated Muzzle Detection and Biometric               YOLO & Few-Shot Deep      99.11            0.99              –                       –
+           Identification                                         Transfer Learning
+
+
+                                                                                       16
+M. Ahmad et al.                                                                                                                             Egyptian Informatics Journal 24 (2023) 100390
+
+
+interests or personal relationships that could have appeared to influence                         [15] Xu B, Wang W, Guo L, Chen G, Wang Y, Zhang W, et al. Evaluation of deep learning
+                                                                                                       for automatic multi-view face detection in cattle. Agriculture 2021;11(11):1062.
+the work reported in this paper.
+                                                                                                  [16] Awad AI. From classical methods to animal biometrics: A review on cattle
+                                                                                                       identification and tracking. Comput Electron Agric 2016;123:423–35.
+References                                                                                        [17] Herlin A, Brunberg E, Hultgren J, Högberg N, Rydberg A, Skarin A. Animal welfare
+                                                                                                       implications of digital tools for monitoring and management of cattle and sheep on
+ [1] Awad AI, Hassaballah M. Bag-of-visual-words for cattle identification from muzzle                 pasture. Animals 2021;11:829.
+     print images. Appl Sci 2019;9:4914.                                                          [18] Ahmed S, Gaber T, Tharwat A, Hassanien AE, Snáel V. Muzzle-based cattle
+ [2] Li G, Erickson GE, Xiong Y. Individual Beef Cattle Identification Using Muzzle                    identification using speed up robust feature approach. 2015 Int. Conf Intell Netw
+     Images and Deep Learning Techniques. Animals 2022;12:1453.                                        Collab Syst 2015:99–104.
+ [3] A.I. Awad A.E. Hassanien H.M.A. Zawbaa cattle identification approach using live             [19] W. Kusakunniran A. Wiratsudakul U. Chuachan S. Kanchanapreechakorn T.
+     captured muzzle print images. Adv. Secur. Inf. Commun. Networks First Int. Conf.                  Imaromkul Automatic cattle identification based on fusion of texture features
+     SecNet, Cairo, Egypt, Sept. 3–5, 2013 Proc. 2013 2013 143 152.                                    extracted from muzzle images. IEEE Int Conf. Ind. Technol. 2018 2018 1484 1489.
+ [4] Kumar S, Pandey A, Sai Ram Satwik K, Kumar S, Singh SK, Singh AK, et al. Deep                [20] Rudenko O, Megel Y, Bezsonov O, Rybalka A. Cattle breed identification and live
+     learning framework for recognition of cattle using muzzle point image pattern.                    weight evaluation on the basis of machine learning and computer vision. CMIS
+     Measurement 2018;116:1–17.                                                                        2020;2608:939–54.
+ [5] Tharwat A, Gaber T, Hassanien AE. Two biometric approaches for cattle                        [21] Kumar S, Singh SK, Singh R, Singh AK. Animal biometrics: Techniques and
+     identification based on features and classifiers fusion. Int J Image Min 2015;1:                  applications. Anim Biometrics Tech Appl 2018:1–243. https://doi.org/10.1007/
+     342–65.                                                                                           978-981-10-7956-6.
+ [6] Ammour B, Boubchir L, Bouden T, Ramdani M. Face–iris multimodal biometric                    [22] Adelson EH, Anderson CH, Bergen JR, Burt PJ, Ogden JM. Pyramid methods in
+     identification system. Electronics 2020;9:85.                                                     image processing. RCA Eng 1984;29:33–41.
+ [7] Neethirajan S, Reimert I, Kemp B. Measuring farm animal emotions—Sensor-based                [23] Zin TT, Misawa S, Pwint MZ, Thant S, Seint PT, Sumi K, et al. IEEE 2nd Glob. Conf
+     approaches. Sensors 2021;21:553.                                                                  Life Sci Technol 2020;2020:65–6.
+ [8] Kumar S, Singh SK. Visual animal biometrics: survey. IET. Biometrics 2017;6(3):              [24] Bochkovskiy A, Wang C-Y, Liao H-Y-M. Yolov4: Optimal speed and accuracy of
+     139–56.                                                                                           object detection. ArXiv Prepr ArXiv200410934 2020.
+ [9] Kumar S, Singh SK, Abidi AI, Datta D, Sangaiah AK. Group sparse representation               [25] Wang H, Qin J, Hou Q, Gong S. Cattle face recognition method based on parameter
+     approach for recognition of cattle on muzzle point images. Int J Parallel Program                 transfer and deep learning. J Phys Conf Ser 2020;1453:12054.
+     2018;46(5):812–37.                                                                           [26] Kumar S, Singh SK, Singh RS, Singh AK, Tiwari S. Real-time recognition of cattle
+[10] Kumar S, Singh SK, Singh AK. Muzzle point pattern based techniques for individual                 using animal biometrics. J Real-Time Image Process 2017;13(3):505–26.
+     cattle identification. IET Image Process 2017;11(10):805–14.                                 [27] Kumar S, Singh SK. Cattle recognition: A new frontier in visual animal biometrics
+[11] Bello RW, Olubummo DA, Seiyaboh Z, Enuma OC, Talib AZ, Mohamed ASA. Cattle                        research. Proc Natl Acad Sci India Sect A Phys Sci 2020;90(4):689–708.
+     identification: the history of nose prints approach in brief. IOP Conf Ser Earth             [28] Shojaeipour A, Falzon G, Kwan P, Hadavi N, Cowley FC, Paul D. Automated muzzle
+     Environ Sci 2020;594(1):012026.                                                                   detection and biometric identification via few-shot deep transfer learning of mixed
+[12] Kumar S, Singh SK. Automatic identification of cattle using muzzle point pattern: a               breed cattle. Agronomy 2021;11:2365.
+     hybrid feature extraction and classification paradigm. Multimed Tools Appl 2017;             [29] Tzutalin. labelImg. Https://GithubCom/ 2018.
+     76(24):26551–80.                                                                             [30] Bi A. Detecto 2019.
+[13] Ruhil AP, Mohanty TK, Rao SVN, Lathwal SS, Subramanian VV, et al. Radio-                     [31] Yang F, Zhang X, Liu B. Video object tracking based on YOLOv7 and. DeepSORT
+     frequency identification: A cost effective tool to improve livestock sector. Indian J             2022;14:2015–8.
+     Anim Sci 2013;83:871–9.                                                                      [32] Google. Google Colab. Https://ColabResearchGoogleCom/ n.d.
+[14] García R, Aguilar J, Toro M, Pinto A, Rodríguez P. A systematic literature review            [33] Bowes D, Hall T, Gray D. Comparing the performance of fault prediction models
+     on the use of machine learning in precision livestock farming. Comput Electron                    which report multiple performance measures: Recomputing the confusion matrix.
+     Agric 2020;179.                                                                                   ACM Int Conf Proceeding Ser 2012:109–18. https://doi.org/10.1145/
+                                                                                                       2365324.2365338.
+
+
+
+
+                                                                                             17

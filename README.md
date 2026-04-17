@@ -10,6 +10,7 @@ Aplicação desktop local em C++ (SDL2 + OpenGL + Dear ImGui) para interação c
 - Controles inline na caixa de pergunta: `Modelo`, `Reasoning`, `Acesso`.
 - Níveis de acesso de ferramentas: `Read-only`, `Workspace-write`, `Full-access`.
 - Ferramentas nativas: leitura/escrita de arquivo, listagem de diretório, busca textual e execução de comando.
+- Ferramentas nativas de workspace para agir como agente de código: criar diretórios, mover/renomear caminhos, remover artefatos e validar via shell.
 - Seletor de pasta interno (nativo da UI), com navegação, criação de pasta e fallback para seletor do sistema.
 - Histórico de diálogos por projeto com sidebar `DIALOGOS` e menu `Diálogos Recentes`.
 - Persistência de sessão por projeto em `.agent/sessions/*.json` + `last_session.json`.
@@ -137,6 +138,26 @@ A aplicação detecta modelos locais no startup e exibe sugestões de vocação 
 
 - O workspace ativo impacta ferramentas e contexto.
 - O histórico é salvo por projeto, não global.
+- O agente lê `AGENT.md` e `PROJECT_CONTEXT.md` na raiz do projeto, quando existirem.
+- Skills reutilizáveis podem ser colocadas em `.agent/skills/` ou `skills/` usando `.md`, `.txt` ou `.json`.
+- Para geração de projetos, prefira registrar skills como `create-cmake-project`, `scaffold-api`, `generate-tests` e `review-and-fix-build`.
+- O sistema trata `perfil`, `skills` e `ferramentas/contexto` como camadas complementares:
+  `perfil` orienta como pensar, `skill` sugere como começar, e tools/RAG/MCP ampliam contexto e ação.
+- Skills são preferenciais e flexíveis: o agente pode combiná-las, adaptá-las ou ignorá-las se o contexto real indicar caminho melhor.
+
+## Skills de exemplo
+
+Este repositório já inclui skills iniciais em `.agent/skills/`:
+
+- `create-cmake-project`: scaffold mínimo compilável com CMake
+- `scaffold-api`: estrutura inicial de backend/API
+- `generate-tests`: criação incremental de testes executáveis
+- `review-and-fix-build`: reprodução e correção de falhas de build
+- `coding-execution`: execução concreta sobre código, com validação
+- `writing-chapter`: elaboração de capítulo com estrutura e prosa
+- `research-project`: desenho de projeto de pesquisa com rigor e flexibilidade
+
+Essas skills entram no prompt do orquestrador automaticamente e servem como guia operacional para o modo agente.
 
 ## Licença
 

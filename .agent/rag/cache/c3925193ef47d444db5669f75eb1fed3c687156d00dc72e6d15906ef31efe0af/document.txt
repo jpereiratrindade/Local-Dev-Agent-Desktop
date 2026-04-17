@@ -1,0 +1,455 @@
+                                                                                           ESCOLA
+                                                                                           SUPERIOR
+                                                                                           DE REDES
+
+
+
+
+                      Este PDF interativo possibilita links, botões e um índice clicável, assim,
+                      você pode fazer sua leitura com muito mais praticidade e agilidade.
+
+
+      APROVEITE
+                      No canto superior esquerdo, em todas as páginas, você encontrará
+                      botões para nossas redes sociais.
+
+
+      AS FUNÇÕES
+                      Na parte inferior de cada página, verá um botão que, automaticamente,
+                      retorna ao Sumário.
+
+
+      INTERATIVAS
+                      No Sumário clicável, você pode ir diretamente para o capítulo que
+                      deseja.
+
+
+      DESSE E-BOOK!
+                      Por fim, sempre que o texto estiver assim, significa que é um link para
+                      uma página externa, para que você possa se aprofundar em algumas
+                      informações.
+
+                      Esperamos que essas funções ajudem você na leitura do texto.
+
+
+
+
+• voltar ao SUMÁRIO                                                                                2
+                                                                                                                                                                                                                                            ESCOLA
+                                                                                                                                                                                                                                            SUPERIOR
+                                                                                                                                                                                                                                            DE REDES
+
+
+
+
+SUMÁRIO
+1. Introdução. ....................................................................................................................................................................................................................... 04
+2. Como a administração de sistemas pode atuar na automação . ........................................... 06
+      de processos críticos para aumentar a eficiência em TI?
+3. Benefícios da automação em TI . ................................................................................................................................................ 13
+4. Por que se especializar em administração de sistemas? . ................................................................. 15
+5. Para dominar a área de administração de sistemas: ESR! . ............................................................. 16
+
+
+
+
+                                                                                                                                                                                                                                                   3
+                                                          ESCOLA
+                                                          SUPERIOR
+                                                          DE REDES
+
+
+
+
+1. Introdução
+Você realmente sabe qual é o papel da administração
+de sistemas na transformação digital?
+
+O administrador de sistemas possui uma atuação
+técnica fundamental na infraestrutura das organizações,
+sendo responsável por planejar, implementar,
+configurar e monitorar sistemas computacionais,
+servidores, redes e serviços de TI.
+
+Com habilidades predominantemente técnicas e
+conhecimento profundo da infraestrutura, esse profis-
+sional (sysadmin) tem a função de garantir que todos os
+componentes tecnológicos funcionem adequadamente
+para atender às necessidades das empresas.
+
+
+
+
+• voltar ao SUMÁRIO                                              4
+                                                                        ESCOLA
+                                                                        SUPERIOR
+                                                                        DE REDES
+
+
+
+
+                      Em outras palavras, isso significa dizer que a administra-
+                      ção de sistemas é a área responsável pela configuração,
+                      manutenção, monitoramento e segurança da infraes-
+                      trutura de TI, incluindo servidores, sistemas operacionais,
+                      redes, bancos de dados, serviços de nuvem e ferramen-
+                      tas de automação. Dessa forma, podemos dizer que a
+                      administração de sistemas de informação aborda três
+                      itens importantes que interagem entre si: administra-
+                      ção, organização e tecnologia.
+
+                      E é exatamente por ter essa base que a área se torna tão
+                      fundamental para o desenvolvimento da inovação como
+                      uma estratégia de negócios, desempenhando um papel
+                      central na transformação digital das empresas.
+
+                      Neste e-book, você vai compreender como a
+                      combinação entre administração de sistemas,
+                      automação e transformação digital pode impulsionar
+                      a eficiência das empresas, especialmente na área da
+                      Tecnologia da Informação em si.
+
+                      Boa leitura!
+
+
+
+• voltar ao SUMÁRIO                                                             5
+                                                         ESCOLA
+                                                         SUPERIOR
+                                                         DE REDES
+
+
+
+
+2. Como a administração
+de sistemas pode atuar na
+automação de processos
+críticos para aumentar a
+eficiência em TI?
+A transformação digital e o papel da administração de
+sistemas em sua implementação estão intrinsecamente
+ligados à demanda por automação. Em linhas gerais,
+a automação é um dos aspectos que aceleram a
+transformação digital e a inovação nas empresas, sendo
+uma necessidade do mercado moderno. Ou seja, ela é
+não apenas uma aliada, mas uma extensão natural da
+administração de sistemas.
+
+
+
+
+• voltar ao SUMÁRIO                                             6
+                                                                        ESCOLA
+                                                                        SUPERIOR
+                                                                        DE REDES
+
+
+
+
+                      Isso porque, ao mesmo tempo que a TI assume uma
+                      posição estratégica dentro das empresas, cresce tam-
+                      bém a exigência por ambientes mais ágeis, resilientes e
+                      capazes de operar com mínima intervenção humana e
+                      máxima eficiência. Portanto, administrar sistemas hoje vai
+                      muito além de manter servidores funcionando ou resolver
+                      problemas pontuais. Significa criar ambientes inteli-
+                      gentes capazes de se autogerenciar, antecipar falhas e
+                      escalar recursos conforme a necessidade do negócio.
+
+                      A seguir, vamos entender como isso acontece na prática.
+
+                        O primeiro passo é a identificação
+                        do que deve ser automatizado.
+
+                      Antes de pensar em ferramentas, é essencial mapear
+                      quais são os processos críticos que mais consomem
+                      tempo, são suscetíveis a erros ou impactam diretamente
+                      a disponibilidade e segurança da TI. A tabela a seguir
+                      pode ajudar você nesse processo.
+
+
+
+• voltar ao SUMÁRIO                                                             7
+                                                                                                                   ESCOLA
+                                                                                                                   SUPERIOR
+                                                                                                                   DE REDES
+
+
+
+
+                                Exemplos de processos comuns para a automação:
+
+
+
+
+    Provisionamento de                Gerenciamento de               Gerenciamento de           Atualizações de segurança
+   servidores, recursos e          incidentes para suporte               backups:                       e patches:
+       configuração:                     ao usuário
+                                                                  O backup e a recuperação      Manter sistemas atualizados
+ Ferramentas de automação          Automação de etapas do          de dados são essenciais      é uma prática fundamental
+   podem criar e configurar        serviço relacionadas com       para as empresas. Por isso,       para reduzir riscos de
+  máquinas virtuais, instalar      o suporte ao usuário para      automatizar esse aspecto      ataques e vulnerabilidades.
+  softwares e configurações        facilitar a identificação de   é uma das prioridades do       A automação permite que
+ padrão de modo planejado,         gargalos e falhas. É o caso,   negócio. Com base nessa        atualizações de segurança
+        ágil e seguro.               por exemplo, de tickets        decisão, é possível criar   e correções sejam aplicadas
+                                   automatizados e chatbots       uma programação regular           de forma recorrente,
+                                     que podem auxiliar no        de backups e automatizar      controlada e sem depender
+                                   tratamento de incidentes       a recuperação em caso de        de intervenção manual,
+                                    e na resposta em menor                   falhas.            reduzindo falhas humanas
+                                           tempo hábil.                                         e garantindo mais proteção
+                                                                                                        ao ambiente.
+
+
+
+
+• voltar ao SUMÁRIO                                                                                                       8
+                                                                                                                ESCOLA
+                                                                                                                SUPERIOR
+                                                                                                                DE REDES
+
+
+
+
+                      Monitoramento de             Controle de acesso e            Gerenciamento de
+                      recursos e alertas:              permissões:                     backups:
+
+                    Por meio da automação,          Automatizar a gestão        O backup e a recuperação
+                      é possível monitorar o      de usuários, permissões        de dados são essenciais
+                  desempenho de servidores,        e acessos garante mais       para as empresas. Por isso,
+                     redes, bancos de dados       segurança e governança        automatizar esse aspecto
+                     e outros ativos de TI em    sobre quem pode acessar        é uma das prioridades do
+                   tempo real. Assim, quando     o quê dentro dos sistemas.     negócio. Com base nessa
+                  um recurso atinge um limite     Você pode pensar tanto          decisão, é possível criar
+                  crítico, como uso elevado de     na criação e revogação       uma programação regular
+                    CPU, espaço em disco ou        automática de acessos        de backups e automatizar
+                  falhas de conexão, o sistema     quanto na aplicação de       a recuperação em caso de
+                   gera alertas automáticos e      políticas baseadas em                   falhas.
+                  até executa ações corretivas       cargos ou funções.
+                    sem intervenção manual.
+
+
+
+
+            Vale a pena, ainda, conferir, por meio do checklist disponibilizado neste material, se o processo
+                         observado para a automação é realmente indicado para esse propósito.
+
+
+
+
+• voltar ao SUMÁRIO                                                                                                    9
+                                                            ESCOLA
+                                                            SUPERIOR
+                                                            DE REDES
+
+
+
+
+                      Checklist: vale automatizar se:
+
+
+                             O processo é repetitivo?
+
+
+
+                             O processo é suscetível a
+                             erros manuais?
+
+
+                             Tem impacto direto na
+                             disponibilidade e segurança?
+
+
+                             Tem alto custo operacional
+                             quando feito manualmente?
+
+
+
+
+• voltar ao SUMÁRIO                                               10
+                                                                                                  ESCOLA
+                                                                                                  SUPERIOR
+                                                                                                  DE REDES
+
+
+
+
+É recomendado também conhecer e estudar as
+ferramentas de automação capazes de aprimorar   Provisionamento:                 Monitoramento:
+
+esse objetivo nas empresas:                     Terraform, Ansible,               Nagios, Zabbix,
+                                                 CloudFormation                Prometheus, Grafana
+
+
+
+
+                                                  Orquestração:                         Backup:
+
+                                                Kubernetes, Docker               Bacula, Amanda,
+                                                     Swarm                    cloud-native solutions
+
+
+
+
+                                                        Gerenciamento de configuração:
+
+                                                              Puppet, Chef, SaltStack
+
+
+
+
+• voltar ao SUMÁRIO                                                                                     11
+                                                                                                                  ESCOLA
+                                                                                                                  SUPERIOR
+                                                                                                                  DE REDES
+
+
+
+
+                       Depois disso, você pode acompanhar o fluxo visual geral de automação em TI:
+
+
+                        01                                  02                                  03
+
+                Mapeamento de                     Definição dos objetivos            Escolha das ferramentas
+               processos críticos                     da automação
+                                                                                    (Selecionar as soluções que
+             (Identificar as atividades          (Estabelecer metas claras:           melhor se adequam ao
+               repetitivas, manuais e             reduzir falhas? Diminuir          ambiente e ao processo que
+               suscetíveis a erros que             o tempo de execução?                 será automatizado)
+            impactam a operação ou                Melhorar a segurança?)
+                    segurança)
+
+
+
+
+                       06                                   05                                   04
+          Monitoramento contínuo e                Testes e validação dos                Desenvolvimento dos
+             ajustes constantes                  processos automatizados                 scripts/playbooks/
+                                                                                             processos
+              (Acompanhar se os                   (Testá-los em ambientes
+           processos automatizados               de homologação antes de               (Configurar os processos
+              estão funcionando                  rodar na produção. Ajustar             dentro das ferramentas
+             corretamente, coletar                 erros, otimizar etapas e             escolhidas, escrevendo
+           métricas, corrigir falhas e           garantir que a automação              scripts ou playbooks que
+           atualizar scripts conforme                funcione conforme                 definem o que será feito
+                   necessário)                            planejado)                      automaticamente)
+
+
+
+
+• voltar ao SUMÁRIO                                                                                                     12
+                                                       ESCOLA
+                                                       SUPERIOR
+                                                       DE REDES
+
+
+
+
+3. Benefícios da
+automação em TI
+São diversos os benefícios da TI e de processos
+automatizados nas empresas, entre eles:
+
+• Provisionamento: otimiza o provisionamento
+  de recursos de TI, como é o caso de servidores,
+  armazenamento e rede;
+
+• Orquestração de processos: coordenação e
+  automação de fluxos de trabalho complexos. Com
+  isso, diferentes sistemas podem trabalhar de forma
+  integrada;
+
+• Redução de custos: a automação reduz custos
+  ao mitigar falhas e a necessidade de contratação
+  excessiva de pessoal;
+
+
+
+
+• voltar ao SUMÁRIO                                          13
+                                                                       ESCOLA
+                                                                       SUPERIOR
+                                                                       DE REDES
+
+
+
+
+                      • Integração de sistemas: a automação permite
+                        a integração de sistemas diferentes, viabilizando
+                        que todos funcionem adequadamente e
+                        simultaneamente quando necessário;
+
+                      • Maior segurança: uma vez que os erros humanos são
+                        minimizados nos processos críticos de segurança e
+                        também tendo em vista que a automação pode atuar
+                        como um mecanismo de varredura e monitoramento
+                        de sistemas.
+
+
+
+
+• voltar ao SUMÁRIO                                                          14
+                                                                                                          ESCOLA
+                                                                                                          SUPERIOR
+                                                                                                          DE REDES
+
+
+
+
+4. Por que se especializar
+em administração de
+                                                                Trata-se de um profissional
+sistemas?                                                       peça-chave na inovação
+Como vimos, a administração de sistemas é a principal
+                                                                e na competitividade das
+responsável por viabilizar a automação de processos             empresas.
+críticos, o gerenciamento inteligente de recursos e a
+sustentação da infraestrutura tecnológica. Em um cená-
+rio no qual a transformação digital exige cada vez mais
+eficiência, segurança e escalabilidade, esse campo se     Nesse cenário, ainda é importante destacar a impres-
+torna imprescindível para os negócios. Além de garantir   cindibilidade da área de DevOps/SRE. A administração
+que as operações sejam ágeis, resilientes e preparadas    de sistemas moderna também abrange práticas de
+para crescer de forma sustentável, dominar ferramentas,   DevOps e Site Reliability Engineering (SRE), integrando
+práticas e metodologias de administração de sistemas      desenvolvimento e operações para entregas mais rápi-
+amplia significativamente as oportunidades de carreira.   das e confiáveis.
+
+
+
+
+• voltar ao SUMÁRIO                                                                                              15
+                       A Escola Superior de Redes (ESR) oferece uma vasta
+                       seleção de cursos (mais de 100 opções), inclusive no
+                       ramo da administração de sistemas, cobrindo desde
+
+
+              PARA
+                       fundamentos técnicos até a aplicação das tecnologias
+                       mais avançadas.
+
+           DOMINAR     Coloque em prática seu aprendizado e dê início a uma
+
+
+          A ÁREA DE
+                       trajetória estratégica de especialização.
+
+                       Separamos duas formas principais para você conseguir
+    ADMINISTRAÇÃO      dominar sua área de interesse o quanto antes:
+
+
+   DE SISTEMAS: ESR!   Leia o #blog da Escola Superior de Redes com frequência;
+
+
+                       Encontre o curso certo para você clicando aqui
+
+
+                       Até breve!
+
+
+
+
+• voltar ao SUMÁRIO                                                           16
+esr.rnp.br
+
+Instagram
+
+Linkedin

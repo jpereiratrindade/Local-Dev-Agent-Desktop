@@ -1,0 +1,991 @@
+Rosa, M. & Orey, D. C. (2011). Ethnomathematics: the cultural aspects of mathematics. Revista
+Latinoamericana de Etnomatemática, 4(2). 32-54
+
+
+
+
+     Artículo recibido el 28 de mayo de 2011; Aceptado para publicación el 16 de junio de 2011
+
+
+
+
+        Ethnomathematics: the cultural aspects of mathematics
+               Etnomatemática: os aspectos culturais da matemática
+                                                                                               Milton Rosa1
+                                                                                          Daniel Clark Orey2
+
+                                                   Abstract
+Ethnomathematics studies the cultural aspects of mathematics. It presents mathematical concepts of the
+school curriculum in a way in which these concepts are related to the students’ cultural and daily experiences,
+thereby enhancing their abilities to elaborate meaningful connections and deepening their understanding of
+mathematics. Ethnomathematical approaches to mathematics curriculum are intended to make school
+mathematics more relevant and meaningful for students and to promote the overall quality of their education.
+In this context, the implementation of an ethnomathematical perspective in the school mathematics
+curriculum helps to develop students’ intellectual, social, emotional, and political learning by using their own
+unique cultural referents to impart their knowledge, skills, and attitudes. This kind of curriculum provides
+ways for students to maintain their identity while succeeding academically.
+Keywords: Ethnomathematics, Culture, Mathematics Curriculum, Sociocultural Contexts, Informal
+Mathematics, Academic Mathematics.
+                                            Resumo
+A etnomatemática estuda os aspectos culturais da matemática. Apresenta os conceitos matemáticos do
+currículo escolar de uma maneira na qual esses conceitos estejam relacionados com as experiências cultural e
+diária dos alunos, reforçando, assim, a capacidade deles para elaborar conexões significativas e aprofundar o
+entendimento da matemática. A abordagem etnomatemática no currículo de matemática tem como objectivos
+tornar a matemática escolar mais relevante e significativa para os alunos, promovendo a qualidade geral da
+educação. Nesse contexto, a implementação da perspectiva etnomatemática no currículo escolar de
+matemática auxilia no desenvolvimento do aprendizado intelectual, social, emocional e político dos alunos ao
+utilizar as próprias referencias culturais para transmitir o conhecimento, as habilidades e as atitudes. Esse tipo
+de curriculo fornece maneiras pelas quais os alunos mantém a própria identidade enquanto são bem sucedidos
+academicamente.
+Palavras-chave: Etnomatemática, Cultura, Currículo Etnomatemático, Contextos Socioculturais, Matemática
+Informal, Matemática Acadêmica
+
+
+
+
+1
+  Doutor em Educação, Liderança Educacional, pela California State University, Sacramento. Professor e
+pesquisador em Educação Matemática no Centro de Educação Aberta e à Distância (CEAD), na Universidade
+Federal de Ouro Preto (UFOP) em Ouro Preto, Minas Gerais, Brasil. Email: milton@cead.ufop.br
+2
+  Doutor em Educação e Educação Multicultural, pela University of New Mexico. Professor e pesquisador em
+Educação Matemática no Centro de Educação Aberta e à Distância (CEAD), na Universidade Federal de
+Ouro Preto (UFOP) em Ouro Preto, Minas Gerais, Brasil. Email: orey@cead.ufop.br
+
+
+                                                                                                               32
+Revista Latinoamericana de Etnomatemática           Vol. 4 No. 2, agosto de 2010- enero de 2011
+
+
+
+
+Introduction
+
+An important change in mathematical instruction needs to take place in order to
+accommodate continuous and ongoing change in the demographics of students in
+mathematics classrooms. Some scholars have developed a theory of culturally relevant
+pedagogy that examines the teaching-learning process within a critical paradigm and
+through explicit connections between students’ culture and the school subject matter
+(D’Ambrosio, 1990; Gay, 2000; Ladson-Billings, 1995; Rosa & Orey, 2003). In this
+perspective, it is necessary to integrate a culturally relevant curriculum in the existing
+mathematics curriculum. According to Torres-Velasquez and Lobo (2004), this perspective
+is an essential component of culturally relevant education because it proposes that teachers
+contextualize mathematics learning by relating mathematical content to students’ culture
+and real-life experiences.
+
+The guidelines of the National Council of Teacher of Mathematics (NCTM, 1991)
+highlighted the importance of building connections between mathematics and students’
+personal lives and cultures. In accordance to this approach, Rosa and Orey (2006) affirmed
+that “When practical or culturally-based problems are examined in a proper social context,
+the practical mathematics of social groups is not trivial because they reflect themes that are
+profoundly linked to the daily lives of students” (p. 34). According to Rosa and Orey
+(2008), culturally relevant mathematics curriculum should focus on the role of mathematics
+in a sociocultural context that involves the ideas and concepts associated with
+ethnomathematics, using an ethnomathematical perspective for solving contextualized
+problems.
+
+This kind of mathematics curriculum examines cultural congruence between students’
+community and school, which indicates teachers’ respect for the cultural experiences of
+their students. According to Zeichner (1996), in order for teachers to implement the
+principle of cultural congruence, they should have knowledge of and respect for the various
+cultural traditions and languages of students in their classrooms. In so doing, they should
+develop a clear sense of their own ethnic and cultural identities to be able to understand and
+appreciate those of their students in order to perceive mathematics as a socially and
+
+
+                                                                                                  33
+Rosa, M. & Orey, D. C. (2011). Ethnomathematics: the cultural aspects of mathematics. Revista
+Latinoamericana de Etnomatemática, 4(2). 32-54
+
+
+
+
+culturally constructed disciplines (Banks, 1991; Lee, 1999). In so doing, teachers need to
+comprehend what counts as knowledge in mathematics as well as how knowledge may be
+related to norms and values of diverse cultures. In other words, dealing with integrating
+diverse cultures in the classroom needs a conceptual framework in order to make coherent
+pedagogical decisions as teachers, which may help them understand how their own cultural
+biases influence judgments about students’ performance and obstruct their ability to learn
+mathematics.
+
+Is Mathematics Acultural?
+
+Mathematics was for a long time regarded as a neutral and culturally-free discipline
+removed from social values (Bishop, 1993; D’Ambrosio, 1990). It was always taught in
+schools as a culturally free subject that involved learning supposedly universally accepted
+facts, concepts, and contents. This means that Western or academic mathematics consists of
+a body of knowledge of facts, algorithms, axioms, and theorems. In this regard, Rosa and
+Orey (2006) argued that the ethnomathematics program was developed “to confront the
+taboos that mathematics is a field of study that is universal and acculturated” (p. 20).
+
+D’Ambrosio (1990) and Joseph (2000), and Powell and Frankenstein (1997) argued that the
+pervasive view of mathematics as Eurocentric and value-free misrepresents the evolution of
+modern mathematics. This perception is also reinforced by students’ experiences of the way
+mathematics is taught in schools. Brown, Cooney, and Jones (1990) suggested that the
+teachers’ view of mathematics is transmitted to the students in their instruction, and this
+fact helps to shape students’ views about the nature of mathematics. Even though the
+universality of mathematical truths is not in question, Rosa and Orey (2006) affirmed that it
+is only in the last three decades that the view of mathematics as culture free has been
+challenged.
+
+According to Bishop, Hart, Lerman, and Nunes (1993), “There is no sense in regarding
+mathematics learning as abstract and culture free” (p. 1) because the learning process
+cannot be abstract and context free, that is, learning cannot be free of societal influence. For
+example, studies conducted by Bandeira and Lucena (2004), Chieus (2004) and Rosa and
+
+
+
+                                                                                             34
+Revista Latinoamericana de Etnomatemática               Vol. 4 No. 2, agosto de 2010- enero de 2011
+
+
+
+
+Orey (2009) that examined mathematics in a variety of cultural contexts confirm this
+assertion. Nasir and Cobb (2007) and Orey (2000) argued that it is worth noting that the
+contextualization of mathematics has been described as the identification of mathematical
+practices developed in different cultural groups. In this perspective, if mathematics is
+considered as a cultural construct, then it is a product of cultural development (Rios, 2000;
+Rosa & Orey, 2007). This claim of mathematics as a cultural construct contradicts the
+claims that modern mathematics is universal, objective, and culturally neutral.
+
+What is Ethnomathematics?
+
+The term ethnomathematics was coined by D’Ambrosio (1985) to describe the
+mathematical practices of identifiable cultural groups and may be regarded as the study of
+mathematical ideas found in any culture. D’Ambrosio (1990) defined ethnomathematics in
+the following way:
+
+         The prefix ethno is today accepted as a very broad term that refers to the social-
+         cultural context and therefore includes language, jargon, and codes of behavior,
+         myths, and symbols. The derivation of mathema is difficult, but tends to mean
+         to explain, to know, to understand, and to do activities such as ciphering,
+         measuring, classifying, inferring, and modeling. The suffix tics is derived from
+         techné, and has the same root as technique (p. 81).
+In other words, ethno refers to members of a group within a cultural environment identified
+by their cultural traditions, codes, symbols, myths, and specific ways used to reason and to
+infer (Rosa & Orey, 2007). Mathema means to explain and understand the world in order to
+transcend, manage and cope with reality so that the members of cultural groups can survive
+and thrive, and tics refer to techniques such as counting, ordering, sorting, measuring,
+weighing, ciphering, classifying, inferring, and modeling. Rosa and Orey (2003) stated that
+the mathema develops the tics within the context of ethnos because it consists of daily
+problems people face, larger problems of humanity, and endeavors of humans to create a
+meaningful world.
+
+According to D’Ambrosio (1990), the search for solutions for specific problems that help
+the development of mathematics are always imbedded in a cultural context: in order to
+understand how mathematics (tics) is created, it is necessary to understand the problems
+
+
+
+
+                                                                                                      35
+Rosa, M. & Orey, D. C. (2011). Ethnomathematics: the cultural aspects of mathematics. Revista
+Latinoamericana de Etnomatemática, 4(2). 32-54
+
+
+
+
+(mathema) that precipitate it. It is necessary to understand those problems (mathema) by
+considering the cultural context (ethnos) that drives them.
+
+D’Ambrosio (1993) stated that the mission of the ethnomathematics program is to
+acknowledge that there are different ways of doing mathematics by considering the
+appropriation of the academic mathematical knowledge developed by different sectors of
+the society as well as by considering different modes in which different cultures negotiate
+their   mathematical      practices.   Barton     (1996)    stated    that   in   this   conception,
+ethnomathematics is a program that investigates the ways in which different cultural groups
+comprehend, articulate, and apply concepts and practices that can be identified as
+mathematical practices.
+
+Moreover, ethnomathematics may be described as a way in which people from a particular
+culture use mathematical ideas and concepts for dealing with quantitative, relational, and
+spatial aspects of their lives (Borba, 1997). This way of viewing mathematics validates and
+affirms all people's experience of mathematics because it demonstrates that mathematical
+thinking is inherent to their lives. Further evidence of this assertion is given by Orey
+(2000), who stated, “The paradigm that diverse cultures use or work within evolves out of
+unique interactions between their language, culture and environment” (p. 248). Within this
+context, D’Ambrosio (2006) argued that in an ethnomathematical perspective,
+mathematical thinking is developed in different cultures in accordance to common
+problems that are encountered within a cultural context.
+
+In D’Ambrosio’s (1993) perspective, in order to solve specific problems, ad hoc3 solutions
+are created, generalized methods are developed from those solutions to solve similar
+problems, and theories are developed from these generalized methods. In the context of
+ethnomathematics, many cultural differentiated groups know mathematics in ways that are
+quite different from academic mathematics as taught in schools. The tendency has been to
+
+
+3
+ Ad hoc is a Latin expression that means for this purpose. It generally means a solution designed for a
+specific problem or task, non-generalizable, and which cannot be adapted to other purposes.
+
+
+
+
+                                                                                                    36
+Revista Latinoamericana de Etnomatemática           Vol. 4 No. 2, agosto de 2010- enero de 2011
+
+
+
+
+consider these ad hoc mathematical practices as non-systematic and non-theoretical. In
+contrast, the study of ethnomathematics underlies a structure of inquiry in ad hoc
+mathematical practices by considering how these practices and problem-solving techniques
+can be developed into methods and theories. Since different types of problems are common
+in different cultures, the kinds of solutions, methods, and theories that are developed may
+differ from culture to culture. In this regard, what is recognized as a problem and a solution
+in one culture may have no meaning at all in another one.
+
+Mathematics is identified in cultural activities in traditional and non-traditional societies
+(Dowling, 1991; Rosa & Orey, 2007). This means that ethnomathematics refers to
+mathematical concepts embedded in cultural practices and recognizes that all cultures and
+all people develop unique methods and sophisticated explications to understand and to
+transform their own realities (Orey, 2000). It also recognizes that the accumulated methods
+of these cultures are engaged in a constant, dynamic, and natural process of evolution and
+growth. D’Ambrosio (2001) stated that ethnomathematics has come to mean the study of
+how people within various cultural groups develop techniques to explain and understand
+their world in response to problems, struggles, and endeavors of human survival. This
+includes material needs as well as art and spirituality through the use of the development of
+cultural artifacts; objects created by members of a specific cultural group that inherently
+give cultural clues about the culture of its creator and users. Rosa and Orey (2008) stated
+that this perspective “provides an important opportunity for educators to link current events
+and the importance of these artifacts in the context of ethnomathematics, history, and
+culture” (p. 33).
+
+Another presupposition of ethnomathematics is that it validates all forms of mathematical
+explaining and understanding formulated and accumulated by different cultural groups.
+This knowledge is regarded as part of an evolutionary process of change that is part of the
+same cultural dynamism as each cultural group comes into contact with each other one
+(D’Ambrosio, 1993). A study of the different ways in which peoples resolve problems and
+the practical algorithms upon which they base these mathematical perspectives becomes
+relevant for any real comprehension of the concepts and the mathematical they have
+
+
+
+                                                                                                  37
+Rosa, M. & Orey, D. C. (2011). Ethnomathematics: the cultural aspects of mathematics. Revista
+Latinoamericana de Etnomatemática, 4(2). 32-54
+
+
+
+
+developed over time. Ethnomathematics refers to forms of mathematics that vary as a
+consequence of being embedded in cultural activities whose purpose is other than doing
+mathematics. In this perspective, Orey (2000) affirmed, “Ethnomathematics might be
+characterized as a tool to act in the world” (p. 250) and as such, it provides insights into the
+social role of academic mathematics.
+
+On the other hand, the learning of mathematics has always been associated with the
+schooling process, that is, it was thought that mathematical concepts and skills were
+acquired only if individuals went to school. However, the analysis of students’
+mathematical knowledge has led educators and researchers to conclude that mathematical
+knowledge is also acquired outside of the structured systems of mathematics learning such
+as schools (Bandeira & Lucena, 2004; Duarte, 2004; Knijnik, 1993; Rosa & Orey, 2010). In
+this perspective, mathematical ideas applied in unique sociocultural contexts refer to the
+use of mathematical concepts and procedures acquired outside of schools as well as the
+acquisition of mathematical skills other than from schools. Studies conducted by Bandeira
+and Lucena (2004) and Lean (1994) focused on school mathematics and the effect of
+cultural factors on teaching and learning academic mathematics. Dossey (1992) and Orey
+(2000) argued that mathematical knowledge results from social interactions in which
+relevant ideas, facts, concepts, principles, and skills are acquired as a result of cultural
+context.
+
+According to Stigler and Baraness (1988), mathematics is not a universal formal domain of
+knowledge. It is an assemblage of culturally constructed symbolic representations and
+procedures that facilitate the manipulation of these representations. Students develop
+representations and procedures into their cognitive systems, which is a process that occurs
+in the context of socially constructed activities (Rosa & Orey, 2008). In other words,
+mathematical skills that students learn in schools are not logically constructed based on
+abstract cognitive structures but rather forged out of a combination of previously acquired
+knowledge and skills and new cultural inputs. Therefore, D’Ambrosio (1990) affirmed that
+mathematics arose out of the needs of organized society, which cannot be divorced from
+the activities and practices developed by people in a globalized society.
+
+
+                                                                                             38
+Revista Latinoamericana de Etnomatemática           Vol. 4 No. 2, agosto de 2010- enero de 2011
+
+
+
+
+Informal and Academic Mathematics
+
+Carraher (1991) argued that mathematics practices existing out-of-school are shown by
+students who develop the understanding of numbers before they come to school. Bishop
+(1993) affirmed that informal mathematics is “an organized, systematic, mathematics
+education activity carried on outside the framework of the formal system” (p. 15). In this
+point of view, there is a contrast between the mathematical knowledge gained academically
+and the mathematical knowledge that is gained informally. For example, Bandeira and
+Lucena (2004) investigated mathematical ideas and practices acquired by the members of a
+community of vegetable farmers in the Northeast region of Brazil. They studied the
+mathematical concepts that farmers used to harvest, produce, and commercialize
+vegetables. They found out that the specific mathematical knowledge produced by the
+farmers differed from the mathematical knowledge acquired in academic settings.
+
+As a follow-up to a study, which investigated school failure, Carraher (1991) studied young
+street vendors in the Northeast of Brazil in order to find out about their knowledge of street
+mathematics such as algorithms when compared to academic school computations. It was
+found that there were differences in the success rates across the two settings. The results of
+this study showed that vendors were more successful in correctly solving street contexts
+and verbal problems but were not so successful in solving traditional and academic
+computation problems. The procedures for solutions were also different from those taught
+at school. On the other hand, Nunes (1992) affirmed that even though some of these
+concepts were acquired without schooling, schooling played an important role in
+accelerating the learning of these concepts, in particular, inverse proportion and word
+problems.
+
+Carraher, Carraher, and Schleiman (1985) suggested that some important mathematical
+concepts are developed outside of school without specific instructions because these
+concepts and procedures would appear to arise through an individual’s social interactions in
+everyday activities such as commerce and production of goods. Based on Nunes’ (1992)
+research with Brazilian vendors, it is possible to conclude that mathematical ideas and
+
+
+                                                                                                  39
+Rosa, M. & Orey, D. C. (2011). Ethnomathematics: the cultural aspects of mathematics. Revista
+Latinoamericana de Etnomatemática, 4(2). 32-54
+
+
+
+
+practices that are used outside of the school may be considered as a process of modeling
+rather than a mere process of manipulation of numbers. In this regard, Orey (2000) stated
+that the application of “ethnomathematical techniques and the tools of mathematical
+modeling allows us to see a different reality and give us insight into science done in a
+different way” (p. 250).
+
+In order to solve problems, students need to understand alternative mathematical systems
+and they also need to be able to understand more about the role that mathematics plays in a
+societal context (Orey, 2000; Rosa & Orey, 2007). This aspect promotes a better
+understanding of mathematical systems through the use of mathematical modeling, which is
+a process of translation and elaboration of problems and questions taken from systems that
+are part of the students’ own reality (D’Ambrosio, 1993; Eglash, 1997; Rosa & Orey,
+2010). As early as 1993, D’Ambrosio defined a system as a part of reality, which is
+considered integrally. In this regard, a system is a set of items taken from students’ reality,
+which studies of all its components and the relationship between them. Mathematical
+modeling is a pedagogical strategy used to motivate students to work on mathematics
+content and helps them to construct bridges between informal and academic mathematics.
+
+For example, D’Ambrosio (2002) commented about an ethnomathematical example that
+naturally comes across as having a mathematical modeling methodology. In the 1989-1990
+school year, a group of Brazilian teachers studied the cultivation of vines that were brought
+to Southern Brazil by Italian immigrants in the early twentieth century. This was
+investigated because the cultivation of wines is linked with the culture of the people in that
+region in Brazil. Both Bassanezi (2002) and D’Ambrosio (2002) believed that this wine
+case study is an excellent example of the connection between ethnomathematics and
+mathematical modeling. Rosa and Orey (2010) affirmed that the pedagogical approach that
+connects the cultural aspects of mathematics with its academic aspects is called
+ethnomodeling.
+
+Educators and teachers should search for problems taken from students’ reality that
+translate their deepened understanding of real-life situations through the application of
+
+
+
+                                                                                            40
+Revista Latinoamericana de Etnomatemática          Vol. 4 No. 2, agosto de 2010- enero de 2011
+
+
+
+
+culturally relevant activities. This process enables students to take a position such as
+sociocultural, political, environmental, and economical in relation to the system under
+study. According to Rosa (2000), the main objective of this pedagogical approach is to
+rehearse the established mathematical context that allows students to see the world as
+consisting of opportunities to employ mathematical knowledge that help them to make
+sense of any given situation.
+
+
+
+An Ethnomathematics Curriculum
+
+Classrooms and learning environments cannot be isolated from the communities in which
+they are embedded. Classrooms are part of a community with defined cultural practices. In
+this perspective, Borba (1993) stated that classrooms might be considered environments
+that facilitate pedagogical practices, which are developed by using an ethnomathematical
+approach. When students come to school, they bring with them values, norms, and concepts
+that they have acquired in their sociocultural environment. According to Bishop (1993),
+some of these are mathematical in nature. However, the mathematical concepts of the
+school curriculum are presented in a way that may not be related to the students’ cultural
+backgrounds. Bakalevu (1998) and Rosa (2010) hypothesized that low attainment in
+mathematics due to lack of cultural consonance in the curriculum. Moreover, Eglash
+(1997), Rosa & Orey (2007) and Zaslavsky (1997) argued that including cultural aspects in
+the curriculum will have long-term benefits for mathematics learners, that is, cultural
+aspects contribute to recognizing mathematics as part of daily life, enhancing the ability to
+make meaningful connections, and deepening the understanding of mathematics. In this
+perspective, Chieus (2004) stated that the pedagogical work towards an ethnomathematics
+perspective allows for a broader analysis of the school context in which pedagogical
+practices transcend the classroom environment because these practices embrace the
+sociocultural context of the students. Damazio (2004) agreed with this perspective by
+suggesting that pedagogical elements necessary to develop the mathematics curriculum are
+found in the school community. This means that the field of ethnomathematics presents
+some possibilities for educational initiatives that help to reach this goal. In D’Ambrosio’s
+
+
+                                                                                                 41
+Rosa, M. & Orey, D. C. (2011). Ethnomathematics: the cultural aspects of mathematics. Revista
+Latinoamericana de Etnomatemática, 4(2). 32-54
+
+
+
+
+(1990) point of view, it is important to recognize that ethnomathematics is a research
+program that guides educational pedagogical practices. However, according to Monteiro,
+Orey, and Domite (2004), it is necessary to point out that the incorporation of the objectives
+of the ethnomathematics program as pedagogical practice in the school curricula and its
+operationalization and transmission in the field of education is a recent field of study that is
+still developing its own identity in the pedagogical arena.
+
+On the other hand, in the context of culturally relevant pedagogy, there is a need to examine
+the embeddedness of mathematics in culture, drawing from a body of literature that takes
+on the cultural nature of knowledge production into the mathematics curriculum (Rogoff,
+2003). Mathematics as part of the school curriculum must reinforce and value the cultural
+knowledge of students rather than ignore or negate it. A culturally relevant curriculum
+should fully integrate students’ cultural mathematics knowledge through ethnomathematics.
+Rosa and Orey (2007) argued that this mathematics curriculum must be grounded in a
+constructivist approach to learning and seek to change the way mathematics teachers
+construct their learning environments. This can be done by producing teachers who are able
+to facilitate a mathematics learning environment grounded in real life experiences and to
+support students in the social construction of mathematical knowledge.
+
+The trend towards ethnomathematical approaches to mathematics curriculum and pedagogy
+reflects a comprehensive development in mathematics education. Ethnomathematical
+approaches are intended to make school mathematics more relevant and meaningful to
+students and to promote the overall quality of education. Adam (2002) pleaded for a more
+culturally sensitive view of mathematics to be incorporated into the school curriculum. For
+example, Powell and Frankenstein (1997) proposed the elaboration of a mathematics
+curriculum that is based on students’ knowledge, which allows teachers to have more
+freedom and creativity to choose academic mathematical topics to be covered in the
+lessons. They suggested that through dialogue with the students, teachers can apply
+mathematical themes that help them to elaborate the mathematics curriculum. In their point
+of view, teachers can engage students in the critical analysis of the dominant culture as well
+as the analysis of their own culture through an ethnomathematical perspective. In this
+
+
+                                                                                             42
+Revista Latinoamericana de Etnomatemática            Vol. 4 No. 2, agosto de 2010- enero de 2011
+
+
+
+
+context, Ferreira (1997) stated that it is necessary to investigate the conceptions, traditions,
+and mathematical practices of a particular social group with the intention of incorporating
+these concepts into the mathematics curriculum. Knijnik (1993) also stated that the
+development of a mathematics curriculum that involves the relationship between academic
+mathematics and ethnomathematical knowledge contributes to the process of social change.
+
+Further, Adam, Alangui and Barton (2003) and Rosa (2010) stated that a culturally relevant
+mathematics curriculum based on an ethnomathematical perspective infuses the students’
+cultural backgrounds in the learning environment in a holistic manner. Rosa and Orey
+(2006) stated that one possibility for an ethnomathematical curriculum may be labeled as
+mathematics in a meaningful context in which students are given opportunities to relate
+their new learning experiences to knowledge and skills they have previously learned. In this
+regard, it is particularly important that the mathematical learning experiences of students
+acknowledge their cultural backgrounds and experiences in the process of learning
+mathematics.
+
+According to Rosa and Orey (2003), this mathematical approach is presented as a cultural
+response to students’ needs by making connections between their cultural background and
+mathematics. This approach supports the view that “mathematics … is conceived as a
+cultural product which has developed as a result of various activities” (Bishop, 1988, p.
+182). The objective of this perspective is to make mathematics more relevant to students
+because every culture is assumed to have mathematical responses with valid content for a
+mathematics classroom. A classroom using this type of ethnomathematical curriculum
+would be full of examples that draw on the students’ own experiences and on experiences
+that are common in their cultural environments. In so doing, ethnomathematics aims to
+draw from the students’ cultural experiences and practices of the individual learners, the
+communities, and the society at large. Rosa and Orey (2008) affirmed that
+ethnomathematics uses these cultural experiences as vehicles to make mathematics learning
+more meaningful and to provide students with the insights of mathematical knowledge as
+embedded in their social and cultural environments.
+
+
+
+
+                                                                                                   43
+Rosa, M. & Orey, D. C. (2011). Ethnomathematics: the cultural aspects of mathematics. Revista
+Latinoamericana de Etnomatemática, 4(2). 32-54
+
+
+
+
+Another possibility sees an ethnomathematical curriculum as an integration of the
+mathematical concepts and practices originating in the students’ culture with those of
+conventional and formal academic mathematics (Lipka, 2002). In this approach, the
+ethnomathematical curriculum takes students’ culture and uses it explicitly to integrate
+these outside experiences into the conventional mathematics curriculum. In such a
+classroom environment, students build on what they know as well as on the experiences
+they have from their cultural environments (González, Moll, & Amanti, 2005). These
+experiences are then used neither as motivation nor as an introduction but instead as part of
+understanding how mathematical ideas are developed and how they are built into systems,
+formulated, and applied in various ways within the culture. This mathematical knowledge is
+related to conventional mathematics in such a way that the underlying mathematical ideas
+are fully understood and the power and utility of conventional methods are appreciated.
+
+Lipka (2002) stated that links are made to familiar practices and concepts by realizing and
+understanding the need for mathematical characteristics such as accuracy and formal
+reasoning in both academic mathematics and in real-life situations. According to Bandeira
+and Lucena (2004), mathematical curriculum conceived in an ethnomathematical
+perspective helps to develop mathematical concepts and practices that originate in students’
+culture by linking them to academic mathematics. The work of Lipka (2002) in Alaska is an
+example of this type of approach to curriculum innovation. It is assumed that a curriculum
+of this nature motivates students to recognize mathematics as part of their everyday life and
+enhances students’ ability to make meaningful mathematical connections by deepening
+their understanding of all forms of mathematics. For example, Duarte (2004) investigated
+the uniqueness of mathematical knowledge produced by workers in the home construction
+industry through a study of mathematical ideas and practices that they develop in
+construction sites. This author reflected on the mathematical knowledge possessed by the
+members of this working class in order to academically legitimate their knowledge and
+determine the pedagogical and curricular implications that are inferred in the process of
+productions of this kind of knowledge.
+
+
+
+
+                                                                                          44
+Revista Latinoamericana de Etnomatemática          Vol. 4 No. 2, agosto de 2010- enero de 2011
+
+
+
+
+The objective of developing an ethnomathematical curriculum model for classrooms is to
+assist students to become aware of how people mathematize and think mathematically in
+their culture, to use this awareness to learn about formal mathematics, and to increase the
+ability to mathematize in any context in the future (Duarte, 2004; Rios, 2000, Rosa & Orey,
+2006). This ethnomathematical curriculum leads to the development of a sequence of
+instructional cultural activities enabling students to become aware of potential practices in
+mathematics in their culture so that they are able to understand the nature, development,
+and origins of academic mathematics (Rosa & Orey, 2007). Students also value and
+appreciate their own previous mathematical knowledge, which allows them to understand
+and experience cultural activities from a mathematical point of view, thereby allowing them
+to make the link between school mathematics and their real world and daily life (Knijnik,
+1993; Rios, 2000). According to Rosa and Orey (2003), students understand the nature of
+mathematics as they become aware of the mathematics in their culture. With awareness,
+students see mathematics as a human activity rather than just a set of symbols, numbers,
+and figures presented only at school.
+
+On the other hand, cultural mathematical practices can be related to conventional
+mathematical systems and vice versa through mathematical thinking. In this regard,
+Monteiro, Orey, and Domite (2004) argued that mathematical thinking involves
+symbolizing, generalizing, abstracting, and making logical connections, which can be
+facilitated by seeing mathematics in various cultural contexts and learning mathematics
+through practical examples and investigations. According to Rosa & Orey (2006), one
+possible bridge is to know how the connections between academic mathematics and the real
+world are realized by both the teachers and students. This includes the examples teachers
+use in their instruction and the characteristics of informal and academic mathematics they
+choose to explore in classroom activities.
+
+An etnomathematical curriculum brings a broader understanding about the importance of
+mathematics to pedagogical activities developed in the mathematics classrooms (Borba,
+1993). Most mathematics curricula focus on the mastery of skills, accumulation of facts,
+rules, and algorithms that are necessary for official examinations. Since the curriculum is
+
+
+
+                                                                                                 45
+Rosa, M. & Orey, D. C. (2011). Ethnomathematics: the cultural aspects of mathematics. Revista
+Latinoamericana de Etnomatemática, 4(2). 32-54
+
+
+
+
+experienced as mathematical content, most students leave school thinking that mathematics
+is something to be done only at school and that it has no relevance to their lives. According
+to Monteiro and Nacaratto (2004), an ethnomathematical curriculum introduces an
+understanding about mathematics as part of mathematics education. Rosa and Orey (2003)
+stated that when students understand the nature of mathematics, they acquire the tools to
+better comprehend the relevance of mathematics in the various aspects of their everyday
+lives.
+
+Rosa and Orey (2006) argued that an ethnomathematics curriculum offers students,
+especially minority students, the motivation to perceive mathematics as an important
+cultural tool that facilitates their mathematical learning. They also affirmed that the
+establishment of cultural connections is a fundamental aspect in the development of new
+strategies to the process of teaching and learning mathematics because it allows students to
+perceive mathematics as a significant part of their own cultural identity. Warschauer (1999)
+affirmed that the use ethnomathematics in the school curricula is an effective tool that
+improves the learning of mathematics by minority students.
+
+This curriculum focuses on mathematics as a process rather than as a collection of facts,
+and it is based on the idea that mathematics is a human creation that emerges as people
+attempt to understand their world. Therefore, mathematics is seen as a process and as a
+human activity, rather than just as a set of academic content (D’Ambrosio, 2002). This
+implies that an ethnomathematical curriculum is not just about the application of relevant
+contexts in learning and teaching mathematics, but is also about generating formal
+mathematics from cultural ideas (Gerdes, 1994). Thus, formal mathematics is better
+understood, appreciated, and made more meaningful to its learners.
+
+In this curriculum, teachers must analyze the role of what Borba (1993) referred to as
+students’ ethnoknowledge in the mathematics classroom. Ethnoknowledge is acquired by
+students in the pedagogical action process of learning mathematics in a culturally relevant
+educational system. In this process, the discussion between teachers and students about the
+efficiency and relevance of mathematics in different contexts should permeate instructional
+
+
+
+                                                                                          46
+Revista Latinoamericana de Etnomatemática            Vol. 4 No. 2, agosto de 2010- enero de 2011
+
+
+
+
+activities. The ethnoknowledge that students develop must be compared to their academic
+mathematical knowledge. In this process, the role of teachers is to help students to develop
+a critical view of the world by using mathematics.
+
+Teachers also need to develop a different approach to mathematics instruction that
+empowers students to understand mathematical power more critically by considering the
+effects of culture on mathematical knowledge and work with their students to uncover the
+distorted and hidden history of the mathematical knowledge. According to Rosa (2000),
+this methodology is essential in developing the curricular practice of ethnomathematics and
+culturally relevant education: through the investigation of the cultural aspects of
+mathematics and an elaboration upon mathematics curricula that considers the contributions
+of people from other cultures, students’ knowledge of mathematics becomes enabled and
+enriched.
+
+
+
+Final Considerations
+
+        The field of ethnomathematics link students’ diverse ways of knowing and learning
+through the use of culturally embedded knowledge along with academic mathematics
+curriculum. This approach into the mathematics curriculum explores academic and
+culturally rich ways to provide more inclusive developmental programs for the diverse
+populations served at educational institutions. In this regard, ethnomathematics is a
+program that includes curricular relevance and builds knowledge around the local interests,
+needs and culture of students. In other words, ethnomathematics as a teaching methodology
+is designed to fit the school culture of the students as the basis for helping them to
+understand themselves and their peers, develop and structure social interactions, and
+conceptualize mathematical knowledge (D’Ambrosio, 1990). Ethnomathematics also builds
+on and values the cultural experiences and knowledge of students regardless of whether
+they are represented by dominant or non-dominant cultural systems and empowers them
+intellectually, socially, emotionally, and politically by using cultural referents to impart
+their knowledge, skills, and attitudes in the pedagogical work in schools. The
+
+
+
+
+                                                                                                   47
+Rosa, M. & Orey, D. C. (2011). Ethnomathematics: the cultural aspects of mathematics. Revista
+Latinoamericana de Etnomatemática, 4(2). 32-54
+
+
+
+
+ethnomathematical perspective into the mathematics curriculum combines an examination
+of the cultural and socioeconomic influences on teaching and learning mathematics.
+
+In this context, there have been many discussions about changing mathematics curriculum
+in schools. The purpose of these discussions is to implement or restructure mathematics
+curriculum in making connections between mathematical content and students’ daily-life.
+In this proposed curriculum, mathematics content is articulated with a student’s life
+experiences in order to create new pedagogical approaches for the teaching and learning of
+mathematics, which encourages teachers to adopt a freer educational practice in classroom
+creating new alternative methods to teach mathematics such as ethnomathematics. By
+introducing this perspective in the mathematics curriculum, educators and teachers engage
+student’s imagination; help them to develop skills in critical thinking and analysis that can
+be applied to all areas of life, and to provide an effective environment for developing skills
+to solve real-world problems.
+
+In our opinion, the ethnomathematics curriculum meets the needs expressed by curriculum
+reform advocates because it helps students to learn mathematics and make connections
+between this school subject and their own previous experiences and knowledge. In this
+perspective, students develop deeper understandings in mathematics and improve the
+absorption of formal mathematical concepts by applying ethnomathematics. In other words,
+an ethnomathematical perspective in the mathematics curriculum advocates the
+introduction of culturally relevant teaching methods that challenge what is called the
+Eurocentrism of mathematics education. This perspective also advocates that it is
+necessary to teach students in a culturally and historically meaningful way. Teaching
+mathematics through cultural relevance and personal experiences helps students to know
+more about reality, culture, society, environmental issues, and themselves by providing
+them with mathematics content and approaches, which enable them to successfully master
+academic mathematics.
+
+In so doing, the ethnomathematical perspective in the mathematics curriculum provides
+pedagogical tools to link student’s diverse ways of knowing and learning that are culturally
+
+
+
+                                                                                           48
+Revista Latinoamericana de Etnomatemática          Vol. 4 No. 2, agosto de 2010- enero de 2011
+
+
+
+
+embedded with academic mathematics because it explores academic and culturally rich
+ways to provide more inclusive developmental programs for the diverse populations served
+at educational institutions (D’Ambrosio, 1990). This educational approach includes
+curricular relevance because it builds a mathematical curriculum around the local interests
+and culture of the learners (Rosa, 2005). This means that teaching mathematics through an
+ethnomathematical perspective helps students to know more about reality, culture, society,
+environmental issues, and themselves by providing them with mathematical content and
+pedagogical approaches that enable them to successfully master academic mathematics.
+Rosa and Orey (2007) affirmed that an ethnomathematics approach in the mathematics
+curriculum is considered a pedagogical vehicle for achieving such a goal.
+
+
+References
+
+Adam, S. (2002). Ethnomathematics in the Maldivian curriculum. In M. Monteiro (Ed.),
+Proceedings of the 2nd International Congress on Ethnomathematics (ICEM2), Ouro
+Preto, MG, Brazil: Lyrium Comunicação Ltda.
+
+Adam, S., Alangui, W., & Barton, B. (2003). A comment on Rowlands and Carson: Where
+would formal academic mathematics stand in a curriculum informed by ethnomathematics?
+A critical review. Educational Studies in Mathematics, 52(3), 327-335.
+
+Bakalevu, S. (1998). Fijian perspectives in mathematics education. (Unpublished doctorate
+dissertation). University of Waikato, Hamilton, New Zealand.
+
+Bandeira, F. A., & Lucena, I. C. R. (2004). Etnomatemática e práticas sociais
+[Ethnomathematics and social practices]. Coleção Introdução à Etnomatemática
+[Introduction to Ethnomathematics Collection]. Natal, RN, Brazil: UFRN.
+
+Banks, J. (1991). A curriculum for empowerment, action, and change. In Sleeter, C. E.
+(Ed.), Empowerment through multicultural education (pp. 125-141). Albany: SUNY Press.
+
+Barton, B. (1996). Ethnomathematics: Exploring cultural diversity in mathematics.
+(Unpublished doctorate dissertation). University of Auckland, Auckland, New Zealand.
+
+Bassanezi, R. C. (2002). Ensino-aprendizagem com modelagem matemática [Teaching and
+learning with mathematical modeling]. São Paulo, SP, Brazil: Editora Contexto.
+
+Bishop, A. J. (1988). Mathematics enculturation: A cultural perspective on mathematics
+education. Dordrecht, Netherlands: Kluwer.
+
+
+                                                                                                 49
+Rosa, M. & Orey, D. C. (2011). Ethnomathematics: the cultural aspects of mathematics. Revista
+Latinoamericana de Etnomatemática, 4(2). 32-54
+
+
+
+
+Bishop, A. J. (1993). Influences from society. In A. J. Bishop, K. Hart, S. Lerman, & T.
+Nunes (Eds.), Significant influences on Children’s Learning of Mathematics (pp. 3-26)
+Paris, France: UNESCO.
+
+Bishop, A. J., Hart, K., Lerman, S., & Nunes, T. (1993). Significant influences on
+children’s learning of mathematics. Paris, France: UNESCO.
+
+Borba, M. C. (1993). Etnomatemática e a cultura da sala de aula [Ethnomathematics and
+culture in the classroom]. A Educação Matemática em Revista, 1(1), 43-58.
+
+Borba, M. C. (1997). Ethnomathematics and education. In A. B. Powell & M. Frankenstein
+(Eds.), Ethnomathematics: Challenging Eurocentrism in mathematics education (pp. 261-
+272). Albany, NY: State University of New York Press.
+
+Brown, S. I., Cooney, T. J., & Jones, D. (1990). Mathematics teacher education. In W. R.
+Houston (Ed.), Handbook of research on teacher education (pp. 639-656). New York, NY:
+Macmillan.
+
+Carraher, D. W. (1991). Mathematics learned in and out of school: A selective review of
+studies from Brazil. In M. Harris (Ed.), Schools, mathematics and work (pp. 169-201).
+London, England: The Falmer Press.
+
+Carraher, T. N., Carraher, D. W., & Schliemann, A. D. (1985). Mathematics in the streets
+and in schools. British Journal of Developmental Psychology, 3, 21-29.
+
+Chieus, G. J. (2004). Etnomatemática: Reflexões sobre a prática docente
+[Ethnomathematics: Reflections on teaching practice]. In J. P. M. Ribeiro, M. C. S. Domite,
+& R. Ferreira (Eds.), Etnomatemática: Papel, valor e significado [Ethnomathematics: Role,
+value, and meaning] (pp. 185-202). São Paulo, SP, Brazil: ZOUK.
+
+Damazio, A. (2004). Especifidades conceituais da matemática da atividade extrativa do
+carvão [Conceptual specifications of mathematical activities of coal extraction]. Coleção
+Introdução à Etnomatemática [Introduction to Ethnomathematics Collection]. Natal. RN,
+Brazil: UFRN.
+
+D’Ambrosio, U. (1985). Ethnomathematics and its place in the history and pedagogy of
+mathematics. For the Learning of Mathematics, 5(1), 44-48.
+
+D’Ambrosio, U. (1990). Etnomatemática [Ethnomathematics]. São Paulo, SP, Brazil:
+Editora Ática.
+
+D’Ambrosio, U. (1993). Etnomatemática: Um programa [Ethnomathematics: A program].
+A Educação Matemática em Revista, 1(1), 5-11.
+
+
+
+
+                                                                                          50
+Revista Latinoamericana de Etnomatemática          Vol. 4 No. 2, agosto de 2010- enero de 2011
+
+
+
+
+D’Ambrosio, U. (2001). What is Ethnomathematics and how can it help children in
+schools? Teaching Children Mathematics, 7(6), 308-310.
+
+D’Ambrosio, U. (2006). Ethnomathematics: Link between traditions and modernity. ZDM,
+40(6), 1033-1034.
+
+Dossey, J. A. (1992). The nature of mathematics: Its role and its influence. In D. A.
+Grouws (Ed.), Handbook of research on mathematics teaching and learning: A Project of
+the National Council of Teachers of Mathematics (pp. 39-48). New York, NY: Macmillan.
+
+Dowling, P. (1991). The Contextualizing of mathematics: Towards a theoretical map. In M.
+Harris (Ed.), Schools, mathematics, and work (pp. 93-120). London, England: Falmer
+Press.
+
+Duarte, C. G. (2004). Implicações Curriculares a partir de um olhar sobre o mundo da
+construção civil [Curricular implications concerning the world of civil construction]. In G.
+
+Eglash, R. (1997). When math worlds collide: Intention and invention in ethnomathematics.
+Science, Technology and Human Values, 22(1), 79-97.
+
+Ferreira, E. S. (1997). Etnomatemática: Uma proposta metodológica [Ethnomathematics:
+A methodological proposal]. Rio de Janeiro, RJ, Brazil: MEM/USU.
+
+Gay, G. (2000). Culturally responsive teaching: Theory, research, and practice. New York,
+NY: Teachers College Press.
+
+Gerdes, P. (1994). Reflections on ethnomathematics. For the Learning of Mathematics,
+14(2), 19-22.
+
+González, N., Moll, L., & Amanti, C. (2005). Funds of knowledge: Theorizing practices in
+households, communities, and classrooms. New Jersey, NJ: Lawrence Erlbaum Associates,
+Publishers.
+
+Joseph, G. G. (2000). The crest of the peacock: Non-European roots of mathematics.
+London, England: Penguin Books.
+
+Knijnik, F. Wanderer, & C. J. Oliveira (Eds.), Etnomatemática: Currículo e Formação de
+Professores [Ethnomathematics: Curriculum and Teacher Education] (pp. 195-215). Santa
+Cruz do Sul, RS, Brazil: EDUNISC.
+
+Ladson-Billings, G. (1995). Toward a theory of culturally relevant pedagogy. American
+Educational Research Journal, 32(3), 465-491.
+
+Lean, G. (1994). Counting systems of Papua New Guinea. (Unpublished doctorate
+dissertation). PNG University of Technology, Lae, Papua New Guinea.
+
+
+
+                                                                                                 51
+Rosa, M. & Orey, D. C. (2011). Ethnomathematics: the cultural aspects of mathematics. Revista
+Latinoamericana de Etnomatemática, 4(2). 32-54
+
+
+
+
+Lee, O. (2003). Equity for linguistically and culturally diverse students in science
+education: A research agenda. Teachers College Record, 105(3), 465–489.
+
+Lipka, J. (2002). Schooling for self-determination: Research on the effects of including
+native language and culture in the schools. Charleston, WV: Clearinghouse on Rural
+Education and Small Schools.
+
+Monteiro, A., & Nacarato, A. M. (2004). Relações entre saber escolar e saber cotidiano:
+Apropriações discursivas de futuros professores que ensinarão matemática [Relationships
+between academic knowing and daily knowing: Discursive appropriations of teachers who
+will teach mathematics]. BOLEMA, 17(22), 1-17.
+
+Monteiro, A.; Orey, D. C.; & Domite, M. C. Etnomatemática: Papel, valor e significado
+[Ethnomathematics: Role, value, and meaning]. In J. P. M. Ribeiro, M. C. S. Domite, R.
+Ferreira (Eds.), Etnomatemática: Papel, valor e significado [Ethnomathematics: Role,
+value, and meaning] (pp. 13-37). São Paulo, SP, Brazil: ZOUK.
+
+Nasir, N. S., & Cobb, P. (2007). Equity in students’ access to significant mathematical
+ideas. New York, NY: Teachers College Press.
+
+NCTM (1991). Professional Standards for Teaching Mathematics. Reston, VA: National
+Council of Teachers of Mathematics.
+
+Nunes, T. (1992). Ethnomathematics and everyday cognition. In Grouws, D. A. (Ed.),
+Handbook of research on mathematics teaching and learning (pp. 557-573). New York,
+NY: Macmillan.
+
+Orey, D. C. (2000). The ethnomathematics of the Sioux tipi and cone. In H. Selin (Ed.),
+Mathematics across culture: the History of non-Western mathematics (pp.239-252).
+Dordrecht, Netherlands: Kulwer Academic Publishers.
+
+Powell, A. B. & Frankenstein, M. (1997). Ethnomathematics praxis in the curriculum. In A.
+B. Powell & M. Frankenstein (Eds.), Challenging Eurocentrism in mathematics education
+(pp. 249-259). New York, NY: SUNY.
+
+Rios, D. P. (2000). Primero etnogeometría para seguir con etnomatemática [First
+ethnogeometry to follow with ethnomathematics]. In M. C. Domite (Ed.). Anais do
+Primeiro Congresso Brasileiro de Etnomatemática – CBEm-1 (pp. 367-375). São Paulo,
+SP, Brazil: FE-USP.
+
+Rogoff, B. (2003). The cultural nature of human development. New York, NY: Oxford
+University Press.
+
+
+
+
+                                                                                          52
+Revista Latinoamericana de Etnomatemática        Vol. 4 No. 2, agosto de 2010- enero de 2011
+
+
+
+
+Rosa, M. (2000). From reality to mathematical modeling: A proposal for using
+ethnomathematical knowledge. College of Education. California State University,
+Sacramento. Unpublished master thesis.
+
+Rosa, M. (2005). Curriculo e matemática: Algumas considerações na perspectiva
+etnomatemática [Curriculum and mathematics: Some considerations in an
+ethnomathematical perspective]. Revista Plures Humanidades, 6, 81-96.
+
+Rosa, M. (2010). A mixed method study to understand the perceptions of high school
+leaders about English language learners (ELL): The case of mathematics. College of
+Education. California State University, Sacramento. Unpublished doctorate dissertation.
+
+Rosa, M., & Orey, D. C. (2003). Vinho e queijo: Etnomatemática e Modelagem! [Wine and
+cheese: Ethnomathematics and modelling!]. BOLEMA, 16(20), 1-16.
+
+Rosa, M., & Orey, D. C. (2006). Abordagens atuais do programa etnomatemática:
+delinenando-se um caminho para a ação pedagógica [Current approaches in the
+ethnomathematics as a program: Delineating a path toward pedagogical action]. BOLEMA,
+19(26), 19-48.
+
+Rosa, M., & Orey, D. C. (2007). Cultural assertions and challenges towards pedagogical
+action of an ethnomathematics program. For the Learning of Mathematics, 27(1), 10-16.
+
+Rosa, M., & Orey, D. C. (2008). Ethnomathematics and cultural representations: Teaching
+in highly diverse contexts. Acta Scientiae - ULBRA, 10, 27-46.
+
+Rosa, M., & Orey, D. C. (2009). Challenges faced by multicultural and multilingual
+schools in the United States: The case of mathematics. La Salle - Revista de Educação,
+Ciência e Cultura, 14(1), 29-44.
+
+Rosa, M.; & Orey, D. C. (2010). Ethnomodeling: A Pedagogical Action for Uncovering
+Ethnomathematical Practices. Journal of Mathematical Modelling and Application, 1(3),
+58-67, 2010.
+
+Stigler, J. W., & Barnes, R. (1988). Culture and mathematics learning. In E. Z. Rothkropf
+(Ed.), Review of research in education (pp. 253-306). Washington, D.C.: American
+Educational Research Association.
+
+Torres-Velasquez, D., & Lobo, G. (2004). Culturally responsive mathematics teaching and
+English language learners. Teaching Children Mathematics, 11, 249-255.
+
+Warschauer, M., 1999. Electronic literacies: Language, culture, and power in online
+education. Mahwah, NJ: Lawrence Erlbaum Associates.
+
+
+
+
+                                                                                               53
+Rosa, M. & Orey, D. C. (2011). Ethnomathematics: the cultural aspects of mathematics. Revista
+Latinoamericana de Etnomatemática, 4(2). 32-54
+
+
+
+
+Zaslavsky, C. (1997). World cultures in the mathematics class. In A. B. Powell & M.
+Frankenstein (Eds.), Ethnomathematics: Challenging Eurocentrism in mathematics
+education (pp. 307-320). Albany, NY: SUNY Press.
+
+Zeichner, K. (1996). Educating teachers to close the achievement gap: Issues of pedagogy,
+knowledge, and teacher preparation. In Williams, B. (Ed.), Closing the achievement gap: A
+vision to guide change in beliefs and practice (pp.55-77). Alexandria, VA: Association for
+Supervision and Curriculum Development.
+
+
+
+
+                                                                                          54

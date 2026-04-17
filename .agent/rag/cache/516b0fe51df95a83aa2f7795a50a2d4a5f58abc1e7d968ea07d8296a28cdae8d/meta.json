@@ -1,0 +1,9 @@
+{
+  "chunk_count": 245,
+  "extractor": "pdftotext",
+  "kind": "pdf",
+  "path": "/run/media/jpereiratrindade/labeco10T/labeco02/Revisao/10P_BuildingResilience.pdf",
+  "sha256": "516b0fe51df95a83aa2f7795a50a2d4a5f58abc1e7d968ea07d8296a28cdae8d",
+  "text_size": 230524,
+  "used_ocr": false
+}

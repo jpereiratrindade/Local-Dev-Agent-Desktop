@@ -1,0 +1,9 @@
+{
+  "chunk_count": 23,
+  "extractor": "pdftotext",
+  "kind": "pdf",
+  "path": "/run/media/jpereiratrindade/labeco10T/labeco02/Revisao/1753296608Ebook_-_Administrao_de_Sistemas.pdf",
+  "sha256": "c3925193ef47d444db5669f75eb1fed3c687156d00dc72e6d15906ef31efe0af",
+  "text_size": 22049,
+  "used_ocr": false
+}

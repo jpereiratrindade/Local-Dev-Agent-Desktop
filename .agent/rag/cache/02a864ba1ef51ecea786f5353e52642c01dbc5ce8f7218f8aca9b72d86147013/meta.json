@@ -1,0 +1,9 @@
+{
+  "chunk_count": 27,
+  "extractor": "pdftotext",
+  "kind": "pdf",
+  "path": "/run/media/jpereiratrindade/labeco10T/labeco02/Revisao/Biological_Effects_of_Defoliation_on_Grass_Plants.pdf",
+  "sha256": "02a864ba1ef51ecea786f5353e52642c01dbc5ce8f7218f8aca9b72d86147013",
+  "text_size": 25814,
+  "used_ocr": false
+}

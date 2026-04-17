@@ -1,0 +1,9 @@
+{
+  "chunk_count": 39,
+  "extractor": "pdftotext",
+  "kind": "pdf",
+  "path": "/run/media/jpereiratrindade/labeco10T/labeco02/Revisao/VulkanGLSL.1pp.pdf",
+  "sha256": "567358031554e408b42bd1e076f294bac2f54851469534f59ccabcb49ed074b2",
+  "text_size": 38303,
+  "used_ocr": false
+}

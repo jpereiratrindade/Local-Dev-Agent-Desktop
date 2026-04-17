@@ -1,0 +1,280 @@
+                                                                                                  Policy Forum
+
+
+                                                                                  Natureza & Conservação 11(1):92-95, July 2013
+                                                                                                           Copyright© 2013 ABECO
+                                                                                                 Handling Editor: Jean Paul Metzger
+Brazilian Journal of Nature Conservation                                                 http://dx.doi.org/10.4322/natcon.2013.015
+
+
+
+
+Restoration Ecology in Brazil – Time to Step Out of the Forest
+
+Gerhard E. Overbeck1*, Julia-Maria Hermann2, Bianca O. Andrade3, Ilsi I. Boldrini1,
+Kathrin Kiehl4, Anita Kirmer5, Christiane Koch2, Johannes Kollmann2, Sebastian T. Meyer6,
+Sandra C. Müller7, Carlos Nabinger8, Gabriele E. Pilger2, José Pedro P. Trindade9,
+Eduardo Vélez-Martin10, Emer A. Walker2, Deonir G. Zimmermann11 & Valério D. Pillar7
+
+1
+    Departamento de Botânica, Universidade Federal do Rio Grande do Sul – UFRGS, Porto Alegre, RS, Brazil
+2
+    Restoration Ecology, Center of Life and Food Sciences Weihenstephan, Technische Universität München – TUM,
+    ­ reising, Germany
+     F
+3
+    Programa de Pós-graduação em Botânica, Universidade Federal do Rio Grande do Sul – UFRGS, Porto Alegre, RS, Brazil
+4
+    Faculty of Agricultural Sciences and Landscape Architecture, Hochschule Osnabrück – University of Applied Sciences,
+    Osnabrück, Germany
+5
+    Department of Nature Conservation and Landscape Planning, Anhalt University of Applied Sciences, Bernburg, Germany
+6
+    Terrestrial Ecology, Center of Life and Food Sciences Weihenstephan, Technische Universität München – TUM, Freising,
+    Germany
+7
+    Departamento de Ecologia, Universidade Federal do Rio Grande do Sul – UFRGS, Porto Alegre, RS, Brazil
+8
+    Departamento de Plantas Forrageiras e Agrometeorologia, Universidade Federal do Rio Grande do Sul – UFRGS, Porto
+    Alegre, RS, Brazil
+9
+    EMBRAPA Pecuária Sul, Bagé, RS, Brazil
+10
+    Programa de Pós-graduação em Ecologia, Universidade Federal do Rio Grande do Sul – UFRGS, Porto Alegre, RS, Brazil
+11
+     Parque Nacional Aparados da Serra, ICMBio, Cambará do Sul, RS, Brazil
+
+
+
+
+As global trends in conversion and degradation of natural       development of biome-specific knowledge and technologies
+and near-natural ecosystems continue, restoration ecology       in ecological restoration (Brazil 2012).
+is considered an increasingly important area of research,
+                                                                Restoration ecology thus has made considerable progress
+while ecological restoration becomes an essential part of
+                                                                in Brazil, both as a scientific discipline and as an area of
+environmental policy. Restoration not only contributes
+                                                                applied technology and environmental policy, contributing
+to biodiversity conservation, but also to maintenance of        to biodiversity conservation and sustainable land use in
+important ecological services for humankind, even though        Brazil. However, up to now, the focus of restoration ecology
+the relation between species diversity and ecosystem            has been principally on forest vegetation or on the woody
+services is complex and generalizations difficult (MEA          component of non-forest vegetation types such as Cerrado
+2005, Bullock et al. 2011a). In the past decades, restoration   (Kageyama et al. 2003b, Zamith & Scarano 2006, Durigan
+ecology has emerged as a new scientific discipline in Brazil    2007, Sampaio et al. 2007), while open vegetation types
+(e.g. Kageyama et al. 2003a), and the restoration of degraded   have been largely neglected. Even though the largest part of
+lands was included as one of the principles in the Brazilian    Brazil’s natural vegetation is forest, different types of open
+National Environmental Policy Law in 1981 (Brazil 1981).        vegetation cover substantial parts of the country, such as
+More recently, the Brazilian Ministry of the Environment        in the Cerrado (e.g. ‘Campo limpo’, ‘Campos rupestres’),
+announced a plan to create, until 2015, two reference centers   in the Pantanal, in parts of the Mata Atlântica (‘Campos
+for restoration of degraded ecosystems within each of the six   de altitude’), and in the ‘Campos sulinos’ (South Brazilian
+biomes of the country, with the objective of promoting the      grasslands). The latter, included in the Pampa biome and
+                                                                the southern part of the Mata Atlântica (Atlantic Forest)
+*Send correspondence to: Gerhard Overbeck
+                                                                biome, are the focus of this contribution. Just as other regions
+  Departamento de Botânica, Universidade Federal do Rio
+  Grande do Sul – UFRGS, CEP 91501-970, Porto Alegre, RS,       dominated by tropical and subtropical grasslands around
+  Brazil.                                                       the world (Bond & Parr 2010), grasslands in southern Brazil
+  E-mail: gerhard.overbeck@ufrgs.br                             have not been, until quite recently, considered as priority
+Restoration Ecology – Time to Step Out of the Forest                                                                             93
+
+
+for research and conservation (Overbeck et al. 2007), and           These degradation processes not only lead to losses of
+restoration of these grasslands has not been an issue so far.       biodiversity, but also reduce important ecosystem services
+This seems to be principally a consequence of a general             provided by grasslands, such as carbon storage in soil, erosion
+lack of concern with conservation of non-forest vegetation          control, water infiltration into the soil and forage production
+in Brazil, a bias probably induced by the massive rates of          (White et al., 2000 and references therein, Tornquist & Bayer,
+deforestation seen in the Amazon and Atlantic forest biomes         2009; Pillar et al., 2012). It is mostly unknown to which
+in the 20th century, when ecological consciousness emerged.         extent these functions or services can return to near-natural
+                                                                    conditions under unassisted recovery, given that former
+The grasslands in southern Brazil (i.e. in the states of Rio
+                                                                    grassland areas become available for such recovery following
+Grande do Sul, Santa Catarina and Paraná) are very rich in
+                                                                    logging of pine or eucalypt plantations, or cessation of
+biodiversity (Bencke 2009, Boldrini 2009). For grasslands
+                                                                    intensive arable use (Figure 1). Grassland restoration is
+in Rio Grande do Sul alone (i.e. considering areas included
+                                                                    especially important within priority areas for conservation
+both in the Pampa and the Mata Atlântica biome), about
+                                                                    or close to conservation units. The obligation to restore areas
+2,500 vascular plant species have been recorded. That is five
+                                                                    in the ‘Reserva Legal’, defined in the Brazilian Forest Code
+times the number of native tree species occurring in the
+                                                                    (‘Código Florestal’), on the other hand, turns restoration
+state, and 20% of these species are endemics (Boldrini et al.,
+                                                                    into an important topic throughout the country, and thus
+in prep.). Grasslands composed of native species support
+                                                                    makes new concepts for widespread grassland restoration
+traditional livestock production, which still is the basis of the   necessary. In this context, it is important to recognize that
+Gaucho culture, and contribute to the scenic beauty of many         restoration needs to consider not only biodiversity, but also
+landscapes in southern Brazil. However, in the past decades         the most essential ecosystem functions (Aerts & Honnay
+the grassland area has decreased rapidly, principally due to        2011, Bullock et al. 2011a). In most grasslands, forage
+land use transformation (Crawshaw et al. 2007), causing             production is one of these. However, it may not always be
+not only direct losses, but also increasing fragmentation           possible to restore the full ‘functionality’ of the ecosystem.
+of grassland remnants. The Pampa biome has suffered a
+complete replacement of original vegetation in 54% of its           Initiatives for restoration of grassland ecosystems in southern
+area. Together with the Caatinga biome, which holds the             Brazil face five serious challenges:
+same value for loss of original vegetation, the Pampa biome           •   The overall legal setting for conservation and
+thus is listed second to the Mata Atlântica biome regarding
+                                                                          restoration is directed at forest vegetation. Even
+relative magnitude of land use changes (IBGE 2012).
+                                                                          though the Brazilian Forest Code actually obliges
+Rates of transformation and degradation are not uniform
+                                                                          landowners to restore all types of native vegetation,
+throughout Rio Grande do Sul (Cordeiro & Hasenack 2009).
+While grasslands have remained relatively intact in regions               this is often unknown or not acknowledged by
+with less potential for intensive agriculture, they have been             landowners;
+almost completely destroyed in other regions, mostly due to           •   No experience on grassland restoration is available in
+soybean or rice production. More recently, afforestation with
+                                                                          Brazil, and approaches developed for other vegetation
+non-native tree species (often eucalypts or pines) has led to
+                                                                          types most likely are not appropriate, as structure and
+substantial landscape changes in regions with poorer soils.
+                                                                          dynamics of grasslands and forests are very different.
+Furthermore, even grasslands under grazing management
+are threatened by different degradation processes, such as                For example, plantation of trees and establishment
+invasion by non-native species. It has been estimated that                of forest nuclei as a way to attract animal dispersers
+the most problematic species, the C4 grass Eragrostis plana,              and thus promote succession processes are common
+introduced from Africa, occurs in more than one million                   techniques for restoration of forest, but unsuitable for
+hectares in Rio Grande do Sul (Medeiros & Focht 2007).                    grassland vegetation;
+
+
+
+
+Figure 1. Managed natural grassland (reference ecosystem for restoration) and examples of three degradation stages (abandoned
+pasture, logged plantation and abandoned arable land) in the highlands of southern Brazil, Rio Grande do Sul (Photos: J.-M. Hermann,
+Jan. 2012).
+94                                                 Overbeck et al.                    Natureza & Conservação 11(1):92-95, July 2013
+
+
+     •   It is currently impossible to commercially obtain seeds      practice by including non-forest vegetation types. We believe
+         of even the most common native grassland species,            that new concepts and improved experience in restoration
+         while seeds from non-native species (some of them            of non-forest vegetation can help reducing and eventually
+         invasive) are easily available. This is a serious obstacle   stopping further losses in biodiversity, ecosystem services and
+         for any grassland restoration project;                       characteristic landscapes, not only in the ‘Campos sulinos’,
+                                                                      but also in other parts of Brazil. Grassland restoration needs
+     •   The notion that disturbances like grazing and fire are       a new set of concepts and techniques, and conservation of
+         vital for grassland maintenance and diversity under          grasslands, in contrast to many other Brazilian ecosystems,
+         climatic conditions suitable for forest succession is not    often depends on suitable management to be successful in
+         widely recognized in Brazilian conservation policy.          the long run.
+         Introduction of management, such as grazing, in              So, is there a conflict between the aims of grassland and
+         grassland restoration projects, as known from many           forest restoration? We do not think so, as the choice of a
+         other regions of the world, is something not discussed       reference system that helps to define restoration targets
+         so far. Vegetation management for conservation is            and methods is not an arbitrary choice between forest and
+         still rarely considered by the public or in conservation     grassland (or any other ecosystem type, for this matter), but
+         policy;                                                      a question of the ecological context, the specific conditions
+                                                                      and history of the site to be restored. In consequence,
+     •   The necessity of restoration of grassland vegetation is      different restoration objectives will exist within biomes
+         still poorly recognized in Brazil, just as the benefits of   or even vegetation types. No standard procedures exist for
+         restoration for large-scale conservation of biodiversity     restoration, but restoration strategies that consider the full
+         and ecosystem services.                                      diversity of Brazilian ecosystems and their characteristics
+                                                                      will contribute significantly to conservation of biodiversity
+The good news is that many examples of successful grassland           and ecosystem functioning throughout the country.
+restoration have been developed in other countries, for
+grasslands under a wide range of climatic conditions, different       Acknowledgments
+management regimes and degradation processes (e.g.
+Packard & Mutel 2005, Kiehl et al. 2010, Bakker et al. 2012).         This contribution is a result of the Workshop “Scientific
+A large proportion of studies, principally in the Northern            bases for grassland restoration in southern Brazil“, held
+Hemisphere, come from regions where management (by                    on July 16-18, 2012, in Freising, Germany, financed by
+grazing, cutting or burning) is essential for conservation            CNPq and DFG (grant numbers 490069/2011-8 and KO
+of grasslands composed by native species (Bullock et al.              1741/2-1, respectively). VP, SM and IB received support
+2011b, Bakker et al. 2012). Current research indicates that           from CNPq (PQ 306573/2009-1, PQ 313732/2009–4 and
+this is also true for South Brazilian grasslands (Pillar & Vélez      PQ 306412/2008-0, respectively).
+2010). Thus, the experiences made in grassland restoration
+around the world could be used as a basis for developing              References
+and testing grassland restoration in Brazil, even though we
+should be prepared to find that the specific conditions will          Aerts R & Honnay O, 2011. Forest restoration, biodiversity and
+                                                                         ecosystem functioning. BMC Ecology, 11: Article No. 29.
+call for adaptation of concepts. It has been recognized that
+                                                                         Available from: <http://www.biomedcentral.com/1472-
+restoration of ecosystems depends on knowledge from a
+                                                                         6785/11/29>. PMid:22115365 PMCid:3234175. http://
+broad range of scientific areas, including landscape ecology,            dx.doi.org/10.1186/1472-6785-11-29
+conservation biology and socioeconomic research (Cairns
+& Heckman 1996; Young 2000; Zerbe et al. 2009). For the               Bakker JP et al., 2012. Restoration of dry grasslands and
+                                                                        heathlands. In: Van Andel J & Aronson J (eds.). Restoration
+South Brazilian grassland ecosystems, it seems especially
+                                                                        Ecology: The New Frontier. Chichester: Wiley-Blackwell.
+important to include knowledge from forage science and                  p. 173-188. http://dx.doi.org/10.1002/9781118223130.ch14
+rangeland management, because grassland restoration will
+only be successful, when conducted in a way that allows               Bencke GA, 2009. Diversidade e conservação da fauna dos
+                                                                         Campos do Sul do Brasil. In: Pillar VD et al. (eds.). Campos
+for reasonable productivity as an economic basis for local
+                                                                         Sulinos: Conservação e Uso Sustentável da Biodiversidade.
+farmers – if possible, already during the restoration process.
+                                                                         Brasília: Ministério do Meio Ambiente. p. 101-121.
+Additionally, as in restoration of other ecosystem types,
+the landscape context needs to be considered. Restoration             Boldrini II, 2009. A flora dos campos do Rio Grande do Sul.
+success may critically depend on landscape features that                 In: Pillar VD et al. (eds.). Campos Sulinos: Conservação e
+                                                                         Uso Sustentável da Biodiversidade. Brasília: Ministério do
+allow for colonization by target species, i.e., permit dispersal,
+                                                                         Meio Ambiente. p. 63-77.
+and minimize possible negative impacts from other land
+uses in adjacent areas, such as spread of invasive species.           Bond WJ & Parr CL, 2010. Beyond the forest edge: Ecology,
+                                                                        diversity and conservation of the grassy biomes. Biological
+We conclude that it is time to broaden the Brazilian                    Conservation, 143:2395-2404. http://dx.doi.org/10.1016/j.
+perspective on restoration ecology in science as well as in             biocon.2009.12.012
+Restoration Ecology – Time to Step Out of the Forest                                                                             95
+
+
+Brazil. Ministério do Meio Ambiente, 1981. Lei nº 6.938, de          Medeiros RB & Focht T, 2007. Invasão, prevenção, controle e
+   31 de agosto de 1981. Dispõe sobre a Política Nacional do           utilização do capim-annoni-2 (Eragrostis plana Nees) no
+   Meio Ambiente, seus fins e mecanismos de formulação e               Rio Grande do Sul, Brasil. Pesquisa Agropecuária Gaúcha,
+   aplicação, e dá outras providências. Brasília. Diário Oficial       13:105-114.
+   da República Federativa do Brasil, Brasília (1981 set. 02).
+                                                                     Millennium Ecosystem Assessment - MEA, 2005. Ecosystems
+Brazil. Ministério do Meio Ambiente - MMA, 2012. Áreas                  and Human Well-being: Biodiversity Synthesis. Washington:
+   degradadas serão reformadas. Brasília: MMA. E-INFORMMA               Island Press.
+   no. 184 de 10/5/2012.
+                                                                     Overbeck GE et al., 2007. Brazil’s neglected biome: The South
+Bullock JM et al., 2011a. Restoration of ecosystem services and        Brazilian Campos. Perspectives in Plant Ecology, Evolution
+   biodiversity: conflicts and opportunities. Trends in Ecology        and Systematics, 9:101-116. http://dx.doi.org/10.1016/j.
+   and Evolution, 26:541-549. PMid:21782273. http://dx.doi.            ppees.2007.07.005
+   org/10.1016/j.tree.2011.06.011
+                                                                     Packard S & Mutel CF, 2005. The tallgrass restoration handbook:
+Bullock JM et al., 2011b. Semi-natural grasslands. In: NERC (ed.).      for prairies, savannas, and woodlands. 2nd ed. Washington:
+   Technical Report: The UK National Ecosystem Assessment.              Island Press.
+   Cambride: UNEP-WCMC. p. 162-195. Available from:
+                                                                     Pillar VD & Vélez E, 2010. Extinção dos Campos Sulinos em
+   <http://http://uknea.unep-wcmc.org/>. Access in: July 2012.
+                                                                         Unidades de Conservação: um fenômeno natural ou um
+Cairns J Jr & Heckman JR, 1996. Restoration Ecology: The                 problema ético? Natureza & Conservação, 8:84-86. http://
+   State of an Emerging Field. Annual Review of Energy and               dx.doi.org/10.4322/natcon.00801014
+   the Environment, 21:167-89. http://dx.doi.org/10.1146/
+                                                                     Pillar VD, Tornquist CG & Bayer C, 2012. The southern Brazilian
+   annurev.energy.21.1.167
+                                                                         Grassland biome: Soil carbon stocks, fluxes of greenhouse
+Cordeiro JLP & Hasenack H. 2009. Cobertura vegetal atual                 gases and some options for mitigation. Brazilian Journal
+  do Rio Grande do Sul. In: Pillar VD et al. (eds.). Campos              of Biology, 72:673-681. PMid:23011297. http://dx.doi.
+  Sulinos: Conservação e Uso Sustentável da Biodiversidade.              org/10.1590/S1519-69842012000400006
+  Brasília: Ministério do Meio Ambiente. p. 285-299.
+                                                                     Sampaio AD, Holl KD & Scariot A, 2007. Does restoration
+Crawshaw D, Dall’Agnol M, Cordeiro JL & Hasenack H,                     enhance regeneration of seasonal deciduous forests in
+   2007. Caracterização dos campos sul-riograndenses: uma               pastures in Central Brazil? Restoration Ecology, 15:462-471.
+   perspectiva da ecologia da paisagem. Boletim Gaúcho de               http://dx.doi.org/10.1111/j.1526-100X.2007.00242.x
+   Geografia, 33:233-252.
+                                                                     Tornquist CG & Bayer C, 2009. Serviços ambientais:
+Durigan G, 2007. Problemas técnicos, soluções científicas:              oportunidades para a conservação dos Campos Sulinos.
+  exemplos em restauração de Cerrado e Mata Ciliar. In:                 In: Pillar VD et al., (eds.). Campos Sulinos: Conservação
+  Barbosa LM & Santos NA Jr (eds.). A Botânica no Brasil:               e Uso Sustentável da Biodiversidade. Brasília: Ministério
+  pesquisa, ensino e políticas públicas ambientais. São Paulo:          do Meio Ambiente. p. 122-127.
+  SBB. p. 315-318.                                                   White R, Murray S & Rohweder M, 2000. Pilot analysis of
+Instituto Brasileiro de Geografia e Estatística- IBGE, 2012.           global ecosystems: grassland ecosystems technical report.
+   Indicadores de Desenvolvimento Sustentável. Brasília: IBGE.         Washington: World Resources Institute.
+
+Kageyama PY, Gandara FB & Oliveira RE, 2003a. Biodiversidade         Young TP, 2000. Restoration ecology and conservation biology.
+   e restauração da floresta tropical. In: Kageyama PY et al.           Restoration Ecology, 92:73-83.
+   (eds). Restauração Ecológica de Ecossistemas Naturais.            Zamith LR & Scarano FR, 2006. Restoration of a Restinga
+   Botucatu: FEPAF. p. 27-48.                                          sandy coastal plain in Brazil: Survival and growth of planted
+Kageyama PY et al., 2003b. Restauração Ecológica de Ecossistemas       woody species. Restoration Ecology, 14:87-94. http://dx.doi.
+   Naturais. Botucatu: FEPAF.                                          org/10.1111/j.1526-100X.2006.00108.x
+
+Kiehl K et al., 2010. Species introduction in restoration            Zerbe S, Wiegleb G & Rosenthal G, 2009. Einführung in
+   projects – Evaluation of different techniques for the                die Renaturierungsökologie. In: Zerbe S & Wiegleb
+   establishment of semi-natural grasslands in Central and              G. (eds.). Renaturierung von Ökosystemen. Spektrum
+   Northwestern Europe. Basis and Applied Ecology, 11:285-299.          Akademischer Verlag: Heidelberg. p. 1-21. http://dx.doi.
+   http://dx.doi.org/10.1016/j.baae.2009.12.004                         org/10.1007/978-3-8274-2161-6_1
+
+
+                                                                                                          Received: January 2013
+                                                                                                         First Decision: May 2013
+                                                                                                               Accepted: May 2013

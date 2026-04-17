@@ -1,0 +1,1016 @@
+                                                                                                                                 Review Article
+
+                                                                                                           Published: 6 February 2026
+                                                                                                             https://doi.org/10.20935/AcadAI8109
+
+
+
+
+Bovine facial recognition through muzzles
+Karla Rejane de Andrade Porto1,2 , Joao Vitor de Andrade Porto2,3, *, Fabricio de Lima Weber2,4 , Selmos Luiz Gressler5 ,
+Vanessa Aparecida de Moraes Weber1,4
+Academic Editors: Vincent Hilaire, Zenglin Xu
+
+
+Abstract
+This review examines the application of neural network architectures for cattle identification and recognition using snout images as the
+primary biometric trait, motivated by the anatomical uniqueness and high inter-individual variability of this region. Beyond reporting
+performance metrics, the analyzed literature consistently highlights that the discriminative power of bovine facial recognition systems
+is strongly associated with specific visual features, including the spatial configuration of nostrils, texture patterns of the muzzle surface,
+local curvature of the snout region, and contrast variations under different illumination conditions. A wide range of algorithms and
+tools, such as SIFT, SURF, KNN, and deep learning architectures including YOLO-based detectors and ResNet-50 backbones, have
+been employed to extract and model these features effectively. The reviewed studies report high recognition performance, with recent
+YOLOv8-based approaches achieving accuracies close to or equal to 100% under controlled conditions. Furthermore, the use of transfer
+learning, convolutional feature hierarchies, and ensemble classifiers, such as random forests, enhances robustness to pose variation,
+noise, and environmental variability. These findings demonstrate that the success of bovine facial and muzzle recognition is primarily
+driven by the quality and stability of learned visual features rather than by dataset-specific configurations. As a result, such systems show
+strong potential for real-time livestock monitoring, health assessment, disease tracking, and scalable precision livestock management,
+with applicability extending to other animal species.
+
+
+Keywords: cattle recognition, precision livestock management, neural networks, facial recognition, muzzle recognition
+
+Citation: de Andrade Porto KR, de Andrade Porto JV, de Lima Weber F, Gressler SL, de Moraes Weber VA. Bovine facial recognition
+through muzzles. Academia AI and Applications 2026;2. https://doi.org/10.20935/AcadAI8109
+
+
+1. Introduction
+Machine learning methods are increasingly being used not only                 aditionally depend exclusively on human intervention but become
+for prediction through static models but also as highly integrated            increasingly complex in dense and highly overlapping popula-
+components in more dynamic and real-time decision-making pro-                 tions. Machine learning and artificial intelligence have emerged as
+cesses. In this context, advances in computer vision have enabled             technological tools with high problem-solving capacity to address
+remote sensing across various sectors of society, ranging from                challenges across different domains of captive species cultiva-
+biometrics used in facial recognition and security devices to the             tion [3].
+operation of household appliances and Internet of Things equip-
+                                                                              In response to the demands of the domestic market and export
+ment, as well as energy supply management. An example of this
+                                                                              requirements aimed at ensuring food security, Brazil has been in-
+is provided by [1], who employed photogrammetry for feature
+                                                                              vesting in technology to strengthen precision agriculture and live-
+detection in power distribution line corridors within the electrical
+                                                                              stock farming. The latter, focused on the meat production chain,
+sector, using machine learning techniques to enhance efficiency
+                                                                              has incorporated machine learning applications as a means to
+and sustainability.
+                                                                              ensure the health and welfare of cattle herds. The use of algorithms
+Another application of machine learning has been marked by                    and mobile web applications (apps) has proven to be a fast and
+its economic impact on agriculture. The use of deep learning                  efficient approach for data collection and recognition, enabling
+algorithms has proven effective for the rapid and accurate iden-              the modeling and evaluation of animals for disease prediction in
+tification and monitoring of crops, based on image information                beef cattle production [4].
+and similarity analysis, as a strategy to mitigate crop damage and
+                                                                              The traceability enabled by the integration of machine learning
+the spread of diseases [2].
+                                                                              and artificial intelligence is also an important component in cattle
+In other areas of the agricultural sector, there are also consistent          confinement systems, as it allows the individual identification of
+contributions, such as in aquaculture, which supports global fish             animals. The collected information focuses on sanitary control
+production by eliminating bottlenecks along the production chain.             and the tracking of diseases. In contrast to conventional trace-
+This includes tasks like the counting and selection of fry, which tr-         ability methods such as electronic ear tags, microchips, buttons,
+
+
+1 Campo Grande Campus, State University of Mato Grosso do Sul, Campo Grande, Brazil.
+2 Kerow Precision Solutions, Campo Grande, Brazil.
+3 Inovisao Laboratory, Dom Bosco Catholic University, Campo Grande, Brazil.
+4 Faculty of Agricultural Sciences, Federal University of Grande Dourados, Dourados, Brazil.
+5 Agron Internet Services Provider Ltd., Dourados, Brazil.
+∗ email: ra866593@ucdb.br
+
+
+
+ACADEMIA AI AND APPLICATIONS                       2026, 2                                                                                 1 of 13
+                                                                                                      https://doi.org/10.20935/AcadAI8109
+
+
+or other noninvasive accessories like sensors and GPS collars,          2. Materials and methods
+which remain artificial attachments, animal biometrics operate by
+identifying unique muzzle patterns comparable to human finger-          The objective of this study is to conduct a systematic literature
+prints. This method is entirely noninvasive and depends exclu-          review covering the past five years, from 2019 to 2023. Following
+sively on machine learning modeling [5].                                data collection, a quantitative analysis was performed to assess
+                                                                        the volume of scientific publications and to examine the elements
+Identification through the traceability of bovine muzzle patterns       presented, thereby contributing to the scientific knowledge within
+has already emerged as a factor contributing to animal quality          the specific fields investigated. Another notable aspect concerns
+and welfare. However, barriers still exist to the implementation        the indicators analyzed in the post-review studies and their con-
+of a practical precision monitoring system on a large scale for         tribution to aligning public policies with animal and human health
+extensive herds, encouraging research aimed at developing au-           and safety measures.
+tonomous biometric identification approaches for cattle [6].
+                                                                        The investigation began with the construction of a descriptive
+Undoubtedly, it is a fundamental element in precision livestock
+                                                                        theoretical framework on the use of machine learning and its
+farming, and image capture has established itself as a useful
+                                                                        relationship with veterinary science and livestock farming. The
+and reliable approach for monitoring and automatically ana-
+                                                                        results were collected from scientific studies indexed in elec-
+lyzing animal behavior, thereby enabling efficient management.
+                                                                        tronic databases and were subsequently grouped according to
+Although pixel-wise image labeling may appear simple, it is a
+                                                                        their content.
+time-consuming task due to the irregular contours of each animal
+and the variations in posture during image acquisition, making          Data collection was conducted between April and May 2024, with
+segmentation a basic prerequisite for cattle identification. In this    inclusion criteria based on updates of full scientific articles aligned
+context, deep learning enables the labeling of a large number of        with the objectives of this study and published in open access in
+images for recognition and, through single-image learning, the          the English language. Statistical metrics for document selection
+segmentation of each image [7].                                         were constructed according to the descriptive terms used in the
+Studies conducted by Awad [8] demonstrated the importance of            research databases available on ArXiv.org, DOAJ (Directory of
+traceability in cattle and buffalo as a means of identification, dis-   Open Access Journals), Free EJournal, IEEE Electronic Library
+ease tracking, vaccination control, and production management.          Journal, Journal@Ovid, Open Access, PubMed, PubMed Central,
+They also highlighted that identification methods based on ear          Science Direct, Social Science Citation Index (WOS), Springer Na-
+tags, brands, tattoos, and electrical techniques are susceptible to     ture, Web of Science, Wiley Online Library, and World Scientific
+fraud, duplication, and security challenges. Among image-based          Journal, complemented by studies accessible through the Google
+biometric identifiers, muzzle prints, iris patterns, and retinal vas-   Scholar platform.
+cular patterns are mentioned. However, when determining the
+                                                                        The semantic connectors applied were used in the following
+most suitable approach, it is necessary to consider key challenges
+                                                                        combinations: muzzle and recognition, muzzle, muzzle recog-
+for computerized systems, such as identification accuracy, pro-
+                                                                        nition. This search yielded a total of 15,800 articles, of which,
+cessing time, and operability.
+                                                                        after applying the criteria of full open-access articles in English
+Machine learning has shown considerable potential for biometric         and based on the review of titles relevant to the research focus,
+recognition in livestock, producing high-quality data that can          14,913 articles were excluded for not meeting the established
+enhance herd management and monitoring. However, for these              criteria. This exclusion process involved the removal of duplicate
+models to be practically useful, they must be easily deployable in      articles, publications in foreign languages without an English
+real-world farm environments and provide a comprehensive un-            translation, and those originally published in Asian languages,
+derstanding of the underlying patterns they aim to detect. Efficient    resulting in a total of 887 articles. This stage was designated as
+model deployment allows for the optimal use of computational            the first selection filter, in which a preliminary choice was made
+resources, facilitating innovation in livestock management and          for subject categorization and collection of documents that met
+supporting the sustainable development of modern animal hus-            the inclusion criteria.
+bandry. The integration of such technology can improve decision-
+                                                                        The second filter assessed the content of the topics addressed in
+making, reduce manual effort, and enable more precise interven-
+                                                                        the abstracts and the identification of each document according to
+tions to maintain herd health and productivity.
+                                                                        categorization guided by semantic groups. Figure 1 illustrates the
+In order to assess the effectiveness of neural network architec-        number of abstracts selected for review according to the databases
+tures for the identification of bovine muzzle patterns, this study      searched. Subsequently, duplicate publications or works consid-
+presents a systematic review of the literature from the past five       ered supplementary and of minimal relevance to the research
+years. The review aims to identify which approaches to cattle           objective were discarded, resulting in a total of 26 articles. In a
+recognition through muzzle biometrics achieve the highest accu-         more detailed screening, an additional 17 articles were included;
+racy and precision while minimizing errors caused by phenotypic         however, 4 did not present conclusive results, leaving a total of 39
+similarities, such as resemblances in observable characteristics of     documents. The collected materials were processed and analyzed
+color, shape, and size. By synthesizing these findings, the study       using the open-source software IRaMuTeQ [9], which enabled the
+provides insights into the most reliable methods for herd moni-         efficient and in-depth processing and analysis of large volumes
+toring and management, highlighting the practical implications of       of text, preserving the contextual relationships directed by the
+implementing biometric technologies in livestock operations and         semantic connectors and avoiding mere mechanical descriptions
+offering guidance for future research in this domain.                   of the studied content.
+
+
+
+
+ACADEMIA AI AND APPLICATIONS                   2026, 2                                                                                2 of 13
+                                                                                                     https://doi.org/10.20935/AcadAI8109
+
+
+
+
+Figure 1 • Distribution of the selected articles in the preliminary research across databases and search platforms by binary combination
+from 2019 to 2023.
+
+
+A basic lexicographical analysis was applied to determine word          five distinct subject groups addressing architecture models, recog-
+frequency calculations within the study’s focus, including the total    nition approaches, types of technology, biometric applications,
+number of words, average frequency, and the number of hapax             and cattle muzzle recognition.
+occurrences. This analysis aimed to characterize the vocabulary
+and establish a dictionary of reduced forms, identifying active
+and supplementary forms applied in each study, thereby enabling
+proper grouping.
+
+The results of the statistical analysis of the 39 articles comprising
+the textual corpus revealed 412 occurrences of common words and
+156 grammatical forms. The graphical representation of the lex-
+icography indicated a higher frequency of terms within intervals
+above fifty, with one to two overlapping terms. Regarding hapax or
+terms occurring only once, a total of one hundred instances were
+observed, of which 24.7% were isolated occurrences and 64.10%
+were grammatical forms. These were primarily observed within
+frequency ranges of 10 to 20, as shown in Figure 2, with an
+average of 10.30 lexical occurrences among the terms.
+
+Given the wide variety of terms, it was not possible to establish
+an adequate representation based on similarity. All cited terms,
+regardless of their frequency, are presented in alphabetical order
+in Table 1. Considering the terms “muzzle” and “recognition”
+as central to the classes of active, supplementary, or combined
+forms, the database comprised 156 grammatical forms, forming
+                                                                        Figure 2 • Example of facial segmentation of the animals.
+
+
+
+
+ACADEMIA AI AND APPLICATIONS                   2026, 2                                                                             3 of 13
+                                                                                                     https://doi.org/10.20935/AcadAI8109
+
+
+Table 1 • Description of the cited terms in alphabetical order.
+  accuracy           bovine               drive              horse              marker              precision             SNP
+  agriculture        brute                edge               humanity           matcher             print                 sparse
+  algorithm          cation               efficient net      ICA                metric              process               SURF
+  animal             cattle               equine             identifique        mflops              provide               system
+  animality          classification       extraction         identification     microsatellite      radio                 tag
+  architecture       CNN                  face               identifier         MLP                 random                task
+  artificial         cognitive            farm               image              model               RANSAC                time
+  autoencoder        compression          feature            individual         monitor             recognition           tomasi
+  automate           compute              field              inspire            muzzle              reduction             tracking
+  background         convolution          filter             intelligence       network             representation        transfer
+  bag                convolutional        flann              intelligent        neural              saen                  tree
+  ballistics         cow                  flow               intermediate       NN                  schlieren             verification
+  barcodes           dairy                FLPP               kamphaeng          orient              science               vibrissa
+  base               database             force              LBP                owner               SDAE                  vision
+  beef               DNB                  forest             LDA                pantaneira          semiotic              visual
+  behavior           decision             frequency          learn              pattern             sense                 visualization
+  bio                deep                 gabor              livestock          PCA                 sensor                VLAD
+  bioactive          depth                genotyping         LPP                perception          shi                   welfare
+  biometric          detection            group              machine            personhood          shoot                 word
+  blast              dog                  hanwoo             management         phenotypic          sift                  YOLO
+  body               drag                 health             map                point               size                  YOLO 3
+
+
+3. Results and discussion                                               cattle, muzzle, and learning, as shown in Figure 3. It is also
+                                                                        important to note that no experimental data were generated, and
+The selected articles (n = 39) were categorized following analy-        all values were extracted from the consulted studies.
+sis for the construction of the literature review and grouped ac-
+cording to the chosen keywords and their concordance within the         Although phenotypic aspects are commonly used as a reference for
+database. The relationship of these articles is detailed in Table 1     applying biometrics in animal identification, patterns such as coat
+and Figures S1 and S2 from the supplementary materials, which           markings often present gaps that the human eye cannot discern.
+explains the categorization of the distinct groups and their dis-       To mitigate this challenge, computer vision techniques and image
+tribution in detail. Continuing the lexical analysis and using the      processing contribute significantly to capturing and removing ar-
+same word database from the similarity analysis, but focusing on        tifacts, enabling the creation of a dataset that establishes biomet-
+the visual representation of the most frequently occurring isolated     ric characteristics for each individual animal. The mathematical
+words within the textual corpus without considering their corre-        accuracy of the data is evaluated based on the statistics of each
+lations, a word cloud was created, as shown in Figure S3 from           employed method, providing quality and reliability for precise
+the supplementary materials, also included in the supplementary         analysis of the captured images [11].
+materials.
+Aligned with the proposed objective and aimed at deepening the
+understanding of the selected texts, adaptations were made fol-
+lowing the guidelines presented by [10] on machine learning and
+techniques for cattle identification, resulting in the formulation of
+three guiding questions:
+
+   • Which techniques have been employed for animal identifica-
+     tion over the past five years?
+   • Which Machine Learning and Deep Learning models have been
+     applied in livestock farming to identify and recognize animals?
+   • Focusing on cattle farming, which methods and evaluation
+     metrics are being used to identify and recognize livestock,
+     regardless of their location?
+                                                                        Figure 3 • Distribution of the most frequent single words.
+Considering the distribution of isolated words and their citation
+frequency in the new selection linked to the guiding questions,         The analytical discussion of the selected literature texts was
+the most prevalent terms in descending order were identification,       grouped according to method, application, and accuracy for facial
+
+
+
+ACADEMIA AI AND APPLICATIONS                   2026, 2                                                                              4 of 13
+                                                                                                          https://doi.org/10.20935/AcadAI8109
+
+
+and muzzle recognition of cattle using machine learning architec-            techniques employed in the reviewed studies, will be further clari-
+tures and tools. Each study was further categorized into subgroups           fied and cited accordingly in the subsequent discussion. The texts
+defined by the technique investigated, as shown in Table 2. How-             will first be presented by examining the foundational principles
+ever, for a more rigorous and structured discussion, each term               of each technique and its applications in animal identification,
+and each acronym presented in the table, which correspond to the             followed by a detailed explanation of their specific use in cattle
+                                                                             identification as described in the respective works.
+
+
+Table 2 • Methodological grouping of machine learning approaches applied to cattle face and muzzle recognition, organized according
+to the employed techniques and target applications.
+ Method                           Purpose of use                                                                                     References
+ CNNs                             Identification of facial features and muzzle with SIFT                                             [12, 13]
+ DBN, SDAE, CLAHE                 Identification with few images; Landmark predictor                                                 [14, 15]
+ KNN, SIFT, SURF                  Extraction of facial and muzzle features                                                           [12, 16, 17]
+ ResNet + PointNet                Robustly identify specific muzzle patterns                                                         [11, 18]
+ ResNet50                         Discriminatory features of the face and muzzle                                                     [19]
+ SDAE + DNB                       Structure of the image pattern of the muzzle and face, contour and perception of beads and crest   [20]
+ SIFT                             Noise or blurred image with data refinement                                                        [21]
+ SURF, SIFT, Dense-SIFT + (χ2)    Multilayer identification and outlier removal                                                      [12]
+ SURF; MSER                       Recognition in a mixed set of animals                                                              [22]
+ SVM                              Large herds with lighting and multiscale variability                                               [6]
+ VGG16_BN; Shuffle NetV2          Muzzle printing in field herds                                                                     [23]
+ YOLO (v3) + SIFT; ResNetV2       Different image quality and consistency at angles                                                  [24]
+ YOLO(v7)                         Real-time capture of animals, varying lighting, nonlinear movement                                 [25]
+ YOLOv3 + ResNet50                Use of few images for individual identification of cattle                                          [5]
+ YOLOv5n + ConvBlock1             Interesting points and random sample                                                               [26]
+ YOLOv8                           Color depth, pimples and dermal projections                                                        [27]
+
+
+3.1. Study of the technique and animal identification                        more advanced and rigorous processes to achieve precision and
+                                                                             reliability. However, the adoption of cutting-edge or advanced
+Visual biometrics refers to the identification of individuals based          technologies carries the risk of operational bottlenecks and the
+on distinctive visual characteristics and has gained increasing              constant need for specialized expertise. Therefore, the use of so-
+relevance in applications involving animal recognition and iden-             lutions that employ reliable and precise markers through simpler
+tification, particularly in the context of wildlife conservation and         and lower-cost approaches, which do not require highly special-
+endangered species monitoring [28]. Within this framework, the               ized personnel for daily application and use, is highly advanta-
+concept of a “face” is understood as an identity-bearing rep-                geous.
+resentation grounded in phenotypic similarity. Etymologically,
+the term rostrum, derived from Latin, encompasses the frontal                Unique patterns and discriminative body markings used for indi-
+anatomical structures of the head that constitute the facial region          vidual identification are already well established for manta rays,
+in mammals, birds, and insects. The presence and morphological               penguins, whales, sharks, and the stripe patterns of tigers and
+configuration of structures such as muzzles and beaks enable                 zebras. Based on this knowledge, adaptations have been made for
+the categorization of animal groups and the discrimination of                the biometric recognition of chimpanzees, lemurs, cattle, sheep,
+intra-group variability based on unique anatomical traits [29].              horses, and pigs [6]. Detection and recognition approaches are
+                                                                             particularly important when monitoring species that inhabit hard-
+Illustrative examples include the pronounced facial differences              to-reach areas, and their effectiveness can be enhanced through
+observed between dog breeds such as bulldogs and German shep-                the use of satellite imagery for detecting, identifying, and counting
+herds, as well as between Shih Tzus and Yorkshire Terriers. In               elusive species, whether of medium or large size.
+veterinary and livestock management contexts, biometric marker
+systems support more efficient identification, monitoring, and               Studies conducted by [31] explored biometric identification using
+traceability, contributing to vaccination control, disease manage-           technologies previously applied to human recognition, such as
+ment, and the mitigation of theft and fraud. Among the biometric             fingerprint, facial, and retinal pattern analysis, now adapted for
+traits commonly explored in animal identification studies are the            animal identification. The muzzle has shown promising results as
+iris, retina, muzzle, and body patterns [30].                                a primary biometric feature for recognizing mammals, including
+                                                                             cattle, goats, sheep, and horses, providing not only a relevant ID
+It is worth noting that the more sensitive a biometric marker is,            for tracking but also additional information for disease control,
+the greater the requirement for technologies that rely on more               monitoring of breeding and management programs, as well as
+expensive equipment and systems, which directly correlates with              enhancing animal welfare and sustainable production efficiency.
+cost. Such technologies demand higher-quality components and                 For identification, object detection was performed using Yolo (v7),
+
+
+
+
+ACADEMIA AI AND APPLICATIONS                   2026, 2                                                                                      5 of 13
+                                                                                                    https://doi.org/10.20935/AcadAI8109
+
+
+achieving an average accuracy of 99.5% for face detection and           with a Ghost module and the MAML framework (Model-Agnostic
+99.7% for muzzle detection. Feature filtering and extraction to         Meta-Learning), enabling rapid adaptation to recognize individu-
+mark points of interest employed SIFT (Scale-Invariant Feature          als even with few images. An autoencoder was adopted to allow the
+Transform), followed by FLANN (Fast Library for Approximate             Base-Learner to learn general features by combining supervised
+Nearest Neighbors).                                                     and unsupervised approaches. The proposed localization model
+                                                                        achieved a mean Average Precision (mAP) of 99.5% and an iden-
+The system set demonstrated precise recognition capabilities and
+                                                                        tification accuracy of 90.43% with only five samples per animal.
+potential applications in animal security and health management.
+The process was carried out in three stages: detection of the animal    Previous information from biometric analyses for the identifica-
+and capture of the face in the image, localization of the animal, and   tion and recognition of cattle conducted by [15] indicates that
+detection of the muzzle or muzzle points within the facial image.       analyzers such as ImageNET and COCO serve as benchmarks for
+Among the observed animal groups, horse biometrics achieved             deep learning models; however, the available facial datasets do
+100% accuracy in matching the muzzle point dataset, referred            not always provide specific elements capable of generating opti-
+to as THDD (Horse Dataset). However, the presence of noise              mal mapping. The study recommends the application of trained
+or blurring in the images due to animal movement was noted,             models beginning with a face detector, followed by the use of
+necessitating feature filtering and extraction using SIFT, followed     a landmark predictor to establish reference points that act as
+by FLANN for data refinement [19].                                      anchors to rotate and align the image in a portrait position. This
+Advances in animal biometrics have enabled significant progress         process assists in calculating the mean squared error (MSE) to
+in livestock farming aimed at food supply, providing new per-           measure the differences between the predicted coordinates and
+spectives for the management and promotion of animal and hu-            the original points, and finally to encode the image. YOLOv5 was
+man health, as well as considerable socioeconomic importance.           identified as the base algorithm, enabling integration of the data
+Following the guidelines of the WOAH (World Organization for            within a score range of 0 to 1 and providing confidence in the
+Animal Health) regarding animal tracking systems, biometrics is         available dataset.
+considered essential and should replace traditional identification
+                                                                        Through modifications to the OSNet architecture, originally de-
+methods such as wool marks, tattoos, ear notches, and plastic or
+                                                                        veloped for human identification, accuracy was adapted for the
+metal ear tags, which increase costs, particularly when applied to
+                                                                        problem of cattle recognition. Using a deep learning approach,
+large herds of sheep, goats, pigs, and cattle [30].
+                                                                        the system can distinguish animals from images to identify lost
+Consequently, regarded as a pioneering milestone in computer            livestock or prevent insurance fraud. The replacement of OSNet’s
+vision, biometrics combined with general animal monitoring in           convolutional layers with depthwise separable convolutions and
+livestock farming allows for pattern recognition and cognitive sci-     rectified linear units (ReLUs), combined with a nonlinear activa-
+ence applications as essential elements for the accurate recording,     tion function, enabled the addition of two attention modules while
+identification, and verification of animals [19].                       maintaining the same experimental conditions. This modification
+                                                                        achieved higher accuracy compared to the original architecture,
+However, due to the nature of cattle and pig herds and the lack
+                                                                        without compromising processing speed and while retaining com-
+of standardized comparison parameters, high-resolution images
+                                                                        pact storage capability [33].
+often allow only basic detection. Consequently, methods are de-
+signed based on computer vision and deep learning, facilitating
+the localization, tracking, and identification of animals through       3.2. Application of the technique in cattle farming
+the direct application or combination of multiple approaches. De-
+                                                                        Historically, livestock management technologies have progressed
+tection can be implemented using techniques such as Histograms
+                                                                        from predominantly manual identification procedures to auto-
+of Oriented Gradients (HOGs), boosted cascades, and particle
+                                                                        mated systems enabled by machine learning, allowing individual
+filters, alongside object tracking algorithms and Kalman filters.
+                                                                        cattle recognition based on body contours, facial features, and
+Among machine learning methods, Local Binary Patterns (LBPs)
+                                                                        muzzle patterns. Building upon architectural adaptations such as
+are used for classification, Fisher Linear Projection Preservation
+                                                                        those applied to OSNet, recent studies have demonstrated that
+(FLPP) for facial and muzzle recognition, and Support Vector
+                                                                        deep learning frameworks can be effectively tailored to cattle
+Machines (SVMs) for classification. Regarding architectures, R-
+                                                                        identification without compromising computational efficiency.
+CNN and YOLO are widely applied due to their speed, along with
+RetinaNet and detectors such as DetectoRS, SOLOv2, DETR, and            In dairy production systems, these recognition technologies fur-
+Mask R-CNN for processing [32].                                         ther extend beyond identity verification, supporting the assess-
+                                                                        ment of movement behavior, water and feed intake, rumination
+Feature extraction, being a process used to obtain a unique char-
+                                                                        patterns, estrus detection, and the early identification of health
+acteristic of the object in focus, allows for noise correction and
+                                                                        conditions, including lameness and mastitis. Within this con-
+the enhancement of results. Among the unique identifier pat-
+                                                                        text, architectures and tools such as ArcFace (Additive Angular
+terns used in studies with animals having few images, several
+                                                                        Margin Loss), RetinaFace-Mobilenet, and Cattle-FaceNet are fre-
+general-purpose extraction algorithms can be employed, such as
+                                                                        quently reported. Additionally, the application of convolutional
+SIFT, SURF, and BRISK (Binary Keypoints). For scalability, ORB
+                                                                        neural networks, including Res52Net with task-specific adapta-
+(FAST-oriented and BRIEF-rotated) can also be applied [28].
+                                                                        tions, achieved recognition rates of 91.3% at a processing speed
+Based on this premise, Xu et al. [14] proposed a method for the         of 24 images per second, which increased to 94.53% through the
+identification of cows using a small number of images as a measure      integration of GPN features with the core ResNet50 architecture,
+to reduce the costs of herd recognition and localization for 243        illustrating the balance between accuracy gains and real-time
+animals. The approach employed a YOLOv5 detector augmented              applicability [12].
+
+
+
+
+ACADEMIA AI AND APPLICATIONS                   2026, 2                                                                            6 of 13
+                                                                                                   https://doi.org/10.20935/AcadAI8109
+
+
+Continuing with the findings of [22], recognition accuracy values     method to maximize inter-class dispersion of muzzle point images
+exceeded the benchmarks, reaching 95.9% and 97.4% when using          while efficiently minimizing intra-class dispersion through the
+three layers of the YOLOv3 algorithm. For muzzle print feature        application of a muzzle point image scatter matrix. The effec-
+extraction, SIFT combined with RANSAC (Random Sample Con-             tiveness of the proposed recognition method reached 96.87% for
+sensus) was employed to remove outliers and enhance robust-           individual cattle identification, with a processing time of 10.25
+ness. Local Binary Pattern (LBP) was also tested for extracting       s for registration and recognition of the muzzle point, thereby
+muzzle print features, achieving an accuracy of 93.3%, and when       creating a biometric database for cattle from diverse sources.
+combined with classifiers such as SVM (Support Vector Machine)
+                                                                      The bovine muzzle exhibits unique tissue characteristics, being a
+and KNN (K-Nearest Neighbor), particularly in the combination
+                                                                      moist, thick, hairless surface with grooves and elevations specific
+of KNN with SIFT and SURF, recognition accuracy reached 99.5%.
+                                                                      to each animal, analogous to human fingerprints [19]. This struc-
+Comparing the reported recognition and accuracy percentages           ture, known as vibrissae, consists of keratinized hair extensions
+for convolutional networks Res52Net and ResNet50, and subse-          that function as sensory organs in some animals. Common among
+quently for YOLOv3 combined with the RANSAC extractor and             mammals and arranged around the muzzle, the complex or sinus
+classifiers including LBP, SVM, KNN, SIFT, and SURF in dairy          hair follicle structure enables animals to assess the size of an
+cattle herds, these values were superior to those produced by         object or determine the texture of a surface. Different species
+Multilayer Perceptron (MLP), Random Forest (RF), and Decision         display variations in the shape and structure of vibrissae, although
+Tree (DT) algorithms applied to the same sample, which exhibited      some properties are shared, such as the ability to function as a
+lower recognition rates of 69.32%, 74.88%, and 79.60%, respec-        multicomponent force/torque sensor [34].
+tively, highlighting the superiority of convolutional networks.
+                                                                      The presence of prominences on bovine muzzles has been docu-
+It is undeniable that the introduction of ICT resources leads to      mented in studies involving image capture and machine learning,
+effective management of agricultural production in terms of effi-     with results validated through comparison and qualitative and
+ciency, accessibility, and scalability. Reports by [19] demonstrate   quantitative analysis techniques [19]. However, despite advance-
+that the use of technology, despite initial resistance to innova-     ments and future prospects highlighted by experimental and sci-
+tion in the field, represents a low-cost framework for sanitary       entific studies, the widespread application of muzzle-based recog-
+monitoring of cattle, based on behavioral activity images and         nition techniques remains limited due to the relationship between
+muzzle patterns. The technique involves Support Vector Machines       spatiotemporal evolution and sensitive measurement caused by
+and Decision Tree classification for incremental decision-making      density.
+and acceleration, aiming to mitigate noise, enhance contrasts,
+                                                                      To address this limitation, Abdellaoui et al. [35] suggests im-
+and improve quality. In other words, it is evident that to extract
+                                                                      plementing a quantitative flow visualization method based on
+image details, a recognition system using machine learning and
+                                                                      Background-Oriented Schlieren (BOS). This technique calculates
+computer vision achieves higher accuracy for classification and
+                                                                      gradients of different densities by analyzing the apparent displace-
+identification, utilizing images sourced from servers containing
+                                                                      ment of the background pattern for each structure present in the
+encrypted muzzle databases, field databases, and health sensor
+                                                                      images; thus, BOS was used to validate the digital identity of each
+databases.
+                                                                      studied bovine.
+The accuracy for recognizing cow movement behavior captured
+                                                                      Although the use of chips or microchips for cattle detection and
+in natural environments using automated devices, smartphones,
+                                                                      tracking is a more common practice, it depends on IoT-enabled
+and other mobile equipment reached 95.00% when employing
+                                                                      wireless systems and is costly for large-scale animal identifica-
+the VGG16 network for feature extraction and the Bi-LSTM
+                                                                      tion and tracking. Similarly, the implementation of frameworks
+(Bidirectional Long Short-Term Memory) classification model
+                                                                      also requires hardware integration with the recognition system,
+to reduce environmental interference. When applying four algo-
+                                                                      trained personnel, and semi-automatic recognition systems based
+rithms (C3D, VGG16-LSTM, ResNet50-LSTM, and DenseNet169-
+                                                                      on muzzle images. Manual capture results in low similarity match-
+LSTM), the average accuracy for movement behavior recognition
+                                                                      ing, achieving only 60% accuracy, and despite being a time-
+was 97.87%. To mitigate the trade-off between recognition rate
+                                                                      consuming process with image database processing, it is possible
+and computational complexity, the use of an E3D (Efficient 3D
+                                                                      to perform fusion methods, such as combining facial and muzzle
+CNN) algorithm was proposed. Compared with the enhanced
+                                                                      characteristics. For extracting multi-characteristics of the face
+ResNeXt network, ACTION-Net, and C3D-ConvLSTM, the latter
+                                                                      and muzzle in images, techniques such as SURF, SIFT, Dense-
+was considered the most suitable for deployment on mobile de-
+                                                                      SIFT+(x2), Eigen-face with PCA, and LDA were used, providing
+vices [31].
+                                                                      improved identification accuracy by delivering data related to the
+Systems designed for mobile devices should be implemented with        shape and structure of the muzzle and face image patterns, con-
+tools to minimize the trade-off between recognition accuracy and      tour features, and texture information. The authors further state
+computational complexity due to the use of more efficient algo-       that the availability of these resources and the fusion of multi-
+rithms and neural network architectures. Employing quantization       characteristics achieve 98.56% accuracy in identification [19].
+techniques to reduce the numerical precision of model weights or
+                                                                      While the use of tags or microchips for cattle detection and track-
+pruning to remove less important connections or neurons makes
+                                                                      ing is effective, these systems rely on IoT-enabled wireless net-
+the model more compact and faster, while incurring minimal loss
+                                                                      works and become economically unfeasible for large-scale identi-
+of accuracy.
+                                                                      fication and monitoring. Furthermore, their implementation re-
+Motivated by the goal of optimizing technology transfer for           quires the integration of dedicated hardware with recognition
+biometric muzzle recognition using surveillance cameras and           systems, as well as trained personnel to operate semi-automatic
+wireless network technology, Kumar and Singh [11] proposed a          models based on muzzle images. Manual image capture, in turn,
+
+
+
+
+ACADEMIA AI AND APPLICATIONS                 2026, 2                                                                              7 of 13
+                                                                                                     https://doi.org/10.20935/AcadAI8109
+
+
+yields low similarity rates, typically achieving only about 60%         complex, costly, and time-consuming. In contrast, convolutional
+accuracy, while also being a time-consuming process.                    neural networks provide statistical validation for identification
+                                                                        applications through deep learning, operating in real time, even
+A challenge for integrating ICT with livestock management in
+                                                                        though challenges may arise due to occlusion, nonlinear external
+cattle recognition and in using various methods to identify pri-
+                                                                        image variations, or color similarity between animals [25].
+mary muzzle features is the availability of access to Bluetooth,
+WiFi, and RFID tools for more modern techniques. For tradi-             Among the machine learning models aimed at cattle identifica-
+tional methods, access is often limited to online resources on          tion, commonly applied methods include SVM (Support Vector
+some farms. Advanced technological resources, in terms of field         Machine), KNN (K-Nearest Neighbor), ANN (Artificial Neural
+accuracy and performance, require approaches for feature ex-            Network), CNN (Convolutional Neural Network), ResNet (Resid-
+traction, animal classification, and robust algorithms to achieve       ual Network), Inception, YOLO, and Faster R-CNN to character-
+optimal results. The classification algorithms cited include logistic   ize cattle coat patterns. These are complemented by LBP (Local
+regression, Naive Bayes, Decision Trees, K-Nearest Neighbors,           Binary Pattern) and robust feature extraction techniques such
+Support Vector Machine algorithms, random forests, and ker-             as SURF, scale-invariant SIFT, Inception or CNN-based feature
+nel methods. Superior results were achieved by applying SIFT,           extraction, ResNet and Inception, and YOLO for detection. When
+SURF, ORB (FAST-oriented and rotated BRIEF), and XGBoost                used in combination, ResNet and VGG stand out by integrating
+algorithms [36].                                                        three different detection models: YOLO, Faster R-CNN, and Mask
+Continuing the studies by [12], the CORF3D contour map test             R-CNN [10].
+was introduced to suppress environmental noise, resulting in an         Experimental results based on a two-branch Convolutional Neu-
+accuracy of 99.64% for cattle recognition data. This represented a      ral Network (TB-CNN) with images captured from different an-
+significant improvement over the 83.35% accuracy observed when          gles showed that the features from the two branches were fused
+using the Weber Local Descriptor (WLD) alone, and 96.5% after           through a global average pooling layer, combined with individual
+fusion with LBP and SVM. By combining a multi-level structure           cattle classification. This fusion of feature extraction networks
+with the Inception ResNetV2 model, recognition accuracy in-             aims to enhance the extraction capability, while the pooling layer
+creased to 98.21% for Holstein cattle. Additionally, the combina-       improves classification by reducing the number of network pa-
+tion of FAST + SIFT + FLANN for body pattern recognition across         rameters [22].
+528 segments achieved an accuracy of 96.72%. Although multiple
+experimental setups produced accuracies above 90% with various          The authors report that the recognition rates of the TB-CNN
+algorithm combinations, only the use of the CORF3D contour map          model reached 99.85% for Simmental cattle, 99.81% for Hol-
+enabled results approaching 100%.                                       stein cow faces, and 99.71% for a mixed dataset of cattle and
+                                                                        cows. The parameterization allowed a comparison of the TB-CNN
+A study involving 4923 muzzle images collected from 268 beef
+                                                                        with other conventional networks, such as ResNet, which has
+cattle was evaluated using two classification models, ResNet50
+                                                                        well-recognized recognition performance, and the less common
+and VGG16BN, with a maximum accuracy of 99.5% achieved using
+                                                                        Beef-Data, Cow-Data, and Mix-Data networks. The integration of
+ResNet50. Approaches employing biometric identification sys-
+                                                                        TB-CNN with these less common networks produced recognition
+tems with convolutional neural networks (CNNs) or Deep Belief
+                                                                        rates of 99.70%, 98.07%, and 97.96%, respectively, with corre-
+Networks (DBNs) also demonstrated high accuracy, although they
+                                                                        sponding feature extraction rates of 99.70%, 98.07%, and 97.96%.
+required large datasets and significant computational resources.
+                                                                        When the TB-CNN feature extraction network was combined with
+In another study, the VGG16BN model was selected due to its
+                                                                        the AlexNet model and OB-CNN (global average pooling layer),
+superior baseline performance and its use of pre-trained Ima-
+                                                                        it enhanced the interaction between feature maps and categories,
+geNet models. In this case, quantized and compressed data were
+                                                                        thereby improving recognition rates.
+generated to reduce data volume and redundancy. However, the
+inclusion of the discrete cosine transform (DCT) in the ResNet50        Overall, the experiments demonstrated high identification and ex-
+model resulted in an accuracy of 99.4%, surpassing that of the          traction rates, all above 97%, and the combinations increased the
+VGG16BN model [16]. The use of multiple models operating in             robustness of the technique while reducing image capture noise
+tandem for identification tasks is a common practice to address         for secure recognition. Notably, the three-part structure facilitated
+scalability challenges associated with recognition methodologies,       compression, excitation, and reweighting, allowing for feature re-
+though the choice of model is always guided by the algorithm that       calibration and the learning of global information, while enabling
+provides the best results while maintaining flexibility to operate      interdependence among channels. By emphasizing the most im-
+alongside other systems to minimize noise and errors.                   portant features of each channel, less significant features were sup-
+                                                                        pressed, resulting in more efficient recognition outcomes.
+Using a similarity scoring measure through Decision Tree clas-
+sification, the matching and classification of structural features      Biometric systems based on visual muzzle recognition have been
+and the presence of vibrissae on cattle muzzles were performed,         applied due to their ability to identify individual animals without
+demonstrating an efficiency of 97.99% for the unique identifica-        the need for invasive techniques, while also providing improved
+tion of each animal [30].                                               protection and management across different species. This approach
+                                                                        enables the classification of animals and their various categories,
+Techniques involving muzzle points have been employed to iden-
+                                                                        facilitating the study of populations within their natural habitats.
+tify cattle with high recognition accuracy using deep learning.
+In parallel, DNA sequencing was conducted to verify pedigree            The primary biometric characteristics of cattle muzzle patterns
+and profiles in breeding animals, specifically cattle. While DNA        enable analysis, tracking, and record-keeping for verification and
+analysis can indicate an individual’s profile through the pres-         parentage assignment for each animal, particularly those intended
+ence of SNPs (single nucleotide polymorphisms), this method is          to meet reproduction, production, and distribution criteria in
+
+
+
+
+ACADEMIA AI AND APPLICATIONS                   2026, 2                                                                               8 of 13
+                                                                                                     https://doi.org/10.20935/AcadAI8109
+
+
+beef cattle. The system captures images using field sensors and        training has been shown to reduce processing time and improve
+creates a database that stores the images through paired similarity    overall system efficiency [6].
+techniques. Commonly, tools such as SIFT, SURF, and LBP are
+                                                                       The lifecycle tracking of cattle, buffaloes, and cows, from birth to
+employed to extract information from the muzzle, and through
+                                                                       slaughter, can be achieved through identification using invariant
+PCA (Principal Component Analysis), LDA (Linear Discriminant
+                                                                       features extracted from muzzle print images. As a validation mea-
+Analysis), and ICA (Independent Component Analysis), it is pos-
+                                                                       sure, systems employing a Bag-of-600 Visual Words (BoVW) ap-
+sible to generate a digital fingerprint for species and individual
+                                                                       proach were tested, both standalone and in combination with two
+identification. Algorithmic approaches further enable robotic sys-
+                                                                       feature detectors: SURF and MSER (Maximally Stable Extremal
+tems, such as drones, to actively locate animals in various habitat
+                                                                       Regions). Identification accuracy for SURF reached 75%, 83%,
+scenarios, ensuring data quality and quantification [11].
+                                                                       91%, and 93% across the respective training data phases, whereas
+The application of biometric image scanning of muzzle patterns         MSER yielded lower accuracies of 52%, 60%, and 67% for the same
+was investigated by [21] using a three-stage system, which in-         training phases [23].
+cluded object detection via YOLO v7, face and muzzle point detec-      In continuation of biometric studies, Ahmad et al. [21] utilized
+tion, and finally data extraction and storage. The system achieved     the Hadoop Distributed File System (HDFS) processed in parallel
+an average accuracy of 100% for face detection and 99.43% for          with Apache Spark clusters and the Python library PyTorch. The
+muzzle point detection. Identification of the defined area patterns    chosen network was YOLO, employing pre-trained weights from
+was performed using ORB and SIFT, either separately or in com-         available datasets and bounding boxes for deep transfer learn-
+bination; subsequently, pattern matchers such as BFMatcher and         ing. This approach involves training a new dataset by leveraging
+FLANNMatcher were employed to identify each animal. A notable          knowledge acquired from similar datasets. When an identifier
+advantage of this system was the detection of faces and muzzle         is required and no reference database is available, FLANN is
+points in cows and buffaloes, achieving a mean Average Precision       recommended for approximate matching of the animal’s muzzle
+(mAP) of 99%.                                                          features with those in the provided database.
+Following the implementation of various structured systems after       The Hanwoo cattle breed (Bos taurus coreana) is native to Korea
+the positive results obtained with YOLOv7, a progressive decline       and represents the most widely consumed source of beef in the
+in accuracy was observed. When using the Fuzzy-KNN algorithm,          region. They are typically raised on small pastures due to limited
+the system achieved an accuracy rate of 96.74%, corresponding          land availability for breeding purposes. Using a YOLOv8-based
+to a 3.26% loss. With the BoHoG and LBP Histogram algo-                model, 150 randomly selected muzzle images were stored for vali-
+rithms, accuracy decreased to 95.13%, reflecting a 4.87% loss.         dation testing. Transfer learning was performed with EfficientNet
+When VGGNet-DCNN and Cattle Face were applied as recognition           v2, employing the SGD, RMSProp, Adam, and Lion optimizers.
+methods, the accuracy further dropped to 70%. Returning to the         The Lion optimizer achieved the highest validation accuracy,
+YOLO-based system, the structured approach yielded a detection         reaching 0.981 after 36 epochs and 12 transfer learning models,
+accuracy of 96.00%, distributed across 94% for training, 5% for        while Adam reached a test accuracy of 0.970, and RMSProp ex-
+validation, and 1% for testing.                                        hibited the lowest repeated error. A limitation of this study was
+                                                                       the use of smartphone cameras for image capture, which increased
+Previously, Kusakunniran et al. [37] reported the use of a Haar
+                                                                       variability in image quality and consistency, being particularly
+cascade-based classifier for the identification of cattle using bio-
+                                                                       influenced by changes in angles and environmental factors [24].
+metric images of the muzzle. The method began with locating the
+muzzle region in each image, followed by SIFT-based keypoint           When conducting real-time experiments with animals, variations
+extraction from the patterns. Subsequently, the clusters were          in illumination, nonlinear movement, and occlusion present signif-
+grouped according to these patterns using BoM and identified           icant challenges. The recommended approach for assessing cows’
+through an SVM (Support Vector Machine) model. When com-               body patterns involves an input system that processes an image
+pared with public datasets of cattle slaughterhouse muzzle im-         and outputs a classification into predefined categories. For training,
+ages and swamp buffaloes, the proposed method achieved 100%            a standard dataset of 1000 images encompassing 10 cow breeds
+accuracy for cattle and over 90% accuracy for swamp buffaloes.         was processed through a series of convolutional layers with filters,
+The slightly lower accuracy for swamp buffaloes was likely due         pooling layers, fully connected layers, and a softmax function for
+to animal movement and the presence of environmental artifacts,        image classification. The training and testing achieved identifica-
+which introduced noise and reduced image clarity.                      tion and accuracy rates of 92.59% and 89.5%, respectively. The con-
+                                                                       volutional layers primarily preserved pixel relationships, learning
+Multiple reports on practical precision monitoring in cattle us-
+                                                                       according to the input data. For very large images, pooling layers
+ing biometric methods indicate that the average detection accu-
+                                                                       were applied to reduce the number of parameters and dimension-
+racy of muzzle patterns was 99.13%, while identification accuracy
+                                                                       ality, employing techniques such as Deep Belief Networks (DBNs),
+reached 99.11% in tests. The two-stage YOLOv3-ResNet system
+                                                                       Stacked Denoising Autoencoders (SDAEs), Contrast Limited Adap-
+demonstrated applicability for facial recognition across herds of
+                                                                       tive Histogram Equalization (CLAHE), Gaussian filtering, and Local
+any size, handling occlusions, multiscale scenarios, variable light-
+                                                                       Binary Patterns (LBPs) [38].
+ing, and differing image resolutions. To enhance the robustness
+and scalability of these systems, many models employ diverse           A total of 59 images were comparatively classified for individual
+approaches, including deep learning, Support Vector Machines,          cattle identification, and the weighted cross-entropy loss function
+sparse group representations, fuzzy K-Nearest Neighbors, Fisher        was found to enhance the accuracy of individual identification.
+locality projections, Decision Trees, AdaBoost classifiers, SIFT       Test accuracies and processing speeds ranged from 1.2% to 98.4%
+matching, Bag-of-Visual Words, and classifier fusion. Addition-        using ShuffleNetV2, with the lowest performance observed for
+ally, leveraging transfer learning during data collection and model    VGG16BN. To ensure model reliability, a Pearson correlation
+
+
+
+
+ACADEMIA AI AND APPLICATIONS                  2026, 2                                                                               9 of 13
+                                                                                                                     https://doi.org/10.20935/AcadAI8109
+
+
+coefficient matrix (R) was introduced to better understand the                  from digital images in linear dimensionality, three classification
+relationships among model parameters [5].                                       techniques were applied—MLP (Multilayer Perceptron), Random
+                                                                                Forest, and Decision Tree—on a dataset comprising 930 muzzle
+The results confirmed the hypothesis that a more complex model
+                                                                                image patterns from four cattle breeds. The combination of Shi-
+with a higher number of parameters tends to achieve greater accu-
+                                                                                Tomasi with SURF and SIFT, implemented to achieve recogni-
+racy; however, longer processing times were also noted. Additionally,
+                                                                                tion accuracy, yielded results of 69.32%, 74.88%, and 79.60%,
+animals with more than four muzzle images reached over 90% iden-
+                                                                                respectively. The highest accuracy of 83.35% was reported when
+tification accuracy, suggesting that a quantitative limit of five images
+                                                                                the Bootstrapping aggregation methodology (Ag) and the Random
+per animal would provide an appropriate reference parameter.
+                                                                                Forest classifier were employed in combination with Shi-Tomasi,
+Continuous monitoring of the diverse needs of each animal re-                   SURF, and SIFT [36].
+mains a significant challenge in precision livestock farming, which
+                                                                                Proposing an evaluation of a cattle identification system from a
+has increased interest in adopting 3D techniques, including 3D
+                                                                                top-down perspective (dorsal view), Sharma et al. [27] utilized
+sensors and more complex data processing, although 2D tools
+                                                                                a dataset and pre-trained weights for immediate reproducibil-
+are still generally recommended for automated assessment. When
+                                                                                ity with images captured by a 3D camera. Based on CNN and
+analyzing the challenges that persist for the future development
+                                                                                MLP architectures, which do not require species-specific coat
+of livestock technologies, it is evident that these techniques can
+                                                                                patterns or close-up muzzle impressions for operation, the im-
+similarly be implemented in the management of other farmed
+                                                                                ages were clustered using KNN for highly accurate identification,
+animal species [39].
+                                                                                eliminating the need to retrain the network to register new im-
+Techniques such as Hot Branding, Freeze Branding, Paint Brand-                  ages. Two backbone architectures were also assessed, ResNet and
+ing, and RFID systems have been applied for the identification                  PointNet, specialized for operating on 3D point clouds, alongside
+of Kamphaeng Saen cattle for registration and traceability, using               CowDepth2023, to evaluate color-depth images and dorsal spines,
+muzzle impressions as a biometric approach. Two algorithms                      including fully black and fully white breeds.
+were employed to compose the system: SIFT for detecting key
+                                                                                The ResNet698 color backbone achieved a k-NN identification
+points and random samples, and RANSAC to remove outliers and
+                                                                                accuracy of 99.97%, while PointNet reached 99.36% using only
+enhance the robustness of image matching. Cattle identification
+                                                                                dorsal depth maps. Despite substantial interclass variability in
+was determined based on a similarity score, and the superiority
+                                                                                body shape, Grad-CAM701 (Gradient-weighted Class Activation
+of the method was achieved through the coupling of SIFT with
+                                                                                Mapping) and PC-SM (Point Cloud Saliency Mapping) enabled in-
+RANSAC, providing robustness against outliers and yielding an
+                                                                                dividual cows to be identified from RGB images, producing DNNs
+identification accuracy of 92.25% [26].
+                                                                                and MLPs capable of recognizing cattle through depth images.
+Applying three CNN architectures for the identification of Pan-
+                                                                                The studies indicate that, with respect to accuracy, the reported
+taneiro cattle, de Lima Weber et al. [17] conducted experiments
+                                                                                results consistently exceed an average of 95%, regardless of the
+using DenseNet-201, ResNet50, and Inception-ResNet-V. All net-
+                                                                                adopted architecture, as summarized in Table 3. This conver-
+works were subjected to 10-fold stratified cross-validation over
+                                                                                gence suggests that performance is predominantly influenced by
+50 epochs. The results demonstrated an average accuracy of 99%,
+                                                                                the employed techniques and their suitability for the target ap-
+regardless of the animals’ angles or positions. Therefore, it can be
+                                                                                plication rather than by the specific datasets used. Differences
+stated that all classes achieved a high number of correct identi-
+                                                                                among the studies are therefore more meaningfully explained by
+fications, and none of the proposed models showed statistically
+                                                                                variations in methodological choices, processing efficiency, and
+significant differences among them. ANOVA hypothesis testing in
+                                                                                practical constraints, such as robustness to noise and illumination
+RStudio with p-values < 0.05 was used for each metric, indicating
+                                                                                variability, acquisition angles, and the scale of the image sets,
+that the models are reliable for cattle recognition.
+                                                                                which directly reflect the intended application, including facial
+Subsequently, using the Shi-Tomasi detector for cattle identifica-              and muzzle identification, body and breed pattern recognition,
+tion and the SIFT and SURF feature descriptors to extract features              and bovine facial analysis.
+
+
+Table 3 • Comparison of algorithmic systems applied to cattle muzzle recognition with reported accuracy above 95%.
+  Method                               Precision       Processing speed    Scenario                                             Quantity of animals (average)
+
+  YOLO (You Only Look Once)            99.43–99.7%     High Velocity       Large herds with variable lighting conditions and    268
+                                                                           multi-scale features
+
+  SVM (Support Vector Machine)         96.74–100%      Moderate            Identification of facial and muzzle features, com-   Varied
+                                                                           bined with SIFT
+
+  Convolutional Neural Network (CNN)   99.5–99.85%     Moderate            Classification of muzzle and facial features using   243
+                                                                           images captured from different angles
+
+  Faster R-CNN                         95–98.21%       Moderate and Slow   Identification of body and facial patterns in con-   Varied
+                                                                           trolled environments
+
+  ResNet50                             99.5%           Moderate and Slow   Facial and muzzle feature extraction with large-     4923
+                                                                           scale datasets
+
+  KNN + SIFT + SURF                    96.5–99.5%      Moderate            Identification of specific muzzle patterns with      Varied
+                                                                           robustness
+
+
+
+
+ACADEMIA AI AND APPLICATIONS                         2026, 2                                                                                         10 of 13
+                                                                                                    https://doi.org/10.20935/AcadAI8109
+
+
+
+4. Conclusions                                                         Mato Grosso do Sul (UEMS), the National Council for Scientific
+                                                                       and Technological Development (CNPq), and Kerow Precision
+This review systematically assessed neural network-based archi-        Solutions.
+tectures for cattle identification and recognition, with emphasis
+on facial and muzzle regions due to their distinctive and stable
+anatomical characteristics. The surveyed literature demonstrates
+                                                                       Author contributions
+that both classical feature-based methods, such as SIFT, SURF,         Conceptualization, K.R.d.A.P. and J.V.d.A.P.; methodology,
+and KNN, and deep learning architectures from the YOLO and             K.R.d.A.P. and J.V.d.A.P.; validation, V.A.d.M.W. and F.d.L.W.;
+ResNet families are capable of extracting discriminative repre-        formal analysis, K.R.d.A.P., F.d.L.W. and S.L.G.; investiga-
+sentations for individual identification, with convolutional neu-      tion, K.R.d.A.P. and J.V.d.A.P.; resources, V.A.d.M.W. and
+ral networks consistently forming the core of high-performing          F.d.L.W.; data curation, K.R.d.A.P.; writing—original draft
+systems and achieving recognition accuracies above 90%, and            preparation, K.R.d.A.P. and J.V.d.A.P.; writing—review and
+near-optimal results in controlled scenarios, as reported for recent   editing, K.R.d.A.P., J.V.d.A.P. and S.L.G.; visualization, J.V.d.A.P.
+YOLOv8 implementations.                                                and F.d.L.W.; supervision, V.A.d.M.W. and F.d.L.W.; project
+Importantly, a critical synthesis of the reviewed studies reveals      administration, V.A.d.M.W. and F.d.L.W.; funding acquisition,
+that robust bovine facial and muzzle recognition depends primar-       V.A.d.M.W. and F.d.L.W. All authors have read and agreed to the
+ily on a consistent set of visual characteristics, including fine-     published version of the manuscript.
+grained texture patterns of the muzzle surface, the spatial con-
+figuration of nostrils, local curvature cues, and hierarchical fea-    Conflict of interest
+ture representations learned by deep convolutional layers. These
+characteristics emerge recurrently across different architectures      Karla Rejane de Andrade Porto was affiliated with Kerow Preci-
+and application contexts, indicating that feature relevance, rather    sion Solutions as a Technological Development scholarship holder
+than model selection alone, is central to system performance. This     funded by CNPq. Joao Vitor de Andrade Porto is affiliated with
+insight directly addresses the need for more substantive findings      Kerow Precision Solutions as a collaborator and member of the
+by moving beyond accuracy reporting toward an understanding of         IA2/CNPq project. Fabricio de Lima Weber is the Executive Di-
+which visual cues underpin successful recognition.                     rector and a researcher at Kerow Precision Solutions. Selmos Luiz
+                                                                       Gressler is the Executive Director and a researcher at Agron Inter-
+Building on this analysis, future research should explicitly in-       net Services Provider Ltd. The affiliated companies and funding
+vestigate the contribution of individual visual features within        bodies had no role in the conception, design, data acquisition,
+architectures such as YOLOv8 and ResNet-based models, either           analysis, interpretation of results, writing of the manuscript, or
+through targeted ablation studies or structured feature attribution    in the decision to submit the work for publication. The authors
+analyses, using available datasets. In parallel, the development of    declare that there are no other financial or personal relationships
+computationally efficient and interpretable models, coupled with       that could be construed as a potential conflict of interest.
+more standardized evaluation protocols, is essential to facilitate
+practical adoption. Addressing these directions will bridge the gap
+between methodological advances and real-world deployment,             Data availability statement
+enabling the effective integration of intelligent vision-based sys-
+                                                                       All data supporting the findings of this publication are available
+tems into routine livestock management and supporting scalable
+                                                                       within this article and/or its supplementary materials.
+innovation in precision agriculture.
+
+                                                                       Supplementary materials
+Acknowledgments
+                                                                       The supplementary materials are available at https://doi.org/10
+The authors acknowledge the use of large language models such
+                                                                       .20935/AcadAI8109. References [40–47] are cited in the supple-
+as ChatGPT version 5.1 and DeepL version 1.72.0 alongside the
+                                                                       mentary materials.
+Oxford Online Dictionary for translating this manuscript into
+English. These tools were utilized to enhance linguistic clarity and
+ensure precise terminology, to ensure both fluency and technical       Additional information
+accuracy in the translated text. All edits were carefully reviewed
+                                                                       Received: 5 September 2025
+and validated by the authors to ensure accuracy, compliance with
+academic standards, and research integrity. The authors fully          Accepted: 31 December 2025
+support Academia.edu Journals’ adherence to COPE guidelines
+                                                                       Published: 6 February 2026
+on AI in publication ethics and confirm that this use has been
+managed responsibly and ethically.                                     Academia AI and Applications papers should be cited as
+                                                                       Academia AI and Applications 2026, ISSN pending, https://doi.
+Funding                                                                org/10.20935/AcadAI8109. The journal’s official abbreviation is
+                                                                       Acad. AI.
+This study was partially financed by the Coordination for the
+Improvement of Higher Education Personnel, Brazil (CAPES),
+Dom Bosco Catholic University (UCDB), the State University of          Publisher’s note
+                                                                       Academia.edu Journals stays neutral with regard to jurisdictional
+                                                                       claims in published maps and institutional affiliations. All claims
+
+
+
+
+ACADEMIA AI AND APPLICATIONS                  2026, 2                                                                              11 of 13
+                                                                                                   https://doi.org/10.20935/AcadAI8109
+
+
+expressed in this article are solely those of the authors and do        10. Hossain M, Kabir MA, Zheng L, Swain DL, McGrath S,
+not necessarily represent those of their affiliated organizations, or       Medway J. A systematic review of machine learning tech-
+those of the publisher, the editors and the reviewers. Any product          niques for cattle identification: datasets, methods and future
+that may be evaluated in this article, or claim that may be made by         directions. Artif Intell Agric. 2022;6:138–55. doi: 10.1016/
+its manufacturer, is not guaranteed or endorsed by the publisher.           j.aiia.2022.09.002
+
+                                                                        11. Kumar S, Singh S. Cattle recognition: A new frontier in
+Copyright                                                                   visual animal biometrics research. Proc Natl Acad Sci India
+© 2026 copyright by the authors. This article is an open access             Sect Phys Sci. 2020;90(4):689–708. doi: 10.1007/s40010
+article distributed under the terms and conditions of the Creative          -019-00610-x
+Commons Attribution (CC BY) license (https://creativecommon
+s.org/licenses/by/4.0/).                                                12. Zhang Y, Zhang Q, Zhang L, Li J, Li M, Liu Y, et al. Progress
+                                                                            of machine vision technologies in intelligent dairy farming.
+                                                                            Appl Sci. 2023;13(12):7052. doi: 10.3390/app13127052
+References
+                                                                        13. Kusakunniran W, Wiratsudakul A, Chuachan U, Imaromkul
+   1. de Andrade Peixoto B, Chiarani E, da Silva Centeno A, Toigo           T, Kanchanapreechakorn S, Suksriupatham N, et al.
+      M. Uso de redes neurais convolucionais para detecção                  Analysing muzzle pattern images as a biometric for cattle
+      automática de estradas a partir de imagens aéreas obtidas             identification. Int J Biomed. 2021;13(4):367–84. doi: 10.
+      por veículos não tripulados. REVISTA FOCO. 2023;16(7):                1504/IJBM.2021.117852
+      e1676-6. doi: 10.54751/revistafoco.v16n7-016
+                                                                        14. Xu X, Wang Y, Shang Y, Yang G, Hua Z, Wang Z, et al.
+  2. Yang J, Yang Y, Li Y, Xiao S, Ercisli S. Image information             Few-shot cow identification via meta-learning. Inf Process
+     contribution evaluation for plant diseases classification via          Agric. 2024;12(1):80–90. doi: 10.1016/j.inpa.2024.04.001
+     inter-class similarity. Sustainability. 2022;14(17):10938.
+     doi: 10.3390/su141710938                                           15. Dac H, Gonzalez Viejo C, Lipovetzky N, Tongson E, Dunshea
+                                                                            FR, Fuentes S. Livestock identification using deep learning
+  3. Costa S, Goncalves N, Zanoni V, de Arruda M. Counting                  for traceability. Sensors. 2022;22(21):8256. doi: 10.3390/
+     tilapia larvae using images captured by smartphones. Smart             s22218256
+     Agric Technol. 2023;4:100160. doi: 10.1016/j.atech.2022.1
+     00160                                                              16. Kimani G, Oluwadara P, Fashingabo P, Busogi M, Luhanga
+                                                                            E, Sowon K, et al.      Cattle identification using muz-
+  4. Neto A, Nicola S, Moreira J, Fonte B. Livestock application:           zle images and deep learning techniques. arXiv. 2023.
+     naïve bayes for diseases forecast in a bovine production               arXiv:231108148. doi: 10.48550/arXiv.2311.08148
+     application: use of low code. In: International conference
+     on innovations in bio-inspired computing and applications.         17. de Lima Weber F, de Moraes Weber VA, Menezes GV, da
+     Cham: Springer; 2021. p. 183–92. doi: 10.1007/978-3-030-               Silva Oliveira Junior A, Alves DA, de Oliveira MVM, et al.
+     96299-9_18                                                             Recognition of Pantaneira cattle breed using computer vi-
+                                                                            sion and convolutional neural networks. Comput Electron
+  5. Li G, Erickson E, Xiong Y. Individual beef cattle identifi-            Agric. 2020;175:105548. doi: 10.1016/j.compag.2020.1055
+     cation using muzzle images and deep learning techniques.               48
+     Animals. 2022;12(11):1453. doi: 10.3390/ani12111453
+                                                                        18. Kaur A, Kumar M, Jindal MK. Shi-Tomasi corner detector
+  6. Shojaeipour A, Falzon G, Kwan P, Hadavi N, Cowley FC,                  for cattle identification from muzzle print image pattern.
+     Paul D. Automated muzzle detection and biometric iden-                 Ecol Informatics. 2022;68:101549. doi: 10.1016/j.ecoinf.2
+     tification via few-shot deep transfer learning of mixed breed          021.101549
+     cattle. Agronomy. 2021;11(11):2365. doi: 10.3390/agrono
+     my11112365                                                         19. Kumar S, Kumar S, Shafi M, Chaube M. A novel multimodal
+                                                                            framework for automatic recognition of individual cattle
+  7. Qiao Y, Xue T, Kong H, Clark C, Lomax S, Rafique K,                    based on hybrid features using sparse stacked denoising
+     et al. One-shot learning with pseudo-labeling for cattle               autoencoder and group sparse representation techniques.
+     video segmentation in smart livestock farming. Animals.                Multimed Tools Appl. 2022;81(21):31075–106. doi: 10.100
+     2022;12(5):558. doi: 10.3390/ani12050558                               7/s11042-022-12701-w
+
+  8. Awad A. From classical methods to animal biometrics:               20. Kumar S, Pandey A, Satwik KSR, Kumar S, Singh SK, Singh
+     a review on cattle identification and tracking. Comput                 AK, et al. Deep learning framework for recognition of
+     Electron Agric. 2016;123:423–35. doi: 10.1016/j.compag.2               cattle using muzzle point image pattern. Measurement.
+     016.03.014                                                             2018;116:1–17. doi: 10.1016/j.measurement.2017.10.064
+
+  9. Iramuteq. Iramuteq: R interface for multidimensional an-           21. Ahmad M, Abbas S, Fatima A, Issa GF, Ghazal TM, Khan
+     alyzes of texts and questionnaires. Free software built with           MA. Deep transfer learning-based animal face identification
+     free software; 2020 [accessed on 11 July 2025]. Available              model empowered with vision-based hybrid approach. Appl
+     from: http://www.iramuteq.org/                                         Sci. 2023;13(2):1178. doi: 10.3390/app13021178
+
+
+
+ACADEMIA AI AND APPLICATIONS                   2026, 2                                                                           12 of 13
+                                                                                                  https://doi.org/10.20935/AcadAI8109
+
+
+22. Weng Z, Meng F, Liu S, Zhang Y, Zheng Z, Gong C. Cattle               2020; Kenitra, Morocco. p. 1–6. doi: 10.1109/ICECOCS501
+    face recognition based on a Two-Branch convolutional neu-             24.2020.9314600
+    ral network. Comput Electron Agric. 2022;196:106871. doi:
+    10.1016/j.compag.2022.106871                                      36. Kaur A, Kumar M, Jindal M. Cattle identification with
+                                                                          muzzle pattern using computer vision technology: a critical
+23. Awad A, Hassaballah M. Bag-of-visual-words for cattle iden-           review and prospective. Soft Comput. 2022;26(10):4771–
+    tification from muzzle print images. Appl Sci. 2019;9(22):            95. doi: 10.1007/s00500-022-06935-x
+    4914. doi: 10.3390/app9224914
+                                                                      37. Kusakunniran W, Wiratsudakul A, Chuachan U, Kan-
+24. Lee T, Na Y, Kim B, Lee S, Choi Y. Identification of individual
+                                                                          chanapreechakorn S, Imaromkul T, Suksriupatham N, et al.
+    Hanwoo cattle by muzzle pattern images through deep learn-
+                                                                          Biometric for cattle identification using muzzle patterns. Int
+    ing. Animals. 2023;13(18):2856. doi: 10.3390/ani13182856
+                                                                          J Pattern Recognit Artif Intell. 2020;34(12):2056007. doi:
+25. Bello R, Talib AZ, Mohamed ASA, Olubummo DA, Otobo                    10.1142/S0218001420560078
+    FN. Image-based individual cow recognition using body
+    patterns. Image. 2020;11(3):92–8. doi: 10.14569/IJACSA.           38. Bello R, Olubummo D, Seiyaboh Z, Enuma O, Talib A,
+    2020.0110311                                                          Mohamed A. Cattle identification: the history of nose
+                                                                          prints approach in brief. IOP Conf Ser Earth Environ Sci.
+26. Ketmaneechairat H, Maliyaem M, Intarat C. Kamphaeng                   2020;594:012026. doi: 10.1088/1755-1315/594/1/012026
+    Saen beef cattle identification approach using muzzle print
+    image. Adv Sci Technol Eng Syst J. 2021;6:110–22. doi:            39. Qiao Y, Kong H, Clark C, Lomax S, Su D, Eiffert S, et al. In-
+    10.25046/aj060412                                                     telligent perception for cattle monitoring: a review for cattle
+                                                                          identification, body condition score evaluation, and weight
+ 27. Sharma A, Randewich L, Andrew W, Hannuna S, Camp-                    estimation. Comput Electron Agric. 2021;185:106143. doi:
+     bell N, Mullan S, et al. Universal bovine identification             10.1016/j.compag.2021.106143
+     via depth data and deep metric learning. arXiv. 2024.
+     arXiv:240400172. doi: 10.1016/j.compag.2024.109657               40. Girish P, Santhosh K, Kartikeya K, Palekar P, Harikrishna C,
+                                                                          Rathod S, et al. Artificial intelligence based muzzle recog-
+28. Jang D, Kwon K-S, Kim J-K, Yang K-Y, Kim J-B. Dog
+                                                                          nition technology for individual identification of animals.
+    identification method based on muzzle pattern image. Appl
+                                                                          Indian J Anim Sci. 2020;90(7):1070–3. doi: 10.56093/ija
+    Sci. 2020;10(24):8994. doi: 10.3390/app10248994
+                                                                          ns.v90i7.106684
+29. Leone M. On muzzles and faces: the semiotic limits of visage
+    and personhood. Int J Semiot-Law-Rev Int Sémiotique Jurid.        41. Ahmed SU, Frnda J, Waqas M, Khan MH. Dataset of cattle
+    2022;35(4):1275–98. doi: 10.1007/s11196-020-09812-8                   biometrics through muzzle images. Data Brief. 2024;110125.
+                                                                          doi: 10.1016/j.dib.2024.110125
+30. Cihan P, Saygili A, Ozmen N, Akyuzlu M. Identification
+    and recognition of animals from biometric markers using           42. Moumen A, Grossen J, Ndindabahizi I, Gallant J, Hen-
+    computer vision approaches: a review. Kafkas Univ Vet Fak             drick P. Visualization and analysis of muzzle flow fields
+    Derg. 2023;29(6):581. doi: 10.9775/kvfd.2023.30265                    using the background-oriented schlieren technique. J Vis.
+                                                                          2020;23(3):409–23. doi: 10.1007/s12650-020-00639-w
+ 31. Ahmad M, Abbas S, Fatima A, Ghazal TM, Alharbi M, Khan
+     MA, et al. AI-driven livestock identification and insurance      43. Li Z, Lei X, Liu S. A lightweight deep learning model for
+     management system. Egypt Inform J. 2023;24(3):100390.                cattle face recognition. Comput Electron Agric. 2022;195:
+     doi: 10.1016/j.eij.2023.100390                                       106848. doi: 10.1016/j.compag.2022.106848
+32. Xu P, Zhang Y, Ji M, Guo S, Tang Z, Wang X, et al. Advanced       44. Bustamin A, Rahmatullah M. A portable cattle tagging
+    intelligent monitoring technologies for animals: a survey.            based on muzzle pattern. Int J Interact Mob Technol. 2020;
+    Neurocomputing. 2024;585:127640. doi: 10.1016/j.neucom                14(13):135. doi: 10.3991/ijim.v14i13.13237
+    .2024.127640
+                                                                      45. Kumar S, Singh SK, Singh R, Singh AK. Real-time recog-
+33. Uladzislau S, Feng X. Modified omni-scale net architecture
+                                                                          nition of cattle using Fisher locality preserving projection
+    for cattle identification on their muzzle point image pat-
+                                                                          method. In: Animal biometrics: techniques and applica-
+    tern characteristics. In: International conference on com-
+                                                                          tions. Singapore: Springer; 2018. p. 197–221. doi: 10.100
+    puter, artificial intelligence, and control engineering (CAICE
+                                                                          7/978-981-10-7956-6_7
+    2023). vol. 12645. Cerpy: SPIE; 2023. p. 489–94. doi:
+    10.1117/12.2681201                                                46. Tijani AA, Babashani M, Salisu MD, Jatau TD, Sanni KB.
+34. Scharff M, Schorr P, Becker T, Resagk C.         An artifi-           Current livestock identification systems. J Vet Sci Anim
+    cial vibrissa-like sensor for detection of flows. Sensors.            Stud. 2023;4(1):42–7. doi: 10.54328/covm.josvas.2023.
+    2019;19(18):3892. doi: 10.3390/s19183892                              100
+
+35. Abdellaoui B, Moumen A, El Idrissi YEB, Remaida A. Face           47. Kumar S, Chaube MK, Kumar S. Secure and sustainable
+    detection to recognize students’ emotion and their engage-            framework for cattle recognition using wireless multimedia
+    ment: a systematic review. Proceedings of the 2020 IEEE               networks and machine learning techniques. IEEE Trans
+    2nd International Conference on Electronics, Control, Opti-           Sustain Comput. 2021;7(3):696–708. doi: 10.1109/TSUSC.
+    mization and Computer Science (ICECOCS); 2–3 December                 2021.3123496
+
+
+
+ACADEMIA AI AND APPLICATIONS                 2026, 2                                                                            13 of 13

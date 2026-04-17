@@ -1,0 +1,9 @@
+{
+  "chunk_count": 73,
+  "extractor": "pdftotext",
+  "kind": "pdf",
+  "path": "/run/media/jpereiratrindade/labeco10T/labeco02/Revisao/Sustainable_livestock_development_in_low-_And_midd.pdf",
+  "sha256": "59d6c36772cf8eced984608e84348f95872c4bbc99ad0cb3b19da51e36b0f061",
+  "text_size": 69059,
+  "used_ocr": false
+}

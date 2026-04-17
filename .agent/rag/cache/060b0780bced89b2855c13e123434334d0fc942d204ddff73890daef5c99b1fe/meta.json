@@ -1,0 +1,9 @@
+{
+  "chunk_count": 14,
+  "extractor": "pdftotext",
+  "kind": "pdf",
+  "path": "/run/media/jpereiratrindade/labeco10T/labeco02/Revisao/Dambrosio160_739.pdf",
+  "sha256": "060b0780bced89b2855c13e123434334d0fc942d204ddff73890daef5c99b1fe",
+  "text_size": 13337,
+  "used_ocr": false
+}

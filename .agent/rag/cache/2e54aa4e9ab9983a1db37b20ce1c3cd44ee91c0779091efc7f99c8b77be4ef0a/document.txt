@@ -1,0 +1,1437 @@
+GUIA REFERENCIAL
+PARA GERENCIAMENTO DE PROJETOS
+       E PORTFÓLIOS DE PROJETOS
+
+                  Tiago Chaves Oliveira
+
+
+
+
+                          BRASÍLIA | DF
+                                  2021
+GUIA REFERENCIAL
+PARA GERENCIAMENTO DE PROJETOS
+       E PORTFÓLIOS DE PROJETOS
+                 Tiago Chaves Oliveira
+
+
+
+
+                           BRASÍLIA | DF
+                                   2021
+Fundação Escola Nacional de       Ministério da                                     Ficha catalográfica elaborada pela equipe da
+Administração Pública             Economia                                               Biblioteca Graciliano Ramos da Enap
+Presidente
+Diogo Costa                       Ministro da Economia:           ____________________________________________________
+                                                                    O482g        Oliveira, Tiago Chaves.
+                                  Paulo Roberto Nunes Guedes                          Guia referencial para gerenciamento de projetos e
+Diretora-Executiva                                                                portfólios de projetos / Tiago Chaves Oliveira. -- Brasília:
+                                  Secretário Especial de                          Enap, 2021.
+Rebeca Loureiro de Brito                                                              38 p. : il. color. --
+                                  Desburocratização, Gestão e
+                                  Governo Digital
+Diretora de Altos Estudos                                                              Inclui bibliografia.
+                                  Caio Mario Paes de Andrade                           ISBN: 978-65-87791-20-3
+Diana Coutinho
+                                  Secretário de Gestão                                1. Gestão de Projetos. 2. Administração Pública
+Diretor de Educação Executiva                                                      Federal. 3. Gestão Organizacional. 4. Portfólio. 5.
+                                  Cristiano Rocha Heckert                          Planejamento Governamental. I. Título. II. Fundação
+Rodrigo Torres                                                                     Escola Nacional de Administração Pública.
+                                  Coordenador-Geral de                                                                           CDU 35:658.511.4
+Diretor de Desenvolvimento        Simplificação Administrativa:   ____________________________________________________
+Profissional                      Gustavo Nery e Silva                                 Bibliotecária: Tatiane de Oliveira Dias – CRB1/2230
+Paulo Marques
+
+
+Diretora de Inovação
+Bruna Santos
+
+
+Diretora de Gestão Interna                                                   Enap, 2021.
+Alana Regina Biagi Silva Lisboa                                   Este trabalho está sob a Licença Creative Commons – Atribuição: Não Comercial –
+                                                                  Compartilha Igual 4.0 Internacional.
+
+Revisão ortográfica
+                                                                  As informações e opiniões emitidas nesta publicação são de exclusiva e inteira responsabilidade
+Adriana Braga                                                     do(s) autor(es), não exprimindo, necessariamente, o ponto de vista da Escola Nacional de
+                                                                  Administração Pública (Enap). É permitida a reprodução deste texto e dos dados nele contidos,
+Capa, projeto gráfico e                                           desde que citada a fonte.
+editoração eletrônica
+                                                                  Reproduções para fins comerciais são proibidas.
+Amanda Soares
+                                                                  Escola Nacional de Administração Pública (Enap)
+                                                                  SAIS – Área 2-A – 70610-900 — Brasília-DF, Brasil
+Autor:
+Tiago Chaves Oliveira
+                                                                                         GUIA REFERENCIAL para gerenciamento de projetos e portfólios de projetos | Enap   3
+Sumário
+
+
+Prefácio................................................................... 6                    3.11 Ciclo de vida do projeto. .......................................13
+
+1 Introdução. ........................................................... 7                      3.12 Grupos de processos de gerenciamento
+                                                                                                 de projetos.....................................................................13
+2 Contexto. .............................................................. 8
+                                                                                            4 Tailoring – definição de COMO O PROJETO SERÁ
+                                                                                            GERIDO conforme o ambiente e a necessidade. ......... 15
+3 Alinhamento Conceitual. ........................................ 9
+                                                                                                 4.1 Ciclo de vida preditivo. ...........................................16
+     3.1 Projeto. ......................................................................9
+                                                                                                 4.2 Ciclo de vida incremental. ......................................17
+     3.2 Programa. ..................................................................9
+                                                                                                 4.3 Ciclo de vida iterativo..............................................17
+     3.3 Portfólio.....................................................................9
+                                                                                                 4.4 Ciclo de vida extremo..............................................18
+     3.4 Operação. ................................................................10
+                                                                                                 4.5 Modelos híbridos.....................................................18
+     3.5 Benefício..................................................................10
+
+     3.6 Valor.........................................................................10   5 Competências relacionadas com o Gerenciamento
+                                                                                            de projetos............................................................. 19
+     3.7 Partes interessadas. ................................................10
+                                                                                            6 Áreas de Conhecimento em Gerenciamento
+     3.8 Integração entre portfólios, programas, projetos,
+                                                                                            de Projetos............................................................. 20
+     operações, recursos e partes interessadas..................11
+                                                                                                 6.1 Integração................................................................21
+     3.9 Gerenciamento de projetos. ...................................13
+                                                                                                 6.2 Escopo......................................................................22
+     3.10 Requisito................................................................13
+
+                                                                                                                 GUIA REFERENCIAL para gerenciamento de projetos e portfólios de projetos | Enap   4
+     6.3 Cronograma.............................................................23          9 Guias Práticos...................................................... 33
+
+     6.4 Custo. .......................................................................24       9.1 Guia prático: elaboração da EAP. ...........................33
+
+     6.5 Qualidade. ...............................................................24           9.2 Guia prático: elaboração do Cronograma..............35
+
+     6.6 Recursos. .................................................................24      Referências bibliográficas. ...................................... 40
+     6.7 Comunicações.........................................................24
+
+     6.8 Risco.........................................................................25
+
+     6.9 Aquisições................................................................25
+
+     6.10 Partes interessadas. ..............................................25
+
+7 Gerenciamento de Portfólios de Projetos. .............. 26
+
+     7.1 Governança de portfólio.........................................27
+
+     7.2 Como realizar a gestão de portfólio?......................28
+
+8 Modelos. ............................................................. 31
+
+     8.1 Modelo de plano de projeto ...................................31
+
+     8.2 Modelo de plano de projeto....................................32
+
+     8.3 Modelo de relatório de acompanhamento
+     de projeto. .....................................................................33
+
+
+
+
+                                                                                                               GUIA REFERENCIAL para gerenciamento de projetos e portfólios de projetos | Enap   5
+Prefácio
+Este guia é fruto de uma grata parceria entre Project Management Institute – Chapter Distrito Federal (PMIDF) e
+Ministério da Economia, intermediado pela Escola Nacional de Administração Pública (Enap). O PMIDF há 19 anos
+busca contribuir com a disseminação das melhores práticas internacionais sobre gerenciamento de projetos e o
+fortalecimento da cultura de gestão de projetos no setor público brasileiro.
+
+A publicação do guia demonstra o comprometimento do Ministério da Economia na busca pelo aperfeiçoamento
+das práticas de gestão adotadas pelo Governo, o que impactará diretamente na eficiência e eficácia dos projetos e
+programas públicos, transformando as políticas públicas em resultados práticos, com benefícios às vidas de todos
+os brasileiros.
+
+Nathália Tatagiba
+
+Presidente do PMIDF
+
+
+
+
+                                                                                    GUIA REFERENCIAL para gerenciamento de projetos e portfólios de projetos | Enap   6
+1 Introdução
+
+
+Este guia compila, de forma concisa e não exaustiva, conceitos, modelos e indicações de melhores práticas atuais
+e amplamente disseminadas a respeito de gerenciamento de projetos e de portfólios de projetos.
+
+Assim como o Guia Project Management Body of Knowledge (PMBOK®), este guia não é uma metodologia [1, p.
+2]. Ou seja, não serão recomendadas práticas ou procedimentos pré-definidos. Em vez disso, será orientada a
+utilização de abordagem de gerenciamento de projetos baseada nas características de cada projeto, no ambiente
+no qual está contido, nas habilidades da equipe e em outros parâmetros [2].
+
+O documento foi elaborado em parceria com o capítulo do Distrito Federal do Project Management Institute (PMI),
+instituição mundialmente reconhecida pela disseminação de conhecimentos e fortalecimento das práticas de
+gerenciamento de projetos e portfólios de projetos. Apesar desta parceria, além dos conteúdos publicados pelo
+PMI, foram também consideradas outras fontes de conhecimento, as quais estão devidamente referenciadas.
+
+Os conteúdos aqui compilados possuem como público-alvo os profissionais atuantes na esfera pública, incluindo
+gestores, servidores ou prestadores de serviço. As indicações do guia são aplicáveis à realização de projetos de
+qualquer natureza em qualquer ambiente.
+
+Além desta introdução, o guia conta com a descrição do contexto de planejamento na esfera pública federal, uma
+sessão de alinhamento dos conceitos mais relevantes sobre gerenciamento de projetos e portfólios de projetos,
+uma descrição das variáveis a serem consideradas para a definição de como cada projeto será gerido, uma seção
+sobre as competências necessárias ao devido gerenciamento de projetos, um breve detalhamento das áreas de
+conhecimento do gerenciamento de projetos, a exposição de conceitos gerais relacionados com gerenciamento
+de portfólios de projetos, a indicação de modelos de planejamentos e artefatos para apoiar os processos de gestão
+e, por fim, conjuntos de guias práticos sobre os processos mais relevantes.
+
+
+
+
+                                                                                    GUIA REFERENCIAL para gerenciamento de projetos e portfólios de projetos | Enap   7
+2 Contexto                                                       O PPA é o instrumento nacional de planejamento de médio
+                                                                 prazo, no qual se indicam os planos e programas nacionais,
+                                                                 regionais e setoriais do Governo Federal. O Programa do PPA
+                                                                 tem por objetivo a solução ou minimização de um problema
+                                                                 ou aproveitamento de uma oportunidade. Os programas são,
+Antes de explorar os conceitos específicos sobre gerenciamento   também, os elos entre o PPA e a estratégia de longo prazo e a
+de projetos, cabe o delineamento do contexto no qual os planos   LOA. Para o alcance dos objetivos dos programas do PPA são
+e projetos se dão no ambiente público.                           estabelecidas ações, orçamentárias e não orçamentárias. A
+                                                                 essas ações estão atreladas a entregas e bens e serviços [3].
+O planejamento governamental é uma atividade permanente
+da administração pública, além de se constituir uma função
+essencial de Estado [3, p. 16]. É por meio dele que se definem
+as estratégias para orientar o rumo que se deseja para o País
+[3, p. 9], pela implementação de políticas públicas capazes de                      Estratégia Federal de
+combater os problemas enfrentados pela sociedade em um                          Desenvolvimento para o Brasil
+ambiente escasso de recursos (financeiros, organizacionais,                       no período de 2020 a 2031
+informacionais e tecnológicos) [3, p. 16].
+                                                                                                       Diretrizes
+Conforme estabelece o Decreto nº 10.531/2020, o processo de
+planejamento no governo federal segue uma estrutura lógica                                               Políticas e planos
+e harmônica de diretrizes, partindo da visão de longo prazo,               PPA, PDO e LOA               nacionais, setoriais e
+estabelecida pela Estratégia Federal de Desenvolvimento (EFD)                                                regionais
+para o Brasil no período de 2020 a 2031. Na sequência são
+estabelecidos o Plano Plurianual (PPA) da União, as Leis de                                    Diretrizes
+Diretrizes Orçamentárias (LDO) e as Leis Orçamentárias Anuais
+(LOA). Em paralelo são estabelecidas as políticas e aos planos
+nacionais, setoriais e regionais. Por fim, são elaborados os                  Planos Estratégicos Institucionais
+planos estratégicos institucionais dos órgãos e das entidades
+integrantes do Governo Federal.
+
+
+
+
+                                                                               GUIA REFERENCIAL para gerenciamento de projetos e portfólios de projetos | Enap   8
+3 Alinhamento Conceitual                                         visando a obtenção de benefícios que não estariam disponíveis
+                                                                 se eles fossem gerenciados individualmente [1, p. 13].
+
+                                                                 Pode ter como foco a entrega de resultados e benefícios relacio-
+                                                                 nados aos objetivos estratégicos da organização. [5, p. 47]
+A seguir serão conceituados os elementos fundamentais
+necessários à compreensão e trabalho com gerenciamento de        No contexto do PPA, os programas viabilizam a concretização
+projetos e portfólios de projetos.                               das diretrizes estratégicas do plano, constituindo a base de
+                                                                 atuação dos diversos ministérios [3, p. 34].
+
+3.1 Projeto
+                                                                 3.3 Portfólio
+É um esforço temporário empreendido para criar um produto,
+serviço ou resultado único (Pmi, 2017a, p. 4). Pode também ser   É um conjunto de projetos, programas e portfólios subsidiários
+visto como uma organização temporária criada com o propósito     e operações gerenciados em grupo para alcançar objetivos
+de entregar um ou mais produtos de negócios, de acordo com       estratégicos [1, p. 13]. Em outras palavras, é uma coleção de
+um Business Case pré-acordado [5, p. 41]. Pode, dependendo       projetos que compartilham um link comum entre si [2, p. 10].
+da complexidade, ser composto por uma sequência de
+atividades conectadas, vinculadas ao alcance de um objetivo e    Os componentes do portfólio competem por parte de um conjunto
+que deve ser concluída em certo tempo, em um orçamento e de      de recursos limitados [7, p. 3]. Ou seja, o portfólio representa todo
+acordo com uma especificação. (Wysocki, 2019, p. 4; Zandhuis;    o investimento de uma organização (ou segmento dela) visando
+Stellingwerf, 2013, p. 20). Todas as inovações significativas    o alcance dos objetivos estratégicos [5, p. 48].
+são alcançadas através de projetos [6, p. 3].
+                                                                 Um portfólio maior pode conter portfólios subsidiários,
+Pode ser gerenciado em 3 cenários distintos: como projeto        programas, projetos e/ou operações os quais são gerenciados
+autônomo, dentro de lio.                                         como um grupo. As carteiras subsidiárias podem existir
+                                                                 por diferentes motivos, incluindo prioridades da gestão,
+                                                                 disponibilidade orçamentária/financeira, requisitos do cliente,
+3.2 Programa                                                     cronograma, partes interessadas, etc. [7, p. 11].
+É um conjunto de projetos, programas subsidiários e atividades
+de programas relacionados, gerenciados de modo coordenado,
+
+                                                                                 GUIA REFERENCIAL para gerenciamento de projetos e portfólios de projetos | Enap   9
+3.4 Operação                                                       3.7 Partes interessadas
+
+É a produção contínua de mercadorias e/ou serviços. Trata da       São pessoas ou grupos interessados no desempenho e/ou
+transformação de insumos/entradas (materiais, componentes,         sucesso do projeto, ou que são limitados por ele [11, p. 42]. Ou
+energia e mão de obra) em saídas (produtos, mercadorias,           seja, podem afetar ou serem afetados pelo projeto, de forma
+serviços, etc.) [1, p. 16].                                        positiva ou negativa [12] [1].
+
+Sob o ponto da análise de negócios, as operações podem ser         Não há modelo de gestão capaz de suportar o projeto se as
+divididas em processos de gestão dos negócios, pessoas que os      pessoas erradas estiverem envolvidas, se as pessoas certas
+operam e sistemas de informação de suporte. Seus resultados        não estiverem envolvidas ou se as pessoas envolvidas não
+devem agregar valor à organização [8].                             souberem o que se espera delas ou o que esperar das outras
+                                                                   pessoas [5, p. 62].
+
+3.5 Benefício                                                      Para aumentar a probabilidade de sucesso do projeto é
+                                                                   importante identificar e classificar as partes interessadas, suas
+É o ganho realizado pela organização e pelos beneficiários         necessidades e expectativas, bem como a forma como elas
+por meio das entregas feitas por portfólios, programas e           podem influenciar o projeto [1].
+projetos [9, p. 7]. É melhoria mensurável em favor dos objetivos
+organizacionais, percebida como positiva por uma ou mais           No contexto das partes interessadas, em geral, os seguintes
+partes interessadas [10].                                          papéis são vitais para o sucesso do projeto. Não necessariamente
+                                                                   precisam ser exercidos por pessoas diferentes. São eles:
+
+3.6 Valor
+
+Corresponde aos benefícios entregues menos os correspon-
+dentes custos. Pode ser tangível ou intangível [9, p. 7].
+
+
+
+
+                                                                                  GUIA REFERENCIAL para gerenciamento de projetos e portfólios de projetos | Enap   10
+        1.    Patrocinador: possui autoridade para determinar      Figura 2 | Exemplo de integração entre portfólios, programas, projetos e
+        a execução do projeto e o correspondente valor de          operações
+        negócio esperado com a sua conclusão. Além disso,                                              Estratégia organizacional
+        possui a responsabilidade de prover os recursos
+        necessários para tal.
+                                                                                                        Exemplo de portifólio
+
+        2.   Cliente: responsável pela definição dos
+        requisitos às entregas que serão realizadas ao longo                    Programa                       Programa             Portifólio
+                                                                                    A                              B                   A
+        do projeto.
+
+Gerente do projeto: responsável por liderar a equipe responsável                                    Programa                                     Programa
+pelo alcance dos objetivos do projeto [1, p. 52].                                                      B1                                            C
+
+
+Membro da equipe: é normalmente responsável pela realização          Projeto   Projeto    Projeto   Projeto   Projeto   Projeto   Projeto   Projeto   Projeto   Operações
+                                                                        1         2          3         4         5         6         7         8         9
+dos esforços necessários para criar o resultado do projeto.
+
+                                                                                     Recursos compartilhados e partes interessadas
+3.8 Integração entre portfólios, programas, projetos,
+operações, recursos e partes interessadas                          Fonte: [1, p. 12] e [7, p. 4]
+
+
+A figura a seguir ilustra exemplo de estrutura de portfólio        Portanto, conforme ilustrado acima, portfólios, programas,
+indicando as possíveis relações entre os programas, projetos,      projetos e operações são meios para o alcance de metas e
+operações, recursos compartilhados e partes interessadas.          objetivos organizacionais. A figura a seguir ilustra a interação
+Os componentes do portfólio são agrupados com vistas               entre estes componentes em um ambiente organizacional.
+à concretização da estratégia organizacional. A efetiva
+governança do portfólio permite a alocação de recursos de
+acordo com critérios como a prioridade de cada componente o
+desempenho e benefícios esperados.
+
+
+
+
+                                                                                             GUIA REFERENCIAL para gerenciamento de projetos e portfólios de projetos | Enap   11
+Figura 3 | Gerenciamento organizacional de projetos
+
+
+
+                                                                      Ambiente
+                                                                    oganizacional
+                                                           Revisão e ajustes no portifólio
+
+
+
+
+                                                      Portifólio:                  Programas e                         Operações:
+                       Estratégia                     Decisões                       projetos:                       Realização do
+                                                       de valor                     Entrega de                      valor de negócio
+                                                                                    resultados
+
+
+
+
+                                                         Análise do impacto nos negócios
+
+
+                                                         Análise do desempenho de valor
+
+
+
+
+Fonte: [1, p. 17]
+
+
+
+
+                                                                                             GUIA REFERENCIAL para gerenciamento de projetos e portfólios de projetos | Enap   12
+3.9 Gerenciamento de projetos                                             3. O que o projeto proposto pretende fazer? Qual é o objetivo
+                                                                             do projeto, dentro deste contexto?
+É a aplicação de conhecimento, habilidades, ferramentas
+e técnicas às atividades do projeto para atender aos seus                 4. Como o projeto fará isso?
+requisitos [1] [12]. Em outros termos, trata do planejamento,             5. Como se saberá que o objetivo do projeto foi alcançado?
+delegação, monitoramento, controle e motivação dos
+envolvidos no projeto para atingir os objetivos seguindo as               6. Quão bem o projeto conseguiu atingir seus objetivos?
+diretrizes de prazo, orçamento, qualidade, escopo, benefícios
+e riscos [5, p. 42]. Inclui a integração das várias fases do ciclo de   3.10 Requisito
+vida do projeto [12, p. 14].
+                                                                        É uma condição ou capacidade necessária para que uma parte
+No contexto atual essa capacidade é ainda mais desafiadora
+                                                                        interessada resolva um problema ou alcance um objetivo [8,
+já que devem ser gerenciados orçamentos cada vez mais
+                                                                        p. 8]. Pode, também, ser visto como um estado final desejado,
+apertados, prazos mais curtos, recursos mais escassos e
+                                                                        cuja integração bem-sucedida no escopo do projeto atende
+tecnologias em rápido processo de mudança [1, p. 10].
+                                                                        a uma ou mais necessidades do cliente e fornece valor à
+Sob o ponto de vista das partes interessadas, o gerenciamento           organização [2, p. 33].
+de projetos pode ser visto como uma abordagem organizada
+voltada ao atendimento das necessidades do patrocinador
+                                                                        3.11 Ciclo de vida do projeto
+e à entrega de valor ao negócio, com o devido envolvimento
+do cliente [2, p. 98]. Deve viabilizar a resposta às seguintes
+                                                                        É uma série de fases que o projeto passa desde o início até sua
+perguntas [2, p. 23]:
+                                                                        conclusão. Cada fase é uma série de atividades que culmina em
+  1. Que necessidade de negócio está sendo tratada por                  uma ou mais entregas. A definição das características de cada
+     este projeto? No contexto da administração pública esta            fase depende do contexto em que o projeto está inserido e de
+     questão pode envolver o entendimento sobre o contexto/             suas necessidades. [1, p. 547].
+     problema social que está sendo tratado.
+  2. O que a organização precisa fazer para enfrentar a                 3.12 Grupos de processos de gerenciamento de projetos
+     necessidade identificada? Qual seria o objetivo geral da
+     organização em relação à necessidade?                              Indicam o que é necessário fazer para se concluir o projeto com
+                                                                        sucesso, mas não indica como fazer. Nesse sentido, os grupos
+
+
+                                                                                         GUIA REFERENCIAL para gerenciamento de projetos e portfólios de projetos | Enap   13
+de processos são a base de todos os modelos de ciclo de vida                               ▪    Monitoramento e controle: esforços de
+de gerenciamento de projetos [2, p. 115].                                                  acompanhamento, análise e controle do progresso e
+                                                                                           do desempenho do projeto e identificação de possíveis
+Os grupos são os seguintes [1, p. 554]:                                                    necessidades de mudanças; e
+        ▪    Iniciação: esforços para definir e autorizar um                               ▪      Encerramento: esforços para concluir o projeto /
+        novo projeto / fase / iteração;                                                    fase / iteração.
+
+        ▪     Planejamento: esforços de definição de escopo,                     Os grupos de processos de gerenciamento de projetos se
+        refinamento dos objetivos e definição das linhas de                      sobrepõem e interagem, apesar de serem representados
+        atuação necessárias para alcançar os objetivos do                        graficamente como elementos distintos. O nível de sobreposição
+        projeto;                                                                 e interação dependerá do modelo de ciclo de vida estabelecido
+                                                                                 para o gerenciamento do projeto. A título de exemplo, ilustra-se
+        ▪    Execução: esforços para concluir o trabalho                         a seguir uma possível interação entre os grupos de processos.
+        estabelecido para satisfazer os requisitos do projeto;
+                                                Figura 4 | Exemplo de interação entre os grupos de processos
+
+                                                                  PROCESSOS DE
+                                                            MONITORAMENTO E CONTROLE
+
+                                                                       Processos de
+                                                                       planejamento
+
+
+
+
+                             Entrar em fase/     Processos                                    Processos           Sair de fase/
+                              iniciar projeto                                                de encerra-        Encerrar o projeto
+                                                de iniciação                                   mento
+
+
+
+                                                                       Processos de
+                                                                         execução
+
+
+
+
+               Fonte: Baseado em [1]
+                                                                                                    GUIA REFERENCIAL para gerenciamento de projetos e portfólios de projetos | Enap   14
+Projetos realizados em ambientes complexos e com maior nível        as incertezas aumentam, crescem também a complexidade
+de incerteza tendem a executar todos os grupos continuamente        e o risco do projeto, podendo gerar grandes quantidades de
+[1, p. 668].                                                        mudanças e retrabalho [13, p. 13].
+
+                                                                    Dado o contexto acima, uma forma de se estabelecer o ciclo de
+4 Tailoring – definição de COMO O                                   vida mais apropriado para o projeto é pelo diagnóstico do cenário
+                                                                    em torno de duas características: nível de certeza sobre objetivos/
+PROJETO SERÁ GERIDO conforme o                                      requisitos e sobre a solução/produto que será entregue ao final
+                                                                    do projeto. A relação entre as variáveis gera um cenário com dois
+ambiente e a necessidade                                            quadrantes inferiores, relacionados aos Projetos Preditivos e
+                                                                    aos Projetos Adaptativos e um quadrante superior dos Projetos
+                                                                    Extremos, conforme ilustrado a seguir [13] [2].
+
+Cada projeto é único e, por este motivo, devem ser selecionados     Os Projetos Preditivos apresentam baixa complexidade, ou
+processos de gestão, técnicas e ferramentas que sejam               seja, baixa incerteza sobre o que se quer alcançar e como se
+compatíveis com a sua característica [1, p. 28]. A definição pode   chegar lá.
+ser baseada em aspectos do ambiente do projeto, incluindo
+fatores da cultura organizacional, características físicas,         Os Projetos Adaptativos representam as situações em que se
+aspectos comportamentais, dinâmica da área de negócio ou            sabe da necessidade, mas não se sabe ao certo como supri-la.
+da política pública relacionada, experiência e competências da      Nessa situação não é possível elaborar um plano detalhado. A
+equipe, entre outros. A abordagem estabelecida será eficaz caso     solução será encontrada no decorrer do projeto [2, pp. 42-49].
+viabilize respostas às perguntas indicadas na sessão descritiva     Projetos ágeis têm um foco muito forte em princípios [5, p. 82].
+sobre Gerenciamento de Projetos [2, p. xlv].
+                                                                    Nos Projetos Extremos nem as necessidades nem a solução
+Alguns projetos são realizados em ambiente com alto nível           correspondente estão claras. Tratam-se de projetos de pesquisa e
+de incerteza em relação aos seus requisitos e à forma com a         desenvolvimento. Possuem grande risco, são bastante suscetíveis
+qual estes requisitos podem ser satisfeitos, ou seja, a solução     à mudanças e demandam forte envolvimento dos clientes.
+que será desenvolvida e entregue pelo projeto. À medida que
+
+
+
+
+                                                                                    GUIA REFERENCIAL para gerenciamento de projetos e portfólios de projetos | Enap   15
+Figura 5 | Modelo de incerteza e complexidade                                                                  4.1 Ciclo de vida preditivo
+
+
+
+
+                         Alta incerteza
+                                                                                                               É também chamado de ciclo de vida tradicional/cascata, no
+                                                                 Projetos Externos                             qual as informações sobre os objetivos/requisitos e as soluções/
+Nivel de certeza sobre
+ objetivos/requisitos
+
+                                                              Ciclo de vida extremo                            produtos são conhecidas e comprovadas. O baixo nível de
+                                                                                                               incerteza do contexto permite a execução do projeto em uma
+                                              Ciclo de vida incremental      Ciclo de vida iterativo           sequência previsível de esforços, com a entrega do valor à
+                                                                                                               organização na conclusão do projeto.
+                         Baixa incerteza
+
+
+
+
+                                                  Projetos Preditivos         Projetos Adaptativos
+                                                                                                               Nessa abordagem, em geral, são gerados planos detalhados com
+                                                Ciclo de vida preditivo                                        a definição do que e como será entregue. A partir do plano é
+                                                                                                               possível a articulação das restrições e melhor gestão sobre os
+                                           Baixa incerteza                                    Alta incerteza
+                                                                                                               riscos [13]. Portanto, o plano direciona o trabalho do projeto e
+                                                              Nivel de certeza sobre a                         logo no início os requisitos são identificados com o maior grau
+                                                                 solução/produto
+                                                                                                               de detalhamento possível. A partir daí a equipe estima quando
+Fonte: elaboração da equipe técnica com base em [13, p. 14] [2, p. 8].
+                                                                                                               poderá fazer as entregas previstas e os recursos necessários para
+                                                                                                               tanto [13, p. 20].
+As partes envolvidas em cada projeto devem interpretar o
+contexto para definir o tipo de abordagem a ser adotada.                                                       Dentre os ciclos de vida aqui relatados, trata-se da abordagem
+Ressalta-se que a transição entre os quadrantes é contínua e                                                   mais simples, a que indica menor complexidade, menor
+fluida. Dessa forma, a interpretação, em geral, considera mais                                                 probabilidade de ocorrer necessidade de mudanças de escopo,
+parâmetros subjetivos do que objetivos.                                                                        menor risco [2, pp. 40-43]. A figura a seguir ilustra uma possível
+                                                                                                               sequência de fases no ciclo de vida preditivo.
+É possível que organizações estabeleçam metodologias
+de gerenciamento de projetos que padronizem de forma                                                           Figura 6 | Exemplo de ciclo de vida preditivo
+institucional a abordagem a ser selecionada.
+                                                                                                                  Definição
+                                                                                                                                        Protótipo            Elaboração              Entrega         Conclusão
+                                                                                                                  de Escopo
+A seguir, serão descritos os diferentes ciclos de vida acima
+ilustrados.
+                                                                                                               Fonte: elaboração da equipe técnica com base em [13, p. 21] e [2, p. 43]
+
+
+
+
+                                                                                                                                      GUIA REFERENCIAL para gerenciamento de projetos e portfólios de projetos | Enap   16
+Nesse cenário os processos são executados uma única vez e na                             Nessa abordagem, com a incorporação de momentos passíveis
+sequência indicada. A execução única impede que o projeto                                ao recebimento de percepções sobre as entregas realizadas,
+se alimente de lições aprendidas no decorrer do projeto. No                              aumenta-se a probabilidade de existir necessidades de
+atual contexto de constantes mudanças e em ritmo acelerado a                             mudança de escopo. Outra preocupação é a de se estabelecer
+abordagem tende a ser menos demandada [2, p. 40].                                        o cronograma de entregas considerando a interdependência
+                                                                                         existente entre elas, de forma a não planejar para o fim do
+                                                                                         projeto uma entrega entendida como predecessora de outras e
+4.2 Ciclo de vida incremental
+                                                                                         vice-versa [2, p. 45].
+Existem contextos em que as partes interessadas do projeto,
+em especial os clientes, estão dispostos a receber mais
+                                                                                         4.3 Ciclo de vida iterativo
+rapidamente um subconjunto da solução total. Para tanto, o
+projeto é estruturado de forma a realizar entregas menores e                             Ciclos de vida iterativos permitem a obtenção de feedbacks
+frequentes [13, p. 22].                                                                  frequentes sobre entregas parciais, possibilitando a melhoria
+                                                                                         do resultado final. Em geral, projetos desse tipo permitem o
+Pela perspectiva teórica, a diferença entre as abordagens
+                                                                                         aprendizado e descoberta de soluções.
+preditiva e incremental é que as entregas na abordagem
+incremental são realizadas gradualmente conforme                                         Figura 8 | Exemplo de ciclo de vida iterativo
+cronograma. Na abordagem preditiva é feita apenas uma entrega
+final. Ou seja, uma solução parcial é inicialmente liberada e,                             Deﬁnição           Plano de
+                                                                                                                                Protó�po         Elaboração         Entrega       Conclusão
+                                                                                           de Escopo          Iteração
+em seguida, partes adicionais da solução são adicionadas à
+entrega inicial para formar uma solução mais completa. [2,
+p. 44]. É possível que seja adotada abordagem híbrida, com                               Fonte: elaboração da equipe técnica com base em [13, p. 21] e [2, p. 49]
+a utilização de processos preditivos entregues em fases por
+meio de abordagens como, por exemplo, planejamento em                                    Projetos se beneficiam dessa abordagem quando a
+ondas sucessivas. Dessa forma, o ciclo de vida do projeto seria                          complexidade é alta, as mudanças são constantes e o escopo
+preditivo e incremental ao mesmo tempo.                                                  está sujeito a diferentes pontos de vista. O foco da abordagem
+                                                                                         está no aprendizado e não na rapidez da entrega [13, p. 21].
+Figura 7 | Exemplo de ciclo de vida incremental
+
+   Deﬁnição            Elaboração           Elaboração          Elaboração   Conclusão
+   de Escopo             Entrega              Entrega             Entrega
+
+
+
+Fonte: elaboração da equipe técnica com base em [13, p. 22] e [2, p. 44]
+                                                                                                                GUIA REFERENCIAL para gerenciamento de projetos e portfólios de projetos | Enap   17
+4.4 Ciclo de vida extremo                                                              de diferentes abordagens para atingir determinados objetivos,
+                                                                                       considerando seus riscos e o ambiente no qual o projeto está
+Por sua própria natureza, o ciclo de vida extremo não é                                inserido [13, p. 26].
+estruturado. Nessa abordagem os projetos possuem “metas
+difusas” ou de natureza exploratória. O foco da abordagem é o                          Figura 10 | Ciclo de vida híbrido
+aprendizado e a descoberta realizada em cada fase. No projeto
+extremo, diferentemente das demais abordagens, o escopo é
+ajustado em cada fase em função da possibilidade de mudança
+do objetivo.
+
+Figura 9 | Exemplo de ciclo de vida extremo
+
+   Escopo           Plano
+                                                                                                                                Extremo
+                                    Protó�po        Elaboração   Entrega   Conclusão
+   da fase          da fase
+
+
+
+
+Fonte: elaboração da equipe técnica com base em [2, p. 52]
+
+O modelo extremo é também iterativo e beneficia-se do                                                                           Híbrido
+aprendizado obtido no decorrer do projeto. É possível que
+existam projetos com número não especificado de fases curtas
+(comprimentos de fase de 1 a 4 semanas são típicos) em busca                                               Preditivo                           Adaptativo
+da solução (e do objetivo). [2, p. 53].
+
+
+4.5 Modelos híbridos                                                                   Fonte: elaboração da equipe técnica com base em [2, p. 56]
+
+
+Os modelos de ciclos de vida acima são teóricos e servem de                            O objetivo do gerenciamento de projetos é produzir valor
+base para descrever características e melhores práticas que                            ao negócio da melhor maneira possível. Cada abordagem
+podem ser úteis em situações específicas.                                              explorada acima possui um conjunto de características que
+                                                                                       podem ser combinadas para aumentar a probabilidade de
+Na prática não é necessário usar uma única abordagem no                                sucesso do projeto.
+projeto inteiro. Projetos frequentemente combinam elementos
+
+
+                                                                                                             GUIA REFERENCIAL para gerenciamento de projetos e portfólios de projetos | Enap   18
+5 Competências relacionadas com o                                  A ilustração a seguir demonstra a complementariedade dos
+                                                                   elementos para a atuação do profissional de gerenciamento de
+Gerenciamento de projetos                                          projetos.
+
+                                                                   Figura 11 | Olho da competência
+
+
+
+Competência é um conjunto de conhecimentos, habilidades,                                          Competências
+atitudes e experiências relevantes necessárias para ter sucesso                                    Contextuais
+
+em uma determinada função. As competências relacionadas
+com gerenciamento de projetos podem ser divididas em
+grupos, da seguinte forma [11, p. 9]:                                                  Competências
+                                                                                                              Competências
+                                                                                       Comportamen-
+                                                                                                                Técnicas
+                                                                                           tais
+       ▪     Competências técnicas: relacionadas com os ele-
+       mentos fundamentais de gestão de projetos, como, por
+       exemplo, entendimento sobre partes interessadas, re-
+       quisitos, riscos, qualidade, escopo, cronograma, con-
+       tratação, recursos, mudanças, etc.
+                                                                   Fonte: [11]
+       ▪     Competências comportamentais: elementos pes-
+       soais, como, por exemplo, liderança, motivação, auto-       Caso o foco do estudo esteja nas competências necessárias ao
+       controle, assertividade, abertura, criatividade, orienta-   gerente de projetos, para ter eficácia máxima, estes profissionais
+       ção a resultados, negociação, resolução de conflitos,       devem ter equilíbrio entre as habilidades técnicas, de gestão
+       ética, etc.                                                 estratégica e de negócios e de liderança. Em relação ao modelo
+                                                                   apresentado acima, esta visão destaca a necessidade de se
+       ▪     Competências contextuais: elementos relaciona-        ter capacidade de identificar a visão geral de alto nível da
+       dos ao contexto do projeto, como, por exemplo, aspec-       organização e de negociar e implementar decisões e ações que
+       tos específicos do negócio ou da política pública rela-     apoiem o alinhamento estratégico. Além disso, o modelo destaca
+       cionada, conhecimentos sobre sistemas de informa-           a capacidade de liderança, descrita como sendo a capacidade
+       ção, legislações específicas, etc.                          de orientar, motivar e dirigir a equipe. Liderar também envolve
+
+
+
+                                                                                    GUIA REFERENCIAL para gerenciamento de projetos e portfólios de projetos | Enap   19
+habilidades de negociação, resiliência, comunicação, resolução      Quadro 1 | Temas do gerenciamento de projetos
+de problemas, pensamento crítico, etc. [1, pp. 58-60].
+                                                                     Tema               Responde à questão       Descrição
+                                                                                                                 O projeto é iniciado para gerar valor ao
+Cada projeto necessita da atuação de profissionais com um                                                        negócio ou política da organização. Deve-se
+conjunto específico de habilidades e competências. Em geral,         Caso de
+                                                                                        Porque?
+                                                                                                                 entender a viabilidade do projeto dentro do
+                                                                     negócio                                     contexto da organização e como o seu foco
+quanto maior for o nível de incerteza do projeto maior será a                                                    será mantido nos objetivos da organização
+necessidade de a equipe trabalhar de forma independente,                                                         ao longo de todo o projeto.
+com menor nível de supervisão [2, p. 61].                                                                        A organização interessada no projeto deve
+                                                                                                                 alocar recursos compatíveis com os seus
+                                                                                                                 interesses, desde o início até o término. Em
+                                                                                                                 geral, projetos são transversais, portanto,
+                                                                     Organização        Quem?
+                                                                                                                 estruturas funcionais tradicionais podem
+6 Áreas de Conhecimento em                                                                                       não os suportar. É necessário definir papéis
+                                                                                                                 e responsabilidades para a gestão efetiva
+Gerenciamento de Projetos                                                                                        do projeto.
+                                                                                                                 É necessário alinhar o entendimento sobre
+                                                                                                                 os atributos de qualidade dos produtos
+                                                                                                                 e serviços que serão entregues e como a
+                                                                     Qualidade          O que?
+                                                                                                                 gestão do projeto vai garantir que esses
+                                                                                                                 requisitos sejam entregues ao longo do
+                                                                                                                 projeto.
+As áreas de conhecimento são campos ou áreas de especialização
+                                                                                                                 Trata-se da elaboração de planos conforme
+que costumam ser aplicadas para gerenciar projetos [1, p.                                                        as necessidades de informação das diversas
+                                                                                        Como? Quanto
+553], sendo eles tradicionais, ágeis ou extremos. São também         Planos
+                                                                                        custa? Quando?
+                                                                                                                 partes interessadas no projeto, os quais são
+                                                                                                                 os focos dos processos de comunicação e
+chamados de grupos de assuntos [12] ou de temas [5].                                                             controle ao longo do projeto.
+                                                                                                                 Define como o projeto vai lidar com as
+As descrições contidas neste guia priorizam a simplicidade e         Risco              E se?
+                                                                                                                 incertezas.
+buscam evitar o preciosismo teórico em torno da classificação                                                    Descreve como o projeto tratará dos
+de informações. A ideia é colocar a teoria a serviço da fluidez e                                                problemas que tenham potencial impacto
+                                                                     Mudança            Qual é o impacto?
+                                                                                                                 sobre os aspectos da linha de base do
+da prática, e não o contrário [14, p. 27].                                                                       projeto.
+                                                                                                                 Registra o processo de tomada de decisão
+                                                                                        Onde estamos
+Conforme quadro a seguir, o PRINCE2 [5] desenvolveu sua                                                          durante o projeto, o monitoramento
+                                                                                        agora? Para onde
+                                                                     Progresso                                   do desempenho e as possíveis alçadas
+abordagem de temas com base na solução a questões que                                   estamos indo?
+                                                                                                                 de decisão em caso de ocorrência de
+                                                                                        Devemos continuar?
+podem nortear o gerenciamento de projetos. Esta abordagem                                                        problemas.
+
+também foi adotada no Canvas de Projeto [14] apresentado em         Fonte: [5, p. 93]
+anexo a este guia como possível modelo para estruturar um
+plano de projeto.
+                                                                                        GUIA REFERENCIAL para gerenciamento de projetos e portfólios de projetos | Enap   20
+Na abordagem do guia PMBoK® as áreas de conhecimento           O gerenciamento da integração do projeto trata da coordenação
+descrevem processos, técnicas e ferramentas que podem ser      de todos os processos das demais áreas de conhecimento e
+usadas para realizar e gerir qualquer projeto em diferentes    das atividades necessárias para identificar, definir, combinar,
+contextos. Reproduz-se a seguir um extrato dos aspectos mais   unificar e coordenar os vários processos e atividades dos
+relevantes de cada área. Ressalta-se que cada projeto deve     grupos de processos do gerenciamento de projetos. Trata-se
+selecionar, aplicando a abordagem do Tailoring, que áreas do   de ações essenciais para a execução controlada do projeto até
+conhecimento, técnicas e ferramentas são úteis e agregam       a sua conclusão, gerenciando com sucesso as expectativas das
+valor em seu contexto específico. Não existem procedimentos    partes interessadas e atendendo aos requisitos estabelecidos
+padrões ou obrigatórios.                                       [1, p. 69].
+
+                                                               É a “cola” que une as entregas realizadas pelo projeto em um
+6.1 Integração                                                 todo uniforme. Essa ligação começa com a descrição inicial
+                                                               do projeto, se estende ao plano do projeto e sua execução,
+                                                               incluindo o monitoramento do progresso em relação ao plano
+                                                               e a integração de mudanças, e, finalmente, até o encerramento
+                                                               do projeto [2, p. 116].
+
+                                                               A integração do projeto pode ser apoiada por modelos de
+                                                               planos que auxiliem no desenvolvimento de informações que
+                                                               podem ser úteis à gestão do projeto. Essas informações serão
+                                                               discutidas nas descrições das demais áreas de conhecimento.
+
+                                                               Para alinhar expectativas, o plano de gerenciamento de projetos
+                                                               pode incluir, por exemplo, descrições sobre:
+
+                                                                      ▪     Como o trabalho será executado para alcançar os
+                                                                      objetivos do projeto;
+
+                                                                      ▪     Como as mudanças serão geridas;
+
+                                                                      ▪    Como serão organizados os arquivos, papéis e
+                                                                      informações gerados durante a execução do projeto;
+
+                                                                              GUIA REFERENCIAL para gerenciamento de projetos e portfólios de projetos | Enap   21
+       ▪     Como será gerida a linha de base do cronograma       e somente o trabalho necessário, para terminar o projeto
+       e dos custos, caso elas sejam registradas; e               com sucesso. Neste contexto cabe estabelecer a seguinte
+                                                                  diferenciação: [1, pp. 129-131]:
+       ▪    Requisitos e técnicas para comunicação entre as
+       partes interessadas.                                              ▪     Escopo do produto: os requisitos, características
+                                                                         e funções que descrevem um produto, serviço ou resul-
+Dependendo do contexto e do nível de clareza sobre objetivos /           tado que será gerado com o projeto;
+requisitos e soluções correspondentes, o plano de gerenciamento
+do projeto pode ser resumido ou detalhado. Projetos complexos            ▪     Escopo do projeto: o trabalho que precisa ser re-
+podem requerer abordagens de gerenciamento mais flexíveis,               alizado para entregar um produto, serviço ou resultado
+criativas e adaptativas em resposta às características mutáveis          seguindo os requisitos, características e funções espe-
+de seu contexto [2, p. 117].                                             cificadas.
+
+Anexos a este guia estão um modelo tradicional de plano de        Portanto, a definição do escopo passa pela identificação dos
+projeto e um modelo de plano de projeto em Canvas [14].           requisitos do cliente (escopo do produto) e pela definição
+                                                                  do trabalho a ser feito para entregar esses requisitos (escopo
+A gestão da integração inclui também os esforços necessários      do projeto). A partir do entendimento dos requisitos pode-
+para executar o projeto conforme esperado, monitorar essa         se elaborar uma Estrutura Analítica do Projeto (EAP) como
+execução, controlar as mudanças e encerrar o projeto como um      ferramenta para definir escopo do projeto e possibilitar a
+todo, a fase ou iteração.                                         estimativa de cronograma, custo e recursos necessários [2,
+                                                                  p. 117].
+
+6.2 Escopo
+
+O escopo do projeto é a resposta para a pergunta "o quê", ou
+seja, que "produto" o projeto fornecerá e quais resultados
+intermediários precisam ser produzidos para se obter o
+"produto final" [12, p. 77].
+
+O gerenciamento do escopo do projeto preocupa-se em
+assegurar que o projeto inclui todo o trabalho necessário,
+
+
+                                                                                 GUIA REFERENCIAL para gerenciamento de projetos e portfólios de projetos | Enap   22
+                                                                    relacionada com a experiência e maturidade da equipe no tema
+    DICA:                                                           do projeto [14, p. 48].
+
+    Uma das formas de avaliar a consistência do trabalho
+    definido no escopo do projeto é responder às seguintes          6.3 Cronograma
+    perguntas-chaves:
+                                                                    O gerenciamento do cronograma do projeto preocupa-se com o
+    Se as entregas previstas forem realizadas o objetivo do         término pontual do projeto [1, p. 173]. Busca determinar datas
+    projeto será alcançado?                                         de entrega e marcos do projeto, considerando as restrições
+                                                                    conhecidas [12, p. 81].
+    Alguma entrega prevista é desnecessária para o alcance
+    do objetivo do projeto?                                         Envolve a previsão de duração das tarefas para estimar o tempo
+                                                                    total necessário para concluir o projeto. Essas estimativas
+    Ressalta-se que o escopo lista as entregas e não as             viabilizam a sua comparação do desempenho real e o
+    atividades. Nesse sentido, sugere-se que os itens da EAP        gerenciamento dos possíveis desvios [2, p. 117].
+    sejam descritos sempre de forma substantiva, sem a
+    utilização de verbos no infinitivo.                             Existem diferentes formas de se estruturar o cronograma de
+                                                                    um projeto. Pode-se elaborar cronogramas bem detalhados,
+Fonte: adaptado de [14, pp. 46-47]                                  listando em nível granular todas as tarefas necessárias à
+A depender do nível de clareza presente a respeito dos requisitos   conclusão de cada entrega do projeto, ou podem ser gerados
+e das soluções, diferentes abordagens podem ser utilizadas.         cronogramas de marcos, apenas listando as datas das principais
+Em projetos complexos, uma declaração de escopo pode ser            entregas. O nível de detalhamento estabelecido deve ser o que
+proposta durante o planejamento do projeto com expectativa          demande o menor esforço possível para garantir o alcance dos
+de que mude à medida que o aprendizado e a descoberta               objetivos do projeto. A decisão pode considerar, por exemplo,
+surjam das fases do projeto [2, p. 117].                            o contexto do projeto, o nível de complexidade envolvida,
+                                                                    a cultura organizacional, a natureza do projeto, o nível de
+Para garantir o alinhamento de expectativas entre as diversas       maturidade da equipe, entre outros.
+partes interessadas, deve-se registrar também o não escopo do
+projeto, ou seja, todas as entregas e esforços que não devem
+ser esperados do projeto. Sua descrição está diretamente
+
+
+
+                                                                                   GUIA REFERENCIAL para gerenciamento de projetos e portfólios de projetos | Enap   23
+6.4 Custo                                                          pretendidas [5, p. 158], se está de acordo com os requisitos do
+                                                                   cliente e se foi disponibilizado em tempo e dentro do orçamento
+O gerenciamento dos custos do projeto visa garantir que o          [2, p. 119].
+projeto seja concluído dentro do orçamento determinado [1,
+p. 231]. O orçamento do projeto agrega os custos estimados         Em projetos complexos, como o escopo do projeto é variável,
+necessários para realizar as entregas do projeto.                  os padrões de qualidade podem também o ser [2, p. 119].
+
+Além da criação do próprio orçamento, trata da criação do
+cronograma de desembolso. Dessa forma, viabiliza-se o              6.6 Recursos
+controle sobre o consumo de recursos financeiros ao longo do
+tempo [2, p. 118].                                                 O gerenciamento dos recursos preocupa-se com a aquisição
+                                                                   e o gerenciamento dos recursos necessários para conclusão
+                                                                   bem-sucedida do projeto. O objetivo é garantir que os recursos
+6.5 Qualidade                                                      certos estarão disponíveis na hora e no local corretos [1, p.
+                                                                   307]. Em outras palavras, trata de garantir a disponibilidade e
+Qualidade pode ser definida como o nível em que um produto         a retenção das pessoas e a obtenção de materiais, instalações,
+ou serviço atende às especificações ou atende às expectativas      infraestrutura, etc., necessários ao projeto [12, p. 78].
+de seus usuários [12, p. 87].
+                                                                   Além disso, trata do desenvolvimento (capacitação) e motivação
+Cabe destacar a diferença entre qualidade e grau. Grau refere-se   das pessoas alocadas, sempre com foco nos objetivos do
+à utilidade funcional do produto a ser desenvolvido. Um produto    projeto [2, p. 120].
+com muitos recursos é de alto grau, enquanto um produto de
+poucos recursos é de baixo grau. O nível de qualidade não se
+refere à quantidade de recursos disponíveis, mas à quantidade      6.7 Comunicações
+de defeitos existentes, por exemplo [1, p. 274].
+                                                                   Comunicação é a troca de informações intencional ou
+O gerenciamento da qualidade visa a incorporação ao projeto        involuntária. O gerenciamento das comunicações visa garantir
+da política de qualidade da organização de forma a atender os      que as necessidades de informações do projeto e das partes
+objetivos das partes interessadas [1, p. 271]. Pretende definir    interessadas sejam satisfeitas [1, p. 359].
+e implementar os meios pelos quais o projeto verificará se as
+entregas realizadas pelo projeto são adequadas às finalidades
+
+
+                                                                                  GUIA REFERENCIAL para gerenciamento de projetos e portfólios de projetos | Enap   24
+A comunicação eficaz aumenta a chance de sucesso do projeto,         6.9 Aquisições
+pela construção de relacionamentos com partes interessadas
+capazes de gerar coalizões e parcerias. Por este motivo, os          O gerenciamento das aquisições do projeto refere-se à
+gerentes de projeto passam a maior parte do seu tempo se             aquisição de produtos, serviços ou resultados externos à equipe
+comunicando e garantindo a fluidez da comunicação entre as           do projeto. Abrange o desenvolvimento e administração de
+partes interessadas [12, p. 89].                                     acordos como contratos, pedidos de compra, acordos de nível
+                                                                     de serviço (ANS), etc. [1, p. 459].
+Entre os principais motivos de falhas dos projetos está a falta
+de comunicação. O gerenciamento das comunicações deve se             No contexto da administração pública devem-se observar as
+preocupar em responder às seguintes questões [2, p. 120]:            leis e normas relacionadas à temática.
+
+        ▪     Quem são as partes interessadas do projeto?
+                                                                     6.10 Partes interessadas
+        ▪     O que eles precisam saber sobre o projeto?
+        ▪     Como suas necessidades devem ser atendidas?            O gerenciamento das partes interessadas visa identificar todas
+                                                                     as pessoas, grupos ou organizações que podem impactar ou
+                                                                     serem impactados pelo projeto, analisar suas expectativas e
+6.8 Risco                                                            seus impactos no projeto, além de desenvolver estratégias para
+                                                                     o envolvimento eficaz das partes interessadas nas decisões e
+Risco é um evento incerto ou conjunto de eventos que, caso           execução do projeto [1] [12].
+ocorram, terão um efeito na consecução dos objetivos. É medido
+por uma combinação de sua probabilidade de ocorrência e da           Nesse contexto, cabe envolver e se comunicar efetivamente as
+magnitude de seu impacto nos objetivos [5, p. 238].                  partes interessadas durante todo o projeto. A satisfação delas
+                                                                     deve ser gerenciada como um objetivo-chave do gerenciamento
+O gerenciamento dos riscos do projeto busca realizar a               de projetos [12, p. 75].
+identificação, análise, planejamento de respostas e controle
+de riscos de um projeto. Pretende-se aumentar a probabilidade        Projetos complexos podem demandar atenção especial pela
+e o impacto dos eventos positivos e reduzir a probabilidade e        presença de, por exemplo, divergências de requisitos entre as
+o impacto dos eventos negativos no projeto, para otimizar as         partes interessadas [2, p. 143].
+chances de sucesso [1] [5]. Fornece confiança de que o projeto
+é capaz de atingir seus objetivos e que sua justificativa continua
+válida [5, p. 239].
+
+                                                                                      GUIA REFERENCIAL para gerenciamento de projetos e portfólios de projetos | Enap   25
+    7 Gerenciamento de Portfólios de                                                                               O gerenciamento de portfólios de projetos é atividade dinâmica
+                                                                                                                   pela qual uma organização investe seus recursos para atingir
+    Projetos                                                                                                       seus objetivos estratégicos. Trata-se de sistema ou conjunto de
+                                                                                                                   entidades, chamados componentes do portfólio, e uma coleção
+                                                                                                                   de inter-relações entre esses componentes. Os componentes
+                                                                                                                   do portfólio compartilham o propósito de alcançar os objetivos
+                                                                                                                   estratégicos da organização [7, p. 5].
+    As organizações desenvolvem visões de futuro e estratégias
+    para direcionar suas ações. Essas estratégias estão vinculadas                                                 A estruturação dos componentes do portfólio, com seus muitos
+    a metas maiores e abrangentes que têm benefícios associados.                                                   relacionamentos e dependências, aprimora a capacidade da
+    Metas são decompostas em objetivos organizacionais                                                             organização de prever possíveis problemas e riscos futuros,
+    executados por meio de portfólios, programas e projetos para a                                                 aumentando a probabilidade de alcance da visão de futuro da
+    realização de entregas e alcance dos resultados. Os resultados                                                 organização [7, p. 11].
+    geram os benefícios planejados que, por fim, entregam o valor
+    desejado pela organização [9, p. 9].                                                                           Figura 13 | O contexto organizacional da gestão de portfólio
+
+        Figura 12 | Conexão entre estratégia, portfólios, programas e projetos,
+                                                                                                                                                                  Visão
+                            geração de benefícios e valor
+
+                                                                   Os objetivos gerais e metas
+                                                                   que orientam a direção da                                                                     Missão
+                                                                          organização
+                                                 Estratégia
+     Benefícios
+ entregues menos                                                                          Portifólios, programas                                         Objetivos estratégicos
+os correspondentes                                                                          e projetos para o
+       custos                                                                             alcance dos objetivos
+                             Valor                                  Iniciativas                  e metas
+                                                                                                                                                    Gestão do portifólio estratégico de
+                                                                                                                                                     programas, projetos e operações
+
+
+                                                                                                                                                                            Gestão de programas e projetos
+                                                                                                                                        Gestão das operações
+                                                                                  Entregas e resultados                                                                      Incremento da capacidade de
+  Os ganhos obtidos pelas                                                                                                                Produção de valor
+                                                                                  resultantes dos portifólios,                                                                    produção de valor
+   entregas e resultados
+                                                              Entregas e          programas projetos
+                                    Benefícios
+                                                              resultados
+                                                                                                                                                        Recursos organizacionais
+
+                                                                                                                   Fonte: baseado em [7, p. 8]
+    Fonte: adaptado de [9, p. 9].
+
+
+                                                                                                                                          GUIA REFERENCIAL para gerenciamento de projetos e portfólios de projetos | Enap   26
+Os objetivos e as estratégias servem para direcionar a atuação,     De forma a promover a ótima utilização de recursos e minimizar
+as decisões e a alocação de recursos de uma organização             os conflitos para uma execução bem-sucedida do portfólio
+para alcançar valores pretendidos. Determinar a estratégia          cabe equilibrar o portfólio, ou estabelecer seus componentes,
+organizacional é tarefa difícil. Alcançar resultados é, às vezes,   de acordo com a capacidade de realização da organização.
+ainda mais desafiador e complexo. A gestão de portfólios de         Esta capacidade é limitada por pessoas, recursos financeiros,
+projetos apresenta uma abordagem organizada para alcançar           patrimoniais e de capital intelectual que uma organização usa
+resultados estratégicos [7, p. 7].                                  para executar os componentes do portfólio [7, p. 53].
+
+                                                                    Diferenças significativas podem existir entre os diversos projetos
+7.1 Governança de portfólio                                         dentro de um mesmo portfólio. Projetos com características
+                                                                    e ciclos de vida diferentes exigem diferentes abordagens de
+Governança de portfólio é um conjunto de práticas e processos       gestão. Ou seja, um único padrão de gerenciamento de projetos
+estabelecidos à luz de princípios, normas, regras e/ou valores      não se adequa a todos os projetos. Ao mesmo tempo, é possível
+fundamentais que orientam as atividades de gerenciamento            estabelecer um conjunto de princípios e práticas que sejam
+de portfólios para otimizar o uso dos recursos no alcance dos       comuns a todos os projetos [6, pp. 23-24].
+objetivos da organização.
+                                                                    Nesse sentido, um pode-se estabelecer método sistemático
+Trata das práticas de supervisão, tomada de decisão, controle       para categorizar ou segmentar projetos e programas, de forma
+e integração, ao passo que a gestão de projetos e programas         a padronizar o processo de gestão necessário a cada categoria
+trata de como o trabalho é realizado dentro das limitações          de projetos. A categorização pode auxiliar o processo de
+estabelecidas pela estrutura de governança [7, pp. 43-44].          seleção, priorização e autorização de projetos em um contexto
+Portanto, enquanto a gestão de projetos e programas se              estratégico. Pode também direcionar o processo de gestão dos
+concentram principalmente em “fazer o trabalho do jeito             projetos e programas, apoiar esforços de capacitação, entre
+certo”, o foco principal da gestão de portfólio é “fazer o          outros [6, p. 24]. Agrupamentos podem garantir que projetos
+trabalho que deve ser feito (o trabalho certo)”. Além disso, a      e programas de orçamento menor, mas com maior valor
+correta governança do portfólio permite que o “trabalho certo”      estratégico para a organização, não sejam deixados de fora em
+seja realizado no momento certo, com recursos adequados             comparação com iniciativas de maior valor [15, p. 24].
+alocados, com a devida comunicação e coordenação entre os
+diversos componentes [7, p. 13].                                    Não existe um único método de categorização aplicável a
+                                                                    qualquer caso. Cada organização deve estabelecer o método
+                                                                    que melhor se aplica ao seu contexto. Variáveis que podem ser
+
+
+                                                                                    GUIA REFERENCIAL para gerenciamento de projetos e portfólios de projetos | Enap   27
+consideradas incluem tamanho, complexidade, familiaridade,         considerar as ações, projetos e programas em curso, de forma a
+ciclo de vida, tipo de negócio, tipos de contratos relacionados,   avaliar o seu alinhamento com a estratégia relacionada.
+etc. É possível que a categorização não seja formalmente
+estabelecida, mas que exista, de fato, implementada na cultura     Previsões do possível valor agregado pelos projetos e programas
+da organização. No entanto, uma abordagem sistemática pode         do portfólio podem apoiar a priorização dos projetos, conforme
+alavancar o desenvolvimento e a melhoria da disciplina de          exemplos ilustrados a seguir:
+gerenciamento de projetos na organização [6, pp. 24-25].
+                                                                   Figura 14 | Roteiro do alcance de uma meta estratégica
+
+                                                                       Meta final
+7.2 Como realizar a gestão de portfólio?
+                                                                                                                    Projeto Zyw
+De forma a orientar as ações práticas que podem ser realizadas           Meta
+                                                                       periodo 2
+para o estabelecimento e gestão de um portfólio de projetos
+                                                                                                              Projeto Xpto
+em contexto estratégico, consolidam-se abaixo indicações de                                                     Etapa 2
+                                                                         Meta
+diferentes referências [16] [6] [15].                                  periodo 1
+                                                                                        Projeto Xpto
+As indicações partem da premissa de que a organização já                                  Etapa 1
+
+possui visão, missão e objetivos estratégicos bem definidos e                                        Período 1            Período 2           Período 3
+
+acordados.                                                                                                           Tempo
+
+
+Cabe ressaltar que a maioria dos portfólios é implementada         Fonte: elaborado pela equipe técnica com base em [7, p. 36]
+em contexto onde já existem iniciativas em andamento que
+precisam ser consideradas ao definir ou refinar o portfólio [6,    O exemplo acima demonstra possível ilustração de roteiro de
+p. 38].                                                            encadeamento de projeto e programa para viabilizar o alcance
+                                                                   de uma meta estratégica.
+
+7.2.1 Definir o portfólio
+
+Compreendendo os objetivos, os benefícios esperados, o
+desempenho e os critérios de priorização, a organização está
+apta a definir o seu portfólio. Essa definição pode também
+
+
+                                                                                         GUIA REFERENCIAL para gerenciamento de projetos e portfólios de projetos | Enap   28
+Figura 15 | Visão geral integrada da estratégia do portfólio                             7.2.2 Gerir oferta e demanda por recursos
+                  Período 1         Período 2          Período 3
+                                                                                         Dado que os componentes de um portfólio competem por parte
+                                    Programa 1                                Visão de
+Objetivo 1
+                                                                                         de um conjunto de recursos limitados [7, p. 3], cabe realizar
+                                    Projeto E                                  futuro
+                                                                                         análise e alocação de recursos para de forma a equilibrar oferta
+                                                                Projeto L                e demanda.
+                  Projeto A
+Objetivo 2                                        Projeto F                              A análise detalhada sobre necessidades de recursos pelos
+                                  Projeto D                    Projeto H                 projetos e programas, e a disponibilidade de recursos da
+                                                                                         organização, possibilita o embasamento das decisões sobre a
+                 Projeto B
+                                                                            Projeto M    alocação de recursos [7, p. 55].
+ Objetivo 3       Projeto C                       Projeto G
+
+   Situação
+                                                                                         Adicionalmente, a avaliação sobre as capacidades técnicas dos
+                                         Objetivo 4                Objetivo 5
+     atual                                                                               profissionais que serão alocados aos componentes do portfólio
+                                                 Tempo                                   é essencial para o entendimento dos conjuntos de habilidades
+                                                                                         e competências que devem ser desenvolvidos, de forma a
+Fonte: elaborado pela equipe técnica com base em [16, p. 45]                             viabilizar a execução do portfólio e o alcance dos objetivos e
+No exemplo acima reproduz-se visão geral integrada de todo o                             metas da organização.
+portfólio, demonstrando a estratégia estabelecida no portfólio
+dos projetos da organização para o alcance da visão de futuro
+                                                                                         7.2.3 Gerir e reportar informações e riscos
+estabelecida.
+                                                                                         Uma boa prática durante a execução do portfólio é estruturar
+Dependendo da situação, o momento de definição do portfólio
+                                                                                         a mensuração do valor que está sendo gerado pelos seus
+pode ser oportuno para a definição de categorias / segmentos
+                                                                                         projetos e programas para reportar às partes envolvidas. Valor
+do portfólio e correspondentes requisitos de gestão e controle
+                                                                                         é geralmente definido pelo benefício que é produzido.
+para cada categoria.
+                                                                                         Podem ser abordagens de mensuração que sejam apropriadas
+                                                                                         ao contexto e que indiquem, de forma contínua, o progresso na
+                                                                                         realização dos benefícios previstos.
+
+
+
+                                                                                                         GUIA REFERENCIAL para gerenciamento de projetos e portfólios de projetos | Enap   29
+O reporte do portfólio fornecerá informações sobre o desempenho passado e as previsões para o desempenho futuro.
+Os relatórios podem incluir análise de variações entre previsto e realizado e recomendações de ações corretivas ou
+de otimização.
+
+Dentre os tópicos que podem ser abordados nos relatórios estão os seguintes:
+
+        ▪    Cronograma: desempenho das entregas realizadas de acordo com o originalmente previsto.
+
+        ▪    Custos: valores necessários ao alcance dos resultados esperados. Podem ser indicadas razões para
+        possíveis mudança nos custos previstos.
+
+        ▪     Valor / benefícios agregados pelo portfólio: é improvável que essa identificação seja inteiramente
+        objetiva. Portanto, a participação consistente e transparente das partes interessadas na estrutura de
+        mensuração de valor é necessária para a obtenção de informação precisa.
+
+        ▪    Riscos: situação dos riscos dos projetos e o provável impacto no valor da carteira, caso ocorra.
+
+Anexo a este guia apresenta-se modelo de slide que pode ser usado para reportar situação de projetos do portfólio.
+
+
+
+
+                                                                                    GUIA REFERENCIAL para gerenciamento de projetos e portfólios de projetos | Enap   30
+8 Modelos                                                                                                         • Não escopo – explicitação de aspectos que
+                                                                                                                     possuam o mínimo potencial de serem
+                                                                                                                     presumidos como sendo parte do escopo por
+                                                                                                                     qualquer parte interessada.
+                                                                                                            •   Premissas – explicitação de aspectos que foram
+                                                                                                                considerados como verdadeiros ou presentes no
+                                                                                                                contexto do projeto no momento da definição das
+Apresentam-se a seguir possíveis modelos, amparados pelas                                                       previsões constantes do plano.
+melhores práticas globais. Ressalta-se que cada organização e/                                              •   Restrições – explicitação dos aspectos que
+ou cada projeto/programa necessita personalizar sua utilização                                                  de alguma forma podem restringir a ação da
+                                                                                                                equipe do projeto. Em geral, tratam de aspectos
+com base em seu contexto específico.                                                                            relacionados com os recursos.
+                                                                                                            •   Cronograma ou datas das entregas – visão
+                                                                                Nem todas as                    temporal de quando as entregas serão realizadas.
+                                                                                informações listadas            Dependendo do contexto a equipe pode optar
+8.1 Modelo de plano de projeto                                                  como conteúdo típico            por elaborar cronograma detalhado com início e
+                                                                                são aplicáveis em todos         término de cada atividade ou apenas as datas das
+                                                                                os contextos. Cabe              principais entregas.
+Propósito / Descrição     Conteúdo típico                                       à equipe do projeto
+                                                                                a identificação das         •   Orçamento – valores monetários previstos como
+                          • Descrição do contexto no qual o projeto está        informações que são             necessários para a realização das entregas do
+                            inserido, incluindo o problema que será resolvido   úteis ao seu contexto           projeto;
+                            e/ou a oportunidade que será explorada;             específico.                 •   Partes interessadas – identificação de quais
+                          • Justificativa de se realizar o projeto;                                             são as partes interessadas no projeto, seus
+                          • Objetivo do projeto, ou seja, no contexto da        O conteúdo pode ser             interesses, seu nível de influência, seus papéis
+                            problemática e/ou da oportunidade descrita, o       apresentado em um               e responsabilidades e demais informações
+                            que será alcançado com a realização do projeto,     documento, sistema,             pertinentes;
+                            benefícios e seus respectivos indicadores;          slide, página de grande     •   Equipe do projeto – conjunto dos profissionais
+                          • Benefícios esperados com a conclusão do projeto.    formato ou outro                que contribuem para a realização das
+Conjunto de definições                                                          formato.                        entregas do projeto, incluindo seus papéis e
+                          • Alinhamento estratégico – indicação de como o                                       responsabilidades;
+a respeito do contexto,     projeto se alinha com a estratégia da organização
+dos desejos e do que se     ou da política pública relacionada;                                             •   Riscos – identificação dos eventos incertos que
+espera realizar para o                                                                                          possam ter efeitos sobre os objetivos do projeto.
+alcance dos desejos.      • Número identificador e categoria, conforme a                                        Pode incluir reflexão sobre possíveis causas e
+                            estrutura de gestão de portfólio da organização;                                    consequências e controles que possam atuar
+                          • Escopo – pode incluir a descrição dos seguintes                                     como fatores de mitigação da probabilidade
+                            itens:                                                                              de ocorrência do risco ou como fatores de
+                              • Escopo ou requisitos do produto ou serviço                                      contingência no caso da ocorrência do risco;
+                                 que será gerado;                                                           •   Plano de comunicação – relação dos eventos de
+                              • Requisitos de qualidade;                                                        comunicação que serão realizados no decorrer
+                                                                                                                do projeto para garantir que as diversas partes
+                              • Detalhamento do trabalho que será realizado
+                                                                                                                interessadas recebam e enviem as informações
+                                 para que o produto ou serviço seja entregue
+                                                                                                                necessárias ao bom andamento do projeto.
+                                 conforme requisitos estabelecidos;
+
+
+
+                                                                                                   GUIA REFERENCIAL para gerenciamento de projetos e portfólios de projetos | Enap   31
+8.2 Modelo de plano de projeto
+
+
+
+
+                                 GUIA REFERENCIAL para gerenciamento de projetos e portfólios de projetos | Enap   32
+8.3 Modelo de relatório de acompanhamento de projeto
+Propósito /         Conteúdo típico
+                                                                                   9 Guias Práticos
+Descrição
+Reporte             • Identificador e categoria – referências de identificação
+periódico sobre       e categorização do projeto no contexto do portfólio de
+o andamento do        projetos da organização e do possível programa ao qual o
+projeto.              projeto está vinculado;
+                    • Responsáveis – órgãos, áreas, unidades organizacionais
+                      e/ou profissionais responsáveis pela execução do projeto;
+                    • Alinhamento estratégico – indicação dos objetivos
+                                                                                   9.1 Guia prático: elaboração da EAP
+                      organizacionais e/ou do Governo aos quais o projeto
+O conteúdo            possui vinculação;
+pode ser            • Envolvidos – órgãos, áreas, unidades organizacionais e/
+                                                                                   A elaboração da Estrutura Analítica do Projeto (EAP) é o processo
+apresentado em        ou autoridades que possuam relevante vinculação com o        de detalhamento das entregas esperadas do projeto em partes
+um documento,         projeto;
+sistema, slide ou   • Orçamento – valores monetários previstos como
+                                                                                   menores, chamadas de pacotes de trabalho, que permitem seu
+outro formato.        necessários para a realização das entregas do projeto;       melhor gerenciamento.
+                    • Datas previstas de início e término do projeto;
+                    • Objetivo do projeto – indicação do que será alcançado
+                      e dos resultados esperados com a realização do projeto       Para garantir o correto entendimento de todas as partes
+                      no contexto da problemática e/ou da oportunidade do          interessadas sobre o conteúdo de cada um dos pacotes de
+Ressalta-se que       contexto do projeto;
+este modelo         • Principais entregas – lista das entregas previstas a serem   trabalho que compõem a EAP, pode-se elaborar o dicionário da
+se aplica             realizadas no decorrer do projeto e indicação da situação
+adequadamente         em que cada uma está no momento do reporte;
+                                                                                   EAP. O dicionário da EAP é a descrição detalhada de cada pacote
+a projetos          • Situação do projeto – indicação da situação do               de trabalho, o que pode incluir declaração do trabalho, custo
+tradicionais.         andamento do projeto. É possível que a estrutura de
+Projeto ágeis e       monitoramento do portfólio estabeleça o padrão das
+                                                                                   estimado, responsável, lista de marcos do cronograma, etc.
+extremos podem        possíveis situações nas quais o projeto pode estar na
+experienciar          organização. Pode incluir destaque às necessidades de
+dificuldades na       intervenção ou apoio do patrocinador. Também devem           Não existe uma forma única para a elaboração da EAP. Abaixo
+obtenção de           ser explicitadas as tendências positivas e/ou negativas      apresentamos alguns exemplos de desenvolvimento de EAP.
+alguns dos dados      do projeto e justificativas para possíveis necessidades de
+sugeridos como        mudanças;
+conteúdo típico.    • Indicadores e suas respectivas métricas relacionadas ao      Exemplo 1: usando fases do ciclo de vida do projeto como
+                      alcance dos benefícios pretendidos;
+                    • Situação dos riscos – indicação da situação das possíveis    primeiro nível e suas correspondentes entregas nos níveis
+                      causas dos riscos do projeto e percepção sobre a             inferiores, de acordo com uma metodologia específica,
+                      ocorrência e a probabilidade de ocorrência dos riscos do
+                      projeto; e                                                   conforme o produto a ser produzido.
+                    • Pontos de atenção – destaque dos pontos que merecem
+                      atenção da equipe e das partes interessadas no próximo
+                      período de monitoramento.
+
+
+
+
+                                                                                                  GUIA REFERENCIAL para gerenciamento de projetos e portfólios de projetos | Enap   33
+Figura 16 | Exemplo de EAP em projeto que utiliza RUP.                         Figura 17 | Exemplo de EAP usando entregas principais no primeiro nível
+
+                                  Desenvolvimento                                                                Novo prédio
+                                    de Software
+
+
+                                                                              Cabeamento     Equipamentos         Servidores            Micro            Periféricos
+   Iniciação         Elaboração       Construção         Periféricos           de dados         de rede                              computadores
+
+
+
+                                                                                    Entrega 1        Entrega 1           Entrega 1           Entrega 1           Entrega 1
+         Entrega 1        Entrega 1          Entrega 1           Entrega 1
+
+                                                                                    Entrega 2        Entrega 2           Entrega 2           Entrega 2           Entrega 2
+
+         Entrega 2        Entrega 2          Entrega 2            Entrega 2
+
+                                                                                    Entrega 3        Entrega 3           Entrega 3           Entrega 3           Entrega 3
+
+
+         Entrega 3        Entrega 3          Entrega 3           Entrega 3
+
+
+
+
+Fonte: [17]
+                                                                               Fonte: [17]
+
+Exemplo 2: usando entregas principais como primeiro nível de                   Exemplo 3: usando subprojetos que podem ser desenvolvidos
+decomposição.                                                                  por outros órgãos ou empresas contratadas.
+
+
+
+
+                                                                                                    GUIA REFERENCIAL para gerenciamento de projetos e portfólios de projetos | Enap   34
+    Figura 18 | Exemplo de EAP usando decomposição por subprojetos.                               Figura 19 | Modelo de criação de cronograma.
+
+                                         EGTI
+                                                                                                                                                              Dados específicos do
+                                                                                                                                                             projeto (EAP, atividades,
+                                                                                                                                                                  recursos, etc.)
+Aperfeiçoa-     Aprimoramento         Construção e            Gestão da
+ mento da                                                   Segurança da        Gestão
+               quali-quantitativo      adoção de
+gestão de TI                           padrões e             Informação         do SISP                           Método de
+                 dos recursos
+                                        modelos                                                                 elaboração de Ferramenta      Modelo             Informações
+                                                                                                                 cronograma de cronograma de cronograma            do projeto
+       Projeto 1          Projeto 1             Projeto 1           Projeto 1         Projeto 1
+                                                                                                                      Por
+                                                                                                                    exemplo                        Gera
+                                                                                                                      CPM
+       Projeto 2          Projeto 2             Projeto 2           Projeto 2         Projeto 2
+                                                                                                                                                  Saídas
+
+
+       Projeto 3          Projeto 3             Projeto 3           Projeto 3         Projeto 3
+
+                                                                                                                                               Cronograma
+                                                                                                                                                do projeto
+
+
+
+
+    Fonte: [17]
+                                                                                                  Fonte: [17]
+
+
+
+                                                                                                  9.2.1 Definição, estimativa da duração e recursos das atividades
+    9.2 Guia prático: elaboração do Cronograma
+                                                                                                  A definição das atividades tem como objetivo identificar as ações
+    A elaboração do cronograma pode ser realizada em diferentes
+                                                                                                  necessárias para produzir cada uma das entregas definidas
+    níveis de detalhamento e em diferentes ferramentas,
+                                                                                                  na EAP. No momento da identificação das atividades deve-se
+    dependendo das capacidades da equipe, da cultura
+                                                                                                  também estimar a sua duração e os recursos necessários à
+    organizacional, e dos recursos computacionais disponíveis.
+                                                                                                  realização de cada entrega.
+    Formatos possíveis incluem arquivo de texto, planilha
+    eletrônica e softwares de gerenciamento de projetos. Algumas
+                                                                                                  O envolvimento dos membros da equipe no processo de
+    das tarefas descritas neste processo podem ser realizadas em
+                                                                                                  definição das atividades e respectivas estimativas gera
+    paralelo, sem prejuízos para o planejamento do projeto.
+                                                                                                  resultados melhores e mais precisos.
+
+
+
+
+                                                                                                                              GUIA REFERENCIAL para gerenciamento de projetos e portfólios de projetos | Enap   35
+Antes de iniciar a elaboração do cronograma, cabe realizar as      As seguintes ferramentas e técnicas são instrumentos de apoio
+seguintes análises:                                                nessas atividades:
+
+       ▪    Identificação dos feriados nacionais, regionais e      Quadro 3 | Ferramentas e técnicas para estimar duração de atividades.
+       datas de ponto facultativo com potencial impacto no
+                                                                    Ferramentas /    Descrição
+       andamento do projeto; e                                      técnicas
+
+                                                                                     Publicações de empresas especializadas, pesquisas de
+       ▪    Identificação dos períodos de indisponibilidade         Benchmarking     mercado e órgãos parceiros, que contenham estimativas de
+       dos profissionais alocados no projeto, ou seja, identifi-                     atividades de projetos similares.
+
+       cação de períodos de férias, recessos, licenças, etc.                         Quando uma atividade do cronograma não pode ser estimada
+                                                                                     com um nível razoável de confiança, o trabalho dentro da
+                                                                                     atividade do cronograma é decomposto em mais detalhes. As
+                                                                    Estimativas
+Para a definição das atividades são consideradas boas práticas:     bottom-up
+                                                                                     necessidades de recursos de cada uma das partes menores e
+                                                                                     mais detalhadas do trabalho são estimadas e essas estimativas
+                                                                                     são agregadas em um total para cada um dos recursos da
+       ▪     Elaborar o cronograma incluindo todos os itens                          atividade do cronograma.
+       da EAP como entregas a serem realizadas, listando                             Cronogramas de projetos semelhantes do passado e modelos
+       abaixo de cada uma delas as atividades necessárias           Estimativa
+                                                                                     de cronogramas institucionais podem também servir como
+                                                                                     fonte para um cronograma final mais assertivo. É geralmente
+       para a sua conclusão;                                        análoga
+                                                                                     utilizado para estimar duração de atividades, quando há uma
+                                                                                     quantidade limitada de informação disponível.
+       ▪      Detalhar as atividades do projeto de forma que                         Estimativa paramétrica utiliza uma relação estatística
+       facilite o acompanhamento. O ideal é que não existam                          entre dados históricos e outras variáveis como parâmetros
+                                                                    Estimativa       para o estabelecimento das estimativas. Exemplos do
+       atividades com menos de 8 horas e mais de 80 horas;          paramétrica      método incluem metros quadrados no caso de construções,
+                                                                                     quilômetros nos casos de rodovias, pontos de função nos
+                                                                                     casos de softwares, etc.
+       ▪    Estabelecer os marcos de controle do projeto
+       com base nas principais entregas a serem realizadas.                          Esta técnica utiliza a média das estimativas mais prováveis,
+                                                                    Estimativa de    otimistas e pessimistas de uma atividade. Com esses dados
+       No estabelecimento dos marcos deve-se ter o cuidado          três pontos      recomenda-se fazer a média simples ou a ponderada das
+       de não criar uma quantidade excessiva de marcos, eles                         estimativas.
+
+       devem ser suficientes para permitir o correto acompa-                         Estabelece a estimativa com base na média ponderada de 3
+                                                                                     durações possíveis de uma atividade (otimista, mais provável
+       nhamento da evolução do projeto.                             PERT
+                                                                                     e pessimista), da seguinte forma: (pessimista + 4 x mais
+                                                                                     provável + otimista) /6.
+                                                                   Fonte: [17]
+
+
+
+
+                                                                                     GUIA REFERENCIAL para gerenciamento de projetos e portfólios de projetos | Enap   36
+9.2.2 Sequenciamento das atividades                             Quadro 4 | Ferramentas e técnicas para elaboração do cronograma
+
+                                                                Ferramentas /   Descrição
+Após a definição das atividades cabe estabelecer a relação      técnicas
+das possíveis dependências existentes entre elas. Este                          Uma antecipação permite uma aceleração da atividade
+                                                                                sucessora. Por exemplo, uma equipe de elaboração de
+sequenciamento lógico visa a otimização do uso dos recursos                     documentos técnicos pode começar a escrever a segunda versão
+disponíveis. As atividades podem ter as seguintes relações de   Antecipação
+                                                                                preliminar de um documento extenso (a atividade sucessora)
+                                                                                quinze dias antes de terminar de escrever a primeira versão
+precedência:                                                                    inteira (a atividade predecessora). Isso pode ser realizado por
+                                                                                um relacionamento do tipo término para início com um período
+Quadro 3 | Relação de precedência das atividades.                               de antecipação de quinze dias.
+                                                                                Um atraso leva a um retardo da atividade sucessora. Por
+Tipo            Descrição                            Figura                     exemplo, para compensar um período de cura do concreto
+                                                                                de dez dias, seria possível usar um atraso de dez dias em um
+                                                                Atraso
+                O início da atividade sucessora                                 relacionamento do tipo término para início, o que significa que
+Término para                                                                    a atividade sucessora não poderá ser iniciada antes de dez dias
+                depende do término da atividade
+início                                                                          após o término da predecessora.
+                predecessora.
+                                                                                Ações tomadas para diminuir a duração total do cronograma,
+                                                                                após a análise das diversas alternativas a fim de determinar
+                O término da atividade sucessora                                como obter a máxima compressão da duração do cronograma
+Término para                                                    Compressão
+                depende do término da atividade                                 pelo menor custo adicional. As ações incluem a redução das
+término
+                predecessora.                                                   durações das atividades e o aumento da alocação de recursos
+                                                                                nas atividades.
+                                                                                Uma técnica de compressão do cronograma na qual as fases
+                   O início da atividade sucessora                              ou atividades, que normalmente seriam feitas em sequência,
+Início para início depende do início da atividade                               são realizadas em paralelo. Um exemplo seria construir a
+                   predecessora.                                                fundação de um prédio sem que os desenhos de arquitetura
+                                                                                estejam terminados. O paralelismo pode resultar em retrabalho
+                                                                Paralelismo
+                                                                                e em maior risco. Esta abordagem pode exigir que o trabalho
+                O término da atividade sucessora                                seja realizado sem informações detalhadas completas, como
+Início para                                                                     os desenhos de engenharia. Ela resulta na troca de custo por
+                depende do início da atividade
+término                                                                         tempo e aumenta o risco de atingir o cronograma do projeto
+                predecessora.
+                                                                                reduzido.
+Fonte: [17]                                                     Fonte: [17]
+
+ As seguintes ferramentas e técnicas são instrumentos para
+elaboração do cronograma:
+
+
+
+
+                                                                                 GUIA REFERENCIAL para gerenciamento de projetos e portfólios de projetos | Enap   37
+9.2.3 Conclusão do cronograma
+
+Antes de encerrar a elaboração do cronograma, consideram-se boas práticas as seguintes verificações:
+
+       ▪    Verificar se todas as tarefas (exceto a primeira) possuem predecessores. Para que a rede de relações
+       entre as tarefas esteja fechada é necessário que apenas a primeira tarefa do cronograma esteja sem
+       predecessor, normalmente o marco de início do projeto;
+
+       ▪     Verificar se todas as tarefas (exceto a última) possuem sucessora;
+
+       ▪   Verificar se existem tarefas sem atribuição de responsável. Todas as tarefas devem possuir pelo
+       menos um responsável pela sua realização;
+
+       ▪     Verificar se os marcos do projeto foram devidamente estabelecidos.
+
+Após essas verificações o cronograma do projeto estará pronto para a aprovação dos envolvidos e criação de
+sua linha de base, para futuro acompanhamento e comparação do que foi planejado versus o realizado até o
+momento. Na figura abaixo ilustramos os tipos de representação de cronograma.
+
+
+
+
+                                                                                   GUIA REFERENCIAL para gerenciamento de projetos e portfólios de projetos | Enap   38
+Figura 20 | Forma de representação de cronograma
+
+
+
+
+Fonte: [17]
+
+
+
+
+                                                   GUIA REFERENCIAL para gerenciamento de projetos e portfólios de projetos | Enap   39
+Referências bibliográficas                                           [14]   Ribeiro , W. L. ; Vieira ,H. R. Canvas de projeto: como
+                                                                            transformar ideias em projetos, São Paulo: Riemma
+                                                                            Editora, 2018.
+                                                                     [15]   Ramani, S. Improving business performance: a Project
+                                                                            portfolio management approach, CRC Press, 2016.
+                                                                     [16]   Pmi, The standard for portfolio management, 3ª ed., P. M.
+                                                                            Institute, Ed., 2013.
+[1]    Pmi, Guia do conhecimento em gerenciamento de projetos        [17]   Brasil, Metodologia de gerenciamento de projetos do SISP,
+       PMBOK®, 6ª ed., P. M. Institute, Ed., 2017a.                         O. e. G. Ministério do Planejamento, Ed., Brasília, 2011.
+[2]    Wysocki, R. K. Effective project management: traditional,
+       agile, extreme, hybrid, 8ª ed., Indianapolis: John Wiley &
+       Sons, Inc, 2019.
+[3]    Brasil, Manual Técnico do Plano Plurianual do Governo
+       Federal, Brasília, 2019.
+[4]    Brasil, Sumário executivo da estratégia nacional de
+       desenvolvimento econômico e social, Brasília, 2017.
+[5]    Axelos, Managing successful projects with PRINCE2, 6ª ed.,
+       Axelos globals best practices, 2017.
+[6]    Archibald, R. D. ;Archibald ,S. C. Leading and managing
+       innovation: what every executive team must know about
+       project, program, and portfolio management, 2ª ed., C.
+       Press, Ed., 2016.
+[7]    Pmi, The standard for portfolio management, 4ª ed., Project
+       Management Institute, Inc, 2017b.
+[8]    Iiba, The guide to tha business analysis body of knowledge
+       - BABOK, 2008.
+[9]    Pmi, Benefits realization management: a practice guide,
+       Project Management Institute, 2019.
+[10]   Apmg International, Managing Benefits, 2ª ed., 2014.
+[11]   Ipma, Competence Baseline, 3ªed., International Project
+       Management Association, 2006.
+[12]   Zandhuis , A. ; Stellingwerf ,R. ISO21500: guidance
+       on project management – A Pocket Guide, Van Haren
+       Publishing, 2013.
+[13]   Pmi, Guia Ágil, 2017c.
+
+
+                                                                                      GUIA REFERENCIAL para gerenciamento de projetos e portfólios de projetos | Enap   40

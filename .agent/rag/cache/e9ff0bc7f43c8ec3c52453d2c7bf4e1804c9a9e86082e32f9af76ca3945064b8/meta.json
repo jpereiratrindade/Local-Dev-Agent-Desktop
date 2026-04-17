@@ -1,0 +1,9 @@
+{
+  "chunk_count": 79,
+  "extractor": "pdftotext",
+  "kind": "pdf",
+  "path": "/run/media/jpereiratrindade/labeco10T/labeco02/Revisao/paul-et-al-2023-livestock-solutions-to-regenerate-soils-and-landscapes-for-sustainable-agri-food-systems-transformation.pdf",
+  "sha256": "e9ff0bc7f43c8ec3c52453d2c7bf4e1804c9a9e86082e32f9af76ca3945064b8",
+  "text_size": 75518,
+  "used_ocr": false
+}

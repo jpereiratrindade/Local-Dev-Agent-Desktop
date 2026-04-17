@@ -1,0 +1,1464 @@
+Multimedia Tools and Applications (2022) 81:31075–31106
+https://doi.org/10.1007/s11042-022-12701-w
+
+
+
+
+A novel multimodal framework for automatic
+recognition of individual cattle based on hybrid
+features using sparse stacked denoising autoencoder
+and group sparse representation techniques
+
+Santosh Kumar1           · Sunil Kumar2 · Mehak Shaﬁ3 · Mithilesh Kumar Chaube4
+
+Received: 12 December 2020 / Revised: 5 March 2021 / Accepted: 21 February 2022 /
+Published online: 8 April 2022
+© The Author(s), under exclusive licence to Springer Science+Business Media, LLC, part of Springer Nature 2022
+
+Abstract
+Recently, visual animal bio-metrics have attracted much attention for identifying endan-
+gered species and animals based on their prominent bio-metric features. This study explores
+a new possibility of using facial recognition for an inexpensive and user-friendly bio-metric
+modality to identify cattle. This paper proposes an automatic recognition system to identify
+cattle based on face and muzzle image features using sparse Stacked Denoising Autoen-
+coder (SDAE) and group sparse representation techniques. The discriminatory features are
+extracted from cattle’s facial image and muzzle images using sparse SDAE and Deep Belief
+Networks (DBN) methods to represent extracted features. It mitigates the need for individ-
+ual bio-metric feature representation from the single face and muzzle bio-metric modality
+features at various score levels. The single modality features and multi-features are fused at
+score level to represent better and classify individual cattle using group sparse representation
+technique. The proposed system’s performance is compared with holistic and handcrafted
+texture feature extraction and representation technique and current state of the art methods.
+Author shows that the proposed recognition system yield 96.85% accuracy for identifying
+individual cattle based on the multi-feature-based representation of cattle’s face and muzzle
+features.
+
+Keywords Visual animal bio-metrics · Muzzle point · Deep learning ·
+Group sparse representation · SDAE
+
+
+1 Introduction
+
+Visual animal bio-metrics opens an avenue for detecting and representation of phenotype
+appearances and visual features of endangered species or individual animal [20]. It received
+more proliferation to broad applications.
+
+
+ Santosh Kumar
+    santosh.rs.cse12@iitbhu.ac.in
+
+
+Extended author information available on the last page of the article.
+31076                                        Multimedia Tools and Applications (2022) 81:31075–31106
+
+
+    Visual animal bio-metrics developed a quantified methodologies/frameworks for rep-
+resenting bio-metric characteristics of different animal using computer vision and deep
+learning techniques [4, 12, 23, 25].
+    Recently computer vision based animal bio-metric recognition has achieved much atten-
+tion due to its ample range of potential applications and use for identification based on face
+and muzzle images [26]. It also includes a wide range of applications such as bio-metric
+based animal tracking, identity authentication, and video surveillance-based monitoring
+[22].
+    Cattle identification is necessary for registration, enrollment of bio-metric identity,
+tracking and monitoring of individual cattle in traditional livestock management frame-
+works. Cattle identification also provides the solution for vaccination facility, tracking, and
+registration of individual animal [12, 22, 25, 26].
+    The traditional cattle identification frameworks include ear-tattooing, the embedding of
+microchips, ear-tagging based system, freeze marking methods, hot iron, and leg marking-
+based techniques. It also includes artificial marking methods such as electric signal based
+identification method and Radio Frequency Identification (e.g., RFID) for identification and
+tracking of individual animal [4].
+    Traditional animal identification methodologies fail due to various limitations such as
+duplication of ear tags, fraudulent and forged of labeled ear-tag numbers and embedding
+microchips/smart chips of individual cattle [22, 25, 26].
+    The embedding microchips/smart chips with different intelligent sensing devices
+equipped with wireless enabled IoT chips for tracking cattle. The embedded chips are also
+highly costly for identification and tracking of animals at large scale. It also needs bet-
+ter operation skills to apply intelligent sensing techniques [22]. However, the smart device
+framework implementation needs system configurations and hardware integration with the
+cattle recognition system and also needs more intensive labor.
+    Therefore, embedding microchips/smart chips device frameworks fail to provide accurate
+identification for cattle tracking and identification [22, 25, 26]. Moreover, artificial mark-
+ing schemes include hide marking and plastic chips-based techniques/methods for animal
+identification, however embedding the microchips/plastic chips in their body creates major
+health issues.
+   In the literature, there is no availability of computer vision, visual animal bio-metrics
+based tracking and identification framework for the registration, tracking, and monitoring
+of cattle using face and minutiae features. The traditional cattle identification includes only
+invasive methods for identification and it also provided low levels of accuracy [25].
+    To solve these problems, several interdisciplinary researchers proposed semi-automatic
+cattle recognition system based on muzzle print images using image processing and machine
+learning techniques. The first muzzle print-based recognition system has been proposed for
+the identification of individual cattle by Minagawa et al. [32]. The proposed system was
+trained on captured 170 muzzle print images from different races.
+    They extracted image features as joint key features from the muzzle print database and
+matched the query image using similarity matching methods and achieved 60% accuracy,
+respectively. The major short comes of this recognition system is time-consuming for pro-
+cessing of manually captured muzzle print database and other required steps for cattle
+identification.
+    To solve these problem, several researchers proposed local feature descriptor techniques
+to extract and represent features for unique identification of cattle. In [33] author proposed
+a local feature descriptor system for cow classification, by incorporating the Speeded Up
+Robust Features (SURF) descriptor technique to extract features for training the proposed
+Multimedia Tools and Applications (2022) 81:31075–31106                                     31077
+
+
+model. The local features are extracted from the 120 nose print cattle images for cattle
+classification, and they achieved 90% accuracy.
+    In similar direction, Noviyanto and Arymurthy [35] proposed the Scale Invariant Feature
+Transform (SIFT) Descriptor method for classifying cattle and extracted local features from
+the muzzle print images and fused with customized SIFT-refinement technique to achieve
+higher accuracy.
+    A semi-automated model has been developed in a similar direction by Awad et al. [1–5,
+7–9, 11–14, 16–19, 21, 22, 25–36, 39–43, 45, 47, 49–51] for classifying cattle. The proposed
+model used the SIFT feature extractor to localize key point features of captured the nose
+print image database and reported 93.30% identification accuracy. The pre-processing of
+the captured print image of cattle‘s nose is a time-consuming process. The proposed method
+cannot provided unique identification of cattle under certain constraints: (1) the primary
+color of cattle’s captured images is black. Captured images are blurred due to cattle body
+movement; therefore, it is challenging to extract discriminatory features for the system.
+Therefore, more than 14 printed images are unclassified from the total 418 sample images
+of cattle nose.
+    Recognizing a cow based on captured muzzle print is a semi-automated recognition pro-
+cess which includes several pre-processing steps. These steps are used to remove noises,
+resize, and crop the captured print image database of cattle manually [10]. Therefore, recog-
+nizing cattle based on manually captured nose print images is a tedious and time-consuming
+process. It needs huge human resources and staff members to keep holding cattle’s heads
+with strong ropes/halts to capture the print images of cattle’s nose. Hence, it is an expensive
+and time-consuming process for the acquisition of nose images of cattle.
+    Moreover, there is no availability of the standard printed nose image of cattle databases
+in the public domain to provide a better learning platform for various researchers, veterinary
+scientists, and new practitioners in interdisciplinary research. It also poses a significant
+challenge for conducting health monitoring of animal, verification, and identification based
+on bio-metric animal identification research. Therefore, compiling a muzzle print image
+database is a crucial requirement [24].
+    Several researchers reported that cattle’s muzzle (nose) consists of unique bio-metric
+traits such as ridges, beads, granule, and vibrissae. The topological structures of beads and
+the ridges’ bio-metric patterns are irregular, which looks like islands. The ridge looks similar
+to rivers like structure and separates the core bead features. It plays a vital role in the unique
+identification of cattle.
+    In similar direction, Awad and Hassaballah [34] proposed a classification system using
+the bag-of-visual-words technique for extracting holistic features from the muzzle print
+images for cattle identification.
+    In which they reported that it was difficult to restrict body movement variations of cattle,
+implying that holistic feature extraction algorithms have not provided good results. The arti-
+cle [4, 34] describes an analysis of the performance of the “Bag-of-Visual-Words” (BoVW)
+method in the identification of cattle using local invariant features derived from a collection
+of imprinted muzzle images. Two local invariant features scanners: the speeded-up robust
+features (SURF) and the maximally stable extremal regions (MSER), are used in the BoVW
+model.
+    In paper [48], authors address the topic of cow face identification and verification. So
+proposed merging of the Faster R-CNN identification and PANSNet-5 model. The experi-
+mental findings indicate the accuracy of the identification is 98.3 per cent and the accuracy
+of the cow’s face verification is up to 94.1 per cent.
+31078                                         Multimedia Tools and Applications (2022) 81:31075–31106
+
+
+   The researchers [38] proposed a Convolutional Neural Networks (CNN)-based cattle
+identification and counting method. For identification, used YOLOv2 methods, a fast and
+reliable CNN. Incorporated UAV images as the scale of the target object can be considered
+to be approximately constant.
+   In article [37], authors suggest a deep learning algorithm to classify beef cattle using
+captured images that incorporate the benefits of both CNN and LSTM (Long Short-Term
+Memory) network approaches. The CNN network to extract features from the cattle videos
+captured then these features are used to train the LSTM model to collect time information
+and to classify each individual cow.
+   The bio-metric features of face and muzzle features of cattle are a unique bio-metric
+identifiers. The minutiae consist of ridge bifurcation and ridge termination. The ridge bifur-
+cation, and ridge termination or endings are important bio-metric features in the muzzle
+images. The topological structure of the minutiae features is an immutable and unique
+bio-metric identifier for cattle, and it is also invariant with aging and any deformations [6].
+
+1.1 Motivation
+
+Computer vision based animal recognition included different techniques such as holistic
+features extractors, handcrafted local feature descriptor methods for classification of animal
+based on their bio-metric features and phenotype appearances. Among different subspace
+analysis based holistic feature representation methods, the unsupervised learning technique
+includes statistical-based learning methods such as Eigen-faces or Eigen vectors for better
+feature representation.
+    The supervised machine learning techniques include Linear Discriminant Analysis
+(LDA), Kernel-LDA, and Fisher discriminant analysis, Fisherfaces methods and Locality
+Preserving Projections (LPP) optimally preserves the neighborhood structure of extraction
+of features from the bio-metric image data sets.
+    These techniques are the most illustrative ones, based on a selection of discriminatory
+features for a better representation in the feature subspace [4, 12, 13, 22, 23, 25, 26, 39, 49].
+These are achieved by using the Principal Component Analysis (PCA) and LDA [39], and
+other holistic feature extraction and representation techniques respectively. However, PCA
+and LDA method estimate only the global feature scatter of training samples, and they fail
+to reveal the essential data structures non-linearly embedded in high dimensional space. For
+mitigating these significant limitations, manifold learning techniques are proposed [8].
+    Keeping in view that all the data rest on lower dimensional manifold of the high
+dimensional space [26]. The different representation learning approaches include locality
+preserving projection, unsupervised discriminant projection are proposed in the filed of
+visual animal bio-metrics [4, 12, 13, 22, 23, 25, 26, 39, 49]. The success of manifold learn-
+ing techniques imply that the high dimensional based images are represented sparsely by
+selecting discriminatory features based on described or coded by the representative samples
+on the manifold [8].
+    The sparse representation-based classification methods have been successfully utilized
+to face recognition [13, 22]. The testing samples are presented as a sparse linear combina-
+tion of the training sample images and then classified according to the reconstruction error
+[11, 21].
+    In this paper, authors address the problem:how to classify individual cattle based on
+hybrid features? To solve this problem, authors propose an automatic recognition system
+based on extracted hybrid features from the face and muzzle bio-metric modality of cat-
+tle using sparse stacked demonising autoencoder method and group sparse representation
+Multimedia Tools and Applications (2022) 81:31075–31106                                 31079
+
+
+based classification method. The proposed recognition system extracts features from single
+bio-metric modality and multi-modality-based features for cattle classification using group
+sparse representation techniques.
+    The primary motivation is to apply the group sparse representation based classification
+method to solve Lasso problem. However, Lasso tends to choose only one example from
+a group of the correlated training set of sample images of bio-metric modality face and
+muzzle point of cattle. The group clustered sparsity is used rather than only sparsity, which
+is preferred, particularly in extremely correlated samples [45].
+    The primary objective of this work is to classify cattle based on all maintained discrim-
+inatory features from the bio-metric modalities such as face and muzzle images of cattle
+for unique identification of cattle using sparse stacked demonising autoencoder and group
+sparse representation technique.
+    The features of these bio-metric modalities are preserved at different score levels from
+both bio-metric face and muzzle modality. Therefore, the proposed system utilizes discrim-
+inatory sets of multi-features and single feature from the extracted face and muzzle pattern
+for different representations in the feature spaces at different score levels. It helps formu-
+late an optimal decision for selecting individual bio-metric modality and hybrid bio-metric
+modalities at various levels, such as score level, rank-based level, and fusion level.
+    In literature, only classical animal identification methods are used. There is no work
+reported for an identification of cattle based on fusion of extracted features from their face
+and muzzle bio-metric modality [16]. The performance of the recognition system can be
+improved based on integration of the face and muzzle bio-metric modalities using computer
+vision techniques because these modalities consist of rich and dense texture features [16,
+21, 45].
+    The proposed framework extracts face and muzzle point feature from the cattle database.
+To find the accurate correspondence between the images of face and muzzle point image
+database, Gaussian Mixture Models (GMM) is used. The proposed framework extracts face
+images and minutiae point features (nose pattern) from from single bio-metric modality and
+multi-modality using Spare Stacked Denoising Autoencoder (SSDAE) framework based on
+multi-features sets.
+    The extracted features are encoded by SSDAE, and encoded features are represented
+using Deep Belief Network (DBN) framework and group sparse representation method for
+identification of cattle. Author formulate individual cattle’s recognition problem as one of
+the classifying problems amongst multiple linear regression models argue that the funda-
+mental theory from sparse signal representation allows the key to addressing recognition
+problem [43].
+    Based on a sparse representation-based classification, the sparse coefficients are mea-
+sured by L1 , L2 norm-based minimization, and dropout based regularized methods for
+finding the linear representation of single bio-metric modality of the face and muzzle point
+features using group sparse representation techniques.
+    Therefore, author automatically identified individual cattle based on the fusion of facial
+and muzzle point image features from captured images under the different unconstrained
+environments such as low lighting, occlusion, and disguise (i.e., covering and non-covering
+of the body part of cattle). However, there is no availability of the face and muzzle image
+databases in the public domain to promote interdisciplinary researchers, engineers, and
+scientists to design and develop of animal identification frameworks and its prospective
+applications for smart monitoring of cattle.
+    These techniques can leverage various learning frameworks for new practitioners to
+implement automatic recognition systems for cattle identification and verification in real
+31080                                         Multimedia Tools and Applications (2022) 81:31075–31106
+
+
+time [26]. Therefore, the database of face and muzzle point image of cattle is prepared
+from the Department of Dairying and Husbandry, Institute of Agriculture Sciences (Banaras
+Hindu University), India-221005 using a 30-megapixel camera.
+   These images are captured from unconstrained environments such as varying illumi-
+nation, body posture, and blurred due to cattle’s body dynamics. The database comprises
+1,4000, which includes 1400 ×10 images from the face and muzzle images of cattle
+databases.
+   The captured database include low quality of images which are taken from the different uncon-
+strained environment. Therefore, to access the quality of captured images, there is a need
+to pre-process these captured images for further pre-processing to get better quality using
+image processing techniques. We have used single bio-metric and multi-modal bio-metric
+modalities based features for unique identification of cattle from the captured database.
+
+1.2 Contributions
+
+The significant research contributions are given below:
+1.   A novel automatic framework is proposed for recognition of cattle based hybrid fea-
+     tures from the face and muzzle image of cattle using using group sparse representation
+     technique, Spare Stacked Denoising Autoencoder (SSDAE) methods and Deep Belief
+     Network based frameworks.
+2.   The proposed framework extracts the multi-features from face and muzzle images for
+     finding the accurate correspondence with query images based on GMM approach. The
+     extracted features are encoded and decoded using the SDAE framework method for
+     better representation of features.
+3.   The proposed system uses group sparse representation method to mitigate the need
+     of individual bio-metric feature representation from the single bio-metric modality of
+     facial and muzzle features at score levels.
+4.   To improve the system performance, the single and multi-features are fused at fusion
+     method for better representation and classification of individual cattle using sum rule
+     based fusion method.
+5.   The experimental results of the proposed deep model are compared with the current
+     state of art methods and existing handcrafted feature and representation methods.
+6.   The performance analysis illustrates that the proposed framework surmounts by com-
+     petently applying a multi feature-based representation of input feature sets from face
+     and muzzl eimages to perform accurate identification of cattle.
+   The organization of the remaining parts of the paper is given as: The proposed system
+and its working and feature extraction and representation of multi-features of the facial and
+minutiae point features described in Section 2. Section 3 illustrates the feature extraction,
+representation and matching of single and multi-bio-metric features using proposed deep
+learning framework. Section 4 provides the detail of the experimental results and analysis,
+and along with detail performance evaluations. Finally, Section 5 provides a conclusion and
+future directions.
+
+
+2 Proposed system
+
+In this section, author illustrate detail description about proposed system for cattle identifi-
+cation. The proposed system shows the extraction of the multi-features from the bio-metric
+Multimedia Tools and Applications (2022) 81:31075–31106                                             31081
+
+
+face and muzzle modality of cattle using group sparse representation algorithm. The face
+and muzzle features are extracted from the face and muzzle databases of cattle using the
+group sparse representation method and Sparse SDAE techniques.
+   The proposed system uses group sparse representation method to mitigate the need of
+individual bio-metric feature representation from the single bio-metric modality of facial
+and muzzle features at score levels. To improve the system performance, the single and
+multi-features are fused for better representation and classification of cattle using sum rule
+based fusion method.
+   Figure 1 depicts the extraction and representation of multi-features of the facial and
+muzzle features of cattle using group sparse representation method. In order to enhance the
+performance of the proposed system, author used the sum-rule fusion method at different
+score levels.
+   In sum-rule based fusion method, it includes a combination of face, and muzzle features
+from the face and muzzle bio-metric modality. It fused the individual feature at score level
+fusion method from both bio-metric modality features. The brief outline of the suggested
+system is included for a multi-modal bio-metric recognition system for cattle.
+   The primary objective of this research work is to extract multi-features from the face and
+muzzle image of cattle for unique identification of individual cattle. Therefore, author cho-
+sen both bio-metric modalities for the unique representation of features from the muzzle
+based minutiae point features and face features by multi modal bio-metric-based recogni-
+tion system, shown in Fig. 1. The extracted discriminatory representation of the bio-metric
+minutiae point features from the muzzle image database (Fig. 5).
+   The face features and minutiae point features are recognized as primary multi-modal
+bio-metric feature characteristics for cattle identification. These bio-metric features are
+extracted and represented using group sparse representation method and SDAE frame-
+work [16, 43] and DBN [47]. For selecting the sparse coefficient vectors from both
+bio-metric modalities, the Gaussian distribution based probability model are used for feature
+representation in the sub-layers [47].
+
+
+
+
+Fig. 1 Illustrates the block diagram for feature extraction and classification of cattle based on face and
+muzzle images
+31082                                          Multimedia Tools and Applications (2022) 81:31075–31106
+
+
+   The proposed framework presents a unique insight into several critical issues in cattle
+recognition: feature extraction, representation, and robustness to illumination. For feature
+extraction and description, author shows that if sparsity in the classifying and recognition
+problem is well harnessed, the selection of features is no longer critical.
+   Individual bio-metric features are chosen such as down-sampled images and linear pro-
+jection methods play just as well as conventional features such as Eigen faces, PCA, and
+(LDA) [18], as long as the handcrafted texture feature descriptor methods are used for
+dimension of the feature space surpasses a specific threshold, predicted by the theory of
+sparse representation.
+   The PCA method technique is used for dimensional reduction of extracted features
+from different bio-metric modality based on selected prominent features (Eigen feature
+vectors from the face images). It selects the discriminatory set of on selected principal
+component (Eigen-vectors) and discard the minimum varience based features from both
+bio-metric modalities. The selected prominent features are projected in the feature subspace
+for compact representations for classifying cattle.
+
+2.1 Problem formulation
+
+A fundamental problem in object recognition is to use labeled training samples from distinct
+object classes (k) to perfectly determine the class type to which a new query sample belongs.
+The training samples (Nc) of both face and muzzle image of cattle database is taken from
+thei th class as columns of a matrix.
+   Let us consider that the total number of training sample images (N) from the given bio-
+metric modalities are considered for classes (C) for training the proposed model. These
+classes having training samples which belongs to the i th class of both face, and muzzle
+bio-metric modality of cattle (shown in (1) and (2), respecetively):
+                            γk = [γ(k,1) , γ(k,2) · · · γ(k,NC ) ]M×N                             (1)
+
+                             τk = [τ(k,1) , τ(k,2) · · · τ(k,NC ) ]K×L                            (2)
+   In (24, (M) shows the dimension of given samples of face image database. The parameter
+(N) illustrates the number of training samples of (k) classes of sample images. In (1) and
+(2) , the parameter γk ∈ [M × N] and τk ∈[K× L] represent the face and muzzle image of
+cattle from cattle databases. In (1) and (2), (Nc ) depicts the number of training images of
+(C) classes from cattle database.
+   The test images(Ntest ) are represented as the linear combination of testing samples of
+the face and muzzle images classes from the cattle database. The query images are rep-
+resented as the linear feature vectors that consist of the extracted face and minutiae point
+features that belong to the same class/group as those of the provided test images. Therefore,
+a discriminatory set of the extracted features are linearly correlated sub-space.
+   Let us consider the Ntest , which denotes the test image of a single bio-metric modality
+such as muzzle/face images belonging to the (K th ) classes of the muzzle and face database.
+Any new query sample (Ntest ) from the same category approximately lies in the linear
+combination of the training samples associated with the instances (k) where the size of both
+bio-metric modalities of the face and muzzle images of cattle. The representation of the
+Ntest from both bio-metric modality is shown as follows (shown in (3)–(4)):
+                                       Ntest = γk + τk                                            (3)
+
+                   Ntest = αk,1 , vk,1 + αk,2 , vk,2 · · · alphak,n , vk,n + ε                    (4)
+Multimedia Tools and Applications (2022) 81:31075–31106                                                  31083
+
+
+   In (3)–(4)), where vk,i ∀i = 1toN depicts the sample with training images from the face
+and muzzle image of cattle. The parameter ε denotes the reconstructed error. The class
+label of the Ntest is not known, and it is considered as the linear representation of feature
+coefficients of all muzzle point and facial images for training images (shown in (5), (6), (7)
+and (8), respectively):
+                                            Ntest = λ(X) + ε                                               (5)
+
+
+                                          A[i, j ][k, l] = λ + χ                                           (6)
+
+
+          λ = |λ1 (1, 1) · · · λ1 (1, n)|λ2 (2, 1) · · · λn (2, n)| · · · |λ1 (c, 1) · · · λn (c, N )|     (7)
+
+
+                χ = |χ (1, 1) · χ (1, n)|χ (2, 1) · χ (2, n)| · |χ (c, 1) · · · χ (c, M)|                  (8)
+
+    In (5)–(8), the parameters λ and γ are coefficient vectors of the feature matrix for the face
+images and muzzle bio-metric of cattle. It comprises of all (N ) and (M) training images of
+(C) classes of the face image and muzzle images (5)–(7), respectively).
+    The parameters (m) and(n) denote the number of rows and column of the extracted
+feature matrix with (α) = [0, 0Ti , 0,· · · , 0] T∈ Rn defined as feature coefficient values of
+the extracted features. All the coefficient values from the face bio-metric and muzzle point
+modality are all zero except for those kept with the (i th ) class of cattle database. In (8)-(9),
+the non-coefficient entries from the extracted features are taken as entries for measuring
+the sparse coefficients. These are associated with the (k th ) classes of face and muzzle point
+database.
+    For finding the non-coefficient values, the group sparse representation method is used. It
+determines the discriminatory set of feature vectors from the face and muzzle point image
+database. The (6)–(7) are illustrated with (m ≤n), where m and n are the total number of
+row and column of the feature matrix. The proposed method is assumed that the linear
+representation of mathematical equations which is working in under-determine condition for
+all the coefficient values of (α) shown in ((5)-(9)). The computation of coefficient vectors
+is given as follows (shown in (9)):
+
+                     α = ||α1,1 , ·α1,n |||α2,1 , ·α2,n |||α3,1 , ·α3,n |||αc,1 , ·αc,n |                  (9)
+
+    Only the training sample is used to build the basis feature vectors from the correct classes
+(C) for the better representation of the test images. In the representation of the query images
+from the two bio-metric face modality and minutiae point (muzzle modality), the remaining
+samples are not used from other classes of the face and muzzle database for this pur-
+pose. The images are segmented into different partition using threshold based segmentation
+method and Gabor filtering technique [29].
+    Based on assumption of sparse sparsity constraints, the vector (α) depicts the set of
+coefficient values of the extracted features from the both bio-metric modalities.
+    The value of coefficient vectors should not be zero, analogous to the accurate matching
+to the proper class of image database and zero values are used to depict other classes of the
+database. To achieve coefficient vectors (α) values, we have used the sparsity promoting
+based techniques L1 , L2 -norm, and dropout techniques to find the minimal reconstruction
+errors. Algorithm 1 illustrates the sparse representation-based classification for cattle face
+and muzzle point images.
+31084   Multimedia Tools and Applications (2022) 81:31075–31106
+Multimedia Tools and Applications (2022) 81:31075–31106                                  31085
+
+
+2.2 Distance metrics based learning method
+
+As discussed in the previous section, the identification of cattle based on their minutiae
+point features has major challenges. These major challenges arise due to prepared database
+of muzzle point images in the unconstrained environment (e.g., low illumination, body pose
+due to head movement, and poor image quality). Therefore, the existing handcrafted and
+holistic feature extraction representation techniques are unable to yield better identification
+accuracy on par with performance achieved with face images of cattle.
+   The proposed system is used to representation learning feature extraction and distance
+metric learning matching via improved one shot similarity matching techniques. For find-
+ing the class separability between-class and within-class of muzzle point images, the LDA,
+supervised method is used to measure class separability between-class and within-class scat-
+ter matrix. It finds the class separability by maximizing the between-class and minimizing
+the within-class scatter matrix.
+   The primary objective of proposed framework is to encode the extracted feature coeffi-
+cients using SDAE. The parallel sub-CNNs layers are used for extraction and representation
+of the minutiae point features. The extracted features are encoded by stacked autoencoder
+method for better representation of minutiae point features in different layers. The output
+of sub-CNN(i) is denoted as H i and forward propagation of the final convolutional fusion
+layer can be depicted as follows (shown in (18)):
+                                               
+                                                N                      
+                              Y = sof tmax        (Wfi .H i (.) + bf )                    (18)
+                                                 i=1
+In (18), (Wfi ) and bf are the corresponding weights and bias in the fusion layer, and N is
+the number of sub-CNNs.
+   Authors have used the regularized techniques such as L1 , L2 -norm, and dropout to find
+the minimal reconstruction errors by learning the database’s discriminatory features.
+   The proposed framework is trained with partial training samples for better representation
+of features. The benchmark regularization methods are used, namely L1 , L2 -norm based
+regularization, and dropout method.
+   The proposed framework reduces the loss function by applying the L1 , L2 -norm
+based regularization method [29, 30, 42]. The framework consists of major architecture
+components such as SDAE and Deep Boltzmann Machines (DBM) frameworks.
+
+The encoder is of a two-layered structure total 800 hidden units for the first layer and
+200 hidden units for the second layer. The decoder has a structure symmetric to that of the
+encoder. Also, the encoder and decoder have tied weights, i.e., the weight matrix for the
+decoder layer is the transpose of that for the corresponding decoder layer. The encoded fea-
+ture is forwarded into the third layer, i.e., the mixture layer. The mixture layer is composed
+of multiple branches, each of which corresponds to a mixture component. The output of
+each subnet component is the probability of certain patch committed to the corresponding
+component (Fig. 2).
+    The proposed method is built on the assumption that cattle’s face images are captured
+in the unconstrained environment (low illumination). The captured images are only roughly
+aligned. The body variation and low illumination images have proved to be a significant
+factor impacting cattle’s face recognition accuracy.
+    We proposed to learn a DMM model to capture the spatial appearances distributions
+over the face image of cattle by learning the components of the mixture. Local patches’
+31086                                              Multimedia Tools and Applications (2022) 81:31075–31106
+
+
+
+
+Fig. 2 Illustrates the feature extraction and representation of muzzle point image of cattle using proposed
+framework
+
+
+
+
+correspondences are acquired to address the mismatching brought by body pose varia-
+tions and low illuminated difference. Our proposed model learns both the representation for
+appearances and mixture components jointly without reference to any manually designed
+features.
+    Like autoencoders, the DMM network model contains an encoder and decoder that
+encodes features by mapping the high-dimensional data to low dimensional code. The
+decoder recovers the original input from the encoded features/code (compressed code). In
+this paper, the encoder is of two-layered structures consisting of 800 hidden units for the
+first layer and 200 hidden units for the second layer. The decoder has a structure symmetric
+to that of the encoder. Both are tied weights, i.e., the weight matrix for the decoder lay-
+ers in the transpose of that for the corresponding decoder layer. The encoded features are
+forwarded into the final fusion layer (mixture model).
+    The mixture model layer consists of multiple branches, each of which corresponds to a
+mixture component with respective output (the probability of specific patch-based matching
+to the corresponding mixture component
+    To improve the system performance, the loss function is customized by including an
+additional regularized variable to reduce the loss fusion. The additional variable relies on
+the soft bio-metric information such as body color, height, and body-weight parameters of
+Multimedia Tools and Applications (2022) 81:31075–31106                                     31087
+
+
+the training samples. The loss function of the proposed convolutional fusion based learning
+architecture is given by (shown in (19-21)):
+                                          L = L + ρ||αi ||Pp                                (19)
+
+                                  minimum2 (L) = L + ρ||αi ||Pp                             (20)
+     For finding the group sparsity, the (19)-(20)) using L-2 norm technique is given in (20):
+             R(Ntest , K) = ||(λitest , γ itest ) − (λitest (recost, γ itest (reconst))||   (21)
+1.    L1 - Norm method: On the other hand, the over-fitting of the extracted features
+      is achieved by L1-norm regularized method. However, it might lead to a loss of
+      discriminate features of the face image, which is retained by the L2-norm method.
+2.    L2 -Norm method: The primary objective is to use theL1 -norm method to find and
+      select the higher feature vectors from face and muzzle images of cattle by including
+      group sparsity. It mitigates the values to a minor range by punishing the significant
+      range values.
+3.    Dropout method: During this method, feature representations are interpreted from
+      various deep models that are created by randomly selecting basic parameters for each
+      input.
+4.    The suggested system comprises of a deep learning CNN architecture to learn and
+      robustly represent the extracted set of the face image, followed by sparse group
+      representation and random decision forest classification technique [47].
+5.    Minutiae-based metric measure: The distance between the ground truth minutiae fea-
+      ture set (A) and the predicted minutiae set (B) is computed using modified Hausdorff
+      Distance (HD). This measure provides an intuition of how much the two minutiae sets
+      differ in the 2D-plane, with lesser distance being preferable. The modified HD between
+      two point sets is given as, where D(A, B) = minb (bjj ). The average HD is calculated
+      for every predicted minutiae feature set with its corresponding ground truth minutiae
+      set (shown in (22)).
+                                            1               1             
+                        H D(A, B) = max             D(a, B),         D(b, A)             (22)
+                                              A               B
+                                                   a∈A              b∈b
+
+   The additional parameter is considered, which includes thin, moderate, or subsequent
+body weight. The benchmark based regularized techniques have been used to reduce the
+loss and tune the network explored in this research as follows (shown in (23):
+                                          L = L + λ||αi ||Pp                                (23)
+   In (23), (W) is the weight matrix, it is used for minimizing the loss function. The λ is the
+regularization parameter learned. Each sample in the face and muzzle point image dataset
+is considered for the regularization using theL1 norm regularization method. It is sparsity
+within weight matrix causes improved selection of feature sets from the extracted features.
+   The success of deep learning has inspired us to explore this computing paradigm for find-
+ing better representation of complex data. It can address the variations caused by changes in
+the variations for body weight of cattle races. Although deep learning based existing frame-
+work provides improved classification based on extracted bio-metric feature characteristics
+such as face, coat pattern based fingerprint, and other results.
+   The learning based representation algorithms require significantly large amount of train-
+ing data. It has been observed that representative training data from the corresponding
+31088                                        Multimedia Tools and Applications (2022) 81:31075–31106
+
+
+domain is important for learning robust representations. However, for recognition and clas-
+sification of animals with body weight variations, it is major challenging to obtain feature
+(data) with respect to various weight and age variations.
+    Learning the complex networks with fewer training database leads to over-fitting and
+therefore affects the generalization ability on the testing datasets. Hence in this research, a
+regularization based method is proposed. It is done by modifying the existing loss functions
+of convolutional fusion network based learning framework and incorporating body-weight
+category parameter in the loss functions.
+    The proposed regularized framework ensures sparsity and controls over-fitting [41]. For
+learning, the proposed model, SSDAE framework is used. The brief description about SDAE
+framework is given in the next subsection.
+
+2.3 Stacked denosing autoencoder(SDAE)
+
+A SDAE framework is an unsupervised feature learner. It consists of neural network layer
+architecture. Each layer is independently trained based on back propagation algorithm in
+a greedy manner for reconstructing the output of the previous layer [7]. The fundamental
+works of an autoencoder is to “encode” an input (X) by mapping it to the hidden layers
+of the proposed system or model in a deterministic manner. The encoder is consist of a
+two-layered structure:(1) encoder module and (2) decoder module.
+   The encoder module maps the high-dimensional data into a low-dimensional code based
+representation, and the decoder module recovers the original input from the compressed
+code or encoded data for better representation. The first layer is of 800 hidden units and 200
+hidden layer units for the second convolutional fusion layer.
+   The decoder has a structure symmetric to that of the encoder. Furthermore, the encoder
+and decoder have tied weights. It means that the weight matrix for the decoder layer is the
+transpose of that for the corresponding decoder layer. The encoded feature is forwarded into
+the third layer, known as the deep mixture layer. It is composed of multiple branches, each
+of which corresponds to a mixture component.
+   The output of each component sub-net is the probability of specific image patch assigned
+to the corresponding component. Specifically, the non-linear mapping function (fW,b ) of
+the vectorized input image (X) is shown as follows (shown in (24)-(27)):
+                               Y = fW,b (X) = S(W .X + b)                                     (24)
+   In Eq. (24), S(.) represents the sigmoid activation function. It provides the smooth and
+bounded function of their total input. The terms (W ) and (b) are known as mapping param-
+eters. The latent information’s/features are represented by mapping back to the original
+feature space using similar transformation method which is as follows (25):
+                              X ” = GW,b (Y ) = S(W  .Y + b)                                 (25)
+   Typically, (X ” ) is an approximate reconstruction of input (X). The SSDAE is used to
+learn to minimize the reconstruction errors between input (X) and mapped output (X” )
+using the loss function (J(W,b) ) as follows (26)-(27):
+                                                          F
+                                                          
+                                J(W,b) (X, X” ) = X − X ”                       (26)
+                                                               2
+                          
+                           p          F      
+                                                 m
+                                      
+                   Minimum   (X − X ”  ) + β   (KL(ρ, Yi ))                               (27)
+                                                 2
+                                 i=1                     i=1
+Multimedia Tools and Applications (2022) 81:31075–31106                                            31089
+
+
+   In (27), the input image size of muzzle point images and face image is defined by p =
+r × c, where r and c depicts total number of of rows and columns. The parameter (m)
+and (β) are the parameters which is used for hidden layer. (ρ) is defined as the weight for
+representation of sparsity penalty.
+   The sparsity penalty probability based distributions (ρ) and (ρ ” ) are measured by
+Kullback–Leibler divergence (KL) method as follows (shown in ref eq : 5):
+
+                                                ρ                (1 − ρ)
+                          KL(ρ|ρj” ) = ρlog        + (1 − ρ)log                                     (28)
+                                                 ”
+                                                ρj              (1 − ρj” )
+
+   The SDAE is an autoencoder that applied for reconstructs from a partially destroyed or
+noisy input (Xj” ). To enhance the robustness of the feature representation, at each stage,
+the of muzzle images pattern is corrupted before the reconstruction step in the SDAE
+framework.
+   In this case, obscuring random features ensure that the representation of muzzle point
+images is generalizable and this architecture called as SADE. Figure 3 represents the
+corrupted muzzle point images for the better representation of extracted muzzle point
+images.
+   Figure 3 illustrates the visualization of encoded features of the muzzle point image
+pattern using the SDAE approaches.A representation of the input muzzle point pattern is
+accomplished by including a sparsity penalty on the hidden layer units of the SDAE frame-
+work, in that way following optimization function is used to reduce the error in the better
+representation.
+
+
+
+
+Fig. 3 Illustrates encoded and decoded set of muzzle point images by 20% in (a) and 30% in (b) for better
+representation
+31090                                          Multimedia Tools and Applications (2022) 81:31075–31106
+
+
+2.4 Classiﬁcation of features using deep belief network and restricted Boltzmann
+machines
+
+A Deep Belief Network (DBN) is a probabilistic generative model. It is composed of
+stacked modules of Restricted Boltzmann Machines (RBMs). The DBN-based generative
+deep learning model’s primary objective is to solve the learning problem in classical neural
+networks training in deep layered networks, such as becoming stuck in local minima due to
+poor parameter selection and slow learning massive amount of training datasets.
+   DBN learning framework is proposed by stacking of Restricted Boltzmann Machines
+(RBMs) learning techniques. It is trained greedily for the classification of extracted features.
+In this work, the single and multi-features are extracted from the face and muzzle biometric
+modality of cattle for accurate prediction using DBN and RBM techniques. An RBM is an
+undirected energy-based model. It consists of two layers of visible (v) and hidden (h) units,
+respectively, with connections between layers (showin in Fig. 4).
+   The stacked RBM module is trained one at a time in an unsupervised manner. It uses a
+contrastive divergence procedure to learn the sets of extracted features of the muzzle and
+face image pattern. The output (learned features) of each stage is applied as the subsequent
+RBM stage input. Next, the whole network is regularly trained with supervised learning
+methods to advance classification performance (fine-tuning method).
+   The primary motivation is to use the RBM, a deep learning technique for unsupervised
+learning of the feature extraction and representation of muzzle and face cattle images, taken
+from the given extensive unlabeled muzzle point image database.
+
+2.5 Gaussian deep mixture model
+
+Gaussian deep mixture model is applied to the spatial distribution of texture features of
+muzzle point image database. Gaussian deep mixture model is applied to find the accurate
+correspondence between local muzzle image patches based on spatial distribution of texture
+features of muzzle point image database. This method is used to address the mismatches of
+
+
+
+
+Fig. 4 Illustrates the architecture of DBN learning model composed of 4 stacked RBM classification
+approaches
+Multimedia Tools and Applications (2022) 81:31075–31106                                  31091
+
+
+minutiae features. The encoded and decoded features of muzzle point images are used with
+the corresponding spatial pixel value-based feature vectors for similarity matching by using
+Gaussian mixture model for cattle identification.
+    The components of Gaussian mixture model and the encoding function (fw (.)) are
+jointly learnt within the framework contains an encoder and a decoder as shown in Fig. 6.
+The encoder maps the high-dimensional feature space to a low-dimensional space, and the
+decoder recovers the original input from the compressed code or features. The encoded
+features are denoted as (X,(μ1 , σ1 ),(μ2 , σ2 ) and (μ3 , σ3 )).
+    The given a set of unlabeled muzzle point images [M]=[M1 , M2 , · · · Mn ], the each image
+is divided into multiple overlapped grids which is represented as a collection of local patches
+[Mp ] = [Mp1 , Mp2 , · · · Mpn ]. Each local patch [Mp ] shows as a face and muzzle features
+from the both modality pair [xP i , LP i ]T , where xP i is the raw-pixel representation and
+LP i (each pixel element is in [0, 1]) is the normalized spatial location vector. Instead, the
+representation is learnt together with the mixture components.
+
+
+3 Feature extraction and representation
+
+The feature extraction is the significant step for classification of objects in machine learn-
+ing. It is used to reduce the dimensional of extracted features using dimensional reduction
+techniques such as Principal Component Analysis (PCA), sub-space feature representation
+methods and group sparse methods.
+   After dimensional reduction, the prominent features are selected from the feature space
+and used distinct fusion mechanism/methods to fuse the selected features from different
+bio-metric modality. The primary objective is to improve the system performance based on
+combining features from modalities for the better representation of the multiple features. It
+improves the system robustness and higher accuracy for recognizing cattle.
+   Due to the inherent difficulties associated with feature-level fusion, various patches
+based information is selected and fused at score level, rank-based level, decision level
+fusion, and feature fusion methods. These are used to preserve only the discriminatory set
+of bio-metric face and muzzle modality based features for unique identification. The fusion
+methods handles the multiple discriminatory sets of features for recognizing every distinct
+cattle based on the fusion of the face image and muzzle point features.
+   During the feature representations, a lot of constraints and mapping functions are used to
+incorporate the changes in the feature values. These significant changes are considered for
+this research work are: (1) for selecting the kernel technique based feature representation
+for cattle recognition. How to make the overlapped feature spaces into a linear separable
+features?
+   Author have used a linear projection method to represent these features using by linearly
+separable based LDA method. LDA technique measures the discriminatory features from
+both modalities using linear projection method and all the extracted features are projected
+in sub-feature spaces to measure a particular class of discriminatory features. It minimizes
+the (2) the face image of cattle is represented as a global features and these holistic fea-
+tures are fused with extracted set of minutiae point features from the muzzle point images
+at sum rule fusion method to achieve good performance in identification of individual
+cattle.
+   The muzzle pattern of cattle consists of minutiae features, a unique bio-metric discrim-
+inatory pattern of ridge bifurcation and ridge terminations. The minutiae are topological
+structures of ridge bifurcation and ridge terminations. The ridge bifurcation and termination
+31092                                                Multimedia Tools and Applications (2022) 81:31075–31106
+
+
+features are very prominent bio-metric features in the muzzle point (nose images) of cattle,
+as shown in Fig.5).
+   Based on the literature, it has been reported that the recognition of cattle based on muzzle
+image is similar to the recognition of human fingerprint. Similar to a human fingerprint,
+the muzzle (nose) of cattle consists of ridge bifurcation. The recognizing human fingerprint
+based on minutiae point feature is similar to muzzle point-based cattle identification.
+   The discriminatory features of the face and muzzle point (nose) are normalized using
+the min-max normalization technique for quality assessment of these bio-metric features.
+The extracted features are represented as feature vectors, which are represented as linearly
+separable features for better representation in sub-layers of trained deep stacked denoising
+autoencoder minimal set of discriminatory feature matrix from high dimensional feature
+space [29]. Therefore, selecting the feature coefficients, the sparse representation method is
+used to choose the discriminatory set of features for different representations.
+   The main objective to apply the sparse group representation [29, 47] is that it leads to the
+superiority of sparse classifiers over existing classification models to reduce the between-
+class variation and within-class variation in the captured database of the face and muzzle
+images under different unconstrained environment such as low illumination (Fig. 6).
+   The test samples of muzzle images and face images from both bio-metric modality are
+depicted as a blend of the linear feature coefficient values to train samples belonging to the
+proper-classes. The linear combination and representation of extracted features of the query
+are given in (29)-(30), respectively.
+                                              λitest = λαi + ε                                            (29)
+                                              λitest = λαi + ε                                            (30)
+   A sparsity penalty is imposed, using the (L2)-norm technique . The feature coefficient
+vectors are shown in the row vector shown in (29) and (30), respectively).
+
+
+
+
+Fig. 5 Illustrates the segmentation of muzzle point image (a) and selection of region of interests ((b)-(c)) for
+minutiae point features ( (combination of bead and ridge features of muzzle point images of cattle)
+Multimedia Tools and Applications (2022) 81:31075–31106                                          31093
+
+
+
+
+Fig. 6 Illustrates the encoding and decoding of muzzle point images using the Gaussian- DMM and stacked
+denoising autoencoder method
+
+
+
+3.1 Problem speciﬁc distance metric learning via generalized one shot similarity
+with SVM and LDA techniques
+
+A distance metric learning method is used to mitigate the semantic gap effect in the feature
+representations of extracted face and muzzle point image of cattle. Using problem-specific
+training sample face and muzzle images, the topological structure of the minutiae features
+(i.e., beads and ridges features) of the muzzle image pattern of cattle are extracted for
+similarity matching using generalized one shot similarity techniques [7].
+    To achieve the better representation of extracted features of the face and muzzle point
+images and their accurate correspondence matching of these features, a generative One Shot
+Similarity (OSS), semi-supervised technique[15, 46] has been used to measure the similarity
+scores of minutiae point features for cattle identification. It utilized the unlabeled training
+datasets as a set where the training and test classes of databases are not necessarily disjoint.
+It uses this constraint against which two input muzzle point samples are matched.
+    The distance metric is defined as a positive definite distance function which measures the
+distance (D) between two elements in the given set(s) (where s = [s1 , s2 , · · · , sN ]), where
+N is the total number of samples of both modalilites. The distant metric is defined for a set
+(S) [D: S × S → [0, 1]] to measure the dissimilarity scores between two feature vectors of
+face and muzzle image using LDA technique and Generalized OSS With SVM techniques
+[7, 28–30, 41, 42].
+    To achieve discriminant features from the both modalites, LDA supervised machine
+learning technique is used. LDA tehnique determines the vectors in the underlying feature
+space that best discriminate among classes. For all samples of the face and muzzle image
+31094                                         Multimedia Tools and Applications (2022) 81:31075–31106
+
+
+classes in the database, the between-class scatter matrix SB , and the within-class scatter
+matrix SW are defined.
+   The objective is to maximize SB while minimizing SW . It can be illustrated, in other
+words, to maximize the between-class scattered matrix and minimize the within-class scat-
+                              |SB |
+tered matrix. The ratio (δ) = |S W|
+                                    is maximized when the column vectors of the projection
+                                  −1
+matrix are the eigen-vectors of SW   × SB .
+   Let us consider Zi ⊂  (∀i = 1, 2, · · · , M1 ) is the positive samples of given bio-
+                             D
+
+metric modality with mean μF and Qj ⊂ d (∀j = 1, 2, · · · , M2 ) be the set of negative
+samples of the given bio-metric modalities with μQ . The overall mean of all the muzzle
+and face image features is given by (μ1 , μ2 ). The between-class scatter matrix (SB ) and
+within-class scatter matrix (SW ) defined as follows (shown in (31)-(33):
+                            SB = (μZ − μQ ) × (μZ − μQ )T                                      (31)
+
+                             1         M1
+                   SW =           [ (Yi − μZ ) × (Yi − μZ )T + H                               (32)
+                          M1 + M2
+                                        i=1
+   Where H is illustrated as follows:
+                                 
+                                 M2
+                           H =         (Ni − μQ ) × (Ni − μQ )T ]                              (33)
+                                 i=1
+   In this case, (Yi ) keeps a single sample (either face or muzzle) and (Ni ) is a separate
+set of background examples (M). Therefore, the positive samples do not contribute to (SW )
+and (SB ) classes of muzzle point image database.
+   If SW is a non-singular matrix, the optimal projection Wopt is chosen as that which
+maximizes the ratio of the determinant of the between-class scatter matrix of the projected
+samples to the determinant of the within-class scattered matrix of the projected samples
+which is given as follows:
+                                                      |W T SB W |
+                            Woptimal = argmaxW                                                 (34)
+                                                      |W T SW W |
+
+
+4 Experimental result and discussion
+
+The efficacy of the proposed framework is evaluated on face and muzzle point image
+databases under different scenarios such as single bio-metric features, multi-features, and
+fusion features. For a thorough experimental analysis, the performance of the existing hand-
+crafted texture descriptor algorithms and the proposed framework is evaluated along with
+comparing it.
+
+4.1 Database description
+
+The experiments are performed on two prepared image database of cattle. The image
+databases are prepared from Department of Dairying and Husbandry, Institute of Agricul-
+ture Sciences (Banaras Hindu University), India-221005.
+   The database comprises of 1,4000 images (e.g., 1400 (cattle) ×10 images) from face and
+muzzle images of cattle databases The sample images of face and muzzle images are shown
+in Figure 7). In the prepared database, the total number of subjects (cattle) is 1400. Each
+subject(cattle) has 10 images (1400 (subjects)×10=1,4000) (shown in Table 1).
+Multimedia Tools and Applications (2022) 81:31075–31106                                      31095
+
+
+
+
+Fig. 7 Illustrates the face and muzzle point image database of cattle
+
+
+   For providing significant contributions, the cattle face and muzzle point image databases
+have been prepared by using a 30-megapixel camera. The database is used for evaluation of
+the current state-of-the-art algorithms/frameworks for recognizing individual cattle.
+   The deep learning based recognition framework used for various applications such as ani-
+mal bio-metrics-verification of cattle, accurate census, and enrollment of bio-metric features
+for the generation of unique Aadhar card number for livestock (Fig. 8).
+
+4.2 Algorithms for performance evaluation
+
+The observation inspires the proposed frameworks that cattle’s face and muzzle point image
+consists of rich skin texture and distinct features. Moreover, it is difficult to restrict body
+dynamics, pose variations of cattle, implying that holistic face recognition methods can not
+provide good identification accuracy.
+   On the other hand, local feature-based extractor methods may provide good accuracy.
+The mathematical hypothesis is that the bio-metric information present in the face and
+muzzle point image changes with pose and blurred image variations due to cattle’s head
+movement. Therefore author extracted features from both bio-metric modalities efficiently
+(Fig. 9).
+
+
+Table 1 Database of muzzle
+point pattern images                   Breeds                           No.of cattle   No.of images
+
+                                       Balinese cow                     200            200 × 10
+                                       Haryanvi cattle                  300            300 × 10
+                                       Hybrid Ongole cow                200            200 × 10
+                                       Holstein Friesian cow            20             200 × 10
+                                       Cross breed cow                  150            150 × 10
+                                       Sahiwal cow                      350            350 × 10
+31096                                             Multimedia Tools and Applications (2022) 81:31075–31106
+
+
+
+
+Fig. 8 Detection of SURF feature from face image of cattle
+
+
+   The extracted features are encoded and represented by using local feature-based descrip-
+tor methods. Therefore, local feature-based descriptor methods such as local binary pattern
+(LBP), speeded up robust features (SURF), scale invariant feature transform (SIFT) methods
+[7, 28, 36].
+   The local discriminatory information is extracted from the face and muzzle image
+patches on the crucial localized point features from facial landmarks, such as eyes, nose,
+and mouth. These kinds of methods mostly depend on the precision of landmark descriptors
+such as LBP, Circular-LBP, SURF, VLAD and feature detectors such as SIFT, HOG, and
+Dense-SIFT methods [36].
+   The performance evaluations are performed on face and muzzle image databases. The
+holistic techniques and texture descriptors such as SURF [7], Scale Invariant Feature Trans-
+form (SIFT) [28], Dense-SIFT+(χ 2 ) [28] and Uniform-LBP (U-CLBP)[36] techniques are
+used on standard identification setting protocols (shown in Table 2).
+
+4.3 Experimental protocol and settings
+
+The cattle database consists of 1,4000 images from both face and muzzle images of cattle
+(e.g., 1400 (cattle)×10 images from the face and muzzle images of cattle databases). The
+sample images of the face and muzzle images are shown in Fig. 7).
+   In the prepared database, the total number of subjects (cattle) is 1400. Each sub-
+ject(cattle) has 10 images (1400 cattle ×10=1,4000) (shown in Table 1)). The database size
+comprises of 1400 cattle (subjects), (60%) (i : e : 1400 × 10 × 6) images of the entire
+database are used to train the system and remaining (40%) (i.e, 1400 ×10 × 4) are used for
+testing purpose.
+Multimedia Tools and Applications (2022) 81:31075–31106                                              31097
+
+
+
+
+Fig. 9 Localization of keypoint feature of muzzle point image database of cattle Using SIFT method
+
+
+
+   We have used six images (i.e., three images from the face and three images of muzzle
+images of individual cattle) of the face and muzzle modality taken as the gallery images, and
+the rest images (2 images from each modality such as face and muzzle images of individual
+cattle) are employed as the query image.
+   For evaluation of performance, the following identification setting and protocols are
+used.
+
+4.4 Average performance evaluation using texture feature extractor methods
+
+On the other hand, SURF [7], SIFT, Dense-SIFT+(χ 2 ), [28], Eigen-face with PCA [39]
+and LDA [8] techniques are used. The muzzle point feature set yields better identification
+accuracy than the face image modality of the database in the proposed method.
+   Due to the distinct nature of muzzle point, image features such as bead features and ridges
+feature, individual cattle can be recognized quickly. Therefore, these bio-metric features
+
+
+Table 2 Illustrates the
+identification accuracy (%) with      Method              1            2           3           4
+individual bio-metrics features
+and their fusion methods              PCA [8]             65.72(1.32) 66.58 (1.67) 67.23(1.32) 68.83(1.34)
+                                      LDA[11]             71.52(1.22) 71.25(1.23) 73.81(1.56) 75.93(1.24)
+                                      LBP+(χ 2 )[36]      76.84(1.11) 78.85(1.03) 80.79(1.14) 81.95(1.04)
+                                      SIFT[28]            83.59(1.11) 84.68(1.12) 88.89(1.04) 90.91(1.12)
+                                      Dense-SIFT[28] 81.19(1.11) 86.68(1.12) 87.89(1.04) 90.91(1.12)
+                                      SURF [7]            85.77(0.8)   88.79(1.02) 92.74(0.14) 94.87(1.92)
+31098                                         Multimedia Tools and Applications (2022) 81:31075–31106
+
+
+include discriminatory feature sets and modality to out perform the better classification of
+cattle races.
+   The muzzle point feature-based representation also yields higher reliability for bio-
+metric modality when muzzle features are taken into consideration for identification in the
+unconstrained environment.
+   Based on experimental results, no single modality or muzzle features based bio-metric
+modality offers excellent performance, particularly on the muzzle point image database.
+Thus there is a requirement for a multi-modal multi-feature recognition algorithm [2]. The
+experimental results are provided based on regularized deep learning framework in Table 3.
+   The proposed framework provides identification accuracy at Rank-1 85.98% and Rank-
+10 identification accuracy of 96.85% by applying dropout and L2 , one norm based
+regularization (shown in Table 3).
+   The proposed framework illustrates the improvement of around 5% for Rank-1 accuracy
+and more than 10% for Rank-10 identification accuracy. Based on the comparative study of
+the current state-of-the-art algorithm, the proposed framework depicts much improvement
+in the identification accuracy, which is more than 9% for Rank-10 performance measure
+accuracy.
+
+4.5 Single bio-metric modality with fusion of multi-feature sets of muzzle features
+and face image features
+
+The face and muzzle features of cattle are considered the essential characteristics to encode
+and represent the given feature pattern into a set of discriminatory measurable information
+or values.
+   The features of the muzzle point and face image pattern are calculated with the help
+of the several texture features from the muzzle image and face image database [9]. In this
+paper, the statistical features are taken for performance evaluation using various methods
+such as Haralick texture features [18], shape features [27], Histogram of Oriented Gradient
+(HOG) [14] features, Law’s Texture Energy (LTE) [50] features and Fuzzy-Local Binary
+Pattern (FLBP) [1] descriptor based texture features. The ranges of the extracted sets of
+muzzle images based texture feature are considered after the segmentation process.
+
+
+Table 3 Identification accuracy
+of texture feature methods and    Method                      Rank-1±Error(%) Rank-10±Error(%)
+proposed methods
+                                  KL-Divergence               65.89± 2.12        68.97± 1.52
+                                  L1-Norm                     66.98± 1.44        68.97± 1.68
+                                  L2-norm                     67.88± 1.86        69.98± 1.78
+                                  L2+L1-norm                  69.88± 1.49        71.98± 1.57
+                                  Droupout+L2 norm            70.98± 1.63        72.85± 1.97
+                                  Droupout+L1-norm            72.58± 1.57        74.89± 2.78
+                                  Droupout+L1+L2-norm         74.88± 2.97        76.99± 1.98
+                                  Convolutional fusion net-   76.84± 1.65        78.59± 1.38
+                                  work (CFN)+L2-norm
+                                  SDAE+Droupout+L2 norm 79.97± 1.25              83.99± 1.18
+                                  Proposed              84.97± 1.12              96.85± 1.27
+                                  method+DBM+Droupout+L2
+                                  norm
+Multimedia Tools and Applications (2022) 81:31075–31106                                  31099
+
+
+    To capture the discriminating statistical and shape and structure features of muzzle image
+pattern and face images, the region-based, and contour based feature extraction techniques
+for the extraction of beads and ridge as rich texture pattern features (information) of muzzle
+image pattern.
+    Therefore, the shape-based features and these are manifested in feature extraction and
+discriminating capability of muzzle point image pattern of cattle based on these set of tex-
+ture features. The textures features are extracted from the muzzle pattern database of cattle
+were subjected to the statistical test, such as Analysis of Variance (ANOVA) methods.
+    One of the major problem in cattle races is the face co-variates of cattle face database
+due to the occurrence of within-class and between-class problem. For finding the discrimi-
+natory features from these classes, the Fisher Discriminant Analysis (FDA)[18] supervised
+machine learning technique is used. The performance evaluation has been performed after
+the computations of variation between feature sets of inter-class (within the class) and
+intra-classes (between-classes) of the database.
+    When the variation between classes of muzzle point pattern was produced to be relatively
+high as compared to the variation of within class, then the test was taken under considera-
+tion statistically significant. It indicates that the higher value of (F ) and low value ofp is
+measured from the extracted features.
+    In this paper, 256 texture features and principal component values (Eigen-values) are
+extracted from the database of facial and muzzle image pattern for recognition and clas-
+sification of cattle using the statistical methods and deep learning based frameworks. Few
+samples of extracted texture features and Eigen-face values from muzzle point image and
+face images data set (A), dataset(B), and combined features (A+B) result in a P-value which
+is less than 0.0001.
+    The value of the parameters p and F depicts the extracted texture and face features are
+statistically more significance for classification of cattle races based on extracted texture
+features.
+    For a statistically significant measure of the extracted set of features from the face and
+muzzle point image databases, the captured databases are divided into several groups such
+as A dataset, and B datasets, respectively.
+    The dataset A and dataset B are then combined into the dataset C based on measured
+statistical values. The size of the dataset A and B are 7000 images from the face and muzzle
+point modality. Each dataset consists of 700 cattle ×10 images, and dataset C consists of
+14000 face and muzzle images of muzzle point pattern (7000 subject ×2×10 images) with
+size 500 × 500 pixels.
+
+4.6 Statistical evaluation
+
+In this section, the statistical measures are done based on extracted features from both
+face and muzzle image modality to evaluate statistical significance. Analysis of variance
+(ANOVA) based computation is used to evaluate whether the means of extracted features
+sets or more groups are different.
+   To measure the statistically significance of extracted features from the single and multi-
+modal bio-metric features, the parameters (F) and (P) (P≤ 0.0001) are considered for the
+evaluation of statistical measures based on extracted features from face and muzzle images
+database.
+   The F-statistic or F-measure depicts a ratio of two variances of the extracted feature sets
+which is a measure of dispersion, or how far the extracted features are scattered from the mean
+of overall. The larger values of variance signifies greater dispersion/scattered from mean.
+31100                                               Multimedia Tools and Applications (2022) 81:31075–31106
+
+
+    The value of these parameters (P) and (F) depicts the extracted features such as Haralick,
+Laws Texture Energy(LTE), Local Binary Pattern, and its variants such as curcular-LBP,
+Histogram of Gradient (HoG) features, and other Dense-SIFT texture feature extractors are
+used to extract discriminatory features from both face and muzzle modalities.
+    These are statistically more significance features as compared to holistic features from
+face bio-metric modality for classification of cattle. The statistical analysis of hybrid texture
+features of face and muzzle point images of cattle database is shown in Table 4.
+    The features from the dataset A and B are fused into the dataset images of combined face
+images for performance analysis. These experimental results correspond to each dataset,
+which is highly diversified by varying with various illumination, blurriness, and occlusions.
+The objective of this study is to cater the computation for selected discriminatory sets of
+combined features from the muzzle and face features for classification (shown in Table 4).
+The statistical measures and identification accuracy (%) for fused features are shown in
+Table 4.
+    The computation of the experimental results are taken into consideration after statisti-
+cally significant features of the extracted set of features from the face and muzzle features—
+the obtained results illustrate that the statistical learning techniques also play a vital role
+in achieving the significant performance for classification of cattle races from the datasets
+A, B, and fused dataset (A+B). The Dense-SIFT method achieved higher accuracy of
+93.87% as compared to other statistical methods and texture feature descriptor methods for
+classification of individual face and muzzle point features.
+    One of the major problem in cattle races is the face covariates of cattle face database due
+to the occurrence of within-class and between-class problem. For finding the discriminatory
+features from these classes, the Fisher Discriminant Analysis (FDA) supervised machine
+learning technique is used.
+    The performance evaluation has been performed after the computations of variation
+between feature sets of inter-class (within the class) and intra-classes (between classes) of
+the database.
+    When the variation between classes of muzzle point pattern was produced to be relatively
+high as compared to the variation of within class, then the test was taken under consider-
+ation statistically significant. It indicates that the higher value of (F) and low value of (P)
+calculated from the extracted features. In this paper, 256 texture features and principal com-
+ponent values (Eigen-values) are extracted from the database of facial and muzzle image
+
+
+
+Table 4 Statistical Analysis of hybrid texture features of face and muzzle point images of cattle
+
+Approach              Set-A               Set-B               Combined (A+B)            F-value     P-value
+
+Haralick              6.333± 6.6411       1.785±3.4356        3.2583e+314 ±3.8006       11.5708     <0.0001
+LTE-1                 2.86478±2.1547      2.6726±7.4177       4.3573± 2.0564            13.2052     <0.0001
+LTE-2                 3.0725± 6.0847      1.1165±4.9497       1.3241±7.1588e            1.9141      <0.0001
+Curcular-LBP(1,8)     3.0290 ±0.4720      2.1916 ±0.3442      2.1978 ±0.5986            68.7414     < 0.0001
+LBP(1,8)              0.3992±0.1506       0.6764±0.1066       0.6764 ± 0.1066           72.3935     < 0.0001
+Tetra-LBP(2,8)        2.3655 ± 0.5837     1.2949±0.3692       2.4472±0.6627             75.6534     < 0.0001
+Fuzzy-LBP(3,24)       0.3855± 0.1542      0.6719±0.1053       0.3726 ± 0.1696           79.8724     < 0.0001
+HOG                   2.4956 ± 0.6459     1.3385 ± 0.3889     2.5079 ± 0.6936           85.1876     < 0.0001
+Dense-SIFT            3.2346 ± 0.5431     2.4395 ±0.4676      1.89064± 0.5666           93.87       <0.0001
+Multimedia Tools and Applications (2022) 81:31075–31106                                   31101
+
+
+pattern for recognition and classification of cattle using the statistical methods and deep
+learning based frameworks.
+   The few samples of extracted texture features and Eigen-face values from muzzle point
+image and face images data set (A), dataset (B), and combined dataset (C) features (A+B)
+result in a P-value which is less than 0.0001.
+   The value of the parameters P and F depicts the extracted texture and face features are
+statistically more significance for classification of cattle races based on extracted texture
+features. For a statistically significant measure of the extracted set of features from the face
+and muzzle point image databases, the captured databases are divided into several datasets:
+A, and B, respectively.
+   The dataset A and dataset B are then combined into the dataset C based on statistical
+measured values. The size of the dataset A and B are 7000 images from the face and muz-
+zle point each dataset (e.g., 700 cattle ×10 images of each subject (cattle)), and dataset C
+consists of 14000 face and muzzle images of muzzle point pattern (e.g., 7000 subjects ×2×
+10 images) with size 500 ×500 pixels.
+   To measure the statistically significance of extracted features from the single and multi-
+modal bio-metric features, F and P (p≤ 0.0001) test are conducted. The value of these
+parameters P and F depicts the extracted features such as haralick [18], low Texture
+Energy (LTE), Local Binary Pattern (LBP), and other texture features are statistically more
+significance for classification of cattle races based on extracted texture features.
+   The features from the dataset A and B are fused into the dataset image (combined set)
+for performance analysis. These experimental results correspond to each dataset, which
+is highly diversified by varying with various illumination, blurriness, and occlusions. The
+objective of this study is to cater the computation for selected discriminatory sets of
+combined features from the muzzle and face features for classification (shown in Table 4).
+   The statistical measures and identification accuracy (%) for fused features are shown
+in Table 4. The computation of the experimental results are taken into consideration after
+statistically significant features of the extracted set of features from the face and muzzle
+features— the obtained results illustrate that the statistical learning techniques also play
+a vital role in achieving the significant performance for classification of cattle from the
+datasets (A), (B), and fused dataset (C) known as combined. The deep learning meth-
+ods achieved higher accuracy as compared to other statistical methods for classification of
+individual face and muzzle point features.
+
+4.7 Comparison with existing work
+
+Finally, we compare the proposed system’s performance with the existing systems/methods
+to identify individual cattle. To the best of our knowledge, most of the recognition systems
+use muzzle print images for classifying cattle based on different techniques. It makes a
+direct comparison between the proposed system and the existing ones unfair. To make the
+comparison fair, we compare the proposed system with the existing research work that used
+machine learning techniques and computer vision techniques for cattle identification.
+    Table 5 presents the comparison of recognition ability of different methods with the
+proposed method for cattle identification. It is clear from the table that the proposed system
+outperforms the existing work on accuracy for muzzle image features of cattle which is
+captured from the smart devices.
+    Awad et al. [5] proposed a system for cattle recognition using SIFT descriptor techniques
+for the identification of cattle. They used 48 muzzle print images captured with black ink
+on A-5 white paper.
+31102                                             Multimedia Tools and Applications (2022) 81:31075–31106
+
+Table 5 Comparison of the accuracy of proposed system with other techniques
+
+Method                  Images             Features                  Technique            Accuracy (%)
+
+Awad et al. [5]         105                muzzle print              SIFT                 93%
+Minagawa et al.[32]     43                 Bead                      PCA                  40%
+Noviyanto et al. [34]   30                 Muzzle print              SIFT                 94%
+Noviyanto et al. [33]   30                 Muzzle print              SURF                 90%
+Barry et al.[6]         120                Joint Features (Beads)    Image processing     45%
+Thawart et al. [44]     30                 Muzzle print              SURF                 90%
+Proposed system         14000=1400×10      Face+Muzzle               SDAE+DBN             96.85± 1.27%
+
+
+
+   Minagawa et al. [32] proposed a model for cattle recognition using bead features of
+muzzle print images. The bead’s extracted features are classified and recognized using unsu-
+pervised machine learning Principal Component Analysis (PCA) techniques [9]. The PCA
+performs the computation based on the co-occurrence feature matrix of beads for cattle
+recognition and yield 40% of recognition accuracy.
+   Noviyanto et al. [34] proposed a refinement-SIFT method for extracting keypoint fea-
+tures from cattle muzzle image for classification. They used proposed method to reduce
+error during detected keypoint features.
+   Noviyanto et al. [33] proposed the method for cattle identification using Speeded Up
+Robust Feature techniques from the muzzle print images. They extracted local features from
+the pre-processed images of cattle using SURF descriptor method.
+   The author of [6], Berry et al. proposed a framework for cattle classification based on
+manually captured printed images of muzzle 9nose) using blue-ink on 4-5 white paper. They
+extracted common features (joint stripes of the nose) of muzzle for accurate classification
+using image processing techniques.
+   Tharwart et al. [44] proposed a framework for classification of individual cattle using
+holistic feature extraction methods. They used muzzle print images of cattle and pre-
+processed these captured images using imageprocessing technqiues.
+   In the proposed system, the performance evaluation is performed on captured images
+using digital camera (e.g., 30 megapixel resolution). The prepared muzzle and face images
+of cattle are taken from different types of cattle races such as, Balinese cow (200 × 10),
+Haryanvi cow (300 × 10), Hybrid Ongole cow (200 × 10), Holstein Friesian cow (200 × 10),
+Cross breed cow (150 × 10), and Sahiwal cow (350 × 10). The prepared database consists
+of 1,4000 images from face and muzzle images which includes 1400 ×10 images from the
+face and muzzle images of cattle databases. The proposed system provides 96.85± 1.27%
+accuracy for identification of individual cattle.
+
+4.8 Algorithm complexity and computational time
+
+The complexity of the GSRC algorithm is illustrated as follows. Let us consider that the
+number of image pixels is (N). The average time to compute similar patches for each
+query/reference patch is Ts . The Singular Value Decomposition (SVD) of each group xGk
+with size of Ps × C is O(Bs × C 2 ). Hence, the total complexity of the GSRC algo-
+rithm for classifying cattle based on a single and multifeatures from different modality is
+Multimedia Tools and Applications (2022) 81:31075–31106                               31103
+
+
+O(N (Bs × C 2 + Ts )). The matrix xGk keeps all the image patches with similar structures
+is named as a group.
+
+1.   The input images are taken for extracting single and multi-features from the muzzle
+     images M = M1 (aq , br ), · · · , MN (aq , br ) and
+2.   Face images F = F1 (ap , bs ), · · · , MN (aw , bt ) for cattle.
+3.   First we divided√the images
+                               √ of face ( F) and muzzle (M) with size N into n overlapped
+     patches of size ( (Bs × (Bs ).
+4.   Each image patch is showed by the vector xk ∈  i.e., k = 1, 2,3, · · · , n.
+5.   After, for each patch xk in the W 1 × W 2 training window, search its ( C) best matched
+     patches, which comprise the set Sxk . Here,L2 and L1 is selected as the similarity
+     criterion between different patches.
+6.   Next, all the patches in Sxk are stacked into a matrix of size Bs × C, denoted by
+     xGk ∈ RBs × C, which includes every patch in Sxk as its columns,i.e., xGxk =
+     [xGk ⊗ 1, xGk ⊗ 2, · · · , xGk ⊗ C].
+7.   The computational complexity of the proposed algorithm is primarily dependent on
+     several regularized methods (L2 ), and(L1 )-minimization, and dropout method, which
+     has the time complexity of O(N 3 ).
+
+    The running time complexity of both traditional SRC and proposed GSRC method is
+compared on the computer with a Core i7 3.40 GHz quad-core processor, 32 GB of RAM,
+and a MATLAB Simulink computing environment. The Sparse Representation Classifica-
+tion (SRC) method needs 0.30 seconds to process one query mage of face and muzzle of
+cattle.
+    The GSRC method needs 0.58 seconds to extract features and process one multi-modal
+query with all two modalities present. We have used the Sum rule-based fusion method
+at different score levels, which requires 0.06 seconds for performing fusion. The context
+switching algorithm requires 0.27 seconds.
+    There is no time included in the acquisition, preprocessing, or feature extraction and
+encoding and decoding of features for better representation in this research work. It is
+common to both sparse stacked denoising autoencoder and group sparse representation clas-
+sification approaches. It contributes equally to classifiers and existing fusion algorithms’
+computational time.
+
+
+5 Conclusion and future direction
+
+In this work, author proposed the automatic recognition system for cattle identification
+using stacked denoised autoencoder and deep belief network method. The recognition
+framework uses the facial feature and minutiae features and fusion of multi-features at a
+different level and yields 98.56% identification accuracy.
+   The handcrafted feature descriptor methods are used to evaluate the identification accu-
+racy. These methods are SIFT, Dense-SIFT, circular-LBP, SURF, and sparse representation
+techniques yield better identification accuracy for cattle classification. The experimental
+results on two biometric feature multi-modal are taken to measure the system accuracy
+and illustrate the accurateness of the proposed system in comparison to existing advanced
+recognition algorithms.
+31104                                               Multimedia Tools and Applications (2022) 81:31075–31106
+
+
+   A working prototype system is proposed for evaluating the accuracy for individual cattle
+identification using deep learning base regularized and group sparse classification meth-
+ods. The prototype results showed that the recognition system caters better identification
+accuracy due to the fusion of these features. Following are the future research directions to
+improve the system performances:
+1.   To increase the database size with different bio-metric features from different uncon-
+     strained environment.
+2.   To include the soft-bio-metric features such as weight, age, gender, and other features
+     of cattle (subject) to enhance the variability of the within-class problem of cattle races
+     because the face of cattle is very similar.
+3.   To deploy the deep learning model to extraction and representation of features from
+     each bio-metric modality.
+
+
+References
+
+ 1. Acharya UR, Sree SV, Krishnan MMR, Molinari F, Saba L, Ho SYS, Suri JS (2012) Atherosclerotic risk
+    stratification strategy for carotid arteries using texture-based features. Ultrasound Med Biol 38(6):899–
+    915
+ 2. Ahonen T, Hadid A, Pietikainen M (2006) Face description with local binary patterns: Application to
+    face recognition. IEEE Transactions on pattern analysis & machine intelligence 12:2037–2041
+ 3. Andrew W, Greatwood C, Burghardt T (2019) Aerial animal bio-metrics: Individual friesian cattle recov-
+    ery and visual identification via an autonomous uav with onboard deep inference. IEEE international
+    workshop on intelligent robots and systems (IROS), pp 237–243
+ 4. Awad AI (2016) From classical methods to animal bio-metrics: a review on cattle identification and
+    tracking. Comput Electron Agric 123:423–435
+ 5. Awad AI, Zawbaa HM, Mahmoud HA, Nabi EHHA, Fayed RH, Hassanien AE (2013) A robust cat-
+    tle identification scheme using muzzle print images. In: proceedings of IEEE federated conference on
+    computer science and information systems (FedCSIS), pp 529–534
+ 6. Barry B, Gonzales-Barron UA, McDonnell K, Butler F, Ward S (2007) Using muzzle pattern recognition
+    as a bio-metric approach for cattle identification. Trans ASABE 50(3):1073–1080
+ 7. Bay H, Ess A, Tuytelaars T, Van Gool L (2008) Speeded-up robust features (SURF). Comp Vision Image
+    Underst 110(3):346–359
+ 8. Belhumeur PN, Hespanha JP, Kriegman DJ (1997) Eigenfaces vs. fisherfaces: Recognition using class
+    specific linear projection. IEEE transactions on pattern analysis & machine intelligence 7:711–720
+ 9. Belhumeur PN, Hespanha JP, Kriegman DJ (1997) Eigenfaces vs. fisherfaces: Recognition using class
+    specific linear projection. IEEE transactions on pattern analysis & machine intelligence 7:711–720
+10. Bello RW, Abubakar S (2019) Development of a software package for cattle identification in nigeria. J
+    Appl Sci Environ Manag 23(10):1825–1828
+11. Bennamoun M, Guo Y, Sohel F (1999) Feature selection for 2 d and 3 d face recognition. In: Wiley
+    encyclopedia of electrical and electronics engineering, pp 1–28
+12. Brust CA, Burghardt T, Groenenberg M, Kading C, Kuhl HS, Manguette ML, Denzler J (2017) Towards
+    automated visual monitoring of individual gorillas in the wild. In: Proceedings of the IEEE international
+    conference on computer vision, pp 2820–2830
+13. Chen H, Qian C, Zheng H, Wang H (2018) A multilinear unsupervised discriminant projections method
+    for feature extraction. Multimed Tools Appl 77(3):3857–3870
+14. Dalal N, Triggs B (2005) Histograms of oriented gradients for human detection
+15. Fabian HS, Kang DK (2019) Learning deep representation by increasing ConvNets Depth for few shot
+    learning. International Journal of Advanced Smart Convergence 8(4):75–81
+16. Feichtenhofer C, Pinz A, Zisserman A (2016) Convolutional two-stream network fusion for video
+    action recognition. In: Proceedings of the IEEE conference on computer vision and pattern recognition,
+    pp 1933–1941
+17. Givens GH, Beveridge JR, Lui YM, Bolme DS, Draper BA, Phillips PJ (2013) Bio-metric face recog-
+    nition: from classical statistics to future challenges. Wiley Interdisciplinary Reviews: Comput Stat
+    5(4):288–308
+Multimedia Tools and Applications (2022) 81:31075–31106                                               31105
+
+
+18. Haralick RM, Shanmugam K (1973) Textural features for image classification. IEEE Transactions on
+    systems, man, and cybernetics 6:610–621
+19. Iakovidis DK, Keramidas EG, Maroulis D (2008) Fuzzy local binary patterns for ultrasound texture
+    characterization. In: International conference image analysis and recognition. Springer, Berlin, pp 750–
+    759
+20. Kühl HS, Burghardt T (2013) Animal bio-metrics: quantifying and detecting phenotypic appearance.
+    Trends in Ecology & Evolution 28,7:432–441
+21. Kumar D, Rai CS, Kumar S (2010) Analysis of unsupervised learning techniques for face recognition.
+    Int J Imaging Syst Technol 20(3):261–267
+22. Kumar S, Singh SK (2014) Bio-metric recognition for pet animal. J Softw Eng Appl 7(05):470–482
+23. Kumar S, Singh SK (2016) Visual animal bio-metrics: survey. IET Bio-metrics 6(3):139–156
+24. Kumar S, Singh SK (2019) Cattle recognition: A new frontier in visual animal bio-metrics research.
+    Proceedings of the National Academy of Sciences. India Section A: Physical Sciences, 1–20
+25. Kusakunniran W, Wiratsudakul A, Chuachan U, Kanchanapreechakorn S, Imaromkul T (2018) Auto-
+    matic cattle identification based on fusion of texture features extracted from muzzle images. In: 2018
+    IEEE international conference on industrial technology (ICIT), pp 1484–1489
+26. Lahiri M, Tantipathananandh C, Warungu R, Rubenstein DI, Berger-Wolf TY (2011) Bio-metric animal
+    databases from field photographs: identification of individual zebra in the wild. In: Proceedings of the
+    1st ACM international conference on multimedia retrieval, p 6
+27. Lin S, Crotty KM, Vazquez N (2010) U.S. Patent no. 7,668,376 washington. DC, U.S. Patent and
+    Trademark Office
+28. Liu C, Yuen J, Torralba A (2010) Sift flow: Dense correspondence across scenes and its applications.
+    IEEE transactions on pattern analysis and machine intelligence 33(5):978–994
+29. Low CY, Teoh ABJ, Ng CJ (2017) Multi-fold Gabor, PCA, and ICA filter convolution descriptor for
+    face recognition. IEEE Trans Circuits Syst Video Technol 29(1):115–129
+30. Lu C, Yang Y (2019) On assessing binary regression models based on ungrouped data. Bio-metrics
+    75(1):5–12
+31. Méndez-Vázquez H, Martı́nez-Dı́az Y, Chai Z (2013, June) Volume structured ordinal features with
+    background similarity measure for video face recognition. In: Proceedings of international conference
+    on bio-metrics (ICB), pp 1–6
+32. Minagawa H, Fujimura T, Ichiyanagi M, Tanaka K, Fangquan M (2002) Identification of beef cattle
+    by analyzing images of their muzzle patterns lifted on paper. publications of the Japanese society of
+    agricultural informatics 8:596–600
+33. Noviyanto A, Arymurthy AM (2012) Automatic cattle identification based on muzzle photo using speed-
+    up robust features approach. Inproceedings of the 3rd European conference of computer science. ECCS
+    110:114
+34. Noviyanto A, Arymurthy AM (2013) Beef cattle identification based on muzzle pattern using a matching
+    refinement technique in the SIFT method. Comput Electron Agric 99:77–84
+35. Nurtanio I, Areni IS, Bugiwati SR, Bustamin A, Rahmatullah M (2020) A portable cattle tagging based
+    on muzzle pattern. international journal of interactive mobile technologies, 14(13)
+36. Ojala T, Pietikäinen M, Mäenpää T (2002) Multiresolution gray-scale and rotation invariant texture
+    classification with local binary patterns. IEEE transactions on pattern analysis & machine intelligence
+    7:971–987
+37. Qiao Y, Su D, Kong H, Sukkarieh S, Lomax S, Clark C (2019) Individual cattle identification using a
+    deep learning based framework. IFAC-PapersOnLine 52(30):318–323
+38. Shao W, Kawakami R, Yoshihashi R, You S, Kawase H, Naemura T (2020) Cattle detection and counting
+    in UAV images based on convolutional neural networks. Int J Remote Sens 41(1):31–52
+39. Srivastava N, Hinton G, Krizhevsky A, Sutskever I, Salakhutdinov R (2014) Dropout: simple way
+    to prevent neural networks from overfitting. the journal of machine learning research 15(1):1929–
+    1958
+40. Srivastava N, Hinton G, Krizhevsky A, Sutskever I, Salakhutdinov R (2014) Dropout: a simple way
+    to prevent neural networks from overfitting. the journal of machine learning research 15(1):1929–
+    1958
+41. Stevenson BC, Borchers DL, Fewster RM (2019) Cluster capture-recapture to account for identification
+    uncertainty on aerial surveys of animal populations. Bio-metrics 75(1):326–336
+42. Sun J, Herazo-Maya JD, Molyneaux PL, Maher TM, Kaminski N, Zhao H (2019) Regularized Latent
+    Class Model for Joint Analysis of High-Dimensional Longitudinal Biomarkers and a Time-to-Event
+    Outcome. Bio-metrics 75(1):69–77
+43. Tang X, Feng G, Cai J (2014) Weighted group sparse representation for undersampled face recognition.
+    Neurocomputing 145:402–415
+31106                                               Multimedia Tools and Applications (2022) 81:31075–31106
+
+
+44. Tharwat A, Gaber T, Hassanien AE, Hasssan AH, Mohamed FT (2014) Cattle identification using muz-
+    zle print images based on texture features approach. In: proceedings of the fifth international conference
+    on innovations in bio-inspired computing and applications IBICA 2014, vol 217–227. Springer, Cham
+45. Vincent P, Larochelle H, Lajoie I, Bengio Y, Manzagol PA (2010) Stacked denoising autoencoders:
+    Learning useful representations in a deep network with a local denoising criterion. J Mach Learn Res
+    11(Dec):3371–3408
+46. Wolf L, Hassner T, Taigman Y (2009, September) The one-shot similarity kernel. In: Proceedings of
+    12th IEEE international conference on computer vision, pp 897–902
+47. Xiong C, Liu L, Zhao X, Yan S, Kim TK (2015) Convolutional fusion network for face verification in
+    the wild. IEEE Trans Circuits Syst Video Technol 26(3):517–528
+48. Yao L, Hu Z, Liu C, Liu H, Kuang Y, Gao Y (2019, May) Cow face detection and recognition based on
+    automatic feature extraction algorithm. In: Proceedings of the ACM turing celebration conference-china,
+    pp 1–5
+49. Yin J, Liu Z, Jin Z, Yang W (2012) Kernel sparse representation based classification. Neurocomputing
+    77(1):120–128
+50. Zhang Q, Benveniste A (1992) Wavelet networks. IEEE transactions on Neural Networks 3(6):889–898
+51. Zhu Q, Yeh MC, Cheng KT, Avidan S (2006, June) Fast human detection using a cascade of histograms
+    of oriented gradients. In: Proceedings of IEEE computer society conference on computer vision and
+    pattern recognition (CVPR’06), vol 2, pp 1491–1498
+
+Publisher’s note Springer Nature remains neutral with regard to jurisdictional claims in published maps
+and institutional affiliations.
+
+
+
+
+Aﬃliations
+
+Santosh Kumar1            · Sunil Kumar2 · Mehak Shaﬁ3 · Mithilesh Kumar Chaube4
+
+    Sunil Kumar
+    sk273303@gmail.com
+    Mehak Shafi
+    mehak0sk@gmail.com
+    Mithilesh Kumar Chaube
+    mithilesh@iiitnr.edu.in
+1   Department of Computer Science and Engineering, IIIT-Naya Raipur, Chhattisgarh, 493661 India
+2   Marine Engineering and Research Institute Kolkatta, Kolkatta, India
+3   Department of Electronics and Communication Engineering, Shri Mata Vaishno Devi University, Katra,
+    India
+4   Department of Mathematical Science, IIIT-Naya Raipur, Chhattisgarh, 493661, India

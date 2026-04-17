@@ -1,0 +1,74 @@
+Benefícios e aplicações práticas
+
+Introdução                                     Contextualização                                      Benefícios
+
+A atuação da Embrapa Pecuária Sul tem          As informações com correspondência                    a) Contribui para a tomada de decisões
+como foco pesquisa e inovação na               geográfica podem ser obtidas localmente,              baseadas em dados científicos;
+produção de alimentos saudáveis em             ou por sensoriamento remoto de forma ágil e           b) Possibilita a gestão mais eficiente e
+sistemas sustentáveis. A gestão eficiente de   precisa. Com a utilização de sensores em              sustentável dos recursos naturais
+recursos naturais, como solo, água e           satélites ou drones, é possível captar                disponíveis a sistemas de produção;
+vegetação, é essencial para garantir a         imagens da superfície terrestre em diferentes         c) Permite a adoção de medidas preventivas
+sustentabilidade do planeta e a entrega de     comprimentos de onda, possibilitando a                e corretivas por permitir uma gestão
+suas funções. Nesse contexto, a informação     identificação de características físicas e            espacial e temporal;
+com correspondência geográfica apresenta-      biológicas dos recursos naturais e o                  d) Permite o monitoramento e identificação
+se como ferramenta poderosa para               relacionamento com outras informações                 de áreas prioritárias para conservação e de
+aprimorar a gestão desses recursos.            (Figura     1).  Por    serem    informações          mitigação de impactos negativos;
+                                               georreferenciadas, é possível visualizar a            e) Contribui para a sustentabilidade
+A associação de informações geográficas        distribuição de recursos naturais em escala           ambiental, desenvolvimento
+com dados sobre o meio ambiente                local, regional ou global.                            socioeconômico e a qualidade de vida das
+possibilita obter uma visão mais completa e                                                          populações que dependem dos recursos
+precisa dos recursos naturais, o que permite   Assim, as informações com correspondência             naturais;
+uma gestão mais eficiente e sustentável.       geográfica tornam-se ferramenta essencial             f) Permite a implementação de políticas e
+                                               para a gestão eficiente dos recursos naturais,        programas mais eficientes e sustentáveis na
+Neste folder, são apresentados benefícios e    possibilitando a identificação de áreas de            gestão dos recursos naturais.
+aplicações práticas de uso da informação       interesse para o uso sustentável dos recursos
+com correspondência geográfica na gestão       naturais, monitoramento das mudanças no
+eficiente de recursos naturais.                uso da terra, da cobertura vegetal, das
+                                               mudanças climáticas, e até mesmo na
+                                               prevenção de desastres naturais.
+
+
+
+
+                                                                                                Figura 1: Exemplos de informações com referência
+                                                                                                geográfica da Embrapa Pecuária Sul, em 2021. (A. Imagem
+                                                                                                TCI do Sentinel II; B. Gradiente de elevação; C. Canais e
+                                                                                                corpos de água; D. Uso da Terra; e E. Imagem de NDVI).
+Saiba mais:
+Soluções Oferecidas:
+Cobertura Vegetal e
+geomorfologia do Alto
+Camaquã
+
+
+                                                    Embrapa Pecuária Sul
+                                   Rodovia BR 153 Km 632,9 Vila Industrial C.P 242 - 96401-970
+                                                   Bagé/Rio Grande do Sul
+                                                     +55 (53) 3240-4650
+                                               www.embrapa.br/fale-conosco/sac
+
+Uso da terra no Rio Grande do
+Sul: ano 2017
+
+
+
+
+                                                                                                 1° edição - PDF online
+Aplicação do Índice Normalizado
+
+
+
+
+                                                                                                 Junho / 2023
+de Vegetação no monitoramento
+de sistemas de unidades de
+manejo
+                                                                                                                          Utilização da informação com
+                                                                                                                          correspondência geográfica na gestão
+                                                                                                                          eficiente dos recursos naturais
+Uso e cobertura da terra no Rio
+Grande do Sul, no bioma Pampa                                                                                                    Leandro Bochi da Silva Volk
+e no território do Alto Camaquã:                                                                                                 José Pedro Pereira Trindade
+                                                                                                                                    Danilo Serra da Rocha
+período de 1985 a 2021: dados
+do MapBiomas (coleção 7).

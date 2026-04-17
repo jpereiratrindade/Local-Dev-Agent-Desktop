@@ -1,0 +1,984 @@
+Global Change Biology
+
+
+
+
+   RESEARCH ARTICLE                    OPEN ACCESS
+
+
+
+
+Mapping Resilient Landscapes to Climate Change in
+a Megadiverse Country
+Milena Fermina Rosenfield1          | Lucas Jardim2      | Marina Antongiovanni3             | Luciano Carramaschi de Alagão Querido4,5                           |
+Alisson André Ribeiro  6      | Andrea Sánchez-Tapia   7      | Priscila Silveira 7,8     | Levi Carina Terribile2    |
+Eduardo M. Venticinque3          | Ana Luisa Albernaz4       | Letícia Couto Garcia9           | Leandro Reverberi Tambosi7,10     |
+Marcos Adami11       | Fernando Gertum Becker12            | Maíra Benchimol13          | Luísa Gigante Carvalheiro14       |
+Cintia Cornelius15     | Geraldo Alves Damasceno-Junior16            | Ricardo Dobrovolski17           | Manuel Eduardo Ferreira18   |
+Carlos Roberto Fonseca   3      | José Guilherme Fronza   19     | Angela Terumi Fushita        7    | Adrian Antonio Garda20      |
+Heinrich Hasenack12        | Priscila Lemes21      | Renata Libonati22         | Camile Lugarini23        | Marcia C. M. Marques24     |
+Felipe Melo25,26    | Alessandro Ribeiro de Morais27          | Sandra Cristina Müller12           | Andreza Viana Neri28     |
+Rita de Cássia Quitete Portela29       | Mario Barroso Ramos Neto1           | Camila Linhares Rezende30         |
+Fabio de Oliveira Roque  16      | Thadeu Sobral-Souza   21     | Mariana M. Vale29           | Gustavo M. Vasques31      |
+Eduardo Vélez-Martin32         | Ima Vieira33     | Fernanda P. Werneck5            | Edenise Garcia1
+Correspondence: Milena Fermina Rosenfield (milenarosenfield@gmail.com)
+
+Received: 19 March 2025 | Revised: 17 July 2025 | Accepted: 7 September 2025
+
+Funding: M.F.R. would like to thank Ian Thompson (The Nature Conservancy) for the support during this project and The Nature Conservancy for the
+FinishLine Fund that financially supported the preparation of the manuscript. E.M.V. and M.A. would like to thank Associação Caatinga for their adminis-
+trative support. A.L.A. and L.C.d.A.Q. would like to thank FADESP for their administrative support (Project #5029). L.C.G. and A.A.R. would like to thank
+SOS Pantanal for their administrative support. I.V. would like to thank INCT Nexus (406516/2022-­7). L.C.T. (310583/2023-­3), E.M.V. (308543/2021-­1), L.C.G.
+(310963/2023-­0), M.A. (309045/2023-­1), M.B. (304189/2022-­7), L.G.C. (307625/2021-­4), G.A.D.-­J. (312500/2022-­0), M.E.F. (315699/2020-­5 and 317013/2023-­
+8), C.R.F. (308657/2023-­3), M.C.M.M. (310315/2023-­9), F.M. (441390/2020-­0 and 441292/2017-­8), A.R.d.M. (315191/2023-­6), S.C.M. (314309/2023-­3), F.O.R.
+(441181/2023-­6), M.M.V. (304908/2021-­5), I.V. (350182/2022-­1), and F.P.W. (307695/2023-­9 and 406239/2022-­3) are supported by the National Council for
+Scientific and Technological Development (CNPq). L.C.d.A.Q. is supported by FAPEAM and CNPq (Edital No. 003/2022, project 421674/2022-­9). T.S.S. is
+supported by FAPEMAT (PRO.000274/2023).
+
+Keywords: biodiversity | climate adaptation | climate resilience | connectivity | conservation | geodiversity | restoration
+
+
+   ABSTRACT
+  The effects of global climate change on biodiversity and ecosystem functioning are unevenly distributed in the geographic space.
+  Identifying sites more suitable to sustain biodiversity in a changing climate is essential to both species conservation and restoration
+  strategies at different scales. Here, we map terrestrial climate-­resilient sites for biodiversity across Brazil to identify sites with greater
+  chances of providing suitable conditions for species to persist under regional climate change. Our mapping combines spatial metrics
+  based on landscape heterogeneity, a proxy for microclimatic variability, and local connectedness, a measure of connectivity between
+  habitats, to determine landscape resilience, assuming that resilience to climate change will be greater the more heterogeneous the
+  characteristics of local habitats are and the more connected they are in the landscape. Our results show that within each biome,
+  medium to high resilient sites are mostly found in the Amazon (40% of the biome) and Pantanal (38%). Low resilience, conversely,
+  is concentrated in the Atlantic Forest (41% of the biome), followed by Cerrado (37%), Pampa (36%), and Caatinga (34%). Landscape
+  resilience information has the potential to be used to effectively guide decision-­making and public policy on strategies for conserva-
+  tion, restoration, and sustainable use practices. Priority for conservation should be on high resilience sites as they have the potential
+  to sustain biodiversity in face of undergoing and future climate change. Other approaches could be used in situations of medium to
+  low resilience also, such as: conservation of current corridors in sites with high local connectedness, but low landscape heterogeneity;
+
+
+For affiliations refer to page 14.
+
+This is an open access article under the terms of the Creative Commons Attribution License, which permits use, distribution and reproduction in any medium,
+provided the original work is properly cited.
+© 2025 The Author(s). Global Change Biology published by John Wiley & Sons Ltd.
+
+
+Global Change Biology, 2025; 31:e70544                                                                                                                        1 of 17
+https://doi.org/10.1111/gcb.70544
+                                                                                                                                                  13652486, 2025, 10, Downloaded from https://onlinelibrary.wiley.com/doi/10.1111/gcb.70544 by Capes, Wiley Online Library on [10/10/2025]. See the Terms and Conditions (https://onlinelibrary.wiley.com/terms-and-conditions) on Wiley Online Library for rules of use; OA articles are governed by the applicable Creative Commons License
+  restoration of natural vegetation on sites that show high landscape heterogeneity, but low local connectedness; and sustainable prac-
+  tices in areas of low resilience. Our study provides an updated method to pinpoint climate-­resilient sites for biodiversity which was
+  applied to a megadiverse country but is applicable to any ecosystem around the globe.
+
+
+1   |   Introduction                                                      According to the degree of exposure and a set of biological
+                                                                          conditions, species can remain where they are or seek out
+Climate change has altered global and regional temperature,               more suitable areas, depending on the speed with which the
+and rainfall regimes, consequently impacting the phenology, be-           climate changes locally and regionally and their ability to
+havior, and geographic distribution of species (Antão et al. 2022;        disperse (Loarie et al. 2009).
+Hannah 2021; Vitasse et al. 2018). The main driver of current cli-
+mate change are greenhouse gas emissions caused by excessive              Landscape geodiversity, characterized by the set of abiotic
+burning of fossil fuels but also by anthropogenic land use-­cover         variables of the Earth's surface and subsoil (e.g., topogra-
+changes (Curtis et al. 2018; IPCC 2022; Lapola et al. 2023). These        phy, geology, pedology, and hydrology; Gray 2004), tends to
+changes also affect natural ecosystems, causing significant envi-         have a low rate of change in the timeframe feasible for cli-
+ronmental degradation, alteration in habitat quantity and quality,        mate change mitigation actions (Dobrowski 2011; Lawler
+and disrupt regional climate. Shifts in species' geographic distribu-     et al. 2015; but see Gill et al. 2015). These variables are part
+tion are among the main impacts caused by climate change (Abreu-­         of the factors determining local microclimates, such as the
+Jardim et al. 2021; Lemes et al. 2014; Ramalho et al. 2023), which        surface that receives the most solar radiation, the position on
+modify communities' composition, disrupting both interspecific            the relief most exposed to winds, the direction of cold winds,
+interactions (Fricke et al. 2022; Gilman et al. 2010; Memmott             the accumulation of moisture, and water retention in the soil
+et al. 2007), and, consequently, the distribution of functional at-       (Dobrowski 2011). The local interaction between the atmo-
+tributes (Bender et al. 2019). Beyond the impact of climate change,       sphere and topography results in topoclimates, which can
+habitat loss and fragmentation are among the main threats to the          buffer changes from regional climate. Sites where the topo-
+erosion of biological diversity and, ultimately, cause species ex-        climate allows microclimate characteristics to be maintained,
+tinctions (Díaz et al. 2019; Harfoot et al. 2021; Pardini et al. 2018),   regardless of regional changes, have been defined as microcli-
+both by reducing carrying capacity and by decreasing landscape            matic refuges (Ashcroft et al. 2012; Dobrowski 2011). In addi-
+connectivity, affecting metapopulation and metacommunity dy-              tion, sites with greater topographic complexity and elevation
+namics, and community integrity (Banks-­Leite et al. 2014; Chase          range provide greater variability of environmental conditions
+et al. 2020; Haddad et al. 2015; Hanski and Ovaskainen 2000).             for species (Lawler et al. 2015; Rahbek et al. 2019; Tukiainen
+This, in turn, compromises the provision, regulation and support          et al. 2023), and have the potential to support greater biodi-
+of ecosystem functions, structure, and dynamics (Montoya and              versity (Antonelli et al. 2018; Fine 2015; Rahbek et al. 2019;
+Raffaelli 2010). However, the consequences of climate change are          Tukiainen et al. 2019; Vernham et al. 2023). These micro-
+not uniform across the globe, with ecosystems and species likely          climatic refuges are also highly relevant for people's adapta-
+exhibiting differences in their resiliences depending on different        tion and mobility in the context of socio-­ecological systems,
+factors (Manes et al. 2021).                                              particularly for traditional and indigenous communities cop-
+                                                                          ing with extreme changes in environmental variables [e.g.,
+Studies on the impact of climate change on biodiversity usu-              extreme drought and heat waves (IPCC 2022; Kakinuma
+ally rely on models that combine species occurrence and cli-              et al. 2019; Murphy 2015)]. In other words, the potential that
+mate data to project species distributions at different time              topoclimates have to act as a microclimatic refuge can buf-
+periods and climatic scenarios. These studies use global and              fer changes in the regional climate, making these sites more
+regional models to project future impacts, enabling the iden-             resilient to climate change. Consequently, understanding the
+tification of the most vulnerable sites or areas most resistant           impacts of climate change locally requires an understanding
+to climate fluctuations, such as climate refugia (Terribile               of its impacts on biodiversity, climate, and geodiversity, as all
+et al. 2012). However, most climate models provide data at                these variables feed back into each other.
+global and regional scales, and rarely downscale to finer res-
+olutions (Fick and Hijmans 2017; Karger et al. 2017; Lima-­               Analyzing landscape resilience (Box 1) offers a spatially ex-
+Ribeiro et al. 2015), limiting the diagnosis and development              plicit perspective that complements broader socio-­ecological
+of mitigation strategies at local scales, where actions must              resilience frameworks, which often emphasize species or com-
+be effectively developed. A complementary approach to cli-                munity level responses (Lecina-­Diaz et al. 2024). By focusing
+mate models is the use of topography, geodiversity, and phys-             on intrinsic environmental attributes—such as microclimatic
+iographic aspects (Anderson et al. 2014; Lawler et al. 2015;              heterogeneity and structural connectivity—the approach we
+Theobald et al. 2015) to diagnose, map, and develop solutions             proposed here highlights the capacity of landscapes to buffer
+to mitigate the impact of climate change. Species' vulnerabil-            climate impacts, facilitate species persistence, and support
+ity to environmental changes depends on their level of expo-              adaptive responses over time. It also complements ecosystem
+sure to environmental and biotic variables, their sensitivity,            resilience approaches by offering a spatial lens that helps iden-
+and the capacity to adapt to such changes, through genetic-­              tify, at larger scales, the physical and structural conditions that
+level adaptive potential, niche flexibility, or dispersal capacity        favor the maintenance of biodiversity and the recovery capac-
+(Azevedo et al. 2024; Foden et al. 2019; Williams et al. 2008).           ity of ecosystems subjected to disturbance (Folke et al. 2004).
+
+
+2 of 17                                                                                                             Global Change Biology, 2025
+                                                                                                                                             13652486, 2025, 10, Downloaded from https://onlinelibrary.wiley.com/doi/10.1111/gcb.70544 by Capes, Wiley Online Library on [10/10/2025]. See the Terms and Conditions (https://onlinelibrary.wiley.com/terms-and-conditions) on Wiley Online Library for rules of use; OA articles are governed by the applicable Creative Commons License
+  BOX 1    |    Glossary of terms used in this study.
+
+    Term                                                                          Meaning used in this study
+    Landforms                                                         Topographical features present in the landscape, such
+                                                                     as mountain tops, valleys, and gorges. Each topographic
+                                                                   feature suffers different levels of exposure to solar radiation,
+                                                                       wind, and humidity, and the variability of landforms
+                                                                        is used as a proxy for environmental heterogeneity
+                                                                           and the diversity of landscape's microclimates.
+    Landscape                                                  A spatially delimited area with heterogeneity in different aspects
+                                                                 (landforms, elevation, resistance, and spatial configuration)
+                                                                   capable of influencing the ecological processes within it.
+    Landscape heterogeneity                                      An estimate of the variability of habitats and microclimates,
+                                                                  defined by landforms, elevation range, wetland score, and
+                                                               richness of soils present in the surroundings of a given location.
+    Landscape resilience                                              The capacity of an area to absorb the impacts of climate
+                                                                      change on species diversity and ecological functions. A
+                                                                     resilient landscape presents variability of conditions that
+                                                                   support biodiversity, maintaining fundamental relationships
+                                                                     between ecological components, and allows for adaptive
+                                                                     change in species composition and ecosystem structure.
+    Landscape resistance                                                  Difficulty imposed by land use and land cover
+                                                                             classes on the movement of organisms.
+    Local connectedness                                            A measure of how easy it is for organisms to move between
+                                                                    landscape elements (or types of land use and land cover).
+                                                                    Local connectedness is influenced both by the resistance
+                                                                      of landscape elements to the movement of organisms
+                                                                        and by the spatial arrangement of these elements.
+
+
+While not capturing exposure or species-­specific sensitivi-         Brazil stands out not only for its exceptional biodiversity but
+ties directly, landscape resilience can serve as a foundational      also for its vast territorial, climatic, and socio-­ecological diver-
+layer to be integrated with vulnerability and risk assessments       sity, making it a strategic country for investigating landscape
+(Foden et al. 2019), ultimately supporting more robust, mul-         resilience to climate change. Home to over 203 million peo-
+tiscale strategies for adaptation and conservation. Landscape        ple (IBGE 2023) and six major terrestrial biomes—Amazon,
+resilience is expected to be higher where there are a variety        Atlantic Forest, Caatinga, Cerrado, Pampa, and Pantanal—
+of microclimate conditions that can be accessed by different         Brazil hosts a wide range of ecosystems, from equatorial rain-
+species and also locally adapted populations. Landscapes with        forests to semiarid shrublands. These regions are subject to
+lower structural connectivity reduce the ability of species to       differentiated impacts of climate change, such as prolonged
+track suitable climatic conditions, increasing the deleterious       droughts in the Amazon (Marengo et al. 2018), rising tempera-
+effects of climatic change, an effect that is stronger for poor      tures in the Cerrado (Lapola et al. 2011), and increase in inten-
+dispersers. Besides the biological requirements needed for           sity and frequency of surface air temperature extremes along the
+tracking suitable conditions, species need a spatial network         western South Atlantic coast (Sanches et al. 2023). Projections
+of sites that are not only climatically suitable but also pro-       indicate that the country could face temperature increases of up
+vide low resistance to movement (Borges and Loyola 2020;             to 3°C–6°C, depending on the biome, by the end of the century
+Mantyka-­P ringle et al. 2012; Tourinho et al. 2022). Moreover,      (MCTI 2013), which could dramatically affect ecosystems, agri-
+in the context of socio-­ecological systems, traditional and in-     cultural productivity, and water availability. Additionally, Brazil
+digenous communities used to move across large, heteroge-            faces intense anthropogenic pressures, including deforestation,
+neous landscapes, utilizing microclimatic refuges for shelter,       habitat fragmentation, and unsustainable land use practices,
+resource management, and other activities. However, today            which exacerbate biodiversity loss (Barlow et al. 2016; de Lima
+most of them reside in limited areas due to fragmentation or         et al. 2020). These combined challenges reinforce the urgency
+demarcation of ethnic territories. Hence, adequate conserva-         of identifying resilient areas and developing adaptive strategies
+tion strategies and climate change mitigation and adaptation         tailored to the regional ecological and social context.
+strategies depend therefore on integrative approaches that
+consider these multiple and synergistic effects of global and        Recent theoretical and operational advances, such as the greater
+regional change on population parameters and species dis-            availability of accessible information at finer spatial scales
+tributions (Díaz et al. 2019; Sirami et al. 2017; Sobral-­S ouza     (Cavender-­Bares et al. 2020; Zarnetske et al. 2019), allowed
+et al. 2021).                                                        geodiversity to emerge as an alternative proxy variable for the
+
+Global Change Biology, 2025                                                                                                       3 of 17
+                                                                                                                                                13652486, 2025, 10, Downloaded from https://onlinelibrary.wiley.com/doi/10.1111/gcb.70544 by Capes, Wiley Online Library on [10/10/2025]. See the Terms and Conditions (https://onlinelibrary.wiley.com/terms-and-conditions) on Wiley Online Library for rules of use; OA articles are governed by the applicable Creative Commons License
+development of climate change adaptation strategies (Anderson          2.1   |   Landscape Heterogeneity
+et al. 2023; Dobrowski 2011; Lawler et al. 2015; Tukiainen
+et al. 2023). This approach has been classified as “conserving         This study considers landscape heterogeneity as a proxy for the
+nature's stage”, where geodiversity is relatively stable in time       variety of microclimates available in a given location. Landscape
+and acts as a background where the biodiversity “actors” and           heterogeneity summarizes information on: (a) variety of land-
+interactions operate (Anderson et al. 2014, 2023; Anderson and         forms, (b) elevation range, (c) wetland score, and (d) soil richness.
+Ferree 2010; Lawler et al. 2015). The framework suggests that
+even though the composition of biological communities will               a. Landform variety: refers to the variety of topographic fea-
+probably change over time, the maintenance of abiotic charac-               tures, based on a landform model derived from a digital
+teristics that foster and preserve biodiversity would allow bio-            elevation model (DEM) with a resolution of 90 m (the Merit-­
+logical diversity to be promoted, even if the original components           DEM database; see Yamazaki et al. 2017). The classifica-
+change.                                                                     tion of landforms is based on four metrics: slope, aspect,
+                                                                            topographic position, and moisture accumulation indices,
+By coupling topographic characteristics and landscape context               which combine differences in wind speed, solar radiation,
+as proxies for landscape resilience to promote biodiversity con-            sediment deposition, and moisture. The combination of
+servation, we assessed the degree of resilience to climate change           these variables allows the identification of mountain tops,
+across Brazilian terrestrial ecosystems. We addressed the fol-              valleys, steep slopes, etc. Landform variety was calculated
+lowing questions: how are resilient areas distributed across                as the number of landforms within a circular area of 450 m
+Brazil and within Biomes? What regions stand out as having                  radius around each 90 m cell. This radius size, correspond-
+high resilient areas, and conversely where are regions that show            ing to 5 pixels of Merit-­DEM, was iteratively chosen as a
+lower resilience? And where should we focus our attention in                scale that maximizes landform differentiation without
+terms of conservation strategies across the landscape? In this              being too sensitive to variation at finer scales, also guar-
+approach, resilient sites are defined as those with high variabil-          anteeing sufficient pixels to carry out statistical and spatial
+ity of environmental conditions, that simultaneously have low               analyses.
+environmental degradation, great landscape structural connec-
+                                                                         b. Elevation range: represents the range of variation in ele-
+tivity, and therefore would be less impacted by regional climate
+                                                                            vation within a specific region. The elevation range con-
+change, and could be used by species to move across landscapes
+                                                                            sidered in this study corresponds to the residuals from a
+or as refugia (Anderson et al. 2014, 2023). Specifically, mapping
+                                                                            simple linear regression (between elevation range and
+microclimatic heterogeneity and local connectedness among
+                                                                            landform variety) and represents the component not cor-
+natural patches allows for the identification of areas of greater
+                                                                            related with landform variety. It is determined from the
+potential to sustain biodiversity in the future. By including
+                                                                            Merit-­DEM (Yamazaki et al. 2017) by calculating the range
+different categories in the final result, that provide clear direc-
+                                                                            (maximum − minimum values) in a circular window of
+tions in terms of conservation strategies, our analysis goes be-
+                                                                            450 m radius around each 90 m cell.
+yond a previous mapping exercise carried out in North America
+(Anderson et al. 2014, 2023), and develops new approaches to             c. Wetland score: for flat areas, where landform variety and
+refine the method to tropical and subtropical complex and mega-             elevation range do not allow for the discrimination of mi-
+diverse regions, such as Brazil.                                            croclimatic variation, the density and quantity of wetlands
+                                                                            capture topoclimatic variation. We consider that wetlands
+                                                                            have an effect in stabilizing microclimates and will con-
+2   |   Methods                                                             tribute to landscape resilience (Anderson et al. 2023; Zhang
+                                                                            et al. 2016), even if they are impacted by climate change
+We identified climate resilient sites by combining data on                  in the future. We used data from the Global Wetlands
+landscape heterogeneity and local connectedness (Rosenfield                 Database (Gumbricht et al. 2017), resampled from 231 m to
+et al. 2024). We assessed resilience across Brazil, aiming to cap-          a 90 m resolution. The wetland score is a combination of
+ture the different regions and types of vegetation grouped in               wetland densities at local and regional scales, and also wet-
+Brazilian biomes (IBGE 2021c): Amazônia (the rainforests in                 land patchiness at a regional scale, defined as the number
+north Brazil), Caatinga (the seasonally dry forests in the north-           of wetlands in the area. These variables capture the dis-
+east), Cerrado (the savannas in central Brazil), Mata Atlântica             tribution of humid areas within the landscape, which are
+(the seasonal forests and rainforests along the coast, from south           essential for maintaining biological diversity and provid-
+to northeast), Pampa (the grasslands in the south), and Pantanal            ing ecological services, such as decomposition, biochemi-
+(the wetlands in the central-­west) (Appendix S1: Figure S1).               cal transformation, storage, and production of living plants
+We only evaluated terrestrial environments. Although rivers,                and animals (Ryeland et al. 2021; Zedler and Kercher 2005).
+lakes, and wetlands were included in the construction of the                The wetland score was obtained by averaging the density of
+landscape heterogeneity and local connectedness layers (as de-              wetlands within circular areas of 450 m radius (local scale)
+scribed below), water bodies, and other aquatic ecosystems were             and 1170 m radius (regional scale) around each 90 m cell.
+masked from the final resilience map. They were, therefore, not             In sites where wetland patchiness (within a circular area of
+classified as any class of landscape resilience. A general over-            1170 m radius) was higher than the previous wetland score,
+view of the analysis is provided below, and the full description,           we combined values as the weighted average of local den-
+as well as links to the tutorials for running the analysis, are pre-        sity, regional density, and regional patchiness, weighting
+sented in Appendix S1 of this manuscript.                                   local density twice as the other variables.
+
+
+
+4 of 17                                                                                                           Global Change Biology, 2025
+                                                                                                                                               13652486, 2025, 10, Downloaded from https://onlinelibrary.wiley.com/doi/10.1111/gcb.70544 by Capes, Wiley Online Library on [10/10/2025]. See the Terms and Conditions (https://onlinelibrary.wiley.com/terms-and-conditions) on Wiley Online Library for rules of use; OA articles are governed by the applicable Creative Commons License
+  d. Soil richness: in places with low variation in landform          Based on a land use land cover map of Brazil, we assigned resis-
+     variety, elevation range, and wetland score, soil richness       tance values to each class listed in the database, considering their
+     becomes an important component of environmental het-             degree of human intervention and resistance to the movement of
+     erogeneity in the landscape that could support biodiversity.     organisms. We assigned the lowest values (least resistance) to
+     Soil richness is the number of dominant and subdom-              natural areas and the highest values (greatest resistance) to in-
+     inant soil types from the pedology database 1:250.000            tensely human-­impacted areas (urban areas), with a gradient of
+     of the Brazilian Institute of Geography and Statistics           values between the two extremes (Appendix S1: Table S1). We ob-
+     (IBGE 2021b), rasterized to a 90 m resolution image.             tained land use land cover data from MapBiomas Project (2023)
+                                                                      and complemented it with layers of infrastructure of transport
+The layer of landscape heterogeneity is generated by combin-          and energy (ANEEL 2023; IBGE 2021a). Depending on their
+ing the four variables described above after data standardiza-        characteristics, rivers can represent barriers to the movement
+tion (Z-­score calculation). Landform variety, elevation range,       of species across the landscape (Coelho et al. 2022; Hayes and
+wetland score, and soil richness were converted to Z-­scores,         Sewlal 2004), so we assigned different resistance weights to riv-
+assuming means and standard deviations within moving                  ers and lakes depending on their width.
+windows with 200 pixels radius. This ensures the inclusion
+of distinct physical and environmental conditions, and allows         Once resistance values had been assigned, we estimated local con-
+local variations in the composition of the associated biota to        nectedness as the inverse of the weighted average of the resistances
+be captured, in addition to providing a smooth transition be-         within a circular moving window of 23 pixels (approximately
+tween biomes. This alternative was applied so that it would           2070 m), which represents the spatial context in which each pixel is
+not be necessary to standardize within the biome and avoid            inserted. To calculate the weighted average, we used a linear decay
+having problems in transitional areas. The combination pro-           function (kernel filter), which recognizes that closer pixels have a
+cedure follows a hierarchical evaluation that considers the ad-       greater influence on each other than more distant pixels, influenc-
+ditional effect of the following variable in the previous one.        ing the local connectedness value of each pixel. The kernel filter
+The evaluation starts with the z-­scores of landform variety;         was applied to the resistance layer and reflects not only the land-
+then, for sites with higher elevation range, landscape hetero-        scape composition but is also influenced by the landscape config-
+geneity receives the weighted average of both variables, giv-         uration (i.e., the spatial context) surrounding each pixel. This step
+ing double the weight to landform variety; then the same is           was conducted to find paths that offer the least potential resistance
+done for wetland score and finally for soil richness, comparing       to species movement, based on the local context of the landscape.
+every combination of the four variables. For the general cal-
+culation of landscape heterogeneity, the weight given to land-
+form variety was higher than any other variable. Only in flat         2.3   |   Landscape Resilience
+areas, where landform variability is lower, the variable wet-
+land score was added a higher weight in providing landscape           We calculated landscape resilience by overlaying the maps of
+variability. However even in these areas with lower landform          landscape heterogeneity and local connectedness based on the
+variety and elevation range we maintained the importance of           distribution of the values of these metrics (classified in quartiles;
+these variables in the calculation of the landscape heterogene-       Appendix S1, Figures S14 and S15). The different classes created
+ity by averaging both these variables with the wetland score.         by overlaying quartiles on the landscape resilience bivariate scale
+More details of this evaluation are provided in Appendix S1 of        allow us to identify different areas of interest by the combination
+this manuscript.                                                      of both variables. To facilitate interpretation, the classes generated
+                                                                      (11–44) were grouped into four quadrants (Q1-­Q4; Figure 1): quad-
+                                                                      rant Q1—classes 11, 12, 21, 22; quadrant Q2—classes 13, 14, 23,
+2.2   |   Local Connectedness                                         24; quadrant Q3—classes 31, 32, 41, 42; and quadrant Q4—classes
+                                                                      33, 34, 43, 44. These quadrants indicate both lower (Q1) and higher
+Local connectedness is a measure of how much resistance land-         (Q4) resilience, and the greater effect of the landscape heteroge-
+scape elements (or types of land use and land cover) offer to the     neity (Q2) or local connectedness (Q3) layers. From these classes,
+movement of species. We used the structural differences of the        we generated a bivariate map of landscape resilience, which aims
+various types of land use and land cover as proxies of resistance,    to show the areas where the results of the two metrics converge or
+with natural areas being less resistant, and highly impacted areas    diverge, identifying areas where landscape heterogeneity and local
+being more resistant to the movement of terrestrial organisms in      connectedness are more important for landscape resilience.
+the landscape. Connectedness is greater where landscape offers
+less resistance to the movement of terrestrial organisms, repre-
+senting the degree of landscape permeability (or the inverse of       2.4   |   Data Analysis
+the degree of resistance) around each cell evaluated. The current
+approach did not take into account differences in the dispersal ca-   After generating the data for each layer, we conducted further
+pacity of organisms, but relies on the basic assumption that well-­   analysis to explore the results regionally, considering the vari-
+preserved native habitats with similar characteristics in close       ations across Brazil and within biomes. For landscape hetero-
+connection to one another represent better passages and refuges       geneity, we assessed the contribution of each component (i.e.,
+for biota than landscapes where patches of well-­preserved hab-       landform variety, elevation range, wetland score, and soil rich-
+itat are isolated by matrices of degraded or contrasting habitats     ness) to the final value of this layer across Brazil. And for land-
+and distant from one another.                                         scape resilience, we evaluated the percentage distribution of
+
+
+
+Global Change Biology, 2025                                                                                                         5 of 17
+                                                                                                                                                       13652486, 2025, 10, Downloaded from https://onlinelibrary.wiley.com/doi/10.1111/gcb.70544 by Capes, Wiley Online Library on [10/10/2025]. See the Terms and Conditions (https://onlinelibrary.wiley.com/terms-and-conditions) on Wiley Online Library for rules of use; OA articles are governed by the applicable Creative Commons License
+FIGURE 1    |    Landscape resilience classification resulting from local connectedness and landscape heterogeneity, showing quadrants based on the
+combination of metrics quartiles (Q1—gray, Q2—blue, Q3—yellow, and Q4—green) and 16 possible classes (11–44). The classification is based on
+the distribution of pixels in the original images of landscape heterogeneity and local connectedness.
+
+
+
+quadrants and classes (generated from the distribution of quar-            of local connectedness reflects the spatial distribution of land
+tiles) across Brazil and within biomes.                                    use and land cover classes with different resistance values. It is
+                                                                           possible to observe a high concentration of classes with high re-
+                                                                           sistance values in the southern and eastern parts of Amazônia
+3   |   Results                                                            (coinciding with the Arc of Deforestation in the Amazon; shown
+                                                                           in red in Figure 3), which divides Brazil into two very marked
+3.1   |   Landscape Heterogeneity                                          portions. The northwest of the Amazônia biome is the portion
+                                                                           with the highest concentration of natural areas, with lower re-
+We found that areas of high landscape heterogeneity in Brazil              sistance values and therefore high connectedness. The Pantanal
+are disjointly distributed (Figure 2), highlighting locations              also appears as a region with higher local connectedness.
+with rough terrain, abrupt changes in slope, high density of
+wetlands, and with different soil types. Due to regional char-
+acteristics, the components that make up landscape heteroge-               3.3   |   Landscape Resilience
+neity (i.e., landform variety, elevation range, wetland score,
+and soil richness) had different contributions depending on                Our results provide information on the most suitable areas asso-
+the local context. Overall, landform variety was the main vari-            ciated with climate resilience, considering the variability of habi-
+able in determining landscape heterogeneity, followed by the               tats, and local connectedness between natural vegetation patches.
+average of all four variables (landform variety, elevation range,          The areas with the highest landscape resilience values are mainly
+wetland score, and soil richness; Appendix S1: Figure S16).                concentrated in Amazônia, in regions close to the Araguaia
+                                                                           river basin in the Cerrado biome, in some regions distributed
+                                                                           throughout the Pantanal biome, in the interior of the Caatinga,
+3.2   |   Local Connectedness                                              in the southeastern coastal area of Mata Atlântica, and in the
+                                                                           regions with the roughest terrain or shallow soils in the Pampa
+The local connectedness layer has a different pattern to that pre-         (Figure 4). The spatial pattern of resilience is guided by a more
+sented in the landscape heterogeneity layer, showing a division            regional pattern of local connectedness, refined by a more local
+between highly connected regions in the north and others with              variation in landscape heterogeneity. For example, regions with
+lower connectedness in the central and southeastern regions of             low anthropogenic impact, such as most regions in Amazônia,
+the country (Figure 3). This distribution indicates a clear frag-          vary their resilience levels according to the local distribution of
+mentation of the Brazilian map into two portions. This is due              the diversity of the physical environment. Conversely, despite the
+to the historical occupation of these regions and their current            high heterogeneity of the landscape across Mata Atlântica, its
+use in terms of agriculture and urban occupation. The pattern              low connectedness reduces the areas of greatest resilience.
+
+6 of 17                                                                                                                  Global Change Biology, 2025
+                                                                                                                                                          13652486, 2025, 10, Downloaded from https://onlinelibrary.wiley.com/doi/10.1111/gcb.70544 by Capes, Wiley Online Library on [10/10/2025]. See the Terms and Conditions (https://onlinelibrary.wiley.com/terms-and-conditions) on Wiley Online Library for rules of use; OA articles are governed by the applicable Creative Commons License
+FIGURE 2    |    Landscape heterogeneity in Brazil, with a local example for each one of the six biomes, generated from the weighted average of the Z-­
+scores of the variables. Landscape heterogeneity takes into consideration: Landform variety, elevation range, wetland score, and soil richness. Higher
+and lower values for landscape heterogeneity are shown in a gradient from red to blue. Biome names: Amazônia (Amazon; rainforests), Caatinga (dry
+forests), Cerrado (savannas), Mata Atlântica (Atlantic forest; seasonal forests and rainforests), Pampa (grasslands), and Pantanal (wetlands). Map
+lines delineate study areas and do not necessarily depict accepted national boundaries.
+
+
+The Amazônia biome, due to its size and conservation status,                 Figure 5b). The Cerrado has a similar pattern as the one found
+stands out for presenting the highest percentage of areas with               in Caatinga, with high concentration in intermediate values of
+both the greatest resilience (quadrant Q4), with 19.5% of the                local connectedness (in classes 21–24); however, it is important
+areas assessed in Brazil, and areas with the greatest local con-             to highlight that the 5th highest landscape resilience value is
+nectedness, but low heterogeneity (quadrant Q3), with 17.3%                  found in the class with the lowest landscape resilience (class 11;
+(Table 1). Regarding areas with greater heterogeneity, but low               Figure 5c). For Mata Atlântica, there is a marked pattern of high
+local connectedness (quadrant Q2), the Cerrado and Mata                      concentration of values in classes of low local connectedness,
+Atlântica stand out, with 7.7% and 6.6% of the total areas as-               distributed along the axis of landscape heterogeneity (in quad-
+sessed in Brazil, respectively (Table 1). As for the areas with the          rants Q1 and Q2; Figure 5d). The Pampa has a similar pattern to
+lowest resilience (quadrant Q1), the Cerrado, with 8.8%, is the              the one found for Mata Atlântica, with high percentages along
+biome with the highest percentage in Brazil (Table 1). It is im-             the classes of low local connectedness (quadrants Q1 and Q2;
+portant to note that the percentages indicated here refer to the             Figure 5e). And finally, for Pantanal, the pattern is slightly dif-
+three largest biomes in the country.                                         ferent from all the other biomes, with the highest percentages
+                                                                             found in classes with high local connectedness and intermediate
+Considering the context within each biome, and therefore the                 landscape heterogeneity (classes 32, 33, 42, and 43; Figure 5f).
+percentages relative to the area of the biome, Amazônia has the
+highest percentage of areas with the highest resilience located              In the Amazônia, the areas of greatest landscape resilience are
+in quadrant Q4 (40.4%), followed by Pantanal (38.1%), Caatinga               concentrated in the northwest and west portions of the biome.
+(20.6%), Cerrado (16.6%), Pampa (15.2%), and Mata Atlântica                  The quadrant with the highest landscape resilience (Q4) rep-
+(6.2%) (Table 1; Figure 5). Across all biomes, Amazônia has also             resents 40.4% of the pixels assessed in this biome and the very
+the majority of the biome in the highest value of local connect-             high resilience class (class 44) shows 15.2% of the pixels assessed
+edness, distributed along the axis of landscape heterogeneity                (Table 1; Figure 5). These values can be considered high when
+(classes 41, 42, 43, and 44; Figure 5a). For Caatinga, we find a             looking at the overall values obtained and represent the highest
+high concentration of values at intermediate values of the axis of           values when compared to the other biomes in Brazil. In addi-
+local connectedness, also distributed along the axis of landscape            tion, the quadrant with the highest local connectedness (and
+heterogeneity (specially in classes 21–24, but also classes 31–34;           low landscape heterogeneity; Q3) represents 35.9% of the total,
+
+Global Change Biology, 2025                                                                                                                   7 of 17
+                                                                                                                                                        13652486, 2025, 10, Downloaded from https://onlinelibrary.wiley.com/doi/10.1111/gcb.70544 by Capes, Wiley Online Library on [10/10/2025]. See the Terms and Conditions (https://onlinelibrary.wiley.com/terms-and-conditions) on Wiley Online Library for rules of use; OA articles are governed by the applicable Creative Commons License
+FIGURE 3    |    Local connectedness, based on the value of resistance to the movement of organisms conferred by the different types of land use and
+cover in the context of the landscape. High and low values for local connectedness are shown in green and red, respectively. Biome names: Amazônia
+(Amazon; rainforests), Caatinga (dry forests), Cerrado (savannas), Mata Atlântica (Atlantic forest; seasonal forests and rainforests), Pampa (grass-
+lands), and Pantanal (wetlands). Map lines delineate study areas and do not necessarily depict accepted national boundaries.
+
+
+indicating that the conservation pattern of the biome's native              in the very high resilience class (class 44; Table 1; Figure 5). The
+vegetation contributes to the high local connectedness and land-            areas with the greatest landscape resilience are identified in
+scape resilience found. This shows the importance of Amazônia               the south and southeast of the region, concentrated in areas of
+for biodiversity conservation in the face of climate change.                moderate to high elevation and high slope. The quadrant with
+                                                                            the highest local connectedness (and low landscape heterogene-
+In the Caatinga, the areas with the highest landscape resil-                ity; Q3) also has the lowest value of total pixels assessed in this
+ience (quadrant Q4) represent 20.6% of the total pixels evalu-              biome, with only 4.3% (Table 1). On the other hand, the value
+ated for the region and are concentrated in the interior portions           identified for the quadrant of greatest landscape heterogeneity
+(Table 1). Unfortunately, only 2.2% of pixels found in this region          (and low local connectedness; Q2) stands out, with 48.4% of the
+belong to the very high resilience class (class 44; Figure 5). Areas        pixels evaluated for the biome (Table 1), the highest among all
+of low resilience (quadrant Q1), on the other hand, correspond to           biomes and the highest percentage overall. Therefore, our results
+34.0% of the pixels assessed (Table 1), indicating places with low          show that local connectedness is a determining factor in the resil-
+landscape heterogeneity and low local connectedness.                        ience pattern currently found for the biome. Finally, the areas of
+                                                                            low landscape resilience (quadrant Q1) correspond to 41.1% of the
+In the Cerrado, the areas of greatest landscape resilience are              biome's territory (Table 1), highlighting the extent of areas with
+more concentrated in the north and east of the biome, in the                low local connectedness in areas of low landscape heterogeneity.
+northwest, and in the far west. Similarly to the Caatinga region,
+the quadrant with the highest landscape resilience (Q4) rep-                In the Pampa, the areas with the highest resilience value are
+resents 16.6% of the pixels assessed in the region, and the very            located in the central region, in the west of the biome, and
+high resilience class (class 44), only 2.4% (Table 1; Figure 5).            also close to the coastal line. This distribution coincides with
+Areas of low resilience (quadrant Q1), on the other hand, ac-               the location of the areas with the greatest local connected-
+count for 37.1% of the region (Table 1).                                    ness. The quadrant with the highest landscape resilience (Q4)
+                                                                            corresponds to 15.2% of the pixels evaluated in the biome and
+In the Mata Atlântica, a biome with high human population and               the very high resilience class (class 44), only to 1.6% (Table 1;
+long-­term history of overexploitation of natural resources, the            Figure 5), the second lowest value among all the biomes (be-
+high resilience classes have the lowest percentage, with only 6.2%          hind only to Mata Atlântica, described below). Areas of low
+of the pixels classified in quadrant Q4 and only 0.4% classified            resilience (quadrant Q1), in turn, correspond to 36.0% of the
+
+8 of 17                                                                                                                   Global Change Biology, 2025
+                                                                                                                                                                         13652486, 2025, 10, Downloaded from https://onlinelibrary.wiley.com/doi/10.1111/gcb.70544 by Capes, Wiley Online Library on [10/10/2025]. See the Terms and Conditions (https://onlinelibrary.wiley.com/terms-and-conditions) on Wiley Online Library for rules of use; OA articles are governed by the applicable Creative Commons License
+FIGURE 4    |    Landscape resilience resulting from the combination of landscape heterogeneity and local connectedness maps, classified by quar-
+tiles. The bivariate classification of the landscape resilience layer was divided into four quadrants (Q1, Q2, Q3, and Q4) with different degrees
+of local connectedness and landscape heterogeneity. White portions in the map, more visible in the biome boxes, represent water bodies. Biome
+names: Amazônia (Amazon; rainforests), Caatinga (dry forests), Cerrado (savannas), Mata Atlântica (Atlantic forest; seasonal forests and rainfor-
+ests), Pampa (grasslands), and Pantanal (wetlands). Map lines delineate study areas and do not necessarily depict accepted national boundaries.
+
+
+
+TABLE 1    |    Percentages for each quadrant across Brazil and within biomes. Results are relative to the area calculated for Brazil (Across Brazil),
+and relative to the area of the biome (Within biome).
+
+ Quadrant               Amazônia (%)             Caatinga (%)           Cerrado (%)           Mata Atlântica (%)              Pampa (%)           Pantanal (%)
+ Across Brazil
+ Quadrant Q1                    5.5                     3.4                   8.8                        5.6                        0.9                  0.2
+ Quadrant Q2                    6.0                     2.6                    7.7                       6.6                        0.9                  0.1
+ Quadrant Q3                   17.3                     2.0                    3.3                       0.6                        0.2                  0.7
+ Quadrant Q4                   19.5                     2.1                   4.0                        0.8                        0.4                  0.7
+ Total                         48.3                    10.1                   23.8                       13.7                      2.4                   1.8
+ Within biome
+ Quadrant Q1                   11.4                    34.0                   37.1                       41.1                      36.0                 13.8
+ Quadrant Q2                   12.3                    26.0                   32.4                       48.4                      39.0                  7.4
+ Quadrant Q3                   35.9                    19.4                   14.0                       4.3                        9.8                 40.8
+ Quadrant Q4                   40.4                    20.6                   16.6                       6.2                       15.2                 38.1
+ Total                        100.0                   100.0                  100.0                      100.0                     100.0                 100.0
+Note: Biome names: Amazônia (Amazon; rainforests), Caatinga (dry forests), Cerrado (savannas), Mata Atlântica (Atlantic forest; seasonal forests and rainforests),
+Pampa (grasslands), and Pantanal (wetlands).
+
+
+
+
+Global Change Biology, 2025                                                                                                                                    9 of 17
+                                                                                                                                                          13652486, 2025, 10, Downloaded from https://onlinelibrary.wiley.com/doi/10.1111/gcb.70544 by Capes, Wiley Online Library on [10/10/2025]. See the Terms and Conditions (https://onlinelibrary.wiley.com/terms-and-conditions) on Wiley Online Library for rules of use; OA articles are governed by the applicable Creative Commons License
+FIGURE 5    |    Landscape resilience values by landscape resilience class for each biome: Amazônia (A), Caatinga (B), Cerrado (C), Mata Atlântica
+(D), Pampa (E), and Pantanal (F). Values shown in circles are the percentage of each class relative to the area of the biome. Larger and darker circles
+indicate higher percentages. Biome names: Amazônia (Amazon; rainforests), Caatinga (dry forests), Cerrado (savannas), Mata Atlântica (Atlantic
+forest; seasonal forests and rainforests), Pampa (grasslands), and Pantanal (wetlands).
+
+
+pixels evaluated (Table 1). It is important to note the high                  of having greater microclimatic variability and connectedness
+value for the quadrant with the greatest landscape heteroge-                  in the landscape, consequently offering microclimatic refuges
+neity (and low local connectedness; Q2), 39.0% (Table 1), in-                 given their topographical, hydrological, and edaphic character-
+dicating places with high variability in the landscape but that               istics. Since topographic characteristics tend to change little or
+lack local connectedness.                                                     slowly over time, we believe that areas with greater variation
+                                                                              in topographic conditions should be more resilient to predicted
+In the Pantanal, the regions with the highest landscape resil-                climate change. Although the local impact of climate change is
+ience are mostly those close to the highest density of wetlands,              defined by the interaction between the atmosphere, biodiversity,
+an outstanding feature for this region. This region shows values              and the diversity of the physical environment, the last variable
+similar to Amazônia: the highest landscape resilience (quadrant               is usually not considered in assessments. Hence, our approach is
+Q1) represents a significant 38.1% of the total pixels evaluated              an essential complement to climatic and ecosystem approaches
+in the region, second only to Amazônia (Table 1). When con-                   and provides a new facet for identifying locations that are po-
+sidering the very high resilience class (class 44), 7% are found in           tentially resilient to climate change, especially at the local level,
+this region (Figure 5). It is important to note that the quadrant             where microclimate data are commonly scarce.
+with the highest local connectedness (and low landscape hetero-
+geneity; Q3) has a high percentage of 40.8%, indicating places                Our framework for estimating landscape resilience applied to
+with natural vegetation that allow organisms to move around                   a megadiverse country identifies the most resilient terrestrial
+the landscape.                                                                landscapes throughout Brazil and within each of its six bi-
+                                                                              omes. Our results show that there are large extensions of resil-
+                                                                              ient landscapes in Brazil, especially in Amazônia, where there
+4   |   Discussion                                                            is still a high concentration of natural vegetation. Amazônia
+                                                                              is the largest biome, and it is where there is the highest con-
+By applying the conserving nature's stage approach (Beier                     centration of protected areas, representing more than 70% of
+et al. 2015), we identified sites and regions with the potential              protected areas in Brazil (Vieira et al. 2019). Protected areas
+
+10 of 17                                                                                                                    Global Change Biology, 2025
+                                                                                                                                               13652486, 2025, 10, Downloaded from https://onlinelibrary.wiley.com/doi/10.1111/gcb.70544 by Capes, Wiley Online Library on [10/10/2025]. See the Terms and Conditions (https://onlinelibrary.wiley.com/terms-and-conditions) on Wiley Online Library for rules of use; OA articles are governed by the applicable Creative Commons License
+(“Conservation Units” and “Indigenous Lands” in the Brazilian           sites with high potential for increasing resilience, as soon as
+legislation, including quilombolas' territories according to The        native vegetation is recovered through restoration actions, a
+National Protected Areas Plan) are especially important for             priority for the class 24. Ecological corridors between vege-
+conservation by reducing conversion of natural vegetation,              tation remnants and restored areas should be established or
+and preserving ecosystem services even under climate change             preserved to promote the flow of biodiversity. Sites with high
+conditions (Beattie et al. 2023; Campos et al. 2024; Gonçalves-­        local connectedness but low landscape heterogeneity (yellow
+Souza et al. 2021). On the other hand, the least resilient areas        areas in quadrant Q3; Figure 6e), although not highly resil-
+are concentrated in Mata Atlântica, a biome that has a long             ient, have low resistance to the movement of organisms and
+history of human impacts and conversion of natural vegetation           more preserved natural vegetation, and are important for cur-
+(Rezende et al. 2018; Vancine et al. 2024). The Mata Atlântica          rent conservation. Moreover, they have the potential to allow
+biome presents small aggregates with high resilience values,            the movement and flow of individuals in the landscape and
+which are strongly limited by the low local connectedness               could serve as potential ecological corridors to facilitate ad-
+found in the region. The history of occupation and degradation          aptation to climate change or displacement to more resilient
+of Mata Atlântica is potentially one of the main factors respon-        areas. Finally, sites with low resilience (gray areas in quad-
+sible for the current low connectedness throughout the territory        rant Q1; Figure 6d), which are those mapped with low land-
+occupied by this biome, since these are areas that were widely          scape heterogeneity and low local connectedness, have low
+used both for agriculture and for the settlement of the country's       potential for increasing resilience. These sites could be indi-
+first and larger urban centers.                                         cated for alternative land uses, ideally sustainable, to provide
+                                                                        ecosystem services, generating less impact on biodiversity.
+The spatial information generated does not contain spatial sub-         However, if there is interest in restoring the ecosystem ser-
+divisions (e.g., watersheds and political limits). It can be adjusted   vices provided by these sites, restoration can be considered. In
+to support public policies at the national, regional, and even in       a nutshell, classes that have the highest potential to increase
+smaller spatial scales such as states, watersheds, and other spa-       landscape climate change resilience, through restoration ac-
+tial units. The flexibility for defining spatial divisions allowed us   tions, are classes 14, 24, and 34, and the highest landscape
+to identify the differences between biomes that are consequences        resilience class, that should be a major priority for conserva-
+of varied geological histories leading to higher landscape het-         tion, is class 44.
+erogeneity, but also consequences of human exploitation history,
+showing important differences in connectedness. Our results             Moreover, the inferred surfaces can be tested under predictive
+also allowed us to identify intrabiome heterogeneity, which is          modelling approaches based on organismal data to forecast
+important for delineating specific regional conservation and            environmental change impacts on biodiversity (e.g., Azevedo
+restoration actions according to the main drivers of landscape          et al. 2024). The use of our data for conservation purposes can
+resilience in each region.                                              be accompanied by other biodiversity data and could be adjusted
+                                                                        for each focal species' characteristics (Pressey et al. 2021). For
+Different combinations of landscape heterogeneity and local             example, species-­specific resistance values can be estimated for
+connectedness can lead to landscapes classified at similar              different land cover classes to recalculate local connectedness
+intermediate resilience levels but would demand completely              for an endangered species to estimate landscape resilience in its
+different conservation, restoration, and sustainable uses, as           current or future potential distribution. Alternatively, different
+well as climate adaptation strategies. Hence, identifying the           weights can be used for variables in the landscape heterogene-
+different combinations of heterogeneity and connectedness               ity index, such as giving higher importance to wetland scores or
+is essential to subsidize and delineate effective strategies for        limiting the elevation range based on the preference of specific
+specific local and regional landscape conditions. By applying           organisms to identify priority areas for conservation. While this
+the results of our bivariate resilience classification to multi-        study focuses only on terrestrial environments, water dynamic
+ple objectives, we can break down each quadrant to make it              components were integrated in the analysis in terms of their in-
+easier to visualize sites within each category and then sug-            fluence on the dispersal of terrestrial organisms. For example,
+gest conservation, restoration, and sustainable use strategies          in the analysis presented, the different resistance values pro-
+for them. The example presented in Figure 6, for the Xingu              posed for bodies of water, considering their width, were based
+Indigenous Park and the Araguaia National Park in the state             on how difficult it was for terrestrial organisms to move around
+of Mato Grosso, shows the final resilience map (Figure 6a),             the landscape.
+as well as the layers separately (Figure 6b–e). In the map, the
+areas with the greatest resilience (green areas in quadrant             One additional application of our results is the conservation
+Q4; Figure 6c) are those with the greatest potential for con-           potential of current protected areas (“Conservation Units”,
+servation in the future, as they indicate places with greater           “Indigenous Lands”, and “Quilombolas' territories”), in addi-
+landscape heterogeneity and greater local connectedness,                tion to other conservation alternatives such as “other effective
+providing better conditions for organisms and species to have           area-­based conservation measures”—OECMs (Alves-­             Pinto
+more diverse habitats, favoring their persistence in the face of        et al. 2021), considering the impact of climate change on bio-
+future climate change. These areas have medium to high re-              diversity and people. It is possible to identify potential areas for
+silience values (classes 33, 34, and 43) and also very high resil-      restoration aiming at increasing landscape resilience and pro-
+ience values (class 44). The latter class represents the highest        moting the connection between resilient and conserved areas
+resilience value among all classes. Sites with high landscape           (e.g., Giannini et al. 2015; Sawakuchi et al. 2013), as well as
+heterogeneity but low local connectedness (blue areas in                identifying possible resilient corridors between protected areas.
+quadrant Q2; Figure 6b), although not highly resilient, are             In this context, restoration strategies can be adopted to increase
+
+Global Change Biology, 2025                                                                                                        11 of 17
+FIGURE 6    |    Example of the landscape resilience classification surrounding some protected areas in Brazil (near the Xingu Indigenous Park and      13652486, 2025, 10, Downloaded from https://onlinelibrary.wiley.com/doi/10.1111/gcb.70544 by Capes, Wiley Online Library on [10/10/2025]. See the Terms and Conditions (https://onlinelibrary.wiley.com/terms-and-conditions) on Wiley Online Library for rules of use; OA articles are governed by the applicable Creative Commons License
+the Araguaia National Park, in the state of Mato Grosso). (a) Details highlighting the four quadrants of estimated resilience based on the bivariate
+color scale are shown in figures (b–e). The order of the maps follows the same representation shown for the quadrants in the landscape resilience
+diagram: (b) areas classified in quadrant Q2, with high landscape heterogeneity but low local connectedness; (c) the most resilient areas, classi-
+fied in quadrant Q4, with high landscape heterogeneity and high local connectedness; (d) the least resilient areas, classified in quadrant Q1, with
+low landscape heterogeneity and low local connectedness; and (e) areas classified in quadrant Q3, with low landscape heterogeneity but high local
+connectedness.
+
+
+connectedness in places that, as indicated in the landscape resil-          biological flow and consequently promotes the restoration of
+ience classification scheme, would change the situation between             ecological processes (Tabor et al. 2019). Once the value changes
+classes from low to high local connectedness (from left to right):          to class 24 (the same example applies to class 24 to 34, and 34
+for example, directing actions at places indicated as class 14 so           to 44), it means that the outcomes of the restoration activities
+that, in the future, local connectedness increases and helps to             are maximized, potentially increasing vegetation structure and
+improve the landscape by connecting these sites, which aids                 ecosystem functioning.
+
+12 of 17                                                                                                                  Global Change Biology, 2025
+                                                                                                                                                 13652486, 2025, 10, Downloaded from https://onlinelibrary.wiley.com/doi/10.1111/gcb.70544 by Capes, Wiley Online Library on [10/10/2025]. See the Terms and Conditions (https://onlinelibrary.wiley.com/terms-and-conditions) on Wiley Online Library for rules of use; OA articles are governed by the applicable Creative Commons License
+As mentioned before, our database can be used to identify areas
+for restoration as resilience to climate change is a relevant crite-
+                                                                       Author Contributions
+rion to be used in the search for areas to be restored (Ravenscroft
+et al. 2010). We can prioritize different restoration strategies,      Milena Fermina Rosenfield: conceptualization, investigation,
+such as relying on passive restoration in sites with intermediate      methodology, project administration, supervision, validation, visual-
+to high landscape resilience, as these areas have higher values        ization, writing – original draft, writing – review and editing. Lucas
+                                                                       Jardim: data curation, formal analysis, investigation, methodology,
+of both landscape heterogeneity and local connectedness, and
+                                                                       validation, writing – original draft, writing – review and editing.
+since propagules or individuals from neighboring sites can more        Marina Antongiovanni: data curation, formal analysis, investiga-
+easily flow through the landscape and reach restoration sites.         tion, methodology, validation, writing – original draft, writing – re-
+Therefore, higher local connectedness enables species to re-           view and editing. Luciano Carramaschi de Alagão Querido: data
+colonize restoration sites (Tambosi et al. 2014), and landscape        curation, formal analysis, investigation, methodology, validation,
+heterogeneity will allow their persistence in future conditions        visualization, writing – original draft, writing – review and editing.
+                                                                       Alisson André Ribeiro: data curation, formal analysis, investiga-
+(Antonelli et al. 2018; Vernham et al. 2023). Conversely, active
+                                                                       tion, methodology, validation, writing – original draft, writing – re-
+restoration strategies can be adopted to enhance connectivity          view and editing. Andrea Sánchez-­Tapia: data curation, formal
+on low-­resilient landscapes, further allowing the recovery of         analysis, investigation, methodology, validation, writing – original
+ecosystem services and the establishment of species that have          draft, writing – review and editing. Priscila Silveira: data curation,
+already lost their habitat from disturbed landscapes (Pardini          formal analysis, investigation, methodology, validation, writing –
+et al. 2018). Combined with climate data, this information can         original draft, writing – review and editing. Levi Carina Terribile:
+also be useful for defining more precise regions for the establish-    investigation, methodology, validation, writing – original draft, writ-
+                                                                       ing – review and editing. Eduardo M. Venticinque: investigation,
+ment of native species used in ecological restoration projects, as
+                                                                       methodology, validation, writing – original draft, writing – review
+well as maps of the regeneration potential in all the six biomes       and editing. Ana Luisa Albernaz: investigation, methodology, vali-
+(Ministério do Meio Ambiente [MMA] 2017).                              dation, writing – original draft, writing – review and editing. Letícia
+                                                                       Couto Garcia: investigation, methodology, validation, writing –
+                                                                       original draft, writing – review and editing. Leandro Reverberi
+5   |   Conclusion                                                     Tambosi: investigation, methodology, validation, writing – orig-
+                                                                       inal draft, writing – review and editing. Marcos Adami: method-
+Governments of megadiversity countries have the responsibil-           ology, validation, writing – review and editing. Fernando Gertum
+                                                                       Becker: methodology, validation, writing – review and editing.
+ity of managing their territories, by conserving or improving
+                                                                       Maíra Benchimol: methodology, validation, writing – review and
+landscapes that are capable of providing for human needs com-          editing. Luísa Gigante Carvalheiro: methodology, validation, writ-
+patible with biodiversity and ecosystem functioning. Climate           ing – review and editing. Cintia Cornelius: methodology, validation,
+change will likely make both tasks more difficult, since species       writing – review and editing. Geraldo Alves Damasceno-­Junior:
+and human resources are expected to change their distribution          methodology, validation, writing – review and editing. Ricardo
+in space. Hence, long-­term planning considering such a dy-            Dobrovolski: methodology, validation, writing – review and edit-
+namic scenario is quintessential. So far, most world prioritiza-       ing. Manuel Eduardo Ferreira: methodology, validation, writing
+                                                                       – review and editing. Carlos Roberto Fonseca: methodology, vali-
+tion exercises for conservation have been proposed considering
+                                                                       dation, writing – review and editing. José Guilherme Fronza: meth-
+a static climate scenario (e.g., biodiversity hotspots), and that      odology, validation, writing – review and editing. Angela Terumi
+is also true for more regional prioritization exercises (Oliveira      Fushita: methodology, validation, writing – review and editing.
+et al. 2017). The results provided here have the potential to be       Adrian Antonio Garda: methodology, validation, writing – review
+used by decision-­makers at various spatial scales, from fed-          and editing. Heinrich Hasenack: methodology, validation, writ-
+eral and state governments to local private enterprises and            ing – review and editing. Priscila Lemes: methodology, validation,
+                                                                       writing – review and editing. Renata Libonati: methodology, valida-
+stakeholders. Landscape resilience information can be used
+                                                                       tion, writing – review and editing. Camile Lugarini: methodology,
+for evaluating the existing network of protected areas and its         validation, writing – review and editing. Marcia C. M. Marques:
+expansion. Also, passive and active restoration actions can be         methodology, validation, writing – review and editing. Felipe Melo:
+designed more effectively considering the resilience informa-          methodology, validation, writing – review and editing. Alessandro
+tion from this study. This map could contribute to the National        Ribeiro de Morais: methodology, validation, writing – review and
+Adaptation Plan to Climate Change (MMA 2016), which is                 editing. Sandra Cristina Müller: methodology, validation, writing
+currently under revision by the Brazilian government, and as           – review and editing. Andreza Viana Neri: methodology, validation,
+                                                                       writing – review and editing. Rita de Cássia Quitete Portela: meth-
+a tool for the development of strategic actions for biodiversity
+                                                                       odology, validation, writing – review and editing. Mario Barroso
+conservation and land management. By using global databases            Ramos Neto: methodology, validation, writing – review and edit-
+coupled with national and transnational databases, our analy-          ing. Camila Linhares Rezende: methodology, validation, writing
+sis allows for replication in different regions and contexts. To       – review and editing. Fabio de Oliveira Roque: methodology, vali-
+date, there has been no similar mapping of resilient sites for         dation, writing – review and editing. Thadeu Sobral-­S ouza: meth-
+tropical regions. By emphasizing persistent abiotic features           odology, validation, writing – review and editing. Mariana M. Vale:
+that shape ecological responses to climate change, our land-           methodology, validation, writing – review and editing. Gustavo M.
+                                                                       Vasques: methodology, validation, writing – review and editing.
+scape resilience approach offers a robust and scalable tool that
+                                                                       Eduardo Vélez-­M artin: methodology, validation, writing – review
+enriches frameworks centered on species traits, ecosystem dy-          and editing. Ima Vieira: methodology, validation, writing – review
+namics, or planning under uncertainty. The methodology pro-            and editing. Fernanda P. Werneck: methodology, validation, writ-
+posed here has the potential to be used in other megadiversity         ing – review and editing. Edenise Garcia: conceptualization, fund-
+countries where challenges of climate change are pressing.             ing acquisition, methodology, writing – review and editing.
+
+
+
+
+Global Change Biology, 2025                                                                                                          13 of 17
+                                                                                                                                                                     13652486, 2025, 10, Downloaded from https://onlinelibrary.wiley.com/doi/10.1111/gcb.70544 by Capes, Wiley Online Library on [10/10/2025]. See the Terms and Conditions (https://onlinelibrary.wiley.com/terms-and-conditions) on Wiley Online Library for rules of use; OA articles are governed by the applicable Creative Commons License
+Affiliations                                                                  for their administrative support. I.V. would like to thank INCT Nexus
+1The Nature Conservancy Brasil, São Paulo, Brazil | 2Laboratório de           (406516/2022-­7). L.C.T. (310583/2023-­3), E.M.V. (308543/2021-­1), L.C.G.
+                                                                              (310963/2023-­0), M.A. (309045/2023-­1), M.B. (304189/2022-­7), L.G.C.
+Macroecologia, Instituto de Biociências, Universidade Federal Do Jataí,
+                                                                              (307625/2021-­4), G.A.D.-­J. (312500/2022-­0), M.E.F. (315699/2020-­5 and
+Jataí, Brazil | 3Departamento de Ecologia, Universidade Federal Do Rio
+                                                                              317013/2023-­8), C.R.F. (308657/2023-­3), M.C.M.M. (310315/2023-­9), F.M.
+Grande Do Norte, Natal, Brazil | 4Coordenação de Ciências da Terra e
+                                                                              (441390/2020-­0 and 441292/2017-­8), A.R.d.M. (315191/2023-­6), S.C.M.
+Ecologia, Museu Paraense Emílio Goeldi, Belém, Brazil | 5Coordenação
+                                                                              (314309/2023-­3), F.O.R. (441181/2023-­6), M.M.V. (304908/2021-­5), I.V.
+de Biodiversidade, Instituto Nacional de Pesquisas da Amazônia,
+                                                                              (350182/2022-­1), and F.P.W. (307695/2023-­    9 and 406239/2022-­  3) are
+Manaus, Brazil | 6Laboratório de Geoprocessamento Para Aplicações
+                                                                              supported by the National Council for Scientific and Technological
+Ambientais, Faculdade de Engenharias, Arquitetura e Urbanismo e
+                                                                              Development (CNPq). L.C.d.A.Q. is supported by FAPEAM and CNPq
+Geografia, Universidade Federal Do Mato Grosso Do Sul, Campo Grande,
+                                                                              (Edital No. 003/2022, project 421674/2022-­9). T.S.-­S. is supported by
+Brazil | 7Centro de Engenharia, Modelagem e Ciências Sociais Aplicadas,
+                                                                              FAPEMAT (PRO.000274/2023).
+Universidade Federal Do ABC, Santo André, Brazil | 8IFZ, Department
+of Animal Ecology and Systematics, Justus-­Liebig Universität Giessen,
+Giessen, Germany | 9Laboratório de Ecologia da Intervenção, Instituto         Conflicts of Interest
+de Biociências, Universidade Federal Do Mato Grosso Do Sul, Campo
+                                                                              The authors declare no conflicts of interest.
+Grande, Brazil | 10Instituto Multidisciplinar Para el Estudio del Medio
+Ramon Margalef, Universidad de Alicante, Alicante, Spain | 11Divisão
+de Observação da Terra e Geoinformática (DIOTG), Coordenação Geral            Data Availability Statement
+de Ciências da Terra (CG-­CT), Instituto Nacional de Pesquisas Espaciais,
+                                                                              The data that support the findings of this study are openly available in
+São José dos Campos, Brazil | 12Departamento de Ecologia, Instituto de
+                                                                              Zenodo at https://​doi.​org/​10.​5281/​zenodo.​13320277.
+Biociências, Universidade Federal Do Rio Grande Do Sul, Porto Alegre,
+Brazil | 13Applied Ecology & Conservation Lab, Programa de Pós-­
+graduação Em Ecologia e Conservação da Biodiversidade, Universidade
+                                                                              References
+Estadual de Santa Cruz, Ilhéus, Brazil | 14Departamento de Ecologia,
+Instituto de Ciências Biológicas, Universidade Federal de Goiás, Goiânia,     Abreu-­Jardim, T. P. F., L. Jardim, L. Ballesteros-­Mejia, N. M. Maciel,
+Brazil | 15Instituto de Ciências Biológicas, Universidade Federal Do          and R. G. Collevatti. 2021. “Predicting Impacts of Global Climatic
+Amazonas, Manaus, Brazil | 16Instituto de Biociências, Universidade           Change on Genetic and Phylogeographical Diversity of a Neotropical
+Federal de Mato Grosso Do Sul, Campo Grande, Brazil | 17Instituto de          Treefrog.” Diversity and Distributions 27, no. 8: 1519–1535. https://​doi.​
+Biologia, Universidade Federal da Bahia, Salvador, Brazil | 18Laboratório     org/​10.​1111/​ddi.​13299​.
+de Processamento de Imagens e Geoprocessamento, Instituto de
+                                                                              Alves-­Pinto, H., J. Geldmann, H. Jonas, et al. 2021. “Opportunities
+Estudos Sócio-­  A mbientais, Universidade Federal de Goiás, Goiânia,
+                                                                              and Challenges of Other Effective Area-­Based Conservation Measures
+Brazil | 19Natu Capital, Florianópolis, Brazil | 20Departamento de
+                                                                              (OECMs) for Biodiversity Conservation.” Perspectives in Ecology and
+Botânica e Zoologia, Universidade Federal Do Rio Grande Do Norte,
+                                                                              Conservation 19, no. 2: 115–120. https://​doi.​org/​10.​1016/j.​pecon.​2 021.​
+Natal, Brazil | 21Departamento de Botânica e Ecologia, Instituto
+                                                                              01.​0 04.
+de Biociências, Universidade Federal de Mato Grosso, Cuiabá,
+Brazil | 22Departamento de Meteorologia, Instituto de Geociências,            Anderson, M. G., M. Clark, A. P. Olivero, et al. 2023. “A Resilient and
+Universidade Federal Do Rio de Janeiro, Rio de Janeiro, Brazil | 23Núcleo     Connected Network of Sites to Sustain Biodiversity Under a Changing
+de Gestão Integrada, Instituto Chico Mendes de Conservação da                 Climate.” Proceedings of the National Academy of Sciences 120, no. 7:
+Biodiversidade, Antonina, Brazil | 24Laboratório de Ecologia Vegetal,         e2204434119. https://​doi.​org/​10.​1073/​pnas.​22044​3 4119​.
+Universidade Federal Do Paraná, Curitiba, Brazil | 25Universidade
+                                                                              Anderson, M. G., M. Clark, and A. O. Sheldon. 2014. “Estimating
+Federal de Pernambuco, Recife, Brazil | 26School of Animal, Rural
+                                                                              Climate Resilience for Conservation Across Geophysical Settings.”
+and Environmental Sciences, Nottingham Trent University, Southwell,
+                                                                              Conservation Biology 28, no. 4: 959–970. https://​doi.​org/​10.​1111/​cobi.​
+UK | 27Laboratório de Ecologia, Evolução e Sistemática de Vertebrados,
+                                                                              12272​.
+Instituto Federal Goiano, Rio Verde, Brazil | 28Laboratory of Ecology
+and Evolution of Plants, Department of Plant Biology, Programa                Anderson, M. G., and C. E. Ferree. 2010. “Conserving the Stage: Climate
+de Pós-­ Graduação Em Botânica, Universidade Federal de Viçosa,               Change and the Geophysical Underpinnings of Species Diversity.” PLoS
+Viçosa, Brazil | 29Departamento de Ecologia, Instituto de Biologia,           One 5, no. 7: e11554. https://​doi.​org/​10.​1371/​journ​al.​pone.​0 011554.
+Universidade Federal Do Rio de Janeiro, Rio de Janeiro, Brazil | 30UR
+                                                                              ANEEL. 2023. “Sistema de Informações Geográficas do Setor Energético
+Forêts et Sociétés, Centre de Coopération Internationale en Recherche
+                                                                              Brasileiro.” https://​gisep​eprd2.​epe.​gov.​br/ ​WebMa​pEPE/​i.
+Agronomique Pour le Développement, Montpellier, France | 31Embrapa
+Solos, Rio de Janeiro, Brazil | 32Ilex Consultoria Científica, Porto          Antão, L. H., B. Weigel, G. Strona, et al. 2022. “Climate Change
+Alegre, Brazil | 33Coordenação de Botânica, Museu Paraense Emilio             Reshuffles Northern Species Within Their Niches.” Nature Climate
+Goeldi, Belém, Brazil                                                         Change 12, no. 6: 587–592. https://​doi.​org/​10.​1038/​s 4155​8-­​022-­​01381​-­​x.
+                                                                              Antonelli, A., W. D. Kissling, S. G. A. Flantua, et al. 2018. “Geological
+Acknowledgments                                                               and Climatic Influences on Mountain Biodiversity.” Nature Geoscience
+                                                                              11, no. 10: 718–725. https://​doi.​org/​10.​1038/​s 4156​1-­​018-­​0236-­​z.
+Authors would like to thank the team at The Nature Conservancy's
+Center for Resilient Conservation Science, especially Mark Anderson,          Ashcroft, M. B., J. R. Gollan, D. I. Warton, and D. Ramp. 2012. “A
+Melissa Clark, and Arlene Olivero for their help, discussions, and meth-      Novel Approach to Quantify and Locate Potential Microrefugia Using
+odological clarifications during the creation of this study. Special thanks   Topoclimate, Climate Stability, and Isolation From the Matrix.” Global
+go to the team of experts who participated in the project workshops and       Change Biology 18, no. 6: 1866–1879. https://​doi.​org/​10.​1111/j.​1365-­​
+helped with theoretical discussions, analysis refinements, and presen-        2486.​2 012.​02661.​x.
+tation of the results. M.F.R. would like to thank Ian Thompson (The
+                                                                              Azevedo, J. A. R., S. Faurby, G. R. Colli, A. Antonelli, and F. P. Werneck.
+Nature Conservancy) for the support during this project and The Nature
+                                                                              2024. “Deforestation Limits Evolutionary Rescue Under Climate
+Conservancy for the FinishLine Fund that financially supported the
+                                                                              Change in Amazonian Lizards.” Diversity and Distributions 30, no. 7:
+preparation of the manuscript. E.M.V. and M.A. would like to thank
+                                                                              e13860. https://​doi.​org/​10.​1111/​ddi.​13860​.
+Associação Caatinga for their administrative support. A.L.A. and
+L.C.d.A.Q. would like to thank FADESP for their administrative support        Banks-­L eite, C., R. Pardini, L. R. Tambosi, et al. 2014. “Using Ecological
+(Project #5029). L.C.G. and A.A.R. would like to thank SOS Pantanal           Thresholds to Evaluate the Costs and Benefits of Set-­          A sides in a
+
+
+14 of 17                                                                                                                           Global Change Biology, 2025
+                                                                                                                                                                   13652486, 2025, 10, Downloaded from https://onlinelibrary.wiley.com/doi/10.1111/gcb.70544 by Capes, Wiley Online Library on [10/10/2025]. See the Terms and Conditions (https://onlinelibrary.wiley.com/terms-and-conditions) on Wiley Online Library for rules of use; OA articles are governed by the applicable Creative Commons License
+Biodiversity Hotspot.” Science 345, no. 6200: 1041–1045. https://​doi.​org/​     Foden, W. B., B. E. Young, H. R. Akçakaya, et al. 2019. “Climate Change
+10.​1126/​scien​ce.​1255768.                                                     Vulnerability Assessment of Species.” WIREs Climate Change 10, no. 1:
+                                                                                 e551. https://​doi.​org/​10.​1002/​wcc.​551.
+Barlow, J., G. D. Lennox, J. Ferreira, et al. 2016. “Anthropogenic
+Disturbance in Tropical Forests Can Double Biodiversity Loss From                Folke, C., S. Carpenter, B. Walker, et al. 2004. “Regime Shifts, Resilience,
+Deforestation.” Nature 535, no. 7610: 144–147. https://​doi.​org/​10.​1038/​     and Biodiversity in Ecosystem Management.” Annual Review of Ecology,
+natur​e18326.                                                                    Evolution, and Systematics 35, no. 1: 557–581. https://​doi.​org/​10.​1146/​
+                                                                                 annur​ev.​ecols​ys.​35.​021103.​105711.
+Beattie, M., J. E. Fa, I. Leiper, Á. Fernández-­Llamazares, K. K. Zander,
+and S. T. Garnett. 2023. “Even After Armed Conflict, the Environmental           Fricke, E. C., A. Ordonez, H. S. Rogers, and J.-­C. Svenning. 2022. “The
+Quality of Indigenous Peoples' Lands in Biodiversity Hotspots Surpasses          Effects of Defaunation on Plants' Capacity to Track Climate Change.”
+That of Non-­Indigenous Lands.” Biological Conservation 286: 110288.             Science 375, no. 6577: 210–214. https://​doi.​org/​10.​1126/​scien​ce.​abk3510.
+https://​doi.​org/​10.​1016/j.​biocon.​2 023.​110288.
+                                                                                 Giannini, T. C., L. R. Tambosi, A. L. Acosta, et al. 2015. “Safeguarding
+Beier, P., M. L. Hunter, and M. Anderson. 2015. “Introduction.”                  Ecosystem Services: A Methodological Framework to Buffer the Joint
+Conservation Biology 29, no. 3: 613–617. https://​doi.​org/​10.​1111/​cobi.​     Effect of Habitat Configuration and Climate Change.” PLoS One 10, no.
+12511​.                                                                          6: e0129225. https://​doi.​org/​10.​1371/​journ​al.​pone.​0129225.
+Bender, I. M. A., W. D. Kissling, K. Böhning-­Gaese, et al. 2019. “Projected     Gill, J. L., J. L. Blois, B. Benito, S. Dobrowski, M. L. Hunter, and J.
+Impacts of Climate Change on Functional Diversity of Frugivorous                 L. McGuire. 2015. “A 2.5-­Million-­Year Perspective on Coarse-­Filter
+Birds Along a Tropical Elevational Gradient.” Scientific Reports 9, no. 1:       Strategies for Conserving Nature's Stage: Paleo Perspectives on
+17708. https://​doi.​org/​10.​1038/​s 4159​8-­​019-­​53409​- ­​6.                Conserving Nature's Stage.” Conservation Biology 29, no. 3: 640–648.
+Borges, F. J. A., and R. Loyola. 2020. “Climate and Land-­Use Change             https://​doi.​org/​10.​1111/​cobi.​12504​.
+Refugia for Brazilian Cerrado Birds.” Perspectives in Ecology and                Gilman, S. E., M. C. Urban, J. Tewksbury, G. W. Gilchrist, and R. D.
+Conservation 18, no. 2: 109–115. https://​doi.​org/​10.​1016/j.​pecon.​2 020.​   Holt. 2010. “A Framework for Community Interactions Under Climate
+04.​0 02.                                                                        Change.” Trends in Ecology & Evolution 25, no. 6: 325–331. https://​doi.​
+Campos, M. S., L. J. S. Anjos, E. B. D. Souza, et al. 2024. “Prioritizing        org/​10.​1016/j.​tree.​2 010.​03.​0 02.
+Amazon Forest Conservation: Assessing Potential Biomass Under                    Gonçalves-­Souza, D., B. Vilela, B. Phalan, and R. Dobrovolski. 2021.
+Climate Change.” Global Ecology and Conservation 54: e03106. https://​           “The Role of Protected Areas in Maintaining Natural Vegetation in
+doi.​org/​10.​1016/j.​gecco.​2 024.​e 03106.                                     Brazil.” Science Advances 7, no. 38: eabh2932. https://​doi.​org/​10.​1126/​
+Cavender-­Bares, J., A. K. Schweiger, J. N. Pinto-­L edezma, and J. E.           sciadv.​abh2932.
+Meireles. 2020. “Applying Remote Sensing to Biodiversity Science.” In            Gray, J. M. 2004. Geodiversity: Valuing and Conserving Abiotic Nature.
+Remote Sensing of Plant Biodiversity, edited by J. Cavender-­Bares, J. A.        Wiley.
+Gamon, and P. A. Townsend, 13–42. Springer International Publishing.
+https://​doi.​org/​10.​1007/​978-­​3 -­​030-­​33157​-­​3 _​2 .                   Gumbricht, T., R. M. Román-­Cuesta, L. V. Verchot, et al. 2017. “Tropical
+                                                                                 and Subtropical Wetlands Distribution. Version 2 [Dataset].” https://​doi.​
+Chase, J. M., S. A. Blowes, T. M. Knight, K. Gerstner, and F. May.               org/​10.​17528/​​cifor/​​data.​0 0058​.
+2020. “Ecosystem Decay Exacerbates Biodiversity Loss With Habitat
+Loss.” Nature 584, no. 7820: 238–243. https://​doi.​org/​10.​1038/​s 4158​       Haddad, N. M., L. A. Brudvig, J. Clobert, et al. 2015. “Habitat
+6-­​020-­​2531-­​2 .                                                             Fragmentation and Its Lasting Impact on Earth's Ecosystems.” Science
+                                                                                 Advances 1, no. 2: e1500052. https://​doi.​org/​10.​1126/​sciadv.​1500052.
+Coelho, F. E. A., W. X. Guillory, and M. Gehara. 2022. “Coalescent
+Simulations Indicate That the São Francisco River Is a Biogeographic             Hannah, L. 2021. Climate Change Biology. 3rd ed. Academic Press.
+Barrier for Six Vertebrates in a Seasonally Dry South American Forest.”          Hanski, I., and O. Ovaskainen. 2000. “The Metapopulation Capacity of
+Frontiers in Ecology and Evolution 10: 983134. https://​doi.​org/​10.​3389/​     a Fragmented Landscape.” Nature 404, no. 6779: 755–758. https://​doi.​
+fevo.​2 022.​983134.                                                             org/​10.​1038/​35008063.
+Curtis, P. G., C. M. Slay, N. L. Harris, A. Tyukavina, and M. C. Hansen.         Harfoot, M. B. J., A. Johnston, A. Balmford, et al. 2021. “Using the
+2018. “Classifying Drivers of Global Forest Loss.” Science 361, no. 6407:        IUCN Red List to Map Threats to Terrestrial Vertebrates at Global
+1108–1111. https://​doi.​org/​10.​1126/​scien​ce.​aau3445.                       Scale.” Nature Ecology & Evolution 5, no. 11: 1510–1519. https://​doi.​org/​
+de Lima, R. A. F., A. A. Oliveira, G. R. Pitta, et al. 2020. “The Erosion of     10.​1038/​s 4155​9 - ­​021- ­​01542​-­​9.
+Biodiversity and Biomass in the Atlantic Forest Biodiversity Hotspot.”           Hayes, F. E., and J. N. Sewlal. 2004. “The Amazon River as a Dispersal
+Nature Communications 11, no. 1: 6347. https://​doi.​org/​10.​1038/​s 4146​      Barrier to Passerine Birds: Effects of River Width, Habitat and
+7-­​020-­​2 0217​-­​w.                                                           Taxonomy.” Journal of Biogeography 31, no. 11: 1809–1818. https://​doi.​
+Díaz, S., J. Settele, E. S. Brondízio, et al. 2019. “Pervasive Human-­           org/​10.​1111/j.​1365-­​2699.​2 004.​01139.​x.
+Driven Decline of Life on Earth Points to the Need for Transformative            IBGE. 2021a. Base Cartográfica Contínua do Brasil, ao Milionésimo—
+Change.” Science 366, no. 6471: eaax3100. https://​doi.​org/​10.​1126/​scien​    BCIM. Instituto Brasileiro de Geografia e Estatística.
+ce.​aax3100.
+                                                                                 IBGE. 2021b. “Pedologia.” In IBGE. BDiA: Banco de Dados e Informações
+Dobrowski, S. Z. 2011. “A Climatic Basis for Microrefugia: The Influence         Ambientais. Instituto Brasileiro de Geografia e Estatística.
+of Terrain on Climate.” Global Change Biology 17, no. 2: 1022–1035.
+https://​doi.​org/​10.​1111/j.​1365-­​2 486.​2 010.​02263.​x.                    IBGE. 2021c. “Vegetação.” In IBGE. BDiA: Banco de Dados e Informações
+                                                                                 Ambientais. Instituto Brasileiro de Geografia e Estatística.
+Fick, S. E., and R. J. Hijmans. 2017. “WorldClim 2: New 1-­K m Spatial
+Resolution Climate Surfaces for Global Land Areas.” International                IBGE. 2023. População Estimada do Brasil. Instituto Brasileiro de
+Journal of Climatology 37, no. 12: 4302–4315. https://​doi.​org/​10.​1002/​      Geografia e Estatística.
+joc.​5086.
+                                                                                 IPCC. 2022. Climate Change 2022: Impacts, Adaptation and
+Fine, P. V. A. 2015. “Ecological and Evolutionary Drivers of Geographic          Vulnerability. Contribution of Working Group II to the Sixth Assessment
+Variation in Species Diversity.” Annual Review of Ecology, Evolution,            Report of the Intergovernmental Panel on Climate Change, edited by
+and Systematics 46, no. 1: 369–392. https://​doi.​org/​10.​1146/​annur​ev-­​     H.-­O. Pörtner, D. C. roberts, M. Tignor, et al. Cambridge University
+ecols​ys-­​11241​4 -­​054102.                                                    Press.
+
+
+Global Change Biology, 2025                                                                                                                           15 of 17
+                                                                                                                                                                          13652486, 2025, 10, Downloaded from https://onlinelibrary.wiley.com/doi/10.1111/gcb.70544 by Capes, Wiley Online Library on [10/10/2025]. See the Terms and Conditions (https://onlinelibrary.wiley.com/terms-and-conditions) on Wiley Online Library for rules of use; OA articles are governed by the applicable Creative Commons License
+Kakinuma, K., A. Yanagawa, T. Sasaki, M. P. Rao, and S. Kanae. 2019.                 Environment.” https://​w ww.​gov.​br/​mma/​pt-­​br/​assun​tos/​mudan​ca-­​do-­​
+“Socio-­Ecological Interactions in a Changing Climate: A Review of the               clima/​​clima/​​arqui​vos/​pna_​volum​e-­​i _​en.​pdf.
+Mongolian Pastoral System.” Sustainability 11, no. 21: 5883. https://​doi.​
+                                                                                     Ministério do Meio Ambiente. 2017. “Potencial de Regeneração Natural
+org/​10.​3390/​su112​15883​.
+                                                                                     da Vegetação no Brasil.” Ministério do Meio Ambiente – MMA, World
+Karger, D. N., O. Conrad, J. Böhner, et al. 2017. “Climatologies at High             Resources Institute – WRI.
+Resolution for the Earth's Land Surface Areas.” Scientific Data 4, no. 1:
+                                                                                     Montoya, J. M., and D. Raffaelli. 2010. “Climate Change, Biotic
+170122. https://​doi.​org/​10.​1038/​sdata.​2 017.​122.
+                                                                                     Interactions and Ecosystem Services.” Philosophical Transactions of the
+Lapola, D. M., P. Pinho, J. Barlow, et al. 2023. “The Drivers and Impacts            Royal Society, B: Biological Sciences 365, no. 1549: 2013–2018. https://​
+of Amazon Forest Degradation.” Science 379, no. 6630: eabp8622.                      doi.​org/​10.​1098/​rstb.​2 010.​0114.
+https://​doi.​org/​10.​1126/​scien​ce.​abp8622.
+                                                                                     Murphy, D. W. A. 2015. “Theorizing Climate Change, (Im)mobility and
+Lapola, D. M., R. Schaldach, J. Alcamo, et al. 2011. “Impacts of Climate             Socio-­Ecological Systems Resilience in Low-­Elevation Coastal Zones.”
+Change and the End of Deforestation on Land Use in the Brazilian                     Climate and Development 7, no. 4: 380–397. https://​doi.​org/​10.​1080/​
+Legal Amazon.” Earth Interactions 15, no. 16: 1–29. https://​doi.​org/​10.​          17565​529.​2 014.​953904.
+1175/​2 010E​I333.​1.                                                                Oliveira, U., B. S. Soares-­Filho, A. P. Paglia, et al. 2017. “Biodiversity
+Lawler, J. J., D. D. Ackerly, C. M. Albano, et al. 2015. “The Theory                 Conservation Gaps in the Brazilian Protected Areas.” Scientific Reports
+Behind, and the Challenges of, Conserving Nature's Stage in a Time of                7, no. 1: 9141. https://​doi.​org/​10.​1038/​s 4159​8-­​017-­​08707​-­​2 .
+Rapid Change: Conserving Nature's Stage in a Time of Rapid Change.”                  Pardini, R., E. Nichols, and T. Püttker. 2018. “Biodiversity Response to
+Conservation Biology 29, no. 3: 618–629. https://​doi.​org/​10.​1111/​cobi.​         Habitat Loss and Fragmentation.” In Encyclopedia of the Anthropocene,
+12505​.                                                                              edited by D. A. Dellasala and M. I. Goldstein, 229–239. Elsevier. https://​
+Lecina-­ Diaz, J., J. Martínez-­       Vilalta, F. Lloret, and R. Seidl. 2024.       doi.​org/​10.​1016/​B978-­​0 -­​12-­​80966​5 -­​9.​0 9824​- ­​4.
+“Resilience and Vulnerability: Distinct Concepts to Address Global                   Pressey, R. L., P. Visconti, M. C. McKinnon, et al. 2021. “The Mismeasure
+Change in Forests.” Trends in Ecology & Evolution 39, no. 8: 706–715.                of Conservation.” Trends in Ecology & Evolution 36, no. 9: 808–821.
+https://​doi.​org/​10.​1016/j.​tree.​2 024.​03.​0 03.                                https://​doi.​org/​10.​1016/j.​tree.​2 021.​0 6.​0 08.
+Lemes, P., A. S. Melo, and R. D. Loyola. 2014. “Climate Change Threatens             Rahbek, C., M. K. Borregaard, A. Antonelli, et al. 2019. “Building
+Protected Areas of the Atlantic Forest.” Biodiversity and Conservation               Mountain Biodiversity: Geological and Evolutionary Processes.” Science
+23, no. 2: 357–368. https://​doi.​org/​10.​1007/​s1053​1-­​013-­​0605-­​2 .          365, no. 6458: 1114–1119. https://​doi.​org/​10.​1126/​scien​ce.​aax0151.
+Lima-­R ibeiro, M. S., S. Varela, J. González-­Hernández, G. de Oliveira,            Ramalho, Q., M. M. Vale, S. Manes, P. Diniz, A. Malecha, and J. A.
+J. A. F. Diniz-­Filho, and L. C. Terribile. 2015. “EcoClimate: A Database            Prevedello. 2023. “Evidence of Stronger Range Shift Response to
+of Climate Data From Multiple Models for Past, Present, and Future for               Ongoing Climate Change by Ectotherms and High-­Latitude Species.”
+Macroecologists and Biogeographers.” Biodiversity Informatics 10: 4955.              Biological Conservation 279: 109911. https://​doi.​org/​10.​1016/j.​biocon.​
+https://​doi.​org/​10.​17161/​​bi.​v10i0.​4955.                                      2023.​109911.
+Loarie, S. R., P. B. Duffy, H. Hamilton, G. P. Asner, C. B. Field, and D. D.         Ravenscroft, C., R. M. Scheller, D. J. Mladenoff, and M. A. White. 2010.
+Ackerly. 2009. “The Velocity of Climate Change.” Nature 462, no. 7276:               “Forest Restoration in a Mixed-­O wnership Landscape Under Climate
+1052–1055. https://​doi.​org/​10.​1038/​natur​e 08649.                               Change.” Ecological Applications 20, no. 2: 327–346. https://​doi.​org/​10.​
+Manes, S., M. J. Costello, H. Beckett, et al. 2021. “Endemism Increases              1890/​08-­​1698.​1.
+Species' Climate Change Risk in Areas of Global Biodiversity                         Rezende, C. L., F. R. Scarano, E. D. Assad, et al. 2018. “From Hotspot
+Importance.” Biological Conservation 257: 109070. https://​doi.​org/​10.​            to Hopespot: An Opportunity for the Brazilian Atlantic Forest.”
+1016/j.​biocon.​2 021.​109070.                                                       Perspectives in Ecology and Conservation 16, no. 4: 208–214. https://​doi.​
+Mantyka-­ Pringle, C. S., T. G. Martin, and J. R. Rhodes. 2012.                      org/​10.​1016/j.​pecon.​2 018.​10.​0 02.
+“Interactions Between Climate and Habitat Loss Effects on Biodiversity:              Rosenfield, M. F., L. Jardim, M. Antongiovanni, et al. 2024. “Landscape
+A Systematic Review and Meta-­A nalysis.” Global Change Biology 18, no.              Resilience to Climate Change in Brazil (Version v1.0) [Dataset].” The
+4: 1239–1252. https://​doi.​org/​10.​1111/j.​1365-­​2 486.​2 011.​02593.​x.          Nature Conservancy Brasil. https://​doi.​org/​10.​5281/​ZENODO.​13320277.
+MapBiomas Project. 2023. “Collection 8 of the Annual Series of Land                  Ryeland, J., M. A. Weston, and M. R. E. Symonds. 2021. “The Importance
+Use and Land Cover Maps of Brazil [Dataset].” https://​proje​cts/​mapbi​             of Wetland Margin Microhabitat Mosaics; the Case of Shorebirds and
+omas-­​works​pace/​public/​c olle​c tion8/​m apbi​omas_​c olle​c tion​8 0_​i nteg​   Thermoregulation.” Journal of Applied Ecology 58, no. 2: 382–391.
+ration_​v1.                                                                          https://​doi.​org/​10.​1111/​1365-­​2664.​13769​.
+Marengo, J. A., C. M. Souza, K. Thonicke, et al. 2018. “Changes in                   Sanches, F. H. C., F. R. Martins, W. R. P. Conti, and R. A. Christofoletti.
+Climate and Land Use Over the Amazon Region: Current and Future                      2023. “The Increase in Intensity and Frequency of Surface Air
+Variability and Trends.” Frontiers in Earth Science 6: 228. https://​doi.​           Temperature Extremes Throughout the Western South Atlantic Coast.”
+org/​10.​3389/​feart.​2 018.​0 0228​.                                                Scientific Reports 13, no. 1: 6293. https://​doi.​org/​10.​1038/​s 4159​8-­​023-­​
+                                                                                     32722​-­​1.
+MCTI. 2013. “Sumário Executivo: Base Científica Das Mudanças
+Climáticas: Contribuição do Grupo de Trabalho 1 ao Primeiro Relatório                Sawakuchi, H. O., M. V. R. Ballester, and M. E. Ferreira. 2013. “The
+de Avaliação Nacional do Painel Brasileiro de Mudanças Climáticas.”                  Role of Physical and Political Factors on the Conservation of Native
+(p. 28). Ministério da Ciência, Tecnologia e Inovação. https://​repos​ito-           Vegetation in the Brazilian Forest-­Savanna Ecotone.” Open Journal of
+rio.​mctic.​gov.​br/​handle/​mctic/​​4306.                                           Forestry 03, no. 1: 49–56. https://​doi.​org/​10.​4236/​ojf.​2 013.​31008​.
+Memmott, J., P. G. Craze, N. M. Waser, and M. V. Price. 2007. “Global                Sirami, C., P. Caplat, S. Popy, et al. 2017. “Impacts of Global Change on
+Warming and the Disruption of Plant–Pollinator Interactions.” Ecology                Species Distributions: Obstacles and Solutions to Integrate Climate and
+Letters 10, no. 8: 710–717. https://​doi.​org/​10.​1111/j.​1461-­​0248.​2 007.​      Land Use.” Global Ecology and Biogeography 26, no. 4: 385–394. https://​
+01061.​x.                                                                            doi.​org/​10.​1111/​geb.​12555​.
+Ministério do Meio Ambiente. 2016. “National Adaptation Plan to                      Sobral-­Souza, T., J. Stropp, J. P. Santos, et al. 2021. “Knowledge Gaps
+Climate Change—Volume I: General Strategy (p. 44). Ministry of                       Hamper Understanding the Relationship Between Fragmentation
+
+
+
+16 of 17                                                                                                                                 Global Change Biology, 2025
+                                                                                                                                                                    13652486, 2025, 10, Downloaded from https://onlinelibrary.wiley.com/doi/10.1111/gcb.70544 by Capes, Wiley Online Library on [10/10/2025]. See the Terms and Conditions (https://onlinelibrary.wiley.com/terms-and-conditions) on Wiley Online Library for rules of use; OA articles are governed by the applicable Creative Commons License
+and Biodiversity Loss: The Case of Atlantic Forest Fruit-­              Feeding    Zhang, W., Y. Zhu, and J. Jiang. 2016. “Effect of the Urbanization of
+Butterflies.” PeerJ 9: e11673. https://​doi.​org/​10.​7717/​peerj.​11673​.         Wetlands on Microclimate: A Case Study of Xixi Wetland, Hangzhou,
+                                                                                   China.” Sustainability 8, no. 9: 885. https://​doi.​org/​10.​3390/​su809​0885.
+Tabor, G., M. Bankova-­Todorova, C. A. C. Ayram, et al. 2019. “Ecological
+Connectivity: A Bridge to Preserving Biodiversity.” In Frontiers 2018/19
+Emerging Issues of Environmental Concern, 24–37. United Nations                    Supporting Information
+Environment Programme.
+                                                                                   Additional supporting information can be found online in the
+Tambosi, L. R., A. C. Martensen, M. C. Ribeiro, and J. P. Metzger. 2014.           Supporting Information section. Appendix S1: gcb70544-­sup- ­0 001-­
+“A Framework to Optimize Biodiversity Restoration Efforts Based on                 AppendixS1.docx.
+Habitat Amount and Landscape Connectivity.” Restoration Ecology 22,
+no. 2: 169–177. https://​doi.​org/​10.​1111/​rec.​12049​.
+Terribile, L. C., M. S. Lima-­R ibeiro, M. B. Araújo, et al. 2012. “Areas
+of Climate Stability of Species Ranges in the Brazilian Cerrado:
+Disentangling Uncertainties Through Time.” Natureza & Conservação
+10, no. 2: 152–159. https://​doi.​org/​10.​4322/​natcon.​2 012.​025.
+Theobald, D. M., D. Harrison-­Atlas, W. B. Monahan, and C. M. Albano.
+2015. “Ecologically-­Relevant Maps of Landforms and Physiographic
+Diversity for Climate Adaptation Planning.” PLoS One 10, no. 12:
+e0143619. https://​doi.​org/​10.​1371/​journ​al.​pone.​0143619.
+Tourinho, L., J. A. Prevedello, B. M. Carvalho, D. S. B. Rocha, and M.
+M. Vale. 2022. “Macroscale Climate Change Predictions Have Little
+Influence on Landscape-­   Scale Habitat Suitability.” Perspectives in
+Ecology and Conservation 20, no. 1: 29–37. https://​doi.​org/​10.​1016/j.​
+pecon.​2 021.​10.​0 03.
+Tukiainen, H., M. Kiuttu, R. Kalliola, J. Alahuhta, and J. Hjort. 2019.
+“Landforms Contribute to Plant Biodiversity at Alpha, Beta and Gamma
+Levels.” Journal of Biogeography 46, no. 8: 1699–1710. https://​doi.​org/​10.​
+1111/​jbi.​13569​.
+Tukiainen, H., M. Toivanen, and T. Maliniemi. 2023. “Geodiversity and
+Biodiversity.” Geological Society, London, Special Publications 530, no.
+1: 31–47. https://​doi.​org/​10.​1144/​SP530​-­​2 022-­​107.
+Vancine, M. H., R. L. Muylaert, B. B. Niebuhr, et al. 2024. “The Atlantic
+Forest of South America: Spatiotemporal Dynamics of the Vegetation
+and Implications for Conservation.” Biological Conservation 291:
+110499. https://​doi.​org/​10.​1016/j.​biocon.​2 024.​110499.
+Vernham, G., J. J. Bailey, J. M. Chase, J. Hjort, R. Field, and F. Schrodt.
+2023. “Understanding Trait Diversity: The Role of Geodiversity.” Trends
+in Ecology & Evolution 38, no. 8: 736–748. https://​doi.​org/​10.​1016/j.​tree.​
+2023.​02.​010.
+Vieira, R. R. S., R. L. Pressey, and R. Loyola. 2019. “The Residual Nature
+of Protected Areas in Brazil.” Biological Conservation 233: 152–161.
+https://​doi.​org/​10.​1016/j.​biocon.​2 019.​02.​010.
+Vitasse, Y., C. Signarbieux, and Y. H. Fu. 2018. “Global Warming Leads
+to More Uniform Spring Phenology Across Elevations.” Proceedings of
+the National Academy of Sciences of the United States of America 115, no.
+5: 1004–1008. https://​doi.​org/​10.​1073/​pnas.​17173​42115​.
+Williams, S. E., L. P. Shoo, J. L. Isaac, A. A. Hoffmann, and G.
+Langham. 2008. “Towards an Integrated Framework for Assessing the
+Vulnerability of Species to Climate Change.” PLoS Biology 6, no. 12:
+e325. https://​doi.​org/​10.​1371/​journ​al.​pbio.​0 060325.
+Yamazaki, D., D. Ikeshima, R. Tawatari, et al. 2017. “A High-­Accuracy
+Map of Global Terrain Elevations.” Geophysical Research Letters 44, no.
+11: 5844–5853. https://​doi.​org/​10.​1002/​2 017G​L 072874.
+Zarnetske, P. L., Q. D. Read, S. Record, et al. 2019. “Towards Connecting
+Biodiversity and Geodiversity Across Scales With Satellite Remote
+Sensing.” Global Ecology and Biogeography 28, no. 5: 548–556. https://​
+doi.​org/​10.​1111/​geb.​12887​.
+Zedler, J. B., and S. Kercher. 2005. “Wetland Resources: Status, Trends,
+Ecosystem Services, and Restorability.” Annual Review of Environment
+and Resources 30, no. 1: 39–74. https://​doi.​org/​10.​1146/​annur​ev.​energy.​
+30.​050504.​144248.
+
+
+
+
+Global Change Biology, 2025                                                                                                                            17 of 17

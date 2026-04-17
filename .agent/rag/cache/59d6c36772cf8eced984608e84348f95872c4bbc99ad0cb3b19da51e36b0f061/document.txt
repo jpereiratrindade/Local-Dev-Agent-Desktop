@@ -1,0 +1,749 @@
+                              Environ. Res. Lett. 16 (2021) 011001                                                     https://doi.org/10.1088/1748-9326/abc278
+
+
+
+
+                              PERSPECTIVE
+
+                              Sustainable livestock development in low- and middle-income
+OPEN ACCESS
+                              countries: shedding light on evidence-based solutions
+RECEIVED
+6 June 2020                   Birthe K Paul1, Klaus Butterbach-Bahl2,3, An Notenbaert1, Alex Nduah Nderi1 and Polly Ericksen2
+REVISED                       1
+20 September 2020               Tropical Forages Program, International Center for Tropical Agriculture (CIAT), Nairobi, Kenya
+                              2
+                                Sustainable Livestock Systems Program, International Livestock Research Institute (ILRI), Nairobi, Kenya
+ACCEPTED FOR PUBLICATION      3
+19 October 2020
+                                Karlsruhe Institute of Technology (KIT), Institute of Meteorology and Climate Research, Division Bio-Geo-Chemical Processes,
+                                Garmisch-Partenkirchen, Germany
+PUBLISHED
+21 December 2020              E-mail: b.paul@cgiar.org, a.notenbaert@cgiar.org, nduahwanderi@gmail.com, P.Ericksen@cgiar.org
+                              and Klaus.butterbach-bahl@kit.edu
+Original content from         Keywords: livestock production systems, low emission livestock, environmental impacts, low to middle-income countries, sustainable
+this work may be used
+under the terms of the
+                              development
+(Creative Commons             Supplementary material for this article is available online
+Attribution 4.0 licence).
+Any further distribution
+of this work must
+maintain attribution to
+the author(s) and the title
+of the work, journal          1. Introduction                                                   economic growth, poverty reduction, ending malnu-
+citation and DOI.                                                                               trition, gender equality and ecosystem service pro-
+                              The livestock sector and its environmental impacts                vision (FAO 2018). For example, the cereal-based
+                              have been a subject of growing global concern, reflec-            diets of poor people in LMICs regularly lack bioavail-
+                              ted in intensive public and scientific discussions.               able (micro)nutrients, which are highly concentrated
+                              Since the publication of ‘Livestock’s Long Shadow’ by             in livestock products. Vulnerable groups in LMICs,
+                              the FAO (Food and Agriculture Organization of the                 such as pregnant and lactating women, and children,
+                              United Nations) in 2006, livestock has been univer-               would benefit from more, and not less, ASF consump-
+                              sally criticized for its large contribution to greenhouse         tion to improve physical and cognitive health, and
+                              gas (GHG) emissions, land use change, soil degrada-               reduce stunting (Gupta 2016, Adesogan et al 2020,
+                              tion, water use and loss of biodiversity (Steinfeld et al         Shapiro et al 2019). In this perspective paper, we
+                              2006, Herrero et al 2015, Hilborn et al 2018). Widely             present results from novel analysis that demonstrate
+                              publicized recent reports, such as the EAT-Lancet                 the urgent need for LMIC-specific evidence on live-
+                              report (Willett et al 2019), prompted a wave of media             stock and the environment to inform a more nuanced
+                              outreach arguing that one of the main solutions to                global discussion and decision-making supporting
+                              the climate change and human health crises, glob-                 sustainable livestock development.
+                              ally, is to eat no or little animal source foods (ASFs).
+                              Global media continues to be dominated by concerns
+                              about adverse environmental and health impacts of                 2. Research into sustainable livestock
+                              livestock, while the coverage of livestock’s contribu-            development in LMICs is scarce
+                              tion to livelihoods has been declining (Marchmont
+                              Communications 2019). These negative narratives,                  We conducted a systematic literature search in the
+                              mostly rooted in industrial livestock production sys-             Web of Science to take stock of the global distri-
+                              tems and overconsumption of ASF in Western coun-                  bution of research on livestock and the environ-
+                              tries, overshadow the various complex and often                   ment (figure 1). We complemented this with an
+                              positive roles livestock plays in low- and middle-                expert survey with 260 respondents to explore global
+                              income countries (LMICs) in Africa, South America                 perceptions of environmental impacts of livestock,
+                              and South(-East) Asia. A singular focus on livestock-             and available solutions (figure 2). Please see sup-
+                              associated environmental impacts ignores livestock’s              plementary information for a detailed description
+                              crucial livelihood functions in smallholder systems               of data collection and analysis methods of the lit-
+                              such as nutrition, income, asset provision, insurance,            erature search and expert survey (available online
+                              and nutrient cycling (Herrero et al 2013a). Institu-              at (stacks.iop.org/ERL/16/011001/mmedia)). While
+                              tions such as the FAO have been working towards                   we acknowledge that the livestock sector has com-
+                              higher awareness of the contributions of the livestock            plex interactions with more than half of the UN
+                              sector to the sustainable development goals, including            sustainable development goals (Mehrabi et al 2020),
+
+
+                              © 2020 The Author(s). Published by IOP Publishing Ltd
+Environ. Res. Lett. 16 (2021) 011001                                                                     B K Paul et al
+
+
+
+our analysis focusses on the environmental dimen-          land degradation and land use, water use, and GHG
+sions of sustainability. Results suggest that the exist-   emissions, but regional differences were striking (fig-
+ing body of published articles from LMICs is lim-          ure 2(a)). In Africa, soil and land degradation, fol-
+ited. For example, only 12.7% of all global published      lowed by land use, ranked highest, closely followed
+livestock papers since 1945 cover Africa (figure 1),       by competition for water and attributing only a smal-
+although Africa is home to 20%, 27% and 32% of             ler importance to GHG emissions. Experts working
+the global cattle, sheep and goat populations (Gilbert     in Europe prioritized GHG emissions, and after that
+et al 2018). After an upsurge of publications in the       water pollution, as the most crucial environmental
+late 1960s, likely influenced by the green revolution      impacts of livestock. In South America, land-related
+and the subsequent belief that new animal research         impacts including land degradation, land use and soil
+in Africa could produce gains like those achieved in       organic carbon loss were ranked highest (figure 2(a)).
+rice and wheat (McIntire and Grace 2020), the annual       These results point to the need for context-specific
+number of published livestock papers in Africa has         research that is driven by local priorities.
+dropped again since the 1990s (figure 1(a)). This drop          As shown, only a small part of the global research
+coincided with the Rio Earth Summit in 1992 and the        on livestock and the environment covers LMICs, or
+publication of the FAO’s Livestock’s Long Shadow in        comes from LMICs directly (figure 1). A recently
+2006 that both put environmental impacts of agricul-       growing interest in agroecological livestock farm-
+ture, and especially livestock, at the center of atten-    ing and circularity in high income countries (HICs)
+tion. Eight of the top ten lead institutions of publica-   (e.g. Dumont et al 2018) might trigger interest in
+tions on livestock in Africa since 1945 are based in the   transferring insights from diversified mixed crop-
+USA, France, UK and the Netherlands, with only two         livestock systems in LMICs to HICs. However, cur-
+institutions (ILRI and University of Pretoria) hav-        rently research relies on data, approaches and mod-
+ing headquarters in Africa (figure 1(b)). Moreover,        els that originate from industrialized systems in HICs,
+a comparison of the number of livestock papers per         where agroecological conditions are different and
+country in relation to the importance of livestock         agricultural systems are typically input- and resource-
+for the respective national economies reveals a cru-       intensive and well connected to global supply chains.
+cial disconnect. Countries such as USA and Canada,         This may lead to incorrect conclusions on current
+Germany, France and South Africa have relatively           environmental impacts as well as recommendations
+more publications than countries like Chad, Mali and       for improvements that do not match local demands
+Somalia, where the livestock sector is the backbone        and conditions in LMICs. We illustrate this with four
+of the economy (figure 1(c)). At the same time, live-      examples across the environmental dimensions.
+stock research receives only about 0.1% of all over-            Global modeling studies estimate that the GHG
+seas development assistance, compared to the 4% that       intensities of livestock products in LMICs are one
+agricultural research receives (ILRI unpublished ana-      to two magnitudes higher than those of livestock
+lysis from http://stats.oecd.org).                         products produced in OECD countries due to lower
+     Thus, livestock production is a driver of climate     productivity (Herrero et al 2013b). Despite inherent
+change but also contributes to other environmental         uncertainties of such global assessments, amplified by
+impacts such as changes in water availability and          the lack of LMIC-specific data, the conclusion that
+quality, soil and land degradation and biodiversity        GHG emissions from livestock systems in LMICs are
+loss (Herrero et al 2015). 91% of responding livestock     higher remains unchallenged. Empirically measured
+experts acknowledged such environmental impacts            and experimental data on livestock’s GHG emissions
+of livestock as crucial. Yet, only a comparably small      for Africa has only recently started to become avail-
+fraction (15.8%) of the total global livestock literat-    able (e.g. Du Toit et al 2013a, 2013b, Pelster et al 2016,
+ure published since 1945 is devoted to environmental       Goopy et al 2018, 2020, Ndung’u et al 2019, Zhu et al
+aspects (figure 1(d)). In Africa, the overall percent-     2019, 2020). The intensities measured in these stud-
+age is even lower at 13.8%, although a trend is vis-       ies vary significantly from the global model results
+ible with the percentage of environmental publica-         due to the diversity of production systems. Missing
+tions at its lowest in 1966 (6.4%) and peaking in          experimental data on feed quality and quantity effects
+2018 (31.9%) (figure 1(a)). Of the global literature       on ruminant methane emissions and uncertainties
+covering livestock, 6% cover water, 5.9% soil and          around GHG emissions associated with manure man-
+land degradation, and 3.6% each biodiversity and cli-      agement and excreta droppings on rangeland fur-
+mate change issues (figure 1(d)). These percentages        ther hamper the identification and quantification of
+are only slightly lower within Africa (water 5.8%, soil    opportunities to mitigate GHG emission from live-
+and land degradation 5.9%, biodiversity 3.5%, GHG          stock production strategies, e.g. by improved feeding
+2.7%) but higher in Latin America and the Caribbean        strategies (Goopy et al 2020) or manure management
+(water 9.2%, soil and land degradation 13%, biod-          (Teenstra et al 2015). LMICs still offer greater oppor-
+iversity 7%, GHG 4.4%). The surveyed experts agreed        tunities for synergies between much-needed pro-
+with the importance of these multiple environmental        ductivity increases, efficiency gains and GHG emis-
+dimensions, with the most emphasis overall given to        sion mitigation than in industrialized systems where
+
+                                              2
+Environ. Res. Lett. 16 (2021) 011001                                                                                                                                                                                          B K Paul et al
+
+
+
+
+     a)                                                                                                                          c)
+
+                                 Livestock         Livestock and environment            % env of total                           2.0                                                                                                    120
+     8,000                                                                                                        35                             TLU per inhabitant
+                                                                                                                                 1.8             Livestock publications per 100k inhabitants
+     7,000                                                                                                        30                                                                                                                    100
+                                                                                                                                 1.6
+     6,000                                                                                                                       1.4
+                                                                                                                  25                                                                                                                    80
+     5,000                                                                                                                       1.2
+                                                                                                                  20
+                                                                                                                                 1.0                                                                                                    60
+     4,000
+                                                                                                                  15             0.8
+     3,000                                                                                                                                                                                                                              40
+                                                                                                                                 0.6
+                                                                                                                  10
+     2,000                                                                                                                       0.4
+                                                                                                                                                                                                                                        20
+     1,000                                                                                                        5              0.2
+
+
+
+
+                                                                                                                                            Burkina…
+                                                                                                                                 0.0                                                                                                    0
+
+
+
+
+                                                                                                                                        South Africa
+
+
+
+
+                                                                                                                                        South Sudan
+                                                                                                                                          Colombia
+
+
+
+                                                                                                                                           Morocco
+
+
+
+
+                                                                                                                                           Germany
+
+
+
+
+                                                                                                                                           Australia
+                                                                                                                                           Myamnar
+
+
+
+
+                                                                                                                                          Paraguay
+                                                                                                                                             Nigeria
+
+
+
+
+                                                                                                                                            Ethiopia
+
+
+
+
+                                                                                                                                            Somalia
+
+
+
+
+                                                                                                                                            Moldova
+                                                                                                                                             Mexico
+
+
+
+                                                                                                                                            Canada
+                                                                                                                                           Tanzania
+
+
+
+                                                                                                                                             France
+
+
+
+
+                                                                                                                                              Brazil
+                                                                                                                                             Sudan
+                                                                                                                                               Niger
+                                                                                                                                              China
+                                                                                                                                               India
+
+
+
+
+                                                                                                                                               Chad
+          -                                                                                                       0
+
+
+
+
+                                                                                                                                              Kenya
+
+
+
+
+                                                                                                                                               CAR
+                                                                                                                                                Mali
+                                                                                                                                               USA
+
+
+
+
+                                                                                                                                             Bolivia
+              2009
+              2005
+              2003
+
+              2007
+              1969
+              1963
+              1965
+
+
+
+
+              1999
+              2001
+              1945
+
+
+
+
+              1995
+              1983
+              1985
+
+              1989
+              1949
+
+              1953
+              1955
+
+
+
+
+              1993
+              1959
+
+
+
+              1967
+              1957
+
+
+
+
+              1987
+
+
+
+
+              1997
+              1961
+
+
+
+
+              1991
+              1977
+              1947
+
+
+
+
+              1981
+              1973
+
+
+              1979
+
+
+
+
+              2015
+              1975
+
+
+
+
+              2013
+              1951
+
+
+
+
+              2017
+              1971
+
+
+
+
+              2011
+     b)                                                                                                                                                                    d)     2,461,623
+                         Wageningen University & Research, the Netherlands                                  1,965                                                                                          Livestock only
+               Institut National de la Recherche Agronomique (INRA), France                                  2,040                                                                                         Livestock and one of the
+                                                                                                                                                                                                           environmental dimensions
+                                             University of Pretoria, South Africa                                2,136
+                                                                                                                                                                                                           Livestock and water
+              International Livestock Research Institute (ILRI), Kenya/Ethiopia                                       2,390
+                                                                                                                                                                                                           Livestock and soil
+                                                       University of Oxford, UK                                            2,833
+                                                                                                                                                                                                           Livestock and biodiversity
+                  Institut de Recherche pour le Développement (IRD), France                                                      3,139
+                                                                                                                                                                                                           Livestock and GHG
+          Recherche Agronomique pour le Développement (CIRAD), France                                                                 3,307
+
+                Centre National de la Recherche Scientifique (CNRS), France                                                                       4,384                                        388,856
+                                                                                                                                                                                                         147,606
+                                                       University of London, UK                                                                    4,496                                                           146,452
+                                                                                                                                                                                                                             89,462
+                                         University of California System, USA                                                                                5,319
+                                                                                                                                                                                                                                      88,209
+                                                                                    -          1,000     2,000           3,000           4,000      5,000       6,000
+                                                                                                           Number of publications
+
+
+   Figure 1. Results from a systematic literature search in the Web of Science for livestock-related articles published between 1945
+   and 2018, per environmental dimension (water, land degradation, biodiversity, and GHG emissions) and region. (a) Annual
+   number of publications on livestock only (grey) and livestock and any environmental dimension (green) in Africa (left axis) and
+   percentage of environmental publications of total (red line, right axis). (b) Top ten lead institutions of publications on livestock in
+   Africa, and location of their headquarters. (c) Number of livestock publications per 100 000 inhabitants (green, right axis) and
+   TLU per inhabitant (grey, left axis) for 28 countries selected to reflect diversity in industrialized vs. LMICs, and low vs. high TLU
+   per capita. (d) Number of total global publications on livestock only (black), livestock and any environmental dimension (green),
+   and water (blue), soil (brown), biodiversity (purple) and GHG (grey) as subsets of the total livestock publications.
+
+
+
+
+additional measures often result in trade-offs (FAO                                                                           scarcity of manure and unaffordability of mineral fer-
+2017), but the lack of LMIC-specific data and models                                                                          tilizer is often the bigger problem in LMICs. LMIC-
+hinder the quantification and subsequent leveraging                                                                           relevant research from China suggests that manage-
+of such opportunities.                                                                                                        ment is key to minimizing this impact (e.g. Zhao
+    Global research on livestock often focuses on the                                                                         et al 2019). While (over)grazing and feed/biomass
+negative impacts on soil, land, water and climate. One                                                                        removal can indeed deplete soil stocks (Mcsherry and
+of the most prominent impacts of livestock produc-                                                                            Ritchie 2013), manure application to soils is a missed
+tion on the environment in industrialized systems is                                                                          opportunity to improve soil fertility and health and to
+increased losses of reactive nitrogen (Nr ) compounds                                                                         mitigate these potentially negative impacts. Overgraz-
+to the environment, especially through manure man-                                                                            ing can result in structural and chemical soil degrad-
+agement and application. These have multiple neg-                                                                             ation, but well-managed grazing can stimulate eco-
+ative impacts on human health (aerosol formation                                                                              system service delivery through vegetation growth
+due to NH3 volatilization), soils (acidification due to                                                                       and preserve carbon stocks (FAO 2018, Godde et al
+Nr deposition of NH3 ), terrestrial and aquatic eco-                                                                          2018).
+systems (eutrophication through Nr leaching, and Nr                                                                                Experts’ water-related concerns differ strongly
+volatilization and redeposition) (e.g. Heathwaite et al                                                                       by region, with water pollution ranked second in
+2000, Liu et al 2017), tropospheric O3 (oxidized N                                                                            importance by European experts, and competition
+compounds in form of NOx ) and GHG emissions                                                                                  for water ranked highly by African, Latin American
+(atmospheric N2 O) (e.g. Liu et al 2017). The com-                                                                            and Caribbean experts (figure 2). Water-related live-
+plexity of Nr effects on the global environment has                                                                           stock literature often emphasizes the water-intensity
+only recently started to be assessed from a holistic                                                                          of the sector. Heinke et al (2020), for example,
+point of view in Europe (Sutton et al 2011), Cali-                                                                            estimate that annually 4670 km3 of water is used
+fornia (Tomich et al 2015) and India (Abrol et al                                                                             for the production of livestock, and state that this
+2017), with other countries and regions starting to                                                                           equals about 44% of total water use for agricul-
+follow. However, again it is important to consider                                                                            ture, with agriculture being responsible for 70% of
+the farming context: while in industrialized agricul-                                                                         global water use. Most of the total livestock water
+ture, high nutrient inputs to soils, including from                                                                           footprint (98%) is used to produce feed for the
+manure application, are driving water pollution and                                                                           animals (Mekonnen and Hoekstra 2010). Water use,
+GHG emissions, undersupply of nutrients through                                                                               however, differs significantly by production system.
+
+                                                                                                  3
+Environ. Res. Lett. 16 (2021) 011001                                                                                                                                                                                     B K Paul et al
+
+
+
+
+    a)
+                                                                                             Europe (N= 20)
+                                                                                                             12.4%
+                                                                                           37.1%
+                                                                                                                                                                          Asia (N= 34)
+                                                                                                                      27.8%                                        8.3%
+                                                                                                                                                      13.9%
+                                                                                                                                                                                   28.5%
+
+                                                                                                                                                    1.4%
+                                                                                             6.2%
+                                                                                                            2.1%                                    7.6%
+                                                                                               2.1% 4.1% 8.3%
+                                                                                                                                                                                   8.3%
+                                                       Americas (N= 67)
+                                                                                                                                                           16.0%
+                                                                  8.9%                                                                                                     16.0%
+                                                       16.9%
+                                                                         6.2%
+                                                                                                          11.0%
+                                                                                                  8.5%                     25.4%
+                                               13.6%                                           0.4%
+                                                                           25.8%
+                                                                                                   5.2%
+      Environmental impact dimensions           2.4%                                                                          2.0%
+        Pressure on water resources                8.6%
+        Water pollution                                        17.8%
+                                                                                                     22.3%
+        Land degradation                                                                                                  25.2%
+                                                                                          Africa (N= 121)
+        Pressure on land                                                                                                                                                                                 16.7%
+        Soil loss
+        Carbon loss                                                                                                                                                                                           8.3%
+        Biodiversity loss                                                                                                                                                             50.0%
+
+        Greenhouse gas emission                                                                                                                                                                               16.7%
+
+                                                                                                                                                                      Oceania (N= 3)                   8.3%
+
+
+
+
+    b)                                                                                                               c)
+                                                                                                                                          Bio-digesters
+                                                                                          Oceania                                                                                                                     Oceania
+                                                                                                                                             Exclosures
+    Reduce consumption of                                                                 Europe                                                                                                                      Europe
+        livestock products
+                                                                                                                          Management of water points
+                                                                                          Asia                                                                                                                        Asia
+                                                                                                                          Restrict livestock production
+                                                                                          Americas                          in high biodiversity areas                                                                Americas
+
+         Fewer animals with                                                               Africa                                   Manure management                                                                  Africa
+          higher productivity
+                                                                                                                                        Planted forages
+
+                                                                                                                                  Silvo-pastoral systems
+
+      Sustainable livestock                                                                                                          Improved pastures
+      production practices
+                                                                                                                                       Managed grazing
+
+                             0.0   0.5   1.0       1.5            2.0           2.5          3.0                                                            0             50        100        150     200       250         300
+                                                  Weighted average                                                                                                                            Scores
+
+
+
+   Figure 2. Results from a livestock expert survey with 260 respondents from research, policy and development practice in Africa,
+   Americas, Asia, Europe and Oceania. For all questions that required respondents to score the three most important options
+   provided, we calculated both total scores as well as weighted averages. Total scores were derived by counting all ‘most important’
+   responses as a three, ‘second most important’ responses as two, and ‘third most important’ as one , and taking the sum of all.
+   Weighted averages were calculated by determining the mean rank per region (three for most important, two for second most
+   important, one for third most important) and dividing these by the number of respondents per region. More information on data
+   collection and analysis methods are available in supplementary information. (a) Severity of environmental impacts in region of
+   experts’ work (% of total scores); (b) most promising solutions to decrease livestock’s environmental impact (weighted average);
+   (c) most promising sustainable livestock management practices (total scores).
+
+
+
+
+Due to the larger share of concentrate feed in                                                                       also due to indirect effects caused by environmental
+industrial systems, animal products from these sys-                                                                  losses of Nr and P via hydrological and gaseous
+tems generally consume and pollute more ground-                                                                      pathways. These losses drive ecosystem eutrophica-
+and surface-water resources than animal products                                                                     tion and thus large scale changes in ecosystem func-
+from grazing or mixed systems (Mekonnen and                                                                          tioning and biodiversity not only in temperate regions
+Hoekstra 2012). Moreover, in mixed crop-livestock                                                                    but also in the tropics (e.g. Bleeker et al 2014). How-
+production systems, which are very prominent in                                                                      ever, in tropical rangelands livestock production can
+LMICs, the majority of water use is embedded in                                                                      be compatible with vegetative and wildlife diversity
+crop residues of food crops (Zonderland-Thomassen                                                                    (Russell, 2018), if supportive institutions and incent-
+et al 2014). Animal farming puts the lowest pres-                                                                    ives are in place to protect mobility and avoid frag-
+sure on freshwater systems when dominantly based                                                                     mentation (Reid et al 2016). In savanna systems, pas-
+on crop residues, waste and roughages (Mekonnen                                                                      toralists are penning their herds at night. That lead
+and Hoekstra 2012). Blümmel et al (2014) further                                                                     to nutrient and biodiversity hotspots, which con-
+advice to combine feed resource databases with                                                                       tributed significantly to the enrichment and diver-
+crop-soil mereological data to calculate more pre-                                                                   sification of African savanna landscapes (Marshall
+cise water use efficiency at the smallest possible spa-                                                              et al 2018). Moderate grazing is important for veget-
+tial scale as a basis for mainstream locally relevant                                                                ation diversity, for example (Godde et al 2018). More
+recommendations.                                                                                                     detailed research and experience sharing is required to
+     In some contexts, livestock production is jeopard-                                                              improve our understanding of the conditions under
+izing biodiversity not only due to the conversion of                                                                 which these ‘pastoralism and biodiversity’ synergies
+forest to pastures or arable land for feed production                                                                can be practically realized on the ground (Notenbaert
+(Gordon 2018, IPBES 2019, Creutzig et al 2019), but                                                                  et al 2012).
+
+
+                                                                                      4
+Environ. Res. Lett. 16 (2021) 011001                                                                   B K Paul et al
+
+
+
+3. Solutions exist but their                               mitigation action for the dairy sector has been under
+implementation at scale is hampered                        development for several years, with support from the
+                                                           agricultural research community. Countries such as
+The majority of experts (63%) believed more sus-           Colombia and Costa Rica have made progress with
+tainable livestock production practices (see examples      livestock-related initiatives to reduce emissions, also
+below) were the most promising area of solu-               due to the availability of data from research partners
+tions to reducing livestock’s environmental impact,        (e.g. De Pinto et al 2018). These examples point to the
+much more than, for example, reducing consump-             need for embedding research in local development
+tion of ASF. These perceptions had remarkably few          and capacity building processes, and provide appro-
+regional differences (figure 2(b)). Preferred techno-      priate finance mechanisms, in order to be institution-
+logies centered around improved grazing and feeding        alized and have long-lasting impacts.
+practices, including managed grazing, improved pas-            Over the last decade, participatory research in
+tures, silvopastoral systems and planted forages (fig-     South-East Asia resulted in the identification of
+ure 2(c)). Solutions and innovations exist, but these      promising species and varieties of improved planted
+have yet to go to scale due to constraints such as poor    forages (Stür et al 2013). Such improved forages do
+governance, lack of access to knowledge and fund-          not only increase livestock productivity, but also
+ing, and lack of institutional cooperation. A less cited   improve nutrient management and cycling (Epper
+reason was high resource demands including labour          et al 2020) and reduce GHG intensities when com-
+requirements, high costs and access to inputs (data        pared to commercial concentrates often produced
+not shown).                                                abroad and imported (Birnholz et al 2017). How-
+    Three examples across LMICs illustrate the avail-      ever, a lack of investment in scaling these technologies
+ability of solutions but highlight the factors that        provides no counterweight to a rapidly developing
+hamper them going to scale.                                livestock sector in the region that by now heavily
+    Community-based rangeland management in                relies on feed imports, for example in Vietnam. Con-
+East Africa has been piloted and promoted across           centrate feeds, such as those produced from soybean
+Kenya, Tanzania and Ethiopia during the past dec-          from the Amazon, result in serious environmental
+ade (Flintan et al 2019). Central to the approach is       problems due to changes in local and global nutrient
+the participation of community members in agree-           cycles in both the livestock and feed producing coun-
+ing on governance and management plans for com-            tries. For improved forages to go to scale, stakehold-
+munally managed lands, to avoid conflicts and ensure       ers need to work together to make seeds commercially
+that livestock have sufficient feed and water resources    available, which requires policy regulation and private
+during the dry season or droughts. Just ensuring           sector investment.
+community agreement is not enough, however, as
+rangelands extend beyond community boundaries.             4. Conclusions
+Thus, it is important for the community agreements
+to be embedded in higher level (district, county,          In many LMICs, there is still an opportunity to
+national) agreements (Nganga et al 2019). In Kenya,        develop sustainable livestock development pathways
+community land use plans are now part of county            that avoid the pitfalls of the industrial model. Such
+spatial planning processes; in Ethiopia and Tanzania       pathways can support positive nutritional and live-
+similar processes are underway. Once the governance        lihood outcomes for the global poor while redu-
+arrangements are set, then small experiments with          cing environmental impacts and supporting ecosys-
+setting aside grazing areas or reseeding degraded pas-     tem service delivery.
+tures can begin.                                               The prevailing narrative on livestock with its sin-
+    Intensification of the dairy sector in East Africa,    gular focus on the negative environmental impacts
+e.g. by improved livestock management including            of the livestock sector, however, fails to take live-
+feeding, feed preservation, breeding or herd manage-       stock’s crucial livelihood functions into account,
+ment, provides many opportunities to significantly         nor does it highlight the myriad of locally-adapted
+reduce the GHG footprint of livestock products (e.g.       options for improving its environmental perform-
+Goopy et al 2020). However, only a few of these solu-      ance. More nuanced global discussion and decision-
+tions have been explored or promoted extensively.          making, supported with rigorous evidence from
+With experimental data on potential GHG emis-              LMICs, is urgently needed. Current levels of invest-
+sion reductions due to intensification only becom-         ment in research for sustainable livestock develop-
+ing available now (see section 2), country-specific        ment in LMICs are insufficient.
+emission factors (IPCC Tier 2 approach) can be                 We specifically call for locally-adapted, mul-
+calculated and used to plan and report on poten-           tidisciplinary and people-centered research that is
+tial and actual GHG reduction gains, which can             embedded in local development processes. Solutions,
+in turn leverage increased investment (e.g. through        such as improved feed production, utilization and
+NDCs) in the large-scale promotion of such technolo-       storage, and integrated manure management, are
+gies. For example, in Kenya, a nationally appropriate      emerging and provide a promising avenue to reduce
+
+                                              5
+Environ. Res. Lett. 16 (2021) 011001                                                                                      B K Paul et al
+
+
+
+environmental impacts, but need context-specific                   Blümmel M, Haileslassie A, Samireddypallec A, Vadez V and
+research to tailor them to the agroecological and                        Notenbaert A 2014 Livestock water productivity: feed
+                                                                         resourcing, feeding and coupled feed-water resource data
+socioeconomic environments. Moreover, research
+                                                                         bases Animal Prod. Sci. 54 1584–93
+needs to be accompanied by appropriate financial                   Creutzig F, d’Amour C B, Weddige U, Fuss S, Beringer T, Gläser A,
+incentives, institutional settings and capacity build-                   Kalkuhl M, Steckel J C, Radebach A and Edenhofer O 2019
+ing of involved stakeholders. It is only when all these                  Assessing human and environmental pressures of global
+                                                                         land-use change 2000– 2010 Glob. Sustain. 2 1–17 e1
+factors are in place that we will be able to support sus-
+                                                                   De Pinto A, Loboguerrero A M, Londono M, Ovalle Sanabri K
+tainable and resilient livestock development pathways                    and Suarez Castano R 2018 Informing climate policy
+and reach long term impact at scale.                                     through institutional collaboration: reflections on the
+                                                                         preparation of Colombia’s nationally determined
+                                                                         contribution Clim. Pol. 18 612–26
+Data availability statement                                        Du Toit C J L, Meissner H H and van Niekerk W A 2013a
+                                                                         Direct methane and nitrous oxide emissions of South
+The data that support the findings of this study                         African dairy and beef cattle South Afr. J. Animal Sci.
+are openly available at the following URL/DOI:                           43 320–39
+                                                                   Du Toit C J L, van Niekerk W A and Meissner H H 2013b Direct
+(https://dataverse.harvard.edu/dataset.xhtml?persis
+                                                                         greenhouse gas emissions of the South African small stock
+tentId=doi:10.7910/DVN/CDVOJ1) (Paul et al 2020)                         sectors South Afr. J. Animal Sci. 43 340–61
+                                                                   Dumont B, Groot J G J and Tichit M 2018 Review: make
+                                                                         ruminants green again – how can sustainable intensification
+Acknowledgments                                                          and agroecology converge for a better future? Animal
+                                                                         12 220–219
+The authors declare no conflict of interest. This                  Epper C A et al 2020 Nutrient flows and intensification options
+                                                                         for smallholder farmers of the Lao uplands Agric. Syst.
+research was conducted as part of the CGIAR
+                                                                         177 102694
+Research Program on Livestock, which is suppor-                    FAO 2017 Livestock solutions for climate change (Rome: Food
+ted by contributors to the CGIAR Trust Fund                              and Agriculture Organization of the United Nations (FAO))
+(https://www.cgiar.org/funders). We are grateful to                      p 8 (www.fao.org/3/a-i8098e.pdf)
+                                                                   FAO 2018 World livestock: transforming the livestock sector
+John Yumbya Mutua and José Luis Urrea Benitez for
+                                                                         through the sustainable development goals – in brief (Rome:
+assistance with the design of figures, and colleagues of                 Food and Agriculture Organization of the United Nations
+the Environment Flagship of the Livestock Research                       (FAO)) p 12 (www.fao.org/3/ca1177en/CA1177EN.pdf.)
+Program for providing initial ideas and feedback dur-              Flintan F et al 2019 Review of participatory rangeland
+                                                                         management (PRM) process and implementation
+ing early discussions around this paper.
+                                                                         Rangelands Research Report 2 (Nairobi: ILRI)
+                                                                         (https://cgspace.cgiar.org/handle/10568/106017)
+ORCID iDs                                                          Gilbert M, Nicolas G, Cinardi G, van Boeckel T P, Vanwambeke S
+                                                                         O, Wint R W and Robinson T P 2018 Global distribution
+                                                                         data for cattle, buffaloes, horses, sheep, goats, pigs, chickens
+Birthe K Paul  https://orcid.org/0000-0002-5994-
+                                                                         and ducks in 2010 Sci. Data 5 180227
+5354                                                               Godde C M, Garnett T, Thornton P K, Ash A J and Herrero M
+Klaus Butterbach-Bahl  https://orcid.org/0000-                          2018 Grazing systems expansion and intensification: drivers,
+0001-9499-6598                                                           dynamics and trade-offs Glob. Food Secur. 16 93–105
+                                                                   Goopy J P, Korir D, Pelster D, Ali A I M, Wassi S E, Schlecht E,
+An Notenbaert  https://orcid.org/0000-0002-6266-
+                                                                         Dickhoefer U, Merbold L and Butterbach-Bahl K 2020
+2240                                                                     Severe below maintenance feed intake increases methane
+Polly Ericksen  https://orcid.org/0000-0002-5775-                       yield from enteric fermentation in cattle British J. Nutr.
+7691                                                                     123 1239-1246
+                                                                   Goopy J P, Onyango A A, Dickhoefer U and Butterbach-Bahl K
+                                                                         2018 A new approach for improving emission factors for
+References                                                               enteric methane emissions of cattle in smallholder systems
+                                                                         of East Africa – results for Nyando, Western Kenya Agric.
+Abrol Y P, Adhya T P, Aneja V P, Raghuram N, Pathak H,                   Syst. 161 72–80
+     Kulshrestha U, Sharma C and Singh B (eds) 2017 The Indian     Gordon I J 2018 Review: livestock production increasingly
+     Nitrogen Assessment (Amsterdam: Elsevier) p 568                     inﬂuences wildlife across the globe Animal 12 372–82
+Adesogan A T, Havelaar A H, Mckune S L, Eilittä M and Dahl G E     Gupta S 2016 Brain food: Clever eating Nature 531 S12–13
+     2020 Animal source foods: sustainability problem or           Heathwaite L, Sharpley A and Gburek W 2000 A conceptual
+     malnutrition and sustainability solution? perspective               approach for integrating phosphorus and nitrogen
+     matters Glob. Food Secur. 25 100325                                 management at watershed scales J. Environ. Qual.
+Birnholz C, Bolliger A, Tan Khanh T, Groot J and Paul B 2017             29 158–66
+     Bio-economic evaluation and optimization of livestock         Heinke J, Lannerstad M, Gerten D, Notenbaert A, Havlik P,
+     intensification options in the central highlands of vietnam         Herrero M, Hoff H and Muller C 2020 Water use in global
+     Working Paper No. 433 (Nairobi: International Center for            livestock production – opportunities and constraints for
+     Tropical Agriculture (CIAT)) p 31 (https://cgspace.                 increasing water productivity Water Resour. Res.
+     cgiar.org/handle/10568/79446)                                       (https://doi.org/10.1029/2019WR026995)
+Bleeker A, Hicks W, Dentener F, Galloway J and Erisman J 2014      Herrero M, Grace D, Njuki J, Johnson N, Enahoro D, Silvestri S
+     Nitrogen deposition as a threat to the world’s protected            and Rufino M C 2013a The roles of livestock in developing
+     areas under the convention on biological diversity (CBD)            countries Animal 7 3–18
+     Nitrogen Deposition, Critical Loads and Biodiversity, ed M    Herrero M, Havlik P, Valin H, Notenbaert A, Rufino M C,
+     Sutton, K Mason, L Sheppard, H Sverdrup, R Haeuber and              Thornton P K, Blummel M, Weiss F, Grace D and
+     W Hicks (Berlin: Springer) pp 295–303                               Obersteiner M 2013b Biomass use, production, feed
+
+
+                                                     6
+Environ. Res. Lett. 16 (2021) 011001                                                                                       B K Paul et al
+
+
+
+     efficiencies, and greenhouse gas emissions from                  Paul B, Butterbach-Bahl K, Notenbaert A, Nderi A and Ericksen P
+     global livestock systems Proc. Natl Acad. Sci. USA                     2020 Sustainable livestock development in low and middle
+     110 20888–93                                                           income countries – shedding light on evidence-based
+Herrero M, Wirsenius S, Henderson B, Rigolot C, Thornton P,                 solutions: systematic literature search and expert survey
+     Havlik P, de Boer I J M and Gerber P J 2015 Livestock and              Harvard Dataverse, V1 (https://doi.org/10.7910/DVN/
+     the environment: what have we learned in the past decade?              CDVOJ1)
+     Annu. Rev. Environ. Resour. 40 177–202                           Pelster D, Gisore B, Goopy J, Korir D, Koske J K, Rufino M C and
+Hilborn R, Banobi J, Hall S J, Pucylowski T and Walsworth T E               Butterbach-Bahl K 2016 Methane and nitrous oxide
+     2018 The environmental cost of animal source foods Front.              emissions from cattle excreta on an East African grassland J.
+     Ecol. Environ. 16 329–35                                               Environ. Qual. 5 1531–9
+IPBES 2019 Summary for Policymakers of the Global Assessment          Reid R S et al 2016 Evolution of models to support community
+     Report on Biodiversity and Ecosystem Services of the                   and policy action with science: balancing pastoral
+     Intergovernmental Science-Policy Platform on Biodiversity              livelihoods and wildlife conservation in savannas of East
+     and Ecosystem Services, eds. S Díaz, J Settele, E S Brondizio,         Africa Proc. Natl Acad. Sci. USA 113 4579–84
+     H T Ngo, M Guèze, J Agard, A Arneth, P Balvanera, K A           Russell S, Tyrrell P and Wester D 2018 Seasonal interactions
+     Brauman, S H M Butchart, K M A Chan, L A Garibaldi, K                  of pastoralists and wildlife in relation to pasture in
+     Ichii, J Liu, S M Subramanian, G F Midgley, P Miloslavich, Z           an African savanna ecosystem J. Arid. Environ.
+     Molnár, D Obura, A Pfaff, S Polasky, A Purvis, J Razzaque, B          154 70–81
+     Reyers, R Roy Chowdhury, Y J Shin, I J Visseren-Hamakers,        Shapiro M J, Downs S M, Swartz H J, Parker M, Quelhas D, Kreis
+     K J Willis and C N Zayas (Bonn, Germany: IPBES                         K, Kraemer K, West K P and Fanzo J 2019 A systematic
+     secretariat)                                                           review investigating the relation between animal-source
+Liu Q, Wang J, Bai Z, Ma L and Oenema O 2017 Global animal                  food consumption and stunting in children aged 6-60
+     production and nitrogen and phosphorus flows Soil Res.                 months in low-and middle-income countries Advances in
+     55 451–62                                                              Nutrition 10 827–47
+Marchmont Communications 2019 An analysis of the range,               Steinfeld H, Gerber P, Wassenaar T, Castel V, Rosales M and de
+     frequency and sentiment of coverage of the livestock for               Haas C 2006 Livestock’s Long Shadow. Environmental Issues
+     development sector in selected media sources. April                    and Options (Rome, Italy: LEAD-FAO, Food and Agriculture
+     2017 – april 2019 (Nairobi: International Livestock                    Organization) p 390
+     Research Institute (ILRI)) (https://hdl.handle.net/10568/        Stür W W, Tan Khanh T and Duncan A 2013 Transformation of
+     101591)                                                                smallholder beef cattle production in Vietnam Int. J. Agric.
+Marshall F, Reid R E B, Goldstein S, Storozum M, Wreschnig A,               Sustain. 11 363–81
+     Hu L, Kiura P, Shahack-Gross R and Ambrose S H 2018              Sutton M S, Howard C M, Erisman J W, Billen G, Bleeker A,
+     Ancient herders enriched and restructured African                      Grennfelt P, van Grinsven H and Brizetti B (eds) 2011
+     grasslands Nature 561 387–90                                           European Nitrogen Assessment (ENA) (Cambridge:
+Mcintire J and Grace D 2020 eds The Impact of Livestock Research            Cambridge University Press) p 664
+     at the International Livestock Research Institute (Oxford:       Teenstra E D, Buisonjé F E, Ndambi A and Pelster D 2015 Manure
+     CABI)                                                                  management in the (Sub-)Tropics: training manual for
+Mcsherry M E and Ritchie M E 2013 Effects of grazing on                     extension workers Wageningen UR Livestock Research
+     grassland soil carbon: A global review Glob. Change Biol.              (Livestock Research report 919) 41 (https://library.
+     19 1347–57                                                             wur.nl/WebQuery/wurpubs/493055)
+Mehrabi Z, Gill M, van Wijk M, Herrero M and Ramankutty N             Tomich T P, Brodt S B, Dahlgren R A and Scow K M (eds) 2015
+     2020 Livestock policy for sustainable development Nat. Food            The California Nitrogen Assessment (Berkeley, CA:
+     1 160–5                                                                University of California Press) p 344
+Mekonnen M M and Hoekstra A Y 2010 The green, blue and grey           Willett W et al 2019 Food in the Anthropocene: the EAT-Lancet
+     water footprint of farm animals and animal products Value              Commission on healthy diets from sustainable food systems
+     of Water Research Report Series No.48. Delft (The                      Lancet Commissions 393 447–92 (www.thelancet.com/
+     Netherlands: UNESCO-IHE)                                               pdfs/journals/lancet/PIIS0140-6736(18)31788-4.pdf)
+Mekonnen M M and Hoekstra A Y 2012 A global assessment of             Zhao Z, Qin W, Bai Z and Ma L 2019 Agricultural nitrogen and
+     the water footprint of farm animal products Ecosystems                 phosphorus emissions to water and their mitigation options
+     15 401–15                                                              in the Haihe Basin, China Agric. Water Manage.
+Ndung’u P W, Bebe B O, Ondiek J O, Butterbach-Bahl K, Merbold               212 262–72
+     L and Goopy J P 2019 Improved region-specific emission           Zhu Y, Merbold L, Leitner S, Xia L, Pelster D E, Diaz-Pines E,
+     factors for enteric methane emissions from cattle in                   Abwanda S, Mutuo P M and Butterbach-Bahl K 2020
+     smallholder mixed crop: livestock systems of Nandi County,             Influence of soil properties on N2 O and CO2 emissions
+     Kenya Animal Prod. Sci. 59 1136–46                                     from excreta deposited on tropical pastures in Kenya Soil
+Nganga I N, Robinson L W, Abdu N H, Ontiri E and Senda T S                  Biol. Biochem. 140
+     2019 A comparative analysis of three community-based             Zhu Y, Merbold L, Pelster D, Diaz-Pines E, Wanyama G N and
+     rangeland management cases. Taking successes in land                   Butterbach-Bahl K 2019 Effect of dung quantity and quality
+     restoration to scale project ILRI Project Report (Nairobi:             on greenhouse gas fluxes from tropical pastures in Kenya
+     ILRI) (https://hdl.handle.net/10568/107024)                            Glob. Biogeochem. Cycles 32 1589–604
+Notenbaert A, Davies J, De Leeuw J, Said M, Herrero M, Manzano        Zonderland-Thomassen M A, Lieffering M and Ledgard S F 2014
+     P, Waithaka M, Aboud A and Omondi S 2012 Policies in                   Water footprint of beef cattle and sheep produced in New
+     support of pastoralism and biodiversity in the                         Zealand: water scarcity and eutrophication impacts J.
+     heterogeneous drylands of East Africa Pastoralism 2 14                 Cleaner Prod. 73 253–62
+
+
+
+
+                                                       7

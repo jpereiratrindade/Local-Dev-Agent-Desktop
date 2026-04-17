@@ -1,0 +1,9 @@
+{
+  "chunk_count": 34,
+  "extractor": "pdftotext",
+  "kind": "pdf",
+  "path": "/run/media/jpereiratrindade/labeco10T/labeco02/Revisao/Morandi, Marimon-Junior et al. 2015.pdf",
+  "sha256": "095cfb68a25757fbe99dc7e41a5d7c380bc3ea1d867417699691c2973bcd27fd",
+  "text_size": 32424,
+  "used_ocr": false
+}

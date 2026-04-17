@@ -1,0 +1,1297 @@
+                                                                                                                                                                                                  ANNUAL
+                                                                                                                                                                                                  REVIEWS   Further
+                                                                                                                                                                                                 Quick links to online content
+                                                                                                                   Copyright 1973. All rights reserved
+Downloaded from www.annualreviews.org. Fundação Getulio Vargas (ar-272924) IP: 200.132.3.3 On: Tue, 09 Sept 2025
+
+
+
+
+                                                                                                                   RESILIENCE AND                               S1i\BILI1-'Y                          .:. 4050
+
+                                                                                                                   OF ECOLOGICAL SYS1-'EMS.
+
+                                                                                                                   C S. Hoiling
+                                                                                                                   Institute of Resource Ecology, University of British Columbia, Vancouver, Canada
+
+
+
+                                                                                                                   INTRODUCTION
+
+                                                                                                                   Individuals die, populations disappear, and species become extinct. That is one view
+                                                                                                                   of the world. But another view of the world concentrates not so much on presence
+                                                                                                                   or absence as upon the numbers of organisms and the degree of constancy of their
+                                                                                                                   numbers. These are two very different ways of viewing the behavior of systems and
+                                                                                                                   the usefulness of the view depends very much on the properties of the system
+                                                 10:33:53
+
+
+
+
+                                                                                                                   concerned. If we are examining a particular device designed by the engineer to
+                                                                                                                   perform specific tasks under a rather narrow range of predictable external condi­
+                                                                                                                   tions, we are likely to be more concerned with consistent nonvariable performance
+                                                                                                                   in which slight departures from the performance goal are immddiately counteracted.
+                                                                                                                   A quantitative view of the behavior of the system is, therefore, essential. With
+                                                                                                                   attention focused upon achieving constancy, the critical events seem to be the
+                                                                                                                   amplitude and frequency of oscillations. But if we are dealing with a system pro­
+                                                                                                                   foundly affected by changes external to it, and continually confronted by the unex­
+                                                                                                                   pected, the constancy of its behavior becomes less important than the persistence
+                                                                                                                   of the relationships. Attention shifts, therefore, to the qualitative and to questions
+                                                                                                                   of existence or not.
+                                                                                                                     Our traditions of analysis in theoretical and empirical ecology have been largely
+                                                                                                                   inherited from developments in classical physics and its applied variants. Inevitably,
+                                                                                                                   there has been a tendency to emphasize the quantitative rather than the qualitative,
+                                                                                                                   for it is important in this tradition to know not just that a quantity is larger than
+                                                                                                                   another quantity, but precisely how much larger. It is similarly important, if a
+                                                                                                                   quantity fluctuates, to know its amplitude and period of fluctuation. But this orienta­
+                                                                                                                   tion may simply reflect an analytic approach developed in one area because it was
+                                                                                                                   useful and then transferred to another where it may not be.
+                                                                                                                      Our traditional view of natural systems, therefore, might well be less a meaningful
+                                                                                                                   reality than a perceptual convenience. There can in some years be more owls and
+                                                                                                                   fewer mice and in others, the reverse. Fish populations wax and wane as a natural
+                                                                                                                   condition, and insect populations can range over extremes that only logarithmic
+                                                                                                               2     HOLLING
+
+                                                                                                               transformations can easily illustrate. Moreovc:r, over distinct areas, during long or
+                                                                                                               short periods of time, species can completely disappear and then reappear. Different
+                                                                                                               and useful insight might be obtained, therefore, by viewing the behavior of ecological
+                                                                                                               systems in terms of the probability of extinction of their elements, and by shifting
+                                                                                                               emphasis from the equilibrium states to the '�onditions for persistence.
+Downloaded from www.annualreviews.org. Fundação Getulio Vargas (ar-272924) IP: 200.132.3.3 On: Tue, 09 Sept
+
+
+
+
+                                                                                                                 An equilibrium centered view is essentially static and provides little insight into
+                                                                                                              the transient behavior of systems that are not near the equilibrium. Natural, undis­
+                                                                                                              turbed systems are likely to be continually in a transient state; they will be equally
+                                                                                                              so under the influence of man. As man's numbers and economic demands increase,
+                                                                                                              his use of resources shifts equilibrium states and moves populations away from
+                                                                                                              equilibria. The present concerns for pollution and endangered species are specific
+                                                                                                              signals that the well-being of the world is not 21dequately described by concentrating
+                                                                                                              on equilibria and conditions near them. Moreover, strategies based upon these two
+                                                                                                              different views of the world might well be antagonistic. It is at least conceivable that
+                                                                                                              the effective and responsible effort to provide a maximum sustained yield from a fish
+                                                                                                              population or a nonfiuctuating supply of water from a watershed (both equilibrium­
+                                                                                                              centered views) might paradoxically increase the chance for extinctions.
+                                                                                                                 The purpose of this review is to explore both ecological theory and the behavior
+                                                                                                              of natural systems to see if different perspectives of their behavior can yield different
+                                                                                                              insights useful for both theory and practice.
+                                             2025 10:33:53
+
+
+
+
+                                                                                                              Some Theory
+
+                                                                                                              Let us first consider the behavior of two interacting populations: a predator and its
+                                                                                                              prey, a herbivore and its resource, or two competitors. If the interrelations are at
+                                                                                                              all regulated we might expect a disturbance of one or both populations in a constant
+                                                                                                               environment to be followed by fluctuations that gradually decrease in amplitude.
+                                                                                                              They might be represented as in Figure 1, wh(:re the fluctuations of each population
+                                                                                                              over time are shown as the sides of a box. In this example the two populations in
+                                                                                                              some sense are regUlating each other, but the lags in the response generate a series
+                                                                                                              of oscillations whose amplitude gradually reduces to a constant and sustained value
+                                                                                                              for each population. But if we are also concc:rned with persistence we would like
+                                                                                                              to know not just how the populations behave! from one particular pair of starting
+                                                                                                              values, but from all possible pairs since there might well be combinations of starting
+                                                                                                              populations for which ultimately the fate of one or other of the populations is
+                                                                                                              extinction. It becomes very difficult on time plots to show the full variety of re­
+                                                                                                              sponses possible, and it proves convenient to plot a trajectory in a phase plane. This
+                                                                                                              is shown by the end of the box in Figure 1 where the two axes represent the density
+                                                                                                              of the two populations.
+                                                                                                                 The trajectory shown on that plane represl:nts the sequential change of the two
+                                                                                                              populations at constant time intervals. Each point represents the unique density of
+                                                                                                              each population at a particular point in time and the arrows indicate the direction
+                                                                                                              of change over time. If oscillations are damped, as in the case shown, then the
+                                                                                                              trajectory is represented as a closed spiral that eventually reaches a stable equilib­
+                                                                                                              rium.
+                                                                                                                                         RESILIENCE AND STABILITY OF ECOLOGICAL SYSTEMS                   3
+
+
+                                                                                                                                          \   -\- i- _\- -'>.. -'-                  .i_
+Downloaded from www.annualreviews.org. Fundação Getulio Vargas (ar-272924) IP: 200.132.3.3 On: Tue, 09 Sept
+
+
+
+
+                                                                                                                                                                                              I       I
+                                                                                                                                                                                          I       -,
+                                                                                                                                                                                      I           /
+
+
+
+
+                                                                                                              Figure 1   Derivation    of a   phase   plane   showing   the changes in numbers of two
+                                             2025 10:33:53
+
+
+
+
+                                                                                                              populations over time.
+
+
+                                                                                                                 We can imagine a number of different forms for trajectories in the phase plane
+                                                                                                              (Figure 2). Figure 2a shows an open spiral which would represent situations where
+                                                                                                              fluctuations gradually increase in amplitude. The small arrows are added to suggest
+                                                                                                              that this condition holds no matter what combination of populations initiates the
+                                                                                                              trajectory. In Figure 2b the trajectories are closed and given any starting point
+                                                                                                              eventually return to that point. It is particularly significant that each starting point
+                                                                                                              generates a unique cycle and there is no tendency for points to converge to a single
+                                                                                                              cycle or point. This can be termed "neutral stability" and it is the kind of stability
+                                                                                                              achieved by an imaginary frictionless pendulum.
+                                                                                                                 Figure 2c represents a stable system similar to that of Figure I, in which all
+                                                                                                              possible trajectories in the phase plane spiral into an equilibrium. These three
+                                                                                                              examples are relatively simple and, however relevant for classical stability analysis,
+                                                                                                              may well be theoretical curiosities in ecology. Figures 2d-2f add some complexities.
+                                                                                                              In a sense Figure 2d represents a combination of a and c, with a region in the center
+                                                                                                              of the phase plane within which all possible trajectories spiral inwards to equilib­
+                                                                                                              rium. Those outside this region spiral outwards and lead eventually to extinction
+                                                                                                              of one or the other populations. This is an example of local stability in contrast to
+                                                                                                              the global stability of Figme 2c. I designate the region within which stability occurs
+                                                                                                              as the domain of attraction, and the line that contains this domain as the boundary
+                                                                                                              of the attraction domain.
+                                                                                                                 The trajectories in Figure 2e behave in just the opposite way. There is an internal
+                                                                                                              region within which the trajectories spiral out to a stable limit cycle and beyond
+                                                                                                               4           HOLLING
+Downloaded from www.annualreviews.org. Fundação Getulio Vargas (ar-272924) IP: 200.132.3.3 On: Tue, 09 Sept
+
+
+
+
+                                                                                                                   z
+                                                                                                                   o
+
+                                                                                                                   �
+                                                                                                                   ....J
+                                                                                                                   ::l
+                                                                                                                   Q..
+                                                                                                                   o
+                                                                                                                   Q..
+                                                                                                                   >-
+
+
+
+
+                                                                                                                                                         X POPULATION
+
+                                                                                                              Figure 2       Examples of possible behaviors of systems in a phase plane; (a) unstable
+                                                                                                              equilibrium, (b) neutrally stable cycles, (c) stable equilibrium, (d) domain of attraction,
+                                                                                                              (e) stable limit cycle, (f) stable node.
+                                             2025 10:33:53
+
+
+
+
+                                                                                                               which they spiral inwards to it. Finally, a stable node is shown in Figure 2fin which
+                                                                                                              there are no oscillations and the trajectories approach the node monotonically.
+                                                                                                              These six figures could be combined in an almost infinite variety of ways to produce
+                                                                                                              several domains of attraction within which there could be a stable equilibrium, a
+                                                                                                              stable limit cycle, a stable node, or even neutrally stable orbits. Although I have
+                                                                                                               presumed a constant world throughout, in the presence of random fluctuations of
+                                                                                                              parameters or of driving variables (Walters 39), any one trajectory could wander
+                                                                                                              with only its general form approaching the shape of the trajectory shown. These
+                                                                                                              added complications are explored later when we consider real systems. For the
+                                                                                                              moment, however, let us review theoretical treatments in the light of the possibilities
+                                                                                                              suggested in Figure 2.
+                                                                                                                 The present status of ecological stability theory is very well summarized in a
+                                                                                                              number of analyses of classical models, particularly May's (23-25) insightful analy­
+                                                                                                              ses of the Lotka-Volterra model and its exp31nsions, the graphical stability analyses
+                                                                                                              of Rosenzweig (33, 34), and the methodological review of Lewontin (20).
+                                                                                                                 May (24) reviews the large class of couplc:d differential equations expressing the
+                                                                                                              rate of change of two populations as continuous functions of both. The behavior of
+                                                                                                              these models results from the interplay between (a) stabilizing negative feedback or
+                                                                                                              density-dependent responses to resources and predation, and (b) the destabilizing
+                                                                                                              effects produced by the way individual predators attack and predator numbers
+                                                                                                              respond to prey density [termed the functional and numerical responses, as in
+                                                                                                              Holling ( 1 1 )]. Various forms have been given to these terms; the familiar Lotka­
+                                                                                                              Volterra model includes the simplest and least realistic, in which death of prey is
+                                                                                                              caused only by predation, predation is a lim�ar function of the product of prey and
+                                                                                                                                       RESILIENCE AND STABILITY OF ECOLOGICAL SYSTEMS                5
+
+                                                                                                              predator populations, and growth of the predator population is linearly proportional
+                                                                                                                                                                           '
+                                                                                                              to the same product. This model generates neutral stability as in Figure 2b, but the
+                                                                                                              assumptions are very unrealistic since very few components are included, there are
+                                                                                                              no explicit lags or spatial elements, and thresholds, limits, and nonlinearities are
+                                                                                                              missing.
+Downloaded from www.annualreviews.org. Fundação Getulio Vargas (ar-272924) IP: 200.132.3.3 On: Tue, 09 Sept
+
+
+
+
+                                                                                                                 These features have all been shown to be essential properties of the predation
+                                                                                                              process (Holling 1 2, 1 3) and the effect of adding some of them has been analyzed
+                                                                                                              by May (24). He points out that traditional ways of analyzing the stability properties
+                                                                                                              of models using analytical or graphical means (Rosenzweig & MacArthur 33,
+                                                                                                              Rosenzweig 34, 35) concentrate about the immediate neighborhood of the equilib­
+                                                                                                              rium. By doing this, linear techniques of analysis can be applied that are analytically
+                                                                                                              tractable. Such analyses show that with certain defined sets of parameters stable
+                                                                                                              equilibrium points or nodes exist (such as Figure 2c), while for other sets they do
+                                                                                                              not, and in such cases the system is, by default, presumed to be unstable, as in Figure
+                                                                                                              2a. May (24), however, invokes a little-used theorem of Kolmogorov (Minorksy 26)
+                                                                                                              to show that all these models have either a stable equilibrium point or a stable limit
+                                                                                                              cycle (as in Figure 2e). Hence he concludes that the conditions presumed by linear
+                                                                                                              analysis are unstable, and in fact must lead to stable limit cycles. In every instance,
+                                                                                                              however, the models are globally rather than locally stable, limiting their behavior
+                                                                                                              to that shown in either Figures 2c or 2e.
+                                                                                                                 There is another tradition of models that recognizes the basically discontinuous
+                                                                                                              features of ecological systems and incorporates explicit lags. Nicholson and Bailey
+                                             2025 10:33:53
+
+
+
+
+                                                                                                              initiated this tradition when they developed a model using the output of attacks and
+                                                                                                              survivals within one generation as the input for the next (29). The introduction of
+                                                                                                              this explicit lag generates oscillations that increase in amplitude until one or other
+                                                                                                              of the species becomes extinct (Figure 2a). Their assumptions are as unrealistically
+                                                                                                              simple as Lotka's and Volterra's; the instability results because the number of
+                                                                                                              attacking predators at any moment is so much a consequence of events in the
+                                                                                                              previous generation that there are "too many" when prey are declining and "too
+                                                                                                              few" when prey are increasing. If a lag is introduced into the Lotka-Volterra
+                                                                                                              formulation (Wangersky & Cunningham 40) the same instability results.
+                                                                                                                 The sense one gains, then, of the behavior of the traditional models is that they
+                                                                                                              are either globally unstable or globally stable, that neutral stability is very unlikely,
+                                                                                                              and that when the models are stable a limit cycle is a likely consequence.
+                                                                                                                 Many, but not all, of the simplifying assumptions have been relaxed in simulation
+                                                                                                              models, and there is one example (Holling & Ewing 1 4) that joins the two traditions
+                                                                                                              initiated by Lotka-Volterra and Nicholson and Bailey and, further, includes more
+                                                                                                              realism in the operation of the stabilizing and destabilizing forces. These modifica­
+                                                                                                              tions are described in more detail later; the important features accounting for the
+                                                                                                              difference in behavior result from the introduction of explicit lags, a functional
+                                                                                                              r�sponse of predators that rises monotonically to a plateau, a nonrandom (or conta­
+                                                                                                              gious) attack by predators, and a minimum prey density below which reproduction
+                                                                                                              does not occur. With these changes a very different pattern emerges that conforms
+                                                                                                              most closely to Figure 2d. That is, there exists a domain of attraction within which
+                                                                                                              there is a stable equilibrium; beyond that domain the prey population becomes
+                                                                                                               6     HOLLING
+
+                                                                                                               extinct. Unlike the Nicholson and Bailey model, the stability becomes possible,
+                                                                                                               although in a limited region, because of contagious attack. [Contagious attack
+                                                                                                               implies that for one reason or another some prey have a greater probability of being
+                                                                                                               attacked than others, a condition that is common in nature (Griffiths & Holling 9).]
+                                                                                                               The influence of contagious attack becomes significant whenever predators become
+Downloaded from www.annualreviews.org. Fundação Getulio Vargas (ar-272924) IP: 200.132.3.3 On: Tue, 09 Sept
+
+
+
+
+                                                                                                               abundant in relation to the prey, for then the susceptible prey receive the burden
+                                                                                                               of attention, allowing more prey to escape: than would be expected by random
+                                                                                                              contact. This "inefficiency" of the predator allows the system to counteract the
+                                                                                                              destabilizing effects of the lag.
+                                                                                                                 If this were the only difference the system would be globally stable, much as
+                                                                                                              Figure 2c. The inability of the prey to reproduce at low densities, however, allows
+                                                                                                              some of the trajectories to cut this reproduction threshold, and the prey become
+                                                                                                              extinct. This introduces a lower prey density boundary to the attraction domain and,
+                                                                                                              at the same time, a higher prey density boundary above which the amplitudes of the
+                                                                                                              oscillations inevitably carry the population below the reproduction threshold. The
+                                                                                                              other modifications in the model, some of which have been touched on above, alter
+                                                                                                              this picture in degree only. The essential point is that a more realistic representation
+                                                                                                              of the behavior of interacting populations indicates the existence of at least one
+                                                                                                              domain of attraction. It is quite possible, within this domain, to imagine stable
+                                                                                                              equilibrium points, stable nodes, or stable limit cycles. Whatever the detailed config­
+                                                                                                              uration, the existence of discrete domains of attraction immediately suggests impor­
+                                             2025 10:33:53
+
+
+
+
+                                                                                                              tant consequences for the persistence of the system and the probability of its
+                                                                                                              extinction.
+                                                                                                                 Such models, however complex, are stili so simple that they should not be viewed
+                                                                                                              in a definitive and quantitative way. They are more powerfully used as a starting
+                                                                                                              point to organize and guide understanding. It becomes valuable, therefore, to ask
+                                                                                                              what the models leave out and whether such omissions make isolated domains of
+                                                                                                              attraction more or less likely.
+                                                                                                                 Theoretical models generally have not done well in simultaneously incorporating
+                                                                                                              realistic behavior of the processes involved, randomness, spatial heterogeneity, and
+                                                                                                              an adequate number of dimensions or state valriables. This situation is changing very
+                                                                                                              rapidly as theory and empirical studies develop a closer technical partnership. In
+                                                                                                              what follows I refer to real world examples to determine how the four elements that
+                                                                                                              tend to be left out might further affect the behavior of ecological systems.
+
+                                                                                                              SOME REAL WORLD EXAMPLES
+
+                                                                                                              Self-Contained Ecosystems
+                                                                                                              In the broadest sense, the closest approximation we could make of a real world
+                                                                                                              example that did not grossly depart from the assumptions of the theoretical models
+                                                                                                              would be a self-contained system that was fairly homogenous and in which climatic
+                                                                                                              fluctuations were reasonably small. If such systems could be discovered they would
+                                                                                                              reveal how the more realistic interaction of real world processes could modify the
+                                                                                                              patterns of systems behavior described above. Very close approximations to any of
+                                                                                                              these conditions are not likely to be found, but if any exist, they are apt to be fresh
+                                                                                                                                      RESILIENCE AND STABILITY OF ECOLOGICAL SYSTEMS               7
+
+                                                                                                               water aquatic ones. Fresh water lakes are reasonably contained systems, at least
+                                                                                                               within their watersheds; the fish show considerable mobility throughout, and the
+                                                                                                               properties df the water buffer the more extreme effects of climate. Moreover, there
+                                                                                                              have been enough documented man-made disturbances to liken them to perturbed
+                                                                                                               systems in which either the parameter values or the levels of the constituent popula­
+Downloaded from www.annualreviews.org. Fundação Getulio Vargas (ar-272924) IP: 200.132.3.3 On: Tue, 09 Sept
+
+
+
+
+                                                                                                               tions are changed. In a crude way, then, the lake studies can be likened to a partial
+                                                                                                              exploration of a phase space of the sorts shown in Figure 2. Two major classes of
+                                                                                                              disturbances have occurred: first, the impact of nutrient enrichment from man's
+                                                                                                              domestic and industrial wastes, and second, changes in fish populations by harvest­
+                                                                                                               ing.
+                                                                                                                  The paleolimnologists have been remarkably successful in tracing the impact of
+                                                                                                               man's activities on lake systems over surprisingly long periods. For example, Hutch­
+                                                                                                              inson ( 1 7) has reconstructed the series of events occurring in a small crater lake in
+                                                                                                               Italy from the last glacial period in the Alps (2000 to 1 800 BC) to the present.
+                                                                                                               Between the beginning of the record and Roman times the lake had established a
+                                                                                                              trophic equilibrium with a low level of productivity which persisted in spite of
+                                                                                                              dramatic changes in surroundings from Artemesia steppe, through grassland, to fir
+                                                                                                              and mixed oak forest. Then suddenly the whole aquatic system altered. This altera­
+                                                                                                              tion towards eutrophication seems to have been initiated by the construction of the
+                                                                                                              Via Cassia about 1 7 1 BC, which caused a subtle change in the hydrographic regime.
+                                                                                                              The whole sequence of environmental changes can be viewed as changes in parame­
+                                                                                                              ters or driving variables, and the long persistence in the face of these major changes
+                                             2025 10:33:53
+
+
+
+
+                                                                                                              suggests that natural systems have a high capacity to absorb change without
+                                                                                                              dramatically altering. But this resilient character has its limits, and when the limits
+                                                                                                              are passed, as by the construction of the Roman highway, the system rapidly
+                                                                                                              changes to another condition.
+                                                                                                                  More recently the activities of man have accelerated and limnologists have
+                                                                                                              recorded some of the responses to these changes. The most dramatic change consists
+                                                                                                              of blooms of algae in surface waters, an extraordinary growth triggered, in most
+                                                                                                              instances, by nutrient additions from agricultural and domestic sources.
+                                                                                                                  While such instances of nutrient addition provide some of the few examples
+                                                                                                              available of perturbation effects in nature, there are no controls and the perturba­
+                                                                                                              tions are exceedingly difficult to document. Nevertheless, the qualitative pattern
+                                                                                                              seems consistent, particularly in those lakes (Edmundson 4, Hasler 1 0) to which
+                                                                                                              sewage has been added for a time and then diverted elsewhere. This pulse of
+                                                                                                              disturbance characteristically triggers periodic algal blooms, low oxygen conditions,
+                                                                                                              the sudden disappearance of some plankton species, and appearance of others. As
+                                                                                                              only one example, the nutrient changes in Lake Michigan (Beeton 2) have been
+                                                                                                              accompanied by the r�placement of the cladoceran Bosmina coregoni by B. Lon­
+                                                                                                              girostris, Diaptomus oregonensis has become an important copepod species, and a
+                                                                                                              brackish water copepod Eurytemora aDinis is a new addition to the zooplankton.
+                                                                                                                  In Lake Erie, which has been particularly affected because of its shallowness and
+                                                                                                              intensity of use, the mayfly Hexagenia, which originally dominated the benthic
+                                                                                                              community, has been almost totally replaced by oligochetes. There have been
+                                                                                                              blooms of the diatom Melosira binderana, which had never been reported from the
+                                                                                                                8     HOLLING
+
+
+                                                                                                                  United States until 1961 but now comprises as much as 99% of the total phytoplank­
+                                                                                                                  ton around certain islands. In those cases where sewage has been subsequently
+                                                                                                                  diverted there is a gradual return to less extreme conditions, the slowness of the
+                                                                                                                  return related to the accumulation of nutrients in sediments.
+                                                                                                                    The overall pattern emerging from these examples is the sudden appearance or
+Downloaded from www.annualreviews.org. Fundação Getulio Vargas (ar-272924) IP: 200.132.3.3 On: Tue, 09 Sept
+
+
+
+
+                                                                                                                 disappearance of populations, a wide amplitude of fluctuations, and the establish­
+                                                                                                                 ment of new domains of attraction.
+                                                                                                                    The history of the Great Lakes provides not only some particularly good informa­
+                                                                                                                 tion on responses to man-made enrichment, but also on responses offish populations
+                                                                                                                 to fishing pressure. The eutrophication experience touched on above can be viewed
+                                                                                                                 as an example of systems changes in driving variables and parameters, whereas the
+                                                                                                                 fishing example is more an experiment in changing state variables. The fisheries of
+                                                                                                                 the Great Lakes have always selectively conc'�ntrated on abundant species that are
+                                                                                                                 in high demand. Prior to 1930, before eutrophication complicated the story, the lake
+                                                                                                                 sturgeon in all the Great Lakes, the lake herring in Lake Erie, and the lake whitefish
+                                                                                                                 in Lake Huron were intensively fished (Smith 37). In each case the pattern was
+                                                                                                                 similar: a period of intense exploitation during which there was a prolonged high
+                                                                                                              . level harvest, followed by a sudden and pr,ecipitous drop in populations. Most
+                                                                                                                 significantly, even though fishing pressure was then relaxed, none of these popula­
+                                                                                                                tions showed any sign of returning to their pn:vious levels of abundance. This is not
+                                                                                                                unexpected for sturgeon because of their slow growth and late maturity, but it is
+                                             2025 10:33:53
+
+
+
+
+                                                                                                                unexpected for herring and whitefish. The maintenance of these low populations in
+                                                                                                                recent times might be attributed to the increasingly unfavorable chemical or biologi­
+                                                                                                                cal environment, but in the case of the herring, at least, the declines took place in
+                                                                                                                the early 1920s before the major deterioratiolll in environment occurred. It is as if
+                                                                                                                the population had been shifted by fishing pressure from a domain with a high
+                                                                                                                eqUilibrium to one with a lower one. This :is clearly not a condition of neutral
+                                                                                                                stability as suggested in Figure 2b since once the populations were lowered to a
+                                                                                                                certain point the decline continued even though fishing pressure was relaxed. It can
+                                                                                                                be !>etter interpreted as a variant of Figure 2d where populations have been moved
+                                                                                                                from one domain of attraction to another.
+                                                                                                                    Since 1940 there has been a series of similar catastrophic changes in the Great
+                                                                                                                Lakes that has led to major changes in the fish stocks. Beeton (2) provides graphs
+                                                                                                                summarizing the catch statistics in the lakes for many species since 1900. Lake trout,
+                                                                                                                whitefish, herring, walleye, sauger, and blue pike have experienced precipitous
+                                                                                                                declines of populations to very low values in 21ll of the lakes. The changes generally
+                                                                                                                conform to the same pattern. After sustained but fluctuating levels of harvest the
+                                                                                                                catch dropped dramatically in a span of a very few years, covering a range of from
+                                                                                                                one to four orders of magnitude. In a number of examples particularly high catches
+                                                                                                                were obtained just before the drop. Although catch statistics inevitably exaggerate
+                                                                                                                the step-like character of the pattern, populaltions must have generally behaved in
+                                                                                                                the way described.
+                                                                                                                    The explanations for these changes have been explored in part, and involve
+                                                                                                                various combinations of intense fishing pressure, changes in the physical and chemi­
+                                                                                                                cal environment, and the appearance of a foreign predator (the sea lamprey) and
+                                                                                                                                       RESILIENCE AND STABILITY OF ECOLOGICAL SYSTEMS                  9
+
+                                                                                                               foreign competitors (the alewife and carp). For our purpose the specific cause is of
+                                                                                                               less interest than the inferences that can be drawn concerning the resilience of these
+                                                                                                               systems and their stability behavior. The events in Lake Michigan provide a typical
+                                                                                                               example of the pattern in other lakes (Smith 37). The catch of lake trout was high,
+                                                                                                               but fluctuated at around six million pounds annually from 1898 to 1940. For four
+Downloaded from www.annualreviews.org. Fundação Getulio Vargas (ar-272924) IP: 200.132.3.3 On: Tue, 09 Sept
+
+
+
+
+                                                                                                               years catches increased noticeably and then suddenly collapsed to near extinction
+                                                                                                               by the 1950s due to a complete failure of natural reproduction. Lake herring and
+                                                                                                               whitefish followed a similar pattern (Beeton 2: Figure 7). Smith (37) argues that the
+                                                                                                               trigger for the lake trout collapse was the appearance of the sea lamprey that had
+                                                                                                              spread through the Great Lakes after the construction of the Weiland Canal. Al­
+                                                                                                               though lamprey populations were extremely small at the time of the collapse, Smith
+                                                                                                               argues that even a small mortality, added to a commercial harvest that was probably
+                                                                                                              at the maximum for sustained yield, was sufficient to cause the collapse. Moreover,
+                                                                                                               Ricker (31) has shown that fishing pressure shifts the age structure of fish popula­
+                                                                                                              tions towards younger ages. He demonstrates that a point can come where only
+                                                                                                              slight increases in mortality can trigger a collapse of the kind noted for lake trout.
+                                                                                                               In addition, the lake trout was coupled in a network of competitive and predatory
+                                                                                                              interconnections with other species, and pressures on these might have contributed
+                                                                                                              as well.
+                                                                                                                  Whatever the specific causes, it is clear that the precondition for the collapse was
+                                                                                                              set by the harvesting offish, even though during a long period there were no obvious
+                                             2025 10:33:53
+
+
+
+
+                                                                                                              signs of problems. The fishing activity, however, progressively reduced the resilience
+                                                                                                              of the system so that when the inevitable unexpected event occurred, the populations
+                                                                                                              collapsed. If it had not been the lamprey, it would have been something else: a
+                                                                                                              change in climate as part of the normal pattern of fluctuation, a change in the
+                                                                                                              chemical or physical environment, or a change in competitors or predators. These
+                                                                                                              examples again suggest distinct domains of attraction in which the populations
+                                                                                                              forced close to the boundary of the domain can then flip over it.
+                                                                                                                  The above examples are not isolated ones. In 1939 an experimental fishery was
+                                                                                                              started in Lake Windermere to improve stocks of salmonids by reducing the abun­
+                                                                                                              dance of perch (a competitor) and pike (a predator). Perch populations were particu­
+                                                                                                              larly affected by trapping and the populations fell drastically in the first three years.
+                                                                                                              Most significantly, although no perch have been removed from the North Basin
+                                                                                                              since 1947, populations have still not shown any tendency to return to their previous
+                                                                                                              level (Le Cren et al 19).
+                                                                                                                  The same patterns have even been suggested for terrestrial systems. Many of the
+                                                                                                              arid cattle grazing lands of the western United States have gradually become in­
+                                                                                                              vaded and dominated by shrubs and trees like mesquite and cholla. In some in­
+                                                                                                              stances grazing and the reduced incidence of fire through fire prevention programs
+                                                                                                              allowed invasion and establishment of shrubs and trees at the expense of grass.
+                                                                                                              Nevertheless, Glendening (8) has demonstrated, from data collected in a 17-year
+                                                                                                              experiment in which intensity of grazing was manipulated, that once the trees have
+                                                                                                              gained sufficient size and density to completely utilize or materially reduce the
+                                                                                                              moisture supply, elimination of grazing will not result in the grassland reestablishing
+                                                                                                              itself. In short, there is a level of the state variable "trees" that, once achieved, moves
+                                                                                                               10         HOLLING
+
+
+                                                                                                               the system from one domain of attraction to another. Return to the original domain
+                                                                                                               can only be made by an explicit reduction of the trees and shrubs.
+                                                                                                                  These examples point to one or more distinct domains of attraction in which the
+                                                                                                              important point is not so much how stable they are within the domain, but how
+                                                                                                              likely it is for the system to move from one domain into another and so persist in
+Downloaded from www.annualreviews.org. Fundação Getulio Vargas (ar-272924) IP: 200.132.3.3 On: Tue, 09 Sept
+
+
+
+
+                                                                                                              a changed configuration.
+                                                                                                                 This sampling of examples is inevitably biased. There are few cases well docu­
+                                                                                                              mented over a long period of time, and certainly some systems that have been greatly
+                                                                                                              disturbed have fully recovered their original state once the disturbance was re­
+                                                                                                              moved. But the recovery in most instances is in open systems in which reinvasion
+                                                                                                              is the key ingredient. These cases are discussed below in connection with the effects
+                                                                                                              of spatial heterogeneity. For the moment I conclude that distinct domains of attrac­
+                                                                                                              tion are not uncommon within closed syst(:ms. If such is the case, then further
+                                                                                                              confirmation should be found from empirical evidence of the way processes which
+                                                                                                              link organisms operate, for it is these procefses that are the cause of the behavior
+                                                                                                              observed.
+
+                                                                                                              Process Analysis
+                                                                                                              One way to represent the combined effects of processes like fecundity, predation,
+                                                                                                              and competition is by using Ricker's (30) reproduction curves. These simply repre­
+                                                                                                              sent the population in one generation as a function of the population in the previous
+                                             2025 10:33:53
+
+
+
+
+                                                                                                              generation, and examples are shown in Figures 3a, c, and e. In the simplest form,
+                                                                                                              and the one most used in practical fisheries management (Figure 3a), the reproduc­
+                                                                                                              tion curve is dome-shaped. When it crosses a line with slope 1 (the straight line in
+                                                                                                              the figures) an equilibrium condition is possible, for at such cross-overs the popula-
+
+                                                                                                                                                POPULATION IN GENERATION t
+
+                                                                                                                    +
+                                                                                                                    ...
+
+
+                                                                                                                    z
+                                                                                                                    ..,
+                                                                                                                    <!l
+                                                                                                                    Z
+
+                                                                                                                    a:
+                                                                                                                    o
+                                                                                                                    a..
+
+
+
+                                                                                                                                       EQ             EQ     E.S    EQ           EX EQ   ES   EQ
+
+
+
+
+                                                                                                                    �
+                                                                                                                    .
+
+
+
+
+                                                                                                                           mortality
+
+
+
+                                                                                                                                                   POPULATION DENSITY
+
+                                                                                                              Figure 3     Examples of various reproduction ,;urves (a, c, and e) and their derivation
+                                                                                                              from the contributions of fecundity and mortality (b, d, and f).
+                                                                                                                                      RESILIENCE AND STABILITY OF ECOLOGICAL SYSTEMS                II
+
+                                                                                                                tion in one generation will produce the same number in the next. It is extremely
+                                                                                                                difficult to detect the precise form of such curves in nature, however; variability is
+                                                                                                                high, typically data are only available for parts of any one curve, and the treatment
+                                                                                                                really only applies to situations where there are no lags. It is possible to deduce
+                                                                                                                various forms of reproduction curves, however, by disaggregating the contributions
+Downloaded from www.annualreviews.org. Fundação Getulio Vargas (ar-272924) IP: 200.132.3.3 On: Tue, 09 Sept
+
+
+
+
+                                                                                                                offecundity and mortality. The three lower graphs in Figure 3b, 3d, and 3f represent
+                                                                                                                this disaggregation of their counterpart reproduction curves. The simplest types of
+                                                                                                                reproduction curve (Figure 3a) can arise from a mortality that regularly increases
+                                                                                                                with density and either a constant fecundity or a declining one. With fecundity
+                                                                                                                expressed as the percentage mortality necessary to just balance reproduction, the
+                                                                                                                cross-over point of the curves represents the equilibrium condition. But we know
+                                                                                                                that the effects of density on fecundity and mortality can be very much more
+                                                                                                                complicated.
+                                                                                                                   Mortality from predation, for example, has been shown to take a number of
+                                                                                                                classic forms (Holling 1 1 , 1 3). The individual attack by predators as a function of
+                                                                                                                prey density (the functional response to prey density) can increase with a linear rise
+                                                                                                                to a plateau (type I), a concave or negatively accelerated rise to a plateau (type 2),
+                                                                                                                or an S-shaped rise to a plateau (type 3). The resulting contribution to mortality
+                                                                                                                from these responses can therefore show ranges of prey density in which there is
+                                                                                                                direct density dependence (negative feedback from the positively accelerated por­
+                                                                                                                tions of the type 3 response), density independence (the straight line rise of type 1),
+                                             2025 10:33:53
+
+
+
+
+                                                                                                                and inverse dependence (the positive feedback from the negatively accelerated and
+                                                                                                                plateau portions of the curves). There are, in addition, various numerical responses
+                                                                                                                generated by changes in ihe number of predators as the density of their prey
+                                                                                                                increases. Even for those predators whose populations respond by increasing, there
+                                                                                                                often will be a limit to the increase set by other conditions in the environment. When
+                                                                                                              . populations are increasing they tend to augment the negative feedback features
+                                                                                                                (although with a delay), but when populations are constant, despite increasing prey
+                                                                                                                density, the percent mortality will inevitably decline since individual attack eventu­
+                                                                                                                ally saturates at complete satiation (the plateaux of all three functional responses).
+                                                                                                                In Figures 3d and 3f the mortality curves shown summarize a common type. The
+                                                                                                                rising or direct density-dependent limb of the curve is induced by increasing preda­
+                                                                                                                tor populations and by the reduced intensity of attack at low densities, shown by
+                                                                                                                the initial positively accelerated portion of the S-shaped type 3 response. Such a
+                                                                                                                condition is common for predators with alternate prey, both vertebrates (Holling
+                                                                                                                 14) and at least some invertebrates (Steele 38). The declining inverse density­
+                                                                                                                dependent limb is induced by satiation of the predator and a numerical response that
+                                                                                                                has been reduced or stopped.
+                                                                                                                   Fecundity curves that decline regularly over a very wide range of increasing
+                                                                                                                population densities (as in Figure 3d) are common and have been referred to as
+                                                                                                                Drosophila-type curves (Fujita 6). This decline in fecundity is caused by increased
+                                                                                                                competition for oviposition sites, interference with mating, and increased sterility.
+                                                                                                                The interaction between a dome-shaped mortality curve and a monotonically de­
+                                                                                                                creasing fecundity curve can generate equilibrium conditions (Figure 3d). Two
+                                                                                                                stable equilibria are possible, but between these two is a transient equilibrium
+                                                                                                               designated as the escape threshold (ES in Figure 3). Effects of random changes on
+                                                                                                               12     HOLLING
+
+                                                                                                                populations or parameters could readily shift densities from around the lower
+                                                                                                                equilibrium to above this escape threshold, and in these circumstances populations
+                                                                                                                would inevitably increase to the higher equilibrium.
+                                                                                                                   The fecundity curves are likely to be more complex, however, since it'seems
+                                                                                                                inevitable that at some very low densities fecundity will decline because of difficulties
+Downloaded from www.annualreviews.org. Fundação Getulio Vargas (ar-272924) IP: 200.132.3.3 On: Tue, 09 Sept
+
+
+
+
+                                                                                                                in finding mates and the reduced effect of a variety of social facilitation behaviors.
+                                                                                                               We might even logically conclude that for many species there is a minimum density
+                                                                                                               below which fecundity is zero. A fecundity curve of this Allee-type (Fujita 6) has
+                                                                                                               been empirically demonstrated for a number of insects (Watt 42) and is shown in
+                                                                                                               Figure 3f. Its interaction with the dome-shaped mortality curve c!ln add another
+                                                                                                               transient equilibrium, the extinction threshold (EX in Figure 3f). With this addition
+                                                                                                               there is a lower density such that if populations slip below it they will proceed
+                                                                                                               inexorably to extinction. The extinction thres,hold is particularly likely since it has
+                                                                                                               been shown mathematically that each of the three functional response curves will
+                                                                                                               intersect with the ordinate of percent predation at a value above zero (Holling 1 3).
+                                                                                                                  Empirical evidence, therefore, suggests that realistic forms to fecundity and mor­
+                                                                                                               tality curves will generate sinuous reproduction curves like those in Figures 3c and
+                                                                                                               3e with the possibility of a number of equilibrium states, some transient and some
+                                                                                                               stable. These are precisely the conditions that will generate domains of attraction,
+                                                                                                               with each domain separated from others by the extinction and escape thresholds.
+                                                                                                               This analysis of process hence adds suppOli to the field observations discussed
+                                             2025 10:33:53
+
+
+
+
+                                                                                                               earlier.
+                                                                                                                  The behavior of systems in phase space calilnot be completely understood by the
+                                                                                                               graphical representations presented above. These graphs are appropriate only when
+                                                                                                               effects are immediate; in the face of the lags that generate cyclic behavior the
+                                                                                                              reproduction curve should really produce two values for the population in genera­
+                                                                                                              tion t + 1 for each value of the population in generation t. The graphical treatment
+                                                                                                              of Rosenzweig & MacArthur (33) to a degree ,�an accommodate these lags and cyclic
+                                                                                                              behavior. In their treatment they divide phase planes of the kind shown in Figure
+                                                                                                              2 into various regions of increasing and decreasing x and y populations. The regions
+                                                                                                              are separated by two lines, one representing the collection of points at which the
+                                                                                                              prey population does not change in density (dxldt 0, the prey isocline) and one
+                                                                                                                                                                      =
+
+
+                                                                                                              in which the predator population does not so change (dy/dt            = 0, the predator
+                                                                                                              isocline). They deduce that the prey isocline will be dome-shaped for much the same
+                                                                                                              reason as described for the fecundity curves of Figure 3f. The predator isocline, in
+                                                                                                              the simplest condition, is presumed to be vertical, assuming that only one fixed level
+                                                                                                              of prey is necessary to just maintain the predator population at a zero instantaneous
+                                                                                                              rate of change.
+                                                                                                                  Intersection of the two isoclines indicates a point where both populations are at
+                                                                                                              equilibrium. Using traditional linear stability analysis one can infer whether these
+                                                                                                              equilibrium states are stable (Figure 2c) or not (Figure 2a). Considerable importance
+                                                                                                              is attached to whether the predator isocline intersects the rising or falling portion
+                                                                                                              of the prey isocline. As mentioned earlier these techniques are only appropriate near
+                                                                                                              equilibrium (May 24), and the presumed unstable conditions in fact generate stable
+                                                                                                              limit cycles (Figure 2e). Moreover, it is unlikely that the predator isocline is a
+                                                                                                                                      RESILIENCE AND STABILITY OF ECOLOGICAL SYSTEMS                    13
+
+                                                                                                              vertical one in the real world, since competition between predators at high predator
+                                                                                                              densities would so interfere with the attack process that a larger number of prey
+                                                                                                              would be required for stable predator populations. It is precisely this condition that
+                                                                                                              was demonstrated by Griffiths & Holling (9) when they showed that a large number
+                                                                                                              of species of parasites distribute their attacks contagiously. The result is a "squab­
+Downloaded from www.annualreviews.org. Fundação Getulio Vargas (ar-272924) IP: 200.132.3.3 On: Tue, 09 Sept
+
+
+
+
+                                                                                                              bling predator behavior" (Rosenzweig 34,35) that decreases the efficiency of preda­
+                                                                                                              tion at high predator/prey ratios. This converts an unstable system (Figure 2a) to
+                                                                                                              a stable one (Figure 2c)j it is likely that stability is the rule, rather than the exception,
+                                                                                                              irrespective of where the two isoclines cross.
+                                                                                                                 The empirical evidence described above shows that realistic fecundity and mortal­
+                                                                                                              ity (particularly predation) processes will generate forms that the theorists might
+                                                                                                              tend to identify as special subsets of more general conditions. But it is just these
+                                                                                                              special subsets that separate the real world from all possible ones, and these more
+                                                                                                              realistic forms will modify the general conclusions of simpler theory. The ascending
+                                                                                                              limb of the Allee-type fecundity curve will establish, thrQugh interaction with
+                                                                                                              mortality, a minimum density below which prey will become extinct. This can at
+                                                                                                              the same time establish an upper prey density above which prey will become extinct
+                                                                                                              because the amplitude of prey fluctuations will eventually carry the population over
+                                                                                                              the extinction threshold, as shown in the outer trajectory of Figure 2d. These
+                                                                                                              conditions alone are sufficient to establish a domain of attraction, although the
+                                                                                                              boundaries of this domain need not be closed. Within the domain the contagious
+                                             2025 10:33:53
+
+
+
+
+                                                                                                              attack by predators can produce a stable equilibrium or a stable node. Other behav­
+                                                                                                              iors of the mortality agents, however, could result in stable limit cycles.
+                                                                                                                 More realistic forms of functional response change this pattern in degree only. For
+                                                                                                              example, a negatively accelerated type of functional response would tend to make
+                                                                                                              the domain of attraction somewhat smaller, and an S-shaped one larger. Limitations
+                                                                                                              in the predator's numerical response and thresholds for reproduction of predators,
+                                                                                                              similar to those for prey, could further change the form of the domain. Moreover,
+                                                                                                              the behaviors that produce the sinuous reproduction curves of Figures 3c and 3e
+                                                                                                              can add additional domains. The essential point, however, is that these systems are
+                                                                                                              not globally stable but can have distinct domains of attraction. So long as the
+                                                                                                              populations remain within one domain they have a consistent and regular form of
+                                                                                                              behavior. If populations pass a boundary to the domain by chance or through
+                                                                                                              intervention of man, then the behavior suddenly changes in much the way suggested
+                                                                                                              from the field examples discussed earlier.
+
+                                                                                                              The Random World
+                                                                                                              To this point, I have argued as if the world were completely deterministic. In fact,
+                                                                                                              the behavior of ecological systems is profoundly affected by random events. It is
+                                                                                                              important, therefore, to add another level of realism at this point to determine how
+                                                                                                              the above arguments may be modified. Again, it is applied ecology that tends to
+                                                                                                              supply the best information from field studies since it is only in such situations that
+                                                                                                              data have been collected in a sufficiently intensive and extensive manner. As one
+                                                                                                              example, for 28 years there has been a major and intensive study of the spruce
+                                                                                                              budworm and its interaction with the spruce-fir forests of eastern Canada (Morris
+                                                                                                               14      HOLLING
+
+
+                                                                                                                 27). There have been six outbreaks of the spruce budworm since the early 1 700s
+                                                                                                                (Baskerville 1 ) and between these outbreaks the budworm has been an exceedingly
+                                                                                                                rare species. When the outbreaks occur there is major destruction of balsam fir in
+                                                                                                                all the mature forests, leaving only the less susceptible spruce, the nonsusceptible
+Downloaded from www.annualreviews.org. Fundação Getulio Vargas (ar-272924) IP: 200.132.3.3 On: Tue, 09 Sept
+
+
+
+
+                                                                                                                white birch, and a dense regeneration of fir and spruce. The more immature stands
+                                                                                                                suffer less damage and more fir survives. Between outbreaks the young balsam grow,
+                                                                                                                together with spruce and birch, to form dense stands in which the spruce and birch,
+                                                                                                                in particular, suffer from crowding. This process evolves to produce stands of
+                                                                                                                mature and overmature trees with fir a predominant feature.
+                                                                                                                   This is a necessary, but not sufficient, condition for the appearance of an outbreak;
+                                                                                                                outbreaks occur only when there is also a sequence of unusually dry years (Welling­
+                                                                                                                ton 43). Until this sequence occurs, it is argued (Morris 27) that various natural
+                                                                                                               enemies with limited numerical responses maintain the budworm populations
+                                                                                                               around a low equilibrium. If a sequence of dry years occurs when there are mature
+                                                                                                               stand of fir, the budworm populations rapidly increase and escape the control by
+                                                                                                               predators and parasites. Their continued increase eventually causes enough tree
+                                                                                                               mortality to force a collapse of the populations and the r,einstatement of control
+                                                                                                               around the lower equilibrium. The reproduction curves therefore would be similar
+                                                                                                               to those in Figures 3c or 3e.
+                                                                                                                   In brief, between outbreaks the fir tends to be favored in its competition with
+                                                                                                               spruce and birch, whereas during an outbreak spruce and birch are favored because
+                                             2025 10:33:53
+
+
+
+
+                                                                                                               they are less susceptible to bud worm attack. This interplay with the budworm thus
+                                                                                                               maintains the spruce and birch which otherwise would be excluded through compe­
+                                                                                                               tition. The fir persists because of its regenerative powers and the interplay of forest
+                                                                                                               growth rates and climatic conditions that de:termine the timing of bud worm out­
+                                                                                                               breaks.
+                                                                                                                  This behavior could be viewed as a stable limit cycle with large amplitude, but
+                                                                                                               it can be more accurately represented by a distinct domain of attraction determined
+                                                                                                              by the interaction between budworm and its associated natural enemies, which is
+                                                                                                               periodically exceeded through the chance consequence of climatic conditions. If we
+                                                                                                              view the budworm only in relation to its associated predators and parasites we might
+                                                                                                              argue that it is highly unstable in the sense that populations fluctuate widely. But
+                                                                                                              these very fluctuations are essential features that maintain persistence of the bud­
+                                                                                                              worm, together. with its natural enemies and its host and associated trees. By so
+                                                                                                              fluctuating, successive generations of forests are replaced, assuring a continued food
+                                                                                                              supply for future generations of budworm and the persistence of the system.
+                                                                                                                  Until now I have avoided formal identification of different kinds of behavior of
+                                                                                                              ecological systems. The more realistic situations like budworm, however, make it
+                                                                                                              necessary to begin to give more formal definition to their behavior. It is useful to
+                                                                                                              distinguish two kinds of behavior. One can be termed stability, which represents the
+                                                                                                              ability of a system to return·to an equilibrium state after a temporary disturbance;
+                                                                                                              the more rapidly it returns and the less it fluctuates, the more stable it would be.
+                                                                                                              But there is another property, termed resilience, that is a measure of the persistence
+                                                                                                              of systems and of their ability to absorb change and disturbance and still maintain
+                                                                                                              the same relationships between popUlations or state variables. In this sense, the
+                                                                                                                                     RESILIENCE AND STABILITY OF ECOLOGICAL SYSTEMS                15
+
+                                                                                                              budworm forest community is highly unstable and it is because of this instability
+                                                                                                              that it has an enormous resilience. I return to this view frequently throughout the
+                                                                                                              remainder of this paper.
+                                                                                                                 The influence of random events on systems with domains of attraction is found
+                                                                                                              in aquatic systems as well. For example, pink salmon populations can become
+Downloaded from www.annualreviews.org. Fundação Getulio Vargas (ar-272924) IP: 200.132.3.3 On: Tue, 09 Sept
+
+
+
+
+                                                                                                              stabilized for several years at very different levels, the new levels being reached by
+                                                                                                              sudden steps rather than by gradual transition (Neave 28). The explanation is very
+                                                                                                              much the same as that proposed for the bud worm, involving an interrelation be­
+                                                                                                              tween negative and positive feedback mortality of the kinds described in Figures 3d
+                                                                                                              and 3f, and random effects unrelated to density. The same pattern has been de­
+                                                                                                              scribed by Larkin (18) in his simulation model of the Adams River sockeye salmon.
+                                                                                                              This particular run of salmon has been characterized by a regular four-year peri­
+                                                                                                              odicity since 1922, with one large or dominant year, one small or subdominant, and
+                                                                                                              two years with very small populations. The same explanation as described above has
+                                                                                                              been proposed with the added reality of a lag. Essentially, during the dominant year
+                                                                                                              limited numerical responses produce an inverse density-dependent response as in the
+                                                                                                              descending limb of the mortality curves of Figure 3d and 3f. The abundance of the
+                                                                                                              prey in that year is nevertheless sufficient to establish populations of predators that
+                                                                                                              have a major impact on the three succeeding low years. Buffering of predation by
+                                                                                                              the smolts of the dominant year accounts for the larger size of the subdominant.
+                                                                                                              These effects have been simulated (Larkin 1 8), and when random influences are
+                                             2025 10:33:53
+
+
+
+
+                                                                                                              imposed in order to simulate climatic variations the system has a distinct probability
+                                                                                                              of flipping into another stable configuration that is actually reproduced in nature by
+                                                                                                              sockeye salmon runs in other rivers. When subdominant escapement reaches a
+                                                                                                              critical level there is about an equal chance that it may become the same size as the
+                                                                                                              dominant one or shrivel to a very small size.
+                                                                                                                 Random events, of course, are not exclusively climatic. The impact of fires on
+                                                                                                              terrestrial ecosystems is particularly illuminating (Cooper 3) and the periodic ap­
+                                                                                                              pearance of fires has played a decisive role in the persistence of grasslands as well
+                                                                                                              as certain forest communities. As an example, the random perturbation caused by
+                                                                                                              fires in Wisconsin forests (Loucks 21) has resulted in a sequence of transient changes
+                                                                                                              that move forest communities from one domain of attraction to another. The
+                                                                                                              apparent instability of this forest community is best viewed not as an unstable
+                                                                                                              condition alone, but as one that produces a highly resilient system capable of
+                                                                                                              repeating itself and persisting over time until a disturbance restarts the sequence.
+                                                                                                                 In summary, these examples of the influence of random events upon natural
+                                                                                                              systems further confirm the existence of domains of attraction. Most importantly
+                                                                                                              they suggest that instability, in the sense of large fluctuations, may introduce a
+                                                                                                              resilience and a capacity to persist. It points out the very different view of the world
+                                                                                                              that can be obtained if we concentrate on the boundaries to the domain of attraction
+                                                                                                              rather than on equilibrium states. Although the equilibrium-centered view is
+                                                                                                              analytically more tractable, it does not always provide a realistic understanding of
+                                                                                                              the systems' behavior. Moreover. if this perspective is used as the exclusive guide
+                                                                                                              to the management activities of man, exactly the reverse behavior and result can be
+                                                                                                              produced than is expected.
+                                                                                                               16     HOLLING
+
+
+                                                                                                               The Spatial Mosaic
+
+                                                                                                                To this point, I have proceeded in a series of steps to gradually add more and more
+                                                                                                                reality. I started with self-contained closed s.ystems, proceeded to a more detailed
+                                                                                                                explanation of how ecological processes operate, and then considered the influence
+Downloaded from www.annualreviews.org. Fundação Getulio Vargas (ar-272924) IP: 200.132.3.3 On: Tue, 09 Sept
+
+
+
+
+                                                                                                                of random events, which introduced heterogeneity over time.
+                                                                                                                  The final step is now to recognize that the natural world is not very homogeneous
+                                                                                                               over space, as well, but consists of a mosaic of spatial elements with distinct biologi­
+                                                                                                               cal, physical, and chemical characteristics that are linked by mechanisms of biologi­
+                                                                                                               cal and physical transport. The role of spatial heterogeneity has not been well
+                                                                                                               explored in ecology because of the enormous logistic difficulties. Its importance,
+                                                                                                               however, W!iS revealed in a classic experiment that involved the interaction between
+                                                                                                               a predatory mite, its phytophagous mite prey, and the prey's food source (Huffaker
+                                                                                                               et al 15). Briefly, in the relatively small enclosures used, when there was unimpeded
+                                                                                                               movement throughout the experimental universe, the system was unstable and
+                                                                                                               oscillations increased in amplitude. When barriers were introduced to impede dis­
+                                                                                                               persal between parts of the universe, however, the interaction persisted. Thus popu­
+                                                                                                               lations in one small locale that suffer chance extinctions could be reestablished by
+                                                                                                               invasion from other populations having high numbers-a conclusion that is con­
+                                                                                                               firmed by Roff's mathematical analysis of s.patial heterogeneity (32).
+                                                                                                                  There is one study that has been largely neglected that is, in a sense, a much more
+                                             2025 10:33:53
+
+
+
+
+                                                                                                               realistic example of the effects of both temporal and spatial heterogeneity of a
+                                                                                                               population in nature (Wellington 44, 45). There is a peninsula on Vancouver Island
+                                                                                                               in which the topography and climate combine to make a mosaic of favorable locales
+                                                                                                               for the tent caterpillar. From year to year the size of these locales enlarges or
+                                                                                                               contracts depending on climate; Wellington was able to use the easily observed
+                                                                                                               changes in cloud patterns in any year to define these areas. The tent caterpillar, to
+                                                                                                               add a further element of realism, has identifiable behavioral types that are deter­
+                                                                                                               mined not by genetics but by the nutritional history of the parents. These types
+                                                                                                               represent a range from sluggish to very active, and the proportion of types affects
+                                                                                                               the shape of the easily visible web the tent caterpillars spin. By combining these
+                                                                                                              defined differences of behavior with observations on changing numbers, shape of
+                                                                                                              webs, and changing cloud patterns, an elegant story of systems behavior emerges.
+                                                                                                              In a favorable year locales that previously (;Quid not support tent caterpillars now
+                                                                                                              can, and populations are established through invasion by the vigorous dispersers
+                                                                                                              from other locales. In these new areas they t,�nd to produce another generation with
+                                                                                                              a high proportion of vigorous behavioral types. Because of their high dispersal
+                                                                                                              behavior and the small area of the locale in relation to its periphery, they then tend
+                                                                                                              to leave in greater numbers than they arrive. The result is a gradual increase in the
+                                                                                                              proportion of more sluggish types to the point where the local population collapses.
+                                                                                                              But, although its fluctuations are considerable, even under the most unfavorable
+                                                                                                              conditions there are always enclaves suitable for the insect. It is an example of a
+                                                                                                              population with high fluctuations that can take advantage of transient periods of
+                                                                                                              favorable conditions and that has, because of this variability, a high degree of
+                                                                                                              resilience and capacity to persist.
+                                                                                                                                     RESILIENCE AND STABILITY OF ECOLOGICAL SYSTEMS                 17
+
+                                                                                                                 A further embellishment has been added i n a study of natural insect populations
+                                                                                                              by Gilbert & Hughes (7). They combined an insightful field study of the interaction
+                                                                                                              between aphids and their parasites with a simulation model, concentrating upon a
+                                                                                                              specific locale and the events within it under different conditions of immigration
+                                                                                                              from other locales. Again the important focus was upon persistence rather than
+Downloaded from www.annualreviews.org. Fundação Getulio Vargas (ar-272924) IP: 200.132.3.3 On: Tue, 09 Sept
+
+
+
+
+                                                                                                              degree of fluctuation. They found that specific features of the parasite-host interac­
+                                                                                                              tion allowed the parasite to make full use of its aphid resources just short of driving
+                                                                                                              the host to extinction. It is particularly intriguing that the parasite and its host were
+                                                                                                              introduced into Australia from Europe and in the short period that the parasite has
+                                                                                                              been present in Australia there have been dramatic changes in its developmental rate
+                                                                                                              and fecundity. The other major difference between conditions in Europe and Aus­
+                                                                                                              tralia is that the immigration rate of the host in England is considerably higher than
+                                                                                                              in Australia. If the immigration rate in Australia increased to the English level, then,
+                                                                                                              according to the model the parasite should increase its fecundity from the Australian
+                                                                                                              level to the English to make the most of its opportunity short of extinction. This
+                                                                                                              study provides, therefore, a remarkable example of a parasite and its host evolving
+                                                                                                              together to permit persistence, and further confirms the importance of systems
+                                                                                                              resilience as distinct from systems stability.
+
+                                                                                                              SYNTHESIS
+
+                                                                                                              Some Definitions
+                                             2025 10:33:53
+
+
+
+
+                                                                                                              Traditionally, discussion and analyses of stability have essentially equated stability
+                                                                                                              to systems behavior. In ecology, at least, this has caused confusion since, in mathe­
+                                                                                                              matical analyses, stability has tended to assume definitions that relate to conditions
+                                                                                                              very near equilibrium points. This is a simple convenience dictated by the enormous
+                                                                                                              analytical difficulties of treating the behavior of nonlinear systems at some distance
+                                                                                                              from equilibrium. On the other hand, more general treatments have touched on
+                                                                                                              questions of persistence and the probability of extinction, defining these measures
+                                                                                                              as aspects of stability as well. To avoid this confusion I propose that the behavior
+                                                                                                              of ecological systems could well be defined by two distinct properties: resilience and
+                                                                                                              stability.
+                                                                                                                 Resilience determines the persistence of relationships within a system and is a
+                                                                                                              measure of the ability of these systems to absorb changes of state variables, driving
+                                                                                                              variables, and parameters, and still persist. In this definition resilience is the prop­
+                                                                                                              erty of the system and persistence or probability of extinction is the result. Stability,
+                                                                                                              on the other hand, is the ability of a system to return to an eqUilibrium state after
+                                                                                                              a temporary disturbance. The more rapidly it returns, and with the least fluctuation,
+                                                                                                              the more stable it is. In this definition stability is the property of the system and the
+                                                                                                              degree of fluctuation around specific states the result.
+
+                                                                                                              Resilience versus Stability
+                                                                                                              With these definitions in mind a system can be very resilient and still fluctuate
+                                                                                                              greatly, i.e. have low stability. I have touched above on examples like the spruce
+                                                                                                              budworrn forest communitY .in-which the very fact of low stability seems to intro-
+                                                                                                               18     HOLLING
+
+                                                                                                               duce high resilience. Nor are such cases isolated ones, as Watt (4 1 ) has shown in
+                                                                                                               his analysis of thirty years of data collected for every major forest insect throughout
+                                                                                                              Canada by the Insect Survey program of thl: Canada Department of the Environ­
+                                                                                                              ment. This statistical analysis shows that in those areas subjected to extreme climatic
+                                                                                                              conditions the populations fluctuate widely but have a high capability of absorbing
+Downloaded from www.annualreviews.org. Fundação Getulio Vargas (ar-272924) IP: 200.132.3.3 On: Tue, 09 Sept
+
+
+
+
+                                                                                                              periodic extremes of fluctuation. They are, therefore, unstable �sing the restricted
+                                                                                                              definition above, but highly resilient. In more benign, less variable climatic regions
+                                                                                                              the populations are much less able to absorb chance climatic extremes even though
+                                                                                                              the populations tend to be more constant. These situations show a high degree of
+                                                                                                              stability and a lower resilience. The balance bl!tween resilience and stability is clearly
+                                                                                                              a product of the evolutionary history of these systems in the face of the range of
+                                                                                                              random fluctuations they have experienced.
+                                                                                                                 In Siobodkin's terms (36) evolution is like a game, but a distinctive one in which
+                                                                                                              the only payoff is to stay in the game. Therefore, a major strategy selected is not
+                                                                                                              one maximizing either efficiency or a particular reward, but one which allows
+                                                                                                              persistence by maintaining flexibility above all else. A population responds to any
+                                                                                                              environmental change by the initiation of a series of physiological, behavioral,
+                                                                                                              ecological, and genetic changes that restore its ability to respond to subsequent
+                                                                                                              unpredictable environmental changes. Variability over space and time results in
+                                                                                                              variability in numbers, and with this variability the population can simultaneously
+                                                                                                              retain genetic and behavioral types that can maintain their existence in low popula­
+                                             2025 10:33:53
+
+
+
+
+                                                                                                               tions together with others that can capitaliz(: on chance opportunities for dramatic
+                                                                                                              increase. The more homogeneous the environment in space and time, the more likely
+                                                                                                              is the system to have low fluctuations and low resilience. It is not surprising,
+                                                                                                              therefore, that the commerical fishery systems of the Great Lakes have provided a
+                                                                                                              vivid example of the sensitivity of ecological systems to disruption by man, for they
+                                                                                                              represent climatically buffered, fairly homog1meous and self-contained systems with
+                                                                                                              relatively low variability and hence high stability and low resilience. Moreover, the
+                                                                                                              goal of producing a maximum sustained yie:ld may result in a more stable system
+                                                                                                              of reduced resilience.
+                                                                                                                  Nor is it surprising that however readily fish stocks in lakes can be driven to
+                                                                                                              extinction, it has been extremely difficult to do the same to insect pests of man's
+                                                                                                              crops. Pest systems are highly variable in space and time; as open systems they are
+                                                                                                              much affected by dispersal and therefore have a high resilience. Similarly, some
+                                                                                                              Arctic ecosystems thought of as fragile may be highly resilient, although unstable.
+                                                                                                              Certainly this is not true for some subsystems in the Arctic, such as Arctic frozen
+                                                                                                              soil, self-contained Arctic lakes, and cohesive social populations like caribou, but
+                                                                                                              these might be exceptions to a general rule.
+                                                                                                                 The notion of an interplay between resilience and stabilty might also resolve the
+                                                                                                              conflicting views of the role of diversity and stability of ecological communities.
+                                                                                                              Elton (5) and MacArthur (22) have argued cogently from empirical and theoretical
+                                                                                                              points of view that stability is roughly proportional to the number of links between
+                                                                                                              species in a trophic web. In essence, if there are a variety of trophic links the same
+                                                                                                              flow of energy and nutrients will be maintained through alternate links when a
+                                                                                                              species becomes rare. However, May's (23) recent mathematical analyses of models
+                                                                                                                                     RESILIENCE AND STABILITY OF ECOLOGICAL SYSTEMS               19
+
+                                                                                                              of a large number of interacting populations shows that this relation between in­
+                                                                                                              creased diversity and stability is not a mathematical truism. He shows that ran­
+                                                                                                              domly asseml11ed complex systems are in general less stable, and never more stable,
+                                                                                                              than less complex ones. He points out that ecological systems are likely to have
+                                                                                                              evolved to a very small subset of all possible sets and that MacArthur's conclusions,
+Downloaded from www.annualreviews.org. Fundação Getulio Vargas (ar-272924) IP: 200.132.3.3 On: Tue, 09 Sept
+
+
+
+
+                                                                                                              therefore, might still apply in the real world. The definition of stability used, how­
+                                                                                                              ever, is the equilibrium-centered one. What May has shown is that complex systems
+                                                                                                              might fluctuate more than less complex ones. But if there is more than one domain
+                                                                                                              of attraction, then the increased variability could simply move the system from one
+                                                                                                              domain to another. Also, the more species there are, the more equilibria there may
+                                                                                                              be and, although numbers may thereby fluctuate considerably, the overall persis­
+                                                                                                              tence might be enhanced. It would be useful to explore the possibility that instability
+                                                                                                              in numbers can result in more diversity of species and in spatial patchiness, and
+                                                                                                              hence in increased resilience.
+
+                                                                                                              Measurement
+                                                                                                              If there is a worthwhile distinction between resilience and stability it is important
+                                                                                                              that both be measurable. In a theoretical world such measurements could be devel­
+                                                                                                              oped from the behavior of model systems in phase space. Just as it was useful to
+                                                                                                              disaggregate the reproduction curves into their constituent components of mortality
+                                                                                                              and fecundity, so it is useful to disaggregate the information in a phase plane. There
+                                             2025 10:33:53
+
+
+
+
+                                                                                                              are two components that are important: one that concerns the cyclic behavior and
+                                                                                                              its frequency and amplitude, and one that concerns the configuration of forces
+                                                                                                              caused by the positive and negative feedback relations.
+                                                                                                                 To separate the two we need to imagine first the appearance of a phase space in
+                                                                                                              which there are no such forces operating. This would produce a referent trajectory
+                                                                                                              containing only the cyclic properties of the system. If the forces were operating,
+                                                                                                              departure from this referent trajectory would be a measure of the intensity of the
+                                                                                                              forces. The referent trajectories that would seem to be most useful would be the
+                                                                                                              neutrally stable orbits of Figure 2b, for we can arbitrarily imagine these trajectories
+                                                                                                              as moving on a flat plane. At least for more realistic models parameter values can
+                                                                                                              be discovered that do generate neutrally stable orbits. In the complex predator-prey
+                                                                                                              model of Holling ( 1 4), if a range of parameters is chosen to explore the effects of
+                                                                                                              different degrees of contagion of attack, the interaction is unstable when attack is
+                                                                                                              random and stable when it is contagious. We have recently shown that there is a
+                                                                                                              critical level of contagion between these extremes that generates neutrally stable
+                                                                                                              orbits. These orbits, then, have a certain frequency and amplitude and the departure
+                                                                                                              of more realistic trajectories from these referent ones should allow the computation
+                                                                                                              of the vector offorces. If these were integrated a potential field would be represented
+                                                                                                              with peaks and valleys. If the whole potential field were a shallow bowl the system
+                                                                                                              would be globally stable and all trajectories would spiral to the bottom of the bowl,
+                                                                                                              the equilibrium point. But if, at a minimum, there were a lower extinction threshold
+                                                                                                              for prey then, in effect, the bowl would have a slice taken out of one side, as
+                                                                                                              suggested in Figure 4. Trajectories that initiated far up on the side of the bowl would
+                                                                                                              have amplitude that would carry the trajectory over the slice cut out of it. Only those
+                                                                                                              20      HOLLING
+Downloaded from www.annualreviews.org. Fundação Getulio Vargas (ar-272924) IP: 200.132.3.3 On: Tue, 09 Sept
+
+
+
+
+                                                                                                                                                          x POP
+
+
+                                                                                                              Figure 4   Diagramatic representation showing the feedback forces as a potential field
+                                                                                                              upon which trajectories move. The shaded portion is the domain of attraction.
+
+
+                                                                                                               trajectories that just avoided the lowest point of the gap formed by the slice would
+                                                                                                              spiral in to the bowl's bottom. If we termed the bowl the basin of attraction
+                                                                                                              (Lewontin 20) then the domain of attraction would be determined by both the cyclic
+                                                                                                              behavior and the configuration of forces. It would be confined to a smaller portion
+                                                                                                              of the bottom of the bowl, and one edge would touch the bottom portion of the slice
+                                                                                                               taken out of the basin.
+                                             2025 10:33:53
+
+
+
+
+                                                                                                                  This approach, then, suggests ways to measure relative amounts of resilience and
+                                                                                                              stability. There are two resilience measures: Since resilience is concerned with
+                                                                                                              probabilities of extinction, firstly, the overall area of the domain of attraction will
+                                                                                                              in part determine whether chance shifts in state variables will move trajectories
+                                                                                                              outside the domain. Secondly, the height of the lowest point of the basin of attraction
+                                                                                                              (e.g. the bottom of the slice described above) above equilibrium will be a measure
+                                                                                                              of how much the forces have to be changed before all trajectories move to extinction
+                                                                                                              of one or more of the state variables.
+                                                                                                                  The measures of stability would be designed in just the opposite way from those
+                                                                                                              that measure resilience. They would be centered on the equilibrium rather than on
+                                                                                                              the boundary of the domain, and could be r'�presented by a frequency distribution
+                                                                                                              of the slopes of the potential field and by the velocity of the neutral orbits around
+                                                                                                              the equilibrium.
+                                                                                                                 But such measures require an immeanse amount of knowledge of a system and
+                                                                                                              it is unlikely that we will often have all that is necessary. Hughes & Gilbert ( 1 6),
+                                                                                                              however, have suggested a promising approach to measuring probabilities of extinc­
+                                                                                                              tion and hence of resilience. They were able to show in a stochastic model that the
+                                                                                                              distribution of surviving population sizes at any given time does not differ signifi­
+                                                                                                              cantly from a negative binomial. This of course is just a description, but it does
+                                                                                                              provide a way to estimate the very small probability of zero, i.e. of extinction, from
+                                                                                                              the observed mean and variance. The configuration of the potential field and the
+                                                                                                              cyclic behavior will determine the number alnd form of the domains of attraction,
+                                                                                                              and these will in turn affect the parameter values of the negative binomial or of any
+                                                                                                                                        RESILIENCE AND STABILITY OF ECOLOGICAL SYSTEMS                           21
+
+
+                                                                                                              other distribution function that seems appropriate. Changes i n the zero class of the
+                                                                                                              distribu t i on , that is, in the probability of extinction, will be caused by these parame­
+                                                                                                              ter values, which can then be viewed as the relative measures of resilience. It will
+                                                                                                              be important to explore this technique first with a number of theoretical models so
+                                                                                                              that the appropriate distributions and their behavior can be identified. I t will then
+Downloaded from www.annualreviews.org. Fundação Getulio Vargas (ar-272924) IP: 200.132.3.3 On: Tue, 09 Sept
+
+
+
+
+                                                                                                              be quite feasible, in the field, to sample populations in defined areas, apply the
+                                                                                                              appropriate distribution, and use the parameter values as measures of the degree of
+                                                                                                              resilience.
+
+
+                                                                                                              APPLICATION
+
+                                                                                                              The resilience and stability viewpoints of the behavior of ecological systems can
+                                                                                                              yield very different approaches to the management of resources. The stability view
+                                                                                                              emphasizes the equilibrium, the maintenance of a predictable world, and the har­
+                                                                                                              vesting of nature's excess production with as little fluctuation as possible. The
+                                                                                                              resilience view emphasizes domains of attraction and the need for persistence. But
+                                                                                                              extinction is not purely a random event; it results from the interaction of random
+                                                                                                              events with those deterministic forces that define the shape, size, and characteristics
+                                                                                                              of the domain of attraction. The very approach, therefore, that assures a stable
+                                                                                                              maximum sustained yield of a renewable resource might so change these determinis­
+                                                                                                              tic conditions that the resilience is lost or reduced so that a chance and rare event
+                                             2025 10:33:53
+
+
+
+
+                                                                                                              that previously could be absorbed can t rigger a sudden dramatic change and loss
+                                                                                                              of structural integrity of the system.
+                                                                                                                A management approach based on resilience, on the other hand, would emphasize
+                                                                                                              the need to keep options open, the need to view events in a regional rather than a
+                                                                                                              local context, and the need to emphasize heterogeneity. Flowing from this would
+                                                                                                              be not the presumption of sufficient knowledge, but the recognition of our ignorance;
+                                                                                                              not the assumption that future events are expected, but that they will be unexpected.
+                                                                                                              The resilience framework can accommodate this shift of perspective, for it does not
+                                                                                                              require a precise capacity to predict the future, but only a qualitative capacity to
+                                                                                                              devise systems that can absorb and accommodate future events in whatever unex­
+                                                                                                              pected form they may take.
+
+
+                                                                                                              Literature Cited
+
+                                                                                                               1 . Baskerville, G. L. 1 97 1 . The Fir-Spruce­      nutrient income. Verh. Int. Ver. Limnoi.
+                                                                                                                   Birch Forest and the Budworm. Forestry           14: 1 67-75
+                                                                                                                  Service, Canada Dept. Environ., Freder­        5. Elton, C. S. 1958. The Ecology ofIn va­
+                                                                                                                  icton. N. B. Unpublished                          sions by Animals and Plants. London :
+                                                                                                               2. Beeton. A. D. 1969. Changes in the envi­          Methuen
+                                                                                                                  ronment and biota of the Great Lakes.          6. Fuj it a, H. 1 954. An i n terpret atio n of the
+                                                                                                                  Eutrophication: Causes, Consequences,             ch anges in type of the population density
+                                                                                                                  Correctives.  Washington DC: Nat.                 effect upon the oviposition rate. Ecology
+                                                                                                                  Acad. Sci.                                        35:253-7
+                                                                                                               3. Cooper. C. F. 1 96 1 . The ecology of fire.    7. Gilbert. N., Hughes. R. D. 1 97 1 . A
+                                                                                                                  Sci. Am. 204: 1 50-6. 1 58. 1 60                  model of an aphid populat ion-t h ree
+                                                                                                               4. Edmondson. W. T. 1 9 6 1 . Changes in             adventures. 1. Anim. Ecol. 40:525-
+                                                                                                                  Lake Washington following increase in             34
+                                                                                                              22       HOLLING
+
+
+                                                                                                               8 . Glendening, G. 1 9 52. Some quantitative        24. May, R. M. 1 972. Limit cycles in preda­
+                                                                                                                    data on the increase of mesquite and cac­          tor-prey communities. Science 1 77:
+                                                                                                                    tus on a desert grassland range in south­            900-2
+                                                                                                                    ern Arizona. Ecology 3 3 : 3 1 9-28            25. May, R. M. 1 972. Will a large complex
+                                                                                                                9 . Griffiths, K. J., Holling, C. S. 1 969.              system be stable? Nature 2 3 8 :4 1 3- 1 4
+                                                                                                                    A competition submodel for parasites           26. Minorsky, N. 1 962. Nonlinear Oscilla­
+                                                                                                                    and predators. Can. EnfOmo/. 1 0 1 :785-             tions. Princeton, N.J.: Van Nostrand
+Downloaded from www.annualreviews.org. Fundação Getulio Vargas (ar-272924) IP: 200.132.3.3 On: Tue, 09 Sept
+
+
+
+
+                                                                                                                    818                                            27. Morris, R. F. 1 963. The dynamics of epi­
+                                                                                                              1 0. Hasler, A . D . 1 947. Eutrophication of              demic spruce bud worm populations.
+                                                                                                                    lakes by domestic sewage. Ecology 2 8 :              Mem. Entomol. Soc. Can. 3 1 : 1 -332
+                                                                                                                   3 8 3-95                                        2 8 . Neave, F. 1 95 3 . Principles affecting the
+                                                                                                              I I . Holling, C. S. 1 96 1 . Principles of insect         size of pink and chum salmon popula­
+                                                                                                                    predation. Ann. Rev. Enromo/. 6 : 1 6 3- 8 2         tions in British Columbia. J. Fisk Res.
+                                                                                                              1 2 . Holling, C. S. 1 966. The functional re­             Bd. Can 9:450--9 1
+                                                                                                                    sponse of invertebrate predators to prey       29.   Nicholson, A . J., Bailey, V . A . 1 9 3 5 .
+                                                                                                                    density. Mem. EnfOmo/. Soc. Can. 4 8 :               The balance of animal populations­
+                                                                                                                   1 -86                                                 Part 1. Proc. Zoo/. Soc. London 1 9 3 5 :
+                                                                                                              13. Holling, C. S. 1 965. The functional re­               55 1-98
+                                                                                                                    sponse of predators to prey density and        30. Ricker, W. E. 1 954. Stock and recruit­
+                                                                                                                    its role in mimicry and population regu­             ment. J. Fish. Res. B d. Can. I I : 5 59-623
+                                                                                                                    lations. Mem. Entomol. Soc. Can. 45:           3 1 . Ricker, W. E. 1 963. Big effects from
+                                                                                                                    1-60                                                 small causes: two examples from fish
+                                                                                                              1 4 . Holling, C. 5., Ewing, S. 1 97 1 . Blind             population dynamics. J Fish. Res. Bd.
+                                                                                                                    man's buff: exploring the response space              Can. 20:257-84
+                                                                                                                    generated by realistic ecological simula­      32. Roff, D. A. 1 973. Spatial heterogeneity
+                                                                                                                    tion models. Proe. Int. Symp. Statist.               and the persistence of populations. J.
+                                                                                                                    Eco1. New Haven, Conn.: Yale Univ.                    Theor. Pop. Bio/. In press
+                                                                                                                    Press 2 :207-29                                3 3 . Rosenzweig, M. L., MacArthur, R. H.
+                                                                                                              1 5 . Huffaker, C. D., Shea, K. P., Herman, S.              1 963. Graphical representation and sta­
+                                             2025 10:33:53
+
+
+
+
+                                                                                                                    S. 1 963. Experimental studies on preda­             bility condition of predator-prey interac­
+                                                                                                                    tion. Complex dispersion and levels of               tions. Am. Natur. 97:209-23
+                                                                                                                    food in an acarine predator-prey interac­      34. Rosenzweig, M. L. 1 97 1 . Paradox of en­
+                                                                                                                    tion. Hilgardia 34:305-30                            richment: destabilization of exploitation
+                                                                                                              1 6. Hughes, R. D., Gilbert, N. 1 968. A                   ecosystems in ecological time. Science
+                                                                                                                    model of an aphid population-a general               1 7 1 :385-7
+                                                                                                                    statement. J Anim. Ecol. 40:525-34             35. Rosenzweig, M. L. 1 972. Stability of en­
+                                                                                                              1 7. Hutchinson, G. E. 1 970. ranula: an ac­               riched aquatic ecosystems. Science 1 7 5 :
+                                                                                                                    count of the history and development of              564-5
+                                                                                                                    the Lago di Monterosi, Latium, Italy.          36. Slobodkin, L. B. 1 964. The strategy of
+                                                                                                                   Trans. Am. Phi/' Soc. 60: 1 - 1 78                    evolution. Am. Sci. 52:342-57
+                                                                                                              1 8. Larkin, P. A. 1 97 1 . Simulation studies of    37. Smith, S. H . 1 968. Species succession and
+                                                                                                                   the Adams River Sockeye Salmon (On­                   fishery exploitation in the Great Lakes.
+                                                                                                                   carhynchus nerka).       J Fisk Res. Bd.              J Fish. Res. Bd. Colli. 25:667-93
+                                                                                                                   Can. 2 8 : 1 493-1 502                          3 8 . Steele, J. H. 1 97 1 . Factors controlling
+                                                                                                              1 9 . Le Cren, E. D., Kipling, c., McCor­                  marine ecosystems.         The   Changing
+                                                                                                                    mack, J. C. 1 97 2 Windermere: effects of
+                                                                                                                                        .                                Chemistry of the Oceans,            ed. D.
+                                                                                                                    exploitation and eutrophication on the               Dryssen, D. Jaquer, 209-2 1 . Nobel Sym­
+                                                                                                                    salmonid community. J. Fish. Res. Bd.                posium 20, New York: Wiley
+                                                                                                                   Can. 2 9: 8 1 9-32                              39. Walters, C. J. 1 9 7 1 . Systems ecology: the
+                                                                                                              20. Lewontin, R. C. 1 969. The meaning of                  systems approach and mathematical
+                                                                                                                  stability. Diversity and StabJiity ofEco­              models in ecology. Fundamentals of
+                                                                                                                   logical Systems, Brookhaven Symp. Bio/.               Ecology, ed. E. P. Odum. Philadelphia:
+                                                                                                                    22: 1 3-24                                           Saunders. 3rd ed.
+                                                                                                              2 1 . Loucks, O. L. 1 970. Evolution of diver­       40 Wangersky, P. J., Cunningham, W. J.
+                                                                                                                    sity, efficiency and community stability.            1 957. Time lag in prey-predator popula­
+                                                                                                                    Am. Zoo/. 10: 1 7-25                                 tion models. Ecology 3 8 : 1 36-9
+                                                                                                              22. MacArthur, R. 1 95 5 . Fluctuations of an­       4 1 . Watt, K. E. F. 1 968. A computer ap­
+                                                                                                                    imal populations and a measure of com­               proach to analysis of data on weather,
+                                                                                                                    munity stability. Ecology 36:533-6                   population fluctuations, and disease.
+                                                                                                              23. May, R . M. 1 97 1 . Stability in multi-spe­           Biometeorology, 1967 Biology Collo­
+                                                                                                                    cies community models. Matk Biosei.                  quium, ed. W. P. Lowry. Corvallis, Ore­
+                                                                                                                    1 2:5 9 7 9
+                                                                                                                           -                                             gon: Oregon State Univ. Press
+                                                                                                                                        RESILIENCE AND STABILITY OF ECOLOGICAL SYSTEMS                      23
+
+                                                                                                              42. Watt, K. E. F. 1 960. The effect of popu la
+                                                                                                                                                            ­   44. Wellington, W. G. 1 964. Qualitative
+                                                                                                                  tion density on fecundity in insects. Can.         changes in populations in unstable
+                                                                                                                  Entomo/. 92:674-95                                 environments. Can. Entomoi. 96:436-
+                                                                                                              43. Wellington, W. G. 1 952. Air mass                  51
+                                                                                                                  climatology of Ontario north of Lake          4 5. Wellington. W . G . 1 965. The use
+                                                                                                                  Huron and Lake Superior before out­                of cloud patterns to outline areas
+                                                                                                                  breaks of the spruce budworm and the
+Downloaded from www.annualreviews.org. Fundação Getulio Vargas (ar-272924) IP: 200.132.3.3 On: Tue, 09 Sept
+
+
+
+
+                                                                                                                                                                     with different climates during pop­
+                                                                                                                  forest tree caterpillar. Can. J Zool. 30:          ulation studies. Call. Elltomoi. 97:6 1 7-
+                                                                                                                  1 1 4-27                                           31
+                                             2025 10:33:53

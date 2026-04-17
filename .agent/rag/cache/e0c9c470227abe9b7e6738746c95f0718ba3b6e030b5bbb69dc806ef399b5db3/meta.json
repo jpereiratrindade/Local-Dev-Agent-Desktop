@@ -1,0 +1,9 @@
+{
+  "chunk_count": 16,
+  "extractor": "pdftotext",
+  "kind": "pdf",
+  "path": "/run/media/jpereiratrindade/labeco10T/labeco02/Revisao/trab64867108.pdf",
+  "sha256": "e0c9c470227abe9b7e6738746c95f0718ba3b6e030b5bbb69dc806ef399b5db3",
+  "text_size": 14617,
+  "used_ocr": false
+}

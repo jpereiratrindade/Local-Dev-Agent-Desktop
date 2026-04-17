@@ -1,0 +1,9 @@
+{
+  "chunk_count": 16,
+  "extractor": "pdftotext",
+  "kind": "pdf",
+  "path": "/run/media/jpereiratrindade/labeco10T/labeco02/Revisao/477-Article Text-9232-10646-10-20250916.pdf",
+  "sha256": "f43310d52f441dda5cd8f2ad3289f0281c432444522b26e020867d641b1bd0b4",
+  "text_size": 14774,
+  "used_ocr": false
+}

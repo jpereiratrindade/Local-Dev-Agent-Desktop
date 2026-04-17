@@ -1,0 +1,9 @@
+{
+  "chunk_count": 300,
+  "extractor": "pdftotext",
+  "kind": "pdf",
+  "path": "/run/media/jpereiratrindade/labeco10T/labeco02/Revisao/On_Digital_Soil_Mapping.pdf",
+  "sha256": "c1d117dbee050c78c582bc2e76fc2d0d4486fc3c46fcd02a768a722f7939f6ae",
+  "text_size": 285662,
+  "used_ocr": false
+}

@@ -1,0 +1,448 @@
+Hassan and Wang ﻿Ecological Processes   (2024) 13:62                                                                                          Ecological Processes
+https://doi.org/10.1186/s13717-024-00543-3
+
+
+
+
+ RESEARCH                                                                                                                                                  Open Access
+
+Paralleled grazing and mowing differentially
+affected plant community diversity
+and productivity in a semi‑arid grassland
+Nazim Hassan1,2 and Zhengwen Wang1*
+
+
+
+  Abstract
+  Background Numerous previous studies have investigated the effects of grazing or mowing on plant community
+  diversity and productivity in grasslands; however, few have deliberately made sound comparison between the effects
+  of paralleled grazing and mowing in terms of biomass removal on plant community diversity and productivity
+  in semi-arid grasslands. Using a 4-year field manipulative experiment, we investigated how moderate intensity
+  of domestic cattle (Bos taurus) grazing and mowing can affect plant community diversity and productivity in the semi-
+  arid grassland in northeastern China, with the attempt to find a better management practice.
+  Results Our results showed that grazing significantly increased plant species richness by 9% but did not change
+  plant biomass, whereas mowing did not alter plant species richness but significantly reduced total plant biomass
+  and root biomass by 18% and 12%, respectively, and significantly altered plant community composition, reflected
+  by 32% increase of grass to forb biomass ratio.
+  Conclusions Cattle grazing exerted a neutral effect on plant biomass and a positive effect on plant species richness,
+  suggesting that cattle grazing is a better management practice compared to the paralleled mowing, but longer-term
+  experiments are needed to explore the lasting influences of grazing vs. mowing on grassland productivity, plant
+  diversity and the sustainability.
+  Keywords Grazing, Mowing, Grassland, Plant community diversity, Biomass
+
+
+Introduction                                                                               conditions, as plant diversity and species richness
+Managements, like grazing and mowing, are needed                                           would become more severely affected when stocking
+to maintain plant community diversity and productiv-                                       rate increased, while most the responses were uniform
+ity in grassland ecosystems (Tälle et al. 2016; Henn and                                   across environmental changes. For example, highly nega-
+Damschen 2022; Hassan et al. 2023). Based on previous                                      tive impacts were observed in low productivity system
+researches, the effect of stocking rates was quantified                                    (McNaughton and Coughenur 1983; Loeser et al. 2004;
+based on the changes in diversity and species richness                                     Gebremedhn et al. 2023).
+of grassland ecosystems under diverse environmental                                          The effect of grazing on plant biomass may be nega-
+                                                                                           tive (Song et al. 2013; Zhao et al. 2011; Cao et al. 2024),
+                                                                                           positive and neutral (Milchunas and Lauenroth 1993;
+*Correspondence:
+Zhengwen Wang                                                                              McNaughton et al. 1989) However, this fluctuation under
+wangzw@iae.ac.cn                                                                           grazing management might help to describe shifts in
+1
+  Institute of Applied Ecology, Chinese Academy of Sciences, Shenyang,                     species dominance in grasslands open to long-term live-
+China
+2
+  Institute of Grassland Science, Key Laboratory of Vegetation Ecology,                    stock grazing (Loeser et al. 2004). Besides, plant species
+Northeast Normal University, Changchun, China                                              may respond to grazing by increasing or decreasing their
+                                                                                           relative biomass or reproductive fitness, which remains
+
+                                         © The Author(s) 2024. Open Access This article is licensed under a Creative Commons Attribution 4.0 International License, which
+                                         permits use, sharing, adaptation, distribution and reproduction in any medium or format, as long as you give appropriate credit to the
+                                         original author(s) and the source, provide a link to the Creative Commons licence, and indicate if changes were made. The images or
+                                         other third party material in this article are included in the article’s Creative Commons licence, unless indicated otherwise in a credit line
+                                         to the material. If material is not included in the article’s Creative Commons licence and your intended use is not permitted by statutory
+                                         regulation or exceeds the permitted use, you will need to obtain permission directly from the copyright holder. To view a copy of this
+                                         licence, visit http://​creat​iveco​mmons.​org/​licen​ses/​by/4.​0/.
+Hassan and Wang ﻿Ecological Processes   (2024) 13:62                                                              Page 2 of 8
+
+
+
+
+a debatable issue. These diverse effects of grazing on          et al. 2016; Socher et al. 2012; Huhta et al. 2001; Schmid
+grassland biomass might depend on resource supply, her-         et al. 2022; Hassan et al. 2023).
+bivore type, management type, species pool size, plant             Most of the previous studies have been focused on
+dominance and spatial scale (Milchunas and Lauenroth            the effect of either mowing or grazing on grassland veg-
+1988; Olff et al. 2002; Bai et al. 2012; Hassan et al. 2023).   etation (Bai et al. 2012; Wang et al. 2019; Hassan et al.
+  Globally, mowing is an effective practice for grassland       2023), and very few have compared the effects of paral-
+management, and mowing is similar to grazing in terms           leled mowing and grazing in terms of biomass removal,
+of its effect on biomass removal (Hassan et al. 2023). Like     therefore there is still ambiguity in selecting grassland
+grazing, mowing has also been found to exert positive,          management practice. The purpose of this study was to
+negative or neutral effects on plant community diversity        investigate how livestock grazing and mowing affect plant
+and productivity, structure and composition in grass-           communities in grassland ecosystems and to choose an
+land ecosystems (Tälle et al. 2015; Hejcman et al. 2011;        optimum management practice. We produced the fol-
+Gillespie et al. 2022; Hassan et al. 2023). Mowing with         lowing three hypotheses. First, grazing can increase spe-
+low frequency may increase litter accumulation, which           cies richness and biomass, whereas paralleled mowing
+in turn delays seedling germination, while mowing with          can increase plant density but decrease biomass. Sec-
+high frequency may suppress the seed set of some plant          ond, grasses have higher plasticity than forbs in terms of
+species, which will then decrease species richness and          biomass reversibility in response to grazing or mowing.
+abundance and affect community composition (Milberg             Third, annual grazing with moderate intensity can stabi-
+et al. 2017; Poschlod et al. 2011). However, by minimiz-        lize grassland plant communities and thus can be a sus-
+ing competition for resources, regular mowing could also        tainable management practices in northeastern China.
+increase seed establishment which in turn elevated spe-
+cies richness and biological diversity (Hansson and Fogel-      Materials and methods
+fors 2000; Smith et al. 2018). On other occasions, plant        Study area
+diversity was negatively affected due to lowered germina-       The study was carried out in a semi-arid meadow steppe
+tion and retarded seed bank development on account of           at Grassland Ecological Research Station of Northeast
+grassland fragmentation as consequences of trespass and         Normal University, Jilin Province, China (44° 45′ N, 123°
+mechanical disturbance (Valkó et al. 2012; Socher et al.        47′ E). It is 292 m above sea level. The climate of the
+2012).                                                          locality is semi-arid continental, with an annual mean
+  Mowing can negatively affect plant biomass both               temperature ranging from 4.6 to 6.5 °C, whereas the sum-
+above- and below-ground through the alteration in veg-          mer temperature was recorded from 25 to 38 °C in July
+etation structure and soil nutrient pool in grassland eco-      and August and –29 °C in January with annual precipi-
+systems (Billeter et al. 2007; Huhta et al. 2001; Bonanomi      tation from 280 to 400 mm. The soil is mixed salt-alkali
+et al. 2013; Li et al. 2022). Regular mowing with high fre-     (Salid Aridisol, US Soil Taxonomy) composed of 40%
+quency reduces biomass and plant litter accumulation            silt, 29% sand, and 31% clay. The soil is nutrient-poor in
+and thus keeps grassland open and decreases organic             total nitrogen content ranging from 2.2 to 2.5 mg g­ −1, and
+nutrient transport to the soil system (Shao et al. 2012;        total phosphorous content from 0.23 to 0.27 mg g­ −1. The
+Reisch and Poschlod 2009; Mao et al. 2023). However,            dominant plant species is Leymus chinensis (a perennial
+long-term mowing degraded natural grassland and led             grass), accounting for ≥ 60% of the total annual above-
+to worse community properties and structure by affect-          ground biomass. The other grass species include Phrag-
+ing many community processes such as plant compensa-            mites australis, Calamagrostis epigeios, Setaria viridis,
+tory growth (Liu et al. 2007). Generally under mowing,          Chloris virgata and the forbs include Artemisia scoparia,
+the aboveground biomass of forbs was decreased to a             Artemisia anethifolia, Kalimeris integrtifolia, and Mess-
+much larger extent compared to that of dominant grasses         erschmidias ibirica. The study area has a long history
+in grassland ecosystems (Hejcman et al. 2011; Billeter          of grazing and mowing, but our study site was fenced
+et al. 2007). Moreover, the removal of apical buds due to       in 2005 to shield against uncontrolled anthropogenic
+mowing may inhibit flowering, fruiting and seeding to a         disturbances.
+larger extent for forb species than for grasses, leading to
+alteration of community composition, reflected by the           Experimental design and treatment
+decrease of forb to grass ratio (Valkó et al. 2012). These      We established a gazing and mowing experiment to test
+diverse effects of mowing might be due to the variation of      the different effects of paralleled grazing and mowing on
+several abiotic and biotic factors such as mowing inten-        plant community diversity and productivity from 2016
+sity, species pool, mowing timing, soil condition, litter       to 2019 (Fig. 1). Within the study site comparatively flat
+accumulation, climate, light intensity and so on (Tälle         land area with uniform soil conditions was selected as
+Hassan and Wang ﻿Ecological Processes   (2024) 13:62                                                              Page 3 of 8
+
+
+
+
+ Fig. 1 The experimental layout
+
+
+
+our experimental arena and was fenced in 2016. In June        Statistical analyses
+2016, we randomly established six 400 m × 150 m blocks.       All statistical analyses were performed in R 3.1.0 (R
+The distance between every two adjacent blocks was kept       Development Core Team 2014). To study the effects of
+100–250 m apart. Each block was comprised of three            grazing and mowing on plant community and diversity,
+sub-enclosure plots of 100 m × 100 m size, which were         we used linear mixed effect models with “treatment”
+randomly assigned to the three treatments including con-      (grazing, mowing and control) included as the fixed
+trol, domestic cattle grazing and mowing. Adjacent plots      effects and “replicate block” included as the random
+were at least 50 m apart. The plots were grazed by cattle     effect. The specific response variables assessed were:
+and mowed with hay mower at moderate intensity.               plant diversity, density, root biomass and shoot biomass.
+   Grazing treatment was performed from 6:00 am to 8:00       We also used the same method to assess the effects of
+am and from 4:00 pm to 6:00 pm every day during the           grazing on grass and forb biomass. Models were fit-
+first two weeks of each month from June to September          ted using the function lmer from the package lme 4 and
+each year, which mimicked local grazing habits. Mow-          the package lmer Test was used to calculate P-values
+ing treatment was started in early August, the peak of the    (Kuznetsova et al. 2017). Prior to the above analyses, all
+growing season each year. The plant material higher than      the data were tested for homogeneity of residual vari-
+20 cm was removed with hay mowers, which is about             ances, using Levene’s test. If needed, data were normal-
+equivalent to the grazing treatment in terms of biomass       ized by arcsine square root transformations.
+removal.
+
+                                                              Results
+Plant and litter sampling
+                                                              Cattle grazing and mowing did not significantly affect
+Plant and litter sampling were carried out in mid-August
+                                                              plant species evenness (F2,15 = 1.08, P = 0.720; Fig. 2a), but
+each year. We surveyed plant diversity, biomass of each
+                                                              significantly affect plant species richness (F2,15 = 25.33,
+plant species, total plant biomass and plant litter bio-
+                                                              P = 0.026; Fig. 2b). Species richness in grazed plots was
+mass. We set up two parallel transects at a distance of
+                                                              higher than that in the mowed plots (P = 0.034), but was
+30 m within each plot, and within each of them, we set up
+                                                              not different from that in control plots (P = 0.361). Com-
+five 1 m × 1 m quadrats, every adjacent two of which were
+                                                              pared to grazing, mowing significantly decreased total
+15 m apart. We measured species richness by visually
+                                                              biomass (P = 0.047; Fig. 3a) and root biomass (P = 0.037,
+counting the number of plant species, and clipped all the
+                                                              Fig. 3c). However, shoot biomass did not show any sig-
+plant material to ground level in the five 1 m × 1 m quad-
+                                                              nificant responses to grazing or mowing (Fig. 3b). Graz-
+rats within each transect (Fig. 1). We also collected plant
+                                                              ing significantly decreased shoot:root biomass ratio
+litter in the same locations. Aboveground plant material
+                                                              (P = 0.037, Fig. 3d), but mowing did not. Cattle grazing
+and litter were then dried for 48 h at 65 °C and weighed
+                                                              and mowing did not affect grass biomass (F2,15 = 2.13,
+to estimate aboveground plant biomass (Bai et al. 2012;
+                                                              P = 0.256; Fig. 3e), but significantly altered forb biomass
+Hassan et al. 2023).
+Hassan and Wang ﻿Ecological Processes       (2024) 13:62                                                                                       Page 4 of 8
+
+
+
+
+ Fig. 2 Effects of grazing and mowing on plant species evenness (a) and species richness (b). Letters “a” and “b” indicate a significant difference
+ between treatments (P < 0.05)
+
+
+
+
+ Fig. 3 Effects of grazing and mowing on plant total biomass (a), shoot biomass (b), root biomass (c), shoot:root biomass ratio (d), grass biomass (e),
+ forb biomass (f), grass:forb biomass ratio (g) and litter mass (h). Letters “a” and “b” indicate a significant difference between treatments (P < 0.05)
+
+
+
+
+(F2,15 = 29.77, P = 0.042; Fig. 3f ). Mowing significantly                     in the grazed plots was halfway between but did not dif-
+decreased forb biomass (P = 0.019) and thus increased                          fer significantly from that in the control or mowed plots.
+grass:forb biomass ratio (P = 0.011) (Fig. 3g).                                Grass:forb density ratio in mowed plots was significantly
+   Both cattle grazing and mowing significantly decreased                      higher than in the control and grazed plots (P = 0.005,
+litter biomass (F2,15 = 96.23, P = 0.002; Fig. 3h). Litter                     Fig. 5f ). Both grass (P = 0.003) and forb (P = 0.009) height
+biomass in mowed and grazed plots were not different                           in mowed plots was significantly lower than the con-
+from each other (P = 0.658, Fig. 3h), but were signifi-                        trol plots but did not differ from that in the grazed plots
+cantly lower than that in the control plots (P = 0.001).                       (P > 0.05, Fig. 5d, e).
+Regardless of experimental treatments, there was no
+significant relationship between species richness and                          Discussion
+shoot biomass (F1,16 = 0.782, P = 0.146, Fig. 4a), root bio-                   Unlike mowing, grazing was found to significantly
+mass (F1,16 = 6.268, P = 0.369, Fig. 4b), or total biomass                     increase plant species richness (Fig. 2a, b), which is in
+(F1,16 = 1.36, P = 0.694, Fig. 4c).                                            line with our hypothesis and also supporting previous
+   Mowing significantly increased grass (P = 0.021) and                        studies claiming that grazing has positive effects on plant
+overall (P = 0.007) plant density while decreased forb                         species richness (Pykälä 2005; Anderson and Minor 2020;
+density (P = 0.001), but grazing did not (P > 0.05; Fig. 5a–                   Gavrichkova et al. 2022). This grazing-induced elevation
+c). The density of both grass and forb and the community                       of plant species richness was assumed to be attributed to
+Hassan and Wang ﻿Ecological Processes        (2024) 13:62                                                                                        Page 5 of 8
+
+
+
+
+ Fig. 4 Effect of grazing and mowing on the relationship of shoot biomass (a), root biomass (b) and total biomass (c) with species richness. In
+ the panels, the open, green filled and orange filled circles denote control, grazing and mowing treatments, respectively
+
+
+
+
+ Fig. 5 Effect of grazing and mowing on total density (a), grass density (b), forb density (c), grass height (d), forb height (e) and grass:forb density
+ ratio (f). Letters “a” and “b” indicate a significant difference between treatments (P < 0.05)
+
+
+
+
+several mechanisms. First, as compared to mowing, graz-                         our case, which was preferentially foraged by livestock
+ing increased the soil nutrient pool, through the addition                      (Anderson and Minor 2020; Hassan et al. 2021). In
+of N and P in the form of faces and urine into the soil,                        contrast to grazing, mowing decreased species rich-
+hence the subordinate species would usually be facili-                          ness, probably because mowing increased the openness
+tated disproportionally more than the dominant species                          of vegetation, thereby increasing soil temperature and
+(Hassan et al. 2021; Wang et al. 2019). Second, trampling                       decreasing soil moisture. Consequently, seed germina-
+and wallowing by livestock enhanced litter disintegration                       tion and bud outgrowth were retarded, ultimately leading
+and decomposition, thus leading to enriched soil, which                         to a reduction of species richness (Méndez and Karlsson
+would facilitate subordinate species to a larger extent                         2005; Ågren 2008; Pykälä 2005; Karami et al. 2021; Has-
+than dominant species as the latter were inhibited more                         san et al. 2024).
+severely by livestock (Risch et al. 2015). Third, more sub-                       In our study, mowing significantly decreased total
+ordinate species would be fostered under the competi-                           biomass and root biomass whereas grazing significantly
+tive release from the dominant species, L. chinensis in                         lowered shoot:root biomass ratio (Fig. 3a–d). First,
+Hassan and Wang ﻿Ecological Processes   (2024) 13:62                                                              Page 6 of 8
+
+
+
+
+along with above-ground biomass removal, mowing also           density might be attributed to the fact that underground
+reduced the accumulation of plant litter, which would          rhizomes of rhizomatous grasses such as L. chinensis, the
+disturb the balance of soil nutrients between soil and         predominant species, were not easily affected by mow-
+organic matter. Second, mowing shrank soil seed banks,         ing (Briske and Richards 1994) and even the bud out-
+delayed seed development and decreased plant species           growth and tillering would be stimulated by shoot injury
+richness (Ziter and MacDougall 2013; Yang et al. 2020;         under mowing (Wang et al. 2004). However, forbs were
+Kotas et al. 2017). Third, mowing decreased the produc-        inert relative to grasses in terms of being stimulated by
+tion of photosynthate by removing plant photosynthetic         mowing, and would thus further be suppressed more in
+organs (Zhao et al. 2023). All these three mechanisms          response to denser grasses. In contrast, despite that cat-
+could account for the reduction of plant community bio-        tle grazing has a similar effect by feeding on grasses and
+mass under mowing. On the other hand, mowing slightly          forbs, it would exert greater grazing pressure on grasses
+but insignificantly decreased shoot biomass, probably          than on forbs due to their preference for grasses, i.e.,
+the negative effects on shoot biomass were offset by the       selective foraging for grasses (Fynn et al. 2004; Díaz et al.
+increase in stem density.                                      2007; Deng et al. 2014). In addition, cattle trampling
+  Grazing did not affect shoot, root or total biomass,         might have created gaps for seedlings of forbs rather
+probably because the possible negative effects of such         than of grasses, which more relied on clonal propagation.
+short-term grazing with moderate intensity were offset         Taken together, it is understandable that, unlike mowing,
+by the fertilizing effect of cattle faeces and urine. Gener-   grazing has more complex and even antagonistic effects
+ally, an increase in grazing duration and intensity might      on the growth and propagation of offspring plants for
+significantly affect the biomass. However, grazing dur-        grasses and forbs, thus leading to little difference in its
+ing the non-growing season may significantly increase          impact on such many characteristic features of both plant
+aboveground biomass compared to that during the grow-          functional types.
+ing season. These findings may have implications for              Since grazing and mowing decreased above-ground
+grassland management especially from perspective of            biomass, they decreased litter production (Fig. 3h), which
+seasonal pattern of grazing practice, i.e., grazing duration   consolidates previous findings that management prac-
+should not be concentrated on the growing season, but          tices such as grazing and mowing have negative impacts
+could be lengthened to cover the entire or at least a major    on litter biomass (Shao et al. 2012; O’Neill et al. 2003;
+part of non-growing season (Hao and He 2019). On the           Zhang et al. 2022). However, the effect on litter biomass
+other hand, the decreased shoot:root ratio might be the        may vary with grazing and mowing intensity, timing and
+consequence of shoot biomass removal by cattle and also        soil type (Grime 1973). Unexpectedly, we failed to find a
+of the adaptation of plants to grazing pressure.               significant relationship between shoot, root and total bio-
+  It is commonly believed that both grazing and mow-           mass with species richness (Fig. 4a–c). This failure might
+ing differentially affect forb and grass biomass and thus      be attributed to the moderate intensity with short dura-
+their ratios (Liu et al. 2018; Fynn et al. 2004; Hassan        tion of grazing and mowing treatment and likely also to
+et al. 2023). In our study, mowing significantly decreased     the absence of interspecific compensatory effects due
+forb biomass and thereby increased the grass:forb bio-         to low species richness in the study area (Beltman et al.
+mass ratio (Fig. 3f, g). Indeed, in most cases, mowing         2003).
+was found to suppress the growth of forbs more than of
+grasses, hence altering their ratio (Valkó et al. 2012; Bil-   Conclusions
+leter et al. 2007; Hejcman et al. 2011). Probably, grasses     This study suggests that, compared to mowing, cattle
+have basal meristems, which may be less susceptible to         grazing is a better management practice in the semi-
+mowing compared with aerial meristems of forbs (Briske         arid grassland in northeastern China, on condition that
+and Richards 1994; Adhikari and Russell 2014). In con-         they are equivalent in terms of biomass removal. Annual
+trast, the removal of apical meristems may prevent forbs       grazing of moderate intensity can maintain the stabil-
+from flowering, fruiting, and seed setting, ultimately         ity of grassland plant community and thus can be a sus-
+leading to a decrease in forb biomass (Hejcman et al.          tainable management practice. Therefore, grazing was a
+2011; Valkó et al. 2012).                                      better management practice than mowing. There is still
+  Compared to grazing, mowing was found to signifi-            ambiguity that, how it will persist in the long run, par-
+cantly increase plant total density, grass density and         ticularly under climate change. Despite that, our study
+grass:forb density ratio while decreasing forb density,        provides baseline information from the locality, which
+grass and forb height (Fig. 5a–f ), which is consistent with   can help researchers step further and inform herdsmen
+previous studies (Gibson 2009; Davies et al. 2012; Deng        to adjust their strategy of grassland use. Taken together,
+et al. 2014; Karami et al. 2021). The increase in grass        the present study was a short-term one with moderate
+Hassan and Wang ﻿Ecological Processes           (2024) 13:62                                                                                          Page 7 of 8
+
+
+
+
+intensity of grazing and mowing, and longer-term experi-                            Cao F, Li W, JiangY GX, Zhao C, Ma J (2024) Effects of grazing on grassland
+                                                                                           biomass and biodiversity: a global synthesis. Field Crops Res 306:109204
+ments are needed to explore the influences of grazing vs.                           Davies K, Bates J, Nafus A (2012) Vegetation response to mowing dense moun-
+mowing on grassland productivity, plant diversity and                                      tain big sagebrush stands. Rangel Ecol Manag 65:268–276
+sustainability.                                                                     Deng L, Sweeney S, Shangguan ZP (2014) Grassland responses to grazing
+                                                                                           disturbance: plant diversity changes with grazing intensity in a desert
+Acknowledgements                                                                           steppe. Grass Forage Sci 69:524–533
+Two anonymous reviewers are appreciated for their insightful comments on            Díaz S, Lavorel S, McIntyre S, Falczuk V, Casanoves F, Milchunas DG (2007)
+our manuscript.                                                                            Plant trait responses to grazing: a global synthesis. Glob Change Biol
+                                                                                           13:313–341
+Author contributions                                                                Fynn RW, Morris CD, Edwards TJ (2004) Effect of burning and mowing on grass
+N.H. designed the research work and performed experiments, N.H. and Z.W.                   and forb diversity in a long-term grassland experiment. Appl Veg Sci
+analyzed the data and wrote the manuscript; Z.W. reframed the structure of                 7:1–10
+the earlier version of the manuscript.                                              Gavrichkova O, Pretto G, Brugnoli E, Chiti T, Ivashchenko KV, Mattioni M (2022)
+                                                                                           Consequences of grazing cessation for soil environment and vegetation
+Funding                                                                                    in a subalpine grassland ecosystem. Plants 11:2121
+This project was supported by the National Natural Science Foundation of            Gebremedhn HH, Ndiaye O, Mensah S, Fassinou C, Taugourdeau S, Tagesson T,
+China (No. 32061143027) and the National Key Research and Development                      Salgado P (2023) Grazing effects on vegetation dynamics in the savannah
+Program of China (No. 2022YFF1300600), and the Program for Introducing Tal-                ecosystems of the Sahel. Ecol Process 12:54
+ents to Universities (B16011), the Natural Science Foundation of Jilin Province     Gibson DJ (2009) Grasses and grassland ecology. Oxford University Press, New
+Science and Technology Department (20220101283JC) and NSFC grant of                        York
+China (42230515).                                                                   Gillespie MA, Buckley HL, Condron L, Wratten SD (2022) Grassland plant and
+                                                                                           invertebrate species richness increases from mowing are mediated by
+Availability of data and materials                                                         impacts on soil chemistry. Basic Appl Ecol 63:152–163
+The data that support the findings of this study are available from the cor-        Grime J (1973) Control of species density in herbaceous vegetation. J Environ
+responding author upon reasonable request.                                                 Manage 1:151–167
+                                                                                    Hansson M, Fogelfors H (2000) Management of a semi-natural grassland:
+                                                                                           results from a 15-year-old experiment in southern Sweden. J Veg Sci
+Declarations                                                                               11:31–38
+                                                                                    Hao Y, He Z (2019) Effects of grazing patterns on grassland biomass and soil
+Ethics approval and consent to participate                                                 environments in China: a meta-analysis. PLoS ONE 14:e0215223
+Not applicable.                                                                     Hassan N, Li X, Wang J, Zhu H, Nummi P, Wang D (2021) Effects of grazing on
+                                                                                           C:N:P stoichiometry attenuate from soils to plants and insect herbivores
+Consent for publication                                                                    in a semi-arid grassland. Oecologia 195:785–795
+Not applicable.                                                                     Hassan N, Zhong Z, Wang D, Zhu Y, Naeem I, Ahungu AB (2023) Effects of long-
+                                                                                           term mowing on species diversity, biomass and composition of plant
+Competing interests                                                                        community in a semi-arid grassland in northeastern China. Appl Veg Sci
+The authors declare no conflict of interest.                                               26:e12743
+                                                                                    Hassan N, Abdullah I, Khan W, Khan A, Ahmad N, Iqbal B et al (2024) Effect of
+                                                                                           grazing and mowing on soil physiochemical properties in a semi-arid
+Received: 21 May 2024 Accepted: 20 August 2024                                             grassland of Northeast China. Pol J Environ Stud 33:1725–1735
+                                                                                    Hejcman M, Pavlů SJ (2011) Competitive ability of Rhinanthus minor L. in
+                                                                                           relation to productivityin the Rengen Grassland Experiment. Plant Soil
+                                                                                           Environ 57:45–51
+                                                                                    Henn JJ, Damschen EI (2022) Grassland management actions influence soil
+                                                                                           conditions and plant community responses to winter climate change.
+References                                                                                 Ecosphere 13:e4270
+Adhikari S, Russell FL (2014) Effects of apical meristem mining on plant fitness,   Huhta AP, Rautio P, Tuomi J, Laine K (2001) Restorative mowing on an
+      architecture, and flowering phenology in Cirsium altissimum (Asteraceae).            abandoned semi-natural meadow: short-term and predicted long-term
+      Am J Bot 101:2079–2087                                                               effects. J Veg Sci 12:677–686
+Ågren GI (2008) Stoichiometry and nutrition of plant growth in natural com-         Karami P, Bandak I, Karaji MG, Dragovich D (2021) Effects of seasonal grazing
+      munities. Annu Rev Ecol Evol Syst 39:153–170                                         and annual mowing on floristic composition and plant diversity in the
+Anderson EC, Minor ES (2020) Management effects on plant community and                     Saral rangeland, Kurdistan, Iran. Glob Ecol Conserv 27:e01515
+      functional assemblages in Chicago’s vacant lots. Appl Veg Sci 23:266–276      Kotas P, Choma M, Šantrůčková H, Lepš J, Tříska J, Kaštovská E (2017) Linking
+Bai Y, Wu J, Clark CM, Pan Q, Zhang L, Chen S (2012) Grazing alters ecosystem              above- and belowground responses to 16 years of fertilization, mowing,
+      functioning and C:N:P stoichiometry of grasslands along a regional                   and removal of the dominant species in a temperate grassland. Ecosys-
+      precipitation gradient. J Appl Ecol 49:1204–1215                                     tems 20:354–367
+Beltman B, Van Den Broek T, Martin W, Ten Cate M, Güsewell S (2003) Impact          Kuznetsova A, Brockhoff PB, Christensen RHB (2017) lmerTest package: tests in
+      of mowing regime on species richness and biomass of a limestone hay                  linear mixed effects models. J Stat Softw 82:1–26
+      meadow in Ireland. Bull Geobot Inst ETH 69:17–30                              Li L, Liu H, Baoyin T (2022) Mowing increases root-to-shoot ratio but decreases
+Billeter R, Peintinger M, Diemer M (2007) Restoration of montane fen mead-                 soil organic carbon storage and microbial biomass C in a semiarid grass-
+      ows by mowing remains possible after 4–35 years of abandonment. Bot                  land of North China. Agriculture 12:1324
+      Helv 117:1–13                                                                 Liu Z, Baoyin T, Sun J, Minggagud H, Li X (2018) Plant sizes mediate mowing-
+Bonanomi G, Incerti G, Allegrezza M (2013) Assessing the impact of land aban-              induced changes in nutrient stoichiometry and allocation of a perennial
+      donment, nitrogen enrichment and fairy-ring fungi on plant diversity of              grass in semi-arid grassland. Evol Ecol 8:3109–3118
+      Mediterranean grasslands. Biodivers Conserv 22:2285–2304                      Liu M, Baoyin T, Yang C, Zhang X (2007) Effect of mowing systems on composi-
+Briske D, Richards JH (1994) Physiological responses of individual plants to               tion of Stipa grandis community in Inner Mongolia steppe. J Beijing Norm
+      grazing: current status and ecological significance. In: Vavra M, Laycock            Univ Nat Sci 43:83–87
+      WA, Pieper RD, eds. Ecological implications of herbivory in the west.         Loeser MR, Crews TE, Sisk TD (2004) Defoliation increased above-ground pro-
+      Society for Range Management, Denver, CO. pp 147–176                                 ductivity in a semi-arid grassland. Rangel Ecol Manag 57:442–447
+Hassan and Wang ﻿Ecological Processes           (2024) 13:62                                                                                           Page 8 of 8
+
+
+
+
+Mao Z, Wang Y, Li Q, Li W, Wang H, Li Y, Yue M (2023) Deep mowing rather than       Zhang S, Wei Y, Liu N, Wang Y, Manlike A, Zhang Y (2022) Mowing facilitated
+      fire restrains grassland Miscanthus growth via affecting soil nutrient loss         shoot and root litter decomposition compared with grazing. Plants
+      and microbial community redistribution. Front Plant Sci 13:1105718                  11:846
+McNaughton WLL, Coughenour MB (1983) Plant adaptation in an ecosystem               Zhao Y, Peth S, Reszkowska A, Gan L, Krümmelbein J, Peng X (2011) Response
+      context: effects of defoliation, nitrogen, and water on growth of an                of soil moisture and temperature to grazing intensity in a Leymus chinen-
+      African C4 sedge. Ecology 64:307–318                                                sis steppe, Inner Mongolia. Plant Soil 340:89–102
+McNaughton OM, Frank DA, Williams K (1989) Ecosystem-level patterns                 Zhao T, Zhang F, Suo R, Zhen J, Qiao J, Zhao M, Bai K, Zhang B (2023) The
+      of primary productivity and herbivory in terrestrial habitats. Nature               importance of functional diversity in regulating forage biomass and
+      341:142–144                                                                         nutrition: evidence from mowing in semiarid grasslands. Restor Ecol
+Méndez M, Karlsson PS (2005) Nutrient stoichiometry in Pinguicula vul-                    31:e13742
+      garis: nutrient availability, plant size, and reproductive status. Ecology    Ziter C, MacDougall AS (2013) Nutrients and defoliation increase soil carbon
+      86:982–991                                                                          inputs in grassland. Ecology 94:106–116
+Milberg P, Tälle M, Fogelfors H, Westerberg L (2017) The biodiversity cost of
+      reducing management intensity in species-rich grasslands: mowing
+      annually vs. every third year. Basic Appl Ecol 22:61–74                       Publisher’s Note
+Milchunas DG, Lauenroth WK (1993) Quantitative effects of grazing on                Springer Nature remains neutral with regard to jurisdictional claims in pub-
+      vegetation and soils over a global range of environments. Ecol Monogr         lished maps and institutional affiliations.
+      63:327–366
+Milchunas SOE, Lauenroth WK (1988) A generalized model of the effects of
+      grazing by large herbivores on grassland community structure. Am Nat
+      132:87–106
+O’Neill KM, Olson BE, Rolston MG, Wallander R, Larson DP, Seibert CE (2003)
+      Effects of livestock grazing on rangeland grasshopper (Orthoptera: Acridi-
+      dae) abundance. Agric Ecosyst Environ 97:51–64
+Olff H, Ritchie ME, Prins HH (2002) Global environmental controls of diversity in
+      large herbivores. Nature 415:901–904
+Poschlod P, Hoffmann J, Bernhardt-Römermann M (2011) Effect of grassland
+      management on the age and reproduction structure of Helianthemum
+      nummularium and Lotus corniculatus populations. Preslia 83:421–435
+Pykälä J (2005) Cattle grazing increases plant species richness of most species
+      trait groups in mesic semi-natural grasslands. Plant Ecol 175:217–226
+Reisch C, Poschlod P (2009) Land use affects flowering time: seasonal and
+      genetic differentiation in the grassland plant Scabiosa columbaria. Evol
+      Ecol 23:753–764
+Risch AC, Schütz M, Vandegehuchte ML, van der Putten WH, Duyts H, Raschein
+      U (2015) Aboveground vertebrate and invertebrate herbivore impact on
+      net N mineralization in subalpine grasslands. Ecology 96:3312–3322
+Schmid JS, Huth A, Taubert F (2022) Impact of mowing frequency and
+      temperature on the production of temperate grasslands: explanations
+      received by an individual-based model. Oikos 2022:e09108
+Shao C, Chen J, Li L, Zhang L (2012) Ecosystem responses to mowing manipu-
+      lations in an arid Inner Mongolia steppe: an energy perspective. J Arid
+      Environ 82:1–10
+Smith AL, Barrett RL, Milner RN (2018) Annual mowing maintains plant diver-
+      sity in threatened temperate grasslands. Appl Veg Sci 21:207–218
+Socher SA, Prati D, Boch S, Muller J, KlausVH HN (2012) Direct and productivity-
+      mediated indirect effects of fertilization, mowing and grazing on grass-
+      land species richness. J Ecol 100:1391–1399
+Song Y, Zhou D, Zhang H, Li G, Jin Y, Li Q (2013) Effects of vegetation height
+      and density on soil temperature variations. Chin Sci Bull 58:907–912
+Tälle M, Fogelfors H, Westerberg L, Milberg P (2015) The conservation benefit
+      of mowing vs grazing for management of species-rich grasslands: a
+      multi-site, multi-year field experiment. Nord J Bot 33:761–768
+Tälle M, Deák B, Poschlod P, Valkó O, Westerberg L, Milberg P (2016) Grazing vs.
+      mowing: a meta-analysis of biodiversity benefits for grassland manage-
+      ment. Agr Ecoyst Environ 222:200–212
+Valkó O, Török P, Matus G, Tóthmérész B (2012) Is regular mowing the most
+      appropriate and cost-effective management maintaining diversity
+      and biomass of target forbs in mountain hay meadows? Funct Ecol
+      207:303–309
+Wang ZW, Li LH, Han XG, Dong M (2004) Do rhizome severing and shoot
+      defoliation affect clonal growth of Leymus chinensis at ramet population
+      level? Acta Oecol 26:255–260
+Wang L, Delgado-Baquerizo M, Wang D, Isbell F, Liu J, Feng C (2019) Diversify-
+      ing livestock promotes multidiversity and multifunctionality in managed
+      grasslands. Proc Nat Acad Sci 116:6187–6192
+Yang Z, Minggagud H, Baoyin T, Li FY (2020) Plant production decreases
+      whereas nutrients concentration increases in response to the decrease of
+      mowing stubble height. J Environ Manag 253:109745

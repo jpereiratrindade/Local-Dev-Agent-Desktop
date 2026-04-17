@@ -1,0 +1,1064 @@
+              agronomy
+Article
+Determinants for Smallholder Farmers’ Adoption of Improved
+Forages in Dairy Production Systems: The Case of Tanga
+Region, Tanzania
+Hycenth Tim Ndah 1,2 , Johannes Schuler 1, * , Vandoline N. Nkwain 3 , Beatus Nzogela 4 , Walter Mangesho 5 ,
+Richard Mollel 5 , Rose Loina 5 , Peter Zander 1 and Birthe K. Paul 4
+
+                                          1   Leibniz Centre for Agricultural Landscape Research (ZALF), 15374 Müncheberg, Germany;
+                                              tim.ndah@zalf.de (H.T.N.); zander@zalf.de (P.Z.)
+                                          2   Department of Communication and Advisory Services in Rural Areas, University of Hohenheim,
+                                              70599 Stuttgart, Germany
+                                          3   Freelance Consultant, 67365 Schwegenheim, Germany; meetvandy@yahoo.com
+                                          4   International Center for Tropical Agriculture (CIAT), Nairobi P.O. Box 823-00621, Kenya;
+                                              beatusnzogela6son@gmail.com (B.N.); birthe.paul@giz.de (B.K.P.)
+                                          5   Tanzania Livestock Research Institute (TALIRI), Eastern Zone, Tanga P.O. Box 5016, Tanzania;
+                                              wmangesho81@gmail.com (W.M.); richardmollel38@gmail.com (R.M.); rloina15@gmail.com (R.L.)
+                                          *   Correspondence: schuler@zalf.de
+
+
+                                          Abstract: Dairy productivity in sub-Saharan Africa remains below its potential, while there is an
+                                          increasing demand for milk from its growing population. This study focuses on the adoption potential
+                                of improved, more nutritive and productive forages by smallholder farmers in the Tanga region of
+         
+                                          Tanzania. By applying a qualitative mixed-method approach, including farm visits, interviews and
+Citation: Ndah, H.T.; Schuler, J.;
+                                          a multi-stakeholder workshop guided by the Qualitative Assessment Tool for Forage Technologies
+Nkwain, V.N.; Nzogela, B.;
+                                          (QATo-FT), we systematically identify and analyse the roles of the (i) institutional and political,
+Mangesho, W.; Mollel, R.; Loina, R.;
+Zander, P.; Paul, B.K. Determinants
+                                          (ii) socio-economic and (iii) cultural factors influencing the adoption and diffusion of improved
+for Smallholder Farmers’ Adoption         forage technologies. The findings reveal the unsuitable cool climate and unfavourable socioeconomic
+of Improved Forages in Dairy              conditions, including low labour opportunity costs in the dry season as critical reasons for the low
+Production Systems: The Case of           current adoption rate. However, a positive community attitude, the recognised ecological benefits
+Tanga Region, Tanzania. Agronomy          and the supporting role of promoting institutions are the main influencing factors of a high adoption
+2022, 12, 305. https://doi.org/           potential. Yet, the political and institutional framework at the regional level, as well as the market
+10.3390/agronomy12020305                  conditions, negatively influence the adoption potential. We suggest an integrated approach for rural
+Academic Editors: M. Jordana Rivero       development that goes beyond the improvement of yields, but provides more efficient use of land
+and Mary Bridget Lynch                    and labour in the region.
+
+Received: 13 December 2021
+                                          Keywords: adoption; innovations; forages; Tanzania; qualitative assessment; sub-Saharan Africa
+Accepted: 21 January 2022
+Published: 25 January 2022
+
+Publisher’s Note: MDPI stays neutral
+with regard to jurisdictional claims in   1. Introduction
+published maps and institutional affil-
+                                               Agriculture is the main economic pillar of most African countries. Being an integral
+iations.
+                                          part of many African traditions [1], livestock rearing plays a vital role in sub-Saharan
+                                          Africa’s agricultural practice. The region has a large cattle population of about 191 million
+                                          heads [2], but dairy productivity remains below potential, partly because the traditional
+Copyright: © 2022 by the authors.
+                                          techniques that dominated the sector for decades are still widespread. Jahnke et al. [3]
+Licensee MDPI, Basel, Switzerland.        purport that although developing countries (in the 1980s) owned 70% of the world0 s bovines
+This article is an open access article    (including buffaloes), they only produced 29% of the global meat and 23% of the global
+distributed under the terms and           milk output.
+conditions of the Creative Commons             In 2021, Africa’s self-sufficiency in dairy products did not change, if anything, it is
+Attribution (CC BY) license (https://     expected to grow worse as population growth remains high [4]. In contrast, the rapidly
+creativecommons.org/licenses/by/          growing African population means an increasing demand for dairy products, which is
+4.0/).                                    found to largely outweigh their production in Africa [1,5,6]. According to Alexandratos
+
+
+
+Agronomy 2022, 12, 305. https://doi.org/10.3390/agronomy12020305                                         https://www.mdpi.com/journal/agronomy
+Agronomy 2022, 12, 305                                                                                            2 of 13
+
+
+
+
+                         and Bruinsma [7], the average per-person meat consumption per year in sub-Saharan
+                         Africa (SSA) is 10 kg and is projected to reach 16 kg/person in 2050, while that of milk
+                         consumption stood at 31 L/person/year in 2005/2007 and is projected to reach 37 L in 2050.
+                         Ndambi et al. [1] highlighted this high demand when they compared the demand growth
+                         rate of dairy products in Africa (4.0%) to their production growth rate (3.1%) between 1990
+                         and 2004.
+                               These numbers demonstrate that Africa’s dairy production capacity is yet to be op-
+                         timised, and self-sufficiency in dairy production is not attained. Given that a substantial
+                         increase in Africa’s milk production could yield multiplier effects, such as poverty allevia-
+                         tion, improved nutrition and income generation [8], organisations, such as Heifer Project
+                         International, Land O Lakes, Send a Cow, International Livestock Research Institute (ILR(I)
+                         and the International Center for Tropical Agriculture (CIAT), have been working on strate-
+                         gies to narrow the gap between the demand and supply of milk and its products in Africa.
+                         Some of the main strategies in this respect have been the introduction of better animal
+                         breeds and quality feed for livestock. For over fifty years, researchers tested and introduced
+                         nutritive and low-cost legumes and fodder shrubs to improve cattle0 s protein intake and in-
+                         crease the productivity of SSA dairy farms [9–11]. However, their adoption by smallholder
+                         livestock farmers has proven to be unsatisfactory. Franzel [12] and Wambugu [11] found
+                         that despite the heavy sensitisation on more nutritive forage technologies in East Africa,
+                         only 10% of the smallholder farmers took them up by 2005. Additionally, the numbers of
+                         shrubs planted were largely inadequate.
+                               Poor rates of adoption for improved forage technologies were reported in most parts
+                         of SSA where they were introduced (e.g., Malawi [13], Ethiopia [14], Central Kenya [15]
+                         as well as Kenya, Uganda and Rwanda [6]. The question remains why improved forage
+                         production systems, which hold the potential to greatly improve dairy farm outputs and the
+                         livelihoods of farmers, do not seem to gain attention within the targeted communities. Why
+                         are smallholder dairy farmers in sub-Saharan Africa and Tanzania, in particular, reluctant
+                         towards adopting the forage technologies introduced to improve the performance of the
+                         dairy cows? This paper focuses on exploring the avenues for answers to this question. By
+                         applying a qualitative mixed-method tool, including farm visits, interviews and a multi-
+                         stakeholder workshop (guided by the Qualitative Assessment Tool for Forage Technologies:
+                         QATo-FT), we systematically identify and analyse the roles of the (i) institutional and
+                         political, (ii) socio-economic and (iii) cultural factors influencing the adoption and diffusion
+                         of improved forage technologies in sub-Saharan Africa with a special focus on the Tanga
+                         region (Tanzania) as a case study.
+                               In this study, we define forage technologies as new forage production systems, includ-
+                         ing new, improved varieties and species. This paper was prepared based on a project report
+                         published as a non-peer reviewed working paper, which includes other related elements
+                         originally meant to serve the purpose of project reporting [16].
+
+                         2. Materials and Methods
+                         2.1. Conceptual Basis
+                              The acceptance of innovations by farmers, widely referred to as “adoption”, is seen
+                         to be determined by the individual choices farmers make to welcome or turn down the
+                         innovation [17]. According to Rogers [18], the adoption decision process is linked to “an
+                         information-seeking and information-processing activity, where an individual is moti-
+                         vated to reduce uncertainty about the advantages and disadvantages of an innovation”.
+                         In particular, such an adoption decision process can be systematically structured by five
+                         action steps that an individual goes through, namely (1) knowledge, (2) persuasion, (3)
+                         decision, (4) implementation and (5) confirmation [18]. These stages typically follow each
+                         other chronologically. In a similar light, Straub [19] states that technology adoption is a
+                         complex, inherently social, developmental process, and successfully facilitating technology
+                         adoption must address the cognitive, emotional and contextual concerns of the individuals.
+                         Ndah [20], Rogers [18], Adesina and Baidu-Forson [21] observed that farmers0 perceptions
+Agronomy 2022, 12, 305                                                                                            3 of 13
+
+
+
+
+                         of the characteristics of a given technology highly affects their adoption decision. Moreover,
+                         Fowler and Rockstrom [22] remarked that the favourable conditions required for adopting
+                         new technologies by smallholder farmers must include positive chances of affordability,
+                         less complexity, local resource-base and less effect or dependence on peak labour demands.
+                         Other studies highlighted the possible mitigating role of such land-based-related technolo-
+                         gies (e.g., improved forages) against climate risk as a determining factor for smallholder
+                         farmers’ adoption decisions [23,24]. Such climate-risk-related adoption decisions could
+                         be especially true for farmers perceived to have experienced past production shocks as a
+                         result of less certainty in climate patterns.
+                               In short, the adoption of sustainability-oriented innovations generally revolves around
+                         the conditional requirements for and around the use of such a technology. In SSA, there
+                         exist numerous socio-economic, institutional and ethical factors that contribute to or affect
+                         the adoption of such innovations in agriculture. Inspired by the understanding imbued
+                         in the above theoretical basis, the factors that determine the adoption of improved forage
+                         technologies by small scale farmers can be classified into (i) individual characteristics that
+                         predispose an individual farmer to either accept or reject the innovation, (ii) innovation
+                         attributes that include its ease of use and compatibility with the community or individ-
+                         ual’s lifestyle and (iii) contextual characteristics that create the enabling environment or
+                         surroundings, within which the individual farmer makes the adoption decision about the
+                         innovation. These theoretical bases and thematic classifications are used to frame this study.
+
+                         2.2. Methods
+                              In addition to a literature review that led to obtaining background information on the
+                         current state of the adoption of forage technologies in SSA, Tanzania and the case study
+                         region, empirical data collection for this study was realised through (i) semi-structured
+                         qualitative interviews and (ii) multi-stakeholder focus group discussions directed by the
+                         Qualitative Expert Assessment Tool for Forage Technologies (QATo-FT), an adapted version
+                         of the Qualitative Expert Assessment tool for Conservation agriculture (QAToCA) [20,25].
+                         By tool, in this case, we refer to a decision support research method that is MS-Excel based,
+                         with the questions and indicators thematically integrated, and serves the purpose of guiding
+                         a multi-stakeholder discussion as well as generating empirical data for scientific purposes.
+
+                         2.2.1. Field Visits and Interviews
+                               The targeted farmers for the field visits and interviews were sampled as members
+                         of the existing innovation platforms in the two villages of Mbuzii-Bumbuli and Ubiri-
+                         Lushoto, by the help of village extension officers. These platforms were created under
+                         previous projects in the regions and further strengthened under the forage technology
+                         project in which this work was realised. In addition to adopting farmers, sceptical farmers
+                         were equally identified through the help of peers following a snowball method, then
+                         visited and interviewed in the process as we walked across the villages. In total, each
+                         interview and field visit lasted about 45–60 min. The aim of the interviews was to make
+                         a first appraisal with regard to the adoption decision process of farmers with a focus on
+                         identifying the main triggering factors for initial adoption, and reasons for sustaining
+                         adoption after the implementation (adoption) decision was made. By triggering factors,
+                         we refer to the very first trigger (s) that initiated the farmers’ decision to adopt the use of
+                         forage technologies. These interviews mainly targeted individual farmers’ perspectives on
+                         the following questions:
+                         1.   What was the source of first knowledge on improved forage technologies?
+                         2.   What was the year of this first knowledge?
+                         3.   What was the actual starting year, e.g., first planting of materials?
+                         4.   What reasons made you start? (trigger)
+                         5.   What reasons keep you going on? (supporting forces)
+                         6.   At what point did you feel uncomfortable, and if so why? (inhibiting forces)
+Agronomy 2022, 12, 305                                                                                                 4 of 13
+
+
+
+
+                         7.   What recommendations do you have towards the further improvement of this tech-
+                              nology as a farmer?
+                             The issues discussed in the interviews were clustered by the participating researchers
+                         generating key observations, which were later used for starting the discussion in the
+                         QATo-FT multi-stakeholder workshop.
+
+                         2.2.2. Qualitative Assessment Tool for Forage Technologies
+                               In this study, we applied the Qualitative Assessment Tool for Forage Technologies
+                         (QATo-FT) to assess the relative likelihood of the adoption of forage technologies under the
+                         agro-ecological, socio-economic and cultural conditions of the targeted case study region.
+                         As a decision support tool, QATo-FT targets researchers, policy makers, service providers,
+                         farmers and all regional stakeholders in their respective promoting organisations focused
+                         on enhancing the adoption of improved forage technologies. It is designed for a qualitative
+                         assessment of all the factors (mostly at the higher or regional level) that influence the
+                         adoption of new forage technologies. The results provide information on the likelihood of
+                         adoption, which allows for the comparisons as to which region or setting has a high or low
+                         relative likelihood for the adoption of new technologies.
+                               Similar to the QAToCA tool, QATo-FT is structured under nine thematic areas (Table 1)
+                         with corresponding questions. Within each category, statements were assessed on a scale of
+                         0–5 (following the Likert scale) indicating the legitimacy (strength) of the suggested state-
+                         ment concerning their influence on the adoption potential for the case study area, where:
+                         0 = not sure, has no positive effect on adoption likelihood (even negative);
+                         1 = strongly disagree, has a limited positive effect on adoption;
+                         2 = disagree;
+                         3 = partly agree;
+                         4 = agree;
+                         5 = strongly agree, has a maximum positive influence on adoption likelihood;
+                         N = if you think, the statement is not applicable in this case or appropriate.
+
+                         Table 1. Thematic categories of QATo-FT.
+
+                                 Code                                  Thematic Areas of the Tool
+                                  A             Characteristics of forage technology (object of adoption)
+                                  B             Farm and household characteristics/constraints
+                                  C             Capacity of implementing institution
+                                  D             Attributes of dissemination strategy
+                                  E             Political/institutional framework at village level
+                                  F             Political/institutional framework at regional level
+                                  G             FT products and inputs market conditions
+                                  H             Perception of community towards FT
+                                  I             FT as an adaptation practice to climate change and other ecological benefits
+
+
+                              Within each category, the aggregated agreements were translated into percentages
+                         showing the specific contribution of the set thematic category to the overall adoption
+                         potential for the targeted case study (with a maximum of 100% possible for each category)
+                         (see Supplementary Materials Tables S1 and S4 for the detailed questions and statements
+                         within the 9 thematic categories of the tool).
+                              The tool was used specifically in (i) analysing the characteristic attributes of the
+                         innovation as an object of adoption, (ii) the capacity of support organisations, (iii) institu-
+                         tional conditions, (iv) markets and gender dynamics and (v) community perception on the
+                         adoption potential of forage technologies.
+
+                         2.3. Case Study Data
+                              The study took place in the villages of Ubiri, Lushoto and Mbuzii, Bumbuli, situated
+                         in the Tanga region of Northern Tanzania (Figure 1) and was part of a larger project
+                            H     Perception of community towards FT
+                            I     FT as an adaptation practice to climate change and other ecological benefits
+
+                         2.3. Case Study Data
+Agronomy 2022, 12, 305         The study took place in the villages of Ubiri, Lushoto and Mbuzii, Bumbuli, situated           5 of 13
+
+                         in the Tanga region of Northern Tanzania (Figure 1) and was part of a larger project on
+                         improved forages led by the International Centre for Tropical Agriculture (CIAT), Kenya
+                         [26].
+                            onThe   farmers forages
+                                 improved     of the participating  villages (both Centre
+                                                       led by the International      for the interviews
+                                                                                             for Tropicaland   the workshop)
+                                                                                                            Agriculture     (CIAT),
+                            Kenya
+                         were   part [26].  The farmers
+                                      of innovation        of the The
+                                                      platforms.   participating   villages improved
+                                                                        farmers received     (both for the   interviews
+                                                                                                         forage            and the
+                                                                                                                 grass species
+                         andworkshop)
+                               planted themwereonpart  of innovation
+                                                   designated   parts ofplatforms.
+                                                                         their farms.The
+                                                                                       Thefarmers    receivedtoimproved
+                                                                                            area dedicated                   forage
+                                                                                                                 these forages
+                            grass species
+                         remained           and planted
+                                     at the choice  of eachthem   on designated
+                                                             farmer.               partsplatforms
+                                                                      The innovation     of their farms.
+                                                                                                     aimedThe   area dedicated
+                                                                                                            to facilitate learn‐ to
+                         ingthese  forages
+                             through         remained
+                                        knowledge        at the choice
+                                                     exchange    betweenof each  farmer. Theand
+                                                                           the participants     innovation
+                                                                                                   input fromplatforms    aimed to
+                                                                                                                the participat‐
+                            facilitate learning
+                         ing researchers.         through   knowledge    exchange   between    the  participants  and  input   from
+                            the participating researchers.
+
+
+
+
+                            Figure 1. Case study location: two villages (Ubiri and Mbuzi(i)), the Tanga region, Tanzania.
+                         Figure 1. Case study location: two villages (Ubiri and Mbuzi(i), the Tanga region, Tanzania.
+                                 During the field visits, a total of 20 farmer semi-structured interviews were conducted
+                            across thethe
+                              During         field
+                                        2 case      visits,
+                                                 study       a total(10
+                                                          villages     of for
+                                                                            20 Ubiri-Lushoto
+                                                                                 farmer semi‐structured
+                                                                                                    and 10 forinterviews       were con‐The
+                                                                                                                  Mbuzii-Bumbuli).
+                         ducted  across  the  2 case  study    villages    (10  for  Ubiri‐Lushoto      and  10
+                            assessment workshop (a multi-stakeholder focus group discussion) based on the QATo-FTfor Mbuzii‐Bumbuli).
+                         Thetool
+                              assessment
+                                 was attendedworkshop      (a multi‐stakeholder
+                                                   by 35 participants         from the focus      grouppolicy,
+                                                                                          extension,        discussion)
+                                                                                                                  farming based     on theand
+                                                                                                                             (adopters
+                         QATo‐FT     tool  was    attended     by   35   participants       from    the   extension,
+                            non-adopters), local authority, practitioners, technicians, service providers and research policy,    farming
+                         (adopters
+                            sectors.and
+                                      Thenon‐adopters),       local authority,
+                                           farmers and extension                    practitioners,
+                                                                           staff from                  technicians,
+                                                                                         the two villages             service
+                                                                                                               of Mbuzii   and  providers
+                                                                                                                                  Ubiri were
+                              research
+                         andinvited  to sectors.  The farmers
+                                        this workshop,       withandmost extension
+                                                                             of them staff
+                                                                                        alreadyfrom   the two villages
+                                                                                                   belonging             of Mbuzii
+                                                                                                                 to innovation        and
+                                                                                                                                   platforms
+                         Ubiri  wereunder
+                            formed    invited   to this workshop,
+                                             previous                   withregion.
+                                                          projects in this       most ofThethem    already
+                                                                                               entire        belonging
+                                                                                                       workshop,     whichto lasted
+                                                                                                                              innovation
+                                                                                                                                     for over
+                         platforms
+                            5 h (3/4formed
+                                      day), wasunder
+                                                   guidedprevious     projects
+                                                             by a mixed            in this region.
+                                                                               facilitation             The entireofworkshop,
+                                                                                              team consisting                       which
+                                                                                                                      external researchers
+                         lasted for over  5 h (3/4  day),  was   guided     by   a mixed    facilitation   team  consisting
+                            and partners from a local research institution in the region. The results from the workshop        of external
+                         researchers   and partners
+                            were computed       on-site,from
+                                                          and athelocal
+                                                                     firstresearch    institution
+                                                                            draft results            in the region.
+                                                                                              were presented           The resultsreflection
+                                                                                                                  for feedback,      from
+                         theand
+                             workshop    werewithin
+                                 adjustment      computed      on‐site,
+                                                         the same          and the first draft results were presented for feed‐
+                                                                     workshop.
+                         back, reflection and adjustment within the same workshop.
+                            3. Results
+                                  In this subsection, the main findings are presented in two parts. Section 3.1 highlights
+                            the findings from interviews and field visits by specifically focusing on issues linked with
+                            the state of actual adoption in the targeted region, including the main motivating reasons
+                            for the initial adopting, and the general hindering and supporting factors for adoption
+                            based on the perspectives of the interviewed farmers. Section 3.2 focuses on the adoption
+                            potential (likelihood) of the region and general conditions that potentially contribute to
+                            this likelihood, based on the outcomes of the QATo-FT multi-stakeholder workshop.
+                  for the initial adopting, and the general hindering and supporting factors for adoption
+                  based on the perspectives of the interviewed farmers. Section 3.2 focuses on the adoption
+                  potential (likelihood) of the region and general conditions that potentially contribute to
+                  this likelihood, based on the outcomes of the QATo‐FT multi‐stakeholder workshop.
+Agronomy 2022, 12, 305                                                                                                                  6 of 13
+
+                  3.1. Findings from Interviews and Field Visits
+                  3.1.1. Main Triggering Factors to Initial Adoption
+                                                3.1. Findings from Interviews and Field Visits
+                       The interviews
+                                 3.1.1. Mainunveiled    the Factors
+                                                Triggering   key triggering       factors towards the initial adoption of
+                                                                      to Initial Adoption
+                  forage technologies   Thefrom   individual
+                                             interviews         farmers′
+                                                          unveiled   the key perspectives.    While
+                                                                               triggering factors       the main
+                                                                                                     towards       triggering
+                                                                                                               the initial         fac‐ of for-
+                                                                                                                            adoption
+                  tors for adoption    were    both  related   to  a shortage     of
+                                                                                   0 feed  and    soil  conservation
+                                 age technologies from individual farmers perspectives. While the main triggering factorsproblems,
+                  the expected economic
+                                 for adoption  advantages
+                                                  were bothwere
+                                                              relatednottoas  dominant
+                                                                            a shortage  of in theand
+                                                                                           feed     farmers′   responses problems,
+                                                                                                        soil conservation     (Figure the
+                                                                                                                   0 responses (Figure 2).
+                  2). The reasons    for sustaining
+                                 expected    economicthe     practices
+                                                         advantages    wereof growing     improved
+                                                                               not as dominant     in theforages
+                                                                                                           farmerswere     stated as
+                  the year‐round Theavailability
+                                       reasons for ofsustaining
+                                                        fodder and the practices
+                                                                         increased of growing    improved(due
+                                                                                      fodder demand           forages   were stated
+                                                                                                                   to higher      live‐as the
+                                 year-round     availability  of  fodder   and  increased   fodder
+                  stock numbers) and accumulated benefits (e.g., increased animal numbers and forage  demand     (due  to  higher   livestock
+                                 numbers) and accumulated benefits (e.g., increased animal numbers and forage yields).
+                  yields). Soil conservation issues were mentioned less often as reasons for continuing with
+                                 Soil conservation issues were mentioned less often as reasons for continuing with practice
+                  practice in contrast to their dominance as the main triggering factors (Figure 3). According
+                                 in contrast to their dominance as the main triggering factors (Figure 3). According to the
+                  to the farmers,farmers,
+                                   up‐scaling      needsneeds
+                                             up-scaling    further   provision
+                                                                 further           of sufficient
+                                                                           provision  of sufficient planting
+                                                                                                      plantingmaterials
+                                                                                                                materials andandthe theexpan-
+                                 the programme
+                  expansion of sion                    to other
+                                        of the programme           farmers
+                                                              to other        beyond
+                                                                          farmers       the the
+                                                                                   beyond    innovation
+                                                                                                  innovation  platform.
+                                                                                                                platform.  TheThevari‐
+                                                                                                                                    variation
+                  ation in the importance       of the of
+                                 in the importance      triggering    factors
+                                                           the triggering        (especially
+                                                                              factors          landland
+                                                                                      (especially      conservation)
+                                                                                                           conservation)  (Figure
+                                                                                                                             (Figure2)2) and
+                  and sustaining    factors (e.g.,
+                                 sustaining          constant
+                                               factors           availability
+                                                       (e.g., constant            of fodder)
+                                                                          availability          is an
+                                                                                       of fodder)       important
+                                                                                                     is an important    lessonlearnt
+                                                                                                                     lesson      learnt from
+                                 this (Figure
+                  from this survey    survey (Figure
+                                                 3).     3).
+
+
+                                           12
+
+                                           10
+                     number of responses
+
+
+
+
+                                           8
+
+                                           6
+
+                                           4
+
+                                           2
+
+                                           0
+                                                Fodder shortage            Land conservation        Economic reasons
+
+                  Figure 2. Main triggering factors
+                                 Figure 2. Main     for adopting
+                                                 triggering      forage
+                                                            factors      tTechnologies;
+                                                                    for adopting forage multiple responses
+                                                                                        tTechnologies;     possible
+                                                                                                       multiple     (n = 20).
+                                                                                                                responses  possible
+                                                (n = 20).
+
+                                                3.1.2. Forage Production
+                                                     The interviewed farmers distinguished both the quality and quantity issues in their
+                                                adoption decision process of forage technologies. In the dry season, the farmers noted the
+                                                low quality of the available fodder sources, when no high-quality fodder was conserved.
+                                                The lack of rainfall also leads to a shortage of forage quantities. Farmers have to walk long
+                                                distances to fetch fodder from sites with a reasonable vegetation cover. Such sites could be
+                                                along roads, hedges or river banks. Some farmers even feed banana stems to their livestock.
+                                                The biomass of such sources was reported to be rather low. The long-distance between
+                                                the farmstead and fodder collection areas leads to many hours spent on fodder collection.
+                                                However, in the rainy season, farmers appreciate having high-quality forage grown close
+                                                to the farmstead. The short distance to the cow sheds reduces the time of fodder collection
+                                                from other sources, which can be better used on crop production.
+022, 12, x Agronomy
+           FOR PEER   REVIEW
+                    2022, 12, 305                                                                                                     7 of 14 7 of 13
+
+
+
+
+                                                     16
+                                                     14
+                               Number of responses
+
+
+                                                     12
+                                                     10
+                                                      8
+                                                      6
+                                                      4
+                                                      2
+                                                      0
+                                                           Year round         Accumulated      Land conservation   Promised from
+                                                          availability of   economic benefits (e.g Soil erosion)      project
+                                                             fodder         (e.g time savings)
+
+                            Figure 3. Reasons for sustaining
+                                           Figure  3. Reasons the adoption of
+                                                              for sustaining theforage technologies;
+                                                                                  adoption            multiple responses
+                                                                                           of forage technologies;        possible
+                                                                                                                   multiple        (n =possible
+                                                                                                                            responses
+                            20).           (n = 20).
+
+                                              Farmers are aware of the higher quality of improved forage varieties but stress the
+                            3.1.2. Forage Production
+                                                            low availability of planting material. Some farmers conserve forage harvested at the end
+                                  The interviewed farmers distinguished both the quality and quantity issues in their
+                                           of the rainy season. Even the ones who conserve forage (hay, silage) see it rather as an
+                            adoption decision    processthan
+                                           experiment      of forage     technologies.
+                                                                as a reliable   source ofIn   the dryfeed
+                                                                                           livestock    season,
+                                                                                                             during    farmers
+                                                                                                                  thethe          notedIn
+                                                                                                                          dry season.     the
+                                                                                                                                            general,
+                            low quality offorage
+                                            the available
+                                                   productionfodder     sources,
+                                                                 on slopes,    bothwhen
+                                                                                    on theno    high‐quality
+                                                                                            actual              fodder
+                                                                                                    fields as well  as onwas    conserved.
+                                                                                                                          the field  boundaries, is
+                            The lack of rainfall
+                                           seen asalso leadsway
+                                                    a good     to atoshortage    of forage
+                                                                       control soil erosion.quantities. Farmers have to walk long
+                            distances to fetch fodder from sites with a reasonable vegetation cover. Such sites could
+                            be along roads,3.1.3. Organisational
+                                             hedges                  IssuesSome
+                                                       or river banks.       withinfarmers
+                                                                                     the Farm    and feed
+                                                                                               even   Village  Context
+                                                                                                            banana   stems to their live‐
+                                                 Interviews   with    farmers   on the  organisational    issues
+                            stock. The biomass of such sources was reported to be rather low. The long‐distance   revealed   the influencebe‐of both
+                                           the innovation    platform     (IP) chairmen,   village  officers  and
+                            tween the farmstead and fodder collection areas leads to many hours spent on fodder    extension    officers. While the
+                                           IP chairmen play a pro-active role in the promotion of forage production, knowledge
+                            collection. However, in the rainy season, farmers appreciate having high‐quality forage
+                                           distribution and the provision of planting material, the village officers are considered
+                            grown close tonlytheasfarmstead.      The short distance to the cow sheds reduces the time of
+                                                     “not interfering”, but not supportive to the actions of the farmers. The role of
+                            fodder collection
+                                           the from   other
+                                               extension      sources,
+                                                           officers        whichoncan
+                                                                       depends           be engagement.
+                                                                                     their   better used on     cropinproduction.
+                                                                                                             Those      charge at the time of the
+                                  Farmers are
+                                           interviews were seen as supportive and highly engaged. varieties
+                                               aware    of  the  higher     quality   of improved      forage    Generally,but    stress
+                                                                                                                              trust       the the
+                                                                                                                                    concerning
+                            low availability  of planting
+                                           shared            material.
+                                                    investments     was lowSomeandfarmers     conserve
+                                                                                    some farmers          foragetoharvested
+                                                                                                      hesitated                  at the end
+                                                                                                                    become members        of the IPs,
+                                           also based
+                            of the rainy season.    Evenonthe
+                                                            reasons
+                                                                 onesofwho not conserve
+                                                                                sufficientlyforage
+                                                                                              trusting  in the
+                                                                                                     (hay,   silage)  see of
+                                                                                                                benefits   it the  shared
+                                                                                                                               rather      learning
+                                                                                                                                       as an
+                                           and  organisation     among     themselves    (farmers).    Nevertheless,
+                            experiment than as a reliable source of livestock feed during the dry season. In general,   the  farmers’   decision  as
+                                           individuals   or  as a group    to adopt   improved    forages   was  accepted
+                            forage production on slopes, both on the actual fields as well as on the field boundaries,       and  respected   by the
+                                           entire community, and even led to some successful adopter farmers earning nicknames,
+                            is seen as a good way to control soil erosion.
+                                          such as “Mzee wa hay” in Swahili, which means “expert in making hay”, or “Abzogani”,
+                                          meaning extension worker. This was a result of the exceptional skills of these farmers in
+                            3.1.3. Organisational
+                                          managing Issues  within
+                                                      improved      the Farm
+                                                                 forages.  Theirand  Village
+                                                                                 positive     Context
+                                                                                           progress with adopting improved forages was
+                                 Interviews  withtofarmers
+                                          found      be partlyon  the organisational
+                                                               a result                  issues
+                                                                        of the fact that they   revealed
+                                                                                              were         thengaged
+                                                                                                    generally  influence    of both
+                                                                                                                       in entrepreneurial
+                                          activities and had  experience   in general farm  management,   even before the
+                            the innovation platform (IP) chairmen, village officers and extension officers. While the IP   introduction of
+                                          improved    forages.
+                            chairmen play a pro‐active role in the promotion of forage production, knowledge distri‐
+                            bution and the3.1.4.
+                                             provision    of planting material, the village officers are considered only as
+                                                 Summary Findings on Interviews and Field Visits
+                            “not interfering”, but not supportive to the actions of the farmers. The role of the extension
+                                                The above findings show that the most important barriers to the adoption of improved
+                            officers depends   on their
+                                           forages       engagement.
+                                                    for the targeted caseThose
+                                                                           study in charge
+                                                                                  region  are at the time
+                                                                                              linked  to theofwhole
+                                                                                                               the interviews    wereand its
+                                                                                                                     farming system
+                            seen as supportive    and   highly   engaged.    Generally,    trust  concerning     the  shared   invest‐
+                                           wider environment, namely (a) the opportunity cost for labour is low during the dry season,
+                            ments was lowsoand     some farmers
+                                              the labour            hesitated
+                                                          savings from  walkingto long
+                                                                                   become    members
+                                                                                        distances         of the low-quality
+                                                                                                   for fetching   IPs, also based  onis not a
+                                                                                                                              fodder
+                            reasons of notprimary
+                                            sufficiently  trusting
+                                                     objective      in the
+                                                               for many     benefits
+                                                                         farmers;  (b) of the shared
+                                                                                       current  breeds learning    and organisation
+                                                                                                        are not sufficiently high-yielding to
+                            among themselves (farmers). Nevertheless, the farmers’ decision as individuals or as a
+                            group to adopt improved forages was accepted and respected by the entire community,
+                            and even led to some successful adopter farmers earning nicknames, such as “Mzee wa
+                            hay” in Swahili, which means “expert in making hay”, or “Abzogani”, meaning extension
+ Agronomy 2022, 12, 305                                                                                                                                 8 of 13
+
+
+
+
+                                 justify the potential gains through improved forages; (c) the region is relatively cold, which
+                                 leads to comparably slow growth of forages; (d) many farmers let forages grow to age with
+                                 the intention to use them in times of scarcity (dry season) and do not cut them during the
+                                 rains when other forages are also abundant, which leads to low quality forages being fed to
+                                 the animals, resulting in undesired low milk yields; and (e) sufficient planting material, as
+                                 well as extension advice on forage management and harvesting, is often not available.
+
+                                 3.2. Findings from QATo-FT Assessment
+                                 3.2.1. Adoption Potential
+                                         The QATo-FT assessment for the two villages around Lushoto (Mbuzii and Ubiri)
+                                   revealed a high but irregular influence of the various institutional thematic categories on
+                                   the adoption potential for improved forages. The following paragraphs highlight those
+                                   categories revealed by the workshop participants to be exerting a strong positive influence
+                                   on adoption potential, as well as those identified as exerting a much lower or weaker
+                                   influence on the adoption potential of improved forage technologies in the region.
+                                         The first positive category is the “community’s perception towards forage technology”
+                                   (H). It is assessed to have a strong supporting influence on adoption potential, especially for
+                                   the case of Mbuzii, with a score of 100% (see Figure 4). This assessment implies that, so far,
+                                   the ongoing forage project activities are viewed positively and as not interfering in any way
+                                   with the economic activities of the non-adopters in the region. While non-adopters are not
+                                   as close to the innovation as adopters, they respect the decision of those who have chosen
+                                   to adopt the technology and, for them, their daily economic activities are not negatively
+                                   affected just for the simple reason of not having adopted the technology. Adopters and
+                                   non-adopters, therefore, can live side by side in the same community, which leaves a
+                                   chance for scaling up in the future, once non-adopters start observing the benefits emerging
+                                   from adopters as a result of their new practice. In addition, the promoting organisations
+                                   for improved forages in the area (i.e., mainly TALIRI Tanga), as well as the extension
+                                   officers, are working closely with village leaders of the community. Although the village
+                                   leaders accept, recognise and do not interfere with forage promotion activities, they are
+                                   not actively supportive. Young farmers showed a high willingness to participate in the
+Agronomy 2022, 12, x FOR PEER REVIEW
+                                   forage technology project activities. They acknowledge that improved forage technology9 of 14
+                                   practices create employment opportunities for them, although livestock farming in this
+                                   area predominantly remains an activity for the elderly.
+
+
+                                                                      Characteristics of Forage Technology
+                                   A
+
+
+
+
+                                                          Farm and household characteristics/constraints
+                                   B
+
+
+
+
+                                                                      Capacity of implementing institution
+                                   C
+
+
+
+
+                                                                      Attributes of dissemination strategy
+                                   D
+
+
+
+
+                                                           Political/Institutional framework at village level
+                                   E
+
+
+
+
+                                                         Political/Institutional framework at regional level
+                                   F
+
+
+
+
+                                                                FT products and inputs market conditions
+                                   G
+
+
+
+
+                                                                     Perception of community towards FT
+                                   H
+
+
+
+
+                                       FT as an adaptation practice to climate change and other ecological
+                                   I
+
+
+
+
+                                                                     benefits
+
+                                                                                                                0%       20%   40%   60%   80%   100%
+
+                                                                                                   Ubiri        Mbuzii
+
+                                 Figure 4. Thematic influence on adoption potential for the two villages in the case study region:
+                               Figure 4. Thematicand
+                                 Mbuzii-Bumbuli   influence on adoption potential for the two villages in the case study region:
+                                                      Ubiri-Lushoto.
+                               Mbuzii‐Bumbuli and Ubiri‐Lushoto.
+
+                                    Under the category “Knowledge on effect of FT as an adaptation practice to effects of
+                               climate change and other ecological benefits”, factors such as soil conservation were dis‐
+                               cussed as having a strong positive influence on adoption potential, especially for Ubiri
+                               village (100% agreement). The role of forages in controlling soil erosion on slopes seems
+                               to be well known to most farmers in the region. Crop farmers could be seen planting for‐
+Agronomy 2022, 12, 305                                                                                                                   9 of 13
+
+
+
+
+                                      Under the category “Knowledge on effect of FT as an adaptation practice to effects
+                                of climate change and other ecological benefits”, factors such as soil conservation were
+                                discussed as having a strong positive influence on adoption potential, especially for Ubiri
+                                village (100% agreement). The role of forages in controlling soil erosion on slopes seems to
+                                be well known to most farmers in the region. Crop farmers could be seen planting forages
+                                in the contours within or as hedges around their farms. As the main priority for such
+                                farmers is crop production, initially, the output from these forages within or around their
+                                fields is handed over to livestock farmers in the village. However, crop farmers quickly
+                                realised the additional benefit once they diversified production (i.e., engaging in livestock
+                                production in addition to crop production). This is reflected in the results of our field
+                                interviews, where farmers mentioned that adopting the cultivation of improved forages
+                                was not only performed to prevent soil erosion but equally to produce fodder. Such a
+                                mixed farming system is working quite well in the region, especially as “zero grazing” is
+                                the main livestock practice. In this way, forages from the contours and crop residues after
+                                harvest are cut-and-carried home for feeding the animals especially in the dry season when
+                                there is a shortage of forage from public feeding areas.
+                                      In summary, the results of the QATo-FT workshop reveal that, for the case of Mbuzii-
+                                Bumbuli (Figure 4), (i) the receptive nature of the community towards the technology
+                                (100% agreement) and (ii) the expectations of improved forages on the ecological benefits
+                                (93%) have a strong positive influence on the adoption potential for improved forages.
+                                For the case of Ubiri-Lushoto (Figure 4), the (i) expectations of improved forages on the
+                                ecological benefits (100%), (ii) the role of promoting institutions (97%) and (iii) the products
+                                and input market conditions around livestock production and improved forages (96%)
+                                positively influence the adoption potential for this village. On the other hand, the categories
+                                exerting a much weaker influence on the adoption potential for the two villages, which
+                                need to be considered in any further promotion, includes (i) the political and institutional
+                                framework at the regional level (67%), (ii) products and input market conditions (76%) for
+                                Mbuzii-Bumbuli and iv) farm/household characteristics (68%) for Ubiri-Lushoto.
+
+                                3.2.2. Specific Supporting and Hindering Factors
+                                     Looking at specific statements within each of the categories assessed, the workshop
+                                participants for Mbuzii and Ubiri revealed both the strong hindering and weak hindering
+                                factors of the adoption potential for the two villages (Table 2). These factors can be consid-
+                                ered as limiting in any promotional attempt geared towards boosting the adoption of the
+                                innovation beyond the present state in Lushoto (for detailed information on the supporting
+                                factors, see Supplementary Materials Tables S2 and S3).
+
+                                Table 2. Strong and weak hindering factors for the adoption of improved forage technologies 1 .
+
+                    Village                             Weak Hindering Factors                           Strong Hindering Factors
+                                                                                               The promoting organisation promotes FT
+                                                                                               through mass media, such as radio, TV or
+                                                                                               newspapers (D9)
+                                              Household labour is usually sufficient to
+                                                                                               There exist decentralised structures within the
+                                              implement FT (A2)                                administration, which allow locally adapted
+               Mbuzii-Bumbuli
+                                              The local government promotes FT adoption
+                                                                                               and timely solutions to farmers0 problems (E5)
+                                              through extension programmes (E3)
+                                                                                               There is a local government with strong
+                                                                                               leadership that commits itself to development
+                                                                                               objectives (F1)
+                                              The majority of farmers have knowledge of FT     The promoting organisation promotes FT
+                                              or traditional/indigenous knowledge similar      through mass media, such as radio, TV or
+                                              to FT (B2)                                       newspapers (D9)
+                Ubiri-Lushoto
+                                              Young farmers are willing to participate in FT   The settlement pattern allows extension
+                                              project activities, and FT practice creates      officers easy access to farmers for promotional
+                                              employment opportunities for them (H3)           purposes (F5)
+                                1 Strong hindering factors: ranked with 1 on a scale of 1–5, i.e., the participants strongly disagree with the
+
+                                assumption, which implies the aspect has a strong limiting effect on adoption for the region. Weak hindering
+                                factors: ranked with 2, i.e., participants disagree with the assumption, which implies the aspect has a limiting
+                                effect on adoption for the region.
+Agronomy 2022, 12, 305                                                                                           10 of 13
+
+
+
+
+                              In summary, across both the villages, the following strong hindering factors of the
+                         effective adoption potential were revealed by the QATo-FT assessment: (i) communication
+                         channels used in transferring messages to potential adopters, (ii) the system of admin-
+                         istration practised in the region, which is less decentralised for timely solutions to the
+                         farmer’s needs, (iii) the indifference of local-level governance structures to issues of forage
+                         technology and (iv) accessibility challenges to the extension officers, which affects effective
+                         dissemination campaign activities. These findings tally with those from field observations,
+                         as highlighted above.
+
+                         4. Discussion
+                               The above findings reveal a shortage in animal feed and the need for soil conservation
+                         as the main triggers of the initial adoption of improved forages by the interviewed farmers
+                         in the Tanga region. Furthermore, the possibility for the year-round availability of fodder
+                         was observed as the main reason for sustaining the practices after adoption. Such findings
+                         correspond with those of Habtemariam [23] and Hansen [24], who highlighted the possible
+                         mitigating role of especially land-based related technologies against the effects of climate
+                         change as a determining factor for smallholder farmers’ adoption decisions. The authors
+                         further added that a climate-risk related adoption decision could be especially true for
+                         farmers perceived to have experienced past production shocks as a result of less certainty
+                         in climate patterns.
+                               With regard to the hindering factors, “low opportunity cost for labour in the dry
+                         season” has been identified as a major hindering factor to wider forage technology adoption
+                         in the case study area. This finding is in line with that of Fowler and Rockstrom [22],
+                         who remarked that the favourable conditions for technology adoption by the smallholder
+                         farmers require a low effect on the peak labour demands. Farmers grow only as much
+                         forage as needed for the cropping season. This needs to be observed in the light of
+                         seasonal changes in the opportunity costs of labour. During the cropping season with high
+                         opportunity costs of labour, close-by grown forages are appreciated for the easy supply
+                         of fodder, while during the dry season with low opportunity costs of labour, farmers
+                         rather use the time for walking long distances to fetch low-quality forage, despite their low
+                         nutrient content and corresponding negative effects on milk yields. The absence of off-farm
+                         activities does not offer any other income, but rather allows for the opportunity to dedicate
+                         more farmland to cash crops instead of forages.
+                               Moreover, the absence of sufficient planting material, as well as the limited extension
+                         advice on forage management and harvesting, has been indicated as a hindering factor
+                         to adoption. In particular, the latter (i.e., weak extension and advisory service support)
+                         has only helped to reinforce the problem of trust concerning the shared investments in the
+                         region with some farmers hesitating to become members of innovation platforms, which
+                         was also based on reasons of not sufficiently trusting in the benefits of shared learning and
+                         organisation among themselves. These findings correspond to those of Straub [19], who
+                         stated that successfully facilitating technology adoption must address the cognitive and
+                         contextual concerns of the individual farmers.
+                               Based on these factors and irrespective of the high adoption potential for forage,
+                         as revealed in the QATo-Ft findings above, we suggest that an integrated sustainable
+                         livelihood approach is needed to bridge this gap between the potential and actual adoption
+                         levels for the region. In particular, revisiting the farmers’ regard for time (through other
+                         profitable off-farm activities) can create the need for growing improved forages. Overall, as
+                         preconditions to raise the actual adoption levels for the Tanga region, this study calls for
+                         more targeted efforts in the domains of knowledge transfer, administration, economics and
+                         agronomy, as specified in Table 3.
+Agronomy 2022, 12, 305                                                                                                                    11 of 13
+
+
+
+
+                                Table 3. Recommended domains for improvement and related activities.
+
+                Domains                                                           Specific Activities
+                                       Sensitisation and education of farmers on short and long term benefits of introduced forage
+           Knowledge transfer          technologies towards general livestock production, increased milk yield and soil conservation,
+                                       alongside other ecological benefits.
+                                       Ensure the existence of decentralised structures within the administration, which allow for locally
+                                       adapted and timely solutions to the farmers0 problems. Allocate a budget for extension officers to be
+                                       able to move around the farmers and attend to the farmers’ needs.
+                                       Form and strengthen solid partnerships between local governments, farmers, NGOs, service providers,
+             Administrative
+                                       extension officers and all other beneficial networks around the practice of improved forages beyond the
+                                       present existing innovation platforms in the region.
+                                       Organise easy access to basic resources, such as water at the community level, to serve the farmers,
+                                       especially in dry seasons.
+                                       Improve off-farm income possibilities to reduce pressure on land use as the only income source.
+                                       Create access to the existing markets to encourage the mass production of milk from farmers, which
+                Economic               will consequently trigger their adoption of improved forages, e.g., establishing more local collection
+                                       centres endowed with small milk cooling facilities with the possibility of direct pick up at the farm gate
+                                       to increase the farmers0 profit margins.
+                                       Carry out a proper assessment of new improved forage technologies0 resilience and resistance to local
+                                       and possible changing climatic factors of the region.
+                                       Improve the issue of accessibility to seeds or planting material for potential adopter farmers who have
+               Agronomic
+                                       become convinced of the stimulating effect of improved forages on their milk yield levels, e.g., the
+                                       accessibility to planting materials should not be limited only to members of the innovation platforms,
+                                       but open even to non-members who show an interest.
+
+
+                                5. Conclusions
+                                     Our study focused on the up-scaling potential and the adoption of improved, more
+                                nutritive and productive forages by smallholder farmers. We systematically identified
+                                and analysed the role of (i) institutional and political, (ii) socio-economic and (iii) cultural
+                                factors towards influencing the adoption and diffusion of improved forage technologies in
+                                SSA, with a focus on a smallholder farming community in the Tanga region of Tanzania.
+                                The findings show that the most important barriers to adoption are linked to the whole
+                                farming system and its wider environment, namely the low opportunity cost for labour in
+                                the dry season; the local cattle breeds that are not efficiently profiting from improved forage
+                                qualities, but rather lack sufficient amounts of water and feed; the region’s cool climate,
+                                which leads to the comparably slow growth of forages; low maintenance leading to low-
+                                quality forage being fed, which might not result in the desired milk yield; sufficient planting
+                                material, as well as the extension advice on forage management and harvesting, is often
+                                not available; and the low milk prices provide low incentives for efficient milk production.
+                                     The QATo-FT assessment revealed a high adoption potential based on the general
+                                receptive nature of the community, the expectations towards improved forages providing
+                                ecological benefits and the role of promoting institutions as the main supporting factors.
+                                Nevertheless, the political and institutional framework at the regional level as well as the
+                                market conditions are assessed to have a weaker influence on the adoption potential for
+                                the region. This is complemented by the lack of off-farm income possibilities for the region
+                                leading to low opportunity costs for labour (especially during dry seasons).
+                                     As our study is predominantly qualitative, relying on a small sample size across two
+                                villages, we acknowledge the fact that a wide quantitative survey and or long ethnographic
+                                studies across a large sample area (involving many villages) might have been more repre-
+                                sentative. Nevertheless, based on our findings, we recommend more socioeconomic and
+                                agronomic research towards contributing to better integrated approaches for the region, in
+                                order to bridge the gap between actual and potential adoption. Specifically, more attention
+                                should be focused on the options for providing off-farm income opportunities, allowing
+                                for the more efficient use of land and labour and introducing more climate resilient and
+                                resistant improved forage technologies, all efforts for further promoting the adoption of
+                                improved forages among this farming community. By doing so, the performance of existing
+                                heads of cattle for the region will be improved, milk yields would increase and eventually
+                                farmers’ income levels would be enhanced. As a final impact, this can improve nutrition
+                                and, eventually, contribute to poverty alleviation in the case study region.
+Agronomy 2022, 12, 305                                                                                                               12 of 13
+
+
+
+
+                                  Supplementary Materials: The following supporting information can be downloaded at: https://
+                                  www.mdpi.com/article/10.3390/agronomy12020305/s1, Table S1: QATO-FT statements per category;
+                                  Table S2: overall supporting forces to forage adoption potential Mbuzii village; Table S3: overall
+                                  supporting forces to forage adoption potential Ubiri village and Table S4: QATO-FT results per
+                                  village; scoring values per statement.
+                                  Author Contributions: Conceptualisation, H.T.N. and J.S.; methodology, H.T.N. and J.S.; software,
+                                  H.T.N. and J.S.; validation, H.T.N., P.Z. and B.K.P.; formal analysis, H.T.N. and J.S.; investigation,
+                                  H.T.N., B.N. and J.S.; resources, W.M., R.M. and R.L.; writing—original draft preparation, H.T.N., J.S.
+                                  and V.N.N.; writing—review and editing, P.Z., J.S. and H.T.N.; visualisation, J.S.; supervision, B.K.P.;
+                                  project administration, B.K.P.; funding acquisition, B.K.P. All authors have read and agreed to the
+                                  published version of the manuscript.
+                                  Funding: This work received financial support from the German Federal Ministry for Economic Coop-
+                                  eration and Development (BMZ), commissioned and administered through the Deutsche Gesellschaft
+                                  für Internationale Zusammenarbeit (GIZ) Fund for International Agricultural Research (FIA), grant
+                                  number: C-151-15 (“Potential farm to landscape impact and adoption of forage technologies in
+                                  smallholder dairy production systems in Tanzania”). The research was undertaken as part of the
+                                  CGIAR Research Program on Livestock, which is supported by contributors to the CGIAR Trust
+                                  Fund. CGIAR is a global research partnership for a food-secure future. Its science is carried out by
+                                  15 research centres in close collaboration with hundreds of partners across the globe. ETH Zurich,
+                                  Group of Plant Nutrition, supported the MSc field work.
+                                  Institutional Review Board Statement: Not applicable.
+                                  Informed Consent Statement: Informed consent was obtained from all subjects involved in the study.
+                                  Data Availability Statement: All data is provided under Supplementary Materials.
+                                  Acknowledgments: We warmly thank the workshop participants from the villages of Mbuzii and
+                                  Ubiri, including the regional livestock extension officers for their support, engagement and wealth of
+                                  insights and information. Thanks to Venance Kengwa (CIAT driver and field technician—Arusha
+                                  office) who professionally took care of our transportation during our field visits to Lushoto, accompa-
+                                  nied us for farm visits and farmers’ interviews and provided valuable insights during the discussions.
+                                  We thank An Notenbaert (CIAT, Kenya) for the time allocated in proof reading and carrying out a
+                                  technical check of the project report that this paper is based on. Last but not the least, we thank the
+                                  team from TALIRI (Tanzanian Livestock Research Institute) in Tanga and a livestock district officer
+                                  for joining the QATo-FT workshop, supporting us as facilitators and ensuring a lively inter-action
+                                  during the workshop by iteratively translating the farmers’ discussions from Swahili to English and,
+                                  hence, ensured a better assimilation.
+                                  Conflicts of Interest: The authors declare no conflict of interest.
+
+References
+1.   Ndambi, O.A.; Hemme, T.; Latacz-Lohmann, U. Dairying in Africa-Status and recent developments. Livest. Res. Rural. Dev. 2007,
+     19, 25.
+2.   Otte, M.J.; Chilonda, P.C.; Ruminant, S. Production Systems in Sub-Saharan Africa: A systematic Review; Food and Agriculture
+     Organization of the United Nations: Rome, Italy, 2002.
+3.   Jahnke, H.E.; Tacher, G.; Keil, P.; Rojat, D. Livestock Production in Tropical Africa, with Special Reference to the Tsetse-Affected
+     Zone. In Livestock Production in Tsetse-Affected Areas of Africa, Nairobi, Kenya, 1987; International Livestock Centre for Africa and
+     the International Laboratory for Research on Animal Diseases: Nairobi, Kenya, 1987; pp. 3–21.
+4.   Zamani, O.; Pelikan, J.; Schott, J. EU Exports of Livestock Products to West Africa: An Analysis of Dairy and Poultry Trade Data; Thünen
+     Working Paper; Thünen-Institut: Braunschweig, Germany, 2021.
+5.   Smith, J.; Tarawali, S.; Grace, D.; Sones, K. Feeding the World in 2050: Trade-offs, synergies and tough choices for the livestock
+     sector. Trop. Grasslands-Forrajes Trop. 2013, 1, 125. [CrossRef]
+6.   Lukuyu, B.; Kitalyi, A.; Franzel, S.; Duncan, A.; Baltenweck, I. Constraints and Options to Enhancing Production of High Quality Feeds
+     in Dairy Production in Kenya, Uganda and Rwanda ICRAF Working Paper No. 95; Center for International Forestry Research (CIFOR)
+     and World Agroforestry Centre (ICRAF): Nairobi, Kenya, 2009.
+7.   Alexandratos, N.; Bruinsma, J. World Agriculture towards 2030/2050: The 2012 Revision; ESA Working Paper No. 12-03; FAO: Rome,
+     Italy, 2012.
+Agronomy 2022, 12, 305                                                                                                                13 of 13
+
+
+
+
+8.    Gillah, K.A.; Kifaro, G.C.; Madsen, J. Urban and peri urban dairy farming in East Africa: A review on production levels,
+      constraints and opportunities. Livest. Res. Rural. Dev. 2012, 24, 198.
+9.    Sumberg, J. Constraints to the adoption of agricultural innovations: Is it time for a re-think? Outlook Agric. 2005, 34, 7–10.
+      [CrossRef]
+10.   Njarui, D.M.G.; Kabirizi, J.M.; Itabari, J.K.; Gatheru, M.; Nakiganda, A.; Mugerwa, S. Production characteristics and gender roles
+      in dairy farming in peri-urban areas of Eastern and Central Africa. Livest. Res. Rural. Dev. 2012, 24, 2012.
+11.   Wambugu, C.; Place, F.; Franzel, S. Research, development and scaling-up the adoption of fodder shrub innovations in East
+      Africa. Int. J. Agric. Sustain. 2011, 9, 100–109. [CrossRef]
+12.   Franzel, S.; Wambugu, C. The uptake of fodder shrubs among smallholders in East Africa: Key elements that facilitate widespread
+      adoption. In Forages: A Pathway to Prosperity for Smallholder Farmers, Thailand, 2007; Hare, M.D., Wongpichet, K., Eds.; Ubon
+      Ratchathani University: Ubon Ratchathani, Thailand, 2007; pp. 203–222.
+13.   Ngwira, A. Forage demand and constraints to adoption of forage technologies by livestock keepers in Malawi. Trop. Grassl. 2003,
+      37, 274–278.
+14.   Gebremedhin, B.; Ahmed, M.M.; Ehui, S.K. Determinants of adoption of improved forage technologies in crop-livestock mixed
+      systems: Evidence from the highlands of Ethiopia. Trop. Grassl. 2003, 37, 262–273.
+15.   Mwangi, D.M.; Wambugu, C. Adoption of forage legumes: The case of Desmodium, intortum and Calliandra, calothyrsus in central
+      Kenya. Trop. Grassl. 2003, 37, 227–238.
+16.   Ndah, H.T.; Schuler, J.; Nkwain, V.N.; Nzogela, B.; Mangesho, W.E.; Mollel, R.; Loina, R.; Paul, B.K. Factors Affecting the Adoption of
+      Forage Technologies in Smallholder Dairy Production Systems in Lushoto, Tanzania; CIAT Working Paper; CIAT: Cali, Columbia, 2017.
+17.   Ndah, H.T.; Knierim, A.; Ndambi, O.A. Fish Pond Aquaculture in Cameroon: A Field Survey of Determinants for Farmers’
+      Adoption Behaviour. J. Agric. Educ. Ext. 2011, 17, 309–323. [CrossRef]
+18.   Rogers, E.M. Diffusion of Innovation; The Free Press: New York, NY, USA, 1995.
+19.   Straub, E.T. Understanding Technology Adoption: Theory and Future Directions for Informal Learning. Rev. Educ. Res. 2009, 79,
+      625–649. [CrossRef]
+20.   Ndah, H.T.; Schuler, J.; Uthes, S.; Zander, P.; Triomphe, B.; Mkomwa, S.; Corbeels, M. Adoption Potential for Conservation
+      Agriculture in Africa: A Newly Developed Assessment Approach (QAToCA) Applied in Kenya and Tanzania. Land Degrad. Dev.
+      2015, 26, 133–141. [CrossRef]
+21.   Adesina, A.A.; Baidu-Forson, J. Farmers’ perceptions and adoption of new agricultural technology: Evidence from analysis in
+      Burkina Faso and Guinea, West Africa. Agric. Econ. 1995, 13, 1–9. [CrossRef]
+22.   Fowler, R.; Rockstrom, J. Conservation tillage for sustainable agriculture: An agrarian revolution gathers momentum in Africa.
+      Soil Tillage Res. 2001, 61, 93–108. [CrossRef]
+23.   Habtemariam, L.T.; Gandorfer, M.; Kassa, G.A.; Sieber, S. Risk experience and smallholder farmers’ climate change adaptation
+      decision. Clim. Dev. 2019, 12, 385–393. [CrossRef]
+24.   Hansen, J.; Hellin, J.; Rosenstock, T.; Fisher, E.; Cairns, J.; Stirling, C.; Lamanna, C.; van Etten, J.; Rose, A.; Campbell, B. Climate
+      risk management and rural poverty reduction. Agric. Syst. 2018, 172, 28–46. [CrossRef]
+25.   Probst, L.; Ndah, H.T.; Rodrigues, P.; Basch, G.; Coulibaly, K.; Schuler, J. From adoption potential to Transformative Learning
+      around Conservation Agriculture. J. Agric. Educ. Ext. 2018, 25, 25–45. [CrossRef]
+26.   Paul, B.K.; Groot, J.C.; Maass, B.L.; Notenbaert, A.M.; Herrero, M.; A Tittonell, P. Improved feeding and forages at a crossroads:
+      Farming systems approaches for sustainable livestock development in East Africa. Outlook Agric. 2020, 49, 13–20. [CrossRef]

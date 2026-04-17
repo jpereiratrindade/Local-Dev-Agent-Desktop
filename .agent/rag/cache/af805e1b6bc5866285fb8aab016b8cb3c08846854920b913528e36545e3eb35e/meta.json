@@ -1,0 +1,9 @@
+{
+  "chunk_count": 32,
+  "extractor": "pdftotext",
+  "kind": "pdf",
+  "path": "/run/media/jpereiratrindade/labeco10T/labeco02/Revisao/DT125.pdf",
+  "sha256": "af805e1b6bc5866285fb8aab016b8cb3c08846854920b913528e36545e3eb35e",
+  "text_size": 31411,
+  "used_ocr": false
+}

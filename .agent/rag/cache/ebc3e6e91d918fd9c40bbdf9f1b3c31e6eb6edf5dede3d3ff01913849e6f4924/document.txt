@@ -1,0 +1,1273 @@
+                                      ISSN 1983-974X
+                                      Dezembro / 2022
+DOCUMENTOS
+    303
+
+
+
+
+  Diretrizes técnicas para produção pecuária
+       sustentável com árvores nativas:
+              Carbono Nativo (CN)
+                                                           ISSN 1983-974X
+                                                            Dezembro/2022
+
+
+
+        Empresa Brasileira de Pesquisa Agropecuária
+                   Embrapa Gado de Corte
+     Ministério da Agricultura, Pecuária e Abastecimento
+
+
+
+
+                 DOCUMENTOS 303
+
+
+
+
+Diretrizes técnicas para produção pecuária
+     sustentável com árvores nativas:
+            Carbono Nativo (CN)
+
+
+                  Rodiney de Arruda Mauro
+                    Marta Pereira da Silva
+                     Fabiana Villa Alves
+                  Roberto Giolo de Almeida
+                   Valdemir Antônio Laura
+                  Vanderley Porfírio da Silva
+                      Editores técnicos
+
+
+
+
+                  Embrapa Gado de Corte
+                    Campo Grande, MS
+                          2022
+Exemplares desta publicação podem ser adquiridos na:        Comitê Local de Publicações
+                                                            da Embrapa Gado de Corte
+                            Embrapa Gado de Corte
+ Av. Rádio Maia, 830, Zona Rural, Campo Grande, MS,         Presidente
+                       79106-550, Campo Grande, MS          Rodrigo Amorim Barbosa
+                                Fone: (67) 3368 2000
+                                  Fax: (67) 3368 2150       Secretário-Executivo
+                                     www.embrapa.br         Rodrigo Carvalho Alva
+                    www.embrapa.br/fale-conosco/sac
+                                                            Membros
+                                                            Alexandre Romeiro de Araújo, Davi José
+                                                            Bungenstab, Fabiane Siqueira, Gilberto
+                                                            Romeiro de Oliveira Menezes, Luiz Orcício
+                                                            Fialho de Oliveira, Marcelo Castro Pereira,
+                                                            Mariane de Mendonça Vilela, Marta Pereira
+                                                            da Silva, Mateus Figueiredo Santos, Vanessa
+                                                            Felipe de Souza
+
+                                                            Supervisão editorial
+                                                            Rodrigo Carvalho Alva
+
+                                                            Revisão de texto
+                                                            Rodrigo Carvalho Alva
+
+                                                            Tratamento das ilustrações
+                                                            Rodrigo Carvalho Alva
+
+                                                            Projeto gráfico da coleção
+                                                            Carlos Eduardo Felice Barbeiro
+
+                                                            Editoração eletrônica
+                                                            Rodrigo Carvalho Alva
+
+                                                            Foto da capa
+
+                                                            1ª edição
+                                                            Publicação digitalizada (2022)
+
+
+
+
+                                       Todos os direitos reservados.
+                   A reprodução não autorizada desta publicação, no todo ou em parte,
+                           constitui violação dos direitos autorais (Lei nº 9.610).
+                      Dados Internacionais de Catalogação na Publicação (CIP)
+                                      Embrapa Gado de Corte
+
+         Diretrizes técnicas para produção pecuária sustentável com árvores nativas : Carbono
+             nativo (CN) / editores técnicos, Rodiney de Arruda Mauro ... [et al.]. – Campo
+             Grande, MS : Embrapa Gado de Corte, 2022.
+             PDF ( 32 p.). – (Documentos / Embrapa Gado de Corte, ISSN 1983-974X ; 303).
+
+
+             1. Carbono. 2. Floresta nativa. 3. Gado de Corte. 4. Gás de efeito estufa. 5. Pastagem.
+         6. Planta forrageira. I. Mauro, Rodiney de Arruda. II. Silva, Marta Pereira da. III. Alves,
+         Fabiana Villa. IV. Almeida, Roberto Giolo de. V. Laura, Valdemir Antônio. VI. Silva,
+         Vanderley Porfírio da. VII. Série.
+
+                                                                                         CDD 636.213
+     Maria de Fátima da Cunha (CRB – 1/2616)                                        © Embrapa, 2022
+Autores
+Alexandre Romeiro de Araújo
+Zootecnista, doutor em Ciência do Solo, pesquisador da
+Embrapa Gado de Corte, Campo Grande, MS
+
+Armindo Neivo Kichel
+Engenheiro-agrônomo, doutor em Agronomia, pesquisador da
+Embrapa Gado de Corte, Campo Grande, MS (in memoriam)
+
+Daniel Luis Mascia Vieira
+Ecólogo, doutor em Ecologia, pesquisador da Embrapa
+Recursos Genéticos
+
+Davi José Bungenstab
+Médico-veterinário, doutor em Agricultura, pesquisador da
+Embrapa Gado de Corte, Campo Grande, MS
+
+Eny Duboc
+Engenheira-agrônoma, doutora em Agronomia (Energia na
+Agricultura), pesquisadora da Embrapa Agropecuária Oeste,
+Dourados, MS
+
+Fabiana Villa Alves
+Zootecnista, doutora em Ciência Animal e Pastagens, pesqui-
+sadora da Embrapa Gado de Corte, Campo Grande, MS
+
+Fernando Rodrigues Teixeira Dias
+Engenheiro-eletrônico, mestre em Administração, pesquisador
+da Embrapa Pantanal, Corumbá, MS
+Giampaolo Queiroz Pellegrino
+Engenheiro-florestal, doutor em Engenharia Agrícola - Água e Solo,
+pesquisador da Embrapa Informática Agropecuária, Campinas, SP
+
+Gladys Beatriz Martinez
+Engenheira-agrícola, doutora em Ciências Agrárias, pesquisa-
+dora da Embrapa Amazônia Oriental, Belém, PA
+
+João dos Santos Vila da Silva
+Matemático, doutor em Engenharia Agrícola pesquisador da
+Embrapa Informática Agropecuária, Campinas, SP
+
+Lidiamar Barbosa de Albuquerque
+Bióloga, doutora em Ecologia, pesquisadora da Embrapa
+Cerrados, Planaltina, DF
+
+Luis Gustavo Barioni
+Engenheiro-agrônomo, doutor em Ciência Animal e Pastagens,
+pesquisador da Embrapa Informática Agropecuária, Campinas, SP
+
+Manuel Cláudio Motta Macedo
+Engenheiro-agrônomo, doutor em Ciência do Solo, pesquisador
+da Embrapa Gado de Corte, Campo Grande, MS
+
+Mariana de Aragão Pereira
+Zootecnista, doutora em Administração rural, pesquisadora da
+Embrapa Gado de Corte, Campo Grande, MS
+
+Marília Ieda da Silveira Folegatti Matsuura
+Zootecnista, doutora em Tecnologia de Alimentos, pesquisado-
+ra da Embrapa Meio Ambiente, Jaguariúna, SP
+
+Marta Pereira da Silva
+Zootecnista, doutora em Ecologia Tropical, pesquisadora da
+Embrapa Gado de Corte, Campo Grande, MS
+Michely Tomazi
+Engenheira-agrônoma, doutora em Ciência do Solo, pesquisa-
+dora da Embrapa Agropecuária Oeste, Dourados, MS
+
+Roberto Giolo de Almeida
+Engenheiro-agrônomo, doutor em Zootecnia, pesquisador da
+Embrapa Gado de Corte, Campo Grande, MS
+
+Rodiney de Arruda Mauro
+Biólogo, doutor em Ecologia Tropical, pesquisador da Embrapa
+Gado de Corte, Campo Grande, MS
+
+Rodrigo da Costa Gomes
+Zootecnista, doutor em Qualidade e Produtividade Animal, pes-
+quisador da Embrapa Gado de Corte, Campo Grande, MS
+
+Tadário Kamel de Oliveira
+Engenheiro-agrônomo, doutor em Engenharia Florestal, pesqui-
+sador da Embrapa Acre, Rio Branco, AC
+
+Valdemir Antônio Laura
+Engenheiro-Agrônomo, doutor em Agronomia, pesquisador da
+Embrapa Gado de Corte, Campo Grande, MS
+
+Vanderley Porfírio da Silva
+Engenheiro-Agrônomo, doutor em Agronomia (Produção
+Vegetal), pesquisador da Embrapa Florestas, Colombo PR
+Grupo de Trabalho “Componente Arbóreo”
+Daniel Luis Mascia Vieira (Embrapa Recursos Genéticos)
+Eny Duboc (Embrapa Agropecuária Oeste)
+Gladys Beatriz Martinez (Embrapa Amazônia Oriental)
+João dos Santos Vila da Silva (Embrapa Informática Agropecuária)
+Lidiamar B. de Albuquerque (Embrapa Cerrados)
+Rodiney de Arruda Mauro (Embrapa Gado de Corte)
+Tadário Kamel de Oliveira (Embrapa Acre)
+Valdemir Antônio Laura (Embrapa Gado de Corte)
+Vanderley Porfírio da Silva (Embrapa Florestas)
+
+
+
+Grupo de Trabalho “Componente Solo”
+Alexandre Romeiro de Araújo (Embrapa Gado de Corte)
+Davi J. Bungenstab (Embrapa Gado de Corte)
+Giampaolo Queiroz Pellegrino (Embrapa Informática Agropecuária)
+Manuel Claudio M. Macedo (Embrapa Gado de Corte)
+Marília I. S. Folegatti Matsuura (Embrapa Meio Ambiente)
+Roberto Giolo de Almeida (Embrapa Gado de Corte)
+
+
+
+Grupo de Trabalho “Componente Pasto / Animal”
+Armindo Neivo Kichel (Embrapa Gado de Corte, in memoriam)
+Fabiana Villa Alves (Embrapa Gado de Corte)
+Fernando R. Teixeira Dias (Embrapa Pantanal)
+Luis Gustavo Barioni (Embrapa Informática Agropecuária)
+Michely Tomazi (Embrapa Agropecuária Oeste)
+Mariana de Aragão Pereira (Embrapa Gado de Corte)
+Marta Pereira da Silva (Embrapa Gado de Corte)
+Rodrigo da Costa Gomes (Embrapa Gado de Corte)
+Sumário
+Apresentação.................................................................................................. 9
+
+Introdução..................................................................................................... 12
+
+Construção da Marca-Conceito. ................................................................... 15
+
+Conceito da marca........................................................................................ 16
+
+Componente vegetação: o elemento arbóreo na marca conceito Carbono
+Nativo............................................................................................................ 18
+
+Componente vegetação: as pastagens na marca conceito Carbono Nativo.21
+
+Componente solo na marca conceito Carbono Nativo.................................. 22
+
+Componente animal na marca conceito Carbono Nativo.............................. 25
+
+Considerações finais..................................................................................... 27
+
+Referências................................................................................................... 28
+Diretrizes técnicas para produção pecuária sustentável com árvores nativas: Carbono Nativo (CN)   9
+
+
+
+
+Apresentação
+A pecuária de corte brasileira, predominantemente realizada em pastagens,
+além de ser um dos pilares da economia do país, é uma importante provedora
+de serviços ecossistêmicos no contexto de mitigação das emissões de gases
+de efeito estufa.
+
+O Brasil tem assumido compromissos internacionais em favor da eficiên-
+cia produtiva em prol da sustentabilidade do setor agropecuário. Por meio
+do “Plano Setorial de Mitigação e de Adaptação às Mudanças Climáticas
+para a Consolidação de uma Economia de Baixa Emissão de Carbono na
+Agricultura”, ou “Plano ABC (Agricultura de baixa emissão de carbono)”, em
+nove anos (2010-2018), o País conseguiu evitar a emissão entre 100,21 mi-
+lhões e 154,38 milhões de toneladas de CO2 eq. (equivalente de dióxido de
+carbono), alcançando de 68% a 105% da meta de mitigação estabelecida em
+2015 (MAPA, 2018).
+
+O sucesso do Plano ABC foi, em grande parte, devido à escolha de tecnolo-
+gias sustentáveis de produção já difundidas no campo, e com grande poten-
+cial de mitigação de gases de efeito estufa (GEE), como plantio de florestas,
+recuperação de pastagens degradadas, sistemas em integração lavoura-pe-
+cuária-floresta (ILPF) e agroflorestais (SAFs), sistema plantio direto (SPD) e
+fixação biológica de nitrogênio (FBN) (MAPA, 2012). Tais escolhas, com forte
+embasamento científico nacional, consolidaram a iniciativa como uma das
+principais políticas públicas brasileiras de mitigação e adaptação às mudan-
+ças climáticas. Além de ser considerada uma iniciativa única no mundo em
+seu gênero e dimensão, possibilitou o fortalecimento de uma economia de
+baixa emissão de carbono na agricultura brasileira.
+
+Entretanto, além da mitigação de GEE, as estratégias de adaptação às mu-
+danças climáticas na agropecuária preconizadas pelo Plano ABC geram co-
+benefícios passíveis de valoração, mas ainda inexplorados em sua totalidade.
+Citam-se aspectos como maior produtividade, maior bem-estar animal, maior
+eficiência no uso de recursos, recomposição da paisagem rural, aumento da
+resiliência climática dos sistemas de produção, aumento da biodiversidade
+acima e abaixo do solo, entre outros.
+10                                                            DOCUMENTOS 303
+
+
+
+
+Em abril de 2021 foi lançado o Plano ABC+ que visa expandir a adoção de
+tecnologias de produção sustentável em uma área de 72,68 milhões de hec-
+tares (BRASIL, 2021). A meta é mitigar em torno de 1,1 bilhão de tonela-
+das de carbono equivalente até 2030. Para alcançar essa meta definida pelo
+Plano Setorial de Adaptação e Baixa Emissão de Carbono na Agropecuária
+os novos objetivos são:
+ • Manutenção e adoção de sistemas de produção conservacionistas;
+ • Fortalecimento do uso de tecnologias e assistência ao produtor;
+ • Estímulo à pesquisa e desenvolvimento de práticas sustentáveis de
+   produção;
+ • Reconhecimento e valorização de produtores que adotam práticas
+   sustentáveis;
+ • Fomento e diversificação de fontes econômicas, financeiras e fiscais vin-
+   culados aos sistemas produtivos sustentáveis;
+ • Aprimoramento do sistema de gestão das informações do ABC+, para efe-
+   tivação do monitoramento, avaliação e comunicação de resultados;
+ • Incentivo à regularização ambiental das propriedades rurais.
+
+Os objetivos elencados visam aumentar a produtividade e renda do produtor
+e ao mesmo tempo controlar as emissões de gases do efeito estufa.
+
+Agregar serviços ecossistêmicos e/ou atributos ambientais à imagem e ao
+valor da atividade agropecuária brasileira sempre foi um grande desafio para
+o Brasil, pois a captura de valores intangíveis incorporados à carne e outros
+derivados, e transformação destes em remuneração aos atores da cadeia
+produtiva, requer hábil mapeamento e gerenciamento do processo. Isto impli-
+ca no desenvolvimento de métricas, além de formas de mensuração e valora-
+ção, visando instrumentos econômicos diferenciadores, do tipo “certificação”.
+Contudo, para que este tenha credibilidade, deve ser estruturado por meio
+de mecanismo voluntário, realizado por uma terceira parte (independente),
+apoiado em diretrizes consistentes e processos transparentes. Em se tra-
+tando de pecuária de corte extensiva e realizada em diferentes biomas, sua
+complexidade técnica e operacional é grande, e sua proposição desafiadora.
+Diretrizes técnicas para produção pecuária sustentável com árvores nativas: Carbono Nativo (CN)   11
+
+
+
+A Embrapa, apoiando as ações governamentais brasileiras no que tange
+à mitigação das emissões de GEE na agropecuária, estruturou em 2019 a
+“Plataforma Pecuária de Baixa Emissão de Carbono”, cujo objetivo é reunir
+marcas-conceito que atuam como selos de garantia para a comercialização
+de produtos oriundos da cadeia pecuária, e cristalizam conceitos e valores in-
+tangíveis, embasados em resultados científicos (ALVES et al., 2015). Nesta,
+está incluída a “Carne Carbono Neutro” (CCN), cuja certificação é focada na
+captura e remoção do carbono por meio de sistemas pecuários com presença
+de árvores plantadas (silvipastoris ou agrossilvipastoris). Também, a “Carne
+Baixo Carbono” (CBC), elaborada para certificar a carne produzida em siste-
+mas em integração lavoura-pecuária (ILP) ou em pastagens bem manejadas,
+sem a presença obrigatória de árvores (ALMEIDA e ALVES, 2020).
+
+A evolução da concepção da Plataforma Pecuária de Baixa Emissão de
+Carbono, inédita em suas prerrogativas e construção, fez emergir a oportuni-
+dade para outras marcas-conceito, como a “Carbono Nativo”. Seu escopo é
+certificar a carne produzida em pastagens arborizadas com árvores nativas,
+nas quais o carbono foi mitigado/neutralizado por meio da conservação das
+árvores existentes e/ou pela introdução das mesmas, exaltando e valorando
+atributos extrínsecos e intrínsecos do produto final. Além disto, também está
+implícita uma perspectiva mais ampla de sustentabilidade, com a manuten-
+ção destes sistemas pecuários menos intensivos por meio de boas práticas
+agropecuárias, como provedores de uma série de outros serviços ecossistê-
+micos, além da mitigação de GEE, como, biodiversidade, resiliência climática,
+conservação do solo e água, enriquecimento da paisagem dentre outros, que
+podem ser valorizados por meio da marca.
+
+O grande desafio dessa proposta é combinar pesquisa, transferência de tec-
+nologia e política pública, com foco na sustentabilidade da atividade e na va-
+lorização do ambiente pecuário, continuamente apontado, de forma errônea,
+como antítese da conservação ambiental.
+
+O objetivo deste documento é estabelecer os padrões da marca-conceito
+Carbono Nativo (CN), e contribuir para a uniformização do conhecimento so-
+bre sua produção, bem como estabelecer as bases para sua avaliação e
+certificação.
+12                                                            DOCUMENTOS 303
+
+
+
+
+Introdução
+O Brasil é um dos signatários do Acordo de Copenhague, firmado em 2009,
+ao final da 15ª Conferência das Partes (COP-15), no qual se comprometeu a
+reduzir, voluntariamente, entre 36,1% e 38,9% das emissões totais nacionais
+de gases de efeito estufa (GEE) projetadas para 2020, com estimativa de um
+bilhão de toneladas de CO2 equivalente (t CO2 eq.) evitadas no país.
+
+Seis anos depois, em 2015, durante a COP-21, assumiu metas mais ambi-
+ciosas às previamente pactuadas, considerando grandes ações atreladas ao
+setor agropecuário nacional, como o fim do desmatamento ilegal, a restau-
+ração de áreas de florestas (de reserva legal e preservação permanente), a
+recuperação de pastagens degradadas, a biodigestão de dejetos animais e
+o aumento das áreas com sistemas em integração lavoura-pecuária-floresta
+(ILPF). Tais compromissos foram amparados pelos resultados extremamente
+positivos obtidos, até então, com a aplicação do “Plano Setorial de Mitigação
+e de Adaptação às Mudanças Climáticas para a Consolidação de uma
+Economia de Baixa Emissão de Carbono na Agricultura”, ou “Plano ABC”,
+criado em 2010 pelo Ministério da Agricultura, Pecuária e Abastecimento
+(MAPA), com o objetivo de ratificar os compromissos assumidos internacio-
+nalmente em 2009 (MAPA, 2012).
+
+O cenário nacional criado, desde então, fomentou intensas discussões sobre
+o tema no setor, bem como proposição de ações por diferentes atores das
+esferas públicas e privadas, com crescente aderência da sociedade civil em
+geral. Contudo, se por um lado, as discussões sobre os custos financeiros e
+sociais para implantação de tecnologias mitigadoras de carbono, e sua via-
+bilização, foram exauridas, por outro, pouco se avançou no vislumbramento
+dos ganhos diretos e indiretos que tais tecnologias agregariam. Neste caso,
+outros co-benefícios, em sua maioria “intangíveis”, não foram devidamente
+considerados do ponto de vista comercial e de agregação de valor, notada-
+mente associados à conservação e recomposição da paisagem, valorização
+do território, melhoria na produtividade e qualidade dos produtos obtidos,
+conservação de solo e água, aumento no grau de bem-estar animal, entre
+outros, que podem ser avaliados individual ou conjuntamente.
+Diretrizes técnicas para produção pecuária sustentável com árvores nativas: Carbono Nativo (CN)   13
+
+
+
+No caso das tecnologias consideradas no Plano ABC, muitas são diretamente apli-
+cáveis à pecuária de corte. Algumas, porém, constituem verdadeiras inovações no
+setor, como a integração lavoura-pecuária-floresta e os sistemas agroflorestais.
+
+Em áreas de pastagens, os estoques de carbono estão principalmente no solo.
+Segundo a Organização das Nações Unidas para Alimentação e Agricultura
+- FAO (2009), este compartimento tem grande potencial de sequestro e ar-
+mazenamento de carbono, sendo considerado um dos maiores sumidouros
+de carbono. A manutenção de elementos arbóreos, associados a um bom
+manejo das pastagens, e silvicultura adequada, contribuem ainda mais para
+a mitigação de GEE nos sistemas pecuários. No passado, a formação de
+pastagens ocorreu com a retirada do elemento arbóreo, quer seja nas forma-
+ções florestais mais densas, quer seja nas formações menos densas típicas
+do bioma Cerrado. Atualmente essa mentalidade está mudando rapidamente
+com a crescente valorização da presença das árvores nessa paisagem.
+
+A existência de árvores nativas nas pastagens pode ocorrer, basicamente, em
+três modalidades: árvores remanescentes do processo de abertura/formação
+dos pastos (desmatamento seletivo), árvores provenientes da regeneração
+natural, ou árvores provenientes de plantio. Nos dois primeiros modelos a
+densidade arbórea é variada e a riqueza de espécies pode ser grande, no ter-
+ceiro modelo, a organização é sistemática e com densidade pré-determinada,
+com diversidade variável.
+
+Um aspecto importante já percebido por produtores, com comprovação em
+trabalhos científicos, é que a produtividade e/ou a qualidade das forrageiras
+em pastagens adequadamente arborizadas pode ser melhor do que quando
+a pleno sol (MONTOYA et al., 1994; GARCIA e COUTO, 1997; MEDRADO,
+2000; ALMEIDA et al., 2003; CAMPOS et al., 2007; PACIULLO et al., 2007;
+ALMEIDA et al., 2016; FAVARE et al., 2018). Além disso, nas pastagens ade-
+quadamente arborizadas, tem-se um grande potencial de acúmulo de car-
+bono e mitigação de GEE, tanto nas árvores como no solo, desde que as
+pastagens sejam corretamente manejadas, acrescido de outros atributos am-
+bientais, como enriquecimento da biodiversidade e formação de corredores
+ecológicos (HANISCH et al., 2016).
+
+Paisagisticamente, por exemplo, sistemas silvipastoris no Cerrado se asseme-
+lham a fitofisionomias naturais do bioma, como a savana arborizada (ou campo
+14                                                             DOCUMENTOS 303
+
+
+
+
+cerrado) e savana parque (ou parkland - parque de cerrado) (VELOSO et al.,
+1991), formando sistemas de produção de bovinos de corte característicos desta
+ecorregião, passíveis de serem valorados (BRUZIGUESSI, 2016). Outros bio-
+mas ou ecorregiões, como Amazônia, Caatinga, Pantanal, Campos Sulinos e
+Mata Atlântica, também possuem sistemas silvipastoris característicos (SANTOS
+et al., 2009; OLIVEIRA et al., 2009; SANTOS e SANTOS, 2011; HANISCH et al.,
+2016), nos quais a certificação “Carbono Nativo” poderá ser aplicada.
+
+Em áreas de pastagens os estoques de carbono estão principalmente no
+solo. Segundo a FAO (2019), o compartimento solo tem grande potencial de
+sequestro e armazenamento de carbono, sendo considerado um dos maiores
+sumidouros. A manutenção de elementos arbóreos, associados a um bom
+manejo das pastagens, e silvicultura adequada, contribuem ainda mais para
+a mitigação de GEE nos sistemas pecuários.
+
+O sistema de produção de gado de corte é caracterizado por um conjunto de
+tecnologias e práticas de manejo, bem como o tipo de animal, o propósito da
+criação, a raça ou grupamento genético e a ecorregião em que a atividade é
+desenvolvida (EUCLIDES FILHO, 2000). No Brasil, predomina a bovinocul-
+tura de corte extensiva. Esta é baseada fundamentalmente no uso de forra-
+geiras africanas adaptadas às condições climáticas e de solo de cada região
+brasileira, e na utilização parcimoniosa de insumos.
+
+Sistemas silvipastoris (SSP) constituem uma modalidade de sistema agroflores-
+tal, com base nos tipos de componentes, que combinam forrageiras, árvores e
+criação de animais em uma mesma área, por meio da conservação/manuten-
+ção de árvores previamente existentes, pelo plantio de árvores ou pela condu-
+ção da regeneração da vegetação natural (NAIR, 1993; ALMEIDA et al., 2016).
+
+Devido ao processo histórico de ocupação das terras no Brasil, da tecnologia
+empregada para a formação das pastagens, uso de correntão e.g., a quase
+totalidade dessas áreas é desprovida de árvores. Apesar disso, alguns pe-
+cuaristas, seja por consciência ambiental, conhecimento empírico, ou aspec-
+tos culturais, costumam deixar as algumas árvores comporem as paisagens
+agropecuárias formando sistemas silvipastoris.
+
+Grande parte dos cobenefícios gerados pela aplicação de tecnologias que
+visam à mitigação dos GEEs, se não a sua totalidade, é amparada por evi-
+Diretrizes técnicas para produção pecuária sustentável com árvores nativas: Carbono Nativo (CN)   15
+
+
+
+dências científicas, e podem servir tanto para validar (e garantir) os efeitos
+mitigatórios quanto à qualidade do produto originado. Este processo, estrutu-
+rado sob a forma de cadeia de valor, é, na ótica moderna de comercialização
+global, o principal mecanismo de equacionamento do problema de assimetria
+de informação sobre o tema, que assola o setor agropecuário. Entretanto,
+para que atinja este escopo, faz-se necessário uma estrutura de governança
+bem planejada, capaz de fornecer os incentivos e controles necessários para
+a sustentação da estratégia de diferenciação.
+
+Neste sentido, na busca pela oferta de mais uma alternativa de agregação de
+valor aos produtos cárneos produzidos com foco na sustentabilidade, foi cria-
+da a marca-conceito “Carbono Nativo”. Nesta, busca-se valorizar a presença
+de árvores nativas nas áreas de pastagens, e seus cobenefícios intangíveis.
+
+Entretanto, apropriar base científica que possibilitasse estimativas relativa-
+mente rápidas, embora igualmente confiáveis, do conteúdo de carbono acu-
+mulado nas árvores nativas, constituiu-se um grande desafio tecnológico
+e científico, tendo em vista a diversidade dos biomas brasileiros e, conse-
+quentemente, das espécies arbóreas nativas aptas a integrar sistemas do
+tipo silvipastoril. Assim, a partir de indicadores científicos estabelecidos por
+especialistas com variadas formações acadêmicas, foram definidos critérios
+e parâmetros presentes em pastagens com árvores que deveriam ser con-
+siderados, pois se enquadravam nos preceitos da marca-conceito “Carbono
+Nativo” (MAURO et al., 2020). Estes serão descritos com detalhes nas se-
+ções correspondentes deste documento.
+
+
+Construção da Marca-Conceito
+Para o desenvolvimento das diretrizes (versão 1.0) da marca-conceito
+“Carbono Nativo” foi realizado um workshop para definição do conceito e de
+suas bases científicas conceituais, a exemplo do realizado para a marcas-
+conceito “Carne Baixo Carbono”. O workshop foi intitulado “Oficina Diretrizes
+da marca-conceito Carbono Nativo (CN)”, e realizado em Campo Grande
+(MS), em 11 e 12 de junho de 2019. Contou com a participação de equipe
+técnica multidisciplinar, proveniente de 16 unidades da Embrapa, sob coorde-
+nação da Embrapa Gado de Corte.
+16                                                            DOCUMENTOS 303
+
+
+
+
+As diretrizes foram construídas durante o workshop, baseadas nas experiências
+dos pesquisadores e técnicos envolvidos com o tema, e depois também expan-
+didas com aquelas oriundas de marcas já registradas pela Embrapa que são
+Carne Carbono Neutro (CCN) (ALVES et al., 2015) e Carne Baixo Carbono (CBC)
+(ALMEIDA e ALVES, 2020), uma vez que algumas regras são consenso para se
+alcançar os objetivos de mitigação e/ou neutralização das emissões de GEE.
+
+
+Conceito da marca
+Carbono Nativo é uma marca-conceito (Figura 1) que visa assegurar a mitiga-
+ção e/ou neutralização de carbono na produção de carne bovina em ambien-
+tes com a presença de árvores nativas.
+
+A marca-conceito Carbono Nativo poderá ser utilizada para carnes bovinas
+frescas, congeladas ou transformadas, para mercado interno e para exporta-
+ção, e deve satisfazer às disposições aqui mencionadas, quanto ao sistema
+de produção, origem e qualidade, bem como às indicações de uso da mesma.
+
+O logo da marca-conceito “Carbono Nativo” é simbolizado por uma seta cir-
+cular que representa a fixação, neutralização e reciclagem do carbono, com
+alusão à letra “C”.
+
+O logo segue o padrão das outras marcas já registradas pela Embrapa que
+são Carne Carbono Neutro (CCN) e Carne Baixo Carbono (CBC) (ALVES et
+al., 2015; ALMEIDA e ALVES, 2020).
+
+A cor verde simboliza a neutralização das emissões de GEEs dos sistemas de
+produção de carne bovina, por meio do sequestro e fixação de carbono propor-
+cionado pelo componente arbóreo aqui representado por uma árvore. A árvo-
+re e as aves simbolizam a preocupação com a manutenção da biodiversidade
+assim como os serviços ambientais e/ou ecossistêmicos que esses sistemas
+proporcionam.
+
+A cor preta simboliza as emissões de GEEs do sistema representadas, de for-
+ma estilizada, pelo cupim de um bovino, Bos taurus indicus Linnaeus, 1758. A
+marca-conceito Carbono Nativo não se restringe exclusivamente a nenhuma
+raça bovina. Todas as raças podem ser candidatas ao recebimento do selo.
+Diretrizes técnicas para produção pecuária sustentável com árvores nativas: Carbono Nativo (CN)   17
+
+
+
+A principal finalidade é que a carne produzida nas propriedades seja originária
+de bovinos que tiveram suas emissões de metano entérico mitigadas e/ou neu-
+tralizadas durante o processo de produção da mesma. Os cálculos do balanço
+se baseiam na presença das árvores nativas nos sistemas de forma aleatória ou
+ordenada, incluindo aceiros arborizados, cercas vivas e aléias. Os sistemas que
+são passíveis desta certificação são o silvipastoril, ou integração pecuária-flo-
+resta (IPF), e agrossilvipastoril, ou integração lavoura-pecuária-floresta (ILPF).
+
+A divulgação pública do selo será efetuada por meio de órgãos reguladores,
+de fomento e representativos das cadeias produtivas, com suporte técnico da
+Embrapa.
+
+Após essas explicações iniciais dividimos essa publicação em quatro partes
+que abordam os seguintes componentes: o elemento arbóreo, a pastagem, o
+solo e os animais criados nesse sistema.
+
+
+
+
+Figura 1. Logo da marca-conceito “Carbono Nativo”, versão em português.
+18                                                           DOCUMENTOS 303
+
+
+
+
+Componente vegetação: o elemento arbóreo
+na marca conceito Carbono Nativo
+Para uma área ser considerada Carbono Nativo deverá seguir a definição de
+Sistemas Silvipastoris com árvores nativas, no qual é considerada a intera-
+ção animal, árvores e pastagens.
+
+Os sistemas silvipastoris no Brasil são criados a partir de árvores remanes-
+centes do processo de abertura/formação dos pastos (desmatamento sele-
+tivo), árvores provenientes da regeneração natural, ou árvores provenientes
+de plantio. Nos dois primeiros modelos a densidade arbórea é variada e a
+riqueza de espécies pode ser grande, no terceiro modelo, a organização é
+sistemática e com densidade pré-determinada, com diversidade variável.
+
+Uma regra fundamental é que as árvores e/ou bosquetes existentes, ou for-
+mados, devem estar distribuídos em toda a área a ser certificada, preenchen-
+do espacialmente a paisagem e não somente uma pequena porção.
+
+São passíveis de obter o selo a produção animal da propriedade ou, ainda,
+um sistema misto no qual se obtenham produtos, comercializáveis ou não,
+tanto do componente florestal quanto do animal.
+
+Qualquer área candidata a marca-conceito Carbono Nativo primeiramente
+deverá realizar o registro de manejo das árvores nativas nos órgãos am-
+bientais estaduais competentes para evitar restrições no uso posterior dos
+produtos madeiráveis.
+
+O propósito do componente arbóreo de um sistema silvipastoril que pretende
+receber o selo Carbono Nativo pode ser de acordo com tipo de utilização
+pretendida, como p. ex. produtos madeireiros e/ou não madeireiros, como
+resinas, apícola etc., ou ainda serviços ambientais quer seja aqueles para a
+biodiversidade, conservação de solo e água, sequestro de carbono, conforto
+térmico do rebanho, entre outros.
+
+Quanto à escolha das árvores não há limites quanto ao número e altura mí-
+nima de árvores para serem registradas nas áreas elegíveis. O componente
+arbóreo deve ser necessariamente oriundo dentro da sua ocorrência natural,
+ou seja, dentro do bioma. O sistema silvipastoril pode ser formado por uma
+Diretrizes técnicas para produção pecuária sustentável com árvores nativas: Carbono Nativo (CN)   19
+
+
+
+espécie nativa, p. ex. pequi (nome científico: Caryocar brasiliense), cumbaru
+ou baru (nome cientifico: Dipteryx alata), etc., ou por várias espécies nativas.
+O objetivo maior da presença de árvores é o favorecimento da produção sus-
+tentável de carne através da fixação de carbono, bem estar animal, incremen-
+to e manutenção da biodiversidade e produção de pastagem.
+
+As medições a serem adotadas devem levar em conta os preceitos dendro-
+métricos nos estudos fitossociológicos. O diâmetro é medido através do DAP
+(diâmetro à altura do peito) tomado a 1,30 m acima do nível do solo. Esta
+é uma medida internacionalmente adotada devido a facilidade de obtenção
+e alta correlação com o volume de biomassa. Outra vantagem é que geral-
+mente o tronco de árvores tropicais, a esta altura, está livre de tortuosidades
+(SILVA e PAULA NETO, 1979; VEIGA, 1984).
+
+Na Oficina, para definição das diretrizes do CN, optou-se pela mensuração
+de todos os indivíduos arbóreos vivos com DAP ≥ 3 cm, assim como serão
+anotadas a altura total dos mesmos. Por ocasião do levantamento total, serão
+registrados os locais das árvores vivas e mortas e também as recrutas, ou
+seja, aquelas promissoras com a espécie devidamente identificada. Estas
+futuramente contribuirão para a composição da paisagem. Serão calculados
+o estoque de carbono do fuste das árvores (ton) e o volume de madeira total
+com casca (m3), de acordo com os cálculos aceitos pelo IPCC (AREVALO et
+al., 2002; ZANETTI, 2008; OLIVEIRA, 2011; OLIVEIRA et al., 2011).
+
+Para fins de estimativa do carbono fixado no componente arbóreo, no CN
+somente serão mensuradas as variáveis dendrométricas:
+  • DAP: Diâmetro a 1,30 m ao nível do solo (cm);
+  • Ht: Altura total da árvore (m).
+
+Nas áreas que serão consideradas como sistemas CN (piquetes, potreiros,
+invernadas) deverão ser contabilizadas todas as árvores nativas com DAP ≥ 3
+cm. O somatório da cobertura das copas, originado da soma da área da copa
+projetada verticalmente no solo, deve ser igual ou maior (≥) a 10% por hectare.
+
+O limite superior da quantidade de árvores existentes nas áreas de CN será
+aquele no qual a produção de forrageiras não seja afetada negativamente
+pelas sombras das copas dos elementos arbóreos.
+20                                                             DOCUMENTOS 303
+
+
+
+
+As avaliações das árvores serão realizadas a cada dois anos para quantificar
+a área de projeção das copas. A cada cinco anos um inventário será realizado
+para o cálculo de estoque de carbono.
+
+Não será considerado o destino da madeira produzida pelo manejo de copas
+(podas, desramas, etc.). Não haverá restrições de uso dessa biomassa retira-
+da. Para o aproveitamento de árvores secas e manejo florestal serão utilizados
+os parâmetros adotados pelo Código Florestal Brasileiro que trata desse tema.
+
+A avaliação da contribuição das raízes das árvores, neste momento, não será
+computada especificamente quanto ao aporte de carbono (C) no solo. A con-
+tabilização do carbono será realizada somente a partir do fuste das árvores.
+
+A quantidade mínima de CO2 mitigado, na marca-conceito Carbono Nativo,
+será dependente da emissão potencial de uma pecuária otimizada conside-
+rando a metade das emissões, ou seja, 50% das emissões. Baseando-se
+na metodologia praticada na marca-conceito Carne Baixo Carbono (CBC)
+devemos estabelecer três níveis de mitigação nas seguintes estratificações:
+categoria C = até 25%, categoria B = de 26 a 75% e categoria A = acima de
+75% de mitigação (ALVES et al., 2015; ALMEIDA e ALVES, 2020).
+
+Quando o plano de manejo recomendar o corte de árvores (ILPF) para apro-
+veitamento da madeira, o período a ser realizado dependerá do monitora-
+mento e do plano em questão.
+
+Os sistemas silvipastoris com plantios de espécies nativas nos biomas nos
+quais elas ocorrem p. ex. paricá (nome científico: Schizolobium amazonicum) na
+Amazônia, por ser espécie nativa do bioma, serão candidatos ao selo Carbono
+Nativo. No entanto, plantios de paricá no bioma Cerrado não serão considera-
+dos Carbono Nativo. Outro exemplo de sistema silvipastoril com árvore nativa
+no bioma Cerrado, onde predomina uma espécie, é aquele formado por pequi-
+zeiros (Caryocar brasiliense) (WISINTAINER, 2013; FAVARE et al., 2018).
+
+Em cada bioma propriedades que tenham pastagens com árvores nativas
+serão elegíveis para a obtenção do selo CN. As árvores podem ser originadas
+de plantios ou de regeneração natural.
+Diretrizes técnicas para produção pecuária sustentável com árvores nativas: Carbono Nativo (CN)   21
+
+
+
+
+Componente vegetação: as pastagens
+na marca conceito Carbono Nativo
+Nas áreas candidatas à obtenção da marca-conceito as pastagens podem
+ser de qualquer espécie ou cultivar. A altura das pastagens deve ser mantida
+dentro do limite recomendado para cada espécie/cultivar. A amostragem de
+altura da pastagem, utilizando a régua de manejo, deve ser feita uma vez por
+estação (primavera, verão, outono e inverno) e de cobertura do solo (mínimo
+de 75%), na estação de crescimento (COSTA e QUEIROZ, 2017).
+
+Devido à necessidade dos animais permanecerem no sistema CN durante
+todo o período da fase de recria até a sua terminação, uma área reserva com
+pastagem adequada deverá ser prevista e mantida para o caso de ocorrer
+algum imprevisto como p.ex. seca severa, ou para manter a taxa de lotação
+adequada na época das águas.
+
+Na ocasião da entrada dos animais na área, a cobertura do solo deve ser de
+no mínimo 90% para cultivares estoloníferas (p. ex. gênero Cynodon como
+grama-estrela, grama bermuda e seus híbridos; Urochloa humidicola cv. BRS
+Tupi, etc.) e de 70% para cultivares cespitosas (p. ex. Panicum maximum cv.
+Massai, Urochloa brizantha cv. Marandu, U. brizantha cv. Xaraés, U. brizan-
+tha cv. Piatã, etc.).
+
+Não há recomendações e restrições neste momento para pastagens nativas
+a serem utilizadas para a obtenção do Carbono Nativo. É também desejável a
+utilização de leguminosas nas pastagens como p. ex. Stylosanthes, Trifolium,
+Arachis, devido ao aporte de nitrogênio no solo, no entanto neste momento
+não há restrições ou recomendações específicas para o uso.
+
+O manejo das pastagens devem seguir as orientações de acordo com o bio-
+ma como p. ex. Genro e Silveira (2018) para as pastagens no sul, Dias-Filho
+(2012) e Andrade et al. (2014) para a região amazônica e para a região tropi-
+cal como um todo Pereira et al. (2018).
+22                                                              DOCUMENTOS 303
+
+
+
+
+Componente solo na marca
+conceito Carbono Nativo
+A propriedade que pretende obter o selo passará por uma avaliação prévia
+por um profissional especializado e treinado para essa tarefa. Na avaliação
+preliminar serão observadas as boas práticas de manejo dos animais assim
+como de conservação de solo e água (ZONTA et al., 2012; CATI, 2014).
+
+As amostragens de solo devem seguir as orientações CCN (ALVES et al.,
+2015) e CBC (ALMEIDA e ALVES, 2020), e devem ser realizadas antes da
+implantação como referencial do estado de conservação da área. Após a en-
+trada no programa essas amostragens serão realizadas a cada dois anos. As
+amostragens serão realizadas sempre ao final do período chuvoso quando
+o perfil do solo estiver uniforme, que é resultado da umidade proporcionada
+pela precipitação pluvial.
+
+As primeiras análises de solo, que serão utilizadas na preparação da área
+candidata a CN, servem para adequar as recomendações de corretivos e
+adubação (caso necessário) e verificar se o teor de carbono do solo está no
+nível adequado para entrada no programa. Para a correção e adubação do
+solo com pastagens deverão ser seguidos os manuais de recomendações de
+acordo com o solo e região do país (WERNER, et al., 1996 ; CQFSRS/SC,
+2004; VILELA et al., 2004; MARTHA Jr. et al., 2007; PEREIRA et al., 2018).
+
+As análises físicas, químicas para fins de fertilidade do solo e da matéria or-
+gânica do solo (MOS) serão avaliadas por amostragens realizadas em duas
+profundidades, 0-20 cm e 20-40 cm, sendo estratificada a cada 10 cm, seguin-
+do os protocolos preconizados pelos selos CCN e CBC. Essas profundidades
+são padronizadas também com relação à avaliação dos teores de C no solo.
+
+A fertilidade do solo deve ser mantida de acordo com o recomendado para a
+espécie/cultivar de gramíneas utilizadas como pastagem. A textura do solo é
+específica de cada empreendimento.
+
+Para o monitoramento do carbono no solo, micronutrientes e matéria orgânica
+as amostragens serão realizadas a cada dois anos. Serão ainda avaliadas,
+na elaboração das diretrizes, as possibilidades de solicitar análises anuais,
+Diretrizes técnicas para produção pecuária sustentável com árvores nativas: Carbono Nativo (CN)   23
+
+
+
+até o terceiro ano, nos solos de textura arenosa, devido a rápida variação que
+ocorre nos teores de micronutrientes e matéria orgânica.
+
+Como já informado, a contribuição das raízes das árvores, neste momento,
+não será computada para o aporte de carbono (C) no solo, sendo computado
+somente o carbono contido no tronco das árvores.
+
+Sobre o efeito do sistema radicular das pastagens entende-se que essas
+amostragens, devido à padronização existente, já incluem as raízes das gra-
+míneas, pois o processo de separação dessas raízes é minucioso e moroso
+dificultando o cômputo das mesmas.
+
+Devido à presença de árvores no sistema, as quais podem interferir no aporte
+de carbono ao solo, em cada “área delimitada para amostragem” será cole-
+tada uma amostra composta sob a copa das árvores (posição central entre a
+borda da copa e o tronco) e outra na área sem árvores. Será então calculada
+a média ponderada, considerando a percentagem da área ocupada com e
+sem árvores, para obtenção da média final do teor de carbono do solo. Um
+exemplo, cálculo de C em uma área com 15% de cobertura vegetal:
+
+Teor de C total da área = (C do solo sob as árvores x 0,15) + (C do solo área
+sem árvores x 0,85)
+
+O uso de fertilizantes, caso seja realizado somente nos espaços fora da proje-
+ção da copa das árvores, não haverá necessidade de fazer média ponderada.
+
+Está prevista a estimativa do estoque de Carbono nas camadas de 0 a 20 cm
+e de 20 a 40 cm de profundidade, calculados a partir das camadas avaliadas.
+A coleta em camadas estratificadas, a cada 10 cm, será aplicada para satis-
+fazer outros cálculos, quando necessários. Os cálculos dos estoques esta-
+rão disponíveis, caso seja necessário, para atender a padrões internacionais
+como o IPCC, com os valores de densidade, obtidas por pedotransferência,
+seguindo os mesmos critérios dos selos CCN e CBC (ALVES et al., 2015;
+ALMEIDA e ALVES, 2020).
+
+Para o protocolo CN será adotado um valor de base do estoque de Carbono
+no início das avaliações. Não será considerada uma taxa de acúmulo anual
+ou ao longo do tempo. Neste selo poderão ser incluídas também proprieda-
+des mantidas com sistemas menos intensivos e com menor uso de insumos,
+24                                                                                  DOCUMENTOS 303
+
+
+
+
+o que nem sempre irá levar a aumentos do estoque de carbono do solo até o
+nível de saturação.
+
+Na primeira aproximação da marca-conceito não será computado o estoque
+de carbono do solo na contabilidade de neutralização das emissões. A pro-
+priedade apenas terá o compromisso de manter um estoque mínimo para
+permanecer no programa. Será monitorada apenas a manutenção dos esto-
+ques, que poderão ser menores do que o valor medido inicialmente, dentro
+de uma faixa aceitável, a ser estabelecida em função da variabilidade espe-
+rada para os teores de carbono no solo entre as amostragens. Abaixo dessa
+faixa aceitável, teremos uma faixa de tolerância, onde será emitida, pela cer-
+tificadora, uma advertência por não conformidade.
+
+Em uma segunda aproximação, as diretrizes determinarão a quantidade de
+carbono a ser considerada adequada para cada textura de solo em cada
+bioma brasileiro.
+
+Para o Cerrado, com base no levantamento desenvolvido para o CBC, serão
+indicados os valores mínimos de carbono para aderir ao programa (Tabela
+1), e as tabelas de recomendação de correção e fertilização do solo para
+as pastagens. Para os outros biomas (Amazônia, Mata Atlântica, Pantanal,
+Cerrado, Caatinga e Pampa) serão coletados dados novos e/ou avaliados os
+já existentes.
+
+
+Tabela 1. Interpretação de análise de solo para teores de carbono, em porcentagem
+de matéria orgânica do solo (MOS), na camada de 0 a 20 cm de profundidade em
+função da classe textural, na região do Cerrado (ALMEIDA e ALVES, 2020).
+
+                                             Teor de carbono no solo (%)1
+    Textura2
+                            Baixo                 Médio             Adequado            Alto
+    Arenosa                 < 0,46             0,46 a 0,58          0,59 a 0,87        > 0,87
+    Média                   < 0,92             0,92 a 1,16          1,17 a 1,74        > 1,74
+    Argilosa                < 1,39             1,39 a 1,74          1,75 a 2,61        > 2,61
+    Muito argilosa          < 1,62             1,62 a 2,03          2,04 a 3,02        > 3,02
+1
+    Obtido após transformação da porcentagem de matéria orgânica do solo (MOS).
+2
+    Classificação textural de acordo com Embrapa (2018b): Arenosa: 60% de argila.
+Fonte: Adaptado de Sousa e Lobato (2004).
+Diretrizes técnicas para produção pecuária sustentável com árvores nativas: Carbono Nativo (CN)   25
+
+
+
+
+Componente animal na marca
+conceito Carbono Nativo
+Para a certificação da carne produzida nesses sistemas, foram formuladas
+diretrizes, para que o produto final tenha a qualidade intrínseca reconhecida
+por todos.
+
+Para serem considerados para fins de certificação CN os animais podem ser
+oriundos de sistemas de cria-recria-terminação (ciclo completo) ou recria-ter-
+minação. Os mesmos devem atender a requisitos que contemplam recomen-
+dações pré-determinadas quanto ao seu manejo e nutrição.
+
+O gado bovino que será utilizado nas áreas consideradas aptas a receberem
+a marca-conceito CN devem ainda observar alguns outros requisitos:
+
+  • Os bovinos não terão restrições quanto às raças e seus cruzamentos e
+    também sexo dos animais.
+
+  • Os animais participantes devem entrar no sistema com até dez meses de
+    idade e para manter a certificação da carne, só podem sair do sistema
+    para o abate, ou para outra área certificada como CN.
+
+  • Será permitida a manutenção dos animais fora do sistema por período
+    máximo equivalente a 10% do período total do ciclo de produção, desde
+    que devidamente registrada e informada à certificadora.
+
+  • Todos os animais devem ser mantidos no sistema com identificação indi-
+    vidual, distinta daquela utilizada no restante da propriedade, não sendo
+    aceita identificação por marca a fogo.
+
+  • Os animais devem permanecer no sistema o tempo suficiente para pro-
+    duzirem nele o mínimo de 50% do seu peso vivo ao abate. Serão acei-
+    tos para abate CN animais com maturidade fisiológica máxima ao abate
+    equivalente a quatro dentes incisivos definitivos, com exceção de ma-
+    chos inteiros que devem ser abatidos com no máximo dois dentes incisi-
+    vos definitivos.
+
+  • Não será permitido o regime de confinamento.
+26                                                               DOCUMENTOS 303
+
+
+
+
+     • Será aceito o regime de semi-confinamento (fornecimento de suplemen-
+       tação acima de 0,8% do peso vivo) por no máximo 120 dias.
+
+     • Na fase de recria, por exemplo, recomenda-se o uso de suplementação
+       mineral, proteica (1 a 2 g/kg de peso vivo) ou proteico-energética (3 a 5
+       g/kg de peso vivo).
+
+     • Na fase de terminação recomenda-se o uso de suplementação energé-
+       tica ou semi-confinamento (6 a 12 g/kg de peso vivo) para facilitar o al-
+       cance do grau de acabamento de carcaça desejado. O limite máximo de
+       fornecimento de suplemento deve ser de até 20 g/kg de peso vivo, de
+       forma que a forragem tenha participação significativa na dieta ingerida,
+       por se tratar de carne do tipo “carne de animais alimentados a pasto”.
+       Demais detalhes sobre os procedimentos de suplementação podem ser
+       obtidos em Medeiros e Gomes (2012).
+
+     • Não será permitido o uso de promotores de crescimento antibióticos na
+       alimentação. Os animais poderão receber suplementação mineral, protei-
+       ca, proteico-energética e/ou energética (semi-confinamento), em quanti-
+       dades pré-estabelecidas.
+
+     • Para a castração dos machos, deve-se dar preferência ao uso da vacina
+       de imunocastração, em respeito aos preceitos de bem-estar animal.
+
+     • Em relação ao manejo sanitário, os animais devem seguir a legislação
+       vigente quanto às vacinas obrigatórias, ao calendário sanitário para sua
+       região ou unidade da federação, observando-se os períodos de carência
+       obrigatórios, específicos para cada produto/medicamento.
+
+     • Para fins de contabilidade da emissão de metano dos animais em paste-
+       jo, poderá ser adotado valor de referência do Painel Intergovernamental
+       sobre Mudanças Climáticas (IPCC, 2006) para o Brasil (América Latina)
+       ou, preferencialmente, quando houver disponível, valor suportado oficial-
+       mente pelos órgãos federais de competência.
+Diretrizes técnicas para produção pecuária sustentável com árvores nativas: Carbono Nativo (CN)   27
+
+
+
+
+Considerações finais
+A mitigação de gases de efeito estufa (GEE) é cada vez mais uma meta a
+ser cumprida nas mais diversas atividades econômicas que se utilizam dos
+recursos naturais no Brasil. Com a bovinocultura de corte não é diferente.
+Aqui apresentamos a marca-conceito Carbono Nativo que trará ao pecua-
+rista brasileiro uma alternativa de produção de carne, com responsabilidade
+ambiental e mitigação/neutralização das emissões de GEEs em sistemas sil-
+vipastoris com árvores nativas nos biomas brasileiros, Cerrado, Amazônia,
+Caatinga, Pantanal, Campos Sulinos e Mata Atlântica.
+
+Para a obtenção do Selo Carbono Nativo (CN) o pretendente deverá atender
+a todos os pré-requisitos e parâmetros inerentes ao conceito estabelecido
+em diretrizes específicas aqui descritas em sua primeira versão. E depois,
+em suas versões atualizadas, de caráter geral, válido nacional e internacio-
+nalmente, para o produto final, que são a carne bovina e seus derivados, e
+produtos madeiráveis.
+
+As etapas mínimas necessárias para a obtenção do mesmo são:
+
+    1) Compromisso de adoção de implantação de projeto de sistema de
+    IPF/ILPF: com base no Plano ABC+ e nos documentos orientadores da
+    Embrapa, com escolha do sistema de produção a ser mitigado/neutraliza-
+    do. O sistema deve necessariamente partir de um sistema de produção
+    com base em pastagens estabelecidas com forrageiras herbáceas (linha
+    de base) e presença de árvores nativas;
+
+    2) Avaliação técnica da emissão de carbono: com base nos índices zoo-
+    técnicos da propriedade, considerando a emissão de GEEs por animal
+    indicada em documento-referência do Painel Intergovernamental sobre
+    Mudanças Climáticas (IPCC, 2006) ou de órgãos federais de competência
+    (linha de base);
+
+    3) Cálculo do carbono fixado: a partir de inventários florestais regulares,
+    será calculado o estoque de carbono fixado nos fustes das árvores do
+    sistema, conforme metodologias para sequestro de carbono por árvores,
+    estabelecidas pela Embrapa Florestas (AREVALO et al., 2002; ZANETTI,
+    2008; OLIVEIRA, 2011), baseados no IPCC;
+28                                                                         DOCUMENTOS 303
+
+
+
+
+     4) Cálculo da mitigação/neutralização das emissões: a partir da avaliação
+     técnica da emissão de metano e do cálculo do carbono fixado no fuste
+     das árvores do sistema de IPF/ILPF, o qual obrigatoriamente deve conter
+     o componente arbóreo nativo, será calculado o saldo de carbono (em CO2
+     eq.) do sistema.
+
+O Brasil pretende alcançar a neutralidade climática até 2050 em toda sua
+economia. Para isso fortalece as ações já assumidas e elabora novas. Todas
+as ações são contempladas na Contribuição Nacionalmente Determinada
+(CND, ou NDC – sigla em inglês para Nationally Determined Contribution),
+assumida via Acordo sobre Mudança do Clima no âmbito da UNFCCC. Um
+bom exemplo no período pré-2020 é ampliação de sistemas de integração
+lavoura-pecuária-florestas (ILPF), com uma promessa de 5,0 milhões de hec-
+tares até 2030, sendo que no período de 2010 a 2020, foi alcançado 11,9
+milhões de hectares. A Embrapa, nesse sentido, vem oferecendo alternati-
+vas para o cumprimento dessas metas através do desenvolvimento de novas
+ações como o Carbono Nativo.
+
+
+Referências
+ALMEIDA, R. G.; JUNIOR, D. N.; EUCLIDES, V. P. B.; MACEDO, M. C. M.; FONSECA, D.
+M.; BRÂNCIO, P. A.; NETO, A. F. G. Disponibilidade composição botânica e valor nutritivo da
+forragem de pastos consorciados, sob três taxas de lotação. Revista Brasileira de Zootecnia,
+Viçosa, v. 32, n. 1, p.36-46, 2003.
+
+ALMEIDA, R. G.; PACIULLO, D. S.; CARNEVALLI, R. A.; CASTRO, C. T. R.; MONTAGNER,
+D. B.; PEDREIRA, B. C. Manejo do pastejo em sistemas silvipastoris. In: SIMPÓSIO SOBRE
+MANEJO ESTRATÉGICO DA PASTAGEM, 2016, Viçosa. Anais. Viçosa: UFV, 2016. 8:
+199-229.
+
+ALMEIDA, R. G.; GOMES, R. C.; SILVA, V. P.; ALVES, F. V.; FEIJÓ, G.L.D.; FERREIRA, A.
+D.; OLIVEIRA, E.; BUNGENSTAB, D. J. Carbon Neutral Brazilian Beef: testing its guidelines
+through a case study. In: INTERNATIONAL SYMPOSIUM ON GREENHOUSE GASES IN
+AGRICULTURE, 2, 2016, Campo Grande, MS. Proceedings... Campo Grande, MS: Embrapa
+Gado de Corte, 2016. p. 277-281.
+
+ALMEIDA, R. G.; ALVES, F. V. 2020. Diretrizes Técnicas para Produção de Carne com Baixa
+Emissão de Carbono Certificada em Pastagens Tropicais: Carne Baixo Carbono (CBC).
+(Documentos 280). Embrapa Gado de Corte. Campo Grande, MS, Brasil. 36 p.
+
+ALVES, F. V.; ALMEIDA, R. G.; LAURA, V. A. 2015. Carne Carbono Neutro: um novo conceito
+para a carne sustentável produzida nos trópicos (Documentos 210). Embrapa Gado de Corte,
+Campo Grande, MS, Brasil. 29 p.
+Diretrizes técnicas para produção pecuária sustentável com árvores nativas: Carbono Nativo (CN)   29
+
+
+
+ANDRADE, C. M. S. de; WADT, P. G. S.; ZANINETTI, R. A.; VALENTIM, J. F. . Recomendação
+de Calagem e Adubação para Pastagens no Acre. Rio Branco: Embrapa Acre, 2014 (Circular
+Técnica).
+
+AREVALO, L. A.; ALEGRE, J. C.; VILCAHUAMAN, L. J. M. Metodologia para estimar o estoque
+de carbono em diferentes sistemas de uso da terra. Colombo, PR: Embrapa Florestas, 2002. 41
+p. (Embrapa Florestas. Documentos, 73).
+
+BRASIL. Ministério da Agricultura, Pecuária e Abastecimento. Plano setorial para adaptação
+à mudança do clima e baixa emissão de carbono na agropecuária com vistas ao
+desenvolvimento sustentável (2020-2030): visão estratégica para um novo ciclo /
+Secretaria de Inovação, Desenvolvimento Rural e Irrigação. Brasília: MAPA, 2021.
+
+BRUZIGUESSI, E. P. Árvores nativas do Cerrado na pastagem: por quê? Como? Quais? Tese
+de doutorado (Ecologia), Universidade de Brasília. 2016.
+
+CAMPOS, N. R.; PACIULLO, D. S. C.; BONAPARTE, T. P.; NETTO, M. M. G.; CARVALHO, R.
+B.; TAVELA, R. C.; VIANA, F. M. F. Características morfogênicas e estruturais da Brachiaria
+decumbens em sistema silvipastoril e cultivo exclusivo. Revista Brasileira de Biociências,
+Porto Alegre, v. 5, supl. 2, p.819-821, 2007.
+
+CASTRO, C. R. T.; PACIULLO, D. S. C. Boas práticas para a implantação de sistemas
+silvipastoris. Juiz de Fora, MG: Embrapa Gado de Leite, 2006. 6 p. (Embrapa Gado de Leite.
+Comunicado Técnico, 50).
+
+CATI. Comissão Técnica de Conservação do Solo. Boas Práticas em Conservação do Solo
+e da Água. Coordenado por Mário Ivo Drugowich, Campinas, CATI 2014. 38p. ilus. 23cm
+(Manual Técnico, 81).
+
+COMISSÃO DE QUÍMICA E FERTILIDADE DO SOLO. CQFS-RS/SC. Recomendações de
+adubação e de calagem para os Estados do Rio Grande do Sul e de Santa Catarina. 10.
+ed. Passo Fundo, RS: Sociedade Brasileira de Ciência do Solo, Núcleo Regional Sul, 2004. 401
+p.
+
+COSTA; J. A. A; QUEIROZ, H. P. Régua de manejo de pastagens: edição revisada. Campo
+Grande, MS: Embrapa Gado de Corte, 2017. 7 p. DIAS-FILHO, M. B. Formação e manejo de
+pastagens. Belém, PA: Embrapa Amazônia Oriental, 2012. 9 p. (Comunicado Técnico, 235).
+
+DIAS-FILHO, M. B. Formação e manejo de pastagens. Belém, PA: Embrapa Amazônia Oriental,
+2012. 9 p. (Comunicado Técnico, 235).
+
+DIAS-FILHO, M. B. 2015. Estratégias para recuperação de pastagens degradadas na
+Amazônia brasileira. (Documentos 411). Embrapa Amazônia Oriental, Belém, PA, Brasil. 25 p.
+
+EUCLIDES FILHO, K. Produção de bovinos de corte e o trinômio genótipo – ambiente –
+mercado. Campo Grande: Embrapa Gado de Corte, 2000. 61 p. il. (Embrapa Gado de Corte,
+Documentos, n. 85).
+
+FAO. 2019. Measuring and modelling soil carbon stocks and stock changes in livestock
+production systems: Guidelines for assessment (Version 1). Livestock Environmental
+Assessment and Performance (LEAP) Partnership. Rome, FAO.
+
+FAVARE, H.; TSUKAMOTO FILHO, A.; BRITO DA COSTA, R. ABREU, J.; PASA, M.; FAVARE,
+L. 2018. Desempenho de forrageiras em sistema silvipastoril com Caryocar brasiliense Camb.
+Cultura Agronômica. 27 (3): 340-353.
+30                                                                           DOCUMENTOS 303
+
+
+
+FAVARE, H.; TSUKAMOTO FILHO, A.; ABREU, J. G.; FAVARE, L. G.; COSTA, R. B. ; PASA,
+M. C.; COUTO, L. 2018. Produção de forragem e distribuição espacial de árvores de pequi em
+sistemas silvipastoril. Nativa. 6 (vol. especial): 714-721.
+
+GARCIA, R.; COUTO, L. Silvipastoral systems: emergent technology of sustainability. In:
+Gomide, J. A., ed. Simpósio internacional sobre produção animal em pastejo, Viçosa.
+Viçosa: Depto. Zootecnia, Universidade Federal de Viçosa, 1997.
+
+GENRO, T. C. M.; SILVEIRA, M. C. T. Uso da altura para ajuste de carga em pastagens.
+Bagé, RS: Embrapa Pecuária Sul, 2018. 17 p.
+
+GONZAGA, S. S.; SANTOS, J. L. S. A.; DAMBORIARENA, E.; FIGUEIREDO, P. C.; RIEZ, J.
+E.; LUZ, J. C.; FILIPINI, V. T. Boas práticas agropecuárias: ambiência e bem-estar animal. Bagé
+(RS): EMBRAPA, Circular técnica 43, 2011.
+
+HANISCH, A. L.; RADOMSKI, M. I.; BONA, L. C.; MARQUES, A. C. Melhoria da produção
+animal em áreas de caíva e sua contribuição para a viabilização de corredores ecológicos. DRd
+- Desenvolvimento Regional em Debate 2016; 6(2): 170-188.
+
+IBGE – Instituto Brasileiro de Geografia e Estatística. Manual Técnico da Vegetação
+Brasileira. 2ªed. revisada e ampliada. 2012. 271p.
+
+INTERGOVERNMENTAL PANEL ON CLIMATE CHANGE. 2006. IPCC Guidelines for National
+Greenhouse Gas Inventories. Japan: IGES, 2006. v. 4.
+
+LOMBARDI NETO, F.; DRUGOWICH, M. I., coordenadores, Manual Técnico de Manejo e
+Conservação do Solo e Água, vol. 38, 39, 40, 41 e 42. Campinas, CATI, 1994
+
+MAPA. Ministério da Agricultura, Pecuária e Abastecimento. Plano setorial de mitigação e de
+adaptação às mudanças climáticas para a consolidação de uma economia de baixa emissão
+de carbono na agricultura: plano ABC (Agricultura de Baixa Emissão de Carbono). Ministério da
+Agricultura, Pecuária e Abastecimento, Ministério do Desenvolvimento Agrário, coordenação da
+Casa Civil da Presidência da República. Brasília: Mapa/ACS, 2012b. 173 p.
+
+MAPA. Ministério da Agricultura, Pecuária e Abastecimento. Brasil antecipa meta de reduzir
+emissão de CO2 com a agropecuária sustentável. 12/12/2018. Acesso em : dezembro de 2019.
+
+MARTHA JÚNIOR, G. B.; VILELA, L.; SOUSA, D. M. G. Cerrado: uso eficiente de corretivos
+e fertilizantes em pastagens. Planaltina, DF: Embrapa Cerrados, 2007. 224 p.
+
+MAURO, R. A.; SILVA, M. P.; ALVES, F.V.; ALMEIDA, R. G.; LAURA, V. A.; SILVA, V. P. Carbono
+Nativo: nova marca-conceito que valoriza sistemas silvipastoris com árvores nativas. Campo
+Grande, MS: Embrapa Gado de Corte, 2020. 6p. (Nota Técnica).
+
+MEDEIROS, S. R.; GOMES, R. C. Suplementação de bovinos de corte na integração lavoura-
+pecuária-floresta. In: BUNGENSTAB, D. J. (Ed.). Sistemas de integração lavoura-pecuária-
+floresta: a produção sustentável. 2. ed. Brasília, DF: Embrapa, 2012. p. 155-175.
+
+MEDRADO, M. J. S. Sistemas agroflorestais: aspectos básicos e indicações. In: GALVÃO,
+A. P. M. Reflorestamento de propriedades rurais para fins produtivos e ambientais: um guia
+para ações municipais e regionais. Brasília: Embrapa Comunicação para Transferência de
+Tecnologia; Colombo: Embrapa Florestas, 2000. p 269-312.
+
+MMA. Ministério do Meio Ambiente. “Diretrizes para uma estratégia nacional para neutralidade
+climática”. Ministério do Meio Ambiente. Brasília, DF: MMA, 2022. 19 p.
+Diretrizes técnicas para produção pecuária sustentável com árvores nativas: Carbono Nativo (CN)   31
+
+
+
+MONTOYA, L. J.; MEDRADO, M. J. S.; MASCHIO. L.M. DE A. Aspectos de arborização de
+pastagens e viabilidade tecnica-economica da alternativa silvipastoril . In. SEMINARIO SOBRE
+SISTEMAS AGROFLORESTAIS NA REGIAO SUL DO BRASIL, 1., Colombo. Colombo:
+Embrapa-CNPF, 1994, p. p.157-172.
+
+NAIR, P. K. R. An introduction to agroforestry. Dordrecht: Kluwer Academic, 1993. 499p.
+
+OLIVEIRA, E. B. Softwares para manejo e análise econômica de plantações florestais.
+Colombo, PR: Embrapa Florestas, ago. 2011. 68 p. (Documentos, 216).
+
+OLIVEIRA, E. B.; NAKAJIMA, N. Y.; CHANG, M.; HALISKI, M. Determinação da quantidade de
+madeira, carbono e renda da plantação florestal. Colombo, PR: Embrapa Florestas, 2011. 37 p.
+(Embrapa Florestas. Documentos, 220).
+
+OLIVEIRA, E. B.; CARDOSO, D. J. ; FRANCISCON, L. Silvicultura de precisão em unidades de
+manejo de plantações florestais. In: BERNARDI, A. C. de C.; NAIME, J. de M.; RESENDE, A. V.
+de; BASSOI, L. H.; INAMASU, R. Y.. (Org.). Agricultura de precisão: resultados de um novo
+olhar. 1ed. Brasília: Embrapa, 2014, v. 1, p. 478-483.
+
+OLIVEIRA, T. K.; LUZ, S. A. ; SANTOS, F. C. B.; OLIVEIRA, T. C.; LESSA, L. S.. Crescimento
+de espécies arbóreas nativas em sistema silvipastoril no Acre. Amazônia: Ci. & Desenv., Belém,
+v. 4, n. 8, jan./jun. 2009
+
+PACIULLO, D. S. C.; CARVALHO, C. A. B. de; AROEIRA, L. J. M.; MORENZ, M. J. F.; LOPES,
+F. C. F.; ROSSIELLO, R. O .P. Morfofisiologia e valor nutritivo do capim-braquiária sob
+sombreamento natural e a sol pleno. Pesquisa Agropecuária Brasileira, v. 42, n. 4, 2007.
+
+PEREIRA, L. E. T.; NISHIDA, N. T.; CARVALHO, L. R.; HERLING, V. R. Recomendações para
+correção e adubação de pastagens tropicais. Pirassununga: Faculdade de Zootecnia e
+Engenharia de Alimentos da USP, 2018. 56 p.
+
+SANTOS, P.M.; PRIMAVESI, O. M.; BERNARDI, A.C.C. Adubação de pastagens. Bovinocultura
+de corte. In. Pires, A.V. Bovinocultura de corte. Piracicaba: Fealq, 2010 v. l, p. 459-472.
+
+SANTOS, S. A.; FEIDEN, A.; TOFFANI, M.; DE SALLIS, S. M. Sistemas silvipastoris naturais e
+alterados no Pantanal. Cadernos de Agroecologia, [S.l.], v. 4, n. 1, dec. 2009. Disponível em: .
+Acesso em: dez. 2019.
+
+SANTOS, M. J. C.; SANTOS, F. R. Leguminosas arbustivas-arbóreas em sistema silvipastoril
+no semiárido sergipano para alimentação de ovinos. ACSA - Agropecuária Científica no
+Semi-Árido, v.07, n 03 abril/junho 2011 p. 25 – 30.
+
+SILVA, J. A. A.; PAULA NETO, F. Princípios Básicos de Dendrometria. Recife: UFRPE. 1979.
+185 p.
+
+SOUZA, D. M. G.; LOBATO, E. (Ed.) Cerrado: correção do solo e adubação. Planaltina, DF:
+Embrapa Cerrados, 2004. 416 p.
+
+VALLE, E. R. (Ed.). 2011. Boas práticas agropecuárias: bovinos de corte: manual de
+orientações. 2. ed. rev. ampl. Campo Grande, MS: Embrapa Gado de Corte, 69 p.
+
+VARELLA, A. C.; GENRO, T. C.; SANTOS, J. S’A. dos; RIES, J.; LUZ, J. C. da; FACCO, G.
+2009. Programa boas práticas agropecuárias em bovinos de corte na Região Sul do Brasil:
+situação atual e perspectivas. (Documentos, 87). Embrapa Pecuária Sul, Bagé, RS, Brasil.
+25p.
+32                                                                         DOCUMENTOS 303
+
+
+
+VEIGA, R. A. A. - Dendrometria e inventário florestal. Botucatu, Fundação de Estudos e
+Pesquisas Agrícolas e Florestais, 1984.
+
+VELOSO, H. P.; RANGEL FILHO, A. L. R.; LIMA, J. C. A. Classificação da vegetação
+brasileira, adaptada a um sistema universal. Rio de Janeiro: IBGE, 1991. 123 p.
+
+VILELA, L., SOARES, W. V., SOUSA, D. D.; MACEDO, M. C. M. Calagem e adubação para
+pastagens na região do Cerrado. Circular Técnica 37, 16 p., 1998
+
+VILELA, L.; SOARES, W. V.; SOUSA, D. M. G.; MACEDO, M. C. M. Calagem e adubação
+para pastagens. In: SOUSA, D. M. G.; LOBATO, E. Cerrado: correção do solo e adubação.
+Planaltina, DF: Embrapa Cerrados, 2004. p. 367-382.
+
+WERNER, J. C.; PAULINO, V. T.; CANTARELLA, H. Recomendação de adubação e calagem
+para forrageiras. In: RAIJ, B. van; SILVA, N. M.; BATAGLIA, O. C. et al. Recomendação de
+adubação e calagem para o Estado de São Paulo. Campinas, SP: IAC, 1996. p. 263-271
+(Boletim Técnico, 100).
+
+WISINTAINER, C. Sistema silvipastoril com forrageiras e pequi (Caryocar brasiliense Camb.).
+Dissertação (Mestrado em Agronomia (Produção Vegetal)) - Universidade Federal de Goiás.
+2013. 58 p.
+
+ZANETTI, E. A. O uso do Sispinus/Carboplan como ferramenta de suporte para a estimativa
+do carbono em atividades de projetos florestais. Colombo, PR: Embrapa Florestas, 2008. 19 p.
+(Embrapa Florestas. Boletim de Pesquisa e Desenvolvimento, 39).
+
+ZONTA, J. H.; SOFIATTI, V.; COSTA, A. G. F.; SILVA, O. R.; R. F.; BEZERRA, J. R. C.; SILVA,
+C. A. D.; BELTRÃO, N. E. M.; ALVES, I.; JÚNIOR, A. F. C.; CARTAXO, W. V.; RAMOS, E. N.;
+OLIVEIRA, M. C.; CUNHA, D. S.; MOTA, M. O. S.; SOARES, A. N.; BARBOSA, H. F. Práticas
+de conservação de solo e água. Circular Técnica 133 – EMBRAPA - Campina Grande, PB.
+2012, p.1 – 24.

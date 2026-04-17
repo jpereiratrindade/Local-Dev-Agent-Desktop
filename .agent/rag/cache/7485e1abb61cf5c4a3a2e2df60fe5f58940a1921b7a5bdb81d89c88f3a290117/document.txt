@@ -1,0 +1,2573 @@
+                       AGROECOSYSTEM ANALYSIS
+
+
+
+
+                           GORDON R CONWAY
+
+
+
+
+                      ICCET SERIES E No 1 1983
+
+
+
+
+               Centre for   Environmental Technology and
+               Department of Pure and Applied Biology,
+             Imperial College of Science and Technology,
+                    London, SW7 ILU, United Kingdom
+
+
+
+
+        Imperial College Centre for Environmental Technology
+          Series E "The Dynamics of Environmental Systems"
+
+
+
+
+Rep irts in this serie are working papers and are intended for discussion purposes
+only. This report does not contribute a formal publication and should not be
+quoted without permission of the author.
+
+
+
+         This report has been submitted for publication in
+                Agricultural Ecosystems Environment
+
+
+
+        Imperial   College Centre for Environmental Technology
+              Imperial College of Science and Technology
+                          48 Prince's Gardens
+                             London SW7 ILU
+
+
+
+
+                                     83-E-1
+
+
+                                   -,I-
+                        CONTENTS
+
+
+                                       PAGE
+
+ABSTRACT                                 3
+
+INTRODUCTION                             4
+
+THE CASE FOR A HOLISTIC APPROACH         4
+
+THE CONCEPTUAL BASIS                    10
+
+THE PROCEDURE OF ANALYSIS               18
+
+OBJECTIVES AND DEFINITIONS
+
+    OBJECTIVES                          23
+
+    SYSTEM DEFINITION                   23
+
+PATTERN ANALYSIS                        26
+
+    SPACE                               26
+
+    TIME                                27
+
+    FLOW                                32
+
+    DECISIONS                           36
+
+SYSTEM PROPERTIES                       36
+
+KEY QUESTIONS                           39
+
+RESEARCH DESIGN AND IMPLEMENTATION      42
+
+DISCUSSION                              43
+
+ACKNOWLEDGEMENTS                        46
+
+REFERENCES                              47
+
+
+
+
+                                   2
+        In     recent years there has been a growing demand for a                      more
+
+multidisciplinary                 and holisric content to agricultural          research
+
+and     development and for the formulation of methods by which this
+
+can     be acheived.              Farming systems research and integrated             rural
+
+development are two responses to this demand but,                      in common with
+
+other        multidisciplinary           approaches,   they face the      problem        of
+
+trying to encompass a breadth of expertise while at the same time
+
+generating           a    common agreement on worthwhile         practical       ,%ction.
+
+Resort        to bureaucratic methods or to formal systems analysis                      is
+
+unsatisfactory for a variety of reasons.                   The procedure of           agro-
+
+ecosystem analysis which is described and illustrated here steers
+
+a     middle course,              combining a rigorous framework with sufficient
+
+flexibility              to encourage genuine interdisciplinary          interaction.
+
+This procedure has been designed and tested in several                         workshops
+
+held in Thailand over the past five years.
+
+        At     the        heart     of   the procedure are the      concepts     of     the
+
+system,        system        hierarchies,     system   properties and      the        agro-
+
+ecosystem.           The participarts begin by defining the objectives                   of
+
+the     analysis           and     the relevant systems,    their     boundaries        and
+
+hierarchic arrangement. This is followed by pattern analysis, the
+
+systems        being analysed by all the participating                disciplines        in
+
+terms        of space,           time,   flows and decisions.    These patterns are
+
+important in determining the important system properties of agro-
+
+ecosystems,              namely productivity,      stability,    nustainability and
+
+equitability. The outcome of the analyses are a set of agireed ke"
+
+questions for future research or alternatively a set of tentative
+
+guidelines for development.
+
+        Experience suggests that the procedure can be applied at any
+
+
+
+
+                                               3
+time     in     a        project's life,     but is particularly useful                 at    the
+
+beginning when data are scarce. Ideally it should be repeated and
+
+updaced at regular intervals.
+
+
+
+
+INTRODUCTION
+
+
+       Farmers,            of necessity,     adopt a multidisciplinary, holistic
+
+approach to their work and it would seem logical that this should
+
+also     apply           to    the design and      implementation       of        ag icultural
+
+development              programmes in the less developed countries                     (LDC's).
+
+Indeed        m.ny programmes have approached their goals in this                            way,
+
+but     for     the most part they have tended to focus                      on     a   limited
+
+number        of factors - hiqh yielding varieties of key food                          grains,
+
+irrigation           water,        fertilisers,       pesticides,     the     provision        of
+
+credit        - which promise a quick and high return.                       It is only         in
+
+the     last        decade that there has been a significant demand for                          a
+
+more     multidisciplinary             and   holistic       content     to        agricultural
+
+research        and development and for the formulation of methods                            and
+
+procedures by which this can be achieved.                      In this pap r I report
+
+one     such        procedure which has been developed                and     practised         in
+
+Thailand over the past five years.
+
+
+
+THE CASE FOR A HOLISTIC APPROACH
+
+
+        Part        of        the justification for a more holistic approach                    to
+
+agricultural              development lies in the recent performance                    of     the
+
+agricultural              revolution that has been taking place in the                       LDC's
+
+since     World War II.              While real and gratifying increases in per
+
+
+
+
+                                                  4
+capita       food production have been achieved               (up by about 8%           since
+
+the early 1960's for the LDC's as a whole, FAO, 1977),                       the incre-
+
+mental       returns        to the varieties and inputs on which             the        revo-
+
+lution depends have begun to diminish.                     There are several reasons
+
+for    this.         Since the beginning the adoption of the new                   !ochno-
+
+logies       has been highly uneven;              the technologies were          primarily
+
+designed       for the better favoured classes of farmer and                      for     the
+
+best endowed agroclimatic regions;                   they have been slow to spread
+
+to    the poorer farmers and the more marginal areas                    (IRRI,      1976).
+
+Even when conditions are considered favourable,                     the gap        between
+
+performance          on     the    agricultural research station           and     in     the
+
+farmer's       field        has proved highly persistent          (IRR1,1978,1979a).
+
+The    new technologies have also been accompanied by a                      numbei        of
+
+serious short and medium term problems.                     These include increasing
+
+incidence       of        pest,    disease   and    weed     problems     (Nickel,1973;
+
+IRRI,1979b),          sometimes       aggravated by pesticide use           (IRRI,1980,
+
+1981),    deterioration in soil structure and fertility (Hauri,1974;
+
+McNeil,1972),             increased indebtedness and inequity (Collier,1977;
+
+Collier et al.,1974;               Murdoch,1980;      Palmer,1976;        Pearse,1980).
+
+Finally       the oil crisis of the mid 1970's generated soaring costs
+
+of    precisely those inputs on which incteased agricultural                            prod-
+
+uction was becoming dependent.               The potential returns relative to
+
+the    costs of inputs have become less dramatic and in many                            cases
+
+inputs,       even        if still profitable,       are no longer affordable              by
+
+farners with poor access to credit.
+
+       One     answer        aas    been to tackle these        various     issues        and
+
+problems       individually as they arise.                 However there has been           a
+
+
+
+
+                                              5
+growing        realisation that many,                 if not all,    of the problems are
+
+essentially systemic in nature; they are linked to each other and
+
+to the performance of the system as a whole.                         Moreover they arise
+
+as     a     consequenze of fundamental incompatabilities                       between      tle
+
+existing           agricultural systems and the newly                  introduced        techno-
+
+logical elements.                  It is, of course, almost axiomatic that revo-
+
+lutions,           agricultural         or otherwise,       involve such incompatabil-
+
+ities.         The        size and magnitude of change is of the                 essence        of
+
+sticcess       and        undue preoccupation with problems and                 side-effects
+
+may impede the realisation of the main objectives.                             Nevertheless,
+
+recent        experience suggests that the problems are often so                          great
+
+that        they        directly      threaten     the    main   objectives       themselves
+
+(Conway and McCauley,1983).                      Even where there is some success in
+
+attaining           increased yields,            the success may be short           lived       if
+
+attention           is not quickly diverted to side effects which threaten
+
+other equally important development goals.
+
+           The last decade has also been characterised by the return of
+
+large        numbers of LDC agricultural scientists                     from     postgraduate
+
+studies        in the induscrialised countries with,                     far too often,          a
+
+training           which reflects the increasing degree of                     specialisation
+
+that characterises much of modern agricultural education.                                  As    a
+
+consequence              they   are     often overwhelmed by           the     comple.ity       of
+
+agricultural              6 velopment      issues        and find it     easier     to     treat
+
+problers           in     purely disciplinary terms.             in practice        there       is
+
+often        little or no interaction betweei. the agricultural                          discip-
+
+lines,        notwithstanding            physical        proximity within a        university
+
+faculty or agricultural research station.                           It is true that         many
+
+recent technological advances have been made by multidisciplinary
+
+
+
+
+                                                  6
+teams,     but for the most part these were small teams, with narrow
+
+goals and composed of a limited range of traditional agricultural
+
+disciplines.               Contemporary        problems require teams which have                          a
+
+broader perspective and draw on a wider range of disciplines,                                            in
+
+particular spanning the natural and social sciences.
+
+       The argument,               it    should be stressed,         is    not that we should
+
+dispense wizh or by-pass specialisation.                         Given the complexity of
+
+agricultural systems,                   anything more than a superficial                     understan-
+
+ding     requires          the insight,; of highly trained specialists of                              all
+
+kinds.         Compared to the farmer the agricultural specialist has a
+
+narrower           range     of knoledge,           which is    deeper and,              within        its
+
+range,        more complete.               There   is   much that the specialist                     knows
+
+that     the        farmer is ignorant of and could use.                       But           where     the
+
+farmer tends to be superior, not least at the practical level, is
+
+in     those        areas     of knowledge where the             specialist              disciplines
+
+overlap        (Figure        1) and it is precisely in such areas                            that     the
+
+current problems of agricultural development lie.
+
+        One        response        has been the development of                tarming              ..
+                                                                                                    y,;tems
+
+research       ('SR)       (Gilhert et al.,1990;             Harwood,1979;              Norman,1980;
+
+Shaner        et     al.,1981).           This focusses on the farm                as        the     Ibasic
+
+system        for     research           and development       and        seeks,        through        the
+
+sequential stages of analysis, design, testing and evaluation, to
+
+discover and implement technological improvements that are appro-
+
+priate        to     the farm's capacities and capable of                      overcoming              its
+
+constraints.                This        approach    aro!;s     primarily       as        a     specific
+
+response           to the problems of small farms                in the LDC's and is also
+
+characterised              by a strong involvement of the                  farmers           themselves
+at all stages in the process,               capitalising on their knowledge of
+
+problems        and     goals and their capacities           as     experimenters            and
+
+innovators.
+
+        A second approach has been that of integrated rural develop-
+
+ment    (IRD) (Conde et al.,1979; FAO,1975; Gomez and Juliano,1978).
+
+This is even more holistic in scope but directed primarily toward
+
+the     development        end of the research and           development           spectrum.
+
+Its     focus     is     the organisation of        development            projects        which
+
+deliberately           go beyond a consideration of Zhe needs of                     improved
+
+agricultural           production    to encompass such aspects as                  increased
+
+fish,     forest        and handcraft production,           more opportunities               for
+
+off-farm employment,           and hetter provision of              health,        education
+
+and     other     communal     services.          In practice        IRD     projects        are
+
+commonly        seen     as a means of improving coordination                  and     better
+
+working relations between different government agencies.
+
+        Both     these     approaches      have    proved      of        practical     value,
+
+although        they are not without their critics.                      The major problem
+
+they face,        which is common to all holistic research and develop-
+
+ment     enterprises,        is that of trying to encompass a                  breadth        of
+
+view     and range of disciplines and talents while at the same time
+
+generating        a common agreemen         on sorthwhile practical acion                    for
+
+research        and     development.       One solution has been              to     rely     on
+
+bureaucratic           procedures    and    a     hierarchic        leadership        of     the
+
+research        or development team.            This may be effici-nt but it                  is
+
+likely     to become rigid and non-innovative with time,                           losing the
+
+valuable        insights     anc    cross-fertilisation             of     ideas     that     is
+
+possible        with a multiiisciplinary group.                An alternative is              to
+
+rely on formal techniques of systems analysis, using mat iematical
+
+
+
+
+                                            8
+                         FARMER'S KNOWLEDGE
+
+
+
+
+          DISCIPLINE A           DISCIPLINE B
+
+
+
+
+FIGURE   Ov-rlapping )nowledge bhrtwoen farmers and research
+         qpecialists ( eq soil s:ientists and agricultural
+         ecoiomists).  I1tched .nd striped areas indicate
+         extent o ke ' 'd r ,
+
+
+
+
+                             9
+or    computer         models.           But this has the        drawback        of        requiring
+
+relatively specialised skills, so excluding the breadth of exper-
+
+ience        of the research and development workers whom the                               approach
+
+is meant to involve and help.
+
+        The     procedure           I report here      is    intended to steer a                 middle
+
+course.         It     is     developed from tha basic               concepts         of        systems
+
+analysis and is             thus rigorous and well focussed.                 Yet it is also
+
+flexible in design and encourages wide and easy participation and
+
+the     flow     of     new        ideas and insights.           The    procedure               is        not
+
+intended        an     an alternative to FSR or 1RD but is                   offered                 as     a
+
+technique        that        can    be     used     within     the     framework           of        these
+
+approaches           and,      indeed,      in any multidirciplinary research                             and
+
+development programme whether the focus be the crop,                                  field plot,
+
+farm, village, watershed, or region.
+
+        In     this     paper I describe the underlying philosophy of                                     the
+
+approach        and     the details of the procedure and                   then        qive           some
+
+examples        of its application,               drawn from several workshops                        held
+
+recently        in Thailand.              Detailed reports un thoce workshop-                             are
+
+published        in     Gypiantasiri et al.             (1980) and KKU--Ford                Cropping
+
+Systems Project (1982a,                   1982b).      Summaries and a discussion                          of
+
+the     findings        will       be presentcd in two further papers                       in        this
+
+series.
+
+
+
+
+THE CONCEPTUAL BASIS
+
+        The     goal        of multidisciplinary analysis is                to        achieve              an
+
+interaction           between the disciplines that produces insights which
+
+significantly               transcend      those of     the     individual        disciplines.
+
+
+
+
+                                                  10
+Arranging           the        physical or social environment so as                    to        promote
+
+ease        of    communication              among the disciplines      is        an        essential
+
+prerequisite,                 but     the process of interaction may remain casual,
+
+too     often           producing results that are superficial                    and           mundane.
+
+Experience suggests that the generation of good interdisciplinary
+
+insights          also requires organising concepts and frameworks and                                    a
+
+relatively              formal        working procedure which encourages and                      engi-
+
+neers cross-disciplinary exchange.
+
+        The       concepts            have     to be simple and basic        and        involve           a
+
+minimal set of assumptions that are acceptable to all the discip-
+
+lines        participating in the exercise.                    At the core of               the        pro-
+
+cedure reported here is the concept of the system and the related
+
+concepts          of         system hierarzhy,           system properties and the                agro-
+
+ecosystem.
+
+        A        system is here defined as an assemblage of elements                               coi'-
+
+tained within a boundary such that the elements within the                                        boun-
+
+dary        have strong functional relationships with each                             other,           but
+
+limited,          weak         or     non-existent relationships with              elements              in
+
+other assemblages;                    the combined outcome of the strong functional
+
+relationships                 within     the boundlry is to produce           a        distinctive
+
+behaviour of the assemblage such that it responds to many stimuli
+
+as a whole, even if the* stimulus is only applied to one part.
+
+        We        can        conceive        of the natural living world as                 a     nested
+
+hierarchy               of     such     systems      (gene-cell-tissue-organ-organism-
+
+population-community-ecosystem-biome-biosphere) each with a                                            more
+
+or less well defined boundary and a distinctive system behaviour.
+
+It     is assumed that systems higher in the hierarchy tend to                                         con-
+
+trol        those        b2neath        them and,        most important for the                 task     of
+
+
+
+
+                                                    11
+analysis,       that    the behaviour of higher systems is          not        readily
+
+discerned       simply from a study of the behaviour of lower                  systems
+
+(Checkland,1981;         Milsum,1972;    Simon,1972;     Whyte et     al.,1969).
+
+For     the three ecological systems (populations,            communities          and
+
+ecosystems)       the system behaviour can be disassembled into                  three
+
+system properties:          productivity,     stability and sustainability.
+
+These     properties      are relatively easy to       define,    although            not
+
+equally       easy to measure.      Productivity is the net increment                  in
+
+numbers or biomass per unit of time.             Stability is the degree to
+
+which     productivity      is   free from variability      caused        by     small
+
+disturbances          inherent in the normal fluctuations of climate                  and
+
+other environmental variables;            it is most conveniently measured
+
+by    the reciprocal of the coefficient of variation in numbers                        or
+
+biomass.        Sustainability     can   be   defined as the ability             of     a
+
+system        to maintain productivity in spite of a major           disturbance
+
+such as is caused by intensive stress or a large perturbation.                          A
+
+stress is here defined as a regular,            sometimes continuous, rela-
+
+tively small and predictable disturbance,               for example the effect
+
+of soil salinity.           A perturbation is an       irregular,    infrequent,
+
+relatively large and unpredictable disturbance, such as is caused
+
+by    a rare drought or flood.           Satisfactory methods of          measuring
+
+sustainability have still to be found,             however.      Lack of sustai-
+
+nability may be indicated by declining productivity but, equally,
+
+ collapse may come suddenly and without warning.
+
+         In   aqricultural development, ecosystems are transformed into
+
+ hybrid       agroecosystems     for the purpose of food or fibre              produc-
+
+ tion.        These    too can be arranged in a hierarchic          scheme        (e.g.
+
+
+
+
+                                         12
+    IRRIGATION                                     vDYKE
+
+                                Competi ;on        ~DK
+
+                         MICROORGANISMS
+
+
+
+                    SOIL& WATER NUTRIENTS
+
+
+           Competition          competition         Competition
+
+
+
+            (%                     RIC                  ISH.
+              4-
+           WEDSL                                    *C+ANTSS
+                         u                     u
+
+
+                                 Herbivory
+
+
+
+                                  PESTS
+
+
+                                 Predation
+
+
+
+                             NATURAL ENEMIES
+                                                               V
+FIGURE 2   Representation of a ricefield as a systerm showing key
+           elments  and functional relationsh.ips
+
+
+
+
+                                  13
+                                             HIGii                   LOW
+
+
+
+
+           PRODUCTIVITY
+
+
+
+
+                                             Time                    Time
+
+
+
+
+           STABILITY
+
+
+
+
+                                              Time                   Time
+
+
+                                             Perturbation            Perturbation
+
+
+
+
+                                             Time                    Time
+           SUSTAINABILITY
+
+                                    Stress                  Stress
+
+
+
+
+                                              Time                   Time
+
+
+
+
+           EQUITABILITY     o.
+
+
+                            M.
+
+                                              Income                 Income
+
+
+
+
+FIGURE 3     The system          propeities of agroecosystems
+
+
+
+
+                                     14
+field-farm-village-watershed-regi on).                       The           transformation
+
+involves     several significant changes.                  The systems become              more
+
+clearly     defined,        at     least     in terms of     their     biological           and
+
+physico-chomical boundaries.                  These become sharper and less per-
+
+meable;     the     linkages        with other systems are limited and                    chan-
+
+nelled.      The     s jtems are also simplified by the elimination                          of
+
+many     species     and various           physico-chemical        elements.         A     good
+
+example is the ricefield (Figure 2):                    the water-retaining dyke or
+
+bund     forms     a strong,        easily recognisable boundary,              while        the
+
+irrigation        inlets     and     outlets represent some           of     the     limited
+
+outside linkages.
+
+        The important system properties remain essentially the same,
+
+except that productivity is now measured in terms of yield or net
+
+income (Figure 3).               In the ricefield productivity is in terms of
+
+rice,     fish and crabs, but the important functional relationships
+
+which     determine this property remain essentially                       ecological        in
+
+character, involving competition, herbivory and predation.
+
+        However, at the higher levels of the agroecosystem hierarchy
+
+the inclusion of human beings,                 their social,       cultural and econ-
+
+omic activities,           reintroduces considerable complexity,                    but of a
+
+different        nature.         Figure 4 orders the components of a                 typical
+
+LDC farm.         Some of the important functional relationships remain
+
+ecological or, at least in dynamic terms, are analoqous to ecolo-
+
+gical processes.            For example,           forms of competition,           mutualism
+
+and     predation     can be discerned not only in the                natural            inter-
+
+actions but also in the socio-cultural and economic interactions.
+
+An     important new system property consequent on the inclusion                             of
+
+human     beings     is equitability.              This expresses how        evenly         the
+
+
+
+
+                                              15
+ products     of      an    agroecosystem are distributed among           its     human
+
+ beneficiaries;            the more equitable the system the more evenly are
+
+ the    agricultural products shared among the members                  of,     say,     a
+
+ farm    household or a village.               Equitability can he readily            des-
+
+cribed using statistical distribution parameters (Figure 3).
+
+        In natural ecological systems the operation of natural sele-
+
+ction on the reproductive success of individual organisms favours
+
+numbers,     and hence the productivity of ecological                  systems,        and
+
+survival, and hence sustainability.                It may or may not select for
+
+stability,       as     here defined.      In agroe-osystems human             manipul-
+
+ation,     operating         on both individuals and whole systems,              partly
+
+replaces     natural         selection.   Different       system     properties        are
+
+favoured according to predominant human goals and values.                        It     is
+
+thus     possible to view agricultural development as a                  progression
+
+of     changes     in      the   relative values     of    the     important    system
+
+propezties.
+
+        In general, traditional agricultural systems such as swidden
+
+cultivation        (shifting      cultiviaiton) have low         productivity         and
+
+stability, b,,t high equitability and sustainability (pattern A in
+
+Table I).     Traditional sedentary cropping systems tend to be more
+
+productive and stable, yet retain a high degree of sustainability
+
+and ,:ome of the equitability (B).               However the introdution of new
+
+technology,        while greatly increasing the produczivity, is likely
+
+to     also lead to lower values of the other properties (C).                     This
+
+was particularly true, for example, of the introdution of the new
+
+high yielding rice varieties,             such as IR8 and its relatives,               in
+
+the 1960's; yields fluctuateO widely, but have tended to decline,
+
+
+
+
+                                          16
+                              U            PRODUCE
+                                       Innovations/Skill          SOCIAL TRAFFIC
+
+                          F mily             Crafts/
+P roduc e mark ets \      Cap ital                          I K in       -    . . .. .
+Off-farm employent \      Labour                               'eighbour
+Input markets        \    Knowledge                                                a
+                                                                 ehb
+                                                                 - -- u _      '           1
+Consumer goods                         FAR     ----           co peatv
+Temple
+                          Soils              Crp                Government e -activity/
+                          Topography         Livestoc
+                    /     Water              Fish           \/
+                         /Timber                                    Welfare            /
+     ~~Fertilizers Crops                                           _
+     ~Pesticides   Livestock                                /
+     ~Seed,Watr    Fish                                    /
+                    kk       Machinery        Timber       /
+
+
+
+
+?IGURE 4     Comonents of a typic&l less developed                     country farm
+             ±ndicotinq linkages with other s'stens
+
+
+
+
+                                      17
+ in    part    due to growing pest and disease                   attack.           More     recent
+
+varieties       combine         high productivity with            high        stability,       but
+
+still      have poor sustainabi]ity (D).                  The ideal goal is probably
+
+pattern E or on marginal lands, where there is a conflict between
+
+productivity         and        sustainability,          pattern        F    may      be      more
+
+appropriate.
+
+
+
+
+THE PROCEDURE OF ANALYSIS
+
+
+        The    procedure has evolved over the past five years from one
+
+originally designed for ecosystem analysis                       (Walker et al.             1978).
+
+It     rests   on the concepts described above and                      on     five        further
+
+assumptions:
+
+1.       It    is   not    necessary to know everything                     abcut     an    agro-
+
+ecosystem in order to produce a realistic and useful analysis.
+
+2.       Understanding          the behaviour and important properties of an
+
+agroecosystem        requires          knowledge of only a few               key    functional
+
+relationshios.
+
+3.       Producing significant improvements in the performance of an
+
+agroecosystem       requires           changes       in only a    few        key    management
+
+decisions.
+
+4.       Identification and understanding of these key relationships
+
+and     decisions requires that a limited number of appropriate                               key
+
+questions are defined and answered.
+
+5.     Since   there      is,     as    yet,        no easy guide       to     defining       key
+
+questions      or identifying key relationships                   and        decisions,       the
+
+most     productive       approach       is for a       multidisciplinary             team     to
+
+
+
+
+                                               18
+                        OBJECTIVES
+
+
+
+
+                          1p
+                    SYSTEM DEFINITION
+
+
+
+
+                    PATTERN ANALYSIS
+
+                            AND
+
+                    SYSTEM PROPERTIES
+
+
+
+
+                     IMPLEMENTATION
+
+
+
+
+FIGURE 5   Basic steps of the procedure for aqroeco,ystem analysis
+
+
+
+
+                             19
+Table   I
+
+Agricultural      development     as     a     function      of   agroecosystem
+
+properties
+
+               Productivity     Stability        Sustainability       Equitability
+
+A Swidden           LOW                 LOW                HIGH             HIGH
+  rultivation
+
+
+B Traditional
+  cropping        MEDIUM               MEDIUM              HIGH            MEDIUM
+  system
+
+
+C Improved          HIGH                LOW                LOW              LOW
+
+
+D £mproved         HIGH                 HIGH               LOW            MEDIUM
+
+
+E ?Ideal           HIGH            MEDIUM                 HIGH            HIGH
+  (best land)
+
+
+F ?Ideal          MEDIUM               HIGH           HIGH                HIGH
+  (marginal
+  land)
+
+
+
+
+                                   20
+ attempt        to     collectively deFine questions through a               process        of
+
+ system        definition,          analysis of system patterns and the             invest-
+
+ igation of system properties.
+
+
+         The     basic steps of the procedure are described in Figure 5.
+
+Experience           has     shown that the procedure is best followed                in     a
+
+seminar or workshop environment,                    in which meetings of the         whole
+
+team      are       interspersed        with intensive work       sessions     involving
+
+small      groups          of individuals.        Although the    first     workshop       in
+
+Thailand         (Gypmantasiri          et al.,     1980)   ran intermittently      for      a
+
+period         of a year,          more recently they have been confingd to               one
+
+week,         but     with     a     month-long     preparatory    period     for     data
+
+acquisition.           Table II       describes an appropriate      timetable.
+
+        The     key to success lies in clear communication between                        the
+
+different disciplines present.                    In the Pattern Analysis phase, in
+
+particular,           it     is importanz for the Participants to            strive        to
+
+present        their        disciplinary and specialist knowledge in             such       a
+
+fashion        that all other members of the workshop can easily                     grasp
+
+its     significance.              This process is greatly helped by the use of
+
+diagrams        and        in the workshops extensive use has         been     made        of
+
+maps,     transects,          graphs,     histograms,       flow diagrams,     decision
+
+trees,     venn diagrams and any other pictorial device that appears
+
+to aid communication.                 One practical, but essential, requirement
+
+is    for the workshop room to be well ecaipped with overhead                         pro-
+
+jectors, transparencies, pin boards, graph paper etc.
+
+
+
+
+                                              21
+ Table II
+
+Timetable for a week-long workshop of agroecosystem analysis
+
+
+
+     Day 1     Participant introductions.
+               Conceptual basis and details of procedure.
+               Examples from previous workshop results.
+
+    Day 2     System Definition by whole workshop team.
+              Break into sub-groups, each assicned a level in
+              the system hierarchy (e.g. field plot-farm-village
+              -region or one of a series of agroecosystems
+              (e.g. different farms or villages).     Each group
+              carries out Pattern Analysis and Key Question
+              Identification.
+
+    Day 3     Continuation of Day 2.     (Brief whole team
+              meetings if necessary).
+
+    Day 4     Field visits to agroecouystems.
+
+    Day 5     Presentation by subgroups of findings.
+              Whole  team discussion of Key Questions      and
+              Research Design and Implementation.
+
+    Day 6     Continuation of Day 5 as necessary.
+              Writing of draft report by editcrial team.
+
+    Day 7     Completion of draft report.
+
+
+
+
+                              22
+OBJECTIVES AND DEFINITIONS
+
+
+
+
+Objectives
+
+
+
+
+        As     in all exercises in systems analysis the quality of                        the
+
+final        resutls        depends     crucially on a having      a   definition          of
+
+objectives at          the outset which is couched in simple,               precise and
+
+unambiguous          language         and   is acceptable to all members           of     the
+
+team.        Recent workshops have had objectives of the form:
+
+
+
+
+1.      To       identify        research      priorities   that    will      lead         to
+
+improvements           in     the level and stability of      net income          of     farm
+
+households       in the x region.
+
+2.      To identify tentative guidelines               for improving agricultural
+
+productivity of the poor farmers in y village.
+
+Precise       definition of targets is crucial.              For example,              is the
+
+objective       to     improve mean agricultural productivity of an                     area,
+
+_r   the productivity of               the poor farmers in the area        (the        former
+
+may not imply the latter)?                  Also is the aim to increase producti-
+
+vity only,        or is improved stability, sustainability or equitabi-
+
+
+lity to be explicitly included?
+
+
+
+
+System Definition
+
+     This phase involves identification of systems,                        system boun-
+
+daries and system hierarchies.
+
+     At the outset the identificalion of systems and their                             boun-
+
+daries is subjective and               tentative.    The biological and chemico-
+
+physical       boundaries        are often fairly clear:           the ricefield           is
+
+
+
+
+                                               23
+ bounded            by a dyke;             the valley by the cxtent of                the     watershed.
+
+ nut       the cultural and socio-economic boundaries ar, r,ore
+                                                                elue;ive.
+ For       example,            defininc a farm household solely in terms                           of    the
+ farm      itself         -    th.- land that is              cultivated or sth,=rwise           rxooited
+
+ - is    frequently             inadequate.                  A mc,mber of tr   F:rm household may
+
+ be deriving income from- f-r away;                              the sale of rrodrce ma,            depend
+ on     distant           markets          and the farmer's goals and                vale         may     he
+ influenced              by     politii      l     or reliqious movements             of     a    complex:
+
+ origin.            In        Northaast          Thailand .-embers of the-           Familv       way     ho
+ working        ter-.,orari]v in             S-,di      Arabia;      she price of a major crop,
+
+ cassava,           is        influenced         by quota,,; estahli -hd        'v     tho       European
+Economic            Community             and the velu-s of Buddhist                farmers       m,-y   be
+ influenced by religious                         ve'sa.ita         in Sri L.inka.      The ',rlswr i3
+
+to translate these,                       as far as          )o-sible,   into physical or qeoqr-
+
+aphic       terms         and       to elaborate system hierarchies that                         link    or
+combine        systems whose boundaries are defined in different                                    terms
+
+(Figure 1;.
+
+        The     systems and boundaries can be revised as                               the       workshop
+proceeds, particularly in the light of a grow,;ing understanding
+                                                                 of
+the     system properties since the extent and quantificatios
+                                                              of the
+important functional relationships                              contributing to these            proper-
+ties     will provide nore objective criteria upon .:hich to draw
+                                                                  the
+boundaries.               The :,rcdIura of analysis will als;o indicate                            which
+siystems      are strong in terms of their relevance to the nbjectives
+
+of     the workshop             -nd increasingly only these will b                     analysed          in
+
+any detail.
+
+
+
+
+                                                      24
+                                                             WORLD      INTERNATIONAL MARKFT
+
+
+                                                            NATION
+
+
+                                                           PROVINCE        LOCAL MARKET
+ECOSYSTEM                WATERSHED                                               I
+                              I             TRIBE          DISTRICT         MIDDLE MAN
+
+                          IRRSTIOH                             I                 I
+                                           KIN GROUP       VILLAGE          COOPERATIVE
+
+
+CO.DINITY                   FARM            FAhILY          FAMILY             FARM
+
+
+POPULATICN                 FIELD
+
+
+ORGANISM                 CROP PLANT
+
+
+
+  ORGAN
+
+
+
+  CELL
+
+
+
+  GENE
+
+
+
+
+NATURAL                 AGRICULTURAL       COMIUSAL        POLITICAL         ECONOMIC
+
+
+
+
+             FIGURE 6        System hierarchies in a less developed country (Conv;.y 1983)
+
+
+
+
+                                                25
+ PATTERN ANALYSIS
+
+         Four     patterns are chosen as likely to reveal the key                    func-
+ tional relationships that determine system properties.
+                                                                                 Three of
+
+ these     - space,       time       and flow - are knoan to     be      important         in
+
+ determining the properties of ecological systems                   (May,19Hl).        All
+ three     are significant factors in productivity.                   Variability       or
+ heterogeneity in space is also an important promoter of
+                                                         stability
+ and     sustainability (e.g.            predator-prey system, ,        Hass;o 11,197F).
+
+ Variability in time,            however, can be destabi lisino;          eystems with
+
+ long     time lags are often very unstable             (Mtay, 1975).       Flows      are
+ either       stabilising       or     destabilising depending on         .h. ther     the
+ feedback loops are negative or positive (Levins,197.).
+
+        All     three     patterns also have the vi rtue of            being     neutral
+with respect to scientific disciplines.                Space, time and fiow a-o
+
+equally       important patterns for both natural and               social       science
+
+analysis        and hence provide a basis for the gmeration of                    cross-
+
+disciplinary        insights.          The fourth pattern - decisions - arises
+
+directly        from the need to understand the consequences                of     human
+manipulation        and    to    identify those decisions which            bear      most
+
+significantly        on agroecosystem sustainability and                equitability.
+
+Although        this pattern is primarily the ooject           of       socioesonomic
+
+analysis,       experience       shows that it generates lively            discussion
+
+among both social and natural scientists.
+
+
+
+
+Space
+
+        Spatial    patterns          are most readily revealed by simple             maps
+and transects.          Overlay maps are useful in uncovering potentially
+
+important       functional       relationships.      Thus in     the     Chiang      Mai
+
+
+
+
+                                           26
+ Valley       of Northern Thailand they indicated that cropping           inten-
+
+•sity     was    more a function of the farm irrigation        system     rather
+
+ than soil type (Figure 7).           Subsequent analysis of the pattern of
+
+ decision making in irrigation in the Valley suggested that triple
+
+ cropping is likely to be more reliable in traditiona'. and tube or
+
+ shallow dug well systems because farmers exercise greater control
+
+and hence the water supply is more reliable.
+
+        Transects      are   particularly useful in      identifying     problem
+
+areas     and     the impcrtant spatial relationships both between           and
+
+within        farms.    In the analysis of Northeast       Thailand     agroeco-
+
+systems        the recognition of the mini-watershed agroecosystem           and
+
+its     subdivisions pin-pointed the role of the upper paddy              fields
+
+as the generator of instability in rice production             (Figure 8).
+
+
+
+
+Time
+
+        Patterns in time are best expressed by simple graphs.              Threi
+
+patterns appear to be important for agroecosystems.              The first is
+
+that     of     seasonal change and can be analysed by the        superimpos-
+
+ition     or simultaneous graphing of         cropping    sequences,     labour,
+
+credit        peahs,   prices etc.     on various agrometeorological       para-
+
+meters.         This helps, in particular, to idenfity those periods in
+
+the     year where the timing of operations and the availability              of
+
+resources is critical for productivity and stability (Figure 9).
+
+        Longer term changes,         in prices, production, climate, demog-
+
+raphic        parameters etc.,   can be graphed in a conventional manner
+
+(10 years of data is minimum requirement).               These reveal     trends
+
+in productivity and a measure of stability (Figure 10),                 possible
+
+
+
+
+                                         27
+                                                          I                                                Rainfed
+                                    Single cropping
+                                                                                                           RID systems
+                                    Double cropping                                                            systems
+                                                                                                 L         Traditional
+                                    Triple cropping
+                                                                                                           Tube wells
+                                                      i                                                    Dug wells
+
+
+
+
+                                         a.                                                                             b.
+
+
+
+FIGURE   7   Spatial     patterns in the Chi3nq Mij Valley,   'h   -   (,   roppiv- -nten-ity,       (b)
+              ,RID)    and non-government irr~rnwion -ys~teis                                              governr.ient
+                                                                               al. 19R0)
+   Hamlet
+                            \X\.                                -Field
+
+                                                                                       shelter
+
+
+
+
+            Upland                 Upper Paddy         Lower Paddy       Upper Paddy   Upland
+
+
+
+Soils       Paleustult             Paleaquult/         Paleaquult
+                                   Paleustulc
+
+
+Crops       Cassava                Cassava             Rice
+            Kenaf                  Rice                followed by
+            Sugarcane                                  vegetables
+            Water melon
+
+
+
+
+Problems    Drought                Insufficient        Occasional
+            Erosion                   water             flooding
+
+
+
+
+        FIGURE 8          Transect of a min'watershed in Northeast Thailand
+                          (KKU-Ford Cropping Systems Project 1983a)
+
+
+
+
+                                                  29
+             300-                                               rainfall
+                                                          --    *v P- apot.silalion
+
+
+       -     200
+                      ,E,
+                       "' "
+                          too
+                            "             --        - -.
+                                                      .----.
+                                                         .   . .                          .
+
+
+
+
+           21 00n
+                 10
+
+
+
+
+                                       KENAF                                    NAF
+
+
+
+
+                                                           Glutinous rice
+
+
+
+                 2-
+                        o            nn                   n                               n
+                                                          Tobacco
+
+
+
+
+           Sso80
+             40
+
+
+             20
+
+             aKenaf
+
+
+             4
+             2
+
+                   MA       M   JJ   A SO0N         D J    FM        A MJ             J   A S
+
+
+FIGURE 9                Seasonal pa'.tterns of rainfall, crop-inq and
+                        labour demand for an area of Northeast T;ahiland
+                        (KKU-Ford Crop[-inq, Systems Project 1982a)
+
+
+
+
+                                               30
+     10-
+                                                                                             10
+
+
+     8-
+
+
+
+0
+                            t--6
+o    6-6
+
+
+
+                                               00
+.o
+•o           7
+            oZ                             -
+0                  'Regional rice requirement
+
+
+
+
+     1960        1462    19'64      1966        19'68   19'70   I92   19'74   19'76   1978
+                                                        Year
+
+
+
+            FIGURE 10              Rice production in Northeast Thailand (KKU-F-d
+                                   Foundation Cropping Systems Project 1982a)
+
+
+
+
+                                                        31
+time     lags in the system and other causes of instability                         (Figure
+
+11) and any signs of lack of sustainability                   (Figure 12).
+
+        The   final        pattern in time is of the response of                  important
+
+variables to stress and perturbation.                    Stresses, ar defined ear-
+
+lier,     include soil deficiencies and toxicitie2s,                 posts, diseases
+
+and weeds etc.            Perturbations include major floods or droughts or
+
+a sudden outbreak of a pest or disease.                    The distinction between
+
+the     two   forms of disturbance rests on the               degree        of     predict-
+
+ability.       In some regions of the world, for example in Northeast
+
+Thailand,      floods           and     droughts are so common as      to        constitute
+
+stresses;      in        Northern Thailand where wet season rice pests                    are
+
+relatively     unimportant               an outbreak of a new pest,         such as       the
+
+brown     planthopper (Nilaparvata lugens) would constitute                        a     per-
+
+turbation.          In     the        analysis actual and possible     stresses           and
+
+perturbations            need     to     be identified and the   known       or        likely
+
+responses of the variables graphed (Figure 13).
+
+
+
+
+Flow
+
+        Included         under        this heading are the patterns of flows              and
+
+transformations of enerqy,                 materials, money, information etc. in
+
+the agroecosystems.              While these may be described by conventional
+
+flow diagrams the aim should not be to trace out all the detailed
+
+relationships.            Flows        should    be principally analysed          for     the
+
+major    causes an         effects and for the presence of stabilising                    or
+
+destabilising feedback loops.                    The flow diagrams should thus            be
+
+kept as simple as possible (Figure 14).                    Tables,   matrices,           bar
+
+histograms     (Figure 15) and regression graphs may also be                        useful
+
+in indicating important relatiornships.
+
+
+
+
+                                                32
+                             o-ci    Cassava
+                       7-    o---0   Kenaf
+
+                              -      Maize
+
+
+                  !-
+                   '5-
+
+
+
+
+                  0
+
+
+
+
+            CL 4"
+
+
+
+
+                  0-
+
+
+
+                   3-
+             ,0
+
+
+            ,      2-
+
+
+
+
+                   0-1               3         175   19 77   1979
+
+                                              Year
+
+
+
+FIGURE 11              Annual fluctuations in price and planLed area for
+                       major crop- in Northeast Thailand (22 baht = US$1
+                       ap'rc-"; 1 rai. = .16 ha) (! KU-Ford Cropping
+                       Systrms Projocc 1982a)
+
+
+
+
+                                         33
+7.0
+
+
+
+6"0
+
+
+
+
+40-
+ "    -     I              II               I    I   I          I     I
+
+           1969       71         73             75       77          79
+                                      Years
+
+
+          rIGURE 12    Declining rice yields under intensiv-i cropping cn
+                       iiresearch staLion in Northern Thailand
+                       (Gypmantasiri el al. 1980
+
+
+
+
+                                       34
+ 6"5            CROP I        II       CROP 2                   I               I CROP3
+
+                                                                                              rice- soybean- mungbean
+
+
+
+              SOIL                                                                             rice-soybean- fallow
+               FLOODED
+
+
+pH                                                                                   ,,        ,c
+                                                                                                rie-a           alo
+
+ 5.5
+
+                                                                        •
+                                                   *                I
+                                                       *        I
+
+
+ 4.5                                                       ',
+
+ 4.0
+
+
+       AS            O   N   D     J           F                        A       M    J    J       A       SON            D
+
+
+            FIGURE 13        Fluctuations in soil acidity under three cropping
+                             systems in Northe':n Thailand (plH measured 4n 0.01M
+                             CaCd ) (Gypmantas~ri et al. 1980)
+
+
+
+
+                                                                            t        I+
+                                           - -.-.-.Urban Poorjt - -
+                                   -   I                                                          I
+
+
+
+
+                                           +                                              - I
+                                                                                              +                 I
+
+       Early             +       Planted                                    +       Labour            -         I
+       rain                      area                                                                       Ric-/
+                                                                                                            capita
+
+
+                                                                            +       Production
+                                                                                    per farm
+
+
+       Late              +         Yield                                    FIGURE 14          Flow diagram of        rico
+       rain                                                                                    production, economics
+                                                                                               and labour       relations    for
+                                                                                               Northeast Thaiilnd
+
+                                                                35
+ Decisions
+
+         Decisions,          ranging     from those of national agricultural po-
+
+ licy to the individual farmer's day-to-day choices,
+                                                                         occur at aIll
+ levels        in     the hierarchy of agroecosystems.        Two     patterns       are
+ important.            The    first is of the choices made in a          given     agro-
+ ecosystem          under     differing conditions and is best        drscribed       by
+ means     of       a decision tree.         Construction of the tr.        helps     to
+ reveal        both the goals of the decision maker and the              constraints
+
+ on choice that are present in the agroecosystem.
+                                                                    Decision trees
+
+ produced        for    Northeast        Thailand agroecosystems    suggested        the
+ importance          of labouL    irAd   land type constraints cn farm and          vil-
+
+ lage production (Figure 16).
+
+        The     second pattern is of the spheres of influence of
+                                                                                 deci-
+sion     makers.         Here analysis is primarily required in            order      to
+identify the critical decision makers in the system
+                                                    hierarchy and
+simple     diagrams are useful in distinguishing the points
+                                                            of                     con-
+tact     and        overlap in decision making.        Analysis     of    irrigation
+water control in the Chiang Mai Valley,                for example, reveals the
+
+extent of farmer participation in decision making
+                                                  under different
+
+systems       (Figure 17).
+
+
+
+
+SYSTEM PROPERTIES
+
+        Discussion       of     system properties should guide the          form     of
+pattern        analysis,      helping to indicate the likely key           relation-
+ships and decisions.             However at the end of the pattern analysis
+
+phase     it    may     be useful to summarise what has        been      learnt      of
+system properties and to tabulate the most important
+                                                     contributing
+
+
+
+
+                                            36
+                                   l         Net farm       income:    R= rice, C= cash crop
+                                  [II       Trade, home industry, etc.
+                                  D]        Off- farm income
+
+           26,000                            Income from livestock
+
+
+
+           22,000-
+
+
+           18,000-
+
+     Ec 14, 000-
+
+     0
+     U
+    S      10,000-
+                                                                                                                         .           c
+
+           6,000                             R    R    R         R    R       R    R     R     R      R         R
+
+
+
+           2,000
+
+
+                                                                       Villages
+
+                       FIGURE 15                      Components of far-i income for 16 adjoininq
+                                                      villic,?s in Northeast Thailand (22 baht
+                                                      US$1 zpi)-ox.) (KKU Ford CropPinq Sstomn
+                                                      Project 1982h)
+
+
+
+
+                                                                                                                                     STRATGIES
+
+
+                                                                                   Io, hi11hquality                 No
+
+
+                                       TOBACCO OR OFF-FAR
+
+
+
+
+                           NoYe
+
+
+
+    RIFETobacco
+Ooes rice crop                                                                                                                             grou
+                                                                                                                                      .ndr
+    teet
+                                                                                                                                    cntric,
+subsistence?
+
+
+
+                     Yea          TOBACCO OR WATEKMLON
+                                        oes soil require
+                                          improvement?
+
+
+                                                               YesRice-w~te
+                                                                                                                                           e   IAuon-bend
+                                                                                  Ys   LATheNLOs            H        -              sroNntontinusly
+                                                                                  Does dIsLa,,.
+                                                                                   bud    p?
+                                                                                                          Ye.                Rotatiion )f rice-    rt,-n
+                                                                                                                                                      j
+                                                                                                                             I'll lo-d by too or,,
+                                                                                                                              11.     ly
+
+                      FIGURE 16                     Decision tree For farviinr str,.eqirs                                       irl on         area
+                                                    of Northeast Thai]and
+
+                                                                                  37
+                                                  a.
+           Catchment
+
+                                                                              RID [lead office
+
+  Dam 6 laterals"'
+                                                                             Project Engineer
+
+                                                                              Water MIasters
+
+
+
+                                                 - - --- -Zonemnen
+                                                          -
+
+                                                                              C'ate Tenders
+
+
+                                                      -.                     Waters users assocn.
+
+
+       Sublateral                                                            Common irrigator
+
+
+              Farm ditch        Field ditch
+                                                                             Farmer
+
+
+
+
+   Catchment                                                                 Annual meeting of
+                                                                               muang leaders
+
+Dam                                                        i      t "    "
+laterals                                  .                ....
+  &
+
+
+
+
+                                                                                  Village headman
+
+
+
+
+      Farm ditch                                                        Fa me r
+                           Field ditch
+             FIGURE 17           Diarriim so:'iC points of rontaclt   ,idovorl;ip in
+                                  .rrigtioi Ceuision ,ckrtj     North,ri 'Thaiilond:
+                                 (a) 4ov,.njent (R.D) ,.ystoms; (b) tririt.Jonal
+                                 nystems (.n each diagram the physical systems are
+                                  .;nthe left and the deciior. making systems on the
+                                 riqht).
+
+                                                 36
+ relationships and variables              (Table III).
+
+
+ KEY QUESTIONS
+
+
+        Key question3 arise throughout the procedure,             during system
+
+definition,           pattern    analysis and the discussion of system        pro-
+
+perties.         They       should   be   noted down as they emerge   and      then
+
+collectively revised by the members of the subgroup in the                   light
+
+of     all     the information available.           Experience suqgests that     a
+
+field trip to the agroecosystem sites is useful at this stage:
+
+some questions may be quickly answered; others may be revealed as
+
+poorly        based    or     inappropriate.    The full list of key questions
+
+should        then    be extensively discussed by the workshop team as           a
+
+whole.
+
+        Experience shows that the questions take a variety of forms.
+
+In many, if not most, situations the analysis is likely to reveal
+
+broad        gaps in knowledge which require further          investigation     to
+
+uncover       suspected key functional relationships.           A typical      gap
+
+question is:
+
+"What     are    the        most appropriate meteorological    parameters      for
+
+characterising the agricultural seasons in the Valley?"
+
+(In     the Chiang Mai Valley farmers appear to recognise             at     least
+
+four    distinct cropping seasons but their meteorological                 defini-
+
+tion is not clear.)
+
+       However most questions will be more narrowly defined, focus-
+
+sing on suspected key processes or decisions. For example:
+
+"Can    new rice varieties be bred to produce more stable yields on
+
+the upper poorly watered paddy fields?"
+
+
+
+
+                                          39
+ Table      III
+
+ Examples     of   key     relationships   and   variables
+ determining the         system properties of agroecosystems of
+                                                                Northeast
+
+Thailand.
+
+
+PRODUCTIVITY
+     Demand by world markets (especially EEC)
+     Government rice and fertilizer policies
+     Water resource development
+
+
+STABILITY
+     Rainfall, especially floods and droughts
+     Rice production in upper paddy fields
+     Human migration
+     Diversification of production
+
+
+SUSTAINABILITY
+     Increasing salinity
+     Increasing indebtedness
+     Deterioration of communal mutual help arrangements
+
+
+
+EQUITABILITY
+     Subsistence rice crop
+     Diversification of production
+     Government rural works programme
+     Availability of credit
+
+
+
+
+                                     40
+  (The      high      instability of rice yields in Northeast      Thailand       is
+ largely          a   function of poor performance in the      upper     elevation
+
+ fields and of the mini watersheds.); or
+
+ "What       is the optimal application       of fertilizers to        traditional
+ rice varieties under highly variable rain-fed conditions?"
+
+ (In Northeast Thailand rainfall is highly variable and
+                                                        it is                   not
+ clear that encouragement of higher fertilizer use would
+                                                         produce a
+
+ reasonable return to the farmer or to the region.)
+
+         Many important questions span different levels in the
+                                                               system
+
+ hierarchy. For example:
+
+ "How       is     the    form and productivity of crcpping systems       in    the
+ Chiang          Mai Valley affected by government policy on the price
+                                                                                 of
+
+ rice?"
+
+ (Various government price policies essentially mean
+                                                     that                 farmers
+get     a    relatively poor retu.n for rice,        the basic crop of         most
+
+existing cropping systems.)
+
+        However          in our experience the most powerful    questions      are
+those       that directly address system properties and in             particular
+
+the actual or potential trade-offs between them:
+
+"To     what extent are the gains in productivity and stability
+                                                                from
+land     consolidation in the Chiang Mai Valley likely to be
+                                                                           offset
+by a decline in sustainability and equitability?"
+
+(Land       fragmentation in the Valley,       although promoting        ineffic-
+iency, seems also to encourage crop diversity and hence
+                                                        sustaina-
+bility.           It is also probably more equitable.)    Questions of this
+
+kind     also often implicitly raise doubts about         the    conventional
+
+wisdom.
+
+
+
+
+                                         41
+         Where the object of analysis is to identify possible
+                                                              ways of
+ developing         an    agroecosystem the key questions may be framed              in
+
+ the form of tentative guidelines:
+
+ "It     is likely that crop production in village x will
+                                                          be              signif-
+ icantly      improved by the provision of bctter quality second
+                                                                                   -rop
+
+ seed."
+
+ (Under      intensive rotational cropping good establishment
+                                                                          of       the
+ second      crop    following rice is critical to        success.)      Although
+ written      in this form,       t.ie implicit question aod hypothesis            are
+ apparent.      If       better quality seed is provided it should be          seen
+ strictly      as    an    experiment and the results used to         modify       the
+
+ overall analysis.
+
+        As    far as possible the key questions should be turned
+                                                                               into
+ carefully     phrased,        test   hypotheses so that by the end      of        the
+workshop      there       is   a list of questions each    accompanied        by     a
+hypothesis, a discussion of the issues involved
+                                                and some indicat-
+
+ion of the investigations now required.
+
+
+
+
+RESEARCH DESIGN AND IMPLEMENTATION
+
+        The remaining phase of the procedure is one of
+                                                                 conventional
+research. The hypotheses are tested as appropriate:
+                                                    by laboratory
+
+or     field experiments,        field surveys or extension trials,           or by
+development trials in which guidelines are enacted
+                                                   and                 assessed.
+The    multidisciplinary         _ctivity of the workshop may or        may    not
+extend into the research phase; many of the key
+                                                questions will be
+
+phrased      in terms of single disciplines and are best answered
+                                                                                   by
+the    appropriate specialists.          T-, this extent the outcome of        the
+workshop     may appear superficially similar ts research programmes
+
+
+
+
+                                        42
+ arising        from a collection of individual            initiatives,         but    will
+
+ crucially differ in that the individual research projects are the
+
+ direct        consequence          of a multidisciplinary systems analysis             and
+
+ the results feed back to and modify that analysis.                    The       research
+
+ has    thus        a    better contextual basis and is likely             to   be    more
+
+appropriate and relevant, while the results have a greater chance
+
+of being acted upon.
+
+        It is,          of course,     not necessary that all the key questions
+
+be tackled by the workshop team.                  Some of the questions may raise
+
+issues or require methods of approach that lie outside the compe-
+
+tence     of        the group        But if the questions are well phrased             and
+
+their      importance         clearly     justified they    should     interest         nd
+
+excite other research workers to find answers.
+
+
+
+
+DISCUSSION
+
+
+
+        Figure          18 shows the final detailed form of          the    procedure.
+
+The arrowed lines connecting the various stages indicate that the
+
+procedure is intended to be itera-ive. New knowledge and perspec-
+
+tives     at        each stage are likely to require revision              of    earlier
+
+stages;        in particular answers to the key questions when they are
+
+found will modify earlier assumptions,                 updated at regular inter-
+
+vals.     Experience          suggests that the procedure can be applied                at
+
+any time in a project's life but it is particularly useful at the
+
+beginning of a project when data are scarce. Ideally it should be
+
+repeated        and       updated     at regular intervals.      Phe       first      run-
+
+through        of       the procedure is likely to produce more            "gap"      than
+
+
+
+
+                                             43
+       SYSTEH                          OUNAI
+       DEFINITION                           CIIY
+
+
+
+
+                          SPACE4-   ----------        - I       E
+
+
+
+
+       PATTERN
+       ANlALYS
+             IS
+
+
+
+                          FLOW<
+                              4-        -          ECI SI 01S
+
+
+
+
+                                    IZY
+                                      QUESTIONS
+
+                                     GUIDELINES
+
+
+
+
+                                    HYPOTHCSES
+
+
+
+
+      DESIGN
+      AND                    LABORATORy i:XI-L:Rl . ILTS
+      IMPLEMENTATION            FIFLD EXPERIMENTS
+                                  F I ILLDSUKVEYS
+                                EXTENSION?TRIALS
+                            OLVELOIPHLNT[:XI'ERI.,fE [S
+
+
+
+
+FTGURE 18           Th'   fu.ll prou. dure of : Crccosystem analysis
+
+
+
+
+                                              .'.
+                                               4
+ true key questions;             but with time and answers the original ques-
+
+ tions will be replaced by better,              more precisely focussed          ques-
+
+ tions.
+
+        It    should be stressed that the procedure is intended to                  be
+
+ flexible.         Our    experience is that it changes in quite important
+
+ respects from workshop to workshop,              depending on the      objectives
+
+ of    the workshop and the background,            experience and interest          of
+
+ the participants.             New ways of presenting,   analysing and interp-
+
+ reting information should be actively encouraged.
+
+        Despite      its foundation on the concepts of systems           analysis
+
+the     procedure        makes no explicit mention of the role of            mathem-
+
+atical       models.      We    have deliberately avoided     tne    conventional
+
+approach of using a large scale simulation model as the focus                       of
+
+analysis.      This       is partly because many individuals         may be       exc-
+
+luded     from the analysis through a lack of skill or                inclination
+
+to     interact     with the model,       and partly because in       such       large
+
+scale modelling exercises the key issues and questions tend to he
+
+obscured      by    a preoccupation with the details          of    construction.
+
+Nevertheless        it    is clear that the potential for use of             a   wide
+
+variety of models          (matrix models,      regression, linear programming
+
+models,      simulation models etc.)          exists throughout the procedure,
+
+for example in the analysir of the patterns of time,                  space, flow
+
+and decisions and of the dynamics of system properties, in formu-
+
+lating key questions and hypotheses and, indeed, in some cases in
+
+answering      these      questions.     The extent to which models will           be
+
+used    in    practice         depends on the interests and    skills     of      the
+
+workshop participants.
+
+
+
+
+                                         45
+ACKNOWLEDGEMENTS
+
+      the    workshops have involved a total of well over a        hundred
+
+people.     Those   most    involved in the development and refining    of
+
+the procedure are Dr.         Terd Charoenwatana,   Mr.   lain Craig, Ms.
+
+Laxmi Ganjapan, Dr. Terry Grandstaff, Mr. Phrek Gypmantasiri,
+                                                              Dr.
+
+Rapeepan Jaisaatd,         Dr. Viriya Limpinuntana, Dr. Aran Patanothai,
+
+Dr.   Benjavan Rerkasem,        Dr.   Kanok Rerkasem, Dr. Manu Seetisarn,
+
+Ms.   Nongluk Suphanchaimat and Ms.        Aree Wiboonbongse.   Financial
+
+support for the workshops was provided by the Ford Foundation
+                                                              c.nd
+
+in one case by the US Agency for International Development.
+
+
+
+
+                                      46
+  REFERENCES'
+
+  Checkland,       P.,198l.      Systems Thinking,      Systems Practice.       John
+
+  Wiley & Sons, Chichester.
+
+
+ Collier, W.L.,1977.          Technology and peasant production:         a discu-
+
+ ssion.     Development and Change 8: 351-362.
+
+
+ Collier,     W.L.,    Soentoro,     Wiradi, G. aid ilakali,1974.        Agricul-
+ tural technology and institutional change
+                                           in Java.                 Food Research
+
+ Institute Studies 13: 169-194.
+
+
+ Conde,     J.,    Paraiso, M.J. and Ayassou, V.K.,1979. The Integrated
+
+ Approach to Rural Development Health and Population.
+                                                                     Development
+ Centre Studies, Development Centre of the
+                                           O.E.C.D., Paris.
+
+
+ Conway,    G.R.,1983.        Applying    Ecology.    Centre for Environmc.*tal
+
+ Technology, Imperial College of Science and
+                                             Technology, London.
+
+
+Conway,     G.R.    and McCauley,        D.S.,1983.     Intensifying    tropical
+agriculture:       the Indonesian experience.         Nature 302:    288-289.
+
+
+F.A.0.,1975.        Integrated Rural Development.             Food & Agriculture
+
+Organisation, Rome.
+
+
+F.A.0.,1977.        The Fourth World Food Survey.             Food & Agriculture
+Organisation,       Rome.      Statistic      Series No.11,    Food & Nutrition
+
+Series No.10, 128 pp.
+
+
+Gilbert,     E.H.,Norman,D.W.       and Winch, F.E.,1980. Farming systems
+
+research: a critical appraisal. MSU Rural Development
+                                                      Paper no 6.
+Department of Agricultural Economics,             Michigan State University,
+
+
+
+
+                                         47
+ East Lansing, Michigan.
+
+
+ Gomez, A.A. ani Juliano, P.A. (Editors),1978.
+                                                               Rural Development:
+ The Philippine Experience.            The Philippine Training Centers          for
+ Rural     Development,       University of the Philippines at Los           Banos,
+
+ College, Laguna.
+
+
+ Gypmantasiri,P.,Wiboonpongse,A.,Rerkasem,B.,Craig,I.,Rerkasem,K.,
+
+ Ganjapan,L.,     Titayawan,M.,        Seetisarn,M., Thani,P., Jaisaard,R.,
+
+ Ongprasert,S.,Radanachaless,T.,            and    Conway,G.R,1980.    An Inter-
+ disciplinary         Perspective of Cropping Systems in the Chiang
+                                                                               Mai
+ Valley:    Key Questions for Research. Faculty ot Agriculture,
+                                                                Uni-
+ versity of Chiang Mai, Chiang Mai, Thailand.
+
+
+ Harwood,    'R. R.,1979.       Small Farm Development: Understanding and
+
+ Improving Farming Systems in the Humid Trcpics.
+                                                                Westview   Press,
+
+Boulder, Colorado.
+
+
+Hassell,     M.P.,1978.        The   Dynamics     of Arthropod     Predator-Prey
+
+Systems.     Princeton University Press, Princeton.
+
+
+Hauri,     I.,1974.      Le   projet cerealier en Tunisie:          Etudes    aux
+niveaux national et local.           UNRISD Report No.74.4, Geneva.
+
+
+International Rice Research Institute,1976.              Research highlights.
+
+In:   Annual Report for 1975. IfRI, Los Banos, Philippines,
+                                                            pp 1-
+
+3.
+
+
+International Rice Research Institute,1978.              Research highlights.
+
+In:   Annual Report for 1977.          IRRI,      Los Banos,    Philippines, pp
+
+xiii-xv.
+
+
+
+
+                                       48
+ International        Rice Research        Institute,1979a.      Farm-Level     Con-
+
+ straints to High Rice Yields in Asia:               1974-1977. IRRI, Los Banos,
+
+ Philippines.
+
+
+ International Rice Research Institute,1979b.                  Brown Planthopper:
+
+ Threat to Rice Production in Asia. IRRI, Los Banos, Philippines.
+
+
+ International        Rice Research Institute,1980.            Control and     mana-
+
+ gement of rice pests.            In:    Annual Report for 1979.       IRRI,     Los
+
+ Banos, Philippines, pp 202-207.
+
+
+ International        Rice    Research ]iiintitute,1981.      Control and      mana-
+
+gement of rice pests.             In:   Annual Report for 1980.        IRRI,     Los
+
+Banos, Philippines, pp 202-203.
+
+
+KKU-Ford     Croppig Systems Project,1982a.              An Agroecosystem      Ana-
+
+lysis of Northeast Thailand.            Faculty of Agriculture,       University
+
+of Khon Kaen, Khon Kaen, Thailand.
+
+
+KKU-Ford Cropping Systems Project,1982b.               Tambon and Village Agr-
+
+cultural     Systrm      in Northeast Thailand.        Faculty of Agriculture,
+
+Universisty of Kho:a Kaen, Khon Kaen, Thailand.
+
+
+Levins,     R.,1974.         Qualitative     analysis of partially     specified
+
+systems.     Annals N.Y. Acad. Sci. 231:          123-138.
+
+
+McNeil,     M.,1972.         Lateri ic soils in distinct tropical environ-
+
+ments:     Southern Sudan and .razil.          In:    Farvar, M.T. and Milton,
+
+J.P.     (Editors),     The     Careless Technology:         Ecology and     Inter-
+
+national    Development.The Natural History             Press,    Doubleday     and
+
+Co.,New York, pp 591-608.
+
+
+
+
+                                        49
+  May, R.M.,1975. Stability and Complexity
+                                           in Model Ecosystems (2nd
+
+  Edn.).    Princeton University Press, Princeton.
+
+
+  May,     R.M.    (Editor',1981.       Theoretical Ecology:        Principles and
+  Applications. Blackwell Sci. Publns.,
+                                        Oxford.
+
+
+
+  Milsum,     J.H.,1972.        The   hierarchical basis for general          living
+  systems.        In:   Klir,    G.J.   (Editor).    Trends in General Systems
+
+ Theory. Wiley, New York.
+
+
+ Murdoch,     W.W.,1980.     The Poverty of Nations:          The Political Eco-
+ nomies of Hunger and Population.            John Hopkins Press, Baltimore.
+
+
+ Nickel,     J.L.,1973.      Pest     situations     in changing     agricultural
+ systems - a review.        Bull. Ent. Soc. Am. 19: 136-142.
+
+
+ Norman,     D.W.,1980.     The farming systems approach:           relevance for
+ the small farmer.         MSU Rural Development Paper No.5,            Department
+ of   Agricultural      Economics,      Michigan     State    University,      East
+
+ lansing, Michigan 48824.
+
+
+Palmer,      I.,1976.     The New Rice in Asia:         Conclusions from Four
+
+Country Studies.        UNRISD Report No.76.6, Geneva.
+
+
+Pearse, A.,1977.        Technology and peasant production:
+                                                                     reflections
+on a global study.        Development and Change, 8:         125-159.
+
+
+Pearse,     A.,1980.      Seeds of Poverty,        Seeds of Want:       Social and
+Economic Implications of the Green
+                                   Revolution.               Clarendon      Press,
+
+Oxford.
+
+
+
+
+                                        5O
+Shaner,       W.W., Wilson, A.G. and Wilson, D.(Editors),1969. Hierar-
+
+chical Structures. Elsevier, New York.
+
+
+Simon,       H.A.,(1962.     The architecture of complexity.        Proc. Amer.
+
+Phil. Soc. 106: 4C7-482.
+
+
+Walker,       B.H.,     Norton, G.A., Barlow, N.D., Conway, G.R., Bailey,
+
+M.     and    Comins,     H.N.,1978.   A procedure for        multidisciplinary
+
+ecosystem       research    with reference to the South African         Savanna
+
+Ecosystem Project.         J. Appl. Ecol.,     15: 481-502.
+
+
+Whyte,       L.L.,    Philipp, P.F. and Schmehl, W.R.,1982. Farming Sys-
+
+tems     q:search and Development:          Guidelines for Developing    Coun-
+
+tries. Westview Press, Boulder, Colorado.
+
+
+
+
+                                       51

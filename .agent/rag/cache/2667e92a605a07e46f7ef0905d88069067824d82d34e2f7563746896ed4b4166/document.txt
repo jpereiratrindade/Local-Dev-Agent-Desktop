@@ -1,0 +1,190 @@
+                          XXVI CONGRESSO BRASILEIRO DE ZOOTECNIA
+                                        ZOOTEC 2016
+                                  Cinquenta Anos de Zootecnia no Brasil
+                                       Santa Maria - RS, 11 a 13 de maio de 2016
+
+
+
+         Dinâmica dos Campos da Campanha, Fronteira Oeste e Missões do Rio Grande do Sul1
+       Rio Grande do Sul “campos” dynamics at Campanha, Fronteira Oeste and Missões regions
+
+   José Pedro Pereira Trindade2†, Leandro Bochi da Silva Volk2†, Danilo da Serra Rocha3, Fernando Luiz
+Ferreira de Quadros4, Leonardo Bidese de Pinho5†, Sandro da Silva Camargo5†, Ana Paula Lüdtke Ferreira5† ,
+                                          André Alfredo Coelho6
+1
+  Parte do Projeto “Cobertura da Vegetação Campestre na Campanha, Fronteira Oeste e Missões do Rio Grande do Sul” – LABECO
+  Embrapa Pecuária Sul
+2
+  Engenheiro Agrônomo, Pesquisador Embrapa Pecuária Sul e-mail: jose.pereira-trindade@embrapa.br
+3
+  Engenheiro Cartógrafo, Analista Embrapa Pecuária Sul.
+4
+  Engenheiro Agrônomo, Prof. Adjunto Departamento de Zootecnia UFSM - LEPAN.
+5
+  Professor Adjunto Engenharia de Computacao UNIPAMPA Campus Bagé
+6
+  Zootecnista Aluno do Programa de Pós-Graduação Zootecnia Produção Animal - UFSM
+†
+  NP3 - Núcleo de Pesquisa em Pecuária de Precisão
+
+Resumo: Os Campos representam a base da pecuária do Rio Grande do Sul. Este trabalho apresenta um
+mapeamento da dinâmica de cobertura vegetal dos campos com potencial de utilização pastoril na Produção
+Pecuária nas regiões da Campanha, Missões e Fronteira Oeste do RS. Imagens do satélite Landsat foram
+obtidas no período de 1970 a 2015, processadas pelo aplicativo QGIS, cujos resultados foram utilizados para
+geração de uma série temporal. As matrizes de transição extraídas para cada região foram submetidas à
+análise de Markov. Como principais achados científicos, constatou-se que a redução da cobertura vegetal
+campestre ocorreu em velocidades e períodos distintos nas três regiões estudadas. Particularmente, notou-se
+que a pressão sobre as formações campestres e a pecuária de campo nativo se intensificou de modo não
+homogêneo entre as regiões. Por outro lado, percebeu-se uma tendência de redução crescente na cobertura
+vegetal campestre, a qual poderá ser fortemente reduzida em se mantendo as mesmas condições que levaram
+ao padrão de substituição da cobertura vegetal campestre nas três regiões no período de análise. Entretanto,
+mesmo com esta tendência, a região da Fronteira Oeste ainda manteria a maior superfície com cobertura
+vegetal campestre.
+
+
+Palavras–chave: evolução da cobertura, ferramentas SIG, imagens de satélite, pastagem natural
+
+Abstract: Natural grasslands of Rio Grande do Sul (Campos) are the principal forage to cattle systems
+production. We propose GIS as a tool to access the Campos conservation state from the 1970’s, 1980’s until
+2015 autumn. We used Landsat satellite images from Campanha, Fronteira Oeste and Missões that were
+processed with QGIS software and the data submitted to descriptive statistical analysis. To each Região we
+found a temporal data series that were submitted to Markov data analysis. The most important results
+pointing to a Campos vegetation coverage process distinct (not tested statistically) between the study regiões
+and regarding the dates too. The process of intensification suffered by Campos and the Livestock managed
+under Campos was not homogeneous between the regiões evaluated. If the condition that produced the
+process identified continue we estimate a tendency of Campos vegetation coverage reduction. Despite of that
+tendency, the Fronteira Oeste Region maintain the most part of Campos Vegetation coverage.
+
+Keywords: cover dynamics, GIS tools, natural grassland, satellite images
+
+                                                 Introdução
+       A vegetação campestre representa importante patrimônio natural e, de modo geral, a base da produção
+pecuária do Rio Grande do Sul, de reconhecida diversidade de fauna e flora (Boldrini et al., 2015; Nabinger,
+2002). Entender a dinâmica dos campos na paisagem pode ser estratégica para diferentes objetivos, podendo
+impactar na definição de políticas públicas, em ações duráveis de manejo para a conservação da pecuária de
+campo e/ou intensificação sustentável da produção animal, bem como na definição de práticas de manejo que
+possam inverter o atual processo de conversão dos Campos (Overbeck et al., 2007). O conhecimento sobre a
+dinâmica dos campos em regiões específicas mostra-se fundamental para as práticas de extensão rural,
+permitindo que se estabeleça um processo de educação informal que objetive o uso racional dos recursos
+naturais e a prestação da assistência técnica pertinente, para a consolidação das práticas conservacionistas
+que garantirão a continuidade e a sustentabilidade do processo produtivo da propriedade (Dias et al., 1999).
+
+
+
+                                                                                                              Página 1 de 3
+                       XXVI CONGRESSO BRASILEIRO DE ZOOTECNIA
+                                     ZOOTEC 2016
+                              Cinquenta Anos de Zootecnia no Brasil
+                                  Santa Maria - RS, 11 a 13 de maio de 2016
+
+
+A partir deste contexto, este trabalho foi desenvolvido com o propósito de descrever, a partir de imagens de
+satélite disponibilizadas gratuitamente pelo Projeto Landsat (USGS, 2015), processadas com o QGIS (QGIS,
+2016), Sistema de Informação Geográfica (SIG) baseado em software livre anteriormente denominado
+Quantum GIS, a dinâmica dos Campos com potencial de utilização pastoril na Produção Pecuária,
+independente de seu estado de conservação, desde a década de 1970 até o Outono de 2015.
+
+                                            Material e Métodos
+        A partir do levantamento referente aos Remanescentes do Bioma Pampa (Hasenack, 2007) propõe-se
+neste trabalho o levantamento da cobertura campestre nas décadas de 1970 e 1980, uma reavaliação dos
+metadados desta caracterização e a comparação com a cobertura campestres no outono de 2015. Para a
+definição da categoria “Cobertura Vegetal Campestre” deste estudo, considerou-se o agrupamento dos tipos
+“Campestre” e “Mosaico Campo-Floresta” da classe de Remanescentes, e os sub-tipos “Agropecuária em
+área anteriormente coberta por savana-estépica” e “Agropecuária em área anteriormente coberta por estepe”
+da classe Não-remanescente proposta por (Hasenack, 2007). Foram consideradas como área de estudo as
+Regiões da Campanha, Fronteira Oeste e Missões do Rio Grande do Sul, sendo os limites definidos com
+referência aos Conselhos Regionais de Desenvolvimento (Coredes), ano base 2013 (FEE, 2016). Foram
+utilizados neste estudo imagens Landsat das décadas de 1970, 1980 e do outono de 2015. Em relação à
+década de 1970, foram utilizadas as imagens Landsat 2 de 1973 para a Campanha e Missões e de 1976 para a
+Fronteira Oeste. Em relação à década de 1980, utilizou-se as imagens Landsat 5 de 1987 para a Campanha e
+Fronteira Oeste e de 1988 para a Missões. Para caracterização do outono de 2015 utilizou-se imagens
+Landsat 8 obtidas entre Março e Maio de 2015 para as três regiões. As imagens foram ajustadas para
+Reflectância no Topo da Atmosfera para posteriormente serem classificadas utilizando o aplicativo QGIS.
+Devido à sua natureza, os dados produzidos pelo QGIS foram submetidos a uma estatística descritiva e a
+partir da série temporal gerada foram extraídos matrizes de transição para cada região utilizando-se cadeias
+de Markov (Orlóci et al., 1993).
+
+                                          Resultados e Discussão
+
+       Pode-se observar na Tabela 1 que os campos da Campanha, Fronteira Oeste e Missões do Rio Grande
+do Sul têm sofrido uma gradual redução em superfície desde a década de 1970, corroborando com o
+destacado para o Estado do Rio Grande do Sul (Overbeck et al., 2007). Ainda em 2015, a Fronteira Oeste
+destaca-se por ser a região que possui, em termos absolutos, a maior cobertura vegetal campestre, seguida
+pela região da Campanha e Missões. Entre 1980 e 2015, a Fronteira Oeste conservou a superfície campestre,
+enquanto que as Missões mantiveram a mesma taxa de substituição do período entre as décadas de 1970 e
+1980. Por outro lado, a Campanha teve a maior taxa de substituição no período compreendido entre 1980 e
+2015, em valores absolutos, enquanto que a Missões teve a maior substituição relativa.
+        Percentualmente, a região da Campanha destaca-se por ser a região de maior cobertura vegetal
+campestre seguida da Fronteira Oeste e das Missões, entre as décadas de 1970 e 1980. Contudo, em 2015, a
+maior percentagem da área coberta por campo é da Fronteira Oeste. A superfície campestre nas regiões
+estudadas é bastante instável e alterações não ocorrem na mesma velocidade e nem nas mesmas taxas. Na
+média do período estudado (1970 a 2015) as regiões da Campanha, Fronteira Oeste e Missões apresentaram
+uma taxa anual de desaparecimento de campo de 154,92 km2.ano-1, 275,76 km2.ano-1 e 114,39 km2.ano-1,
+respectivamente. Entre as décadas de 1970 e 1980, contudo, a superfície campestre para a Campanha,
+Fronteira Oeste e Missões foram fortemente alteradas, com taxas de 184,38 km2.ano-1, 997,46 km2.ano-1 e
+175,47 km2.ano-1, respectivamente. A maior alteração da cobertura campestre na região da Fronteira Oeste
+ocorreu nesse período. Já no período entre a década de 1980 e 2015, a Fronteira Oeste teve um ligeiro
+incremento (217,3 km²). Considerando que o intervalo de tempo aproximados entre as amostras das décadas
+de 1970 e 1980 foi de 13 anos e entre as amostras das décadas de 1980 e a atual foi de 26 anos, é possível
+realizar uma análise superficial sobre tendências. Enquanto que a Campanha perdeu, em média, cerca de
+1,1%/ano de cobertura vegetal campestre no primeiro período amostral e um percentual aproximado de
+0,8%/ano no segundo período, a Fronteira Oeste reverteu a forte tendência de perda observada no primeiro
+período amostral, de aproximadamente 1,8%/ano. Já a Missões, que no primeiro período amostral havia
+apresentado comportamento similar ao da Fronteira Oeste, com perda aproximada de 1,6%/ano, reduziu
+significativamente a tendência para cerca de 0,7%/ano no segundo período amostral, portanto inferior à
+observada na Campanha. A partir da estimativa gerada pela modelagem com as cadeias de Markov,
+
+
+
+                                                                                                  Página 2 de 3
+                         XXVI CONGRESSO BRASILEIRO DE ZOOTECNIA
+                                       ZOOTEC 2016
+                                Cinquenta Anos de Zootecnia no Brasil
+                                    Santa Maria - RS, 11 a 13 de maio de 2016
+
+
+observamos uma tendência para que, na Região da Campanha, a superfície campestre se estabilizaria com
+aproximadamente 931,107 km2, nas Missões com 893,613 km2 e Fronteira Oeste 1.567,05 km2, totalizando
+3.391,77 km2, equivalente a 5,75% da área campestre existente nas três regiões na década de 1970.
+
+Tabela 1. Dados sobre as regiões da Campanha, Fronteira Oeste e Missões do RS: Superfície total; Número
+de municípios; Cobertura vegetal campestre nas décadas de 1970, 1980 e no outono de 2015.
+
+                Parâmetros                            Campanha                  Fronteira Oeste       Missões
+Superfície Total (km2)                                 18.241,4                     46.237,0          12.855,3
+Municípios                                                  7                         13                 25
+Cobertura Vegetal Campestre 1970 (km2)            15.095,9 (82,8%)              36.434,1 (78,8%)   7.459,6 (58,0%)
+                                         2
+Cobertura Vegetal Campestre 1980 (km )            12.514,6 (68,6%)              25.462,1 (55,1%)   4.827,5 (37,6%)
+                                         2
+Cobertura Vegetal Campestre 2015 (km )             8.589,3 (47,1%)              25.679,4 (55,5%)   2.655,4 (20,7%)
+
+                                                Conclusões
+       A cobertura vegetal campestre poderá ser fortemente reduzida em se mantendo as mesmas condições
+que levaram ao padrão de substituição da cobertura vegetal campestre nas três regiões e entre 1970 e 2015. A
+região da Fronteira Oeste ainda manteria a maior superfície com cobertura vegetal campestre.
+
+                                                Literatura citada
+Boldrini, I.I., Overbeck, G.E., Trevisan, R., 2015. Biodiversidade de Plantas, in: Os Campos Do Sul. Porto
+         Alegre, pp. 51–60.
+Dias, M.C., Pereira, M.C.B., Dias, P.L.F., Virgílio, J.F., 1999. Manual de impactos ambientais: orientações
+        básicas sobre aspectos ambientais de atividades produtivas. Banco do Nordeste, Fortaleza.
+FEE, 2016. O Perfil socioeconômico do Rio Grande do Sul - Coredes. Fundação de Economia e Estatística
+       Siegfried Emanuel Heuser, Porto Alegre.
+Hasenack, H., 2007. PROBIO Cobertura vegetal do bioma Pampa.
+Nabinger, C., 2002. Campos Sulinos: manejo sustentável de um ecossistema pastoril, in: Araújo, E. do L.,
+        etal. (Eds.), Biodiversidade, Conservação E Uso Sustentável Da Flora Do Brasil. Recife, pp. 101–
+        105.
+Orlóci, L., Anand, M., He, X., 1993. Markov chain: A realistic model for temporal coenosere? Biom.-Prox.
+         33, 7–26.
+Overbeck, G.E., Muller, S.C., Fidelis, A., Pfadenhauer, J., Pillar, V.D., Blanco, C.C., Boldrini, I.I., Both, R.,
+       Forneck, E.D., 2007. Brazil’s neglected biome: The South Brazilian Campos. Perspect. Plant Ecol.
+       Evol. Syst. doi:10.1016/j.ppees.2007.07.005.
+QGIS, 2016. QGIS Geographic Information System. Open Source Geospatial Foundation Project.
+USGS, 2015. Landsat—Earth observation satellites (No. 2015-3081), Fact Sheet. U.S. Geological Survey,
+       Reston, VA.
+
+
+
+
+                                                                                                         Página 3 de 3

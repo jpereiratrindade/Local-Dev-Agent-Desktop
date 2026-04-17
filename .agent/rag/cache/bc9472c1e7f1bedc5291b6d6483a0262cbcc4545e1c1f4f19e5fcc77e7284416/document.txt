@@ -1,0 +1,715 @@
+                                                           ARTICLE IN PRESS
+
+
+
+                                          Global Environmental Change 16 (2006) 293–303
+                                                                                                                www.elsevier.com/locate/gloenvcha
+
+
+
+
+      Linkages between vulnerability, resilience, and adaptive capacity
+                                                          Gilberto C. Gallopı́n
+ United Nations Economic Commission for Latin America and the Caribbean (ECLAC), Casilla 179 D, Avda. Dag Hammarskjold s/n, Santiago, Chile
+                         Received 28 November 2005; received in revised form 27 February 2006; accepted 28 February 2006
+
+
+
+
+Abstract
+
+  This article uses a systemic perspective to identify and analyze the conceptual relations among vulnerability, resilience, and adaptive
+capacity within socio-ecological systems (SES). Since different intellectual traditions use the terms in different, sometimes incompatible,
+ways, they emerge as strongly related but unclear in the precise nature of their relationships. A set of diagnostic questions is proposed
+regarding the speciﬁcation of the terms to develop a shared conceptual framework for the natural and social dimensions of global change.
+Also, development of a general theory of change in SESs is suggested as an important agenda item for research on global change.
+r 2006 Elsevier Ltd. All rights reserved.
+
+Keywords: Vulnerability; Resilience; Adaptive capacity; Systems analysis; Stability
+
+
+
+
+1. Introduction                                                                dynamics necessarily involves the consideration of both the
+                                                                               social and biophysical components and their mutual
+   The terms vulnerability, resilience, and adaptive capa-                     interactions.
+city, are relevant in the biophysical realm as well as in the                     This article represents an attempt to highlight the
+social realm. In addition to being terms in colloquial                         fundamental attributes of the three concepts, and to
+language, they are widely used by the life sciences and                        identify the conceptual linkages between them, through
+social sciences, not only with different foci but often with                   the use of a generic systems approach that can be speciﬁed
+different meanings. The reviews presented in this issue                        for different concrete system types (social, ecological, but
+(Adger, 2006; Folke, 2006; Smit and Wandel, 2006) and                          particularly socio-ecological). Without attempting a re-
+other sources, document the diversity of interpretations                       view, an effort has been made to incorporate the
+and reformulations of these concepts across disciplines and                    contributions from the principal scientiﬁc communities
+problem areas as varied as evolutionary biology, ecology,                      that have been investigating these concepts, particularly
+cultural studies, and computer science, to cite just a few.                    those that have more direct bearing on the analysis of their
+Sometimes, the concepts are used interchangeably or as                         mutual conceptual relations. As the concepts have been
+polar opposites.                                                               used in many ﬁelds, it will be helpful to deﬁne the focus of
+   This plurality of deﬁnitions is possibly functional to the                  the present analysis—the socio-ecological system (SES)—
+needs of the different disciplinary ﬁelds, as well as being a                  and offer a justiﬁcation of why this is important for global
+reﬂection of the different intellectual traditions (Adger,                     change research.
+2006; Janssen et al., 2006), but sometimes it may also                            The concept of vulnerability of the SES and its basic
+become a hindrance to understanding and communication                          components are discussed in their general sense in the
+across disciplines. This also may be the case in interna-                      following section. The section on resilience introduces the
+tional research on global change, where understanding the                      concept of domains of attraction, essential in the notion of
+                                                                               resilience, and discusses different levels of stability relevant
+  Tel: +56 2 210 2329; fax: +56 2 208 0484.                                   for the study of SESs. These have implications for the
+   E-mail address: gilberto.gallopin@cepal.org.                                applicability of the concept of resilience in the social
+
+0959-3780/$ - see front matter r 2006 Elsevier Ltd. All rights reserved.
+doi:10.1016/j.gloenvcha.2006.02.004
+                                                       ARTICLE IN PRESS
+294                                     G.C. Gallopı´n / Global Environmental Change 16 (2006) 293–303
+
+
+sciences. The links between resilience and vulnerability are                Young et al. (2006) discuss a number of synthetic
+highlighted. A section on adaptive capacity in its broader               properties of globalization that require integrated treat-
+and more speciﬁc forms as interpreted by different scientiﬁc             ment, such as connectedness, speed, scale, and diversity. At
+traditions follows, with a discussion of the relations                   another scale, this non-decomposability of many core
+between adaptive capacity and the notions of capacity of                 issues of sustainable development is nicely illustrated by
+response and resilience.                                                 very simple mathematical models of lake-and-managers
+   The ﬁnal part of the article includes the outcome of the              systems (Carpenter et al., 1999). The analysis of the
+overall comparison and identiﬁcation of linkages among                   behavior of these coupled models provides various insights
+the three concepts, with an indication of the major                      of strategic importance for sustainable management of
+uncertainties involved. Without affecting the current use                shallow lakes. For example, unwanted collapse can occur
+of vulnerability, resilience, and adaptive capacity within               even if the ecosystem dynamics are perfectly known and
+disciplinary areas, reaching some kind of agreement                      managers have perfect knowledge and control of human
+between social and natural scientists working together on                actions. It is also clear that these insights could not have
+global change on the way the concepts are used would                     been obtained by analyzing the lake dynamics and the
+represent an important step forward. To this end, a number               societal dynamics separately. The analysis of the concepts
+of diagnostic questions are proposed to help guide the                   discussed in this article will be made in the context of
+choices to be made. The results of the analysis presented in             research on the dynamics of the global SES.
+this article naturally lead to a suggestion for the research
+agenda on global change.                                                 3. Vulnerability
+
+2. The socio-ecological system                                              Vulnerability is a concept that has been used in different
+                                                                         research traditions (Adger, 2006; Smit and Wandel, 2006)
+   Gallopı́n et al. (2001) have argued that the natural                  but there is no consensus on its meaning. Depending on the
+analytical unit for sustainable development research is the              research area, it has been applied exclusively to the societal
+socio-ecological system or SES. An SES is deﬁned as a                    subsystem, to the ecological, natural, or biophysical
+system that includes societal (human) and ecological                     subsystem, or to the coupled SES, variously referred also
+(biophysical) subsystems in mutual interaction (Gallopı́n,               as target system, unit exposed, or system of reference.
+1991).1 The SES can be speciﬁed for any scale from the                      Adger (2006) examines the evolution of approaches to
+local community and its surrounding environment to the                   vulnerability originated in the social and the natural
+global system constituted by the whole of humankind (the                 sciences. He concludes that vulnerability is most often
+‘‘anthroposphere’’) and the ecosphere. Schellnhuber (1998)               conceptualized as being constituted by components that
+was the ﬁrst to label the SES at the global scale as the                 include exposure to perturbations or external stresses,
+‘‘Earth System’’, and the term was later adopted by major                sensitivity to perturbation, and the capacity to adapt.
+international global environmental change research pro-                     Vulnerability, like resilience, is generally viewed as being
+grams, represented in the Earth System Science Partnership               speciﬁc to perturbations that impinge on the system; in
+(www.essp.org).                                                          other words, a system can be vulnerable to certain
+   The need to investigate the whole SES arises from the                 disturbances and not to others. Two other widely accepted
+increasingly recognized evidence that understanding and                  points are (1) the multiscale nature of the perturbations
+anticipating the behavior of the social and ecological                   and their effects upon the system and (2) the fact that most
+components of the SES in many cases requires simulta-                    SESs are usually exposed to multiple, interacting perturba-
+neously taking into account both components; in other                    tions (van der Leeuw, 2001; Turner et al., 2003). Vulner-
+words, SESs are non-decomposable systems. Of course it is                ability is also thought of as a susceptibility to harm, a
+always possible to single out certain social or ecological               potential for a change or transformation of the system
+components for study, and this strategy has provided                     when confronted with a perturbation, rather than as the
+important understanding of the components, as has been                   outcome of this confrontation. However, diverse views
+traditionally done with great success by social and natural              regarding the precise meaning of vulnerability are also
+scientists. However, there are important traits related to               evident. Some of the differences are important for the task
+the behavior and future trajectory of the Earth System, for              of identifying the relationships between vulnerability,
+example, that cannot be understood through this analytical               resilience, and adaptive capacity, and will be discussed in
+approach alone, because they emerge from the dynamic                     what follows.
+interplay between the social and ecological components.
+Many of the issues related to vulnerability, resilience, and             3.1. Perturbation, stress, hazard, or shock
+adaptive capacity fall in this category (Walker et al., 2004;
+Turner et al., 2003).                                                      For Turner et al. (2003), hazards are threats to a system,
+                                                                         comprised of perturbations and stress (and stressors, the
+  1
+    Also called social–ecological system (Berkes and Folke, 1998) and    sources of stress). Perturbations are major spikes in
+coupled human-environmental system (Turner et al., 2003).                pressure (e.g., a tidal wave or hurricane) beyond the
+                                                   ARTICLE IN PRESS
+                                    G.C. Gallopı´n / Global Environmental Change 16 (2006) 293–303                              295
+
+
+normal range of variability in which the system operates,            has been noted in relation to resilience, in the sense that
+and commonly originate beyond the system or location in              ‘‘resilience is not always a good thing’’ (Walker et al.,
+question. Stress is a continuous or slowly increasing                2004).
+pressure (e.g., soil degradation), commonly within the                  Another aspect of the notion of change or transforma-
+range of normal variability. Stress often originates within          tion is its degree or depth. A system would not be called
+the system, and stressors often reside within it. For                vulnerable if the effect of the perturbation is limited to the
+simplicity, the term perturbation will be used in this article       generation of trivial and ephemeral changes; those changes
+to denote the external or internal processes interacting with        would hardly qualify as a ‘‘transformation’’ of or
+the system and with the potentiality of inducing a                   ‘‘damage’’ to the system. However, it is not always clear
+signiﬁcant transformation in the system, be it slow or               what is meant by the term. Changes in the system could
+sudden.                                                              range from variations in the behavior of some variables of
+   Perturbations are usually assumed to come from outside            the system up to radical changes in the structure of the
+the system. But this may be an unduly restrictive deﬁnition.         system (as discussed later under resilience).
+Both societal and ecological systems survive, thanks to a               This is an important point, because, for some, the
+constant exchange of matter, energy, and information with            fundamental distinction between vulnerability and resi-
+their external environment. Those processes can give rise to         lience lies in that vulnerability refers to the capacity to
+modiﬁcations in the functioning or structure of the system           preserve the structure of the system while resilience refers
+triggered by changes in the system’s environment (e.g., the          to its capacity to recover from non-structural changes in
+effects of an earthquake on a population, dissemination of           dynamics (van der Leeuw, 2001). Sometimes, the concept
+infectious germs in the environment of a person), by                 of vulnerability is restricted to situations when the system
+internal alterations (e.g., the impact of civil war on a             suffers structural change (Gallopı́n et al., 1989; van der
+country, the manifestation of a genetic disease in a person),        Leeuw, 2001; Young et al., 2006). Unfortunately, in
+or by the interaction among external and internal processes          practice, it is not always easy to decide when an observed
+(e.g., the effects of a prolonged drought in a country with          change is behavioral or structural without investigating the
+internal conﬂicts). Young (2005), discussing institutional           system thoroughly. The previous discussion highlights the
+dynamics in environmental and resource regimes, illus-               importance of specifying what is meant by ‘‘transforma-
+trates how the sources of stress may be internal, external,          tion’’, impact, or ‘‘harm’’ when discussing (or deﬁning)
+or both. Turner et al. (2003) explicitly state that the              vulnerability in the natural and social realms of the SES.
+hazards acting on the system arise from inﬂuences outside
+and inside the system, and Kasperson et al. (2005) allocate          3.3. Sensitivity
+a section to endogenous perturbations. In another ﬁeld,
+Nicolis and Prigogine (1977) demonstrated for dissipative               The concept of sensitivity varies across authors; for
+(open, far from equilibrium) systems the phenomenon of               instance, Adger (2006) deﬁnes it as ‘‘the extent to which a
+self-ampliﬁcation of internal ﬂuctuations (perturbations)            human or natural system can absorb impacts without
+and their ultimate breakthrough at the system level.                 suffering long-term harm or other signiﬁcant state
+   On the other hand, whether the disturbance is described           change’’; Smit and Wandel (2006) talk about exposure-
+as external or internal depends also on the scale at which           sensitivity, arguing that sensitivity is not separable from
+the system has been deﬁned. Earthquakes, hurricanes, or              exposure. Luers (2005) also combines sensitivity and
+global economic crises are clearly internal phenomena for            exposure, and deﬁnes sensitivity as the degree to which a
+the global SES, but they are obviously external events for           system will respond to an external disturbance, and also
+systems such as a Central American village.                          includes in the concept the ability to resist change and the
+                                                                     ability to return to a previous condition after the stress has
+3.2. Change or transformation of the system                          been removed—properties that are usually seen as asso-
+                                                                     ciated with resilience or with coping capacity. In discus-
+   In general, transformation is taken to mean harm or               sions of climate (IPCC, 2001), sensitivity is the degree to
+damage to a system (human, natural, SES). However, a                 which a system is affected, either adversely or beneﬁcially,
+different interpretation has been proposed on the basis of a         by climate-related stimuli. The effect may be direct (e.g., a
+systemic analysis of the concept of vulnerability (Gallopı́n,        change in crop yield in response to a change in the mean,
+2003). According to this conception, vulnerability is not            range, or variability of temperature) or indirect (e.g.,
+always a negative property. It is possible to speak of               damages caused by an increase in the frequency of coastal
+positive vulnerability in cases where change leads to a              ﬂooding due to sea-level rise).
+beneﬁcial transformation such as the emergence of a given               For Gallopı́n (2003), in its general sense, sensitivity is
+social group from chronic poverty or the collapse of an              the degree to which the system is modiﬁed or affected
+oppressive regime. Young (2005) discusses situations where           by an internal or external disturbance or set of distur-
+institutional crises become windows of opportunity for               bances. Conceptually, it can be measured as the amount
+improvement even though they are dangerous events that               of transformation of the system per unit of change in
+can produce destructive outcomes. A similar ambivalence              the disturbance, i.e., @ transformation=@ perturbation
+                                                           ARTICLE IN PRESS
+296                                        G.C. Gallopı´n / Global Environmental Change 16 (2006) 293–303
+
+
+(Tomovic, 1963),2 but in the simplest case it only speciﬁes
+whether or not the system is sensitive to a given factor
+(Gallopı́n, 2003). In this view, sensitivity is an inherent
+property of an SES, distinguished from its capacity of
+response (the actual transformation may be smaller,
+depending on the capacity of response of the system). It
+is an attribute of the system, existing prior to the
+perturbation, and separate from exposure.
+
+3.4. Capacity of response
+
+  The system’s coping capacity (Turner et al., 2003), or
+capacity of response (Gallopı́n, 2003), is also called
+adaptive capacity by Adger (2006) and Smit and Wandel
+(2006) and the IPCC (2001). Turner et al. (2003) distinguish
+capacity to cope or respond from adaptive capacity, and
+consider both as components of the resilience of a system.
+They refer to adaptations as the system’s restructuring after
+the responses. As noted by Smit and Wandel (2006), some
+authors apply ‘‘coping ability’’ to shorter-term capacity or
+the ability to just survive, and employ ‘‘adaptive capacity’’
+for longer-term or more sustainable adjustments. In view
+of this lack of agreement, the term used here for this
+component of vulnerability will be ‘‘capacity of response’’
+(of the system to the perturbations).
+  In general, capacity of response is the system’s ability to                Fig. 1. Generic relations between vulnerability, threat, exposure, and
+adjust to a disturbance, moderate potential damage, take                     impact or transformation of a system (social, natural, or SES) according
+                                                                             to Gallopı́n (2003). Time moves from top to bottom of the ﬁgure. The
+advantage of opportunities, and cope with the conse-                         target system is represented by an oval; its exchanges with its external
+quences of a transformation that occurs. Capacity of                         environment are represented by arrows in both directions, and the normal
+response is clearly an attribute of the system that exists                   operation of its internal processes is symbolized by a regular spiral. The
+prior to the perturbation.                                                   components of the vulnerability of the system (its sensitivity and capacity
+                                                                             of response) are highlighted with boxes. The considered (external) process
+                                                                             or perturbation is represented by the looped shape at the right, with its
+3.5. Exposure                                                                relevant attributes in boxes. The exposure of the system to the
+                                                                             perturbation is represented by the overlap between the two elements,
+   The other central concept related to vulnerability is                     and the transformed or impacted system is represented by the wobbly oval
+                                                                             at the bottom.
+exposure, meaning in general the degree, duration, and/or
+extent in which the system is in contact with, or subject to,
+the perturbation (Adger, 2006; Kasperson et al., 2005).
+                                                                               From this perspective, a system (i.e., a city, a human
+   Exposure in most formulations is seen as one of the
+                                                                             community, an ecosystem) may be very vulnerable to a
+elements constituting vulnerability. However, Bohle (2001),
+                                                                             certain perturbation, but persist without problems insofar
+building on proposals by Robert Chambers, recognizes a
+                                                                             as it is not exposed to it. A person with low immunological
+qualitative difference between exposure (deﬁned as the
+                                                                             defenses would be called vulnerable to infectious diseases,
+external side of vulnerability) and coping (the internal
+                                                                             whether or not he or she is exposed to the infectious agent;
+side). Since, unlike sensitivity and capacity of response,
+                                                                             software vulnerabilities existed before the Internet exposed
+exposure seems to be an attribute of the relationship
+                                                                             every computer in the world to every hacker on the planet.
+between the system and the perturbation, rather than of the
+                                                                             From the perspective that includes exposure as a compo-
+system itself, Gallopı́n (2003) did not consider exposure as
+                                                                             nent of vulnerability, a system that is not exposed to a
+a component of vulnerability. Rather, vulnerability is a
+                                                                             perturbation would be deﬁned as non-vulnerable. The
+function of the system’s sensitivity and capacity of
+                                                                             hypothetical person with low defenses would not be called
+response, and the transformation suffered by the system
+                                                                             vulnerable to infectious diseases if conﬁned to a sterile
+is a function of its vulnerability, the properties of the
+                                                                             environment.
+perturbation, and the exposure of the system to the
+                                                                               The choice of including or not including exposure as a
+perturbation (Fig. 1).
+                                                                             component of vulnerability has consequences. In the ﬁrst
+  2
+   Of course, in many cases, the transformation is discontinuous, and        case, vulnerability becomes a property of the relationship
+therefore the expression above (strictly applicable for continuous change)   between the system and its environment (speciﬁcally
+should be replaced by a more appropriate one.                                between the system and the perturbation), rather than a
+                                                    ARTICLE IN PRESS
+                                     G.C. Gallopı´n / Global Environmental Change 16 (2006) 293–303                                             297
+
+
+property of the target system. The concrete characteriza-                The concept of resilience has a rich history (see Folke,
+tion of vulnerability (i.e., indices, maps, etc.) needs to take       2006), sometimes with a considerable stretch from its
+into account the full set of possible combinations of                 original meaning. There is also a body of thought around
+situations, and must be changed if the distribution of                resilience and the ‘‘adaptive cycle’’—a metaphor for the
+exposure changes (for instance, when alternative climate              dynamics of ecosystems later extended to the social aspects
+scenarios are examined).                                              and SESs—referring to the concept of ‘‘panarchy’’ or
+   On the other hand, if exposure is externalized from                cross-scale dynamics and interplay between nested adaptive
+vulnerability, exposure is a relational property, and                 cycles (Gunderson and Holling, 2002; see also Folke,
+vulnerability is a property of the system, becoming                   2006). These ideas, interesting as they are, fall outside the
+expressed/revealed when the system is exposed to the                  scope of this article.
+perturbation. Vulnerability in this view is a system                     The concept of domains or basins of attraction is central
+attribute existing prior to the disturbance, although it is           to the notion of resilience. It essentially means the portion
+often related to the history of disturbances to which the             of the state space of a dynamic system that contains one
+system was exposed in the past (hence the importance of               ‘‘attractor’’ toward which the state of the system tends to
+the system’s history). If the vulnerability of different target       go, and is therefore one region of the state space where the
+systems could be characterized on the basis of their                  system would tend to remain in the absence of strong
+sensitivity and capacity of response, their exposure to a             perturbations. ‘‘State of a system’’ means ‘‘any well-deﬁned
+particular perturbation could be independently deter-                 condition that can be recognized if it occurs again’’ (Ashby,
+mined, and the harm or outcome of the resulting                       1956) or, in more precise terms, the set of values adopted
+transformation of the system could be estimated from the              by all the variables of the system at a given time.
+composition of the two factors. Using a climate change                   If the state of the system changes in time, then the
+example, only one map of vulnerability would be needed,               succession of states through time can be interpreted as
+that could be overlaid with different maps of exposure                deﬁning a trajectory (also called an orbit) of the system,
+resulting from diverse models or scenarios. Therefore, the            going from some initial state to the current state to some
+difference between the two perspectives is not trivial,               future state and (possibly, but not necessarily) to a ﬁnal
+reﬂecting on the possibilities for generalization and also the        state. This ‘‘trajectory’’ unfolds in an abstract state space
+design of policies to reduce vulnerability.                           deﬁned by the number of variables of the system. Each
+   The differences between sensitivity, response capacity,            state of the system is represented by a point in the state
+and exposure can be illustrated with two very simpliﬁed               space. Fig. 2 illustrates a trajectory for a system with only
+examples. The ﬁrst refers to the effects of a ﬂood on a               two state variables, X1 and X2, that deﬁne the state space.
+community. The most precarious homes are hit harder by a                 The trajectory tends to move in time toward, or remain
+ﬂood than the solid ones (sensitivity). Oftentimes, the               in, an attractor of the system. This could be a point or
+poorest homes are located in the places most susceptible to           steady state, a stable closed orbit (a limit cycle), a
+ﬂooding (exposure). The families with the greatest                    ‘‘strange’’ (chaotic) attractor, an open-ended trajectory
+resources have a greater availability of means to repair              that never reaches a steady state, or more complicated
+water damage (response capacity). The magnitude of the                geometries when the system has many state variables. In
+ﬁnal impact will also depend on the intensity, magnitude,             general terms, an attractor characterizes what the behavior
+and permanence of the ﬂood (attributes of the perturba-               of a system settles down to. If the attractor is a ﬁxed point,
+tion). The second example refers to the impacts of the                the system will tend to reach that state (steady state
+spread of an infectious disease in the population of a                or dynamic equilibrium) where it will tend to remain
+region. The population segment constituted by children
+and the elderly is likely to exhibit more serious symptoms if
+infected than the rest of the population (sensitivity). The
+high-income sector often has better access to medical care
+and medicines (capacity of response). In this particular
+                                                                                                     current state
+example, the likelihood of entering in contact with the
+germs (exposure) might be evenly distributed across the
+                                                                                  x1
+
+
+
+
+population.
+
+4. Resilience                                                                                                            trajectory
+
+                                                                                             initial state
+
+  Resilience, a concept originated within ecology, is also
+applicable in the realm of social systems and SESs. For
+instance, Adger (2000) deﬁnes social resilience as the ability                                                   x2
+of groups or communities to cope with external stresses               Fig. 2. A trajectory of a two-variable, dynamic system depicted in the
+and disturbances as a result of social, political, and                state space (here, a plane deﬁned by all possible values of state variables X1
+environmental change.                                                 and X2).
+                                                      ARTICLE IN PRESS
+298                                    G.C. Gallopı´n / Global Environmental Change 16 (2006) 293–303
+
+
+thereafter. Given that all real systems are permanently
+exposed to perturbations, a state often will be pushed away                                                                       one large attractor
+from the steady state, but will tend to return to it. When
+                                                                                                                                  one large attractor
+the attractor is a trajectory, the state of the system will tend
+                                                                                                                                bifurcation
+to move toward it when pushed away by perturbations, but
+
+
+
+
+                                                                         parameter
+                                                                                                                                   two attractors
+will never reach constancy; it will change periodically (if the                                                              bifurcation
+attractor is a limit cycle) or along an open path in the state
+space; in these cases, nearby states will tend to go toward                                       one attractor
+the trajectory, but not to a ﬁxed point.
+   If a system has only one attractor, in due course its state
+will end there; such a system is called globally stable.                                      VIEW FROM ABOVE:
+However, systems containing non-linear relations between
+their variables (as is the case for all SESs) usually possess
+more than one attractor, and therefore surprises can occur
+as the state of the system shifts from the domain of                                                                              one large attractor
+
+inﬂuence of one attractor (known as the domain or basin of
+attraction) to that of another. Fig. 3 shows a system with
+three basins, one containing a steady state (attractor A),
+
+                                                                         parameter
+the other a stable cycle (attractor B), and the third
+                                                                                                                                     two attractors
+containing a stable trajectory (attractor C). The complete
+ﬁgure depicts the ‘‘stability landscape’’ of the system,
+represented by the conﬁguration of all basins of attraction,
+including the boundaries separating them. The stability
+landscape is part of the structure of the system, depending
+on the values of the parameters (ﬁxed or very slowly                                                                                 one attractor
+varying factors) of the system. In a dynamical system with
+multiple attractors, a continuous variation in some critical
+parameter can result in discontinuous changes in the                    Fig. 4. Qualitative changes in attractors. Continuous variation of a
+stability landscape of the system (Fig. 4). These disconti-             parameter can cause attractors to shrink, split, or disappear. The upper
+nuities are called bifurcations in the mathematical theory              part of the ﬁgure is a three-dimensional representation; the lower part is a
+                                                                        view from above, at three sections of the solid shape.
+of dynamical systems (Tu, 1994; Butenin, 1965) and
+catastrophes in catastrophe theory (Thom, 1972).
+   Holling (1973) introduced a new, non-equilibrium vision
+in ecology with the concept of ecological resilience, arising
+from the analysis of different empirical studies, mathema-              them are multistable; that is, they have two or more
+tical models, and experience with managed ecosystems. He                domains of attraction where the system variables tend to
+showed that even natural, undisturbed ecological systems                remain. Within each domain, the system’s state may
+are often in transient states and demonstrated that many of             ﬂuctuate widely (i.e., may be highly unstable) but if it
+                                                                        tends to stay within the boundaries of the domain, the
+                                                                        system is resilient. Resilience was originally deﬁned by
+                                                                        Holling (1973) as ‘‘a measure of the persistence of systems
+                                                                        and of their ability to absorb change and disturbance and
+                                                                        still maintain the same relationships between populations
+                                                                        or state variables’’ (p. 14) and, more recently, by Walker
+                                                                        et al. (2004) as ‘‘the capacity of a system to absorb
+                                                                        disturbance and reorganize while undergoing change so as
+                                                                        to still retain essentially the same function, structure,
+                                                                        identity, and feedbacks—in other words, stay in the same
+                                                                        basin of attraction’’. Folke (2006) reviews the concept in
+                                                                        detail.
+                                                                           Note that resilience, in terms of the stability landscape,
+                                                                        implies the ability of a multistable system to keep the
+                                                                        values of its state variables within a given domain of
+                                                                        attraction in the face of perturbations, and is not concerned
+                                                                        with the stability or constancy of the state within the basin.
+Fig. 3. State space of a two-variable system with three attractors,     This concept is called ecological resilience; in principle,
+indicating the respective basis of attraction with dotted lines.        ecological resilience can be measured by the magnitude of
+                                                              ARTICLE IN PRESS
+                                             G.C. Gallopı´n / Global Environmental Change 16 (2006) 293–303                                              299
+
+
+the perturbation that can be absorbed before the state of                        possibility of a true transformation of the original system
+the system falls outside its domain of attraction.3                              into a different one.4
+   By contrast, the concept of stability as commonly                                Among the various theoretical approaches to real-life
+utilized focuses on the behavior of the system near an                           complex systems, the one derived from the theory of
+equilibrium point or trajectory, and can be measured by                          dissipative structures (developed essentially by Ilya Prigo-
+the speed at which the system returns to the stable point or                     gine and collaborators) seems particularly suitable for
+trajectory following a perturbation. This is essentially the                     investigating the dynamics of structural change and
+concept of resilience deﬁned by Pimm (1984) and called                           persistence in SESs. The theory of dissipative structures
+engineering resilience by Holling (1996). It is equivalent to                    shows that open, self-organizing systems maintain their
+the well-known mathematical concept of local stability                           structural order by keeping their internal state far from
+(Hahn, 1967; Tu, 1994; Nicolis and Prigogine, 1989).                             thermodynamic equilibrium, through active exchanges
+   In any dynamical system, the property of multistability                       with their environment. Those dissipative structures are
+implies that the behavior of the system may change                               in principle stable as long as the exchanges with the
+qualitatively in a way that is surprising to an external                         environment are maintained and as long as the continu-
+observer; for instance, a cumulative series of small                             ously occurring ﬂuctuations (or perturbations) are ab-
+perturbations of the state of the system, each individually                      sorbed within the framework of the given dynamic regime.
+reversible, may ﬁnally move the state of the system over the                     However, any structure of a non-equilibrium system may
+boundary of the current basin of attraction, thus ﬂipping it                     be driven beyond a threshold into a new regime when the
+into another (possibly undesirable) domain where it will                         ﬂuctuations exceed a critical size. At that point, after going
+tend to remain. This is precisely the behavior exhibited by                      through phases of instability and high entropy, the system
+many ecosystems under management (Holling, 1986;                                 may evolve to a different stable regime with a new
+Gunderson and Holling, 2002).                                                    characteristic structure (Nicolis and Prigogine, 1977,
+   Those sudden shifts in behavior occur in the absence of                       1989; Prigogine and Stengers, 1979).
+structural change in the system. Holling (1986) also showed                         As noted by Adger (2000), the concept of resilience
+that in a number of cases, the size and shape (and the                           cannot be transferred uncritically from the ecological
+genesis or disappearance) of the domains of attraction can                       sciences to social systems. But using the concept for social
+change because of the unperceived evolution of parameters                        systems (and for SESs) does not really imply that there are
+of the system (implicitly assumed constant), which are                           no essential differences in behavior and structure between
+often affected by long-term management or are internally                         social and ecological systems. The legitimate use of the
+determined by processes that link variables. Thus, the                           concept only requires the assumption that the state space of
+stability domains themselves may expand, contract, and                           the system considered contains more than one basin of
+disappear in response to changes in slow variables,                              attraction. This is a natural assumption for all kinds
+resulting in the loss of resilience of the system (similar to                    of non-linear dynamical systems (although the applicability
+the changes depicted in Fig. 4). Resilience can operate at                       of the concept of dynamical systems to social systems
+different scales, and it has been noted that there can be                        might not be acceptable to some social scientists).
+losses of resilience at some scales thereby increasing it at                        When the concept of resilience is unlinked from the
+other, higher scales (Walker et al., 2004).                                      notion of multistability, it becomes very difﬁcult to
+   In this context, three types or levels of stability may be                    distinguish it from structural stability, or even from local
+distinguished. The ﬁrst, local stability or engineering                          stability or adaptive capacity. This is one risk with some of
+resilience, refers to the behavior of the trajectories of the                    the recent reformulations of resilience, such as making
+system in the neighborhood of an attractor, within a given                       adaptive capacity and self-organization properties of
+domain of attraction. The second level refers to changes in                      resilience (Carpenter et al., 2001). It is sometimes said that
+the state of the system between the different domains of                         vulnerability is the ﬂip side, or the antonym, of resilience
+attraction, within the stability landscape of the system. The                    (Folke et al., 2002). However, this is by no means clear;
+capacity of the system to remain within the same domain of                       obviously a resilient system is less vulnerable than a non-
+attraction is called ecological resilience. The third level                      resilient one, but this relation does not necessarily imply
+includes changes in the stability landscape itself. This is the                  symmetry.
+domain of structural stability of dynamical systems, the                            Resilience is clearly related to the capacity of response
+capacity of the system to preserve the topology of its                           component of vulnerability, and thus it would be less than
+trajectories (the qualitative features of its stability land-                    the ﬂip side of vulnerability. A more fundamental
+scape) under perturbations of the dynamic equations of the                       difference is that resilience, as discussed earlier, applies to
+system (Tu, 1994). Structural instability represents the                         the preservation of the behavior of the system as expressed
+
+                                                                                    4
+                                                                                      Note that the new system may result from adding new components and
+  3
+   Recently, Walker et al. (2004) proposed latitude, resistance, precar-         relations, but also from losing or modifying components or relations. In
+iousness, and panarchy as essential attributes of resilience; other resilience   this sense, structural instability is somewhat more general than the concept
+measures could be derived from these.                                            of transformability as recently deﬁned by Walker et al (2004).
+                                                              ARTICLE IN PRESS
+300                                          G.C. Gallopı´n / Global Environmental Change 16 (2006) 293–303
+
+
+by its state remaining within the considered domain of                           latter. This is more so with human systems, capable of
+attraction, while vulnerability refers to transformations                        learning and technological progress. Of course, in the
+that may go beyond a single domain. The ﬂip side of                              human realm, and thus also in the SES, the criterion
+vulnerability would be a concept that denotes capacity to                        for adaptness goes far beyond ‘‘being able to live and
+maintain the structure of the system against perturbations,                      reproduce’’; it includes the viability of social and eco-
+even if its resilience is overcome; robustness is a good                         nomic activities, and the quality of human life. Adapt-
+candidate.5                                                                      ability or adaptive capacity of human systems also can be
+   Moreover, resilience seems to be a proper subset of                           deﬁned as the capacity of any human system from the
+capacity of response, at least for the social component of                       individual to humankind to increase (or at least maintain)
+the SES. Capacity of response includes, for most authors,                        the quality of life of its individual members in a given
+not only the resilience of the system (maintenance within a                      environment or range of environments (Gallopı́n et al.,
+basin) but also coping with the impacts produced and                             1989). As noted by Smithers and Smit (1997), while the
+taking advantage of opportunities. The relation of resi-                         responses of biological systems to perturbations are purely
+lience to the sensitivity component of vulnerability is also                     reactive, the responses of human systems are both reactive
+unclear. A sensitive system may or may not be resilient. An                      and proactive.
+insensitive system (i.e., an ‘‘armored system’’) may exhibit                        From these considerations, a generic concept of adaptive
+low vulnerability and low resilience (it is the exposure to                      capacity of an SES would seem to involve two different
+perturbation that builds resilience in natural systems).                         components, namely (1) the capacity of the SES to cope
+Sensitivity may open a system to threats, but an insensitive                     with environmental contingencies (to be able to maintain
+system may be unable to adapt and seize opportunity. The                         or even improve its condition in the face of changes in its
+concept of resilience does not include exposure (similar to                      environment(s)) and (2) the capacity to improve its
+vulnerability as adopted here) but refers to the reaction of                     condition in relation to its environment(s), even if the
+the system when exposed to perturbations. On the other                           latter does not change, or to extend the range of
+hand, a history of past exposures may be important to                            environments to which it is adapted.
+build resilience (Holling, 1973, 1985, 1986).                                       In more recent usage in the ﬁeld of climate change,
+                                                                                 adaptive capacity is deﬁned as ‘‘the ability of a system to
+5. Adaptive capacity                                                             adjust to climate change (including climate variability and
+                                                                                 extremes) to moderate potential damages, to take advan-
+   The concept of adaptive capacity has been reviewed by                         tage of opportunities, or to cope with the consequences’’
+Smit and Wandel (2006). Here, only the fundamental traits                        and adaptation is deﬁned as an ‘‘adjustment in natural or
+of the concept will be explored. Adaptability (or adaptive                       human systems in response to actual or expected climatic
+capacity)6 was originally deﬁned in biology to mean an                           stimuli or their effects, which moderates, harms, or exploits
+ability to become adapted (i.e., to be able to live and to                       beneﬁcial opportunities,’’ including anticipatory and reac-
+reproduce) to a certain range of environmental contingen-                        tive, autonomous or spontaneous and planned, and public
+cies. Adaptness is the status of being adapted, and an                           and private (IPCC, 2001). However, Kasperson et al.
+adaptive trait or an ‘‘adaptation’’ is a feature of structure,                   (2005) distinguish between adjustments and adaptations.
+function, or behavior of the organism that is instrumental                       For them, adjustments are system responses to perturba-
+in securing the adaptness (Dobzhansky, 1968). Adaptness                          tions or stress that do not fundamentally alter the system
+is not a generic property, but it refers to a certain                            itself, they are commonly (but not necessarily) short-term
+environment or range of environments, and different                              and involve relatively minor system modiﬁcations. Adap-
+organisms, different populations, or different species are                       tations are system responses to perturbations or stress that
+adapted to different environments. Dobzhansky noted that                         are sufﬁciently fundamental to alter the system itself,
+high adaptness is not the same as high adaptability; a                           sometimes shifting the system to a new state.
+species may be highly adapted to a special and constant                             The IPCC further distinguishes between adaptation as
+environment but have little capacity to adapt to others or                       actions that operate upon the system itself and mitigation,
+to changes in its environment.                                                   or actions that operate upon the origin and attributes of
+   In general, a species, population, or individual may                          the perturbation (i.e., reducing greenhouse gases emis-
+also become better adapted by improving its condition                            sions). This concept of adaptive capacity is clearly limited
+in its environment, even in the absence of changes in the                        to coping with changes in the environment of the system
+                                                                                 (actually to climate change) and seems to exclude the
+   5
+     The concept of robustness has not been analyzed here, as it is still much   element of increasing adaptness when the environment
+debated. Robustness here is used simply as the converse of vulnerability         does not change. One question that arises is whether the
+and basically to denote the ability of the system to preserve its structure in   concept of adaptive capacity of the SES should include this
+the face of perturbations (Tu (1994, p. 160) uses robust as synonymous of        second element. It would seem that, at least with reference
+structurally stable). Many other deﬁnitions of robustness have been
+proposed (see Anderies et al., 2004; Jen, 2003).                                 to the human component of the coupled system, it might be
+   6
+     Adaptability and adaptive capacity are usually treated as synonymous        of interest not to reduce a priori the general concept of
+(i.e., Smit and Wandel, 2006; IPCC, 2001).                                       adaptive capacity.
+                                                  ARTICLE IN PRESS
+                                   G.C. Gallopı´n / Global Environmental Change 16 (2006) 293–303                                             301
+
+
+   Another issue is the relationship between adaptive               or capacity of response. But again it is unclear whether
+capacity of an SES and capacity of response, as used here           resilience includes capacity of response, or is an element of
+for the component of vulnerability. The IPCC treats both            the latter. Given that capacity of response, as an element of
+concepts as synonymous, but, as mentioned in the                    vulnerability, is supposed to refer to the response of the
+preceding paragraph, it uses a deﬁnition of adaptive                system to structural changes, it would appear that
+capacity that may be too restrictive for use in broader             resilience should be considered as a subset, or a compo-
+problems of the dynamics of the global SES. In general              nent, of capacity of response.
+terms, adaptive capacity would seem to be broader than                 The conceptual links between adaptive capacity as an
+capacity of response; speciﬁc adaptations may include               attribute of an SES and capacity of response as a
+modifying the sensitivity of the system to perturbations,           component of its vulnerability are not clear beyond the
+increasing its resilience (indeed, Walker et al. (2004) deﬁne       conﬁrmation of the existence of the relationship. If
+adaptability as the capacity of humans to manage resilience         adaptive capacity in general is considered to include also
+in the SES), and reducing the exposure of the system to             improvements in the adjustments of the system to its
+perturbations. However, this will depend on the concrete            environment even in the absence of changes in the latter,
+deﬁnitions for adaptive capacity and capacity of response           then it is clearly more general than capacity of response.
+adopted in the investigation of a coupled SES.                      Another point is that adaptive capacity can include
+   The relations between the concepts of adaptive capacity          reactions of the system that modify its sensitivity to
+and resilience are more unclear, because of the diversity of        perturbations, and its exposure to them. As described in
+views. As mentioned by Smit and Wandel (2006), some                 the vulnerability section, capacity of response also has been
+authors equate adaptive capacity with resilience and social         distinguished from adaptive capacity using the criteria of
+resilience. Gunderson (2000) deﬁnes adaptive capacity as            short- or long-term adjustments, or of their timing, but in
+system robustness to changes in resilience, Carpenter et al.        this case both terms have been viewed as belonging to
+(2001) use adaptive capacity as a component of resilience           vulnerability.
+that reﬂects the learning aspect of system behavior in                 Fig. 5 summarizes the conclusions on the major
+response to disturbance, and Walker et al. (2004) deﬁne             conceptual relations among the three concepts. The
+adaptability as the collective capacity of the human actors         comparative analysis of the concepts of vulnerability,
+in an SES to manage resilience, including making desirable          resilience, and adaptive capacity puts in evidence important
+basins of attraction wider and/or deeper, and shrinking             similarities and differences, and in some cases contra-
+undesirable basins; creating new desirable basins, or               dictions, between the concepts as speciﬁed, or utilized, in
+eliminating undesirable ones; and changing the current              different ﬁelds of inquiry. The comparison also shows that
+state of the system so as to move either deeper into a              there is no generally accepted meaning for these concepts.
+desirable basin, or closer to the edge of an undesirable one.       The lack of general agreement on the concepts when
+                                                                    considered one by one becomes more visible when they are
+6. Conclusions                                                      taken together.
+
+   The analysis of the concepts of vulnerability, resilience,
+and adaptive capacity from a systemic perspective in the
+context of research on the dynamics of the global SES
+shows that these concepts are related in non-trivial ways. If
+care is not used, the ﬁeld of human dimensions research
+can become epistemologically very messy.
+   For instance, it seems natural to view vulnerability and
+resilience as related properties of an SES. But the speciﬁc
+nature of the relation is not obvious. The views expressed
+in the literature range from considering vulnerability as the
+ﬂip side of resilience to have resilience as one of the
+components of vulnerability. However, vulnerability does
+not appear to be the opposite of resilience, because the
+latter is deﬁned in terms of state shifts between domains of
+attraction, while vulnerability refers to (or at least also
+refers to) structural changes in the system, implying
+changes in its stability landscape. Moreover, resilience is
+an internal property of the system, not including exposure
+                                                                    Fig. 5. A diagrammatic summary of the conceptual relations among
+to perturbations.
+                                                                    vulnerability, resilience, and adaptive capacity as described in this article.
+   Resilience would appear to be more obviously related to          The signs represent relationships between sets: C ¼ ‘‘subset of’’;
+one of the components of vulnerability, the same that is            g ¼ ‘‘not a subset of’’; R, V, AC, and CR stand for resilience,
+variously called adaptive capacity, coping capacity, coping,        vulnerability, adaptive capacity, and capacity of response, respectively.
+                                                             ARTICLE IN PRESS
+302                                         G.C. Gallopı´n / Global Environmental Change 16 (2006) 293–303
+
+
+   Interdisciplinary research on the Earth System and SESs                     and it could be an appropriate item for a research agenda
+at other scales would clearly beneﬁt from having a general,                    on global change.
+self-consistent set of these basic concepts that could be
+applied across disciplines. Therefore, there is a need to                      Acknowledgments
+develop clear (and, hopefully, shared) speciﬁcations of the
+concepts in the abstract, ecological, and social senses, that                    I am grateful for the comments received from three
+are mutually compatible; this can be critical for the                          anonymous reviewers, and to Bill Turner for providing
+interactions between social and natural sciences in the                        speciﬁc information. I also thank Elinor Ostrom and
+study of the Earth System and coupled SESs at other                            Marco Janssen, and the scientiﬁc committee of the IHDP,
+scales.                                                                        for their invitation to write this article, and the participants
+   Some of the questions that ought to be considered in the                    of the various IHDP workshops for useful comments. The
+process have been identiﬁed as:                                                writing of this article was greatly facilitated by the generous
+                                                                               access to the in-depth reviews prepared for this issue of the
+ What is meant by ‘‘harm’’ or ‘‘transformation’’ (struc-                      Journal by Adger, Folke, and Smit and Wandel. The
+  tural change, shifting domains of attraction, moving                         manuscript was improved by the editorial suggestions
+  away from equilibrium states or trajectories)?                               provided by Joanna Broderick.
+ Is positive vulnerability a useful notion?
+ Does vulnerability apply to internal perturbations?                          References
+ Is vulnerability a property of the system or of the
+  relationship between the system and the perturbation?                        Adger, W.N., 2000. Social and ecological resilience: are they related?
+ Is negative (perverse) resilience a suitable concept?                           Progress in Human Geography 24 (3), 347–364.
+                                                                               Adger, W.N., 2006. Vulnerability. Global Environmental Change 16 (3),
+ Does adaptation include improvements of the system in                           268–281.
+  a non-changing environment?                                                  Anderies, J.M., Janssen, M.A., Ostrom, E., 2004. A framework to analyze
+ Is adaptive capacity the same as capacity of response?                          the robustness of social-ecological systems from an institutional
+ Is resilience the same as adaptive capacity?                                    perspective. Ecology and Society 9 (1) art. 18 [online], URL: http://
+                                                                                  www.ecologyandsociety.org/vol9/iss1/art18.
+                                                                               Ashby, W.R., 1956. An Introduction to Cybernetics. Chapman and Hall,
+   In this article, answers have been proposed for each of                        London.
+the questions, but what is essential for good research on the                  Berkes, F., Folke, C. (Eds.), 1998. Linking Social and Ecological Systems:
+global SES is that these deﬁnitions are not only scientiﬁ-                        Management Practices and Social Mechanisms for Building Resilience.
+cally and epistemologically valid, but also that they are                         Cambridge University Press, Cambridge.
+                                                                               Bohle, H.-G., 2001. Vulnerability and criticality: perspectives from social
+shared by the research communities in the social and                              geography. IHDP Update 2/01, art. 1 [online]. URL: http://www.ihdp.
+natural sciences cooperating on the study of the dynamics                         uni-bonn.de/html/publications/update/IHDPUpdate01_02.html.
+of global change. It is hoped that the present analysis                        Butenin, N.V., 1965. Elements of the Theory of Nonlinear Oscillations.
+contributes to that.                                                              Blaisdell, New York.
+   Ultimately, vulnerability, resilience, and adaptive capa-                   Carpenter, S., Brock, W., Hanson, P., 1999. Ecological and social
+                                                                                  dynamics in simple models of ecosystem management. Conservation
+city (and robustness) are different manifestations of more                        Ecology 3 (2) art. 4 [online], URL: http://www.consecol.org/vol3/iss2/
+general processes of response to changes in the relationship                      art4.
+between open dynamical systems and their external                              Carpenter, S.R., Walker, B.H., Anderies, J.M., Abel, N., 2001. From
+environment. This suggests that an interesting and useful                         metaphor to measurement: resilience of what to what? Ecosystems 4,
+                                                                                  765–781.
+line of research could be represented by the investigation of
+                                                                               Dobzhansky, T., 1968. Adaptness and ﬁtness. In: Lewontin, R.C. (Ed.),
+the general dynamics of change in SES.7                                           Population Biology and Evolution. Syracuse Univ. Press, Syracuse,
+   A general theory of change and transformation of SESs                          New York, pp. 109–121.
+would involve the relevant internal dynamics of the SES,                       Folke, C., 2006. Resilience: the emergence of a perspective for social-
+including aspects such as local stability, resilience, struc-                     ecological systems analyses. Global Environmental Change 16 (3),
+tural stability, and self-organization sensu Prigogine                            253–267.
+                                                                               Folke, C., Carpenter, S., Elmqvist, T., Gunderson, L., Holling, C.S.,
+(Nicolis and Prigogine, 1977, 1989), the various forms of                         Walker, B., Bengtsson, J., Berkes, F., Colding, J., Danell, K.,
+interaction of the system with its environment (including                         Falkenmark, M., Gordon, L., Kaspersson, R., Kautsky, N., Kinzig,
+both threats and opportunities), and the kind of resulting                        A., Levin, S.A., Mäler, K.-G., Moberg, F., Ohlsson, L., Olsson, P.,
+deleterious or beneﬁcial transformation of the system. The                        Ostrom, E., Reid, W., Rockström, J., Savenije, H., Svedin, U., 2002.
+investigation of change and transformation of the SES                             Resilience and sustainable development: building adaptive capacity in
+                                                                                  a world of transformations. Report for the Swedish Environmental
+would require the collaboration of social and natural                             Advisory Council 2002:1. Ministry of the Environment, Stockholm,
+scientists, as well as system theorists and mathematicians,                       Sweden.
+                                                                               Gallopı́n, G.C., 1991. Human dimensions of global change: linking the
+  7
+    An interesting step in this direction is the development of the adaptive      global and the local processes. International Social Science Journal
+and renewal cycle by the Resilience Alliance (see Folke, 2006) although up        130, 707–718.
+to now the adaptive cycle is more of a metaphor or a model than a general      Gallopı́n, G.C., 2003. Box 1. A systemic synthesis of the relations between
+theory of change in SES.                                                          vulnerability, hazard, exposure and impact, aimed at policy identiﬁcation.
+                                                              ARTICLE IN PRESS
+                                             G.C. Gallopı´n / Global Environmental Change 16 (2006) 293–303                                            303
+
+
+   In: Economic Commission for Latin American and the Caribbean                 Luers, A.L., 2005. The surface of vulnerability: an analytical framework
+   (ECLAC). Handbook for Estimating the Socio-Economic and Environ-                for examining environmental change. Global Environmental Change
+   mental Effects of Disasters. ECLAC, LC/MEX/G.S., Mexico, D.F.,                  15, 214–223.
+   pp. 2–5.                                                                     Nicolis, G., Prigogine, I., 1977. Self-Organization in Non-Equilibrium
+Gallopı́n, G.C., Gutman, P., Maletta, H., 1989. Global impoverish-                 Systems: From Dissipative Structures to Order through Fluctuation.
+   ment, sustainable development and the environment. A con-                       Wiley, New York.
+   ceptual approach. International Social Science Journal 121,                  Nicolis, G., Prigogine, I., 1989. Exploring Complexity. Freeman, New York.
+   375–397.                                                                     Pimm, S.L., 1984. The complexity and stability of ecosystems. Nature 307
+Gallopı́n, G.C., Funtowicz, S., O’Connor, M., Ravetz, J., 2001. Science            (26), 321–326.
+   for the 21st century: from social contract to the scientiﬁc core.            Prigogine, I., Stengers, I., 1979. La Nouvèlle Alliance. Métamorphose de
+   International Social Science Journal 168, 219–229.                              la Science. Gallimard, Paris.
+Gunderson, L.H., 2000. Resilience in theory and practice. Annual Review         Schellnhuber, H.J., 1998. Earth system analysis—the scope of the
+   of Ecology and Systematics 31, 425–439.                                         challenge. In: Schellnhuber, H.J., Wenzel, V. (Eds.), Earth System
+Gunderson, L.H., Holling, C.S. (Eds.), 2002. Panarchy. Island Press,               Analysis: Integrating Science for Sustainability. Springer, Heidelberg.
+   Washington, DC.                                                              Smit, B., Wandel, J., 2006. Adaptation, adaptive capacity and vulner-
+Hahn, W., 1967. Stability of Motion. Springer, Berlin.                             ability. Global Environmental Change 16 (3), 282–292.
+Holling, C.S., 1973. Resilience and stability of ecological systems. Annual     Smithers, J., Smit, B., 1997. Human adaptation to climatic variability and
+   Review of Ecology and Systematics 4, 1–23.                                      change. Global Environmental Change 7 (2), 129–146.
+Holling, C.S., 1985. Perceiving and managing the complexity of ecological       Thom, R., 1972. Stabilité Structurelle et Morphogénèse. W.A. Benjamin,
+   systems. In: Aida, S., et al. (Eds.), The Science and Praxis of                 Reading, MA.
+   Complexity: Contributions to the Symposium Held at Montpellier,              Tomovic, R., 1963. Sensitivity Analysis of Dynamic Systems. McGraw-
+   France, May 9–11, 1984. GLDB-2/UNUP-560. United Nations                         Hill, New York.
+   University Press, Tokyo, pp. 217–227.                                        Tu, P.N.V., 1994. Dynamical Systems: An Introduction with Applications
+Holling, C.S., 1986. The resilience of terrestrial ecosystems: local surprise      in Economics and Biology, second ed. Springer, Berlin.
+   and global change. In: Clark, W.C., Munn, R.E. (Eds.), Sustainable           Turner II., B.L., Kasperson, R.E., Matson, P.A., McCarthy, J.J., Corell,
+   Development of the Biosphere. IIASA/Cambridge University Press,                 R.W., Christensen, L., Eckley, N., Kasperson, J.X., Luers, A.,
+   Cambridge, UK, pp. 292–317.                                                     Martello, M.L., Polsky, C., Pulsipher, A., Schiller, A., 2003. A
+Holling, C.S., 1996. Engineering resilience versus ecological resilience. In:      framework for vulnerability analysis in sustainability science. Proceed-
+   Schulze, P.C. (Ed.), Engineering within Ecological Constraints.                 ings of the National Academy of Sciences of the United States of
+   National Academy Press, Washington, DC, pp. 31–43.                              America 100 (14), 8074–8079.
+IPCC (Intergovernmental Panel on Climate Change), 2001. Technical               van der Leeuw, S.E., 2001. ‘Vulnerability’ and the integrated study of
+   summary: climate change 2001: impacts, adaptation, and vulnerability.           socio-natural phenomena. IHDP Update 2/01, art. 2 [online]. URL:
+   A Report of Working Group II of the Intergovernmental Panel on                  http://www.ihdp.uni-bonn.de/html/publications/update/IHDPUpdate01_
+   Climate Change. URL: http://www.grida.no/climate/ipcc_tar/wg2/                  02.html.
+   pdf/wg2TARtechsum.pdf.                                                       Walker, B., Holling, C.S., Carpenter, S.R., Kinzig, A., 2004. Resilience,
+Janssen, M.A., Schoon, M.I., Ke, W., Börner, K., 2006. Scholarly                  adaptability and transformability in social-ecological systems. Ecology
+   networks on resilience, vulnerability and adaptation within the human           and Society 9 (2) art. 5 [online], URL: http://www.ecologyandsociety.
+   dimensions of global environmental change. Global Environmental                 org/vol9/iss2/art5.
+   Change 16.                                                                   Young, O.R., 2005. Institutional Dynamics: Resilience and Vulnerability
+Jen, E., 2003. Stable or robust? What’s the difference? Complexity 8 (3),          in Environmental and Resource Regimes. September 2005 Draft; cited
+   12–18.                                                                          with permission from the author.
+Kasperson, J.X., Kasperson, R.E., Turner II., B.L., Schiller, A., Hsiel, W.-    Young, O.R., Berkhout, F., Gallopı́n, G., Janssen, M.A., Ostrom, E., van
+   H., 2005. Vulnerability to global environmental change. In: Kasper-             der Leeuw, S., 2006. The Globalization of Socio-Ecological Systems:
+   son, J.X., Kasperson, R.E. (Eds.), Social Contours of Risk, vol. II.            An Agenda for Scientiﬁc Research. Global Environmental Change 16
+   Earthscan, London, pp. 245–285.                                                 (3), 304–316.

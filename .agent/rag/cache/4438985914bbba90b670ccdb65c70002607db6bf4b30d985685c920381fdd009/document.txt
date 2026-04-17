@@ -1,0 +1,435 @@
+Perspective
+
+                                                                                                          Outlook on Agriculture
+                                                                                                          1–8
+Improved feeding and forages at a                                                                         ª The Author(s) 2020
+                                                                                                          Article reuse guidelines:
+
+crossroads: Farming systems                                                                               sagepub.com/journals-permissions
+                                                                                                          DOI: 10.1177/0030727020906170
+                                                                                                          journals.sagepub.com/home/oag
+approaches for sustainable livestock
+development in East Africa
+
+Birthe K Paul1,2 , Jeroen CJ Groot2, Brigitte L Maass3 ,
+An MO Notenbaert1,2, Mario Herrero4
+and Pablo A Tittonell5,6,7
+
+
+Abstract
+Dairy development provides substantial potential economic opportunities for smallholder farmers in East Africa, but
+productivity is constrained by the scarcity of quantity and quality feed. Ruminant livestock production is also associated
+with negative environmental impacts, including greenhouse gas (GHG) emissions, air pollution, high water consumption,
+land-use change, and loss of biodiversity. Improved livestock feeding and forages have been highlighted as key entry point
+to sustainable intensification, increasing food security, and decreasing environmental trade-offs including GHG emission
+intensities. In this perspective article, we argue that farming systems approaches are essential to understand the multiple
+roles and impacts of forages in smallholder livelihoods. First, we outline the unique position of forages in crop-livestock
+systems and systemic obstacles to adoption that call for multidisciplinary thinking. Second, we discuss the importance of
+matching forage technologies with agroecological and socioeconomic contexts and niches, and systems agronomy that is
+required. Third, we demonstrate the usefulness of farming systems modeling to estimate multidimensional impacts of
+forages and for reducing agro-environmental trade-offs. We conclude that improved forages in East Africa are at a
+crossroads: if adopted by farmers at scale, they can be a cornerstone of pathways toward sustainable livestock systems in
+East Africa.
+
+Keywords
+Sub-Saharan Africa, farming systems, improved forages, livestock feeding, bio-economic modeling, sustainable intensifica-
+tion, technology adoption, systems agronomy, forage grass, dual-purpose forage legume
+
+
+                                                                   1
+                                                                     Tropical Forages Program, International Center for Tropical Agriculture
+Introduction                                                         (CIAT), Nairobi, Kenya
+                                                                   2
+                                                                     Department of Farming Systems Ecology, Wageningen University and
+Livestock is a resource of significant benefit to society in the     Research (WUR), Wageningen, The Netherlands
+form of food, income, nutrients, employment, insurance,            3
+                                                                      Division of Crop Production Systems in the Tropics, Department for
+traction, and clothing (Herrero et al., 2013). By 2050, the          Crop Sciences, Georg-August-University of Göttingen, Göttingen,
+total demand for meat, milk, and eggs is projected to almost         Germany
+                                                                   4
+double mostly in the developing world due to population               Agriculture and Food, Commonwealth Scientific and Industrial Research
+                                                                     Organization (CSIRO), St Lucia, Australia
+growth, urbanization, income increase, and change in dietary       5
+                                                                     Department of Agroecology, Environment and Systems Group, Instituto
+preferences—the “livestock revolution” (Alexandratos and             de Investigaciones Forestales y Agropecuarias de Bariloche (IFAB),
+Bruinsma, 2012). In East Africa, the majority of the mixed           INTA-CONICET, San Carlos de Bariloche, Rı́o Negro, Argentina
+                                                                   6
+crop-livestock systems are rain-fed and located in the tropi-        Groningen Institute of Evolutionary Life Sciences, Groningen University,
+cal highlands and subhumid and humid zones (Figure 1).               Groningen, The Netherlands
+                                                                   7
+                                                                     Agroécologie et Intensification Durable (Aı̈DA), Centre de coopération
+Upgrading and intensification of smallholder dairy develop-          Internationale en Recherche Agronomique pour le Développement
+ment is seen as a viable poverty alleviation strategy. It can        (CIRAD), Université de Montpellier, Montpellier, France
+provide opportunities for daily income throughout the year,
+in contrary to crop income that is bound to harvest seasons.       Corresponding author:
+Milk has even been coined “white gold” for its potential of        Birthe K Paul, Tropical Forages Program, International Center for
+                                                                   Tropical Agriculture (CIAT), PO Box 823-00621, Nairobi, Kenya;
+income generation (Makoni et al., 2013).                           Department of Farming Systems Ecology, Wageningen University and
+   However, livestock is also associated with a number of          Research (WUR), PO Box 430, Wageningen, 6700 AK, The Netherlands.
+negative environmental impacts, including greenhouse gas           Email: b.paul@cgiar.org
+2                                                                                                Outlook on Agriculture XX(X)
+
+
+
+
+Figure 1. Livestock production systems across East Africa (Robinson et al., 2014).
+
+
+
+
+(GHG) emissions, air pollution, high water consumption,           biological nitrification inhibition capacities of, for exam-
+loss of biodiversity, and land degradation (Herrero et al.,       ple, some Brachiaria spp.; and (iv) increase of above-
+2015). Therefore, sustainable intensification of livestock        ground biomass through integration of fodder trees in
+production systems has become a global research priority.         agroforestry or silvo-pastoral systems (Peters et al., 2013).
+In Sub-Saharan Africa (SSA), the primary aim is to                   In this perspective article, we argue that multidisciplin-
+improve smallholder livelihoods, while mitigating negative        ary farming systems approaches are essential to under-
+environmental impacts is a co-benefit through efficiency          stand the multiple roles and impacts of forages in
+gains (Campbell et al., 2014). Improved livestock feeding         smallholder livelihoods. Systems approaches are needed
+and forages have previously been highlighted as a triple-         that strive to overcome previous boundaries between dis-
+win strategy toward achieving climate-smart agriculture,          ciplines (interdisciplinary) and between research and
+increasing food security and resilience, and decreasing           practice (transdisciplinary) (Hieronymi, 2013). First, we
+GHG emission intensities (Bryan et al., 2013; Peters              outline the unique position of forages in crop-livestock
+et al., 2013; Thornton and Herrero, 2010). Climate change         systems and systemic obstacles to adoption that call for
+mitigation by improved forages can be achieved through (i)        multidisciplinary thinking. Second, we discuss the impor-
+increased carbon accumulation particularly in deeper soil         tance of matching forage technologies with agroecologi-
+layers through conversion from cropland to perennial, sown        cal and socioeconomic contexts and niches, and systems
+forages; (ii) reduced methane emissions from enteric fer-         agronomy that is required. Third, we demonstrate the
+mentation through higher nutritional value and digestibility      usefulness of farming systems modeling to estimate multi-
+of feed that reduces emissions per unit milk or meat pro-         dimensional impacts of forages and for reducing agro-
+duced; (iii) lower nitrous oxide emissions through high           environmental trade-offs.
+Paul et al.                                                                                                                3
+
+
+Systems thinking to address constraints                           linked to forages’ unique and pivotal position in crop-
+to forage adoption                                                livestock systems:
+                                                                     Land availability and tenure is not conducive: In areas
+Various studies from SSA have reported an inadequate              with high agroecological potential and population pressure,
+supply of quality feed. In the East African subhumid              farmers need to weigh between various land uses and asso-
+highlands, feed shortage is pronounced especially in              ciated opportunity costs. Food crops will often be priori-
+the dry season(s) or during prolonged dry spells                  tized over forage crops to ensure food self-sufficiency of
+(Lukuyu et al., 2009; Mutimura et al., 2015). In seven            the household. Cash crops, such as dry season horticultural
+sites across West and East Africa, livestock milk yield           crops, are an attractive income-generating activity when
+gaps ranged from 45% in Lushoto, Tanzania, 55% in                 markets are available (Makoni et al., 2013). In Kenya, milk
+Nyando, and 40% in Wote, both in Kenya (Henderson                 and meat production could be increased by 51% and 71%,
+et al., 2016).                                                    respectively, but 50–300% more cropland would have to be
+   Improved livestock feeding and forages can play an             converted to forages (Bosire et al., 2016). In Rwanda, one
+important role in alleviating such constraints in quantity        of the most highly populated countries in SSA, allocating
+and quality feed. Tropical forages include a wide variety         sufficient land to forage cultivation is a major challenge
+of sown or planted grasses, annual and perennial herbac-          (Klapwijk et al., 2014a). Lack of land tenure has been
+eous or dual-purpose legumes, and leguminous fodder               shown to discourage forage cultivation, especially for per-
+shrubs and trees that are integrated into different agricul-      ennial forages (Njarui et al., 2017).
+tural systems to increase livestock productivity. Due to             Entire production system needs to change: It requires a
+their diverse properties, they can play various roles and         substantive production system change and cultural shift to
+fulfill different objectives in crop-livestock systems (Rao       replace (parts of) free grazing with cut-and-carry feeding
+et al., 2015; Rudel et al., 2015). Although botanical names       of cultivated forages. Farmers who are unfamiliar with the
+have recently changed (Cook and Schultze-Kraft, 2015),            concept of investing labor for planting, management and
+we are referring throughout this article to original names        harvesting, and capital for seeds and land in producing
+as used in the publications cited. Grasses have been more         feed that was previously acquired “for free” are more
+popular than legumes among farmers due to lower mainte-           reluctant to start growing forages. Such investment is
+nance requirements for planting and weeding, less pest and        mostly common for food crops but not for feed (Thomas
+disease pressure, their perennial nature, and soil protection     and Sumberg, 1995). Moreover, improved feeding needs
+properties. Grasses are also regarded as more resilient and       to go hand in hand with a range of other technological
+universally adapted than legumes (Peters and Lascano,             changes to achieve expected production response. A
+2003). Napier grass (Pennisetum purpureum) is a C4 grass          farmer would have to improve the animal breed, provide
+native to SSA and widely used in cut-and-carry systems in         drinking water, ensure veterinary services, and improve
+East Africa due to its high herbage yields per unit area and      animal husbandry in order to reap benefits of higher milk
+relative tolerance to intermittent drought. However, it           production from feed improvements (Ndah et al., 2017).
+requires high soil fertility and is subject to disease pressure   The adoption of several technologies at the same time is a
+including stunt and smut diseases (Negawo et al., 2017).          challenge to smallholder farmers lacking investment
+There are other well-documented forage technologies:              capacity and access to knowledge.
+leguminous fodder shrubs/trees including Calliandra                  Production intensification might not be primary
+calothyrsus, Sesbania sesban, and Leucaena trichandra in          objective: Most fundamentally, an obstacle to adoption
+East Africa (Place et al., 2009); and herbaceous legumes          might be that a farmer’s objective has not been well
+(Stylosanthes guianensis, Stylosanthes hamata, and                defined (Sumberg, 2002). In SSA, farmers often manage
+Mucuna pruriens) and dual-purpose legumes such as                 livestock according to the weighing of their functions.
+cowpea (Vigna unguiculata) and groundnut (Arachis                 Production intensification may not be the main priority
+hypogea) in West Africa (Kristjanson et al., 2005).               for farmers that primarily keep livestock for providing
+Increased forage availability (P. purpureum or Brachiaria         drought power, as assets and risk management strategy,
+hybrid cv. Mulato II, and Desmodium uncinatum cv. Sil-            or for cultural reasons (Thomas and Sumberg, 1995).
+verleaf—silverleaf desmodium—or Desmodium intortum                Multifunctionality of livestock might provide incentives
+cv. Greenleaf—greenleaf desmodium) has been a wel-                for keeping large livestock herds at low productivity
+comed byproduct of the well-documented push–pull                  levels, instead of reducing stocking rates and investing
+system (Kassie et al., 2018).                                     in increased productivity (Descheemaeker et al., 2016a).
+   However, farmers’ adoption of tropical forage technol-
+ogies remains below expectations (de Haan et al., 2006;
+Owen et al., 2012). Often-cited reasons include the lack          Systems agronomy to match forages with
+of awareness and knowledge, low support and investment
+                                                                  agroecological and socioeconomic
+from national and local authorities, lack of available, acces-
+sible and affordable forage seed and planting material, and       contexts
+lack of market linkages for inputs and outputs (Ndah et al.,      Systemic obstacles to forage adoption, most notably land
+2017; Owen et al., 2012; Peters et al., 2003). Several            requirements and production objectives, underline
+deeper-lying, systemic reasons can be identified that are         the necessity of matching forage technologies with
+4                                                                                                  Outlook on Agriculture XX(X)
+
+
+
+
+Figure 2. Napier grass grown on contours and terraces in Butare, Rwanda (a), and Napier intercropped with green peas in front, and
+Desmodium distortum with Napier grass in the background in Burera, Rwanda (b). Photo credits: Birthe Paul.
+
+
+agroecological and socioeconomic contexts. Diverse                grasses with food legumes on cropping land is another
+forages can occupy different niches and fulfill different         niche, such as Napier grass with green peas (Pisum sati-
+objectives in a given farming system. Skillful spatial and        vum) (Figure 2(b)). The suitability of those niches depends
+temporal integration into cropping systems, especially with       on biophysical conditions and tolerance of forage species
+food crops, is key in not compromising smallholders’ food         to, for example, soil acidity, slope, and shade, as well as
+security and deliver multiple benefits (Ates et al., 2018;        socioeconomic factors such as distance to farms, policy
+Rudel et al., 2015). The concept of socio-ecological niches       regulations (Umunezero et al., 2016), and gender-related
+refers to best-fit agricultural improvements that are adapted     access to land. In highland areas in Madagascar, Brachiaria
+to the agroecological, sociocultural, economic, and institu-      hybrid cv. Mulato and dual-purpose legumes Lablab pur-
+tional contexts (Descheemaeker et al., 2016b).                    pureus, Vicia villosa, Arachis pintoi, and S. guianensis
+    Few incipient studies have been conducted toward iden-        have been used as cover crop in conservation agriculture
+tifying cropping systems and socio-ecological niches for          systems integrated with cassava, rice, and maize. A 30–
+forages in SSA. In Rwanda, shade-tolerant grasses and             60% residue retention rate was shown to be beneficial for
+legumes such as Brachiaria spp., greenleaf and silverleaf         soil fertility without compromising dairy cow feeding
+desmodium, and M. pruriens could be suitable for planting         (Maass et al., 2015; Naudin et al.,2012). On-farm partici-
+below public and private woodlots and bananas (Umune-             patory research from DR Congo has demonstrated that 43%
+zero et al., 2016). Farm boundaries, roadside terraces, and       of farmers decided to intercrop forages with food crops
+contours have been popular niches for Napier grass and            such as maize or cassava, especially legumes such as S.
+fodder shrubs/trees, especially in erosion-prone areas in the     guianensis, Canavalia brasiliensis, and silverleaf desmo-
+highlands of Rwanda (Figure 2(a)). Integration of forage          dium. The choice of forage species and their integration
+Paul et al.                                                                                                                          5
+
+
+
+
+Figure 3. The role of improved forage technologies in mixed crop-livestock farming systems and their potential impacts on pro-
+ductivity, environment, and livelihood dimensions. The farming system is subdivided into crops and soil, livestock and manure, and
+household components.
+
+
+into farming systems depended on many factors, including           Moreover, participatory farmer-led on-farm trials can
+soil fertility, land tenure, safety, and predominant livestock     support experiential learning by farmers to adapt and fit
+management system (Paul et al., 2016). The push–pull sys-          new technologies into their own systems (Paul et al.,
+tem integrates forage grasses and legumes with maize,              2014). Variability in forage agronomy data from SSA
+sorghum, or millet to decrease Striga and stemborer infes-         is often high. This can partly be explained by the adap-
+tation, thereby increasing cereal yields. Napier grass, or         tation of forages to a wide range of agroecological con-
+Brachiaria hybrid cv. Mulato II in drier areas, is planted         ditions and yield variation depending on cultivar and its
+around the cereal crop to attract and trap stemborer moths.        interactions with cutting regime and fertilization. How-
+Silverleaf desmodium, and greenleaf desmodium in drier             ever, there is also a lack of applying standardized meth-
+areas, is intercropped with the cereal and causes abortive         ods in forage agronomy data collection and analysis,
+germination of Striga due to root exudates (Khan et al.,           which reduces comparability across sites. Forage agron-
+2014). The smart use of agro-biodiversity in the push–pull         omy has been less resourced than that of other field
+system is providing spatial niches for forage crops that have      crops, resulting in fewer publications and less estab-
+shown to benefit farmers (Chepchirchir et al., 2018).              lished evaluation methods. Multi-locational, consistent,
+    However, more systems agronomy is needed to produce            high quality, and inter-operational data are crucial for
+robust socio-ecological niches for various systems that can        forage agronomy to keep pace with the challenge of
+be scaled. Agronomy research, in general, has been criti-          scalability and the evolution of (big) data science, geos-
+cized for lacking “scalability” by emphasizing local rele-         patial analytics, and decision support tools to produce
+vance of research results. Researcher-controlled trials are        context-specific advice.
+well suited to identify single yield-influencing factors and
+to elucidate underlying mechanisms. However, they fail to
+                                                                   Systems modeling for reducing
+predict realistic performance under farmers’ conditions, as
+yields are determined by the interplay of several factors          agro-environmental trade-offs
+within environment, genotype, and management domains.              Improved forages are thus at a unique position of mixed
+Only a small proportion of farmers will reach the average          farming systems, directly linking crop, livestock, and soil
+yield under experimentation, owing to the large variability        components. Changes in livestock feeding can have mul-
+of agroecological conditions and management that affect            tiple impacts on productivity, environmental, and liveli-
+performance. Statistical methods continue evolving to con-         hood dimensions across various crop-livestock systems
+sider and embrace this variability (Vanlauwe et al., 2016).        (Figure 3).
+6                                                                                                 Outlook on Agriculture XX(X)
+
+
+   Farming systems approaches and modeling can be used        Conclusions
+to explore forage integration and relationships with vari-
+                                                              In this perspective article, we have shown that improved
+ous other components of farming systems and estimate
+                                                              forages in East Africa are at a crossroads: if adopted by
+their multidimensional impacts and trade-offs. Models are
+                                                              farmers at scale, they can be a cornerstone of pathways
+useful to study and predict the behavior and performance
+                                                              toward intensified sustainable livestock systems in East
+of agro-ecosystems. They can also reduce resource
+                                                              Africa. Forages occupy a key role in smallholder farming
+requirements from field and farm experimental research,
+                                                              systems, linking soil, crop, and livestock components.
+and they can help to formulate management recommen-
+                                                              Changes in livestock feeding can have multidimensional
+dations (Jones et al., 2017). Agricultural systems model-
+                                                              impacts on farmers’ livelihoods in terms of productivity
+ing has been applied to questions of system intensification
+                                                              and environmental quality. Systemic characteristics,
+and diversification beyond single crops and minimizing
+                                                              including the need to change the entire production system
+trade-offs and exploiting synergies between system com-
+                                                              and multidimensionality of livestock, affect adoption of
+ponents (Groot et al., 2017). Trade-offs influence the
+                                                              improved forages and call for multidisciplinary thinking.
+adoptability, impact, and sustainability of possible inno-
+                                                              Further, forage technologies need to be matched with
+vations and future pathways. Trade-off analysis often
+                                                              agroecological and socioeconomic contexts to address
+employs interdisciplinary, bio-economic models to
+                                                              competition for land and fulfill various production objec-
+address those multiple dimensions in one approach.
+                                                              tives. Robust, “scalable” systems agronomy is needed to
+Multi-objective optimization, in particular, is considered
+                                                              develop context-specific advice and decision support on
+a useful approach as farmers are not ultimate profit max-
+                                                              socio-ecological niches for forages. Farming systems mod-
+imizers but have to balance various functions of their
+                                                              eling can be employed to estimate multidimensional
+production system (Kanter et al., 2016; Klapwijk et al.,
+                                                              impacts of forages and for reducing agro-environmental
+2014b; Salmon et al., 2018). Quantitative systems model-
+                                                              trade-offs. Translating modeling results into decision
+ing can help to systematically explore trade-off frontiers,
+                                                              advice, without losing sight of farming systems intrinsic
+which can be expected to be different for farm types with
+                                                              complexities, needs further development. Multidisciplinary
+contrasting biophysical conditions and resource endow-
+                                                              farming systems approaches are pivotal to bring tropical
+ment (Groot et al., 2012). Changes in available technolo-
+                                                              forages into wider use and to support sustainable livestock
+gies, market conditions, and policies can lead to
+                                                              development trajectories in East Africa.
+adjustment of the efficiency frontiers and can, thus,
+reduce the trade-offs between performance criteria such
+                                                              Acknowledgments
+as profitability and GHG mitigation (Descheemaeker
+                                                              Thanks to José Luis Urrea Benitez for assistance with designing
+et al., 2016a). Ex ante impact assessment and prioritiza-
+                                                              Figure 3 and John Yumbya Mutua for mapping livestock systems
+tion studies are increasingly important to target scarce
+                                                              in Figure 1. Our gratitude goes out to the journal’s editor for
+research and development resources and support decisions      useful comments on an initial draft of this article that helped
+for improved adaptation and mitigation of mixed crop-         improving its quality.
+livestock systems in SSA (Descheemaeker et al., 2016a;
+van Wijk et al., 2014).                                       Declaration of conflicting interests
+   To date, there are only a few recent studies that employ   The author(s) declared no potential conflicts of interest with
+farming systems modeling tools to explore potential whole-    respect to the research, authorship, and/or publication of this
+farm multidimensional impacts of planted forages. Simula-     article.
+tion results from Tanzania illustrated that households with
+improved cattle would be able to achieve a higher income      Funding
+and lower methane emission intensity with improving qual-     The author(s) disclosed receipt of the following financial support
+ity and quantity of their feed than households with local     for the research, authorship, and/or publication of this article: This
+cattle (Shikuku et al., 2017). Multi-objective optimization   article was written and published as part of the CGIAR Research
+of various smallholder livestock systems in Northern Tan-     Program on Livestock. We thank all donors that globally support
+zania revealed how reducing ruminant numbers, replacing       our work through their contributions to the CGIAR system.
+local cattle with improved dairy breeds, and improving
+feeding through on-farm Napier grass cultivation were         ORCID iD
+synergetic options, although systemic obstacles to adoption   Birthe K Paul    https://orcid.org/0000-0002-5994-5354
+existed (Paul et al., 2020). The improved livestock feeding   Brigitte L Maass    https://orcid.org/0000-0002-6164-3515
+scenario in Rwanda increased food security at only a small
+GHG trade-off, although it was the least equitable strategy   References
+reaching more well-off farmers (Paul et al., 2018). Strik-    Alexandratos N and Bruinsma J (2012) World Agriculture
+ingly, integrated knowledge on the potential impacts and         Towards 2030/2050: The 2012 Revision. ESA Working Paper
+trade-offs of improved forages on productivity, environ-         No. 12-03. Rome: FAO.
+ment, and livelihood dimensions across various                Ates S, Cicek H, Bell LW, et al. (2018) Sustainable development
+crop-livestock systems in East Africa is still limited and       of smallholder crop-livestock farming in developing countries.
+fragmented and has not been consistently translated into         IOP Conference Series: Earth and Environmental Science
+decision advice.                                                 142(1): 012076.
+Paul et al.                                                                                                                             7
+
+
+Bosire CK, Krol MS, Mekonnen MM, et al. (2016) Meat and milk           Khan Z, Midega C, Pittchar J, et al. (2014) Achieving food secu-
+   production scenarios and associated land footprints in Kenya.          rity for one million Sub-Saharan African poor through push-
+   Agricultural Systems 145: 64–75.                                       pull innovation by 2020. Philosophical Transactions of the
+Bryan E, Ringler C, Okoba B, et al. (2013) Can agriculture sup-           Royal Society, Series Biological Sciences 369: 20120284.
+   port climate change adaptation, greenhouse gas mitigation and       Klapwijk CJ, Bucagu C, van Wijk MT, et al. (2014a) The “one
+   rural livelihoods? Insights from Kenya. Climatic Change                cow per poor family” programme: current and potential fodder
+   118(2): 151–165.                                                       availability within smallholder farming systems in Southwest
+Campbell BM, Thornton P, Zougmoré R, et al. (2014) Sustainable           Rwanda. Agricultural Systems 131: 11–22.
+   intensification: what is its role in climate smart agriculture?     Klapwijk CJ, van Wijk M, Rosenstock T, et al. (2014b) Analysis
+   Current Opinion in Environmental Sustainability 8: 39–42.              of trade-offs in agricultural systems: current status and way
+Chepchirchir RT, Macharia I, Murage AW, et al. (2018) Ex-post             forward. Current Opinion in Environmental Sustainability 6:
+   economic analysis of push-pull technology in Eastern Uganda.           110–115.
+   Crop Protection 112: 356–362.                                       Kristjanson P, Okike I, Tarawali S, et al. (2005) Farmers’ percep-
+Cook BG and Schultze-Kraft R (2015) Botanical name changes –              tions of benefits and factors affecting the adoption of improved
+   nuisance or a quest for precision? Tropical Grasslands –               dual-purpose cowpea in the dry savannas of Nigeria. Agricul-
+   Forrajes Tropicales 3: 34–40.                                          tural Economics 32: 195–210.
+De Haan NC, Romney D, Bezkorowajnyj P, et al. (2006) Feeding           Lukuyu BA, Kitalyi A, Franzel S, et al. (2009) Constraints and
+   livestock through partnerships. Knowledge Management for               Options to Enhancing Production of High Quality Feeds in
+   Development Journal 2(3): 123–135.                                     Dairy Production in Kenya, Uganda and Rwanda. ICRAF
+Descheemaeker K, Oosting SJ, Homann-Kee Tui S, et al. (2016a)             Working Paper 95. Nairobi, Kenya: World Agroforestry Cen-
+   Climate change adaptation and mitigation in smallholder crop-          tre. Available at: https://cgspace.cgiar.org/handle/10568/1054.
+   livestock systems in Sub-Saharan Africa: a call for integrated      Maass B, Midega CAO, Mutimura M, et al. (2015) Homecoming
+   impact assessments. Regional Environmental Change 16(8):               of brachiaria: improved hybrids prove useful for African ani-
+   2331–2343.                                                             mal agriculture. East Africa Agricultural and Forestry Journal
+Descheemaeker K, Ronner E, Ollenburger M, et al. (2016b)                  81(1): 71–78.
+   Which options fit best? Operationalizing the socio-ecological       Makoni N, Mwai R, Redda T, et al. (2013) White Gold; Oppor-
+   niche concept. Experimental Agriculture 55(S1): 169–190.               tunities for Dairy Sector Development Collaboration in East
+Groot JCJ, Kennedy G, Remans R, et al. (2017) Integrated                  Africa. CDI Report CDI-14-006. Wageningen: Centre for
+   systems research in nutrition-sensitive landscapes: a theoreti-        development innovation, Wageningen UR (University &
+   cal methodological framework. In: Oborn I, Vanlauwe B,                 Research Centre).
+   Phillips M, et al. (eds) Sustainable Intensification in Small-      Mutimura M, Ebong C, Rao IM, et al. (2015) Nutritional values of
+   holder Agriculture – An Integrated Systems Research                    available ruminant feed resources in smallholder dairy farms
+   Approach. London: Routledge.                                           in Rwanda. Tropical Animal Health and Production 47:
+Groot JCJ, Oomen GJM and Rossing WAH (2012) Multi-                        1131–1137.
+   objective optimization and design of farming systems. Agri-         Naudin K, Scopel E, Andriamandroso ALH, et al. (2012) Trade-
+   cultural Systems 110: 63–77.                                           offs between biomass use and soil cover. The case of rice-
+Henderson B, Godde C, Medina-Hidalgo D, et al. (2016) Closing             based cropping systems in the Lake Alaotra region of
+   system-wide yield gaps to increase food production and miti-           Madagascar. Experimental Agriculture 48(2): 194–209.
+   gate GHGS among mixed crop – livestock smallholders in              Ndah T, Schuler J, Nkwain VN, et al. (2017) Factors Affecting the
+   Sub-Saharan Africa. Agricultural Systems 143: 106–113.                 Adoption of Forage Technologies in Smallholder Dairy Pro-
+Herrero M, Grace D, Njuki J, et al. (2013) The roles of livestock in      duction Systems in Lushoto, Tanzania. CIAT Working Paper.
+   developing countries. Animal: An International Journal of              CIAT Working Paper. Cali, Colombia: International Center
+   Animal Bioscience 7( Suppl 1): 3–18.                                   for Tropical Agriculture (CIAT). Available at: https://
+Herrero M, Wirsenius S, Henderson B, et al. (2015) Livestock and          cgspace.cgiar.org/handle/10568/89807.
+   the environment: what have we learned in the past decade?           Negawo A, Teshome A, Kumar A, et al. (2017) Opportunities for
+   Annual Review of Environment and Resources 40(1):                      Napier grass (Pennisetum purpureum) improvement using
+   177–202.                                                               molecular genetics. Agronomy 7(2): 28.
+Hieronymi A (2013) Understanding systems science: a visual and         Njarui DM, Gatheru M, Gichangi EM, et al. (2017) Determinants
+   integrative approach. Systems Research and Behavioral Sci-             of forage adoption and production niches among smallholder
+   ence 30: 580–595.                                                      farmers in Kenya. African Journal of Range & Forage Science
+Jones JW, Antle JM, Basso B, et al. (2017) Brief history of agri-         34(3): 157–166.
+   cultural systems modeling. Agricultural Systems 155:                Owen E, Smith T and Makkar H (2012) Successes and failures
+   240–254.                                                               with animal nutrition practices and technologies in developing
+Kanter DR, Musumba M, Wood SLR, et al. (2016) Evaluating                  countries: a synthesis of an FAO e-conference. Animal Feed
+   agricultural trade-offs in the age of sustainable development.         Science and Technology 174(3–4): 211–226.
+   Agricultural Systems 163: 73–88.                                    Paul BK, Frelat R, Birnholz C, et al. (2018) Agricultural intensi-
+Kassie M, Stage J, Diiro G, et al. (2018) Push–pull farming system        fication scenarios, household food availability and greenhouse
+   in Kenya: implications for economic and social welfare. Land           gas emissions in Rwanda: ex-ante impacts and trade-offs.
+   Use Policy 77: 186–198.                                                Agricultural Systems 163: 16–26.
+8                                                                                                         Outlook on Agriculture XX(X)
+
+
+Paul BK, Groot JCJ, Birnholz CA, et al. (2020) Reducing agro-              improve livelihoods and ecosystem services in the tropics.
+   environmental trade-offs through sustainable livestock inten-           Tropical Grasslands – Forrajes Tropicales 3: 59–82.
+   sification across smallholder systems in Northern Tanzania.          Robinson TP, Wint GRW, Conchedda G, et al. (2014) Mapping
+   International Journal for Agricultural Sustainability, 18(1):           the global distribution of livestock. PLoS One 9(5): e96084.
+   35–54.                                                               Rudel TK, Paul B, White D, et al. (2015) Livestockplus: forages,
+Paul BK, Muhimuzi FL, Bacigale S, et al. (2016) Towards an                 sustainable intensification, and food security in the tropics.
+   assessment of on-farm niches for improved forages in Sud-               Ambio 44: 685–693.
+   Kivu, DR Congo. Journal of Agriculture and Rural Develop-            Salmon G, Teufel N, Baltenweck I, et al. (2018) Trade-offs in
+   ment in the Tropics and Subtropics 117(2): 243–254.                     livestock development at farm level: different actors with dif-
+Paul BK, Pypers P, Sanginga JM, et al. (2014) ISFM adaptation              ferent objectives. Global Food Security 17: 103–112.
+   trials: farmer-to-farmer facilitation, farmer-led data collection,   Shikuku KM, Valdivia RO, Paul BK, et al. (2017) Prioritizing
+   technology learning and uptake. In: Vanlauwe B, van Asten P             climate-smart livestock technologies in rural Tanzania:
+   and Blomme G (eds) Challenges and Opportunities for Agri-               a minimum data approach. Agricultural Systems 151:
+   cultural Intensification of the Humid Highland Systems of               204–2016.
+   Sub-Saharan Africa. Switzerland: Springer International              Sumberg J (2002) The logic of fodder legumes in Africa. Food
+   Publishing.                                                             Policy 27(3): 285–300.
+Peters M and Lascano CE (2003) Forage technology adoption:              Thomas D and Sumberg JE (1995) A review of the evaluation and
+                                                                           use of tropical forage legumes in Sub-Saharan Africa. Agri-
+   linking on-station research with participatory methods. Tropi-
+                                                                           culture, Ecosystems & Environment 54(3): 151–163.
+   cal Grasslands 37: 197–203.
+                                                                        Thornton PK and Herrero M (2010) Potential for reduced methane
+Peters M, Herrero M, Fisher M, et al. (2013) Challenges and
+                                                                           and carbon dioxide emissions from livestock and pasture man-
+   opportunities for improving eco-efficiency of tropical
+                                                                           agement in the tropics. Proceedings of the National Academy
+   forage-based systems to mitigate greenhouse gas emissions.
+                                                                           of Sciences 107(46): 19667–19672.
+   Tropical Grasslands – Forrajes Tropicales 1: 137–149.
+                                                                        Umunezero O, Mwendia S, Paul BK, et al. (2016). Identifying and
+Peters M, Lascano CE, Roothaert R, et al. (2003) Linking research
+                                                                           characterizing areas for potential forage production in
+   on forage germplasm to farmers: the pathway to increased
+                                                                           Rwanda. CIAT Working Paper No. 417. Cali, Colombia: Inter-
+   adoption—a CIAT, ILRI and IITA perspective. Field Crops
+                                                                           national Center for Tropical Agriculture (CIAT). Available at:
+   Research 84(1): 179–188.
+                                                                           https://cgspace.cgiar.org/handle/10568/75629.
+Place F, Roothaert R, Maina L, et al. (2009) The Impact of Fodder
+                                                                        Van Wijk MT, Rufino MC, Enahoro D, et al. (2014) Farm house-
+   Trees on Milk Production and Income Among Smallholder
+                                                                           hold models to analyse food security in a changing climate: a
+   Dairy Farmers in East Africa and the Role of Research.                  review. Global Food Security 3(2): 77–84.
+   ICRAF Occasional Paper No. 12. Nairobi, Kenya: World                 Vanlauwe B, Coe R and Giller KE (2016) Beyond averages: new
+   Agroforestry Center.                                                    approaches to understand heterogeneity and risk of technology
+Rao I, Peters M, Castro A, et al. (2015) Livestockplus: the sus-           success or failure in smallholder farming. Experimental Agri-
+   tainable intensification of forage-based agricultural systems to        culture 55: 84–106.

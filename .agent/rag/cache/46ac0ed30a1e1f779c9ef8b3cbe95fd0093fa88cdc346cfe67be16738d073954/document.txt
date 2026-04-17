@@ -1,0 +1,578 @@
+                                  Revista Brasileira de Geografia Física 04 (2011) 793-804
+
+
+                                Revista Brasileira de
+                                 Geografia Física
+    ISSN:1984-2295
+                                         Homepage: www.ufpe.br/rbgfe
+
+    Métodos de Interpolação Matemática no Mapeamento de Chuvas do Estado do
+                                 Mato Grosso
+                     Francisco F. N. Marcuzzo1, Lucas R. de Andrade2, Denise C. R. Melo 3
+1
+  Eng°, Dr., Pesquisador em Geociências, CPRM/SGB - Serviço Geológico do Brasil – R. 148, n° 485 - Setor Marista -
+Goiânia/GO, CEP 74170-110. Tel. (62) 3240-1429. francisco.marcuzzo@cprm.gov.br.
+2
+  Eng°, Universidade Federal de Goiás, Escola de Engenharia Elétrica e de Computação, Av. Universitária, n° 1488 -
+CEP 74605-010 - Setor Leste Universitário - Goiânia/GO - Tel. (62) 3209-6292 – lucasreidrade@gmail.com.
+3
+  Enga, Pesquisadora em Geociências, CPRM/SGB - Serviço Geológico do Brasil – R. 148, n° 485 - Setor Marista -
+Goiânia/GO, CEP 74170-110. Tel. (62) 3240-1431. denise.melo@cprm.gov.br.
+
+                               Artigo recebido em 17/08/2011 e aceito em 01/12/2011
+RESUMO
+Uma correta análise da distribuição espacial das precipitações pluviométricas é de suma importância para o
+planejamento dos recursos hídricos de bacias hidrográficas, além de dar suporte a estudos climatológicos e
+meteorológicos. O objetivo deste trabalho foi o de estudar detalhadamente os métodos de interpolação matemática que
+geram regionalização de pontos por isolinhas, visando descobrir analiticamente o melhor método para espacialização de
+pontos com dados pluviométricos. Foram utilizados dados de precipitação mensal de 76 Estações Pluviométricas
+distribuídas no território do estado do Mato Grosso. Os dados foram obtidos da Agência Nacional de Águas,
+correspondendo à série histórica de 1977 a 2006. Os dados, depois de tratados e consistidos, foram submetidos a
+diversas metodologias de interpolação matemática com o intuito de verificar qual deles é mais adequado a
+espacialização de chuvas. Como resultados são apresentados mapas da distribuição espacial das chuvas no estado de
+Mato Grosso feitos usando os métodos de interpolação matemática IDW, Krigagem, Spline de tensão e Topo-to-
+Raster.Conclui-se que, para o estado do Mato Grosso, os melhores resultados foram obtidos através do método de
+interpolação Topo-to-Raster.
+Palavras-chave: Pluviometria, espacialização de chuvas, precipitação pluviométrica.
+
+           Interpolation Methods in Mathematics of Rainfall Mapping of the State of
+                                     Mato Grosso
+ABSTRACT
+A correct analysis of the spatial distribution of pluviometric precipitation is critical for planning water resources in
+hydrographic basins, and supporting meteorological and climatological studies. The objective of this paper was to study
+in detail the methods of mathematical interpolation that are used to generate regionalization of points per contour,
+seeking out analytically the best method for spatialization of the points with pluviometric data. As data source were
+used monthly precipitation data from 76 pluviometric stations distributed on the territory of the state of Mato Grosso.
+The data were obtained from the National Water Agency, corresponding to a time series from 1977 to 2006. The data,
+after treatment and consisted, were subjected to various methods of mathematical interpolation in order to see which
+one is best suited to the spatialization of rainfall. Results are presented as maps of the spatial distribution of rainfall in
+the state of Mato Grosso made using the methods of mathematical interpolation IDW, Kriging, Tension Spline and
+Topo-to-Raster. We conclude that, for the state of Mato Grosso, the best results were obtained by the interpolation
+method Topo-to-Raster.
+Key-words: Pluviometry, Spatialization of rainfall, pluviometric precipitation.
+
+1. Introdução                                                    espacial das precipitações pluviométricas é de
+           Uma correta análise da distribuição                   suma importância para o planejamento dos
+
+* E-mail para correspondência: francisco.marcuzzo@cprm.gov.br
+(Marcuzzo, F. F. N.).
+Marcuzzo, F. F. N.; Andrade, L. R.; Melo, D. C. R                                                                         793
+                                  Revista Brasileira de Geografia Física 04 (2011) 793-804
+
+recursos hídricos em bacias hidrográficas, além                 Espacialização da Precipitação para o Estado
+de dar suporte a estudos climatológicos e                       de Alagoas, o método de interpolação IDW que
+meteorológicos.                                                 cada ponto assume tem uma influencia na
+         O processo mais utilizado para essa                    região ao seu redor que varia com uma
+representação das precipitações pluviométricas                  potência do inverso da distância, sendo um
+é o traçado das isoietas, que são curvas que                    método simples, enquanto que o método Spline
+unem os pontos de igual altura de precipitação                  é utilizado para o ajuste de uma superfície de
+para um período determinado. O conhecimento                     curvatura mínima que passa pelos pontos de
+do regime pluviométrico geral da região e dos                   entrada, sendo apropriado quando        há a
+fatores que podem influenciar na distribuição é                 tendência de variações gradativas nos valores
+imprescindível para um traçado razoável das                     do fenômeno a ser interpolado (Amorim et al.,
+curvas isoietas (Garcez e Alvarez, 1998). Para                  2006).
+gerar as isoietas é necessário que se utilizem os                        Hutchinson et al. (2009), em Locally
+dados de precipitações pluviométricas pontuais                  Adaptive Gridding of Noisy High Resolution
+para tentar chegar a uma aproximação dos                        Topographic Data, observa que o método
+dados de precipitação pluviométrica para toda                   ANUDEM (no qual o Topo-to-Raster é
+uma região, os métodos utilizado com essa                       baseado) é indicado para gerar modelos de
+finalidade são chamados de interpolação                         elevação acurados, já que o efeito erosivo da
+matemática.                                                     água altera substancialmente o contorno do
+Em krigagem e inverso do quadrado da                            relevo. Apesar disso o método ANUDEM pode
+distância para interpolação dos parâmetros de                   também ser utilizado para interpolar outros
+equação de chuvas intensas, observaram-se que                   tipos de modelo alem dos de elevação, como o
+para estimar os parâmetros de chuvas intensas                   de chuvas.
+trabalha-se com regressão múltipla não-linear                          Este estudo tem como objetivo principal
+utilizando-se séries históricas de dados de                     analisar diferentes métodos de interpolação
+chuvas máximas com vários tempos de duração                     matemática no traçado de isolinhas para o
+extraídas de pluviogramas cotados (Mello et                     mapeamento da precipitação pluviométrica no
+al., 2003). Quando não se dispõe deste                          estado do Mato Grosso, e como ocorre a
+instrumento, pode-se trabalhar com dados                        variabilidade espaço-temporal das chuvas.
+pluviométricos de chuvas máximas diárias
+anuais       aplicando-se          o      processo      de      2. Material e Métodos
+desagregação de chuvas, que é bastante                          2.1 Caracterização da vegetação, clima e dos
+comum.                                                          mecanismos de formação de chuvas no estado
+         Já em Avaliação de Dois métodos de                     do Mato Grosso
+
+
+
+Marcuzzo, F. F. N.; Andrade, L. R.; Melo, D. C. R                                                           794
+                                  Revista Brasileira de Geografia Física 04 (2011) 793-804
+
+        O estado do Mato Grosso está localizado                 do     Alto      Paraguai-Guaporé,    Planícies    e
+na região Centro-Oeste do Brasil, possui uma                    Pantanais        Mato-grossense,     Planícies    do
+área de 903.357,908 km², limita-se entre os                     Bananal (SEPLAN-MT, 1990).
+paralelos 8º a 19º Sul e os meridianos 51º a 62º                       Os principais mecanismos atmosféricos
+Oeste (Figura 1). O Mato Grosso possui 142                      que atuam no Centro-Oeste e em Mato Grosso
+municípios (Figura 2), agrupados em 22                          são a massa de ar equatorial continental,
+microrregiões        político-administrativas,          que     presente entre a primavera e verão, advinda do
+fazem parte de cinco mesorregiões (IBGE,                        efeito térmico e da elevada umidade, que se
+2009).                                                          desloca para o interior do país no sentido
+        À cobertura vegetal do estado lhe confere               noroeste para sudeste, provocando chuvas e a
+com três biomas, (Figura 1) que são: o bioma                    massa polar atlântica que é caracterizada pelo o
+do Cerrado, localizado na área central do                       acúmulo do ar polar, atuando com maior
+estado, ocupando uma superfície de 39%,                         freqüência no inverno, no sentido sul para o
+caracterizado por bosques abertos e um estrato                  norte, e favorece as quedas de temperatura e
+arbustivo rasteiro, com o predomínio de                         estiagem (Nimer, 1989).
+gramíneas e leguminosas; o bioma do Pantanal
+recobrindo uma área de 7%, onde apresentam
+áreas        permanentemente              alagadas        e
+temporariamente alagadas, com espécies de
+vegetação variando de higrófilas, hidrófilas e
+mesófilas, localizado ao sul do Mato Grosso; já
+ao norte se encontra o bioma da Floresta
+Amazônica (54%), caracterizado por árvores
+com altura variando de 20 a 30 m e troncos
+retos bem copados (SEPLAN-MT, 1990).
+        O relevo do território mato-grossense é
+                                                                Figura      1.    Localização    das 76    estações
+formado        por      nove       grandes          unidades
+                                                                pluviométricas utilizadas no estudo e os biomas
+geomorfológicas as quais se agrupam em
+                                                                (Amazônia, Cerrado e Pantanal) em que estão
+planaltos, planaltos residuais, depressões e
+                                                                instaladas.
+planícies, que são: Planalto dos Parecis,
+Planaltos Residuais do Alto Paraguai-Guaporé,                   2.2 Dados utilizados
+Planaltos Residuais da Amazônia Meridional,                            Foram utilizados neste trabalho dados de
+Depressões         da       Amazônia          Meridional,       precipitação       mensal       de   76    Estações
+Depressões do Araguaia-Tocantins, Depressões                    Pluviométricas distribuídas no território do
+
+
+
+Marcuzzo, F. F. N.; Andrade, L. R.; Melo, D. C. R                                                                 795
+                                          Revista Brasileira de Geografia Física 04 (2011) 793-804
+
+Centro-Oeste. No bioma Amazônico estão                                  em que, h(x, xi) - é a distância entre o ponto x e
+instalados 38 estações pluviométricas, no                               o ponto xi; e p - é o parâmetro de potência,
+bioma Cerrado existem 33 estações, no bioma                             geralmente igual a dois. Parâmetros de potência
+Pantanal existem cinco. Os dados foram                                  maiores enfatizam pontos mais próximos,
+obtidos Rede Hidrometeorológica Nacional da                             tornando o resultado menos suave. Parâmetros
+Agência Nacional de Águas (ANA) e o período                             de potência menores enfatizam pontos mais
+de dados correspondem à série histórica de 30                           distantes, tornando o resultado mais suave,
+anos (1977 a 2006).                                                     porém menos preciso.
+
+2.3 Interpolação matemática pelo método do                              2.4 Interpolação matemática pelo método da
+IDW                                                                     Krigagem
+         Uma das técnicas de interpolação mais                                  Krigagem é um método geoestatístico
+usadas para pontos espalhados espacialmente é                           que se baseia na Teoria das Variáveis
+o       IDW         (Inverse          Distance     Weighted      –      Regionalizadas, que supõe que a variação
+Ponderação do Inverso da Distancia). A                                  espacial de um fenômeno é estatisticamente
+interpolação por IDW determina os valores dos                           homogênea em uma área.
+pontos            usando            uma   combinação        linear              A variação espacial no método da
+ponderada dos pontos amostrados. O peso de                              Krigagem          é      quantificada   por     um
+cada ponto é o inverso de uma função da                                 semivariograma. O semivariograma é um
+distância.                                                              gráfico de dispersão da semivariância versus
+         Para o cálculo da interpolação do valor                        distância dos pontos amostrados, sendo que a
+de um ponto através do método do IDW,                                   semivariância é uma medida de dispersão, a
+utiliza-se a seguinte equação matemática:                               metade da variância. O semivariograma serve
+              n                                                         para analisar a dependência espacial entre as
+                        i Z(x i )
+             i 1                                                        amostras.
+Z(x)               n
+                                                           (1)
+                           i
+                                                                                O semivariograma é calculado a partir
+                   i 1
+                                                                        dos pontos amostrados usando a seguinte
+em que, Z(x) - é o valor do ponto que se deseja                         equação:
+interpolar; n - é a quantidade de pontos
+                                                                                 1 s
+próximos utilizados na interpolação do ponto x;                           (h)         {Z(x i ) Z(x i   h)}2       (3)
+                                                                                2n i 1
+Z(xi) - é o valor do ponto xi; e ωi - é o peso do
+valor de xi sobre o ponto x. Para se determinar                         em que, h - é uma distância; n é o numero de
+ωi utiliza-se a seguinte equação matemática:                            pontos amostrados separados pela distância h,
+
+             1
+                                                                        γ(h) - é a semivariância para a distância h, s - é
+    i                                                      (2)
+        h( x, x i ) p                                                   a quantidade de pares de pontos separada pela
+
+
+Marcuzzo, F. F. N.; Andrade, L. R.; Melo, D. C. R                                                                       796
+                                  Revista Brasileira de Geografia Física 04 (2011) 793-804
+
+distância h, z(x) - é o valor da amostra na                       para distâncias muito pequenas, devido a erros
+localidade x, e z(x+h) é o valor da amostra na                    de medição ou a variações de pequena escala, e
+localidade separada da localidade x pela                          c0 + c – chamado de sill, é o valor médio da
+distância h. Computacionalmente utiliza-se                        semivariância além da distância a, o valor de c
+para h uma faixa de distâncias para melhorar o                    também é chamado de partial sill.
+desempenho.                                                                 Para o cálculo da interpolação do valor
+       Para se determinar os pesos dos pontos                     de um ponto através do método de krigagem,
+amostrados          é      necessário            ajustar     o    utiliza-se a seguinte equação matemática:
+semivariograma          usando        um     modelo         que              n
+                                                                                       i Z(x i )
+depende do problema.                                              Z(x)      i 1
+                                                                                                                        (5)
+                                                                                     n
+
+       Abaixo está o modelo matemático que foi                                    i 1
+                                                                                          i
+
+
+usado para ajustar a semivariância (Figura 2),
+                                                                  em que, Z(x) - é o valor do ponto que se deseja
+sua forma e sua fórmula matemática.
+                                                                  interpolar; n - é a quantidade de pontos
+                                                                  amostrados cujos valores serão usados na
+                                                                  interpolação do ponto x; Z(xi) - é o valor do
+                                                                  ponto amostrado; e ωi é o valor do peso do
+                                                                  valor de Z(xi) sobre o ponto x.
+                                                                            Para se determinar os pesos ωi o método
+                                                                  de krigagem utilizado, que foi a krigagem
+                                                                  ordinária, deve resolver o seguinte sistema
+                                                                  matemático:
+                                                                  N
+                                                                        i (h ij )                (h j ),   j 1,..., n
+                                                                  i 1
+                                                                   N
+                                                                                                                        (6)
+                                                                        i   1
+                                                                  i 1
+
+Figura 2. Modelo de Semivariograma.
+                                                                  em que, ωi - é o peso para cada ponto; µ - é
+
+                   3h   1 h
+                              3                                   uma variável temporária; γ(h) - é o valor de
+         c0   c                   ,   se 0 h      a
+ (h)               2a   2 a                                       semivariância para pontos separados por uma
+                                                      (4)
+         c0   c,                      se h   a                    distância h; hij - é a distância entre os pontos xi
+ (0)   c0
+                                                                  e xj; hj - é a distância entre o ponto que se
+
+em que, a – é a distancia a partir da qual não há                 deseja calcular o valor x e o ponto xj.                     Na
+
+mais correlação espacial entre as variáveis, e,                   krigagem ordinária a soma dos pesos é igual a
+
+portanto não há aumento no semivariograma;                        um, e, portanto a equação 5 se resume à:
+
+c0 -, chamado de nugget, é o valor de γ para                                     n
+                                                                  Z(x)                    i   Z(x i )                   (7)
+distâncias iguais a zero, que indica as variações                                i 1
+
+
+
+
+Marcuzzo, F. F. N.; Andrade, L. R.; Melo, D. C. R                                                                             797
+                                     Revista Brasileira de Geografia Física 04 (2011) 793-804
+
+2.5 Interpolação matemática pelo método do                            soma (peso de tensão), quanto maior φ, maior a
+Spline de Tensão                                                      influência de derivadas de ordem superior
+        O método do Spline é um método de                             sobre a função resultante.
+interpolação que estima valores usando uma                                        A solução geral de S(x) é dada por:
+                                                                                                   N
+função matemática que minimiza a curvatura                            S(x)           T(x)                                                          (12)
+                                                                                                            j R(x, x j )
+                                                                                                  j 1
+da superfície resultando em uma superfície
+suave que passa exatamente pelos pontos de                            em que, T(x) - é uma função de „tendência‟; e
+
+entrada.                                                              R(x,xj) - é uma função da base radial cuja
+
+        Em geral, uma função Spline S(x) deve                         forma explícita é:
+
+preencher a condição de que S(x) para os                              R( x, x j )                E1( ) ln( ) CE
+                                                                                                       2
+                                                                                     r( x, x j )                                                   (13)
+pontos medidos deve ser igual a z(x) e ao
+                                                                                           2
+mesmo tempo a seminorma de suavização I(S)
+deve ser o menor possível.                                            em que, E1 - é a função exponencial integral;
+S(xj)=z(xj) e                                              (8)        CE - é a constante de Euler; e r - é a distancia
+
+I(S)=min                                                   (9)        entre p e pj definida por:
+em que, z(xj) - são os valores das variáveis nos                      r(x, x j )                x1         x j1
+                                                                                                                  2
+                                                                                                                           x2   x j2
+                                                                                                                                       2
+                                                                                                                                                   (14)
+pontos xj amostrados; e I(S) - é uma função que
+                                                                                  No caso do Spline de Tensão, T(x)=a1. As
+mede         a   suavização         de      S      chamada       de
+                                                                      constantes a1 e λj são determinadas se
+seminorma de suavização. Um ponto x é
+                                                                      resolvendo o seguinte sistema de equações:
+definido pelos valores (x1,x2) sendo x1 a
+                                                                                 N
+localização na coordenada x cartesiana e x2 a                         a1                   j R(x i , x j )        zi , i   1,..., N
+                                                                                 j 1
+                                                                                                                                                   (15)
+coordenada y cartesiana. A seminorma de                               N
+                                                                             j         0
+                                                                      j 1
+suavização I(S) é calculada através da equação
+(Hofierka et al., 2002):                                              em que, xi e xj - são os pontos amostrados; e zi
+
+                              | |
+                                            2                         - é o valor de z no local de xi.
+ 2
+I (S)        B                      S( x)       dx 1dx 2   (10)
+                      x1 1 x 2 2
+                                                                      2.6 Interpolação matemática pelo método do
+em que, α=(α1,α2), com α1 variando de 0 ao
+                                                                      Topo-to-Raster
+grau de x1 em S(x), α2 variando de 0 ao grau de
+                                                                                     A função Topo-to-Raster é um método de
+x2 em S(x), sendo |α|= α1+ α2, e Ω é a região
+                                                                      interpolação baseado no programa ANUDEM
+considerada do espaço bidimensional. B α é uma
+                                                                      desenvolvido                           por           Hutschinson,          que   foi
+constante não negativa definida pela equação:
+                                                                      especificamente feito para a criação de
+        0,                          se | | 0
+B        | |!             1                                (11)       Modelos                     de              Elevação             Digital    (DEM)
+                   2| |
+                                    , se | | 0
+         1! 2 !       (| | 1)!                                        hidrologicamente corretos.
+em que, φ - é o peso de termos particulares na                                       O programa interpola os dados de
+
+
+Marcuzzo, F. F. N.; Andrade, L. R.; Melo, D. C. R                                                                                                      798
+                                          Revista Brasileira de Geografia Física 04 (2011) 793-804
+
+elevação em uma grade regular, de modo                                  cada célula da grade conforme o método
+iterativo,           gerando         grades        sucessivamente       iterativo avança.
+menores, minimizando a soma de uma de                                           O programa utiliza um método multi-grid
+penalização de rugosidade (roughness penalty)                           simples     para    minimizar       a    equação   em
+e a soma dos quadrados dos resíduos                                     resoluções cada vez melhores, começando de
+(diferenças das elevações medidas e calculadas                          uma grade inicial larga até uma grade que
+pela função).                                                           tenha     resolução      definida       pelo   usuário,
+           Cada elevação em um determinado local                        respeitando restrições que garantem uma
+é dada por (Hutchinson et al., 2009):                                   estrutura de drenagem conectada.
+zi    f(x i , yi )    wi i                                   (16)
+em que, f(x,y) - é a função de interpolação,                            3. Resultados e Discussão
+definida por uma função B-spline; cada wi - é                           3.1 Análise das isoietas de precipitação
+uma constante positiva que representa o erro de                         pluviométrica total do período úmido e seco
+discretização do ponto i; e cada εi - é uma                                     Para a análise dos resultados dos
+amostra de uma variável aleatória de média                              diferentes métodos de interpolação matemática,
+zero e desvio padrão igual a um.                                        foram feitos mapas de precipitação do estado
+           Assumindo             que        cada     ponto     está     do Mato Grosso, para a média do total de
+localizado aleatoriamente dentro da célula do                           precipitação no período seco e no período
+modelo, a constante wi é definida por:                                  úmido.
+
+wi     hsi / 12                                              (17)
+em que, h - é o espaçamento da grade e si - é a                         3.2 Análise das isoietas de precipitação
+
+medida de inclinação da célula da grade                                 pluviométrica geradas pelo método do IDW
+
+associada com o ponto (xi,yi). A função f(x,y) é                                As Figuras 3 e 4 mostram o resultado da
+
+então estimada resolvendo uma aproximação                               interpolação matemática usando o método do
+
+na grade regular via método das diferenças                              IDW para o período seco e para o úmido.
+
+finitas que minimiza:                                                           Nota se uma das características do
+
+ n                               2                                      método, que é a geração de muitas “ilhas” de
+      zi    f( x i , yi ) / wi         J( f )                (18)
+i 1                                                                     dados, áreas pequenas envoltas por áreas
+em que, J - é a função de suavização da função                          maiores de valores diferentes de precipitação.
+f(x,y); λ            - é o parâmetro de suavização, a                   A geração de “ilhas” de dados, segundo a
+constante wi varia com cada iteração, em uma                            equação 2, se deve ao fato de que conforme a
+característica adaptativa local (locally adaptive                       distancia do ponto           a ser interpolado, em
+feature) já que a cada iteração do programa um                          relação a um ponto com dados, tende a zero, o
+novo valor de inclinação é disponibilizado para                         peso da influência desse ponto sobre o ponto a
+
+
+
+Marcuzzo, F. F. N.; Andrade, L. R.; Melo, D. C. R                                                                           799
+                                  Revista Brasileira de Geografia Física 04 (2011) 793-804
+
+ser interpolado tende a infinito, o que, de                     3.3 Análise das isoietas de precipitação
+acordo com a equação 1, leva ao fato de que a                   pluviométrica       geradas   pelo   método   de
+região ao redor de um ponto com dados será                      krigagem
+influenciada praticamente apenas por ele,                              As Figuras 5 e 6 mostram o resultado da
+podendo gerar tais “ilhas” ao redor de pontos                   interpolação      matemática pelo    método da
+de dados.                                                       krigagem para o período seco e para o úmido.
+
+
+
+
+Figura 3. Distribuição da precipitação para o
+período úmido do estado do Mato Grosso, pelo
+                                                                Figura 5. Distribuição da precipitação para o
+método do IDW.
+                                                                período úmido do Mato Grosso, pelo método
+                                                                de Krigagem.
+
+                                                                       O importante é notar como alguns pontos
+                                                                estão em regiões cuja faixa de valores difere do
+                                                                valor medido (Figuras 5 e 6), isso ocorre
+                                                                porque a krigagem é um método geoestatístico,
+                                                                e não exato. Observando a equação 4 observa-
+                                                                se que isso ocorre porque o valor de c0 não é
+                                                                nulo, ou seja mesmo para regiões muito
+                                                                próximas dos pontos amostrados pode ocorrer
+                                                                uma diferença dos valores amostrados para os
+Figura 4. Distribuição da precipitação para o                   valores interpolados, e portanto mesmo para
+período seco do estado do Mato Grosso, pelo                     regiões próximas a um ponto de dados, a
+método do IDW.                                                  influência desse ponto não será tão grande a
+
+
+
+Marcuzzo, F. F. N.; Andrade, L. R.; Melo, D. C. R                                                             800
+                                  Revista Brasileira de Geografia Física 04 (2011) 793-804
+
+ponto de não permitir a influência também de                    valores mais altos desse parâmetro indicam
+outros pontos sobre essa região.                                uma película mais rígida que se curva mais
+                                                                abruptamente,       e    valores   menores   desse
+                                                                parâmetro indicam uma película que se curva
+                                                                mais suavemente.
+
+
+
+
+Figura 6. Distribuição da precipitação para o
+período seco do Mato Grosso, pelo método de
+Krigagem.
+
+3.4 Análise das isoietas de precipitação                        Figura 7. Distribuição da precipitação para o
+pluviométrica geradas pelo método do Spline                     período úmido do estado do Mato Grosso, pelo
+       As Figuras 7 e 8 mostram o resultado da                  método do Spline.
+interpolação matemática pelo método do Spline
+de Tensão para o período seco e para o
+chuvoso.
+       O importante notar nesses mapas é que
+há a geração de ilhas sem nenhum valor de
+precipitação em seu interior, isso porque a
+superfície gerada pelo spline é como se fosse
+uma película que se curva com o valor medido
+pelos pontos, e com isso em alguns locais essa
+película se curva acima ou abaixo dos pontos
+ao seu redor.
+       Esse método gera linhas mais suaves,
+mas pode gerar muitas isolinhas indesejadas.                    Figura 8. Distribuição da precipitação para o
+Isso ocorre porque o parâmetro φ das equações                   período seco do estado do Mato Grosso, pelo
+11 e 13 dizem respeito à rigidez dessa película,                método do Spline.
+
+
+Marcuzzo, F. F. N.; Andrade, L. R.; Melo, D. C. R                                                              801
+                                  Revista Brasileira de Geografia Física 04 (2011) 793-804
+
+3.5 Análise das isoietas de precipitação                        estrutura de drenagem conectada. Com isso as
+pluviométrica geradas pelo método do Topo-to-                   isolinhas tentam alcançar mais pontos, essa
+Raster                                                          característica é muito útil ao gerar mapas de
+       As Figuras 9 e 10 mostram o resultado da                 relevo hidrologicamente corretos, mas é uma
+interpolação matemática pelo método do Topo-                    opção ruim para a geração de mapas de
+to-Raster, com enforce, para o período seco e                   altitudes de chuvas e temperaturas.
+para o chuvoso.                                                        As Figuras 11 e 12 mostram o resultado
+                                                                da interpolação matemática pelo método do
+                                                                Topo-to-Raster, sem enforce, para o período
+                                                                seco e para o chuvoso. Observa-se que neste
+                                                                caso o programa não usa as restrições para
+                                                                garantir uma estrutura de drenagem conectada,
+                                                                como se as altitudes de chuvas fossem altitudes
+                                                                no relevo, gerando um mapa mais correto que a
+                                                                sua versão com enforce. As isolinhas geradas
+                                                                são bem suaves, e com alguns pontos em áreas
+                                                                de valores diferentes, devido ao possível erro
+Figura 9. Distribuição da precipitação para o                   de discretização que se deve a quantidade finita
+período úmido do estado do Mato Grosso, pelo                    de representações de chuva no domínio
+método do Topo-to-Raster (com enforce).                         computacional em relação à quantidade real de
+                                                                chuvas possíveis no domínio real.
+
+
+
+
+Figura 10. Distribuição da precipitação para o
+período seco do estado do Mato Grosso, pelo
+método do Topo-to-Raster (com enforce).                         Figura 11. Distribuição da precipitação para o
+       Verifica-se que no caso das Figuras 9 e                  período úmido do estado do Mato Grosso, pelo
+10 o programa usa restrições para garantir uma                  método do Topo-to-Raster (sem enforce).
+
+
+Marcuzzo, F. F. N.; Andrade, L. R.; Melo, D. C. R                                                            802
+                                  Revista Brasileira de Geografia Física 04 (2011) 793-804
+
+                                                                maior suavidade das isolinhas e por coincidir
+                                                                melhor com as características altimétricas da
+                                                                região.
+                                                                       A krigagem é conhecida também pelo
+                                                                acrônimo      BLUE       (Best    Unbiased   Linear
+                                                                Estimator      –     Melhor      Estimador   Linear
+                                                                Imparcial), é linear, assim como o IDW, pois
+                                                                os valores estimados são combinações lineares
+                                                                ponderadas dos dados disponíveis, é imparcial
+                                                                porque a média dos erros é zero, e é melhor
+                                                                porque minimiza a variância dos erros. Esse
+Figura 12. Distribuição da precipitação para o
+                                                                método gera isolinhas não muito suaves e em
+período seco do estado do Mato Grosso, pelo
+                                                                pequenas quantidades, porém as isolinhas
+método do Topo-to-Raster (sem enforce).
+                                                                geradas podem conter muitos dados de valores
+4. Conclusões                                                   de precipitação pluviométrica em isolinhas de
+       Executou-se neste trabalho um estudo de                  valores diferentes se a quantidade de pontos for
+diferentes       tipos      de      metodologias         de     muito esparsa.
+interpolação matemática (IDW, Krigagem,                                O        IDW          é     um        método
+Spline de Tensão ou Topo-to-Raster) na                          computacionalmente rápido, já que a definição
+geração de mapas de distribuição espacial de                    dos pesos para a ponderação linear é feito de
+precipitação pluviométrica. Utilizou-se dados                   uma maneira simplista. Nesse método os
+sazonais de 30 anos de chuvas de estações                       pontos de dados estão no interior das isolinhas
+pluviométricas distribuídas no estado do Mato                   equivalentes, porém geralmente há a geração
+Grosso.                                                         de muitas ilhas de dados e as isolinhas
+       Conclui-se que para os dados utilizados                  geralmente não são muito suaves.
+de 76 estações pluviométricas distribuídas no                          O Spline de Tensão é um método não
+estado do         Mato     Grosso, o          método de         linear, e por isso gera um mapa com alterações
+interpolação         que      apresentou            melhores    mais graduais, e, com isso, isolinhas mais
+resultados, dentre os vários estudados, foi o                   suaves, porém essas alterações mais suaves no
+Topo-to-Raster. O método Topo-to-Raster foi o                   mapa podem gerar isolinhas desnecessárias por
+que se proporcionou as mais adequadas isoietas                  não conter pontos de dados em seu interior.
+por apresentar a grande maioria dos pontos                             Em ordem qualitativa decrescente, para
+interpolados dentro das isolinhas com os                        geração de isoietas de espacialização de
+valores pré-estabelecidos, além de possuir                      precipitação pluviométrica, concluí-se que para
+
+
+
+Marcuzzo, F. F. N.; Andrade, L. R.; Melo, D. C. R                                                               803
+                                  Revista Brasileira de Geografia Física 04 (2011) 793-804
+
+o presente estudo, os melhores métodos de                       Tension. Transactions in GIS, p. 135-150.
+interpolação       matemática         foram:        Topo-to-
+                                                                Hutchinson, M. F.; Stein, John A.; Stein, Janet
+Raster, Krigagem, IDW e o Spline deTensão.
+                                                                L.; Xu, T. (2009). Locally Adaptive Gridding
+                                                                of Noisy High Resolution Topographic Data.
+5. Agradecimentos
+                                                                18th World IMACS / MODSIM Congress,
+         Os autores agradecem a CPRM/SGB
+                                                                Cairns, Australia
+(Companhia de Pesquisa de Recursos Minerais
+/ Serviço Geológico do Brasil - Empresa
+                                                                Instituto Brasileiro de Geografia e Estatística.
+Pública de Pesquisa do Ministério de Minas e
+                                                                Brasília:     IBGE        (2009).    Disponível    em:
+Energia) pelo         fomento que viabilizou o
+                                                                http://www.ibge.gov.br/mapas_ibge/
+desenvolvimento deste trabalho e aos revisores
+anônimos que contribuíram para a melhoria do                    Mello, C. R.; Lima, J. M; Silva, A. M.; Mello,
+texto.                                                          J. M.; Oliveira, M. S (2003). Krigagem e
+                                                                inverso     do    quadrado      da    distância    para
+6. Referências                                                  interpolação dos parâmetros da equação de
+Amorim, R. C. F.; Ribeiro, A; Leite, C. C.;                     chuvas intensas. Revista Brasileira Ciência do
+Leal, B. G.; Silva, J. G. B. (2006). Avaliação                  Solo, vol.27, n.5, p. 925-933.
+de    dois     Métodos       de     Espacialização       da
+Precipitação para o Estado de Alagoas.
+                                                                                                                       .
+Congressos         Brasileiros       de     Meteorologia
+                                                                Rio de Janeiro, RJ; 2ª ed., 421 p.
+Disponível em:
+
+                                                                SEPLAN-MT (1990). Secretaria de Estado de
+Garcez,       L.N.;      Alvarez,         G.A.       (1998).
+                                                                planejamento          e       coordenação         geral,
+Hidrologia. São Paulo, Edgard Blucher LTDA,
+                                                                Superintendência de Estudos e Informações do
+291p.
+                                                                Estado de Mato Grosso. Disponível em
+Hofierka, J.; Parajka, J.; Mitasova,H.; Mitas,                  http://www.seplan.mt.gov.br/html/.            Acesso
+L.    (2002).      Multivariate       Interpolation       of    02/2011. http://www.anuario.seplan.mt.gov.br/
+Precipitation Using Regularized Spline with                     2002 /. Acesso 11/02/2010.
+
+
+
+
+Marcuzzo, F. F. N.; Andrade, L. R.; Melo, D. C. R                                                                    804

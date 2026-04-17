@@ -1,0 +1,293 @@
+                                                                                                                                           PDF Download
+                                                                                                                                           3626641.3627215.pdf
+                                                                                                                                           23 February 2026
+                                                                                                                                           Total Citations: 2
+                                                                                                                                           Total Downloads: 762
+    .
+    .
+        Latest updates: hps://dl.acm.org/doi/10.1145/3626641.3627215
+
+
+
+
+                                                                                                                                           .
+                                                                                                                                           .
+                                                                                                                                Published: 24 October 2023
+        .
+        .
+                                                                                                                                .
+    RESEARCH-ARTICLE
+
+
+
+
+                                                                                                                                .
+                                                                                                                                Citation in BibTeX format
+    Cale AutoID: Biometric for Cale Identification: Cale AutoID
+
+
+
+
+                                                                                                                                .
+                                                                                                                                .
+                                                                                                                                SIET 2023: International Conference on
+                                                                                                                                Sustainable Information Engineering and
+    WORAPAN KUSAKUNNIRAN, Mahidol University, Nakhon Pathom, Nakhon Pathom,                                                     Technology
+    Thailand                                                                                                                    October 24 - 25, 2023
+                                                                                                                                Badung, Bali, Indonesia
+    .
+    KUNTHORN PHONGLUELERT, Mahidol University, Nakhon Pathom, Nakhon Pathom,
+
+
+
+
+                                                                                                                                .
+                                                                                                                                .
+    Thailand
+    .
+    CHANATHIP SIRISANGPAIVAL, Mahidol University, Nakhon Pathom, Nakhon Pathom,
+    Thailand
+    .
+    OSH NARAYAN, Mahidol University, Nakhon Pathom, Nakhon Pathom, Thailand
+    .
+    KITTIKHUN THONGKANCHORN, Mahidol University, Nakhon Pathom, Nakhon Pathom,
+    Thailand
+    .
+    ANUWAT WIRATSUDAKUL, Mahidol University, Nakhon Pathom, Nakhon Pathom,
+    Thailand
+    .
+    .
+    .
+    Open Access Support provided by:
+    .
+    Mahidol University
+    .
+                                         SIET '23: Proceedings of the 8th International Conference on Sustainable Information Engineering and Technology (October 2023)
+                                                                                                                                  hps://doi.org/10.1145/3626641.3627215
+                                                                                                                                                     ISBN: 9798400708503
+.
+                      Cattle AutoID: Biometric for Cattle Identification
+                                                                     Cattle AutoID
+           Worapan Kusakunniran                                  Kunthorn Phongluelert                   Chanathip Sirisangpaival
+       Faculty of Information and                             Faculty of Information and                Faculty of Information and
+    Communication Technology, Mahidol                      Communication Technology, Mahidol         Communication Technology, Mahidol
+          University, Thailand                                   University, Thailand                      University, Thailand
+       worapan.kun@mahidol.edu                                bosskunthorn@gmail.com                    chanathip.pds@gmail.com
+
+                    Osh Narayan                                 Kittikhun Thongkanchorn∗                   Anuwat Wiratsudakul
+       Faculty of Information and                              Faculty of Information and            Department of Clinical Sciences and
+    Communication Technology, Mahidol                      Communication Technology, Mahidol          Public Health, Faculty of Veterinary
+          University, Thailand                                     University, Thailand              Science, Mahidol University, Thailand
+        osh.narayan@gmail.com                                 kittikhun.tho@mahidol.ac.th                  anuwat.wir@mahidol.edu
+
+ABSTRACT                                                                       1   INTRODUCTION
+Existing solutions of animal identification (i.e., cattle in this re-          Recently, the cattle identification system was designed to verify an
+search project) are based on RFID, ear tag, and microchip. However,            identity of cattle based on their facial features and face character-
+they are facing with difficulties of high cost, dislodged and lost,            istics [9]. The main usages are for illegal animal-trade prevention,
+and harm to human operators and animals. Therefore, this paper                 farm management, population control, conservation, and disease
+proposes a biometric based solution of cattle identification using             and movement control [9]. The well-known methods of cattle iden-
+cattle’s face images. The proposed method is developed using a                 tification are based on ear tag, RFID, and microchip.
+convolutional neural network (CNN) for both main steps of face                     However, the mentioned methods have limitations and chal-
+localization and face recognition. The face localization model is              lenges. Microchip must be implanted into a cattle body which could
+trained using a Single-Shot Detector (SSD) architecture, where the             hurt cattle and human operator during the implantation. While,
+face recognition model is trained based on FaceNet. The proposed               using ear tag is simpler to implement with a lower cost, but it could
+method is validated using our dataset containing 2,432 cattle im-              be lost or intentionally swapped or removed. In addition, RFID must
+ages from 152 different cattle. It achieves 94.74% and 83.45% for              be near the scanner, which could not be used for an investigation
+subject-based and image-based accuracies respectively.                         from a far distance.
+                                                                                   To address the challenges, this research work has an objective to
+CCS CONCEPTS                                                                   develop a solution of cattle identification using cattle face images.
+• Artificial intelligence; • Machine learning; • Computer                      The cattle face is a biometric which is very difficult to fake and can
+graphics;                                                                      be captured from a far distance. Based on our literature reviews on
+                                                                               cattle identification using biometric features, existing solutions are
+                                                                               based on two main types of features: 1) muzzle image [4] and 2)
+KEYWORDS
+                                                                               face image [6].
+Cattle Reidentification, Animal Biometric, Face Recognition, Deep                  For example, based on muzzle images, the method proposed
+Learning                                                                       in [9] developed solutions for cattle face localization and Muzzle
+ACM Reference Format:                                                          RoI detection. Then, muzzle features were extracted from the RoI
+Worapan Kusakunniran, Kunthorn Phongluelert, Chanathip Sirisangpaival,         based on a bag of histograms of oriented gradients (BoHoG) and
+Osh Narayan, Kittikhun Thongkanchorn, and Anuwat Wiratsudakul. 2023.           a histogram of local binary patterns (LBP). In the final step, the
+Cattle AutoID: Biometric for Cattle Identification: Cattle AutoID. In Inter-   classifier was trained on the extracted features using the support
+national Conference on Sustainable Information Engineering and Technology      vector machine (SVM). The method was evaluated on 431 subjects
+(SIET 2023), October 24, 25, 2023, Badung, Bali, Indonesia. ACM, New York,     and achieved 95% subject-based accuracy. In addition, the histogram
+NY, USA, 5 pages. https://doi.org/10.1145/3626641.3627215                      of multi-channel LBP on sub-images was proposed to extract muzzle
+                                                                               features [7]. Then, SVM was applied as the classifier. The method
+∗ Corresponding Author
+                                                                               was evaluated using 31 cattle with 7 muzzle images each. It delivered
+                                                                               the absolute identification efficiency of 100%.
+                                                                                   In [8], they proposed using a concatenation of Gaborbased fea-
+                                                                               ture and histogram of tLBP to extract muzzle features for identifying
+This work is licensed under a Creative Commons                                 cattle. The Gabor-based characteristics were extracted with three
+Attribution-NonCommercial-NoDerivs International 4.0 License.
+                                                                               dimensions and eight adjustments. Each muzzle image was split
+SIET 2023, October 24, 25, 2023, Badung, Bali, Indonesia                       into sub-images which were used in the feature extraction of the
+© 2023 Copyright held by the owner/author(s).                                  histogram of tLBP. Then, SVM was also applied as the classifier. It
+ACM ISBN 979-8-4007-0850-3/23/10.
+https://doi.org/10.1145/3626641.3627215
+                                                                               achieved a promising performance of 100% efficiency on a dataset
+SIET 2023, October 24, 25, 2023, Badung, Bali, Indonesia                                                                     Worapan Kusakunniran et al.
+
+
+
+
+                                                       Figure 1: An overview of the proposed method.
+
+
+of muzzle images from 31 cattle. Similarly, in a recent paper [1], it              The rest of this paper is organized as follow. The proposed
+adopted the bag-of-visual-words (BoVW) on the muzzle features                   method is explained in section 2. The experiment is described in
+extracted from speeded-up robust features (SURF) and maximally                  section 3, and the conclusion is drawn in section 4.
+stable extremal regions (MSER). Differently, the solution proposed
+in [10] adopted the deep learningbased method for identifying muz-
+zle images from 268 US feedlot finishing cattle. It reported that the
+V GG16 BN achieved the highest accuracy of 98.7% among 59 deep                  2   PROPOSED METHOD
+learning-based models attempted.                                                Figure 1 shows an overview of the proposed method. Our localiza-
+    However, the main limitation of the muzzle-based solutions is, in           tion and identification models are trained using a dataset consisting
+order to capture muzzle images, a camera must be very close to cat-             of 152 cattle with 16 images per cattle. All the images in the dataset
+tle (i.e., 10-15 cm). This re-ID technique does probably not practical          are labeled with bounding boxes and IDs. In the training process,
+in a real field. Thus, the face-based solutions become alternatives             16 images per cattle are split into two sets: 1) a training set of 12
+for the cattle identification. For example, in [5], SURF and LBP were           images each, and 2) a validation set of 4 images each. In addition,
+adopted to extract multiresolution features using different Gaussian            the data augmentation is also applied on the original training im-
+pyramid levels. It achieved 92.5% on a dataset of cattle face images            ages, to increase variations of the dataset. The data augmentations
+from 120 subjects. In [2], the feature extraction process was also              include Gaussian blur, linear contrast, and additive Gaussian noise.
+relied on LBP with extensions. It reported the maximum accuracy                     In the localization step, the SSD based on a pre-trained ResNet-
+of 95.3% on 30 cattle. Recently, the method in [13] proposed the                101 model is retrained on our training set, as shown in Figure 2.
+CNN based solution. CattleFaceNet was developed for the cattle                  SSD is a feed-forward convolutional network which uses an image
+identification by combining the lightweight RetinaFace-mobilenet                classification model as the early layers to extract the features [11].
+with ArcFace. It achieved the identification accuracy of 91.3% on a             For example, ResNet-101 in Figure 2 is designed to use for extracting
+dataset of 90 cattle.                                                           features from cattle’s face images. Originally, SSD used VGG-16 as
+    This paper proposes a solution based on the deep learning-based             its deep architecture but in an image classification task. While,
+approach. The SSD based architecture is trained for cattle face                     ResNet has been proofed to be more accurate than VGG16. An-
+localization. Then, FaceNet is trained for cattle face recognition on           other part of the SSD is the later extra layers. These layers are used
+the cropped faces. The proposed solution is evaluated on a largest              as feature maps for the cattle’s face detection [3]. The model gener-
+dataset of 152 cattle, when compared with existing papers in our                ates three outputs: 1) bounding boxes covering detected objects, 2)
+literature reviews of cattle face recognition. It achieves a promising          objects’ classes, and 3) detection scores. The SSD-ResNet model is
+accuracy of 94.74%.                                                             trained with our cattle dataset to be able to detect cattle faces and
+                                                                                produce the bounding boxes covering the cattle facial area. The
+                                                                                bounding boxes are then used to crop cattle’s faces which will be
+                                                                                passed to the re-identification model training step.
+Cattle AutoID: Biometric for Cattle Identification                                                     SIET 2023, October 24, 25, 2023, Badung, Bali, Indonesia
+
+
+
+
+                                                     Figure 2: An architecture of the SSD-ResNet model.
+
+
+
+
+                                                      Figure 3: An architecture of the FaceNet model.
+
+
+    In the identification step, FaceNet model is retrained with our             3   EXPERIMENT
+cattle dataset using the cropped faces. FaceNet model consists of               The proposed method is evaluated on our self-collected dataset
+input layer and a deep CNN with 22 layers [12], as shown in Figure              containing cattle images from 152 different cattle. There are 16
+3. FaceNet uses GoogleNet architecture as its deep architecture                 images captured from each cattle. The dataset is divided into two
+and treats it as a black box. The outputs are then normalized with              parts: 1) 4 images of each cattle are used for the testing set, and 2)
+L2 normalization. The number of embeddings in a vector is 128,                  12 images of each cattle are used for the training set.
+therefore it is a 128-dimensional embedding. We used FaceNet as                    In our experiments, there are two ways for measuring the ac-
+a classifier to perform the re-identification as mentioned. During              curacy of the models which are 1) image-based accuracy and 2)
+the training process, the embedding is passed to the triplet loss               subject-based accuracy.
+function to better learn the similarity and dissimilarity of the input
+images. The triplet loss function increases the distance between the                • Image-based accuracy represents the amount of images that
+anchor and negative samples (i.e., different IDs), and also decreases                 were predicted with the correct cattle IDs out of all the testing
+the distance between the anchor and positive samples (i.e., same                      images.
+IDs).                                                                               • Subject-based accuracy represents the number of subjects
+    The triplet loss function corresponds to a baseline input to flat-                that the model was able to correctly predict.
+tering input and an adverse input in machine learning algorithms.
+The space between the baseline input and the flattering input is                   In the context of cattle face localization, image-based accuracy
+diminished to a minimum, while the space between the baseline                   represents the amount of cattle images, in which the localization
+input and the adverse input is expanded. Triplet loss models have               model successfully detects face areas. While subject-based accu-
+been entrenched in the form that a pair of instances with duplicate             racy represents the number of subjects that the model was able
+titles are more intimate than those with further titles by executing            to correctly detect face from at least one image. The detection
+the declaration of spaces.                                                      results are shown in Table 1 and Figure 4. As shown in Table 1,
+    Therefore, it needs a soft margin treatment with a floppy variable          the subject-based and imagebased detection results are 100.0% and
+exposition class alpha in its hinge loss-style formulation and in its           95.4% respectively. Also, in Figure 4, cattle’s faces from all 16 images
+multiple regular performances. Expression embeddings, thinking                  of 119 cattle are successfully detected using our trained model. In
+vectors and metrical knowledge are instances of how it is utilized              addition, sample detected faces are shown in Figure 5
+to understand similarity for learning embeddings. In this paper, the               In the context of cattle identification, image-based accuracy rep-
+triplet loss is used in the training step for recognizing cattle IDs            resents the amount of images that were predicted with the correct
+based on cattle face images.                                                    cattle IDs out of all the testing images. While subject-based accu-
+                                                                                racy represents the number of subjects that the model was able
+SIET 2023, October 24, 25, 2023, Badung, Bali, Indonesia                                                                                    Worapan Kusakunniran et al.
+
+
+                                                            Table 1: Cattle Face Localization Results.
+
+ Model                                                                  Image-based accuracy                             Subject-based accuracy
+                Localization (SSD-ResNet-101)                                           95.4%                                                100.0%
+
+                                                           Table 2: Cattle Face Identification Results.
+
+ Model                                                           Image-based accuracy                                    Subject-based accuracy
+ SoftMax (FaceNet)                                               83.45%                                                  94.74%
+ Cosine similarity (FaceNet)                                     86.87%                                                  88.80%
+ SoftMax (ResNet-101)                                            84.85%                                                  95.39%
+ SoftMax (DenseNet-121)                                          72.59%                                                  81.58%
+
+
+
+
+                                                           Figure 4: Frequency of incorrect detections.
+
+
+to correctly predict at least half of all the images from the same                       DOI:https://doi.org/10.3390/app9224914
+subject. The cattle identification results are shown in Table 2.                     [2] Cheng Cai and Jianqiao Li. 2013. Cattle face recognition using local binary pattern
+                                                                                         descriptor. 2013 Asia-Pacific Signal and Information Processing Association
+                                                                                         Annual Summit and Conference (2013). DOI:https://doi.org/10.1109/apsipa.2013.
+4    CONCLUSION                                                                          6694369
+                                                                                     [3] Sergios Karagiannakos. 2019. Localization and Object Detection with
+This paper proposed a solution for cattle identification based on                        Deep Learning. Towards Data Science. Retrieved June 6, 2023 from
+cattle’s faces. It contained two main steps including cattle face lo-                    https://towardsdatascience.com/localization-and-object-detection-with-
+                                                                                         deep-learning-67b5aca67f22
+calization and cattle identification. The ResNet101-based SSD was                    [4] Amanpreet Kaur, Munish Kumar, and Manish Kumar Jindal. 2022. Cattle iden-
+retrained for the cattle face localization, while the FaceNet was                        tification with muzzle pattern using computer vision technology: a critical
+retrained for the cattle identification. The proposed solution was                       review and prospective. Soft Computing 26, 10 (2022), 4771-4795. DOI:https:
+                                                                                         //doi.org/10.1007/s00500-022-06935-x
+evaluated with the dataset containing cattle images from 152 sub-                    [5] Santosh Kumar, Shrikant Tiwari, and Sanjay Kumar Singh. 2015. Face recognition
+jects. It could achieve up to 95% accuracy for identifying individual                    for cattle. 2015 Third International Conference on Image Information Processing
+cattle. In the future work, additional datasets in different environ-                    (ICIIP) (2015). DOI:https://doi.org/10.1109/iciip.2015.7414742
+                                                                                     [6] Santosh Kumar, Shrikant Tiwari, and Sanjay Kumar Singh. 2016. Face Recognition
+ments and variations would be collected. They could be used to                           of Cattle: Can it be Done? Proceedings of the National Academy of Sciences,
+validate how the variations of input data affect the identification                      India Section A: Physical Sciences 86, 2 (2016), 137-148. DOI:https://doi.org/10.
+                                                                                         1007/s40010-016-0264-2
+accuracy. The variations could be differences in camera angles and                   [7] Worapan Kusakunniran and Thanatchon Chaiviroonjaroen. 2018. Automatic
+lighting conditions.                                                                     Cattle Identification based on Multi-Channel LBP on Muzzle Images. 2018 Inter-
+                                                                                         national Conference on Sustainable Information Engineering and Technology
+                                                                                         (SIET) (2018). DOI:https://doi.org/10.1109/siet.2018.8693161
+ACKNOWLEDGMENTS                                                                      [8] Worapan Kusakunniran, Anuwat Wiratsudakul, Udom Chuachan, Sarattha Kan-
+This research project is supported by True Corporation Public Com-                       chanapreechakorn, and Thanandon Imaromkul. 2018. Automatic cattle iden-
+                                                                                         tification based on fusion of texture features extracted from muzzle images.
+pany Limited (LGC200700607).                                                             2018 IEEE International Conference on Industrial Technology (ICIT) (2018).
+                                                                                         DOI:https://doi.org/10.1109/icit.2018.8352400
+REFERENCES
+ [1] Ali Ismail Awad and Mahmoud Hassaballah. 2019. Bag-of-Visual-Words for Cattle
+     Identification from Muzzle Print Images. Applied Sciences 9, 22 (2019), 4914.
+Cattle AutoID: Biometric for Cattle Identification                                           SIET 2023, October 24, 25, 2023, Badung, Bali, Indonesia
+
+
+                                                                  [9] Worapan Kusakunniran, Anuwat Wiratsudakul, Udom Chuachan, Sarattha Kan-
+                                                                      chanapreechakorn, Thanandon Imaromkul, Noppanut Suksriupatham, and Kit-
+                                                                      tikhun Thongkanchorn. 2020. Biometric for Cattle Identification using Muzzle
+                                                                      Patterns. International Journal of Pattern Recognition and Artificial Intelligence
+                                                                      34, 12 (2020), 2056007. DOI:https://doi.org/10.1142/s0218001420560078
+                                                                 [10] Guoming Li, Galen E. Erickson, and Yijie Xiong. 2022. Individual Beef Cattle
+                                                                      Identification Using Muzzle Images and Deep Learning Techniques. Animals 12,
+                                                                      11 (2022), 1453. DOI:https://doi.org/10.3390/ani12111453
+                                                                 [11] Wei Liu, Dragomir Anguelov, Dumitru Erhan, Christian Szegedy, Scott Reed,
+                                                                      Cheng-Yang Fu, and Alexander C. Berg. 2016. SSD: Single Shot MultiBox Detector.
+                                                                      Computer Vision – ECCV 2016 (2016), 21-37. DOI:https://doi.org/10.1007/978-3-
+                                                                      319-46448-0_2
+                                                                 [12] Florian Schroff, Dmitry Kalenichenko, and James Philbin. 2015. FaceNet: A uni-
+                                                                      fied embedding for face recognition and clustering. 2015 IEEE Conference on
+                                                                      Computer Vision and Pattern Recognition (CVPR) (2015). DOI:https://doi.org/10.
+                                                                      1109/cvpr.2015.7298682
+                                                                 [13] Beibei Xu, Wensheng Wang, Leifeng Guo, Guipeng Chen, Yongfeng Li, Zhen Cao,
+                                                                      and Saisai Wu. 2022. CattleFaceNet: A cattle face identification approach based
+                                                                      on RetinaFace and ArcFace loss. Computers and Electronics in Agriculture 193,
+                                                                      (2022), 106675. DOI:https://doi.org/10.1016/j.compag.2021.106675
+
+
+
+
+Figure 5: Sample detected faces (i.e., the second column) from
+cattle images (i.e., the first column).

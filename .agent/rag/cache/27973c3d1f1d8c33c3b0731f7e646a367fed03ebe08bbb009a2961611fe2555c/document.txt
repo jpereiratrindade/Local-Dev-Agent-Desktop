@@ -1,0 +1,568 @@
+Revista Ciência Agronômica, v. 45, n. 2, p. 238-248, abr-jun, 2014
+Centro de Ciências Agrárias - Universidade Federal do Ceará, Fortaleza, CE                                          Artigo Científico
+www.ccarevista.ufc.br                                                                                                 ISSN 1806-6690
+
+
+
+Simulação dos estoques de Carbono e Nitrogênio pelo Modelo Century
+               em Latossolos, no Cerrado Brasileiro                                                    1
+
+
+
+
+  Simulation using the Century Model of the Carbon and Nitrogen Stocks in Latosols
+                               of the Brazilian Cerrado
+
+       Beno Wendling2, Ivo Jucksch3, Eduardo de Sá Mendonça4, Risely Ferraz de Almeida2* e Ramon Costa
+                                                  Alvarenga5
+
+
+        RESUMO - O uso de modelos matemáticos pode ser útil para o entendimento das alterações do uso e manejo do solo e
+        fornecem subsídios para testar cenários futuros, possibilitando desenvolver estratégias de manejo menos impactantes ao meio
+        ambiente. Os objetivos deste trabalho foram: (a) usar o modelo Century v4.5 para simular os efeitos dos usos e manejos sobre
+        os estoques de carbono e nitrogênio do solo em diferentes compartimentos, (b) comparar os estoques medidos e simulados
+        pelo Century, e (c) testar impacto de cenários futuros até o ano de 2100. Os tratamentos avaliados foram Pinus, plantio direto e
+        plantio convencional, com histórico das áreas até o momento da coleta de solo (2004). Para o Pinus foram testados três cenários
+        futuros, um deles simulando o mesmo manejo adotado até o momento da coleta de solo, outro reduzindo os eventos de fogo,
+        além do uso sem preparo do solo para o replantio. Para o plantio direto e plantio convencional, simularam-se dois cenários
+        futuros, um com rotação milho/soja e outro com monocultura de milho. O modelo Century foi sensível às mudanças de manejo
+        adotadas, os compartimentos mais lábeis apresentam maior sensibilidade (ativo e lento), do que o mais estável (passivo). Em
+        relação ao estoque de C, o modelo simulou estoques próximos aos medidos no campo, com um erro mínimo de 0,36%. Para
+        os estoques de N, os valores simulados apresentaram erro de 5,71% para os compartimentos mais lábeis. Os cenários futuros
+        mostraram a importância de se evitar queimadas no Pinus e o uso de monocultivo.
+        Palavras-chave: Estoques de nitrogênio. Estoques de carbono. Sequestro.
+        ABSTRACT - The use of mathematical models can be useful for understanding the changes in the use and management
+        of soil and provide aid in testing future scenarios, making it possible to develop management strategies which have less
+        impact on the environment. The objectives of this study were: (a) to apply the Century Model v4.5 in order to simulate the
+        effects of usages and managements on carbon stocks and soil nitrogen in different compartments; (b) compare both the
+        observed stocks and those simulated by the Century Model; (c) to test the impact of future scenarios until the year 2100. The
+        treatments evaluated were of Pine, under both no-tillage and conventional tillage, using historical data from the areas up
+        until when the soil was sampled (2004). For the pine, three future scenarios were tested, one by simulating the management
+        adopted up to the time the soil was sampled, another by reducing the fire events, as well as by soil usage without any
+        preparation when replanting. For both no-tillage and conventional tillage, two future scenarios were simulated: one with
+        corn and soybean rotation, and the other with a monoculture of corn. The Century model was sensitive to the changes in
+        management which were adopted, the more labile compartments showing greater sensitivity (the active and the slow) than
+        the most stable (passive). In relation to stocks of C, the model simulated values close to those measured in the field, with a
+        minimum error of 0.36%. For stocks of N, the simulated values showed an error of 5.71% for the more labile compartments.
+        For pine, the future scenarios demonstrated the importance of preventing fires, and the use of monocultures.
+        Key words: Stocks of nitrogen. Stocks of carbon. Sequestration.
+
+*Autor para correspondência
+1
+  Recebido para publicação em 12/12/2012; aprovado em 26/12/2013
+ Parte da Tese de Doutorado do primeiro autor apresentada na Universidade Federal de Viçosa
+2
+  Instituto de Ciências Agrárias - Iciag, Universidade Federal de Uberlândia-UFU, Campus Umurama, Uberlândia-MG, Brasil, 38.400-902,
+  beno@iciag.ufu.br, rizely@gmail.com
+3
+  Departamento de Solos, Universidade Federal de Viçosa-UFV, Viçosa-MG, Brasil, ivo@ufv.br
+4
+  Departamento de Produção Vegetal, Universidade Federal do Espírito Santo-UFES, Alegre-ES, Brasil, eduardo.mendonca@ufes.br
+5
+  Empresa Brasileira de Pesquisa Agropecuária, Centro Nacional de Pesquisa de Milho e Sorgo (EMBRAPA/CNPMS), Sete Lagoas-MG, Brasil,
+  ramon.alvarenga@embrapa.br
+                                                        B. Wendling et al.
+
+
+
+
+                  INTRODUÇÃO                                                       MATERIAL E MÉTODOS
+       Com o advento da agricultura, o Cerrado                      Área de estudo e amostragem
+brasileiro passou a ter importante papel na produção de
+alimentos. De maneira geral apresentam solos pobres                        A área de estudo pertence à Empresa Brasileira
+em cátions trocáveis e boas características físicas, tais           de Pesquisa Agropecuária - EMBRAPA e está localizada
+como relevo plano, perfil profundo, boa porosidade                  no município de Sete Lagoas/MG, Brasil (latitude -
+e estabilidade de agregados (WENDLING, 2007).                       19°28’, longitude -44°15’e altitude de 732 m). O solo
+Contudo, com o uso agrícola estes solos apresentaram                do local é classificado como Latossolo Vermelho típico,
+melhorias nas propriedades químicas e as físicas foram              com relevo suave ondulado e textura muito argilosa. O
+gradativamente degradadas.                                          clima da região é classificado como Aw (clima de savana
+      O alto grau de intemperismo desses solos                      com inverno seco), segundo a classificação proposta
+(predominância de argilas de baixa atividade) os torna              por Köppen, com temperatura média anual de 20,9 °C,
+muito dependentes da matéria orgânica para manter                   precipitação pluviométrica média anual de 1.320 mm e
+adequado funcionamento e sustentabilidade (SILVA;                   Cerrado como vegetação nativa.
+MENDONÇA, 2007). Assim, deve ser dada prioridade na                        A amostragem do solo foi realizada em julho de
+busca de sistemas de produção que permitam preservar                2004. Em todos os tratamentos, inclusive o Cerrado
+essa matéria orgânica, que tem papel fundamental                    Nativo (CE), foram coletadas cinco amostras compostas
+na manutenção das propriedades físicas, químicas                    para cada camada, 0,0-0,10 m e 0,1-0,2 m. Contudo,
+e biológicas dos solos. Neste sentido, ao converter                 como o Modelo Century avalia apenas a camada de
+novamente as áreas agrícolas em florestas, com o passar             0,0-0,2 m fez-se a somatória dos valores obtidos nas
+das décadas, ocasionam um aumento significativo das                 camadas obtendo um único valor.
+quantidades de C do solo (HARRISON et al., 1995).
+                                                                           Cada amostra composta foi obtida pela mistura
+       Tem-se dado muita importância à incorporação                 de dez amostras simples. Parte do material coletado foi
+de C (carbono) ao solo para mitigar o aumento de CO2                mantido sob refrigeração para posterior determinação do
+(dióxido de carbono) na atmosfera, mas a importância                C e N da biomassa microbiana. Para as demais análises
+maior está na melhoria das qualidades emergentes                    utilizou-se a terra fina seca ao ar (TFSA).
+que se consegue com esse “sequestro de C”. O uso de
+modelos matemáticos tem sido proposto para estudar o                Análises físico/químicas
+comportamento de diferentes usos e práticas de manejo
+em relação à dinâmica de matéria orgânica no solo.                         O carbono orgânico total (COT) foi determinado
+Entre os modelos mais usados, está o Century, que foi               via combustão úmida (YEOMANS; BREMNER, 1988).
+utilizado em ecossistemas tropicais (CERRI et al., 2003;            Para quantificação do nitrogênio total (NT), as amostras
+LEITE e MENDONÇA, 2003; LEITE et al., 2004a) e                      foram submetidas à digestão sulfúrica com posterior
+subtropicais (FERNANDES, 2002), apresentando boa                    destilação Kjedall (TEDESCO et al., 1995).
+capacidade para simular os efeitos de diferentes usos
+e manejos.                                                                 Para liberar o C e N da biomassa microbiana
+                                                                    para a solução extratora de K 2SO 4 0,5 mol L -1
+       O modelo Century foi concebido em 1987                       utilizou-se o método de irradiação-extração (ISLAM;
+(PARTON et al., 1987), e a partir de então vem                      WEIL, 1998), sendo usado um forno de micro-ondas
+sendo amplamente testado e usado, fato que permitiu                 com frequência de 2450 MHz e energia de 900W
+que a aplicabilidade do modelo evoluísse. A versão                  durante 180 segundos (ISLAM; WEIL, 1998). O C
+inicial permitia apenas a simulação para pastagens,                 foi quantificado via oxidação úmida (TEDESCO et
+as versões atuais permitem realizar simulações para                 al., 1995), enquanto o N, após digestão sulfúrica, foi
+as mais diversas condições, desde florestas plantadas,              quantificado por destilação Kjedahl (TEDESCO et al.,
+pastagens até culturas anuais.                                      1995). Corrigida a umidade, o C microbiano (CMIC) e
+       Esse estudo teve três objetivos: (a) usar o                  o N microbiano (NMIC) foram calculados com base na
+modelo Century v4.5 para simular os efeitos dos usos                diferença das subamostras irradiadas e não irradiadas,
+e manejos do solo sobre os estoques de C e N em                     utilizando-se um fator de conversão de fluxo (Kc) de
+diferentes compartimentos, (b) comparar os resultados               0,33 (SPARLING; WEST, 1988) e 0,54 (BROOKES et
+observados no campo por meio de métodos laboratoriais               al., 1985) para C e N, respectivamente. O CMIC e NMIC
+e os obtidos nas simulações com o modelo, e (c) testar              foram usados para representar o compartimento de
+o impacto de cenários futuros até o ano de 2100.                    menor tempo de reciclagem no solo, ou seja, o ativo.
+
+
+                                     Rev. Ciênc. Agron., v. 45, n. 2, p. 238-248, abr-jun, 2014                          239
+                    Simulação dos estoques de Carbono e Nitrogênio pelo Modelo Century em Latossolos, no Cerrado Brasileiro
+
+
+
+       A separação da fração leve livre particulada                                  Para a braquiária foram simulados um evento de
+(FLLP) do solo foi realizada pelo principio da                               fogo no período seco (inverno) e 6 eventos de pastejo
+diferença de densidade e tamanho (CAMBARDELLA;                               durante a estação chuvosa (parte da primavera, verão e
+ELLIOTT, 1994), em que a densidade do líquido                                parte do outono). O Pinus foi plantado e nos primeiros
+(NaI) foi de 1,8 kg L -1 e a peneira usada para separar                      anos mantido limpo com uso de grade na entre linha. A
+o material leve da solução extratora foi de 0,25 mm                          partir do sexto ano, queimadas involuntárias passaram a
+de diâmetro. O material retido na peneira foi lavado,                        ocorrer em média a cada dois anos.
+seco a 65 °C, triturado e analisado via combustão seca
+em analisador Perkin Elmer series II 2400 CHNS/O.                            Simulação de cenários futuros
+O C e N contidos nesse material foram usados para                                    Foram simulados cenários de manejo até o ano
+representar o compartimento com tempo de reciclagem                          de 2100. Para o PIN simulou cortes a cada 30 anos para
+intermediária, ou seja, o lento. O compartimento com                         três situações de manejo. Na primeira considerou-se que
+tempo de reciclagem mais longo, o C e N passivo, foi                         o manejo seria tal como foi até o ano de 2004 (PINa), na
+determinado por diferença: passivo = totais – (ativo                         segunda considerou-se a ausência de preparo do solo nos
++ lento).                                                                    anos iniciais (PINb) e na terceira uma menor ocorrência
+                                                                             do fogo (passando de queimadas bianuais para duas
+Sequência dos eventos simulados                                              queimadas durante um ciclo) (PINc). Para o caso do
+                                                                             PD e PC, duas situações foram simuladas. Na primeira
+       Na Tabela 1 são apresentadas as sequências                            considerando o monocultivo de milho (PDa e PCa) e na
+de manejos usados nas simulações pelo Century. A                             segunda cultivos alternados de milho e soja (PDb e PCb).
+derrubada do Cerrado deu início ao uso agrícola dessas
+áreas. O Cerrado foi desmatado e a madeira retirada,                         Validação do modelo
+possibilitando o preparo da área para o plantio da
+braquiária (Brachiaria sp.), que permaneceu até 1972,                               Para o funcionamento do modelo Century
+ocasião em que parte dessa área foi plantada com pinus                       utilizou-se 3 submodelos, o da produção vegetal, o
+(Pinus sp.) e parte foi usada para plantio de milho                          da água e da dinâmica de matéria orgânica do solo.
+no sistema convencional e posteriormente, no ano de                          Os dois primeiros alimentaram o terceiro, gerando os
+1994, recebeu um experimento para avaliar os sistemas                        dados necessários em relação à umidade e temperatura
+de preparo convencional (PC) e direto (PD). Esses                            do solo, entradas e saídas de nutrientes pelas culturas,
+dois sistemas diferiram entre si na maneira de preparo                       quantidade e a qualidade de resíduos vegetais
+                                                                             produzidos (LEITE; MENDONÇA, 2003).
+do solo, em que PC recebeu duas operações com
+grade pesada, enquanto o PD manejo com herbicida                                   O submodelo da matéria orgânica do solo foi divido
+dessecante (princípio ativo Gliphosate).                                     em compartimentos (ativo, lento e passivo), com base no
+
+
+
+Tabela 1 - Sequência de culturas usadas na simulação pelo modelo Century 4.5
+
+                Tratamento                                                          Sequências de manejo
+                                                       - 1968: desmatamento (retirada da madeira e posterior uso de fogo)
+                                                    - 1969 até 1972: pastagem de braquiária com pastejo na estação chuvosa
+                     PC
+                                                                  - 1973 até 1994: plantio convencional de milho
+                                                - 1995 até 2004: condução de experimento com plantio convencional de milho*
+                                                       - 1968: desmatamento (retirada da madeira e posterior uso de fogo)
+                                                    - 1969 até 1972: pastagem de braquiária com pastejo na estação chuvosa
+                     PD
+                                                                  - 1973 até 1994: plantio convencional de milho
+                                                 - 1995 até 2004: condução de experimento com plantio direto de milho e soja*
+                                                       - 1968: desmatamento (retirada da madeira e posterior uso de fogo)
+                    PIN                             - 1969 até 1972: pastagem de braquiária com pastejo na estação chuvosa
+                                                          - 1973: plantio do Pinus (ainda se encontrava na área em 2004)
+* O plantio da soja foi realizado somente em 1993
+
+
+
+240                                           Rev. Ciênc. Agron., v. 45, n. 2, p. 238-248, abr-jun, 2014
+                                                            B. Wendling et al.
+
+
+
+seu tempo de reciclagem e taxas de decomposição. O                                 RESULTADOS E DISCUSSÃO
+ativo representado pela biomassa microbiana e produtos
+derivados, com tempo de reciclagem de até 5 anos. O                     Simulação de equilíbrio
+lento representado pela matéria orgânica leve, derivada do
+material vegetal das culturas ou da aplicação orgânica ao                      Para a simulação de equilíbrio foram necessárias
+solo, com tempo de reciclagem estimado entre 20 e 40                    algumas alterações no arquivo de variáveis fixas do
+anos. O passivo representado pelo material muito resistente             modelo (FIX.100), para que as taxas de decomposição
+à decomposição e protegido física e quimicamente pelo                   dos compartimentos se ajustassem aos do CN. Sem
+solo, podendo alcançar tempos de reciclagem entre 200 a                 esse ajuste não seria possível rodar o modelo para
+500 anos (PARTON et al., 1987).                                         condições tropicais, uma vez que este foi concebido
+                                                                        e validado para situações de clima temperado. Outro
+       Para as simulações de equilíbrio (6000 anos)                     arquivo que necessitou de ajustes foi o de árvore
+para a área de Cerrado nativo (CN), utilizaram-se os                    (TREE.100), onde a produção primária foi ajustada de
+dados de entrada no modelo com as variáveis do local,                   acordo com o encontrado no Cerrado. Depois destes
+como textura, densidade e clima (Tabela 2). Criou-se                    ajustes feitos o modelo foi rodado simulando um
+um arquivo apropriado para realizar a simulação de                      período de 10.000 anos, possibilitando a estabilização
+equilíbrio para a vegetação do tipo Cerrado. Tanto                      dos compartimentos.
+para o Cerrado, Pinus e demais culturas, o modelo
+foi rodado para ajustar o submodelo de produção de                             A partir de 6000 anos os valores se estabilizaram
+planta, onde a produção primária (Cerrado e Pinus)                      (Tabela 3). O COT estabilizou em 52,75 Mg ha -1, muito
+ou produtividades (culturas anuais e pastagens) foram                   semelhante às medidas encontradas no Cerrado via
+mantidas de acordo com dados de campo ou literatura,                    análises laboratoriais, 52,94 Mg ha-1. Os compartimentos
+só depois o modelo foi usado para simular a dinâmica                    de C simulados também foram semelhantes à realidade
+de C e N no solo. Para cada um dos tratamentos, o                       de campo, verificando que, o modelo está apto a
+modelo simulou a derrubada do CN e a conversão                          rodar cenários específicos para C, uma vez que os
+desses para os tratamentos estudados, estimando os                      compartimentos, bem como o COT foram semelhantes
+estoques de C e N para cada compartimento ao longo                      aos valores observados no Cerrado.
+dos anos (1968 até 2004).                                                      Para NT o modelo foi menos preciso,
+       A simulação para os tratamentos foi iniciada                     apresentando estoques de 3,5 e 3,3 Mg ha-1 entre os
+com os dados gerados pela simulação de equilíbrio.                      dados simulados e medidos, respectivamente, com
+Os valores estimados pelo modelo para o mês de                          erro de 10% (Tabela 3). O modelo superestimou os
+julho foram comparados com os obtidos no campo via                      compartimentos lento e passivo e subestimou o ativo.
+métodos laboratoriais, permitindo testar a validade do                  Contudo, os valores simulados apresentam um erro de
+modelo. A partir do erro padrão da média foi possível                   5,71 %, não alterando a relação entre os compartimentos
+comparar os valores medidos dos simulados.                              de C e N no solo sob Cerrado.
+
+
+
+
+Tabela 2 - Principais variáveis de entrada usadas para as simulações com o modelo Century 4.5
+
+                Variáveis                                                             Valores
+ Areia (g g-1)                                                                          0,14
+           -1
+ Silte (g g )                                                                           0,13
+                -1
+ Argila (g g )                                                                          0,73
+ Densidade do solo (g cm-3)                                                             0,83
+ pH (H2O)                                                                               4,57
+ Precipitação mensal**                      28,90; 16,12; 13,26; 5,28; 2,61; 1,03; 1,45; 1,01; 3,29; 11,57; 22,72; 26,63
+ T ºC média mensal mínima*              18,20; 18,10; 17,90; 16,10;13,70; 11,50; 11,10; 16,60; 14,80; 17,70; 17,70; 18,10
+ T ºC média mensal máxima*              28,90; 29,70; 29,00; 27,50; 25,30; 24,20; 24,50; 25,60; 28,70; 28,90; 28,60; 28,20
+* Temperatura em Graus Celsius (T º C), média mensal mínima e máxima dos meses de janeiro a dezembro, respectivamente; ** Precipitação
+expressa em (cm/mês)
+
+
+
+                                         Rev. Ciênc. Agron., v. 45, n. 2, p. 238-248, abr-jun, 2014                               241
+                       Simulação dos estoques de Carbono e Nitrogênio pelo Modelo Century em Latossolos, no Cerrado Brasileiro
+
+
+
+Tabela 3 - Valores simulados e medidos para carbono orgânico total (COT) e nitrogênio total (NT) nos compartimentos ativo, lento e
+passivo em solos para o Cerrado (simulação de equilíbrio), em Sete Lagoas/MG
+
+                                 ------------Estoques de C (Mg ha-1)------------              -----------Estoques de NT (Mg ha-1 )-----------
+      Compartimentos1
+                                       Simulado                 Medido                               Simulado               Medido
+    Ativo                                 0,98                 0,98 (0,07)                              0,09              0,11 (0,01)
+    Lento                                 3,84                 3,89 (0,37)                              0,15              0,12 (0,02)
+    Passivo                              47,93               48,07 (2,06)                               3,26              3,07 (0,15)
+    Total                                52,75               52,94 (2,29)                               3,50              3,30 (0,16)
+1
+    Valores entre parênteses referem-se ao erro padrão da média
+
+
+
+
+Simulação da dinâmica de C e N                                                         Com a derrubada do Cerrado,1969, e preparo
+       A partir dos valores da simulação de equilíbrio,                         do solo para implantação da pastagem de braquiária,
+procedeu-se a simulação dos cenários apresentados na                            os estoques dos compartimentos C ativo e C lento
+Tabela 2. Na Figura 1 é observada a dinâmica do COT                             simulados aumentaram consideravelmente. Esse
+e dos compartimentos ativo, lento e passivo a partir dos                        comportamento é comum (STEVENSON, 1994), pois
+valores da simulação de equilíbrio até o final do ano de                        com a derrubada do Cerrado, foi retirado o material
+2004. Nesse período o modelo simulou as mudanças no                             vegetal de maior diâmetro, permanecendo no campo
+uso e manejo adotadas para cada tratamento.                                     parte dos restos de galhos finos, folhas e serrapilheira
+
+
+
+Figura1 - Variação dos estoques de carbono orgânico total (COT) e compartimentos passivo (C passivo), lento (C lento) e ativo
+(C ativo) estimados pelo modelo Century v4.5 para os tratamentos plantio convencional (PC) plantio direto (PD) e plantação
+de PINUS, em Sete Lagoas/MG
+
+
+
+
+242                                              Rev. Ciênc. Agron., v. 45, n. 2, p. 238-248, abr-jun, 2014
+                                                           B. Wendling et al.
+
+
+
+depositada na superfície, que são incorporados ao perfil                      A partir de 1973 foi iniciado o cultivo de milho nos
+do solo. Porém, no ano seguinte, os estoques voltam                    tratamentos PC e PD (até 1994 o cultivo convencional
+a diminuir, devido ao efeito da decomposição desse                     era adotado nestes tratamentos). Até 1994, os estoques
+material, que é acelerada pelo revolvimento do solo                    de todos os compartimentos sofreram diminuição. O
+por ocasião da implantação da cultura da braquiária.                   PC ocasiona perda de C no solo devido à desagregação
+Os dados de COT seguiram o comportamento dos                           da estrutura e aumento da aeração, que favorecem a
+compartimentos mais lábeis (ativo e lento) e, devido a                 oxidação do material orgânico (LOBEL et al., 2001). Em
+estabilidade química e física, o compartimento passivo                 outros trabalhos usando o modelo Century realizados
+não expressou essa mudança no manejo.                                  no Brasil, esse mesmo comportamento foi observado
+                                                                       (LEITE et al., 2004a; LEITE et al., 2004b).
+       Até 1973 todos os tratamentos foram iguais, ou
+seja, cultivo de braquiária para pastejo intensivo. Neste                     No ano de 1994 os estoques de COT e dos
+período os estoques de COT se mantiveram acima dos                     compartimentos ativo, lento e passivo para os tratamentos
+estoques observados para o Cerrado, pois o solo não foi                com culturas anuais (PC e PD) foram 49,44; 0,70; 2,10 e
+mais revolvido e o pastejo não foi instensivo a ponto de               46,65 Mg ha-1 , respectivamente. A partir deste ano estes
+comprometer a entrada de material vegetal. Somente                     dois tratamentos começaram a se diferenciar quanto aos
+o estoque de C lento foi menor que o observado no                      estoques de C devido à mudança imposta no manejo.
+Cerrado. No final deste período, com o preparo do solo                 Em 2004, o PD apresentou estoques maiores em todos
+para implantação das culturas anuais e Pinus, houve                    os compartimentos em relação ao PC. Esse aumento
+rápido aumento seguido de diminuição nos estoques                      representou 1,52 Mg ha-1 para COT, evidenciando a
+de C para todos os compartimentos, porem menos                         capacidade do PD em melhorar ou manter os estoques de
+perceptível para o C passivo.                                          C, contribuindo desta forma para a melhoria da qualidade
+
+
+
+Figura 2 - Variação dos estoques de nitrogênio total (NT) e compartimentos passivo (N passivo), lento (N lento) e ativo (N ativo)
+estimados pelo modelo Century v4.5 para os tratamentos plantio convencional (PC) plantio direto (PD) e plantação de PINUS,
+em Sete Lagoas/MG
+
+
+
+
+                                        Rev. Ciênc. Agron., v. 45, n. 2, p. 238-248, abr-jun, 2014                            243
+                Simulação dos estoques de Carbono e Nitrogênio pelo Modelo Century em Latossolos, no Cerrado Brasileiro
+
+
+
+do solo. Comportamento semelhante também foi obtido                     Comparação entre valores medidos e simulados
+usando o mesmo modelo sob condições tropicais após
+                                                                               Os valores para estoques de C medidos e os
+19 anos de experimento (LEITE et al., 2004b), onde a
+                                                                        simulados pelo Century foram semelhantes (Tabela 4).
+diferença em favor do PD em relação ao PC foi de 4,5 Mg
+                                                                        As diferenças para os estoques de COT simulados e
+ha-1. Esses resultados evidenciam a capacidade do modelo
+                                                                        medidos foram de -0,17, -3,64 e 4,46% respectivamente
+Century em simular o impacto das mudanças do manejo
+                                                                        para PC, PD e PIN, todos dentro do limite do erro padrão
+do solo sobre os estoques de C em condições tropicais.
+                                                                        da média calculado para os valores medidos. Esses
+       O compartimento passivo não apresentou                           resultados mostram o grande potencial do modelo em
+recuperação com o PD, no entanto, este foi superior (0,68               simular de forma adequada os estoques de COT no solo
+Mg ha-1) em relação ao PC. Mais de 90% de todo o C                      para ambientes tropicais, corroborando com os resultados
+está no compartimento passivo, evidenciando o caráter                   encontrados em outros trabalhos (LEITE et al., 2004a;
+argiloso deste solo, que propicia grande proteção química               LEITE et al., 2004b; LIANG et al., 1996).
+e coloidal ao C (SIX et al., 2002). No compartimento lento
+                                                                               Em relação aos compartimentos, o Century
+e ativo os estoques de C aumentaram após a adoção do                    também simulou valores próximos dos medidos. A maior
+PD, mas foram inferiores aos medidos em CN.                             diferença entre os valores medidos e simulados não
+        O PIN aumentou os estoques de C após 12 anos de                 passou de -25% no compartimento ativo para o PD. Como
+plantio. A perda de C neste tratamento foi maior em relação             o tamanho do compartimento ativo é muito flutuante
+às culturas anuais no início do cultivo, mas depois do 12°              durante o ano, essa diferença é justificável, ainda mais
+ano os estoques reagiram, superando os observados no PC.                porque a coleta de solo foi feita numa época de pouca
+A intensa perda de C no início do desenvolvimento do PIN                umidade, fazendo com que no campo o tamanho desse
+foi devido ao uso de grade nos primeiros anos (até o quarto             compartimento seja reduzido. Cabe ressaltar que o valor
+ano) e também pelo fato da adição de material orgânico ao               do C ativo simulado é reflexo da média do ano e não de
+solo ter sido mínima, uma vez que essa cultura não perde                uma determinada condição diária de coleta de solo. Para
+as acículas na fase jovem. Após o quinto ano, esta área                 os demais tratamentos, os estoques dos compartimentos
+foi afetada por fogo acidental (muito comum em regiões                  ativos foram semelhantes. Esses resultados foram mais
+de Cerrado) a cada dois anos em média, o que também                     próximos dos observados do que os obtidos em outros
+contribuiu para o declínio dos estoques de C. Após o 12°                trabalhos realizados no mesmo Estado (LEITE et al.,
+cultivo, o sistema radicular está bem desenvolvido com                  2004a; LEITE et al., 2004b), onde esses estoques foram
+renovação constante, favorecendo o aumento dos estoques                 superestimados pelo modelo, em mais de 100%.
+de C nos compartimentos ativo e lento, refletindo também                       Para o compartimento lento, o modelo simulou
+na melhoria do COT. Somente o compartimento passivo                     valores muito próximos da realidade, sendo 11; 12 e
+não apresentou sinais de recuperação, no entanto, as perdas             -5% diferente dos valores medidos para PC, PD e PIN,
+passaram a ser menores com o avanço da idade da cultura.                respectivamente.
+       Na Espanha, em plantações de Pinus radiata,                             No que se refere ao compartimento passivo,
+sobre antiga área de cultivo com cereais e outra sobre uma              somente para o PIN esses valores ficaram fora
+antiga área de vinhedos, também foi simulado pelo modelo                (maiores) do limite do erro padrão da média, no
+Century perda de COT para a camada de 0,0 a 0,2 m nos                   entanto a diferença foi menor do que 6%. Resultados
+primeiros anos após o plantio, apresentando melhora                     semelhantes foram obtidos por Leite et al. (2004a) e
+nos estoques a partir do quinto ano (ROMANYA et al.,                    Leite et al. (2004b), sendo os valores simulados muito
+2000). Esses autores também concluíram, via simulações                  próximos dos medidos, evidenciando a capacidade do
+com o Century, que solos sob plantações de Pinus radiata                Century em simular corretamente esse compartimento.
+possuem maior potencial para o sequestro de C no solo em
+                                                                               Comparando os resultados para N (Tabela 4), o
+relação a florestas nativas da região (Quercus ilex).
+                                                                        modelo não apresentou o mesmo desempenho em relação
+       O comportamento da dinâmica dos estoques de N                    ao C. Para NT, os estoques foram superestimados em 11;
+foi muito semelhante aos observados para C em relação                   8 e 29% para PC, PD e PIN, respectivamente. Para o
+aos tratamentos (Figura 2). Para o PD e PC o modelo                     PIN o valor foi muito acima do observado, sendo que
+simulou valores maiores que os observados no Cerrado.                   para os demais tratamentos, os valores simulados não
+A adição de C ao solo se deu unicamente via adição de                   apresentaram discrepâncias muito grandes, mesmo que
+restos vegetais e a de N ocorreu via adição de adubos e                 ainda esteja fora do limite do erro padrão da média. Para
+fixação biológica (no caso da soja), favorecendo um                     o compartimento passivo, o comportamento foi muito
+acúmulo maior ao longo do tempo, o que no caso do C                     semelhante ao NT, uma vez que esse compartimento
+não aconteceu.                                                          representa mais de 90% do NT.
+
+
+244                                      Rev. Ciênc. Agron., v. 45, n. 2, p. 238-248, abr-jun, 2014
+                                                                    B. Wendling et al.
+
+
+
+Tabela 4 - Comparação entre os valores simulados e os obtidos no campo via métodos laboratoriais para carbono orgânico total
+(COT) e nitrogênio total (NT) nos compartimentos ativo, lento e passivo para o plantio convencional (PC), plantio direto (PD)
+e Pinus (PIN), em Sete Lagoas/MG
+
+                                                           Estoques de COT (Mg ha-1 )                           Estoques de NT (Mg ha-1)
+              T              Compartimentos
+                                                          Simulado           Medido                           Simulado          Observado
+                                    Ativo                   0,79           0,79 (0,08)                          0,21            0,12 (0,01)
+                                    Lento                   1,73           1,54 (0,07)                          0,52            0,05 (0,01)
+             PC
+                                   Passivo                  45,70         45,96 (1,10)                          3,16            3,32 (0,10)
+                                    Total                   48,21         48,29 (1,16)                          3,90            3,50 (0,11)
+                                    Ativo                   0,98           0,79 (0,06)                          0,28            0,13 (0,01)
+                                    Lento                   2,37           2,11 (0,06)                          0,73            0,08 (0,01)
+             PD
+                                   Passivo                  46,38         48,71 (2,45)                          3,21            3,69 (0,11)
+                                    Total                   49,73         51,61 (2,48)                          4,22            3,90 (0,12)
+                                    Ativo                   0,83           0,85 (0,04)                          0,05            0,11 (0,01)
+                                    Lento                   3,74           3,95 (0,21)                          0,18            0,15 (0,01)
+             PIN
+                                   Passivo                  45,95         43,56 (1,00)                          3,16            2,36 (0,07)
+                                    Total                   50,52         48,36 (1,10)                          3,39            2,62 (0,06)
+1
+    Valores entre parênteses referem-se ao erro padrão da média
+
+
+
+
+        As maiores discrepâncias para N foram nos                                      No terceiro cenário simulou-se a redução do
+compartimentos ativo e lento. Para o compartimento ativo,                       número de eventos de fogo (PINc), que antes aconteciam
+o modelo superestimou os valores em torno de 100% para                          bianualmente e passam a ocorrer duas vezes durante cada
+as culturas anuais e para o PIN. Esses resultados reforçam                      ciclo de 30 anos. Esse cenário foi o que apresentou a
+a necessidade de mais ajustes no modelo para simular de                         melhor resposta para melhoria dos estoques de C e N no
+forma mais adequada esse compartimento de N. Já para o                          solo.Os estoques de COT e C lento passaram a ser maiores
+compartimento lento, os estoques foram superestimados                           aos encontrados no Cerrado. Para o C lento, os estoques
+para as culturas anuais e muito próximos para o PIN.                            ainda não superaram o Cerrado, mas apresentaram
+                                                                                grandes aumentos. O C passivo mostra que a única forma
+Simulação de cenários futuros                                                   de aumentar seus estoques é evitando queimadas. Apesar
+                                                                                da falta de consistência dos dados de N simulados pelo
+       Nas Figuras 3 e 4 são apresentadas as dinâmicas                          modelo Century, o comportamento geral não foi alterado
+dos estoques de COT, NT e compartimentos ativo, lento e                         na simulação. Em relação ao N, somente o N ativo ainda
+passivo para o PIN até o ano de 2100.                                           não supera os estoques observados no Cerrado.
+        Foram simulados 3 cenários, sendo o primeiro                                   Já para PC e PD, os cenários futuros foram
+(PINa) a continuação do manejo dado ao PIN até o ano de                         simulando o uso de monocultivo de milho (PDa e PCa)
+2004, simulando um corte a cada 30 anos. Nesta situação, os                     e cultivos alternados de milho e soja (PDb e PCb)
+estoques de COT mostraram um leve aumento com o passar                          (Figuras 5 e 6).
+dos anos, e para NT, esse aumento foi mais acentuado. A                                O uso de monocultivo é mais impactante do que
+cada evento de colheita da madeira, os estoques de COT e                        o uso de cultivos alternados de milho e soja. No caso
+NT são afetados, apresentando um rápido aumento seguido                         do COT, para o PDb, os estoques se igualam aos do
+de diminuição acentuada, que após 30 anos é recuperada.                         Cerrado, muito diferente do que ocorre para PDa, PCa
+Esse comportamento é explicado pela adição de material                          e PCb, onde há redução nos estoques. Em relação ao C
+vegetal da parte aérea que fica no campo após a colheita                        passivo, somente PDa apresentou potencial para melhorar
+da madeira. Esse cenário não mostrou grandes alterações                         os estoques até o ano de 2100. Muito semelhante ao C,
+em relação ao PINa, uma vez que o preparo somente era                           foram os comportamentos da dinâmica dos estoques de
+utilizado nos primeiros anos. Embora os compartimentos                          N. Tanto para NT e compartimentos, o melhor cenário
+ativo e lento fossem pouco afetados, o passivo apresentou                       criado foi usando alternância de culturas em sistema de
+melhora em seus estoques.                                                       plantio direto (PDa), evidenciando a necessidade de evitar
+
+
+                                                 Rev. Ciênc. Agron., v. 45, n. 2, p. 238-248, abr-jun, 2014                                   245
+                 Simulação dos estoques de Carbono e Nitrogênio pelo Modelo Century em Latossolos, no Cerrado Brasileiro
+
+
+
+Figura 3 - Variação dos estoques de nitrogênio total (NT) e compartimentos passivo (N passivo), lento (N lento) e ativo
+(N ativo) estimados pelo modelo Century v4.5 para o PINUS; (PINa) com preparo e queimada, (PINb) sem preparo e com
+queimada, (PINc) sem preparo e somente duas queimadas por ciclo, em Sete Lagoas/MG
+
+
+
+
+Figura 4 - Variação dos estoques de carbono orgânico total (COT) e compartimentos passivo (C passivo), lento (C lento) e ativo
+(C ativo) estimados pelo modelo Century v4.5 para o PINUS; (a) com preparo e queimada, (b) sem preparo e com queimada,
+(c) sem preparo e somente duas queimadas por ciclo, em Sete Lagoas/MG
+
+
+
+
+246                                       Rev. Ciênc. Agron., v. 45, n. 2, p. 238-248, abr-jun, 2014
+                                                           B. Wendling et al.
+
+
+
+Figura 5 - Variação dos estoques de nitrogênio total (NT) e compartimentos passivo (N passivo), lento (N lento) e ativo (N ativo)
+estimados pelo modelo Century v4.5 para os tratamentos plantio convencional (PC) plantio direto (PD); (a) milho sem rotação, (b)
+rotação milho/soja, em Sete Lagoas/MG
+
+
+
+
+Figura 6 - Variação dos estoques de carbono orgânico total (COT) e compartimentos passivo (C passivo), lento (C lento) e ativo
+(C ativo) estimados pelo modelo Century v4.5 para os tratamentos plantio convencional (PC) plantio direto (PD); (a) milho sem
+rotação, (b) rotação milho/soja, em Sete Lagoas/MG
+
+
+
+
+                                        Rev. Ciênc. Agron., v. 45, n. 2, p. 238-248, abr-jun, 2014                           247
+                 Simulação dos estoques de Carbono e Nitrogênio pelo Modelo Century em Latossolos, no Cerrado Brasileiro
+
+
+
+o revolvimento do solo e o monocultivo como alternativas                 ISLAM, K. R.; WEIL, R. R. Microwave irradiation of soil for
+para melhoria dos estoques de N no solo.                                 routine measurement of microbial biomass carbon. Biology
+                                                                         and Fertility Soils, v. 27, p. 408-416, 1998.
+                                                                         LEITE, L. F. C. et al. Simulating trends in soil organic carbon
+                    CONCLUSÃO                                            of an Acrisol under no-tillage and disc-plow systems using
+                                                                         the Century model. Geoderma, v. 120, p. 679-686, 2004a.
+       O modelo Century é sensível às mudanças                           LEITE, L. F. C. et al. Simulação pelo modelo Century da
+de manejo adotadas no Cerrado brasileiro, sendo os                       dinâmica da matéria orgânica de um argissolo sob adubação
+compartimentos mais lábeis, mais sensíveis (ativo e lento)               mineral e orgânica. Revista Brasileira de Ciência do Solo,
+do que o mais estável (passivo). Os estoques simulados                   v. 28, n. 2, p. 347-358, 2004b.
+pelo Century refletiram os medidos, ou seja, o modelo
+tem validade, no entanto, para N, os compartimentos                      LEITE, L. F. C.; MENDONÇA, E. S. Modelo century
+                                                                         de dinâmica da matéria orgânica do solo: Equações e
+não apresentam ajuste tão satisfatório como para C,
+                                                                         pressupostos. Ciência Rural, v. 33, n. 4, p. 679-686, 2003.
+necessitando ainda de melhorias no modelo. Deve ser
+dada importância ao plantio direto em relação ao preparo                 LOBEL, I.; AMELUNG, W.; DU PREEZ, C. C. Losses of
+convencional nessa região, uma vez que esse apresenta                    carbon and nitrogen with prolonged arable cropping from
+maior potencial para manter ou recuperar o C e N do solo.                sandy soils of the South African Highveld. European
+Os cenários futuros mostram a importância de se evitar                   Journal of Soil Science, v. 52, p. 93-101, 2001.
+queimadas e monocultivo de milho, dando preferência                      LIANG, B. C.; GREGORICH, E. G.; MACKENZIE, A. F.
+aos cultivos alternados de milho e soja.                                 Modeling of organic and inorganic amendments on organic
+                                                                         matter in Quebec soil. Soil Science, v. 161, p.109-114,
+                                                                         1996.
+               AGRADECIMENTOS                                            PARTON, W. J. et al. Analisys of factors controlling soil
+                                                                         organic matter levels in great plais grasslands. Soil Science
+       Os autores agradecem à Empresa Brasileira de                      Society America Journal, v. 51, p. 1173-1179, 1987.
+Pesquisa Agropecuária - EMBRAPA/CNPMS, pela
+                                                                         ROMANYA, A. J. et al. Modelling change in soil organic
+concessão da área de estudo; ao CNPq, à CAPES, à
+                                                                         matter after planting fast-growing Pinus radiata on
+FAPEMIG, e ao Departamento de Solos/UFV, pelo apoio
+                                                                         Mediterranean agricultural soils. European Journal of Soil
+financeiro. Ao grupo do National Resource Ecology                        Science, v. 51, p. 627-641, 2000.
+Laboratory, Universidade do Colorado State, pelo apoio
+com a simulação do modelo Century.                                       SILVA, I. R.; MENDONÇA, E. S. Matéria orgânica do solo.
+                                                                         In: NOVAIS, R. F. et al. Fertilidade do solo. Viçosa: SBCS,
+                                                                         p. 275-356, 2007.
+
+                   REFERÊNCIAS                                           SIX, J. et al. Stabilization mechanisms of soil organic matter:
+                                                                         Implications for C-saturation of soils. Plant and Soil, v. 241,
+BROOKES, P. C. et al. Chloroform fumigation and the                      p. 155-176, 2002.
+release of soil nitrogen: a rapid direct extraction method to
+                                                                         SPARLING, G. P.; WEST, A.W. A direct extration method to
+measure soil microbial biomass nitrogen in soil. Soil Biology
+                                                                         estimate soil microbial C: Calibration in situ using microbial
+Biochemistry, v. 17, p. 837-842, 1985.
+                                                                         and 14C labelled cells. Soil Biology & Biochemistry, v. 20,
+CAMBARDELLA, C. A.; ELLIOTT, E. T. Carbon and                            p. 337-343, 1988.
+nitrogen dynamics of soil organic matter fractions from
+cultivated grassland soil. Soil Science Society America                  STEVENSON, F. J. Humus chemistry: genesis, composition,
+Journal, v. 58, p. 123-130, 1994.                                        reactions. Second edition ed. John Wiley & Sons, 1994.
+
+CERRI, C. E. P. et al. Modeling soil carbon from forest and              TEDESCO, M. J. et al. Análise de solo, plantas, e outros
+pasture ecosystems of Amazon, Brazil. Soil Science Society               materiais. Universidade Federal do Rio Grande do Sul,
+America Journal, v. 67, p. 1879-1887, 2003.                              Porto Alegre, 174 p. 1995.
+
+FERNANDES, F. F. Uso do modelo Century para o estudo                     WENDLING, B. Carbono e Nitrogênio no solo sob
+da dinâmica de carbono orgânico de solos do Rio Grande                   diferentes usos e manejos e sua modelagem pelo Century.
+do Sul. 159f, 2002 Tese (Doutorado em Ciência do Solo),                  2007. 132f. Tese (Doutorado em Solos e Nutrição de Plantas).
+Programa de Graduação em Ciência do Solo, Universidade                   Universidade Federal de Viçosa, Viçosa, 2007.
+Federal do Rio Grande do Sul, Porto Alegre. 2002.
+                                                                         YEOMANS, J. C, BREMNER, L. M. A rapid and precise
+HARRISON, K. G.; POST, W. M.; RICHTER, D. D. Soil                        method for routine determination of organic carbon in soil.
+carbon turnover in a recovering termperate forest. Global                Communication in Soil Science and Plant Analisys, v. 19,
+Biogeochemical Cycles, v. 9, p. 449-454, 1995.                           p. 1467 -1476, 1988.
+
+
+
+248                                       Rev. Ciênc. Agron., v. 45, n. 2, p. 238-248, abr-jun, 2014

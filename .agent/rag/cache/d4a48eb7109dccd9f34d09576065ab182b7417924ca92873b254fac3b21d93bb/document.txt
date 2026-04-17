@@ -1,0 +1,501 @@
+See discussions, stats, and author profiles for this publication at: https://www.researchgate.net/publication/266415994
+
+
+
+Hexagonal discrete global grid systems for geospatial computing
+
+Article in Archives of Photogrammetry Cartography and Remote Sensing · January 2011
+
+
+
+CITATIONS                                                                                                 READS
+97                                                                                                        1,537
+
+
+1 author:
+
+            Kevin Sahr
+            Southern Oregon University
+            20 PUBLICATIONS 1,929 CITATIONS
+
+              SEE PROFILE
+
+
+
+
+ All content following this page was uploaded by Kevin Sahr on 29 January 2022.
+
+ The user has requested enhancement of the downloaded file.
+              Archives of Photogrammetry, Cartography and Remote Sensing, Vol. 22, 2011, pp. 363-376
+
+
+          HEXAGONAL DISCRETE GLOBAL GRID SYSTEMS FOR GEOSPATIAL
+                               COMPUTING
+                                                               K. Sahr
+
+      Dept. of Computer Science, Southern Oregon University, Ashland, Oregon, 97520 USA – sahrk@sou.edu
+
+
+KEY WORDS: Mapping, Integration, Modeling, Data Structures, Representation, Global, Hierarchical, Multiresolution
+
+ABSTRACT:
+
+Advanced geospatial applications often involve complex computing operations performed under sometimes severe resource
+constraints. These applications primarily rely on traditional raster and vector data structures based on square lattices. But there is
+a significant body of research that indicates that data structures based on hexagonal lattices may be a superior alternative for
+efficient representation and processing of raster and vector data in high performance applications. The advantages of hexagonal
+rasters for image processing are discussed, and hexagonal discrete global grid systems for location coding are introduced. The
+combination provides an efficient, unified approach to location representation and processing in geospatial systems.
+
+
+                     1. MOTIVATION                                    raster and vector data structures, as well as those factors that
+                                                                      have so far inhibited more widespread adoption of hexagon-
+Advanced geospatial applications, such as mobile mapping,             based representations for geospatial applications.
+often perform complex spatial operations on potentially large
+data sets, with strict controls on the accuracy of internal                   2. HEXAGONAL IMAGE PROCESSING
+location representations, and in computing environments that
+may be severely constrained by resource and size limitations.         As a basis for photogrammetry and general image
+These systems therefore often place a premium on                      processing, it is not an exaggeration to state that raster grids
+representational and algorithmic efficiency, and are in a             consisting of hexagonal pixels, arranged in a hexagonal
+constant state of improvement as more efficient                       topology, are superior to those based on square pixels of
+representations and algorithms become available. Among the            equivalent frequency under virtually every efficiency and
+most fundamental data structures are those used for the               geometric metric. Hexagon rasters are 13.4% more efficient
+representation and storage of raster image data and vector            at sampling circularly bandlimited signals (Petersen &
+geospatial location data. Because they are so pervasive, even         Middleton, 1962), and processing algorithms on hexagon
+small improvements in efficiency or representational                  rasters are 25-50% more efficient (Mersereau, 1979).
+accuracy in these data structures can result in substantial           Staunton (1989) implemented a set of edge detection
+performance increases in an overall system.                           operators on a hexagonal raster and realized over 40% better
+                                                                      performance compared to equivalent operators on square
+Data structures for the representation and storage of raster          grids.
+and vector data in geospatial applications have traditionally
+been built on substrates of square lattices. The common               These efficiencies are closely tied to the unique geometric
+standards have long been raster grids of square pixels and            attributes of a hexagonal lattice. Hexagons have the highest
+vector coordinates consisting of 2- or 3-tuples of floating           symmetry and are the most circular of all regular polygons
+point values.                                                         that tile the plane (Yale, 1968). Davies (1984) noted that
+                                                                      operators defined on square rasters may be dominated by
+Yet if the goal is optimal representational and algorithmic           preferred horizontal and vertical directions, leading to
+efficiency and superior semantic expressiveness, then data            anisotropy in the operators’ spectral properties, and argued
+structures based on squares are likely not the best choice.           instead for isotropic hexagon raster operators that exhibit
+There is a substantial body of research that indicates that           “circularity” (see also Coleman et al., 2004; Scotney &
+representations based on hexagonal lattices are superior, and         Coleman, 2007). Hexagon lattices have uniform and
+such research has arrived at this conclusion consistently             unambiguous connectivity, with each pixel having six
+across a number of research areas that directly apply to              neighbors with which it shares an edge, and whose centers
+geospatial systems, such as photogrammetry, image                     are equidistant from its center. In contrast, a pixel in a square
+processing, and geospatial location coding. Research in               lattice has two types of neighbors: four pixels with which it
+hexagonal image processing and pattern recognition has been           shares an edge, and four pixels with which it shares a vertex,
+on-going for over 40 years, and has recently seen a sharp             and the centers of the two types of neighbors are different
+increase (Middleton 2005). At the same time, decades of               distances from the central pixel. This fact alone leads to
+research in hexagon-based location coding has culminated in           semantic paradoxes when dealing with boundaries on square
+the development of hexagonal discrete global grid systems             lattices (Rosenfeld, 1970). The increased number of pixels in
+(Sahr et al., 2003): multi-resolution, hierarchically indexed         n-order neighborhoods on a hexagon raster allows for greater
+location systems that seamlessly tile the globe.                      angular resolution (Golay, 1969). These neighborhoods are
+                                                                      more circular than corresponding n-order neighborhoods on a
+In this paper I will survey the advantages of hexagon-based           square raster, making the discrete distance metric on a
+              Archives of Photogrammetry, Cartography and Remote Sensing, Vol. 22, 2011, pp. 363-376
+
+
+hexagon lattice a better approximation to cartesian distance     for the efficient display of hexagon rasters on square raster-
+(Luczak & Rosenfeld, 1976). And in addition to the               based display devices (see the survey in Middleton, 2005).
+advantages listed above, hexagonal rasters have long been of     This allows data acquisition and display to be performed
+specific interest to researchers in machine vision because       using hardware based on traditional square rasters, while
+they match the hexagonal arrangement in the photoreceptor        allowing internal processing of the data to be performed
+mosaic of the human eye (Roorda, 2001).                          using a hexagon raster with relatively little loss of accuracy
+                                                                 and efficiency, making the advantages of hexagonal raster
+These advantages have motivated significant algorithm            algorithms available today for use in geospatial computing.
+development on hexagon rasters. Examples of hexagon raster
+algorithms that are potentially useful in geospatial                   3. OPTIMAL VECTOR REPRESENTATION
+applications include computing metric distance (Luczak &
+Rosenfeld, 1976), adapted Bresenham’s line and circle            In geospatial applications vector locations are most often
+rasterization (Wuthrich & Stucki, 1991), edge detection          represented as a 2- or 3-tuple of floating point values, most
+(Staunton, 1989; Abu-Bakar & Green, 1996; Middleton &            commonly representing either polar (latitude/longitude)
+Sivaswamy, 2001; He et al., 2008), determining line-of-sight     coordinates or cartesian coordinates defined in some planar
+and field-of-view (Verbrugge, 1997), parallel pattern            map projection space. Operations on these tuples are usually
+transformations (Golay, 1969), image gradient operators          defined so as to mimic the corresponding operations on
+(Snyder et al., 1999; Gardiner et al., 2009; Shima et al,        tuples of real numbers. While undoubtedly useful, this
+2009), image alignment (Shima et al., 2010), surface area        approach masks the reality that any representation of real
+estimation (Miller, 1999), texture characterization              numbers on a digital computer is necessarily finite and
+(Middleton, 2002), feature extraction (Laine et al., 1993;       discrete, while the real number plane itself is infinite in
+Gardiner et al., 2008; Coleman et al., 2009),        perfect     extension, continuous, and infinitely divisible. Consequently,
+reconstruction filter banks (Allen, 2005), discrete Fourier      performing even the most fundamental operations on these
+transform (Mersereau, 1979; Grigoryan, 2002; Middleton &         representations has the potential to introduce and/or
+Sivaswamy, 2005; Vince & Zheng, 2007), array grammars            propagate rounding error. For example, two floating-point
+for picture languages (Siromoney & Siromoney, 1976;              tuples are usually considered “equal” if the distance between
+Subramanian, 1979; Dersanambika et al., 2005), and the           them is less than some relatively small number. This makes it
+computation of ranklets (Smeraldi & Rob, 2003), Euler            impossible to distinguish between two addresses which
+numbers (Sossa-Azuela et al., 2010), and wavelets (Jiang,        represent point locations that are distinct, yet very close, and
+2009; Veni et al., 2011). Applications have included license     two addresses which are intended to indicate the same
+plate recognition (He et al., 2008), reconstructing cardiac      location but which differ due to rounding error. In geospatial
+movement from medical imaging (He et al., 2006), and 3D          applications the result of a location equality test may well
+reconstruction (Jiang et al., 2010).                             have significant semantic implications; it might, for instance,
+                                                                 be an important decision point in determining the
+Despite the significant advantages of hexagonal rasters, there   application’s future execution path. And while it is often
+is one very important factor that has hindered their adoption    possible to bound the rounding error due to a single
+in image processing applications: the fact that physical         calculation or even an entire single application execution,
+sensor and display devices based on hexagonal grids are not      complex geospatial computing applications often involve
+currently commercially available. Custom hexagonal sensor        interactions between multiple programs and data sets. In such
+arrangements have been used in research and in specific          situations it can be very difficult, if not impossible, to bound
+applications, including a CMOS motion detector (Delbrueck,       the cumulative round-off error present in the final system
+1993), a prototype CMOS sensor with analog spatial               results, which may themselves serve as inputs into additional
+convolutions for edge detection (Tremblay et al., 1993), an      geospatial processing.
+integrated CMOS image acquisition system (Hauschild et al.,
+1996), an interferometer array for exoplanet detection           Vector location representations based on floating-point tuples
+(Guyon & Roddier, 2002), and a machine vision system             are no more “exact” than explicitly discrete raster integer
+consisting of a hexagonal raster of photoreceptors on a          coordinates; in both cases the infinite number of point
+curved surface (Riley et al., 2008). Additionally, a number of   locations on the earth’s surface are mapped to a finite number
+projects in high energy particle physics have employed           of location addresses, each of which forms an equivalence
+hexagonal rasters; these include a time projection               class with respect to geospatial location. The question of the
+spectrometer (Anderson, 1979) and silicon drift detector         optimal arrangement of these fixed points can be framed as a
+(Iwanczyk et al., 1999) with hexagonal CCD matrices, and a       point quantization problem on the real number plane. Given
+CMOS sensor array for vertex detection in linear colliders       an application with n-bit location representations we can
+with a new 3-way signal routing scheme that eliminates           represent at most 2n fixed points. All other points are
+ghosting (Hoedlmoser et al., 2009). I can only speculate on      represented by mapping them to the nearest of these fixed
+when sensor and display devices based on hexagonal rasters       points. There are multiple formulations for comparing
+will become more widely available. However, given the            arrangements of these fixed points. We can determine which
+numerous significant advantages of such devices it is likely     arrangement has the smallest average quantization error. Or
+that their use will continue to grow.                            we can treat each fixed point as the center of a circular region
+                                                                 and find the arrangement which covers the plane with the
+The dearth of hexagonal sensor and display devices has led       least overlap, or the arrangement with no overlap but with the
+to a proliferation of algorithms for resampling between          least uncovered area. The provably optimal solution to all of
+square and hexagon rasters (see the comprehensive survey         these formulations is to arrange the fixed points as the center
+and comparison in Gardiner et al., 2010), and of algorithms
+              Archives of Photogrammetry, Cartography and Remote Sensing, Vol. 22, 2011, pp. 363-376
+
+
+points of a hexagonal lattice (Rogers, 1964; Conway &             using very efficient per-digit table lookups (Bell & Holroyd,
+Sloane, 2010).                                                    1991).
+
+Given an optimal hexagonal lattice representation of raster or
+vector location, we next turn our attention to the problem of
+efficiently assigning addresses to these locations.
+
+          4. INDEXING HEXAGONAL GRIDS
+
+In contrast to the two orthogonal axes of square-lattice based
+coordinate systems, hexagon lattices have three natural axes
+spaced 120° apart, as illustrated in Figure 1. Any two of these
+axes are sufficient to uniquely identify each hexagon using a     !    Figure 2. Example recursive aggregation units with
+2-tuple of integers.                                                            apertures 3, 4, and 7 respectively.
+
+It is often useful to assign to each hexagon a linear code or     Aperture 7 aggregation best approximates a hexagonal shape
+index. The most useful indexes are hierarchical prefix codes,     and has therefore received the most attention. The most
+where the cell being indexed is considered to be at a specific    widely-used digit assignment for each aperture 7 unit is
+resolution in a multi-resolution structure, and each digit in     Generalized Balanced Ternary (GBT) (Gibson & Lucas,
+the index corresponds to a location at a single resolution        1982) (an alternate aperture 7 digit assignment is given in the
+relative to a hierarchical parent’s index. Such an indexing       spiral addressing of Middleton & Sivaswamy, 2005). GBT is
+implicitly defines both a locality-preserving total ordering of   a generalization of one-dimensional Balanced Ternary
+the pixels and a pyramid data structure, and enables the          addressing (Knuth, 1998), which uses three-valued digits that
+development of efficient hierarchical algorithms. The             represent -1, 0, or 1. As illustrated in Figure 3, GBT
+canonical example of a hierarchical prefix code is the square     generalizes this notation to the three axes of a hexagon grid.
+quadtree (Gargantini, 1982), where a square is recursively        In any seven-hex unit the central hex is designated digit 0.
+sub-divided into 4 smaller squares, each of which is assigned     The digits 1 through 6 are arranged so that, if the digits are
+an index consisting of the parent square’s index concatenated     stored as 3-bit binary values, digits on opposite sides of the
+with one of the digits 1, 2, 3, or 4. Hierarchical prefix         central hex are binary complements of each other, allowing
+location codes naturally encode both direction and precision,     negation to be performed efficiently using the binary
+without the need for metadata, and provide an implicit            complement operation. Depending upon the application, the
+algorithm for feature generalization through address              remaining unused possibility per 3-bit digit, base-10 digit 7,
+truncation (Dutton, 1999).                                        can be used to represent the aggregate group of seven child
+                                                                  cells associated with the indexed cell (Gibson & Lucas,
+                                                                  1982), to efficiently indicate address termination in a variable
+                                                                  length index, or to indicate that all higher resolution digits
+                                                                  are zero, efficiently communicating with a finite number of
+                                                                  digits that the index exactly represents the center point of the
+                                                                  cell with infinite precision (Sahr, 2008). Common vector
+                                                                  operations, such as addition and scaling, have been defined
+                                                                  on GBT using very efficient per-digit table lookups.
+
+
+
+
+             Figure 1. Natural hexagonal axes.
+
+While a square quadtree can be formed equivalently via top-
+down recursive partitioning or bottom-up aggregation of
+squares into larger squares, it is impossible to exactly
+partition a hexagon into smaller hexagons or to aggregate
+smaller hexagons to form a larger hexagon. The pixels in a                       Figure 3. GBT digit assignment.
+hexagonal raster can be aggregated into groups that tile the
+plane, with the centroids of these aggregates forming the         The nodes of these aggregation hierarchies can equivalently
+nodes of a new hexagonal grid to which the aggregation            be viewed top-down as a multi-resolution series of hexagonal
+scheme can be applied recursively. Groups of 3, 4, or 7 are       grids, as illustrated in Figure 4. Relative to the next coarser
+considered the most useful; the number of pixels in an            resolution grid, the cells at each finer resolution of an
+aggregate is referred to as the aperture of the hierarchy.        aperture a grid have 1/a the area and an inter-cell spacing a
+Examples are given in Figure 2. A unique hierarchical prefix      factor of 1/√a smaller.
+code index can then be assigned to each pixel by beginning
+with the coarsest aggregates and traversing the aggregation
+tree down to the individual pixels, consistently assigning
+digits at each level, with the digit base traditionally
+determined by the aperture (Burt, 1980; Bell & Holroyd,
+1991). An arithmetic can be defined on these indexes using
+               Archives of Photogrammetry, Cartography and Remote Sensing, Vol. 22, 2011, pp. 363-376
+
+
+
+
+    Figure 4. Multi-resolution hexagonal grids of aperture
+                   3, 4, and 7 respectively.
+
+The top-down approach to hexagonal hierarchies can be
+traced to Christaller (1966), who argued that ideal human
+settlement patterns form mixed aperture 3, 4, and 7
+hierarchies; Woldenberg (1979) argues that this is also true of
+naturally occurring branching structures such as rivers.
+Dacey (1965) gave a mathematical formulation of these
+hierarchies as a multi-resolution series of lattices. White et al.
+(1992) developed a computer program that generates mixed
+hexagon hierarchies on a hexagonal face of a truncated
+icosahedron and then inversely projects these hexagons to the
+surface of the earth, indexing the cells as per the aggregation         Figure 5. Multi-resolution quantization with sub-pixel
+approaches described above. Anchoring the hierarchy to the                    accuracy on an aperture 3 CPI hierarchy.
+earth’s surface in this way fixes the size of the coarsest grid
+resolution (unlike the traditional raster case where the grid               5. DISCRETE GLOBAL GRID SYSTEMS
+sizes are determined by the size of the finest resolution
+                                                                     Multi-resolution hexagonal grids have been defined on the
+pixels); thus mixed aperture hierarchies provide finer control
+                                                                     surface of regular polyhedra, such as the icosahedron, and
+over the choice of grid cell size and spacing.
+                                                                     then projected onto the sphere to create multi-resolution
+                                                                     raster and vector geospatial data structures that are global in
+Aggregation-based indexing works well for hierarchically
+                                                                     extent without singularities. These systems are known as
+indexing a single resolution raster, but it does not provide a
+                                                                     discrete global grid systems (DGGSs) (Sahr et al., 2003);
+true multi-resolution encoding for vector locations (Sahr,
+                                                                     figure 6 illustrates an example. Note that it is impossible to
+2008). In aperture 3 and 4 grids many cells overlap more
+                                                                     tile the globe with hexagons; for example, if the base
+than one cell at the next coarser resolution (see Figure 4), and
+                                                                     polyhedron is an icosahedron then there will be exactly
+each particular aggregation scheme arbitrarily chooses one of
+                                                                     twelve pentagonal cells, centered on the icosahedron vertices,
+those coarser cells as the indexing parent. So while
+                                                                     at all resolutions.
+truncating the index of a cell will yield a valid cell index at a
+coarser grid resolution, that coarser cell is not necessarily the
+correct quantification of the vector location at that resolution.
+This also means that we cannot perform a coarse filter
+equality comparison by using the highest order digits of two
+indexes. Note that this is also true of addresses in a
+traditional decimal number system representation. For
+example, the one-digit truncation of decimal value 1.9 is 1,
+while the discrete unit quantization of that value is 2.
+
+Note that the cells that are potentially the aperture 3 or 4
+indexing children of a particular cell form a 7-hex unit, just          Figure 6. Three resolutions of an aperture 3 hexagonal
+as in the aperture 7 case. We can therefore apply the GBT                         DGGS defined on an icosahedron.
+indexing arrangement to create a uniform indexing scheme
+for pure and mixed aperture hierarchies which I call central         The author has developed a software program called
+place indexing (CPI) (Sahr, 2010). For vector locations, such        DGGRID (Sahr, 2002) for generating aperture 3 and 4
+indexes encode a true multi-resolution quantization with sub-        hexagonal DGGSs with pyramid indexing that has been used
+pixel accuracy (see Figure 5). They also provide a uniform           in research and data set production (e.g., Suess et al., 2004;
+addressing system for aggregation schemes involving one or           Cressie & Johannesson, 2008; Hoffmann et al., 2010).
+more tiling units (e.g., Sahr, 2008). CPI allows optimal             DGGSs using hierarchical aggregation indexing schemes
+control of resolution while maintaining the efficient binary         have been proposed for both apertures 3 and 4 (White, 2000;
+encoding and integer arithmetic approach of GBT.                     Sahr, 2008; Vince, 2009; Tong et al., 2010). CPI has also
+                                                                     been extended to the sphere (Sahr, 2010) to provide a
+                                                                     uniform indexing for pure and mixed aperture DGGSs, and a
+                                                                     CPI grid has been designed and implemented to meet the
+                                                                     narrow inter-cell spacing requirements of the U.S.
+              Archives of Photogrammetry, Cartography and Remote Sensing, Vol. 22, 2011, pp. 363-376
+
+
+Environmental Protection Agency Emergency Response                and groups. 3rd ed., Springer Verlag, New York, 703 pp.
+Atlas project (Sahr & White, 2010).
+                                                                  Cressie, N., Johannesson, G., 2008. Fixed rank kriging for
+                    5. CONCLUSIONS                                very large spatial data sets. Journal of the Royal Statistical
+                                                                  Society: Series B (Statistical Methodology), 70(1), pp. 209–
+In this paper I attempted to demonstrate that raster and vector   226.
+data structures based on hexagonal lattices offer significant
+advantages over those based on square lattices. Hexagonal         Dacey, M.F., 1965. The geometry of central place theory.
+lattices are now definable on multiple scales, from the entire    Geografiska Annaler: Series B, Human Geography, 47(2),
+globe down to individual sensor arrays, providing an efficient    pp. 111-124.
+unified approach to location representation for geospatial
+computing applications. The primary obstacles to their            Davies, E.R., 1984. Circularity - a new principle underlying
+adoption have been the lack of commercially available sensor      the design of accurate edge orientation operators. Image and
+and display devices, and the inertia created by the long          Vision Computing, 2(3), pp. 134 -142.
+history of widespread use of square-based location
+representations, with the convenience and familiarity that        Delbrueck, T., 1993. Silicon retina with correlation-based,
+engenders. Since no technical limitations now exist I believe     velocity-tuned pixels. IEEE Transactions on Neural
+that it is only a matter of time before hexagonal raster and      Networks, 4(3), pp. 529-541.
+vector representations become more widely adopted.
+                                                                  Dersanambika, K.S., Krithivasan, K., Martín-Vide, C.,
+              6. ACKNOWLEDGEMENTS                                 Subramanian, K.G., 2005. Local and recognizable hexagonal
+                                                                  picture languages. International Journal of Pattern
+The author would like to thank Denis White for his many           Recognition and Artificial Intelligence, 19(7), pp. 853-871.
+insightful comments.
+                                                                  Dutton, G., 1999. A hierarchical coordinate system for
+                     7. REFERENCES                                geoprocessing and cartography. Springer Verlag, New York,
+                                                                  230 pp.
+Abu-Bakar, S., Green, R. J., 1996. Detection of edges based
+on hexagonal pixel formats. 3rd International Conference on       Gardiner, B., Coleman, S.A., Scotney, B.W., 2008. Multi-
+Signal Processing Proceedings (ICSP-96), Beijing, China,          scale feature extraction in a sub-pixel virtual hexagonal
+pp. 1114–1117.                                                    environment. Proceedings of the International Machine
+                                                                  Vision and Image Processing Conference, pp. 111-116.
+Allen, J.D., 2005. Perfect reconstruction filter banks for the
+hexagon grid, Proceedings of the Fifth International              Gardiner, B., Coleman, S.A., Scotney, B.W., 2009. Fast
+Conference on Information, Communications and Signal              multiscale operator development for hexagonal images.
+Processing, pp. 73–76.                                            Proceedings of the 31st Annual Pattern Recognition
+                                                                  Symposium of the German Association for Pattern
+Anderson, H.L., 1979. Time projection spectrometer,               Recognition (DAGM 2009), Jena, Germany, pp. 282-291.
+Informal Report LA-8165-MS, Los Alamos Scientific
+Laboratory, Los Alamos, NM.                                       Gardiner, B., Coleman, S.A., Scotney, B.W., 2010.
+                                                                  Comparison of hexagonal image resampling techniques.
+Bell, S.B.M., Holroyd, F.C., 1991. Tesseral amalgamators          Proceedings of the 14th International Machine Vision and
+and hierarchical tessellations. Image and Vision Computing,       Image Processing Conference (IMVIP 2010), Limerick,
+9, pp. 313-328.                                                   Ireland, pp. 102-115.
+Burt, P.J., 1980. Tree and pyramid structures for coding          Gargantini, I., 1982. An effective way to represent quadtrees.
+hexagonally sampled binary images. Computer Graphics and          Communications of the Association for Computing
+Image Processing, 14, pp. 271–280.                                Machinery, 25(12), pp. 905-910.
+Christaller, W. (1966). Central places in southern Germany.       Gibson, L., Lucas, D., 1982. Spatial data processing using
+Prentice Hall, Englewood Cliffs, NJ.                              generalized balanced ternary. Proceedings of the IEEE
+                                                                  Computer Society Conference on Pattern Recognition and
+Coleman, S.A., Scotney, B.W., Herron, M.G., 2004. A               Image Processing, Las Vegas, NV, pp. 566-571.
+systematic design procedure for scalable near-circular              Golay, M.J.E., 1969. Hexagonal parallel pattern
+Laplacian of Gaussian operators. Proceedings of the               transformations. IEEE Transactions on Computers, 18(8), pp.
+International Conference on Pattern Recognition                   733-740.
+(ICPR2004), Cambridge, MA, pp. 700-703.
+                                                                  Grigoryan, A.M., 2002. Efficient algorithms for computing 2-
+Coleman, S.A., Scotney, B.W., Gardiner, B., 2009. Design of       D hexagonal Fourier transforms. IEEE Transactions on
+feature extraction operators for use on biologically motivated    Signal Processing, 50, pp. 1438– 1448.
+hexagonal image structures. Proceedings of           the IAPR
+Conference on Machine Vision and Applications (MVA),              Guyon, O., Roddier, F., 2002. A nulling wide field imager for
+Japan, pp. 178-181.                                               exoplanets detection and general astrophysics. Astronomy &
+                                                                  Astrophysics, 391(379).
+Conway, J.H., Sloane, N.J.A., 2010. Sphere packings, lattices
+              Archives of Photogrammetry, Cartography and Remote Sensing, Vol. 22, 2011, pp. 363-376
+
+
+
+Hauschild, R., Hosticka, B.J., Müller, S., Schwarz, M., 1996.     Iwanczyk, J.S., Patt, B.E., Tull, C.R., Segal, J.D., Keme, C.J.,
+A CMOS optical sensor system performing image sampling            Bradley, J., Hedman, B., Hodgson, K.O., 1999. Large area
+on a hexagonal grid. Proceedings of the 22nd European             silicon drift detectors for X-rays — new results. IEEE
+Solid-State Circuits Conference.                                  Transactions on Nuclear Science, 46, pp. 284-288.
+
+He, X., Jia, W., Wu, Q., Hintz, T., 2006. Description of the      Jiang, Q., 2009. Orthogonal and Biorthogonal √3-Refinement
+cardiac movement using hexagonal image structures.                Wavelets for hexagonal data processing. IEEE Transactions
+Computerized Medical Imaging and Graphics, 30(6-7), pp.           on Signal Processing, 57(11), pp. 4304 - 4313.
+377-382.
+                                                                  Jiang, Z., Qinghui, X., Linghong, Z., 2010. 3D reconstruction
+He, X., Wu, Q., Jia, W., Hintz, T., 2008. Edge detection on       based on hexagonal pixel’s dense stereo matching. Applied
+hexagonal structure. Journal of Algorithms & Computational        Mechanics and Materials, 20-23, pp. 487-492.
+Technology, 2(1), pp. 61-78.
+                                                                  Knuth, D., 1998. The art of computer programming; Volume
+Hoedlmoser, H., Varner, G., Cooney, M., 2009. Hexagonal           2: Seminumerical algorithms. Addision-Wesley, Menlo Park,
+pixel detector with time encoded binary readout. Nuclear          CA, 762 pp.
+Instruments and Methods in Physics Research Section A:
+Accelerators, Spectrometers, Detectors and Associated             Laine, A.F., Schuler, S., Huda, W., Honeyman-Buck, J.C.,
+Equipment, 599(2-3), pp. 152-160.                                 Steinbach, B.G., 1993. Hexagonal wavelet processing of
+                                                                  digital mammography. Proceedings of Medical Imaging
+Hoffmann M, Hilton-Taylor C., Angulo A., Böhm M.,                 1993: Image Processing, Newport Beach, CA.
+Brooks T.M., Butchart S.H., Carpenter K.E., Chanson J.,
+Collen B., Cox N.A., Darwall W.R., Dulvy N.K., Harrison           Luczak, E., Rosenfeld, A., 1976. Distance on a hexagonal
+L.R., Katariya V., Pollock C.M., Quader S., Richman N.I.,         grid. IEEE Transactions on Computers, 25(5), pp. 532-533.
+Rodrigues A.S., Tognelli M.F., Vié J.C., Aguiar J.M., Allen
+D.J., Allen G.R., Amori G., Ananjeva N.B., Andreone F.,           Mersereau, R.M., 1979. The processing of hexagonally
+Andrew P., Aquino Ortiz A.L., Baillie J.E., Baldi R., Bell        sampled two-dimensional signals. Proceedings of the IEEE,
+B.D., Biju S.D., Bird J.P., Black-Decima P., Blanc J.J.,          67, pp. 930-949.
+Bolaños F., Bolivar-G W., Burfield I.J., Burton J.A., Capper
+D.R., Castro F., Catullo G., Cavanagh R.D., Channing A.,          Middleton, L., Sivaswamy, J., 2001. Edge detection in a
+Chao N.L., Chenery A.M., Chiozza F., Clausnitzer V., Collar       hexagonal-image processing framework. Image and Vision
+N.J., Collett L.C., Collette B.B., Cortez Fernandez C.F.,         Computing, 19, pp. 1071-1081.
+Craig M.T., Crosby M.J., Cumberlidge N., Cuttelod A.,
+Derocher A.E., Diesmos A.C., Donaldson J.S., Duckworth            Middleton, L., 2002. The co-occurrence matrix in square and
+J.W., Dutson G., Dutta S.K., Emslie R.H., Farjon A., Fowler       hexagonal lattices. Proceedings of the 7th International
+S., Freyhof J., Garshelis D.L., Gerlach J., Gower D.J., Grant     Conference on Control, Automation, Robotics and Vision,
+T.D., Hammerson G.A., Harris R.B., Heaney L.R., Hedges            ICARV 2002, Singapore, pp. 90-95.
+S.B., Hero J.M., Hughes B., Hussain S.A., Icochea M.J.,
+Inger R.F., Ishii N., Iskandar D.T., Jenkins R.K., Kaneko Y.,     Middleton, L., Sivaswamy, J., 2005. Hexagonal Image
+Kottelat M., Kovacs K.M., Kuzmin S.L., La Marca E.,               Processing; A Practical Approach, Springer-Verlag, London,
+Lamoreux J.F., Lau M.W., Lavilla E.O., Leus K., Lewison           254 pp.
+R.L., Lichtenstein G., Livingstone S.R., Lukoschek V.,
+Mallon D.P., McGowan P.J., McIvor A., Moehlman P.D.,              Miller, E., 1999. Alternative tilings for improved surface area
+Molur S., Muñoz Alonso A., Musick JA., Nowell K.,                 estimates by local counting algorithms. Computer Vision and
+Nussbaum R.A., Olech W., Orlov N.L., Papenfuss T.J., Parra-       Image Understanding (CVIU), 74, pp. 193-211.
+Olea G., Perrin W.F., Polidoro B.A., Pourkazemi M., Racey
+P.A., Ragle J.S., Ram M., Rathbun G., Reynolds R.P., Rhodin       Petersen, D.P., Middleton, D., 1962. Sampling and
+A.G., Richards S.J., Rodríguez L.O., Ron S.R., Rondinini C.,      reconstruction of wave-number-limited functions in N-
+Rylands A.B., Sadovy de Mitcheson Y., Sanciangco J.C.,            dimensional Euclidean spaces. Information Control, 5, pp.
+Sanders K.L., Santos-Barrera G., Schipper J., Self-Sullivan       279-323.
+C., Shi Y., Shoemaker A., Short F.T., Sillero-Zubiri C.,
+Silvano D.L., Smith K.G., Smith A.T., Snoeks J., Stattersfield    Riley, D.T., Harmann, W.M., Barrett, S.F., Wright, C.H.G.,
+A.J., Symes A.J., Taber A.B., Talukdar B.K., Temple H.J.,         2008. Musca domestica inspired machine vision sensor with
+Timmins R., Tobias J.A., Tsytsulina K., Tweddle D., Ubeda         hyperacuity. Bioinspiration and Biomimetics, 3(2).
+C., Valenti S.V., van Dijk P.P., Veiga L.M., Veloso A., Wege
+D.C., Wilkinson M., Williamson E.A., Xie F., Young B.E.,          Rogers, C.A., 1964. Packing and Covering. Cambridge
+Akçakaya H.R., Bennun L., Blackburn T.M., Boitani L.,             University Press, 111 pp.
+Dublin H.T., da Fonseca G.A., Gascon C., Lacher T.E Jr.,
+Mace G.M., Mainka S.A., McNeely J.A., Mittermeier R.A.,           Roorda, A., Metha, A.B., Lennie, P., Williams, D.R., 2001.
+Reid G.M., Rodriguez J.P., Rosenberg A.A., Samways M.J.,          Packing arrangement of the three cone classes in primate
+Smart J., Stein B.A., Stuart S.N., 2010. The impact of            retina. Vision Research, 41, pp. 1291-1306.
+conservation on the status of the world’s vertebrates. Science,
+330(6610), pp. 1503-1509.
+                                 Archives of Photogrammetry, Cartography and Remote Sensing, Vol. 22, 2011, pp. 363-376
+
+
+            Rosenfeld, A., 1970. Connectivity in digital pictures. Journal                                 Suess, M., Matos, P., Gutierrez, A., Zundo, M., Martin-Neira,
+            of the Association for Computing Machinery, 17, pp.                                            M., 2004. Processing of SMOS level 1c data onto a discrete
+            146-160.                                                                                       global grid. Proceedings of the IEEE International
+                                                                                                           Geoscience and Remote Sensing Symposium, pp. 1914-1917.
+            Sahr, K., 2002. DGGRID version 3.1b: User documentation
+            for discrete global grid software. Retrieved July 14, 2011,                                    Tong, X., Ben, J., Wang, Y., 2010. A new effective hexagonal
+            f r o m h t t p : / / d i s c r e t e g l o b a l g r i d s . o rg / d g g r i d / d o c s /   discrete global grid system: hexagonal quad balanced
+            dggriddoc31.pdf.                                                                               structure. Proceedings of Geoinformatics 2010, pp. 1-6.
+
+            Sahr, K., White, D., Kimerling, A.J., 2003. Geodesic discrete                                  Tremblay, M., d'Anjou, M., Poussart, D., 1993. Hexagonal
+            global grid systems. Cartography and Geographic                                                sensor with imbedded analog image processing for pattern
+            Information Science, 30(2), pp. 121–134.                                                       recognition. Custom Integrated Circuits Conference,
+                                                                                                           Proceedings of the IEEE 1993, San Diego, CA, pp.
+            Sahr, K., 2008. Location coding on icosahedral aperture 3                                      12.7.1-12.7.4.
+            hexagon discrete global grids. Computers, Environment and
+            Urban Systems, 32(3), pp. 174-187.                                                             Veni, S., Narayanankutty, K.A., Fayas., A, 2011. Employing
+                                                                                                           hexagonal wavelets for detecting microcalcification in digital
+            Sahr, K., 2010. Central Place Indexing Systems, U.S. Patent                                    mammography. ICGST International Journal on Graphics,
+            Application 2010/054550.                                                                       Vision and Image Processing, GVIP, 11(I), pp. 59-66.
+
+            Sahr, K., White, D., 2010. The superfund_21ha indexing                                         Verbrugge, C., 1997. Hex grids. Unpublished manuscript,
+            system. Unpublished documentation, Southern Oregon                                             McGill University, Montreal, Quebec, Canada.
+            University, Ashland, Oregon.
+                                                                                                           Vince, A., Zheng, X., 2007. Computing the discrete Fourier
+            Scotney, B.W., Coleman, S.A., 2007. Improving angular                                          transform on a hexagonal lattice. Journal of Mathematical
+            error via systematically designed near-circular Gaussian-                                      Imaging and Vision, 28, pp. 125-133.
+            based feature extraction operators. Pattern Recognition, 40
+            (5), pp. 1451-1465.                                                                            Vince, A., Zheng, X., 2009. Arithmetic and Fourier transform
+                                                                                                           for the PYXIS multi-resolution digital earth model.
+            Shima, T., Saito, S., Nakajima, M., 2009. Design and                                           International Journal of Digital Earth, 2(1), pp. 59-79.
+            evaluation of more accurate gradient operators on hexagonal
+            lattices. IEEE Transactions on Pattern Analysis and Machine                                    Vitulli, R., 2002. Aliasing effects mitigation by optimized
+            Intelligence, 32(6), pp. 961-973.                                                              sampling grids and impact on image acquisition chains.
+                                                                                                           Geoscience and Remote Sensing Symposium, pp. 979-981.
+            Shima, T., Sugimoto, S., Okutomi, M., 2010. Comparison of
+            image alignment on hexagonal and square lattices.                                              White, D., Kimerling, A.J., Overton, W.S., 1992.
+            Proceedings of the 17th IEEE International Conference on                                       Cartographic and geometric components of a global sampling
+            Image Processing, pp. 141-144.                                                                 design for environmental monitoring. Cartography and
+                                                                                                           Geographic Information Systems, 19(1), pp. 5-22.
+            Siromoney, G., Siromoney, R., 1976. Hexagonal arrays and
+            rectangular blocks. Computer Graphics and Image                                                White, D., 2000. Global grids from recursive diamond
+            Processing, 5, pp. 353-381                                                                     subdivisions of the surface of an octahedron or icosahedrons.
+                                                                                                           Environmental Monitoring and Assessment, 64(1), pp.
+            Smeraldi, F., Rob, M.A., 2003. Ranklets on hexagonal pixel                                     93-103.
+            lattices. Proceedings of the British Machine Vision
+            Conference, Norwich, UK, vol. 1, pp. 163-170.                                                  Woldenberg, M.J., 1979. A periodic table of spatial
+                                                                                                           hierarchies. In: Philosophy in Geography. D. Reidel,
+            Snyder, W., Qi, H., Sander, W., 1999. A coordinate system for                                  Dordrecht, Netherlands, pp. 429-456.
+            hexagonal pixels. Proceedings of SPIE, the International
+            Society for Optical Engineering, 3661, pp. 716–727.                                            Wuthrich, C.A., Stucki, P., 1991. An algorithmic comparison
+                                                                                                           between square- and hexagonal-based grids. CVGIP:
+            Sossa-Azuela, J.H., Cuevas-Jiménez, E.V., Zaldivar-Navarro,                                    Graphical Models and Image Processing, 53(4), pp.
+            D., 2010. Computation of the Euler number of a binary                                          324-339.
+            image composed of hexagonal cells. Journal of Applied
+            Research and Technology, 8(3), pp. 340-351.                                                    Yale, P.B., 1968. Geometry and symmetry. Holden-Day, San
+                                                                                                           Francisco, 288 pp.
+            Staunton, R.C., 1989. The design of hexagonal sampling
+            structures for image digitization and their use with local
+            operators. Image and Vision Computing, 7(3), pp. 162-166.
+
+            Subramanian, K.G., 1979. Hexagonal array grammars.
+            Computer Graphics and Image Processing, 10(4), pp.
+            388-394.
+
+
+
+
+View publication stats

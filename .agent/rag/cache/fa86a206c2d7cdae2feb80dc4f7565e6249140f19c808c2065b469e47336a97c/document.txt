@@ -1,0 +1,350 @@
+Environmental and Ecological Statistics 4, 337±344
+
+
+
+Chaotic dynamics in a multispecies
+community
+                              Â SZ L OÂ O R LO
+M A D H U R A N A N D * and L A              Â CI
+
+Department of Plant Sciences, The University of Western Ontario, London, Ontario, N6A 5B7, Canada
+Received April 1996. Revised March 1997
+
+
+It is shown that community dynamics is neither haphazard nor completely directed. This is quite clear
+from our examination of a concrete example where recovery dynamics in vegetation progressed from an
+early phase of strong linear determinism to intense randomness with phase transition defined by density.
+Is it possible to reconstruct the two phase structure in simple mathematical terms? The results show that it
+is, and that the model is very simple: a discrete-time Markov chain with white noise. Interestingly, the
+long-term behaviour of the model is complex chaotic and explosive, suggesting that progression from
+dominant randomness to determinism is a distinctly probable event. And thus a conceptual foundation is
+laid, through interlinking initial condition, phase structure and explosive chaoticity, for a unifying theory,
+in which the classical hypotheses of community dynamics appear as special cases.
+Keywords: attractor, complexity, ecology, fractal, Markovity, modelling, succession, theory, vegetation
+
+
+
+
+1. Ecological connections
+
+The subject of this paper is dynamics in a natural plant community which has been significantly
+perturbed. According to ecological theory, dynamics in such a community should tend toward
+increased stability (Odum, 1969). We use the conventional term `succession' (Clements, 1916;
+Connell and Slatyer, 1977; McIntosh, 1980; Finegan, 1984; Fekete, 1985) to describe this type of
+dynamics, but avoid replacing `stability' with the attendant term `climax' because of diverse
+technical connotations which usage has imparted.
+    Ecological theory also assumes a feedback mechanism, through which population and com-
+munity level processes change the environment, which in turn change the community itself
+(Clements, 1916). It is well understood that feedback can amplify small random effects and
+change a simple predictable dynamics into a chaotic one (Lorenz, 1963; CËambel, 1993). Closer
+to home, biological populations have been known to show chaotic dynamics (May, 1987;
+Berryman and Millstein, 1989; Tilman and Wedin, 1991; Hastings et al., 1993), but we share
+the view that population variables taken one or two at a time are just part of the community
+story. So we ask: Can a multispecies collection, the community, behave chaotically? The exis-
+tence of a feedback mechanism in the presence of many small random effects should already be
+sufficient ground to suspect that community level chaotic dynamics exists ± and we are not the
+first to suspect this (Godfray and Blythe, 1990; Vandermeer, 1990; Stone and Ezrati, 1996).
+
+
+* To whom correspondence should be addressed.
+
+1352-8505  1997 Chapman & Hall
+338                                                                                Anand and OrloÂci
+
+2. Quantification of the succession path
+
+To test and study chaos, we have to quantify the successional path. For this we need tools which
+can handle the multivariate case. Mathematician Esoterica will immediately point to logistic
+equations and related calculus, but would miss the important experience of ecologists who
+have tried this approach, yet did not succeed in carrying the exercise further than the trivial
+limit of about two or three populations per community. The need for another type of mathe-
+matics is pressing for yet another reason. To make this point, we have to recall that in a com-
+munity-level succession study attention shifts from rate of change within populations to the type
+and magnitude of transitions in the community by means of replacement among populations
+(Waggoner and Stephens, 1970; Horn, 1975a,b; van Hulst, 1979; Usher, 1981; Fekete, 1985;
+OrloÂci et al., 1993). But natural transitions have deterministic and non-deterministic compo-
+nents, and for this reason the choice of model is one which explicitly incorporates both. The
+discrete-time Markov process with white noise is of this kind and is without limitation on the
+number of populations, other than that dictated by computational power or the lack of it. We
+intend to demonstrate that our Markov model (OrloÂci and OrloÂci, 1988; OrloÂci et al., 1993) is
+capable of tracing the complex successional path through its phases from striking linear deter-
+minism to blind randomness. For an explicit definition of (coeno) states and the transition
+matrix we refer the reader to the Appendix. Our first step in showing this is to describe succes-
+sion in a concrete case (Lippe et al., 1985), and then in subsequent steps we fit model to case
+and experiment with the model to explore its long-term behaviour.
+   Figure 1 displays the multidimensional succession process as an eigenmapping. We refer to
+the point configuration in this projection as the 2-D trajectory. The reference space is linear by
+choice and for this reason a curved trajectory or trajectory segment is a signature of a nonlinear
+
+
+
+
+        Figure 1. Two-dimensional Eigenmapping of the 19-step recovery trajectory (A) from Atlantic
+        heathland (Lippe et al. 1985) disturbed by fire and heavy grazing. Magnified section of last 11
+        steps (B) involves vertical distortion. The axes are omitted to avoid blurring of the graph. We
+        have no other use for them than for parsimonious mapping. The original data represent point-
+        cover estimates of seven species, one species group and bare ground. Step size is one year.
+        Numerals indicate years elapsed. The mapping is 99% accurate, 95% on 1st axis (in A). Note
+        linear early phase and nonlinear late phase. Break between phases coincides with point cover of
+        bare ground dropping from 57% to less than 7%.
+Chaotic dynamics in multispecies community                                                            339
+
+natural process. The graph is simple enough for visual inspection to reveal the presence of a
+chronologically arranged 2-phase structure. In the early phase (roughly years 1±8), a simple
+linear law reigns. In the late phase, the process path has random turns and twists, a phase of
+turbulence as it were, under increased random effects. The separation of phases is dramatic.
+   Ecological studies of succession entail a systematic search for regularity. When a phase struc-
+ture is discovered, significance is obvious. Not surprisingly, ecologists saw fit to use the phases to
+classify plant communities chronologically as seral or climax (Clements, 1916; Nichols, 1923;
+McIntosh, 1980; Fekete, 1985). We note that the seral vs. climax classification puts emphasis on
+just how determinism and randomness trade importance in time. But it should be clear that a
+simplistic isolation of phases may be deceiving with respect to the relative contributions of deter-
+minism and randomness to the whole process. This is very clear in the example (Fig. 1) where we
+measure determinism as the level of concordance (C) with the fitted discrete-time stationary
+Markov model (OrloÂci et al., 1993). The term concordance describes the level of match
+between two structures. To define these structures we first compute the two c  c Euclidean
+distance matrices DX and DM corresponding to coenostate records X1 ; X2 ; . . . ; Xc and the
+Markov scores records M1 ; M2 ; . . . ; Mc such that Mt1  Mt P with M1  X1 . The coefficient
+                         Pc                 2
+          2                j<k dXjk ÿ dMjk 
+         s D X ; D M   Pc                 2
+                           j<k dXjk  dMjk 
+
+is our definition of stress or discordance (OrloÂci et al. 1993), and the difference 1 ÿ s2 DX ; DM 
+is proportional to the level of concordance of the observed distance configuration and the
+model Markov distance configuration. The tight fit of model and process is observed in Fig. 2
+for which C is so high that it departs by 7.3 standard deviation units (sd) from what would be
+expected if randomness were the sole determinant of change. Intuitively, one would think that
+an overall high Markovian determinism is a residual of the early linear phase. But this is not
+exactly true. In fact when we examine the phases independently we find that sd is 5.6 in the
+early phase and a meagre 0.5 in the late phase. Observing that 5:6  0:5 < 7:3, determinism in
+the total process is not simply related to determinism within the phases. This gives further evi-
+dence to the fascinating observation made by others (Schaffer et al., 1986; Moss and Wiesenfeld,
+1995) that addition of white noise can actually enhance the appearance of determinism. There is
+in fact much to be said for the simple-minded wisdom behind the idea that focusing on the
+whole reveals more than viewing the sum of its parts (Vandermeer, 1990; van Hulst, 1992).
+
+
+
+
+        Figure 2. Joint dispersion of observed (heathland) and simulated (Markov) distance configura-
+        tions (19) before (left) and after (right) random permutation of steps. Distances (171 points) are
+        computed between steps (see Fig. 1). The tight elongated cluster on the left indicates consistency
+        of the observed process with Markov-type determinism.
+340                                                                                      Anand and OrloÂci
+
+3. The chaos model
+Having considered `reality' in the disguise of a 2D trajectory, we now ask: What are the generic
+characteristics of the trajectory as seen in the Markov model perturbed by arbitrary white noise
+in the transition matrix? The model, defined by the natural initial state and the natural transi-
+tion probabilities, passes through a large number of steps under continuous impact by, on
+average, low-level white noise. Long-term behaviour is of interest to discover if we should
+expect simply more of the same, or if in fact a nested or cyclic phase structure is native to
+the process. Notwithstanding well-articulated contrary views (Hastings and Higgins, 1994), we
+believe that the discovery of phase is not a hindrance but rather an important revelation in line
+with ecological expectations.
+    The distance profile under allowed 25% maximum white-noise (Fig. 3) and the properties of
+the reconstructed attractor (Fig. 4, Table 1) reveal clear signs of a complex chaotic process:
+positive Lyapunov exponent (Wolf et al., 1985) and high fractal dimension (Burrough, 1981;
+Mandelbrot, 1982). In other words, the convergence of the attractor trajectories, starting at
+different fiducial points, intensifies under increased randomness, and also, the attractor's struc-
+tural complexity escalates. Thus, notwithstanding the accumulation of random feedback effects,
+the successional path stays sensitive to initial conditions, while exhibiting explosive behaviour as
+it tends towards a complex `strange' (Lorenz, 1963) attractor which is fractal.
+
+
+        Table 1. Fractal dimension (Burrough, 1981) and Lyapunov exponent (Wolf et al., 1985) of
+        reconstructed attractors in processes as shown (increased fractal dimension implies increased
+        complexity in the attractor; positive Lyapunov exponent indicates chaoticity)
+        Process                                     Randomness              Fractal            Lyapunov
+                                                                          dimension            exponent
+        Pure Markov                                      0%                  1.50               ±1.000
+        Distorted Markov                                 25%                 1.91                0.141
+                                                        100%                 2.00                2.097
+
+
+
+
+        Figure 3. Distance profiles of the Markov configuration fitted (OrloÂci, 1988; OrloÂci et al., 1993) to
+        heathland data. Compositional distances between annual states are on the vertical scales and
+        steps on the horizontal scale. Random perturbation levels: 0% (a), 25% (b). (We note that the
+        percentages for distortion are upper limits and for this reason the actual random distortion of a
+        specific transition probability at any step is between 0% and the given upper limit.)
+Chaotic dynamics in multispecies community                                                           341
+
+
+
+
+        Figure 4. Phase space mappings of the Markov process (left) and reconstructed attractors (right).
+        Chain length shown is 950 steps. Random perturbation levels: 0% (a,b), 15% (c,d), 25% (e,f).
+
+
+
+4. Unified theory: a first approximation
+When we interlink initial condition, linear and nonlinear phase structure and space-time scale
+dependence, i.e. fractal nature, in terms of our model, the broad outlines of a unifying theory of
+community succession emerge. The implications of this theory are intuitively straightforward:
+the Gleasonian (Gleason, 1926) hypothesis is supported by incorporating the importance of
+initial conditions, which define a stochastic range for the attractor, and by showing the signifi-
+cant role randomness plays in the process. The succession process is in fact individualistic, i.e.
+not exactly repeatable, and also site-specific. What may seem strange on first thought is that
+Clementsian (Clements, 1916) determinism is also supported. This is by recognition of the exis-
+tence of a clearly two-phase structure dominated by linear determinism. Furthermore, the
+climax pattern view (Whittaker, 1953) is also supported in that the attractor is not a fixed
+point, but a ballistic target, as it were, with a defined stochastic range.
+   These findings should be satisfying to ecologists who face the restrictions of the classical
+viewpoints and methodology, in that the window opened in earlier work (Usher, 1981) is now
+broadened. It is clear that the classical theories are not only reconcilable but realistic as special
+cases. We dare say in closing that `chaos' is a unifying notion, an `equalizer', in a manner of
+speaking, in the ecologist's world of diverse theories about succession.
+
+
+Appendix
+We refer to Feller (1957) for fundamentals and only give a quick summary here. We will use
+terms such as coenostate and coenosere to anchor the summary in an ecological terminology.
+342                                                                                 Anand and OrloÂci
+
+When we observe a community of organisms we observe what ecologists call a census, empha-
+sizing that in the community the organisms function in unity using all their `talents' in the art of
+competition, accommodation, opportunism, and the like, to assure that they survive. The
+momentary state of things in such a community is meant when we use the term coenostate.
+But communities change continuously and the states past and future link up through a chain
+of events. Based on this we may use the term coenosere to emphasize the serial nature of the
+states. Our best model for a coenosere has to be less than `continuous', not by preference but
+necessity since the modus operandi can only handle the description of community states at dis-
+crete intervals. Thus our model coenostates are somewhat isolated but naturally ordered by
+their chronology or our calendar. If we present c coenostates in their chronological order
+U1 ; U2 ; . . . ; Uc each described by a record set X1 ; X2 ; . . . ; Xc then we have quantified the suc-
+cession path in the most primitive terms. For higher levels of quantification we may record, or,
+more precisely, define higher order descriptors which have to do with structures such as popu-
+lation interactions, complexity, stability, etc. Having explained the nature of the record, we can
+then try to partition the records into components which are due to the determinism (predict-
+ability) of the process or to unpredictable random variation. The latter in its crudest definition
+has no simple relationship to time and is what chaotic behaviour generates. Now to quantify the
+deterministic component, we have an infinite number of possible mathematical functions linear
+or nonlinear, most of which can be readily discarded for being too simple and thus biologically
+nonsensical. Our choice of Markov mathematics or the Markov chain for our model is an
+outcome of past experience of both ours and others. We refer to these in the main text. A
+Markov chain is completely defined by the initial state of the community, the first record set
+X1 and a transition matrix P. The latter is a matrix of proportions which tell us with what
+frequency a given population (taxon) is replaced in one time step by another taxon or
+remains unchanged. The Markov model is thus a recursive expression Mt1  Mt P with
+M1  X1 . In our application, the typical element phi of P expresses the rate at which population
+h loses ground (vegetation cover, abundance) to population i when the coenosere moves from
+one of its states (t) to the next (t  1). The transition matrix may be constant or it may change
+in time. Based on this property, the coenosere (or Markov chain) is said to be stationary or
+moving. We cannot imagine a pure stationary process in vegetation succession, yet there may
+be lengths of the chain where stationarity is masked only by random variation or `white noise'.
+This manifests itself in the model through certain levels of random variation in the transition
+matrix. A stationary coenosere keeps itself targeted on the same steady-state, while a moving
+coenosere undergoes re-targeting from time to time by significant changes in the transition
+matrix. It is true that in the long run all coenoseres are `moving' in the pure sense of the
+word, but under the usual study scenario the time span is finite and coenosere stationarity is
+a valid question. So to discover whether the chain is moving or stationary it is necessary to first
+find out how probable it is that an observed change in transition probabilities exceeds the
+threshold beyond which it can no longer be considered as white noise.
+   The problems of estimating transition probabilities from observed data, and testing for deter-
+minism in general and Markovity in particular are discussed in OrloÂci et al. (1993). They give
+detailed discussions of methods and examples to illustrate methods and concepts. It will be
+sufficient here to say without proofs, that any square matrix of non-negative numbers with
+unit row totals could qualify as a transition matrix P and when X1 and P are given, a stationary
+Markov chain is completely defined (Feller, 1968, Vol. I, pp. 372 et seq.). Of course we need
+such a square matrix that is consistent with averages in the records. Two things are important in
+this: (i) knowing the past state X1 is key to generating a unique model path to succession; and
+Chaotic dynamics in multispecies community                                                                 343
+
+(ii) it is sufficient to show that magnitude of variation in P between time steps remains below
+set threshold limits to conclude that stationarity exists at that chosen threshold.
+
+
+Acknowledgements
+Our home institution (UWO) granted research travel and other financial support to MA.
+NSERC of Canada supplied grant support to LO and a generous Graduate Fellowship to
+MA. We thank two anonymous reviewers for helpful comments.
+
+
+Biographical sketches
+Madhur Anand recently received her PhD degree in the Environmental Science Graduate
+Program at UWO. She has received several awards and scholarships from UWO and the
+Natural Sciences and Engineering Research Council of Canada. She has presented her work
+in scientific journals and at numerous scientific conferences worldwide. She is a native of
+Canada.
+   LaÂszloÂ OrloÂci has served as professor at the University of Western Ontario since 1965 with
+short interruptions on visiting and research professorships elsewhere. By early training, he is
+specialized in forest engineering, biology and quantitative ecology. Peer recognition for his
+work in statistical and evolutionary ecology has earned him rapid promotion through UWO
+ranks and other honours, such as the prestigious memberships in the Hungarian Academy of
+Sciences and in the Royal Society of Canada, Laurea Honoris Causa from the UniversitaÁ di
+Trieste, INTECOL's Distinguished Statistical Ecologist award, appointments as CNPg
+Distinguished Visiting Scientist, and Distinguished Visiting Professor, Honorary Professor and
+Academic Advisor at Universities. He also has been honoured with offices in learned societies
+and scientific institutions, and editorships at scientific journals. A native of Hungary, LaÂszloÂ
+OrloÂci arrived in Canada in 1957 as a student of the Sopron forestry group at the time of the
+1956 Hungarian revolution. He is married to MaÂrta MihaÂly, a fellow Sopron alumna.
+
+
+References
+Berryman, A.A. and Millstein, J.A. (1989) Are ecological systems chaotic ± and if not, why not? Trends in
+      Ecology and Evolution, 4, 26±8.
+Burrough, P.A (1981) The fractal dimensions of landscape and other data. Nature, 294, 240±2.
+Cambel, A.B. (1993) Applied Chaos Theory: a paradigm for complexity. Academic Press, New York.
+Clements, F.E. (1916) Plant Succession: an analysis of the development of vegetation, Publ. No. 242
+      Carnegie Institution, Washington.
+Connell, J.H. and Slatyer, R.O. (1977) Mechanisms of succession in natural communities and their role in
+      community stability and organization. American Naturalist, 111, 1119±44.
+Fekete, G. (1985) A terresztris vegetaÂcioÂ szukcesszioÂja: elmeÂletek, modellek, valoÂsaÂg. In G. Fekete (ed.)
+      Paradigms of coenological succession, (in Magyar) Akademiai KiadoÂ, Budapest.
+Feller, W. (1957) An introduction to probability theory and its applications. Vol. I, John Wiley & Sons,
+      Inc., London.
+Finegan, B. (1984) Forest succession. Nature, 312, 109±14.
+344                                                                                   Anand and OrloÂci
+
+Gleason, H.A. (1926) The individualistic concept of the plant association. Bulletin of the Torrey Botanical
+       Club, 53, 7±26.
+Godfray, H.C.J. and Blythe, S.P. (1990) Complex dynamics in multispecies communities. Philosophical
+       Transactions of the Royal Society of London B, 330, 221±33.
+Hastings, A., Hom, C.L., Ellner, S., Turchin, P. and Godfray, H.C.J. (1993) Chaos in ecology: is mother
+       nature a strange attractor? Annual Review of Ecology and Systematics, 24, 1±33.
+Hastings, A. and Higgins, K. (1994) Persistence of transients in spatially structured ecological models.
+       Science, 263, 1133±6.
+Horn, H.S. (1975a) Markovian properties of forest succession. In M.L. Cody and M.J. Diamond (eds),
+       Ecology and evolution of communities, Harvard University Press, Cambridge, Massachusetts pp.
+       196±211.
+Horn, H.S. (1975b) Succession. In R.M. May (ed.) Theoretical ecology, Sinauer Associates, Sunderland,
+       Massachusetts, pp. 253±71.
+Lippe, E., De Smidt, J.T. and Glen-Lewin, D.C. J. (1985) Markov models and succession: a test from a
+       heathland in the Netherlands. Journal of Ecology, 73, 775±91.
+Lorenz, E.N. (1963) Deterministic nonperiodic flow. Journal of Atmospheric Sciences, 20, 130±41.
+McIntosh, R.P.(1980) The relationship between succession and the recovery process in ecosystems. In J.
+       Cairns (ed.) The Recovery Process in Damaged Ecosystems, Ann Arbor Science Publishers Inc.,
+       Ann Arbor, pp. 11±62.
+Mandelbrot, B. (1982) The Fractal Geometry of Nature. W.H. Freeman & Co, San Francisco.
+May, R.M. (1987) Chaos and the dynamics of biological populations. Proceedings of the Royal Society of
+       London Series A 413, 27±44.
+Moss F. and Wiesenfeld, K. (1995) The benefits of background noise. Scientific American, August, 66.
+Nichols, G.E. (1923) A working basis for the ecological classification of plant communities. Ecology, 4,
+       11±23.
+Odum, E.P. (1969) The strategy of ecosystem development. Science 164, 262±70.
+OrloÂci L. and OrloÂci, M. (1988) On recovery, Markov chains and canonical analysis. Ecolog, 69, 1260±5.
+OrloÂci, L., Anand, M. and He, X.S. (1993) Markov chain: a realistic model for temporal coenosere?
+       Biometrie- Praximetrie, 33, 7±26.
+Schaffer, W.M, Ellner, S. and Kot, M. (1986) Effects of noise on some dynamical models in ecology.
+       Journal of Mathematical Biology, 24, 479.
+Stone, L. and Ezrati, S. (1996) Chaos, cycles and spatiotemporal dynamics in plant ecology. J. Ecol., 84,
+       279±91.
+Tilman, D. and Wedin, D. (1991) Oscillations and chaos in the dynamics of a perennial grass. Nature, 353,
+       653±5.
+Usher, M.B. (1981) Modelling ecological succession with particular reference to Markovian models.
+       Vegetatio, 46, 11±18
+Vandermeer, J.(1990), Indirect and diffuse interactions: complicated cycles in a population embedded in a
+       large community. Journal of Theoretical Biology, 142, 429±42.
+van Hulst, R.(1979) On the dynamics of vegetation: Markov chains as models of succession. Vegetatio, 40,
+       3±14.
+van Hulst, R. (1992) From population dynamics to community dynamics: modelling succession as a species
+       replacement process. In D.C. Glenn-Lewin, R.K. Peet and T.T. Veblen (eds). Plant Succession:
+       theory and prediction. Chapman & Hall, London.
+Waggoner, P.E. and Stephens, G.R. (1970) Transition probabilities for a forest. Nature, 225, 1160±1.
+Whittaker, R.H. (1953) A consideration of climax theory: the climax as a population and pattern.
+       Ecological Monographs, 23, 41±78.
+Wolf, A., Swift, J.B., Swinney, H.L. and Vastano, J.A. (1985) Determining Lyapunov exponents from a
+       time series. Physica, 16D, 285±317.

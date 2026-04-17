@@ -1,0 +1,9 @@
+{
+  "chunk_count": 84,
+  "extractor": "pdftotext",
+  "kind": "pdf",
+  "path": "/run/media/jpereiratrindade/labeco10T/labeco02/Revisao/peerj-20154.pdf",
+  "sha256": "0f1b0f90bb6a36876ffe8995c28134b9f020ae86e4bf2859c10316aca3998325",
+  "text_size": 80001,
+  "used_ocr": false
+}

@@ -1,0 +1,9 @@
+{
+  "chunk_count": 177,
+  "extractor": "pdftotext",
+  "kind": "pdf",
+  "path": "/run/media/jpereiratrindade/labeco10T/labeco02/Revisao/information-16-00298.pdf",
+  "sha256": "b8731a198d6509bbf46bea08865f6e0568c735595e96aff62437c5220ae83423",
+  "text_size": 169637,
+  "used_ocr": false
+}
