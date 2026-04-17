@@ -8,17 +8,19 @@ Objetivo atual:
 - preparar skills reutilizaveis para scaffold, review, testes e geracao de projeto
 
 Direcao arquitetural:
-- fortalecer primeiro as tools nativas e o comportamento do orquestrador
-- consolidar skills persistentes no workspace
-- adicionar MCP depois como camada de padronizacao, nao como prerequisito inicial
+- Fortalecer primeiro as tools nativas e o orquestrador (Modularizacao Concluida ✅)
+- Consolidar a arquitetura modular do UI
+- Adicionar MCP depois como camada de padronizacao, nao como prerequisito inicial
 
 Prioridade atual:
-- estabilizar o nucleo antes de expandir integracoes maiores
-- adicionar testes automatizados para componentes criticos
-- refatorar gradualmente `NativeTools.cpp`
-- melhorar continuidade de contexto entre chat assistido, historico e missoes
+- Melhorar a gestão de modelos e prompt engineering (LLM Boost)
+- Adicionar testes automatizados para componentes criticos
+- Refatorar gradualmente `NativeTools.cpp`
+- Melhorar continuidade de contexto entre chat assistido, historico e missoes
 
-Roadmap de UX:
-- aproximar a experiencia de Codex/Copilot local sem sacrificar confiabilidade
-- priorizar contexto automatico, selecao ativa, slash commands e diff/apply patch
-- deixar ghost text e sugestoes inline para depois da consolidacao do nucleo
+Roadmap de UX (Status: Em andamento):
+- [x] Arquitetura UI Modular
+- [x] Persistencia de sessao e historico por projeto
+- [ ] Slash commands como `/fix`, `/test`, `/explain`
+- [ ] Visualizacao de diff antes de aplicar mudancas
+- [ ] Melhorias na gestao de modelos locais via UI

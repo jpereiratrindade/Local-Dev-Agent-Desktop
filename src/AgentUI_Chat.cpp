@@ -4,6 +4,8 @@
 #include <regex>
 #include <fstream>
 #include <sstream>
+#include <thread>
+#include <mutex>
 
 namespace agent::ui {
 
@@ -83,18 +85,25 @@ void AgentUI::runPythonAgent(const std::string& goal, const std::string& mode) {
                 fullGoal = "[GOVERNANÇA ATIVA: SIGA ESTAS REGRAS]\n" + projectGovernance + "\n\n[OBJETIVO ATUAL]\n" + goal;
             }
 
-            orchestrator->runMission(fullGoal, [this](const std::string& msg, const std::string& thought) {
-                if (!msg.empty()) {
-                    std::lock_guard<std::mutex> lock(msgMutex);
-                    if (history.empty() || history.back().role != "assistant") {
-                        history.push_back({"assistant", msg});
-                    } else {
-                        history.back().text = msg;
-                    }
-                    scrollToBottom = true;
+            agent::core::Orchestrator::MissionCallbacks callbacks;
+            callbacks.onMessageChunk = [this](const std::string& chunk) {
+                std::lock_guard<std::mutex> lock(msgMutex);
+                if (history.empty() || history.back().role != "assistant") {
+                    history.push_back({"assistant", ""});
                 }
-                if (!thought.empty()) thoughtStream = thought;
-            }, opts);
+                history.back().text += chunk;
+                scrollToBottom = true;
+            };
+            callbacks.onThought = [this](const std::string& thought) {
+                thoughtStream = thought;
+            };
+            callbacks.onComplete = [this](bool success) {
+                llmBusy = false;
+                thoughtStream = success ? "Missão concluída." : "Missão interrompida.";
+                saveSession();
+            };
+
+            orchestrator->runMission(fullGoal, mode, 10, callbacks, opts);
 
             thoughtStream = "Missão concluída.";
         } catch (const std::exception& e) {
