@@ -1,9 +1,0 @@
-{
-  "chunk_count": 51,
-  "extractor": "pdftotext",
-  "kind": "pdf",
-  "path": "/run/media/jpereiratrindade/labeco10T/labeco02/Revisao/dorlivete,+e10910615665.pdf",
-  "sha256": "8118b1454c7ba914f81b942174b431ffdb7aa1caa64575152b467c597cd4364f",
-  "text_size": 48560,
-  "used_ocr": false
-}

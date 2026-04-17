@@ -1,9 +1,0 @@
-{
-  "chunk_count": 48,
-  "extractor": "pdftotext",
-  "kind": "pdf",
-  "path": "/run/media/jpereiratrindade/labeco10T/labeco02/Revisao/art_marcuzzo_metodos.pdf",
-  "sha256": "46ac0ed30a1e1f779c9ef8b3cbe95fd0093fa88cdc346cfe67be16738d073954",
-  "text_size": 46548,
-  "used_ocr": false
-}

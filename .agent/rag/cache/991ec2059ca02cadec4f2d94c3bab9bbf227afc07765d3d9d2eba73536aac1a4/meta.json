@@ -1,9 +1,0 @@
-{
-  "chunk_count": 562,
-  "extractor": "pdftotext",
-  "kind": "pdf",
-  "path": "/run/media/jpereiratrindade/labeco10T/labeco02/Revisao/Agroecologia-principios-reflexoes-conceituais.pdf",
-  "sha256": "991ec2059ca02cadec4f2d94c3bab9bbf227afc07765d3d9d2eba73536aac1a4",
-  "text_size": 551999,
-  "used_ocr": false
-}

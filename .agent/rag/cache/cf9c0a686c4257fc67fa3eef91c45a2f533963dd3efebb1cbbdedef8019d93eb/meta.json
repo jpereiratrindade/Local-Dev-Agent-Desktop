@@ -1,9 +1,0 @@
-{
-  "chunk_count": 10,
-  "extractor": "pdftotext",
-  "kind": "pdf",
-  "path": "/run/media/jpereiratrindade/labeco10T/labeco02/Revisao/Coelhoetal2017.pdf",
-  "sha256": "cf9c0a686c4257fc67fa3eef91c45a2f533963dd3efebb1cbbdedef8019d93eb",
-  "text_size": 9685,
-  "used_ocr": false
-}

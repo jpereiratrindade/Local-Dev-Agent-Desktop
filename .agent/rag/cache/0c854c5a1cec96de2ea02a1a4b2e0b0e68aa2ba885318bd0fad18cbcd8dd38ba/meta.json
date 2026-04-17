@@ -1,9 +1,0 @@
-{
-  "chunk_count": 70,
-  "extractor": "pdftotext",
-  "kind": "pdf",
-  "path": "/run/media/jpereiratrindade/labeco10T/labeco02/Revisao/Niederle.pdf",
-  "sha256": "0c854c5a1cec96de2ea02a1a4b2e0b0e68aa2ba885318bd0fad18cbcd8dd38ba",
-  "text_size": 68082,
-  "used_ocr": false
-}

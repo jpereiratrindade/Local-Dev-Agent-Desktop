@@ -1,9 +1,0 @@
-{
-  "chunk_count": 47,
-  "extractor": "pdftotext",
-  "kind": "pdf",
-  "path": "/run/media/jpereiratrindade/labeco10T/labeco02/Revisao/s13717-024-00543-3.pdf",
-  "sha256": "d92f28b1c951612eefe56b9a56b1f80cee283537c6acb311ea17abe5108e9e45",
-  "text_size": 44540,
-  "used_ocr": false
-}

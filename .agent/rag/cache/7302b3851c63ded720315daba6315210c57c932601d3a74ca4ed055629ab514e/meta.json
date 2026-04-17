@@ -1,9 +1,0 @@
-{
-  "chunk_count": 50,
-  "extractor": "pdftotext",
-  "kind": "pdf",
-  "path": "/run/media/jpereiratrindade/labeco10T/labeco02/Revisao/Roqueetal2026RethinkingBiomeInterdependencies.pdf",
-  "sha256": "7302b3851c63ded720315daba6315210c57c932601d3a74ca4ed055629ab514e",
-  "text_size": 46923,
-  "used_ocr": false
-}

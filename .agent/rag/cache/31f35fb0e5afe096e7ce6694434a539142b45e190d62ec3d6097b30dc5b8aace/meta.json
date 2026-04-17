@@ -1,9 +1,0 @@
-{
-  "chunk_count": 34,
-  "extractor": "pdftotext",
-  "kind": "pdf",
-  "path": "/run/media/jpereiratrindade/labeco10T/labeco02/Revisao/Grassmanns_Vision.pdf",
-  "sha256": "31f35fb0e5afe096e7ce6694434a539142b45e190d62ec3d6097b30dc5b8aace",
-  "text_size": 32731,
-  "used_ocr": false
-}

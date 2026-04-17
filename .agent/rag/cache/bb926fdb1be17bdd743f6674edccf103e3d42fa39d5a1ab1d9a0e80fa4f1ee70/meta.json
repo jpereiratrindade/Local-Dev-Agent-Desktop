@@ -1,9 +1,0 @@
-{
-  "chunk_count": 415,
-  "extractor": "pdftotext",
-  "kind": "pdf",
-  "path": "/run/media/jpereiratrindade/labeco10T/labeco02/Revisao/Maturana_Humberto_R_Varela_Francisco_J_De_maquinas_y_seres_vivos_4th_ed_1998.pdf",
-  "sha256": "bb926fdb1be17bdd743f6674edccf103e3d42fa39d5a1ab1d9a0e80fa4f1ee70",
-  "text_size": 397624,
-  "used_ocr": false
-}

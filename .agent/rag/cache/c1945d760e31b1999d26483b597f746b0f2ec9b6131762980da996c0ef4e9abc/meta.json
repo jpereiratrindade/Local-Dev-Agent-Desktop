@@ -1,9 +1,0 @@
-{
-  "chunk_count": 89,
-  "extractor": "pdftotext",
-  "kind": "pdf",
-  "path": "/run/media/jpereiratrindade/labeco10T/labeco02/Revisao/Many-objective-evolutionary-algorithm-based-on-th_2023_Egyptian-Informatics-.pdf",
-  "sha256": "c1945d760e31b1999d26483b597f746b0f2ec9b6131762980da996c0ef4e9abc",
-  "text_size": 84668,
-  "used_ocr": false
-}

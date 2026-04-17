@@ -1,9 +1,0 @@
-{
-  "chunk_count": 18,
-  "extractor": "pdftotext",
-  "kind": "pdf",
-  "path": "/run/media/jpereiratrindade/labeco10T/labeco02/Revisao/vol12-iss9-pg4748-4753-202510_pdf.pdf",
-  "sha256": "58992e7c22680f1400bea68bd31a04067f9d995a2f137233496a9d0160c82714",
-  "text_size": 17718,
-  "used_ocr": false
-}

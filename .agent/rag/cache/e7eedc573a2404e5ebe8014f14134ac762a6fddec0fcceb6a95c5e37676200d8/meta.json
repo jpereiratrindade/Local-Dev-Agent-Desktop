@@ -1,9 +1,0 @@
-{
-  "chunk_count": 83,
-  "extractor": "pdftotext",
-  "kind": "pdf",
-  "path": "/run/media/jpereiratrindade/labeco10T/labeco02/Revisao/Reconciling_links_between_diversity_and_population.pdf",
-  "sha256": "e7eedc573a2404e5ebe8014f14134ac762a6fddec0fcceb6a95c5e37676200d8",
-  "text_size": 78636,
-  "used_ocr": false
-}

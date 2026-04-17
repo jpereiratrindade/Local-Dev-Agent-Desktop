@@ -1,9 +1,0 @@
-{
-  "chunk_count": 86,
-  "extractor": "pdftotext",
-  "kind": "pdf",
-  "path": "/run/media/jpereiratrindade/labeco10T/labeco02/Revisao/Minimizing-tardiness-and-makespan-for-distributed-heterogen_2023_Egyptian-In.pdf",
-  "sha256": "b25ccf83406ffcca4975e2cf3afc429791686c3e9bb42cbac791256167748262",
-  "text_size": 82276,
-  "used_ocr": false
-}

@@ -1,9 +1,0 @@
-{
-  "chunk_count": 106,
-  "extractor": "pdftotext",
-  "kind": "pdf",
-  "path": "/run/media/jpereiratrindade/labeco10T/labeco02/Revisao/sustainability-16-03975-v2.pdf",
-  "sha256": "b44a9c0439e0e944b4e017270b1e63473b0a58f2131f53cb60b79f935e468e7f",
-  "text_size": 101689,
-  "used_ocr": false
-}

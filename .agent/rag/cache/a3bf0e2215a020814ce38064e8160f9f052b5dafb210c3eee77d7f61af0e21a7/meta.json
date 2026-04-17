@@ -1,9 +1,0 @@
-{
-  "chunk_count": 127,
-  "extractor": "pdftotext",
-  "kind": "pdf",
-  "path": "/run/media/jpereiratrindade/labeco10T/labeco02/Revisao/agriculture-12-01324.pdf",
-  "sha256": "a3bf0e2215a020814ce38064e8160f9f052b5dafb210c3eee77d7f61af0e21a7",
-  "text_size": 121501,
-  "used_ocr": false
-}

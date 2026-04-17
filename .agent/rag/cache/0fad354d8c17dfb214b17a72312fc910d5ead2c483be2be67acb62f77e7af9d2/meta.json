@@ -1,9 +1,0 @@
-{
-  "chunk_count": 13,
-  "extractor": "pdftotext",
-  "kind": "pdf",
-  "path": "/run/media/jpereiratrindade/labeco10T/labeco02/Revisao/Ferramentasreconhecimentodapecuariadecamponativo.pdf",
-  "sha256": "0fad354d8c17dfb214b17a72312fc910d5ead2c483be2be67acb62f77e7af9d2",
-  "text_size": 12001,
-  "used_ocr": false
-}

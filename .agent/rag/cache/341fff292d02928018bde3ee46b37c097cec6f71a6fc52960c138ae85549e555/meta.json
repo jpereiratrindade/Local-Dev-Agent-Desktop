@@ -1,9 +1,0 @@
-{
-  "chunk_count": 104,
-  "extractor": "pdftotext",
-  "kind": "pdf",
-  "path": "/run/media/jpereiratrindade/labeco10T/labeco02/Revisao/Toward-secret-data-location-via-fuzzy-logic-and-conv_2023_Egyptian-Informati.pdf",
-  "sha256": "341fff292d02928018bde3ee46b37c097cec6f71a6fc52960c138ae85549e555",
-  "text_size": 98430,
-  "used_ocr": false
-}

@@ -1,9 +1,0 @@
-{
-  "chunk_count": 17,
-  "extractor": "pdftotext",
-  "kind": "pdf",
-  "path": "/run/media/jpereiratrindade/labeco10T/labeco02/Revisao/Projeto_De_Um_Sistema_De_Apoio_A_Tomada.pdf",
-  "sha256": "33f3538f907eb062bf1294ec3241fca12d9043d7f29cf6ecdceba2e4c164a855",
-  "text_size": 16838,
-  "used_ocr": false
-}

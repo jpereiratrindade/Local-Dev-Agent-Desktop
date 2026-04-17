@@ -1,9 +1,0 @@
-{
-  "chunk_count": 402,
-  "extractor": "pdftotext",
-  "kind": "pdf",
-  "path": "/run/media/jpereiratrindade/labeco10T/labeco02/Revisao/O_mundo_como_vontade_e_como_representaca.pdf",
-  "sha256": "6bdcf9f8605d4352f76913c12d12a4997b904637d418ffccceb3d5d788bc47af",
-  "text_size": 394196,
-  "used_ocr": false
-}

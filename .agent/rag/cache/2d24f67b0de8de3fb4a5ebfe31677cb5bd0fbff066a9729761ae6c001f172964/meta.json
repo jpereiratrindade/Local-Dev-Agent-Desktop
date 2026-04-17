@@ -1,9 +1,0 @@
-{
-  "chunk_count": 704,
-  "extractor": "pdftotext",
-  "kind": "pdf",
-  "path": "/run/media/jpereiratrindade/labeco10T/labeco02/Revisao/SiBCS-2018-ISBN-9788570358004.pdf",
-  "sha256": "2d24f67b0de8de3fb4a5ebfe31677cb5bd0fbff066a9729761ae6c001f172964",
-  "text_size": 691580,
-  "used_ocr": false
-}

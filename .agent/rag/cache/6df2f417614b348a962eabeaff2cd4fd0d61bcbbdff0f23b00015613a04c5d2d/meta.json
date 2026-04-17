@@ -1,9 +1,0 @@
-{
-  "chunk_count": 103,
-  "extractor": "pdftotext",
-  "kind": "pdf",
-  "path": "/run/media/jpereiratrindade/labeco10T/labeco02/Revisao/AI-Driven-livestock-identification-and-insurance-m_2023_Egyptian-Informatics.pdf",
-  "sha256": "6df2f417614b348a962eabeaff2cd4fd0d61bcbbdff0f23b00015613a04c5d2d",
-  "text_size": 97365,
-  "used_ocr": false
-}

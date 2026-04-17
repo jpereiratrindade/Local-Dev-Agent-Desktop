@@ -1,9 +1,0 @@
-{
-  "chunk_count": 1,
-  "extractor": "pdftotext",
-  "kind": "pdf",
-  "path": "/run/media/jpereiratrindade/labeco10T/labeco02/Revisao/Oziewicz1986.pdf",
-  "sha256": "c3c02f89465f3f20ba6ef9b9add22772ffbee38f3362f0234dfdd98d6db8c253",
-  "text_size": 773,
-  "used_ocr": false
-}

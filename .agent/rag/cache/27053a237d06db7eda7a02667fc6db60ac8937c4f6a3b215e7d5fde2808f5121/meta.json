@@ -1,9 +1,0 @@
-{
-  "chunk_count": 12,
-  "extractor": "pdftotext",
-  "kind": "pdf",
-  "path": "/run/media/jpereiratrindade/labeco10T/labeco02/Revisao/Sugai_Cost-Pereira.pdf",
-  "sha256": "27053a237d06db7eda7a02667fc6db60ac8937c4f6a3b215e7d5fde2808f5121",
-  "text_size": 10846,
-  "used_ocr": false
-}

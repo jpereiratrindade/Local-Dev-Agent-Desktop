@@ -1,9 +1,0 @@
-{
-  "chunk_count": 52,
-  "extractor": "pdftotext",
-  "kind": "pdf",
-  "path": "/run/media/jpereiratrindade/labeco10T/labeco02/Revisao/DT108online.pdf",
-  "sha256": "f94b478593512a0d3c3ec97c71de8fb98ce37452858a6cb599f710d19a3c2e66",
-  "text_size": 50869,
-  "used_ocr": false
-}

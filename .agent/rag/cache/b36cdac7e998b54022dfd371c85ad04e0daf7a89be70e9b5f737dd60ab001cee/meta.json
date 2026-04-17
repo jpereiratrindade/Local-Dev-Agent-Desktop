@@ -1,9 +1,0 @@
-{
-  "chunk_count": 68,
-  "extractor": "pdftotext",
-  "kind": "pdf",
-  "path": "/run/media/jpereiratrindade/labeco10T/labeco02/Revisao/AGRICULTURA_FAMILIAR_SISTEMAS_AGROALIMENTARES.pdf",
-  "sha256": "b36cdac7e998b54022dfd371c85ad04e0daf7a89be70e9b5f737dd60ab001cee",
-  "text_size": 66199,
-  "used_ocr": false
-}

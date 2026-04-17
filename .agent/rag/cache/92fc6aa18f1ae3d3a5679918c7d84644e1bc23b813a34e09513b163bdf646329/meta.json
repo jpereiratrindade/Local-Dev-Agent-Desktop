@@ -1,9 +1,0 @@
-{
-  "chunk_count": 1456,
-  "extractor": "pdftotext",
-  "kind": "pdf",
-  "path": "/run/media/jpereiratrindade/labeco10T/labeco02/Revisao/panarchy-understanding-transformations-in-human-and-natural-systems_compress.pdf",
-  "sha256": "92fc6aa18f1ae3d3a5679918c7d84644e1bc23b813a34e09513b163bdf646329",
-  "text_size": 1432211,
-  "used_ocr": false
-}

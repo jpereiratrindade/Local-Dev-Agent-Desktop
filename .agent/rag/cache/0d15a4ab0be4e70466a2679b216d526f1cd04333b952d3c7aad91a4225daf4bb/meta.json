@@ -1,9 +1,0 @@
-{
-  "chunk_count": 106,
-  "extractor": "pdftotext",
-  "kind": "pdf",
-  "path": "/run/media/jpereiratrindade/labeco10T/labeco02/Revisao/Bovine_facial_recognition_through_muzzle-1.pdf",
-  "sha256": "0d15a4ab0be4e70466a2679b216d526f1cd04333b952d3c7aad91a4225daf4bb",
-  "text_size": 101513,
-  "used_ocr": false
-}

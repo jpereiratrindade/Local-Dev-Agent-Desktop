@@ -1,9 +1,0 @@
-{
-  "chunk_count": 240,
-  "extractor": "pdftotext",
-  "kind": "pdf",
-  "path": "/run/media/jpereiratrindade/labeco10T/labeco02/Revisao/DIS_PPGCC_2020_FRANZIN_FLAVIO.pdf",
-  "sha256": "9f733e40ae83f8030cfa7a56512ed1efadcc1dff322ca319943725b5a17438a3",
-  "text_size": 232321,
-  "used_ocr": false
-}

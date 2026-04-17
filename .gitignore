@@ -19,6 +19,15 @@ Makefile
 imgui.ini
 .DS_Store
 
-# Agent local sessions/cache
+# Agent local state
 .agent/sessions/
+.agent/rag/cache/
 
+# Keep reusable agent assets, ignore generated state under .agent by default
+.agent/*
+!.agent/skills/
+!.agent/skills/**
+
+# Local test artifacts
+test_rag
+test_search

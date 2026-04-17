@@ -1,9 +1,0 @@
-{
-  "chunk_count": 68,
-  "extractor": "pdftotext",
-  "kind": "pdf",
-  "path": "/run/media/jpereiratrindade/labeco10T/labeco02/Revisao/Mowing_increases_fine_root_production_and_root_tur.pdf",
-  "sha256": "9e9ea4e446ff184ef5dbd4677c80f5f6af498d9abec5b2ce47c90529d71886e7",
-  "text_size": 65590,
-  "used_ocr": false
-}

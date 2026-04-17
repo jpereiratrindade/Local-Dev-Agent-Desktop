@@ -1,9 +1,0 @@
-{
-  "chunk_count": 101,
-  "extractor": "pdftotext",
-  "kind": "pdf",
-  "path": "/run/media/jpereiratrindade/labeco10T/labeco02/Revisao/Determinants_for_Smallholder_Farmers_Adoption_of_.pdf",
-  "sha256": "72da20ac64de8ce70b6bf955674a35f448685aaea7fc18ecc8e356608031af85",
-  "text_size": 97259,
-  "used_ocr": false
-}

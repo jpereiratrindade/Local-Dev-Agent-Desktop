@@ -1,9 +1,0 @@
-{
-  "chunk_count": 44,
-  "extractor": "pdftotext",
-  "kind": "pdf",
-  "path": "/run/media/jpereiratrindade/labeco10T/labeco02/Revisao/033+Cuadernos.pdf",
-  "sha256": "ba98105d8cc8c6450289ccdd70bf456275c0fb1efb46a6cc0e4bf649e706f919",
-  "text_size": 42707,
-  "used_ocr": false
-}

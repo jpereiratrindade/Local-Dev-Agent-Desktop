@@ -1,9 +1,0 @@
-{
-  "chunk_count": 102,
-  "extractor": "pdftotext",
-  "kind": "pdf",
-  "path": "/run/media/jpereiratrindade/labeco10T/labeco02/Revisao/s11042-016-4181-9.pdf",
-  "sha256": "0be6b6f9eb6c1c19fa65e5c88d1e9e00ad65a90da2b3e2e2f9926a15ca5f8279",
-  "text_size": 98609,
-  "used_ocr": false
-}

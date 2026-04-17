@@ -1,9 +1,0 @@
-{
-  "chunk_count": 60,
-  "extractor": "pdftotext",
-  "kind": "pdf",
-  "path": "/run/media/jpereiratrindade/labeco10T/labeco02/Revisao/Die_Lineale_Ausdehnungslehre_de_H_G_Grassmann.pdf",
-  "sha256": "eff5f5b27bdc525e1c0ff7668bf3ceadf17d037d4c516889ccefce2894473e0b",
-  "text_size": 58255,
-  "used_ocr": false
-}

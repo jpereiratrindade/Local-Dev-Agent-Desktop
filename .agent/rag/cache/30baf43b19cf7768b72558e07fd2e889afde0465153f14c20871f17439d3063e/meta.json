@@ -1,9 +1,0 @@
-{
-  "chunk_count": 14,
-  "extractor": "pdftotext",
-  "kind": "pdf",
-  "path": "/run/media/jpereiratrindade/labeco10T/labeco02/Revisao/adr-RichardThomas.pdf",
-  "sha256": "30baf43b19cf7768b72558e07fd2e889afde0465153f14c20871f17439d3063e",
-  "text_size": 13025,
-  "used_ocr": false
-}

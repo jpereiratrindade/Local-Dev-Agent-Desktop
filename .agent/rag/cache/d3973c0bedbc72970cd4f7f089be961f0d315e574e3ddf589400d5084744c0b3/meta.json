@@ -1,9 +1,0 @@
-{
-  "chunk_count": 7,
-  "extractor": "pdftotext",
-  "kind": "pdf",
-  "path": "/run/media/jpereiratrindade/labeco10T/labeco02/Revisao/Agroecologia_e_desenvolvimento_territorial.pdf",
-  "sha256": "d3973c0bedbc72970cd4f7f089be961f0d315e574e3ddf589400d5084744c0b3",
-  "text_size": 6677,
-  "used_ocr": false
-}

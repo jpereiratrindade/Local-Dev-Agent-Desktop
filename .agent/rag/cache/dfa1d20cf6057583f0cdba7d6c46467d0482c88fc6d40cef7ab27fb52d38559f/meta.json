@@ -1,9 +1,0 @@
-{
-  "chunk_count": 29,
-  "extractor": "pdftotext",
-  "kind": "pdf",
-  "path": "/run/media/jpereiratrindade/labeco10T/labeco02/Revisao/O Mundo como Vontade e como Representação, I PDF.pdf",
-  "sha256": "dfa1d20cf6057583f0cdba7d6c46467d0482c88fc6d40cef7ab27fb52d38559f",
-  "text_size": 28692,
-  "used_ocr": false
-}

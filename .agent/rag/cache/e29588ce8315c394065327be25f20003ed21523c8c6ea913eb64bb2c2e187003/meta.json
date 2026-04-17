@@ -1,9 +1,0 @@
-{
-  "chunk_count": 65,
-  "extractor": "pdftotext",
-  "kind": "pdf",
-  "path": "/run/media/jpereiratrindade/labeco10T/labeco02/Revisao/COT-104-online-ODS15.pdf",
-  "sha256": "e29588ce8315c394065327be25f20003ed21523c8c6ea913eb64bb2c2e187003",
-  "text_size": 63825,
-  "used_ocr": false
-}
