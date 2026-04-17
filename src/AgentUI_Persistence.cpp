@@ -68,8 +68,13 @@ void AgentUI::saveSession() {
 }
 
 void AgentUI::loadSession() {
-    // Default load latest or last_session.json
-    loadSessionFromFile(sessionsDir() / currentSessionFile);
+    if (!hasOpenProject || currentProjectRoot.empty()) return;
+
+    fs::path preferred = sessionsDir() / currentSessionFile;
+    if (fs::exists(preferred) && loadSessionFromFile(preferred)) return;
+
+    auto recent = listRecentSessions(1);
+    if (!recent.empty()) loadSessionFromFile(recent.front().first);
 }
 
 } // namespace agent::ui

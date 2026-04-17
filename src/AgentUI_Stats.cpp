@@ -78,9 +78,19 @@ void AgentUI::drawStatsPanel() {
     ImGui::Text("TOKENS OUT: %d", totalCompletionTokens);
     ImGui::NextColumn();
     ImGui::Text("MS/TOK: %.1f ms", tokenRateMs);
-    ImGui::Text("ESTIMATE: $%.4f", (totalPromptTokens + totalCompletionTokens) * 0.0000); 
+    ImGui::Text("TOK/S: %.2f", tokensPerSec);
 
     ImGui::Columns(1);
+    ImGui::Separator();
+    ImGui::Text("Projeto: %s", hasOpenProject ? currentProjectRoot.c_str() : "(nenhum)");
+    ImGui::SameLine();
+    ImGui::TextDisabled("|");
+    ImGui::SameLine();
+    ImGui::Text("Modelo: %s", currentModel.c_str());
+    ImGui::SameLine();
+    ImGui::TextDisabled("|");
+    ImGui::SameLine();
+    ImGui::Text("Arquivo: %s", selectedFile.empty() ? "(nenhum)" : fs::path(selectedFile).filename().string().c_str());
     ImGui::EndChild();
     ImGui::PopStyleColor();
 }

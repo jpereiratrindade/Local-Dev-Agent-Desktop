@@ -20,18 +20,59 @@ std::string normalizeRootPath(const std::string& raw) {
 }
 
 bool hasProjectMarkers(const fs::path& root) {
-    return fs::exists(root / ".agent") || fs::exists(root / "AGENT.md") || fs::exists(root / "CMakeLists.txt");
+    return fs::exists(root / ".agent")
+        || fs::exists(root / "AGENT.md")
+        || fs::exists(root / "AGENTS.md")
+        || fs::exists(root / "PROJECT_CONTEXT.md")
+        || fs::exists(root / "CMakeLists.txt")
+        || fs::exists(root / "pyproject.toml")
+        || fs::exists(root / "package.json")
+        || fs::exists(root / "ai-governance");
 }
 
 int projectRootScore(const fs::path& root) {
     int score = 0;
     if (fs::exists(root / ".agent")) score += 10;
     if (fs::exists(root / "CMakeLists.txt")) score += 5;
+    if (fs::exists(root / ".agent" / "sessions" / "last_session.json")) score += 18;
+    if (fs::exists(root / ".agent" / "rag")) score += 12;
+    if (fs::exists(root / ".agent" / "context_policy.json")) score += 10;
+    if (fs::exists(root / "ai-governance")) score += 10;
+    if (fs::exists(root / "AGENT.md") || fs::exists(root / "AGENTS.md")) score += 8;
+    if (fs::exists(root / "PROJECT_CONTEXT.md")) score += 7;
+    if (fs::exists(root / "pyproject.toml") || fs::exists(root / "package.json")) score += 4;
     return score;
 }
 
 std::string resolveProjectRoot(const std::string& rawRoot) {
-    return normalizeRootPath(rawRoot); 
+    fs::path base = normalizeRootPath(rawRoot);
+    fs::path best = base;
+    int bestScore = projectRootScore(base);
+
+    auto consider = [&](const fs::path& candidate) {
+        if (!fs::exists(candidate) || !fs::is_directory(candidate)) return;
+        if (!hasProjectMarkers(candidate)) return;
+        int score = projectRootScore(candidate);
+        if (score > bestScore) {
+            bestScore = score;
+            best = candidate;
+        }
+    };
+
+    try {
+        consider(base);
+        for (const auto& entry : fs::directory_iterator(base)) {
+            if (!entry.is_directory()) continue;
+            consider(entry.path());
+            try {
+                for (const auto& nested : fs::directory_iterator(entry.path())) {
+                    if (nested.is_directory()) consider(nested.path());
+                }
+            } catch (...) {}
+        }
+    } catch (...) {}
+
+    return normalizeRootPath(best.string());
 }
 
 // AgentUI Core Implementation
@@ -108,6 +149,14 @@ void AgentUI::drawMainMenu() {
         if (ImGui::BeginMenu("Config")) {
             if (ImGui::MenuItem("Model Manager", "Ctrl+M")) modelManagerRequested = true;
             ImGui::EndMenu();
+        }
+        ImGui::Separator();
+        ImGui::TextDisabled("Projeto:");
+        ImGui::SameLine();
+        if (hasOpenProject && !currentProjectRoot.empty()) {
+            ImGui::Text("%s", fs::path(currentProjectRoot).filename().string().c_str());
+        } else {
+            ImGui::TextDisabled("(nenhum)");
         }
         ImGui::EndMainMenuBar();
     }

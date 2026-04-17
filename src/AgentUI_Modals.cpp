@@ -46,9 +46,13 @@ void AgentUI::drawOpenFolderPickerDialog() {
         ImGui::InputText("Caminho", folderPickerPathBuf, sizeof(folderPickerPathBuf));
         
         if (ImGui::Button("Selecionar Esta Pasta", ImVec2(200, 0))) {
-            currentProjectRoot = folderPickerPathBuf;
+            currentProjectRoot = resolveProjectRoot(folderPickerPathBuf);
             hasOpenProject = true;
+            history.clear();
+            currentSessionFile = "last_session.json";
+            loadSession();
             generateProjectMap();
+            thoughtStream = "Projeto aberto em: " + currentProjectRoot;
             ImGui::CloseCurrentPopup();
             openFolderPickerVisible = false;
         }

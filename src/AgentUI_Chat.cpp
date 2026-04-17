@@ -85,6 +85,8 @@ void AgentUI::runPythonAgent(const std::string& goal, const std::string& mode) {
                 fullGoal = "[GOVERNANÇA ATIVA: SIGA ESTAS REGRAS]\n" + projectGovernance + "\n\n[OBJETIVO ATUAL]\n" + goal;
             }
 
+            ollama->setModel(currentModel); // Sincroniza o modelo selecionado
+
             agent::core::Orchestrator::MissionCallbacks callbacks;
             callbacks.onMessageChunk = [this](const std::string& chunk) {
                 std::lock_guard<std::mutex> lock(msgMutex);
@@ -96,6 +98,13 @@ void AgentUI::runPythonAgent(const std::string& goal, const std::string& mode) {
             };
             callbacks.onThought = [this](const std::string& thought) {
                 thoughtStream = thought;
+            };
+            callbacks.onAction = [this](const std::string& action) {
+                thoughtStream = "Ação: " + action;
+            };
+            callbacks.onObservation = [this](const std::string& obs) {
+                // observations tend to be large, we just log the event
+                thoughtStream = "Observação recebida (" + std::to_string(obs.size()) + " bytes)";
             };
             callbacks.onComplete = [this](bool success) {
                 llmBusy = false;
@@ -153,8 +162,34 @@ void AgentUI::drawChatWindow() {
                 if (ImGui::SmallButton("Copiar")) ImGui::SetClipboardText(msg.text.c_str());
                 ImGui::PopID();
 
-                ImGui::BeginChild(("AgentMsgBlock_" + std::to_string(i)).c_str(), ImVec2(0, 200), true);
-                renderMarkdown(sections.answer);
+                ImGui::BeginChild(("AgentMsgBlock_" + std::to_string(i)).c_str(), ImVec2(0, 300), true);
+                if (ImGui::BeginTabBar("AgentMessageTabs")) {
+                    if (ImGui::BeginTabItem("Resposta")) {
+                        renderMarkdown(sections.answer);
+                        ImGui::EndTabItem();
+                    }
+                    if (ImGui::BeginTabItem("Ações")) {
+                        if (sections.actionSteps.empty()) {
+                            ImGui::TextDisabled("Nenhuma ferramenta foi utilizada nesta resposta.");
+                        } else {
+                            for (const auto& step : sections.actionSteps) {
+                                if (ImGui::CollapsingHeader(step.title.c_str())) {
+                                    ImGui::TextWrapped("%s", step.content.c_str());
+                                }
+                            }
+                        }
+                        ImGui::EndTabItem();
+                    }
+                    if (ImGui::BeginTabItem("Logs")) {
+                        if (sections.logs.empty()) {
+                            ImGui::TextDisabled("Nenhum log técnico disponível.");
+                        } else {
+                            ImGui::TextUnformatted(sections.logs.c_str());
+                        }
+                        ImGui::EndTabItem();
+                    }
+                    ImGui::EndTabBar();
+                }
                 ImGui::EndChild();
             }
             ImGui::Separator();

@@ -79,6 +79,12 @@ void AgentUI::drawFileExplorer() {
     ImGui::Separator();
 
     if (hasOpenProject && !currentProjectRoot.empty()) {
+        ImGui::TextWrapped("%s", fs::path(currentProjectRoot).filename().string().c_str());
+        ImGui::TextDisabled("%s", currentProjectRoot.c_str());
+        ImGui::Separator();
+    }
+
+    if (hasOpenProject && !currentProjectRoot.empty()) {
         auto recent = listRecentSessions(20);
         if (recent.empty()) {
             ImGui::TextDisabled("Sem dialogos salvos.");
@@ -187,6 +193,7 @@ void AgentUI::drawFileEditor() {
     std::string fileName = fs::path(editorFilePath).filename().string();
     if (editorDirty) fileName += " *";
     ImGui::TextWrapped("%s", fileName.c_str());
+    ImGui::TextDisabled("%s", editorFilePath.c_str());
 
     if (ImGui::SmallButton("Salvar")) saveEditorFile();
     ImGui::SameLine();
