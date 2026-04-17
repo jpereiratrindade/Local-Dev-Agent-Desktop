@@ -217,6 +217,21 @@ void Orchestrator::runMission(const std::string& goal, const std::string& mode,
                     {
                         std::lock_guard<std::mutex> lock(streamMutex);
                         response += chunk;
+                        
+                        // Detecção simples de loop de repetição (hallucinação)
+                        if (response.size() > 500) {
+                            std::string tail = response.substr(response.size() - 200);
+                            std::string pattern = tail.substr(tail.size() - 50);
+                            int count = 0;
+                            size_t pos = tail.find(pattern);
+                            while (pos != std::string::npos) {
+                                count++;
+                                pos = tail.find(pattern, pos + 1);
+                            }
+                            if (count > 3) {
+                                ollama->requestStop(); // Força parada do stream
+                            }
+                        }
                     }
                     if (callbacks.onMessageChunk) callbacks.onMessageChunk(chunk);
                 },

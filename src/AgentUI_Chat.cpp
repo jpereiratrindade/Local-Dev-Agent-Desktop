@@ -218,6 +218,12 @@ void AgentUI::drawChatWindow() {
 
     if (llmBusy) {
         ImGui::TextColored(ImVec4(1, 1, 0, 1), "Agent está pensando...");
+        ImGui::SameLine();
+        if (ImGui::SmallButton("PARAR")) {
+            if (ollama) ollama->requestStop();
+            if (orchestrator) orchestrator->stopMission();
+            thoughtStream = "Parada forçada pelo usuário.";
+        }
     } else {
         if (ImGui::Button("SND (Chat)", ImVec2(100, 0))) {
             if (std::strlen(inputBuf) > 0) {
