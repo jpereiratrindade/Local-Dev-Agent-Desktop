@@ -267,6 +267,36 @@ bool AgentUI::applyTextToActiveFile(const std::string& text, bool saveAfter) {
     return !saveAfter || saveEditorFile();
 }
 
+bool AgentUI::applyPartialChangeToEditor(const ChangeProposal& proposal, bool saveAfter) {
+    if (editorFilePath.empty()) return false;
+    
+    if (proposal.kind == "replace_file" || proposal.kind == "create_file") {
+        return applyTextToActiveFile(proposal.content, saveAfter);
+    }
+    
+    if (editorUsesPlainText) {
+        if (proposal.kind == "append_to_file") {
+            editorPlainTextBuffer += "\n" + proposal.content;
+        } else if (proposal.kind == "insert_at_cursor") {
+            // Very simple insert - for robust insert we'd need better cursor tracking
+            editorPlainTextBuffer += "\n" + proposal.content; 
+        }
+    } else {
+        if (proposal.kind == "append_to_file") {
+            std::string current = codeEditor.GetText();
+            codeEditor.SetText(current + "\n" + proposal.content);
+        } else if (proposal.kind == "insert_at_cursor") {
+            codeEditor.InsertText(proposal.content);
+        } else if (proposal.kind == "replace_selection" && codeEditor.HasSelection()) {
+            codeEditor.InsertText(proposal.content); // InsertText replaces selection in ImGuiColorTextEdit
+        }
+    }
+    
+    editorDirty = true;
+    noteFileTouched(editorFilePath);
+    return !saveAfter || saveEditorFile();
+}
+
 bool AgentUI::ensureEditorTarget(const std::string& targetPath) {
     const std::string trimmed = trimLoose(targetPath);
     if (trimmed.empty()) return false;

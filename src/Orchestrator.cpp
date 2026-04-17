@@ -95,44 +95,6 @@ std::string readOptionalFile(const fs::path& path) {
     return buffer.str();
 }
 
-std::string loadProjectSkills(const std::string& workspaceRoot) {
-    std::vector<fs::path> skillRoots = {
-        fs::path(workspaceRoot) / ".agent" / "skills",
-        fs::path(workspaceRoot) / "skills"
-    };
-    std::vector<fs::path> skillFiles;
-
-    for (const auto& root : skillRoots) {
-        try {
-            if (!fs::exists(root) || !fs::is_directory(root)) continue;
-            for (const auto& entry : fs::directory_iterator(root)) {
-                if (!entry.is_regular_file()) continue;
-                std::string ext = entry.path().extension().string();
-                std::transform(ext.begin(), ext.end(), ext.begin(), [](unsigned char c) {
-                    return static_cast<char>(std::tolower(c));
-                });
-                if (ext == ".md" || ext == ".txt" || ext == ".json") {
-                    skillFiles.push_back(entry.path());
-                }
-            }
-        } catch (...) {
-        }
-    }
-
-    std::sort(skillFiles.begin(), skillFiles.end());
-    if (skillFiles.empty()) return "";
-
-    std::stringstream out;
-    out << "## SKILLS DO PROJETO\n";
-    for (const auto& skillFile : skillFiles) {
-        std::string content = readOptionalFile(skillFile);
-        if (content.empty()) continue;
-        out << "\n### " << skillFile.filename().string() << "\n";
-        out << content << "\n";
-    }
-    return out.str();
-}
-
 std::string summarizeSkillNames(const std::string& workspaceRoot) {
     std::vector<fs::path> skillRoots = {
         fs::path(workspaceRoot) / ".agent" / "skills",
@@ -164,6 +126,83 @@ std::string summarizeSkillNames(const std::string& workspaceRoot) {
         if (i) out << ", ";
         out << names[i];
     }
+    return out.str();
+}
+
+std::string truncateForPrompt(const std::string& text, std::size_t limit) {
+    if (text.size() <= limit) return text;
+    return text.substr(0, limit) + "\n...[conteudo truncado para preservar contexto]...";
+}
+
+struct ContextArtifact {
+    std::string label;
+    fs::path path;
+    std::string content;
+};
+
+std::vector<ContextArtifact> discoverContextArtifacts(const std::string& workspaceRoot) {
+    const fs::path root(workspaceRoot);
+    const std::vector<std::pair<std::string, std::vector<fs::path>>> candidates = {
+        {"governance", {root / "AGENT.md", root / "AGENTS.md"}},
+        {"project-context", {root / "PROJECT_CONTEXT.md"}},
+        {"stack-context", {root / "stack-context.md", root / ".agent" / "context" / "stack-context.md"}},
+        {"coding-standards", {root / "coding-standards.md", root / ".agent" / "context" / "coding-standards.md"}},
+        {"architecture-context", {root / "architecture-context.md", root / ".agent" / "context" / "architecture-context.md"}},
+        {"decisions-log", {root / "memory" / "decisions-log.md", root / ".agent" / "memory" / "decisions-log.md"}}
+    };
+
+    std::vector<ContextArtifact> artifacts;
+    for (const auto& candidate : candidates) {
+        for (const auto& path : candidate.second) {
+            std::string content = readOptionalFile(path);
+            if (content.empty()) continue;
+            artifacts.push_back({candidate.first, path, content});
+            break;
+        }
+    }
+    return artifacts;
+}
+
+std::string summarizeContextArtifactNames(const std::string& workspaceRoot) {
+    auto artifacts = discoverContextArtifacts(workspaceRoot);
+    if (artifacts.empty()) return "(nenhum)";
+
+    std::stringstream out;
+    for (size_t i = 0; i < artifacts.size(); ++i) {
+        if (i) out << ", ";
+        out << artifacts[i].label << " -> " << artifacts[i].path.lexically_relative(fs::path(workspaceRoot)).string();
+    }
+    return out.str();
+}
+
+std::string buildDistributedContextPrompt(const std::string& workspaceRoot) {
+    auto artifacts = discoverContextArtifacts(workspaceRoot);
+    std::stringstream out;
+
+    std::string governance = "Atue como um engenheiro de software autonomo focado em execucao técnica.";
+    std::string projectContext = "Workspace local sem manifestos especificos. Explore para entender.";
+
+    for (const auto& artifact : artifacts) {
+        if (artifact.label == "governance") governance = artifact.content;
+        if (artifact.label == "project-context") projectContext = artifact.content;
+    }
+
+    out << governance << "\n\n";
+    out << "## CONTEXTO DO PROJETO\n" << projectContext << "\n\n";
+
+    bool hasDistributedArtifacts = false;
+    for (const auto& artifact : artifacts) {
+        if (artifact.label == "governance" || artifact.label == "project-context") continue;
+        hasDistributedArtifacts = true;
+        out << "## " << artifact.label << "\n";
+        out << "Arquivo: " << artifact.path.lexically_relative(fs::path(workspaceRoot)).string() << "\n";
+        out << truncateForPrompt(artifact.content, artifact.label == "decisions-log" ? 1200 : 1800) << "\n\n";
+    }
+
+    if (!hasDistributedArtifacts) {
+        out << "## CONTEXTO DISTRIBUIDO\nNenhum arquivo adicional de stack/coding/architecture/memory foi encontrado.\n\n";
+    }
+
     return out.str();
 }
 } // namespace
@@ -198,8 +237,10 @@ void Orchestrator::runMission(const std::string& goal, const std::string& mode,
                                        ", profile=" + profile +
                                        ", context=" + context +
                                        "\nSkills disponíveis: " + availableSkills +
+                                       "\nContextos disponíveis: " + summarizeContextArtifactNames(workspaceRoot) +
                                        "\n" + profileInstructions(profile) +
                                        "\nSe alguma skill combinar com a tarefa, use-a como guia flexivel de arranque, nao como trilho obrigatorio." +
+                                       "\nSe algum contexto distribuido combinar com a tarefa, use 'read_file' para aprofundar apenas no arquivo necessario." +
                                        "\nPerfis definem postura cognitiva; skills sugerem fluxo; ferramentas e contexto permitem improviso responsavel." +
                                        "\nInicie pela menor ação verificável possível." +
                                        (activeFilePriority
@@ -435,27 +476,24 @@ std::string Orchestrator::buildSystemPrompt(const std::string& mode, const std::
     std::string domainsSummary = approvedDomains.empty() ? "(nenhum)" : approvedDomains.front();
     for (size_t i = 1; i < approvedRoots.size(); ++i) rootsSummary += ", " + approvedRoots[i];
     for (size_t i = 1; i < approvedDomains.size(); ++i) domainsSummary += ", " + approvedDomains[i];
-    
-    std::string agentMd = readOptionalFile(fs::path(workspaceRoot) / "AGENT.md");
-    if (agentMd.empty()) {
-        agentMd = "Atue como um engenheiro de software autonomo focado em execucao técnica.";
-    }
-    std::string contextMd = readOptionalFile(fs::path(workspaceRoot) / "PROJECT_CONTEXT.md");
-    if (contextMd.empty()) {
-        contextMd = "Workspace local sem manifestos especificos. Explore para entender.";
-    }
 
     return "## AGENT NATIVO CODEX\n\n" +
-           agentMd + "\n\n" +
-           "## CONTEXTO DO PROJETO\n" + contextMd + "\n\n" +
+           buildDistributedContextPrompt(workspaceRoot) +
            "## MODO DE OPERACAO: " + mode + "\n" + modeInstr + "\n\n" +
            "## FERRAMENTAS DISPONÍVEIS\n" + specs + "\n\n" +
+           "## CONTEXTO OPERACIONAL\n" +
+           "- Workspace raiz: " + workspaceRoot + "\n" +
+           "- Bibliotecas aprovadas: " + rootsSummary + "\n" +
+           "- Dominios aprovados: " + domainsSummary + "\n" +
+           "- Contextos distribuidos encontrados: " + summarizeContextArtifactNames(workspaceRoot) + "\n\n" +
            "## REGRAS DE OURO:\n" +
            "1. Pense antes de agir com <thought>...</thought>.\n" +
            "2. Use blocos ```json ... ``` para ferramentas: {\"tool\": \"...\", \"args\": {...}}.\n" +
            "3. Skills disponiveis (use 'read_file' se precisar de detalhes): " + summarizeSkillNames(workspaceRoot) + "\n" +
-           "4. Se a tarefa estiver pronta, finalize obrigatoriamente com 'TASK COMPLETE'.\n" +
-           "5. Nao invente informacoes. Se nao souber, use as ferramentas para descobrir.";
+           "4. Contextos distribuidos (use 'read_file' para aprofundar so no que for util): " + summarizeContextArtifactNames(workspaceRoot) + "\n" +
+           "5. Se tomar uma decisao arquitetural relevante e existir 'memory/decisions-log.md' (ou equivalente em '.agent/memory/'), atualize esse arquivo com 'write_file' antes de concluir.\n" +
+           "6. Se a tarefa estiver pronta, finalize obrigatoriamente com 'TASK COMPLETE'.\n" +
+           "7. Nao invente informacoes. Se nao souber, use as ferramentas para descobrir.";
 }
 
 } // namespace agent::core

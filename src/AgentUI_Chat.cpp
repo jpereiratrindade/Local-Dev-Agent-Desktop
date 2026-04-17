@@ -84,13 +84,35 @@ std::vector<std::string> extractJsonBlocks(const std::string& text) {
     return blocks;
 }
 
-bool looksLikeMixedExplanatoryResponse(const std::string& text) {
+    bool looksLikeMixedExplanatoryResponse(const std::string& text) {
     std::string lower = toLowerCopy(text);
     return containsAnyLower(lower, {
         "explicação", "explicacao", "código atualizado", "codigo atualizado",
         "para testar", "compile", "agora você terá", "agora voce tera",
         "vou implementar", "se precisar", "###", "1.", "2.", "3."
     });
+}
+
+std::string handleSlashCommand(const std::string& input) {
+    if (input.empty() || input[0] != '/') return input;
+
+    size_t spacePos = input.find(' ');
+    std::string cmd = toLowerCopy(input.substr(1, spacePos - 1));
+    std::string arg = (spacePos != std::string::npos) ? input.substr(spacePos + 1) : "";
+
+    if (cmd == "fix") {
+        return "Analise o arquivo ativo e corrija erros de sintaxe, bugs logicos ou falhas de build relatadas. Foque em estabilidade.\n\n" + arg;
+    } else if (cmd == "explain") {
+        return "Explique detalhadamente o funcionamento do código no arquivo ativo (ou a seleçao atual). Foque em arquitetura e lógica.\n\n" + arg;
+    } else if (cmd == "test") {
+        return "Gere testes unitários ou scripts de validaçao para o código no arquivo ativo. Siga os padroes de teste do projeto.\n\n" + arg;
+    } else if (cmd == "refactor") {
+        return "Refatore o código no arquivo ativo para melhorar legibilidade, performance ou manutençao, sem alterar o comportamento externo.\n\n" + arg;
+    } else if (cmd == "doc") {
+        return "Adicione documentaçao (Doxygen/Docstrings) clara e concisa para o código no arquivo ativo ou seleçao.\n\n" + arg;
+    }
+
+    return input;
 }
 } // namespace
 
@@ -99,13 +121,20 @@ void AgentUI::renderMarkdown(const std::string& text) {
     std::string line;
     while (std::getline(stream, line)) {
         if (line.substr(0, 3) == "###") {
+            ImGui::Spacing();
             ImGui::TextColored(ImVec4(0.4f, 0.7f, 1.0f, 1.0f), "%s", line.substr(3).c_str());
+            ImGui::Separator();
         } else if (line.substr(0, 2) == "##") {
+            ImGui::Spacing();
             ImGui::TextColored(ImVec4(0.0f, 0.8f, 1.0f, 1.0f), "%s", line.substr(2).c_str());
         } else if (line.substr(0, 1) == "#") {
             ImGui::TextColored(ImVec4(1.0f, 1.0f, 1.0f, 1.0f), "%s", line.substr(1).c_str());
+            ImGui::Separator();
         } else if (line.find("`") != std::string::npos) {
-            ImGui::TextColored(ImVec4(0.8f, 0.8f, 0.1f, 1.0f), "%s", line.c_str());
+            // Simple inline code highlighting simulation
+            ImGui::TextColored(ImVec4(0.9f, 0.8f, 0.5f, 1.0f), "%s", line.c_str());
+        } else if (line.substr(0, 2) == "> ") {
+            ImGui::TextColored(ImVec4(0.6f, 0.6f, 0.6f, 1.0f), "%s", line.c_str());
         } else {
             ImGui::TextWrapped("%s", line.c_str());
         }
@@ -255,26 +284,39 @@ std::string AgentUI::buildActiveContextBlock() const {
         context << "Projeto atual: " << currentProjectRoot << "\n";
     }
     const std::string activeFile = inferActiveFileForGoal(history.empty() ? "" : history.back().text);
+    
+    // Check for explicit selection in active file
+    std::string selectedText;
+    if (!editorUsesPlainText && codeEditor.HasSelection() && activeFile == editorFilePath) {
+        selectedText = codeEditor.GetSelectedText();
+    }
+
     if (!activeFile.empty()) {
         context << "Arquivo ativo inferido: " << activeFile << "\n";
         const std::string ambiguity = inferActiveFileAmbiguityNote(history.empty() ? "" : history.back().text);
         if (!ambiguity.empty()) context << ambiguity << "\n";
-        std::string content;
+        
+        if (!selectedText.empty()) {
+            context << "SELEÇAO ATIVA NO EDITOR:\n```text\n" << selectedText << "\n```\n";
+            context << "Trate a seleçao acima como o alvo prioritário da solicitaçao.\n";
+        }
+
+        std::string fullContent;
         if (activeFile == editorFilePath) {
-            content = editorUsesPlainText ? editorPlainTextBuffer : codeEditor.GetText();
+            fullContent = editorUsesPlainText ? editorPlainTextBuffer : codeEditor.GetText();
         } else {
             try {
                 std::ifstream in(activeFile);
                 if (in) {
                     std::stringstream buffer;
                     buffer << in.rdbuf();
-                    content = buffer.str();
+                    fullContent = buffer.str();
                 }
             } catch (...) {}
         }
-        if (!content.empty()) {
-            if (content.size() > 12000) content = content.substr(0, 12000) + "\n...[conteudo truncado]...";
-            context << "Conteudo atual do arquivo ativo:\n```text\n" << content << "\n```\n";
+        if (!fullContent.empty()) {
+            if (fullContent.size() > 12000) fullContent = fullContent.substr(0, 12000) + "\n...[conteudo truncado]...";
+            context << "Conteudo atual do arquivo ativo:\n```text\n" << fullContent << "\n```\n";
         }
     }
     if (!projectGovernance.empty()) {
@@ -308,45 +350,63 @@ bool AgentUI::buildChangeProposalFromAssistantText(const std::string& text, Chan
     proposal = {};
     proposal.kind = editorFilePath.empty() ? "create_file" : "replace_file";
     proposal.targetPath = !editorFilePath.empty() ? editorFilePath : selectedFile;
+    proposal.confidence = "high";
 
-    for (const auto& block : extractJsonBlocks(text)) {
-        try {
-            auto j = nlohmann::json::parse(block);
-            if (!j.is_object()) continue;
-            if (!j.contains("content")) continue;
-            proposal.kind = j.value("kind", proposal.kind);
-            proposal.targetPath = j.value("target", proposal.targetPath);
-            proposal.summary = j.value("summary", "Proposta estruturada recebida do agente.");
-            proposal.content = j.value("content", std::string{});
-            proposal.directlyApplicable = !proposal.content.empty() &&
-                (proposal.kind == "replace_file" || proposal.kind == "create_file");
-            if (proposal.directlyApplicable) return true;
-        } catch (...) {
+    // 1. Preferred: JSON Envelope
+    const auto jsonBlocks = extractJsonBlocks(text);
+    if (!jsonBlocks.empty()) {
+        for (const auto& block : jsonBlocks) {
+            try {
+                auto j = nlohmann::json::parse(block);
+                if (!j.is_object() || !j.contains("content")) continue;
+                
+                proposal.kind = j.value("kind", proposal.kind);
+                proposal.targetPath = j.value("target", proposal.targetPath);
+                proposal.summary = j.value("summary", "Proposta estruturada recebida.");
+                proposal.content = j.value("content", "");
+                
+                // If it's a JSON proposal, we assume high confidence unless it's empty
+                proposal.directlyApplicable = !proposal.content.empty();
+                if (proposal.directlyApplicable) {
+                    proposal.confidence = "high";
+                    return true;
+                }
+            } catch (...) {}
         }
     }
 
+    // 2. Secondary: Raw Code Blocks (only if simple)
     AgentMessageSections sections = splitAgentMessage(text);
     std::string cleaned = trimLoose(sections.answer);
     cleaned = std::regex_replace(cleaned, std::regex("<thought>[\\s\\S]*?</thought>"), "");
     cleaned = std::regex_replace(cleaned, std::regex("TASK COMPLETE"), "");
     cleaned = trimLoose(cleaned);
 
-    const auto codeBlocks = extractCodeBlocks(cleaned);
+    const auto codeBlocks = extractCodeBlocks(text);
     if (codeBlocks.size() == 1) {
         proposal.content = codeBlocks.front();
-        proposal.summary = "Bloco de codigo unico extraido da resposta do agente.";
-        proposal.directlyApplicable = !proposal.content.empty();
-        return proposal.directlyApplicable;
+        proposal.summary = "Código extraído da resposta.";
+        
+        // Evaluate confidence: if there's a lot of prose around the block, confidence is medium
+        bool hasSignificantProse = cleaned.length() > (codeBlocks.front().length() + 100);
+        proposal.confidence = hasSignificantProse ? "medium" : "high";
+        proposal.directlyApplicable = true;
+        return true;
     }
 
-    if (codeBlocks.empty() && !looksLikeMixedExplanatoryResponse(cleaned)) {
-        proposal.content = cleaned;
-        proposal.summary = "Resposta textual direta tratada como substituicao de arquivo.";
-        proposal.directlyApplicable = !proposal.content.empty();
-        return proposal.directlyApplicable;
+    // 3. Reject mixed or ambiguous text
+    if (codeBlocks.empty() && !cleaned.empty()) {
+        if (!looksLikeMixedExplanatoryResponse(cleaned)) {
+            proposal.content = cleaned;
+            proposal.summary = "Texto direto tratado como mudança.";
+            proposal.confidence = "medium";
+            proposal.directlyApplicable = true;
+            return true;
+        }
     }
 
-    proposal.summary = "Resposta ambigua: mistura explicacao e conteudo. Aplicacao automatica bloqueada.";
+    proposal.summary = "Resposta ambígua ou puramente explicativa.";
+    proposal.confidence = "low";
     proposal.directlyApplicable = false;
     return false;
 }
@@ -586,12 +646,12 @@ void AgentUI::drawChatWindow() {
     }
 
     ImGui::PushItemWidth(-1);
-    if (ImGui::InputTextWithHint("##ChatInput", "Questione ou defina missão...", inputBuf, sizeof(inputBuf), ImGuiInputTextFlags_EnterReturnsTrue)) {
+    if (ImGui::InputTextWithHint("##ChatInput", "Questione ou use /fix, /explain, /doc...", inputBuf, sizeof(inputBuf), ImGuiInputTextFlags_EnterReturnsTrue)) {
         if (std::strlen(inputBuf) > 0 && !llmBusy) {
-            std::string queryText = inputBuf;
+            std::string queryText = handleSlashCommand(inputBuf);
             {
                 std::lock_guard<std::mutex> lock(msgMutex);
-                history.push_back({"user", queryText});
+                history.push_back({"user", inputBuf}); // Keep the command in UI history
             }
             std::memset(inputBuf, 0, sizeof(inputBuf));
             scrollToBottom = true;

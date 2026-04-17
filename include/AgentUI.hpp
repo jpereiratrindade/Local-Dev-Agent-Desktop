@@ -30,10 +30,11 @@ struct ChatMessage {
 };
 
 struct ChangeProposal {
-    std::string kind;
+    std::string kind; // replace_file, create_file, append_to_file, insert_at_cursor
     std::string targetPath;
     std::string content;
     std::string summary;
+    std::string confidence = "high"; // low, medium, high
     bool directlyApplicable = false;
 };
 
@@ -161,6 +162,7 @@ private:
     bool saveEditorFile();
     bool createWorkspaceEntry(const std::string& relativePath, bool directory);
     bool applyTextToActiveFile(const std::string& text, bool saveAfter);
+    bool applyPartialChangeToEditor(const ChangeProposal& proposal, bool saveAfter);
     bool ensureEditorTarget(const std::string& targetPath);
     void noteFileTouched(const std::string& path);
     void generateProjectMap();

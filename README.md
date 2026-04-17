@@ -147,12 +147,14 @@ A aplicação detecta modelos locais no startup e exibe sugestões de vocação 
 
 - O workspace ativo impacta ferramentas e contexto.
 - O histórico é salvo por projeto, não global.
-- O agente lê `AGENT.md` e `PROJECT_CONTEXT.md` na raiz do projeto, quando existirem.
+- O agente mantém compatibilidade com `AGENT.md`/`AGENTS.md` e `PROJECT_CONTEXT.md`, mas também descobre contexto distribuído como `stack-context.md`, `coding-standards.md`, `architecture-context.md` e `memory/decisions-log.md`.
 - Skills reutilizáveis podem ser colocadas em `.agent/skills/` ou `skills/` usando `.md`, `.txt` ou `.json`.
 - Para geração de projetos, prefira registrar skills como `create-cmake-project`, `scaffold-api`, `generate-tests` e `review-and-fix-build`.
 - O sistema trata `perfil`, `skills` e `ferramentas/contexto` como camadas complementares:
   `perfil` orienta como pensar, `skill` sugere como começar, e tools/RAG/MCP ampliam contexto e ação.
 - Skills são preferenciais e flexíveis: o agente pode combiná-las, adaptá-las ou ignorá-las se o contexto real indicar caminho melhor.
+- Skills não são mais despejadas integralmente no prompt base: o orquestrador injeta os nomes disponíveis e incentiva leitura progressiva via `read_file` apenas quando necessário.
+- Quando houver `memory/decisions-log.md` ou `.agent/memory/decisions-log.md`, o agente pode registrar decisões arquiteturais relevantes como memória persistente do projeto.
 
 ## Skills de exemplo
 
@@ -166,7 +168,7 @@ Este repositório já inclui skills iniciais em `.agent/skills/`:
 - `writing-chapter`: elaboração de capítulo com estrutura e prosa
 - `research-project`: desenho de projeto de pesquisa com rigor e flexibilidade
 
-Essas skills entram no prompt do orquestrador automaticamente e servem como guia operacional para o modo agente.
+Essas skills ficam disponíveis ao orquestrador como catálogo inicial e servem como guia operacional para o modo agente. Os detalhes podem ser carregados sob demanda, reduzindo desperdício de contexto.
 
 ## Estabilizacao
 

@@ -144,44 +144,91 @@ void AgentUI::drawChangeProposalDialog() {
         ImGui::OpenPopup("Revisar Mudanca###ChangeProposal");
     }
 
-    if (ImGui::BeginPopupModal("Revisar Mudanca###ChangeProposal", &changeProposalVisible, ImGuiWindowFlags_AlwaysAutoResize)) {
-        ImGui::TextWrapped("%s", pendingChangeProposal.summary.empty() ? "Mudanca proposta pelo agente." : pendingChangeProposal.summary.c_str());
+    ImGui::SetNextWindowSize(ImVec2(850, 650), ImGuiCond_FirstUseEver);
+    if (ImGui::BeginPopupModal("Revisar Mudanca###ChangeProposal", &changeProposalVisible)) {
+        
+        // Confidence/Safety Bar
+        ImVec4 confColor = ImVec4(0.4f, 0.8f, 0.4f, 1.0f); // High (Green)
+        std::string confText = "SEGURO: Proposta estruturada ou limpa.";
+        if (pendingChangeProposal.confidence == "medium") {
+            confColor = ImVec4(1.0f, 0.8f, 0.2f, 1.0f); // Medium (Yellow)
+            confText = "ATENÇAO: Resposta mista detectada. Revise com cuidado.";
+        } else if (pendingChangeProposal.confidence == "low") {
+            confColor = ImVec4(0.9f, 0.4f, 0.4f, 1.0f); // Low (Red)
+            confText = "RISCO: Resposta ambígua ou técnica. Aplicaçao direta desencorajada.";
+        }
+
+        ImGui::PushStyleColor(ImGuiCol_Text, confColor);
+        ImGui::Text("STATUS: %s", confText.c_str());
+        ImGui::PopStyleColor();
         ImGui::Separator();
-        ImGui::Text("Operacao: %s", pendingChangeProposal.kind.empty() ? "replace_file" : pendingChangeProposal.kind.c_str());
-        ImGui::InputText("Alvo", pendingChangeTargetBuf, sizeof(pendingChangeTargetBuf));
-
-        if (!pendingChangeDiff.empty()) {
-            ImGui::Spacing();
-            ImGui::TextColored(ImVec4(0.4f, 0.7f, 1.0f, 1.0f), "Diff simplificado");
-            ImGui::BeginChild("ChangeProposalDiff", ImVec2(720, 220), true, ImGuiWindowFlags_HorizontalScrollbar);
-            std::istringstream diffStream(pendingChangeDiff);
-            std::string diffLine;
-            while (std::getline(diffStream, diffLine)) {
-                if (!diffLine.empty() && diffLine[0] == '+') {
-                    ImGui::TextColored(ImVec4(0.45f, 0.9f, 0.45f, 1.0f), "%s", diffLine.c_str());
-                } else if (!diffLine.empty() && diffLine[0] == '-') {
-                    ImGui::TextColored(ImVec4(1.0f, 0.45f, 0.45f, 1.0f), "%s", diffLine.c_str());
-                } else {
-                    ImGui::TextUnformatted(diffLine.c_str());
-                }
-            }
-            ImGui::EndChild();
-        }
-
+        
+        ImGui::TextColored(ImVec4(0.4f, 0.7f, 1.0f, 1.0f), "OBJETIVO:");
+        ImGui::SameLine();
+        ImGui::TextWrapped("%s", pendingChangeProposal.summary.empty() ? "Nenhuma descrição informada." : pendingChangeProposal.summary.c_str());
+        
         ImGui::Spacing();
-        ImGui::TextColored(ImVec4(0.4f, 0.7f, 1.0f, 1.0f), "Conteudo proposto");
-        ImGui::BeginChild("ChangeProposalContent", ImVec2(720, 220), true, ImGuiWindowFlags_HorizontalScrollbar);
-        ImGui::TextUnformatted(pendingChangeProposal.content.c_str());
-        ImGui::EndChild();
+        ImGui::Columns(2, "ProposalMeta", false);
+        ImGui::SetColumnWidth(0, 110);
+        
+        ImGui::TextDisabled("Operação:"); ImGui::NextColumn();
+        ImGui::Text("%s", pendingChangeProposal.kind.c_str()); ImGui::NextColumn();
+        
+        ImGui::TextDisabled("Caminho Alvo:"); ImGui::NextColumn();
+        ImGui::PushItemWidth(-1);
+        ImGui::InputText("##TargetFile", pendingChangeTargetBuf, sizeof(pendingChangeTargetBuf));
+        ImGui::PopItemWidth();
+        ImGui::NextColumn();
+        ImGui::Columns(1);
 
-        if (ImGui::Button("Aceitar", ImVec2(120, 0))) {
+        ImGui::Separator();
+
+        if (ImGui::BeginTabBar("ProposalTabs")) {
+            if (ImGui::BeginTabItem("Diff Visual")) {
+                if (!pendingChangeDiff.empty()) {
+                    ImGui::BeginChild("ChangeProposalDiff", ImVec2(0, 320), true, ImGuiWindowFlags_HorizontalScrollbar);
+                    std::istringstream diffStream(pendingChangeDiff);
+                    std::string diffLine;
+                    while (std::getline(diffStream, diffLine)) {
+                        if (!diffLine.empty() && diffLine[0] == '+') {
+                            ImGui::TextColored(ImVec4(0.4f, 0.8f, 0.4f, 1.0f), "%s", diffLine.c_str());
+                        } else if (!diffLine.empty() && diffLine[0] == '-') {
+                            ImGui::TextColored(ImVec4(0.9f, 0.4f, 0.4f, 1.0f), "%s", diffLine.c_str());
+                        } else {
+                            ImGui::TextDisabled("%s", diffLine.c_str());
+                        }
+                    }
+                    ImGui::EndChild();
+                } else {
+                    ImGui::TextDisabled("Nenhuma diferença detectada (ou arquivo novo/append).");
+                }
+                ImGui::EndTabItem();
+            }
+            
+            if (ImGui::BeginTabItem("Conteúdo (Editável)")) {
+                ImGui::TextDisabled("Você pode ajustar o código abaixo antes de aplicar:");
+                ImGui::InputTextMultiline("##EditProposalContent", &pendingChangeProposal.content, ImVec2(-1, 300), ImGuiInputTextFlags_AllowTabInput);
+                ImGui::EndTabItem();
+            }
+            ImGui::EndTabBar();
+        }
+
+        ImGui::Separator();
+        ImGui::Spacing();
+
+        float btnWidth = 160.0f;
+        float spacing = ImGui::GetStyle().ItemSpacing.x;
+        float totalWidth = (btnWidth * 3) + (spacing * 2);
+        ImGui::SetCursorPosX((ImGui::GetWindowWidth() - totalWidth) * 0.5f);
+
+        if (ImGui::Button("Aplicar Mudança", ImVec2(btnWidth, 45))) {
             pendingChangeProposal.targetPath = trimLoose(pendingChangeTargetBuf);
             if (!pendingChangeProposal.targetPath.empty() && ensureEditorTarget(pendingChangeProposal.targetPath) &&
-                applyTextToActiveFile(pendingChangeProposal.content, false)) {
+                applyPartialChangeToEditor(pendingChangeProposal, false)) {
                 lastChangeTargetPath = pendingChangeProposal.targetPath;
-                thoughtStream = "Mudanca aceita no editor. Revise e salve quando quiser.";
+                thoughtStream = "Mudança aplicada com sucesso no editor.";
             } else {
-                thoughtStream = "ERRO: nao foi possivel aplicar a mudanca ao editor.";
+                thoughtStream = "ERRO: Falha ao aplicar mudança estruturada.";
             }
             pendingChangeProposal = {};
             pendingChangeDiff.clear();
@@ -189,14 +236,14 @@ void AgentUI::drawChangeProposalDialog() {
             ImGui::CloseCurrentPopup();
         }
         ImGui::SameLine();
-        if (ImGui::Button("Aceitar e salvar", ImVec2(160, 0))) {
+        if (ImGui::Button("Aplicar e Salvar", ImVec2(btnWidth, 45))) {
             pendingChangeProposal.targetPath = trimLoose(pendingChangeTargetBuf);
             if (!pendingChangeProposal.targetPath.empty() && ensureEditorTarget(pendingChangeProposal.targetPath) &&
-                applyTextToActiveFile(pendingChangeProposal.content, true)) {
+                applyPartialChangeToEditor(pendingChangeProposal, true)) {
                 lastChangeTargetPath = pendingChangeProposal.targetPath;
-                thoughtStream = "Mudanca aceita e salva no arquivo ativo.";
+                thoughtStream = "Mudança aplicada e persistida com sucesso.";
             } else {
-                thoughtStream = "ERRO: nao foi possivel aplicar e salvar a mudanca.";
+                thoughtStream = "ERRO: Falha ao persistir mudança estruturada.";
             }
             pendingChangeProposal = {};
             pendingChangeDiff.clear();
@@ -204,13 +251,15 @@ void AgentUI::drawChangeProposalDialog() {
             ImGui::CloseCurrentPopup();
         }
         ImGui::SameLine();
-        if (ImGui::Button("Cancelar", ImVec2(120, 0))) {
-            thoughtStream = "Mudanca descartada pelo usuario.";
+        ImGui::PushStyleColor(ImGuiCol_Button, ImVec4(0.5f, 0.2f, 0.2f, 1.00f));
+        if (ImGui::Button("Descartar", ImVec2(btnWidth, 45))) {
+            thoughtStream = "Mudança descartada pelo usuário.";
             pendingChangeProposal = {};
             pendingChangeDiff.clear();
             changeProposalVisible = false;
             ImGui::CloseCurrentPopup();
         }
+        ImGui::PopStyleColor();
 
         ImGui::EndPopup();
     }
