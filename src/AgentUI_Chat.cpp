@@ -66,6 +66,26 @@ std::string toLowerCopy(std::string value) {
     return value;
 }
 
+std::vector<std::string> findFilenameCandidatesInProject(const std::string& projectRoot, const std::string& lowerGoal) {
+    std::vector<std::string> matches;
+    if (projectRoot.empty() || lowerGoal.empty()) return matches;
+
+    try {
+        for (const auto& entry : fs::recursive_directory_iterator(projectRoot)) {
+            if (!entry.is_regular_file()) continue;
+            const std::string filename = toLowerCopy(entry.path().filename().string());
+            if (filename.empty()) continue;
+            if (lowerGoal.find(filename) != std::string::npos) {
+                matches.push_back(entry.path().string());
+            }
+        }
+    } catch (...) {}
+
+    std::sort(matches.begin(), matches.end());
+    matches.erase(std::unique(matches.begin(), matches.end()), matches.end());
+    return matches;
+}
+
 std::vector<std::string> extractCodeBlocks(const std::string& text) {
     std::vector<std::string> blocks;
     std::regex codeBlockRegex("```(?:[A-Za-z0-9_+#.-]+)?\\s*([\\s\\S]*?)\\s*```");
@@ -219,6 +239,11 @@ std::string AgentUI::inferActiveFileForGoal(const std::string& goal) const {
     for (const auto& recent : recentFiles) {
         if (std::find(candidates.begin(), candidates.end(), recent) == candidates.end()) candidates.push_back(recent);
     }
+    if (hasOpenProject && !currentProjectRoot.empty()) {
+        for (const auto& match : findFilenameCandidatesInProject(currentProjectRoot, lowerGoal)) {
+            if (std::find(candidates.begin(), candidates.end(), match) == candidates.end()) candidates.push_back(match);
+        }
+    }
 
     for (const auto& candidate : candidates) {
         int score = candidateScore(candidate);
@@ -248,6 +273,11 @@ std::string AgentUI::inferActiveFileAmbiguityNote(const std::string& goal) const
     }
     for (const auto& recent : recentFiles) {
         if (std::find(candidates.begin(), candidates.end(), recent) == candidates.end()) candidates.push_back(recent);
+    }
+    if (hasOpenProject && !currentProjectRoot.empty()) {
+        for (const auto& match : findFilenameCandidatesInProject(currentProjectRoot, lowerGoal)) {
+            if (std::find(candidates.begin(), candidates.end(), match) == candidates.end()) candidates.push_back(match);
+        }
     }
 
     for (const auto& candidatePath : candidates) {
@@ -348,8 +378,9 @@ std::string AgentUI::buildChatSystemPrompt() const {
 
 bool AgentUI::buildChangeProposalFromAssistantText(const std::string& text, ChangeProposal& proposal) const {
     proposal = {};
-    proposal.kind = editorFilePath.empty() ? "create_file" : "replace_file";
-    proposal.targetPath = !editorFilePath.empty() ? editorFilePath : selectedFile;
+    const std::string inferredTarget = inferActiveFileForGoal(history.empty() ? "" : history.back().text);
+    proposal.kind = inferredTarget.empty() ? "create_file" : "replace_file";
+    proposal.targetPath = !inferredTarget.empty() ? inferredTarget : (!editorFilePath.empty() ? editorFilePath : selectedFile);
     proposal.confidence = "high";
 
     // 1. Preferred: JSON Envelope
@@ -394,7 +425,7 @@ bool AgentUI::buildChangeProposalFromAssistantText(const std::string& text, Chan
         return true;
     }
 
-    // 3. Reject mixed or ambiguous text
+    // 3. Fallback: mixed or ambiguous text still deserves a review modal.
     if (codeBlocks.empty() && !cleaned.empty()) {
         if (!looksLikeMixedExplanatoryResponse(cleaned)) {
             proposal.content = cleaned;
@@ -403,12 +434,18 @@ bool AgentUI::buildChangeProposalFromAssistantText(const std::string& text, Chan
             proposal.directlyApplicable = true;
             return true;
         }
+
+        proposal.content = cleaned;
+        proposal.summary = "Resposta ambígua ou misturada. Revise e edite antes de aplicar.";
+        proposal.confidence = "low";
+        proposal.directlyApplicable = false;
+        return true;
     }
 
     proposal.summary = "Resposta ambígua ou puramente explicativa.";
     proposal.confidence = "low";
     proposal.directlyApplicable = false;
-    return false;
+    return !proposal.targetPath.empty();
 }
 
 std::string AgentUI::inferTaskMode(const std::string& goal) const {
@@ -582,23 +619,22 @@ void AgentUI::drawChatWindow() {
                 
                 ImGui::PushID(static_cast<int>(i));
                 if (ImGui::SmallButton("Copiar")) ImGui::SetClipboardText(msg.text.c_str());
-                if (!editorFilePath.empty()) {
-                    ChangeProposal proposal;
-                    const bool hasProposal = buildChangeProposalFromAssistantText(msg.text, proposal);
+                ChangeProposal proposal;
+                const bool hasProposal = buildChangeProposalFromAssistantText(msg.text, proposal);
+                if (hasProposal) {
                     ImGui::SameLine();
                     if (ImGui::SmallButton("Propor Mudanca")) {
-                        if (hasProposal) {
-                            pendingChangeProposal = proposal;
-                            const std::string currentText = editorUsesPlainText ? editorPlainTextBuffer : codeEditor.GetText();
-                            pendingChangeDiff = buildSimpleDiffPreview(currentText, proposal.content);
-                            std::snprintf(pendingChangeTargetBuf, sizeof(pendingChangeTargetBuf), "%s", pendingChangeProposal.targetPath.c_str());
-                            changeProposalVisible = true;
-                            thoughtStream = "Mudanca pronta para revisao.";
-                        } else {
-                            thoughtStream = proposal.summary.empty()
-                                ? "Resposta sem proposta de mudanca segura."
-                                : proposal.summary;
+                        pendingChangeProposal = proposal;
+                        std::string currentText;
+                        if (!editorFilePath.empty() && proposal.targetPath == editorFilePath) {
+                            currentText = editorUsesPlainText ? editorPlainTextBuffer : codeEditor.GetText();
                         }
+                        pendingChangeDiff = buildSimpleDiffPreview(currentText, proposal.content);
+                        std::snprintf(pendingChangeTargetBuf, sizeof(pendingChangeTargetBuf), "%s", pendingChangeProposal.targetPath.c_str());
+                        changeProposalVisible = true;
+                        thoughtStream = proposal.directlyApplicable
+                            ? "Mudanca pronta para revisao."
+                            : "Mudanca ambigua aberta para revisao manual.";
                     }
                 }
                 ImGui::PopID();
