@@ -6,6 +6,8 @@
 #include <sstream>
 #include <algorithm>
 #include <filesystem>
+#include <mutex>
+#include <condition_variable>
 
 namespace fs = std::filesystem;
 
@@ -204,8 +206,35 @@ void Orchestrator::runMission(const std::string& goal, const std::string& mode,
         for (int step = 0; step < effectiveMaxSteps; ++step) {
             if (stopRequested) break;
 
-            if (callbacks.onAction) callbacks.onAction("PASSO " + std::to_string(step + 1) + " / " + std::to_string(effectiveMaxSteps));
-            std::string response = ollama->chat(history, options);
+            // Chamada de chat com streaming para feedback em tempo real
+            std::string response;
+            std::mutex streamMutex;
+            std::condition_variable cv;
+            bool streamDone = false;
+            
+            ollama->chatStream(history, 
+                [&](const std::string& chunk) {
+                    {
+                        std::lock_guard<std::mutex> lock(streamMutex);
+                        response += chunk;
+                    }
+                    if (callbacks.onMessageChunk) callbacks.onMessageChunk(chunk);
+                },
+                [&](bool ok, agent::network::OllamaStreamStats) {
+                    {
+                        std::lock_guard<std::mutex> lock(streamMutex);
+                        streamDone = true;
+                    }
+                    cv.notify_one();
+                },
+                "", options);
+
+            // Aguardar a conclusão do stream
+            std::unique_lock<std::mutex> lock(streamMutex);
+            cv.wait(lock, [&]{ return streamDone; });
+
+            if (response.empty()) response = "Erro: Sem resposta do LLM.";
+            
             if (hasCodeEvidence(response)) {
                 evidenceCount++;
                 noEvidenceSteps = 0;

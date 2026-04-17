@@ -9,6 +9,7 @@
 #include "imgui_impl_opengl3.h"
 
 #include "OllamaClient.hpp"
+#include "Orchestrator.hpp"
 #include "AgentUI.hpp"
 
 namespace {
@@ -132,9 +133,12 @@ int main(int argc, char* argv[]) {
     ImGui_ImplSDL2_InitForOpenGL(window, gl_context);
     ImGui_ImplOpenGL3_Init(glsl_version);
 
+    agent::core::Orchestrator orchestrator(&ollama, "."); // Inicializa o orquestrador no root atual
+
     agent::ui::AgentUI ui;
     ui.emojiIconsEnabled = emojiEnabled;
     ui.setOllama(&ollama);
+    ui.setOrchestrator(&orchestrator); // Vincula o orquestrador à UI
     ui.availableModels = models;
     if (!models.empty()) ui.currentModel = models[0];
     ui.startTelemetry(); // Ativar monitoramento AMD v4.1
