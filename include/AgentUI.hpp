@@ -33,6 +33,7 @@ public:
     bool scrollToBottom = false;
     bool exitRequested = false;
     TextEditor codeEditor;
+    TextEditor snippetEditor; // New: Editor instance for chat snippets
 
     std::string currentProjectRoot = ".";
     std::string currentModel = "qwen2.5:14b";
@@ -129,9 +130,11 @@ private:
     void renderDirectory(const std::string& path);
     void drawFileEditor();
     void drawChatWindow();
+    void renderMarkdown(const std::string& text);
     void drawThoughtPanel();
     void drawStatsPanel();
-    void drawCodeBlock(const std::string& code, const std::string& lang);
+    void drawCodeBlock(const std::string& code, const std::string& lang, bool highlighted = false);
+    void applyCodeToEditor(const std::string& code);
     void loadFileIntoEditor(const std::string& path);
     bool saveEditorFile();
     void drawOpenFolderFallbackDialog();

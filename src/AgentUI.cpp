@@ -689,6 +689,26 @@ void AgentUI::drawFileEditor() {
         thoughtStream = "Arquivo ativo para contexto: " + fs::path(editorFilePath).filename().string();
     }
     ImGui::SameLine();
+    if (ImGui::SmallButton("Enviar Seleção ao Chat")) {
+        std::string selection;
+        if (editorUsesPlainText) {
+            // ImGui InputTextMultiline doesn't expose selection easily.
+            // For now, we'll just hint that it's for code files.
+            thoughtStream = "Nota: Seleção textual em MD/TXT não suportada nativamente pelo ImGui ainda. Use arquivos de código.";
+        } else {
+            selection = codeEditor.GetSelectedText();
+            if (!selection.empty()) {
+                std::string currentInput = inputBuf;
+                if (!currentInput.empty() && currentInput.back() != '\n') currentInput += "\n";
+                currentInput += "```\n" + selection + "\n```\n";
+                std::snprintf(inputBuf, sizeof(inputBuf), "%s", currentInput.substr(0, sizeof(inputBuf)-1).c_str());
+                thoughtStream = "Seleção enviada ao input do chat.";
+            } else {
+                thoughtStream = "Nada selecionado para enviar.";
+            }
+        }
+    }
+    ImGui::SameLine();
     if (ImGui::SmallButton("Recarregar")) {
         loadFileIntoEditor(editorFilePath);
     }
@@ -761,9 +781,7 @@ void AgentUI::drawChatWindow() {
                         }
                         ImGui::PopID();
                         ImGui::Separator();
-                        ImGui::PushTextWrapPos(0.0f);
-                        ImGui::TextUnformatted(sections.answer.c_str());
-                        ImGui::PopTextWrapPos();
+                        renderMarkdown(sections.answer);
                         ImGui::EndTabItem();
                     }
                     if (ImGui::BeginTabItem("Ações")) {
@@ -780,9 +798,7 @@ void AgentUI::drawChatWindow() {
                                 const auto& step = sections.actionSteps[stepIdx];
                                 std::string header = step.title + "##" + std::to_string(i) + "_" + std::to_string(stepIdx);
                                 if (ImGui::CollapsingHeader(header.c_str(), ImGuiTreeNodeFlags_DefaultOpen)) {
-                                    ImGui::PushTextWrapPos(0.0f);
-                                    ImGui::TextUnformatted(step.content.c_str());
-                                    ImGui::PopTextWrapPos();
+                                    renderMarkdown(step.content);
                                 }
                             }
                         }
@@ -1425,23 +1441,117 @@ void AgentUI::drawOpenFolderPickerDialog() {
     }
 }
 
-void AgentUI::drawCodeBlock(const std::string& code, const std::string& lang) {
-    // Configura o editor apenas se necessário
-    static bool editorInit = false;
-    if (!editorInit) {
-        codeEditor.SetLanguageDefinition(TextEditor::LanguageDefinition::CPlusPlus());
-        codeEditor.SetPalette(TextEditor::GetDarkPalette());
-        editorInit = true;
+void AgentUI::drawCodeBlock(const std::string& code, const std::string& lang, bool highlighted) {
+    // Configura o snippetEditor (separado do codeEditor principal)
+    static bool snippetInit = false;
+    if (!snippetInit) {
+        snippetEditor.SetLanguageDefinition(TextEditor::LanguageDefinition::CPlusPlus());
+        snippetEditor.SetPalette(TextEditor::GetDarkPalette());
+        snippetInit = true;
     }
 
-    codeEditor.SetText(code);
-    codeEditor.SetReadOnly(true);
+    snippetEditor.SetText(code);
+    snippetEditor.SetReadOnly(true);
     
     ImGui::PushStyleVar(ImGuiStyleVar_ChildRounding, 5.0f);
-    ImGui::BeginChild("CodeSnippet", ImVec2(0, 200), true, ImGuiWindowFlags_HorizontalScrollbar);
-    codeEditor.Render("Editor");
+    
+    // Identificador único por frame para evitar colisões simples
+    std::string childId = "CodeSnippet_" + std::to_string(std::hash<std::string>{}(code)).substr(0, 8);
+    
+    ImGui::BeginChild(childId.c_str(), ImVec2(0, 220), true, ImGuiWindowFlags_HorizontalScrollbar);
+    
+    if (highlighted) {
+        ImGui::PushStyleColor(ImGuiCol_Button, ImVec4(0.2f, 0.6f, 0.2f, 1.0f));
+        ImGui::PushStyleColor(ImGuiCol_ButtonHovered, ImVec4(0.3f, 0.8f, 0.3f, 1.0f));
+    }
+
+    if (ImGui::Button("Aplicar no Editor Ativo")) {
+        applyCodeToEditor(code);
+    }
+
+    if (highlighted) {
+        ImGui::PopStyleColor(2);
+        ImGui::SameLine();
+        ImGui::TextColored(ImVec4(0.4f, 1.0f, 0.4f, 1.0f), "Edição recomendada!");
+    }
+
+    ImGui::SameLine();
+    if (ImGui::Button("Copiar")) {
+        ImGui::SetClipboardText(code.c_str());
+        thoughtStream = "Código copiado para a área de transferência.";
+    }
+    ImGui::SameLine();
+    ImGui::TextDisabled("| %s", lang.empty() ? "text" : lang.c_str());
+
+    snippetEditor.Render("SnippetEditorRender");
     ImGui::EndChild();
     ImGui::PopStyleVar();
+}
+
+void AgentUI::renderMarkdown(const std::string& text) {
+    if (text.empty()) return;
+
+    // Regex simples para blocos de código
+    std::regex codeBlockRegex("```(\\w*)\\n([\\s\\S]*?)```");
+    auto textBegin = text.cbegin();
+    auto textEnd = text.cend();
+    std::smatch match;
+
+    while (std::regex_search(textBegin, textEnd, match, codeBlockRegex)) {
+        // Texto antes do bloco
+        std::string prefix = match.prefix().str();
+        if (!prefix.empty()) {
+            ImGui::PushTextWrapPos(0.0f);
+            ImGui::TextUnformatted(prefix.c_str());
+            ImGui::PopTextWrapPos();
+        }
+
+        // Determina se deve destacar baseado em heurística simples (proximidade de palavras chave)
+        std::string lowerPrefix = prefix;
+        std::transform(lowerPrefix.begin(), lowerPrefix.end(), lowerPrefix.begin(), ::tolower);
+        bool highlighted = (lowerPrefix.find("inclua") != std::string::npos || 
+                            lowerPrefix.find("update") != std::string::npos ||
+                            lowerPrefix.find("substitua") != std::string::npos ||
+                            lowerPrefix.find("corrigi") != std::string::npos ||
+                            lowerPrefix.find("apply") != std::string::npos);
+
+        // Bloco de código
+        std::string lang = match[1].str();
+        std::string code = match[2].str();
+        drawCodeBlock(code, lang, highlighted);
+
+        textBegin = match.suffix().first;
+    }
+
+    // Texto restante
+    if (textBegin != textEnd) {
+        std::string remaining(textBegin, textEnd);
+        ImGui::PushTextWrapPos(0.0f);
+        ImGui::TextUnformatted(remaining.c_str());
+        ImGui::PopTextWrapPos();
+    }
+}
+
+void AgentUI::applyCodeToEditor(const std::string& code) {
+    if (editorFilePath.empty()) {
+        thoughtStream = "Erro: Nenhum arquivo aberto no editor para aplicar o código.";
+        return;
+    }
+
+    if (editorUsesPlainText) {
+        editorPlainTextBuffer = code;
+        editorDirty = true;
+        thoughtStream = "Código aplicado ao editor de texto plano (MD/TXT).";
+    } else {
+        if (codeEditor.HasSelection()) {
+            codeEditor.InsertText(code);
+            thoughtStream = "Código aplicado na seleção do editor.";
+        } else {
+            codeEditor.SetText(code);
+            thoughtStream = "Código aplicado a todo o arquivo no editor.";
+        }
+        editorDirty = true;
+    }
 }
 
 
