@@ -28,16 +28,19 @@ void AgentUI::drawOpenFolderPickerDialog() {
         
         ImGui::BeginChild("FolderList", ImVec2(500, 300), true);
         try {
-            for (const auto& entry : fs::directory_iterator(folderPickerCurrentDir)) {
+            fs::path current(folderPickerCurrentDir);
+            for (const auto& entry : fs::directory_iterator(current)) {
                 if (entry.is_directory()) {
                     std::string name = entry.path().filename().string();
-                    if (ImGui::Selectable(name.c_str())) {
+                    if (ImGui::Selectable((name + "/").c_str())) {
                         folderPickerCurrentDir = entry.path().string();
                         std::snprintf(folderPickerPathBuf, sizeof(folderPickerPathBuf), "%s", folderPickerCurrentDir.c_str());
                     }
                 }
             }
-        } catch (...) {}
+        } catch (const std::exception& e) {
+            ImGui::TextColored(ImVec4(1,0,0,1), "Erro ao ler pasta: %s", e.what());
+        }
         ImGui::EndChild();
 
         ImGui::InputText("Caminho", folderPickerPathBuf, sizeof(folderPickerPathBuf));

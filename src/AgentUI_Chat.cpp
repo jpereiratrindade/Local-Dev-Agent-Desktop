@@ -117,8 +117,21 @@ void AgentUI::runPythonAgent(const std::string& goal, const std::string& mode) {
 void AgentUI::drawChatWindow() {
     ImGui::BeginChild("ChatWindowChild", ImVec2(0, 0), true);
     ImGui::TextColored(ImVec4(0.4f, 0.7f, 1.0f, 1.0f), "AGENT CHAT");
+    ImGui::TextDisabled(" | Model:");
     ImGui::SameLine();
-    ImGui::TextDisabled(" | %s", currentModel.c_str());
+    ImGui::SetNextItemWidth(150);
+    if (ImGui::BeginCombo("##ModelSelector", currentModel.c_str())) {
+        for (const auto& model : availableModels) {
+            bool isSelected = (currentModel == model);
+            if (ImGui::Selectable(model.c_str(), isSelected)) {
+                currentModel = model;
+            }
+            if (isSelected) {
+                ImGui::SetItemDefaultFocus();
+            }
+        }
+        ImGui::EndCombo();
+    }
     ImGui::Separator();
 
     float footerHeight = ImGui::GetFrameHeightWithSpacing() + 55.0f;

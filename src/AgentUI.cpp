@@ -47,7 +47,10 @@ AgentUI::~AgentUI() {
 
 void AgentUI::setOllama(agent::network::OllamaClient* client) {
     this->ollama = client;
-    if (ollama) ollamaVersion = ollama->fetchVersion();
+    if (ollama) {
+        ollamaVersion = ollama->fetchVersion();
+        availableModels = ollama->listModels();
+    }
 }
 
 void AgentUI::render() {
@@ -89,7 +92,15 @@ void AgentUI::drawMainMenu() {
     if (ImGui::BeginMainMenuBar()) {
         if (ImGui::BeginMenu("Arquivo")) {
             if (ImGui::MenuItem("Nova Sessão", "Ctrl+N")) newDialogue();
-            if (ImGui::MenuItem("Abrir Pasta...", "Ctrl+O")) openFolderPickerRequested = true;
+            if (ImGui::MenuItem("Abrir Pasta...", "Ctrl+O")) {
+                openFolderPickerRequested = true;
+                if (!hasOpenProject) {
+                    folderPickerCurrentDir = fs::current_path().string();
+                } else {
+                    folderPickerCurrentDir = currentProjectRoot;
+                }
+                std::snprintf(folderPickerPathBuf, sizeof(folderPickerPathBuf), "%s", folderPickerCurrentDir.c_str());
+            }
             ImGui::Separator();
             if (ImGui::MenuItem("Sair", "Alt+F4")) exitRequested = true;
             ImGui::EndMenu();
