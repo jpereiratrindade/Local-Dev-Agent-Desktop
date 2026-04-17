@@ -412,56 +412,25 @@ std::string Orchestrator::buildSystemPrompt(const std::string& mode, const std::
     for (size_t i = 1; i < approvedDomains.size(); ++i) domainsSummary += ", " + approvedDomains[i];
     
     std::string agentMd = readOptionalFile(fs::path(workspaceRoot) / "AGENT.md");
-    std::string contextMd = readOptionalFile(fs::path(workspaceRoot) / "PROJECT_CONTEXT.md");
-    std::string skillsMd = loadProjectSkills(workspaceRoot);
     if (agentMd.empty()) {
-        agentMd =
-            "## COMPORTAMENTO PADRAO\n"
-            "- Comporte-se como um agente de execucao de software, nao apenas como chat.\n"
-            "- Antes de editar varios arquivos, monte um plano curto, depois execute em etapas pequenas.\n"
-            "- Prefira criar estrutura minima verificavel primeiro e expandir depois.\n"
-            "- Preserve padroes do projeto e nao invente dependencias sem evidencias.\n"
-            "- Skills sao guias leves de operacao, nao o centro da inteligencia.\n"
-            "- Perfis definem a atitude cognitiva; skills sugerem como comecar; ferramentas e contexto dao liberdade real.\n"
-            "- Ao concluir, relate o que foi criado, alterado e validado.\n";
+        agentMd = "Atue como um engenheiro de software autonomo focado em execucao técnica.";
     }
+    std::string contextMd = readOptionalFile(fs::path(workspaceRoot) / "PROJECT_CONTEXT.md");
     if (contextMd.empty()) {
-        contextMd =
-            "Sem contexto adicional do projeto. Descubra estrutura, stack e convencoes a partir do workspace atual.";
+        contextMd = "Workspace local sem manifestos especificos. Explore para entender.";
     }
 
-    return "## AGENT NATIVO CODEX - PROTOCOLO DE AUTONOMIA\n\n" +
+    return "## AGENT NATIVO CODEX\n\n" +
            agentMd + "\n\n" +
            "## CONTEXTO DO PROJETO\n" + contextMd + "\n\n" +
-           skillsMd + "\n\n" +
            "## MODO DE OPERACAO: " + mode + "\n" + modeInstr + "\n\n" +
-           "## PERFIL COGNITIVO: " + profile + "\n" + profileInstructions(profile) + "\n\n" +
-           "## PARAMETROS DE RACIOCINIO\n" +
-           "Reasoning atual: " + reasoning + ". Ajuste profundidade e numero de passos a esse nivel.\n\n" +
-           "## USO DE SKILLS\n" +
-           "Skills detectadas no workspace: " + summarizeSkillNames(workspaceRoot) + "\n" +
-           "Use skills como guias flexiveis, nao como receita fechada.\n" +
-           "O agente pode combinar skills, adaptar seus passos ou ignorar uma skill se o contexto real indicar caminho melhor.\n" +
-           "Em escrita e pesquisa, a skill deve orientar estrutura e processo, nunca sufocar elaboracao conceitual ou criatividade.\n\n" +
-           "## POLITICA DE CONTEXTO\n" +
-           "Modo atual: " + getNativeToolContextSourceModeName() + "\n" +
-           "Bibliotecas locais aprovadas: " + rootsSummary + "\n" +
-           "Dominios aprovados: " + domainsSummary + "\n\n" +
-           "## FERRAMENTAS DISPONÍVEIS\n" + specs + "\n" +
+           "## FERRAMENTAS DISPONÍVEIS\n" + specs + "\n\n" +
            "## REGRAS DE OURO:\n" +
            "1. Pense antes de agir com <thought>...</thought>.\n" +
-           "2. Para agir, use OBRIGATORIAMENTE o bloco ```json ... ``` com {\"tool\": \"...\", \"args\": {...}}.\n" +
-           "3. " + (approvedRoots.empty() 
-                ? (isWritingProfile(profile) 
-                    ? std::string("EM PERFIS DE WRITING, comece pelo menor conjunto de arquivos textuais relevantes. Evite sequencias repetitivas de 'list_dir' apos o primeiro panorama.\n")
-                    : std::string("PRIORIZE ACAO SOBRE EXPLICACAO. Se a meta e 'analisar', comece com 'list_dir'.\n"))
-                : std::string("DADO QUE HA BIBLIOTECAS APROVADAS, PRIORIZE 'search_library' para encontrar informacoes no CONTEUDO dos arquivos de referencia. Evite listar nomes de arquivos mecanicamente se puder pesquisar o conteudo diretamente.\n")) +
-           "4. Para tarefas de geracao de projeto, siga o ciclo: inspecionar -> planejar -> criar estrutura -> preencher arquivos -> validar.\n" +
-           "5. Prefira ferramentas estruturais de workspace a descrever o que faria. Crie diretorios, mova arquivos, remova sobras e grave conteudo real quando permitido.\n" +
-           "6. Ao editar codigo existente, preserve estilo, indentacao e convencoes locais.\n" +
-           "7. Nao deixe skills, RAG ou MCP substituirem o pensamento do modelo; use-os para ampliar contexto e capacidade de agir.\n" +
-           "8. Se a tarefa estiver pronta, finalize com 'TASK COMPLETE'.\n" +
-           "9. Nao confunda exploracao mecanica com analise real: cada passo precisa aumentar evidencias ou melhorar a resposta.";
+           "2. Use blocos ```json ... ``` para ferramentas: {\"tool\": \"...\", \"args\": {...}}.\n" +
+           "3. Skills disponiveis (use 'read_file' se precisar de detalhes): " + summarizeSkillNames(workspaceRoot) + "\n" +
+           "4. Se a tarefa estiver pronta, finalize obrigatoriamente com 'TASK COMPLETE'.\n" +
+           "5. Nao invente informacoes. Se nao souber, use as ferramentas para descobrir.";
 }
 
 } // namespace agent::core
