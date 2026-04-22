@@ -576,7 +576,9 @@ std::string Orchestrator::buildSystemPrompt(const std::string& mode, const std::
            "6. Se a tarefa estiver pronta, finalize obrigatoriamente com 'TASK COMPLETE'.\n" +
            "7. Nao invente informacoes. Se nao souber, use as ferramentas para descobrir.\n" +
            "8. Evite repetir a mesma tool-call com os mesmos argumentos. Após uma inspeção suficiente, execute a ação de materialização no workspace.\n" +
-           "9. Para tarefas de documentacao, Doxygen, build ou teste, so conclua depois de verificar o artefato esperado com ferramenta objetiva (ex.: Doxyfile, docs/html/index.html, executavel, saida de teste ou make).";
+           "9. Para tarefas de documentacao, Doxygen, build ou teste, so conclua depois de verificar o artefato esperado com ferramenta objetiva (ex.: Doxyfile, docs/html/index.html, executavel, saida de teste ou make).\n" +
+           "10. Nunca execute sudo, pkexec ou su. Se faltar dependencia do sistema, reporte o comando sugerido ao usuario e conclua com status claro de bloqueio externo.\n" +
+           "11. Em tarefas Doxygen, trate como pacote minimo: criar/ajustar Doxyfile, adicionar alvo 'doc' no Makefile quando houver Makefile, executar 'make doc' ou 'doxygen Doxyfile', e verificar 'docs/html/index.html'.";
 }
 
 } // namespace agent::core

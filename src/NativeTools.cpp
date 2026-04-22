@@ -217,6 +217,12 @@ std::string normalizeText(const std::string& input) {
     return out;
 }
 
+bool containsPrivilegedInteractiveCommand(const std::string& command) {
+    std::string normalized = normalizeText(command);
+    static const std::regex blocked(R"((^|[;&|()\s])(sudo|pkexec|su)(\s|$))");
+    return std::regex_search(normalized, blocked);
+}
+
 std::vector<std::string> tokenizeQuery(const std::string& query) {
     std::string normalized = normalizeText(query);
     std::vector<std::string> terms;
@@ -688,16 +694,23 @@ std::string run_command(const nlohmann::json& args) {
         command = args.value("command", "");
     }
     if (command.empty()) return "Erro: Comando vazio.";
+    if (containsPrivilegedInteractiveCommand(command)) {
+        return "Erro: comando bloqueado por exigir privilégios ou senha interativa. "
+               "Informe a dependência/comando necessário ao usuário em vez de executar sudo/pkexec/su.";
+    }
 
     std::string cwd = args.value("cwd", g_workspaceRoot.string());
     fs::path resolvedCwd;
     std::string cwdError;
     if (!resolveWorkspacePath(cwd, resolvedCwd, cwdError)) return "Erro: cwd inválido: " + cwdError;
 
-    std::string cmdPrefix = "cd \"" + resolvedCwd.string() + "\" && ";
+    int timeoutSeconds = args.value("timeout_seconds", 60);
+    timeoutSeconds = std::max(1, std::min(timeoutSeconds, 300));
+    std::string cmdPrefix = "cd " + shellEscape(resolvedCwd.string()) + " && ";
+    std::string timeoutPrefix = "timeout " + std::to_string(timeoutSeconds) + "s sh -c ";
     std::array<char, 128> buffer;
     std::string result;
-    std::unique_ptr<FILE, decltype(&pclose)> pipe(popen((cmdPrefix + command + " 2>&1").c_str(), "r"), pclose);
+    std::unique_ptr<FILE, decltype(&pclose)> pipe(popen((cmdPrefix + timeoutPrefix + shellEscape(command) + " 2>&1").c_str(), "r"), pclose);
     if (!pipe) return "Erro: Falha ao executar popen()";
     
     while (fgets(buffer.data(), buffer.size(), pipe.get()) != nullptr) {
