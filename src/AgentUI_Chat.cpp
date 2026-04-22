@@ -493,7 +493,7 @@ std::string AgentUI::inferTaskMode(const std::string& goal) const {
         "adicione", "adicionar", "configure", "configurar", "apague", "deletar", "remover"
     });
     if (containsAnyLower(lower, {"crie arquivo", "criar arquivo", "gere projeto", "scaffold", "rodar", "executar", "corrigir build", "refator", "refactor", "renomear arquivo", "mover arquivo"}) ||
-        hasOperationalVerb ||
+        (hasOperationalVerb && (hasPathHint || documentationTask)) ||
         documentationTask) {
         return "MISSION";
     }

@@ -113,6 +113,22 @@ bool shouldSuppressRepeatedTool(const std::string& toolName) {
            toolName == "rag_cache_status";
 }
 
+bool isMutationTool(const std::string& toolName) {
+    return toolName == "write_file" ||
+           toolName == "apply_patch" ||
+           toolName == "make_dir" ||
+           toolName == "move_path" ||
+           toolName == "delete_path";
+}
+
+bool isVerificationTool(const std::string& toolName) {
+    return toolName == "read_file" ||
+           toolName == "read_file_slice" ||
+           toolName == "list_dir" ||
+           toolName == "grep_search" ||
+           toolName == "run_command";
+}
+
 bool shouldPrioritizeActiveFile(const std::string& goal, const std::string& profile) {
     std::string lower = goal;
     std::transform(lower.begin(), lower.end(), lower.begin(), [](unsigned char c) {
@@ -294,6 +310,7 @@ void Orchestrator::runMission(const std::string& goal, const std::string& mode,
                                        "\nSe alguma skill combinar com a tarefa, use-a como guia flexivel de arranque, nao como trilho obrigatorio." +
                                        "\nSe algum contexto distribuido combinar com a tarefa, use 'read_file' para aprofundar apenas no arquivo necessario." +
                                        "\nPerfis definem postura cognitiva; skills sugerem fluxo; ferramentas e contexto permitem improviso responsavel." +
+                                       "\nAntes de agir, derive um modelo de evidencia curto: qual estado observavel provaria que o objetivo foi atingido. Expresse isso em <evidence_model>...</evidence_model> e refine se a inspecao mostrar outro caminho." +
                                        "\nInicie pela menor ação verificável possível." +
                                        (activeFilePriority
                                             ? "\nPrioridade adicional: ha contexto/arquivo ativo relevante. Antes de explorar o repositorio, leia e trabalhe primeiro sobre esse artefato."
@@ -321,6 +338,8 @@ void Orchestrator::runMission(const std::string& goal, const std::string& mode,
         int repeatedToolSignatureCount = 0;
         int evidenceCount = 0;
         int noEvidenceSteps = 0;
+        int mutationCount = 0;
+        int verificationSinceLastMutation = 0;
 
         for (int step = 0; step < effectiveMaxSteps; ++step) {
             if (stopRequested) break;
@@ -425,6 +444,17 @@ void Orchestrator::runMission(const std::string& goal, const std::string& mode,
                     }
                     observation += localObservation + "\n";
 
+                    const bool dispatchedSuccessfully = !toolName.empty() &&
+                        repeatedToolSignatureCount < 1 &&
+                        localObservation.rfind("Erro", 0) != 0 &&
+                        localObservation.rfind("ERRO", 0) != 0;
+                    if (dispatchedSuccessfully && isMutationTool(toolName)) {
+                        mutationCount++;
+                        verificationSinceLastMutation = 0;
+                    } else if (dispatchedSuccessfully && mutationCount > 0 && isVerificationTool(toolName)) {
+                        verificationSinceLastMutation++;
+                    }
+
                     if (callbacks.onObservation) callbacks.onObservation(localObservation);
                     if (localObservation == lastObservation) stagnationCount++;
                     else stagnationCount = 0;
@@ -450,6 +480,15 @@ void Orchestrator::runMission(const std::string& goal, const std::string& mode,
             }
 
             if (callbacks.onMessageChunk) callbacks.onMessageChunk(response);
+
+            if (taskComplete && mutationCount > 0 && verificationSinceLastMutation == 0) {
+                taskComplete = false;
+                currentGoal =
+                    "A conclusao foi bloqueada: houve mudanca no workspace sem verificacao posterior. "
+                    "Releia o arquivo afetado, liste o artefato esperado ou rode o comando de validacao antes de TASK COMPLETE.";
+                history.push_back({"user", currentGoal});
+                if (callbacks.onAction) callbacks.onAction("Conclusão bloqueada: mutação sem evidência posterior.");
+            }
 
             if (taskComplete) {
                 if (callbacks.onAction) callbacks.onAction("MISSÃO CONCLUÍDA COM SUCESSO.");
@@ -575,10 +614,11 @@ std::string Orchestrator::buildSystemPrompt(const std::string& mode, const std::
            "5. Se tomar uma decisao arquitetural relevante e existir 'memory/decisions-log.md' (ou equivalente em '.agent/memory/'), atualize esse arquivo com 'write_file' antes de concluir.\n" +
            "6. Se a tarefa estiver pronta, finalize obrigatoriamente com 'TASK COMPLETE'.\n" +
            "7. Nao invente informacoes. Se nao souber, use as ferramentas para descobrir.\n" +
-           "8. Evite repetir a mesma tool-call com os mesmos argumentos. Após uma inspeção suficiente, execute a ação de materialização no workspace.\n" +
-           "9. Para tarefas de documentacao, build ou teste, so conclua depois de verificar o artefato esperado com ferramenta objetiva (ex.: arquivo gerado, indice de docs, executavel, saida de teste ou build).\n" +
-           "10. Nunca execute sudo, pkexec ou su. Se faltar dependencia do sistema, reporte o comando sugerido ao usuario e conclua com status claro de bloqueio externo.\n" +
-           "11. Se a tarefa pedir inserir, adicionar, alterar ou documentar texto em arquivo existente, leia o arquivo, aplique a edicao com apply_patch ou write_file, releia o arquivo e confirme que o trecho esperado esta presente antes de concluir.";
+           "8. Antes de materializar, formule um modelo de evidencia curto: tipo, alvo e condicao verificavel. Nao transforme isso em burocracia; use-o para decidir o que provar.\n" +
+           "9. Evite repetir a mesma tool-call com os mesmos argumentos. Após uma inspeção suficiente, execute a ação de materialização no workspace.\n" +
+           "10. Para tarefas de documentacao, build ou teste, so conclua depois de verificar o artefato esperado com ferramenta objetiva (ex.: arquivo gerado, indice de docs, executavel, saida de teste ou build).\n" +
+           "11. Nunca execute sudo, pkexec ou su. Se faltar dependencia do sistema, reporte o comando sugerido ao usuario e conclua com status claro de bloqueio externo.\n" +
+           "12. Se a tarefa pedir inserir, adicionar, alterar ou documentar texto em arquivo existente, leia o arquivo, aplique a edicao com apply_patch ou write_file, releia o arquivo e confirme que o trecho esperado esta presente antes de concluir.";
 }
 
 } // namespace agent::core
