@@ -37,6 +37,7 @@ set(SOURCES
     src/AgentUI_Persistence.cpp
     src/ToolRegistry.cpp
     src/EvidenceModel.cpp
+    src/TurnDiffTracker.cpp
     src/Orchestrator.cpp
     src/NativeTools.cpp
 )

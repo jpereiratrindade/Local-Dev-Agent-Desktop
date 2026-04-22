@@ -1,5 +1,6 @@
 #include "Orchestrator.hpp"
 #include "EvidenceModel.hpp"
+#include "TurnDiffTracker.hpp"
 #include <regex>
 #include <iostream>
 #include <thread>
@@ -129,6 +130,21 @@ bool shouldPrioritizeActiveFile(const std::string& goal, const std::string& prof
            lower.find("reescreva") != std::string::npos ||
            lower.find("revise") != std::string::npos ||
            lower.find("edite") != std::string::npos;
+}
+
+std::vector<std::string> mutationTargetsForTool(const std::string& toolName, const nlohmann::json& args) {
+    std::vector<std::string> targets;
+    auto addString = [&](const char* key) {
+        if (args.contains(key) && args[key].is_string()) targets.push_back(args[key].get<std::string>());
+    };
+
+    if (toolName == "write_file" || toolName == "apply_patch" || toolName == "make_dir" || toolName == "delete_path" || toolName == "ingest_document") {
+        addString("path");
+    } else if (toolName == "move_path") {
+        addString("from");
+        addString("to");
+    }
+    return targets;
 }
 
 std::string readOptionalFile(const fs::path& path) {
@@ -328,6 +344,7 @@ void Orchestrator::runMission(const std::string& goal, const std::string& mode,
         bool weakEvidenceWarningSent = false;
         EvidenceModel evidenceModel;
         std::vector<ExecutionAttempt> executionHistory;
+        TurnDiffTracker diffTracker(workspaceRoot);
 
         for (int step = 0; step < effectiveMaxSteps; ++step) {
             if (stopRequested) break;
@@ -434,6 +451,11 @@ void Orchestrator::runMission(const std::string& goal, const std::string& mode,
                             "Não repita inspeção idêntica. Prossiga para ação concreta de execução "
                             "(ex.: make_dir/write_file/apply_patch/run_command) para materializar o objetivo.";
                     } else {
+                        if (ToolRegistry::instance().toolMutatesWorkspace(toolName)) {
+                            for (const auto& target : mutationTargetsForTool(toolName, args)) {
+                                diffTracker.snapshotBefore(target);
+                            }
+                        }
                         localObservation = ToolRegistry::instance().dispatch(toolName, args);
                     }
                     observation += localObservation + "\n";
@@ -445,6 +467,9 @@ void Orchestrator::runMission(const std::string& goal, const std::string& mode,
                     if (dispatchedSuccessfully && ToolRegistry::instance().toolMutatesWorkspace(toolName)) {
                         mutationCount++;
                         verificationSinceLastMutation = 0;
+                        for (const auto& target : mutationTargetsForTool(toolName, args)) {
+                            diffTracker.recordMutation(target);
+                        }
                     } else if (dispatchedSuccessfully && mutationCount > 0 && ToolRegistry::instance().toolVerifiesState(toolName)) {
                         verificationSinceLastMutation++;
                     }
@@ -601,6 +626,7 @@ void Orchestrator::runMission(const std::string& goal, const std::string& mode,
                                (attempt.improvedEvidence ? " improved_evidence=true" : "");
             }
         }
+        finalPrompt += "\n" + diffTracker.summarize();
 
         history.push_back({"user", finalPrompt});
         std::string finalResponse = ollama->chat(history);
