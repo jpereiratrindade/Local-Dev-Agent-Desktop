@@ -575,7 +575,8 @@ std::string Orchestrator::buildSystemPrompt(const std::string& mode, const std::
            "5. Se tomar uma decisao arquitetural relevante e existir 'memory/decisions-log.md' (ou equivalente em '.agent/memory/'), atualize esse arquivo com 'write_file' antes de concluir.\n" +
            "6. Se a tarefa estiver pronta, finalize obrigatoriamente com 'TASK COMPLETE'.\n" +
            "7. Nao invente informacoes. Se nao souber, use as ferramentas para descobrir.\n" +
-           "8. Evite repetir a mesma tool-call com os mesmos argumentos. Após uma inspeção suficiente, execute a ação de materialização no workspace.";
+           "8. Evite repetir a mesma tool-call com os mesmos argumentos. Após uma inspeção suficiente, execute a ação de materialização no workspace.\n" +
+           "9. Para tarefas de documentacao, Doxygen, build ou teste, so conclua depois de verificar o artefato esperado com ferramenta objetiva (ex.: Doxyfile, docs/html/index.html, executavel, saida de teste ou make).";
 }
 
 } // namespace agent::core

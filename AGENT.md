@@ -21,6 +21,7 @@
 - Quando houver skills no projeto, trate-as como guia preferencial e flexivel, nao como regra rigida.
 - O agente pode combinar skills, adaptar seus passos ou ignora-las quando o contexto indicar caminho melhor.
 - Ao gerar projeto novo, entregue estrutura real de pastas e arquivos essenciais antes de expandir detalhes.
+- Em tarefas de documentacao, build ou testes, valide o artefato final esperado antes de concluir (ex.: `docs/html/index.html`, executavel gerado, saida de teste).
 - Em escrita e pesquisa, use skills para orientar estrutura e processo, sem ditar conteudo ou tolher criatividade.
 
 ## Evidencia

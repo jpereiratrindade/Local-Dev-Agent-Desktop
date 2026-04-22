@@ -478,16 +478,24 @@ std::string AgentUI::inferTaskMode(const std::string& goal) const {
                              lower.find(".h") != std::string::npos ||
                              lower.find(".txt") != std::string::npos ||
                              lower.find(".md") != std::string::npos ||
+                             lower.find("makefile") != std::string::npos ||
+                             lower.find("doxyfile") != std::string::npos ||
                              lower.find(".json") != std::string::npos ||
                              lower.find(".yaml") != std::string::npos ||
                              lower.find(".yml") != std::string::npos;
+    const bool documentationTask = containsAnyLower(lower, {
+        "doxygen", "doxyfile", "documentacao", "documentação", "documentar",
+        "docs", "readme", "gerar doc", "make doc"
+    });
     const bool hasOperationalVerb = containsAnyLower(lower, {
         "crie", "criar", "gere", "gerar", "scaffold", "rodar", "executar",
         "corrigir build", "refator", "refactor", "renomear", "mover",
-        "edite", "editar", "altere", "alterar", "apague", "deletar", "remover"
+        "edite", "editar", "altere", "alterar", "inclua", "incluir",
+        "adicione", "adicionar", "configure", "configurar", "apague", "deletar", "remover"
     });
     if (containsAnyLower(lower, {"crie arquivo", "criar arquivo", "gere projeto", "scaffold", "rodar", "executar", "corrigir build", "refator", "refactor", "renomear arquivo", "mover arquivo"}) ||
-        (hasOperationalVerb && hasPathHint)) {
+        (hasOperationalVerb && (hasPathHint || documentationTask)) ||
+        documentationTask) {
         return "MISSION";
     }
     if (!inferActiveFileForGoal(goal).empty() && containsAnyLower(lower, {"inclua", "incluir", "continue", "continuar", "revise este texto", "reescreva", "melhore o texto", "edite", "ajuste o documento", "insira", "corrija", "corrigir"})) {
