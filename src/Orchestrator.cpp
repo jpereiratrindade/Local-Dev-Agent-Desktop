@@ -104,6 +104,15 @@ bool translateChangeEnvelopeToTool(const nlohmann::json& envelope, std::string& 
     return false;
 }
 
+bool shouldSuppressRepeatedTool(const std::string& toolName) {
+    return toolName == "list_dir" ||
+           toolName == "read_file" ||
+           toolName == "read_file_slice" ||
+           toolName == "grep_search" ||
+           toolName == "search_library" ||
+           toolName == "rag_cache_status";
+}
+
 bool shouldPrioritizeActiveFile(const std::string& goal, const std::string& profile) {
     std::string lower = goal;
     std::transform(lower.begin(), lower.end(), lower.begin(), [](unsigned char c) {
@@ -401,25 +410,26 @@ void Orchestrator::runMission(const std::string& goal, const std::string& mode,
                     }
                     lastToolSignature = toolSignature;
 
+                    std::string localObservation;
                     if (toolName.empty()) {
-                        observation +=
+                        localObservation =
                             "JSON recebido não é uma tool-call executável. Use {\"tool\":\"write_file\","
                             "\"args\":{\"path\":\"...\",\"content\":\"...\"}} ou um envelope create_file/replace_file completo.";
-                    } else if (repeatedToolSignatureCount >= 1) {
-                        observation +=
+                    } else if (repeatedToolSignatureCount >= 1 && shouldSuppressRepeatedTool(toolName)) {
+                        localObservation =
                             "Repetição detectada: a mesma tool-call foi solicitada novamente sem avanço. "
                             "Não repita inspeção idêntica. Prossiga para ação concreta de execução "
                             "(ex.: make_dir/write_file/apply_patch/run_command) para materializar o objetivo.";
                     } else {
-                        observation += ToolRegistry::instance().dispatch(toolName, args);
+                        localObservation = ToolRegistry::instance().dispatch(toolName, args);
                     }
-                    observation += "\n";
+                    observation += localObservation + "\n";
 
-                    if (callbacks.onObservation) callbacks.onObservation(observation);
-                    if (observation == lastObservation) stagnationCount++;
+                    if (callbacks.onObservation) callbacks.onObservation(localObservation);
+                    if (localObservation == lastObservation) stagnationCount++;
                     else stagnationCount = 0;
-                    lastObservation = observation;
-                    if (hasCodeEvidence(observation)) {
+                    lastObservation = localObservation;
+                    if (hasCodeEvidence(localObservation)) {
                         evidenceCount++;
                         noEvidenceSteps = 0;
                     }

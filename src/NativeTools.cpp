@@ -548,6 +548,16 @@ std::string write_file(const nlohmann::json& args) {
     if (g_accessLevel == AccessLevel::ReadOnly) return "Erro: write_file bloqueado (Access: ReadOnly).";
     std::string path = args.value("path", "");
     std::string content = args.value("content", "");
+    fs::path requested(path);
+    if (requested.filename() == ".gitignore") {
+        std::string normalized = normalizeText(content);
+        if (normalized.find("makefile") != std::string::npos ||
+            normalized.find("src/main.cpp") != std::string::npos ||
+            normalized.find("src/") != std::string::npos) {
+            return "Erro: .gitignore bloqueado por tentar ignorar arquivos-fonte ou manifestos do projeto.";
+        }
+    }
+
     fs::path resolved;
     std::string error;
     if (!resolveWorkspacePath(path, resolved, error)) return "Erro: " + error;
@@ -558,7 +568,22 @@ std::string write_file(const nlohmann::json& args) {
         std::ofstream ofs(resolved);
         if (!ofs.is_open()) return "Erro: Falha ao criar arquivo " + resolved.string();
         ofs << content;
-        return "Sucesso: Arquivo " + resolved.string() + " gravado.";
+        ofs.close();
+
+        if (!fs::exists(resolved) || !fs::is_regular_file(resolved)) {
+            return "Erro: escrita reportada, mas arquivo não existe após gravar: " + resolved.string();
+        }
+        std::ifstream verify(resolved, std::ios::binary);
+        std::string written((std::istreambuf_iterator<char>(verify)), std::istreambuf_iterator<char>());
+        if (written != content) {
+            return "Erro: verificação pós-escrita falhou para " + resolved.string() +
+                   " (esperado " + std::to_string(content.size()) +
+                   " bytes, lido " + std::to_string(written.size()) + " bytes).";
+        }
+
+        noteUsage("WRITE: " + resolved.string());
+        return "Sucesso: Arquivo " + resolved.string() + " gravado e verificado (" +
+               std::to_string(content.size()) + " bytes).";
     } catch (const std::exception& e) {
         return "Erro: " + std::string(e.what());
     }
