@@ -1,4 +1,5 @@
 #include "Orchestrator.hpp"
+#include "EvidenceModel.hpp"
 #include <regex>
 #include <iostream>
 #include <thread>
@@ -310,7 +311,7 @@ void Orchestrator::runMission(const std::string& goal, const std::string& mode,
                                        "\nSe alguma skill combinar com a tarefa, use-a como guia flexivel de arranque, nao como trilho obrigatorio." +
                                        "\nSe algum contexto distribuido combinar com a tarefa, use 'read_file' para aprofundar apenas no arquivo necessario." +
                                        "\nPerfis definem postura cognitiva; skills sugerem fluxo; ferramentas e contexto permitem improviso responsavel." +
-                                       "\nAntes de agir, derive um modelo de evidencia curto: qual estado observavel provaria que o objetivo foi atingido. Expresse isso em <evidence_model>...</evidence_model> e refine se a inspecao mostrar outro caminho." +
+                                       "\nAntes de agir, derive um modelo de evidencia curto em JSON dentro de <evidence_model>...</evidence_model>. Use apenas tipos: file_exists, file_contains, directory_contains, command_succeeds. Campos: type, path, text, command, required." +
                                        "\nInicie pela menor ação verificável possível." +
                                        (activeFilePriority
                                             ? "\nPrioridade adicional: ha contexto/arquivo ativo relevante. Antes de explorar o repositorio, leia e trabalhe primeiro sobre esse artefato."
@@ -340,6 +341,9 @@ void Orchestrator::runMission(const std::string& goal, const std::string& mode,
         int noEvidenceSteps = 0;
         int mutationCount = 0;
         int verificationSinceLastMutation = 0;
+        bool weakEvidenceWarningSent = false;
+        EvidenceModel evidenceModel;
+        std::vector<ExecutionAttempt> executionHistory;
 
         for (int step = 0; step < effectiveMaxSteps; ++step) {
             if (stopRequested) break;
@@ -394,6 +398,12 @@ void Orchestrator::runMission(const std::string& goal, const std::string& mode,
                 noEvidenceSteps = 0;
             } else {
                 noEvidenceSteps++;
+            }
+            EvidenceModel parsedEvidence = parseEvidenceModelFromText(response, currentGoal);
+            if (!parsedEvidence.items.empty()) {
+                evidenceModel = parsedEvidence;
+                refreshEvidence(evidenceModel, workspaceRoot);
+                if (callbacks.onObservation) callbacks.onObservation(summarizeEvidence(evidenceModel));
             }
             
             // 1. Extrair Pensamento
@@ -454,6 +464,19 @@ void Orchestrator::runMission(const std::string& goal, const std::string& mode,
                     } else if (dispatchedSuccessfully && mutationCount > 0 && isVerificationTool(toolName)) {
                         verificationSinceLastMutation++;
                     }
+                    if (dispatchedSuccessfully) {
+                        bool beforeSatisfied = isSatisfied(evidenceModel);
+                        if (!evidenceModel.items.empty()) refreshEvidence(evidenceModel, workspaceRoot);
+                        bool afterSatisfied = isSatisfied(evidenceModel);
+                        executionHistory.push_back({
+                            toolName,
+                            args.value("path", args.value("target", args.value("command", ""))),
+                            localObservation,
+                            isMutationTool(toolName),
+                            afterSatisfied && !beforeSatisfied
+                        });
+                        if (executionHistory.size() > 12) executionHistory.erase(executionHistory.begin());
+                    }
 
                     if (callbacks.onObservation) callbacks.onObservation(localObservation);
                     if (localObservation == lastObservation) stagnationCount++;
@@ -480,6 +503,28 @@ void Orchestrator::runMission(const std::string& goal, const std::string& mode,
             }
 
             if (callbacks.onMessageChunk) callbacks.onMessageChunk(response);
+
+            if (taskComplete && !evidenceModel.items.empty() && isWeakEvidence(evidenceModel) && !weakEvidenceWarningSent) {
+                taskComplete = false;
+                weakEvidenceWarningSent = true;
+                currentGoal =
+                    "O modelo de evidência parece fraco para provar o objetivo. Refine com pelo menos uma evidência de conteúdo, diretório esperado ou comando de validação, ou explique por que a evidência atual é suficiente.";
+                history.push_back({"user", currentGoal});
+                if (callbacks.onAction) callbacks.onAction("Conclusão bloqueada: modelo de evidência fraco.");
+            }
+
+            if (taskComplete && !evidenceModel.items.empty()) {
+                refreshEvidence(evidenceModel, workspaceRoot);
+                if (!isSatisfied(evidenceModel)) {
+                    taskComplete = false;
+                    currentGoal =
+                        "A conclusao foi bloqueada: o modelo de evidencia ainda nao esta satisfeito.\n" +
+                        summarizeEvidence(evidenceModel) +
+                        "Continue com a menor acao necessaria para satisfazer as evidencias pendentes.";
+                    history.push_back({"user", currentGoal});
+                    if (callbacks.onAction) callbacks.onAction("Conclusão bloqueada: evidência pendente.");
+                }
+            }
 
             if (taskComplete && mutationCount > 0 && verificationSinceLastMutation == 0) {
                 taskComplete = false;
@@ -560,6 +605,18 @@ void Orchestrator::runMission(const std::string& goal, const std::string& mode,
             finalPrompt += "9) Se evidências insuficientes, declare a limitação de forma objetiva.\n";
         }
         finalPrompt += "Contexto adicional: evidências detectadas no loop = " + std::to_string(evidenceCount) + ".";
+        if (!evidenceModel.items.empty()) {
+            finalPrompt += "\nEstado final do modelo de evidencia:\n" + summarizeEvidence(evidenceModel);
+        }
+        if (!executionHistory.empty()) {
+            finalPrompt += "\nHistorico resumido de execucao:";
+            for (const auto& attempt : executionHistory) {
+                finalPrompt += "\n- " + attempt.tool +
+                               (attempt.target.empty() ? "" : " target=" + attempt.target) +
+                               (attempt.changedState ? " changed_state=true" : "") +
+                               (attempt.improvedEvidence ? " improved_evidence=true" : "");
+            }
+        }
 
         history.push_back({"user", finalPrompt});
         std::string finalResponse = ollama->chat(history);
@@ -614,7 +671,7 @@ std::string Orchestrator::buildSystemPrompt(const std::string& mode, const std::
            "5. Se tomar uma decisao arquitetural relevante e existir 'memory/decisions-log.md' (ou equivalente em '.agent/memory/'), atualize esse arquivo com 'write_file' antes de concluir.\n" +
            "6. Se a tarefa estiver pronta, finalize obrigatoriamente com 'TASK COMPLETE'.\n" +
            "7. Nao invente informacoes. Se nao souber, use as ferramentas para descobrir.\n" +
-           "8. Antes de materializar, formule um modelo de evidencia curto: tipo, alvo e condicao verificavel. Nao transforme isso em burocracia; use-o para decidir o que provar.\n" +
+           "8. Antes de materializar, formule um modelo de evidencia curto em <evidence_model>{\"goal\":\"...\",\"evidence\":[...]}</evidence_model>. Use apenas tipos: file_exists, file_contains, directory_contains, command_succeeds; campos: type, path, text, command, required.\n" +
            "9. Evite repetir a mesma tool-call com os mesmos argumentos. Após uma inspeção suficiente, execute a ação de materialização no workspace.\n" +
            "10. Para tarefas de documentacao, build ou teste, so conclua depois de verificar o artefato esperado com ferramenta objetiva (ex.: arquivo gerado, indice de docs, executavel, saida de teste ou build).\n" +
            "11. Nunca execute sudo, pkexec ou su. Se faltar dependencia do sistema, reporte o comando sugerido ao usuario e conclua com status claro de bloqueio externo.\n" +

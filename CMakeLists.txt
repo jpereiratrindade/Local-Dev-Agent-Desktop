@@ -36,6 +36,7 @@ set(SOURCES
     src/AgentUI_Stats.cpp
     src/AgentUI_Persistence.cpp
     src/ToolRegistry.cpp
+    src/EvidenceModel.cpp
     src/Orchestrator.cpp
     src/NativeTools.cpp
 )
