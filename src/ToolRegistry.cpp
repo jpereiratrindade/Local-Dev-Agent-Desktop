@@ -10,7 +10,13 @@ ToolRegistry& ToolRegistry::instance() {
 
 void ToolRegistry::registerTool(const std::string& name, const std::string& description, 
                                const std::vector<std::string>& argNames, ToolFunc func) {
-    tools[name] = {name, description, argNames, func};
+    registerTool(name, description, argNames, func, false, false);
+}
+
+void ToolRegistry::registerTool(const std::string& name, const std::string& description,
+                               const std::vector<std::string>& argNames, ToolFunc func,
+                               bool mutatesWorkspace, bool verifiesState) {
+    tools[name] = {name, description, argNames, func, mutatesWorkspace, verifiesState};
 }
 
 std::string ToolRegistry::dispatch(const std::string& name, const nlohmann::json& args) {
@@ -40,6 +46,16 @@ std::string ToolRegistry::getToolSpecs() const {
         ss << "\n\n";
     }
     return ss.str();
+}
+
+bool ToolRegistry::toolMutatesWorkspace(const std::string& name) const {
+    auto it = tools.find(name);
+    return it != tools.end() && it->second.mutatesWorkspace;
+}
+
+bool ToolRegistry::toolVerifiesState(const std::string& name) const {
+    auto it = tools.find(name);
+    return it != tools.end() && it->second.verifiesState;
 }
 
 } // namespace agent::core

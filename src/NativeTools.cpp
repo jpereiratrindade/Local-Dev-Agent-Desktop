@@ -909,20 +909,20 @@ void registerNativeTools(const std::string& workspaceRoot) {
 
     auto& reg = ToolRegistry::instance();
 
-    reg.registerTool("read_file", "Lê o conteúdo de um arquivo.", {"path"}, read_file);
-    reg.registerTool("read_file_slice", "Lê intervalo de linhas de um arquivo.", {"path", "from_line", "to_line"}, read_file_slice);
-    reg.registerTool("apply_patch", "Realiza edições cirúrgicas em um arquivo existente usando busca e substituição de blocos únicos de texto. Esta é a ferramenta PREFERENCIAL para alterar arquivos grandes sem corrompê-los.", {"path", "search", "replace"}, apply_patch);
-    reg.registerTool("write_file", "Grava conteúdo total em um arquivo. Use preferencialmente para arquivos NOVOS.", {"path", "content"}, write_file);
-    reg.registerTool("make_dir", "Cria um diretório e seus pais se necessário.", {"path"}, make_dir);
-    reg.registerTool("move_path", "Move ou renomeia arquivo/diretório dentro do escopo permitido.", {"from", "to"}, move_path);
-    reg.registerTool("delete_path", "Remove arquivo ou diretório. Para diretório não vazio, use recursive=true.", {"path", "recursive"}, delete_path);
-    reg.registerTool("list_dir", "Lista arquivos de um diretório.", {"path"}, list_dir);
-    reg.registerTool("grep_search", "Busca padrão textual com ripgrep no workspace.", {"pattern", "path"}, grep_search);
-    reg.registerTool("run_command", "Executa um comando no shell e retorna a saída.", {"command"}, run_command);
-    reg.registerTool("fetch_url", "Busca conteúdo HTTP(S) bruto de um domínio aprovado pela política de contexto.", {"url"}, fetch_url);
-    reg.registerTool("ingest_document", "Ingere documento da biblioteca/workspace para o cache RAG local por hash.", {"path"}, ingest_document);
-    reg.registerTool("search_library", "Pesquisa SEMANTICA e LEXICAL no CONTEÚDO de milhares de arquivos das bibliotecas de referência aprovadas de uma só vez. Use OBRIGATORIAMENTE esta ferramenta para responder perguntas sobre o que os documentos dizem ou para encontrar informações específicas neles.", {"query", "limit"}, search_library);
-    reg.registerTool("rag_cache_status", "Mostra status do cache RAG local e bibliotecas aprovadas.", {}, rag_cache_status);
+    reg.registerTool("read_file", "Lê o conteúdo de um arquivo.", {"path"}, read_file, false, true);
+    reg.registerTool("read_file_slice", "Lê intervalo de linhas de um arquivo.", {"path", "from_line", "to_line"}, read_file_slice, false, true);
+    reg.registerTool("apply_patch", "Realiza edições cirúrgicas em um arquivo existente usando busca e substituição de blocos únicos de texto. Esta é a ferramenta PREFERENCIAL para alterar arquivos grandes sem corrompê-los.", {"path", "search", "replace"}, apply_patch, true, false);
+    reg.registerTool("write_file", "Grava conteúdo total em um arquivo. Use preferencialmente para arquivos NOVOS.", {"path", "content"}, write_file, true, false);
+    reg.registerTool("make_dir", "Cria um diretório e seus pais se necessário.", {"path"}, make_dir, true, false);
+    reg.registerTool("move_path", "Move ou renomeia arquivo/diretório dentro do escopo permitido.", {"from", "to"}, move_path, true, false);
+    reg.registerTool("delete_path", "Remove arquivo ou diretório. Para diretório não vazio, use recursive=true.", {"path", "recursive"}, delete_path, true, false);
+    reg.registerTool("list_dir", "Lista arquivos de um diretório.", {"path"}, list_dir, false, true);
+    reg.registerTool("grep_search", "Busca padrão textual com ripgrep no workspace.", {"pattern", "path"}, grep_search, false, true);
+    reg.registerTool("run_command", "Executa um comando no shell e retorna a saída.", {"command"}, run_command, false, true);
+    reg.registerTool("fetch_url", "Busca conteúdo HTTP(S) bruto de um domínio aprovado pela política de contexto.", {"url"}, fetch_url, false, true);
+    reg.registerTool("ingest_document", "Ingere documento da biblioteca/workspace para o cache RAG local por hash.", {"path"}, ingest_document, true, false);
+    reg.registerTool("search_library", "Pesquisa SEMANTICA e LEXICAL no CONTEÚDO de milhares de arquivos das bibliotecas de referência aprovadas de uma só vez. Use OBRIGATORIAMENTE esta ferramenta para responder perguntas sobre o que os documentos dizem ou para encontrar informações específicas neles.", {"query", "limit"}, search_library, false, true);
+    reg.registerTool("rag_cache_status", "Mostra status do cache RAG local e bibliotecas aprovadas.", {}, rag_cache_status, false, true);
 }
 
 void setNativeToolAccessLevel(AccessLevel level) {

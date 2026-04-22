@@ -114,22 +114,6 @@ bool shouldSuppressRepeatedTool(const std::string& toolName) {
            toolName == "rag_cache_status";
 }
 
-bool isMutationTool(const std::string& toolName) {
-    return toolName == "write_file" ||
-           toolName == "apply_patch" ||
-           toolName == "make_dir" ||
-           toolName == "move_path" ||
-           toolName == "delete_path";
-}
-
-bool isVerificationTool(const std::string& toolName) {
-    return toolName == "read_file" ||
-           toolName == "read_file_slice" ||
-           toolName == "list_dir" ||
-           toolName == "grep_search" ||
-           toolName == "run_command";
-}
-
 bool shouldPrioritizeActiveFile(const std::string& goal, const std::string& profile) {
     std::string lower = goal;
     std::transform(lower.begin(), lower.end(), lower.begin(), [](unsigned char c) {
@@ -458,10 +442,10 @@ void Orchestrator::runMission(const std::string& goal, const std::string& mode,
                         repeatedToolSignatureCount < 1 &&
                         localObservation.rfind("Erro", 0) != 0 &&
                         localObservation.rfind("ERRO", 0) != 0;
-                    if (dispatchedSuccessfully && isMutationTool(toolName)) {
+                    if (dispatchedSuccessfully && ToolRegistry::instance().toolMutatesWorkspace(toolName)) {
                         mutationCount++;
                         verificationSinceLastMutation = 0;
-                    } else if (dispatchedSuccessfully && mutationCount > 0 && isVerificationTool(toolName)) {
+                    } else if (dispatchedSuccessfully && mutationCount > 0 && ToolRegistry::instance().toolVerifiesState(toolName)) {
                         verificationSinceLastMutation++;
                     }
                     if (dispatchedSuccessfully) {
@@ -472,7 +456,7 @@ void Orchestrator::runMission(const std::string& goal, const std::string& mode,
                             toolName,
                             args.value("path", args.value("target", args.value("command", ""))),
                             localObservation,
-                            isMutationTool(toolName),
+                            ToolRegistry::instance().toolMutatesWorkspace(toolName),
                             afterSatisfied && !beforeSatisfied
                         });
                         if (executionHistory.size() > 12) executionHistory.erase(executionHistory.begin());

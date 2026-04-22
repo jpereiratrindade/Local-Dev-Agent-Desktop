@@ -15,6 +15,8 @@ struct ToolInfo {
     std::string description;
     std::vector<std::string> argNames; // Simplificado para o prompt
     ToolFunc func;
+    bool mutatesWorkspace = false;
+    bool verifiesState = false;
 };
 
 class ToolRegistry {
@@ -23,9 +25,14 @@ public:
 
     void registerTool(const std::string& name, const std::string& description, 
                       const std::vector<std::string>& argNames, ToolFunc func);
+    void registerTool(const std::string& name, const std::string& description,
+                      const std::vector<std::string>& argNames, ToolFunc func,
+                      bool mutatesWorkspace, bool verifiesState);
 
     std::string dispatch(const std::string& name, const nlohmann::json& args);
     std::string getToolSpecs() const;
+    bool toolMutatesWorkspace(const std::string& name) const;
+    bool toolVerifiesState(const std::string& name) const;
 
 private:
     ToolRegistry() = default;
