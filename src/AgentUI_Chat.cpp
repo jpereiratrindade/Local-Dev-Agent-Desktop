@@ -484,8 +484,7 @@ std::string AgentUI::inferTaskMode(const std::string& goal) const {
                              lower.find(".yaml") != std::string::npos ||
                              lower.find(".yml") != std::string::npos;
     const bool documentationTask = containsAnyLower(lower, {
-        "doxygen", "doxyfile", "documentacao", "documentação", "documentar",
-        "docs", "readme", "gerar doc", "make doc"
+        "documentacao", "documentação", "documentar", "docs", "readme", "gerar doc"
     });
     const bool hasOperationalVerb = containsAnyLower(lower, {
         "crie", "criar", "gere", "gerar", "scaffold", "rodar", "executar",
@@ -494,7 +493,7 @@ std::string AgentUI::inferTaskMode(const std::string& goal) const {
         "adicione", "adicionar", "configure", "configurar", "apague", "deletar", "remover"
     });
     if (containsAnyLower(lower, {"crie arquivo", "criar arquivo", "gere projeto", "scaffold", "rodar", "executar", "corrigir build", "refator", "refactor", "renomear arquivo", "mover arquivo"}) ||
-        (hasOperationalVerb && (hasPathHint || documentationTask)) ||
+        hasOperationalVerb ||
         documentationTask) {
         return "MISSION";
     }

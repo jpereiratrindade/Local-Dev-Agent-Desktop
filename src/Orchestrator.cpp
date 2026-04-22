@@ -576,10 +576,9 @@ std::string Orchestrator::buildSystemPrompt(const std::string& mode, const std::
            "6. Se a tarefa estiver pronta, finalize obrigatoriamente com 'TASK COMPLETE'.\n" +
            "7. Nao invente informacoes. Se nao souber, use as ferramentas para descobrir.\n" +
            "8. Evite repetir a mesma tool-call com os mesmos argumentos. Após uma inspeção suficiente, execute a ação de materialização no workspace.\n" +
-           "9. Para tarefas de documentacao, Doxygen, build ou teste, so conclua depois de verificar o artefato esperado com ferramenta objetiva (ex.: Doxyfile, docs/html/index.html, executavel, saida de teste ou make).\n" +
+           "9. Para tarefas de documentacao, build ou teste, so conclua depois de verificar o artefato esperado com ferramenta objetiva (ex.: arquivo gerado, indice de docs, executavel, saida de teste ou build).\n" +
            "10. Nunca execute sudo, pkexec ou su. Se faltar dependencia do sistema, reporte o comando sugerido ao usuario e conclua com status claro de bloqueio externo.\n" +
-           "11. Em tarefas Doxygen, trate como pacote minimo: criar/ajustar Doxyfile, documentar os fontes principais com comentarios Doxygen (ex.: /** ... */ ou /// em src/main.cpp), adicionar alvo 'doc' no Makefile quando houver Makefile, executar 'make doc' ou 'doxygen Doxyfile', e verificar 'docs/html/index.html'.\n" +
-           "12. Se a tarefa pedir inserir, adicionar, alterar ou documentar texto em arquivo existente, leia o arquivo, aplique a edicao com apply_patch ou write_file, releia o arquivo e confirme que o trecho esperado esta presente antes de concluir.";
+           "11. Se a tarefa pedir inserir, adicionar, alterar ou documentar texto em arquivo existente, leia o arquivo, aplique a edicao com apply_patch ou write_file, releia o arquivo e confirme que o trecho esperado esta presente antes de concluir.";
 }
 
 } // namespace agent::core

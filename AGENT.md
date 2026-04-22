@@ -21,9 +21,8 @@
 - Quando houver skills no projeto, trate-as como guia preferencial e flexivel, nao como regra rigida.
 - O agente pode combinar skills, adaptar seus passos ou ignora-las quando o contexto indicar caminho melhor.
 - Ao gerar projeto novo, entregue estrutura real de pastas e arquivos essenciais antes de expandir detalhes.
-- Em tarefas de documentacao, build ou testes, valide o artefato final esperado antes de concluir (ex.: `docs/html/index.html`, executavel gerado, saida de teste).
+- Em tarefas de documentacao, build ou testes, valide o artefato final esperado antes de concluir (ex.: arquivo gerado, indice de docs, executavel gerado, saida de teste).
 - Nunca execute `sudo`, `pkexec` ou `su` via ferramentas. Se faltar dependencia do sistema, informe o comando sugerido ao usuario e pare com status claro de bloqueio externo.
-- Em tarefas Doxygen, entregue o pacote minimo completo: `Doxyfile`, comentarios Doxygen nos fontes principais (ex.: `src/main.cpp`), alvo `doc` no `Makefile` quando aplicavel, execucao de `make doc` ou `doxygen Doxyfile`, e verificacao de `docs/html/index.html`.
 - Quando uma tarefa pedir inserir, adicionar, alterar ou documentar texto em arquivo existente, leia o arquivo, aplique a edicao, releia e confirme que o trecho esperado esta presente antes de concluir.
 - Em escrita e pesquisa, use skills para orientar estrutura e processo, sem ditar conteudo ou tolher criatividade.
 
