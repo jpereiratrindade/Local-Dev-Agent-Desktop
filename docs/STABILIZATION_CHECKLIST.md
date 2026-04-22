@@ -7,6 +7,13 @@ Consolidar o nucleo do agente antes de ampliar integracoes maiores.
 ## Completed
 - [x] Refatoração Modular do UI (Decomposição do AgentUI.cpp)
 - [x] Sistema de Persistência de Sessões (Histórico por projeto)
+- [x] Registro e sincronizacao das NativeTools com o workspace aberto
+- [x] Controles visiveis de `Reasoning`, `Access` e `Context` no chat
+- [x] Execucao sequencial de multiplos blocos JSON no modo mission
+- [x] Conversao de envelopes `create_file`/`replace_file` para `write_file`
+- [x] Observabilidade de `AÇÃO` e `OBSERVAÇÃO` no historico do chat
+- [x] `run_command` executando no workspace ativo por padrao, inclusive com `Full-access`
+- [x] Validacao manual: criar `src/main.cpp`, gerar `Makefile`, compilar com `make` e executar `Hello, World!`
 
 ## Immediate
 
@@ -28,6 +35,8 @@ Consolidar o nucleo do agente antes de ampliar integracoes maiores.
 ## Agent Behavior
 
 - [ ] Injetar resumo de contexto conversacional recente no modo assistido/autonomo
+- [ ] Reduzir repeticao textual do modelo depois que uma action ja foi executada
+- [ ] Melhorar criterio de conclusao para exigir validacao quando a tarefa pedir build/teste
 - [ ] Detectar documento-alvo em tarefas de continuidade
 - [ ] Priorizar arquivo ja existente em perfis `writing-*`
 - [ ] Mostrar melhor quando biblioteca aprovada ainda nao foi indexada
@@ -35,8 +44,9 @@ Consolidar o nucleo do agente antes de ampliar integracoes maiores.
 
 ## Observability
 
-- [ ] Tornar erros silenciosos mais explicitos
-- [ ] Melhorar mensagens de falha de tool-call
+- [x] Tornar observacoes de tool visiveis no chat
+- [x] Melhorar mensagens de falha de tool-call
+- [ ] Separar melhor resposta final de logs operacionais longos
 - [ ] Exibir melhor uso efetivo de contexto e fontes
 - [ ] Registrar estado de sincronizacao do RAG com mais clareza
 

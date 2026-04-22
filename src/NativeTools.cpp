@@ -653,10 +653,23 @@ std::string list_dir(const nlohmann::json& args) {
 
 std::string run_command(const nlohmann::json& args) {
     if (g_accessLevel == AccessLevel::ReadOnly) return "Erro: run_command bloqueado (Access: ReadOnly).";
-    std::string command = args.value("command", "");
+    std::string command;
+    if (args.contains("command") && args["command"].is_array()) {
+        for (const auto& part : args["command"]) {
+            if (!command.empty()) command += " ";
+            command += shellEscape(part.get<std::string>());
+        }
+    } else {
+        command = args.value("command", "");
+    }
     if (command.empty()) return "Erro: Comando vazio.";
 
-    std::string cmdPrefix = (g_accessLevel == AccessLevel::FullAccess) ? "" : ("cd \"" + g_workspaceRoot.string() + "\" && ");
+    std::string cwd = args.value("cwd", g_workspaceRoot.string());
+    fs::path resolvedCwd;
+    std::string cwdError;
+    if (!resolveWorkspacePath(cwd, resolvedCwd, cwdError)) return "Erro: cwd inválido: " + cwdError;
+
+    std::string cmdPrefix = "cd \"" + resolvedCwd.string() + "\" && ";
     std::array<char, 128> buffer;
     std::string result;
     std::unique_ptr<FILE, decltype(&pclose)> pipe(popen((cmdPrefix + command + " 2>&1").c_str(), "r"), pclose);

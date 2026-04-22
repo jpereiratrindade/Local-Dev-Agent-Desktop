@@ -471,7 +471,23 @@ bool AgentUI::buildChangeProposalFromAssistantText(const std::string& text, Chan
 
 std::string AgentUI::inferTaskMode(const std::string& goal) const {
     std::string lower = toLowerCopy(goal);
-    if (containsAnyLower(lower, {"crie arquivo", "criar arquivo", "gere projeto", "scaffold", "rodar", "executar", "corrigir build", "refator", "refactor", "renomear arquivo", "mover arquivo"})) {
+    const bool hasPathHint = lower.find('/') != std::string::npos ||
+                             lower.find('\\') != std::string::npos ||
+                             lower.find(".cpp") != std::string::npos ||
+                             lower.find(".hpp") != std::string::npos ||
+                             lower.find(".h") != std::string::npos ||
+                             lower.find(".txt") != std::string::npos ||
+                             lower.find(".md") != std::string::npos ||
+                             lower.find(".json") != std::string::npos ||
+                             lower.find(".yaml") != std::string::npos ||
+                             lower.find(".yml") != std::string::npos;
+    const bool hasOperationalVerb = containsAnyLower(lower, {
+        "crie", "criar", "gere", "gerar", "scaffold", "rodar", "executar",
+        "corrigir build", "refator", "refactor", "renomear", "mover",
+        "edite", "editar", "altere", "alterar", "apague", "deletar", "remover"
+    });
+    if (containsAnyLower(lower, {"crie arquivo", "criar arquivo", "gere projeto", "scaffold", "rodar", "executar", "corrigir build", "refator", "refactor", "renomear arquivo", "mover arquivo"}) ||
+        (hasOperationalVerb && hasPathHint)) {
         return "MISSION";
     }
     if (!inferActiveFileForGoal(goal).empty() && containsAnyLower(lower, {"inclua", "incluir", "continue", "continuar", "revise este texto", "reescreva", "melhore o texto", "edite", "ajuste o documento", "insira", "corrija", "corrigir"})) {
@@ -486,6 +502,7 @@ void AgentUI::runPythonAgent(const std::string& goal, const std::string& mode) {
     
     std::thread([this, goal, mode]() {
         try {
+            syncNativeToolsRuntime();
             thoughtStream = "Iniciada missão: " + goal + " (" + mode + ")";
             
             agent::network::OllamaOptions opts;
@@ -553,13 +570,28 @@ void AgentUI::runPythonAgent(const std::string& goal, const std::string& mode) {
             };
             callbacks.onAction = [this](const std::string& action) {
                 thoughtStream = "Ação: " + action;
+                std::lock_guard<std::mutex> lock(msgMutex);
+                if (history.empty() || history.back().role != "assistant") {
+                    history.push_back({"assistant", ""});
+                }
+                history.back().text += "\n\nAÇÃO: " + action + "\n";
             };
             callbacks.onObservation = [this](const std::string& obs) {
                 thoughtStream = "Observação recebida (" + std::to_string(obs.size()) + " bytes)";
+                std::lock_guard<std::mutex> lock(msgMutex);
+                if (history.empty() || history.back().role != "assistant") {
+                    history.push_back({"assistant", ""});
+                }
+                std::string trimmedObs = obs;
+                if (trimmedObs.size() > 4000) {
+                    trimmedObs = trimmedObs.substr(0, 4000) + "\n...[observação truncada]...";
+                }
+                history.back().text += "\nOBSERVAÇÃO: " + trimmedObs + "\n";
             };
             callbacks.onComplete = [this](bool success) {
                 llmBusy = false; // Reset ONLY when background thread completes
                 thoughtStream = success ? "Missão concluída." : "Missão interrompida.";
+                generateProjectMap();
                 saveSession();
             };
             callbacks.onStreamStats = [this](const agent::network::OllamaStreamStats& stats) {
@@ -574,7 +606,7 @@ void AgentUI::runPythonAgent(const std::string& goal, const std::string& mode) {
                     : 0.0f;
             };
 
-            std::string fullGoal = goal;
+            std::string fullGoal = "[reasoning=" + reasoning + "][access=" + access + "][profile=" + profileLabel(selectedProfile) + "][context=" + contextSource + "] " + goal;
             const std::string activeContext = buildActiveContextBlock();
             if (!activeContext.empty()) {
                 fullGoal += "\n\n[CONTEXTO ATIVO]\n" + activeContext;
@@ -609,6 +641,33 @@ void AgentUI::drawChatWindow() {
             }
         }
         ImGui::EndCombo();
+    }
+    ImGui::SameLine();
+    int reasoningIdx = (reasoning == "low") ? 0 : (reasoning == "high" ? 2 : 1);
+    ImGui::SetNextItemWidth(95);
+    if (ImGui::Combo("##ReasoningSelector", &reasoningIdx, "low\0medium\0high\0")) {
+        reasoning = reasoningLabel(reasoningIdx);
+    }
+    ImGui::SameLine();
+    int accessIdx = 1;
+    if (access == "read-only") accessIdx = 0;
+    else if (access == "full-access") accessIdx = 2;
+    ImGui::SetNextItemWidth(135);
+    if (ImGui::Combo("##AccessSelector", &accessIdx, "Read-only\0Workspace-write\0Full-access\0")) {
+        access = accessLabel(accessIdx);
+        std::transform(access.begin(), access.end(), access.begin(), [](unsigned char c) {
+            return static_cast<char>(std::tolower(c));
+        });
+        syncNativeToolsRuntime();
+    }
+    ImGui::SameLine();
+    int contextIdx = 0;
+    if (contextSource == "workspace+library") contextIdx = 1;
+    else if (contextSource == "workspace+library+web") contextIdx = 2;
+    ImGui::SetNextItemWidth(180);
+    if (ImGui::Combo("##ContextSelector", &contextIdx, "workspace\0workspace+library\0workspace+library+web\0")) {
+        contextSource = contextSourceLabel(contextIdx);
+        syncNativeToolsRuntime();
     }
     ImGui::Separator();
     const std::string inferredMode = inferTaskMode(inputBuf);

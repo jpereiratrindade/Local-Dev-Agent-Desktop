@@ -49,6 +49,7 @@ void AgentUI::drawOpenFolderPickerDialog() {
             lastResolvedProjectRoot = resolveProjectRoot(folderPickerPathBuf);
             currentProjectRoot = lastResolvedProjectRoot;
             hasOpenProject = true;
+            syncNativeToolsRuntime();
             history.clear();
             currentSessionFile = "last_session.json";
             loadSession();

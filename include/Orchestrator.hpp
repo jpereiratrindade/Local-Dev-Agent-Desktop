@@ -28,6 +28,7 @@ public:
                     const agent::network::OllamaOptions& options = agent::network::OllamaOptions());
 
     void setGovernance(const std::string& gov) { projectGovernance = gov; }
+    void setWorkspaceRoot(const std::string& root);
     void stopMission() { stopRequested = true; }
     void clearHistory() { history.clear(); }
 

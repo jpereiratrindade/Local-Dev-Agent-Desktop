@@ -155,6 +155,7 @@ private:
 
     // Render Sub-methods
     void drawMainMenu();
+    void syncNativeToolsRuntime();
     void drawFileExplorer();
     void renderDirectory(const std::string& path);
     void drawFileEditor();

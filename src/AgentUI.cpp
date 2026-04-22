@@ -8,8 +8,27 @@
 #include <iostream>
 #include <fstream>
 #include <sstream>
+#include <algorithm>
 
 namespace agent::ui {
+namespace {
+std::vector<std::string> splitCsvOrLines(const std::string& raw) {
+    std::vector<std::string> out;
+    std::string token;
+    for (char c : raw) {
+        if (c == ',' || c == '\n' || c == ';') {
+            std::string trimmed = trimLoose(token);
+            if (!trimmed.empty()) out.push_back(trimmed);
+            token.clear();
+            continue;
+        }
+        token += c;
+    }
+    std::string trimmed = trimLoose(token);
+    if (!trimmed.empty()) out.push_back(trimmed);
+    return out;
+}
+} // namespace
 
 // Implementações do Header Interno
 std::string normalizeRootPath(const std::string& raw) {
@@ -80,6 +99,7 @@ AgentUI::AgentUI() {
     splitterPosLeft = 260.0f;
     splitterPosRight = 320.0f;
     currentModel = "qwen2.5:14b";
+    syncNativeToolsRuntime();
 }
 
 AgentUI::~AgentUI() {
@@ -92,6 +112,43 @@ void AgentUI::setOllama(agent::network::OllamaClient* client) {
         ollamaVersion = ollama->fetchVersion();
         availableModels = ollama->listModels();
     }
+}
+
+void AgentUI::syncNativeToolsRuntime() {
+    const std::string root = (hasOpenProject && !currentProjectRoot.empty()) ? currentProjectRoot : ".";
+    agent::core::registerNativeTools(root);
+
+    agent::core::AccessLevel accessLevel = agent::core::AccessLevel::WorkspaceWrite;
+    std::string accessLower = access;
+    std::transform(accessLower.begin(), accessLower.end(), accessLower.begin(), [](unsigned char c) {
+        return static_cast<char>(std::tolower(c));
+    });
+    if (accessLower == "read-only" || accessLower == "readonly" || accessLower == "read_only") {
+        accessLevel = agent::core::AccessLevel::ReadOnly;
+    } else if (accessLower == "full-access" || accessLower == "fullaccess" || accessLower == "full_access") {
+        accessLevel = agent::core::AccessLevel::FullAccess;
+    }
+    agent::core::setNativeToolAccessLevel(accessLevel);
+
+    agent::core::ContextSourceMode contextMode = agent::core::ContextSourceMode::WorkspaceOnly;
+    if (contextSource == "workspace+library") {
+        contextMode = agent::core::ContextSourceMode::WorkspaceAndLibrary;
+    } else if (contextSource == "workspace+library+web") {
+        contextMode = agent::core::ContextSourceMode::WorkspaceLibraryAndWeb;
+    }
+    agent::core::setNativeToolContextSourceMode(contextMode);
+
+    std::vector<std::string> approvedRoots;
+    approvedRoots.push_back(root);
+    for (const auto& item : splitCsvOrLines(contextLibraryPathsBuf)) {
+        if (std::find(approvedRoots.begin(), approvedRoots.end(), item) == approvedRoots.end()) {
+            approvedRoots.push_back(item);
+        }
+    }
+    agent::core::setNativeToolApprovedRoots(approvedRoots);
+    agent::core::setNativeToolApprovedDomains(splitCsvOrLines(contextDomainsBuf));
+
+    if (orchestrator) orchestrator->setWorkspaceRoot(root);
 }
 
 void AgentUI::render() {
@@ -149,6 +206,7 @@ void AgentUI::drawMainMenu() {
         }
         if (ImGui::BeginMenu("Config")) {
             if (ImGui::MenuItem("Model Manager", "Ctrl+M")) modelManagerRequested = true;
+            if (ImGui::MenuItem("Política de Contexto")) contextPolicyDialogRequested = true;
             ImGui::EndMenu();
         }
         ImGui::Separator();

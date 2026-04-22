@@ -5,6 +5,16 @@ set(CMAKE_CXX_STANDARD 20)
 set(CMAKE_CXX_STANDARD_REQUIRED ON)
 
 find_package(SDL2 REQUIRED)
+set(OpenGL_GL_PREFERENCE LEGACY)
+if (EXISTS "/usr/lib/x86_64-linux-gnu/libGL.so" AND NOT EXISTS "/usr/lib64/libGL.so")
+    set(OPENGL_gl_LIBRARY "/usr/lib/x86_64-linux-gnu/libGL.so" CACHE FILEPATH "OpenGL legacy GL library" FORCE)
+endif()
+if (EXISTS "/usr/lib/x86_64-linux-gnu/libOpenGL.so" AND NOT EXISTS "/usr/lib64/libOpenGL.so")
+    set(OPENGL_opengl_LIBRARY "/usr/lib/x86_64-linux-gnu/libOpenGL.so" CACHE FILEPATH "OpenGL library" FORCE)
+endif()
+if (EXISTS "/usr/lib/x86_64-linux-gnu/libGLX.so" AND NOT EXISTS "/usr/lib64/libGLX.so")
+    set(OPENGL_glx_LIBRARY "/usr/lib/x86_64-linux-gnu/libGLX.so" CACHE FILEPATH "OpenGL GLX library" FORCE)
+endif()
 find_package(OpenGL REQUIRED)
 
 include_directories(

@@ -11,6 +11,7 @@ Aplicação desktop local em C++ (SDL2 + OpenGL + Dear ImGui) para interação c
 - Níveis de acesso de ferramentas: `Read-only`, `Workspace-write`, `Full-access`.
 - Ferramentas nativas: leitura/escrita de arquivo, listagem de diretório, busca textual e execução de comando.
 - Ferramentas nativas de workspace para agir como agente de código: criar diretórios, mover/renomear caminhos, remover artefatos e validar via shell.
+- Execução autônoma de múltiplas ações por missão, incluindo envelopes `create_file`/`replace_file`, comandos shell no workspace ativo e observações visíveis no histórico.
 - Seletor de pasta interno (nativo da UI), com navegação, criação de pasta e fallback para seletor do sistema.
 - Histórico de diálogos por projeto com sidebar `DIALOGOS` e menu `Diálogos Recentes`.
 - Persistência de sessão por projeto em `.agent/sessions/*.json` + `last_session.json`.
@@ -124,10 +125,13 @@ A aplicação detecta modelos locais no startup e exibe sugestões de vocação 
 - `Arquivo > Abrir Pasta...` abre o seletor interno de pastas.
 - `Arquivo > Novo Diálogo` cria nova sessão (`session_YYYYMMDD_HHMMSS.json`).
 - Clique em um item da sidebar `DIALOGOS` para restaurar conversa anterior.
-- Na barra de input, ajuste:
+- Na barra superior do chat, ajuste:
   - `Modelo`
   - `Reasoning` (`low`, `medium`, `high`)
   - `Acesso` (`Read-only`, `Workspace-write`, `Full-access`)
+  - `Contexto` (`workspace`, `workspace+library`, `workspace+library+web`)
+- Use `MISSION (Auto)` para pedidos que precisam alterar arquivos, criar estrutura ou validar com shell.
+- Em modo missão, o chat mostra `AÇÃO` e `OBSERVAÇÃO` para cada tool executada, incluindo saída de comandos como `make`.
 
 ## Solução de problemas
 
@@ -158,6 +162,10 @@ A aplicação detecta modelos locais no startup e exibe sugestões de vocação 
 - O chat agora aceita atalhos como `/fix`, `/explain`, `/test`, `/refactor` e `/doc` para acelerar pedidos recorrentes sobre o arquivo em foco.
 - A UI pode inferir o arquivo alvo pelo nome citado no prompt mesmo antes de ele estar aberto no editor.
 - A revisão de mudanças usa diff contra o conteúdo real do arquivo de destino: se o arquivo não estiver aberto no editor, a comparação é feita contra o conteúdo atual no workspace.
+- O orquestrador executa todos os blocos JSON de uma resposta, não apenas o primeiro. Isso permite sequências como `make_dir`, `write_file`, `write_file`, `run_command`.
+- Envelopes estruturados de mudança (`kind=create_file` ou `kind=replace_file`) são convertidos em `write_file` durante missões autônomas.
+- `run_command` executa no workspace aberto por padrão, mesmo em `Full-access`; use `cwd` nos argumentos da tool quando precisar de outro diretório aprovado.
+- Em distros onde OpenGL fica em `/usr/lib/x86_64-linux-gnu`, o CMake ajusta automaticamente o cache para evitar links quebrados para `/usr/lib64`.
 
 ## Skills de exemplo
 

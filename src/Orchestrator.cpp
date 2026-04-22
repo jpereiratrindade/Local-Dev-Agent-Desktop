@@ -70,6 +70,40 @@ bool hasCodeEvidence(const std::string& text) {
     return std::regex_search(text, evidenceRegex);
 }
 
+bool translateChangeEnvelopeToTool(const nlohmann::json& envelope, std::string& toolName, nlohmann::json& args) {
+    if (!toolName.empty()) return false;
+    if (!envelope.is_object() || !envelope.contains("kind")) return false;
+
+    const std::string kind = envelope.value("kind", "");
+    const std::string target = envelope.value("target", envelope.value("path", ""));
+    if (target.empty()) return false;
+
+    if (kind == "create_file" || kind == "replace_file") {
+        std::string content = envelope.value("content", "");
+        fs::path targetPath(target);
+        if (targetPath.filename() == "Makefile") {
+            size_t pos = 0;
+            while ((pos = content.find("\\n", pos)) != std::string::npos) {
+                content.replace(pos, 2, "\n");
+                pos += 1;
+            }
+            pos = 0;
+            while ((pos = content.find("\\t", pos)) != std::string::npos) {
+                content.replace(pos, 2, "\t");
+                pos += 1;
+            }
+        }
+        toolName = "write_file";
+        args = {
+            {"path", target},
+            {"content", content}
+        };
+        return true;
+    }
+
+    return false;
+}
+
 bool shouldPrioritizeActiveFile(const std::string& goal, const std::string& profile) {
     std::string lower = goal;
     std::transform(lower.begin(), lower.end(), lower.begin(), [](unsigned char c) {
@@ -210,6 +244,15 @@ std::string buildDistributedContextPrompt(const std::string& workspaceRoot) {
 Orchestrator::Orchestrator(agent::network::OllamaClient* client, const std::string& workspaceRoot)
     : ollama(client), workspaceRoot(workspaceRoot) {}
 
+void Orchestrator::setWorkspaceRoot(const std::string& root) {
+    if (root.empty()) return;
+    try {
+        workspaceRoot = fs::weakly_canonical(fs::path(root)).string();
+    } catch (...) {
+        workspaceRoot = root;
+    }
+}
+
 void Orchestrator::runMission(const std::string& goal, const std::string& mode, 
                              int maxSteps, MissionCallbacks callbacks,
                              const agent::network::OllamaOptions& options) {
@@ -265,6 +308,8 @@ void Orchestrator::runMission(const std::string& goal, const std::string& mode,
         bool completed = false;
         int stagnationCount = 0;
         std::string lastObservation;
+        std::string lastToolSignature;
+        int repeatedToolSignatureCount = 0;
         int evidenceCount = 0;
         int noEvidenceSteps = 0;
 
@@ -336,14 +381,40 @@ void Orchestrator::runMission(const std::string& goal, const std::string& mode,
             std::string observation = "";
             bool taskComplete = (response.find("TASK COMPLETE") != std::string::npos);
 
-            if (std::regex_search(response, toolMatch, toolRegex)) {
+            for (std::sregex_iterator it(response.begin(), response.end(), toolRegex), end; it != end; ++it) {
                 try {
-                    auto toolJson = nlohmann::json::parse(toolMatch[1].str());
+                    auto toolJson = nlohmann::json::parse((*it)[1].str());
                     std::string toolName = toolJson.value("tool", "");
                     nlohmann::json args = toolJson.value("args", nlohmann::json::object());
+                    const bool translatedEnvelope = translateChangeEnvelopeToTool(toolJson, toolName, args);
+                    std::string toolSignature = toolName + ":" + args.dump();
 
-                    if (callbacks.onAction) callbacks.onAction("Executando: " + toolName);
-                    observation = ToolRegistry::instance().dispatch(toolName, args);
+                    if (callbacks.onAction) {
+                        callbacks.onAction(std::string("Executando: ") + toolName +
+                                           (translatedEnvelope ? " (envelope de mudança)" : ""));
+                    }
+
+                    if (!lastToolSignature.empty() && toolSignature == lastToolSignature) {
+                        repeatedToolSignatureCount++;
+                    } else {
+                        repeatedToolSignatureCount = 0;
+                    }
+                    lastToolSignature = toolSignature;
+
+                    if (toolName.empty()) {
+                        observation +=
+                            "JSON recebido não é uma tool-call executável. Use {\"tool\":\"write_file\","
+                            "\"args\":{\"path\":\"...\",\"content\":\"...\"}} ou um envelope create_file/replace_file completo.";
+                    } else if (repeatedToolSignatureCount >= 1) {
+                        observation +=
+                            "Repetição detectada: a mesma tool-call foi solicitada novamente sem avanço. "
+                            "Não repita inspeção idêntica. Prossiga para ação concreta de execução "
+                            "(ex.: make_dir/write_file/apply_patch/run_command) para materializar o objetivo.";
+                    } else {
+                        observation += ToolRegistry::instance().dispatch(toolName, args);
+                    }
+                    observation += "\n";
+
                     if (callbacks.onObservation) callbacks.onObservation(observation);
                     if (observation == lastObservation) stagnationCount++;
                     else stagnationCount = 0;
@@ -354,7 +425,7 @@ void Orchestrator::runMission(const std::string& goal, const std::string& mode,
                     }
                     
                 } catch (const std::exception& e) {
-                    observation = "Erro ao processar JSON da ferramenta: " + std::string(e.what());
+                    observation += "Erro ao processar JSON da ferramenta: " + std::string(e.what()) + "\n";
                 }
             }
 
@@ -493,7 +564,8 @@ std::string Orchestrator::buildSystemPrompt(const std::string& mode, const std::
            "4. Contextos distribuidos (use 'read_file' para aprofundar so no que for util): " + summarizeContextArtifactNames(workspaceRoot) + "\n" +
            "5. Se tomar uma decisao arquitetural relevante e existir 'memory/decisions-log.md' (ou equivalente em '.agent/memory/'), atualize esse arquivo com 'write_file' antes de concluir.\n" +
            "6. Se a tarefa estiver pronta, finalize obrigatoriamente com 'TASK COMPLETE'.\n" +
-           "7. Nao invente informacoes. Se nao souber, use as ferramentas para descobrir.";
+           "7. Nao invente informacoes. Se nao souber, use as ferramentas para descobrir.\n" +
+           "8. Evite repetir a mesma tool-call com os mesmos argumentos. Após uma inspeção suficiente, execute a ação de materialização no workspace.";
 }
 
 } // namespace agent::core

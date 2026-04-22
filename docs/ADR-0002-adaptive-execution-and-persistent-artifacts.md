@@ -31,6 +31,11 @@ Isso significa:
    - artefato-alvo identificavel
    - resultado salvo ou explicitamente pronto para salvar
    - historico e observacoes preservados
+6. Em modo `mission`, a saida estruturada do modelo deve ser tratada como plano executavel quando possivel:
+   - blocos JSON com `tool` sao executados em sequencia
+   - envelopes `create_file` e `replace_file` sao materializados como `write_file`
+   - comandos shell rodam no workspace ativo por padrao, mesmo quando o acesso esta em `Full-access`
+   - observacoes de tool devem aparecer no historico da UI para que o usuario consiga auditar o que ocorreu
 
 ## Consequences
 
@@ -40,12 +45,14 @@ Isso significa:
 - melhora continuidade em tarefas editoriais e de codigo
 - preserva criatividade sem engessar o modelo em um fluxo unico
 - torna a autonomia mais util para arquivos, scaffolds e documentos persistentes
+- reduz falsos positivos onde o chat afirmava ter criado/compilado algo sem evidencia operacional visivel
 
 ### Trade-offs
 
 - aumenta a importancia de boas heuristicas de escolha de modo
 - exige observabilidade melhor sobre o que foi aplicado, salvo ou apenas sugerido
 - pode introduzir novos riscos se a aplicacao em arquivo nao tiver diff ou validacao suficiente
+- executar varios blocos JSON por resposta aumenta a necessidade de bons limites de acesso e logs claros
 
 ## Operational Guidance
 
@@ -53,3 +60,5 @@ Isso significa:
 - usar tools e mission loop quando o pedido implicar criar estrutura, rodar validacoes ou agir em varios artefatos
 - manter possibilidade de aplicacao explicita da resposta ao arquivo ativo pela UI
 - evoluir para diffs e aplicacao assistida antes de ampliar autonomia irrestrita
+- para tarefas de codigo com validacao, preferir sequencias completas: criar/editar artefatos, executar comando, observar saida e so entao concluir
+- em `Full-access`, liberar escopo de paths nao deve remover o diretorio de trabalho padrao do projeto; `run_command` deve continuar usando o workspace salvo como `cwd` inicial

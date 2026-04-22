@@ -11,6 +11,7 @@
 #include "OllamaClient.hpp"
 #include "Orchestrator.hpp"
 #include "AgentUI.hpp"
+#include "NativeTools.hpp"
 
 namespace {
 std::string findFontPath(const std::vector<const char*>& candidates) {
@@ -92,6 +93,8 @@ bool loadFonts(ImGuiIO& io) {
 } // namespace
 
 int main(int argc, char* argv[]) {
+    agent::core::registerNativeTools(".");
+
     // Detect models on startup
     agent::network::OllamaClient ollama("http://localhost:11434"); 
     auto models = ollama.listModels();
