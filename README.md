@@ -110,6 +110,43 @@ Executar:
 ./build/AgentGUI
 ```
 
+## Teste CLI com LM Studio
+
+Para validar o comportamento do servidor local do LM Studio fora da UI, use:
+
+```bash
+python3 scripts/test_lmstudio_cli.py
+```
+
+Opções úteis:
+
+```bash
+python3 scripts/test_lmstudio_cli.py --model qwen3-14b-claude-4.5-opus-high-reasoning-distill
+python3 scripts/test_lmstudio_cli.py --prompt "Liste apenas os nomes dos arquivos do projeto."
+python3 scripts/test_lmstudio_cli.py --dump-events
+```
+
+O script testa:
+
+- `GET /v1/models`
+- `POST /v1/chat/completions` com `stream=false`
+- `POST /v1/chat/completions` com `stream=true`
+
+Isso ajuda a distinguir:
+
+- problema no servidor/modelo do LM Studio;
+- problema no formato SSE recebido;
+- problema específico da UI do app.
+
+Quando o provider ativo for `LM Studio`, o app também grava debug local em:
+
+```text
+.agent/logs/lmstudio_payloads.log
+```
+
+Esse arquivo registra payload enviado, resposta síncrona e resumo do stream
+(`reasoning_content` vs `content`) para comparação com outros clientes.
+
 ## Ollama
 
 Inicie o serviço antes de abrir a UI:

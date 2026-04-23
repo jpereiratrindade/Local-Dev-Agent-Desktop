@@ -35,6 +35,8 @@ set(SOURCES
     src/AgentUI_Modals.cpp
     src/AgentUI_Stats.cpp
     src/AgentUI_Persistence.cpp
+    src/AgentSpec.cpp
+    src/PromptComposer.cpp
     src/ToolRegistry.cpp
     src/EvidenceModel.cpp
     src/TurnDiffTracker.cpp

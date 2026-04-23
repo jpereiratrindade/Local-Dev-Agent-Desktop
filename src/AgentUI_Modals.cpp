@@ -1,4 +1,5 @@
 #include "AgentUI_Internal.hpp"
+#include "AgentSpec.hpp"
 #include "imgui.h"
 #include "OllamaClient.hpp"
 #include <fstream>
@@ -75,26 +76,47 @@ void AgentUI::renderModelManagerModal() {
     }
 
     if (ImGui::BeginPopupModal("Model Manager###ModelManagerModal", &modelManagerVisible, ImGuiWindowFlags_AlwaysAutoResize)) {
-        ImGui::Text("Ollama Version: %s", ollamaVersion.empty() ? "unknown" : ollamaVersion.c_str());
+        const agent::core::AgentSpec agentSpec = currentAgentSpec();
+        const std::vector<std::string> agentTools = currentAgentToolNames();
+        ImGui::Text("Provider: %s", currentProvider.c_str());
+        ImGui::Text("Endpoint: %s", providerEndpoint.c_str());
+        ImGui::Text("%s Version: %s", currentProvider.c_str(), ollamaVersion.empty() ? "unknown" : ollamaVersion.c_str());
+        ImGui::Text("Agent: %s", agentSpec.displayName.c_str());
+        ImGui::Text("Tool profile: %s", agentSpec.toolProfile.c_str());
         ImGui::Separator();
         
         ImGui::TextColored(ImVec4(0.4f, 0.7f, 1.0f, 1.0f), "Modelos Presentes:");
         for (const auto& m : availableModels) ImGui::BulletText("%s", m.c_str());
+        ImGui::Separator();
+        ImGui::TextColored(ImVec4(0.55f, 0.85f, 1.0f, 1.0f), "Ferramentas Visiveis Para Este Agent:");
+        if (agentTools.empty()) {
+            ImGui::TextDisabled("(nenhuma)");
+        } else {
+            ImGui::BeginChild("VisibleToolsList", ImVec2(460, 140), true);
+            for (const auto& tool : agentTools) {
+                ImGui::BulletText("%s", tool.c_str());
+            }
+            ImGui::EndChild();
+        }
         
         ImGui::Separator();
-        ImGui::InputText("Nome do Modelo", modelPullNameBuf, sizeof(modelPullNameBuf));
-        if (pullingModel) {
-            ImGui::ProgressBar(pullProgress, ImVec2(-FLT_MIN, 0), pullStatus.c_str());
-        } else {
-            if (ImGui::Button("Baixar Modelo")) {
-                pullingModel = true;
-                ollama->pullModel(modelPullNameBuf, [this](const std::string& s, float p) {
-                    pullStatus = s; pullProgress = p;
-                }, [this](bool ok) {
-                    pullingModel = false;
-                    if (ok) availableModels = ollama->listModels();
-                });
+        if (currentProvider == "Ollama") {
+            ImGui::InputText("Nome do Modelo", modelPullNameBuf, sizeof(modelPullNameBuf));
+            if (pullingModel) {
+                ImGui::ProgressBar(pullProgress, ImVec2(-FLT_MIN, 0), pullStatus.c_str());
+            } else {
+                if (ImGui::Button("Baixar Modelo")) {
+                    pullingModel = true;
+                    ollama->pullModel(modelPullNameBuf, [this](const std::string& s, float p) {
+                        pullStatus = s; pullProgress = p;
+                    }, [this](bool ok) {
+                        pullingModel = false;
+                        if (ok) availableModels = ollama->listModels();
+                    });
+                }
             }
+        } else {
+            ImGui::TextDisabled("No LM Studio, carregue o modelo no servidor local.");
         }
         
         if (ImGui::Button("Fechar")) {
@@ -263,6 +285,123 @@ void AgentUI::drawChangeProposalDialog() {
         ImGui::PopStyleColor();
 
         ImGui::EndPopup();
+    }
+}
+
+// P0.4: Modal de confirmação para delete_path
+void AgentUI::drawDeleteApprovalModal() {
+    if (deleteApprovalState.load() != 1) return; // Só exibir quando pendente
+
+    ImGui::OpenPopup("Confirmar Remoção###DeleteApproval");
+    ImGui::SetNextWindowSize(ImVec2(520, 220), ImGuiCond_Always);
+    bool open = true;
+    if (ImGui::BeginPopupModal("Confirmar Remoção###DeleteApproval", &open, ImGuiWindowFlags_NoResize)) {
+        ImGui::Spacing();
+        ImGui::TextColored(ImVec4(1.0f, 0.4f, 0.3f, 1.0f), "⚠  O agente quer DELETAR o seguinte:");
+        ImGui::Separator();
+        ImGui::Spacing();
+
+        {
+            std::lock_guard<std::mutex> lock(deleteApprovalMutex);
+            ImGui::TextWrapped("Caminho: %s", deleteApprovalPath.c_str());
+            if (deleteApprovalIsRecursive == "true") {
+                ImGui::TextColored(ImVec4(1.0f, 0.6f, 0.2f, 1.0f), "Modo: recursive=true (removerá todo o conteúdo)");
+            }
+        }
+
+        ImGui::Spacing();
+        ImGui::Separator();
+        ImGui::Spacing();
+
+        ImGui::PushStyleColor(ImGuiCol_Button,        ImVec4(0.65f, 0.1f, 0.1f, 1.0f));
+        ImGui::PushStyleColor(ImGuiCol_ButtonHovered, ImVec4(0.85f, 0.2f, 0.2f, 1.0f));
+        if (ImGui::Button("Confirmar — Deletar", ImVec2(200, 36))) {
+            deleteApprovalState.store(2); // approved
+            ImGui::CloseCurrentPopup();
+        }
+        ImGui::PopStyleColor(2);
+
+        ImGui::SameLine();
+
+        if (ImGui::Button("Cancelar — Não deletar", ImVec2(200, 36))) {
+            deleteApprovalState.store(3); // rejected
+            ImGui::CloseCurrentPopup();
+        }
+
+        ImGui::EndPopup();
+    }
+
+    // Se o popup foi fechado sem escolha explícita, rejeitar
+    if (!open && deleteApprovalState.load() == 1) {
+        deleteApprovalState.store(3);
+    }
+}
+
+// P3.2: Modal de Busca Rápida de Arquivos (Ctrl+P)
+void AgentUI::drawQuickOpenModal() {
+    if (quickOpenVisible) {
+        ImGui::OpenPopup("Quick Open (Ctrl+P)");
+        ImGui::SetNextWindowSize(ImVec2(600, 400), ImGuiCond_Appearing);
+        ImGui::SetNextWindowPos(ImGui::GetMainViewport()->GetCenter(), ImGuiCond_Appearing, ImVec2(0.5f, 0.5f));
+    }
+
+    bool open = quickOpenVisible;
+    if (ImGui::BeginPopupModal("Quick Open (Ctrl+P)", &open, ImGuiWindowFlags_NoSavedSettings)) {
+        ImGui::Text("Buscar Arquivo no Projeto:");
+        if (quickOpenVisible) {
+            ImGui::SetKeyboardFocusHere();
+            quickOpenVisible = false; // flag de trigger já consumida
+        }
+        
+        bool executeOpen = false;
+        if (ImGui::InputText("##QuickOpenInput", quickOpenBuf, sizeof(quickOpenBuf), ImGuiInputTextFlags_EnterReturnsTrue)) {
+            executeOpen = true; // Enter pressionado no campo de busca
+        }
+
+        ImGui::Separator();
+        
+        // Filtro muito simples (case-insensitive contains)
+        std::string query = quickOpenBuf;
+        std::transform(query.begin(), query.end(), query.begin(), ::tolower);
+        
+        std::vector<std::string> filtered;
+        for (const auto& path : quickOpenMatches) {
+            if (query.empty()) {
+                filtered.push_back(path);
+            } else {
+                std::string lowerPath = path;
+                std::transform(lowerPath.begin(), lowerPath.end(), lowerPath.begin(), ::tolower);
+                if (lowerPath.find(query) != std::string::npos) {
+                    filtered.push_back(path);
+                }
+            }
+        }
+
+        ImGui::BeginChild("QuickOpenResults", ImVec2(0, 0), true);
+        int selectionIndex = -1;
+        for (int i = 0; i < static_cast<int>(filtered.size()); ++i) {
+            if (ImGui::Selectable(filtered[i].c_str(), false, ImGuiSelectableFlags_AllowDoubleClick)) {
+                if (ImGui::IsMouseDoubleClicked(0)) {
+                    selectionIndex = i;
+                    executeOpen = true;
+                }
+            }
+        }
+        ImGui::EndChild();
+
+        if (executeOpen && !filtered.empty()) {
+            std::string target = (selectionIndex >= 0) ? filtered[selectionIndex] : filtered[0];
+            fs::path absolutePath = fs::path(currentProjectRoot) / target;
+            pinnedActiveFile = absolutePath.string();
+            thoughtStream = "Aberto arquivo via Quick Open: " + target;
+            open = false; // Fechar modal
+        }
+
+        ImGui::EndPopup();
+    }
+    
+    if (!open) {
+        quickOpenVisible = false;
     }
 }
 

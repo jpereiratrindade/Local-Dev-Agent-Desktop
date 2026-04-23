@@ -1,6 +1,8 @@
 #include "AgentUI_Internal.hpp"
 #include "imgui.h"
+#include "AgentSpec.hpp"
 #include "Orchestrator.hpp"
+#include "PromptComposer.hpp"
 #include "json.hpp"
 #include <regex>
 #include <fstream>
@@ -21,6 +23,23 @@ struct AgentMessageSections {
     std::string logs;
     std::vector<ActionStep> actionSteps;
 };
+
+const char* messagePartTypeName(MessagePartType type) {
+    switch (type) {
+        case MessagePartType::Reasoning: return "reasoning";
+        case MessagePartType::ToolCall: return "tool_call";
+        case MessagePartType::ToolResult: return "tool_result";
+        case MessagePartType::Text:
+        default: return "text";
+    }
+}
+
+MessagePartType messagePartTypeFromString(const std::string& value) {
+    if (value == "reasoning") return MessagePartType::Reasoning;
+    if (value == "tool_call") return MessagePartType::ToolCall;
+    if (value == "tool_result") return MessagePartType::ToolResult;
+    return MessagePartType::Text;
+}
 
 static AgentMessageSections splitAgentMessage(const std::string& text) {
     AgentMessageSections sections;
@@ -104,13 +123,22 @@ std::vector<std::string> extractJsonBlocks(const std::string& text) {
     return blocks;
 }
 
-    bool looksLikeMixedExplanatoryResponse(const std::string& text) {
+bool looksLikeMixedExplanatoryResponse(const std::string& text) {
     std::string lower = toLowerCopy(text);
     return containsAnyLower(lower, {
         "explicação", "explicacao", "código atualizado", "codigo atualizado",
         "para testar", "compile", "agora você terá", "agora voce tera",
         "vou implementar", "se precisar", "###", "1.", "2.", "3."
     });
+}
+
+std::string extractToolNameFromAction(const std::string& action) {
+    std::smatch match;
+    std::regex actionRegex(R"(Executando:\s*([A-Za-z0-9_./:-]+))");
+    if (std::regex_search(action, match, actionRegex) && match.size() > 1) {
+        return match[1].str();
+    }
+    return "";
 }
 
 std::string handleSlashCommand(const std::string& input) {
@@ -136,58 +164,234 @@ std::string handleSlashCommand(const std::string& input) {
 }
 } // namespace
 
+StructuredChatMessage AgentUI::buildStructuredMessage(const ChatMessage& message) const {
+    StructuredChatMessage structured;
+    structured.role = message.role;
+    if (message.role != "assistant") {
+        structured.parts.push_back({MessagePartType::Text, message.text, "", "", false});
+        return structured;
+    }
+
+    AgentMessageSections sections = splitAgentMessage(message.text);
+    const std::string trimmedAnswer = trimLoose(sections.answer);
+    if (!trimmedAnswer.empty()) {
+        structured.parts.push_back({MessagePartType::Text, trimmedAnswer, "", "", false});
+    }
+    for (const auto& step : sections.actionSteps) {
+        structured.parts.push_back({MessagePartType::ToolCall, step.content, step.title, "", false});
+    }
+    const std::string trimmedLogs = trimLoose(sections.logs);
+    if (!trimmedLogs.empty()) {
+        structured.parts.push_back({MessagePartType::ToolResult, trimmedLogs, "logs", "", false});
+    }
+    if (structured.parts.empty()) {
+        structured.parts.push_back({MessagePartType::Text, message.text, "", "", false});
+    }
+    return structured;
+}
+
+std::string AgentUI::flattenStructuredMessageText(const StructuredChatMessage& message) const {
+    std::string result;
+    for (const auto& part : message.parts) {
+        if (!result.empty()) result += "\n";
+        result += part.text;
+    }
+    return result;
+}
+
+void AgentUI::ensureStructuredHistoryLocked() {
+    if (structuredHistory.size() == history.size()) return;
+    structuredHistory.clear();
+    for (const auto& msg : history) {
+        structuredHistory.push_back(buildStructuredMessage(msg));
+    }
+}
+
+void AgentUI::appendHistoryMessageLocked(const ChatMessage& message) {
+    history.push_back(message);
+    structuredHistory.push_back(buildStructuredMessage(message));
+}
+
+StructuredChatMessage& AgentUI::ensureAssistantStructuredMessageLocked() {
+    if (history.empty() || history.back().role != "assistant") {
+        appendHistoryMessageLocked({"assistant", ""});
+    } else {
+        ensureStructuredHistoryLocked();
+    }
+    return structuredHistory.back();
+}
+
 void AgentUI::renderMarkdown(const std::string& text) {
     std::istringstream stream(text);
     std::string line;
+    std::string codeBlockContent;
+    std::string codeBlockLang;
+    bool inCodeBlock = false;
+    int codeBlockId = 0;
+
     while (std::getline(stream, line)) {
-        if (line.substr(0, 3) == "###") {
+        // Detectar abertura/fechamento de code block
+        if (line.substr(0, 3) == "```") {
+            if (!inCodeBlock) {
+                inCodeBlock = true;
+                codeBlockLang = line.size() > 3 ? line.substr(3) : "";
+                // remover possível \r
+                if (!codeBlockLang.empty() && codeBlockLang.back() == '\r') codeBlockLang.pop_back();
+                codeBlockContent.clear();
+            } else {
+                // Fechar e renderizar code block
+                inCodeBlock = false;
+                std::string blockLabel = "##codeblock" + std::to_string(codeBlockId++);
+                if (!codeBlockLang.empty()) {
+                    ImGui::TextColored(ImVec4(0.55f, 0.55f, 0.55f, 1.0f), "[%s]", codeBlockLang.c_str());
+                }
+                ImGui::PushStyleColor(ImGuiCol_FrameBg, ImVec4(0.1f, 0.1f, 0.12f, 1.0f));
+                ImGui::InputTextMultiline(blockLabel.c_str(), &codeBlockContent,
+                    ImVec2(-FLT_MIN, ImGui::GetTextLineHeight() *
+                           std::min(20, static_cast<int>(std::count(codeBlockContent.begin(), codeBlockContent.end(), '\n') + 2))),
+                    ImGuiInputTextFlags_ReadOnly);
+                ImGui::PopStyleColor();
+                codeBlockContent.clear();
+            }
+            continue;
+        }
+
+        if (inCodeBlock) {
+            codeBlockContent += line + "\n";
+            continue;
+        }
+
+        // Remover \r de fim de linha
+        if (!line.empty() && line.back() == '\r') line.pop_back();
+
+        // Headings
+        if (line.substr(0, 4) == "### ") {
             ImGui::Spacing();
-            ImGui::TextColored(ImVec4(0.4f, 0.7f, 1.0f, 1.0f), "%s", line.substr(3).c_str());
+            ImGui::TextColored(ImVec4(0.4f, 0.7f, 1.0f, 1.0f), "%s", line.substr(4).c_str());
             ImGui::Separator();
-        } else if (line.substr(0, 2) == "##") {
+        } else if (line.substr(0, 3) == "## ") {
             ImGui::Spacing();
-            ImGui::TextColored(ImVec4(0.0f, 0.8f, 1.0f, 1.0f), "%s", line.substr(2).c_str());
-        } else if (line.substr(0, 1) == "#") {
-            ImGui::TextColored(ImVec4(1.0f, 1.0f, 1.0f, 1.0f), "%s", line.substr(1).c_str());
+            ImGui::TextColored(ImVec4(0.0f, 0.8f, 1.0f, 1.0f), "%s", line.substr(3).c_str());
+        } else if (line.substr(0, 2) == "# ") {
+            ImGui::TextColored(ImVec4(1.0f, 1.0f, 1.0f, 1.0f), "%s", line.substr(2).c_str());
             ImGui::Separator();
-        } else if (line.find("`") != std::string::npos) {
-            // Simple inline code highlighting simulation
+        }
+        // Separadores horizontais
+        else if (line == "---" || line == "***" || line == "___") {
+            ImGui::Separator();
+        }
+        // Listas não-ordenadas
+        else if (line.size() >= 2 && (line.substr(0, 2) == "- " || line.substr(0, 2) == "* ")) {
+            ImGui::Bullet();
+            ImGui::SameLine();
+            // Detectar negrito simples **text**
+            std::string content = line.substr(2);
+            if (content.find("**") != std::string::npos) {
+                ImGui::TextColored(ImVec4(1.0f, 1.0f, 0.7f, 1.0f), "%s", content.c_str());
+            } else {
+                ImGui::TextWrapped("%s", content.c_str());
+            }
+        }
+        // Listas numeradas
+        else if (line.size() >= 3 && std::isdigit(static_cast<unsigned char>(line[0])) && line[1] == '.' && line[2] == ' ') {
+            ImGui::TextColored(ImVec4(0.7f, 0.9f, 1.0f, 1.0f), "%c.", line[0]);
+            ImGui::SameLine();
+            ImGui::TextWrapped("%s", line.substr(3).c_str());
+        }
+        // Citações
+        else if (line.substr(0, 2) == "> ") {
+            ImGui::TextColored(ImVec4(0.6f, 0.6f, 0.6f, 1.0f), "│ %s", line.substr(2).c_str());
+        }
+        // Linha com negrito **text**
+        else if (line.find("**") != std::string::npos) {
+            ImGui::TextColored(ImVec4(1.0f, 1.0f, 0.7f, 1.0f), "%s", line.c_str());
+        }
+        // Linha com inline code `text`
+        else if (line.find("`") != std::string::npos) {
             ImGui::TextColored(ImVec4(0.9f, 0.8f, 0.5f, 1.0f), "%s", line.c_str());
-        } else if (line.substr(0, 2) == "> ") {
-            ImGui::TextColored(ImVec4(0.6f, 0.6f, 0.6f, 1.0f), "%s", line.c_str());
-        } else {
+        }
+        // Linha vazia
+        else if (line.empty()) {
+            ImGui::Spacing();
+        }
+        // Texto normal
+        else {
             ImGui::TextWrapped("%s", line.c_str());
         }
     }
 }
 
 std::string AgentUI::buildSimpleDiffPreview(const std::string& oldText, const std::string& newText) const {
-    std::istringstream oldStream(oldText);
-    std::istringstream newStream(newText);
-    std::vector<std::string> oldLines;
-    std::vector<std::string> newLines;
-    std::string line;
-    while (std::getline(oldStream, line)) oldLines.push_back(line);
-    while (std::getline(newStream, line)) newLines.push_back(line);
+    // P2.3: Diff com contexto — LCS simplificado com 3 linhas de contexto (estilo unified diff)
+    auto splitLines = [](const std::string& text) -> std::vector<std::string> {
+        std::vector<std::string> lines;
+        std::istringstream stream(text);
+        std::string line;
+        while (std::getline(stream, line)) {
+            if (!line.empty() && line.back() == '\r') line.pop_back();
+            lines.push_back(line);
+        }
+        return lines;
+    };
 
-    std::stringstream out;
-    const size_t maxLines = std::max(oldLines.size(), newLines.size());
-    size_t emitted = 0;
-    for (size_t i = 0; i < maxLines; ++i) {
-        const bool hasOld = i < oldLines.size();
-        const bool hasNew = i < newLines.size();
-        const std::string oldLine = hasOld ? oldLines[i] : "";
-        const std::string newLine = hasNew ? newLines[i] : "";
-        if (hasOld && hasNew && oldLine == newLine) continue;
-        if (hasOld) out << "- " << oldLine << "\n";
-        if (hasNew) out << "+ " << newLine << "\n";
-        emitted++;
-        if (emitted >= 120) {
-            out << "...diff truncado...\n";
-            break;
+    const auto oldLines = splitLines(oldText);
+    const auto newLines = splitLines(newText);
+    const size_t M = std::min(oldLines.size(), size_t{300});
+    const size_t N = std::min(newLines.size(), size_t{300});
+
+    // Calcular LCS via DP (limitado a 300x300 = 90k células)
+    std::vector<std::vector<int>> dp(M + 1, std::vector<int>(N + 1, 0));
+    for (size_t i = 1; i <= M; ++i)
+        for (size_t j = 1; j <= N; ++j)
+            dp[i][j] = (oldLines[i-1] == newLines[j-1]) ? dp[i-1][j-1] + 1
+                                                         : std::max(dp[i-1][j], dp[i][j-1]);
+
+    // Reconstruir diff como vetor de operações: 0=context, -1=removed, +1=added
+    struct DiffLine { int op; std::string text; };
+    std::vector<DiffLine> diff;
+    size_t i = M, j = N;
+    while (i > 0 || j > 0) {
+        if (i > 0 && j > 0 && oldLines[i-1] == newLines[j-1]) {
+            diff.push_back({0, oldLines[i-1]});
+            --i; --j;
+        } else if (j > 0 && (i == 0 || dp[i][j-1] >= dp[i-1][j])) {
+            diff.push_back({+1, newLines[j-1]});
+            --j;
+        } else {
+            diff.push_back({-1, oldLines[i-1]});
+            --i;
         }
     }
-    if (emitted == 0) out << "(sem diferencas detectadas)\n";
+    std::reverse(diff.begin(), diff.end());
+
+    // Emitir com 3 linhas de contexto
+    constexpr int kCtx = 3;
+    std::vector<bool> show(diff.size(), false);
+    for (size_t k = 0; k < diff.size(); ++k) {
+        if (diff[k].op != 0) {
+            for (int c = -kCtx; c <= kCtx; ++c) {
+                int idx = static_cast<int>(k) + c;
+                if (idx >= 0 && idx < static_cast<int>(diff.size())) show[static_cast<size_t>(idx)] = true;
+            }
+        }
+    }
+
+    std::stringstream out;
+    bool inGap = false;
+    int changed = 0;
+    for (size_t k = 0; k < diff.size(); ++k) {
+        if (!show[k]) {
+            if (!inGap) { out << "@@ ... @@\n"; inGap = true; }
+            continue;
+        }
+        inGap = false;
+        const auto& dl = diff[k];
+        if      (dl.op == -1) { out << "- " << dl.text << "\n"; changed++; }
+        else if (dl.op == +1) { out << "+ " << dl.text << "\n"; changed++; }
+        else                  { out << "  " << dl.text << "\n"; }
+        if (changed > 200) { out << "...diff truncado (> 200 linhas modificadas)...\n"; break; }
+    }
+    if (changed == 0) out << "(sem diferenças detectadas)\n";
     return out.str();
 }
 
@@ -331,6 +535,8 @@ std::string AgentUI::inferActiveFileAmbiguityNote(const std::string& goal) const
 
 std::string AgentUI::buildActiveContextBlock() const {
     std::stringstream context;
+    const bool isLmStudio = ollama && ollama->getProvider() == agent::network::ModelProvider::LMStudio;
+    const size_t maxContextChars = isLmStudio ? 4000 : 12000;
     if (hasOpenProject && !currentProjectRoot.empty()) {
         context << "Projeto atual: " << currentProjectRoot << "\n";
     }
@@ -366,7 +572,9 @@ std::string AgentUI::buildActiveContextBlock() const {
             } catch (...) {}
         }
         if (!fullContent.empty()) {
-            if (fullContent.size() > 12000) fullContent = fullContent.substr(0, 12000) + "\n...[conteudo truncado]...";
+            if (fullContent.size() > maxContextChars) {
+                fullContent = fullContent.substr(0, maxContextChars) + "\n...[conteudo truncado]...";
+            }
             context << "Conteudo atual do arquivo ativo:\n```text\n" << fullContent << "\n```\n";
         }
     }
@@ -377,24 +585,32 @@ std::string AgentUI::buildActiveContextBlock() const {
 }
 
 std::string AgentUI::buildChatSystemPrompt() const {
-    std::stringstream prompt;
-    prompt << "Voce e um assistente local de desenvolvimento e escrita orientado a execucao.\n";
-    prompt << "Regras:\n";
-    prompt << "1. Preserve continuidade com o historico do chat.\n";
-    prompt << "2. Se houver arquivo ativo e o pedido implicar editar, continuar, revisar ou inserir conteudo, trate o arquivo ativo como alvo principal.\n";
-    prompt << "3. Para tarefas editoriais, responda como coautor e use o arquivo ativo antes de explorar o resto do projeto.\n";
-    prompt << "4. Para tarefas executivas e quando necessario, voce pode propor JSON de tool-call, mas so faca isso se realmente precisar agir no workspace.\n";
-    prompt << "5. Seja concreto. Se o pedido for de alteracao de conteudo, entregue texto pronto para inserir ou diga claramente qual alteracao faria.\n";
-    prompt << "6. Se estiver propondo criar ou substituir um arquivo, prefira incluir um bloco ```json``` com {\"kind\":\"replace_file|create_file\",\"target\":\"...\",\"summary\":\"...\",\"content\":\"...\"}.\n";
-    prompt << "7. Nao misture instrucoes de teste e explicacao dentro do campo content.\n";
-    if (hasOpenProject && !currentProjectRoot.empty()) {
-        prompt << "Projeto atual: " << currentProjectRoot << "\n";
-    }
-    const std::string inferredFile = inferActiveFileForGoal(history.empty() ? "" : history.back().text);
-    if (!inferredFile.empty()) {
-        prompt << "Arquivo ativo inferido/priorizado: " << inferredFile << "\n";
-    }
-    return prompt.str();
+    const agent::core::AgentSpec spec = currentAgentSpec();
+    agent::core::PromptContext ctx;
+    ctx.agentSpec = spec;
+    ctx.provider = (ollama && ollama->getProvider() == agent::network::ModelProvider::LMStudio)
+        ? "LM Studio / OpenAI-compatible"
+        : "Ollama";
+    ctx.mode = "CHAT";
+    ctx.profile = profileLabel(selectedProfile);
+    ctx.reasoning = reasoning;
+    ctx.workspaceRoot = hasOpenProject ? currentProjectRoot : "";
+    ctx.activeFile = inferActiveFileForGoal(history.empty() ? "" : history.back().text);
+    ctx.projectMap = projectMap;
+    ctx.governance = projectGovernance;
+    ctx.compactForProvider = ollama && ollama->getProvider() == agent::network::ModelProvider::LMStudio;
+    return agent::core::buildSharedAgentPrompt(ctx);
+}
+
+agent::core::AgentSpec AgentUI::currentAgentSpec() const {
+    const std::string provider = (ollama && ollama->getProvider() == agent::network::ModelProvider::LMStudio)
+        ? "LM Studio / OpenAI-compatible"
+        : "Ollama";
+    return agent::core::buildAgentSpec(profileLabel(selectedProfile), provider, reasoning, access);
+}
+
+std::vector<std::string> AgentUI::currentAgentToolNames() const {
+    return agent::core::ToolRegistry::instance().listToolNamesForProfile(currentAgentSpec().toolProfile);
 }
 
 bool AgentUI::buildChangeProposalFromAssistantText(const std::string& text, ChangeProposal& proposal) const {
@@ -514,86 +730,89 @@ void AgentUI::runPythonAgent(const std::string& goal, const std::string& mode) {
             
             agent::network::OllamaOptions opts;
             opts.temperature = (reasoning == "high") ? 0.2f : 0.7f;
+            if (ollama && ollama->getProvider() == agent::network::ModelProvider::LMStudio) {
+                opts.num_ctx = 4096;
+                opts.num_predict = 2048;
+            }
 
             ollama->setModel(currentModel); // Sincroniza o modelo selecionado
 
-            const std::string resolvedMode = (mode == "AUTO") ? inferTaskMode(goal) : mode;
-            const bool useMissionLoop = (resolvedMode == "MISSION");
-
-            if (!useMissionLoop) {
-                std::vector<agent::network::Message> threadHistory;
-                threadHistory.push_back({"system", buildChatSystemPrompt()});
-                {
-                    std::lock_guard<std::mutex> lock(msgMutex);
-                    for (const auto& msg : history) {
-                        threadHistory.push_back({msg.role, msg.text});
-                    }
-                }
-                const std::string activeContext = buildActiveContextBlock();
-                if (!activeContext.empty()) {
-                    threadHistory.push_back({"system", activeContext});
-                }
-
-                ollama->chatStream(threadHistory,
-                    [this](const std::string& chunk) {
-                        std::lock_guard<std::mutex> lock(msgMutex);
-                        if (history.empty() || history.back().role != "assistant") {
-                            history.push_back({"assistant", ""});
-                        }
-                        history.back().text += chunk;
-                        scrollToBottom = true;
-                    },
-                    [this](bool ok, agent::network::OllamaStreamStats stats) {
-                        {
-                            std::lock_guard<std::mutex> lock(msgMutex);
-                            totalPromptTokens = stats.prompt_tokens;
-                            totalCompletionTokens = stats.completion_tokens;
-                            tokensPerSec = (stats.total_duration_ms > 0.0)
-                                ? static_cast<float>(stats.completion_tokens / (stats.total_duration_ms / 1000.0))
-                                : 0.0f;
-                            tokenRateMs = (stats.completion_tokens > 0)
-                                ? static_cast<float>(stats.total_duration_ms / stats.completion_tokens)
-                                : 0.0f;
-                        }
-                        llmBusy = false;
-                        thoughtStream = ok ? "Resposta concluída." : "Resposta interrompida.";
-                        saveSession();
-                    },
-                    "", opts);
-                return;
+            std::vector<agent::network::Message> contextHistory;
+            {
+                std::lock_guard<std::mutex> lock(msgMutex);
+                contextHistory = llmHistory;
             }
-            
+            const std::string activeContext = buildActiveContextBlock();
             agent::core::Orchestrator::MissionCallbacks callbacks;
             callbacks.onMessageChunk = [this](const std::string& chunk) {
                 std::lock_guard<std::mutex> lock(msgMutex);
-                if (history.empty() || history.back().role != "assistant") {
-                    history.push_back({"assistant", ""});
-                }
+                StructuredChatMessage& structured = ensureAssistantStructuredMessageLocked();
                 history.back().text += chunk;
+                if (structured.parts.empty() || structured.parts.back().type != MessagePartType::Text) {
+                    structured.parts.push_back({MessagePartType::Text, "", "", "", false});
+                }
+                structured.parts.back().text += chunk;
                 scrollToBottom = true;
             };
             callbacks.onThought = [this](const std::string& thought) {
                 thoughtStream = thought;
+                std::lock_guard<std::mutex> lock(msgMutex);
+                StructuredChatMessage& structured = ensureAssistantStructuredMessageLocked();
+                if (structured.parts.empty() || structured.parts.back().type != MessagePartType::Reasoning) {
+                    structured.parts.push_back({MessagePartType::Reasoning, "", "reasoning", "", false});
+                }
+                structured.parts.back().text = thought;
             };
             callbacks.onAction = [this](const std::string& action) {
                 thoughtStream = "Ação: " + action;
                 std::lock_guard<std::mutex> lock(msgMutex);
-                if (history.empty() || history.back().role != "assistant") {
-                    history.push_back({"assistant", ""});
-                }
+                StructuredChatMessage& structured = ensureAssistantStructuredMessageLocked();
                 history.back().text += "\n\nAÇÃO: " + action + "\n";
+                const std::string toolName = extractToolNameFromAction(action);
+                structured.parts.push_back({
+                    MessagePartType::ToolCall,
+                    action,
+                    toolName.empty() ? "tool_call" : toolName,
+                    "",
+                    false
+                });
             };
             callbacks.onObservation = [this](const std::string& obs) {
-                thoughtStream = "Observação recebida (" + std::to_string(obs.size()) + " bytes)";
-                std::lock_guard<std::mutex> lock(msgMutex);
-                if (history.empty() || history.back().role != "assistant") {
-                    history.push_back({"assistant", ""});
+                // P1.4: Notificação visual para operações de escrita bem-sucedidas em Mission
+                if (obs.rfind("Sucesso:", 0) == 0 || obs.rfind("Arquivo gravado", 0) == 0) {
+                    // Extrai o path da mensagem de sucesso para exibir na UI
+                    std::string notifMsg = obs;
+                    // Tentativa de extrair arquivo para mensagem mais limpa
+                    size_t emPos = obs.find(" em ");
+                    if (emPos != std::string::npos) {
+                        notifMsg = "✅ Arquivo modificado: " + obs.substr(emPos + 4);
+                    }
+                    thoughtStream = notifMsg;
+                } else {
+                    thoughtStream = "Observação recebida (" + std::to_string(obs.size()) + " bytes)";
                 }
+
+                std::lock_guard<std::mutex> lock(msgMutex);
+                StructuredChatMessage& structured = ensureAssistantStructuredMessageLocked();
                 std::string trimmedObs = obs;
                 if (trimmedObs.size() > 4000) {
                     trimmedObs = trimmedObs.substr(0, 4000) + "\n...[observação truncada]...";
                 }
                 history.back().text += "\nOBSERVAÇÃO: " + trimmedObs + "\n";
+                std::string resultName = "tool_result";
+                for (auto it = structured.parts.rbegin(); it != structured.parts.rend(); ++it) {
+                    if (it->type == MessagePartType::ToolCall && !it->name.empty()) {
+                        resultName = it->name;
+                        break;
+                    }
+                }
+                const bool isError = trimmedObs.rfind("Erro", 0) == 0 || trimmedObs.rfind("ERRO", 0) == 0;
+                structured.parts.push_back({MessagePartType::ToolResult, trimmedObs, resultName, "", isError});
+            };
+
+            callbacks.onMissionComplete = [this](const std::vector<agent::network::Message>& newHistory) {
+                std::lock_guard<std::mutex> lock(msgMutex);
+                llmHistory = newHistory;
             };
             callbacks.onComplete = [this](bool success) {
                 llmBusy = false; // Reset ONLY when background thread completes
@@ -613,8 +832,30 @@ void AgentUI::runPythonAgent(const std::string& goal, const std::string& mode) {
                     : 0.0f;
             };
 
-            std::string fullGoal = "[reasoning=" + reasoning + "][access=" + access + "][profile=" + profileLabel(selectedProfile) + "][context=" + contextSource + "] " + goal;
-            const std::string activeContext = buildActiveContextBlock();
+            // P0.4: Approval gate para delete_path — mostra modal e aguarda resposta (max 30s)
+            callbacks.onApprovalRequired = [this](const std::string& toolName,
+                                                   const nlohmann::json& args) -> bool {
+                if (toolName != "delete_path") return true; // Só intercepta delete
+                {
+                    std::lock_guard<std::mutex> lock(deleteApprovalMutex);
+                    deleteApprovalPath          = args.value("path", "(desconhecido)");
+                    deleteApprovalIsRecursive   = args.value("recursive", false) ? "true" : "false";
+                }
+                deleteApprovalState.store(1); // pending — UI irá renderizar o modal
+
+                // Polling por até 30 segundos
+                auto deadline = std::chrono::steady_clock::now() + std::chrono::seconds(30);
+                while (std::chrono::steady_clock::now() < deadline) {
+                    int st = deleteApprovalState.load();
+                    if (st == 2) { deleteApprovalState.store(0); return true;  } // approved
+                    if (st == 3) { deleteApprovalState.store(0); return false; } // rejected
+                    std::this_thread::sleep_for(std::chrono::milliseconds(80));
+                }
+                deleteApprovalState.store(0);
+                return false; // Timeout → rejeitar por segurança
+            };
+
+            std::string fullGoal = goal;
             if (!activeContext.empty()) {
                 fullGoal += "\n\n[CONTEXTO ATIVO]\n" + activeContext;
             }
@@ -622,7 +863,14 @@ void AgentUI::runPythonAgent(const std::string& goal, const std::string& mode) {
                 fullGoal = "[GOVERNANÇA ATIVA: SIGA ESTAS REGRAS]\n" + projectGovernance + "\n\n[OBJETIVO ATUAL]\n" + fullGoal;
             }
 
-            orchestrator->runMission(fullGoal, "MISSION", 10, callbacks, opts);
+            agent::core::MissionConfig missionConfig;
+            missionConfig.agentSpec = currentAgentSpec();
+            missionConfig.mode = "MISSION";
+            missionConfig.reasoning = reasoning;
+            missionConfig.access = access;
+            missionConfig.contextSource = contextSource;
+
+            orchestrator->runMission(contextHistory, fullGoal, missionConfig, 10, callbacks, opts);
         } catch (const std::exception& e) {
             std::lock_guard<std::mutex> lock(msgMutex);
             thoughtStream = "ERRO NA MISSÃO: " + std::string(e.what());
@@ -633,8 +881,30 @@ void AgentUI::runPythonAgent(const std::string& goal, const std::string& mode) {
 
 void AgentUI::drawChatWindow() {
     ImGui::BeginChild("ChatWindowChild", ImVec2(0, 0), true);
+    const agent::core::AgentSpec agentSpec = currentAgentSpec();
     ImGui::TextColored(ImVec4(0.4f, 0.7f, 1.0f, 1.0f), "AGENT CHAT");
-    ImGui::TextDisabled(" | Model:");
+    ImGui::SameLine();
+    ImGui::TextDisabled("| Provider:");
+    ImGui::SameLine();
+    ImGui::SetNextItemWidth(110);
+    if (ImGui::Combo("##ProviderSelector", &currentProviderIndex, "Ollama\0LM Studio\0")) {
+        currentProvider = currentProviderIndex == 1 ? "LM Studio" : "Ollama";
+        providerEndpoint = currentProviderIndex == 1 ? "http://127.0.0.1:1234" : "http://localhost:11434";
+        if (ollama) {
+            ollama->configureBackend(
+                currentProviderIndex == 1 ? agent::network::ModelProvider::LMStudio : agent::network::ModelProvider::Ollama,
+                providerEndpoint
+            );
+            ollamaVersion = ollama->fetchVersion();
+            availableModels = ollama->listModels();
+            if (!availableModels.empty()) {
+                currentModel = availableModels.front();
+                ollama->setModel(currentModel);
+            }
+        }
+    }
+    ImGui::SameLine();
+    ImGui::TextDisabled("| Model:");
     ImGui::SameLine();
     ImGui::SetNextItemWidth(150);
     if (ImGui::BeginCombo("##ModelSelector", currentModel.c_str())) {
@@ -649,6 +919,8 @@ void AgentUI::drawChatWindow() {
         }
         ImGui::EndCombo();
     }
+    ImGui::SameLine();
+    ImGui::TextDisabled("@ %s", currentProvider.c_str());
     ImGui::SameLine();
     int reasoningIdx = (reasoning == "low") ? 0 : (reasoning == "high" ? 2 : 1);
     ImGui::SetNextItemWidth(95);
@@ -678,12 +950,32 @@ void AgentUI::drawChatWindow() {
     }
     ImGui::Separator();
     const std::string inferredMode = inferTaskMode(inputBuf);
-    const std::string inferredActiveFile = inferActiveFileForGoal(inputBuf);
+    std::string inferredActiveFile = pinnedActiveFile;
+    if (inferredActiveFile.empty()) inferredActiveFile = inferActiveFileForGoal(inputBuf);
     const std::string ambiguityNote = inferActiveFileAmbiguityNote(inputBuf);
+    const std::vector<std::string> agentTools = currentAgentToolNames();
     ImGui::TextDisabled("Modo sugerido: %s", inferredMode == "MISSION" ? "Missao" : "Chat assistido");
+    ImGui::SameLine();
+    ImGui::TextDisabled("| Agent: %s", agentSpec.displayName.c_str());
+    ImGui::SameLine();
+    ImGui::TextDisabled("| Tools: %s", agentSpec.toolProfile.c_str());
+    if (!agentTools.empty()) {
+        std::string toolPreview = agentTools.front();
+        const size_t previewCount = std::min<size_t>(agentTools.size(), 3);
+        for (size_t i = 1; i < previewCount; ++i) toolPreview += ", " + agentTools[i];
+        if (agentTools.size() > previewCount) toolPreview += ", ...";
+        ImGui::SameLine();
+        ImGui::TextDisabled("| Disponiveis: %s", toolPreview.c_str());
+    }
     if (!inferredActiveFile.empty()) {
         ImGui::SameLine();
-        ImGui::TextDisabled("| Arquivo inferido: %s", fs::path(inferredActiveFile).filename().string().c_str());
+        ImGui::TextDisabled("| Arquivo em foco%s: %s", pinnedActiveFile.empty() ? " (inferido)" : " (pinado)", fs::path(inferredActiveFile).filename().string().c_str());
+        if (!pinnedActiveFile.empty()) {
+            ImGui::SameLine();
+            if (ImGui::SmallButton("X##ClearPinTop")) {
+                pinnedActiveFile.clear();
+            }
+        }
     }
     if (!ambiguityNote.empty()) {
         ImGui::TextColored(ImVec4(1.0f, 0.75f, 0.2f, 1.0f), "%s", ambiguityNote.c_str());
@@ -727,27 +1019,63 @@ void AgentUI::drawChatWindow() {
 
                 ImGui::BeginChild(("AgentMsgBlock_" + std::to_string(i)).c_str(), ImVec2(0, 300), true);
                 if (ImGui::BeginTabBar("AgentMessageTabs")) {
+                    StructuredChatMessage structured = (i < structuredHistory.size())
+                        ? structuredHistory[i]
+                        : buildStructuredMessage(msg);
                     if (ImGui::BeginTabItem("Resposta")) {
-                        renderMarkdown(sections.answer);
+                        for (const auto& part : structured.parts) {
+                            if (part.type != MessagePartType::Text) continue;
+                            renderMarkdown(part.text);
+                        }
+                        ImGui::EndTabItem();
+                    }
+                    if (ImGui::BeginTabItem("Pensamento")) {
+                        bool hasReasoning = false;
+                        for (const auto& part : structured.parts) {
+                            if (part.type != MessagePartType::Reasoning) continue;
+                            hasReasoning = true;
+                            if (!part.name.empty()) {
+                                ImGui::TextColored(ImVec4(0.8f, 0.75f, 0.45f, 1.0f), "[%s]", part.name.c_str());
+                            }
+                            ImGui::TextWrapped("%s", part.text.c_str());
+                            ImGui::Separator();
+                        }
+                        if (!hasReasoning) {
+                            ImGui::TextDisabled("Nenhum reasoning estruturado disponível.");
+                        }
                         ImGui::EndTabItem();
                     }
                     if (ImGui::BeginTabItem("Ações")) {
-                        if (sections.actionSteps.empty()) {
-                            ImGui::TextDisabled("Nenhuma ferramenta foi utilizada nesta resposta.");
-                        } else {
-                            for (const auto& step : sections.actionSteps) {
-                                if (ImGui::CollapsingHeader(step.title.c_str())) {
-                                    ImGui::TextWrapped("%s", step.content.c_str());
-                                }
+                        bool hasToolCalls = false;
+                        for (const auto& part : structured.parts) {
+                            if (part.type != MessagePartType::ToolCall) continue;
+                            hasToolCalls = true;
+                            std::string header = part.name.empty() ? "Tool call" : ("Tool: " + part.name);
+                            if (ImGui::CollapsingHeader(header.c_str())) {
+                                ImGui::TextWrapped("%s", part.text.c_str());
                             }
+                        }
+                        if (!hasToolCalls) {
+                            ImGui::TextDisabled("Nenhuma ferramenta foi utilizada nesta resposta.");
                         }
                         ImGui::EndTabItem();
                     }
                     if (ImGui::BeginTabItem("Logs")) {
-                        if (sections.logs.empty()) {
+                        bool hasLogs = false;
+                        for (const auto& part : structured.parts) {
+                            if (part.type != MessagePartType::ToolResult) continue;
+                            hasLogs = true;
+                            if (!part.name.empty()) {
+                                ImGui::TextColored(
+                                    part.isError ? ImVec4(1.0f, 0.45f, 0.45f, 1.0f) : ImVec4(0.55f, 0.85f, 1.0f, 1.0f),
+                                    "[%s]",
+                                    part.name.c_str());
+                            }
+                            ImGui::TextUnformatted(part.text.c_str());
+                            ImGui::Separator();
+                        }
+                        if (!hasLogs) {
                             ImGui::TextDisabled("Nenhum log técnico disponível.");
-                        } else {
-                            ImGui::TextUnformatted(sections.logs.c_str());
                         }
                         ImGui::EndTabItem();
                     }
@@ -763,8 +1091,21 @@ void AgentUI::drawChatWindow() {
 
     ImGui::Separator();
     
-    if (!inferredActiveFile.empty()) {
-        ImGui::TextDisabled("Arquivo em foco: %s", fs::path(inferredActiveFile).filename().string().c_str());
+    // Determinar qual arquivo mostrar na barra de status
+    std::string displayFile = pinnedActiveFile;
+    if (displayFile.empty()) {
+        displayFile = inferActiveFileForGoal(inputBuf);
+    }
+
+    if (!displayFile.empty()) {
+        ImGui::TextDisabled("Arquivo em foco%s: %s", 
+            pinnedActiveFile.empty() ? " (inferido)" : " (pinado)", 
+            fs::path(displayFile).filename().string().c_str());
+        
+        ImGui::SameLine();
+        if (ImGui::SmallButton("X##ClearPin")) {
+            pinnedActiveFile.clear();
+        }
     }
 
     ImGui::PushItemWidth(-1);
@@ -773,7 +1114,7 @@ void AgentUI::drawChatWindow() {
             std::string queryText = handleSlashCommand(inputBuf);
             {
                 std::lock_guard<std::mutex> lock(msgMutex);
-                history.push_back({"user", inputBuf}); // Keep the command in UI history
+                appendHistoryMessageLocked({"user", inputBuf}); // Keep the command in UI history
             }
             std::memset(inputBuf, 0, sizeof(inputBuf));
             scrollToBottom = true;
@@ -794,7 +1135,10 @@ void AgentUI::drawChatWindow() {
         if (ImGui::Button("SND (Chat)", ImVec2(100, 0))) {
             if (std::strlen(inputBuf) > 0) {
                 std::string queryText = inputBuf;
-                history.push_back({"user", queryText});
+                {
+                    std::lock_guard<std::mutex> lock(msgMutex);
+                    appendHistoryMessageLocked({"user", queryText});
+                }
                 std::memset(inputBuf, 0, sizeof(inputBuf));
                 scrollToBottom = true;
                 runPythonAgent(queryText, "CHAT");
@@ -804,7 +1148,10 @@ void AgentUI::drawChatWindow() {
         if (ImGui::Button("MISSION (Auto)", ImVec2(120, 0))) {
              if (std::strlen(inputBuf) > 0) {
                 std::string queryText = inputBuf;
-                history.push_back({"user", "MISSÃO: " + queryText});
+                {
+                    std::lock_guard<std::mutex> lock(msgMutex);
+                    appendHistoryMessageLocked({"user", "MISSÃO: " + queryText});
+                }
                 std::memset(inputBuf, 0, sizeof(inputBuf));
                 scrollToBottom = true;
                 runPythonAgent(queryText, "MISSION");

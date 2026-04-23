@@ -5,6 +5,25 @@
 
 namespace agent::ui {
 
+namespace {
+const char* messagePartTypeNamePersist(MessagePartType type) {
+    switch (type) {
+        case MessagePartType::Reasoning: return "reasoning";
+        case MessagePartType::ToolCall: return "tool_call";
+        case MessagePartType::ToolResult: return "tool_result";
+        case MessagePartType::Text:
+        default: return "text";
+    }
+}
+
+MessagePartType messagePartTypeFromStringPersist(const std::string& value) {
+    if (value == "reasoning") return MessagePartType::Reasoning;
+    if (value == "tool_call") return MessagePartType::ToolCall;
+    if (value == "tool_result") return MessagePartType::ToolResult;
+    return MessagePartType::Text;
+}
+}
+
 std::filesystem::path AgentUI::sessionsDir() const {
     fs::path p = fs::path(currentProjectRoot) / ".agent" / "sessions";
     return p;
@@ -37,8 +56,29 @@ bool AgentUI::loadSessionFromFile(const fs::path& path) {
         if (j.contains("history")) {
             std::lock_guard<std::mutex> lock(msgMutex);
             history.clear();
+            structuredHistory.clear();
             for (const auto& item : j["history"]) {
-                history.push_back({item["role"], item["text"]});
+                ChatMessage message{item["role"], item["text"]};
+                history.push_back(message);
+                if (item.contains("parts") && item["parts"].is_array()) {
+                    StructuredChatMessage structured;
+                    structured.role = message.role;
+                    for (const auto& part : item["parts"]) {
+                        MessagePart parsed;
+                        parsed.type = messagePartTypeFromStringPersist(part.value("type", "text"));
+                        parsed.text = part.value("text", "");
+                        parsed.name = part.value("name", "");
+                        parsed.callId = part.value("call_id", "");
+                        parsed.isError = part.value("is_error", false);
+                        structured.parts.push_back(parsed);
+                    }
+                    if (structured.parts.empty()) {
+                        structured = buildStructuredMessage(message);
+                    }
+                    structuredHistory.push_back(structured);
+                } else {
+                    structuredHistory.push_back(buildStructuredMessage(message));
+                }
             }
             currentSessionFile = path.filename().string();
             return true;
@@ -58,12 +98,32 @@ void AgentUI::saveSession() {
         j["history"] = nlohmann::json::array();
         {
             std::lock_guard<std::mutex> lock(msgMutex);
-            for (const auto& msg : history) {
-                j["history"].push_back({{"role", msg.role}, {"text", msg.text}});
+            if (structuredHistory.size() != history.size()) {
+                structuredHistory.clear();
+                for (const auto& msg : history) {
+                    structuredHistory.push_back(buildStructuredMessage(msg));
+                }
+            }
+            for (size_t i = 0; i < history.size(); ++i) {
+                const auto& msg = history[i];
+                nlohmann::json item = {{"role", msg.role}, {"text", msg.text}};
+                item["parts"] = nlohmann::json::array();
+                if (i < structuredHistory.size()) {
+                    for (const auto& part : structuredHistory[i].parts) {
+                        item["parts"].push_back({
+                            {"type", messagePartTypeNamePersist(part.type)},
+                            {"text", part.text},
+                            {"name", part.name},
+                            {"call_id", part.callId},
+                            {"is_error", part.isError},
+                        });
+                    }
+                }
+                j["history"].push_back(item);
             }
         }
         std::ofstream ofs(sdir / currentSessionFile);
-        ofs << j.dump(2);
+        ofs << j.dump(2, ' ', false, nlohmann::json::error_handler_t::replace);
     } catch (...) {}
 }
 

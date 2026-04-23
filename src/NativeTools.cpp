@@ -68,6 +68,24 @@ bool resolveWorkspacePath(const std::string& input, fs::path& resolved, std::str
         }
         fs::path weak = fs::weakly_canonical(candidate);
         if (g_accessLevel == AccessLevel::FullAccess) {
+            // P2.4: Blocklist de paths de sistema críticos, mesmo em FullAccess.
+            // Paths dentro do workspace atual nunca são bloqueados.
+            static const std::vector<std::string> kSystemBlocklist = {
+                "/etc", "/boot", "/proc", "/sys", "/dev",
+                "/usr/lib", "/usr/share", "/usr/bin", "/usr/sbin",
+                "/bin", "/sbin", "/lib", "/lib64",
+            };
+            fs::path workspaceCanonical = fs::weakly_canonical(g_workspaceRoot);
+            if (!pathWithin(weak, workspaceCanonical)) {
+                std::string weakStr = weak.string();
+                for (const auto& blocked : kSystemBlocklist) {
+                    if (weakStr.rfind(blocked, 0) == 0 &&
+                        (weakStr.size() == blocked.size() || weakStr[blocked.size()] == '/')) {
+                        error = "Acesso bloqueado: path de sistema protegido (" + blocked + "). Operação cancelada para segurança.";
+                        return false;
+                    }
+                }
+            }
             resolved = weak;
             return true;
         }
@@ -516,7 +534,40 @@ std::string apply_patch(const nlohmann::json& args) {
 
         size_t pos = content.find(search);
         if (pos == std::string::npos) {
-            return "Erro: Texto de busca não encontrado no arquivo. Verifique espaços e quebras de linha exatos.";
+            // P2.2: Fallback — tentar match com whitespace normalizado
+            // Normaliza trailing spaces por linha e CRLF → LF
+            auto normalizeWS = [](const std::string& s) -> std::string {
+                std::string result;
+                std::istringstream stream(s);
+                std::string line;
+                bool first = true;
+                while (std::getline(stream, line)) {
+                    if (!first) result += '\n';
+                    first = false;
+                    // Remove trailing whitespace
+                    size_t end = line.find_last_not_of(" \t\r");
+                    result += (end != std::string::npos) ? line.substr(0, end + 1) : "";
+                }
+                return result;
+            };
+
+            std::string normContent = normalizeWS(content);
+            std::string normSearch  = normalizeWS(search);
+
+            size_t normPos = normContent.find(normSearch);
+            if (normPos == std::string::npos) {
+                return "Erro: Texto de busca não encontrado no arquivo. "
+                       "Verifique espaços e quebras de linha. "
+                       "Dica: use read_file para inspecionar o conteúdo real e ajuste o 'search'.";
+            }
+            if (normContent.find(normSearch, normPos + normSearch.length()) != std::string::npos) {
+                return "Erro: Texto de busca não é único no arquivo (match normalizado). "
+                       "Forneça mais linhas de contexto.";
+            }
+            // Aplicar no conteúdo normalizado
+            content = normContent;
+            pos = normPos;
+            search = normSearch;
         }
 
         if (content.find(search, pos + search.length()) != std::string::npos) {
@@ -524,6 +575,7 @@ std::string apply_patch(const nlohmann::json& args) {
         }
 
         content.replace(pos, search.length(), replace);
+
 
         std::ofstream out(resolved, std::ios::binary);
         out << content;
@@ -908,21 +960,91 @@ void registerNativeTools(const std::string& workspaceRoot) {
     }
 
     auto& reg = ToolRegistry::instance();
+    auto schemaString = [](const std::string& description) {
+        return nlohmann::json{{"type", "string"}, {"description", description}};
+    };
+    auto schemaInteger = [](const std::string& description, int minimum = 0) {
+        return nlohmann::json{{"type", "integer"}, {"description", description}, {"minimum", minimum}};
+    };
+    auto schemaBoolean = [](const std::string& description) {
+        return nlohmann::json{{"type", "boolean"}, {"description", description}};
+    };
+    auto objectSchema = [](const nlohmann::json& properties, const std::vector<std::string>& required = {}) {
+        nlohmann::json schema = {
+            {"type", "object"},
+            {"properties", properties.is_null() ? nlohmann::json::object() : properties}
+        };
+        if (!required.empty()) {
+            schema["required"] = required;
+        }
+        return schema;
+    };
 
-    reg.registerTool("read_file", "Lê o conteúdo de um arquivo.", {"path"}, read_file, false, true);
-    reg.registerTool("read_file_slice", "Lê intervalo de linhas de um arquivo.", {"path", "from_line", "to_line"}, read_file_slice, false, true);
-    reg.registerTool("apply_patch", "Realiza edições cirúrgicas em um arquivo existente usando busca e substituição de blocos únicos de texto. Esta é a ferramenta PREFERENCIAL para alterar arquivos grandes sem corrompê-los.", {"path", "search", "replace"}, apply_patch, true, false);
-    reg.registerTool("write_file", "Grava conteúdo total em um arquivo. Use preferencialmente para arquivos NOVOS.", {"path", "content"}, write_file, true, false);
-    reg.registerTool("make_dir", "Cria um diretório e seus pais se necessário.", {"path"}, make_dir, true, false);
-    reg.registerTool("move_path", "Move ou renomeia arquivo/diretório dentro do escopo permitido.", {"from", "to"}, move_path, true, false);
-    reg.registerTool("delete_path", "Remove arquivo ou diretório. Para diretório não vazio, use recursive=true.", {"path", "recursive"}, delete_path, true, false);
-    reg.registerTool("list_dir", "Lista arquivos de um diretório.", {"path"}, list_dir, false, true);
-    reg.registerTool("grep_search", "Busca padrão textual com ripgrep no workspace.", {"pattern", "path"}, grep_search, false, true);
-    reg.registerTool("run_command", "Executa um comando no shell e retorna a saída.", {"command"}, run_command, false, true);
-    reg.registerTool("fetch_url", "Busca conteúdo HTTP(S) bruto de um domínio aprovado pela política de contexto.", {"url"}, fetch_url, false, true);
-    reg.registerTool("ingest_document", "Ingere documento da biblioteca/workspace para o cache RAG local por hash.", {"path"}, ingest_document, true, false);
-    reg.registerTool("search_library", "Pesquisa SEMANTICA e LEXICAL no CONTEÚDO de milhares de arquivos das bibliotecas de referência aprovadas de uma só vez. Use OBRIGATORIAMENTE esta ferramenta para responder perguntas sobre o que os documentos dizem ou para encontrar informações específicas neles.", {"query", "limit"}, search_library, false, true);
-    reg.registerTool("rag_cache_status", "Mostra status do cache RAG local e bibliotecas aprovadas.", {}, rag_cache_status, false, true);
+    reg.registerTool("read_file", "Lê o conteúdo de um arquivo.", {"path"},
+                     objectSchema({{"path", schemaString("Caminho do arquivo relativo ao workspace.")}}, {"path"}),
+                     read_file, false, true);
+    reg.registerTool("read_file_slice", "Lê intervalo de linhas de um arquivo.", {"path", "from_line", "to_line"},
+                     objectSchema({
+                         {"path", schemaString("Caminho do arquivo relativo ao workspace.")},
+                         {"from_line", schemaInteger("Linha inicial, começando em 1.", 1)},
+                         {"to_line", schemaInteger("Linha final inclusiva.", 1)}
+                     }, {"path", "from_line", "to_line"}),
+                     read_file_slice, false, true);
+    reg.registerTool("apply_patch", "Realiza edições cirúrgicas em um arquivo existente usando busca e substituição de blocos únicos de texto. Esta é a ferramenta PREFERENCIAL para alterar arquivos grandes sem corrompê-los.", {"path", "search", "replace"},
+                     objectSchema({
+                         {"path", schemaString("Caminho do arquivo existente a ser editado.")},
+                         {"search", schemaString("Trecho exato a ser localizado no arquivo.")},
+                         {"replace", schemaString("Novo conteúdo que substituirá o trecho localizado.")}
+                     }, {"path", "search", "replace"}),
+                     apply_patch, true, false);
+    reg.registerTool("write_file", "Grava conteúdo total em um arquivo. Use preferencialmente para arquivos NOVOS.", {"path", "content"},
+                     objectSchema({
+                         {"path", schemaString("Caminho do arquivo relativo ao workspace.")},
+                         {"content", schemaString("Conteúdo completo do arquivo.")}
+                     }, {"path", "content"}),
+                     write_file, true, false);
+    reg.registerTool("make_dir", "Cria um diretório e seus pais se necessário.", {"path"},
+                     objectSchema({{"path", schemaString("Diretório a criar relativo ao workspace.")}}, {"path"}),
+                     make_dir, true, false);
+    reg.registerTool("move_path", "Move ou renomeia arquivo/diretório dentro do escopo permitido.", {"from", "to"},
+                     objectSchema({
+                         {"from", schemaString("Caminho atual do arquivo ou diretório.")},
+                         {"to", schemaString("Novo caminho do arquivo ou diretório.")}
+                     }, {"from", "to"}),
+                     move_path, true, false);
+    reg.registerTool("delete_path", "Remove arquivo ou diretório. Para diretório não vazio, use recursive=true.", {"path", "recursive"},
+                     objectSchema({
+                         {"path", schemaString("Caminho do arquivo ou diretório a remover.")},
+                         {"recursive", schemaBoolean("Use true para remover diretórios não vazios.")}
+                     }, {"path"}),
+                     delete_path, true, false);
+    reg.registerTool("list_dir", "Lista arquivos de um diretório.", {"path"},
+                     objectSchema({{"path", schemaString("Diretório a listar. Use '.' para o workspace atual.")}}, {"path"}),
+                     list_dir, false, true);
+    reg.registerTool("grep_search", "Busca padrão textual com ripgrep no workspace.", {"pattern", "path"},
+                     objectSchema({
+                         {"pattern", schemaString("Texto ou regex a procurar.")},
+                         {"path", schemaString("Diretório ou arquivo de busca relativo ao workspace.")}
+                     }, {"pattern"}),
+                     grep_search, false, true);
+    reg.registerTool("run_command", "Executa um comando no shell e retorna a saída.", {"command"},
+                     objectSchema({{"command", schemaString("Comando shell a executar no workspace atual.")}}, {"command"}),
+                     run_command, false, true);
+    reg.registerTool("fetch_url", "Busca conteúdo HTTP(S) bruto de um domínio aprovado pela política de contexto.", {"url"},
+                     objectSchema({{"url", schemaString("URL HTTP ou HTTPS permitida pela política.")}}, {"url"}),
+                     fetch_url, false, true);
+    reg.registerTool("ingest_document", "Ingere documento da biblioteca/workspace para o cache RAG local por hash.", {"path"},
+                     objectSchema({{"path", schemaString("Caminho do documento a ingerir no cache RAG.")}}, {"path"}),
+                     ingest_document, true, false);
+    reg.registerTool("search_library", "Pesquisa SEMANTICA e LEXICAL no CONTEÚDO de milhares de arquivos das bibliotecas de referência aprovadas de uma só vez. Use OBRIGATORIAMENTE esta ferramenta para responder perguntas sobre o que os documentos dizem ou para encontrar informações específicas neles.", {"query", "limit"},
+                     objectSchema({
+                         {"query", schemaString("Pergunta ou consulta de busca semântica/lexical.")},
+                         {"limit", schemaInteger("Máximo de resultados a retornar.", 1)}
+                     }, {"query"}),
+                     search_library, false, true);
+    reg.registerTool("rag_cache_status", "Mostra status do cache RAG local e bibliotecas aprovadas.", {},
+                     objectSchema({}, {}),
+                     rag_cache_status, false, true);
 }
 
 void setNativeToolAccessLevel(AccessLevel level) {

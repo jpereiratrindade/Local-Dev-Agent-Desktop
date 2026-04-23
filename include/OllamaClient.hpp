@@ -4,13 +4,36 @@
 #include <functional>
 #include <vector>
 #include <atomic>
+#include <string_view>
 #include "json.hpp"
 
 namespace agent::network {
 
+enum class ModelProvider {
+    Ollama,
+    LMStudio,
+};
+
 struct Message {
     std::string role;
     std::string content;
+    std::string name;
+    std::string toolCallId;
+    nlohmann::json toolCalls = nlohmann::json::array();
+};
+
+struct ToolCall {
+    std::string id;
+    std::string name;
+    nlohmann::json arguments = nlohmann::json::object();
+};
+
+struct ChatTurnResult {
+    std::string content;
+    std::string reasoning;
+    std::string finishReason;
+    std::vector<ToolCall> toolCalls;
+    nlohmann::json rawToolCalls = nlohmann::json::array();
 };
 
 // Parâmetros de execução do modelo
@@ -34,6 +57,10 @@ public:
 
     // Envio síncrono (bloqueante)
     std::string chat(const std::vector<Message>& history, const OllamaOptions& options = OllamaOptions());
+    ChatTurnResult chatWithTools(const std::vector<Message>& history,
+                                 const nlohmann::json& tools,
+                                 const std::string& systemMsg = "",
+                                 const OllamaOptions& options = OllamaOptions());
 
     void chatStream(const std::vector<Message>& history, 
                    std::function<void(const std::string&)> onChunk,
@@ -57,10 +84,18 @@ public:
 
     // Atualizar o modelo em uso
     void setModel(const std::string& modelName) { model = modelName; }
+    void setProvider(ModelProvider value) { provider = value; }
+    void setBaseUrl(const std::string& url) { baseUrl = url; }
+    void configureBackend(ModelProvider value, const std::string& url) { provider = value; baseUrl = url; }
+    ModelProvider getProvider() const { return provider; }
+    const std::string& getBaseUrl() const { return baseUrl; }
+    static const char* providerLabel(ModelProvider value);
 
 private:
+    void logDebug(std::string_view phase, const std::string& body) const;
     std::string baseUrl;
     std::string model;
+    ModelProvider provider = ModelProvider::Ollama;
     std::atomic<bool> cancelRequested{false};
     std::atomic<bool> streaming{false};
 };

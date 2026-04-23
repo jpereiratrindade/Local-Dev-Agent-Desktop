@@ -9,6 +9,7 @@
 #include <fstream>
 #include <sstream>
 #include <algorithm>
+#include <cstdio>
 
 namespace agent::ui {
 namespace {
@@ -99,6 +100,8 @@ AgentUI::AgentUI() {
     splitterPosLeft = 260.0f;
     splitterPosRight = 320.0f;
     currentModel = "qwen2.5:14b";
+    currentProvider = "Ollama";
+    providerEndpoint = "http://localhost:11434";
     syncNativeToolsRuntime();
 }
 
@@ -109,8 +112,12 @@ AgentUI::~AgentUI() {
 void AgentUI::setOllama(agent::network::OllamaClient* client) {
     this->ollama = client;
     if (ollama) {
+        currentProvider = agent::network::OllamaClient::providerLabel(ollama->getProvider());
+        currentProviderIndex = ollama->getProvider() == agent::network::ModelProvider::LMStudio ? 1 : 0;
+        providerEndpoint = ollama->getBaseUrl();
         ollamaVersion = ollama->fetchVersion();
         availableModels = ollama->listModels();
+        if (!availableModels.empty()) currentModel = availableModels.front();
     }
 }
 
@@ -184,7 +191,29 @@ void AgentUI::render() {
     drawGovernedProjectDialog();
     drawContextPolicyDialog();
     drawChangeProposalDialog();
+    drawDeleteApprovalModal();
+    drawQuickOpenModal();
     renderModelManagerModal();
+
+    // P3.2: Atalho Ctrl+P para Quick File Open
+    if (ImGui::IsKeyChordPressed(ImGuiMod_Ctrl | ImGuiKey_P)) {
+        quickOpenVisible = true;
+        std::memset(quickOpenBuf, 0, sizeof(quickOpenBuf));
+        // Pré-popular lista com todos os arquivos do projeto
+        quickOpenMatches.clear();
+        if (hasOpenProject && !currentProjectRoot.empty()) {
+            try {
+                for (const auto& entry : fs::recursive_directory_iterator(
+                        currentProjectRoot, fs::directory_options::skip_permission_denied)) {
+                    if (entry.is_regular_file()) {
+                        quickOpenMatches.push_back(fs::relative(entry.path(),
+                                                   currentProjectRoot).string());
+                    }
+                }
+                std::sort(quickOpenMatches.begin(), quickOpenMatches.end());
+            } catch (...) {}
+        }
+    }
 }
 
 void AgentUI::drawMainMenu() {
@@ -223,7 +252,11 @@ void AgentUI::drawMainMenu() {
 
 void AgentUI::newDialogue() {
     history.clear();
-    if (orchestrator) orchestrator->clearHistory();
+    structuredHistory.clear();
+    llmHistory.clear();
+    if (orchestrator) {
+        // history is now maintained by the UI, so we just clear our own history
+    }
     thoughtStream = "Nova sessão iniciada.";
 }
 

@@ -13,6 +13,7 @@
 
 namespace agent::network {
     class OllamaClient;
+    enum class ModelProvider;
     struct Message;
     struct OllamaStreamStats;
     struct OllamaOptions;
@@ -20,6 +21,7 @@ namespace agent::network {
 
 namespace agent::core {
     class Orchestrator;
+    struct AgentSpec;
 }
 
 namespace agent::ui {
@@ -27,6 +29,26 @@ namespace agent::ui {
 struct ChatMessage {
     std::string role;
     std::string text;
+};
+
+enum class MessagePartType {
+    Text,
+    Reasoning,
+    ToolCall,
+    ToolResult,
+};
+
+struct MessagePart {
+    MessagePartType type = MessagePartType::Text;
+    std::string text;
+    std::string name;
+    std::string callId;
+    bool isError = false;
+};
+
+struct StructuredChatMessage {
+    std::string role;
+    std::vector<MessagePart> parts;
 };
 
 struct ChangeProposal {
@@ -51,6 +73,8 @@ public:
     bool exitRequested = false;
     bool emojiIconsEnabled = true;
     std::string currentModel = "qwen2.5:14b";
+    std::string currentProvider = "Ollama";
+    int currentProviderIndex = 0;
     std::vector<std::string> availableModels;
 
     // Public API for mission logic
@@ -92,6 +116,8 @@ private:
 
     // UI State - Chat
     std::vector<ChatMessage> history;
+    std::vector<StructuredChatMessage> structuredHistory;
+    std::vector<agent::network::Message> llmHistory;
     std::mutex msgMutex;
     char inputBuf[4096] = ""; // Expanded
     bool scrollToBottom = false;
@@ -131,6 +157,7 @@ private:
     std::string pullStatus = "";
     float pullProgress = 0.0f;
     std::string ollamaVersion = "";
+    std::string providerEndpoint = "http://localhost:11434";
     char modelPullNameBuf[128] = "";
 
     bool openFolderPickerRequested = false;
@@ -148,10 +175,22 @@ private:
     char contextDomainsBuf[1024] = "";
     char pendingChangeTargetBuf[1024] = "";
 
+    // P3.2: Quick File Open (Ctrl+P)
+    bool quickOpenVisible = false;
+    char quickOpenBuf[256] = "";
+    std::vector<std::string> quickOpenMatches;
+    std::string pinnedActiveFile; // Arquivo pinado via Quick Open
+
     std::string thoughtStream = "Pronto.";
     bool changeProposalVisible = false;
     ChangeProposal pendingChangeProposal;
     std::string pendingChangeDiff;
+
+    // P0.4: Estado do modal de confirmação para delete_path
+    std::atomic<int> deleteApprovalState{0}; // 0=idle, 1=pending, 2=approved, 3=rejected
+    std::string deleteApprovalPath;
+    std::string deleteApprovalIsRecursive;
+    std::mutex deleteApprovalMutex;
 
     // Render Sub-methods
     void drawMainMenu();
@@ -169,10 +208,17 @@ private:
     void generateProjectMap();
     
     void drawChatWindow();
+    StructuredChatMessage buildStructuredMessage(const ChatMessage& message) const;
+    std::string flattenStructuredMessageText(const StructuredChatMessage& message) const;
+    void ensureStructuredHistoryLocked();
+    void appendHistoryMessageLocked(const ChatMessage& message);
+    StructuredChatMessage& ensureAssistantStructuredMessageLocked();
     void renderMarkdown(const std::string& text);
     void runPythonAgent(const std::string& goal, const std::string& mode = "AGENT");
     std::string buildActiveContextBlock() const;
     std::string buildChatSystemPrompt() const;
+    agent::core::AgentSpec currentAgentSpec() const;
+    std::vector<std::string> currentAgentToolNames() const;
     std::string inferTaskMode(const std::string& goal) const;
     std::string inferActiveFileForGoal(const std::string& goal) const;
     std::string inferActiveFileAmbiguityNote(const std::string& goal) const;
@@ -187,6 +233,8 @@ private:
     void drawGovernedProjectDialog();
     void drawContextPolicyDialog();
     void drawChangeProposalDialog();
+    void drawDeleteApprovalModal();
+    void drawQuickOpenModal();
     void renderModelManagerModal();
     std::string buildSimpleDiffPreview(const std::string& oldText, const std::string& newText) const;
 

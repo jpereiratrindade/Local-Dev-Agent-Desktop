@@ -14,6 +14,7 @@ struct ToolInfo {
     std::string name;
     std::string description;
     std::vector<std::string> argNames; // Simplificado para o prompt
+    nlohmann::json parametersSchema;
     ToolFunc func;
     bool mutatesWorkspace = false;
     bool verifiesState = false;
@@ -28,9 +29,17 @@ public:
     void registerTool(const std::string& name, const std::string& description,
                       const std::vector<std::string>& argNames, ToolFunc func,
                       bool mutatesWorkspace, bool verifiesState);
+    void registerTool(const std::string& name, const std::string& description,
+                      const std::vector<std::string>& argNames, const nlohmann::json& parametersSchema,
+                      ToolFunc func, bool mutatesWorkspace, bool verifiesState);
 
     std::string dispatch(const std::string& name, const nlohmann::json& args);
     std::string getToolSpecs() const;
+    std::string getToolSpecsForProfile(const std::string& toolProfile) const;
+    std::vector<std::string> listToolNamesForProfile(const std::string& toolProfile) const;
+    nlohmann::json getOpenAiToolSpecs() const;
+    nlohmann::json getOpenAiToolSpecsForProfile(const std::string& toolProfile) const;
+    bool toolAllowedForProfile(const std::string& name, const std::string& toolProfile) const;
     bool toolMutatesWorkspace(const std::string& name) const;
     bool toolVerifiesState(const std::string& name) const;
 
