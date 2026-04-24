@@ -8,6 +8,7 @@
 #include <vector>
 #include <mutex>
 #include <atomic>
+#include <condition_variable>
 #include <filesystem>
 #include <deque>
 
@@ -51,13 +52,28 @@ struct StructuredChatMessage {
     std::vector<MessagePart> parts;
 };
 
+enum class ChangeProposalSource {
+    AssistantText,
+    NativeTool
+};
+
+enum class ApprovalState {
+    Idle,
+    Pending,
+    Approved,
+    Rejected
+};
+
 struct ChangeProposal {
-    std::string kind; // replace_file, create_file, append_to_file, insert_at_cursor
+    std::string kind; // replace_file, create_file, append_to_file, insert_at_cursor, apply_patch, write_file
     std::string targetPath;
     std::string content;
     std::string summary;
     std::string confidence = "high"; // low, medium, high
     bool directlyApplicable = false;
+    ChangeProposalSource source = ChangeProposalSource::AssistantText;
+    std::string nativeToolName;
+    std::string nativeToolArgsJson;
 };
 
 class AgentUI {
@@ -185,6 +201,10 @@ private:
     bool changeProposalVisible = false;
     ChangeProposal pendingChangeProposal;
     std::string pendingChangeDiff;
+
+    std::mutex changeApprovalMutex;
+    std::condition_variable changeApprovalCv;
+    ApprovalState changeApprovalState{ApprovalState::Idle};
 
     // P0.4: Estado do modal de confirmação para delete_path
     std::atomic<int> deleteApprovalState{0}; // 0=idle, 1=pending, 2=approved, 3=rejected

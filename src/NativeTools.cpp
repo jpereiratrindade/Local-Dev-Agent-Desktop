@@ -146,7 +146,7 @@ std::string shellEscape(const std::string& value) {
 std::string runShellCapture(const std::string& command) {
     std::array<char, 512> buffer;
     std::string result;
-    std::unique_ptr<FILE, decltype(&pclose)> pipe(popen(command.c_str(), "r"), pclose);
+    std::unique_ptr<FILE, int(*)(FILE*)> pipe(popen(command.c_str(), "r"), pclose);
     if (!pipe) return "";
     while (fgets(buffer.data(), buffer.size(), pipe.get()) != nullptr) {
         result += buffer.data();
@@ -762,7 +762,7 @@ std::string run_command(const nlohmann::json& args) {
     std::string timeoutPrefix = "timeout " + std::to_string(timeoutSeconds) + "s sh -c ";
     std::array<char, 128> buffer;
     std::string result;
-    std::unique_ptr<FILE, decltype(&pclose)> pipe(popen((cmdPrefix + timeoutPrefix + shellEscape(command) + " 2>&1").c_str(), "r"), pclose);
+    std::unique_ptr<FILE, int(*)(FILE*)> pipe(popen((cmdPrefix + timeoutPrefix + shellEscape(command) + " 2>&1").c_str(), "r"), pclose);
     if (!pipe) return "Erro: Falha ao executar popen()";
     
     while (fgets(buffer.data(), buffer.size(), pipe.get()) != nullptr) {
@@ -784,7 +784,7 @@ std::string grep_search(const nlohmann::json& args) {
 
     std::array<char, 128> buffer;
     std::string result;
-    std::unique_ptr<FILE, decltype(&pclose)> pipe(popen(command.c_str(), "r"), pclose);
+    std::unique_ptr<FILE, int(*)(FILE*)> pipe(popen(command.c_str(), "r"), pclose);
     if (!pipe) return "Erro: Falha ao executar rg";
     while (fgets(buffer.data(), buffer.size(), pipe.get()) != nullptr) {
         result += buffer.data();
@@ -838,7 +838,7 @@ std::string fetch_url(const nlohmann::json& args) {
     std::string command = "curl -L --max-time 20 --silent --show-error \"" + url + "\"";
     std::array<char, 256> buffer;
     std::string result;
-    std::unique_ptr<FILE, decltype(&pclose)> pipe(popen(command.c_str(), "r"), pclose);
+    std::unique_ptr<FILE, int(*)(FILE*)> pipe(popen(command.c_str(), "r"), pclose);
     if (!pipe) return "Erro: Falha ao executar curl.";
     while (fgets(buffer.data(), buffer.size(), pipe.get()) != nullptr) {
         result += buffer.data();

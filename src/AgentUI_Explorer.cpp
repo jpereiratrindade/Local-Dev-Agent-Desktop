@@ -88,10 +88,12 @@ void AgentUI::drawFileExplorer() {
 
     if (hasOpenProject && !currentProjectRoot.empty()) {
         ImGui::TextWrapped("%s", fs::path(currentProjectRoot).filename().string().c_str());
+        ImGui::PushTextWrapPos(0.0f);
         ImGui::TextDisabled("%s", currentProjectRoot.c_str());
         if (!lastResolvedProjectRoot.empty() && lastResolvedProjectRoot != currentProjectRoot) {
             ImGui::TextDisabled("Raiz resolvida: %s", lastResolvedProjectRoot.c_str());
         }
+        ImGui::PopTextWrapPos();
         ImGui::Separator();
     }
 
@@ -337,7 +339,9 @@ void AgentUI::drawFileEditor() {
     std::string fileName = fs::path(editorFilePath).filename().string();
     if (editorDirty) fileName += " *";
     ImGui::TextWrapped("%s", fileName.c_str());
+    ImGui::PushTextWrapPos(0.0f);
     ImGui::TextDisabled("%s", editorFilePath.c_str());
+    ImGui::PopTextWrapPos();
 
     if (ImGui::SmallButton("Salvar")) saveEditorFile();
     ImGui::SameLine();

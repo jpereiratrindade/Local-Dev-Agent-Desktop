@@ -24,7 +24,7 @@ Roadmap de UX (Status: Em andamento):
 - [x] Persistencia de sessao e historico por projeto
 - [x] Chat assistido com priorizacao do arquivo ativo
 - [ ] Slash commands como `/fix`, `/test`, `/explain`
-- [ ] Visualizacao de diff antes de aplicar mudancas
+- [x] Visualizacao de diff antes de aplicar mudancas (Approval Gate Integrado)
 - [ ] Melhorias na gestao de modelos locais via UI
 
 Direcao operacional adicional:

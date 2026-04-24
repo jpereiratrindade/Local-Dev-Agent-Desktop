@@ -267,13 +267,19 @@ void AgentUI::renderMarkdown(const std::string& text) {
         // Headings
         if (line.substr(0, 4) == "### ") {
             ImGui::Spacing();
-            ImGui::TextColored(ImVec4(0.4f, 0.7f, 1.0f, 1.0f), "%s", line.substr(4).c_str());
+            ImGui::PushStyleColor(ImGuiCol_Text, ImVec4(0.4f, 0.7f, 1.0f, 1.0f));
+            ImGui::TextWrapped("%s", line.substr(4).c_str());
+            ImGui::PopStyleColor();
             ImGui::Separator();
         } else if (line.substr(0, 3) == "## ") {
             ImGui::Spacing();
-            ImGui::TextColored(ImVec4(0.0f, 0.8f, 1.0f, 1.0f), "%s", line.substr(3).c_str());
+            ImGui::PushStyleColor(ImGuiCol_Text, ImVec4(0.0f, 0.8f, 1.0f, 1.0f));
+            ImGui::TextWrapped("%s", line.substr(3).c_str());
+            ImGui::PopStyleColor();
         } else if (line.substr(0, 2) == "# ") {
-            ImGui::TextColored(ImVec4(1.0f, 1.0f, 1.0f, 1.0f), "%s", line.substr(2).c_str());
+            ImGui::PushStyleColor(ImGuiCol_Text, ImVec4(1.0f, 1.0f, 1.0f, 1.0f));
+            ImGui::TextWrapped("%s", line.substr(2).c_str());
+            ImGui::PopStyleColor();
             ImGui::Separator();
         }
         // Separadores horizontais
@@ -287,7 +293,9 @@ void AgentUI::renderMarkdown(const std::string& text) {
             // Detectar negrito simples **text**
             std::string content = line.substr(2);
             if (content.find("**") != std::string::npos) {
-                ImGui::TextColored(ImVec4(1.0f, 1.0f, 0.7f, 1.0f), "%s", content.c_str());
+                ImGui::PushStyleColor(ImGuiCol_Text, ImVec4(1.0f, 1.0f, 0.7f, 1.0f));
+                ImGui::TextWrapped("%s", content.c_str());
+                ImGui::PopStyleColor();
             } else {
                 ImGui::TextWrapped("%s", content.c_str());
             }
@@ -300,15 +308,21 @@ void AgentUI::renderMarkdown(const std::string& text) {
         }
         // Citações
         else if (line.substr(0, 2) == "> ") {
-            ImGui::TextColored(ImVec4(0.6f, 0.6f, 0.6f, 1.0f), "│ %s", line.substr(2).c_str());
+            ImGui::PushStyleColor(ImGuiCol_Text, ImVec4(0.6f, 0.6f, 0.6f, 1.0f));
+            ImGui::TextWrapped("│ %s", line.substr(2).c_str());
+            ImGui::PopStyleColor();
         }
         // Linha com negrito **text**
         else if (line.find("**") != std::string::npos) {
-            ImGui::TextColored(ImVec4(1.0f, 1.0f, 0.7f, 1.0f), "%s", line.c_str());
+            ImGui::PushStyleColor(ImGuiCol_Text, ImVec4(1.0f, 1.0f, 0.7f, 1.0f));
+            ImGui::TextWrapped("%s", line.c_str());
+            ImGui::PopStyleColor();
         }
         // Linha com inline code `text`
         else if (line.find("`") != std::string::npos) {
-            ImGui::TextColored(ImVec4(0.9f, 0.8f, 0.5f, 1.0f), "%s", line.c_str());
+            ImGui::PushStyleColor(ImGuiCol_Text, ImVec4(0.9f, 0.8f, 0.5f, 1.0f));
+            ImGui::TextWrapped("%s", line.c_str());
+            ImGui::PopStyleColor();
         }
         // Linha vazia
         else if (line.empty()) {
@@ -835,24 +849,75 @@ void AgentUI::runPythonAgent(const std::string& goal, const std::string& mode) {
             // P0.4: Approval gate para delete_path — mostra modal e aguarda resposta (max 30s)
             callbacks.onApprovalRequired = [this](const std::string& toolName,
                                                    const nlohmann::json& args) -> bool {
-                if (toolName != "delete_path") return true; // Só intercepta delete
-                {
-                    std::lock_guard<std::mutex> lock(deleteApprovalMutex);
-                    deleteApprovalPath          = args.value("path", "(desconhecido)");
-                    deleteApprovalIsRecursive   = args.value("recursive", false) ? "true" : "false";
-                }
-                deleteApprovalState.store(1); // pending — UI irá renderizar o modal
+                if (toolName == "delete_path") {
+                    {
+                        std::lock_guard<std::mutex> lock(deleteApprovalMutex);
+                        deleteApprovalPath          = args.value("path", "(desconhecido)");
+                        deleteApprovalIsRecursive   = args.value("recursive", false) ? "true" : "false";
+                    }
+                    deleteApprovalState.store(1); // pending — UI irá renderizar o modal
 
-                // Polling por até 30 segundos
-                auto deadline = std::chrono::steady_clock::now() + std::chrono::seconds(30);
-                while (std::chrono::steady_clock::now() < deadline) {
-                    int st = deleteApprovalState.load();
-                    if (st == 2) { deleteApprovalState.store(0); return true;  } // approved
-                    if (st == 3) { deleteApprovalState.store(0); return false; } // rejected
-                    std::this_thread::sleep_for(std::chrono::milliseconds(80));
+                    // Polling por até 30 segundos para delete_path
+                    auto deadline = std::chrono::steady_clock::now() + std::chrono::seconds(30);
+                    while (std::chrono::steady_clock::now() < deadline) {
+                        int st = deleteApprovalState.load();
+                        if (st == 2) { deleteApprovalState.store(0); return true;  } // approved
+                        if (st == 3) { deleteApprovalState.store(0); return false; } // rejected
+                        std::this_thread::sleep_for(std::chrono::milliseconds(80));
+                    }
+                    deleteApprovalState.store(0);
+                    return false; // Timeout → rejeitar por segurança
                 }
-                deleteApprovalState.store(0);
-                return false; // Timeout → rejeitar por segurança
+
+                if (toolName == "apply_patch" || toolName == "write_file") {
+                    std::string targetPath = args.value("path", "");
+                    if (targetPath.empty()) targetPath = args.value("target", "");
+                    if (targetPath.empty()) return false;
+
+                    std::string currentText = loadWorkspaceFileText(targetPath);
+                    std::string newText = currentText;
+
+                    if (toolName == "write_file") {
+                        newText = args.value("content", "");
+                    } else if (toolName == "apply_patch") {
+                        std::string searchStr = args.value("search", "");
+                        std::string replaceStr = args.value("replace", "");
+                        size_t pos = newText.find(searchStr);
+                        if (pos != std::string::npos && !searchStr.empty()) {
+                            newText.replace(pos, searchStr.length(), replaceStr);
+                        }
+                    }
+
+                    {
+                        std::lock_guard<std::mutex> lock(changeApprovalMutex);
+                        pendingChangeProposal.kind = toolName;
+                        pendingChangeProposal.targetPath = targetPath;
+                        pendingChangeProposal.content = newText;
+                        pendingChangeProposal.summary = "Ferramenta nativa: " + toolName;
+                        pendingChangeProposal.confidence = "high";
+                        pendingChangeProposal.directlyApplicable = true;
+                        pendingChangeProposal.source = ChangeProposalSource::NativeTool;
+                        pendingChangeProposal.nativeToolName = toolName;
+                        pendingChangeProposal.nativeToolArgsJson = args.dump(2);
+                        
+                        pendingChangeDiff = buildSimpleDiffPreview(currentText, newText);
+                        std::snprintf(pendingChangeTargetBuf, sizeof(pendingChangeTargetBuf), "%s", targetPath.c_str());
+                        changeApprovalState = ApprovalState::Pending;
+                    }
+                    changeApprovalCv.notify_one();
+
+                    std::unique_lock<std::mutex> lock(changeApprovalMutex);
+                    changeApprovalCv.wait(lock, [this] {
+                        return changeApprovalState == ApprovalState::Approved || 
+                               changeApprovalState == ApprovalState::Rejected;
+                    });
+
+                    bool approved = (changeApprovalState == ApprovalState::Approved);
+                    changeApprovalState = ApprovalState::Idle;
+                    return approved;
+                }
+
+                return true;
             };
 
             std::string fullGoal = goal;
@@ -1071,7 +1136,7 @@ void AgentUI::drawChatWindow() {
                                     "[%s]",
                                     part.name.c_str());
                             }
-                            ImGui::TextUnformatted(part.text.c_str());
+                            ImGui::TextWrapped("%s", part.text.c_str());
                             ImGui::Separator();
                         }
                         if (!hasLogs) {

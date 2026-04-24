@@ -163,12 +163,18 @@ void AgentUI::drawGovernedProjectDialog() {
 }
 
 void AgentUI::drawChangeProposalDialog() {
+    if (changeApprovalState == ApprovalState::Pending && !changeProposalVisible) {
+        changeProposalVisible = true;
+    }
+
     if (changeProposalVisible) {
         ImGui::OpenPopup("Revisar Mudanca###ChangeProposal");
     }
 
+    bool open = true;
+
     ImGui::SetNextWindowSize(ImVec2(850, 650), ImGuiCond_FirstUseEver);
-    if (ImGui::BeginPopupModal("Revisar Mudanca###ChangeProposal", &changeProposalVisible)) {
+    if (ImGui::BeginPopupModal("Revisar Mudanca###ChangeProposal", &open)) {
         
         // Confidence/Safety Bar
         ImVec4 confColor = ImVec4(0.4f, 0.8f, 0.4f, 1.0f); // High (Green)
@@ -245,13 +251,22 @@ void AgentUI::drawChangeProposalDialog() {
         ImGui::SetCursorPosX((ImGui::GetWindowWidth() - totalWidth) * 0.5f);
 
         if (ImGui::Button("Aplicar Mudança", ImVec2(btnWidth, 45))) {
-            pendingChangeProposal.targetPath = trimLoose(pendingChangeTargetBuf);
-            if (!pendingChangeProposal.targetPath.empty() && ensureEditorTarget(pendingChangeProposal.targetPath) &&
-                applyPartialChangeToEditor(pendingChangeProposal, false)) {
-                lastChangeTargetPath = pendingChangeProposal.targetPath;
-                thoughtStream = "Mudança aplicada com sucesso no editor.";
+            if (pendingChangeProposal.source == ChangeProposalSource::NativeTool) {
+                {
+                    std::lock_guard<std::mutex> lock(changeApprovalMutex);
+                    changeApprovalState = ApprovalState::Approved;
+                }
+                changeApprovalCv.notify_one();
+                thoughtStream = "Aprovação concedida ao Orchestrator.";
             } else {
-                thoughtStream = "ERRO: Falha ao aplicar mudança estruturada.";
+                pendingChangeProposal.targetPath = trimLoose(pendingChangeTargetBuf);
+                if (!pendingChangeProposal.targetPath.empty() && ensureEditorTarget(pendingChangeProposal.targetPath) &&
+                    applyPartialChangeToEditor(pendingChangeProposal, false)) {
+                    lastChangeTargetPath = pendingChangeProposal.targetPath;
+                    thoughtStream = "Mudança aplicada com sucesso no editor.";
+                } else {
+                    thoughtStream = "ERRO: Falha ao aplicar mudança estruturada.";
+                }
             }
             pendingChangeProposal = {};
             pendingChangeDiff.clear();
@@ -260,13 +275,22 @@ void AgentUI::drawChangeProposalDialog() {
         }
         ImGui::SameLine();
         if (ImGui::Button("Aplicar e Salvar", ImVec2(btnWidth, 45))) {
-            pendingChangeProposal.targetPath = trimLoose(pendingChangeTargetBuf);
-            if (!pendingChangeProposal.targetPath.empty() && ensureEditorTarget(pendingChangeProposal.targetPath) &&
-                applyPartialChangeToEditor(pendingChangeProposal, true)) {
-                lastChangeTargetPath = pendingChangeProposal.targetPath;
-                thoughtStream = "Mudança aplicada e persistida com sucesso.";
+            if (pendingChangeProposal.source == ChangeProposalSource::NativeTool) {
+                {
+                    std::lock_guard<std::mutex> lock(changeApprovalMutex);
+                    changeApprovalState = ApprovalState::Approved;
+                }
+                changeApprovalCv.notify_one();
+                thoughtStream = "Aprovação concedida ao Orchestrator.";
             } else {
-                thoughtStream = "ERRO: Falha ao persistir mudança estruturada.";
+                pendingChangeProposal.targetPath = trimLoose(pendingChangeTargetBuf);
+                if (!pendingChangeProposal.targetPath.empty() && ensureEditorTarget(pendingChangeProposal.targetPath) &&
+                    applyPartialChangeToEditor(pendingChangeProposal, true)) {
+                    lastChangeTargetPath = pendingChangeProposal.targetPath;
+                    thoughtStream = "Mudança aplicada e persistida com sucesso.";
+                } else {
+                    thoughtStream = "ERRO: Falha ao persistir mudança estruturada.";
+                }
             }
             pendingChangeProposal = {};
             pendingChangeDiff.clear();
@@ -276,7 +300,16 @@ void AgentUI::drawChangeProposalDialog() {
         ImGui::SameLine();
         ImGui::PushStyleColor(ImGuiCol_Button, ImVec4(0.5f, 0.2f, 0.2f, 1.00f));
         if (ImGui::Button("Descartar", ImVec2(btnWidth, 45))) {
-            thoughtStream = "Mudança descartada pelo usuário.";
+            if (pendingChangeProposal.source == ChangeProposalSource::NativeTool) {
+                {
+                    std::lock_guard<std::mutex> lock(changeApprovalMutex);
+                    changeApprovalState = ApprovalState::Rejected;
+                }
+                changeApprovalCv.notify_one();
+                thoughtStream = "Aprovação negada ao Orchestrator.";
+            } else {
+                thoughtStream = "Mudança descartada pelo usuário.";
+            }
             pendingChangeProposal = {};
             pendingChangeDiff.clear();
             changeProposalVisible = false;
@@ -285,6 +318,17 @@ void AgentUI::drawChangeProposalDialog() {
         ImGui::PopStyleColor();
 
         ImGui::EndPopup();
+    }
+
+    if (!open && changeProposalVisible) {
+        if (changeApprovalState == ApprovalState::Pending) {
+            {
+                std::lock_guard<std::mutex> lock(changeApprovalMutex);
+                changeApprovalState = ApprovalState::Rejected;
+            }
+            changeApprovalCv.notify_one();
+        }
+        changeProposalVisible = false;
     }
 }
 
